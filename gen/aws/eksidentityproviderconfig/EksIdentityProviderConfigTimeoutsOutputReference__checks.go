@@ -98,7 +98,7 @@ func (e *jsiiProxy_EksIdentityProviderConfigTimeoutsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_EksIdentityProviderConfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EksIdentityProviderConfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_EksIdentityProviderConfigTimeoutsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_EksIdentityProviderConfigTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EksIdentityProviderConfigTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewEksIdentityProviderConfigTimeoutsOutputReferenceParameters(terra
 
 	return nil
 }
-

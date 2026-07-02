@@ -6,9 +6,9 @@ import (
 
 type DataAwsEc2ManagedPrefixListsConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,11 +18,11 @@ type DataAwsEc2ManagedPrefixListsConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// filter block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/ec2_managed_prefix_lists#filter DataAwsEc2ManagedPrefixLists#filter}
-	Filter interface{} `field:"optional" json:"filter" yaml:"filter"`
+	Filter any `field:"optional" json:"filter" yaml:"filter"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/ec2_managed_prefix_lists#id DataAwsEc2ManagedPrefixLists#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -31,4 +31,3 @@ type DataAwsEc2ManagedPrefixListsConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/ec2_managed_prefix_lists#tags DataAwsEc2ManagedPrefixLists#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 }
-

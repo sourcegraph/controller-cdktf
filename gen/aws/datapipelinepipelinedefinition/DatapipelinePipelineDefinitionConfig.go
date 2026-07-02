@@ -6,9 +6,9 @@ import (
 
 type DatapipelinePipelineDefinitionConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,13 +18,13 @@ type DatapipelinePipelineDefinitionConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/datapipeline_pipeline_definition#pipeline_id DatapipelinePipelineDefinition#pipeline_id}.
 	PipelineId *string `field:"required" json:"pipelineId" yaml:"pipelineId"`
 	// pipeline_object block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/datapipeline_pipeline_definition#pipeline_object DatapipelinePipelineDefinition#pipeline_object}
-	PipelineObject interface{} `field:"required" json:"pipelineObject" yaml:"pipelineObject"`
+	PipelineObject any `field:"required" json:"pipelineObject" yaml:"pipelineObject"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/datapipeline_pipeline_definition#id DatapipelinePipelineDefinition#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -33,10 +33,9 @@ type DatapipelinePipelineDefinitionConfig struct {
 	// parameter_object block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/datapipeline_pipeline_definition#parameter_object DatapipelinePipelineDefinition#parameter_object}
-	ParameterObject interface{} `field:"optional" json:"parameterObject" yaml:"parameterObject"`
+	ParameterObject any `field:"optional" json:"parameterObject" yaml:"parameterObject"`
 	// parameter_value block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/datapipeline_pipeline_definition#parameter_value DatapipelinePipelineDefinition#parameter_value}
-	ParameterValue interface{} `field:"optional" json:"parameterValue" yaml:"parameterValue"`
+	ParameterValue any `field:"optional" json:"parameterValue" yaml:"parameterValue"`
 }
-

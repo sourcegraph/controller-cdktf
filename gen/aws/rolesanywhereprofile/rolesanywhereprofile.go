@@ -16,15 +16,15 @@ type RolesanywhereProfile interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -32,9 +32,9 @@ type RolesanywhereProfile interface {
 	DurationSeconds() *float64
 	SetDurationSeconds(val *float64)
 	DurationSecondsInput() *float64
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -63,14 +63,14 @@ type RolesanywhereProfile interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
-	RequireInstanceProperties() interface{}
-	SetRequireInstanceProperties(val interface{})
-	RequireInstancePropertiesInput() interface{}
+	RawOverrides() any
+	RequireInstanceProperties() any
+	SetRequireInstanceProperties(val any)
+	RequireInstancePropertiesInput() any
 	RoleArns() *[]*string
 	SetRoleArns(val *[]*string)
 	RoleArnsInput() *[]*string
@@ -86,16 +86,16 @@ type RolesanywhereProfile interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -113,7 +113,7 @@ type RolesanywhereProfile interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -125,7 +125,7 @@ type RolesanywhereProfile interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -143,17 +143,17 @@ type RolesanywhereProfile interface {
 	ResetSessionPolicy()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for RolesanywhereProfile
@@ -181,8 +181,8 @@ func (j *jsiiProxy_RolesanywhereProfile) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_RolesanywhereProfile) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RolesanywhereProfile) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_RolesanywhereProfile) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RolesanywhereProfile) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RolesanywhereProfile) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -201,8 +201,8 @@ func (j *jsiiProxy_RolesanywhereProfile) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_RolesanywhereProfile) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RolesanywhereProfile) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -241,8 +241,8 @@ func (j *jsiiProxy_RolesanywhereProfile) DurationSecondsInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_RolesanywhereProfile) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RolesanywhereProfile) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -251,8 +251,8 @@ func (j *jsiiProxy_RolesanywhereProfile) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RolesanywhereProfile) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RolesanywhereProfile) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -381,8 +381,8 @@ func (j *jsiiProxy_RolesanywhereProfile) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_RolesanywhereProfile) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_RolesanywhereProfile) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -391,8 +391,8 @@ func (j *jsiiProxy_RolesanywhereProfile) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RolesanywhereProfile) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RolesanywhereProfile) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -401,8 +401,8 @@ func (j *jsiiProxy_RolesanywhereProfile) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RolesanywhereProfile) RequireInstanceProperties() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RolesanywhereProfile) RequireInstanceProperties() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireInstanceProperties",
@@ -411,8 +411,8 @@ func (j *jsiiProxy_RolesanywhereProfile) RequireInstanceProperties() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_RolesanywhereProfile) RequireInstancePropertiesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RolesanywhereProfile) RequireInstancePropertiesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireInstancePropertiesInput",
@@ -511,8 +511,8 @@ func (j *jsiiProxy_RolesanywhereProfile) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_RolesanywhereProfile) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RolesanywhereProfile) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -531,7 +531,6 @@ func (j *jsiiProxy_RolesanywhereProfile) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/rolesanywhere_profile aws_rolesanywhere_profile} Resource.
 func NewRolesanywhereProfile(scope constructs.Construct, id *string, config *RolesanywhereProfileConfig) RolesanywhereProfile {
 	_init_.Initialize()
@@ -543,7 +542,7 @@ func NewRolesanywhereProfile(scope constructs.Construct, id *string, config *Rol
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.rolesanywhereProfile.RolesanywhereProfile",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -556,12 +555,12 @@ func NewRolesanywhereProfile_Override(r RolesanywhereProfile, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.rolesanywhereProfile.RolesanywhereProfile",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RolesanywhereProfile)SetConnection(val interface{}) {
+func (j *jsiiProxy_RolesanywhereProfile) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -572,7 +571,7 @@ func (j *jsiiProxy_RolesanywhereProfile)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RolesanywhereProfile)SetCount(val interface{}) {
+func (j *jsiiProxy_RolesanywhereProfile) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -583,7 +582,7 @@ func (j *jsiiProxy_RolesanywhereProfile)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RolesanywhereProfile)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_RolesanywhereProfile) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -591,7 +590,7 @@ func (j *jsiiProxy_RolesanywhereProfile)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RolesanywhereProfile)SetDurationSeconds(val *float64) {
+func (j *jsiiProxy_RolesanywhereProfile) SetDurationSeconds(val *float64) {
 	if err := j.validateSetDurationSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -602,7 +601,7 @@ func (j *jsiiProxy_RolesanywhereProfile)SetDurationSeconds(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RolesanywhereProfile)SetEnabled(val interface{}) {
+func (j *jsiiProxy_RolesanywhereProfile) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -613,7 +612,7 @@ func (j *jsiiProxy_RolesanywhereProfile)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RolesanywhereProfile)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_RolesanywhereProfile) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -621,7 +620,7 @@ func (j *jsiiProxy_RolesanywhereProfile)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_RolesanywhereProfile)SetId(val *string) {
+func (j *jsiiProxy_RolesanywhereProfile) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -632,7 +631,7 @@ func (j *jsiiProxy_RolesanywhereProfile)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RolesanywhereProfile)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_RolesanywhereProfile) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -643,7 +642,7 @@ func (j *jsiiProxy_RolesanywhereProfile)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_RolesanywhereProfile)SetManagedPolicyArns(val *[]*string) {
+func (j *jsiiProxy_RolesanywhereProfile) SetManagedPolicyArns(val *[]*string) {
 	if err := j.validateSetManagedPolicyArnsParameters(val); err != nil {
 		panic(err)
 	}
@@ -654,7 +653,7 @@ func (j *jsiiProxy_RolesanywhereProfile)SetManagedPolicyArns(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RolesanywhereProfile)SetName(val *string) {
+func (j *jsiiProxy_RolesanywhereProfile) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -665,7 +664,7 @@ func (j *jsiiProxy_RolesanywhereProfile)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RolesanywhereProfile)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_RolesanywhereProfile) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -673,7 +672,7 @@ func (j *jsiiProxy_RolesanywhereProfile)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_RolesanywhereProfile)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_RolesanywhereProfile) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -684,7 +683,7 @@ func (j *jsiiProxy_RolesanywhereProfile)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RolesanywhereProfile)SetRequireInstanceProperties(val interface{}) {
+func (j *jsiiProxy_RolesanywhereProfile) SetRequireInstanceProperties(val any) {
 	if err := j.validateSetRequireInstancePropertiesParameters(val); err != nil {
 		panic(err)
 	}
@@ -695,7 +694,7 @@ func (j *jsiiProxy_RolesanywhereProfile)SetRequireInstanceProperties(val interfa
 	)
 }
 
-func (j *jsiiProxy_RolesanywhereProfile)SetRoleArns(val *[]*string) {
+func (j *jsiiProxy_RolesanywhereProfile) SetRoleArns(val *[]*string) {
 	if err := j.validateSetRoleArnsParameters(val); err != nil {
 		panic(err)
 	}
@@ -706,7 +705,7 @@ func (j *jsiiProxy_RolesanywhereProfile)SetRoleArns(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RolesanywhereProfile)SetSessionPolicy(val *string) {
+func (j *jsiiProxy_RolesanywhereProfile) SetSessionPolicy(val *string) {
 	if err := j.validateSetSessionPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -717,7 +716,7 @@ func (j *jsiiProxy_RolesanywhereProfile)SetSessionPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RolesanywhereProfile)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_RolesanywhereProfile) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -728,7 +727,7 @@ func (j *jsiiProxy_RolesanywhereProfile)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_RolesanywhereProfile)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_RolesanywhereProfile) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -751,7 +750,7 @@ func RolesanywhereProfile_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.rolesanywhereProfile.RolesanywhereProfile",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func RolesanywhereProfile_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func RolesanywhereProfile_IsConstruct(x interface{}) *bool {
+func RolesanywhereProfile_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRolesanywhereProfile_IsConstructParameters(x); err != nil {
@@ -786,7 +785,7 @@ func RolesanywhereProfile_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.rolesanywhereProfile.RolesanywhereProfile",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func RolesanywhereProfile_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func RolesanywhereProfile_IsTerraformElement(x interface{}) *bool {
+func RolesanywhereProfile_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRolesanywhereProfile_IsTerraformElementParameters(x); err != nil {
@@ -805,7 +804,7 @@ func RolesanywhereProfile_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.rolesanywhereProfile.RolesanywhereProfile",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -813,7 +812,7 @@ func RolesanywhereProfile_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func RolesanywhereProfile_IsTerraformResource(x interface{}) *bool {
+func RolesanywhereProfile_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRolesanywhereProfile_IsTerraformResourceParameters(x); err != nil {
@@ -824,7 +823,7 @@ func RolesanywhereProfile_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.rolesanywhereProfile.RolesanywhereProfile",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -849,31 +848,31 @@ func (r *jsiiProxy_RolesanywhereProfile) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (r *jsiiProxy_RolesanywhereProfile) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_RolesanywhereProfile) AddOverride(path *string, value any) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (r *jsiiProxy_RolesanywhereProfile) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RolesanywhereProfile) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -889,7 +888,7 @@ func (r *jsiiProxy_RolesanywhereProfile) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -905,7 +904,7 @@ func (r *jsiiProxy_RolesanywhereProfile) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -921,7 +920,7 @@ func (r *jsiiProxy_RolesanywhereProfile) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -937,7 +936,7 @@ func (r *jsiiProxy_RolesanywhereProfile) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -953,7 +952,7 @@ func (r *jsiiProxy_RolesanywhereProfile) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -969,7 +968,7 @@ func (r *jsiiProxy_RolesanywhereProfile) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -985,7 +984,7 @@ func (r *jsiiProxy_RolesanywhereProfile) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1001,15 +1000,15 @@ func (r *jsiiProxy_RolesanywhereProfile) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_RolesanywhereProfile) HasResourceMove() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RolesanywhereProfile) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1028,7 +1027,7 @@ func (r *jsiiProxy_RolesanywhereProfile) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		r,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1041,7 +1040,7 @@ func (r *jsiiProxy_RolesanywhereProfile) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1055,18 +1054,18 @@ func (r *jsiiProxy_RolesanywhereProfile) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (r *jsiiProxy_RolesanywhereProfile) MoveTo(moveTarget *string, index interface{}) {
+func (r *jsiiProxy_RolesanywhereProfile) MoveTo(moveTarget *string, index any) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1077,7 +1076,7 @@ func (r *jsiiProxy_RolesanywhereProfile) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1088,7 +1087,7 @@ func (r *jsiiProxy_RolesanywhereProfile) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1164,8 +1163,8 @@ func (r *jsiiProxy_RolesanywhereProfile) ResetTagsAll() {
 	)
 }
 
-func (r *jsiiProxy_RolesanywhereProfile) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RolesanywhereProfile) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1177,8 +1176,8 @@ func (r *jsiiProxy_RolesanywhereProfile) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (r *jsiiProxy_RolesanywhereProfile) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RolesanywhereProfile) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1190,8 +1189,8 @@ func (r *jsiiProxy_RolesanywhereProfile) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (r *jsiiProxy_RolesanywhereProfile) ToHclTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RolesanywhereProfile) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1203,8 +1202,8 @@ func (r *jsiiProxy_RolesanywhereProfile) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_RolesanywhereProfile) ToMetadata() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RolesanywhereProfile) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1229,8 +1228,8 @@ func (r *jsiiProxy_RolesanywhereProfile) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_RolesanywhereProfile) ToTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RolesanywhereProfile) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1241,4 +1240,3 @@ func (r *jsiiProxy_RolesanywhereProfile) ToTerraform() interface{} {
 
 	return returns
 }
-

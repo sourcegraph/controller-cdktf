@@ -90,7 +90,7 @@ func (s *jsiiProxy_S3ControlObjectLambdaAccessPointConfigurationOutputReference)
 	return nil
 }
 
-func (s *jsiiProxy_S3ControlObjectLambdaAccessPointConfigurationOutputReference) validatePutTransformationConfigurationParameters(value interface{}) error {
+func (s *jsiiProxy_S3ControlObjectLambdaAccessPointConfigurationOutputReference) validatePutTransformationConfigurationParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -137,7 +137,7 @@ func (j *jsiiProxy_S3ControlObjectLambdaAccessPointConfigurationOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_S3ControlObjectLambdaAccessPointConfigurationOutputReference) validateSetCloudWatchMetricsEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_S3ControlObjectLambdaAccessPointConfigurationOutputReference) validateSetCloudWatchMetricsEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -157,7 +157,7 @@ func (j *jsiiProxy_S3ControlObjectLambdaAccessPointConfigurationOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_S3ControlObjectLambdaAccessPointConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3ControlObjectLambdaAccessPointConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -265,4 +265,3 @@ func validateNewS3ControlObjectLambdaAccessPointConfigurationOutputReferencePara
 
 	return nil
 }
-

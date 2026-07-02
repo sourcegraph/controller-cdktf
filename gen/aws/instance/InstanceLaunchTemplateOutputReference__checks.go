@@ -98,7 +98,7 @@ func (i *jsiiProxy_InstanceLaunchTemplateOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_InstanceLaunchTemplateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_InstanceLaunchTemplateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewInstanceLaunchTemplateOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

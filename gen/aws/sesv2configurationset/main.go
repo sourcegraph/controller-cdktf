@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet",
-		reflect.TypeOf((*Sesv2ConfigurationSet)(nil)).Elem(),
+		reflect.TypeFor[Sesv2ConfigurationSet](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -85,7 +85,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "trackingOptions", GoGetter: "TrackingOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "trackingOptionsInput", GoGetter: "TrackingOptionsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Sesv2ConfigurationSet{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -93,15 +93,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetConfig",
-		reflect.TypeOf((*Sesv2ConfigurationSetConfig)(nil)).Elem(),
+		reflect.TypeFor[Sesv2ConfigurationSetConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetDeliveryOptions",
-		reflect.TypeOf((*Sesv2ConfigurationSetDeliveryOptions)(nil)).Elem(),
+		reflect.TypeFor[Sesv2ConfigurationSetDeliveryOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetDeliveryOptionsOutputReference",
-		reflect.TypeOf((*Sesv2ConfigurationSetDeliveryOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Sesv2ConfigurationSetDeliveryOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -131,7 +131,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tlsPolicyInput", GoGetter: "TlsPolicyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Sesv2ConfigurationSetDeliveryOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -139,11 +139,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetReputationOptions",
-		reflect.TypeOf((*Sesv2ConfigurationSetReputationOptions)(nil)).Elem(),
+		reflect.TypeFor[Sesv2ConfigurationSetReputationOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetReputationOptionsOutputReference",
-		reflect.TypeOf((*Sesv2ConfigurationSetReputationOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Sesv2ConfigurationSetReputationOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -171,7 +171,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Sesv2ConfigurationSetReputationOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -179,11 +179,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetSendingOptions",
-		reflect.TypeOf((*Sesv2ConfigurationSetSendingOptions)(nil)).Elem(),
+		reflect.TypeFor[Sesv2ConfigurationSetSendingOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetSendingOptionsOutputReference",
-		reflect.TypeOf((*Sesv2ConfigurationSetSendingOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Sesv2ConfigurationSetSendingOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -210,7 +210,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Sesv2ConfigurationSetSendingOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -218,11 +218,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetSuppressionOptions",
-		reflect.TypeOf((*Sesv2ConfigurationSetSuppressionOptions)(nil)).Elem(),
+		reflect.TypeFor[Sesv2ConfigurationSetSuppressionOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetSuppressionOptionsOutputReference",
-		reflect.TypeOf((*Sesv2ConfigurationSetSuppressionOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Sesv2ConfigurationSetSuppressionOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -249,7 +249,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Sesv2ConfigurationSetSuppressionOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -257,11 +257,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetTrackingOptions",
-		reflect.TypeOf((*Sesv2ConfigurationSetTrackingOptions)(nil)).Elem(),
+		reflect.TypeFor[Sesv2ConfigurationSetTrackingOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetTrackingOptionsOutputReference",
-		reflect.TypeOf((*Sesv2ConfigurationSetTrackingOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Sesv2ConfigurationSetTrackingOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -287,7 +287,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Sesv2ConfigurationSetTrackingOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

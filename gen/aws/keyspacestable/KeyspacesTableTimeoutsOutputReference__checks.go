@@ -98,7 +98,7 @@ func (k *jsiiProxy_KeyspacesTableTimeoutsOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_KeyspacesTableTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KeyspacesTableTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_KeyspacesTableTimeoutsOutputReference) validateSetDeleteParam
 	return nil
 }
 
-func (j *jsiiProxy_KeyspacesTableTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_KeyspacesTableTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewKeyspacesTableTimeoutsOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

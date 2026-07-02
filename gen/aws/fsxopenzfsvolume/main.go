@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolume",
-		reflect.TypeOf((*FsxOpenzfsVolume)(nil)).Elem(),
+		reflect.TypeFor[FsxOpenzfsVolume](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -104,7 +104,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumeType", GoGetter: "VolumeType"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeTypeInput", GoGetter: "VolumeTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FsxOpenzfsVolume{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -112,19 +112,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolumeConfig",
-		reflect.TypeOf((*FsxOpenzfsVolumeConfig)(nil)).Elem(),
+		reflect.TypeFor[FsxOpenzfsVolumeConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolumeNfsExports",
-		reflect.TypeOf((*FsxOpenzfsVolumeNfsExports)(nil)).Elem(),
+		reflect.TypeFor[FsxOpenzfsVolumeNfsExports](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolumeNfsExportsClientConfigurations",
-		reflect.TypeOf((*FsxOpenzfsVolumeNfsExportsClientConfigurations)(nil)).Elem(),
+		reflect.TypeFor[FsxOpenzfsVolumeNfsExportsClientConfigurations](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolumeNfsExportsClientConfigurationsList",
-		reflect.TypeOf((*FsxOpenzfsVolumeNfsExportsClientConfigurationsList)(nil)).Elem(),
+		reflect.TypeFor[FsxOpenzfsVolumeNfsExportsClientConfigurationsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -138,7 +138,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FsxOpenzfsVolumeNfsExportsClientConfigurationsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -146,7 +146,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolumeNfsExportsClientConfigurationsOutputReference",
-		reflect.TypeOf((*FsxOpenzfsVolumeNfsExportsClientConfigurationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FsxOpenzfsVolumeNfsExportsClientConfigurationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clients", GoGetter: "Clients"},
 			_jsii_.MemberProperty{JsiiProperty: "clientsInput", GoGetter: "ClientsInput"},
@@ -174,7 +174,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FsxOpenzfsVolumeNfsExportsClientConfigurationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -182,7 +182,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolumeNfsExportsOutputReference",
-		reflect.TypeOf((*FsxOpenzfsVolumeNfsExportsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FsxOpenzfsVolumeNfsExportsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientConfigurations", GoGetter: "ClientConfigurations"},
 			_jsii_.MemberProperty{JsiiProperty: "clientConfigurationsInput", GoGetter: "ClientConfigurationsInput"},
@@ -209,7 +209,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FsxOpenzfsVolumeNfsExportsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -217,11 +217,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolumeOriginSnapshot",
-		reflect.TypeOf((*FsxOpenzfsVolumeOriginSnapshot)(nil)).Elem(),
+		reflect.TypeFor[FsxOpenzfsVolumeOriginSnapshot](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolumeOriginSnapshotOutputReference",
-		reflect.TypeOf((*FsxOpenzfsVolumeOriginSnapshotOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FsxOpenzfsVolumeOriginSnapshotOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -249,7 +249,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FsxOpenzfsVolumeOriginSnapshotOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -257,11 +257,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolumeTimeouts",
-		reflect.TypeOf((*FsxOpenzfsVolumeTimeouts)(nil)).Elem(),
+		reflect.TypeFor[FsxOpenzfsVolumeTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolumeTimeoutsOutputReference",
-		reflect.TypeOf((*FsxOpenzfsVolumeTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FsxOpenzfsVolumeTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -294,7 +294,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FsxOpenzfsVolumeTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -302,11 +302,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolumeUserAndGroupQuotas",
-		reflect.TypeOf((*FsxOpenzfsVolumeUserAndGroupQuotas)(nil)).Elem(),
+		reflect.TypeFor[FsxOpenzfsVolumeUserAndGroupQuotas](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolumeUserAndGroupQuotasList",
-		reflect.TypeOf((*FsxOpenzfsVolumeUserAndGroupQuotasList)(nil)).Elem(),
+		reflect.TypeFor[FsxOpenzfsVolumeUserAndGroupQuotasList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -320,7 +320,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FsxOpenzfsVolumeUserAndGroupQuotasList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -328,7 +328,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolumeUserAndGroupQuotasOutputReference",
-		reflect.TypeOf((*FsxOpenzfsVolumeUserAndGroupQuotasOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FsxOpenzfsVolumeUserAndGroupQuotasOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -358,7 +358,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FsxOpenzfsVolumeUserAndGroupQuotasOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

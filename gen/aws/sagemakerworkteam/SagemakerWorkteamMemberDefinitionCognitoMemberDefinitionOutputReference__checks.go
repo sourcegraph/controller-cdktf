@@ -106,7 +106,7 @@ func (j *jsiiProxy_SagemakerWorkteamMemberDefinitionCognitoMemberDefinitionOutpu
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerWorkteamMemberDefinitionCognitoMemberDefinitionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerWorkteamMemberDefinitionCognitoMemberDefinitionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewSagemakerWorkteamMemberDefinitionCognitoMemberDefinitionOutputRe
 
 	return nil
 }
-

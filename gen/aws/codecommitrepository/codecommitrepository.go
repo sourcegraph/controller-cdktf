@@ -18,15 +18,15 @@ type CodecommitRepository interface {
 	CloneUrlHttp() *string
 	CloneUrlSsh() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DefaultBranch() *string
 	SetDefaultBranch(val *string)
 	DefaultBranchInput() *string
@@ -59,11 +59,11 @@ type CodecommitRepository interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RepositoryId() *string
 	RepositoryName() *string
 	SetRepositoryName(val *string)
@@ -77,16 +77,16 @@ type CodecommitRepository interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -104,7 +104,7 @@ type CodecommitRepository interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -116,7 +116,7 @@ type CodecommitRepository interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -131,17 +131,17 @@ type CodecommitRepository interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CodecommitRepository
@@ -189,8 +189,8 @@ func (j *jsiiProxy_CodecommitRepository) CloneUrlSsh() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CodecommitRepository) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodecommitRepository) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -199,8 +199,8 @@ func (j *jsiiProxy_CodecommitRepository) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CodecommitRepository) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CodecommitRepository) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -209,8 +209,8 @@ func (j *jsiiProxy_CodecommitRepository) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_CodecommitRepository) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodecommitRepository) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -349,8 +349,8 @@ func (j *jsiiProxy_CodecommitRepository) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_CodecommitRepository) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CodecommitRepository) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -359,8 +359,8 @@ func (j *jsiiProxy_CodecommitRepository) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CodecommitRepository) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodecommitRepository) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -449,8 +449,8 @@ func (j *jsiiProxy_CodecommitRepository) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_CodecommitRepository) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CodecommitRepository) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -469,7 +469,6 @@ func (j *jsiiProxy_CodecommitRepository) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/codecommit_repository aws_codecommit_repository} Resource.
 func NewCodecommitRepository(scope constructs.Construct, id *string, config *CodecommitRepositoryConfig) CodecommitRepository {
 	_init_.Initialize()
@@ -481,7 +480,7 @@ func NewCodecommitRepository(scope constructs.Construct, id *string, config *Cod
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.codecommitRepository.CodecommitRepository",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -494,12 +493,12 @@ func NewCodecommitRepository_Override(c CodecommitRepository, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.codecommitRepository.CodecommitRepository",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CodecommitRepository)SetConnection(val interface{}) {
+func (j *jsiiProxy_CodecommitRepository) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_CodecommitRepository)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CodecommitRepository)SetCount(val interface{}) {
+func (j *jsiiProxy_CodecommitRepository) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -521,7 +520,7 @@ func (j *jsiiProxy_CodecommitRepository)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CodecommitRepository)SetDefaultBranch(val *string) {
+func (j *jsiiProxy_CodecommitRepository) SetDefaultBranch(val *string) {
 	if err := j.validateSetDefaultBranchParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +531,7 @@ func (j *jsiiProxy_CodecommitRepository)SetDefaultBranch(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CodecommitRepository)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CodecommitRepository) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -540,7 +539,7 @@ func (j *jsiiProxy_CodecommitRepository)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CodecommitRepository)SetDescription(val *string) {
+func (j *jsiiProxy_CodecommitRepository) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -551,7 +550,7 @@ func (j *jsiiProxy_CodecommitRepository)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CodecommitRepository)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CodecommitRepository) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -559,7 +558,7 @@ func (j *jsiiProxy_CodecommitRepository)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_CodecommitRepository)SetId(val *string) {
+func (j *jsiiProxy_CodecommitRepository) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_CodecommitRepository)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CodecommitRepository)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CodecommitRepository) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_CodecommitRepository)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_CodecommitRepository)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CodecommitRepository) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -589,7 +588,7 @@ func (j *jsiiProxy_CodecommitRepository)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_CodecommitRepository)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CodecommitRepository) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -600,7 +599,7 @@ func (j *jsiiProxy_CodecommitRepository)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CodecommitRepository)SetRepositoryName(val *string) {
+func (j *jsiiProxy_CodecommitRepository) SetRepositoryName(val *string) {
 	if err := j.validateSetRepositoryNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,7 +610,7 @@ func (j *jsiiProxy_CodecommitRepository)SetRepositoryName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CodecommitRepository)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_CodecommitRepository) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -622,7 +621,7 @@ func (j *jsiiProxy_CodecommitRepository)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_CodecommitRepository)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_CodecommitRepository) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -645,7 +644,7 @@ func CodecommitRepository_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.codecommitRepository.CodecommitRepository",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -669,7 +668,7 @@ func CodecommitRepository_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CodecommitRepository_IsConstruct(x interface{}) *bool {
+func CodecommitRepository_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCodecommitRepository_IsConstructParameters(x); err != nil {
@@ -680,7 +679,7 @@ func CodecommitRepository_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.codecommitRepository.CodecommitRepository",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -688,7 +687,7 @@ func CodecommitRepository_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CodecommitRepository_IsTerraformElement(x interface{}) *bool {
+func CodecommitRepository_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCodecommitRepository_IsTerraformElementParameters(x); err != nil {
@@ -699,7 +698,7 @@ func CodecommitRepository_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.codecommitRepository.CodecommitRepository",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -707,7 +706,7 @@ func CodecommitRepository_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CodecommitRepository_IsTerraformResource(x interface{}) *bool {
+func CodecommitRepository_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCodecommitRepository_IsTerraformResourceParameters(x); err != nil {
@@ -718,7 +717,7 @@ func CodecommitRepository_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.codecommitRepository.CodecommitRepository",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -743,31 +742,31 @@ func (c *jsiiProxy_CodecommitRepository) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CodecommitRepository) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CodecommitRepository) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CodecommitRepository) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CodecommitRepository) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -783,7 +782,7 @@ func (c *jsiiProxy_CodecommitRepository) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,7 +798,7 @@ func (c *jsiiProxy_CodecommitRepository) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -815,7 +814,7 @@ func (c *jsiiProxy_CodecommitRepository) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -831,7 +830,7 @@ func (c *jsiiProxy_CodecommitRepository) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -847,7 +846,7 @@ func (c *jsiiProxy_CodecommitRepository) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -863,7 +862,7 @@ func (c *jsiiProxy_CodecommitRepository) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -879,7 +878,7 @@ func (c *jsiiProxy_CodecommitRepository) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -895,15 +894,15 @@ func (c *jsiiProxy_CodecommitRepository) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CodecommitRepository) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CodecommitRepository) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -922,7 +921,7 @@ func (c *jsiiProxy_CodecommitRepository) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -935,7 +934,7 @@ func (c *jsiiProxy_CodecommitRepository) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -949,18 +948,18 @@ func (c *jsiiProxy_CodecommitRepository) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CodecommitRepository) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CodecommitRepository) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -971,7 +970,7 @@ func (c *jsiiProxy_CodecommitRepository) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -982,7 +981,7 @@ func (c *jsiiProxy_CodecommitRepository) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1034,8 +1033,8 @@ func (c *jsiiProxy_CodecommitRepository) ResetTagsAll() {
 	)
 }
 
-func (c *jsiiProxy_CodecommitRepository) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CodecommitRepository) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1047,8 +1046,8 @@ func (c *jsiiProxy_CodecommitRepository) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (c *jsiiProxy_CodecommitRepository) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CodecommitRepository) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1060,8 +1059,8 @@ func (c *jsiiProxy_CodecommitRepository) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (c *jsiiProxy_CodecommitRepository) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CodecommitRepository) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1073,8 +1072,8 @@ func (c *jsiiProxy_CodecommitRepository) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CodecommitRepository) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CodecommitRepository) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1099,8 +1098,8 @@ func (c *jsiiProxy_CodecommitRepository) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CodecommitRepository) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CodecommitRepository) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1111,4 +1110,3 @@ func (c *jsiiProxy_CodecommitRepository) ToTerraform() interface{} {
 
 	return returns
 }
-

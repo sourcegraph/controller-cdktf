@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationA",
-		reflect.TypeOf((*S3BucketObjectLockConfigurationA)(nil)).Elem(),
+		reflect.TypeFor[S3BucketObjectLockConfigurationA](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,7 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3BucketObjectLockConfigurationA{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -79,15 +79,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationAConfig",
-		reflect.TypeOf((*S3BucketObjectLockConfigurationAConfig)(nil)).Elem(),
+		reflect.TypeFor[S3BucketObjectLockConfigurationAConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationRuleA",
-		reflect.TypeOf((*S3BucketObjectLockConfigurationRuleA)(nil)).Elem(),
+		reflect.TypeFor[S3BucketObjectLockConfigurationRuleA](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationRuleAOutputReference",
-		reflect.TypeOf((*S3BucketObjectLockConfigurationRuleAOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3BucketObjectLockConfigurationRuleAOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -114,7 +114,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3BucketObjectLockConfigurationRuleAOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -122,11 +122,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationRuleDefaultRetentionA",
-		reflect.TypeOf((*S3BucketObjectLockConfigurationRuleDefaultRetentionA)(nil)).Elem(),
+		reflect.TypeFor[S3BucketObjectLockConfigurationRuleDefaultRetentionA](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationRuleDefaultRetentionAOutputReference",
-		reflect.TypeOf((*S3BucketObjectLockConfigurationRuleDefaultRetentionAOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3BucketObjectLockConfigurationRuleDefaultRetentionAOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -159,7 +159,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "years", GoGetter: "Years"},
 			_jsii_.MemberProperty{JsiiProperty: "yearsInput", GoGetter: "YearsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3BucketObjectLockConfigurationRuleDefaultRetentionAOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

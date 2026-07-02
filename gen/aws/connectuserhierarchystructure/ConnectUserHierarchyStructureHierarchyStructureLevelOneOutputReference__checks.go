@@ -98,7 +98,7 @@ func (c *jsiiProxy_ConnectUserHierarchyStructureHierarchyStructureLevelOneOutput
 	return nil
 }
 
-func (j *jsiiProxy_ConnectUserHierarchyStructureHierarchyStructureLevelOneOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ConnectUserHierarchyStructureHierarchyStructureLevelOneOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewConnectUserHierarchyStructureHierarchyStructureLevelOneOutputRef
 
 	return nil
 }
-

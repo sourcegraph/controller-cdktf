@@ -18,9 +18,9 @@ type BatchComputeEnvironmentComputeResourcesOutputReference interface {
 	BidPercentageInput() *float64
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -86,7 +86,7 @@ type BatchComputeEnvironmentComputeResourcesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -124,7 +124,7 @@ type BatchComputeEnvironmentComputeResourcesOutputReference interface {
 	ResetTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -177,8 +177,8 @@ func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) BidPe
 	return returns
 }
 
-func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -527,7 +527,6 @@ func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) TypeI
 	return returns
 }
 
-
 func NewBatchComputeEnvironmentComputeResourcesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BatchComputeEnvironmentComputeResourcesOutputReference {
 	_init_.Initialize()
 
@@ -538,7 +537,7 @@ func NewBatchComputeEnvironmentComputeResourcesOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironmentComputeResourcesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -550,12 +549,12 @@ func NewBatchComputeEnvironmentComputeResourcesOutputReference_Override(b BatchC
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironmentComputeResourcesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference)SetAllocationStrategy(val *string) {
+func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) SetAllocationStrategy(val *string) {
 	if err := j.validateSetAllocationStrategyParameters(val); err != nil {
 		panic(err)
 	}
@@ -566,7 +565,7 @@ func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference)SetAll
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference)SetBidPercentage(val *float64) {
+func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) SetBidPercentage(val *float64) {
 	if err := j.validateSetBidPercentageParameters(val); err != nil {
 		panic(err)
 	}
@@ -577,7 +576,7 @@ func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference)SetBid
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -588,7 +587,7 @@ func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference)SetDesiredVcpus(val *float64) {
+func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) SetDesiredVcpus(val *float64) {
 	if err := j.validateSetDesiredVcpusParameters(val); err != nil {
 		panic(err)
 	}
@@ -610,7 +609,7 @@ func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference)SetDes
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference)SetEc2KeyPair(val *string) {
+func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) SetEc2KeyPair(val *string) {
 	if err := j.validateSetEc2KeyPairParameters(val); err != nil {
 		panic(err)
 	}
@@ -621,7 +620,7 @@ func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference)SetEc2
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference)SetImageId(val *string) {
+func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) SetImageId(val *string) {
 	if err := j.validateSetImageIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -632,7 +631,7 @@ func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference)SetIma
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference)SetInstanceRole(val *string) {
+func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) SetInstanceRole(val *string) {
 	if err := j.validateSetInstanceRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -643,7 +642,7 @@ func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference)SetIns
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference)SetInstanceType(val *[]*string) {
+func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) SetInstanceType(val *[]*string) {
 	if err := j.validateSetInstanceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -654,7 +653,7 @@ func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference)SetIns
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference)SetInternalValue(val *BatchComputeEnvironmentComputeResources) {
+func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) SetInternalValue(val *BatchComputeEnvironmentComputeResources) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -665,7 +664,7 @@ func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference)SetMaxVcpus(val *float64) {
+func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) SetMaxVcpus(val *float64) {
 	if err := j.validateSetMaxVcpusParameters(val); err != nil {
 		panic(err)
 	}
@@ -676,7 +675,7 @@ func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference)SetMax
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference)SetMinVcpus(val *float64) {
+func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) SetMinVcpus(val *float64) {
 	if err := j.validateSetMinVcpusParameters(val); err != nil {
 		panic(err)
 	}
@@ -687,7 +686,7 @@ func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference)SetMin
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference)SetSecurityGroupIds(val *[]*string) {
+func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) SetSecurityGroupIds(val *[]*string) {
 	if err := j.validateSetSecurityGroupIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -698,7 +697,7 @@ func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference)SetSec
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference)SetSpotIamFleetRole(val *string) {
+func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) SetSpotIamFleetRole(val *string) {
 	if err := j.validateSetSpotIamFleetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -709,7 +708,7 @@ func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference)SetSpo
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference)SetSubnets(val *[]*string) {
+func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) SetSubnets(val *[]*string) {
 	if err := j.validateSetSubnetsParameters(val); err != nil {
 		panic(err)
 	}
@@ -720,7 +719,7 @@ func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference)SetSub
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -731,7 +730,7 @@ func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference)SetTag
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -742,7 +741,7 @@ func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -753,7 +752,7 @@ func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference)SetType(val *string) {
+func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -777,16 +776,16 @@ func (b *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) Compu
 	return returns
 }
 
-func (b *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -802,7 +801,7 @@ func (b *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) GetBo
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -818,7 +817,7 @@ func (b *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) GetBo
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -834,7 +833,7 @@ func (b *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) GetLi
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -850,7 +849,7 @@ func (b *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) GetNu
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -866,7 +865,7 @@ func (b *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) GetNu
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -882,7 +881,7 @@ func (b *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) GetNu
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -898,7 +897,7 @@ func (b *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) GetSt
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -914,7 +913,7 @@ func (b *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) GetSt
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -943,7 +942,7 @@ func (b *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) Inter
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -957,7 +956,7 @@ func (b *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) PutEc
 	_jsii_.InvokeVoid(
 		b,
 		"putEc2Configuration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -968,7 +967,7 @@ func (b *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) PutLa
 	_jsii_.InvokeVoid(
 		b,
 		"putLaunchTemplate",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1076,16 +1075,16 @@ func (b *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) Reset
 	)
 }
 
-func (b *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1104,4 +1103,3 @@ func (b *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) ToStr
 
 	return returns
 }
-

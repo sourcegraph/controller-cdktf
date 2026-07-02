@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsLaunchTemplateInstanceMarketOptionsSpotOptionsOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLaunchTemplateInstanceMarketOptionsSpotOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsLaunchTemplateInstanceMarketOptionsSpotOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsLaunchTemplateInstanceMarketOptionsSpotOptionsOutputRefer
 
 	return nil
 }
-

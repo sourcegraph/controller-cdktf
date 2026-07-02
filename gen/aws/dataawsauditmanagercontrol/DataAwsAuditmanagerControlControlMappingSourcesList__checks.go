@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesList) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataAwsAuditmanagerControlControlMappingSourcesListParameters(te
 
 	return nil
 }
-

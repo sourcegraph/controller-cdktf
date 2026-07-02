@@ -34,7 +34,7 @@ func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesList) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewConnectRoutingProfileMediaConcurrenciesListParameters(terraformR
 
 	return nil
 }
-

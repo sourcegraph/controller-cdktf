@@ -19,7 +19,7 @@ func (v *jsiiProxy_VpnGateway) validateAddMoveTargetParameters(moveTarget *strin
 	return nil
 }
 
-func (v *jsiiProxy_VpnGateway) validateAddOverrideParameters(path *string, value interface{}) error {
+func (v *jsiiProxy_VpnGateway) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (v *jsiiProxy_VpnGateway) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VpnGateway) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (v *jsiiProxy_VpnGateway) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateVpnGateway_GenerateConfigForImportParameters(scope constructs.Const
 	return nil
 }
 
-func validateVpnGateway_IsConstructParameters(x interface{}) error {
+func validateVpnGateway_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateVpnGateway_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateVpnGateway_IsTerraformElementParameters(x interface{}) error {
+func validateVpnGateway_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateVpnGateway_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateVpnGateway_IsTerraformResourceParameters(x interface{}) error {
+func validateVpnGateway_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -260,7 +260,7 @@ func (j *jsiiProxy_VpnGateway) validateSetAvailabilityZoneParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_VpnGateway) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_VpnGateway) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -293,7 +293,7 @@ func (j *jsiiProxy_VpnGateway) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_VpnGateway) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_VpnGateway) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_VpnGateway) validateSetLifecycleParameters(val *cdktf.Terrafo
 	return nil
 }
 
-func (j *jsiiProxy_VpnGateway) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_VpnGateway) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -451,4 +451,3 @@ func validateNewVpnGatewayParameters(scope constructs.Construct, id *string, con
 
 	return nil
 }
-

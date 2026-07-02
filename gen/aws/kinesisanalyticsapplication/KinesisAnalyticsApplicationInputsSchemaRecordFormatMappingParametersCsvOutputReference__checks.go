@@ -98,7 +98,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingPar
 	return nil
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsvOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsvOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewKinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParame
 
 	return nil
 }
-

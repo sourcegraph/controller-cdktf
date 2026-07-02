@@ -18,15 +18,15 @@ type ServicecatalogPrincipalPortfolioAssociation interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,26 +62,26 @@ type ServicecatalogPrincipalPortfolioAssociation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ServicecatalogPrincipalPortfolioAssociationTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type ServicecatalogPrincipalPortfolioAssociation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -111,7 +111,7 @@ type ServicecatalogPrincipalPortfolioAssociation interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -126,17 +126,17 @@ type ServicecatalogPrincipalPortfolioAssociation interface {
 	ResetOverrideLogicalId()
 	ResetPrincipalType()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ServicecatalogPrincipalPortfolioAssociation
@@ -174,8 +174,8 @@ func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) CdktfStack() cdk
 	return returns
 }
 
-func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) Connection() int
 	return returns
 }
 
-func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) ConstructNodeMet
 	return returns
 }
 
-func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -354,8 +354,8 @@ func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) Provider() cdktf
 	return returns
 }
 
-func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -364,8 +364,8 @@ func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) Provisioners() *
 	return returns
 }
 
-func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -384,8 +384,8 @@ func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) TerraformGenerat
 	return returns
 }
 
-func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -414,8 +414,8 @@ func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) Timeouts() Servi
 	return returns
 }
 
-func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -423,7 +423,6 @@ func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) TimeoutsInput() 
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/servicecatalog_principal_portfolio_association aws_servicecatalog_principal_portfolio_association} Resource.
 func NewServicecatalogPrincipalPortfolioAssociation(scope constructs.Construct, id *string, config *ServicecatalogPrincipalPortfolioAssociationConfig) ServicecatalogPrincipalPortfolioAssociation {
@@ -436,7 +435,7 @@ func NewServicecatalogPrincipalPortfolioAssociation(scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.servicecatalogPrincipalPortfolioAssociation.ServicecatalogPrincipalPortfolioAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -449,12 +448,12 @@ func NewServicecatalogPrincipalPortfolioAssociation_Override(s ServicecatalogPri
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.servicecatalogPrincipalPortfolioAssociation.ServicecatalogPrincipalPortfolioAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation)SetAcceptLanguage(val *string) {
+func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) SetAcceptLanguage(val *string) {
 	if err := j.validateSetAcceptLanguageParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation)SetAcceptLanguage
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation)SetConnection(val interface{}) {
+func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation)SetConnection(val
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation)SetCount(val interface{}) {
+func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation)SetCount(val inte
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -495,7 +494,7 @@ func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation)SetDependsOn(val 
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -503,7 +502,7 @@ func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation)SetForEach(val cd
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation)SetId(val *string) {
+func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -514,7 +513,7 @@ func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation)SetId(val *string
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -525,7 +524,7 @@ func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation)SetLifecycle(val 
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation)SetPortfolioId(val *string) {
+func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) SetPortfolioId(val *string) {
 	if err := j.validateSetPortfolioIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -536,7 +535,7 @@ func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation)SetPortfolioId(va
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation)SetPrincipalArn(val *string) {
+func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) SetPrincipalArn(val *string) {
 	if err := j.validateSetPrincipalArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation)SetPrincipalArn(v
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation)SetPrincipalType(val *string) {
+func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) SetPrincipalType(val *string) {
 	if err := j.validateSetPrincipalTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -558,7 +557,7 @@ func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation)SetPrincipalType(
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -566,7 +565,7 @@ func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation)SetProvider(val c
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -589,7 +588,7 @@ func ServicecatalogPrincipalPortfolioAssociation_GenerateConfigForImport(scope c
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.servicecatalogPrincipalPortfolioAssociation.ServicecatalogPrincipalPortfolioAssociation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func ServicecatalogPrincipalPortfolioAssociation_GenerateConfigForImport(scope c
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ServicecatalogPrincipalPortfolioAssociation_IsConstruct(x interface{}) *bool {
+func ServicecatalogPrincipalPortfolioAssociation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateServicecatalogPrincipalPortfolioAssociation_IsConstructParameters(x); err != nil {
@@ -624,7 +623,7 @@ func ServicecatalogPrincipalPortfolioAssociation_IsConstruct(x interface{}) *boo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.servicecatalogPrincipalPortfolioAssociation.ServicecatalogPrincipalPortfolioAssociation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -632,7 +631,7 @@ func ServicecatalogPrincipalPortfolioAssociation_IsConstruct(x interface{}) *boo
 }
 
 // Experimental.
-func ServicecatalogPrincipalPortfolioAssociation_IsTerraformElement(x interface{}) *bool {
+func ServicecatalogPrincipalPortfolioAssociation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateServicecatalogPrincipalPortfolioAssociation_IsTerraformElementParameters(x); err != nil {
@@ -643,7 +642,7 @@ func ServicecatalogPrincipalPortfolioAssociation_IsTerraformElement(x interface{
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.servicecatalogPrincipalPortfolioAssociation.ServicecatalogPrincipalPortfolioAssociation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -651,7 +650,7 @@ func ServicecatalogPrincipalPortfolioAssociation_IsTerraformElement(x interface{
 }
 
 // Experimental.
-func ServicecatalogPrincipalPortfolioAssociation_IsTerraformResource(x interface{}) *bool {
+func ServicecatalogPrincipalPortfolioAssociation_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateServicecatalogPrincipalPortfolioAssociation_IsTerraformResourceParameters(x); err != nil {
@@ -662,7 +661,7 @@ func ServicecatalogPrincipalPortfolioAssociation_IsTerraformResource(x interface
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.servicecatalogPrincipalPortfolioAssociation.ServicecatalogPrincipalPortfolioAssociation",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -687,31 +686,31 @@ func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) AddMoveTarget(mo
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) GetBooleanAttrib
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) GetBooleanMapAtt
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) GetListAttribute
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) GetNumberAttribu
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -791,7 +790,7 @@ func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) GetNumberListAtt
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -807,7 +806,7 @@ func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) GetNumberMapAttr
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,7 +822,7 @@ func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) GetStringAttribu
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -839,15 +838,15 @@ func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) GetStringMapAttr
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -866,7 +865,7 @@ func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) ImportFrom(id *s
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -879,7 +878,7 @@ func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) InterpolationFor
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -893,18 +892,18 @@ func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) MoveFromId(id *s
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -915,7 +914,7 @@ func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) MoveToId(id *str
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -926,7 +925,7 @@ func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) OverrideLogicalI
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -937,7 +936,7 @@ func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) PutTimeouts(valu
 	_jsii_.InvokeVoid(
 		s,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -981,8 +980,8 @@ func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) ResetTimeouts() 
 	)
 }
 
-func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -994,8 +993,8 @@ func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) SynthesizeAttrib
 	return returns
 }
 
-func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1007,8 +1006,8 @@ func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) SynthesizeHclAtt
 	return returns
 }
 
-func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1020,8 +1019,8 @@ func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) ToHclTerraform()
 	return returns
 }
 
-func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1046,8 +1045,8 @@ func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) ToString() *stri
 	return returns
 }
 
-func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1058,4 +1057,3 @@ func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) ToTerraform() in
 
 	return returns
 }
-

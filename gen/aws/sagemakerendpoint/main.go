@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerEndpoint.SagemakerEndpoint",
-		reflect.TypeOf((*SagemakerEndpoint)(nil)).Elem(),
+		reflect.TypeFor[SagemakerEndpoint](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,7 +72,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerEndpoint{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -80,23 +80,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerEndpoint.SagemakerEndpointConfig",
-		reflect.TypeOf((*SagemakerEndpointConfig)(nil)).Elem(),
+		reflect.TypeFor[SagemakerEndpointConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfig",
-		reflect.TypeOf((*SagemakerEndpointDeploymentConfig)(nil)).Elem(),
+		reflect.TypeFor[SagemakerEndpointDeploymentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigAutoRollbackConfiguration",
-		reflect.TypeOf((*SagemakerEndpointDeploymentConfigAutoRollbackConfiguration)(nil)).Elem(),
+		reflect.TypeFor[SagemakerEndpointDeploymentConfigAutoRollbackConfiguration](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarms",
-		reflect.TypeOf((*SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarms)(nil)).Elem(),
+		reflect.TypeFor[SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarms](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsList",
-		reflect.TypeOf((*SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsList)(nil)).Elem(),
+		reflect.TypeFor[SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -110,7 +110,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -118,7 +118,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsOutputReference",
-		reflect.TypeOf((*SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alarmName", GoGetter: "AlarmName"},
 			_jsii_.MemberProperty{JsiiProperty: "alarmNameInput", GoGetter: "AlarmNameInput"},
@@ -144,7 +144,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -152,7 +152,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference",
-		reflect.TypeOf((*SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alarms", GoGetter: "Alarms"},
 			_jsii_.MemberProperty{JsiiProperty: "alarmsInput", GoGetter: "AlarmsInput"},
@@ -180,7 +180,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -188,11 +188,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicy",
-		reflect.TypeOf((*SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicy)(nil)).Elem(),
+		reflect.TypeFor[SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyOutputReference",
-		reflect.TypeOf((*SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -225,7 +225,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "trafficRoutingConfiguration", GoGetter: "TrafficRoutingConfiguration"},
 			_jsii_.MemberProperty{JsiiProperty: "trafficRoutingConfigurationInput", GoGetter: "TrafficRoutingConfigurationInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -233,15 +233,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfiguration",
-		reflect.TypeOf((*SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfiguration)(nil)).Elem(),
+		reflect.TypeFor[SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfiguration](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySize",
-		reflect.TypeOf((*SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySize)(nil)).Elem(),
+		reflect.TypeFor[SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySize](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySizeOutputReference",
-		reflect.TypeOf((*SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySizeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySizeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -269,7 +269,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySizeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -277,11 +277,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLinearStepSize",
-		reflect.TypeOf((*SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLinearStepSize)(nil)).Elem(),
+		reflect.TypeFor[SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLinearStepSize](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLinearStepSizeOutputReference",
-		reflect.TypeOf((*SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLinearStepSizeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLinearStepSizeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -309,7 +309,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLinearStepSizeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -317,7 +317,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationOutputReference",
-		reflect.TypeOf((*SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "canarySize", GoGetter: "CanarySize"},
 			_jsii_.MemberProperty{JsiiProperty: "canarySizeInput", GoGetter: "CanarySizeInput"},
@@ -353,7 +353,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "waitIntervalInSeconds", GoGetter: "WaitIntervalInSeconds"},
 			_jsii_.MemberProperty{JsiiProperty: "waitIntervalInSecondsInput", GoGetter: "WaitIntervalInSecondsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -361,7 +361,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigOutputReference",
-		reflect.TypeOf((*SagemakerEndpointDeploymentConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SagemakerEndpointDeploymentConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoRollbackConfiguration", GoGetter: "AutoRollbackConfiguration"},
 			_jsii_.MemberProperty{JsiiProperty: "autoRollbackConfigurationInput", GoGetter: "AutoRollbackConfigurationInput"},
@@ -392,7 +392,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerEndpointDeploymentConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

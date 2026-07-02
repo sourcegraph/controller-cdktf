@@ -19,7 +19,7 @@ func (n *jsiiProxy_NetworkmanagerGlobalNetwork) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (n *jsiiProxy_NetworkmanagerGlobalNetwork) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NetworkmanagerGlobalNetwork) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NetworkmanagerGlobalNetwork) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (n *jsiiProxy_NetworkmanagerGlobalNetwork) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NetworkmanagerGlobalNetwork) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateNetworkmanagerGlobalNetwork_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateNetworkmanagerGlobalNetwork_IsConstructParameters(x interface{}) error {
+func validateNetworkmanagerGlobalNetwork_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateNetworkmanagerGlobalNetwork_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateNetworkmanagerGlobalNetwork_IsTerraformElementParameters(x interface{}) error {
+func validateNetworkmanagerGlobalNetwork_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateNetworkmanagerGlobalNetwork_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateNetworkmanagerGlobalNetwork_IsTerraformResourceParameters(x interface{}) error {
+func validateNetworkmanagerGlobalNetwork_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateNetworkmanagerGlobalNetwork_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_NetworkmanagerGlobalNetwork) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkmanagerGlobalNetwork) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_NetworkmanagerGlobalNetwork) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_NetworkmanagerGlobalNetwork) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkmanagerGlobalNetwork) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -369,7 +369,7 @@ func (j *jsiiProxy_NetworkmanagerGlobalNetwork) validateSetLifecycleParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_NetworkmanagerGlobalNetwork) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NetworkmanagerGlobalNetwork) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -446,4 +446,3 @@ func validateNewNetworkmanagerGlobalNetworkParameters(scope constructs.Construct
 
 	return nil
 }
-

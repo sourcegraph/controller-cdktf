@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteTimeoutPerRequestOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteTimeoutPerRequestOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteTimeoutPerRequestOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewAppmeshRouteSpecHttp2RouteTimeoutPerRequestOutputReferenceParame
 
 	return nil
 }
-

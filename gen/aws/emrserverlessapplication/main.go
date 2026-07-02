@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplication",
-		reflect.TypeOf((*EmrserverlessApplication)(nil)).Elem(),
+		reflect.TypeFor[EmrserverlessApplication](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -92,7 +92,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EmrserverlessApplication{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -100,11 +100,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationAutoStartConfiguration",
-		reflect.TypeOf((*EmrserverlessApplicationAutoStartConfiguration)(nil)).Elem(),
+		reflect.TypeFor[EmrserverlessApplicationAutoStartConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationAutoStartConfigurationOutputReference",
-		reflect.TypeOf((*EmrserverlessApplicationAutoStartConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EmrserverlessApplicationAutoStartConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -131,7 +131,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EmrserverlessApplicationAutoStartConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -139,11 +139,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationAutoStopConfiguration",
-		reflect.TypeOf((*EmrserverlessApplicationAutoStopConfiguration)(nil)).Elem(),
+		reflect.TypeFor[EmrserverlessApplicationAutoStopConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationAutoStopConfigurationOutputReference",
-		reflect.TypeOf((*EmrserverlessApplicationAutoStopConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EmrserverlessApplicationAutoStopConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -173,7 +173,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EmrserverlessApplicationAutoStopConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -181,19 +181,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationConfig",
-		reflect.TypeOf((*EmrserverlessApplicationConfig)(nil)).Elem(),
+		reflect.TypeFor[EmrserverlessApplicationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacity",
-		reflect.TypeOf((*EmrserverlessApplicationInitialCapacity)(nil)).Elem(),
+		reflect.TypeFor[EmrserverlessApplicationInitialCapacity](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfig",
-		reflect.TypeOf((*EmrserverlessApplicationInitialCapacityInitialCapacityConfig)(nil)).Elem(),
+		reflect.TypeFor[EmrserverlessApplicationInitialCapacityInitialCapacityConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfigOutputReference",
-		reflect.TypeOf((*EmrserverlessApplicationInitialCapacityInitialCapacityConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EmrserverlessApplicationInitialCapacityInitialCapacityConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -223,7 +223,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workerCount", GoGetter: "WorkerCount"},
 			_jsii_.MemberProperty{JsiiProperty: "workerCountInput", GoGetter: "WorkerCountInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EmrserverlessApplicationInitialCapacityInitialCapacityConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -231,11 +231,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfiguration",
-		reflect.TypeOf((*EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfiguration)(nil)).Elem(),
+		reflect.TypeFor[EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationOutputReference",
-		reflect.TypeOf((*EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -266,7 +266,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -274,7 +274,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityList",
-		reflect.TypeOf((*EmrserverlessApplicationInitialCapacityList)(nil)).Elem(),
+		reflect.TypeFor[EmrserverlessApplicationInitialCapacityList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -288,7 +288,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EmrserverlessApplicationInitialCapacityList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -296,7 +296,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityOutputReference",
-		reflect.TypeOf((*EmrserverlessApplicationInitialCapacityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EmrserverlessApplicationInitialCapacityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -326,7 +326,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EmrserverlessApplicationInitialCapacityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -334,11 +334,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationMaximumCapacity",
-		reflect.TypeOf((*EmrserverlessApplicationMaximumCapacity)(nil)).Elem(),
+		reflect.TypeFor[EmrserverlessApplicationMaximumCapacity](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationMaximumCapacityOutputReference",
-		reflect.TypeOf((*EmrserverlessApplicationMaximumCapacityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EmrserverlessApplicationMaximumCapacityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -369,7 +369,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -377,11 +377,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationNetworkConfiguration",
-		reflect.TypeOf((*EmrserverlessApplicationNetworkConfiguration)(nil)).Elem(),
+		reflect.TypeFor[EmrserverlessApplicationNetworkConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationNetworkConfigurationOutputReference",
-		reflect.TypeOf((*EmrserverlessApplicationNetworkConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EmrserverlessApplicationNetworkConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -411,7 +411,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EmrserverlessApplicationNetworkConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

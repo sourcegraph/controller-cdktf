@@ -98,7 +98,7 @@ func (s *jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersAutomationPar
 	return nil
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersAutomationPar
 	return nil
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewSsmMaintenanceWindowTaskTaskInvocationParametersAutomationParame
 
 	return nil
 }
-

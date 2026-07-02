@@ -12,9 +12,9 @@ type Route53RecordLatencyRoutingPolicyOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,7 +43,7 @@ type Route53RecordLatencyRoutingPolicyOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,7 +66,7 @@ type Route53RecordLatencyRoutingPolicyOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,8 +79,8 @@ type jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -169,7 +169,6 @@ func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) TerraformRe
 	return returns
 }
 
-
 func NewRoute53RecordLatencyRoutingPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) Route53RecordLatencyRoutingPolicyOutputReference {
 	_init_.Initialize()
 
@@ -180,7 +179,7 @@ func NewRoute53RecordLatencyRoutingPolicyOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.route53Record.Route53RecordLatencyRoutingPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -192,12 +191,12 @@ func NewRoute53RecordLatencyRoutingPolicyOutputReference_Override(r Route53Recor
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.route53Record.Route53RecordLatencyRoutingPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		r,
 	)
 }
 
-func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +207,7 @@ func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference)SetInternalValue(val *Route53RecordLatencyRoutingPolicy) {
+func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) SetInternalValue(val *Route53RecordLatencyRoutingPolicy) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference)SetRegion(val *string) {
+func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference)SetRegion(va
 	)
 }
 
-func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -252,7 +251,7 @@ func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,16 +275,16 @@ func (r *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) ComputeFqn(
 	return returns
 }
 
-func (r *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -301,7 +300,7 @@ func (r *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -317,7 +316,7 @@ func (r *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -333,7 +332,7 @@ func (r *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) GetListAttr
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -349,7 +348,7 @@ func (r *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -365,7 +364,7 @@ func (r *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -381,7 +380,7 @@ func (r *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (r *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) GetStringAt
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (r *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) GetStringMa
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,23 +441,23 @@ func (r *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) Interpolati
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -477,4 +476,3 @@ func (r *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) ToString() 
 
 	return returns
 }
-

@@ -12,9 +12,9 @@ type OpensearchDomainDomainEndpointOptionsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,13 +30,13 @@ type OpensearchDomainDomainEndpointOptionsOutputReference interface {
 	CustomEndpointCertificateArn() *string
 	SetCustomEndpointCertificateArn(val *string)
 	CustomEndpointCertificateArnInput() *string
-	CustomEndpointEnabled() interface{}
-	SetCustomEndpointEnabled(val interface{})
-	CustomEndpointEnabledInput() interface{}
+	CustomEndpointEnabled() any
+	SetCustomEndpointEnabled(val any)
+	CustomEndpointEnabledInput() any
 	CustomEndpointInput() *string
-	EnforceHttps() interface{}
-	SetEnforceHttps(val interface{})
-	EnforceHttpsInput() interface{}
+	EnforceHttps() any
+	SetEnforceHttps(val any)
+	EnforceHttpsInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *OpensearchDomainDomainEndpointOptions
@@ -55,7 +55,7 @@ type OpensearchDomainDomainEndpointOptionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type OpensearchDomainDomainEndpointOptionsOutputReference interface {
 	ResetTlsSecurityPolicy()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ type jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) CustomE
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) CustomEndpointEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) CustomEndpointEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"customEndpointEnabled",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) CustomE
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) CustomEndpointEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) CustomEndpointEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"customEndpointEnabledInput",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) CustomE
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) EnforceHttps() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) EnforceHttps() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enforceHttps",
@@ -196,8 +196,8 @@ func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) Enforce
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) EnforceHttpsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) EnforceHttpsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enforceHttpsInput",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) TlsSecu
 	return returns
 }
 
-
 func NewOpensearchDomainDomainEndpointOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OpensearchDomainDomainEndpointOptionsOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewOpensearchDomainDomainEndpointOptionsOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainDomainEndpointOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewOpensearchDomainDomainEndpointOptionsOutputReference_Override(o Opensear
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainDomainEndpointOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference)SetCustomEndpoint(val *string) {
+func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) SetCustomEndpoint(val *string) {
 	if err := j.validateSetCustomEndpointParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference)SetCusto
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference)SetCustomEndpointCertificateArn(val *string) {
+func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) SetCustomEndpointCertificateArn(val *string) {
 	if err := j.validateSetCustomEndpointCertificateArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference)SetCusto
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference)SetCustomEndpointEnabled(val interface{}) {
+func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) SetCustomEndpointEnabled(val any) {
 	if err := j.validateSetCustomEndpointEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference)SetCusto
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference)SetEnforceHttps(val interface{}) {
+func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) SetEnforceHttps(val any) {
 	if err := j.validateSetEnforceHttpsParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference)SetEnfor
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference)SetInternalValue(val *OpensearchDomainDomainEndpointOptions) {
+func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) SetInternalValue(val *OpensearchDomainDomainEndpointOptions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference)SetTlsSecurityPolicy(val *string) {
+func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) SetTlsSecurityPolicy(val *string) {
 	if err := j.validateSetTlsSecurityPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,16 +416,16 @@ func (o *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) Compute
 	return returns
 }
 
-func (o *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (o *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) GetBool
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (o *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) GetBool
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (o *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) GetList
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (o *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) GetNumb
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (o *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) GetNumb
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func (o *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) GetNumb
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (o *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) GetStri
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (o *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) GetStri
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (o *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) Interpo
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -630,16 +629,16 @@ func (o *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) ResetTl
 	)
 }
 
-func (o *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (o *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := o.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (o *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) ToStrin
 
 	return returns
 }
-

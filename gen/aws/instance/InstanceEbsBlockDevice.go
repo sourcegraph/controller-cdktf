@@ -1,13 +1,12 @@
 package instance
 
-
 type InstanceEbsBlockDevice struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/instance#device_name Instance#device_name}.
 	DeviceName *string `field:"required" json:"deviceName" yaml:"deviceName"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/instance#delete_on_termination Instance#delete_on_termination}.
-	DeleteOnTermination interface{} `field:"optional" json:"deleteOnTermination" yaml:"deleteOnTermination"`
+	DeleteOnTermination any `field:"optional" json:"deleteOnTermination" yaml:"deleteOnTermination"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/instance#encrypted Instance#encrypted}.
-	Encrypted interface{} `field:"optional" json:"encrypted" yaml:"encrypted"`
+	Encrypted any `field:"optional" json:"encrypted" yaml:"encrypted"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/instance#iops Instance#iops}.
 	Iops *float64 `field:"optional" json:"iops" yaml:"iops"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/instance#kms_key_id Instance#kms_key_id}.
@@ -23,4 +22,3 @@ type InstanceEbsBlockDevice struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/instance#volume_type Instance#volume_type}.
 	VolumeType *string `field:"optional" json:"volumeType" yaml:"volumeType"`
 }
-

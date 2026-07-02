@@ -34,7 +34,7 @@ func (i *jsiiProxy_IotTopicRuleSnsList) validateResolveParameters(_context cdktf
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleSnsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRuleSnsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewIotTopicRuleSnsListParameters(terraformResource cdktf.IInterpola
 
 	return nil
 }
-

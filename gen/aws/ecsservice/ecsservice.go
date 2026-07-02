@@ -15,22 +15,22 @@ type EcsService interface {
 	Alarms() EcsServiceAlarmsOutputReference
 	AlarmsInput() *EcsServiceAlarms
 	CapacityProviderStrategy() EcsServiceCapacityProviderStrategyList
-	CapacityProviderStrategyInput() interface{}
+	CapacityProviderStrategyInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Cluster() *string
 	SetCluster(val *string)
 	ClusterInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -48,15 +48,15 @@ type EcsService interface {
 	DesiredCount() *float64
 	SetDesiredCount(val *float64)
 	DesiredCountInput() *float64
-	EnableEcsManagedTags() interface{}
-	SetEnableEcsManagedTags(val interface{})
-	EnableEcsManagedTagsInput() interface{}
-	EnableExecuteCommand() interface{}
-	SetEnableExecuteCommand(val interface{})
-	EnableExecuteCommandInput() interface{}
-	ForceNewDeployment() interface{}
-	SetForceNewDeployment(val interface{})
-	ForceNewDeploymentInput() interface{}
+	EnableEcsManagedTags() any
+	SetEnableEcsManagedTags(val any)
+	EnableEcsManagedTagsInput() any
+	EnableExecuteCommand() any
+	SetEnableExecuteCommand(val any)
+	EnableExecuteCommandInput() any
+	ForceNewDeployment() any
+	SetForceNewDeployment(val any)
+	ForceNewDeploymentInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -82,7 +82,7 @@ type EcsService interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	LoadBalancer() EcsServiceLoadBalancerList
-	LoadBalancerInput() interface{}
+	LoadBalancerInput() any
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -91,9 +91,9 @@ type EcsService interface {
 	// The tree node.
 	Node() constructs.Node
 	OrderedPlacementStrategy() EcsServiceOrderedPlacementStrategyList
-	OrderedPlacementStrategyInput() interface{}
+	OrderedPlacementStrategyInput() any
 	PlacementConstraints() EcsServicePlacementConstraintsList
-	PlacementConstraintsInput() interface{}
+	PlacementConstraintsInput() any
 	PlatformVersion() *string
 	SetPlatformVersion(val *string)
 	PlatformVersionInput() *string
@@ -105,11 +105,11 @@ type EcsService interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SchedulingStrategy() *string
 	SetSchedulingStrategy(val *string)
 	SchedulingStrategyInput() *string
@@ -129,24 +129,24 @@ type EcsService interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() EcsServiceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Triggers() *map[string]*string
 	SetTriggers(val *map[string]*string)
 	TriggersInput() *map[string]*string
-	WaitForSteadyState() interface{}
-	SetWaitForSteadyState(val interface{})
-	WaitForSteadyStateInput() interface{}
+	WaitForSteadyState() any
+	SetWaitForSteadyState(val any)
+	WaitForSteadyStateInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -164,7 +164,7 @@ type EcsService interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -176,7 +176,7 @@ type EcsService interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -184,13 +184,13 @@ type EcsService interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAlarms(value *EcsServiceAlarms)
-	PutCapacityProviderStrategy(value interface{})
+	PutCapacityProviderStrategy(value any)
 	PutDeploymentCircuitBreaker(value *EcsServiceDeploymentCircuitBreaker)
 	PutDeploymentController(value *EcsServiceDeploymentController)
-	PutLoadBalancer(value interface{})
+	PutLoadBalancer(value any)
 	PutNetworkConfiguration(value *EcsServiceNetworkConfiguration)
-	PutOrderedPlacementStrategy(value interface{})
-	PutPlacementConstraints(value interface{})
+	PutOrderedPlacementStrategy(value any)
+	PutPlacementConstraints(value any)
 	PutServiceConnectConfiguration(value *EcsServiceServiceConnectConfiguration)
 	PutServiceRegistries(value *EcsServiceServiceRegistries)
 	PutTimeouts(value *EcsServiceTimeouts)
@@ -227,17 +227,17 @@ type EcsService interface {
 	ResetTimeouts()
 	ResetTriggers()
 	ResetWaitForSteadyState()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for EcsService
@@ -275,8 +275,8 @@ func (j *jsiiProxy_EcsService) CapacityProviderStrategy() EcsServiceCapacityProv
 	return returns
 }
 
-func (j *jsiiProxy_EcsService) CapacityProviderStrategyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsService) CapacityProviderStrategyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"capacityProviderStrategyInput",
@@ -315,8 +315,8 @@ func (j *jsiiProxy_EcsService) ClusterInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EcsService) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsService) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -325,8 +325,8 @@ func (j *jsiiProxy_EcsService) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EcsService) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EcsService) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -335,8 +335,8 @@ func (j *jsiiProxy_EcsService) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EcsService) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsService) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -455,8 +455,8 @@ func (j *jsiiProxy_EcsService) DesiredCountInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_EcsService) EnableEcsManagedTags() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsService) EnableEcsManagedTags() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableEcsManagedTags",
@@ -465,8 +465,8 @@ func (j *jsiiProxy_EcsService) EnableEcsManagedTags() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EcsService) EnableEcsManagedTagsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsService) EnableEcsManagedTagsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableEcsManagedTagsInput",
@@ -475,8 +475,8 @@ func (j *jsiiProxy_EcsService) EnableEcsManagedTagsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EcsService) EnableExecuteCommand() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsService) EnableExecuteCommand() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableExecuteCommand",
@@ -485,8 +485,8 @@ func (j *jsiiProxy_EcsService) EnableExecuteCommand() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EcsService) EnableExecuteCommandInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsService) EnableExecuteCommandInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableExecuteCommandInput",
@@ -495,8 +495,8 @@ func (j *jsiiProxy_EcsService) EnableExecuteCommandInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EcsService) ForceNewDeployment() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsService) ForceNewDeployment() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forceNewDeployment",
@@ -505,8 +505,8 @@ func (j *jsiiProxy_EcsService) ForceNewDeployment() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EcsService) ForceNewDeploymentInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsService) ForceNewDeploymentInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forceNewDeploymentInput",
@@ -645,8 +645,8 @@ func (j *jsiiProxy_EcsService) LoadBalancer() EcsServiceLoadBalancerList {
 	return returns
 }
 
-func (j *jsiiProxy_EcsService) LoadBalancerInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsService) LoadBalancerInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"loadBalancerInput",
@@ -715,8 +715,8 @@ func (j *jsiiProxy_EcsService) OrderedPlacementStrategy() EcsServiceOrderedPlace
 	return returns
 }
 
-func (j *jsiiProxy_EcsService) OrderedPlacementStrategyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsService) OrderedPlacementStrategyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"orderedPlacementStrategyInput",
@@ -735,8 +735,8 @@ func (j *jsiiProxy_EcsService) PlacementConstraints() EcsServicePlacementConstra
 	return returns
 }
 
-func (j *jsiiProxy_EcsService) PlacementConstraintsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsService) PlacementConstraintsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"placementConstraintsInput",
@@ -795,8 +795,8 @@ func (j *jsiiProxy_EcsService) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_EcsService) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_EcsService) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -805,8 +805,8 @@ func (j *jsiiProxy_EcsService) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EcsService) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsService) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -945,8 +945,8 @@ func (j *jsiiProxy_EcsService) TerraformGeneratorMetadata() *cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_EcsService) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EcsService) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -975,8 +975,8 @@ func (j *jsiiProxy_EcsService) Timeouts() EcsServiceTimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_EcsService) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsService) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -1005,8 +1005,8 @@ func (j *jsiiProxy_EcsService) TriggersInput() *map[string]*string {
 	return returns
 }
 
-func (j *jsiiProxy_EcsService) WaitForSteadyState() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsService) WaitForSteadyState() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"waitForSteadyState",
@@ -1015,8 +1015,8 @@ func (j *jsiiProxy_EcsService) WaitForSteadyState() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EcsService) WaitForSteadyStateInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsService) WaitForSteadyStateInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"waitForSteadyStateInput",
@@ -1024,7 +1024,6 @@ func (j *jsiiProxy_EcsService) WaitForSteadyStateInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_service aws_ecs_service} Resource.
 func NewEcsService(scope constructs.Construct, id *string, config *EcsServiceConfig) EcsService {
@@ -1037,7 +1036,7 @@ func NewEcsService(scope constructs.Construct, id *string, config *EcsServiceCon
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ecsService.EcsService",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -1050,12 +1049,12 @@ func NewEcsService_Override(e EcsService, scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ecsService.EcsService",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EcsService)SetCluster(val *string) {
+func (j *jsiiProxy_EcsService) SetCluster(val *string) {
 	if err := j.validateSetClusterParameters(val); err != nil {
 		panic(err)
 	}
@@ -1066,7 +1065,7 @@ func (j *jsiiProxy_EcsService)SetCluster(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EcsService)SetConnection(val interface{}) {
+func (j *jsiiProxy_EcsService) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1077,7 +1076,7 @@ func (j *jsiiProxy_EcsService)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EcsService)SetCount(val interface{}) {
+func (j *jsiiProxy_EcsService) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1088,7 +1087,7 @@ func (j *jsiiProxy_EcsService)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EcsService)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_EcsService) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1096,7 +1095,7 @@ func (j *jsiiProxy_EcsService)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EcsService)SetDeploymentMaximumPercent(val *float64) {
+func (j *jsiiProxy_EcsService) SetDeploymentMaximumPercent(val *float64) {
 	if err := j.validateSetDeploymentMaximumPercentParameters(val); err != nil {
 		panic(err)
 	}
@@ -1107,7 +1106,7 @@ func (j *jsiiProxy_EcsService)SetDeploymentMaximumPercent(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_EcsService)SetDeploymentMinimumHealthyPercent(val *float64) {
+func (j *jsiiProxy_EcsService) SetDeploymentMinimumHealthyPercent(val *float64) {
 	if err := j.validateSetDeploymentMinimumHealthyPercentParameters(val); err != nil {
 		panic(err)
 	}
@@ -1118,7 +1117,7 @@ func (j *jsiiProxy_EcsService)SetDeploymentMinimumHealthyPercent(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_EcsService)SetDesiredCount(val *float64) {
+func (j *jsiiProxy_EcsService) SetDesiredCount(val *float64) {
 	if err := j.validateSetDesiredCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1129,7 +1128,7 @@ func (j *jsiiProxy_EcsService)SetDesiredCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_EcsService)SetEnableEcsManagedTags(val interface{}) {
+func (j *jsiiProxy_EcsService) SetEnableEcsManagedTags(val any) {
 	if err := j.validateSetEnableEcsManagedTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1140,7 +1139,7 @@ func (j *jsiiProxy_EcsService)SetEnableEcsManagedTags(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EcsService)SetEnableExecuteCommand(val interface{}) {
+func (j *jsiiProxy_EcsService) SetEnableExecuteCommand(val any) {
 	if err := j.validateSetEnableExecuteCommandParameters(val); err != nil {
 		panic(err)
 	}
@@ -1151,7 +1150,7 @@ func (j *jsiiProxy_EcsService)SetEnableExecuteCommand(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EcsService)SetForceNewDeployment(val interface{}) {
+func (j *jsiiProxy_EcsService) SetForceNewDeployment(val any) {
 	if err := j.validateSetForceNewDeploymentParameters(val); err != nil {
 		panic(err)
 	}
@@ -1162,7 +1161,7 @@ func (j *jsiiProxy_EcsService)SetForceNewDeployment(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EcsService)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_EcsService) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1170,7 +1169,7 @@ func (j *jsiiProxy_EcsService)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_EcsService)SetHealthCheckGracePeriodSeconds(val *float64) {
+func (j *jsiiProxy_EcsService) SetHealthCheckGracePeriodSeconds(val *float64) {
 	if err := j.validateSetHealthCheckGracePeriodSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1181,7 +1180,7 @@ func (j *jsiiProxy_EcsService)SetHealthCheckGracePeriodSeconds(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_EcsService)SetIamRole(val *string) {
+func (j *jsiiProxy_EcsService) SetIamRole(val *string) {
 	if err := j.validateSetIamRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1192,7 +1191,7 @@ func (j *jsiiProxy_EcsService)SetIamRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EcsService)SetId(val *string) {
+func (j *jsiiProxy_EcsService) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1203,7 +1202,7 @@ func (j *jsiiProxy_EcsService)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EcsService)SetLaunchType(val *string) {
+func (j *jsiiProxy_EcsService) SetLaunchType(val *string) {
 	if err := j.validateSetLaunchTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1214,7 +1213,7 @@ func (j *jsiiProxy_EcsService)SetLaunchType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EcsService)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_EcsService) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1225,7 +1224,7 @@ func (j *jsiiProxy_EcsService)SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	)
 }
 
-func (j *jsiiProxy_EcsService)SetName(val *string) {
+func (j *jsiiProxy_EcsService) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1236,7 +1235,7 @@ func (j *jsiiProxy_EcsService)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EcsService)SetPlatformVersion(val *string) {
+func (j *jsiiProxy_EcsService) SetPlatformVersion(val *string) {
 	if err := j.validateSetPlatformVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1247,7 +1246,7 @@ func (j *jsiiProxy_EcsService)SetPlatformVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EcsService)SetPropagateTags(val *string) {
+func (j *jsiiProxy_EcsService) SetPropagateTags(val *string) {
 	if err := j.validateSetPropagateTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1258,7 +1257,7 @@ func (j *jsiiProxy_EcsService)SetPropagateTags(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EcsService)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_EcsService) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1266,7 +1265,7 @@ func (j *jsiiProxy_EcsService)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_EcsService)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_EcsService) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1277,7 +1276,7 @@ func (j *jsiiProxy_EcsService)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EcsService)SetSchedulingStrategy(val *string) {
+func (j *jsiiProxy_EcsService) SetSchedulingStrategy(val *string) {
 	if err := j.validateSetSchedulingStrategyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1288,7 +1287,7 @@ func (j *jsiiProxy_EcsService)SetSchedulingStrategy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EcsService)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_EcsService) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1299,7 +1298,7 @@ func (j *jsiiProxy_EcsService)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_EcsService)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_EcsService) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1310,7 +1309,7 @@ func (j *jsiiProxy_EcsService)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_EcsService)SetTaskDefinition(val *string) {
+func (j *jsiiProxy_EcsService) SetTaskDefinition(val *string) {
 	if err := j.validateSetTaskDefinitionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1321,7 +1320,7 @@ func (j *jsiiProxy_EcsService)SetTaskDefinition(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EcsService)SetTriggers(val *map[string]*string) {
+func (j *jsiiProxy_EcsService) SetTriggers(val *map[string]*string) {
 	if err := j.validateSetTriggersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1332,7 +1331,7 @@ func (j *jsiiProxy_EcsService)SetTriggers(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_EcsService)SetWaitForSteadyState(val interface{}) {
+func (j *jsiiProxy_EcsService) SetWaitForSteadyState(val any) {
 	if err := j.validateSetWaitForSteadyStateParameters(val); err != nil {
 		panic(err)
 	}
@@ -1355,7 +1354,7 @@ func EcsService_GenerateConfigForImport(scope constructs.Construct, importToId *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ecsService.EcsService",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1379,7 +1378,7 @@ func EcsService_GenerateConfigForImport(scope constructs.Construct, importToId *
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func EcsService_IsConstruct(x interface{}) *bool {
+func EcsService_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEcsService_IsConstructParameters(x); err != nil {
@@ -1390,7 +1389,7 @@ func EcsService_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ecsService.EcsService",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1398,7 +1397,7 @@ func EcsService_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func EcsService_IsTerraformElement(x interface{}) *bool {
+func EcsService_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEcsService_IsTerraformElementParameters(x); err != nil {
@@ -1409,7 +1408,7 @@ func EcsService_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ecsService.EcsService",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1417,7 +1416,7 @@ func EcsService_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func EcsService_IsTerraformResource(x interface{}) *bool {
+func EcsService_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEcsService_IsTerraformResourceParameters(x); err != nil {
@@ -1428,7 +1427,7 @@ func EcsService_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ecsService.EcsService",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1453,31 +1452,31 @@ func (e *jsiiProxy_EcsService) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_EcsService) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_EcsService) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_EcsService) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EcsService) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1493,7 +1492,7 @@ func (e *jsiiProxy_EcsService) GetBooleanAttribute(terraformAttribute *string) c
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1509,7 +1508,7 @@ func (e *jsiiProxy_EcsService) GetBooleanMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1525,7 +1524,7 @@ func (e *jsiiProxy_EcsService) GetListAttribute(terraformAttribute *string) *[]*
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1541,7 +1540,7 @@ func (e *jsiiProxy_EcsService) GetNumberAttribute(terraformAttribute *string) *f
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1557,7 +1556,7 @@ func (e *jsiiProxy_EcsService) GetNumberListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1573,7 +1572,7 @@ func (e *jsiiProxy_EcsService) GetNumberMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1589,7 +1588,7 @@ func (e *jsiiProxy_EcsService) GetStringAttribute(terraformAttribute *string) *s
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1605,15 +1604,15 @@ func (e *jsiiProxy_EcsService) GetStringMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EcsService) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EcsService) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1632,7 +1631,7 @@ func (e *jsiiProxy_EcsService) ImportFrom(id *string, provider cdktf.TerraformPr
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1645,7 +1644,7 @@ func (e *jsiiProxy_EcsService) InterpolationForAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1659,18 +1658,18 @@ func (e *jsiiProxy_EcsService) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_EcsService) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_EcsService) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1681,7 +1680,7 @@ func (e *jsiiProxy_EcsService) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1692,7 +1691,7 @@ func (e *jsiiProxy_EcsService) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1703,18 +1702,18 @@ func (e *jsiiProxy_EcsService) PutAlarms(value *EcsServiceAlarms) {
 	_jsii_.InvokeVoid(
 		e,
 		"putAlarms",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (e *jsiiProxy_EcsService) PutCapacityProviderStrategy(value interface{}) {
+func (e *jsiiProxy_EcsService) PutCapacityProviderStrategy(value any) {
 	if err := e.validatePutCapacityProviderStrategyParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"putCapacityProviderStrategy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1725,7 +1724,7 @@ func (e *jsiiProxy_EcsService) PutDeploymentCircuitBreaker(value *EcsServiceDepl
 	_jsii_.InvokeVoid(
 		e,
 		"putDeploymentCircuitBreaker",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1736,18 +1735,18 @@ func (e *jsiiProxy_EcsService) PutDeploymentController(value *EcsServiceDeployme
 	_jsii_.InvokeVoid(
 		e,
 		"putDeploymentController",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (e *jsiiProxy_EcsService) PutLoadBalancer(value interface{}) {
+func (e *jsiiProxy_EcsService) PutLoadBalancer(value any) {
 	if err := e.validatePutLoadBalancerParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"putLoadBalancer",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1758,29 +1757,29 @@ func (e *jsiiProxy_EcsService) PutNetworkConfiguration(value *EcsServiceNetworkC
 	_jsii_.InvokeVoid(
 		e,
 		"putNetworkConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (e *jsiiProxy_EcsService) PutOrderedPlacementStrategy(value interface{}) {
+func (e *jsiiProxy_EcsService) PutOrderedPlacementStrategy(value any) {
 	if err := e.validatePutOrderedPlacementStrategyParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"putOrderedPlacementStrategy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (e *jsiiProxy_EcsService) PutPlacementConstraints(value interface{}) {
+func (e *jsiiProxy_EcsService) PutPlacementConstraints(value any) {
 	if err := e.validatePutPlacementConstraintsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"putPlacementConstraints",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1791,7 +1790,7 @@ func (e *jsiiProxy_EcsService) PutServiceConnectConfiguration(value *EcsServiceS
 	_jsii_.InvokeVoid(
 		e,
 		"putServiceConnectConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1802,7 +1801,7 @@ func (e *jsiiProxy_EcsService) PutServiceRegistries(value *EcsServiceServiceRegi
 	_jsii_.InvokeVoid(
 		e,
 		"putServiceRegistries",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1813,7 +1812,7 @@ func (e *jsiiProxy_EcsService) PutTimeouts(value *EcsServiceTimeouts) {
 	_jsii_.InvokeVoid(
 		e,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2065,8 +2064,8 @@ func (e *jsiiProxy_EcsService) ResetWaitForSteadyState() {
 	)
 }
 
-func (e *jsiiProxy_EcsService) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EcsService) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -2078,8 +2077,8 @@ func (e *jsiiProxy_EcsService) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_EcsService) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EcsService) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -2091,8 +2090,8 @@ func (e *jsiiProxy_EcsService) SynthesizeHclAttributes() *map[string]interface{}
 	return returns
 }
 
-func (e *jsiiProxy_EcsService) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EcsService) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -2104,8 +2103,8 @@ func (e *jsiiProxy_EcsService) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_EcsService) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EcsService) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -2130,8 +2129,8 @@ func (e *jsiiProxy_EcsService) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_EcsService) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EcsService) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -2142,4 +2141,3 @@ func (e *jsiiProxy_EcsService) ToTerraform() interface{} {
 
 	return returns
 }
-

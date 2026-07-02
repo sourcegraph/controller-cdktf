@@ -19,7 +19,7 @@ func (c *jsiiProxy_CodestarnotificationsNotificationRule) validateAddMoveTargetP
 	return nil
 }
 
-func (c *jsiiProxy_CodestarnotificationsNotificationRule) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_CodestarnotificationsNotificationRule) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_CodestarnotificationsNotificationRule) validateMoveFromIdPara
 	return nil
 }
 
-func (c *jsiiProxy_CodestarnotificationsNotificationRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_CodestarnotificationsNotificationRule) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (c *jsiiProxy_CodestarnotificationsNotificationRule) validateOverrideLogica
 	return nil
 }
 
-func (c *jsiiProxy_CodestarnotificationsNotificationRule) validatePutTargetParameters(value interface{}) error {
+func (c *jsiiProxy_CodestarnotificationsNotificationRule) validatePutTargetParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateCodestarnotificationsNotificationRule_GenerateConfigForImportParame
 	return nil
 }
 
-func validateCodestarnotificationsNotificationRule_IsConstructParameters(x interface{}) error {
+func validateCodestarnotificationsNotificationRule_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateCodestarnotificationsNotificationRule_IsConstructParameters(x inter
 	return nil
 }
 
-func validateCodestarnotificationsNotificationRule_IsTerraformElementParameters(x interface{}) error {
+func validateCodestarnotificationsNotificationRule_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateCodestarnotificationsNotificationRule_IsTerraformElementParameters(
 	return nil
 }
 
-func validateCodestarnotificationsNotificationRule_IsTerraformResourceParameters(x interface{}) error {
+func validateCodestarnotificationsNotificationRule_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func validateCodestarnotificationsNotificationRule_IsTerraformResourceParameters
 	return nil
 }
 
-func (j *jsiiProxy_CodestarnotificationsNotificationRule) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_CodestarnotificationsNotificationRule) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -308,7 +308,7 @@ func (j *jsiiProxy_CodestarnotificationsNotificationRule) validateSetConnectionP
 	return nil
 }
 
-func (j *jsiiProxy_CodestarnotificationsNotificationRule) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_CodestarnotificationsNotificationRule) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -405,7 +405,7 @@ func (j *jsiiProxy_CodestarnotificationsNotificationRule) validateSetNameParamet
 	return nil
 }
 
-func (j *jsiiProxy_CodestarnotificationsNotificationRule) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_CodestarnotificationsNotificationRule) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -501,4 +501,3 @@ func validateNewCodestarnotificationsNotificationRuleParameters(scope constructs
 
 	return nil
 }
-

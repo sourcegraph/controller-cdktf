@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsConnectUserHierarchyGroupHierarchyPathOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsConnectUserHierarchyGroupHierarchyPathOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsConnectUserHierarchyGroupHierarchyPathOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsConnectUserHierarchyGroupHierarchyPathOutputReferencePara
 
 	return nil
 }
-

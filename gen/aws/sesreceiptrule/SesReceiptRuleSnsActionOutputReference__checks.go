@@ -98,7 +98,7 @@ func (s *jsiiProxy_SesReceiptRuleSnsActionOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_SesReceiptRuleSnsActionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SesReceiptRuleSnsActionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_SesReceiptRuleSnsActionOutputReference) validateSetEncodingPa
 	return nil
 }
 
-func (j *jsiiProxy_SesReceiptRuleSnsActionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SesReceiptRuleSnsActionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewSesReceiptRuleSnsActionOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

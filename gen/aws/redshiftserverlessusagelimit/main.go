@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.redshiftserverlessUsageLimit.RedshiftserverlessUsageLimit",
-		reflect.TypeOf((*RedshiftserverlessUsageLimit)(nil)).Elem(),
+		reflect.TypeFor[RedshiftserverlessUsageLimit](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "usageType", GoGetter: "UsageType"},
 			_jsii_.MemberProperty{JsiiProperty: "usageTypeInput", GoGetter: "UsageTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedshiftserverlessUsageLimit{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -77,6 +77,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.redshiftserverlessUsageLimit.RedshiftserverlessUsageLimitConfig",
-		reflect.TypeOf((*RedshiftserverlessUsageLimitConfig)(nil)).Elem(),
+		reflect.TypeFor[RedshiftserverlessUsageLimitConfig](),
 	)
 }

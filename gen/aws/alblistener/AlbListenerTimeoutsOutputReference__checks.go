@@ -98,7 +98,7 @@ func (a *jsiiProxy_AlbListenerTimeoutsOutputReference) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_AlbListenerTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlbListenerTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_AlbListenerTimeoutsOutputReference) validateSetComplexObjectI
 	return nil
 }
 
-func (j *jsiiProxy_AlbListenerTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlbListenerTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewAlbListenerTimeoutsOutputReferenceParameters(terraformResource c
 
 	return nil
 }
-

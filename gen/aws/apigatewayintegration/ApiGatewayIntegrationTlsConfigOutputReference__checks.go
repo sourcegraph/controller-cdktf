@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApiGatewayIntegrationTlsConfigOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_ApiGatewayIntegrationTlsConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApiGatewayIntegrationTlsConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ApiGatewayIntegrationTlsConfigOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_ApiGatewayIntegrationTlsConfigOutputReference) validateSetInsecureSkipVerificationParameters(val interface{}) error {
+func (j *jsiiProxy_ApiGatewayIntegrationTlsConfigOutputReference) validateSetInsecureSkipVerificationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewApiGatewayIntegrationTlsConfigOutputReferenceParameters(terrafor
 
 	return nil
 }
-

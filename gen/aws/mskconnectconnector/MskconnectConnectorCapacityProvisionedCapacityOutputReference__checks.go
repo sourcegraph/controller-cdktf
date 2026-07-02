@@ -98,7 +98,7 @@ func (m *jsiiProxy_MskconnectConnectorCapacityProvisionedCapacityOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_MskconnectConnectorCapacityProvisionedCapacityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MskconnectConnectorCapacityProvisionedCapacityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewMskconnectConnectorCapacityProvisionedCapacityOutputReferencePar
 
 	return nil
 }
-

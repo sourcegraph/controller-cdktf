@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig",
-		reflect.TypeOf((*CodedeployDeploymentConfig)(nil)).Elem(),
+		reflect.TypeFor[CodedeployDeploymentConfig](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "trafficRoutingConfig", GoGetter: "TrafficRoutingConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "trafficRoutingConfigInput", GoGetter: "TrafficRoutingConfigInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodedeployDeploymentConfig{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,15 +78,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfigConfig",
-		reflect.TypeOf((*CodedeployDeploymentConfigConfig)(nil)).Elem(),
+		reflect.TypeFor[CodedeployDeploymentConfigConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfigMinimumHealthyHosts",
-		reflect.TypeOf((*CodedeployDeploymentConfigMinimumHealthyHosts)(nil)).Elem(),
+		reflect.TypeFor[CodedeployDeploymentConfigMinimumHealthyHosts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfigMinimumHealthyHostsOutputReference",
-		reflect.TypeOf((*CodedeployDeploymentConfigMinimumHealthyHostsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CodedeployDeploymentConfigMinimumHealthyHostsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodedeployDeploymentConfigMinimumHealthyHostsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -124,11 +124,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfig",
-		reflect.TypeOf((*CodedeployDeploymentConfigTrafficRoutingConfig)(nil)).Elem(),
+		reflect.TypeFor[CodedeployDeploymentConfigTrafficRoutingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfigOutputReference",
-		reflect.TypeOf((*CodedeployDeploymentConfigTrafficRoutingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CodedeployDeploymentConfigTrafficRoutingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -163,7 +163,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodedeployDeploymentConfigTrafficRoutingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -171,11 +171,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanary",
-		reflect.TypeOf((*CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanary)(nil)).Elem(),
+		reflect.TypeFor[CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanary](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryOutputReference",
-		reflect.TypeOf((*CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -205,7 +205,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -213,11 +213,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinear",
-		reflect.TypeOf((*CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinear)(nil)).Elem(),
+		reflect.TypeFor[CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinear](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinearOutputReference",
-		reflect.TypeOf((*CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinearOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinearOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -247,7 +247,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinearOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

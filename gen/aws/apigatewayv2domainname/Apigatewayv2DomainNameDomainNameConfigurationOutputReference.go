@@ -15,9 +15,9 @@ type Apigatewayv2DomainNameDomainNameConfigurationOutputReference interface {
 	CertificateArnInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -54,7 +54,7 @@ type Apigatewayv2DomainNameDomainNameConfigurationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type Apigatewayv2DomainNameDomainNameConfigurationOutputReference interface {
 	ResetOwnershipVerificationCertificateArn()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -111,8 +111,8 @@ func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -261,7 +261,6 @@ func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)
 	return returns
 }
 
-
 func NewApigatewayv2DomainNameDomainNameConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) Apigatewayv2DomainNameDomainNameConfigurationOutputReference {
 	_init_.Initialize()
 
@@ -272,7 +271,7 @@ func NewApigatewayv2DomainNameDomainNameConfigurationOutputReference(terraformRe
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.apigatewayv2DomainName.Apigatewayv2DomainNameDomainNameConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -284,12 +283,12 @@ func NewApigatewayv2DomainNameDomainNameConfigurationOutputReference_Override(a 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.apigatewayv2DomainName.Apigatewayv2DomainNameDomainNameConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)SetCertificateArn(val *string) {
+func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) SetCertificateArn(val *string) {
 	if err := j.validateSetCertificateArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)SetEndpointType(val *string) {
+func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) SetEndpointType(val *string) {
 	if err := j.validateSetEndpointTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -333,7 +332,7 @@ func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)SetInternalValue(val *Apigatewayv2DomainNameDomainNameConfiguration) {
+func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) SetInternalValue(val *Apigatewayv2DomainNameDomainNameConfiguration) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -344,7 +343,7 @@ func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)SetOwnershipVerificationCertificateArn(val *string) {
+func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) SetOwnershipVerificationCertificateArn(val *string) {
 	if err := j.validateSetOwnershipVerificationCertificateArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -355,7 +354,7 @@ func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)SetSecurityPolicy(val *string) {
+func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) SetSecurityPolicy(val *string) {
 	if err := j.validateSetSecurityPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -366,7 +365,7 @@ func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -377,7 +376,7 @@ func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -401,16 +400,16 @@ func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)
 	return returns
 }
 
-func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -426,7 +425,7 @@ func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -567,7 +566,7 @@ func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -582,16 +581,16 @@ func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)
 	)
 }
 
-func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -610,4 +609,3 @@ func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)
 
 	return returns
 }
-

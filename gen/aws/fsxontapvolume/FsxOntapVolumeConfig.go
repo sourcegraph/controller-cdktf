@@ -6,9 +6,9 @@ import (
 
 type FsxOntapVolumeConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type FsxOntapVolumeConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fsx_ontap_volume#junction_path FsxOntapVolume#junction_path}.
 	JunctionPath *string `field:"required" json:"junctionPath" yaml:"junctionPath"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fsx_ontap_volume#name FsxOntapVolume#name}.
@@ -26,7 +26,7 @@ type FsxOntapVolumeConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fsx_ontap_volume#size_in_megabytes FsxOntapVolume#size_in_megabytes}.
 	SizeInMegabytes *float64 `field:"required" json:"sizeInMegabytes" yaml:"sizeInMegabytes"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fsx_ontap_volume#storage_efficiency_enabled FsxOntapVolume#storage_efficiency_enabled}.
-	StorageEfficiencyEnabled interface{} `field:"required" json:"storageEfficiencyEnabled" yaml:"storageEfficiencyEnabled"`
+	StorageEfficiencyEnabled any `field:"required" json:"storageEfficiencyEnabled" yaml:"storageEfficiencyEnabled"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fsx_ontap_volume#storage_virtual_machine_id FsxOntapVolume#storage_virtual_machine_id}.
 	StorageVirtualMachineId *string `field:"required" json:"storageVirtualMachineId" yaml:"storageVirtualMachineId"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fsx_ontap_volume#id FsxOntapVolume#id}.
@@ -51,4 +51,3 @@ type FsxOntapVolumeConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fsx_ontap_volume#volume_type FsxOntapVolume#volume_type}.
 	VolumeType *string `field:"optional" json:"volumeType" yaml:"volumeType"`
 }
-

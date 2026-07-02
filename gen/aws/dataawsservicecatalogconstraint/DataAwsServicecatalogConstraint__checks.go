@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsServicecatalogConstraint) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsServicecatalogConstraint) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -138,7 +138,7 @@ func validateDataAwsServicecatalogConstraint_GenerateConfigForImportParameters(s
 	return nil
 }
 
-func validateDataAwsServicecatalogConstraint_IsConstructParameters(x interface{}) error {
+func validateDataAwsServicecatalogConstraint_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -146,7 +146,7 @@ func validateDataAwsServicecatalogConstraint_IsConstructParameters(x interface{}
 	return nil
 }
 
-func validateDataAwsServicecatalogConstraint_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsServicecatalogConstraint_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -154,7 +154,7 @@ func validateDataAwsServicecatalogConstraint_IsTerraformDataSourceParameters(x i
 	return nil
 }
 
-func validateDataAwsServicecatalogConstraint_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsServicecatalogConstraint_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -170,7 +170,7 @@ func (j *jsiiProxy_DataAwsServicecatalogConstraint) validateSetAcceptLanguagePar
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsServicecatalogConstraint) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsServicecatalogConstraint) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -269,4 +269,3 @@ func validateNewDataAwsServicecatalogConstraintParameters(scope constructs.Const
 
 	return nil
 }
-

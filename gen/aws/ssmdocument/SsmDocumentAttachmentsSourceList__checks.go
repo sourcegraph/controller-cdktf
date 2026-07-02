@@ -34,7 +34,7 @@ func (s *jsiiProxy_SsmDocumentAttachmentsSourceList) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_SsmDocumentAttachmentsSourceList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SsmDocumentAttachmentsSourceList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSsmDocumentAttachmentsSourceListParameters(terraformResource cdk
 
 	return nil
 }
-

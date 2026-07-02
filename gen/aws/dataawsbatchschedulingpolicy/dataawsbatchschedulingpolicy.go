@@ -18,11 +18,11 @@ type DataAwsBatchSchedulingPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -51,20 +51,20 @@ type DataAwsBatchSchedulingPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,18 +91,18 @@ type DataAwsBatchSchedulingPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTags()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsBatchSchedulingPolicy
@@ -140,8 +140,8 @@ func (j *jsiiProxy_DataAwsBatchSchedulingPolicy) CdktfStack() cdktf.TerraformSta
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsBatchSchedulingPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsBatchSchedulingPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -150,8 +150,8 @@ func (j *jsiiProxy_DataAwsBatchSchedulingPolicy) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsBatchSchedulingPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsBatchSchedulingPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -270,8 +270,8 @@ func (j *jsiiProxy_DataAwsBatchSchedulingPolicy) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsBatchSchedulingPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsBatchSchedulingPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -310,8 +310,8 @@ func (j *jsiiProxy_DataAwsBatchSchedulingPolicy) TerraformGeneratorMetadata() *c
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsBatchSchedulingPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsBatchSchedulingPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -330,7 +330,6 @@ func (j *jsiiProxy_DataAwsBatchSchedulingPolicy) TerraformResourceType() *string
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/batch_scheduling_policy aws_batch_scheduling_policy} Data Source.
 func NewDataAwsBatchSchedulingPolicy(scope constructs.Construct, id *string, config *DataAwsBatchSchedulingPolicyConfig) DataAwsBatchSchedulingPolicy {
 	_init_.Initialize()
@@ -342,7 +341,7 @@ func NewDataAwsBatchSchedulingPolicy(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -355,12 +354,12 @@ func NewDataAwsBatchSchedulingPolicy_Override(d DataAwsBatchSchedulingPolicy, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsBatchSchedulingPolicy)SetArn(val *string) {
+func (j *jsiiProxy_DataAwsBatchSchedulingPolicy) SetArn(val *string) {
 	if err := j.validateSetArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_DataAwsBatchSchedulingPolicy)SetArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsBatchSchedulingPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsBatchSchedulingPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_DataAwsBatchSchedulingPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsBatchSchedulingPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsBatchSchedulingPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -390,7 +389,7 @@ func (j *jsiiProxy_DataAwsBatchSchedulingPolicy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsBatchSchedulingPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsBatchSchedulingPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -398,7 +397,7 @@ func (j *jsiiProxy_DataAwsBatchSchedulingPolicy)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_DataAwsBatchSchedulingPolicy)SetId(val *string) {
+func (j *jsiiProxy_DataAwsBatchSchedulingPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -409,7 +408,7 @@ func (j *jsiiProxy_DataAwsBatchSchedulingPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsBatchSchedulingPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsBatchSchedulingPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -420,7 +419,7 @@ func (j *jsiiProxy_DataAwsBatchSchedulingPolicy)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_DataAwsBatchSchedulingPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsBatchSchedulingPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -428,7 +427,7 @@ func (j *jsiiProxy_DataAwsBatchSchedulingPolicy)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_DataAwsBatchSchedulingPolicy)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsBatchSchedulingPolicy) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,7 +450,7 @@ func DataAwsBatchSchedulingPolicy_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -475,7 +474,7 @@ func DataAwsBatchSchedulingPolicy_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsBatchSchedulingPolicy_IsConstruct(x interface{}) *bool {
+func DataAwsBatchSchedulingPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsBatchSchedulingPolicy_IsConstructParameters(x); err != nil {
@@ -486,7 +485,7 @@ func DataAwsBatchSchedulingPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -494,7 +493,7 @@ func DataAwsBatchSchedulingPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsBatchSchedulingPolicy_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsBatchSchedulingPolicy_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsBatchSchedulingPolicy_IsTerraformDataSourceParameters(x); err != nil {
@@ -505,7 +504,7 @@ func DataAwsBatchSchedulingPolicy_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicy",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func DataAwsBatchSchedulingPolicy_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsBatchSchedulingPolicy_IsTerraformElement(x interface{}) *bool {
+func DataAwsBatchSchedulingPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsBatchSchedulingPolicy_IsTerraformElementParameters(x); err != nil {
@@ -524,7 +523,7 @@ func DataAwsBatchSchedulingPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -542,27 +541,27 @@ func DataAwsBatchSchedulingPolicy_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsBatchSchedulingPolicy) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsBatchSchedulingPolicy) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsBatchSchedulingPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsBatchSchedulingPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -578,7 +577,7 @@ func (d *jsiiProxy_DataAwsBatchSchedulingPolicy) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -594,7 +593,7 @@ func (d *jsiiProxy_DataAwsBatchSchedulingPolicy) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -610,7 +609,7 @@ func (d *jsiiProxy_DataAwsBatchSchedulingPolicy) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -626,7 +625,7 @@ func (d *jsiiProxy_DataAwsBatchSchedulingPolicy) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -642,7 +641,7 @@ func (d *jsiiProxy_DataAwsBatchSchedulingPolicy) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -658,7 +657,7 @@ func (d *jsiiProxy_DataAwsBatchSchedulingPolicy) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -674,7 +673,7 @@ func (d *jsiiProxy_DataAwsBatchSchedulingPolicy) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -690,7 +689,7 @@ func (d *jsiiProxy_DataAwsBatchSchedulingPolicy) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -706,7 +705,7 @@ func (d *jsiiProxy_DataAwsBatchSchedulingPolicy) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -720,7 +719,7 @@ func (d *jsiiProxy_DataAwsBatchSchedulingPolicy) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -748,8 +747,8 @@ func (d *jsiiProxy_DataAwsBatchSchedulingPolicy) ResetTags() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsBatchSchedulingPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsBatchSchedulingPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -761,8 +760,8 @@ func (d *jsiiProxy_DataAwsBatchSchedulingPolicy) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsBatchSchedulingPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsBatchSchedulingPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -774,8 +773,8 @@ func (d *jsiiProxy_DataAwsBatchSchedulingPolicy) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsBatchSchedulingPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsBatchSchedulingPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -787,8 +786,8 @@ func (d *jsiiProxy_DataAwsBatchSchedulingPolicy) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsBatchSchedulingPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsBatchSchedulingPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -813,8 +812,8 @@ func (d *jsiiProxy_DataAwsBatchSchedulingPolicy) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsBatchSchedulingPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsBatchSchedulingPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -825,4 +824,3 @@ func (d *jsiiProxy_DataAwsBatchSchedulingPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

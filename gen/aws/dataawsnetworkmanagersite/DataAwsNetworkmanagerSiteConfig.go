@@ -6,9 +6,9 @@ import (
 
 type DataAwsNetworkmanagerSiteConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DataAwsNetworkmanagerSiteConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/networkmanager_site#global_network_id DataAwsNetworkmanagerSite#global_network_id}.
 	GlobalNetworkId *string `field:"required" json:"globalNetworkId" yaml:"globalNetworkId"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/networkmanager_site#site_id DataAwsNetworkmanagerSite#site_id}.
@@ -31,4 +31,3 @@ type DataAwsNetworkmanagerSiteConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/networkmanager_site#tags DataAwsNetworkmanagerSite#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 }
-

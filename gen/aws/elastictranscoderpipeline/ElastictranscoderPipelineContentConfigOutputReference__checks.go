@@ -106,7 +106,7 @@ func (j *jsiiProxy_ElastictranscoderPipelineContentConfigOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_ElastictranscoderPipelineContentConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ElastictranscoderPipelineContentConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewElastictranscoderPipelineContentConfigOutputReferenceParameters(
 
 	return nil
 }
-

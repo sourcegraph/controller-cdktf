@@ -12,9 +12,9 @@ type AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference in
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,15 +30,15 @@ type AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference in
 	DocumentTypeInput() *string
 	// Experimental.
 	Fqn() *string
-	IncludeAllVersions() interface{}
-	SetIncludeAllVersions(val interface{})
-	IncludeAllVersionsInput() interface{}
-	IncludeRenditions() interface{}
-	SetIncludeRenditions(val interface{})
-	IncludeRenditionsInput() interface{}
-	IncludeSourceFiles() interface{}
-	SetIncludeSourceFiles(val interface{})
-	IncludeSourceFilesInput() interface{}
+	IncludeAllVersions() any
+	SetIncludeAllVersions(val any)
+	IncludeAllVersionsInput() any
+	IncludeRenditions() any
+	SetIncludeRenditions(val any)
+	IncludeRenditionsInput() any
+	IncludeSourceFiles() any
+	SetIncludeSourceFiles(val any)
+	IncludeSourceFilesInput() any
 	InternalValue() *AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva
 	SetInternalValue(val *AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva)
 	Object() *string
@@ -55,7 +55,7 @@ type AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference in
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -82,7 +82,7 @@ type AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference in
 	ResetIncludeSourceFiles()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -95,8 +95,8 @@ type jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputRe
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -155,8 +155,8 @@ func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutp
 	return returns
 }
 
-func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference) IncludeAllVersions() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference) IncludeAllVersions() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeAllVersions",
@@ -165,8 +165,8 @@ func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutp
 	return returns
 }
 
-func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference) IncludeAllVersionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference) IncludeAllVersionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeAllVersionsInput",
@@ -175,8 +175,8 @@ func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutp
 	return returns
 }
 
-func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference) IncludeRenditions() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference) IncludeRenditions() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeRenditions",
@@ -185,8 +185,8 @@ func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutp
 	return returns
 }
 
-func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference) IncludeRenditionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference) IncludeRenditionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeRenditionsInput",
@@ -195,8 +195,8 @@ func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutp
 	return returns
 }
 
-func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference) IncludeSourceFiles() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference) IncludeSourceFiles() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeSourceFiles",
@@ -205,8 +205,8 @@ func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutp
 	return returns
 }
 
-func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference) IncludeSourceFilesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference) IncludeSourceFilesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeSourceFilesInput",
@@ -265,7 +265,6 @@ func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutp
 	return returns
 }
 
-
 func NewAppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference {
 	_init_.Initialize()
 
@@ -276,7 +275,7 @@ func NewAppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -288,12 +287,12 @@ func NewAppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -304,7 +303,7 @@ func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutp
 	)
 }
 
-func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -315,7 +314,7 @@ func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutp
 	)
 }
 
-func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference)SetDocumentType(val *string) {
+func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference) SetDocumentType(val *string) {
 	if err := j.validateSetDocumentTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,7 +325,7 @@ func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutp
 	)
 }
 
-func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference)SetIncludeAllVersions(val interface{}) {
+func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference) SetIncludeAllVersions(val any) {
 	if err := j.validateSetIncludeAllVersionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -337,7 +336,7 @@ func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutp
 	)
 }
 
-func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference)SetIncludeRenditions(val interface{}) {
+func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference) SetIncludeRenditions(val any) {
 	if err := j.validateSetIncludeRenditionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -348,7 +347,7 @@ func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutp
 	)
 }
 
-func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference)SetIncludeSourceFiles(val interface{}) {
+func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference) SetIncludeSourceFiles(val any) {
 	if err := j.validateSetIncludeSourceFilesParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,7 +358,7 @@ func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutp
 	)
 }
 
-func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference)SetInternalValue(val *AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva) {
+func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference) SetInternalValue(val *AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,7 +369,7 @@ func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutp
 	)
 }
 
-func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference)SetObject(val *string) {
+func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference) SetObject(val *string) {
 	if err := j.validateSetObjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,7 +380,7 @@ func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutp
 	)
 }
 
-func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -392,7 +391,7 @@ func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutp
 	)
 }
 
-func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,16 +415,16 @@ func (a *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutp
 	return returns
 }
 
-func (a *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (a *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutp
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (a *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutp
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (a *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutp
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -489,7 +488,7 @@ func (a *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutp
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -505,7 +504,7 @@ func (a *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutp
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -521,7 +520,7 @@ func (a *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutp
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func (a *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutp
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -553,7 +552,7 @@ func (a *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutp
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func (a *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutp
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -621,16 +620,16 @@ func (a *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutp
 	)
 }
 
-func (a *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -649,4 +648,3 @@ func (a *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutp
 
 	return returns
 }
-

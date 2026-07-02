@@ -34,7 +34,7 @@ func (m *jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagSc
 	return nil
 }
 
-func (j *jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValuesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValuesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewMacie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScope
 
 	return nil
 }
-

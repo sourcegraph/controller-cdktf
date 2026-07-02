@@ -15,11 +15,11 @@ type DataAwsPartition interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -48,18 +48,18 @@ type DataAwsPartition interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReverseDnsPrefix() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -85,18 +85,18 @@ type DataAwsPartition interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsPartition
@@ -114,8 +114,8 @@ func (j *jsiiProxy_DataAwsPartition) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsPartition) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsPartition) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -124,8 +124,8 @@ func (j *jsiiProxy_DataAwsPartition) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsPartition) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsPartition) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -244,8 +244,8 @@ func (j *jsiiProxy_DataAwsPartition) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsPartition) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsPartition) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -274,8 +274,8 @@ func (j *jsiiProxy_DataAwsPartition) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsPartition) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsPartition) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -294,7 +294,6 @@ func (j *jsiiProxy_DataAwsPartition) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/partition aws_partition} Data Source.
 func NewDataAwsPartition(scope constructs.Construct, id *string, config *DataAwsPartitionConfig) DataAwsPartition {
 	_init_.Initialize()
@@ -306,7 +305,7 @@ func NewDataAwsPartition(scope constructs.Construct, id *string, config *DataAws
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsPartition.DataAwsPartition",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -319,12 +318,12 @@ func NewDataAwsPartition_Override(d DataAwsPartition, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsPartition.DataAwsPartition",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsPartition)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsPartition) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_DataAwsPartition)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsPartition)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsPartition) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -343,7 +342,7 @@ func (j *jsiiProxy_DataAwsPartition)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsPartition)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsPartition) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -351,7 +350,7 @@ func (j *jsiiProxy_DataAwsPartition)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsPartition)SetId(val *string) {
+func (j *jsiiProxy_DataAwsPartition) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_DataAwsPartition)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsPartition)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsPartition) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_DataAwsPartition)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_DataAwsPartition)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsPartition) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -393,7 +392,7 @@ func DataAwsPartition_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsPartition.DataAwsPartition",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func DataAwsPartition_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsPartition_IsConstruct(x interface{}) *bool {
+func DataAwsPartition_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsPartition_IsConstructParameters(x); err != nil {
@@ -428,7 +427,7 @@ func DataAwsPartition_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsPartition.DataAwsPartition",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func DataAwsPartition_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsPartition_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsPartition_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsPartition_IsTerraformDataSourceParameters(x); err != nil {
@@ -447,7 +446,7 @@ func DataAwsPartition_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsPartition.DataAwsPartition",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func DataAwsPartition_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsPartition_IsTerraformElement(x interface{}) *bool {
+func DataAwsPartition_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsPartition_IsTerraformElementParameters(x); err != nil {
@@ -466,7 +465,7 @@ func DataAwsPartition_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsPartition.DataAwsPartition",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -484,27 +483,27 @@ func DataAwsPartition_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsPartition) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsPartition) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsPartition) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsPartition) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -520,7 +519,7 @@ func (d *jsiiProxy_DataAwsPartition) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -536,7 +535,7 @@ func (d *jsiiProxy_DataAwsPartition) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -552,7 +551,7 @@ func (d *jsiiProxy_DataAwsPartition) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -568,7 +567,7 @@ func (d *jsiiProxy_DataAwsPartition) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -584,7 +583,7 @@ func (d *jsiiProxy_DataAwsPartition) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -600,7 +599,7 @@ func (d *jsiiProxy_DataAwsPartition) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func (d *jsiiProxy_DataAwsPartition) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -632,7 +631,7 @@ func (d *jsiiProxy_DataAwsPartition) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -648,7 +647,7 @@ func (d *jsiiProxy_DataAwsPartition) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func (d *jsiiProxy_DataAwsPartition) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -682,8 +681,8 @@ func (d *jsiiProxy_DataAwsPartition) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsPartition) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsPartition) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -695,8 +694,8 @@ func (d *jsiiProxy_DataAwsPartition) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsPartition) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsPartition) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -708,8 +707,8 @@ func (d *jsiiProxy_DataAwsPartition) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsPartition) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsPartition) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -721,8 +720,8 @@ func (d *jsiiProxy_DataAwsPartition) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsPartition) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsPartition) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -747,8 +746,8 @@ func (d *jsiiProxy_DataAwsPartition) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsPartition) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsPartition) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -759,4 +758,3 @@ func (d *jsiiProxy_DataAwsPartition) ToTerraform() interface{} {
 
 	return returns
 }
-

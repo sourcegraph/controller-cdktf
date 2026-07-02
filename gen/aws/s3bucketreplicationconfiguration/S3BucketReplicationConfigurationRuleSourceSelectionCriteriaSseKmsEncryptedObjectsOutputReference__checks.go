@@ -98,7 +98,7 @@ func (s *jsiiProxy_S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSs
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjectsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjectsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewS3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKm
 
 	return nil
 }
-

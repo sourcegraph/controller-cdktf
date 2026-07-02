@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook",
-		reflect.TypeOf((*CodebuildWebhook)(nil)).Elem(),
+		reflect.TypeFor[CodebuildWebhook](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,7 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodebuildWebhook{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -79,19 +79,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookConfig",
-		reflect.TypeOf((*CodebuildWebhookConfig)(nil)).Elem(),
+		reflect.TypeFor[CodebuildWebhookConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroup",
-		reflect.TypeOf((*CodebuildWebhookFilterGroup)(nil)).Elem(),
+		reflect.TypeFor[CodebuildWebhookFilterGroup](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroupFilter",
-		reflect.TypeOf((*CodebuildWebhookFilterGroupFilter)(nil)).Elem(),
+		reflect.TypeFor[CodebuildWebhookFilterGroupFilter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroupFilterList",
-		reflect.TypeOf((*CodebuildWebhookFilterGroupFilterList)(nil)).Elem(),
+		reflect.TypeFor[CodebuildWebhookFilterGroupFilterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -105,7 +105,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodebuildWebhookFilterGroupFilterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -113,7 +113,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroupFilterOutputReference",
-		reflect.TypeOf((*CodebuildWebhookFilterGroupFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CodebuildWebhookFilterGroupFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -144,7 +144,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -152,7 +152,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroupList",
-		reflect.TypeOf((*CodebuildWebhookFilterGroupList)(nil)).Elem(),
+		reflect.TypeFor[CodebuildWebhookFilterGroupList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -166,7 +166,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodebuildWebhookFilterGroupList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -174,7 +174,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroupOutputReference",
-		reflect.TypeOf((*CodebuildWebhookFilterGroupOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CodebuildWebhookFilterGroupOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -202,7 +202,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodebuildWebhookFilterGroupOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -98,7 +98,7 @@ func (s *jsiiProxy_ServicecatalogProductProvisioningArtifactParametersOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_ServicecatalogProductProvisioningArtifactParametersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ServicecatalogProductProvisioningArtifactParametersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ServicecatalogProductProvisioningArtifactParametersOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_ServicecatalogProductProvisioningArtifactParametersOutputReference) validateSetDisableTemplateValidationParameters(val interface{}) error {
+func (j *jsiiProxy_ServicecatalogProductProvisioningArtifactParametersOutputReference) validateSetDisableTemplateValidationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewServicecatalogProductProvisioningArtifactParametersOutputReferen
 
 	return nil
 }
-

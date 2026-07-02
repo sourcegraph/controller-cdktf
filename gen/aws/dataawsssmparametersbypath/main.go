@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPath",
-		reflect.TypeOf((*DataAwsSsmParametersByPath)(nil)).Elem(),
+		reflect.TypeFor[DataAwsSsmParametersByPath](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arns", GoGetter: "Arns"},
@@ -60,7 +60,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "withDecryption", GoGetter: "WithDecryption"},
 			_jsii_.MemberProperty{JsiiProperty: "withDecryptionInput", GoGetter: "WithDecryptionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsSsmParametersByPath{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -68,6 +68,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPathConfig",
-		reflect.TypeOf((*DataAwsSsmParametersByPathConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsSsmParametersByPathConfig](),
 	)
 }

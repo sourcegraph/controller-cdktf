@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apprunnerService.ApprunnerService",
-		reflect.TypeOf((*ApprunnerService)(nil)).Elem(),
+		reflect.TypeFor[ApprunnerService](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -94,7 +94,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApprunnerService{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -102,15 +102,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceConfig",
-		reflect.TypeOf((*ApprunnerServiceConfig)(nil)).Elem(),
+		reflect.TypeFor[ApprunnerServiceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceEncryptionConfiguration",
-		reflect.TypeOf((*ApprunnerServiceEncryptionConfiguration)(nil)).Elem(),
+		reflect.TypeFor[ApprunnerServiceEncryptionConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceEncryptionConfigurationOutputReference",
-		reflect.TypeOf((*ApprunnerServiceEncryptionConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApprunnerServiceEncryptionConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -136,7 +136,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApprunnerServiceEncryptionConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -144,11 +144,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceHealthCheckConfiguration",
-		reflect.TypeOf((*ApprunnerServiceHealthCheckConfiguration)(nil)).Elem(),
+		reflect.TypeFor[ApprunnerServiceHealthCheckConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceHealthCheckConfigurationOutputReference",
-		reflect.TypeOf((*ApprunnerServiceHealthCheckConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApprunnerServiceHealthCheckConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -190,7 +190,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "unhealthyThreshold", GoGetter: "UnhealthyThreshold"},
 			_jsii_.MemberProperty{JsiiProperty: "unhealthyThresholdInput", GoGetter: "UnhealthyThresholdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -198,11 +198,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceInstanceConfiguration",
-		reflect.TypeOf((*ApprunnerServiceInstanceConfiguration)(nil)).Elem(),
+		reflect.TypeFor[ApprunnerServiceInstanceConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceInstanceConfigurationOutputReference",
-		reflect.TypeOf((*ApprunnerServiceInstanceConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApprunnerServiceInstanceConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -235,7 +235,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApprunnerServiceInstanceConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -243,15 +243,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceNetworkConfiguration",
-		reflect.TypeOf((*ApprunnerServiceNetworkConfiguration)(nil)).Elem(),
+		reflect.TypeFor[ApprunnerServiceNetworkConfiguration](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceNetworkConfigurationEgressConfiguration",
-		reflect.TypeOf((*ApprunnerServiceNetworkConfigurationEgressConfiguration)(nil)).Elem(),
+		reflect.TypeFor[ApprunnerServiceNetworkConfigurationEgressConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceNetworkConfigurationEgressConfigurationOutputReference",
-		reflect.TypeOf((*ApprunnerServiceNetworkConfigurationEgressConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApprunnerServiceNetworkConfigurationEgressConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -281,7 +281,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcConnectorArn", GoGetter: "VpcConnectorArn"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcConnectorArnInput", GoGetter: "VpcConnectorArnInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApprunnerServiceNetworkConfigurationEgressConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -289,11 +289,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceNetworkConfigurationIngressConfiguration",
-		reflect.TypeOf((*ApprunnerServiceNetworkConfigurationIngressConfiguration)(nil)).Elem(),
+		reflect.TypeFor[ApprunnerServiceNetworkConfigurationIngressConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceNetworkConfigurationIngressConfigurationOutputReference",
-		reflect.TypeOf((*ApprunnerServiceNetworkConfigurationIngressConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApprunnerServiceNetworkConfigurationIngressConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -320,7 +320,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApprunnerServiceNetworkConfigurationIngressConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -328,7 +328,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceNetworkConfigurationOutputReference",
-		reflect.TypeOf((*ApprunnerServiceNetworkConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApprunnerServiceNetworkConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -360,7 +360,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApprunnerServiceNetworkConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -368,11 +368,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceObservabilityConfiguration",
-		reflect.TypeOf((*ApprunnerServiceObservabilityConfiguration)(nil)).Elem(),
+		reflect.TypeFor[ApprunnerServiceObservabilityConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceObservabilityConfigurationOutputReference",
-		reflect.TypeOf((*ApprunnerServiceObservabilityConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApprunnerServiceObservabilityConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -401,7 +401,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApprunnerServiceObservabilityConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -409,15 +409,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfiguration",
-		reflect.TypeOf((*ApprunnerServiceSourceConfiguration)(nil)).Elem(),
+		reflect.TypeFor[ApprunnerServiceSourceConfiguration](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationAuthenticationConfiguration",
-		reflect.TypeOf((*ApprunnerServiceSourceConfigurationAuthenticationConfiguration)(nil)).Elem(),
+		reflect.TypeFor[ApprunnerServiceSourceConfigurationAuthenticationConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationAuthenticationConfigurationOutputReference",
-		reflect.TypeOf((*ApprunnerServiceSourceConfigurationAuthenticationConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApprunnerServiceSourceConfigurationAuthenticationConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessRoleArn", GoGetter: "AccessRoleArn"},
 			_jsii_.MemberProperty{JsiiProperty: "accessRoleArnInput", GoGetter: "AccessRoleArnInput"},
@@ -447,7 +447,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApprunnerServiceSourceConfigurationAuthenticationConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -455,19 +455,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepository",
-		reflect.TypeOf((*ApprunnerServiceSourceConfigurationCodeRepository)(nil)).Elem(),
+		reflect.TypeFor[ApprunnerServiceSourceConfigurationCodeRepository](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfiguration",
-		reflect.TypeOf((*ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfiguration)(nil)).Elem(),
+		reflect.TypeFor[ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfiguration](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValues",
-		reflect.TypeOf((*ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValues)(nil)).Elem(),
+		reflect.TypeFor[ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValues](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValuesOutputReference",
-		reflect.TypeOf((*ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValuesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValuesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "buildCommand", GoGetter: "BuildCommand"},
 			_jsii_.MemberProperty{JsiiProperty: "buildCommandInput", GoGetter: "BuildCommandInput"},
@@ -508,7 +508,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValuesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -516,7 +516,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationOutputReference",
-		reflect.TypeOf((*ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "codeConfigurationValues", GoGetter: "CodeConfigurationValues"},
 			_jsii_.MemberProperty{JsiiProperty: "codeConfigurationValuesInput", GoGetter: "CodeConfigurationValuesInput"},
@@ -546,7 +546,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -554,7 +554,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepositoryOutputReference",
-		reflect.TypeOf((*ApprunnerServiceSourceConfigurationCodeRepositoryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApprunnerServiceSourceConfigurationCodeRepositoryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "codeConfiguration", GoGetter: "CodeConfiguration"},
 			_jsii_.MemberProperty{JsiiProperty: "codeConfigurationInput", GoGetter: "CodeConfigurationInput"},
@@ -587,7 +587,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApprunnerServiceSourceConfigurationCodeRepositoryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -595,11 +595,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersion",
-		reflect.TypeOf((*ApprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersion)(nil)).Elem(),
+		reflect.TypeFor[ApprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersion](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersionOutputReference",
-		reflect.TypeOf((*ApprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -627,7 +627,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -635,15 +635,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationImageRepository",
-		reflect.TypeOf((*ApprunnerServiceSourceConfigurationImageRepository)(nil)).Elem(),
+		reflect.TypeFor[ApprunnerServiceSourceConfigurationImageRepository](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationImageRepositoryImageConfiguration",
-		reflect.TypeOf((*ApprunnerServiceSourceConfigurationImageRepositoryImageConfiguration)(nil)).Elem(),
+		reflect.TypeFor[ApprunnerServiceSourceConfigurationImageRepositoryImageConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationImageRepositoryImageConfigurationOutputReference",
-		reflect.TypeOf((*ApprunnerServiceSourceConfigurationImageRepositoryImageConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApprunnerServiceSourceConfigurationImageRepositoryImageConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -679,7 +679,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApprunnerServiceSourceConfigurationImageRepositoryImageConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -687,7 +687,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationImageRepositoryOutputReference",
-		reflect.TypeOf((*ApprunnerServiceSourceConfigurationImageRepositoryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApprunnerServiceSourceConfigurationImageRepositoryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -719,7 +719,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApprunnerServiceSourceConfigurationImageRepositoryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -727,7 +727,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationOutputReference",
-		reflect.TypeOf((*ApprunnerServiceSourceConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApprunnerServiceSourceConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authenticationConfiguration", GoGetter: "AuthenticationConfiguration"},
 			_jsii_.MemberProperty{JsiiProperty: "authenticationConfigurationInput", GoGetter: "AuthenticationConfigurationInput"},
@@ -766,7 +766,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

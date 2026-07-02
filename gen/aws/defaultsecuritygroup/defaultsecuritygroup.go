@@ -16,22 +16,22 @@ type DefaultSecurityGroup interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
 	Egress() DefaultSecurityGroupEgressList
-	EgressInput() interface{}
+	EgressInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -44,7 +44,7 @@ type DefaultSecurityGroup interface {
 	SetId(val *string)
 	IdInput() *string
 	Ingress() DefaultSecurityGroupIngressList
-	IngressInput() interface{}
+	IngressInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -59,14 +59,14 @@ type DefaultSecurityGroup interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
-	RevokeRulesOnDelete() interface{}
-	SetRevokeRulesOnDelete(val interface{})
-	RevokeRulesOnDeleteInput() interface{}
+	RawOverrides() any
+	RevokeRulesOnDelete() any
+	SetRevokeRulesOnDelete(val any)
+	RevokeRulesOnDeleteInput() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -76,7 +76,7 @@ type DefaultSecurityGroup interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	VpcId() *string
@@ -86,9 +86,9 @@ type DefaultSecurityGroup interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -106,7 +106,7 @@ type DefaultSecurityGroup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -118,15 +118,15 @@ type DefaultSecurityGroup interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutEgress(value interface{})
-	PutIngress(value interface{})
+	PutEgress(value any)
+	PutIngress(value any)
 	ResetEgress()
 	ResetId()
 	ResetIngress()
@@ -137,17 +137,17 @@ type DefaultSecurityGroup interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetVpcId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DefaultSecurityGroup
@@ -175,8 +175,8 @@ func (j *jsiiProxy_DefaultSecurityGroup) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DefaultSecurityGroup) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DefaultSecurityGroup) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -185,8 +185,8 @@ func (j *jsiiProxy_DefaultSecurityGroup) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DefaultSecurityGroup) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DefaultSecurityGroup) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -195,8 +195,8 @@ func (j *jsiiProxy_DefaultSecurityGroup) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_DefaultSecurityGroup) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DefaultSecurityGroup) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -235,8 +235,8 @@ func (j *jsiiProxy_DefaultSecurityGroup) Egress() DefaultSecurityGroupEgressList
 	return returns
 }
 
-func (j *jsiiProxy_DefaultSecurityGroup) EgressInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DefaultSecurityGroup) EgressInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"egressInput",
@@ -305,8 +305,8 @@ func (j *jsiiProxy_DefaultSecurityGroup) Ingress() DefaultSecurityGroupIngressLi
 	return returns
 }
 
-func (j *jsiiProxy_DefaultSecurityGroup) IngressInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DefaultSecurityGroup) IngressInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ingressInput",
@@ -375,8 +375,8 @@ func (j *jsiiProxy_DefaultSecurityGroup) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DefaultSecurityGroup) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DefaultSecurityGroup) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -385,8 +385,8 @@ func (j *jsiiProxy_DefaultSecurityGroup) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DefaultSecurityGroup) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DefaultSecurityGroup) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -395,8 +395,8 @@ func (j *jsiiProxy_DefaultSecurityGroup) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DefaultSecurityGroup) RevokeRulesOnDelete() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DefaultSecurityGroup) RevokeRulesOnDelete() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"revokeRulesOnDelete",
@@ -405,8 +405,8 @@ func (j *jsiiProxy_DefaultSecurityGroup) RevokeRulesOnDelete() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DefaultSecurityGroup) RevokeRulesOnDeleteInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DefaultSecurityGroup) RevokeRulesOnDeleteInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"revokeRulesOnDeleteInput",
@@ -465,8 +465,8 @@ func (j *jsiiProxy_DefaultSecurityGroup) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_DefaultSecurityGroup) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DefaultSecurityGroup) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -505,7 +505,6 @@ func (j *jsiiProxy_DefaultSecurityGroup) VpcIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/default_security_group aws_default_security_group} Resource.
 func NewDefaultSecurityGroup(scope constructs.Construct, id *string, config *DefaultSecurityGroupConfig) DefaultSecurityGroup {
 	_init_.Initialize()
@@ -517,7 +516,7 @@ func NewDefaultSecurityGroup(scope constructs.Construct, id *string, config *Def
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -530,12 +529,12 @@ func NewDefaultSecurityGroup_Override(d DefaultSecurityGroup, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DefaultSecurityGroup)SetConnection(val interface{}) {
+func (j *jsiiProxy_DefaultSecurityGroup) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_DefaultSecurityGroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DefaultSecurityGroup)SetCount(val interface{}) {
+func (j *jsiiProxy_DefaultSecurityGroup) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_DefaultSecurityGroup)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DefaultSecurityGroup)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DefaultSecurityGroup) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -565,7 +564,7 @@ func (j *jsiiProxy_DefaultSecurityGroup)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DefaultSecurityGroup)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DefaultSecurityGroup) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -573,7 +572,7 @@ func (j *jsiiProxy_DefaultSecurityGroup)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_DefaultSecurityGroup)SetId(val *string) {
+func (j *jsiiProxy_DefaultSecurityGroup) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -584,7 +583,7 @@ func (j *jsiiProxy_DefaultSecurityGroup)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DefaultSecurityGroup)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DefaultSecurityGroup) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -595,7 +594,7 @@ func (j *jsiiProxy_DefaultSecurityGroup)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_DefaultSecurityGroup)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DefaultSecurityGroup) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -603,7 +602,7 @@ func (j *jsiiProxy_DefaultSecurityGroup)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_DefaultSecurityGroup)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DefaultSecurityGroup) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -614,7 +613,7 @@ func (j *jsiiProxy_DefaultSecurityGroup)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DefaultSecurityGroup)SetRevokeRulesOnDelete(val interface{}) {
+func (j *jsiiProxy_DefaultSecurityGroup) SetRevokeRulesOnDelete(val any) {
 	if err := j.validateSetRevokeRulesOnDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -625,7 +624,7 @@ func (j *jsiiProxy_DefaultSecurityGroup)SetRevokeRulesOnDelete(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_DefaultSecurityGroup)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DefaultSecurityGroup) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -636,7 +635,7 @@ func (j *jsiiProxy_DefaultSecurityGroup)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_DefaultSecurityGroup)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_DefaultSecurityGroup) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -647,7 +646,7 @@ func (j *jsiiProxy_DefaultSecurityGroup)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_DefaultSecurityGroup)SetVpcId(val *string) {
+func (j *jsiiProxy_DefaultSecurityGroup) SetVpcId(val *string) {
 	if err := j.validateSetVpcIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -670,7 +669,7 @@ func DefaultSecurityGroup_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroup",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func DefaultSecurityGroup_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DefaultSecurityGroup_IsConstruct(x interface{}) *bool {
+func DefaultSecurityGroup_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDefaultSecurityGroup_IsConstructParameters(x); err != nil {
@@ -705,7 +704,7 @@ func DefaultSecurityGroup_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroup",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -713,7 +712,7 @@ func DefaultSecurityGroup_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DefaultSecurityGroup_IsTerraformElement(x interface{}) *bool {
+func DefaultSecurityGroup_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDefaultSecurityGroup_IsTerraformElementParameters(x); err != nil {
@@ -724,7 +723,7 @@ func DefaultSecurityGroup_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroup",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -732,7 +731,7 @@ func DefaultSecurityGroup_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DefaultSecurityGroup_IsTerraformResource(x interface{}) *bool {
+func DefaultSecurityGroup_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDefaultSecurityGroup_IsTerraformResourceParameters(x); err != nil {
@@ -743,7 +742,7 @@ func DefaultSecurityGroup_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroup",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -768,31 +767,31 @@ func (d *jsiiProxy_DefaultSecurityGroup) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DefaultSecurityGroup) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DefaultSecurityGroup) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DefaultSecurityGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DefaultSecurityGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -808,7 +807,7 @@ func (d *jsiiProxy_DefaultSecurityGroup) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -824,7 +823,7 @@ func (d *jsiiProxy_DefaultSecurityGroup) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -840,7 +839,7 @@ func (d *jsiiProxy_DefaultSecurityGroup) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -856,7 +855,7 @@ func (d *jsiiProxy_DefaultSecurityGroup) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -872,7 +871,7 @@ func (d *jsiiProxy_DefaultSecurityGroup) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -888,7 +887,7 @@ func (d *jsiiProxy_DefaultSecurityGroup) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -904,7 +903,7 @@ func (d *jsiiProxy_DefaultSecurityGroup) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -920,15 +919,15 @@ func (d *jsiiProxy_DefaultSecurityGroup) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DefaultSecurityGroup) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DefaultSecurityGroup) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -947,7 +946,7 @@ func (d *jsiiProxy_DefaultSecurityGroup) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -960,7 +959,7 @@ func (d *jsiiProxy_DefaultSecurityGroup) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -974,18 +973,18 @@ func (d *jsiiProxy_DefaultSecurityGroup) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DefaultSecurityGroup) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DefaultSecurityGroup) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -996,7 +995,7 @@ func (d *jsiiProxy_DefaultSecurityGroup) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1007,29 +1006,29 @@ func (d *jsiiProxy_DefaultSecurityGroup) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DefaultSecurityGroup) PutEgress(value interface{}) {
+func (d *jsiiProxy_DefaultSecurityGroup) PutEgress(value any) {
 	if err := d.validatePutEgressParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putEgress",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DefaultSecurityGroup) PutIngress(value interface{}) {
+func (d *jsiiProxy_DefaultSecurityGroup) PutIngress(value any) {
 	if err := d.validatePutIngressParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putIngress",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1097,8 +1096,8 @@ func (d *jsiiProxy_DefaultSecurityGroup) ResetVpcId() {
 	)
 }
 
-func (d *jsiiProxy_DefaultSecurityGroup) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DefaultSecurityGroup) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1110,8 +1109,8 @@ func (d *jsiiProxy_DefaultSecurityGroup) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (d *jsiiProxy_DefaultSecurityGroup) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DefaultSecurityGroup) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1123,8 +1122,8 @@ func (d *jsiiProxy_DefaultSecurityGroup) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (d *jsiiProxy_DefaultSecurityGroup) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DefaultSecurityGroup) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1136,8 +1135,8 @@ func (d *jsiiProxy_DefaultSecurityGroup) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DefaultSecurityGroup) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DefaultSecurityGroup) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1162,8 +1161,8 @@ func (d *jsiiProxy_DefaultSecurityGroup) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DefaultSecurityGroup) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DefaultSecurityGroup) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1174,4 +1173,3 @@ func (d *jsiiProxy_DefaultSecurityGroup) ToTerraform() interface{} {
 
 	return returns
 }
-

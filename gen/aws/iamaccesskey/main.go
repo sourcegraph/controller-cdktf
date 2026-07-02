@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iamAccessKey.IamAccessKey",
-		reflect.TypeOf((*IamAccessKey)(nil)).Elem(),
+		reflect.TypeFor[IamAccessKey](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "user", GoGetter: "User"},
 			_jsii_.MemberProperty{JsiiProperty: "userInput", GoGetter: "UserInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamAccessKey{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,6 +78,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iamAccessKey.IamAccessKeyConfig",
-		reflect.TypeOf((*IamAccessKeyConfig)(nil)).Elem(),
+		reflect.TypeFor[IamAccessKeyConfig](),
 	)
 }

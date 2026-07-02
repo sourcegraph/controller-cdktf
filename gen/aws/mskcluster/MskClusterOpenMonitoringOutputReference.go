@@ -12,9 +12,9 @@ type MskClusterOpenMonitoringOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -42,7 +42,7 @@ type MskClusterOpenMonitoringOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,7 +66,7 @@ type MskClusterOpenMonitoringOutputReference interface {
 	PutPrometheus(value *MskClusterOpenMonitoringPrometheus)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,8 +79,8 @@ type jsiiProxy_MskClusterOpenMonitoringOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_MskClusterOpenMonitoringOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MskClusterOpenMonitoringOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -169,7 +169,6 @@ func (j *jsiiProxy_MskClusterOpenMonitoringOutputReference) TerraformResource() 
 	return returns
 }
 
-
 func NewMskClusterOpenMonitoringOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MskClusterOpenMonitoringOutputReference {
 	_init_.Initialize()
 
@@ -180,7 +179,7 @@ func NewMskClusterOpenMonitoringOutputReference(terraformResource cdktf.IInterpo
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.mskCluster.MskClusterOpenMonitoringOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -192,12 +191,12 @@ func NewMskClusterOpenMonitoringOutputReference_Override(m MskClusterOpenMonitor
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.mskCluster.MskClusterOpenMonitoringOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MskClusterOpenMonitoringOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MskClusterOpenMonitoringOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +207,7 @@ func (j *jsiiProxy_MskClusterOpenMonitoringOutputReference)SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_MskClusterOpenMonitoringOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MskClusterOpenMonitoringOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_MskClusterOpenMonitoringOutputReference)SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_MskClusterOpenMonitoringOutputReference)SetInternalValue(val *MskClusterOpenMonitoring) {
+func (j *jsiiProxy_MskClusterOpenMonitoringOutputReference) SetInternalValue(val *MskClusterOpenMonitoring) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_MskClusterOpenMonitoringOutputReference)SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_MskClusterOpenMonitoringOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MskClusterOpenMonitoringOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_MskClusterOpenMonitoringOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_MskClusterOpenMonitoringOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MskClusterOpenMonitoringOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,16 +264,16 @@ func (m *jsiiProxy_MskClusterOpenMonitoringOutputReference) ComputeFqn() *string
 	return returns
 }
 
-func (m *jsiiProxy_MskClusterOpenMonitoringOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MskClusterOpenMonitoringOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -290,7 +289,7 @@ func (m *jsiiProxy_MskClusterOpenMonitoringOutputReference) GetBooleanAttribute(
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -306,7 +305,7 @@ func (m *jsiiProxy_MskClusterOpenMonitoringOutputReference) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -322,7 +321,7 @@ func (m *jsiiProxy_MskClusterOpenMonitoringOutputReference) GetListAttribute(ter
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -338,7 +337,7 @@ func (m *jsiiProxy_MskClusterOpenMonitoringOutputReference) GetNumberAttribute(t
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -354,7 +353,7 @@ func (m *jsiiProxy_MskClusterOpenMonitoringOutputReference) GetNumberListAttribu
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (m *jsiiProxy_MskClusterOpenMonitoringOutputReference) GetNumberMapAttribut
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (m *jsiiProxy_MskClusterOpenMonitoringOutputReference) GetStringAttribute(t
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (m *jsiiProxy_MskClusterOpenMonitoringOutputReference) GetStringMapAttribut
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (m *jsiiProxy_MskClusterOpenMonitoringOutputReference) InterpolationForAttr
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -445,20 +444,20 @@ func (m *jsiiProxy_MskClusterOpenMonitoringOutputReference) PutPrometheus(value 
 	_jsii_.InvokeVoid(
 		m,
 		"putPrometheus",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (m *jsiiProxy_MskClusterOpenMonitoringOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MskClusterOpenMonitoringOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -477,4 +476,3 @@ func (m *jsiiProxy_MskClusterOpenMonitoringOutputReference) ToString() *string {
 
 	return returns
 }
-

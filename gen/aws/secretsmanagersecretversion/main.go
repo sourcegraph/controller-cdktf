@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.secretsmanagerSecretVersion.SecretsmanagerSecretVersion",
-		reflect.TypeOf((*SecretsmanagerSecretVersion)(nil)).Elem(),
+		reflect.TypeFor[SecretsmanagerSecretVersion](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "versionStages", GoGetter: "VersionStages"},
 			_jsii_.MemberProperty{JsiiProperty: "versionStagesInput", GoGetter: "VersionStagesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecretsmanagerSecretVersion{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -77,6 +77,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.secretsmanagerSecretVersion.SecretsmanagerSecretVersionConfig",
-		reflect.TypeOf((*SecretsmanagerSecretVersionConfig)(nil)).Elem(),
+		reflect.TypeFor[SecretsmanagerSecretVersionConfig](),
 	)
 }

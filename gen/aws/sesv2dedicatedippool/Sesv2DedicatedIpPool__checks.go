@@ -19,7 +19,7 @@ func (s *jsiiProxy_Sesv2DedicatedIpPool) validateAddMoveTargetParameters(moveTar
 	return nil
 }
 
-func (s *jsiiProxy_Sesv2DedicatedIpPool) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_Sesv2DedicatedIpPool) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_Sesv2DedicatedIpPool) validateMoveFromIdParameters(id *string
 	return nil
 }
 
-func (s *jsiiProxy_Sesv2DedicatedIpPool) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_Sesv2DedicatedIpPool) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateSesv2DedicatedIpPool_GenerateConfigForImportParameters(scope constr
 	return nil
 }
 
-func validateSesv2DedicatedIpPool_IsConstructParameters(x interface{}) error {
+func validateSesv2DedicatedIpPool_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateSesv2DedicatedIpPool_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateSesv2DedicatedIpPool_IsTerraformElementParameters(x interface{}) error {
+func validateSesv2DedicatedIpPool_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateSesv2DedicatedIpPool_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
-func validateSesv2DedicatedIpPool_IsTerraformResourceParameters(x interface{}) error {
+func validateSesv2DedicatedIpPool_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateSesv2DedicatedIpPool_IsTerraformResourceParameters(x interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_Sesv2DedicatedIpPool) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Sesv2DedicatedIpPool) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_Sesv2DedicatedIpPool) validateSetConnectionParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_Sesv2DedicatedIpPool) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Sesv2DedicatedIpPool) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -369,7 +369,7 @@ func (j *jsiiProxy_Sesv2DedicatedIpPool) validateSetPoolNameParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_Sesv2DedicatedIpPool) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Sesv2DedicatedIpPool) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -457,4 +457,3 @@ func validateNewSesv2DedicatedIpPoolParameters(scope constructs.Construct, id *s
 
 	return nil
 }
-

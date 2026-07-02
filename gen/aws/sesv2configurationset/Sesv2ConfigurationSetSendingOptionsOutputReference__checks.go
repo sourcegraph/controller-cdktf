@@ -98,7 +98,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSetSendingOptionsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_Sesv2ConfigurationSetSendingOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Sesv2ConfigurationSetSendingOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_Sesv2ConfigurationSetSendingOptionsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_Sesv2ConfigurationSetSendingOptionsOutputReference) validateSetSendingEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_Sesv2ConfigurationSetSendingOptionsOutputReference) validateSetSendingEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewSesv2ConfigurationSetSendingOptionsOutputReferenceParameters(ter
 
 	return nil
 }
-

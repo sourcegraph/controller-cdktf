@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.route53TrafficPolicyInstance.Route53TrafficPolicyInstance",
-		reflect.TypeOf((*Route53TrafficPolicyInstance)(nil)).Elem(),
+		reflect.TypeFor[Route53TrafficPolicyInstance](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ttl", GoGetter: "Ttl"},
 			_jsii_.MemberProperty{JsiiProperty: "ttlInput", GoGetter: "TtlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Route53TrafficPolicyInstance{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -74,6 +74,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.route53TrafficPolicyInstance.Route53TrafficPolicyInstanceConfig",
-		reflect.TypeOf((*Route53TrafficPolicyInstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[Route53TrafficPolicyInstanceConfig](),
 	)
 }

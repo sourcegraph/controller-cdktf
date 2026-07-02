@@ -19,15 +19,15 @@ type Lb interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CustomerOwnedIpv4Pool() *string
 	SetCustomerOwnedIpv4Pool(val *string)
 	CustomerOwnedIpv4PoolInput() *string
@@ -39,21 +39,21 @@ type Lb interface {
 	SetDesyncMitigationMode(val *string)
 	DesyncMitigationModeInput() *string
 	DnsName() *string
-	DropInvalidHeaderFields() interface{}
-	SetDropInvalidHeaderFields(val interface{})
-	DropInvalidHeaderFieldsInput() interface{}
-	EnableCrossZoneLoadBalancing() interface{}
-	SetEnableCrossZoneLoadBalancing(val interface{})
-	EnableCrossZoneLoadBalancingInput() interface{}
-	EnableDeletionProtection() interface{}
-	SetEnableDeletionProtection(val interface{})
-	EnableDeletionProtectionInput() interface{}
-	EnableHttp2() interface{}
-	SetEnableHttp2(val interface{})
-	EnableHttp2Input() interface{}
-	EnableWafFailOpen() interface{}
-	SetEnableWafFailOpen(val interface{})
-	EnableWafFailOpenInput() interface{}
+	DropInvalidHeaderFields() any
+	SetDropInvalidHeaderFields(val any)
+	DropInvalidHeaderFieldsInput() any
+	EnableCrossZoneLoadBalancing() any
+	SetEnableCrossZoneLoadBalancing(val any)
+	EnableCrossZoneLoadBalancingInput() any
+	EnableDeletionProtection() any
+	SetEnableDeletionProtection(val any)
+	EnableDeletionProtectionInput() any
+	EnableHttp2() any
+	SetEnableHttp2(val any)
+	EnableHttp2Input() any
+	EnableWafFailOpen() any
+	SetEnableWafFailOpen(val any)
+	EnableWafFailOpenInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -68,9 +68,9 @@ type Lb interface {
 	IdleTimeout() *float64
 	SetIdleTimeout(val *float64)
 	IdleTimeoutInput() *float64
-	Internal() interface{}
-	SetInternal(val interface{})
-	InternalInput() interface{}
+	Internal() any
+	SetInternal(val any)
+	InternalInput() any
 	IpAddressType() *string
 	SetIpAddressType(val *string)
 	IpAddressTypeInput() *string
@@ -89,24 +89,24 @@ type Lb interface {
 	NamePrefixInput() *string
 	// The tree node.
 	Node() constructs.Node
-	PreserveHostHeader() interface{}
-	SetPreserveHostHeader(val interface{})
-	PreserveHostHeaderInput() interface{}
+	PreserveHostHeader() any
+	SetPreserveHostHeader(val any)
+	PreserveHostHeaderInput() any
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SecurityGroups() *[]*string
 	SetSecurityGroups(val *[]*string)
 	SecurityGroupsInput() *[]*string
 	SubnetMapping() LbSubnetMappingList
-	SubnetMappingInput() interface{}
+	SubnetMappingInput() any
 	Subnets() *[]*string
 	SetSubnets(val *[]*string)
 	SubnetsInput() *[]*string
@@ -119,20 +119,20 @@ type Lb interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() LbTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	VpcId() *string
 	ZoneId() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -150,7 +150,7 @@ type Lb interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -162,7 +162,7 @@ type Lb interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -170,7 +170,7 @@ type Lb interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAccessLogs(value *LbAccessLogs)
-	PutSubnetMapping(value interface{})
+	PutSubnetMapping(value any)
 	PutTimeouts(value *LbTimeouts)
 	ResetAccessLogs()
 	ResetCustomerOwnedIpv4Pool()
@@ -197,17 +197,17 @@ type Lb interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Lb
@@ -265,8 +265,8 @@ func (j *jsiiProxy_Lb) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_Lb) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Lb) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -275,8 +275,8 @@ func (j *jsiiProxy_Lb) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Lb) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Lb) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -285,8 +285,8 @@ func (j *jsiiProxy_Lb) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Lb) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Lb) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -355,8 +355,8 @@ func (j *jsiiProxy_Lb) DnsName() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Lb) DropInvalidHeaderFields() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Lb) DropInvalidHeaderFields() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dropInvalidHeaderFields",
@@ -365,8 +365,8 @@ func (j *jsiiProxy_Lb) DropInvalidHeaderFields() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Lb) DropInvalidHeaderFieldsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Lb) DropInvalidHeaderFieldsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dropInvalidHeaderFieldsInput",
@@ -375,8 +375,8 @@ func (j *jsiiProxy_Lb) DropInvalidHeaderFieldsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Lb) EnableCrossZoneLoadBalancing() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Lb) EnableCrossZoneLoadBalancing() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableCrossZoneLoadBalancing",
@@ -385,8 +385,8 @@ func (j *jsiiProxy_Lb) EnableCrossZoneLoadBalancing() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Lb) EnableCrossZoneLoadBalancingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Lb) EnableCrossZoneLoadBalancingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableCrossZoneLoadBalancingInput",
@@ -395,8 +395,8 @@ func (j *jsiiProxy_Lb) EnableCrossZoneLoadBalancingInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Lb) EnableDeletionProtection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Lb) EnableDeletionProtection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableDeletionProtection",
@@ -405,8 +405,8 @@ func (j *jsiiProxy_Lb) EnableDeletionProtection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Lb) EnableDeletionProtectionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Lb) EnableDeletionProtectionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableDeletionProtectionInput",
@@ -415,8 +415,8 @@ func (j *jsiiProxy_Lb) EnableDeletionProtectionInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Lb) EnableHttp2() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Lb) EnableHttp2() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableHttp2",
@@ -425,8 +425,8 @@ func (j *jsiiProxy_Lb) EnableHttp2() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Lb) EnableHttp2Input() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Lb) EnableHttp2Input() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableHttp2Input",
@@ -435,8 +435,8 @@ func (j *jsiiProxy_Lb) EnableHttp2Input() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Lb) EnableWafFailOpen() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Lb) EnableWafFailOpen() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableWafFailOpen",
@@ -445,8 +445,8 @@ func (j *jsiiProxy_Lb) EnableWafFailOpen() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Lb) EnableWafFailOpenInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Lb) EnableWafFailOpenInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableWafFailOpenInput",
@@ -525,8 +525,8 @@ func (j *jsiiProxy_Lb) IdleTimeoutInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_Lb) Internal() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Lb) Internal() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internal",
@@ -535,8 +535,8 @@ func (j *jsiiProxy_Lb) Internal() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Lb) InternalInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Lb) InternalInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalInput",
@@ -645,8 +645,8 @@ func (j *jsiiProxy_Lb) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_Lb) PreserveHostHeader() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Lb) PreserveHostHeader() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"preserveHostHeader",
@@ -655,8 +655,8 @@ func (j *jsiiProxy_Lb) PreserveHostHeader() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Lb) PreserveHostHeaderInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Lb) PreserveHostHeaderInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"preserveHostHeaderInput",
@@ -675,8 +675,8 @@ func (j *jsiiProxy_Lb) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Lb) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Lb) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -685,8 +685,8 @@ func (j *jsiiProxy_Lb) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Lb) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Lb) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -725,8 +725,8 @@ func (j *jsiiProxy_Lb) SubnetMapping() LbSubnetMappingList {
 	return returns
 }
 
-func (j *jsiiProxy_Lb) SubnetMappingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Lb) SubnetMappingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"subnetMappingInput",
@@ -805,8 +805,8 @@ func (j *jsiiProxy_Lb) TerraformGeneratorMetadata() *cdktf.TerraformProviderGene
 	return returns
 }
 
-func (j *jsiiProxy_Lb) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Lb) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -835,8 +835,8 @@ func (j *jsiiProxy_Lb) Timeouts() LbTimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_Lb) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Lb) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -865,7 +865,6 @@ func (j *jsiiProxy_Lb) ZoneId() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lb aws_lb} Resource.
 func NewLb(scope constructs.Construct, id *string, config *LbConfig) Lb {
 	_init_.Initialize()
@@ -877,7 +876,7 @@ func NewLb(scope constructs.Construct, id *string, config *LbConfig) Lb {
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lb.Lb",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -890,12 +889,12 @@ func NewLb_Override(l Lb, scope constructs.Construct, id *string, config *LbConf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lb.Lb",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		l,
 	)
 }
 
-func (j *jsiiProxy_Lb)SetConnection(val interface{}) {
+func (j *jsiiProxy_Lb) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -906,7 +905,7 @@ func (j *jsiiProxy_Lb)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Lb)SetCount(val interface{}) {
+func (j *jsiiProxy_Lb) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -917,7 +916,7 @@ func (j *jsiiProxy_Lb)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Lb)SetCustomerOwnedIpv4Pool(val *string) {
+func (j *jsiiProxy_Lb) SetCustomerOwnedIpv4Pool(val *string) {
 	if err := j.validateSetCustomerOwnedIpv4PoolParameters(val); err != nil {
 		panic(err)
 	}
@@ -928,7 +927,7 @@ func (j *jsiiProxy_Lb)SetCustomerOwnedIpv4Pool(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Lb)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Lb) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -936,7 +935,7 @@ func (j *jsiiProxy_Lb)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Lb)SetDesyncMitigationMode(val *string) {
+func (j *jsiiProxy_Lb) SetDesyncMitigationMode(val *string) {
 	if err := j.validateSetDesyncMitigationModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -947,7 +946,7 @@ func (j *jsiiProxy_Lb)SetDesyncMitigationMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Lb)SetDropInvalidHeaderFields(val interface{}) {
+func (j *jsiiProxy_Lb) SetDropInvalidHeaderFields(val any) {
 	if err := j.validateSetDropInvalidHeaderFieldsParameters(val); err != nil {
 		panic(err)
 	}
@@ -958,7 +957,7 @@ func (j *jsiiProxy_Lb)SetDropInvalidHeaderFields(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Lb)SetEnableCrossZoneLoadBalancing(val interface{}) {
+func (j *jsiiProxy_Lb) SetEnableCrossZoneLoadBalancing(val any) {
 	if err := j.validateSetEnableCrossZoneLoadBalancingParameters(val); err != nil {
 		panic(err)
 	}
@@ -969,7 +968,7 @@ func (j *jsiiProxy_Lb)SetEnableCrossZoneLoadBalancing(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Lb)SetEnableDeletionProtection(val interface{}) {
+func (j *jsiiProxy_Lb) SetEnableDeletionProtection(val any) {
 	if err := j.validateSetEnableDeletionProtectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -980,7 +979,7 @@ func (j *jsiiProxy_Lb)SetEnableDeletionProtection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Lb)SetEnableHttp2(val interface{}) {
+func (j *jsiiProxy_Lb) SetEnableHttp2(val any) {
 	if err := j.validateSetEnableHttp2Parameters(val); err != nil {
 		panic(err)
 	}
@@ -991,7 +990,7 @@ func (j *jsiiProxy_Lb)SetEnableHttp2(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Lb)SetEnableWafFailOpen(val interface{}) {
+func (j *jsiiProxy_Lb) SetEnableWafFailOpen(val any) {
 	if err := j.validateSetEnableWafFailOpenParameters(val); err != nil {
 		panic(err)
 	}
@@ -1002,7 +1001,7 @@ func (j *jsiiProxy_Lb)SetEnableWafFailOpen(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Lb)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Lb) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1010,7 +1009,7 @@ func (j *jsiiProxy_Lb)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Lb)SetId(val *string) {
+func (j *jsiiProxy_Lb) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1021,7 +1020,7 @@ func (j *jsiiProxy_Lb)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Lb)SetIdleTimeout(val *float64) {
+func (j *jsiiProxy_Lb) SetIdleTimeout(val *float64) {
 	if err := j.validateSetIdleTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -1032,7 +1031,7 @@ func (j *jsiiProxy_Lb)SetIdleTimeout(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Lb)SetInternal(val interface{}) {
+func (j *jsiiProxy_Lb) SetInternal(val any) {
 	if err := j.validateSetInternalParameters(val); err != nil {
 		panic(err)
 	}
@@ -1043,7 +1042,7 @@ func (j *jsiiProxy_Lb)SetInternal(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Lb)SetIpAddressType(val *string) {
+func (j *jsiiProxy_Lb) SetIpAddressType(val *string) {
 	if err := j.validateSetIpAddressTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1054,7 +1053,7 @@ func (j *jsiiProxy_Lb)SetIpAddressType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Lb)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Lb) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1065,7 +1064,7 @@ func (j *jsiiProxy_Lb)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_Lb)SetLoadBalancerType(val *string) {
+func (j *jsiiProxy_Lb) SetLoadBalancerType(val *string) {
 	if err := j.validateSetLoadBalancerTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1076,7 +1075,7 @@ func (j *jsiiProxy_Lb)SetLoadBalancerType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Lb)SetName(val *string) {
+func (j *jsiiProxy_Lb) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1087,7 +1086,7 @@ func (j *jsiiProxy_Lb)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Lb)SetNamePrefix(val *string) {
+func (j *jsiiProxy_Lb) SetNamePrefix(val *string) {
 	if err := j.validateSetNamePrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -1098,7 +1097,7 @@ func (j *jsiiProxy_Lb)SetNamePrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Lb)SetPreserveHostHeader(val interface{}) {
+func (j *jsiiProxy_Lb) SetPreserveHostHeader(val any) {
 	if err := j.validateSetPreserveHostHeaderParameters(val); err != nil {
 		panic(err)
 	}
@@ -1109,7 +1108,7 @@ func (j *jsiiProxy_Lb)SetPreserveHostHeader(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Lb)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Lb) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1117,7 +1116,7 @@ func (j *jsiiProxy_Lb)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Lb)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Lb) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1128,7 +1127,7 @@ func (j *jsiiProxy_Lb)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Lb)SetSecurityGroups(val *[]*string) {
+func (j *jsiiProxy_Lb) SetSecurityGroups(val *[]*string) {
 	if err := j.validateSetSecurityGroupsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1139,7 +1138,7 @@ func (j *jsiiProxy_Lb)SetSecurityGroups(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Lb)SetSubnets(val *[]*string) {
+func (j *jsiiProxy_Lb) SetSubnets(val *[]*string) {
 	if err := j.validateSetSubnetsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1150,7 +1149,7 @@ func (j *jsiiProxy_Lb)SetSubnets(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Lb)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_Lb) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1161,7 +1160,7 @@ func (j *jsiiProxy_Lb)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Lb)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_Lb) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1184,7 +1183,7 @@ func Lb_GenerateConfigForImport(scope constructs.Construct, importToId *string, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lb.Lb",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1208,7 +1207,7 @@ func Lb_GenerateConfigForImport(scope constructs.Construct, importToId *string, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Lb_IsConstruct(x interface{}) *bool {
+func Lb_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLb_IsConstructParameters(x); err != nil {
@@ -1219,7 +1218,7 @@ func Lb_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lb.Lb",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1227,7 +1226,7 @@ func Lb_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Lb_IsTerraformElement(x interface{}) *bool {
+func Lb_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLb_IsTerraformElementParameters(x); err != nil {
@@ -1238,7 +1237,7 @@ func Lb_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lb.Lb",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1246,7 +1245,7 @@ func Lb_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Lb_IsTerraformResource(x interface{}) *bool {
+func Lb_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLb_IsTerraformResourceParameters(x); err != nil {
@@ -1257,7 +1256,7 @@ func Lb_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lb.Lb",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1282,31 +1281,31 @@ func (l *jsiiProxy_Lb) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (l *jsiiProxy_Lb) AddOverride(path *string, value interface{}) {
+func (l *jsiiProxy_Lb) AddOverride(path *string, value any) {
 	if err := l.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (l *jsiiProxy_Lb) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_Lb) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1322,7 +1321,7 @@ func (l *jsiiProxy_Lb) GetBooleanAttribute(terraformAttribute *string) cdktf.IRe
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1338,7 +1337,7 @@ func (l *jsiiProxy_Lb) GetBooleanMapAttribute(terraformAttribute *string) *map[s
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1354,7 +1353,7 @@ func (l *jsiiProxy_Lb) GetListAttribute(terraformAttribute *string) *[]*string {
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1370,7 +1369,7 @@ func (l *jsiiProxy_Lb) GetNumberAttribute(terraformAttribute *string) *float64 {
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1386,7 +1385,7 @@ func (l *jsiiProxy_Lb) GetNumberListAttribute(terraformAttribute *string) *[]*fl
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1402,7 +1401,7 @@ func (l *jsiiProxy_Lb) GetNumberMapAttribute(terraformAttribute *string) *map[st
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1418,7 +1417,7 @@ func (l *jsiiProxy_Lb) GetStringAttribute(terraformAttribute *string) *string {
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1434,15 +1433,15 @@ func (l *jsiiProxy_Lb) GetStringMapAttribute(terraformAttribute *string) *map[st
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_Lb) HasResourceMove() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_Lb) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1461,7 +1460,7 @@ func (l *jsiiProxy_Lb) ImportFrom(id *string, provider cdktf.TerraformProvider) 
 	_jsii_.InvokeVoid(
 		l,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1474,7 +1473,7 @@ func (l *jsiiProxy_Lb) InterpolationForAttribute(terraformAttribute *string) cdk
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1488,18 +1487,18 @@ func (l *jsiiProxy_Lb) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (l *jsiiProxy_Lb) MoveTo(moveTarget *string, index interface{}) {
+func (l *jsiiProxy_Lb) MoveTo(moveTarget *string, index any) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1510,7 +1509,7 @@ func (l *jsiiProxy_Lb) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1521,7 +1520,7 @@ func (l *jsiiProxy_Lb) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1532,18 +1531,18 @@ func (l *jsiiProxy_Lb) PutAccessLogs(value *LbAccessLogs) {
 	_jsii_.InvokeVoid(
 		l,
 		"putAccessLogs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (l *jsiiProxy_Lb) PutSubnetMapping(value interface{}) {
+func (l *jsiiProxy_Lb) PutSubnetMapping(value any) {
 	if err := l.validatePutSubnetMappingParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"putSubnetMapping",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1554,7 +1553,7 @@ func (l *jsiiProxy_Lb) PutTimeouts(value *LbTimeouts) {
 	_jsii_.InvokeVoid(
 		l,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1742,8 +1741,8 @@ func (l *jsiiProxy_Lb) ResetTimeouts() {
 	)
 }
 
-func (l *jsiiProxy_Lb) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_Lb) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1755,8 +1754,8 @@ func (l *jsiiProxy_Lb) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_Lb) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_Lb) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1768,8 +1767,8 @@ func (l *jsiiProxy_Lb) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_Lb) ToHclTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_Lb) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1781,8 +1780,8 @@ func (l *jsiiProxy_Lb) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_Lb) ToMetadata() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_Lb) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1807,8 +1806,8 @@ func (l *jsiiProxy_Lb) ToString() *string {
 	return returns
 }
 
-func (l *jsiiProxy_Lb) ToTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_Lb) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1819,4 +1818,3 @@ func (l *jsiiProxy_Lb) ToTerraform() interface{} {
 
 	return returns
 }
-

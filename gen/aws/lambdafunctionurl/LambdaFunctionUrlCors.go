@@ -1,9 +1,8 @@
 package lambdafunctionurl
 
-
 type LambdaFunctionUrlCors struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lambda_function_url#allow_credentials LambdaFunctionUrl#allow_credentials}.
-	AllowCredentials interface{} `field:"optional" json:"allowCredentials" yaml:"allowCredentials"`
+	AllowCredentials any `field:"optional" json:"allowCredentials" yaml:"allowCredentials"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lambda_function_url#allow_headers LambdaFunctionUrl#allow_headers}.
 	AllowHeaders *[]*string `field:"optional" json:"allowHeaders" yaml:"allowHeaders"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lambda_function_url#allow_methods LambdaFunctionUrl#allow_methods}.
@@ -15,4 +14,3 @@ type LambdaFunctionUrlCors struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lambda_function_url#max_age LambdaFunctionUrl#max_age}.
 	MaxAge *float64 `field:"optional" json:"maxAge" yaml:"maxAge"`
 }
-

@@ -11,12 +11,12 @@ import (
 type CeAnomalySubscriptionThresholdExpressionOutputReference interface {
 	cdktf.ComplexObject
 	And() CeAnomalySubscriptionThresholdExpressionAndList
-	AndInput() interface{}
+	AndInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -38,7 +38,7 @@ type CeAnomalySubscriptionThresholdExpressionOutputReference interface {
 	Not() CeAnomalySubscriptionThresholdExpressionNotOutputReference
 	NotInput() *CeAnomalySubscriptionThresholdExpressionNot
 	Or() CeAnomalySubscriptionThresholdExpressionOrList
-	OrInput() interface{}
+	OrInput() any
 	Tags() CeAnomalySubscriptionThresholdExpressionTagsOutputReference
 	TagsInput() *CeAnomalySubscriptionThresholdExpressionTags
 	// Experimental.
@@ -52,7 +52,7 @@ type CeAnomalySubscriptionThresholdExpressionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,11 +73,11 @@ type CeAnomalySubscriptionThresholdExpressionOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAnd(value interface{})
+	PutAnd(value any)
 	PutCostCategory(value *CeAnomalySubscriptionThresholdExpressionCostCategory)
 	PutDimension(value *CeAnomalySubscriptionThresholdExpressionDimension)
 	PutNot(value *CeAnomalySubscriptionThresholdExpressionNot)
-	PutOr(value interface{})
+	PutOr(value any)
 	PutTags(value *CeAnomalySubscriptionThresholdExpressionTags)
 	ResetAnd()
 	ResetCostCategory()
@@ -87,7 +87,7 @@ type CeAnomalySubscriptionThresholdExpressionOutputReference interface {
 	ResetTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -110,8 +110,8 @@ func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) And(
 	return returns
 }
 
-func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) AndInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) AndInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"andInput",
@@ -120,8 +120,8 @@ func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) AndI
 	return returns
 }
 
-func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -240,8 +240,8 @@ func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) Or()
 	return returns
 }
 
-func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) OrInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) OrInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"orInput",
@@ -290,7 +290,6 @@ func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) Terr
 	return returns
 }
 
-
 func NewCeAnomalySubscriptionThresholdExpressionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CeAnomalySubscriptionThresholdExpressionOutputReference {
 	_init_.Initialize()
 
@@ -301,7 +300,7 @@ func NewCeAnomalySubscriptionThresholdExpressionOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -313,12 +312,12 @@ func NewCeAnomalySubscriptionThresholdExpressionOutputReference_Override(c CeAno
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,7 +328,7 @@ func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -340,7 +339,7 @@ func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference)SetInternalValue(val *CeAnomalySubscriptionThresholdExpression) {
+func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) SetInternalValue(val *CeAnomalySubscriptionThresholdExpression) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,16 +385,16 @@ func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) Comp
 	return returns
 }
 
-func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) GetB
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) GetB
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) GetL
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -459,7 +458,7 @@ func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) GetN
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -475,7 +474,7 @@ func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) GetN
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -491,7 +490,7 @@ func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) GetN
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -507,7 +506,7 @@ func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) GetS
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -523,7 +522,7 @@ func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) GetS
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -552,21 +551,21 @@ func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) Inte
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) PutAnd(value interface{}) {
+func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) PutAnd(value any) {
 	if err := c.validatePutAndParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putAnd",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -577,7 +576,7 @@ func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) PutC
 	_jsii_.InvokeVoid(
 		c,
 		"putCostCategory",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -588,7 +587,7 @@ func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) PutD
 	_jsii_.InvokeVoid(
 		c,
 		"putDimension",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -599,18 +598,18 @@ func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) PutN
 	_jsii_.InvokeVoid(
 		c,
 		"putNot",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) PutOr(value interface{}) {
+func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) PutOr(value any) {
 	if err := c.validatePutOrParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putOr",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -621,7 +620,7 @@ func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) PutT
 	_jsii_.InvokeVoid(
 		c,
 		"putTags",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -673,16 +672,16 @@ func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) Rese
 	)
 }
 
-func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -701,4 +700,3 @@ func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) ToSt
 
 	return returns
 }
-

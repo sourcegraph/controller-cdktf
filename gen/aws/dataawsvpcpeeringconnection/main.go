@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnection",
-		reflect.TypeOf((*DataAwsVpcPeeringConnection)(nil)).Elem(),
+		reflect.TypeFor[DataAwsVpcPeeringConnection](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accepter", GoGetter: "Accepter"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -90,7 +90,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcIdInput", GoGetter: "VpcIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsVpcPeeringConnection{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -98,11 +98,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnectionCidrBlockSet",
-		reflect.TypeOf((*DataAwsVpcPeeringConnectionCidrBlockSet)(nil)).Elem(),
+		reflect.TypeFor[DataAwsVpcPeeringConnectionCidrBlockSet](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnectionCidrBlockSetList",
-		reflect.TypeOf((*DataAwsVpcPeeringConnectionCidrBlockSetList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsVpcPeeringConnectionCidrBlockSetList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -115,7 +115,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsVpcPeeringConnectionCidrBlockSetList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -123,7 +123,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnectionCidrBlockSetOutputReference",
-		reflect.TypeOf((*DataAwsVpcPeeringConnectionCidrBlockSetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsVpcPeeringConnectionCidrBlockSetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidrBlock", GoGetter: "CidrBlock"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -148,7 +148,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsVpcPeeringConnectionCidrBlockSetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -156,15 +156,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnectionConfig",
-		reflect.TypeOf((*DataAwsVpcPeeringConnectionConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsVpcPeeringConnectionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnectionFilter",
-		reflect.TypeOf((*DataAwsVpcPeeringConnectionFilter)(nil)).Elem(),
+		reflect.TypeFor[DataAwsVpcPeeringConnectionFilter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnectionFilterList",
-		reflect.TypeOf((*DataAwsVpcPeeringConnectionFilterList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsVpcPeeringConnectionFilterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -178,7 +178,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsVpcPeeringConnectionFilterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -186,7 +186,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnectionFilterOutputReference",
-		reflect.TypeOf((*DataAwsVpcPeeringConnectionFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsVpcPeeringConnectionFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -214,7 +214,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsVpcPeeringConnectionFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -222,11 +222,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnectionPeerCidrBlockSet",
-		reflect.TypeOf((*DataAwsVpcPeeringConnectionPeerCidrBlockSet)(nil)).Elem(),
+		reflect.TypeFor[DataAwsVpcPeeringConnectionPeerCidrBlockSet](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnectionPeerCidrBlockSetList",
-		reflect.TypeOf((*DataAwsVpcPeeringConnectionPeerCidrBlockSetList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsVpcPeeringConnectionPeerCidrBlockSetList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -239,7 +239,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsVpcPeeringConnectionPeerCidrBlockSetList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -247,7 +247,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnectionPeerCidrBlockSetOutputReference",
-		reflect.TypeOf((*DataAwsVpcPeeringConnectionPeerCidrBlockSetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsVpcPeeringConnectionPeerCidrBlockSetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidrBlock", GoGetter: "CidrBlock"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -272,7 +272,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsVpcPeeringConnectionPeerCidrBlockSetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -280,11 +280,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnectionTimeouts",
-		reflect.TypeOf((*DataAwsVpcPeeringConnectionTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DataAwsVpcPeeringConnectionTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnectionTimeoutsOutputReference",
-		reflect.TypeOf((*DataAwsVpcPeeringConnectionTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsVpcPeeringConnectionTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -311,7 +311,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsVpcPeeringConnectionTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

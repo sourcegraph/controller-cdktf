@@ -98,7 +98,7 @@ func (l *jsiiProxy_LaunchTemplateBlockDeviceMappingsEbsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_LaunchTemplateBlockDeviceMappingsEbsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchTemplateBlockDeviceMappingsEbsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -262,4 +262,3 @@ func validateNewLaunchTemplateBlockDeviceMappingsEbsOutputReferenceParameters(te
 
 	return nil
 }
-

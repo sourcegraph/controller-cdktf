@@ -18,15 +18,15 @@ type VpcIpamPoolCidrAllocation interface {
 	SetCidr(val *string)
 	CidrInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -66,27 +66,27 @@ type VpcIpamPoolCidrAllocation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ResourceId() *string
 	ResourceOwner() *string
 	ResourceType() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -104,7 +104,7 @@ type VpcIpamPoolCidrAllocation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -116,7 +116,7 @@ type VpcIpamPoolCidrAllocation interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -131,17 +131,17 @@ type VpcIpamPoolCidrAllocation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for VpcIpamPoolCidrAllocation
@@ -179,8 +179,8 @@ func (j *jsiiProxy_VpcIpamPoolCidrAllocation) CidrInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_VpcIpamPoolCidrAllocation) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcIpamPoolCidrAllocation) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -189,8 +189,8 @@ func (j *jsiiProxy_VpcIpamPoolCidrAllocation) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VpcIpamPoolCidrAllocation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_VpcIpamPoolCidrAllocation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -199,8 +199,8 @@ func (j *jsiiProxy_VpcIpamPoolCidrAllocation) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_VpcIpamPoolCidrAllocation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcIpamPoolCidrAllocation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -389,8 +389,8 @@ func (j *jsiiProxy_VpcIpamPoolCidrAllocation) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_VpcIpamPoolCidrAllocation) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_VpcIpamPoolCidrAllocation) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -399,8 +399,8 @@ func (j *jsiiProxy_VpcIpamPoolCidrAllocation) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VpcIpamPoolCidrAllocation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcIpamPoolCidrAllocation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -449,8 +449,8 @@ func (j *jsiiProxy_VpcIpamPoolCidrAllocation) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_VpcIpamPoolCidrAllocation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_VpcIpamPoolCidrAllocation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -469,7 +469,6 @@ func (j *jsiiProxy_VpcIpamPoolCidrAllocation) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/vpc_ipam_pool_cidr_allocation aws_vpc_ipam_pool_cidr_allocation} Resource.
 func NewVpcIpamPoolCidrAllocation(scope constructs.Construct, id *string, config *VpcIpamPoolCidrAllocationConfig) VpcIpamPoolCidrAllocation {
 	_init_.Initialize()
@@ -481,7 +480,7 @@ func NewVpcIpamPoolCidrAllocation(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.vpcIpamPoolCidrAllocation.VpcIpamPoolCidrAllocation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -494,12 +493,12 @@ func NewVpcIpamPoolCidrAllocation_Override(v VpcIpamPoolCidrAllocation, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.vpcIpamPoolCidrAllocation.VpcIpamPoolCidrAllocation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		v,
 	)
 }
 
-func (j *jsiiProxy_VpcIpamPoolCidrAllocation)SetCidr(val *string) {
+func (j *jsiiProxy_VpcIpamPoolCidrAllocation) SetCidr(val *string) {
 	if err := j.validateSetCidrParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_VpcIpamPoolCidrAllocation)SetCidr(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcIpamPoolCidrAllocation)SetConnection(val interface{}) {
+func (j *jsiiProxy_VpcIpamPoolCidrAllocation) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -521,7 +520,7 @@ func (j *jsiiProxy_VpcIpamPoolCidrAllocation)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpcIpamPoolCidrAllocation)SetCount(val interface{}) {
+func (j *jsiiProxy_VpcIpamPoolCidrAllocation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +531,7 @@ func (j *jsiiProxy_VpcIpamPoolCidrAllocation)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpcIpamPoolCidrAllocation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_VpcIpamPoolCidrAllocation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -540,7 +539,7 @@ func (j *jsiiProxy_VpcIpamPoolCidrAllocation)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_VpcIpamPoolCidrAllocation)SetDescription(val *string) {
+func (j *jsiiProxy_VpcIpamPoolCidrAllocation) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -551,7 +550,7 @@ func (j *jsiiProxy_VpcIpamPoolCidrAllocation)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcIpamPoolCidrAllocation)SetDisallowedCidrs(val *[]*string) {
+func (j *jsiiProxy_VpcIpamPoolCidrAllocation) SetDisallowedCidrs(val *[]*string) {
 	if err := j.validateSetDisallowedCidrsParameters(val); err != nil {
 		panic(err)
 	}
@@ -562,7 +561,7 @@ func (j *jsiiProxy_VpcIpamPoolCidrAllocation)SetDisallowedCidrs(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_VpcIpamPoolCidrAllocation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_VpcIpamPoolCidrAllocation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -570,7 +569,7 @@ func (j *jsiiProxy_VpcIpamPoolCidrAllocation)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_VpcIpamPoolCidrAllocation)SetId(val *string) {
+func (j *jsiiProxy_VpcIpamPoolCidrAllocation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_VpcIpamPoolCidrAllocation)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcIpamPoolCidrAllocation)SetIpamPoolId(val *string) {
+func (j *jsiiProxy_VpcIpamPoolCidrAllocation) SetIpamPoolId(val *string) {
 	if err := j.validateSetIpamPoolIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func (j *jsiiProxy_VpcIpamPoolCidrAllocation)SetIpamPoolId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcIpamPoolCidrAllocation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_VpcIpamPoolCidrAllocation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -603,7 +602,7 @@ func (j *jsiiProxy_VpcIpamPoolCidrAllocation)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_VpcIpamPoolCidrAllocation)SetNetmaskLength(val *float64) {
+func (j *jsiiProxy_VpcIpamPoolCidrAllocation) SetNetmaskLength(val *float64) {
 	if err := j.validateSetNetmaskLengthParameters(val); err != nil {
 		panic(err)
 	}
@@ -614,7 +613,7 @@ func (j *jsiiProxy_VpcIpamPoolCidrAllocation)SetNetmaskLength(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_VpcIpamPoolCidrAllocation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_VpcIpamPoolCidrAllocation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -622,7 +621,7 @@ func (j *jsiiProxy_VpcIpamPoolCidrAllocation)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_VpcIpamPoolCidrAllocation)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_VpcIpamPoolCidrAllocation) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -645,7 +644,7 @@ func VpcIpamPoolCidrAllocation_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpcIpamPoolCidrAllocation.VpcIpamPoolCidrAllocation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -669,7 +668,7 @@ func VpcIpamPoolCidrAllocation_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func VpcIpamPoolCidrAllocation_IsConstruct(x interface{}) *bool {
+func VpcIpamPoolCidrAllocation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVpcIpamPoolCidrAllocation_IsConstructParameters(x); err != nil {
@@ -680,7 +679,7 @@ func VpcIpamPoolCidrAllocation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpcIpamPoolCidrAllocation.VpcIpamPoolCidrAllocation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -688,7 +687,7 @@ func VpcIpamPoolCidrAllocation_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func VpcIpamPoolCidrAllocation_IsTerraformElement(x interface{}) *bool {
+func VpcIpamPoolCidrAllocation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVpcIpamPoolCidrAllocation_IsTerraformElementParameters(x); err != nil {
@@ -699,7 +698,7 @@ func VpcIpamPoolCidrAllocation_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpcIpamPoolCidrAllocation.VpcIpamPoolCidrAllocation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -707,7 +706,7 @@ func VpcIpamPoolCidrAllocation_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func VpcIpamPoolCidrAllocation_IsTerraformResource(x interface{}) *bool {
+func VpcIpamPoolCidrAllocation_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVpcIpamPoolCidrAllocation_IsTerraformResourceParameters(x); err != nil {
@@ -718,7 +717,7 @@ func VpcIpamPoolCidrAllocation_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpcIpamPoolCidrAllocation.VpcIpamPoolCidrAllocation",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -743,31 +742,31 @@ func (v *jsiiProxy_VpcIpamPoolCidrAllocation) AddMoveTarget(moveTarget *string) 
 	_jsii_.InvokeVoid(
 		v,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (v *jsiiProxy_VpcIpamPoolCidrAllocation) AddOverride(path *string, value interface{}) {
+func (v *jsiiProxy_VpcIpamPoolCidrAllocation) AddOverride(path *string, value any) {
 	if err := v.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (v *jsiiProxy_VpcIpamPoolCidrAllocation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (v *jsiiProxy_VpcIpamPoolCidrAllocation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -783,7 +782,7 @@ func (v *jsiiProxy_VpcIpamPoolCidrAllocation) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		v,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,7 +798,7 @@ func (v *jsiiProxy_VpcIpamPoolCidrAllocation) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		v,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -815,7 +814,7 @@ func (v *jsiiProxy_VpcIpamPoolCidrAllocation) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		v,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -831,7 +830,7 @@ func (v *jsiiProxy_VpcIpamPoolCidrAllocation) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		v,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -847,7 +846,7 @@ func (v *jsiiProxy_VpcIpamPoolCidrAllocation) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		v,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -863,7 +862,7 @@ func (v *jsiiProxy_VpcIpamPoolCidrAllocation) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		v,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -879,7 +878,7 @@ func (v *jsiiProxy_VpcIpamPoolCidrAllocation) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		v,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -895,15 +894,15 @@ func (v *jsiiProxy_VpcIpamPoolCidrAllocation) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		v,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (v *jsiiProxy_VpcIpamPoolCidrAllocation) HasResourceMove() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VpcIpamPoolCidrAllocation) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -922,7 +921,7 @@ func (v *jsiiProxy_VpcIpamPoolCidrAllocation) ImportFrom(id *string, provider cd
 	_jsii_.InvokeVoid(
 		v,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -935,7 +934,7 @@ func (v *jsiiProxy_VpcIpamPoolCidrAllocation) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -949,18 +948,18 @@ func (v *jsiiProxy_VpcIpamPoolCidrAllocation) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (v *jsiiProxy_VpcIpamPoolCidrAllocation) MoveTo(moveTarget *string, index interface{}) {
+func (v *jsiiProxy_VpcIpamPoolCidrAllocation) MoveTo(moveTarget *string, index any) {
 	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -971,7 +970,7 @@ func (v *jsiiProxy_VpcIpamPoolCidrAllocation) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -982,7 +981,7 @@ func (v *jsiiProxy_VpcIpamPoolCidrAllocation) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		v,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1034,8 +1033,8 @@ func (v *jsiiProxy_VpcIpamPoolCidrAllocation) ResetOverrideLogicalId() {
 	)
 }
 
-func (v *jsiiProxy_VpcIpamPoolCidrAllocation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_VpcIpamPoolCidrAllocation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -1047,8 +1046,8 @@ func (v *jsiiProxy_VpcIpamPoolCidrAllocation) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (v *jsiiProxy_VpcIpamPoolCidrAllocation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_VpcIpamPoolCidrAllocation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -1060,8 +1059,8 @@ func (v *jsiiProxy_VpcIpamPoolCidrAllocation) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (v *jsiiProxy_VpcIpamPoolCidrAllocation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VpcIpamPoolCidrAllocation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1073,8 +1072,8 @@ func (v *jsiiProxy_VpcIpamPoolCidrAllocation) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (v *jsiiProxy_VpcIpamPoolCidrAllocation) ToMetadata() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VpcIpamPoolCidrAllocation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1099,8 +1098,8 @@ func (v *jsiiProxy_VpcIpamPoolCidrAllocation) ToString() *string {
 	return returns
 }
 
-func (v *jsiiProxy_VpcIpamPoolCidrAllocation) ToTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VpcIpamPoolCidrAllocation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1111,4 +1110,3 @@ func (v *jsiiProxy_VpcIpamPoolCidrAllocation) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_CodebuildProjectLogsConfigCloudwatchLogsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildProjectLogsConfigCloudwatchLogsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CodebuildProjectLogsConfigCloudwatchLogsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewCodebuildProjectLogsConfigCloudwatchLogsOutputReferenceParameter
 
 	return nil
 }
-

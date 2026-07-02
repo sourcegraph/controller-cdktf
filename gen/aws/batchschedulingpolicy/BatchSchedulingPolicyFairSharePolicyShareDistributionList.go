@@ -17,8 +17,8 @@ type BatchSchedulingPolicyFairSharePolicyShareDistributionList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type BatchSchedulingPolicyFairSharePolicyShareDistributionList interface {
 	Get(index *float64) BatchSchedulingPolicyFairSharePolicyShareDistributionOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_BatchSchedulingPolicyFairSharePolicyShareDistributionList) Fq
 	return returns
 }
 
-func (j *jsiiProxy_BatchSchedulingPolicyFairSharePolicyShareDistributionList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BatchSchedulingPolicyFairSharePolicyShareDistributionList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_BatchSchedulingPolicyFairSharePolicyShareDistributionList) Wr
 	return returns
 }
 
-
 func NewBatchSchedulingPolicyFairSharePolicyShareDistributionList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BatchSchedulingPolicyFairSharePolicyShareDistributionList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewBatchSchedulingPolicyFairSharePolicyShareDistributionList(terraformResou
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.batchSchedulingPolicy.BatchSchedulingPolicyFairSharePolicyShareDistributionList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewBatchSchedulingPolicyFairSharePolicyShareDistributionList_Override(b Bat
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.batchSchedulingPolicy.BatchSchedulingPolicyFairSharePolicyShareDistributionList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BatchSchedulingPolicyFairSharePolicyShareDistributionList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_BatchSchedulingPolicyFairSharePolicyShareDistributionList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_BatchSchedulingPolicyFairSharePolicyShareDistributionList)Set
 	)
 }
 
-func (j *jsiiProxy_BatchSchedulingPolicyFairSharePolicyShareDistributionList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BatchSchedulingPolicyFairSharePolicyShareDistributionList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_BatchSchedulingPolicyFairSharePolicyShareDistributionList)Set
 	)
 }
 
-func (j *jsiiProxy_BatchSchedulingPolicyFairSharePolicyShareDistributionList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BatchSchedulingPolicyFairSharePolicyShareDistributionList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_BatchSchedulingPolicyFairSharePolicyShareDistributionList)Set
 	)
 }
 
-func (j *jsiiProxy_BatchSchedulingPolicyFairSharePolicyShareDistributionList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_BatchSchedulingPolicyFairSharePolicyShareDistributionList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (b *jsiiProxy_BatchSchedulingPolicyFairSharePolicyShareDistributionList) Al
 	_jsii_.Invoke(
 		b,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (b *jsiiProxy_BatchSchedulingPolicyFairSharePolicyShareDistributionList) Ge
 	_jsii_.Invoke(
 		b,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BatchSchedulingPolicyFairSharePolicyShareDistributionList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BatchSchedulingPolicyFairSharePolicyShareDistributionList) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (b *jsiiProxy_BatchSchedulingPolicyFairSharePolicyShareDistributionList) To
 
 	return returns
 }
-

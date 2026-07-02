@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataAwsCeTagsFilterAndList) validateResolveParameters(_contex
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsCeTagsFilterAndList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsCeTagsFilterAndList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataAwsCeTagsFilterAndListParameters(terraformResource cdktf.IIn
 
 	return nil
 }
-

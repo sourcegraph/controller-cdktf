@@ -90,7 +90,7 @@ func (o *jsiiProxy_OpsworksMysqlLayerCloudwatchConfigurationOutputReference) val
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksMysqlLayerCloudwatchConfigurationOutputReference) validatePutLogStreamsParameters(value interface{}) error {
+func (o *jsiiProxy_OpsworksMysqlLayerCloudwatchConfigurationOutputReference) validatePutLogStreamsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (o *jsiiProxy_OpsworksMysqlLayerCloudwatchConfigurationOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksMysqlLayerCloudwatchConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksMysqlLayerCloudwatchConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_OpsworksMysqlLayerCloudwatchConfigurationOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksMysqlLayerCloudwatchConfigurationOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksMysqlLayerCloudwatchConfigurationOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -249,4 +249,3 @@ func validateNewOpsworksMysqlLayerCloudwatchConfigurationOutputReferenceParamete
 
 	return nil
 }
-

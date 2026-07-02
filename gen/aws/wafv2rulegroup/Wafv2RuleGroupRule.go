@@ -1,6 +1,5 @@
 package wafv2rulegroup
 
-
 type Wafv2RuleGroupRule struct {
 	// action block.
 	//
@@ -17,10 +16,9 @@ type Wafv2RuleGroupRule struct {
 	// rule_label block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/wafv2_rule_group#rule_label Wafv2RuleGroup#rule_label}
-	RuleLabel interface{} `field:"optional" json:"ruleLabel" yaml:"ruleLabel"`
+	RuleLabel any `field:"optional" json:"ruleLabel" yaml:"ruleLabel"`
 	// statement block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/wafv2_rule_group#statement Wafv2RuleGroup#statement}
-	Statement interface{} `field:"optional" json:"statement" yaml:"statement"`
+	Statement any `field:"optional" json:"statement" yaml:"statement"`
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.neptuneCluster.NeptuneCluster",
-		reflect.TypeOf((*NeptuneCluster)(nil)).Elem(),
+		reflect.TypeFor[NeptuneCluster](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -154,7 +154,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcSecurityGroupIds", GoGetter: "VpcSecurityGroupIds"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcSecurityGroupIdsInput", GoGetter: "VpcSecurityGroupIdsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NeptuneCluster{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -162,15 +162,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.neptuneCluster.NeptuneClusterConfig",
-		reflect.TypeOf((*NeptuneClusterConfig)(nil)).Elem(),
+		reflect.TypeFor[NeptuneClusterConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.neptuneCluster.NeptuneClusterServerlessV2ScalingConfiguration",
-		reflect.TypeOf((*NeptuneClusterServerlessV2ScalingConfiguration)(nil)).Elem(),
+		reflect.TypeFor[NeptuneClusterServerlessV2ScalingConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.neptuneCluster.NeptuneClusterServerlessV2ScalingConfigurationOutputReference",
-		reflect.TypeOf((*NeptuneClusterServerlessV2ScalingConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NeptuneClusterServerlessV2ScalingConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -200,7 +200,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NeptuneClusterServerlessV2ScalingConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -208,11 +208,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.neptuneCluster.NeptuneClusterTimeouts",
-		reflect.TypeOf((*NeptuneClusterTimeouts)(nil)).Elem(),
+		reflect.TypeFor[NeptuneClusterTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.neptuneCluster.NeptuneClusterTimeoutsOutputReference",
-		reflect.TypeOf((*NeptuneClusterTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NeptuneClusterTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -245,7 +245,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NeptuneClusterTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -109,7 +109,7 @@ func (g *jsiiProxy_GuarddutyDetectorDatasourcesKubernetesOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GuarddutyDetectorDatasourcesKubernetesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GuarddutyDetectorDatasourcesKubernetesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewGuarddutyDetectorDatasourcesKubernetesOutputReferenceParameters(
 
 	return nil
 }
-

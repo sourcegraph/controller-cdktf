@@ -34,7 +34,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameList)
 	return nil
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameListPara
 
 	return nil
 }
-

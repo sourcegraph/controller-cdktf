@@ -6,9 +6,9 @@ import (
 
 type DefaultRouteTableConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DefaultRouteTableConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/default_route_table#default_route_table_id DefaultRouteTable#default_route_table_id}.
 	DefaultRouteTableId *string `field:"required" json:"defaultRouteTableId" yaml:"defaultRouteTableId"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/default_route_table#id DefaultRouteTable#id}.
@@ -29,7 +29,7 @@ type DefaultRouteTableConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/default_route_table#propagating_vgws DefaultRouteTable#propagating_vgws}.
 	PropagatingVgws *[]*string `field:"optional" json:"propagatingVgws" yaml:"propagatingVgws"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/default_route_table#route DefaultRouteTable#route}.
-	Route interface{} `field:"optional" json:"route" yaml:"route"`
+	Route any `field:"optional" json:"route" yaml:"route"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/default_route_table#tags DefaultRouteTable#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/default_route_table#tags_all DefaultRouteTable#tags_all}.
@@ -39,4 +39,3 @@ type DefaultRouteTableConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/default_route_table#timeouts DefaultRouteTable#timeouts}
 	Timeouts *DefaultRouteTableTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

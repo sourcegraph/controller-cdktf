@@ -15,15 +15,15 @@ type RdsExportTask interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,11 +62,11 @@ type RdsExportTask interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	S3BucketName() *string
 	SetS3BucketName(val *string)
 	S3BucketNameInput() *string
@@ -84,19 +84,19 @@ type RdsExportTask interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() RdsExportTaskTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	WarningMessage() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -114,7 +114,7 @@ type RdsExportTask interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -126,7 +126,7 @@ type RdsExportTask interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -140,17 +140,17 @@ type RdsExportTask interface {
 	ResetOverrideLogicalId()
 	ResetS3Prefix()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for RdsExportTask
@@ -168,8 +168,8 @@ func (j *jsiiProxy_RdsExportTask) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_RdsExportTask) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RdsExportTask) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_RdsExportTask) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RdsExportTask) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RdsExportTask) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_RdsExportTask) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_RdsExportTask) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RdsExportTask) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -378,8 +378,8 @@ func (j *jsiiProxy_RdsExportTask) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_RdsExportTask) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_RdsExportTask) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -388,8 +388,8 @@ func (j *jsiiProxy_RdsExportTask) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RdsExportTask) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RdsExportTask) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -518,8 +518,8 @@ func (j *jsiiProxy_RdsExportTask) TerraformGeneratorMetadata() *cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_RdsExportTask) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RdsExportTask) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -548,8 +548,8 @@ func (j *jsiiProxy_RdsExportTask) Timeouts() RdsExportTaskTimeoutsOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_RdsExportTask) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RdsExportTask) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -568,7 +568,6 @@ func (j *jsiiProxy_RdsExportTask) WarningMessage() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/rds_export_task aws_rds_export_task} Resource.
 func NewRdsExportTask(scope constructs.Construct, id *string, config *RdsExportTaskConfig) RdsExportTask {
 	_init_.Initialize()
@@ -580,7 +579,7 @@ func NewRdsExportTask(scope constructs.Construct, id *string, config *RdsExportT
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.rdsExportTask.RdsExportTask",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -593,12 +592,12 @@ func NewRdsExportTask_Override(r RdsExportTask, scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.rdsExportTask.RdsExportTask",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RdsExportTask)SetConnection(val interface{}) {
+func (j *jsiiProxy_RdsExportTask) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -609,7 +608,7 @@ func (j *jsiiProxy_RdsExportTask)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RdsExportTask)SetCount(val interface{}) {
+func (j *jsiiProxy_RdsExportTask) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -620,7 +619,7 @@ func (j *jsiiProxy_RdsExportTask)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RdsExportTask)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_RdsExportTask) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -628,7 +627,7 @@ func (j *jsiiProxy_RdsExportTask)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RdsExportTask)SetExportOnly(val *[]*string) {
+func (j *jsiiProxy_RdsExportTask) SetExportOnly(val *[]*string) {
 	if err := j.validateSetExportOnlyParameters(val); err != nil {
 		panic(err)
 	}
@@ -639,7 +638,7 @@ func (j *jsiiProxy_RdsExportTask)SetExportOnly(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RdsExportTask)SetExportTaskIdentifier(val *string) {
+func (j *jsiiProxy_RdsExportTask) SetExportTaskIdentifier(val *string) {
 	if err := j.validateSetExportTaskIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -650,7 +649,7 @@ func (j *jsiiProxy_RdsExportTask)SetExportTaskIdentifier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RdsExportTask)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_RdsExportTask) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -658,7 +657,7 @@ func (j *jsiiProxy_RdsExportTask)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_RdsExportTask)SetIamRoleArn(val *string) {
+func (j *jsiiProxy_RdsExportTask) SetIamRoleArn(val *string) {
 	if err := j.validateSetIamRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -669,7 +668,7 @@ func (j *jsiiProxy_RdsExportTask)SetIamRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RdsExportTask)SetKmsKeyId(val *string) {
+func (j *jsiiProxy_RdsExportTask) SetKmsKeyId(val *string) {
 	if err := j.validateSetKmsKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -680,7 +679,7 @@ func (j *jsiiProxy_RdsExportTask)SetKmsKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RdsExportTask)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_RdsExportTask) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -691,7 +690,7 @@ func (j *jsiiProxy_RdsExportTask)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_RdsExportTask)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_RdsExportTask) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -699,7 +698,7 @@ func (j *jsiiProxy_RdsExportTask)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_RdsExportTask)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_RdsExportTask) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -710,7 +709,7 @@ func (j *jsiiProxy_RdsExportTask)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RdsExportTask)SetS3BucketName(val *string) {
+func (j *jsiiProxy_RdsExportTask) SetS3BucketName(val *string) {
 	if err := j.validateSetS3BucketNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -721,7 +720,7 @@ func (j *jsiiProxy_RdsExportTask)SetS3BucketName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RdsExportTask)SetS3Prefix(val *string) {
+func (j *jsiiProxy_RdsExportTask) SetS3Prefix(val *string) {
 	if err := j.validateSetS3PrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -732,7 +731,7 @@ func (j *jsiiProxy_RdsExportTask)SetS3Prefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RdsExportTask)SetSourceArn(val *string) {
+func (j *jsiiProxy_RdsExportTask) SetSourceArn(val *string) {
 	if err := j.validateSetSourceArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -755,7 +754,7 @@ func RdsExportTask_GenerateConfigForImport(scope constructs.Construct, importToI
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.rdsExportTask.RdsExportTask",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -779,7 +778,7 @@ func RdsExportTask_GenerateConfigForImport(scope constructs.Construct, importToI
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func RdsExportTask_IsConstruct(x interface{}) *bool {
+func RdsExportTask_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRdsExportTask_IsConstructParameters(x); err != nil {
@@ -790,7 +789,7 @@ func RdsExportTask_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.rdsExportTask.RdsExportTask",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -798,7 +797,7 @@ func RdsExportTask_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func RdsExportTask_IsTerraformElement(x interface{}) *bool {
+func RdsExportTask_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRdsExportTask_IsTerraformElementParameters(x); err != nil {
@@ -809,7 +808,7 @@ func RdsExportTask_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.rdsExportTask.RdsExportTask",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func RdsExportTask_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func RdsExportTask_IsTerraformResource(x interface{}) *bool {
+func RdsExportTask_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRdsExportTask_IsTerraformResourceParameters(x); err != nil {
@@ -828,7 +827,7 @@ func RdsExportTask_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.rdsExportTask.RdsExportTask",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -853,31 +852,31 @@ func (r *jsiiProxy_RdsExportTask) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (r *jsiiProxy_RdsExportTask) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_RdsExportTask) AddOverride(path *string, value any) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (r *jsiiProxy_RdsExportTask) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RdsExportTask) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -893,7 +892,7 @@ func (r *jsiiProxy_RdsExportTask) GetBooleanAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -909,7 +908,7 @@ func (r *jsiiProxy_RdsExportTask) GetBooleanMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -925,7 +924,7 @@ func (r *jsiiProxy_RdsExportTask) GetListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -941,7 +940,7 @@ func (r *jsiiProxy_RdsExportTask) GetNumberAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -957,7 +956,7 @@ func (r *jsiiProxy_RdsExportTask) GetNumberListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -973,7 +972,7 @@ func (r *jsiiProxy_RdsExportTask) GetNumberMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -989,7 +988,7 @@ func (r *jsiiProxy_RdsExportTask) GetStringAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1005,15 +1004,15 @@ func (r *jsiiProxy_RdsExportTask) GetStringMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_RdsExportTask) HasResourceMove() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RdsExportTask) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1032,7 +1031,7 @@ func (r *jsiiProxy_RdsExportTask) ImportFrom(id *string, provider cdktf.Terrafor
 	_jsii_.InvokeVoid(
 		r,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1045,7 +1044,7 @@ func (r *jsiiProxy_RdsExportTask) InterpolationForAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1059,18 +1058,18 @@ func (r *jsiiProxy_RdsExportTask) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (r *jsiiProxy_RdsExportTask) MoveTo(moveTarget *string, index interface{}) {
+func (r *jsiiProxy_RdsExportTask) MoveTo(moveTarget *string, index any) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1081,7 +1080,7 @@ func (r *jsiiProxy_RdsExportTask) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1092,7 +1091,7 @@ func (r *jsiiProxy_RdsExportTask) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1103,7 +1102,7 @@ func (r *jsiiProxy_RdsExportTask) PutTimeouts(value *RdsExportTaskTimeouts) {
 	_jsii_.InvokeVoid(
 		r,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1139,8 +1138,8 @@ func (r *jsiiProxy_RdsExportTask) ResetTimeouts() {
 	)
 }
 
-func (r *jsiiProxy_RdsExportTask) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RdsExportTask) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1152,8 +1151,8 @@ func (r *jsiiProxy_RdsExportTask) SynthesizeAttributes() *map[string]interface{}
 	return returns
 }
 
-func (r *jsiiProxy_RdsExportTask) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RdsExportTask) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1165,8 +1164,8 @@ func (r *jsiiProxy_RdsExportTask) SynthesizeHclAttributes() *map[string]interfac
 	return returns
 }
 
-func (r *jsiiProxy_RdsExportTask) ToHclTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RdsExportTask) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1178,8 +1177,8 @@ func (r *jsiiProxy_RdsExportTask) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_RdsExportTask) ToMetadata() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RdsExportTask) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1204,8 +1203,8 @@ func (r *jsiiProxy_RdsExportTask) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_RdsExportTask) ToTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RdsExportTask) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1216,4 +1215,3 @@ func (r *jsiiProxy_RdsExportTask) ToTerraform() interface{} {
 
 	return returns
 }
-

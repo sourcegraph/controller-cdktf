@@ -90,7 +90,7 @@ func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) vali
 	return nil
 }
 
-func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) validatePutAndParameters(value interface{}) error {
+func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) validatePutAndParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -154,7 +154,7 @@ func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) vali
 	return nil
 }
 
-func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) validatePutOrParameters(value interface{}) error {
+func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) validatePutOrParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -304,4 +304,3 @@ func validateNewCeAnomalySubscriptionThresholdExpressionOutputReferenceParameter
 
 	return nil
 }
-

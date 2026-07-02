@@ -98,7 +98,7 @@ func (e *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewEcsTaskDefinitionInferenceAcceleratorOutputReferenceParameters(t
 
 	return nil
 }
-

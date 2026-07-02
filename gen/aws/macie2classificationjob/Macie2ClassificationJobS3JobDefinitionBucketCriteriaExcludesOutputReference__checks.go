@@ -90,7 +90,7 @@ func (m *jsiiProxy_Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesO
 	return nil
 }
 
-func (m *jsiiProxy_Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesOutputReference) validatePutAndParameters(value interface{}) error {
+func (m *jsiiProxy_Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesOutputReference) validatePutAndParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (m *jsiiProxy_Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesO
 	return nil
 }
 
-func (j *jsiiProxy_Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewMacie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesOutp
 
 	return nil
 }
-

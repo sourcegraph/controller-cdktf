@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsKendraQuerySuggestionsBlockList.DataAwsKendraQuerySuggestionsBlockList",
-		reflect.TypeOf((*DataAwsKendraQuerySuggestionsBlockList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsKendraQuerySuggestionsBlockList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -66,7 +66,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updatedAt", GoGetter: "UpdatedAt"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsKendraQuerySuggestionsBlockList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -74,15 +74,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsKendraQuerySuggestionsBlockList.DataAwsKendraQuerySuggestionsBlockListConfig",
-		reflect.TypeOf((*DataAwsKendraQuerySuggestionsBlockListConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsKendraQuerySuggestionsBlockListConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsKendraQuerySuggestionsBlockList.DataAwsKendraQuerySuggestionsBlockListSourceS3Path",
-		reflect.TypeOf((*DataAwsKendraQuerySuggestionsBlockListSourceS3Path)(nil)).Elem(),
+		reflect.TypeFor[DataAwsKendraQuerySuggestionsBlockListSourceS3Path](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsKendraQuerySuggestionsBlockList.DataAwsKendraQuerySuggestionsBlockListSourceS3PathList",
-		reflect.TypeOf((*DataAwsKendraQuerySuggestionsBlockListSourceS3PathList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsKendraQuerySuggestionsBlockListSourceS3PathList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -95,7 +95,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsKendraQuerySuggestionsBlockListSourceS3PathList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -103,7 +103,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsKendraQuerySuggestionsBlockList.DataAwsKendraQuerySuggestionsBlockListSourceS3PathOutputReference",
-		reflect.TypeOf((*DataAwsKendraQuerySuggestionsBlockListSourceS3PathOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsKendraQuerySuggestionsBlockListSourceS3PathOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -129,7 +129,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsKendraQuerySuggestionsBlockListSourceS3PathOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.defaultVpcDhcpOptions.DefaultVpcDhcpOptions",
-		reflect.TypeOf((*DefaultVpcDhcpOptions)(nil)).Elem(),
+		reflect.TypeFor[DefaultVpcDhcpOptions](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,7 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DefaultVpcDhcpOptions{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -79,6 +79,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.defaultVpcDhcpOptions.DefaultVpcDhcpOptionsConfig",
-		reflect.TypeOf((*DefaultVpcDhcpOptionsConfig)(nil)).Elem(),
+		reflect.TypeFor[DefaultVpcDhcpOptionsConfig](),
 	)
 }

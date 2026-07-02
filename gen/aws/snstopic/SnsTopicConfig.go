@@ -6,9 +6,9 @@ import (
 
 type SnsTopicConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type SnsTopicConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sns_topic#application_failure_feedback_role_arn SnsTopic#application_failure_feedback_role_arn}.
 	ApplicationFailureFeedbackRoleArn *string `field:"optional" json:"applicationFailureFeedbackRoleArn" yaml:"applicationFailureFeedbackRoleArn"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sns_topic#application_success_feedback_role_arn SnsTopic#application_success_feedback_role_arn}.
@@ -26,13 +26,13 @@ type SnsTopicConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sns_topic#application_success_feedback_sample_rate SnsTopic#application_success_feedback_sample_rate}.
 	ApplicationSuccessFeedbackSampleRate *float64 `field:"optional" json:"applicationSuccessFeedbackSampleRate" yaml:"applicationSuccessFeedbackSampleRate"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sns_topic#content_based_deduplication SnsTopic#content_based_deduplication}.
-	ContentBasedDeduplication interface{} `field:"optional" json:"contentBasedDeduplication" yaml:"contentBasedDeduplication"`
+	ContentBasedDeduplication any `field:"optional" json:"contentBasedDeduplication" yaml:"contentBasedDeduplication"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sns_topic#delivery_policy SnsTopic#delivery_policy}.
 	DeliveryPolicy *string `field:"optional" json:"deliveryPolicy" yaml:"deliveryPolicy"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sns_topic#display_name SnsTopic#display_name}.
 	DisplayName *string `field:"optional" json:"displayName" yaml:"displayName"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sns_topic#fifo_topic SnsTopic#fifo_topic}.
-	FifoTopic interface{} `field:"optional" json:"fifoTopic" yaml:"fifoTopic"`
+	FifoTopic any `field:"optional" json:"fifoTopic" yaml:"fifoTopic"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sns_topic#firehose_failure_feedback_role_arn SnsTopic#firehose_failure_feedback_role_arn}.
 	FirehoseFailureFeedbackRoleArn *string `field:"optional" json:"firehoseFailureFeedbackRoleArn" yaml:"firehoseFailureFeedbackRoleArn"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sns_topic#firehose_success_feedback_role_arn SnsTopic#firehose_success_feedback_role_arn}.
@@ -75,4 +75,3 @@ type SnsTopicConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sns_topic#tags_all SnsTopic#tags_all}.
 	TagsAll *map[string]*string `field:"optional" json:"tagsAll" yaml:"tagsAll"`
 }
-

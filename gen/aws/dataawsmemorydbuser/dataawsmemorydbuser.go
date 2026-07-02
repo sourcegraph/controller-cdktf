@@ -18,11 +18,11 @@ type DataAwsMemorydbUser interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -50,23 +50,23 @@ type DataAwsMemorydbUser interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	UserName() *string
 	SetUserName(val *string)
 	UserNameInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -93,18 +93,18 @@ type DataAwsMemorydbUser interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTags()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsMemorydbUser
@@ -152,8 +152,8 @@ func (j *jsiiProxy_DataAwsMemorydbUser) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsMemorydbUser) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsMemorydbUser) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_DataAwsMemorydbUser) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsMemorydbUser) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsMemorydbUser) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -272,8 +272,8 @@ func (j *jsiiProxy_DataAwsMemorydbUser) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsMemorydbUser) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsMemorydbUser) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -312,8 +312,8 @@ func (j *jsiiProxy_DataAwsMemorydbUser) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsMemorydbUser) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsMemorydbUser) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -352,7 +352,6 @@ func (j *jsiiProxy_DataAwsMemorydbUser) UserNameInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/memorydb_user aws_memorydb_user} Data Source.
 func NewDataAwsMemorydbUser(scope constructs.Construct, id *string, config *DataAwsMemorydbUserConfig) DataAwsMemorydbUser {
 	_init_.Initialize()
@@ -364,7 +363,7 @@ func NewDataAwsMemorydbUser(scope constructs.Construct, id *string, config *Data
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUser",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -377,12 +376,12 @@ func NewDataAwsMemorydbUser_Override(d DataAwsMemorydbUser, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUser",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsMemorydbUser)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsMemorydbUser) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_DataAwsMemorydbUser)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsMemorydbUser)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsMemorydbUser) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -401,7 +400,7 @@ func (j *jsiiProxy_DataAwsMemorydbUser)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsMemorydbUser)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsMemorydbUser) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -409,7 +408,7 @@ func (j *jsiiProxy_DataAwsMemorydbUser)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_DataAwsMemorydbUser)SetId(val *string) {
+func (j *jsiiProxy_DataAwsMemorydbUser) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -420,7 +419,7 @@ func (j *jsiiProxy_DataAwsMemorydbUser)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsMemorydbUser)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsMemorydbUser) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,7 +430,7 @@ func (j *jsiiProxy_DataAwsMemorydbUser)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_DataAwsMemorydbUser)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsMemorydbUser) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -439,7 +438,7 @@ func (j *jsiiProxy_DataAwsMemorydbUser)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_DataAwsMemorydbUser)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsMemorydbUser) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,7 +449,7 @@ func (j *jsiiProxy_DataAwsMemorydbUser)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsMemorydbUser)SetUserName(val *string) {
+func (j *jsiiProxy_DataAwsMemorydbUser) SetUserName(val *string) {
 	if err := j.validateSetUserNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -473,7 +472,7 @@ func DataAwsMemorydbUser_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUser",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -497,7 +496,7 @@ func DataAwsMemorydbUser_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsMemorydbUser_IsConstruct(x interface{}) *bool {
+func DataAwsMemorydbUser_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsMemorydbUser_IsConstructParameters(x); err != nil {
@@ -508,7 +507,7 @@ func DataAwsMemorydbUser_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUser",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -516,7 +515,7 @@ func DataAwsMemorydbUser_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsMemorydbUser_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsMemorydbUser_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsMemorydbUser_IsTerraformDataSourceParameters(x); err != nil {
@@ -527,7 +526,7 @@ func DataAwsMemorydbUser_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUser",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -535,7 +534,7 @@ func DataAwsMemorydbUser_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsMemorydbUser_IsTerraformElement(x interface{}) *bool {
+func DataAwsMemorydbUser_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsMemorydbUser_IsTerraformElementParameters(x); err != nil {
@@ -546,7 +545,7 @@ func DataAwsMemorydbUser_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUser",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -564,27 +563,27 @@ func DataAwsMemorydbUser_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsMemorydbUser) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsMemorydbUser) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsMemorydbUser) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsMemorydbUser) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -600,7 +599,7 @@ func (d *jsiiProxy_DataAwsMemorydbUser) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func (d *jsiiProxy_DataAwsMemorydbUser) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -632,7 +631,7 @@ func (d *jsiiProxy_DataAwsMemorydbUser) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -648,7 +647,7 @@ func (d *jsiiProxy_DataAwsMemorydbUser) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -664,7 +663,7 @@ func (d *jsiiProxy_DataAwsMemorydbUser) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -680,7 +679,7 @@ func (d *jsiiProxy_DataAwsMemorydbUser) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func (d *jsiiProxy_DataAwsMemorydbUser) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -712,7 +711,7 @@ func (d *jsiiProxy_DataAwsMemorydbUser) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -728,7 +727,7 @@ func (d *jsiiProxy_DataAwsMemorydbUser) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -742,7 +741,7 @@ func (d *jsiiProxy_DataAwsMemorydbUser) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -770,8 +769,8 @@ func (d *jsiiProxy_DataAwsMemorydbUser) ResetTags() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsMemorydbUser) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsMemorydbUser) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -783,8 +782,8 @@ func (d *jsiiProxy_DataAwsMemorydbUser) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsMemorydbUser) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsMemorydbUser) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -796,8 +795,8 @@ func (d *jsiiProxy_DataAwsMemorydbUser) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsMemorydbUser) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsMemorydbUser) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -809,8 +808,8 @@ func (d *jsiiProxy_DataAwsMemorydbUser) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsMemorydbUser) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsMemorydbUser) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -835,8 +834,8 @@ func (d *jsiiProxy_DataAwsMemorydbUser) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsMemorydbUser) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsMemorydbUser) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -847,4 +846,3 @@ func (d *jsiiProxy_DataAwsMemorydbUser) ToTerraform() interface{} {
 
 	return returns
 }
-

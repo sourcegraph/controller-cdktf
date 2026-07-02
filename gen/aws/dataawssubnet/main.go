@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsSubnet.DataAwsSubnet",
-		reflect.TypeOf((*DataAwsSubnet)(nil)).Elem(),
+		reflect.TypeFor[DataAwsSubnet](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -94,7 +94,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcIdInput", GoGetter: "VpcIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsSubnet{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -102,15 +102,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsSubnet.DataAwsSubnetConfig",
-		reflect.TypeOf((*DataAwsSubnetConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsSubnetConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsSubnet.DataAwsSubnetFilter",
-		reflect.TypeOf((*DataAwsSubnetFilter)(nil)).Elem(),
+		reflect.TypeFor[DataAwsSubnetFilter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsSubnet.DataAwsSubnetFilterList",
-		reflect.TypeOf((*DataAwsSubnetFilterList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsSubnetFilterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -124,7 +124,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsSubnetFilterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -132,7 +132,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsSubnet.DataAwsSubnetFilterOutputReference",
-		reflect.TypeOf((*DataAwsSubnetFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsSubnetFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -160,7 +160,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsSubnetFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -168,11 +168,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsSubnet.DataAwsSubnetTimeouts",
-		reflect.TypeOf((*DataAwsSubnetTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DataAwsSubnetTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsSubnet.DataAwsSubnetTimeoutsOutputReference",
-		reflect.TypeOf((*DataAwsSubnetTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsSubnetTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -199,7 +199,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsSubnetTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

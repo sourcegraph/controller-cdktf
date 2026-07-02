@@ -34,7 +34,7 @@ func (e *jsiiProxy_EksNodeGroupTaintList) validateResolveParameters(_context cdk
 	return nil
 }
 
-func (j *jsiiProxy_EksNodeGroupTaintList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EksNodeGroupTaintList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEksNodeGroupTaintListParameters(terraformResource cdktf.IInterpo
 
 	return nil
 }
-

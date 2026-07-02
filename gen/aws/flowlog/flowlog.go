@@ -16,15 +16,15 @@ type FlowLog interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -74,11 +74,11 @@ type FlowLog interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SubnetId() *string
 	SetSubnetId(val *string)
 	SubnetIdInput() *string
@@ -91,7 +91,7 @@ type FlowLog interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TrafficType() *string
@@ -110,9 +110,9 @@ type FlowLog interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -130,7 +130,7 @@ type FlowLog interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -142,7 +142,7 @@ type FlowLog interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -169,17 +169,17 @@ type FlowLog interface {
 	ResetTransitGatewayAttachmentId()
 	ResetTransitGatewayId()
 	ResetVpcId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for FlowLog
@@ -207,8 +207,8 @@ func (j *jsiiProxy_FlowLog) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_FlowLog) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FlowLog) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -217,8 +217,8 @@ func (j *jsiiProxy_FlowLog) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FlowLog) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FlowLog) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -227,8 +227,8 @@ func (j *jsiiProxy_FlowLog) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FlowLog) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FlowLog) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -487,8 +487,8 @@ func (j *jsiiProxy_FlowLog) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_FlowLog) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_FlowLog) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -497,8 +497,8 @@ func (j *jsiiProxy_FlowLog) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FlowLog) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FlowLog) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -577,8 +577,8 @@ func (j *jsiiProxy_FlowLog) TerraformGeneratorMetadata() *cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_FlowLog) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FlowLog) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -677,7 +677,6 @@ func (j *jsiiProxy_FlowLog) VpcIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/flow_log aws_flow_log} Resource.
 func NewFlowLog(scope constructs.Construct, id *string, config *FlowLogConfig) FlowLog {
 	_init_.Initialize()
@@ -689,7 +688,7 @@ func NewFlowLog(scope constructs.Construct, id *string, config *FlowLogConfig) F
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.flowLog.FlowLog",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -702,12 +701,12 @@ func NewFlowLog_Override(f FlowLog, scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.flowLog.FlowLog",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FlowLog)SetConnection(val interface{}) {
+func (j *jsiiProxy_FlowLog) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -718,7 +717,7 @@ func (j *jsiiProxy_FlowLog)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FlowLog)SetCount(val interface{}) {
+func (j *jsiiProxy_FlowLog) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -729,7 +728,7 @@ func (j *jsiiProxy_FlowLog)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FlowLog)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_FlowLog) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -737,7 +736,7 @@ func (j *jsiiProxy_FlowLog)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FlowLog)SetEniId(val *string) {
+func (j *jsiiProxy_FlowLog) SetEniId(val *string) {
 	if err := j.validateSetEniIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -748,7 +747,7 @@ func (j *jsiiProxy_FlowLog)SetEniId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FlowLog)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_FlowLog) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -756,7 +755,7 @@ func (j *jsiiProxy_FlowLog)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_FlowLog)SetIamRoleArn(val *string) {
+func (j *jsiiProxy_FlowLog) SetIamRoleArn(val *string) {
 	if err := j.validateSetIamRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -767,7 +766,7 @@ func (j *jsiiProxy_FlowLog)SetIamRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FlowLog)SetId(val *string) {
+func (j *jsiiProxy_FlowLog) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -778,7 +777,7 @@ func (j *jsiiProxy_FlowLog)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FlowLog)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_FlowLog) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -789,7 +788,7 @@ func (j *jsiiProxy_FlowLog)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_FlowLog)SetLogDestination(val *string) {
+func (j *jsiiProxy_FlowLog) SetLogDestination(val *string) {
 	if err := j.validateSetLogDestinationParameters(val); err != nil {
 		panic(err)
 	}
@@ -800,7 +799,7 @@ func (j *jsiiProxy_FlowLog)SetLogDestination(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FlowLog)SetLogDestinationType(val *string) {
+func (j *jsiiProxy_FlowLog) SetLogDestinationType(val *string) {
 	if err := j.validateSetLogDestinationTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -811,7 +810,7 @@ func (j *jsiiProxy_FlowLog)SetLogDestinationType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FlowLog)SetLogFormat(val *string) {
+func (j *jsiiProxy_FlowLog) SetLogFormat(val *string) {
 	if err := j.validateSetLogFormatParameters(val); err != nil {
 		panic(err)
 	}
@@ -822,7 +821,7 @@ func (j *jsiiProxy_FlowLog)SetLogFormat(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FlowLog)SetLogGroupName(val *string) {
+func (j *jsiiProxy_FlowLog) SetLogGroupName(val *string) {
 	if err := j.validateSetLogGroupNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -833,7 +832,7 @@ func (j *jsiiProxy_FlowLog)SetLogGroupName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FlowLog)SetMaxAggregationInterval(val *float64) {
+func (j *jsiiProxy_FlowLog) SetMaxAggregationInterval(val *float64) {
 	if err := j.validateSetMaxAggregationIntervalParameters(val); err != nil {
 		panic(err)
 	}
@@ -844,7 +843,7 @@ func (j *jsiiProxy_FlowLog)SetMaxAggregationInterval(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_FlowLog)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_FlowLog) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -852,7 +851,7 @@ func (j *jsiiProxy_FlowLog)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_FlowLog)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_FlowLog) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -863,7 +862,7 @@ func (j *jsiiProxy_FlowLog)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FlowLog)SetSubnetId(val *string) {
+func (j *jsiiProxy_FlowLog) SetSubnetId(val *string) {
 	if err := j.validateSetSubnetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -874,7 +873,7 @@ func (j *jsiiProxy_FlowLog)SetSubnetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FlowLog)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_FlowLog) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -885,7 +884,7 @@ func (j *jsiiProxy_FlowLog)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_FlowLog)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_FlowLog) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -896,7 +895,7 @@ func (j *jsiiProxy_FlowLog)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_FlowLog)SetTrafficType(val *string) {
+func (j *jsiiProxy_FlowLog) SetTrafficType(val *string) {
 	if err := j.validateSetTrafficTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -907,7 +906,7 @@ func (j *jsiiProxy_FlowLog)SetTrafficType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FlowLog)SetTransitGatewayAttachmentId(val *string) {
+func (j *jsiiProxy_FlowLog) SetTransitGatewayAttachmentId(val *string) {
 	if err := j.validateSetTransitGatewayAttachmentIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -918,7 +917,7 @@ func (j *jsiiProxy_FlowLog)SetTransitGatewayAttachmentId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FlowLog)SetTransitGatewayId(val *string) {
+func (j *jsiiProxy_FlowLog) SetTransitGatewayId(val *string) {
 	if err := j.validateSetTransitGatewayIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -929,7 +928,7 @@ func (j *jsiiProxy_FlowLog)SetTransitGatewayId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FlowLog)SetVpcId(val *string) {
+func (j *jsiiProxy_FlowLog) SetVpcId(val *string) {
 	if err := j.validateSetVpcIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -952,7 +951,7 @@ func FlowLog_GenerateConfigForImport(scope constructs.Construct, importToId *str
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.flowLog.FlowLog",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -976,7 +975,7 @@ func FlowLog_GenerateConfigForImport(scope constructs.Construct, importToId *str
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func FlowLog_IsConstruct(x interface{}) *bool {
+func FlowLog_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFlowLog_IsConstructParameters(x); err != nil {
@@ -987,7 +986,7 @@ func FlowLog_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.flowLog.FlowLog",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -995,7 +994,7 @@ func FlowLog_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func FlowLog_IsTerraformElement(x interface{}) *bool {
+func FlowLog_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFlowLog_IsTerraformElementParameters(x); err != nil {
@@ -1006,7 +1005,7 @@ func FlowLog_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.flowLog.FlowLog",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1014,7 +1013,7 @@ func FlowLog_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func FlowLog_IsTerraformResource(x interface{}) *bool {
+func FlowLog_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFlowLog_IsTerraformResourceParameters(x); err != nil {
@@ -1025,7 +1024,7 @@ func FlowLog_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.flowLog.FlowLog",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1050,31 +1049,31 @@ func (f *jsiiProxy_FlowLog) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (f *jsiiProxy_FlowLog) AddOverride(path *string, value interface{}) {
+func (f *jsiiProxy_FlowLog) AddOverride(path *string, value any) {
 	if err := f.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (f *jsiiProxy_FlowLog) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FlowLog) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1090,7 +1089,7 @@ func (f *jsiiProxy_FlowLog) GetBooleanAttribute(terraformAttribute *string) cdkt
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1106,7 +1105,7 @@ func (f *jsiiProxy_FlowLog) GetBooleanMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1122,7 +1121,7 @@ func (f *jsiiProxy_FlowLog) GetListAttribute(terraformAttribute *string) *[]*str
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1138,7 +1137,7 @@ func (f *jsiiProxy_FlowLog) GetNumberAttribute(terraformAttribute *string) *floa
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1154,7 +1153,7 @@ func (f *jsiiProxy_FlowLog) GetNumberListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1170,7 +1169,7 @@ func (f *jsiiProxy_FlowLog) GetNumberMapAttribute(terraformAttribute *string) *m
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1186,7 +1185,7 @@ func (f *jsiiProxy_FlowLog) GetStringAttribute(terraformAttribute *string) *stri
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1202,15 +1201,15 @@ func (f *jsiiProxy_FlowLog) GetStringMapAttribute(terraformAttribute *string) *m
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FlowLog) HasResourceMove() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FlowLog) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1229,7 +1228,7 @@ func (f *jsiiProxy_FlowLog) ImportFrom(id *string, provider cdktf.TerraformProvi
 	_jsii_.InvokeVoid(
 		f,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1242,7 +1241,7 @@ func (f *jsiiProxy_FlowLog) InterpolationForAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1256,18 +1255,18 @@ func (f *jsiiProxy_FlowLog) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (f *jsiiProxy_FlowLog) MoveTo(moveTarget *string, index interface{}) {
+func (f *jsiiProxy_FlowLog) MoveTo(moveTarget *string, index any) {
 	if err := f.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1278,7 +1277,7 @@ func (f *jsiiProxy_FlowLog) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1289,7 +1288,7 @@ func (f *jsiiProxy_FlowLog) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1300,7 +1299,7 @@ func (f *jsiiProxy_FlowLog) PutDestinationOptions(value *FlowLogDestinationOptio
 	_jsii_.InvokeVoid(
 		f,
 		"putDestinationOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1440,8 +1439,8 @@ func (f *jsiiProxy_FlowLog) ResetVpcId() {
 	)
 }
 
-func (f *jsiiProxy_FlowLog) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FlowLog) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -1453,8 +1452,8 @@ func (f *jsiiProxy_FlowLog) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (f *jsiiProxy_FlowLog) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FlowLog) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -1466,8 +1465,8 @@ func (f *jsiiProxy_FlowLog) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (f *jsiiProxy_FlowLog) ToHclTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FlowLog) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1479,8 +1478,8 @@ func (f *jsiiProxy_FlowLog) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (f *jsiiProxy_FlowLog) ToMetadata() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FlowLog) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1505,8 +1504,8 @@ func (f *jsiiProxy_FlowLog) ToString() *string {
 	return returns
 }
 
-func (f *jsiiProxy_FlowLog) ToTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FlowLog) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1517,4 +1516,3 @@ func (f *jsiiProxy_FlowLog) ToTerraform() interface{} {
 
 	return returns
 }
-

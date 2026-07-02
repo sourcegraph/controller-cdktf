@@ -98,7 +98,7 @@ func (w *jsiiProxy_WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMat
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMat
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewWafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchO
 
 	return nil
 }
-

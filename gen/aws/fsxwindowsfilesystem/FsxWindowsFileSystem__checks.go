@@ -19,7 +19,7 @@ func (f *jsiiProxy_FsxWindowsFileSystem) validateAddMoveTargetParameters(moveTar
 	return nil
 }
 
-func (f *jsiiProxy_FsxWindowsFileSystem) validateAddOverrideParameters(path *string, value interface{}) error {
+func (f *jsiiProxy_FsxWindowsFileSystem) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (f *jsiiProxy_FsxWindowsFileSystem) validateMoveFromIdParameters(id *string
 	return nil
 }
 
-func (f *jsiiProxy_FsxWindowsFileSystem) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (f *jsiiProxy_FsxWindowsFileSystem) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateFsxWindowsFileSystem_GenerateConfigForImportParameters(scope constr
 	return nil
 }
 
-func validateFsxWindowsFileSystem_IsConstructParameters(x interface{}) error {
+func validateFsxWindowsFileSystem_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateFsxWindowsFileSystem_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateFsxWindowsFileSystem_IsTerraformElementParameters(x interface{}) error {
+func validateFsxWindowsFileSystem_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateFsxWindowsFileSystem_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
-func validateFsxWindowsFileSystem_IsTerraformResourceParameters(x interface{}) error {
+func validateFsxWindowsFileSystem_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -309,7 +309,7 @@ func (j *jsiiProxy_FsxWindowsFileSystem) validateSetBackupIdParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_FsxWindowsFileSystem) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -342,7 +342,7 @@ func (j *jsiiProxy_FsxWindowsFileSystem) validateSetConnectionParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem) validateSetCopyTagsToBackupsParameters(val interface{}) error {
+func (j *jsiiProxy_FsxWindowsFileSystem) validateSetCopyTagsToBackupsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -362,7 +362,7 @@ func (j *jsiiProxy_FsxWindowsFileSystem) validateSetCopyTagsToBackupsParameters(
 	return nil
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_FsxWindowsFileSystem) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -467,7 +467,7 @@ func (j *jsiiProxy_FsxWindowsFileSystem) validateSetPreferredSubnetIdParameters(
 	return nil
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_FsxWindowsFileSystem) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -521,7 +521,7 @@ func (j *jsiiProxy_FsxWindowsFileSystem) validateSetSecurityGroupIdsParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem) validateSetSkipFinalBackupParameters(val interface{}) error {
+func (j *jsiiProxy_FsxWindowsFileSystem) validateSetSkipFinalBackupParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -615,4 +615,3 @@ func validateNewFsxWindowsFileSystemParameters(scope constructs.Construct, id *s
 
 	return nil
 }
-

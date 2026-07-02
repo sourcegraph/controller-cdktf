@@ -1,6 +1,5 @@
 package cloudfrontdistribution
 
-
 type CloudfrontDistributionOriginGroup struct {
 	// failover_criteria block.
 	//
@@ -9,8 +8,7 @@ type CloudfrontDistributionOriginGroup struct {
 	// member block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudfront_distribution#member CloudfrontDistribution#member}
-	Member interface{} `field:"required" json:"member" yaml:"member"`
+	Member any `field:"required" json:"member" yaml:"member"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudfront_distribution#origin_id CloudfrontDistribution#origin_id}.
 	OriginId *string `field:"required" json:"originId" yaml:"originId"`
 }
-

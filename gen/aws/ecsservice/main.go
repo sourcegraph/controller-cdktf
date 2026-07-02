@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ecsService.EcsService",
-		reflect.TypeOf((*EcsService)(nil)).Elem(),
+		reflect.TypeFor[EcsService](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -156,7 +156,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "waitForSteadyState", GoGetter: "WaitForSteadyState"},
 			_jsii_.MemberProperty{JsiiProperty: "waitForSteadyStateInput", GoGetter: "WaitForSteadyStateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EcsService{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -164,11 +164,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ecsService.EcsServiceAlarms",
-		reflect.TypeOf((*EcsServiceAlarms)(nil)).Elem(),
+		reflect.TypeFor[EcsServiceAlarms](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ecsService.EcsServiceAlarmsOutputReference",
-		reflect.TypeOf((*EcsServiceAlarmsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EcsServiceAlarmsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alarmNames", GoGetter: "AlarmNames"},
 			_jsii_.MemberProperty{JsiiProperty: "alarmNamesInput", GoGetter: "AlarmNamesInput"},
@@ -198,7 +198,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EcsServiceAlarmsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -206,11 +206,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategy",
-		reflect.TypeOf((*EcsServiceCapacityProviderStrategy)(nil)).Elem(),
+		reflect.TypeFor[EcsServiceCapacityProviderStrategy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategyList",
-		reflect.TypeOf((*EcsServiceCapacityProviderStrategyList)(nil)).Elem(),
+		reflect.TypeFor[EcsServiceCapacityProviderStrategyList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -224,7 +224,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EcsServiceCapacityProviderStrategyList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -232,7 +232,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategyOutputReference",
-		reflect.TypeOf((*EcsServiceCapacityProviderStrategyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EcsServiceCapacityProviderStrategyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "base", GoGetter: "Base"},
 			_jsii_.MemberProperty{JsiiProperty: "baseInput", GoGetter: "BaseInput"},
@@ -264,7 +264,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weight", GoGetter: "Weight"},
 			_jsii_.MemberProperty{JsiiProperty: "weightInput", GoGetter: "WeightInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -272,15 +272,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ecsService.EcsServiceConfig",
-		reflect.TypeOf((*EcsServiceConfig)(nil)).Elem(),
+		reflect.TypeFor[EcsServiceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ecsService.EcsServiceDeploymentCircuitBreaker",
-		reflect.TypeOf((*EcsServiceDeploymentCircuitBreaker)(nil)).Elem(),
+		reflect.TypeFor[EcsServiceDeploymentCircuitBreaker](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ecsService.EcsServiceDeploymentCircuitBreakerOutputReference",
-		reflect.TypeOf((*EcsServiceDeploymentCircuitBreakerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EcsServiceDeploymentCircuitBreakerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -308,7 +308,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EcsServiceDeploymentCircuitBreakerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -316,11 +316,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ecsService.EcsServiceDeploymentController",
-		reflect.TypeOf((*EcsServiceDeploymentController)(nil)).Elem(),
+		reflect.TypeFor[EcsServiceDeploymentController](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ecsService.EcsServiceDeploymentControllerOutputReference",
-		reflect.TypeOf((*EcsServiceDeploymentControllerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EcsServiceDeploymentControllerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -347,7 +347,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EcsServiceDeploymentControllerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -355,11 +355,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ecsService.EcsServiceLoadBalancer",
-		reflect.TypeOf((*EcsServiceLoadBalancer)(nil)).Elem(),
+		reflect.TypeFor[EcsServiceLoadBalancer](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ecsService.EcsServiceLoadBalancerList",
-		reflect.TypeOf((*EcsServiceLoadBalancerList)(nil)).Elem(),
+		reflect.TypeFor[EcsServiceLoadBalancerList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -373,7 +373,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EcsServiceLoadBalancerList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -381,7 +381,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ecsService.EcsServiceLoadBalancerOutputReference",
-		reflect.TypeOf((*EcsServiceLoadBalancerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EcsServiceLoadBalancerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -415,7 +415,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EcsServiceLoadBalancerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -423,11 +423,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ecsService.EcsServiceNetworkConfiguration",
-		reflect.TypeOf((*EcsServiceNetworkConfiguration)(nil)).Elem(),
+		reflect.TypeFor[EcsServiceNetworkConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ecsService.EcsServiceNetworkConfigurationOutputReference",
-		reflect.TypeOf((*EcsServiceNetworkConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EcsServiceNetworkConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "assignPublicIp", GoGetter: "AssignPublicIp"},
 			_jsii_.MemberProperty{JsiiProperty: "assignPublicIpInput", GoGetter: "AssignPublicIpInput"},
@@ -459,7 +459,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EcsServiceNetworkConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -467,11 +467,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategy",
-		reflect.TypeOf((*EcsServiceOrderedPlacementStrategy)(nil)).Elem(),
+		reflect.TypeFor[EcsServiceOrderedPlacementStrategy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategyList",
-		reflect.TypeOf((*EcsServiceOrderedPlacementStrategyList)(nil)).Elem(),
+		reflect.TypeFor[EcsServiceOrderedPlacementStrategyList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -485,7 +485,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EcsServiceOrderedPlacementStrategyList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -493,7 +493,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategyOutputReference",
-		reflect.TypeOf((*EcsServiceOrderedPlacementStrategyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EcsServiceOrderedPlacementStrategyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -522,7 +522,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EcsServiceOrderedPlacementStrategyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -530,11 +530,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ecsService.EcsServicePlacementConstraints",
-		reflect.TypeOf((*EcsServicePlacementConstraints)(nil)).Elem(),
+		reflect.TypeFor[EcsServicePlacementConstraints](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ecsService.EcsServicePlacementConstraintsList",
-		reflect.TypeOf((*EcsServicePlacementConstraintsList)(nil)).Elem(),
+		reflect.TypeFor[EcsServicePlacementConstraintsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -548,7 +548,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EcsServicePlacementConstraintsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -556,7 +556,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ecsService.EcsServicePlacementConstraintsOutputReference",
-		reflect.TypeOf((*EcsServicePlacementConstraintsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EcsServicePlacementConstraintsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -585,7 +585,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EcsServicePlacementConstraintsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -593,15 +593,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfiguration",
-		reflect.TypeOf((*EcsServiceServiceConnectConfiguration)(nil)).Elem(),
+		reflect.TypeFor[EcsServiceServiceConnectConfiguration](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfiguration",
-		reflect.TypeOf((*EcsServiceServiceConnectConfigurationLogConfiguration)(nil)).Elem(),
+		reflect.TypeFor[EcsServiceServiceConnectConfigurationLogConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationOutputReference",
-		reflect.TypeOf((*EcsServiceServiceConnectConfigurationLogConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EcsServiceServiceConnectConfigurationLogConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -635,7 +635,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -643,11 +643,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOption",
-		reflect.TypeOf((*EcsServiceServiceConnectConfigurationLogConfigurationSecretOption)(nil)).Elem(),
+		reflect.TypeFor[EcsServiceServiceConnectConfigurationLogConfigurationSecretOption](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionList",
-		reflect.TypeOf((*EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionList)(nil)).Elem(),
+		reflect.TypeFor[EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -661,7 +661,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -669,7 +669,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionOutputReference",
-		reflect.TypeOf((*EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -697,7 +697,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "valueFrom", GoGetter: "ValueFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "valueFromInput", GoGetter: "ValueFromInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -705,7 +705,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationOutputReference",
-		reflect.TypeOf((*EcsServiceServiceConnectConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EcsServiceServiceConnectConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -742,7 +742,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EcsServiceServiceConnectConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -750,15 +750,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationService",
-		reflect.TypeOf((*EcsServiceServiceConnectConfigurationService)(nil)).Elem(),
+		reflect.TypeFor[EcsServiceServiceConnectConfigurationService](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAlias",
-		reflect.TypeOf((*EcsServiceServiceConnectConfigurationServiceClientAlias)(nil)).Elem(),
+		reflect.TypeFor[EcsServiceServiceConnectConfigurationServiceClientAlias](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasList",
-		reflect.TypeOf((*EcsServiceServiceConnectConfigurationServiceClientAliasList)(nil)).Elem(),
+		reflect.TypeFor[EcsServiceServiceConnectConfigurationServiceClientAliasList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -772,7 +772,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EcsServiceServiceConnectConfigurationServiceClientAliasList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -780,7 +780,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference",
-		reflect.TypeOf((*EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -809,7 +809,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -817,7 +817,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceOutputReference",
-		reflect.TypeOf((*EcsServiceServiceConnectConfigurationServiceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EcsServiceServiceConnectConfigurationServiceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientAlias", GoGetter: "ClientAlias"},
 			_jsii_.MemberProperty{JsiiProperty: "clientAliasInput", GoGetter: "ClientAliasInput"},
@@ -852,7 +852,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EcsServiceServiceConnectConfigurationServiceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -860,11 +860,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ecsService.EcsServiceServiceRegistries",
-		reflect.TypeOf((*EcsServiceServiceRegistries)(nil)).Elem(),
+		reflect.TypeFor[EcsServiceServiceRegistries](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ecsService.EcsServiceServiceRegistriesOutputReference",
-		reflect.TypeOf((*EcsServiceServiceRegistriesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EcsServiceServiceRegistriesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -899,7 +899,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EcsServiceServiceRegistriesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -907,11 +907,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ecsService.EcsServiceTimeouts",
-		reflect.TypeOf((*EcsServiceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[EcsServiceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ecsService.EcsServiceTimeoutsOutputReference",
-		reflect.TypeOf((*EcsServiceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EcsServiceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -944,7 +944,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EcsServiceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

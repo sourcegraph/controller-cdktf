@@ -11,12 +11,12 @@ import (
 type ImagebuilderContainerRecipeInstanceConfigurationOutputReference interface {
 	cdktf.ComplexObject
 	BlockDeviceMapping() ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingList
-	BlockDeviceMappingInput() interface{}
+	BlockDeviceMappingInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -45,7 +45,7 @@ type ImagebuilderContainerRecipeInstanceConfigurationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,12 +66,12 @@ type ImagebuilderContainerRecipeInstanceConfigurationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutBlockDeviceMapping(value interface{})
+	PutBlockDeviceMapping(value any)
 	ResetBlockDeviceMapping()
 	ResetImage()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -94,8 +94,8 @@ func (j *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReference) BlockDeviceMappingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReference) BlockDeviceMappingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"blockDeviceMappingInput",
@@ -104,8 +104,8 @@ func (j *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReferen
 	return returns
 }
 
-
 func NewImagebuilderContainerRecipeInstanceConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ImagebuilderContainerRecipeInstanceConfigurationOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewImagebuilderContainerRecipeInstanceConfigurationOutputReference(terrafor
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewImagebuilderContainerRecipeInstanceConfigurationOutputReference_Override
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		i,
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReferen
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReferen
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReference)SetImage(val *string) {
+func (j *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReference) SetImage(val *string) {
 	if err := j.validateSetImageParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReferen
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReference)SetInternalValue(val *ImagebuilderContainerRecipeInstanceConfiguration) {
+func (j *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReference) SetInternalValue(val *ImagebuilderContainerRecipeInstanceConfiguration) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReferen
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReferen
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,16 +300,16 @@ func (i *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReferen
 	return returns
 }
 
-func (i *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -326,7 +325,7 @@ func (i *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReferen
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -342,7 +341,7 @@ func (i *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReferen
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -358,7 +357,7 @@ func (i *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReferen
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (i *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReferen
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (i *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReferen
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (i *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReferen
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (i *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReferen
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (i *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReferen
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,21 +466,21 @@ func (i *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReferen
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReference) PutBlockDeviceMapping(value interface{}) {
+func (i *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReference) PutBlockDeviceMapping(value any) {
 	if err := i.validatePutBlockDeviceMappingParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"putBlockDeviceMapping",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (i *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReferen
 	)
 }
 
-func (i *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (i *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReferen
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) validateSetKeyParameters(val interface{}) error {
+func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) validateSetKeyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -223,7 +223,7 @@ func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) validateSetQueryableParameters(val interface{}) error {
+func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) validateSetQueryableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -243,7 +243,7 @@ func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) validateSetRequiredParameters(val interface{}) error {
+func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) validateSetRequiredParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) validateSetSecretParameters(val interface{}) error {
+func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) validateSetSecretParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -326,4 +326,3 @@ func validateNewCodepipelineCustomActionTypeConfigurationPropertyOutputReference
 
 	return nil
 }
-

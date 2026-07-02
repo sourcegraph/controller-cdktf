@@ -98,7 +98,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewQuicksightDataSourceParametersTwitterOutputReferenceParameters(t
 
 	return nil
 }
-

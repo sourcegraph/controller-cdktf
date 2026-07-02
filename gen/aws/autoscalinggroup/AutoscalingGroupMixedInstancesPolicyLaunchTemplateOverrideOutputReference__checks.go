@@ -120,7 +120,7 @@ func (a *jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideOut
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -193,7 +193,7 @@ func (j *jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideOut
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -260,4 +260,3 @@ func validateNewAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideOutput
 
 	return nil
 }
-

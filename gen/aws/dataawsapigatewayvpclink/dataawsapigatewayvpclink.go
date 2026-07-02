@@ -15,11 +15,11 @@ type DataAwsApiGatewayVpcLink interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -48,7 +48,7 @@ type DataAwsApiGatewayVpcLink interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Status() *string
 	StatusMessage() *string
 	Tags() *map[string]*string
@@ -58,13 +58,13 @@ type DataAwsApiGatewayVpcLink interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -90,18 +90,18 @@ type DataAwsApiGatewayVpcLink interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTags()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsApiGatewayVpcLink
@@ -119,8 +119,8 @@ func (j *jsiiProxy_DataAwsApiGatewayVpcLink) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsApiGatewayVpcLink) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsApiGatewayVpcLink) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -129,8 +129,8 @@ func (j *jsiiProxy_DataAwsApiGatewayVpcLink) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsApiGatewayVpcLink) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsApiGatewayVpcLink) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -249,8 +249,8 @@ func (j *jsiiProxy_DataAwsApiGatewayVpcLink) Provider() cdktf.TerraformProvider 
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsApiGatewayVpcLink) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsApiGatewayVpcLink) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -319,8 +319,8 @@ func (j *jsiiProxy_DataAwsApiGatewayVpcLink) TerraformGeneratorMetadata() *cdktf
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsApiGatewayVpcLink) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsApiGatewayVpcLink) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -339,7 +339,6 @@ func (j *jsiiProxy_DataAwsApiGatewayVpcLink) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/api_gateway_vpc_link aws_api_gateway_vpc_link} Data Source.
 func NewDataAwsApiGatewayVpcLink(scope constructs.Construct, id *string, config *DataAwsApiGatewayVpcLinkConfig) DataAwsApiGatewayVpcLink {
 	_init_.Initialize()
@@ -351,7 +350,7 @@ func NewDataAwsApiGatewayVpcLink(scope constructs.Construct, id *string, config 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsApiGatewayVpcLink.DataAwsApiGatewayVpcLink",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -364,12 +363,12 @@ func NewDataAwsApiGatewayVpcLink_Override(d DataAwsApiGatewayVpcLink, scope cons
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsApiGatewayVpcLink.DataAwsApiGatewayVpcLink",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsApiGatewayVpcLink)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsApiGatewayVpcLink) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,7 +379,7 @@ func (j *jsiiProxy_DataAwsApiGatewayVpcLink)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsApiGatewayVpcLink)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsApiGatewayVpcLink) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -388,7 +387,7 @@ func (j *jsiiProxy_DataAwsApiGatewayVpcLink)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsApiGatewayVpcLink)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsApiGatewayVpcLink) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -396,7 +395,7 @@ func (j *jsiiProxy_DataAwsApiGatewayVpcLink)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_DataAwsApiGatewayVpcLink)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsApiGatewayVpcLink) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -407,7 +406,7 @@ func (j *jsiiProxy_DataAwsApiGatewayVpcLink)SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_DataAwsApiGatewayVpcLink)SetName(val *string) {
+func (j *jsiiProxy_DataAwsApiGatewayVpcLink) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -418,7 +417,7 @@ func (j *jsiiProxy_DataAwsApiGatewayVpcLink)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsApiGatewayVpcLink)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsApiGatewayVpcLink) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -426,7 +425,7 @@ func (j *jsiiProxy_DataAwsApiGatewayVpcLink)SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_DataAwsApiGatewayVpcLink)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsApiGatewayVpcLink) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -449,7 +448,7 @@ func DataAwsApiGatewayVpcLink_GenerateConfigForImport(scope constructs.Construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsApiGatewayVpcLink.DataAwsApiGatewayVpcLink",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func DataAwsApiGatewayVpcLink_GenerateConfigForImport(scope constructs.Construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsApiGatewayVpcLink_IsConstruct(x interface{}) *bool {
+func DataAwsApiGatewayVpcLink_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsApiGatewayVpcLink_IsConstructParameters(x); err != nil {
@@ -484,7 +483,7 @@ func DataAwsApiGatewayVpcLink_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsApiGatewayVpcLink.DataAwsApiGatewayVpcLink",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -492,7 +491,7 @@ func DataAwsApiGatewayVpcLink_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsApiGatewayVpcLink_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsApiGatewayVpcLink_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsApiGatewayVpcLink_IsTerraformDataSourceParameters(x); err != nil {
@@ -503,7 +502,7 @@ func DataAwsApiGatewayVpcLink_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsApiGatewayVpcLink.DataAwsApiGatewayVpcLink",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func DataAwsApiGatewayVpcLink_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsApiGatewayVpcLink_IsTerraformElement(x interface{}) *bool {
+func DataAwsApiGatewayVpcLink_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsApiGatewayVpcLink_IsTerraformElementParameters(x); err != nil {
@@ -522,7 +521,7 @@ func DataAwsApiGatewayVpcLink_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsApiGatewayVpcLink.DataAwsApiGatewayVpcLink",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -540,27 +539,27 @@ func DataAwsApiGatewayVpcLink_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsApiGatewayVpcLink) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsApiGatewayVpcLink) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsApiGatewayVpcLink) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsApiGatewayVpcLink) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -576,7 +575,7 @@ func (d *jsiiProxy_DataAwsApiGatewayVpcLink) GetBooleanAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -592,7 +591,7 @@ func (d *jsiiProxy_DataAwsApiGatewayVpcLink) GetBooleanMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -608,7 +607,7 @@ func (d *jsiiProxy_DataAwsApiGatewayVpcLink) GetListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -624,7 +623,7 @@ func (d *jsiiProxy_DataAwsApiGatewayVpcLink) GetNumberAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -640,7 +639,7 @@ func (d *jsiiProxy_DataAwsApiGatewayVpcLink) GetNumberListAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -656,7 +655,7 @@ func (d *jsiiProxy_DataAwsApiGatewayVpcLink) GetNumberMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -672,7 +671,7 @@ func (d *jsiiProxy_DataAwsApiGatewayVpcLink) GetStringAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -688,7 +687,7 @@ func (d *jsiiProxy_DataAwsApiGatewayVpcLink) GetStringMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -704,7 +703,7 @@ func (d *jsiiProxy_DataAwsApiGatewayVpcLink) InterpolationForAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -718,7 +717,7 @@ func (d *jsiiProxy_DataAwsApiGatewayVpcLink) OverrideLogicalId(newLogicalId *str
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -738,8 +737,8 @@ func (d *jsiiProxy_DataAwsApiGatewayVpcLink) ResetTags() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsApiGatewayVpcLink) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsApiGatewayVpcLink) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -751,8 +750,8 @@ func (d *jsiiProxy_DataAwsApiGatewayVpcLink) SynthesizeAttributes() *map[string]
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsApiGatewayVpcLink) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsApiGatewayVpcLink) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -764,8 +763,8 @@ func (d *jsiiProxy_DataAwsApiGatewayVpcLink) SynthesizeHclAttributes() *map[stri
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsApiGatewayVpcLink) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsApiGatewayVpcLink) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -777,8 +776,8 @@ func (d *jsiiProxy_DataAwsApiGatewayVpcLink) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsApiGatewayVpcLink) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsApiGatewayVpcLink) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -803,8 +802,8 @@ func (d *jsiiProxy_DataAwsApiGatewayVpcLink) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsApiGatewayVpcLink) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsApiGatewayVpcLink) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -815,4 +814,3 @@ func (d *jsiiProxy_DataAwsApiGatewayVpcLink) ToTerraform() interface{} {
 
 	return returns
 }
-

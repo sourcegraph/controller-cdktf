@@ -34,7 +34,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdList) v
 	return nil
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSecurityhubInsightFiltersResourceAwsEc2InstanceImageIdListParame
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsImagebuilderDistributionConfigurationDistributionOutpu
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsImagebuilderDistributionConfigurationDistributionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsImagebuilderDistributionConfigurationDistributionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsImagebuilderDistributionConfigurationDistributionOutputRe
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (o *jsiiProxy_OpsworksNodejsAppLayer) validateAddMoveTargetParameters(moveT
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksNodejsAppLayer) validateAddOverrideParameters(path *string, value interface{}) error {
+func (o *jsiiProxy_OpsworksNodejsAppLayer) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (o *jsiiProxy_OpsworksNodejsAppLayer) validateMoveFromIdParameters(id *stri
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksNodejsAppLayer) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (o *jsiiProxy_OpsworksNodejsAppLayer) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (o *jsiiProxy_OpsworksNodejsAppLayer) validatePutCloudwatchConfigurationPar
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksNodejsAppLayer) validatePutEbsVolumeParameters(value interface{}) error {
+func (o *jsiiProxy_OpsworksNodejsAppLayer) validatePutEbsVolumeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateOpsworksNodejsAppLayer_GenerateConfigForImportParameters(scope cons
 	return nil
 }
 
-func validateOpsworksNodejsAppLayer_IsConstructParameters(x interface{}) error {
+func validateOpsworksNodejsAppLayer_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateOpsworksNodejsAppLayer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateOpsworksNodejsAppLayer_IsTerraformElementParameters(x interface{}) error {
+func validateOpsworksNodejsAppLayer_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateOpsworksNodejsAppLayer_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
-func validateOpsworksNodejsAppLayer_IsTerraformResourceParameters(x interface{}) error {
+func validateOpsworksNodejsAppLayer_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func validateOpsworksNodejsAppLayer_IsTerraformResourceParameters(x interface{})
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksNodejsAppLayer) validateSetAutoAssignElasticIpsParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksNodejsAppLayer) validateSetAutoAssignElasticIpsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -317,7 +317,7 @@ func (j *jsiiProxy_OpsworksNodejsAppLayer) validateSetAutoAssignElasticIpsParame
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksNodejsAppLayer) validateSetAutoAssignPublicIpsParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksNodejsAppLayer) validateSetAutoAssignPublicIpsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -337,7 +337,7 @@ func (j *jsiiProxy_OpsworksNodejsAppLayer) validateSetAutoAssignPublicIpsParamet
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksNodejsAppLayer) validateSetAutoHealingParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksNodejsAppLayer) validateSetAutoHealingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -357,7 +357,7 @@ func (j *jsiiProxy_OpsworksNodejsAppLayer) validateSetAutoHealingParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksNodejsAppLayer) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksNodejsAppLayer) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -390,7 +390,7 @@ func (j *jsiiProxy_OpsworksNodejsAppLayer) validateSetConnectionParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksNodejsAppLayer) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksNodejsAppLayer) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -511,7 +511,7 @@ func (j *jsiiProxy_OpsworksNodejsAppLayer) validateSetCustomUndeployRecipesParam
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksNodejsAppLayer) validateSetDrainElbOnShutdownParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksNodejsAppLayer) validateSetDrainElbOnShutdownParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -547,7 +547,7 @@ func (j *jsiiProxy_OpsworksNodejsAppLayer) validateSetIdParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksNodejsAppLayer) validateSetInstallUpdatesOnBootParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksNodejsAppLayer) validateSetInstallUpdatesOnBootParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -599,7 +599,7 @@ func (j *jsiiProxy_OpsworksNodejsAppLayer) validateSetNodejsVersionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksNodejsAppLayer) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_OpsworksNodejsAppLayer) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -677,7 +677,7 @@ func (j *jsiiProxy_OpsworksNodejsAppLayer) validateSetTagsAllParameters(val *map
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksNodejsAppLayer) validateSetUseEbsOptimizedInstancesParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksNodejsAppLayer) validateSetUseEbsOptimizedInstancesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -715,4 +715,3 @@ func validateNewOpsworksNodejsAppLayerParameters(scope constructs.Construct, id 
 
 	return nil
 }
-

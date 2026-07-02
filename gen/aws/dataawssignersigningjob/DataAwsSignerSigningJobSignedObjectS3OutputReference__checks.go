@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsSignerSigningJobSignedObjectS3OutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSignerSigningJobSignedObjectS3OutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsSignerSigningJobSignedObjectS3OutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsSignerSigningJobSignedObjectS3OutputReferenceParameters(t
 
 	return nil
 }
-

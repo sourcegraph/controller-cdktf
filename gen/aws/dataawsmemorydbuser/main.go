@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUser",
-		reflect.TypeOf((*DataAwsMemorydbUser)(nil)).Elem(),
+		reflect.TypeFor[DataAwsMemorydbUser](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessString", GoGetter: "AccessString"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -57,7 +57,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userName", GoGetter: "UserName"},
 			_jsii_.MemberProperty{JsiiProperty: "userNameInput", GoGetter: "UserNameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsMemorydbUser{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -65,11 +65,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUserAuthenticationMode",
-		reflect.TypeOf((*DataAwsMemorydbUserAuthenticationMode)(nil)).Elem(),
+		reflect.TypeFor[DataAwsMemorydbUserAuthenticationMode](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUserAuthenticationModeList",
-		reflect.TypeOf((*DataAwsMemorydbUserAuthenticationModeList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsMemorydbUserAuthenticationModeList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -82,7 +82,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsMemorydbUserAuthenticationModeList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -90,7 +90,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUserAuthenticationModeOutputReference",
-		reflect.TypeOf((*DataAwsMemorydbUserAuthenticationModeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsMemorydbUserAuthenticationModeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsMemorydbUserAuthenticationModeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -124,6 +124,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUserConfig",
-		reflect.TypeOf((*DataAwsMemorydbUserConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsMemorydbUserConfig](),
 	)
 }

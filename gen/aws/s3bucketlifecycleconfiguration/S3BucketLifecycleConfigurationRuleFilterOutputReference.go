@@ -14,9 +14,9 @@ type S3BucketLifecycleConfigurationRuleFilterOutputReference interface {
 	AndInput() *S3BucketLifecycleConfigurationRuleFilterAnd
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -53,7 +53,7 @@ type S3BucketLifecycleConfigurationRuleFilterOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type S3BucketLifecycleConfigurationRuleFilterOutputReference interface {
 	ResetTag()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -116,8 +116,8 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) AndI
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) Terr
 	return returns
 }
 
-
 func NewS3BucketLifecycleConfigurationRuleFilterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) S3BucketLifecycleConfigurationRuleFilterOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewS3BucketLifecycleConfigurationRuleFilterOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleFilterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewS3BucketLifecycleConfigurationRuleFilterOutputReference_Override(s S3Buc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleFilterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference)SetInternalValue(val *S3BucketLifecycleConfigurationRuleFilter) {
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) SetInternalValue(val *S3BucketLifecycleConfigurationRuleFilter) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference)SetObjectSizeGreaterThan(val *string) {
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) SetObjectSizeGreaterThan(val *string) {
 	if err := j.validateSetObjectSizeGreaterThanParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference)SetOb
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference)SetObjectSizeLessThan(val *string) {
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) SetObjectSizeLessThan(val *string) {
 	if err := j.validateSetObjectSizeLessThanParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference)SetOb
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference)SetPrefix(val *string) {
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) SetPrefix(val *string) {
 	if err := j.validateSetPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference)SetPr
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,16 +394,16 @@ func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) Comp
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) GetB
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) GetB
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) GetL
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) GetN
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) GetN
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -500,7 +499,7 @@ func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) GetN
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -516,7 +515,7 @@ func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) GetS
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -532,7 +531,7 @@ func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) GetS
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -561,7 +560,7 @@ func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) Inte
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -575,7 +574,7 @@ func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) PutA
 	_jsii_.InvokeVoid(
 		s,
 		"putAnd",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -586,7 +585,7 @@ func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) PutT
 	_jsii_.InvokeVoid(
 		s,
 		"putTag",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -630,16 +629,16 @@ func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) Rese
 	)
 }
 
-func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) ToSt
 
 	return returns
 }
-

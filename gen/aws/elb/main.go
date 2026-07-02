@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elb.Elb",
-		reflect.TypeOf((*Elb)(nil)).Elem(),
+		reflect.TypeFor[Elb](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessLogs", GoGetter: "AccessLogs"},
 			_jsii_.MemberProperty{JsiiProperty: "accessLogsInput", GoGetter: "AccessLogsInput"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Elb{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -124,11 +124,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elb.ElbAccessLogs",
-		reflect.TypeOf((*ElbAccessLogs)(nil)).Elem(),
+		reflect.TypeFor[ElbAccessLogs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elb.ElbAccessLogsOutputReference",
-		reflect.TypeOf((*ElbAccessLogsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ElbAccessLogsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketInput", GoGetter: "BucketInput"},
@@ -163,7 +163,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElbAccessLogsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -171,15 +171,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elb.ElbConfig",
-		reflect.TypeOf((*ElbConfig)(nil)).Elem(),
+		reflect.TypeFor[ElbConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elb.ElbHealthCheck",
-		reflect.TypeOf((*ElbHealthCheck)(nil)).Elem(),
+		reflect.TypeFor[ElbHealthCheck](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elb.ElbHealthCheckOutputReference",
-		reflect.TypeOf((*ElbHealthCheckOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ElbHealthCheckOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -213,7 +213,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "unhealthyThreshold", GoGetter: "UnhealthyThreshold"},
 			_jsii_.MemberProperty{JsiiProperty: "unhealthyThresholdInput", GoGetter: "UnhealthyThresholdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElbHealthCheckOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -221,11 +221,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elb.ElbListener",
-		reflect.TypeOf((*ElbListener)(nil)).Elem(),
+		reflect.TypeFor[ElbListener](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elb.ElbListenerList",
-		reflect.TypeOf((*ElbListenerList)(nil)).Elem(),
+		reflect.TypeFor[ElbListenerList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -239,7 +239,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElbListenerList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -247,7 +247,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elb.ElbListenerOutputReference",
-		reflect.TypeOf((*ElbListenerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ElbListenerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -282,7 +282,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElbListenerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

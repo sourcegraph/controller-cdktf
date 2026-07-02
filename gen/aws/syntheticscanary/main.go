@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanary",
-		reflect.TypeOf((*SyntheticsCanary)(nil)).Elem(),
+		reflect.TypeFor[SyntheticsCanary](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zipFile", GoGetter: "ZipFile"},
 			_jsii_.MemberProperty{JsiiProperty: "zipFileInput", GoGetter: "ZipFileInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SyntheticsCanary{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -124,11 +124,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryArtifactConfig",
-		reflect.TypeOf((*SyntheticsCanaryArtifactConfig)(nil)).Elem(),
+		reflect.TypeFor[SyntheticsCanaryArtifactConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryArtifactConfigOutputReference",
-		reflect.TypeOf((*SyntheticsCanaryArtifactConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SyntheticsCanaryArtifactConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -156,7 +156,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SyntheticsCanaryArtifactConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -164,11 +164,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryArtifactConfigS3Encryption",
-		reflect.TypeOf((*SyntheticsCanaryArtifactConfigS3Encryption)(nil)).Elem(),
+		reflect.TypeFor[SyntheticsCanaryArtifactConfigS3Encryption](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryArtifactConfigS3EncryptionOutputReference",
-		reflect.TypeOf((*SyntheticsCanaryArtifactConfigS3EncryptionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SyntheticsCanaryArtifactConfigS3EncryptionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -198,7 +198,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SyntheticsCanaryArtifactConfigS3EncryptionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -206,15 +206,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryConfig",
-		reflect.TypeOf((*SyntheticsCanaryConfig)(nil)).Elem(),
+		reflect.TypeFor[SyntheticsCanaryConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryRunConfig",
-		reflect.TypeOf((*SyntheticsCanaryRunConfig)(nil)).Elem(),
+		reflect.TypeFor[SyntheticsCanaryRunConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryRunConfigOutputReference",
-		reflect.TypeOf((*SyntheticsCanaryRunConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SyntheticsCanaryRunConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeTracing", GoGetter: "ActiveTracing"},
 			_jsii_.MemberProperty{JsiiProperty: "activeTracingInput", GoGetter: "ActiveTracingInput"},
@@ -250,7 +250,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeoutInSecondsInput", GoGetter: "TimeoutInSecondsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SyntheticsCanaryRunConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -258,11 +258,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanarySchedule",
-		reflect.TypeOf((*SyntheticsCanarySchedule)(nil)).Elem(),
+		reflect.TypeFor[SyntheticsCanarySchedule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryScheduleOutputReference",
-		reflect.TypeOf((*SyntheticsCanaryScheduleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SyntheticsCanaryScheduleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -291,7 +291,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SyntheticsCanaryScheduleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -299,11 +299,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryTimeline",
-		reflect.TypeOf((*SyntheticsCanaryTimeline)(nil)).Elem(),
+		reflect.TypeFor[SyntheticsCanaryTimeline](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryTimelineList",
-		reflect.TypeOf((*SyntheticsCanaryTimelineList)(nil)).Elem(),
+		reflect.TypeFor[SyntheticsCanaryTimelineList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -316,7 +316,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SyntheticsCanaryTimelineList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -324,7 +324,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryTimelineOutputReference",
-		reflect.TypeOf((*SyntheticsCanaryTimelineOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SyntheticsCanaryTimelineOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -352,7 +352,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SyntheticsCanaryTimelineOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -360,11 +360,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryVpcConfig",
-		reflect.TypeOf((*SyntheticsCanaryVpcConfig)(nil)).Elem(),
+		reflect.TypeFor[SyntheticsCanaryVpcConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryVpcConfigOutputReference",
-		reflect.TypeOf((*SyntheticsCanaryVpcConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SyntheticsCanaryVpcConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -395,7 +395,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SyntheticsCanaryVpcConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -98,7 +98,7 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsAcceleratorCountOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_LaunchTemplateInstanceRequirementsAcceleratorCountOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsAcceleratorCountOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewLaunchTemplateInstanceRequirementsAcceleratorCountOutputReferenc
 
 	return nil
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_CognitoUserPoolUserAttributeUpdateSettingsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_CognitoUserPoolUserAttributeUpdateSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CognitoUserPoolUserAttributeUpdateSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCognitoUserPoolUserAttributeUpdateSettingsOutputReferenceParamet
 
 	return nil
 }
-

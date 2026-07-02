@@ -106,7 +106,7 @@ func (j *jsiiProxy_OpsworksHaproxyLayerLoadBasedAutoScalingUpscalingOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksHaproxyLayerLoadBasedAutoScalingUpscalingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksHaproxyLayerLoadBasedAutoScalingUpscalingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -254,4 +254,3 @@ func validateNewOpsworksHaproxyLayerLoadBasedAutoScalingUpscalingOutputReference
 
 	return nil
 }
-

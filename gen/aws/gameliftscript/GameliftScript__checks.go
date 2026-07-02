@@ -19,7 +19,7 @@ func (g *jsiiProxy_GameliftScript) validateAddMoveTargetParameters(moveTarget *s
 	return nil
 }
 
-func (g *jsiiProxy_GameliftScript) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GameliftScript) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GameliftScript) validateMoveFromIdParameters(id *string) erro
 	return nil
 }
 
-func (g *jsiiProxy_GameliftScript) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GameliftScript) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGameliftScript_GenerateConfigForImportParameters(scope constructs.C
 	return nil
 }
 
-func validateGameliftScript_IsConstructParameters(x interface{}) error {
+func validateGameliftScript_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGameliftScript_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateGameliftScript_IsTerraformElementParameters(x interface{}) error {
+func validateGameliftScript_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGameliftScript_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateGameliftScript_IsTerraformResourceParameters(x interface{}) error {
+func validateGameliftScript_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGameliftScript_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_GameliftScript) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GameliftScript) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GameliftScript) validateSetConnectionParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_GameliftScript) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GameliftScript) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -369,7 +369,7 @@ func (j *jsiiProxy_GameliftScript) validateSetNameParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_GameliftScript) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GameliftScript) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewGameliftScriptParameters(scope constructs.Construct, id *string,
 
 	return nil
 }
-

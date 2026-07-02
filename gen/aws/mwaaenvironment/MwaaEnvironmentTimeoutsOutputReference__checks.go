@@ -98,7 +98,7 @@ func (m *jsiiProxy_MwaaEnvironmentTimeoutsOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_MwaaEnvironmentTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MwaaEnvironmentTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_MwaaEnvironmentTimeoutsOutputReference) validateSetDeletePara
 	return nil
 }
 
-func (j *jsiiProxy_MwaaEnvironmentTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MwaaEnvironmentTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewMwaaEnvironmentTimeoutsOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

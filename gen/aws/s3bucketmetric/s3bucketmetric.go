@@ -18,15 +18,15 @@ type S3BucketMetric interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -58,24 +58,24 @@ type S3BucketMetric interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -93,7 +93,7 @@ type S3BucketMetric interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -105,7 +105,7 @@ type S3BucketMetric interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -118,17 +118,17 @@ type S3BucketMetric interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for S3BucketMetric
@@ -166,8 +166,8 @@ func (j *jsiiProxy_S3BucketMetric) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketMetric) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketMetric) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_S3BucketMetric) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketMetric) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_S3BucketMetric) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_S3BucketMetric) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketMetric) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketMetric) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -326,8 +326,8 @@ func (j *jsiiProxy_S3BucketMetric) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketMetric) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_S3BucketMetric) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -336,8 +336,8 @@ func (j *jsiiProxy_S3BucketMetric) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketMetric) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketMetric) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -356,8 +356,8 @@ func (j *jsiiProxy_S3BucketMetric) TerraformGeneratorMetadata() *cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketMetric) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_S3BucketMetric) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -376,7 +376,6 @@ func (j *jsiiProxy_S3BucketMetric) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_bucket_metric aws_s3_bucket_metric} Resource.
 func NewS3BucketMetric(scope constructs.Construct, id *string, config *S3BucketMetricConfig) S3BucketMetric {
 	_init_.Initialize()
@@ -388,7 +387,7 @@ func NewS3BucketMetric(scope constructs.Construct, id *string, config *S3BucketM
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3BucketMetric.S3BucketMetric",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -401,12 +400,12 @@ func NewS3BucketMetric_Override(s S3BucketMetric, scope constructs.Construct, id
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3BucketMetric.S3BucketMetric",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_S3BucketMetric)SetBucket(val *string) {
+func (j *jsiiProxy_S3BucketMetric) SetBucket(val *string) {
 	if err := j.validateSetBucketParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_S3BucketMetric)SetBucket(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketMetric)SetConnection(val interface{}) {
+func (j *jsiiProxy_S3BucketMetric) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_S3BucketMetric)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketMetric)SetCount(val interface{}) {
+func (j *jsiiProxy_S3BucketMetric) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -439,7 +438,7 @@ func (j *jsiiProxy_S3BucketMetric)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketMetric)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_S3BucketMetric) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -447,7 +446,7 @@ func (j *jsiiProxy_S3BucketMetric)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketMetric)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_S3BucketMetric) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -455,7 +454,7 @@ func (j *jsiiProxy_S3BucketMetric)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketMetric)SetId(val *string) {
+func (j *jsiiProxy_S3BucketMetric) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_S3BucketMetric)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketMetric)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_S3BucketMetric) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -477,7 +476,7 @@ func (j *jsiiProxy_S3BucketMetric)SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_S3BucketMetric)SetName(val *string) {
+func (j *jsiiProxy_S3BucketMetric) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_S3BucketMetric)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketMetric)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_S3BucketMetric) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -496,7 +495,7 @@ func (j *jsiiProxy_S3BucketMetric)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketMetric)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_S3BucketMetric) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,7 +518,7 @@ func S3BucketMetric_GenerateConfigForImport(scope constructs.Construct, importTo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3BucketMetric.S3BucketMetric",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -543,7 +542,7 @@ func S3BucketMetric_GenerateConfigForImport(scope constructs.Construct, importTo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func S3BucketMetric_IsConstruct(x interface{}) *bool {
+func S3BucketMetric_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateS3BucketMetric_IsConstructParameters(x); err != nil {
@@ -554,7 +553,7 @@ func S3BucketMetric_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3BucketMetric.S3BucketMetric",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -562,7 +561,7 @@ func S3BucketMetric_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func S3BucketMetric_IsTerraformElement(x interface{}) *bool {
+func S3BucketMetric_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateS3BucketMetric_IsTerraformElementParameters(x); err != nil {
@@ -573,7 +572,7 @@ func S3BucketMetric_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3BucketMetric.S3BucketMetric",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func S3BucketMetric_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func S3BucketMetric_IsTerraformResource(x interface{}) *bool {
+func S3BucketMetric_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateS3BucketMetric_IsTerraformResourceParameters(x); err != nil {
@@ -592,7 +591,7 @@ func S3BucketMetric_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3BucketMetric.S3BucketMetric",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -617,31 +616,31 @@ func (s *jsiiProxy_S3BucketMetric) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_S3BucketMetric) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_S3BucketMetric) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_S3BucketMetric) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_S3BucketMetric) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -657,7 +656,7 @@ func (s *jsiiProxy_S3BucketMetric) GetBooleanAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -673,7 +672,7 @@ func (s *jsiiProxy_S3BucketMetric) GetBooleanMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -689,7 +688,7 @@ func (s *jsiiProxy_S3BucketMetric) GetListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -705,7 +704,7 @@ func (s *jsiiProxy_S3BucketMetric) GetNumberAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -721,7 +720,7 @@ func (s *jsiiProxy_S3BucketMetric) GetNumberListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (s *jsiiProxy_S3BucketMetric) GetNumberMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (s *jsiiProxy_S3BucketMetric) GetStringAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,15 +768,15 @@ func (s *jsiiProxy_S3BucketMetric) GetStringMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketMetric) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3BucketMetric) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -796,7 +795,7 @@ func (s *jsiiProxy_S3BucketMetric) ImportFrom(id *string, provider cdktf.Terrafo
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -809,7 +808,7 @@ func (s *jsiiProxy_S3BucketMetric) InterpolationForAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,18 +822,18 @@ func (s *jsiiProxy_S3BucketMetric) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_S3BucketMetric) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_S3BucketMetric) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -845,7 +844,7 @@ func (s *jsiiProxy_S3BucketMetric) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -856,7 +855,7 @@ func (s *jsiiProxy_S3BucketMetric) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -867,7 +866,7 @@ func (s *jsiiProxy_S3BucketMetric) PutFilter(value *S3BucketMetricFilter) {
 	_jsii_.InvokeVoid(
 		s,
 		"putFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -895,8 +894,8 @@ func (s *jsiiProxy_S3BucketMetric) ResetOverrideLogicalId() {
 	)
 }
 
-func (s *jsiiProxy_S3BucketMetric) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_S3BucketMetric) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -908,8 +907,8 @@ func (s *jsiiProxy_S3BucketMetric) SynthesizeAttributes() *map[string]interface{
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketMetric) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_S3BucketMetric) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -921,8 +920,8 @@ func (s *jsiiProxy_S3BucketMetric) SynthesizeHclAttributes() *map[string]interfa
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketMetric) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3BucketMetric) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -934,8 +933,8 @@ func (s *jsiiProxy_S3BucketMetric) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketMetric) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3BucketMetric) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -960,8 +959,8 @@ func (s *jsiiProxy_S3BucketMetric) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketMetric) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3BucketMetric) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -972,4 +971,3 @@ func (s *jsiiProxy_S3BucketMetric) ToTerraform() interface{} {
 
 	return returns
 }
-

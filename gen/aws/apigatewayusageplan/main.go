@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan",
-		reflect.TypeOf((*ApiGatewayUsagePlan)(nil)).Elem(),
+		reflect.TypeFor[ApiGatewayUsagePlan](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -83,7 +83,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApiGatewayUsagePlan{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -91,11 +91,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStages",
-		reflect.TypeOf((*ApiGatewayUsagePlanApiStages)(nil)).Elem(),
+		reflect.TypeFor[ApiGatewayUsagePlanApiStages](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesList",
-		reflect.TypeOf((*ApiGatewayUsagePlanApiStagesList)(nil)).Elem(),
+		reflect.TypeFor[ApiGatewayUsagePlanApiStagesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -109,7 +109,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApiGatewayUsagePlanApiStagesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -117,7 +117,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesOutputReference",
-		reflect.TypeOf((*ApiGatewayUsagePlanApiStagesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApiGatewayUsagePlanApiStagesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiId", GoGetter: "ApiId"},
 			_jsii_.MemberProperty{JsiiProperty: "apiIdInput", GoGetter: "ApiIdInput"},
@@ -149,7 +149,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "throttleInput", GoGetter: "ThrottleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -157,11 +157,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesThrottle",
-		reflect.TypeOf((*ApiGatewayUsagePlanApiStagesThrottle)(nil)).Elem(),
+		reflect.TypeFor[ApiGatewayUsagePlanApiStagesThrottle](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesThrottleList",
-		reflect.TypeOf((*ApiGatewayUsagePlanApiStagesThrottleList)(nil)).Elem(),
+		reflect.TypeFor[ApiGatewayUsagePlanApiStagesThrottleList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -175,7 +175,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApiGatewayUsagePlanApiStagesThrottleList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -183,7 +183,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesThrottleOutputReference",
-		reflect.TypeOf((*ApiGatewayUsagePlanApiStagesThrottleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApiGatewayUsagePlanApiStagesThrottleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "burstLimit", GoGetter: "BurstLimit"},
 			_jsii_.MemberProperty{JsiiProperty: "burstLimitInput", GoGetter: "BurstLimitInput"},
@@ -215,7 +215,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApiGatewayUsagePlanApiStagesThrottleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -223,15 +223,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanConfig",
-		reflect.TypeOf((*ApiGatewayUsagePlanConfig)(nil)).Elem(),
+		reflect.TypeFor[ApiGatewayUsagePlanConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanQuotaSettings",
-		reflect.TypeOf((*ApiGatewayUsagePlanQuotaSettings)(nil)).Elem(),
+		reflect.TypeFor[ApiGatewayUsagePlanQuotaSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanQuotaSettingsOutputReference",
-		reflect.TypeOf((*ApiGatewayUsagePlanQuotaSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApiGatewayUsagePlanQuotaSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -262,7 +262,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -270,11 +270,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanThrottleSettings",
-		reflect.TypeOf((*ApiGatewayUsagePlanThrottleSettings)(nil)).Elem(),
+		reflect.TypeFor[ApiGatewayUsagePlanThrottleSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanThrottleSettingsOutputReference",
-		reflect.TypeOf((*ApiGatewayUsagePlanThrottleSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApiGatewayUsagePlanThrottleSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "burstLimit", GoGetter: "BurstLimit"},
 			_jsii_.MemberProperty{JsiiProperty: "burstLimitInput", GoGetter: "BurstLimitInput"},
@@ -304,7 +304,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApiGatewayUsagePlanThrottleSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

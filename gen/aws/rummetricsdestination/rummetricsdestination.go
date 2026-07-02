@@ -18,15 +18,15 @@ type RumMetricsDestination interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,24 +62,24 @@ type RumMetricsDestination interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,7 +97,7 @@ type RumMetricsDestination interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -109,7 +109,7 @@ type RumMetricsDestination interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -122,17 +122,17 @@ type RumMetricsDestination interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for RumMetricsDestination
@@ -170,8 +170,8 @@ func (j *jsiiProxy_RumMetricsDestination) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_RumMetricsDestination) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RumMetricsDestination) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_RumMetricsDestination) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RumMetricsDestination) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RumMetricsDestination) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_RumMetricsDestination) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_RumMetricsDestination) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RumMetricsDestination) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -350,8 +350,8 @@ func (j *jsiiProxy_RumMetricsDestination) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_RumMetricsDestination) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_RumMetricsDestination) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -360,8 +360,8 @@ func (j *jsiiProxy_RumMetricsDestination) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RumMetricsDestination) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RumMetricsDestination) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -380,8 +380,8 @@ func (j *jsiiProxy_RumMetricsDestination) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_RumMetricsDestination) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RumMetricsDestination) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -400,7 +400,6 @@ func (j *jsiiProxy_RumMetricsDestination) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/rum_metrics_destination aws_rum_metrics_destination} Resource.
 func NewRumMetricsDestination(scope constructs.Construct, id *string, config *RumMetricsDestinationConfig) RumMetricsDestination {
 	_init_.Initialize()
@@ -412,7 +411,7 @@ func NewRumMetricsDestination(scope constructs.Construct, id *string, config *Ru
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.rumMetricsDestination.RumMetricsDestination",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -425,12 +424,12 @@ func NewRumMetricsDestination_Override(r RumMetricsDestination, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.rumMetricsDestination.RumMetricsDestination",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RumMetricsDestination)SetAppMonitorName(val *string) {
+func (j *jsiiProxy_RumMetricsDestination) SetAppMonitorName(val *string) {
 	if err := j.validateSetAppMonitorNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_RumMetricsDestination)SetAppMonitorName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RumMetricsDestination)SetConnection(val interface{}) {
+func (j *jsiiProxy_RumMetricsDestination) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_RumMetricsDestination)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RumMetricsDestination)SetCount(val interface{}) {
+func (j *jsiiProxy_RumMetricsDestination) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_RumMetricsDestination)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RumMetricsDestination)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_RumMetricsDestination) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -471,7 +470,7 @@ func (j *jsiiProxy_RumMetricsDestination)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RumMetricsDestination)SetDestination(val *string) {
+func (j *jsiiProxy_RumMetricsDestination) SetDestination(val *string) {
 	if err := j.validateSetDestinationParameters(val); err != nil {
 		panic(err)
 	}
@@ -482,7 +481,7 @@ func (j *jsiiProxy_RumMetricsDestination)SetDestination(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RumMetricsDestination)SetDestinationArn(val *string) {
+func (j *jsiiProxy_RumMetricsDestination) SetDestinationArn(val *string) {
 	if err := j.validateSetDestinationArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -493,7 +492,7 @@ func (j *jsiiProxy_RumMetricsDestination)SetDestinationArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RumMetricsDestination)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_RumMetricsDestination) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -501,7 +500,7 @@ func (j *jsiiProxy_RumMetricsDestination)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_RumMetricsDestination)SetIamRoleArn(val *string) {
+func (j *jsiiProxy_RumMetricsDestination) SetIamRoleArn(val *string) {
 	if err := j.validateSetIamRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_RumMetricsDestination)SetIamRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RumMetricsDestination)SetId(val *string) {
+func (j *jsiiProxy_RumMetricsDestination) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_RumMetricsDestination)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RumMetricsDestination)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_RumMetricsDestination) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_RumMetricsDestination)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_RumMetricsDestination)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_RumMetricsDestination) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -542,7 +541,7 @@ func (j *jsiiProxy_RumMetricsDestination)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_RumMetricsDestination)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_RumMetricsDestination) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +564,7 @@ func RumMetricsDestination_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.rumMetricsDestination.RumMetricsDestination",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func RumMetricsDestination_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func RumMetricsDestination_IsConstruct(x interface{}) *bool {
+func RumMetricsDestination_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRumMetricsDestination_IsConstructParameters(x); err != nil {
@@ -600,7 +599,7 @@ func RumMetricsDestination_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.rumMetricsDestination.RumMetricsDestination",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -608,7 +607,7 @@ func RumMetricsDestination_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func RumMetricsDestination_IsTerraformElement(x interface{}) *bool {
+func RumMetricsDestination_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRumMetricsDestination_IsTerraformElementParameters(x); err != nil {
@@ -619,7 +618,7 @@ func RumMetricsDestination_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.rumMetricsDestination.RumMetricsDestination",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func RumMetricsDestination_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func RumMetricsDestination_IsTerraformResource(x interface{}) *bool {
+func RumMetricsDestination_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRumMetricsDestination_IsTerraformResourceParameters(x); err != nil {
@@ -638,7 +637,7 @@ func RumMetricsDestination_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.rumMetricsDestination.RumMetricsDestination",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -663,31 +662,31 @@ func (r *jsiiProxy_RumMetricsDestination) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (r *jsiiProxy_RumMetricsDestination) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_RumMetricsDestination) AddOverride(path *string, value any) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (r *jsiiProxy_RumMetricsDestination) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RumMetricsDestination) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -703,7 +702,7 @@ func (r *jsiiProxy_RumMetricsDestination) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func (r *jsiiProxy_RumMetricsDestination) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -735,7 +734,7 @@ func (r *jsiiProxy_RumMetricsDestination) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -751,7 +750,7 @@ func (r *jsiiProxy_RumMetricsDestination) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -767,7 +766,7 @@ func (r *jsiiProxy_RumMetricsDestination) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -783,7 +782,7 @@ func (r *jsiiProxy_RumMetricsDestination) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,7 +798,7 @@ func (r *jsiiProxy_RumMetricsDestination) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -815,15 +814,15 @@ func (r *jsiiProxy_RumMetricsDestination) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_RumMetricsDestination) HasResourceMove() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RumMetricsDestination) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -842,7 +841,7 @@ func (r *jsiiProxy_RumMetricsDestination) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		r,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -855,7 +854,7 @@ func (r *jsiiProxy_RumMetricsDestination) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -869,18 +868,18 @@ func (r *jsiiProxy_RumMetricsDestination) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (r *jsiiProxy_RumMetricsDestination) MoveTo(moveTarget *string, index interface{}) {
+func (r *jsiiProxy_RumMetricsDestination) MoveTo(moveTarget *string, index any) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -891,7 +890,7 @@ func (r *jsiiProxy_RumMetricsDestination) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -902,7 +901,7 @@ func (r *jsiiProxy_RumMetricsDestination) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -938,8 +937,8 @@ func (r *jsiiProxy_RumMetricsDestination) ResetOverrideLogicalId() {
 	)
 }
 
-func (r *jsiiProxy_RumMetricsDestination) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RumMetricsDestination) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -951,8 +950,8 @@ func (r *jsiiProxy_RumMetricsDestination) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (r *jsiiProxy_RumMetricsDestination) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RumMetricsDestination) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -964,8 +963,8 @@ func (r *jsiiProxy_RumMetricsDestination) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (r *jsiiProxy_RumMetricsDestination) ToHclTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RumMetricsDestination) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -977,8 +976,8 @@ func (r *jsiiProxy_RumMetricsDestination) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_RumMetricsDestination) ToMetadata() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RumMetricsDestination) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1003,8 +1002,8 @@ func (r *jsiiProxy_RumMetricsDestination) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_RumMetricsDestination) ToTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RumMetricsDestination) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1015,4 +1014,3 @@ func (r *jsiiProxy_RumMetricsDestination) ToTerraform() interface{} {
 
 	return returns
 }
-

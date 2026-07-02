@@ -98,7 +98,7 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterAccepterOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterAccepterOutputReference) validateSetAllowClassicLinkToRemoteVpcParameters(val interface{}) error {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterAccepterOutputReference) validateSetAllowClassicLinkToRemoteVpcParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterAccepterOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterAccepterOutputReference) validateSetAllowRemoteVpcDnsResolutionParameters(val interface{}) error {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterAccepterOutputReference) validateSetAllowRemoteVpcDnsResolutionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -138,7 +138,7 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterAccepterOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterAccepterOutputReference) validateSetAllowVpcToRemoteClassicLinkParameters(val interface{}) error {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterAccepterOutputReference) validateSetAllowVpcToRemoteClassicLinkParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -158,7 +158,7 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterAccepterOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterAccepterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterAccepterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -258,4 +258,3 @@ func validateNewVpcPeeringConnectionAccepterAccepterOutputReferenceParameters(te
 
 	return nil
 }
-

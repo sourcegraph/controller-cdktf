@@ -34,7 +34,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationList) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCodedeployDeploymentGroupTriggerConfigurationListParameters(terr
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (s *jsiiProxy_S3AccountPublicAccessBlock) validateAddMoveTargetParameters(m
 	return nil
 }
 
-func (s *jsiiProxy_S3AccountPublicAccessBlock) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_S3AccountPublicAccessBlock) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_S3AccountPublicAccessBlock) validateMoveFromIdParameters(id *
 	return nil
 }
 
-func (s *jsiiProxy_S3AccountPublicAccessBlock) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_S3AccountPublicAccessBlock) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateS3AccountPublicAccessBlock_GenerateConfigForImportParameters(scope 
 	return nil
 }
 
-func validateS3AccountPublicAccessBlock_IsConstructParameters(x interface{}) error {
+func validateS3AccountPublicAccessBlock_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateS3AccountPublicAccessBlock_IsConstructParameters(x interface{}) err
 	return nil
 }
 
-func validateS3AccountPublicAccessBlock_IsTerraformElementParameters(x interface{}) error {
+func validateS3AccountPublicAccessBlock_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateS3AccountPublicAccessBlock_IsTerraformElementParameters(x interface
 	return nil
 }
 
-func validateS3AccountPublicAccessBlock_IsTerraformResourceParameters(x interface{}) error {
+func validateS3AccountPublicAccessBlock_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_S3AccountPublicAccessBlock) validateSetAccountIdParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_S3AccountPublicAccessBlock) validateSetBlockPublicAclsParameters(val interface{}) error {
+func (j *jsiiProxy_S3AccountPublicAccessBlock) validateSetBlockPublicAclsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -272,7 +272,7 @@ func (j *jsiiProxy_S3AccountPublicAccessBlock) validateSetBlockPublicAclsParamet
 	return nil
 }
 
-func (j *jsiiProxy_S3AccountPublicAccessBlock) validateSetBlockPublicPolicyParameters(val interface{}) error {
+func (j *jsiiProxy_S3AccountPublicAccessBlock) validateSetBlockPublicPolicyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -292,7 +292,7 @@ func (j *jsiiProxy_S3AccountPublicAccessBlock) validateSetBlockPublicPolicyParam
 	return nil
 }
 
-func (j *jsiiProxy_S3AccountPublicAccessBlock) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_S3AccountPublicAccessBlock) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -325,7 +325,7 @@ func (j *jsiiProxy_S3AccountPublicAccessBlock) validateSetConnectionParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_S3AccountPublicAccessBlock) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_S3AccountPublicAccessBlock) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -390,7 +390,7 @@ func (j *jsiiProxy_S3AccountPublicAccessBlock) validateSetIdParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_S3AccountPublicAccessBlock) validateSetIgnorePublicAclsParameters(val interface{}) error {
+func (j *jsiiProxy_S3AccountPublicAccessBlock) validateSetIgnorePublicAclsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -418,7 +418,7 @@ func (j *jsiiProxy_S3AccountPublicAccessBlock) validateSetLifecycleParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_S3AccountPublicAccessBlock) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_S3AccountPublicAccessBlock) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -464,7 +464,7 @@ func (j *jsiiProxy_S3AccountPublicAccessBlock) validateSetProvisionersParameters
 	return nil
 }
 
-func (j *jsiiProxy_S3AccountPublicAccessBlock) validateSetRestrictPublicBucketsParameters(val interface{}) error {
+func (j *jsiiProxy_S3AccountPublicAccessBlock) validateSetRestrictPublicBucketsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -499,4 +499,3 @@ func validateNewS3AccountPublicAccessBlockParameters(scope constructs.Construct,
 
 	return nil
 }
-

@@ -90,7 +90,7 @@ func (s *jsiiProxy_SsmPatchBaselineApprovalRuleOutputReference) validateInterpol
 	return nil
 }
 
-func (s *jsiiProxy_SsmPatchBaselineApprovalRuleOutputReference) validatePutPatchFilterParameters(value interface{}) error {
+func (s *jsiiProxy_SsmPatchBaselineApprovalRuleOutputReference) validatePutPatchFilterParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -145,7 +145,7 @@ func (j *jsiiProxy_SsmPatchBaselineApprovalRuleOutputReference) validateSetAppro
 	return nil
 }
 
-func (j *jsiiProxy_SsmPatchBaselineApprovalRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SsmPatchBaselineApprovalRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -218,7 +218,7 @@ func (j *jsiiProxy_SsmPatchBaselineApprovalRuleOutputReference) validateSetCompl
 	return nil
 }
 
-func (j *jsiiProxy_SsmPatchBaselineApprovalRuleOutputReference) validateSetEnableNonSecurityParameters(val interface{}) error {
+func (j *jsiiProxy_SsmPatchBaselineApprovalRuleOutputReference) validateSetEnableNonSecurityParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -238,7 +238,7 @@ func (j *jsiiProxy_SsmPatchBaselineApprovalRuleOutputReference) validateSetEnabl
 	return nil
 }
 
-func (j *jsiiProxy_SsmPatchBaselineApprovalRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SsmPatchBaselineApprovalRuleOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -297,4 +297,3 @@ func validateNewSsmPatchBaselineApprovalRuleOutputReferenceParameters(terraformR
 
 	return nil
 }
-

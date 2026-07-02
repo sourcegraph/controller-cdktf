@@ -12,9 +12,9 @@ type SpotInstanceRequestEnclaveOptionsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,9 +25,9 @@ type SpotInstanceRequestEnclaveOptionsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *SpotInstanceRequestEnclaveOptions
@@ -43,7 +43,7 @@ type SpotInstanceRequestEnclaveOptionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type SpotInstanceRequestEnclaveOptionsOutputReference interface {
 	ResetEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -110,8 +110,8 @@ func (j *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference) CreationSta
 	return returns
 }
 
-func (j *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -120,8 +120,8 @@ func (j *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference) Enabled() i
 	return returns
 }
 
-func (j *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference) TerraformRe
 	return returns
 }
 
-
 func NewSpotInstanceRequestEnclaveOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SpotInstanceRequestEnclaveOptionsOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewSpotInstanceRequestEnclaveOptionsOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestEnclaveOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewSpotInstanceRequestEnclaveOptionsOutputReference_Override(s SpotInstance
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestEnclaveOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference)SetEnabled(v
 	)
 }
 
-func (j *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference)SetInternalValue(val *SpotInstanceRequestEnclaveOptions) {
+func (j *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference) SetInternalValue(val *SpotInstanceRequestEnclaveOptions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,16 +276,16 @@ func (s *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference) ComputeFqn(
 	return returns
 }
 
-func (s *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -302,7 +301,7 @@ func (s *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -318,7 +317,7 @@ func (s *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -334,7 +333,7 @@ func (s *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference) GetListAttr
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (s *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (s *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (s *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (s *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference) GetStringAt
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (s *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference) GetStringMa
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (s *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference) Interpolati
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -458,16 +457,16 @@ func (s *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference) ResetEnable
 	)
 }
 
-func (s *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (s *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference) ToString() 
 
 	return returns
 }
-

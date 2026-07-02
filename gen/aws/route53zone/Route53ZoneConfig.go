@@ -6,9 +6,9 @@ import (
 
 type Route53ZoneConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type Route53ZoneConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53_zone#name Route53Zone#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53_zone#comment Route53Zone#comment}.
@@ -26,7 +26,7 @@ type Route53ZoneConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53_zone#delegation_set_id Route53Zone#delegation_set_id}.
 	DelegationSetId *string `field:"optional" json:"delegationSetId" yaml:"delegationSetId"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53_zone#force_destroy Route53Zone#force_destroy}.
-	ForceDestroy interface{} `field:"optional" json:"forceDestroy" yaml:"forceDestroy"`
+	ForceDestroy any `field:"optional" json:"forceDestroy" yaml:"forceDestroy"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53_zone#id Route53Zone#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -39,6 +39,5 @@ type Route53ZoneConfig struct {
 	// vpc block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53_zone#vpc Route53Zone#vpc}
-	Vpc interface{} `field:"optional" json:"vpc" yaml:"vpc"`
+	Vpc any `field:"optional" json:"vpc" yaml:"vpc"`
 }
-

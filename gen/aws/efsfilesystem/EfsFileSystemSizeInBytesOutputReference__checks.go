@@ -98,7 +98,7 @@ func (e *jsiiProxy_EfsFileSystemSizeInBytesOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_EfsFileSystemSizeInBytesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EfsFileSystemSizeInBytesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewEfsFileSystemSizeInBytesOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

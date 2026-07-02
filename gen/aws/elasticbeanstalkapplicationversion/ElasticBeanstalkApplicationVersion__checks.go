@@ -19,7 +19,7 @@ func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) validateAddMoveTargetPara
 	return nil
 }
 
-func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) validateMoveFromIdParamet
 	return nil
 }
 
-func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateElasticBeanstalkApplicationVersion_GenerateConfigForImportParameter
 	return nil
 }
 
-func validateElasticBeanstalkApplicationVersion_IsConstructParameters(x interface{}) error {
+func validateElasticBeanstalkApplicationVersion_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateElasticBeanstalkApplicationVersion_IsConstructParameters(x interfac
 	return nil
 }
 
-func validateElasticBeanstalkApplicationVersion_IsTerraformElementParameters(x interface{}) error {
+func validateElasticBeanstalkApplicationVersion_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateElasticBeanstalkApplicationVersion_IsTerraformElementParameters(x i
 	return nil
 }
 
-func validateElasticBeanstalkApplicationVersion_IsTerraformResourceParameters(x interface{}) error {
+func validateElasticBeanstalkApplicationVersion_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -260,7 +260,7 @@ func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) validateSetBucketParamete
 	return nil
 }
 
-func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -293,7 +293,7 @@ func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) validateSetConnectionPara
 	return nil
 }
 
-func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -358,7 +358,7 @@ func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) validateSetDescriptionPar
 	return nil
 }
 
-func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) validateSetForceDeleteParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) validateSetForceDeleteParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -410,7 +410,7 @@ func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) validateSetNameParameters
 	return nil
 }
 
-func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -490,4 +490,3 @@ func validateNewElasticBeanstalkApplicationVersionParameters(scope constructs.Co
 
 	return nil
 }
-

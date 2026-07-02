@@ -98,7 +98,7 @@ func (i *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationCloudwatch
 	return nil
 }
 
-func (j *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewIvschatLoggingConfigurationDestinationConfigurationCloudwatchLog
 
 	return nil
 }
-

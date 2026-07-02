@@ -98,7 +98,7 @@ func (c *jsiiProxy_ConnectPhoneNumberTimeoutsOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_ConnectPhoneNumberTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ConnectPhoneNumberTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ConnectPhoneNumberTimeoutsOutputReference) validateSetDeleteP
 	return nil
 }
 
-func (j *jsiiProxy_ConnectPhoneNumberTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ConnectPhoneNumberTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewConnectPhoneNumberTimeoutsOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

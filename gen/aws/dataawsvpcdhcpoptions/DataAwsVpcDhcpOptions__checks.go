@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsVpcDhcpOptions) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsVpcDhcpOptions) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -111,7 +111,7 @@ func (d *jsiiProxy_DataAwsVpcDhcpOptions) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsVpcDhcpOptions) validatePutFilterParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsVpcDhcpOptions) validatePutFilterParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -169,7 +169,7 @@ func validateDataAwsVpcDhcpOptions_GenerateConfigForImportParameters(scope const
 	return nil
 }
 
-func validateDataAwsVpcDhcpOptions_IsConstructParameters(x interface{}) error {
+func validateDataAwsVpcDhcpOptions_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -177,7 +177,7 @@ func validateDataAwsVpcDhcpOptions_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataAwsVpcDhcpOptions_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsVpcDhcpOptions_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -185,7 +185,7 @@ func validateDataAwsVpcDhcpOptions_IsTerraformDataSourceParameters(x interface{}
 	return nil
 }
 
-func validateDataAwsVpcDhcpOptions_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsVpcDhcpOptions_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -193,7 +193,7 @@ func validateDataAwsVpcDhcpOptions_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsVpcDhcpOptions) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsVpcDhcpOptions) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -297,4 +297,3 @@ func validateNewDataAwsVpcDhcpOptionsParameters(scope constructs.Construct, id *
 
 	return nil
 }
-

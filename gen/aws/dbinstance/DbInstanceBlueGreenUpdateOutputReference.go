@@ -12,9 +12,9 @@ type DbInstanceBlueGreenUpdateOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,9 +25,9 @@ type DbInstanceBlueGreenUpdateOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DbInstanceBlueGreenUpdate
@@ -43,7 +43,7 @@ type DbInstanceBlueGreenUpdateOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type DbInstanceBlueGreenUpdateOutputReference interface {
 	ResetEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_DbInstanceBlueGreenUpdateOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -110,8 +110,8 @@ func (j *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) CreationStack() *[]
 	return returns
 }
 
-func (j *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -120,8 +120,8 @@ func (j *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) Enabled() interface
 	return returns
 }
 
-func (j *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) TerraformResource()
 	return returns
 }
 
-
 func NewDbInstanceBlueGreenUpdateOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DbInstanceBlueGreenUpdateOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewDbInstanceBlueGreenUpdateOutputReference(terraformResource cdktf.IInterp
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewDbInstanceBlueGreenUpdateOutputReference_Override(d DbInstanceBlueGreenU
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference)SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference)SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference)SetEnabled(val inter
 	)
 }
 
-func (j *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference)SetInternalValue(val *DbInstanceBlueGreenUpdate) {
+func (j *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) SetInternalValue(val *DbInstanceBlueGreenUpdate) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,16 +276,16 @@ func (d *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) ComputeFqn() *strin
 	return returns
 }
 
-func (d *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -302,7 +301,7 @@ func (d *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) GetBooleanAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -318,7 +317,7 @@ func (d *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -334,7 +333,7 @@ func (d *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) GetListAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (d *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) GetNumberAttribute(
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (d *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) GetNumberListAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (d *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) GetNumberMapAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (d *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) GetStringAttribute(
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (d *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) GetStringMapAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (d *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -458,16 +457,16 @@ func (d *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) ResetEnabled() {
 	)
 }
 
-func (d *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (d *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) ToString() *string 
 
 	return returns
 }
-

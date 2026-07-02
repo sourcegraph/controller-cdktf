@@ -106,7 +106,7 @@ func (j *jsiiProxy_LambdaFunctionFileSystemConfigOutputReference) validateSetArn
 	return nil
 }
 
-func (j *jsiiProxy_LambdaFunctionFileSystemConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LambdaFunctionFileSystemConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewLambdaFunctionFileSystemConfigOutputReferenceParameters(terrafor
 
 	return nil
 }
-

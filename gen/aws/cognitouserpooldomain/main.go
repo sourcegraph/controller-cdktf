@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoUserPoolDomain.CognitoUserPoolDomain",
-		reflect.TypeOf((*CognitoUserPoolDomain)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolDomain](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userPoolIdInput", GoGetter: "UserPoolIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoUserPoolDomain{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -75,6 +75,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoUserPoolDomain.CognitoUserPoolDomainConfig",
-		reflect.TypeOf((*CognitoUserPoolDomainConfig)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolDomainConfig](),
 	)
 }

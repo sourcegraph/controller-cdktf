@@ -19,7 +19,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystem) validateAddMoveTargetParameters(moveTar
 	return nil
 }
 
-func (f *jsiiProxy_FsxOpenzfsFileSystem) validateAddOverrideParameters(path *string, value interface{}) error {
+func (f *jsiiProxy_FsxOpenzfsFileSystem) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystem) validateMoveFromIdParameters(id *string
 	return nil
 }
 
-func (f *jsiiProxy_FsxOpenzfsFileSystem) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (f *jsiiProxy_FsxOpenzfsFileSystem) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateFsxOpenzfsFileSystem_GenerateConfigForImportParameters(scope constr
 	return nil
 }
 
-func validateFsxOpenzfsFileSystem_IsConstructParameters(x interface{}) error {
+func validateFsxOpenzfsFileSystem_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateFsxOpenzfsFileSystem_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateFsxOpenzfsFileSystem_IsTerraformElementParameters(x interface{}) error {
+func validateFsxOpenzfsFileSystem_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateFsxOpenzfsFileSystem_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
-func validateFsxOpenzfsFileSystem_IsTerraformResourceParameters(x interface{}) error {
+func validateFsxOpenzfsFileSystem_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -293,7 +293,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetBackupIdParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -326,7 +326,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetConnectionParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetCopyTagsToBackupsParameters(val interface{}) error {
+func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetCopyTagsToBackupsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -346,7 +346,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetCopyTagsToBackupsParameters(
 	return nil
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetCopyTagsToVolumesParameters(val interface{}) error {
+func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetCopyTagsToVolumesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -366,7 +366,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetCopyTagsToVolumesParameters(
 	return nil
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -463,7 +463,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetLifecycleParameters(val *cdk
 	return nil
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -591,4 +591,3 @@ func validateNewFsxOpenzfsFileSystemParameters(scope constructs.Construct, id *s
 
 	return nil
 }
-

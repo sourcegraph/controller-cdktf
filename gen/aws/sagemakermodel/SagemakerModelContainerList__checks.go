@@ -34,7 +34,7 @@ func (s *jsiiProxy_SagemakerModelContainerList) validateResolveParameters(_conte
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerModelContainerList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerModelContainerList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSagemakerModelContainerListParameters(terraformResource cdktf.II
 
 	return nil
 }
-

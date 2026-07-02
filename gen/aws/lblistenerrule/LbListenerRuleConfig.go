@@ -6,9 +6,9 @@ import (
 
 type LbListenerRuleConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,15 +18,15 @@ type LbListenerRuleConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// action block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lb_listener_rule#action LbListenerRule#action}
-	Action interface{} `field:"required" json:"action" yaml:"action"`
+	Action any `field:"required" json:"action" yaml:"action"`
 	// condition block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lb_listener_rule#condition LbListenerRule#condition}
-	Condition interface{} `field:"required" json:"condition" yaml:"condition"`
+	Condition any `field:"required" json:"condition" yaml:"condition"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lb_listener_rule#listener_arn LbListenerRule#listener_arn}.
 	ListenerArn *string `field:"required" json:"listenerArn" yaml:"listenerArn"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lb_listener_rule#id LbListenerRule#id}.
@@ -41,4 +41,3 @@ type LbListenerRuleConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lb_listener_rule#tags_all LbListenerRule#tags_all}.
 	TagsAll *map[string]*string `field:"optional" json:"tagsAll" yaml:"tagsAll"`
 }
-

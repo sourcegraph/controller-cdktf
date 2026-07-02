@@ -18,9 +18,9 @@ type NetworkAclIngressOutputReference interface {
 	CidrBlockInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -42,8 +42,8 @@ type NetworkAclIngressOutputReference interface {
 	IcmpType() *float64
 	SetIcmpType(val *float64)
 	IcmpTypeInput() *float64
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Ipv6CidrBlock() *string
 	SetIpv6CidrBlock(val *string)
 	Ipv6CidrBlockInput() *string
@@ -67,7 +67,7 @@ type NetworkAclIngressOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type NetworkAclIngressOutputReference interface {
 	ResetToPort()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -152,8 +152,8 @@ func (j *jsiiProxy_NetworkAclIngressOutputReference) CidrBlockInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkAclIngressOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkAclIngressOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -252,8 +252,8 @@ func (j *jsiiProxy_NetworkAclIngressOutputReference) IcmpTypeInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkAclIngressOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkAclIngressOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -362,7 +362,6 @@ func (j *jsiiProxy_NetworkAclIngressOutputReference) ToPortInput() *float64 {
 	return returns
 }
 
-
 func NewNetworkAclIngressOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) NetworkAclIngressOutputReference {
 	_init_.Initialize()
 
@@ -373,7 +372,7 @@ func NewNetworkAclIngressOutputReference(terraformResource cdktf.IInterpolatingP
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.networkAcl.NetworkAclIngressOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -385,12 +384,12 @@ func NewNetworkAclIngressOutputReference_Override(n NetworkAclIngressOutputRefer
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.networkAcl.NetworkAclIngressOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkAclIngressOutputReference)SetAction(val *string) {
+func (j *jsiiProxy_NetworkAclIngressOutputReference) SetAction(val *string) {
 	if err := j.validateSetActionParameters(val); err != nil {
 		panic(err)
 	}
@@ -401,7 +400,7 @@ func (j *jsiiProxy_NetworkAclIngressOutputReference)SetAction(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkAclIngressOutputReference)SetCidrBlock(val *string) {
+func (j *jsiiProxy_NetworkAclIngressOutputReference) SetCidrBlock(val *string) {
 	if err := j.validateSetCidrBlockParameters(val); err != nil {
 		panic(err)
 	}
@@ -412,7 +411,7 @@ func (j *jsiiProxy_NetworkAclIngressOutputReference)SetCidrBlock(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkAclIngressOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NetworkAclIngressOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -423,7 +422,7 @@ func (j *jsiiProxy_NetworkAclIngressOutputReference)SetComplexObjectIndex(val in
 	)
 }
 
-func (j *jsiiProxy_NetworkAclIngressOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NetworkAclIngressOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,7 +433,7 @@ func (j *jsiiProxy_NetworkAclIngressOutputReference)SetComplexObjectIsFromSet(va
 	)
 }
 
-func (j *jsiiProxy_NetworkAclIngressOutputReference)SetFromPort(val *float64) {
+func (j *jsiiProxy_NetworkAclIngressOutputReference) SetFromPort(val *float64) {
 	if err := j.validateSetFromPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -445,7 +444,7 @@ func (j *jsiiProxy_NetworkAclIngressOutputReference)SetFromPort(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NetworkAclIngressOutputReference)SetIcmpCode(val *float64) {
+func (j *jsiiProxy_NetworkAclIngressOutputReference) SetIcmpCode(val *float64) {
 	if err := j.validateSetIcmpCodeParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,7 +455,7 @@ func (j *jsiiProxy_NetworkAclIngressOutputReference)SetIcmpCode(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NetworkAclIngressOutputReference)SetIcmpType(val *float64) {
+func (j *jsiiProxy_NetworkAclIngressOutputReference) SetIcmpType(val *float64) {
 	if err := j.validateSetIcmpTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_NetworkAclIngressOutputReference)SetIcmpType(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NetworkAclIngressOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_NetworkAclIngressOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_NetworkAclIngressOutputReference)SetInternalValue(val interfa
 	)
 }
 
-func (j *jsiiProxy_NetworkAclIngressOutputReference)SetIpv6CidrBlock(val *string) {
+func (j *jsiiProxy_NetworkAclIngressOutputReference) SetIpv6CidrBlock(val *string) {
 	if err := j.validateSetIpv6CidrBlockParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_NetworkAclIngressOutputReference)SetIpv6CidrBlock(val *string
 	)
 }
 
-func (j *jsiiProxy_NetworkAclIngressOutputReference)SetProtocol(val *string) {
+func (j *jsiiProxy_NetworkAclIngressOutputReference) SetProtocol(val *string) {
 	if err := j.validateSetProtocolParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_NetworkAclIngressOutputReference)SetProtocol(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkAclIngressOutputReference)SetRuleNo(val *float64) {
+func (j *jsiiProxy_NetworkAclIngressOutputReference) SetRuleNo(val *float64) {
 	if err := j.validateSetRuleNoParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_NetworkAclIngressOutputReference)SetRuleNo(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NetworkAclIngressOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NetworkAclIngressOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_NetworkAclIngressOutputReference)SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_NetworkAclIngressOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkAclIngressOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_NetworkAclIngressOutputReference)SetTerraformResource(val cdk
 	)
 }
 
-func (j *jsiiProxy_NetworkAclIngressOutputReference)SetToPort(val *float64) {
+func (j *jsiiProxy_NetworkAclIngressOutputReference) SetToPort(val *float64) {
 	if err := j.validateSetToPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,16 +556,16 @@ func (n *jsiiProxy_NetworkAclIngressOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NetworkAclIngressOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkAclIngressOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func (n *jsiiProxy_NetworkAclIngressOutputReference) GetBooleanAttribute(terrafo
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -598,7 +597,7 @@ func (n *jsiiProxy_NetworkAclIngressOutputReference) GetBooleanMapAttribute(terr
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -614,7 +613,7 @@ func (n *jsiiProxy_NetworkAclIngressOutputReference) GetListAttribute(terraformA
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -630,7 +629,7 @@ func (n *jsiiProxy_NetworkAclIngressOutputReference) GetNumberAttribute(terrafor
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func (n *jsiiProxy_NetworkAclIngressOutputReference) GetNumberListAttribute(terr
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func (n *jsiiProxy_NetworkAclIngressOutputReference) GetNumberMapAttribute(terra
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func (n *jsiiProxy_NetworkAclIngressOutputReference) GetStringAttribute(terrafor
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func (n *jsiiProxy_NetworkAclIngressOutputReference) GetStringMapAttribute(terra
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (n *jsiiProxy_NetworkAclIngressOutputReference) InterpolationForAttribute(p
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -802,16 +801,16 @@ func (n *jsiiProxy_NetworkAclIngressOutputReference) ResetToPort() {
 	)
 }
 
-func (n *jsiiProxy_NetworkAclIngressOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NetworkAclIngressOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -830,4 +829,3 @@ func (n *jsiiProxy_NetworkAclIngressOutputReference) ToString() *string {
 
 	return returns
 }
-

@@ -21,31 +21,31 @@ type AwsProvider interface {
 	AllowedAccountIds() *[]*string
 	SetAllowedAccountIds(val *[]*string)
 	AllowedAccountIdsInput() *[]*string
-	AssumeRole() interface{}
-	SetAssumeRole(val interface{})
-	AssumeRoleInput() interface{}
-	AssumeRoleWithWebIdentity() interface{}
-	SetAssumeRoleWithWebIdentity(val interface{})
-	AssumeRoleWithWebIdentityInput() interface{}
+	AssumeRole() any
+	SetAssumeRole(val any)
+	AssumeRoleInput() any
+	AssumeRoleWithWebIdentity() any
+	SetAssumeRoleWithWebIdentity(val any)
+	AssumeRoleWithWebIdentityInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	CustomCaBundle() *string
 	SetCustomCaBundle(val *string)
 	CustomCaBundleInput() *string
-	DefaultTags() interface{}
-	SetDefaultTags(val interface{})
-	DefaultTagsInput() interface{}
+	DefaultTags() any
+	SetDefaultTags(val any)
+	DefaultTagsInput() any
 	Ec2MetadataServiceEndpoint() *string
 	SetEc2MetadataServiceEndpoint(val *string)
 	Ec2MetadataServiceEndpointInput() *string
 	Ec2MetadataServiceEndpointMode() *string
 	SetEc2MetadataServiceEndpointMode(val *string)
 	Ec2MetadataServiceEndpointModeInput() *string
-	Endpoints() interface{}
-	SetEndpoints(val interface{})
-	EndpointsInput() interface{}
+	Endpoints() any
+	SetEndpoints(val any)
+	EndpointsInput() any
 	ForbiddenAccountIds() *[]*string
 	SetForbiddenAccountIds(val *[]*string)
 	ForbiddenAccountIdsInput() *[]*string
@@ -56,33 +56,33 @@ type AwsProvider interface {
 	HttpProxy() *string
 	SetHttpProxy(val *string)
 	HttpProxyInput() *string
-	IgnoreTags() interface{}
-	SetIgnoreTags(val interface{})
-	IgnoreTagsInput() interface{}
-	Insecure() interface{}
-	SetInsecure(val interface{})
-	InsecureInput() interface{}
+	IgnoreTags() any
+	SetIgnoreTags(val any)
+	IgnoreTagsInput() any
+	Insecure() any
+	SetInsecure(val any)
+	InsecureInput() any
 	MaxRetries() *float64
 	SetMaxRetries(val *float64)
 	MaxRetriesInput() *float64
 	// Experimental.
-	MetaAttributes() *map[string]interface{}
+	MetaAttributes() *map[string]any
 	// The tree node.
 	Node() constructs.Node
 	Profile() *string
 	SetProfile(val *string)
 	ProfileInput() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
-	S3ForcePathStyle() interface{}
-	SetS3ForcePathStyle(val interface{})
-	S3ForcePathStyleInput() interface{}
-	S3UsePathStyle() interface{}
-	SetS3UsePathStyle(val interface{})
-	S3UsePathStyleInput() interface{}
+	S3ForcePathStyle() any
+	SetS3ForcePathStyle(val any)
+	S3ForcePathStyleInput() any
+	S3UsePathStyle() any
+	SetS3UsePathStyle(val any)
+	S3UsePathStyleInput() any
 	SecretKey() *string
 	SetSecretKey(val *string)
 	SecretKeyInput() *string
@@ -95,21 +95,21 @@ type AwsProvider interface {
 	SharedCredentialsFiles() *[]*string
 	SetSharedCredentialsFiles(val *[]*string)
 	SharedCredentialsFilesInput() *[]*string
-	SkipCredentialsValidation() interface{}
-	SetSkipCredentialsValidation(val interface{})
-	SkipCredentialsValidationInput() interface{}
-	SkipGetEc2Platforms() interface{}
-	SetSkipGetEc2Platforms(val interface{})
-	SkipGetEc2PlatformsInput() interface{}
+	SkipCredentialsValidation() any
+	SetSkipCredentialsValidation(val any)
+	SkipCredentialsValidationInput() any
+	SkipGetEc2Platforms() any
+	SetSkipGetEc2Platforms(val any)
+	SkipGetEc2PlatformsInput() any
 	SkipMetadataApiCheck() *string
 	SetSkipMetadataApiCheck(val *string)
 	SkipMetadataApiCheckInput() *string
-	SkipRegionValidation() interface{}
-	SetSkipRegionValidation(val interface{})
-	SkipRegionValidationInput() interface{}
-	SkipRequestingAccountId() interface{}
-	SetSkipRequestingAccountId(val interface{})
-	SkipRequestingAccountIdInput() interface{}
+	SkipRegionValidation() any
+	SetSkipRegionValidation(val any)
+	SkipRegionValidationInput() any
+	SkipRequestingAccountId() any
+	SetSkipRequestingAccountId(val any)
+	SkipRequestingAccountIdInput() any
 	StsRegion() *string
 	SetStsRegion(val *string)
 	StsRegionInput() *string
@@ -122,14 +122,14 @@ type AwsProvider interface {
 	Token() *string
 	SetToken(val *string)
 	TokenInput() *string
-	UseDualstackEndpoint() interface{}
-	SetUseDualstackEndpoint(val interface{})
-	UseDualstackEndpointInput() interface{}
-	UseFipsEndpoint() interface{}
-	SetUseFipsEndpoint(val interface{})
-	UseFipsEndpointInput() interface{}
+	UseDualstackEndpoint() any
+	SetUseDualstackEndpoint(val any)
+	UseDualstackEndpointInput() any
+	UseFipsEndpoint() any
+	SetUseFipsEndpoint(val any)
+	UseFipsEndpointInput() any
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -168,17 +168,17 @@ type AwsProvider interface {
 	ResetToken()
 	ResetUseDualstackEndpoint()
 	ResetUseFipsEndpoint()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AwsProvider
@@ -246,8 +246,8 @@ func (j *jsiiProxy_AwsProvider) AllowedAccountIdsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) AssumeRole() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AwsProvider) AssumeRole() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"assumeRole",
@@ -256,8 +256,8 @@ func (j *jsiiProxy_AwsProvider) AssumeRole() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) AssumeRoleInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AwsProvider) AssumeRoleInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"assumeRoleInput",
@@ -266,8 +266,8 @@ func (j *jsiiProxy_AwsProvider) AssumeRoleInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) AssumeRoleWithWebIdentity() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AwsProvider) AssumeRoleWithWebIdentity() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"assumeRoleWithWebIdentity",
@@ -276,8 +276,8 @@ func (j *jsiiProxy_AwsProvider) AssumeRoleWithWebIdentity() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) AssumeRoleWithWebIdentityInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AwsProvider) AssumeRoleWithWebIdentityInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"assumeRoleWithWebIdentityInput",
@@ -296,8 +296,8 @@ func (j *jsiiProxy_AwsProvider) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AwsProvider) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -326,8 +326,8 @@ func (j *jsiiProxy_AwsProvider) CustomCaBundleInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) DefaultTags() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AwsProvider) DefaultTags() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"defaultTags",
@@ -336,8 +336,8 @@ func (j *jsiiProxy_AwsProvider) DefaultTags() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) DefaultTagsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AwsProvider) DefaultTagsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"defaultTagsInput",
@@ -386,8 +386,8 @@ func (j *jsiiProxy_AwsProvider) Ec2MetadataServiceEndpointModeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) Endpoints() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AwsProvider) Endpoints() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"endpoints",
@@ -396,8 +396,8 @@ func (j *jsiiProxy_AwsProvider) Endpoints() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) EndpointsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AwsProvider) EndpointsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"endpointsInput",
@@ -466,8 +466,8 @@ func (j *jsiiProxy_AwsProvider) HttpProxyInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) IgnoreTags() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AwsProvider) IgnoreTags() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignoreTags",
@@ -476,8 +476,8 @@ func (j *jsiiProxy_AwsProvider) IgnoreTags() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) IgnoreTagsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AwsProvider) IgnoreTagsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignoreTagsInput",
@@ -486,8 +486,8 @@ func (j *jsiiProxy_AwsProvider) IgnoreTagsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) Insecure() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AwsProvider) Insecure() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"insecure",
@@ -496,8 +496,8 @@ func (j *jsiiProxy_AwsProvider) Insecure() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) InsecureInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AwsProvider) InsecureInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"insecureInput",
@@ -526,8 +526,8 @@ func (j *jsiiProxy_AwsProvider) MaxRetriesInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) MetaAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AwsProvider) MetaAttributes() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"metaAttributes",
@@ -566,8 +566,8 @@ func (j *jsiiProxy_AwsProvider) ProfileInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AwsProvider) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -596,8 +596,8 @@ func (j *jsiiProxy_AwsProvider) RegionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) S3ForcePathStyle() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AwsProvider) S3ForcePathStyle() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"s3ForcePathStyle",
@@ -606,8 +606,8 @@ func (j *jsiiProxy_AwsProvider) S3ForcePathStyle() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) S3ForcePathStyleInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AwsProvider) S3ForcePathStyleInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"s3ForcePathStyleInput",
@@ -616,8 +616,8 @@ func (j *jsiiProxy_AwsProvider) S3ForcePathStyleInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) S3UsePathStyle() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AwsProvider) S3UsePathStyle() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"s3UsePathStyle",
@@ -626,8 +626,8 @@ func (j *jsiiProxy_AwsProvider) S3UsePathStyle() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) S3UsePathStyleInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AwsProvider) S3UsePathStyleInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"s3UsePathStyleInput",
@@ -716,8 +716,8 @@ func (j *jsiiProxy_AwsProvider) SharedCredentialsFilesInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) SkipCredentialsValidation() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AwsProvider) SkipCredentialsValidation() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"skipCredentialsValidation",
@@ -726,8 +726,8 @@ func (j *jsiiProxy_AwsProvider) SkipCredentialsValidation() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) SkipCredentialsValidationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AwsProvider) SkipCredentialsValidationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"skipCredentialsValidationInput",
@@ -736,8 +736,8 @@ func (j *jsiiProxy_AwsProvider) SkipCredentialsValidationInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) SkipGetEc2Platforms() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AwsProvider) SkipGetEc2Platforms() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"skipGetEc2Platforms",
@@ -746,8 +746,8 @@ func (j *jsiiProxy_AwsProvider) SkipGetEc2Platforms() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) SkipGetEc2PlatformsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AwsProvider) SkipGetEc2PlatformsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"skipGetEc2PlatformsInput",
@@ -776,8 +776,8 @@ func (j *jsiiProxy_AwsProvider) SkipMetadataApiCheckInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) SkipRegionValidation() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AwsProvider) SkipRegionValidation() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"skipRegionValidation",
@@ -786,8 +786,8 @@ func (j *jsiiProxy_AwsProvider) SkipRegionValidation() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) SkipRegionValidationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AwsProvider) SkipRegionValidationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"skipRegionValidationInput",
@@ -796,8 +796,8 @@ func (j *jsiiProxy_AwsProvider) SkipRegionValidationInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) SkipRequestingAccountId() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AwsProvider) SkipRequestingAccountId() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"skipRequestingAccountId",
@@ -806,8 +806,8 @@ func (j *jsiiProxy_AwsProvider) SkipRequestingAccountId() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) SkipRequestingAccountIdInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AwsProvider) SkipRequestingAccountIdInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"skipRequestingAccountIdInput",
@@ -886,8 +886,8 @@ func (j *jsiiProxy_AwsProvider) TokenInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) UseDualstackEndpoint() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AwsProvider) UseDualstackEndpoint() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useDualstackEndpoint",
@@ -896,8 +896,8 @@ func (j *jsiiProxy_AwsProvider) UseDualstackEndpoint() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) UseDualstackEndpointInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AwsProvider) UseDualstackEndpointInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useDualstackEndpointInput",
@@ -906,8 +906,8 @@ func (j *jsiiProxy_AwsProvider) UseDualstackEndpointInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) UseFipsEndpoint() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AwsProvider) UseFipsEndpoint() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useFipsEndpoint",
@@ -916,8 +916,8 @@ func (j *jsiiProxy_AwsProvider) UseFipsEndpoint() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) UseFipsEndpointInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AwsProvider) UseFipsEndpointInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useFipsEndpointInput",
@@ -925,7 +925,6 @@ func (j *jsiiProxy_AwsProvider) UseFipsEndpointInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs aws} Resource.
 func NewAwsProvider(scope constructs.Construct, id *string, config *AwsProviderConfig) AwsProvider {
@@ -938,7 +937,7 @@ func NewAwsProvider(scope constructs.Construct, id *string, config *AwsProviderC
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.provider.AwsProvider",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -951,12 +950,12 @@ func NewAwsProvider_Override(a AwsProvider, scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.provider.AwsProvider",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AwsProvider)SetAccessKey(val *string) {
+func (j *jsiiProxy_AwsProvider) SetAccessKey(val *string) {
 	_jsii_.Set(
 		j,
 		"accessKey",
@@ -964,7 +963,7 @@ func (j *jsiiProxy_AwsProvider)SetAccessKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AwsProvider)SetAlias(val *string) {
+func (j *jsiiProxy_AwsProvider) SetAlias(val *string) {
 	_jsii_.Set(
 		j,
 		"alias",
@@ -972,7 +971,7 @@ func (j *jsiiProxy_AwsProvider)SetAlias(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AwsProvider)SetAllowedAccountIds(val *[]*string) {
+func (j *jsiiProxy_AwsProvider) SetAllowedAccountIds(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"allowedAccountIds",
@@ -980,7 +979,7 @@ func (j *jsiiProxy_AwsProvider)SetAllowedAccountIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AwsProvider)SetAssumeRole(val interface{}) {
+func (j *jsiiProxy_AwsProvider) SetAssumeRole(val any) {
 	if err := j.validateSetAssumeRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -991,7 +990,7 @@ func (j *jsiiProxy_AwsProvider)SetAssumeRole(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AwsProvider)SetAssumeRoleWithWebIdentity(val interface{}) {
+func (j *jsiiProxy_AwsProvider) SetAssumeRoleWithWebIdentity(val any) {
 	if err := j.validateSetAssumeRoleWithWebIdentityParameters(val); err != nil {
 		panic(err)
 	}
@@ -1002,7 +1001,7 @@ func (j *jsiiProxy_AwsProvider)SetAssumeRoleWithWebIdentity(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AwsProvider)SetCustomCaBundle(val *string) {
+func (j *jsiiProxy_AwsProvider) SetCustomCaBundle(val *string) {
 	_jsii_.Set(
 		j,
 		"customCaBundle",
@@ -1010,7 +1009,7 @@ func (j *jsiiProxy_AwsProvider)SetCustomCaBundle(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AwsProvider)SetDefaultTags(val interface{}) {
+func (j *jsiiProxy_AwsProvider) SetDefaultTags(val any) {
 	if err := j.validateSetDefaultTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1021,7 +1020,7 @@ func (j *jsiiProxy_AwsProvider)SetDefaultTags(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AwsProvider)SetEc2MetadataServiceEndpoint(val *string) {
+func (j *jsiiProxy_AwsProvider) SetEc2MetadataServiceEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"ec2MetadataServiceEndpoint",
@@ -1029,7 +1028,7 @@ func (j *jsiiProxy_AwsProvider)SetEc2MetadataServiceEndpoint(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AwsProvider)SetEc2MetadataServiceEndpointMode(val *string) {
+func (j *jsiiProxy_AwsProvider) SetEc2MetadataServiceEndpointMode(val *string) {
 	_jsii_.Set(
 		j,
 		"ec2MetadataServiceEndpointMode",
@@ -1037,7 +1036,7 @@ func (j *jsiiProxy_AwsProvider)SetEc2MetadataServiceEndpointMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AwsProvider)SetEndpoints(val interface{}) {
+func (j *jsiiProxy_AwsProvider) SetEndpoints(val any) {
 	if err := j.validateSetEndpointsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1048,7 +1047,7 @@ func (j *jsiiProxy_AwsProvider)SetEndpoints(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AwsProvider)SetForbiddenAccountIds(val *[]*string) {
+func (j *jsiiProxy_AwsProvider) SetForbiddenAccountIds(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"forbiddenAccountIds",
@@ -1056,7 +1055,7 @@ func (j *jsiiProxy_AwsProvider)SetForbiddenAccountIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AwsProvider)SetHttpProxy(val *string) {
+func (j *jsiiProxy_AwsProvider) SetHttpProxy(val *string) {
 	_jsii_.Set(
 		j,
 		"httpProxy",
@@ -1064,7 +1063,7 @@ func (j *jsiiProxy_AwsProvider)SetHttpProxy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AwsProvider)SetIgnoreTags(val interface{}) {
+func (j *jsiiProxy_AwsProvider) SetIgnoreTags(val any) {
 	if err := j.validateSetIgnoreTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1075,7 +1074,7 @@ func (j *jsiiProxy_AwsProvider)SetIgnoreTags(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AwsProvider)SetInsecure(val interface{}) {
+func (j *jsiiProxy_AwsProvider) SetInsecure(val any) {
 	if err := j.validateSetInsecureParameters(val); err != nil {
 		panic(err)
 	}
@@ -1086,7 +1085,7 @@ func (j *jsiiProxy_AwsProvider)SetInsecure(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AwsProvider)SetMaxRetries(val *float64) {
+func (j *jsiiProxy_AwsProvider) SetMaxRetries(val *float64) {
 	_jsii_.Set(
 		j,
 		"maxRetries",
@@ -1094,7 +1093,7 @@ func (j *jsiiProxy_AwsProvider)SetMaxRetries(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AwsProvider)SetProfile(val *string) {
+func (j *jsiiProxy_AwsProvider) SetProfile(val *string) {
 	_jsii_.Set(
 		j,
 		"profile",
@@ -1102,7 +1101,7 @@ func (j *jsiiProxy_AwsProvider)SetProfile(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AwsProvider)SetRegion(val *string) {
+func (j *jsiiProxy_AwsProvider) SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
@@ -1110,7 +1109,7 @@ func (j *jsiiProxy_AwsProvider)SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AwsProvider)SetS3ForcePathStyle(val interface{}) {
+func (j *jsiiProxy_AwsProvider) SetS3ForcePathStyle(val any) {
 	if err := j.validateSetS3ForcePathStyleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1121,7 +1120,7 @@ func (j *jsiiProxy_AwsProvider)SetS3ForcePathStyle(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AwsProvider)SetS3UsePathStyle(val interface{}) {
+func (j *jsiiProxy_AwsProvider) SetS3UsePathStyle(val any) {
 	if err := j.validateSetS3UsePathStyleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1132,7 +1131,7 @@ func (j *jsiiProxy_AwsProvider)SetS3UsePathStyle(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AwsProvider)SetSecretKey(val *string) {
+func (j *jsiiProxy_AwsProvider) SetSecretKey(val *string) {
 	_jsii_.Set(
 		j,
 		"secretKey",
@@ -1140,7 +1139,7 @@ func (j *jsiiProxy_AwsProvider)SetSecretKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AwsProvider)SetSharedConfigFiles(val *[]*string) {
+func (j *jsiiProxy_AwsProvider) SetSharedConfigFiles(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"sharedConfigFiles",
@@ -1148,7 +1147,7 @@ func (j *jsiiProxy_AwsProvider)SetSharedConfigFiles(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AwsProvider)SetSharedCredentialsFile(val *string) {
+func (j *jsiiProxy_AwsProvider) SetSharedCredentialsFile(val *string) {
 	_jsii_.Set(
 		j,
 		"sharedCredentialsFile",
@@ -1156,7 +1155,7 @@ func (j *jsiiProxy_AwsProvider)SetSharedCredentialsFile(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AwsProvider)SetSharedCredentialsFiles(val *[]*string) {
+func (j *jsiiProxy_AwsProvider) SetSharedCredentialsFiles(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"sharedCredentialsFiles",
@@ -1164,7 +1163,7 @@ func (j *jsiiProxy_AwsProvider)SetSharedCredentialsFiles(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AwsProvider)SetSkipCredentialsValidation(val interface{}) {
+func (j *jsiiProxy_AwsProvider) SetSkipCredentialsValidation(val any) {
 	if err := j.validateSetSkipCredentialsValidationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1175,7 +1174,7 @@ func (j *jsiiProxy_AwsProvider)SetSkipCredentialsValidation(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AwsProvider)SetSkipGetEc2Platforms(val interface{}) {
+func (j *jsiiProxy_AwsProvider) SetSkipGetEc2Platforms(val any) {
 	if err := j.validateSetSkipGetEc2PlatformsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1186,7 +1185,7 @@ func (j *jsiiProxy_AwsProvider)SetSkipGetEc2Platforms(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AwsProvider)SetSkipMetadataApiCheck(val *string) {
+func (j *jsiiProxy_AwsProvider) SetSkipMetadataApiCheck(val *string) {
 	_jsii_.Set(
 		j,
 		"skipMetadataApiCheck",
@@ -1194,7 +1193,7 @@ func (j *jsiiProxy_AwsProvider)SetSkipMetadataApiCheck(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AwsProvider)SetSkipRegionValidation(val interface{}) {
+func (j *jsiiProxy_AwsProvider) SetSkipRegionValidation(val any) {
 	if err := j.validateSetSkipRegionValidationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1205,7 +1204,7 @@ func (j *jsiiProxy_AwsProvider)SetSkipRegionValidation(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AwsProvider)SetSkipRequestingAccountId(val interface{}) {
+func (j *jsiiProxy_AwsProvider) SetSkipRequestingAccountId(val any) {
 	if err := j.validateSetSkipRequestingAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1216,7 +1215,7 @@ func (j *jsiiProxy_AwsProvider)SetSkipRequestingAccountId(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AwsProvider)SetStsRegion(val *string) {
+func (j *jsiiProxy_AwsProvider) SetStsRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"stsRegion",
@@ -1224,7 +1223,7 @@ func (j *jsiiProxy_AwsProvider)SetStsRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AwsProvider)SetToken(val *string) {
+func (j *jsiiProxy_AwsProvider) SetToken(val *string) {
 	_jsii_.Set(
 		j,
 		"token",
@@ -1232,7 +1231,7 @@ func (j *jsiiProxy_AwsProvider)SetToken(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AwsProvider)SetUseDualstackEndpoint(val interface{}) {
+func (j *jsiiProxy_AwsProvider) SetUseDualstackEndpoint(val any) {
 	if err := j.validateSetUseDualstackEndpointParameters(val); err != nil {
 		panic(err)
 	}
@@ -1243,7 +1242,7 @@ func (j *jsiiProxy_AwsProvider)SetUseDualstackEndpoint(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AwsProvider)SetUseFipsEndpoint(val interface{}) {
+func (j *jsiiProxy_AwsProvider) SetUseFipsEndpoint(val any) {
 	if err := j.validateSetUseFipsEndpointParameters(val); err != nil {
 		panic(err)
 	}
@@ -1266,7 +1265,7 @@ func AwsProvider_GenerateConfigForImport(scope constructs.Construct, importToId 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.provider.AwsProvider",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1290,7 +1289,7 @@ func AwsProvider_GenerateConfigForImport(scope constructs.Construct, importToId 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AwsProvider_IsConstruct(x interface{}) *bool {
+func AwsProvider_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAwsProvider_IsConstructParameters(x); err != nil {
@@ -1301,7 +1300,7 @@ func AwsProvider_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.provider.AwsProvider",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1309,7 +1308,7 @@ func AwsProvider_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AwsProvider_IsTerraformElement(x interface{}) *bool {
+func AwsProvider_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAwsProvider_IsTerraformElementParameters(x); err != nil {
@@ -1320,7 +1319,7 @@ func AwsProvider_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.provider.AwsProvider",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1328,7 +1327,7 @@ func AwsProvider_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AwsProvider_IsTerraformProvider(x interface{}) *bool {
+func AwsProvider_IsTerraformProvider(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAwsProvider_IsTerraformProviderParameters(x); err != nil {
@@ -1339,7 +1338,7 @@ func AwsProvider_IsTerraformProvider(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.provider.AwsProvider",
 		"isTerraformProvider",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1357,14 +1356,14 @@ func AwsProvider_TfResourceType() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AwsProvider) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AwsProvider) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
@@ -1375,7 +1374,7 @@ func (a *jsiiProxy_AwsProvider) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1643,8 +1642,8 @@ func (a *jsiiProxy_AwsProvider) ResetUseFipsEndpoint() {
 	)
 }
 
-func (a *jsiiProxy_AwsProvider) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AwsProvider) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1656,8 +1655,8 @@ func (a *jsiiProxy_AwsProvider) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AwsProvider) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AwsProvider) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1669,8 +1668,8 @@ func (a *jsiiProxy_AwsProvider) SynthesizeHclAttributes() *map[string]interface{
 	return returns
 }
 
-func (a *jsiiProxy_AwsProvider) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AwsProvider) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1682,8 +1681,8 @@ func (a *jsiiProxy_AwsProvider) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AwsProvider) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AwsProvider) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1708,8 +1707,8 @@ func (a *jsiiProxy_AwsProvider) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AwsProvider) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AwsProvider) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1720,4 +1719,3 @@ func (a *jsiiProxy_AwsProvider) ToTerraform() interface{} {
 
 	return returns
 }
-

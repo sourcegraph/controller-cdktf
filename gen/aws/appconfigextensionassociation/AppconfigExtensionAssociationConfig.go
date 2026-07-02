@@ -6,9 +6,9 @@ import (
 
 type AppconfigExtensionAssociationConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type AppconfigExtensionAssociationConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appconfig_extension_association#extension_arn AppconfigExtensionAssociation#extension_arn}.
 	ExtensionArn *string `field:"required" json:"extensionArn" yaml:"extensionArn"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appconfig_extension_association#resource_arn AppconfigExtensionAssociation#resource_arn}.
@@ -31,4 +31,3 @@ type AppconfigExtensionAssociationConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appconfig_extension_association#parameters AppconfigExtensionAssociation#parameters}.
 	Parameters *map[string]*string `field:"optional" json:"parameters" yaml:"parameters"`
 }
-

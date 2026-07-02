@@ -12,9 +12,9 @@ type FisExperimentTemplateTargetOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -26,11 +26,11 @@ type FisExperimentTemplateTargetOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Filter() FisExperimentTemplateTargetFilterList
-	FilterInput() interface{}
+	FilterInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -38,7 +38,7 @@ type FisExperimentTemplateTargetOutputReference interface {
 	SetResourceArns(val *[]*string)
 	ResourceArnsInput() *[]*string
 	ResourceTag() FisExperimentTemplateTargetResourceTagList
-	ResourceTagInput() interface{}
+	ResourceTagInput() any
 	ResourceType() *string
 	SetResourceType(val *string)
 	ResourceTypeInput() *string
@@ -56,7 +56,7 @@ type FisExperimentTemplateTargetOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -77,14 +77,14 @@ type FisExperimentTemplateTargetOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutFilter(value interface{})
-	PutResourceTag(value interface{})
+	PutFilter(value any)
+	PutResourceTag(value any)
 	ResetFilter()
 	ResetResourceArns()
 	ResetResourceTag()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -97,8 +97,8 @@ type jsiiProxy_FisExperimentTemplateTargetOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -137,8 +137,8 @@ func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference) Filter() FisExper
 	return returns
 }
 
-func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference) FilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference) FilterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"filterInput",
@@ -157,8 +157,8 @@ func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -217,8 +217,8 @@ func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference) ResourceTag() Fis
 	return returns
 }
 
-func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference) ResourceTagInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference) ResourceTagInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"resourceTagInput",
@@ -287,7 +287,6 @@ func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference) TerraformResource
 	return returns
 }
 
-
 func NewFisExperimentTemplateTargetOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) FisExperimentTemplateTargetOutputReference {
 	_init_.Initialize()
 
@@ -298,7 +297,7 @@ func NewFisExperimentTemplateTargetOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTargetOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -310,12 +309,12 @@ func NewFisExperimentTemplateTargetOutputReference_Override(f FisExperimentTempl
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTargetOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,7 +325,7 @@ func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -337,7 +336,7 @@ func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -348,7 +347,7 @@ func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference)SetName(val *string) {
+func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,7 +358,7 @@ func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference)SetName(val *strin
 	)
 }
 
-func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference)SetResourceArns(val *[]*string) {
+func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference) SetResourceArns(val *[]*string) {
 	if err := j.validateSetResourceArnsParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,7 +369,7 @@ func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference)SetResourceArns(va
 	)
 }
 
-func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference)SetResourceType(val *string) {
+func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference) SetResourceType(val *string) {
 	if err := j.validateSetResourceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,7 +380,7 @@ func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference)SetResourceType(va
 	)
 }
 
-func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference)SetSelectionMode(val *string) {
+func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference) SetSelectionMode(val *string) {
 	if err := j.validateSetSelectionModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -392,7 +391,7 @@ func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference)SetSelectionMode(v
 	)
 }
 
-func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -403,7 +402,7 @@ func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -427,16 +426,16 @@ func (f *jsiiProxy_FisExperimentTemplateTargetOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (f *jsiiProxy_FisExperimentTemplateTargetOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FisExperimentTemplateTargetOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (f *jsiiProxy_FisExperimentTemplateTargetOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (f *jsiiProxy_FisExperimentTemplateTargetOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (f *jsiiProxy_FisExperimentTemplateTargetOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -500,7 +499,7 @@ func (f *jsiiProxy_FisExperimentTemplateTargetOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -516,7 +515,7 @@ func (f *jsiiProxy_FisExperimentTemplateTargetOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -532,7 +531,7 @@ func (f *jsiiProxy_FisExperimentTemplateTargetOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (f *jsiiProxy_FisExperimentTemplateTargetOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -564,7 +563,7 @@ func (f *jsiiProxy_FisExperimentTemplateTargetOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -593,32 +592,32 @@ func (f *jsiiProxy_FisExperimentTemplateTargetOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FisExperimentTemplateTargetOutputReference) PutFilter(value interface{}) {
+func (f *jsiiProxy_FisExperimentTemplateTargetOutputReference) PutFilter(value any) {
 	if err := f.validatePutFilterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"putFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (f *jsiiProxy_FisExperimentTemplateTargetOutputReference) PutResourceTag(value interface{}) {
+func (f *jsiiProxy_FisExperimentTemplateTargetOutputReference) PutResourceTag(value any) {
 	if err := f.validatePutResourceTagParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"putResourceTag",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -646,16 +645,16 @@ func (f *jsiiProxy_FisExperimentTemplateTargetOutputReference) ResetResourceTag(
 	)
 }
 
-func (f *jsiiProxy_FisExperimentTemplateTargetOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (f *jsiiProxy_FisExperimentTemplateTargetOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := f.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -674,4 +673,3 @@ func (f *jsiiProxy_FisExperimentTemplateTargetOutputReference) ToString() *strin
 
 	return returns
 }
-

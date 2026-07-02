@@ -12,9 +12,9 @@ type Apigatewayv2RouteRequestParameterOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,14 +27,14 @@ type Apigatewayv2RouteRequestParameterOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	RequestParameterKey() *string
 	SetRequestParameterKey(val *string)
 	RequestParameterKeyInput() *string
-	Required() interface{}
-	SetRequired(val interface{})
-	RequiredInput() interface{}
+	Required() any
+	SetRequired(val any)
+	RequiredInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type Apigatewayv2RouteRequestParameterOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,7 +69,7 @@ type Apigatewayv2RouteRequestParameterOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,8 +82,8 @@ type jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -122,8 +122,8 @@ func (j *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference) Fqn() *stri
 	return returns
 }
 
-func (j *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference) RequestPara
 	return returns
 }
 
-func (j *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference) Required() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference) Required() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"required",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference) Required() 
 	return returns
 }
 
-func (j *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference) RequiredInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference) RequiredInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requiredInput",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference) TerraformRe
 	return returns
 }
 
-
 func NewApigatewayv2RouteRequestParameterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) Apigatewayv2RouteRequestParameterOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewApigatewayv2RouteRequestParameterOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.apigatewayv2Route.Apigatewayv2RouteRequestParameterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewApigatewayv2RouteRequestParameterOutputReference_Override(a Apigatewayv2
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.apigatewayv2Route.Apigatewayv2RouteRequestParameterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference)SetRequestParameterKey(val *string) {
+func (j *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference) SetRequestParameterKey(val *string) {
 	if err := j.validateSetRequestParameterKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference)SetRequestPa
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference)SetRequired(val interface{}) {
+func (j *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference) SetRequired(val any) {
 	if err := j.validateSetRequiredParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference)SetRequired(
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -286,7 +285,7 @@ func (j *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,16 +309,16 @@ func (a *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference) ComputeFqn(
 	return returns
 }
 
-func (a *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -335,7 +334,7 @@ func (a *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -351,7 +350,7 @@ func (a *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -367,7 +366,7 @@ func (a *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference) GetListAttr
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -383,7 +382,7 @@ func (a *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -399,7 +398,7 @@ func (a *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -415,7 +414,7 @@ func (a *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (a *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference) GetStringAt
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (a *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference) GetStringMa
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,23 +475,23 @@ func (a *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference) Interpolati
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -511,4 +510,3 @@ func (a *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference) ToString() 
 
 	return returns
 }
-

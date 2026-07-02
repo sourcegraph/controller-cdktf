@@ -106,7 +106,7 @@ func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsO
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsO
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -286,4 +286,3 @@ func validateNewDataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsOutp
 
 	return nil
 }
-

@@ -109,7 +109,7 @@ func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -233,4 +233,3 @@ func validateNewAppmeshRouteSpecHttp2RouteRetryPolicyOutputReferenceParameters(t
 
 	return nil
 }
-

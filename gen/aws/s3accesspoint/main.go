@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3AccessPoint.S3AccessPoint",
-		reflect.TypeOf((*S3AccessPoint)(nil)).Elem(),
+		reflect.TypeFor[S3AccessPoint](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -83,7 +83,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcConfiguration", GoGetter: "VpcConfiguration"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcConfigurationInput", GoGetter: "VpcConfigurationInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3AccessPoint{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -91,15 +91,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3AccessPoint.S3AccessPointConfig",
-		reflect.TypeOf((*S3AccessPointConfig)(nil)).Elem(),
+		reflect.TypeFor[S3AccessPointConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3AccessPoint.S3AccessPointPublicAccessBlockConfiguration",
-		reflect.TypeOf((*S3AccessPointPublicAccessBlockConfiguration)(nil)).Elem(),
+		reflect.TypeFor[S3AccessPointPublicAccessBlockConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3AccessPoint.S3AccessPointPublicAccessBlockConfigurationOutputReference",
-		reflect.TypeOf((*S3AccessPointPublicAccessBlockConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3AccessPointPublicAccessBlockConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "blockPublicAcls", GoGetter: "BlockPublicAcls"},
 			_jsii_.MemberProperty{JsiiProperty: "blockPublicAclsInput", GoGetter: "BlockPublicAclsInput"},
@@ -135,7 +135,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3AccessPointPublicAccessBlockConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -143,11 +143,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3AccessPoint.S3AccessPointVpcConfiguration",
-		reflect.TypeOf((*S3AccessPointVpcConfiguration)(nil)).Elem(),
+		reflect.TypeFor[S3AccessPointVpcConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3AccessPoint.S3AccessPointVpcConfigurationOutputReference",
-		reflect.TypeOf((*S3AccessPointVpcConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3AccessPointVpcConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -173,7 +173,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcIdInput", GoGetter: "VpcIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3AccessPointVpcConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

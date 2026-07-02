@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.inspectorAssessmentTemplate.InspectorAssessmentTemplate",
-		reflect.TypeOf((*InspectorAssessmentTemplate)(nil)).Elem(),
+		reflect.TypeFor[InspectorAssessmentTemplate](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_InspectorAssessmentTemplate{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -83,15 +83,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.inspectorAssessmentTemplate.InspectorAssessmentTemplateConfig",
-		reflect.TypeOf((*InspectorAssessmentTemplateConfig)(nil)).Elem(),
+		reflect.TypeFor[InspectorAssessmentTemplateConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.inspectorAssessmentTemplate.InspectorAssessmentTemplateEventSubscription",
-		reflect.TypeOf((*InspectorAssessmentTemplateEventSubscription)(nil)).Elem(),
+		reflect.TypeFor[InspectorAssessmentTemplateEventSubscription](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.inspectorAssessmentTemplate.InspectorAssessmentTemplateEventSubscriptionList",
-		reflect.TypeOf((*InspectorAssessmentTemplateEventSubscriptionList)(nil)).Elem(),
+		reflect.TypeFor[InspectorAssessmentTemplateEventSubscriptionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -105,7 +105,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_InspectorAssessmentTemplateEventSubscriptionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -113,7 +113,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.inspectorAssessmentTemplate.InspectorAssessmentTemplateEventSubscriptionOutputReference",
-		reflect.TypeOf((*InspectorAssessmentTemplateEventSubscriptionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[InspectorAssessmentTemplateEventSubscriptionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -141,7 +141,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "topicArnInput", GoGetter: "TopicArnInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_InspectorAssessmentTemplateEventSubscriptionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

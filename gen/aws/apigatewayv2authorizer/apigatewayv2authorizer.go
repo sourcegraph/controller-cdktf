@@ -33,22 +33,22 @@ type Apigatewayv2Authorizer interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	EnableSimpleResponses() interface{}
-	SetEnableSimpleResponses(val interface{})
-	EnableSimpleResponsesInput() interface{}
+	EnableSimpleResponses() any
+	SetEnableSimpleResponses(val any)
+	EnableSimpleResponsesInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -79,24 +79,24 @@ type Apigatewayv2Authorizer interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -114,7 +114,7 @@ type Apigatewayv2Authorizer interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -126,7 +126,7 @@ type Apigatewayv2Authorizer interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -145,17 +145,17 @@ type Apigatewayv2Authorizer interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Apigatewayv2Authorizer
@@ -293,8 +293,8 @@ func (j *jsiiProxy_Apigatewayv2Authorizer) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_Apigatewayv2Authorizer) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Apigatewayv2Authorizer) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -303,8 +303,8 @@ func (j *jsiiProxy_Apigatewayv2Authorizer) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Apigatewayv2Authorizer) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Apigatewayv2Authorizer) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -313,8 +313,8 @@ func (j *jsiiProxy_Apigatewayv2Authorizer) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_Apigatewayv2Authorizer) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Apigatewayv2Authorizer) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -333,8 +333,8 @@ func (j *jsiiProxy_Apigatewayv2Authorizer) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_Apigatewayv2Authorizer) EnableSimpleResponses() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Apigatewayv2Authorizer) EnableSimpleResponses() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableSimpleResponses",
@@ -343,8 +343,8 @@ func (j *jsiiProxy_Apigatewayv2Authorizer) EnableSimpleResponses() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Apigatewayv2Authorizer) EnableSimpleResponsesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Apigatewayv2Authorizer) EnableSimpleResponsesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableSimpleResponsesInput",
@@ -493,8 +493,8 @@ func (j *jsiiProxy_Apigatewayv2Authorizer) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Apigatewayv2Authorizer) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Apigatewayv2Authorizer) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -503,8 +503,8 @@ func (j *jsiiProxy_Apigatewayv2Authorizer) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Apigatewayv2Authorizer) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Apigatewayv2Authorizer) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -523,8 +523,8 @@ func (j *jsiiProxy_Apigatewayv2Authorizer) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_Apigatewayv2Authorizer) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Apigatewayv2Authorizer) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -543,7 +543,6 @@ func (j *jsiiProxy_Apigatewayv2Authorizer) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/apigatewayv2_authorizer aws_apigatewayv2_authorizer} Resource.
 func NewApigatewayv2Authorizer(scope constructs.Construct, id *string, config *Apigatewayv2AuthorizerConfig) Apigatewayv2Authorizer {
 	_init_.Initialize()
@@ -555,7 +554,7 @@ func NewApigatewayv2Authorizer(scope constructs.Construct, id *string, config *A
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.apigatewayv2Authorizer.Apigatewayv2Authorizer",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -568,12 +567,12 @@ func NewApigatewayv2Authorizer_Override(a Apigatewayv2Authorizer, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.apigatewayv2Authorizer.Apigatewayv2Authorizer",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Authorizer)SetApiId(val *string) {
+func (j *jsiiProxy_Apigatewayv2Authorizer) SetApiId(val *string) {
 	if err := j.validateSetApiIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -584,7 +583,7 @@ func (j *jsiiProxy_Apigatewayv2Authorizer)SetApiId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Authorizer)SetAuthorizerCredentialsArn(val *string) {
+func (j *jsiiProxy_Apigatewayv2Authorizer) SetAuthorizerCredentialsArn(val *string) {
 	if err := j.validateSetAuthorizerCredentialsArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -595,7 +594,7 @@ func (j *jsiiProxy_Apigatewayv2Authorizer)SetAuthorizerCredentialsArn(val *strin
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Authorizer)SetAuthorizerPayloadFormatVersion(val *string) {
+func (j *jsiiProxy_Apigatewayv2Authorizer) SetAuthorizerPayloadFormatVersion(val *string) {
 	if err := j.validateSetAuthorizerPayloadFormatVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -606,7 +605,7 @@ func (j *jsiiProxy_Apigatewayv2Authorizer)SetAuthorizerPayloadFormatVersion(val 
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Authorizer)SetAuthorizerResultTtlInSeconds(val *float64) {
+func (j *jsiiProxy_Apigatewayv2Authorizer) SetAuthorizerResultTtlInSeconds(val *float64) {
 	if err := j.validateSetAuthorizerResultTtlInSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -617,7 +616,7 @@ func (j *jsiiProxy_Apigatewayv2Authorizer)SetAuthorizerResultTtlInSeconds(val *f
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Authorizer)SetAuthorizerType(val *string) {
+func (j *jsiiProxy_Apigatewayv2Authorizer) SetAuthorizerType(val *string) {
 	if err := j.validateSetAuthorizerTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -628,7 +627,7 @@ func (j *jsiiProxy_Apigatewayv2Authorizer)SetAuthorizerType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Authorizer)SetAuthorizerUri(val *string) {
+func (j *jsiiProxy_Apigatewayv2Authorizer) SetAuthorizerUri(val *string) {
 	if err := j.validateSetAuthorizerUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -639,7 +638,7 @@ func (j *jsiiProxy_Apigatewayv2Authorizer)SetAuthorizerUri(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Authorizer)SetConnection(val interface{}) {
+func (j *jsiiProxy_Apigatewayv2Authorizer) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -650,7 +649,7 @@ func (j *jsiiProxy_Apigatewayv2Authorizer)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Authorizer)SetCount(val interface{}) {
+func (j *jsiiProxy_Apigatewayv2Authorizer) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -661,7 +660,7 @@ func (j *jsiiProxy_Apigatewayv2Authorizer)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Authorizer)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Apigatewayv2Authorizer) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -669,7 +668,7 @@ func (j *jsiiProxy_Apigatewayv2Authorizer)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Authorizer)SetEnableSimpleResponses(val interface{}) {
+func (j *jsiiProxy_Apigatewayv2Authorizer) SetEnableSimpleResponses(val any) {
 	if err := j.validateSetEnableSimpleResponsesParameters(val); err != nil {
 		panic(err)
 	}
@@ -680,7 +679,7 @@ func (j *jsiiProxy_Apigatewayv2Authorizer)SetEnableSimpleResponses(val interface
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Authorizer)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Apigatewayv2Authorizer) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -688,7 +687,7 @@ func (j *jsiiProxy_Apigatewayv2Authorizer)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Authorizer)SetId(val *string) {
+func (j *jsiiProxy_Apigatewayv2Authorizer) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -699,7 +698,7 @@ func (j *jsiiProxy_Apigatewayv2Authorizer)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Authorizer)SetIdentitySources(val *[]*string) {
+func (j *jsiiProxy_Apigatewayv2Authorizer) SetIdentitySources(val *[]*string) {
 	if err := j.validateSetIdentitySourcesParameters(val); err != nil {
 		panic(err)
 	}
@@ -710,7 +709,7 @@ func (j *jsiiProxy_Apigatewayv2Authorizer)SetIdentitySources(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Authorizer)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Apigatewayv2Authorizer) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -721,7 +720,7 @@ func (j *jsiiProxy_Apigatewayv2Authorizer)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Authorizer)SetName(val *string) {
+func (j *jsiiProxy_Apigatewayv2Authorizer) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -732,7 +731,7 @@ func (j *jsiiProxy_Apigatewayv2Authorizer)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Authorizer)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Apigatewayv2Authorizer) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -740,7 +739,7 @@ func (j *jsiiProxy_Apigatewayv2Authorizer)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Authorizer)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Apigatewayv2Authorizer) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -763,7 +762,7 @@ func Apigatewayv2Authorizer_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.apigatewayv2Authorizer.Apigatewayv2Authorizer",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -787,7 +786,7 @@ func Apigatewayv2Authorizer_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Apigatewayv2Authorizer_IsConstruct(x interface{}) *bool {
+func Apigatewayv2Authorizer_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApigatewayv2Authorizer_IsConstructParameters(x); err != nil {
@@ -798,7 +797,7 @@ func Apigatewayv2Authorizer_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.apigatewayv2Authorizer.Apigatewayv2Authorizer",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -806,7 +805,7 @@ func Apigatewayv2Authorizer_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Apigatewayv2Authorizer_IsTerraformElement(x interface{}) *bool {
+func Apigatewayv2Authorizer_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApigatewayv2Authorizer_IsTerraformElementParameters(x); err != nil {
@@ -817,7 +816,7 @@ func Apigatewayv2Authorizer_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.apigatewayv2Authorizer.Apigatewayv2Authorizer",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -825,7 +824,7 @@ func Apigatewayv2Authorizer_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Apigatewayv2Authorizer_IsTerraformResource(x interface{}) *bool {
+func Apigatewayv2Authorizer_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApigatewayv2Authorizer_IsTerraformResourceParameters(x); err != nil {
@@ -836,7 +835,7 @@ func Apigatewayv2Authorizer_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.apigatewayv2Authorizer.Apigatewayv2Authorizer",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -861,31 +860,31 @@ func (a *jsiiProxy_Apigatewayv2Authorizer) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_Apigatewayv2Authorizer) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_Apigatewayv2Authorizer) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_Apigatewayv2Authorizer) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_Apigatewayv2Authorizer) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -901,7 +900,7 @@ func (a *jsiiProxy_Apigatewayv2Authorizer) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -917,7 +916,7 @@ func (a *jsiiProxy_Apigatewayv2Authorizer) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -933,7 +932,7 @@ func (a *jsiiProxy_Apigatewayv2Authorizer) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -949,7 +948,7 @@ func (a *jsiiProxy_Apigatewayv2Authorizer) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -965,7 +964,7 @@ func (a *jsiiProxy_Apigatewayv2Authorizer) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -981,7 +980,7 @@ func (a *jsiiProxy_Apigatewayv2Authorizer) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -997,7 +996,7 @@ func (a *jsiiProxy_Apigatewayv2Authorizer) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1013,15 +1012,15 @@ func (a *jsiiProxy_Apigatewayv2Authorizer) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_Apigatewayv2Authorizer) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_Apigatewayv2Authorizer) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1040,7 +1039,7 @@ func (a *jsiiProxy_Apigatewayv2Authorizer) ImportFrom(id *string, provider cdktf
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1053,7 +1052,7 @@ func (a *jsiiProxy_Apigatewayv2Authorizer) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1067,18 +1066,18 @@ func (a *jsiiProxy_Apigatewayv2Authorizer) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_Apigatewayv2Authorizer) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_Apigatewayv2Authorizer) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1089,7 +1088,7 @@ func (a *jsiiProxy_Apigatewayv2Authorizer) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1100,7 +1099,7 @@ func (a *jsiiProxy_Apigatewayv2Authorizer) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1111,7 +1110,7 @@ func (a *jsiiProxy_Apigatewayv2Authorizer) PutJwtConfiguration(value *Apigateway
 	_jsii_.InvokeVoid(
 		a,
 		"putJwtConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1187,8 +1186,8 @@ func (a *jsiiProxy_Apigatewayv2Authorizer) ResetOverrideLogicalId() {
 	)
 }
 
-func (a *jsiiProxy_Apigatewayv2Authorizer) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_Apigatewayv2Authorizer) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1200,8 +1199,8 @@ func (a *jsiiProxy_Apigatewayv2Authorizer) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (a *jsiiProxy_Apigatewayv2Authorizer) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_Apigatewayv2Authorizer) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1213,8 +1212,8 @@ func (a *jsiiProxy_Apigatewayv2Authorizer) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (a *jsiiProxy_Apigatewayv2Authorizer) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_Apigatewayv2Authorizer) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1226,8 +1225,8 @@ func (a *jsiiProxy_Apigatewayv2Authorizer) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_Apigatewayv2Authorizer) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_Apigatewayv2Authorizer) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1252,8 +1251,8 @@ func (a *jsiiProxy_Apigatewayv2Authorizer) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_Apigatewayv2Authorizer) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_Apigatewayv2Authorizer) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1264,4 +1263,3 @@ func (a *jsiiProxy_Apigatewayv2Authorizer) ToTerraform() interface{} {
 
 	return returns
 }
-

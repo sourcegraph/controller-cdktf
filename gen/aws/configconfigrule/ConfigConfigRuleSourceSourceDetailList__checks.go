@@ -34,7 +34,7 @@ func (c *jsiiProxy_ConfigConfigRuleSourceSourceDetailList) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_ConfigConfigRuleSourceSourceDetailList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ConfigConfigRuleSourceSourceDetailList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewConfigConfigRuleSourceSourceDetailListParameters(terraformResour
 
 	return nil
 }
-

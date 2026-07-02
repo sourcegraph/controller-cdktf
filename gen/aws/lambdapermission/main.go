@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lambdaPermission.LambdaPermission",
-		reflect.TypeOf((*LambdaPermission)(nil)).Elem(),
+		reflect.TypeFor[LambdaPermission](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
@@ -86,7 +86,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LambdaPermission{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -94,6 +94,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lambdaPermission.LambdaPermissionConfig",
-		reflect.TypeOf((*LambdaPermissionConfig)(nil)).Elem(),
+		reflect.TypeFor[LambdaPermissionConfig](),
 	)
 }

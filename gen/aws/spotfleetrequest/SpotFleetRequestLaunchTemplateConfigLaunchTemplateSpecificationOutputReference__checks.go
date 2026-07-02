@@ -98,7 +98,7 @@ func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecificati
 	return nil
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecificationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecificationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewSpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecificationO
 
 	return nil
 }
-

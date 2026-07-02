@@ -19,7 +19,7 @@ func (c *jsiiProxy_CodecommitApprovalRuleTemplate) validateAddMoveTargetParamete
 	return nil
 }
 
-func (c *jsiiProxy_CodecommitApprovalRuleTemplate) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_CodecommitApprovalRuleTemplate) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_CodecommitApprovalRuleTemplate) validateMoveFromIdParameters(
 	return nil
 }
 
-func (c *jsiiProxy_CodecommitApprovalRuleTemplate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_CodecommitApprovalRuleTemplate) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateCodecommitApprovalRuleTemplate_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateCodecommitApprovalRuleTemplate_IsConstructParameters(x interface{}) error {
+func validateCodecommitApprovalRuleTemplate_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateCodecommitApprovalRuleTemplate_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateCodecommitApprovalRuleTemplate_IsTerraformElementParameters(x interface{}) error {
+func validateCodecommitApprovalRuleTemplate_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateCodecommitApprovalRuleTemplate_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func validateCodecommitApprovalRuleTemplate_IsTerraformResourceParameters(x interface{}) error {
+func validateCodecommitApprovalRuleTemplate_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateCodecommitApprovalRuleTemplate_IsTerraformResourceParameters(x inte
 	return nil
 }
 
-func (j *jsiiProxy_CodecommitApprovalRuleTemplate) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_CodecommitApprovalRuleTemplate) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_CodecommitApprovalRuleTemplate) validateSetContentParameters(
 	return nil
 }
 
-func (j *jsiiProxy_CodecommitApprovalRuleTemplate) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_CodecommitApprovalRuleTemplate) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -374,7 +374,7 @@ func (j *jsiiProxy_CodecommitApprovalRuleTemplate) validateSetNameParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_CodecommitApprovalRuleTemplate) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_CodecommitApprovalRuleTemplate) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -438,4 +438,3 @@ func validateNewCodecommitApprovalRuleTemplateParameters(scope constructs.Constr
 
 	return nil
 }
-

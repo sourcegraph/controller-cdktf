@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPoint",
-		reflect.TypeOf((*DataAwsEfsAccessPoint)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEfsAccessPoint](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessPointId", GoGetter: "AccessPointId"},
 			_jsii_.MemberProperty{JsiiProperty: "accessPointIdInput", GoGetter: "AccessPointIdInput"},
@@ -59,7 +59,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsEfsAccessPoint{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -67,15 +67,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPointConfig",
-		reflect.TypeOf((*DataAwsEfsAccessPointConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEfsAccessPointConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPointPosixUser",
-		reflect.TypeOf((*DataAwsEfsAccessPointPosixUser)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEfsAccessPointPosixUser](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPointPosixUserList",
-		reflect.TypeOf((*DataAwsEfsAccessPointPosixUserList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEfsAccessPointPosixUserList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -88,7 +88,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsEfsAccessPointPosixUserList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -96,7 +96,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPointPosixUserOutputReference",
-		reflect.TypeOf((*DataAwsEfsAccessPointPosixUserOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEfsAccessPointPosixUserOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -123,7 +123,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsEfsAccessPointPosixUserOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -131,15 +131,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPointRootDirectory",
-		reflect.TypeOf((*DataAwsEfsAccessPointRootDirectory)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEfsAccessPointRootDirectory](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPointRootDirectoryCreationInfo",
-		reflect.TypeOf((*DataAwsEfsAccessPointRootDirectoryCreationInfo)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEfsAccessPointRootDirectoryCreationInfo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPointRootDirectoryCreationInfoList",
-		reflect.TypeOf((*DataAwsEfsAccessPointRootDirectoryCreationInfoList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEfsAccessPointRootDirectoryCreationInfoList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -152,7 +152,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsEfsAccessPointRootDirectoryCreationInfoList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -160,7 +160,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPointRootDirectoryCreationInfoOutputReference",
-		reflect.TypeOf((*DataAwsEfsAccessPointRootDirectoryCreationInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEfsAccessPointRootDirectoryCreationInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -187,7 +187,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsEfsAccessPointRootDirectoryCreationInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -195,7 +195,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPointRootDirectoryList",
-		reflect.TypeOf((*DataAwsEfsAccessPointRootDirectoryList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEfsAccessPointRootDirectoryList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -208,7 +208,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsEfsAccessPointRootDirectoryList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -216,7 +216,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPointRootDirectoryOutputReference",
-		reflect.TypeOf((*DataAwsEfsAccessPointRootDirectoryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEfsAccessPointRootDirectoryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -242,7 +242,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsEfsAccessPointRootDirectoryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

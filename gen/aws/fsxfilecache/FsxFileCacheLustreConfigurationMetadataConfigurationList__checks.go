@@ -34,7 +34,7 @@ func (f *jsiiProxy_FsxFileCacheLustreConfigurationMetadataConfigurationList) val
 	return nil
 }
 
-func (j *jsiiProxy_FsxFileCacheLustreConfigurationMetadataConfigurationList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FsxFileCacheLustreConfigurationMetadataConfigurationList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewFsxFileCacheLustreConfigurationMetadataConfigurationListParamete
 
 	return nil
 }
-

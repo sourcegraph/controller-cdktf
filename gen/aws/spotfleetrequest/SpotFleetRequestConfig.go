@@ -6,9 +6,9 @@ import (
 
 type SpotFleetRequestConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type SpotFleetRequestConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_fleet_request#iam_fleet_role SpotFleetRequest#iam_fleet_role}.
 	IamFleetRole *string `field:"required" json:"iamFleetRole" yaml:"iamFleetRole"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_fleet_request#target_capacity SpotFleetRequest#target_capacity}.
@@ -41,11 +41,11 @@ type SpotFleetRequestConfig struct {
 	// launch_specification block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_fleet_request#launch_specification SpotFleetRequest#launch_specification}
-	LaunchSpecification interface{} `field:"optional" json:"launchSpecification" yaml:"launchSpecification"`
+	LaunchSpecification any `field:"optional" json:"launchSpecification" yaml:"launchSpecification"`
 	// launch_template_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_fleet_request#launch_template_config SpotFleetRequest#launch_template_config}
-	LaunchTemplateConfig interface{} `field:"optional" json:"launchTemplateConfig" yaml:"launchTemplateConfig"`
+	LaunchTemplateConfig any `field:"optional" json:"launchTemplateConfig" yaml:"launchTemplateConfig"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_fleet_request#load_balancers SpotFleetRequest#load_balancers}.
 	LoadBalancers *[]*string `field:"optional" json:"loadBalancers" yaml:"loadBalancers"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_fleet_request#on_demand_allocation_strategy SpotFleetRequest#on_demand_allocation_strategy}.
@@ -55,7 +55,7 @@ type SpotFleetRequestConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_fleet_request#on_demand_target_capacity SpotFleetRequest#on_demand_target_capacity}.
 	OnDemandTargetCapacity *float64 `field:"optional" json:"onDemandTargetCapacity" yaml:"onDemandTargetCapacity"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_fleet_request#replace_unhealthy_instances SpotFleetRequest#replace_unhealthy_instances}.
-	ReplaceUnhealthyInstances interface{} `field:"optional" json:"replaceUnhealthyInstances" yaml:"replaceUnhealthyInstances"`
+	ReplaceUnhealthyInstances any `field:"optional" json:"replaceUnhealthyInstances" yaml:"replaceUnhealthyInstances"`
 	// spot_maintenance_strategies block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_fleet_request#spot_maintenance_strategies SpotFleetRequest#spot_maintenance_strategies}
@@ -73,7 +73,7 @@ type SpotFleetRequestConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_fleet_request#terminate_instances_on_delete SpotFleetRequest#terminate_instances_on_delete}.
 	TerminateInstancesOnDelete *string `field:"optional" json:"terminateInstancesOnDelete" yaml:"terminateInstancesOnDelete"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_fleet_request#terminate_instances_with_expiration SpotFleetRequest#terminate_instances_with_expiration}.
-	TerminateInstancesWithExpiration interface{} `field:"optional" json:"terminateInstancesWithExpiration" yaml:"terminateInstancesWithExpiration"`
+	TerminateInstancesWithExpiration any `field:"optional" json:"terminateInstancesWithExpiration" yaml:"terminateInstancesWithExpiration"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_fleet_request#timeouts SpotFleetRequest#timeouts}
@@ -83,6 +83,5 @@ type SpotFleetRequestConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_fleet_request#valid_until SpotFleetRequest#valid_until}.
 	ValidUntil *string `field:"optional" json:"validUntil" yaml:"validUntil"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_fleet_request#wait_for_fulfillment SpotFleetRequest#wait_for_fulfillment}.
-	WaitForFulfillment interface{} `field:"optional" json:"waitForFulfillment" yaml:"waitForFulfillment"`
+	WaitForFulfillment any `field:"optional" json:"waitForFulfillment" yaml:"waitForFulfillment"`
 }
-

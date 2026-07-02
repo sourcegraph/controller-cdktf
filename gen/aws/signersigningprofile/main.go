@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile",
-		reflect.TypeOf((*SignerSigningProfile)(nil)).Elem(),
+		reflect.TypeFor[SignerSigningProfile](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,7 +80,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionArn", GoGetter: "VersionArn"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SignerSigningProfile{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -88,15 +88,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileConfig",
-		reflect.TypeOf((*SignerSigningProfileConfig)(nil)).Elem(),
+		reflect.TypeFor[SignerSigningProfileConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileRevocationRecord",
-		reflect.TypeOf((*SignerSigningProfileRevocationRecord)(nil)).Elem(),
+		reflect.TypeFor[SignerSigningProfileRevocationRecord](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileRevocationRecordList",
-		reflect.TypeOf((*SignerSigningProfileRevocationRecordList)(nil)).Elem(),
+		reflect.TypeFor[SignerSigningProfileRevocationRecordList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -109,7 +109,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SignerSigningProfileRevocationRecordList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -117,7 +117,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileRevocationRecordOutputReference",
-		reflect.TypeOf((*SignerSigningProfileRevocationRecordOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SignerSigningProfileRevocationRecordOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -144,7 +144,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SignerSigningProfileRevocationRecordOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -152,11 +152,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSignatureValidityPeriod",
-		reflect.TypeOf((*SignerSigningProfileSignatureValidityPeriod)(nil)).Elem(),
+		reflect.TypeFor[SignerSigningProfileSignatureValidityPeriod](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSignatureValidityPeriodOutputReference",
-		reflect.TypeOf((*SignerSigningProfileSignatureValidityPeriodOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SignerSigningProfileSignatureValidityPeriodOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -184,7 +184,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SignerSigningProfileSignatureValidityPeriodOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

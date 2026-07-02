@@ -34,7 +34,7 @@ func (w *jsiiProxy_WafXssMatchSetXssMatchTuplesList) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_WafXssMatchSetXssMatchTuplesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WafXssMatchSetXssMatchTuplesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewWafXssMatchSetXssMatchTuplesListParameters(terraformResource cdk
 
 	return nil
 }
-

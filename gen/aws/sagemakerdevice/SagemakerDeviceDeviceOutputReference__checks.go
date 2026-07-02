@@ -98,7 +98,7 @@ func (s *jsiiProxy_SagemakerDeviceDeviceOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerDeviceDeviceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerDeviceDeviceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewSagemakerDeviceDeviceOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

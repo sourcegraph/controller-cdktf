@@ -18,11 +18,11 @@ type DataAwsNetworkfirewallFirewall interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DeleteProtection() cdktf.IResolvable
 	// Experimental.
 	DependsOn() *[]*string
@@ -58,7 +58,7 @@ type DataAwsNetworkfirewallFirewall interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SubnetChangeProtection() cdktf.IResolvable
 	SubnetMapping() DataAwsNetworkfirewallFirewallSubnetMappingList
 	Tags() *map[string]*string
@@ -67,15 +67,15 @@ type DataAwsNetworkfirewallFirewall interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	UpdateToken() *string
 	VpcId() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -104,18 +104,18 @@ type DataAwsNetworkfirewallFirewall interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTags()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsNetworkfirewallFirewall
@@ -153,8 +153,8 @@ func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) CdktfStack() cdktf.TerraformS
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -343,8 +343,8 @@ func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) Provider() cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -403,8 +403,8 @@ func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) TerraformGeneratorMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -443,7 +443,6 @@ func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) VpcId() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/networkfirewall_firewall aws_networkfirewall_firewall} Data Source.
 func NewDataAwsNetworkfirewallFirewall(scope constructs.Construct, id *string, config *DataAwsNetworkfirewallFirewallConfig) DataAwsNetworkfirewallFirewall {
 	_init_.Initialize()
@@ -455,7 +454,7 @@ func NewDataAwsNetworkfirewallFirewall(scope constructs.Construct, id *string, c
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -468,12 +467,12 @@ func NewDataAwsNetworkfirewallFirewall_Override(d DataAwsNetworkfirewallFirewall
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsNetworkfirewallFirewall)SetArn(val *string) {
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) SetArn(val *string) {
 	if err := j.validateSetArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -484,7 +483,7 @@ func (j *jsiiProxy_DataAwsNetworkfirewallFirewall)SetArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsNetworkfirewallFirewall)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -495,7 +494,7 @@ func (j *jsiiProxy_DataAwsNetworkfirewallFirewall)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsNetworkfirewallFirewall)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -503,7 +502,7 @@ func (j *jsiiProxy_DataAwsNetworkfirewallFirewall)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsNetworkfirewallFirewall)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -511,7 +510,7 @@ func (j *jsiiProxy_DataAwsNetworkfirewallFirewall)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_DataAwsNetworkfirewallFirewall)SetId(val *string) {
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_DataAwsNetworkfirewallFirewall)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsNetworkfirewallFirewall)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_DataAwsNetworkfirewallFirewall)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_DataAwsNetworkfirewallFirewall)SetName(val *string) {
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -544,7 +543,7 @@ func (j *jsiiProxy_DataAwsNetworkfirewallFirewall)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsNetworkfirewallFirewall)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -552,7 +551,7 @@ func (j *jsiiProxy_DataAwsNetworkfirewallFirewall)SetProvider(val cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_DataAwsNetworkfirewallFirewall)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -575,7 +574,7 @@ func DataAwsNetworkfirewallFirewall_GenerateConfigForImport(scope constructs.Con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -599,7 +598,7 @@ func DataAwsNetworkfirewallFirewall_GenerateConfigForImport(scope constructs.Con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsNetworkfirewallFirewall_IsConstruct(x interface{}) *bool {
+func DataAwsNetworkfirewallFirewall_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsNetworkfirewallFirewall_IsConstructParameters(x); err != nil {
@@ -610,7 +609,7 @@ func DataAwsNetworkfirewallFirewall_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -618,7 +617,7 @@ func DataAwsNetworkfirewallFirewall_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsNetworkfirewallFirewall_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsNetworkfirewallFirewall_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsNetworkfirewallFirewall_IsTerraformDataSourceParameters(x); err != nil {
@@ -629,7 +628,7 @@ func DataAwsNetworkfirewallFirewall_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -637,7 +636,7 @@ func DataAwsNetworkfirewallFirewall_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsNetworkfirewallFirewall_IsTerraformElement(x interface{}) *bool {
+func DataAwsNetworkfirewallFirewall_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsNetworkfirewallFirewall_IsTerraformElementParameters(x); err != nil {
@@ -648,7 +647,7 @@ func DataAwsNetworkfirewallFirewall_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -666,27 +665,27 @@ func DataAwsNetworkfirewallFirewall_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsNetworkfirewallFirewall) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewall) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsNetworkfirewallFirewall) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewall) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -702,7 +701,7 @@ func (d *jsiiProxy_DataAwsNetworkfirewallFirewall) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -718,7 +717,7 @@ func (d *jsiiProxy_DataAwsNetworkfirewallFirewall) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -734,7 +733,7 @@ func (d *jsiiProxy_DataAwsNetworkfirewallFirewall) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -750,7 +749,7 @@ func (d *jsiiProxy_DataAwsNetworkfirewallFirewall) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -766,7 +765,7 @@ func (d *jsiiProxy_DataAwsNetworkfirewallFirewall) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -782,7 +781,7 @@ func (d *jsiiProxy_DataAwsNetworkfirewallFirewall) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -798,7 +797,7 @@ func (d *jsiiProxy_DataAwsNetworkfirewallFirewall) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -814,7 +813,7 @@ func (d *jsiiProxy_DataAwsNetworkfirewallFirewall) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -830,7 +829,7 @@ func (d *jsiiProxy_DataAwsNetworkfirewallFirewall) InterpolationForAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -844,7 +843,7 @@ func (d *jsiiProxy_DataAwsNetworkfirewallFirewall) OverrideLogicalId(newLogicalI
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -888,8 +887,8 @@ func (d *jsiiProxy_DataAwsNetworkfirewallFirewall) ResetTags() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsNetworkfirewallFirewall) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewall) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -901,8 +900,8 @@ func (d *jsiiProxy_DataAwsNetworkfirewallFirewall) SynthesizeAttributes() *map[s
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsNetworkfirewallFirewall) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewall) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -914,8 +913,8 @@ func (d *jsiiProxy_DataAwsNetworkfirewallFirewall) SynthesizeHclAttributes() *ma
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsNetworkfirewallFirewall) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewall) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -927,8 +926,8 @@ func (d *jsiiProxy_DataAwsNetworkfirewallFirewall) ToHclTerraform() interface{} 
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsNetworkfirewallFirewall) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewall) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -953,8 +952,8 @@ func (d *jsiiProxy_DataAwsNetworkfirewallFirewall) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsNetworkfirewallFirewall) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewall) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -965,4 +964,3 @@ func (d *jsiiProxy_DataAwsNetworkfirewallFirewall) ToTerraform() interface{} {
 
 	return returns
 }
-

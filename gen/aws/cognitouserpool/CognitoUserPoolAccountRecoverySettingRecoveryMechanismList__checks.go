@@ -34,7 +34,7 @@ func (c *jsiiProxy_CognitoUserPoolAccountRecoverySettingRecoveryMechanismList) v
 	return nil
 }
 
-func (j *jsiiProxy_CognitoUserPoolAccountRecoverySettingRecoveryMechanismList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CognitoUserPoolAccountRecoverySettingRecoveryMechanismList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCognitoUserPoolAccountRecoverySettingRecoveryMechanismListParame
 
 	return nil
 }
-

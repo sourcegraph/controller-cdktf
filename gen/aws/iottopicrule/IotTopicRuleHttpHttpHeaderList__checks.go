@@ -34,7 +34,7 @@ func (i *jsiiProxy_IotTopicRuleHttpHttpHeaderList) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleHttpHttpHeaderList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRuleHttpHttpHeaderList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewIotTopicRuleHttpHttpHeaderListParameters(terraformResource cdktf
 
 	return nil
 }
-

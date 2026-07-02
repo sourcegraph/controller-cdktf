@@ -34,7 +34,7 @@ func (c *jsiiProxy_CognitoUserPoolSchemaList) validateResolveParameters(_context
 	return nil
 }
 
-func (j *jsiiProxy_CognitoUserPoolSchemaList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CognitoUserPoolSchemaList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCognitoUserPoolSchemaListParameters(terraformResource cdktf.IInt
 
 	return nil
 }
-

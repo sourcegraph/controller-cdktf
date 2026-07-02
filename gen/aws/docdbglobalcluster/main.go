@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.docdbGlobalCluster.DocdbGlobalCluster",
-		reflect.TypeOf((*DocdbGlobalCluster)(nil)).Elem(),
+		reflect.TypeFor[DocdbGlobalCluster](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,7 +84,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DocdbGlobalCluster{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -92,15 +92,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.docdbGlobalCluster.DocdbGlobalClusterConfig",
-		reflect.TypeOf((*DocdbGlobalClusterConfig)(nil)).Elem(),
+		reflect.TypeFor[DocdbGlobalClusterConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.docdbGlobalCluster.DocdbGlobalClusterGlobalClusterMembers",
-		reflect.TypeOf((*DocdbGlobalClusterGlobalClusterMembers)(nil)).Elem(),
+		reflect.TypeFor[DocdbGlobalClusterGlobalClusterMembers](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.docdbGlobalCluster.DocdbGlobalClusterGlobalClusterMembersList",
-		reflect.TypeOf((*DocdbGlobalClusterGlobalClusterMembersList)(nil)).Elem(),
+		reflect.TypeFor[DocdbGlobalClusterGlobalClusterMembersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -113,7 +113,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DocdbGlobalClusterGlobalClusterMembersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -121,7 +121,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.docdbGlobalCluster.DocdbGlobalClusterGlobalClusterMembersOutputReference",
-		reflect.TypeOf((*DocdbGlobalClusterGlobalClusterMembersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DocdbGlobalClusterGlobalClusterMembersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -147,7 +147,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DocdbGlobalClusterGlobalClusterMembersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -155,11 +155,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.docdbGlobalCluster.DocdbGlobalClusterTimeouts",
-		reflect.TypeOf((*DocdbGlobalClusterTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DocdbGlobalClusterTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.docdbGlobalCluster.DocdbGlobalClusterTimeoutsOutputReference",
-		reflect.TypeOf((*DocdbGlobalClusterTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DocdbGlobalClusterTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -192,7 +192,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DocdbGlobalClusterTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

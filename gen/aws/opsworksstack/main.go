@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.opsworksStack.OpsworksStack",
-		reflect.TypeOf((*OpsworksStack)(nil)).Elem(),
+		reflect.TypeFor[OpsworksStack](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -128,7 +128,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcIdInput", GoGetter: "VpcIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OpsworksStack{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -136,15 +136,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.opsworksStack.OpsworksStackConfig",
-		reflect.TypeOf((*OpsworksStackConfig)(nil)).Elem(),
+		reflect.TypeFor[OpsworksStackConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.opsworksStack.OpsworksStackCustomCookbooksSource",
-		reflect.TypeOf((*OpsworksStackCustomCookbooksSource)(nil)).Elem(),
+		reflect.TypeFor[OpsworksStackCustomCookbooksSource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.opsworksStack.OpsworksStackCustomCookbooksSourceOutputReference",
-		reflect.TypeOf((*OpsworksStackCustomCookbooksSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OpsworksStackCustomCookbooksSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -184,7 +184,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OpsworksStackCustomCookbooksSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -192,11 +192,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.opsworksStack.OpsworksStackTimeouts",
-		reflect.TypeOf((*OpsworksStackTimeouts)(nil)).Elem(),
+		reflect.TypeFor[OpsworksStackTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.opsworksStack.OpsworksStackTimeoutsOutputReference",
-		reflect.TypeOf((*OpsworksStackTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OpsworksStackTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -223,7 +223,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OpsworksStackTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

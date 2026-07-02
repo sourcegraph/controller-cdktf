@@ -15,9 +15,9 @@ type AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputRef
 	CommonNameInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -79,7 +79,7 @@ type AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputRef
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -115,7 +115,7 @@ type AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputRef
 	ResetTitle()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -148,8 +148,8 @@ func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSu
 	return returns
 }
 
-func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -458,7 +458,6 @@ func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSu
 	return returns
 }
 
-
 func NewAcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference {
 	_init_.Initialize()
 
@@ -469,7 +468,7 @@ func NewAcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutput
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -481,12 +480,12 @@ func NewAcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutput
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference)SetCommonName(val *string) {
+func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference) SetCommonName(val *string) {
 	if err := j.validateSetCommonNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -497,7 +496,7 @@ func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSu
 	)
 }
 
-func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -508,7 +507,7 @@ func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSu
 	)
 }
 
-func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,7 +518,7 @@ func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSu
 	)
 }
 
-func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference)SetCountry(val *string) {
+func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference) SetCountry(val *string) {
 	if err := j.validateSetCountryParameters(val); err != nil {
 		panic(err)
 	}
@@ -530,7 +529,7 @@ func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSu
 	)
 }
 
-func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference)SetDistinguishedNameQualifier(val *string) {
+func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference) SetDistinguishedNameQualifier(val *string) {
 	if err := j.validateSetDistinguishedNameQualifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSu
 	)
 }
 
-func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference)SetGenerationQualifier(val *string) {
+func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference) SetGenerationQualifier(val *string) {
 	if err := j.validateSetGenerationQualifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -552,7 +551,7 @@ func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSu
 	)
 }
 
-func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference)SetGivenName(val *string) {
+func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference) SetGivenName(val *string) {
 	if err := j.validateSetGivenNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -563,7 +562,7 @@ func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSu
 	)
 }
 
-func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference)SetInitials(val *string) {
+func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference) SetInitials(val *string) {
 	if err := j.validateSetInitialsParameters(val); err != nil {
 		panic(err)
 	}
@@ -574,7 +573,7 @@ func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSu
 	)
 }
 
-func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference)SetInternalValue(val *AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubject) {
+func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference) SetInternalValue(val *AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubject) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -585,7 +584,7 @@ func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSu
 	)
 }
 
-func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference)SetLocality(val *string) {
+func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference) SetLocality(val *string) {
 	if err := j.validateSetLocalityParameters(val); err != nil {
 		panic(err)
 	}
@@ -596,7 +595,7 @@ func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSu
 	)
 }
 
-func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference)SetOrganization(val *string) {
+func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference) SetOrganization(val *string) {
 	if err := j.validateSetOrganizationParameters(val); err != nil {
 		panic(err)
 	}
@@ -607,7 +606,7 @@ func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSu
 	)
 }
 
-func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference)SetOrganizationalUnit(val *string) {
+func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference) SetOrganizationalUnit(val *string) {
 	if err := j.validateSetOrganizationalUnitParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,7 +617,7 @@ func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSu
 	)
 }
 
-func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference)SetPseudonym(val *string) {
+func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference) SetPseudonym(val *string) {
 	if err := j.validateSetPseudonymParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSu
 	)
 }
 
-func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference)SetState(val *string) {
+func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference) SetState(val *string) {
 	if err := j.validateSetStateParameters(val); err != nil {
 		panic(err)
 	}
@@ -640,7 +639,7 @@ func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSu
 	)
 }
 
-func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference)SetSurname(val *string) {
+func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference) SetSurname(val *string) {
 	if err := j.validateSetSurnameParameters(val); err != nil {
 		panic(err)
 	}
@@ -651,7 +650,7 @@ func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSu
 	)
 }
 
-func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -662,7 +661,7 @@ func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSu
 	)
 }
 
-func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -673,7 +672,7 @@ func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSu
 	)
 }
 
-func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference)SetTitle(val *string) {
+func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference) SetTitle(val *string) {
 	if err := j.validateSetTitleParameters(val); err != nil {
 		panic(err)
 	}
@@ -697,16 +696,16 @@ func (a *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSu
 	return returns
 }
 
-func (a *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -722,7 +721,7 @@ func (a *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSu
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -738,7 +737,7 @@ func (a *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSu
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -754,7 +753,7 @@ func (a *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSu
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -770,7 +769,7 @@ func (a *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSu
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -786,7 +785,7 @@ func (a *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSu
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -802,7 +801,7 @@ func (a *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSu
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -818,7 +817,7 @@ func (a *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSu
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -834,7 +833,7 @@ func (a *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSu
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -863,7 +862,7 @@ func (a *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSu
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -974,16 +973,16 @@ func (a *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSu
 	)
 }
 
-func (a *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1002,4 +1001,3 @@ func (a *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSu
 
 	return returns
 }
-

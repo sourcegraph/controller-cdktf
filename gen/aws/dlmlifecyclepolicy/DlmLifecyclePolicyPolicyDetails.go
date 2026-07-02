@@ -1,6 +1,5 @@
 package dlmlifecyclepolicy
 
-
 type DlmLifecyclePolicyPolicyDetails struct {
 	// action block.
 	//
@@ -23,8 +22,7 @@ type DlmLifecyclePolicyPolicyDetails struct {
 	// schedule block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/dlm_lifecycle_policy#schedule DlmLifecyclePolicy#schedule}
-	Schedule interface{} `field:"optional" json:"schedule" yaml:"schedule"`
+	Schedule any `field:"optional" json:"schedule" yaml:"schedule"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/dlm_lifecycle_policy#target_tags DlmLifecyclePolicy#target_tags}.
 	TargetTags *map[string]*string `field:"optional" json:"targetTags" yaml:"targetTags"`
 }
-

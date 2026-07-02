@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.kendraExperience.KendraExperience",
-		reflect.TypeOf((*KendraExperience)(nil)).Elem(),
+		reflect.TypeFor[KendraExperience](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_KendraExperience{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,19 +85,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.kendraExperience.KendraExperienceConfig",
-		reflect.TypeOf((*KendraExperienceConfig)(nil)).Elem(),
+		reflect.TypeFor[KendraExperienceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.kendraExperience.KendraExperienceConfiguration",
-		reflect.TypeOf((*KendraExperienceConfiguration)(nil)).Elem(),
+		reflect.TypeFor[KendraExperienceConfiguration](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.kendraExperience.KendraExperienceConfigurationContentSourceConfiguration",
-		reflect.TypeOf((*KendraExperienceConfigurationContentSourceConfiguration)(nil)).Elem(),
+		reflect.TypeFor[KendraExperienceConfigurationContentSourceConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.kendraExperience.KendraExperienceConfigurationContentSourceConfigurationOutputReference",
-		reflect.TypeOf((*KendraExperienceConfigurationContentSourceConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[KendraExperienceConfigurationContentSourceConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -130,7 +130,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -138,7 +138,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.kendraExperience.KendraExperienceConfigurationOutputReference",
-		reflect.TypeOf((*KendraExperienceConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[KendraExperienceConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -170,7 +170,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userIdentityConfiguration", GoGetter: "UserIdentityConfiguration"},
 			_jsii_.MemberProperty{JsiiProperty: "userIdentityConfigurationInput", GoGetter: "UserIdentityConfigurationInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_KendraExperienceConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -178,11 +178,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.kendraExperience.KendraExperienceConfigurationUserIdentityConfiguration",
-		reflect.TypeOf((*KendraExperienceConfigurationUserIdentityConfiguration)(nil)).Elem(),
+		reflect.TypeFor[KendraExperienceConfigurationUserIdentityConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.kendraExperience.KendraExperienceConfigurationUserIdentityConfigurationOutputReference",
-		reflect.TypeOf((*KendraExperienceConfigurationUserIdentityConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[KendraExperienceConfigurationUserIdentityConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -208,7 +208,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_KendraExperienceConfigurationUserIdentityConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -216,11 +216,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.kendraExperience.KendraExperienceEndpoints",
-		reflect.TypeOf((*KendraExperienceEndpoints)(nil)).Elem(),
+		reflect.TypeFor[KendraExperienceEndpoints](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.kendraExperience.KendraExperienceEndpointsList",
-		reflect.TypeOf((*KendraExperienceEndpointsList)(nil)).Elem(),
+		reflect.TypeFor[KendraExperienceEndpointsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -233,7 +233,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_KendraExperienceEndpointsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -241,7 +241,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.kendraExperience.KendraExperienceEndpointsOutputReference",
-		reflect.TypeOf((*KendraExperienceEndpointsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[KendraExperienceEndpointsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -267,7 +267,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_KendraExperienceEndpointsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -275,11 +275,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.kendraExperience.KendraExperienceTimeouts",
-		reflect.TypeOf((*KendraExperienceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[KendraExperienceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.kendraExperience.KendraExperienceTimeoutsOutputReference",
-		reflect.TypeOf((*KendraExperienceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[KendraExperienceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -312,7 +312,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_KendraExperienceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

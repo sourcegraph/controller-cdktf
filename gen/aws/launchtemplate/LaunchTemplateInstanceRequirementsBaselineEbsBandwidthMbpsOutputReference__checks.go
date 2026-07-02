@@ -98,7 +98,7 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsOut
 	return nil
 }
 
-func (j *jsiiProxy_LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewLaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsOutput
 
 	return nil
 }
-

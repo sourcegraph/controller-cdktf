@@ -17,8 +17,8 @@ type OpsworksPhpAppLayerEbsVolumeList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type OpsworksPhpAppLayerEbsVolumeList interface {
 	Get(index *float64) OpsworksPhpAppLayerEbsVolumeOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_OpsworksPhpAppLayerEbsVolumeList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayerEbsVolumeList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksPhpAppLayerEbsVolumeList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_OpsworksPhpAppLayerEbsVolumeList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewOpsworksPhpAppLayerEbsVolumeList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpsworksPhpAppLayerEbsVolumeList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewOpsworksPhpAppLayerEbsVolumeList(terraformResource cdktf.IInterpolatingP
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayerEbsVolumeList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewOpsworksPhpAppLayerEbsVolumeList_Override(o OpsworksPhpAppLayerEbsVolume
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayerEbsVolumeList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayerEbsVolumeList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OpsworksPhpAppLayerEbsVolumeList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayerEbsVolumeList)SetInternalValue(val interfa
 	)
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayerEbsVolumeList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OpsworksPhpAppLayerEbsVolumeList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayerEbsVolumeList)SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayerEbsVolumeList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OpsworksPhpAppLayerEbsVolumeList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayerEbsVolumeList)SetTerraformResource(val cdk
 	)
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayerEbsVolumeList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_OpsworksPhpAppLayerEbsVolumeList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (o *jsiiProxy_OpsworksPhpAppLayerEbsVolumeList) AllWithMapKey(mapKeyAttribu
 	_jsii_.Invoke(
 		o,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (o *jsiiProxy_OpsworksPhpAppLayerEbsVolumeList) Get(index *float64) Opswork
 	_jsii_.Invoke(
 		o,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksPhpAppLayerEbsVolumeList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (o *jsiiProxy_OpsworksPhpAppLayerEbsVolumeList) Resolve(_context cdktf.IResolveContext) any {
 	if err := o.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (o *jsiiProxy_OpsworksPhpAppLayerEbsVolumeList) ToString() *string {
 
 	return returns
 }
-

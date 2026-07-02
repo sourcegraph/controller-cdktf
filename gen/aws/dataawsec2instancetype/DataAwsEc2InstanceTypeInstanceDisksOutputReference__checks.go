@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsEc2InstanceTypeInstanceDisksOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2InstanceTypeInstanceDisksOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEc2InstanceTypeInstanceDisksOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsEc2InstanceTypeInstanceDisksOutputReferenceParameters(ter
 
 	return nil
 }
-

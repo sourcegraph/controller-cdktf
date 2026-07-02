@@ -34,7 +34,7 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigC
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfilesItemsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfilesItemsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigCont
 
 	return nil
 }
-

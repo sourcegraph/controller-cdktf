@@ -12,9 +12,9 @@ type MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference interface 
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference interface 
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	PreferredChannelPipeline() *string
 	SetPreferredChannelPipeline(val *string)
 	PreferredChannelPipelineInput() *string
@@ -36,7 +36,7 @@ type MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference interface 
 	SetProgramNumber(val *float64)
 	ProgramNumberInput() *float64
 	ServiceDescriptor() MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorList
-	ServiceDescriptorInput() interface{}
+	ServiceDescriptorInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,11 +46,11 @@ type MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference interface 
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	VideoSettings() MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsList
-	VideoSettingsInput() interface{}
+	VideoSettingsInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,13 +71,13 @@ type MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference interface 
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutServiceDescriptor(value interface{})
-	PutVideoSettings(value interface{})
+	PutServiceDescriptor(value any)
+	PutVideoSettings(value any)
 	ResetServiceDescriptor()
 	ResetVideoSettings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -90,8 +90,8 @@ type jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference 
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -130,8 +130,8 @@ func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference) ServiceDescriptorInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference) ServiceDescriptorInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"serviceDescriptorInput",
@@ -230,8 +230,8 @@ func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference) VideoSettingsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference) VideoSettingsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"videoSettingsInput",
@@ -239,7 +239,6 @@ func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputRefere
 	)
 	return returns
 }
-
 
 func NewMedialiveMultiplexProgramMultiplexProgramSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference {
 	_init_.Initialize()
@@ -251,7 +250,7 @@ func NewMedialiveMultiplexProgramMultiplexProgramSettingsOutputReference(terrafo
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -263,12 +262,12 @@ func NewMedialiveMultiplexProgramMultiplexProgramSettingsOutputReference_Overrid
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputRefere
 	)
 }
 
-func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputRefere
 	)
 }
 
-func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputRefere
 	)
 }
 
-func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference)SetPreferredChannelPipeline(val *string) {
+func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference) SetPreferredChannelPipeline(val *string) {
 	if err := j.validateSetPreferredChannelPipelineParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputRefere
 	)
 }
 
-func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference)SetProgramNumber(val *float64) {
+func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference) SetProgramNumber(val *float64) {
 	if err := j.validateSetProgramNumberParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputRefere
 	)
 }
 
-func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,7 +333,7 @@ func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputRefere
 	)
 }
 
-func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,16 +357,16 @@ func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputRefere
 	return returns
 }
 
-func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -383,7 +382,7 @@ func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputRefere
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -399,7 +398,7 @@ func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputRefere
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -415,7 +414,7 @@ func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputRefere
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputRefere
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputRefere
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -463,7 +462,7 @@ func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputRefere
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -479,7 +478,7 @@ func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputRefere
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -495,7 +494,7 @@ func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputRefere
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -524,32 +523,32 @@ func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputRefere
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference) PutServiceDescriptor(value interface{}) {
+func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference) PutServiceDescriptor(value any) {
 	if err := m.validatePutServiceDescriptorParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"putServiceDescriptor",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference) PutVideoSettings(value interface{}) {
+func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference) PutVideoSettings(value any) {
 	if err := m.validatePutVideoSettingsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"putVideoSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -569,16 +568,16 @@ func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputRefere
 	)
 }
 
-func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -597,4 +596,3 @@ func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputRefere
 
 	return returns
 }
-

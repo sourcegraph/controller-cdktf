@@ -15,15 +15,15 @@ type IotThingGroupMembership interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -45,23 +45,23 @@ type IotThingGroupMembership interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
-	OverrideDynamicGroup() interface{}
-	SetOverrideDynamicGroup(val interface{})
-	OverrideDynamicGroupInput() interface{}
+	OverrideDynamicGroup() any
+	SetOverrideDynamicGroup(val any)
+	OverrideDynamicGroupInput() any
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ThingGroupName() *string
@@ -74,9 +74,9 @@ type IotThingGroupMembership interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -94,7 +94,7 @@ type IotThingGroupMembership interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -106,7 +106,7 @@ type IotThingGroupMembership interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -118,17 +118,17 @@ type IotThingGroupMembership interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for IotThingGroupMembership
@@ -146,8 +146,8 @@ func (j *jsiiProxy_IotThingGroupMembership) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_IotThingGroupMembership) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IotThingGroupMembership) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_IotThingGroupMembership) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IotThingGroupMembership) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IotThingGroupMembership) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_IotThingGroupMembership) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_IotThingGroupMembership) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IotThingGroupMembership) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -256,8 +256,8 @@ func (j *jsiiProxy_IotThingGroupMembership) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_IotThingGroupMembership) OverrideDynamicGroup() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IotThingGroupMembership) OverrideDynamicGroup() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"overrideDynamicGroup",
@@ -266,8 +266,8 @@ func (j *jsiiProxy_IotThingGroupMembership) OverrideDynamicGroup() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IotThingGroupMembership) OverrideDynamicGroupInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IotThingGroupMembership) OverrideDynamicGroupInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"overrideDynamicGroupInput",
@@ -286,8 +286,8 @@ func (j *jsiiProxy_IotThingGroupMembership) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_IotThingGroupMembership) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_IotThingGroupMembership) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -296,8 +296,8 @@ func (j *jsiiProxy_IotThingGroupMembership) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IotThingGroupMembership) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IotThingGroupMembership) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -316,8 +316,8 @@ func (j *jsiiProxy_IotThingGroupMembership) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_IotThingGroupMembership) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IotThingGroupMembership) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -376,7 +376,6 @@ func (j *jsiiProxy_IotThingGroupMembership) ThingNameInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/iot_thing_group_membership aws_iot_thing_group_membership} Resource.
 func NewIotThingGroupMembership(scope constructs.Construct, id *string, config *IotThingGroupMembershipConfig) IotThingGroupMembership {
 	_init_.Initialize()
@@ -388,7 +387,7 @@ func NewIotThingGroupMembership(scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iotThingGroupMembership.IotThingGroupMembership",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -401,12 +400,12 @@ func NewIotThingGroupMembership_Override(i IotThingGroupMembership, scope constr
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iotThingGroupMembership.IotThingGroupMembership",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IotThingGroupMembership)SetConnection(val interface{}) {
+func (j *jsiiProxy_IotThingGroupMembership) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_IotThingGroupMembership)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IotThingGroupMembership)SetCount(val interface{}) {
+func (j *jsiiProxy_IotThingGroupMembership) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_IotThingGroupMembership)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IotThingGroupMembership)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_IotThingGroupMembership) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -436,7 +435,7 @@ func (j *jsiiProxy_IotThingGroupMembership)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IotThingGroupMembership)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IotThingGroupMembership) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -444,7 +443,7 @@ func (j *jsiiProxy_IotThingGroupMembership)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_IotThingGroupMembership)SetId(val *string) {
+func (j *jsiiProxy_IotThingGroupMembership) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -455,7 +454,7 @@ func (j *jsiiProxy_IotThingGroupMembership)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IotThingGroupMembership)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IotThingGroupMembership) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_IotThingGroupMembership)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_IotThingGroupMembership)SetOverrideDynamicGroup(val interface{}) {
+func (j *jsiiProxy_IotThingGroupMembership) SetOverrideDynamicGroup(val any) {
 	if err := j.validateSetOverrideDynamicGroupParameters(val); err != nil {
 		panic(err)
 	}
@@ -477,7 +476,7 @@ func (j *jsiiProxy_IotThingGroupMembership)SetOverrideDynamicGroup(val interface
 	)
 }
 
-func (j *jsiiProxy_IotThingGroupMembership)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IotThingGroupMembership) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -485,7 +484,7 @@ func (j *jsiiProxy_IotThingGroupMembership)SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_IotThingGroupMembership)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_IotThingGroupMembership) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,7 +495,7 @@ func (j *jsiiProxy_IotThingGroupMembership)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IotThingGroupMembership)SetThingGroupName(val *string) {
+func (j *jsiiProxy_IotThingGroupMembership) SetThingGroupName(val *string) {
 	if err := j.validateSetThingGroupNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -507,7 +506,7 @@ func (j *jsiiProxy_IotThingGroupMembership)SetThingGroupName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IotThingGroupMembership)SetThingName(val *string) {
+func (j *jsiiProxy_IotThingGroupMembership) SetThingName(val *string) {
 	if err := j.validateSetThingNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -530,7 +529,7 @@ func IotThingGroupMembership_GenerateConfigForImport(scope constructs.Construct,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iotThingGroupMembership.IotThingGroupMembership",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func IotThingGroupMembership_GenerateConfigForImport(scope constructs.Construct,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func IotThingGroupMembership_IsConstruct(x interface{}) *bool {
+func IotThingGroupMembership_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIotThingGroupMembership_IsConstructParameters(x); err != nil {
@@ -565,7 +564,7 @@ func IotThingGroupMembership_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iotThingGroupMembership.IotThingGroupMembership",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -573,7 +572,7 @@ func IotThingGroupMembership_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func IotThingGroupMembership_IsTerraformElement(x interface{}) *bool {
+func IotThingGroupMembership_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIotThingGroupMembership_IsTerraformElementParameters(x); err != nil {
@@ -584,7 +583,7 @@ func IotThingGroupMembership_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iotThingGroupMembership.IotThingGroupMembership",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -592,7 +591,7 @@ func IotThingGroupMembership_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func IotThingGroupMembership_IsTerraformResource(x interface{}) *bool {
+func IotThingGroupMembership_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIotThingGroupMembership_IsTerraformResourceParameters(x); err != nil {
@@ -603,7 +602,7 @@ func IotThingGroupMembership_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iotThingGroupMembership.IotThingGroupMembership",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -628,31 +627,31 @@ func (i *jsiiProxy_IotThingGroupMembership) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (i *jsiiProxy_IotThingGroupMembership) AddOverride(path *string, value interface{}) {
+func (i *jsiiProxy_IotThingGroupMembership) AddOverride(path *string, value any) {
 	if err := i.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (i *jsiiProxy_IotThingGroupMembership) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IotThingGroupMembership) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -668,7 +667,7 @@ func (i *jsiiProxy_IotThingGroupMembership) GetBooleanAttribute(terraformAttribu
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -684,7 +683,7 @@ func (i *jsiiProxy_IotThingGroupMembership) GetBooleanMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -700,7 +699,7 @@ func (i *jsiiProxy_IotThingGroupMembership) GetListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -716,7 +715,7 @@ func (i *jsiiProxy_IotThingGroupMembership) GetNumberAttribute(terraformAttribut
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -732,7 +731,7 @@ func (i *jsiiProxy_IotThingGroupMembership) GetNumberListAttribute(terraformAttr
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -748,7 +747,7 @@ func (i *jsiiProxy_IotThingGroupMembership) GetNumberMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func (i *jsiiProxy_IotThingGroupMembership) GetStringAttribute(terraformAttribut
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -780,15 +779,15 @@ func (i *jsiiProxy_IotThingGroupMembership) GetStringMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IotThingGroupMembership) HasResourceMove() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IotThingGroupMembership) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -807,7 +806,7 @@ func (i *jsiiProxy_IotThingGroupMembership) ImportFrom(id *string, provider cdkt
 	_jsii_.InvokeVoid(
 		i,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -820,7 +819,7 @@ func (i *jsiiProxy_IotThingGroupMembership) InterpolationForAttribute(terraformA
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -834,18 +833,18 @@ func (i *jsiiProxy_IotThingGroupMembership) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (i *jsiiProxy_IotThingGroupMembership) MoveTo(moveTarget *string, index interface{}) {
+func (i *jsiiProxy_IotThingGroupMembership) MoveTo(moveTarget *string, index any) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -856,7 +855,7 @@ func (i *jsiiProxy_IotThingGroupMembership) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -867,7 +866,7 @@ func (i *jsiiProxy_IotThingGroupMembership) OverrideLogicalId(newLogicalId *stri
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -895,8 +894,8 @@ func (i *jsiiProxy_IotThingGroupMembership) ResetOverrideLogicalId() {
 	)
 }
 
-func (i *jsiiProxy_IotThingGroupMembership) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IotThingGroupMembership) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -908,8 +907,8 @@ func (i *jsiiProxy_IotThingGroupMembership) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (i *jsiiProxy_IotThingGroupMembership) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IotThingGroupMembership) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -921,8 +920,8 @@ func (i *jsiiProxy_IotThingGroupMembership) SynthesizeHclAttributes() *map[strin
 	return returns
 }
 
-func (i *jsiiProxy_IotThingGroupMembership) ToHclTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IotThingGroupMembership) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -934,8 +933,8 @@ func (i *jsiiProxy_IotThingGroupMembership) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IotThingGroupMembership) ToMetadata() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IotThingGroupMembership) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -960,8 +959,8 @@ func (i *jsiiProxy_IotThingGroupMembership) ToString() *string {
 	return returns
 }
 
-func (i *jsiiProxy_IotThingGroupMembership) ToTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IotThingGroupMembership) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -972,4 +971,3 @@ func (i *jsiiProxy_IotThingGroupMembership) ToTerraform() interface{} {
 
 	return returns
 }
-

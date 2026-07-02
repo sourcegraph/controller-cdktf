@@ -16,15 +16,15 @@ type IvsPlaybackKeyPair interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -55,14 +55,14 @@ type IvsPlaybackKeyPair interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	PublicKey() *string
 	SetPublicKey(val *string)
 	PublicKeyInput() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -72,18 +72,18 @@ type IvsPlaybackKeyPair interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() IvsPlaybackKeyPairTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -101,7 +101,7 @@ type IvsPlaybackKeyPair interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -113,7 +113,7 @@ type IvsPlaybackKeyPair interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -129,17 +129,17 @@ type IvsPlaybackKeyPair interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for IvsPlaybackKeyPair
@@ -167,8 +167,8 @@ func (j *jsiiProxy_IvsPlaybackKeyPair) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_IvsPlaybackKeyPair) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IvsPlaybackKeyPair) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -177,8 +177,8 @@ func (j *jsiiProxy_IvsPlaybackKeyPair) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IvsPlaybackKeyPair) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IvsPlaybackKeyPair) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_IvsPlaybackKeyPair) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_IvsPlaybackKeyPair) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IvsPlaybackKeyPair) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -317,8 +317,8 @@ func (j *jsiiProxy_IvsPlaybackKeyPair) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_IvsPlaybackKeyPair) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_IvsPlaybackKeyPair) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -347,8 +347,8 @@ func (j *jsiiProxy_IvsPlaybackKeyPair) PublicKeyInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IvsPlaybackKeyPair) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IvsPlaybackKeyPair) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -407,8 +407,8 @@ func (j *jsiiProxy_IvsPlaybackKeyPair) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_IvsPlaybackKeyPair) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IvsPlaybackKeyPair) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -437,8 +437,8 @@ func (j *jsiiProxy_IvsPlaybackKeyPair) Timeouts() IvsPlaybackKeyPairTimeoutsOutp
 	return returns
 }
 
-func (j *jsiiProxy_IvsPlaybackKeyPair) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IvsPlaybackKeyPair) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -446,7 +446,6 @@ func (j *jsiiProxy_IvsPlaybackKeyPair) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ivs_playback_key_pair aws_ivs_playback_key_pair} Resource.
 func NewIvsPlaybackKeyPair(scope constructs.Construct, id *string, config *IvsPlaybackKeyPairConfig) IvsPlaybackKeyPair {
@@ -459,7 +458,7 @@ func NewIvsPlaybackKeyPair(scope constructs.Construct, id *string, config *IvsPl
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPair",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -472,12 +471,12 @@ func NewIvsPlaybackKeyPair_Override(i IvsPlaybackKeyPair, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPair",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IvsPlaybackKeyPair)SetConnection(val interface{}) {
+func (j *jsiiProxy_IvsPlaybackKeyPair) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_IvsPlaybackKeyPair)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IvsPlaybackKeyPair)SetCount(val interface{}) {
+func (j *jsiiProxy_IvsPlaybackKeyPair) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_IvsPlaybackKeyPair)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IvsPlaybackKeyPair)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_IvsPlaybackKeyPair) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -507,7 +506,7 @@ func (j *jsiiProxy_IvsPlaybackKeyPair)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IvsPlaybackKeyPair)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IvsPlaybackKeyPair) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -515,7 +514,7 @@ func (j *jsiiProxy_IvsPlaybackKeyPair)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_IvsPlaybackKeyPair)SetId(val *string) {
+func (j *jsiiProxy_IvsPlaybackKeyPair) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -526,7 +525,7 @@ func (j *jsiiProxy_IvsPlaybackKeyPair)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IvsPlaybackKeyPair)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IvsPlaybackKeyPair) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +536,7 @@ func (j *jsiiProxy_IvsPlaybackKeyPair)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_IvsPlaybackKeyPair)SetName(val *string) {
+func (j *jsiiProxy_IvsPlaybackKeyPair) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_IvsPlaybackKeyPair)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IvsPlaybackKeyPair)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IvsPlaybackKeyPair) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -556,7 +555,7 @@ func (j *jsiiProxy_IvsPlaybackKeyPair)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_IvsPlaybackKeyPair)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_IvsPlaybackKeyPair) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -567,7 +566,7 @@ func (j *jsiiProxy_IvsPlaybackKeyPair)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IvsPlaybackKeyPair)SetPublicKey(val *string) {
+func (j *jsiiProxy_IvsPlaybackKeyPair) SetPublicKey(val *string) {
 	if err := j.validateSetPublicKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -578,7 +577,7 @@ func (j *jsiiProxy_IvsPlaybackKeyPair)SetPublicKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IvsPlaybackKeyPair)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_IvsPlaybackKeyPair) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -589,7 +588,7 @@ func (j *jsiiProxy_IvsPlaybackKeyPair)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_IvsPlaybackKeyPair)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_IvsPlaybackKeyPair) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -612,7 +611,7 @@ func IvsPlaybackKeyPair_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPair",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -636,7 +635,7 @@ func IvsPlaybackKeyPair_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func IvsPlaybackKeyPair_IsConstruct(x interface{}) *bool {
+func IvsPlaybackKeyPair_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIvsPlaybackKeyPair_IsConstructParameters(x); err != nil {
@@ -647,7 +646,7 @@ func IvsPlaybackKeyPair_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPair",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -655,7 +654,7 @@ func IvsPlaybackKeyPair_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func IvsPlaybackKeyPair_IsTerraformElement(x interface{}) *bool {
+func IvsPlaybackKeyPair_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIvsPlaybackKeyPair_IsTerraformElementParameters(x); err != nil {
@@ -666,7 +665,7 @@ func IvsPlaybackKeyPair_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPair",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -674,7 +673,7 @@ func IvsPlaybackKeyPair_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func IvsPlaybackKeyPair_IsTerraformResource(x interface{}) *bool {
+func IvsPlaybackKeyPair_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIvsPlaybackKeyPair_IsTerraformResourceParameters(x); err != nil {
@@ -685,7 +684,7 @@ func IvsPlaybackKeyPair_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPair",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -710,31 +709,31 @@ func (i *jsiiProxy_IvsPlaybackKeyPair) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (i *jsiiProxy_IvsPlaybackKeyPair) AddOverride(path *string, value interface{}) {
+func (i *jsiiProxy_IvsPlaybackKeyPair) AddOverride(path *string, value any) {
 	if err := i.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (i *jsiiProxy_IvsPlaybackKeyPair) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IvsPlaybackKeyPair) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -750,7 +749,7 @@ func (i *jsiiProxy_IvsPlaybackKeyPair) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -766,7 +765,7 @@ func (i *jsiiProxy_IvsPlaybackKeyPair) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -782,7 +781,7 @@ func (i *jsiiProxy_IvsPlaybackKeyPair) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -798,7 +797,7 @@ func (i *jsiiProxy_IvsPlaybackKeyPair) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -814,7 +813,7 @@ func (i *jsiiProxy_IvsPlaybackKeyPair) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -830,7 +829,7 @@ func (i *jsiiProxy_IvsPlaybackKeyPair) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -846,7 +845,7 @@ func (i *jsiiProxy_IvsPlaybackKeyPair) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -862,15 +861,15 @@ func (i *jsiiProxy_IvsPlaybackKeyPair) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IvsPlaybackKeyPair) HasResourceMove() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IvsPlaybackKeyPair) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -889,7 +888,7 @@ func (i *jsiiProxy_IvsPlaybackKeyPair) ImportFrom(id *string, provider cdktf.Ter
 	_jsii_.InvokeVoid(
 		i,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -902,7 +901,7 @@ func (i *jsiiProxy_IvsPlaybackKeyPair) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -916,18 +915,18 @@ func (i *jsiiProxy_IvsPlaybackKeyPair) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (i *jsiiProxy_IvsPlaybackKeyPair) MoveTo(moveTarget *string, index interface{}) {
+func (i *jsiiProxy_IvsPlaybackKeyPair) MoveTo(moveTarget *string, index any) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -938,7 +937,7 @@ func (i *jsiiProxy_IvsPlaybackKeyPair) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -949,7 +948,7 @@ func (i *jsiiProxy_IvsPlaybackKeyPair) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -960,7 +959,7 @@ func (i *jsiiProxy_IvsPlaybackKeyPair) PutTimeouts(value *IvsPlaybackKeyPairTime
 	_jsii_.InvokeVoid(
 		i,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1012,8 +1011,8 @@ func (i *jsiiProxy_IvsPlaybackKeyPair) ResetTimeouts() {
 	)
 }
 
-func (i *jsiiProxy_IvsPlaybackKeyPair) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IvsPlaybackKeyPair) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -1025,8 +1024,8 @@ func (i *jsiiProxy_IvsPlaybackKeyPair) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (i *jsiiProxy_IvsPlaybackKeyPair) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IvsPlaybackKeyPair) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -1038,8 +1037,8 @@ func (i *jsiiProxy_IvsPlaybackKeyPair) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (i *jsiiProxy_IvsPlaybackKeyPair) ToHclTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IvsPlaybackKeyPair) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1051,8 +1050,8 @@ func (i *jsiiProxy_IvsPlaybackKeyPair) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IvsPlaybackKeyPair) ToMetadata() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IvsPlaybackKeyPair) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1077,8 +1076,8 @@ func (i *jsiiProxy_IvsPlaybackKeyPair) ToString() *string {
 	return returns
 }
 
-func (i *jsiiProxy_IvsPlaybackKeyPair) ToTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IvsPlaybackKeyPair) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1089,4 +1088,3 @@ func (i *jsiiProxy_IvsPlaybackKeyPair) ToTerraform() interface{} {
 
 	return returns
 }
-

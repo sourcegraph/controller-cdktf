@@ -12,19 +12,19 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elasticache_replication_group aws_elasticache_replication_group}.
 type ElasticacheReplicationGroup interface {
 	cdktf.TerraformResource
-	ApplyImmediately() interface{}
-	SetApplyImmediately(val interface{})
-	ApplyImmediatelyInput() interface{}
+	ApplyImmediately() any
+	SetApplyImmediately(val any)
+	ApplyImmediatelyInput() any
 	Arn() *string
-	AtRestEncryptionEnabled() interface{}
-	SetAtRestEncryptionEnabled(val interface{})
-	AtRestEncryptionEnabledInput() interface{}
+	AtRestEncryptionEnabled() any
+	SetAtRestEncryptionEnabled(val any)
+	AtRestEncryptionEnabledInput() any
 	AuthToken() *string
 	SetAuthToken(val *string)
 	AuthTokenInput() *string
-	AutomaticFailoverEnabled() interface{}
-	SetAutomaticFailoverEnabled(val interface{})
-	AutomaticFailoverEnabledInput() interface{}
+	AutomaticFailoverEnabled() any
+	SetAutomaticFailoverEnabled(val any)
+	AutomaticFailoverEnabledInput() any
 	AutoMinorVersionUpgrade() *string
 	SetAutoMinorVersionUpgrade(val *string)
 	AutoMinorVersionUpgradeInput() *string
@@ -38,18 +38,18 @@ type ElasticacheReplicationGroup interface {
 	ClusterModeInput() *ElasticacheReplicationGroupClusterMode
 	ConfigurationEndpointAddress() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
-	DataTieringEnabled() interface{}
-	SetDataTieringEnabled(val interface{})
-	DataTieringEnabledInput() interface{}
+	SetCount(val any)
+	DataTieringEnabled() any
+	SetDataTieringEnabled(val any)
+	DataTieringEnabledInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -89,14 +89,14 @@ type ElasticacheReplicationGroup interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	LogDeliveryConfiguration() ElasticacheReplicationGroupLogDeliveryConfigurationList
-	LogDeliveryConfigurationInput() interface{}
+	LogDeliveryConfigurationInput() any
 	MaintenanceWindow() *string
 	SetMaintenanceWindow(val *string)
 	MaintenanceWindowInput() *string
 	MemberClusters() *[]*string
-	MultiAzEnabled() interface{}
-	SetMultiAzEnabled(val interface{})
-	MultiAzEnabledInput() interface{}
+	MultiAzEnabled() any
+	SetMultiAzEnabled(val any)
+	MultiAzEnabledInput() any
 	// The tree node.
 	Node() constructs.Node
 	NodeType() *string
@@ -129,11 +129,11 @@ type ElasticacheReplicationGroup interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReaderEndpointAddress() *string
 	ReplicasPerNodeGroup() *float64
 	SetReplicasPerNodeGroup(val *float64)
@@ -174,14 +174,14 @@ type ElasticacheReplicationGroup interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ElasticacheReplicationGroupTimeoutsOutputReference
-	TimeoutsInput() interface{}
-	TransitEncryptionEnabled() interface{}
-	SetTransitEncryptionEnabled(val interface{})
-	TransitEncryptionEnabledInput() interface{}
+	TimeoutsInput() any
+	TransitEncryptionEnabled() any
+	SetTransitEncryptionEnabled(val any)
+	TransitEncryptionEnabledInput() any
 	UserGroupIds() *[]*string
 	SetUserGroupIds(val *[]*string)
 	UserGroupIdsInput() *[]*string
@@ -189,9 +189,9 @@ type ElasticacheReplicationGroup interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -209,7 +209,7 @@ type ElasticacheReplicationGroup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -221,7 +221,7 @@ type ElasticacheReplicationGroup interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -229,7 +229,7 @@ type ElasticacheReplicationGroup interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutClusterMode(value *ElasticacheReplicationGroupClusterMode)
-	PutLogDeliveryConfiguration(value interface{})
+	PutLogDeliveryConfiguration(value any)
 	PutTimeouts(value *ElasticacheReplicationGroupTimeouts)
 	ResetApplyImmediately()
 	ResetAtRestEncryptionEnabled()
@@ -274,17 +274,17 @@ type ElasticacheReplicationGroup interface {
 	ResetTimeouts()
 	ResetTransitEncryptionEnabled()
 	ResetUserGroupIds()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ElasticacheReplicationGroup
@@ -292,8 +292,8 @@ type jsiiProxy_ElasticacheReplicationGroup struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup) ApplyImmediately() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticacheReplicationGroup) ApplyImmediately() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"applyImmediately",
@@ -302,8 +302,8 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) ApplyImmediately() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup) ApplyImmediatelyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticacheReplicationGroup) ApplyImmediatelyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"applyImmediatelyInput",
@@ -322,8 +322,8 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) Arn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup) AtRestEncryptionEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticacheReplicationGroup) AtRestEncryptionEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"atRestEncryptionEnabled",
@@ -332,8 +332,8 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) AtRestEncryptionEnabled() interf
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup) AtRestEncryptionEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticacheReplicationGroup) AtRestEncryptionEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"atRestEncryptionEnabledInput",
@@ -362,8 +362,8 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) AuthTokenInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup) AutomaticFailoverEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticacheReplicationGroup) AutomaticFailoverEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"automaticFailoverEnabled",
@@ -372,8 +372,8 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) AutomaticFailoverEnabled() inter
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup) AutomaticFailoverEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticacheReplicationGroup) AutomaticFailoverEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"automaticFailoverEnabledInput",
@@ -472,8 +472,8 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) ConfigurationEndpointAddress() *
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticacheReplicationGroup) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -482,8 +482,8 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ElasticacheReplicationGroup) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -492,8 +492,8 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticacheReplicationGroup) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -502,8 +502,8 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup) DataTieringEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticacheReplicationGroup) DataTieringEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dataTieringEnabled",
@@ -512,8 +512,8 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) DataTieringEnabled() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup) DataTieringEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticacheReplicationGroup) DataTieringEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dataTieringEnabledInput",
@@ -732,8 +732,8 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) LogDeliveryConfiguration() Elast
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup) LogDeliveryConfigurationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticacheReplicationGroup) LogDeliveryConfigurationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"logDeliveryConfigurationInput",
@@ -772,8 +772,8 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) MemberClusters() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup) MultiAzEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticacheReplicationGroup) MultiAzEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"multiAzEnabled",
@@ -782,8 +782,8 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) MultiAzEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup) MultiAzEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticacheReplicationGroup) MultiAzEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"multiAzEnabledInput",
@@ -982,8 +982,8 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ElasticacheReplicationGroup) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -992,8 +992,8 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticacheReplicationGroup) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -1262,8 +1262,8 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) TerraformGeneratorMetadata() *cd
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ElasticacheReplicationGroup) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -1292,8 +1292,8 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) Timeouts() ElasticacheReplicatio
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticacheReplicationGroup) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -1302,8 +1302,8 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) TimeoutsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup) TransitEncryptionEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticacheReplicationGroup) TransitEncryptionEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"transitEncryptionEnabled",
@@ -1312,8 +1312,8 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) TransitEncryptionEnabled() inter
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup) TransitEncryptionEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticacheReplicationGroup) TransitEncryptionEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"transitEncryptionEnabledInput",
@@ -1342,7 +1342,6 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) UserGroupIdsInput() *[]*string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elasticache_replication_group aws_elasticache_replication_group} Resource.
 func NewElasticacheReplicationGroup(scope constructs.Construct, id *string, config *ElasticacheReplicationGroupConfig) ElasticacheReplicationGroup {
 	_init_.Initialize()
@@ -1354,7 +1353,7 @@ func NewElasticacheReplicationGroup(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -1367,12 +1366,12 @@ func NewElasticacheReplicationGroup_Override(e ElasticacheReplicationGroup, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetApplyImmediately(val interface{}) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetApplyImmediately(val any) {
 	if err := j.validateSetApplyImmediatelyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1383,7 +1382,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetApplyImmediately(val interface
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetAtRestEncryptionEnabled(val interface{}) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetAtRestEncryptionEnabled(val any) {
 	if err := j.validateSetAtRestEncryptionEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1394,7 +1393,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetAtRestEncryptionEnabled(val in
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetAuthToken(val *string) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetAuthToken(val *string) {
 	if err := j.validateSetAuthTokenParameters(val); err != nil {
 		panic(err)
 	}
@@ -1405,7 +1404,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetAuthToken(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetAutomaticFailoverEnabled(val interface{}) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetAutomaticFailoverEnabled(val any) {
 	if err := j.validateSetAutomaticFailoverEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1416,7 +1415,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetAutomaticFailoverEnabled(val i
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetAutoMinorVersionUpgrade(val *string) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetAutoMinorVersionUpgrade(val *string) {
 	if err := j.validateSetAutoMinorVersionUpgradeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1427,7 +1426,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetAutoMinorVersionUpgrade(val *s
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetAvailabilityZones(val *[]*string) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetAvailabilityZones(val *[]*string) {
 	if err := j.validateSetAvailabilityZonesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1438,7 +1437,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetAvailabilityZones(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetConnection(val interface{}) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1449,7 +1448,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetCount(val interface{}) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1460,7 +1459,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetDataTieringEnabled(val interface{}) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetDataTieringEnabled(val any) {
 	if err := j.validateSetDataTieringEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1471,7 +1470,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetDataTieringEnabled(val interfa
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1479,7 +1478,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetDescription(val *string) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1490,7 +1489,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetEngine(val *string) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetEngine(val *string) {
 	if err := j.validateSetEngineParameters(val); err != nil {
 		panic(err)
 	}
@@ -1501,7 +1500,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetEngine(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetEngineVersion(val *string) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetEngineVersion(val *string) {
 	if err := j.validateSetEngineVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1512,7 +1511,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetEngineVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetFinalSnapshotIdentifier(val *string) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetFinalSnapshotIdentifier(val *string) {
 	if err := j.validateSetFinalSnapshotIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -1523,7 +1522,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetFinalSnapshotIdentifier(val *s
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1531,7 +1530,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetGlobalReplicationGroupId(val *string) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetGlobalReplicationGroupId(val *string) {
 	if err := j.validateSetGlobalReplicationGroupIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1542,7 +1541,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetGlobalReplicationGroupId(val *
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetId(val *string) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1553,7 +1552,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetKmsKeyId(val *string) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetKmsKeyId(val *string) {
 	if err := j.validateSetKmsKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1564,7 +1563,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetKmsKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1575,7 +1574,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetMaintenanceWindow(val *string) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetMaintenanceWindow(val *string) {
 	if err := j.validateSetMaintenanceWindowParameters(val); err != nil {
 		panic(err)
 	}
@@ -1586,7 +1585,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetMaintenanceWindow(val *string)
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetMultiAzEnabled(val interface{}) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetMultiAzEnabled(val any) {
 	if err := j.validateSetMultiAzEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1597,7 +1596,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetMultiAzEnabled(val interface{}
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetNodeType(val *string) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetNodeType(val *string) {
 	if err := j.validateSetNodeTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1608,7 +1607,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetNodeType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetNotificationTopicArn(val *string) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetNotificationTopicArn(val *string) {
 	if err := j.validateSetNotificationTopicArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -1619,7 +1618,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetNotificationTopicArn(val *stri
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetNumberCacheClusters(val *float64) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetNumberCacheClusters(val *float64) {
 	if err := j.validateSetNumberCacheClustersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1630,7 +1629,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetNumberCacheClusters(val *float
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetNumCacheClusters(val *float64) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetNumCacheClusters(val *float64) {
 	if err := j.validateSetNumCacheClustersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1641,7 +1640,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetNumCacheClusters(val *float64)
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetNumNodeGroups(val *float64) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetNumNodeGroups(val *float64) {
 	if err := j.validateSetNumNodeGroupsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1652,7 +1651,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetNumNodeGroups(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetParameterGroupName(val *string) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetParameterGroupName(val *string) {
 	if err := j.validateSetParameterGroupNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1663,7 +1662,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetParameterGroupName(val *string
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetPort(val *float64) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetPort(val *float64) {
 	if err := j.validateSetPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -1674,7 +1673,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetPort(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetPreferredCacheClusterAzs(val *[]*string) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetPreferredCacheClusterAzs(val *[]*string) {
 	if err := j.validateSetPreferredCacheClusterAzsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1685,7 +1684,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetPreferredCacheClusterAzs(val *
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1693,7 +1692,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1704,7 +1703,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetProvisioners(val *[]interface{
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetReplicasPerNodeGroup(val *float64) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetReplicasPerNodeGroup(val *float64) {
 	if err := j.validateSetReplicasPerNodeGroupParameters(val); err != nil {
 		panic(err)
 	}
@@ -1715,7 +1714,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetReplicasPerNodeGroup(val *floa
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetReplicationGroupDescription(val *string) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetReplicationGroupDescription(val *string) {
 	if err := j.validateSetReplicationGroupDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1726,7 +1725,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetReplicationGroupDescription(va
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetReplicationGroupId(val *string) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetReplicationGroupId(val *string) {
 	if err := j.validateSetReplicationGroupIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1737,7 +1736,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetReplicationGroupId(val *string
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetSecurityGroupIds(val *[]*string) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetSecurityGroupIds(val *[]*string) {
 	if err := j.validateSetSecurityGroupIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1748,7 +1747,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetSecurityGroupIds(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetSecurityGroupNames(val *[]*string) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetSecurityGroupNames(val *[]*string) {
 	if err := j.validateSetSecurityGroupNamesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1759,7 +1758,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetSecurityGroupNames(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetSnapshotArns(val *[]*string) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetSnapshotArns(val *[]*string) {
 	if err := j.validateSetSnapshotArnsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1770,7 +1769,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetSnapshotArns(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetSnapshotName(val *string) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetSnapshotName(val *string) {
 	if err := j.validateSetSnapshotNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1781,7 +1780,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetSnapshotName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetSnapshotRetentionLimit(val *float64) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetSnapshotRetentionLimit(val *float64) {
 	if err := j.validateSetSnapshotRetentionLimitParameters(val); err != nil {
 		panic(err)
 	}
@@ -1792,7 +1791,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetSnapshotRetentionLimit(val *fl
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetSnapshotWindow(val *string) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetSnapshotWindow(val *string) {
 	if err := j.validateSetSnapshotWindowParameters(val); err != nil {
 		panic(err)
 	}
@@ -1803,7 +1802,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetSnapshotWindow(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetSubnetGroupName(val *string) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetSubnetGroupName(val *string) {
 	if err := j.validateSetSubnetGroupNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1814,7 +1813,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetSubnetGroupName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1825,7 +1824,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetTags(val *map[string]*string) 
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1836,7 +1835,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetTagsAll(val *map[string]*strin
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetTransitEncryptionEnabled(val interface{}) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetTransitEncryptionEnabled(val any) {
 	if err := j.validateSetTransitEncryptionEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1847,7 +1846,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetTransitEncryptionEnabled(val i
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetUserGroupIds(val *[]*string) {
+func (j *jsiiProxy_ElasticacheReplicationGroup) SetUserGroupIds(val *[]*string) {
 	if err := j.validateSetUserGroupIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1870,7 +1869,7 @@ func ElasticacheReplicationGroup_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroup",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1894,7 +1893,7 @@ func ElasticacheReplicationGroup_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ElasticacheReplicationGroup_IsConstruct(x interface{}) *bool {
+func ElasticacheReplicationGroup_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateElasticacheReplicationGroup_IsConstructParameters(x); err != nil {
@@ -1905,7 +1904,7 @@ func ElasticacheReplicationGroup_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroup",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1913,7 +1912,7 @@ func ElasticacheReplicationGroup_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ElasticacheReplicationGroup_IsTerraformElement(x interface{}) *bool {
+func ElasticacheReplicationGroup_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateElasticacheReplicationGroup_IsTerraformElementParameters(x); err != nil {
@@ -1924,7 +1923,7 @@ func ElasticacheReplicationGroup_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroup",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1932,7 +1931,7 @@ func ElasticacheReplicationGroup_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ElasticacheReplicationGroup_IsTerraformResource(x interface{}) *bool {
+func ElasticacheReplicationGroup_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateElasticacheReplicationGroup_IsTerraformResourceParameters(x); err != nil {
@@ -1943,7 +1942,7 @@ func ElasticacheReplicationGroup_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroup",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1968,31 +1967,31 @@ func (e *jsiiProxy_ElasticacheReplicationGroup) AddMoveTarget(moveTarget *string
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_ElasticacheReplicationGroup) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_ElasticacheReplicationGroup) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_ElasticacheReplicationGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_ElasticacheReplicationGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2008,7 +2007,7 @@ func (e *jsiiProxy_ElasticacheReplicationGroup) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2024,7 +2023,7 @@ func (e *jsiiProxy_ElasticacheReplicationGroup) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2040,7 +2039,7 @@ func (e *jsiiProxy_ElasticacheReplicationGroup) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2056,7 +2055,7 @@ func (e *jsiiProxy_ElasticacheReplicationGroup) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2072,7 +2071,7 @@ func (e *jsiiProxy_ElasticacheReplicationGroup) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2088,7 +2087,7 @@ func (e *jsiiProxy_ElasticacheReplicationGroup) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2104,7 +2103,7 @@ func (e *jsiiProxy_ElasticacheReplicationGroup) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2120,15 +2119,15 @@ func (e *jsiiProxy_ElasticacheReplicationGroup) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_ElasticacheReplicationGroup) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_ElasticacheReplicationGroup) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -2147,7 +2146,7 @@ func (e *jsiiProxy_ElasticacheReplicationGroup) ImportFrom(id *string, provider 
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -2160,7 +2159,7 @@ func (e *jsiiProxy_ElasticacheReplicationGroup) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2174,18 +2173,18 @@ func (e *jsiiProxy_ElasticacheReplicationGroup) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_ElasticacheReplicationGroup) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_ElasticacheReplicationGroup) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -2196,7 +2195,7 @@ func (e *jsiiProxy_ElasticacheReplicationGroup) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -2207,7 +2206,7 @@ func (e *jsiiProxy_ElasticacheReplicationGroup) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -2218,18 +2217,18 @@ func (e *jsiiProxy_ElasticacheReplicationGroup) PutClusterMode(value *Elasticach
 	_jsii_.InvokeVoid(
 		e,
 		"putClusterMode",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (e *jsiiProxy_ElasticacheReplicationGroup) PutLogDeliveryConfiguration(value interface{}) {
+func (e *jsiiProxy_ElasticacheReplicationGroup) PutLogDeliveryConfiguration(value any) {
 	if err := e.validatePutLogDeliveryConfigurationParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"putLogDeliveryConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2240,7 +2239,7 @@ func (e *jsiiProxy_ElasticacheReplicationGroup) PutTimeouts(value *ElasticacheRe
 	_jsii_.InvokeVoid(
 		e,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2572,8 +2571,8 @@ func (e *jsiiProxy_ElasticacheReplicationGroup) ResetUserGroupIds() {
 	)
 }
 
-func (e *jsiiProxy_ElasticacheReplicationGroup) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_ElasticacheReplicationGroup) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -2585,8 +2584,8 @@ func (e *jsiiProxy_ElasticacheReplicationGroup) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (e *jsiiProxy_ElasticacheReplicationGroup) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_ElasticacheReplicationGroup) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -2598,8 +2597,8 @@ func (e *jsiiProxy_ElasticacheReplicationGroup) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (e *jsiiProxy_ElasticacheReplicationGroup) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_ElasticacheReplicationGroup) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -2611,8 +2610,8 @@ func (e *jsiiProxy_ElasticacheReplicationGroup) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_ElasticacheReplicationGroup) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_ElasticacheReplicationGroup) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -2637,8 +2636,8 @@ func (e *jsiiProxy_ElasticacheReplicationGroup) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_ElasticacheReplicationGroup) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_ElasticacheReplicationGroup) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -2649,4 +2648,3 @@ func (e *jsiiProxy_ElasticacheReplicationGroup) ToTerraform() interface{} {
 
 	return returns
 }
-

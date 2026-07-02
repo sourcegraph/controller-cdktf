@@ -98,7 +98,7 @@ func (c *jsiiProxy_CeCostCategoryRuleRuleNotDimensionOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_CeCostCategoryRuleRuleNotDimensionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CeCostCategoryRuleRuleNotDimensionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewCeCostCategoryRuleRuleNotDimensionOutputReferenceParameters(terr
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoIdentityPoolProviderPrincipalTag.CognitoIdentityPoolProviderPrincipalTag",
-		reflect.TypeOf((*CognitoIdentityPoolProviderPrincipalTag)(nil)).Elem(),
+		reflect.TypeFor[CognitoIdentityPoolProviderPrincipalTag](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "useDefaults", GoGetter: "UseDefaults"},
 			_jsii_.MemberProperty{JsiiProperty: "useDefaultsInput", GoGetter: "UseDefaultsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoIdentityPoolProviderPrincipalTag{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -74,6 +74,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoIdentityPoolProviderPrincipalTag.CognitoIdentityPoolProviderPrincipalTagConfig",
-		reflect.TypeOf((*CognitoIdentityPoolProviderPrincipalTagConfig)(nil)).Elem(),
+		reflect.TypeFor[CognitoIdentityPoolProviderPrincipalTagConfig](),
 	)
 }

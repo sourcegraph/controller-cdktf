@@ -19,7 +19,7 @@ func (a *jsiiProxy_AutoscalingGroupTagA) validateAddMoveTargetParameters(moveTar
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingGroupTagA) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AutoscalingGroupTagA) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AutoscalingGroupTagA) validateMoveFromIdParameters(id *string
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingGroupTagA) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AutoscalingGroupTagA) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateAutoscalingGroupTagA_GenerateConfigForImportParameters(scope constr
 	return nil
 }
 
-func validateAutoscalingGroupTagA_IsConstructParameters(x interface{}) error {
+func validateAutoscalingGroupTagA_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateAutoscalingGroupTagA_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateAutoscalingGroupTagA_IsTerraformElementParameters(x interface{}) error {
+func validateAutoscalingGroupTagA_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateAutoscalingGroupTagA_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
-func validateAutoscalingGroupTagA_IsTerraformResourceParameters(x interface{}) error {
+func validateAutoscalingGroupTagA_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_AutoscalingGroupTagA) validateSetAutoscalingGroupNameParamete
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingGroupTagA) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AutoscalingGroupTagA) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_AutoscalingGroupTagA) validateSetConnectionParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingGroupTagA) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AutoscalingGroupTagA) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -369,7 +369,7 @@ func (j *jsiiProxy_AutoscalingGroupTagA) validateSetLifecycleParameters(val *cdk
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingGroupTagA) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AutoscalingGroupTagA) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -433,4 +433,3 @@ func validateNewAutoscalingGroupTagAParameters(scope constructs.Construct, id *s
 
 	return nil
 }
-

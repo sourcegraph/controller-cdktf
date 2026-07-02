@@ -90,7 +90,7 @@ func (f *jsiiProxy_FsxFileCacheLustreConfigurationOutputReference) validateInter
 	return nil
 }
 
-func (f *jsiiProxy_FsxFileCacheLustreConfigurationOutputReference) validatePutMetadataConfigurationParameters(value interface{}) error {
+func (f *jsiiProxy_FsxFileCacheLustreConfigurationOutputReference) validatePutMetadataConfigurationParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (f *jsiiProxy_FsxFileCacheLustreConfigurationOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_FsxFileCacheLustreConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FsxFileCacheLustreConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -202,7 +202,7 @@ func (j *jsiiProxy_FsxFileCacheLustreConfigurationOutputReference) validateSetDe
 	return nil
 }
 
-func (j *jsiiProxy_FsxFileCacheLustreConfigurationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FsxFileCacheLustreConfigurationOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -277,4 +277,3 @@ func validateNewFsxFileCacheLustreConfigurationOutputReferenceParameters(terrafo
 
 	return nil
 }
-

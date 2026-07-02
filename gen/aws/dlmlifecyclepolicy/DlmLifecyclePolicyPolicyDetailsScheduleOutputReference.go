@@ -12,17 +12,17 @@ type DlmLifecyclePolicyPolicyDetailsScheduleOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	CopyTags() interface{}
-	SetCopyTags(val interface{})
-	CopyTagsInput() interface{}
+	CopyTags() any
+	SetCopyTags(val any)
+	CopyTagsInput() any
 	CreateRule() DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleOutputReference
 	CreateRuleInput() *DlmLifecyclePolicyPolicyDetailsScheduleCreateRule
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
@@ -31,15 +31,15 @@ type DlmLifecyclePolicyPolicyDetailsScheduleOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	CrossRegionCopyRule() DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleList
-	CrossRegionCopyRuleInput() interface{}
+	CrossRegionCopyRuleInput() any
 	DeprecateRule() DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRuleOutputReference
 	DeprecateRuleInput() *DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRule
 	FastRestoreRule() DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRuleOutputReference
 	FastRestoreRuleInput() *DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRule
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -64,7 +64,7 @@ type DlmLifecyclePolicyPolicyDetailsScheduleOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -86,7 +86,7 @@ type DlmLifecyclePolicyPolicyDetailsScheduleOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCreateRule(value *DlmLifecyclePolicyPolicyDetailsScheduleCreateRule)
-	PutCrossRegionCopyRule(value interface{})
+	PutCrossRegionCopyRule(value any)
 	PutDeprecateRule(value *DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRule)
 	PutFastRestoreRule(value *DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRule)
 	PutRetainRule(value *DlmLifecyclePolicyPolicyDetailsScheduleRetainRule)
@@ -100,7 +100,7 @@ type DlmLifecyclePolicyPolicyDetailsScheduleOutputReference interface {
 	ResetVariableTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -113,8 +113,8 @@ type jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -133,8 +133,8 @@ func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) Compl
 	return returns
 }
 
-func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) CopyTags() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) CopyTags() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"copyTags",
@@ -143,8 +143,8 @@ func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) CopyT
 	return returns
 }
 
-func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) CopyTagsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) CopyTagsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"copyTagsInput",
@@ -193,8 +193,8 @@ func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) Cross
 	return returns
 }
 
-func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) CrossRegionCopyRuleInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) CrossRegionCopyRuleInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"crossRegionCopyRuleInput",
@@ -253,8 +253,8 @@ func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) Fqn()
 	return returns
 }
 
-func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -383,7 +383,6 @@ func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) Varia
 	return returns
 }
 
-
 func NewDlmLifecyclePolicyPolicyDetailsScheduleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DlmLifecyclePolicyPolicyDetailsScheduleOutputReference {
 	_init_.Initialize()
 
@@ -394,7 +393,7 @@ func NewDlmLifecyclePolicyPolicyDetailsScheduleOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -406,12 +405,12 @@ func NewDlmLifecyclePolicyPolicyDetailsScheduleOutputReference_Override(d DlmLif
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -422,7 +421,7 @@ func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -433,7 +432,7 @@ func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference)SetCopyTags(val interface{}) {
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) SetCopyTags(val any) {
 	if err := j.validateSetCopyTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -444,7 +443,7 @@ func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference)SetCop
 	)
 }
 
-func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -455,7 +454,7 @@ func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference)SetName(val *string) {
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference)SetNam
 	)
 }
 
-func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference)SetTagsToAdd(val *map[string]*string) {
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) SetTagsToAdd(val *map[string]*string) {
 	if err := j.validateSetTagsToAddParameters(val); err != nil {
 		panic(err)
 	}
@@ -477,7 +476,7 @@ func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference)SetTag
 	)
 }
 
-func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference)SetVariableTags(val *map[string]*string) {
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) SetVariableTags(val *map[string]*string) {
 	if err := j.validateSetVariableTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,16 +522,16 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) Compu
 	return returns
 }
 
-func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) GetBo
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -564,7 +563,7 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) GetBo
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -580,7 +579,7 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) GetLi
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -596,7 +595,7 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) GetNu
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -612,7 +611,7 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) GetNu
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -628,7 +627,7 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) GetNu
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -644,7 +643,7 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) GetSt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -660,7 +659,7 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) GetSt
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -689,7 +688,7 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) Inter
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -703,18 +702,18 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) PutCr
 	_jsii_.InvokeVoid(
 		d,
 		"putCreateRule",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) PutCrossRegionCopyRule(value interface{}) {
+func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) PutCrossRegionCopyRule(value any) {
 	if err := d.validatePutCrossRegionCopyRuleParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putCrossRegionCopyRule",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -725,7 +724,7 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) PutDe
 	_jsii_.InvokeVoid(
 		d,
 		"putDeprecateRule",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -736,7 +735,7 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) PutFa
 	_jsii_.InvokeVoid(
 		d,
 		"putFastRestoreRule",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -747,7 +746,7 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) PutRe
 	_jsii_.InvokeVoid(
 		d,
 		"putRetainRule",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -758,7 +757,7 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) PutSh
 	_jsii_.InvokeVoid(
 		d,
 		"putShareRule",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -818,16 +817,16 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) Reset
 	)
 }
 
-func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -846,4 +845,3 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) ToStr
 
 	return returns
 }
-

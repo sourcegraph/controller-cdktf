@@ -34,7 +34,7 @@ func (a *jsiiProxy_AppautoscalingPolicyStepScalingPolicyConfigurationStepAdjustm
 	return nil
 }
 
-func (j *jsiiProxy_AppautoscalingPolicyStepScalingPolicyConfigurationStepAdjustmentList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AppautoscalingPolicyStepScalingPolicyConfigurationStepAdjustmentList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAppautoscalingPolicyStepScalingPolicyConfigurationStepAdjustment
 
 	return nil
 }
-

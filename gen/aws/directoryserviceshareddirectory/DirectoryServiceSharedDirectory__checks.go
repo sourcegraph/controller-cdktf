@@ -19,7 +19,7 @@ func (d *jsiiProxy_DirectoryServiceSharedDirectory) validateAddMoveTargetParamet
 	return nil
 }
 
-func (d *jsiiProxy_DirectoryServiceSharedDirectory) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DirectoryServiceSharedDirectory) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DirectoryServiceSharedDirectory) validateMoveFromIdParameters
 	return nil
 }
 
-func (d *jsiiProxy_DirectoryServiceSharedDirectory) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DirectoryServiceSharedDirectory) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateDirectoryServiceSharedDirectory_GenerateConfigForImportParameters(s
 	return nil
 }
 
-func validateDirectoryServiceSharedDirectory_IsConstructParameters(x interface{}) error {
+func validateDirectoryServiceSharedDirectory_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateDirectoryServiceSharedDirectory_IsConstructParameters(x interface{}
 	return nil
 }
 
-func validateDirectoryServiceSharedDirectory_IsTerraformElementParameters(x interface{}) error {
+func validateDirectoryServiceSharedDirectory_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateDirectoryServiceSharedDirectory_IsTerraformElementParameters(x inte
 	return nil
 }
 
-func validateDirectoryServiceSharedDirectory_IsTerraformResourceParameters(x interface{}) error {
+func validateDirectoryServiceSharedDirectory_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateDirectoryServiceSharedDirectory_IsTerraformResourceParameters(x int
 	return nil
 }
 
-func (j *jsiiProxy_DirectoryServiceSharedDirectory) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DirectoryServiceSharedDirectory) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DirectoryServiceSharedDirectory) validateSetConnectionParamet
 	return nil
 }
 
-func (j *jsiiProxy_DirectoryServiceSharedDirectory) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DirectoryServiceSharedDirectory) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -396,7 +396,7 @@ func (j *jsiiProxy_DirectoryServiceSharedDirectory) validateSetNotesParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_DirectoryServiceSharedDirectory) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DirectoryServiceSharedDirectory) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -460,4 +460,3 @@ func validateNewDirectoryServiceSharedDirectoryParameters(scope constructs.Const
 
 	return nil
 }
-

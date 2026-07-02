@@ -18,9 +18,9 @@ type RdsClusterS3ImportOutputReference interface {
 	BucketPrefixInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -55,7 +55,7 @@ type RdsClusterS3ImportOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type RdsClusterS3ImportOutputReference interface {
 	ResetBucketPrefix()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -132,8 +132,8 @@ func (j *jsiiProxy_RdsClusterS3ImportOutputReference) BucketPrefixInput() *strin
 	return returns
 }
 
-func (j *jsiiProxy_RdsClusterS3ImportOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RdsClusterS3ImportOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -262,7 +262,6 @@ func (j *jsiiProxy_RdsClusterS3ImportOutputReference) TerraformResource() cdktf.
 	return returns
 }
 
-
 func NewRdsClusterS3ImportOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RdsClusterS3ImportOutputReference {
 	_init_.Initialize()
 
@@ -273,7 +272,7 @@ func NewRdsClusterS3ImportOutputReference(terraformResource cdktf.IInterpolating
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.rdsCluster.RdsClusterS3ImportOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -285,12 +284,12 @@ func NewRdsClusterS3ImportOutputReference_Override(r RdsClusterS3ImportOutputRef
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.rdsCluster.RdsClusterS3ImportOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RdsClusterS3ImportOutputReference)SetBucketName(val *string) {
+func (j *jsiiProxy_RdsClusterS3ImportOutputReference) SetBucketName(val *string) {
 	if err := j.validateSetBucketNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_RdsClusterS3ImportOutputReference)SetBucketName(val *string) 
 	)
 }
 
-func (j *jsiiProxy_RdsClusterS3ImportOutputReference)SetBucketPrefix(val *string) {
+func (j *jsiiProxy_RdsClusterS3ImportOutputReference) SetBucketPrefix(val *string) {
 	if err := j.validateSetBucketPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_RdsClusterS3ImportOutputReference)SetBucketPrefix(val *string
 	)
 }
 
-func (j *jsiiProxy_RdsClusterS3ImportOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_RdsClusterS3ImportOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_RdsClusterS3ImportOutputReference)SetComplexObjectIndex(val i
 	)
 }
 
-func (j *jsiiProxy_RdsClusterS3ImportOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_RdsClusterS3ImportOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,7 +333,7 @@ func (j *jsiiProxy_RdsClusterS3ImportOutputReference)SetComplexObjectIsFromSet(v
 	)
 }
 
-func (j *jsiiProxy_RdsClusterS3ImportOutputReference)SetIngestionRole(val *string) {
+func (j *jsiiProxy_RdsClusterS3ImportOutputReference) SetIngestionRole(val *string) {
 	if err := j.validateSetIngestionRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,7 +344,7 @@ func (j *jsiiProxy_RdsClusterS3ImportOutputReference)SetIngestionRole(val *strin
 	)
 }
 
-func (j *jsiiProxy_RdsClusterS3ImportOutputReference)SetInternalValue(val *RdsClusterS3Import) {
+func (j *jsiiProxy_RdsClusterS3ImportOutputReference) SetInternalValue(val *RdsClusterS3Import) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -356,7 +355,7 @@ func (j *jsiiProxy_RdsClusterS3ImportOutputReference)SetInternalValue(val *RdsCl
 	)
 }
 
-func (j *jsiiProxy_RdsClusterS3ImportOutputReference)SetSourceEngine(val *string) {
+func (j *jsiiProxy_RdsClusterS3ImportOutputReference) SetSourceEngine(val *string) {
 	if err := j.validateSetSourceEngineParameters(val); err != nil {
 		panic(err)
 	}
@@ -367,7 +366,7 @@ func (j *jsiiProxy_RdsClusterS3ImportOutputReference)SetSourceEngine(val *string
 	)
 }
 
-func (j *jsiiProxy_RdsClusterS3ImportOutputReference)SetSourceEngineVersion(val *string) {
+func (j *jsiiProxy_RdsClusterS3ImportOutputReference) SetSourceEngineVersion(val *string) {
 	if err := j.validateSetSourceEngineVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -378,7 +377,7 @@ func (j *jsiiProxy_RdsClusterS3ImportOutputReference)SetSourceEngineVersion(val 
 	)
 }
 
-func (j *jsiiProxy_RdsClusterS3ImportOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RdsClusterS3ImportOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -389,7 +388,7 @@ func (j *jsiiProxy_RdsClusterS3ImportOutputReference)SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_RdsClusterS3ImportOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RdsClusterS3ImportOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -413,16 +412,16 @@ func (r *jsiiProxy_RdsClusterS3ImportOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (r *jsiiProxy_RdsClusterS3ImportOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RdsClusterS3ImportOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (r *jsiiProxy_RdsClusterS3ImportOutputReference) GetBooleanAttribute(terraf
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (r *jsiiProxy_RdsClusterS3ImportOutputReference) GetBooleanMapAttribute(ter
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (r *jsiiProxy_RdsClusterS3ImportOutputReference) GetListAttribute(terraform
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (r *jsiiProxy_RdsClusterS3ImportOutputReference) GetNumberAttribute(terrafo
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (r *jsiiProxy_RdsClusterS3ImportOutputReference) GetNumberListAttribute(ter
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func (r *jsiiProxy_RdsClusterS3ImportOutputReference) GetNumberMapAttribute(terr
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -534,7 +533,7 @@ func (r *jsiiProxy_RdsClusterS3ImportOutputReference) GetStringAttribute(terrafo
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -550,7 +549,7 @@ func (r *jsiiProxy_RdsClusterS3ImportOutputReference) GetStringMapAttribute(terr
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -579,7 +578,7 @@ func (r *jsiiProxy_RdsClusterS3ImportOutputReference) InterpolationForAttribute(
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -594,16 +593,16 @@ func (r *jsiiProxy_RdsClusterS3ImportOutputReference) ResetBucketPrefix() {
 	)
 }
 
-func (r *jsiiProxy_RdsClusterS3ImportOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RdsClusterS3ImportOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -622,4 +621,3 @@ func (r *jsiiProxy_RdsClusterS3ImportOutputReference) ToString() *string {
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (o *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) validateSetCustomEndpointEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) validateSetCustomEndpointEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -199,7 +199,7 @@ func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) validateSetEnforceHttpsParameters(val interface{}) error {
+func (j *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) validateSetEnforceHttpsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -262,4 +262,3 @@ func validateNewOpensearchDomainDomainEndpointOptionsOutputReferenceParameters(t
 
 	return nil
 }
-

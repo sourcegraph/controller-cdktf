@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGateway",
-		reflect.TypeOf((*Ec2TransitGateway)(nil)).Elem(),
+		reflect.TypeFor[Ec2TransitGateway](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -97,7 +97,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpnEcmpSupport", GoGetter: "VpnEcmpSupport"},
 			_jsii_.MemberProperty{JsiiProperty: "vpnEcmpSupportInput", GoGetter: "VpnEcmpSupportInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2TransitGateway{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -105,15 +105,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayConfig",
-		reflect.TypeOf((*Ec2TransitGatewayConfig)(nil)).Elem(),
+		reflect.TypeFor[Ec2TransitGatewayConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayTimeouts",
-		reflect.TypeOf((*Ec2TransitGatewayTimeouts)(nil)).Elem(),
+		reflect.TypeFor[Ec2TransitGatewayTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayTimeoutsOutputReference",
-		reflect.TypeOf((*Ec2TransitGatewayTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2TransitGatewayTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -146,7 +146,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2TransitGatewayTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

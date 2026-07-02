@@ -98,7 +98,7 @@ func (s *jsiiProxy_S3BucketLoggingOutputReference) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketLoggingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketLoggingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewS3BucketLoggingOutputReferenceParameters(terraformResource cdktf
 
 	return nil
 }
-

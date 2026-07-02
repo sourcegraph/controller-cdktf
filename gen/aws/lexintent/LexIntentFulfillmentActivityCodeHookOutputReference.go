@@ -12,9 +12,9 @@ type LexIntentFulfillmentActivityCodeHookOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type LexIntentFulfillmentActivityCodeHookOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,7 +69,7 @@ type LexIntentFulfillmentActivityCodeHookOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,8 +82,8 @@ type jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) UriInput
 	return returns
 }
 
-
 func NewLexIntentFulfillmentActivityCodeHookOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LexIntentFulfillmentActivityCodeHookOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewLexIntentFulfillmentActivityCodeHookOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lexIntent.LexIntentFulfillmentActivityCodeHookOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewLexIntentFulfillmentActivityCodeHookOutputReference_Override(l LexIntent
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lexIntent.LexIntentFulfillmentActivityCodeHookOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference)SetInternalValue(val *LexIntentFulfillmentActivityCodeHook) {
+func (j *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) SetInternalValue(val *LexIntentFulfillmentActivityCodeHook) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference)SetMessageVersion(val *string) {
+func (j *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) SetMessageVersion(val *string) {
 	if err := j.validateSetMessageVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference)SetMessag
 	)
 }
 
-func (j *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -286,7 +285,7 @@ func (j *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference)SetUri(val *string) {
+func (j *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) SetUri(val *string) {
 	if err := j.validateSetUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,16 +309,16 @@ func (l *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) ComputeF
 	return returns
 }
 
-func (l *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -335,7 +334,7 @@ func (l *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) GetBoole
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -351,7 +350,7 @@ func (l *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) GetBoole
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -367,7 +366,7 @@ func (l *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) GetListA
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -383,7 +382,7 @@ func (l *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) GetNumbe
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -399,7 +398,7 @@ func (l *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) GetNumbe
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -415,7 +414,7 @@ func (l *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) GetNumbe
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (l *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) GetStrin
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (l *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) GetStrin
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,23 +475,23 @@ func (l *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) Interpol
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -511,4 +510,3 @@ func (l *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) ToString
 
 	return returns
 }
-

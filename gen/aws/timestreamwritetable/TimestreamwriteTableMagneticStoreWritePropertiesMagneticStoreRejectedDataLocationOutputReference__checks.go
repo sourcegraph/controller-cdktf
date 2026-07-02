@@ -109,7 +109,7 @@ func (t *jsiiProxy_TimestreamwriteTableMagneticStoreWritePropertiesMagneticStore
 	return nil
 }
 
-func (j *jsiiProxy_TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewTimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRej
 
 	return nil
 }
-

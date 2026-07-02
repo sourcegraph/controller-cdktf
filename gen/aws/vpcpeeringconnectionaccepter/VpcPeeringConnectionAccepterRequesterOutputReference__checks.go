@@ -98,7 +98,7 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) validateSetAllowClassicLinkToRemoteVpcParameters(val interface{}) error {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) validateSetAllowClassicLinkToRemoteVpcParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) validateSetAllowRemoteVpcDnsResolutionParameters(val interface{}) error {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) validateSetAllowRemoteVpcDnsResolutionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -138,7 +138,7 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) validateSetAllowVpcToRemoteClassicLinkParameters(val interface{}) error {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) validateSetAllowVpcToRemoteClassicLinkParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -158,7 +158,7 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -258,4 +258,3 @@ func validateNewVpcPeeringConnectionAccepterRequesterOutputReferenceParameters(t
 
 	return nil
 }
-

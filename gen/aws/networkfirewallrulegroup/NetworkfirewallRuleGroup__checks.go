@@ -19,7 +19,7 @@ func (n *jsiiProxy_NetworkfirewallRuleGroup) validateAddMoveTargetParameters(mov
 	return nil
 }
 
-func (n *jsiiProxy_NetworkfirewallRuleGroup) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NetworkfirewallRuleGroup) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NetworkfirewallRuleGroup) validateMoveFromIdParameters(id *st
 	return nil
 }
 
-func (n *jsiiProxy_NetworkfirewallRuleGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NetworkfirewallRuleGroup) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateNetworkfirewallRuleGroup_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateNetworkfirewallRuleGroup_IsConstructParameters(x interface{}) error {
+func validateNetworkfirewallRuleGroup_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateNetworkfirewallRuleGroup_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateNetworkfirewallRuleGroup_IsTerraformElementParameters(x interface{}) error {
+func validateNetworkfirewallRuleGroup_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateNetworkfirewallRuleGroup_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func validateNetworkfirewallRuleGroup_IsTerraformResourceParameters(x interface{}) error {
+func validateNetworkfirewallRuleGroup_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -274,7 +274,7 @@ func (j *jsiiProxy_NetworkfirewallRuleGroup) validateSetCapacityParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_NetworkfirewallRuleGroup) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkfirewallRuleGroup) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -307,7 +307,7 @@ func (j *jsiiProxy_NetworkfirewallRuleGroup) validateSetConnectionParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_NetworkfirewallRuleGroup) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkfirewallRuleGroup) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -396,7 +396,7 @@ func (j *jsiiProxy_NetworkfirewallRuleGroup) validateSetNameParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_NetworkfirewallRuleGroup) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NetworkfirewallRuleGroup) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -492,4 +492,3 @@ func validateNewNetworkfirewallRuleGroupParameters(scope constructs.Construct, i
 
 	return nil
 }
-

@@ -109,7 +109,7 @@ func (l *jsiiProxy_LexIntentFulfillmentActivityOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_LexIntentFulfillmentActivityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LexIntentFulfillmentActivityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewLexIntentFulfillmentActivityOutputReferenceParameters(terraformR
 
 	return nil
 }
-

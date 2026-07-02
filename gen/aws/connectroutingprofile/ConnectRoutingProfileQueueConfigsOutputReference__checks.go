@@ -106,7 +106,7 @@ func (j *jsiiProxy_ConnectRoutingProfileQueueConfigsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_ConnectRoutingProfileQueueConfigsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ConnectRoutingProfileQueueConfigsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ConnectRoutingProfileQueueConfigsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_ConnectRoutingProfileQueueConfigsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ConnectRoutingProfileQueueConfigsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewConnectRoutingProfileQueueConfigsOutputReferenceParameters(terra
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (l *jsiiProxy_LexIntentFollowUpPromptRejectionStatementMessageList) validat
 	return nil
 }
 
-func (j *jsiiProxy_LexIntentFollowUpPromptRejectionStatementMessageList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LexIntentFollowUpPromptRejectionStatementMessageList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewLexIntentFollowUpPromptRejectionStatementMessageListParameters(t
 
 	return nil
 }
-

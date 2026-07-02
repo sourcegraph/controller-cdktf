@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsPrefixListTimeoutsOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsPrefixListTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsPrefixListTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataAwsPrefixListTimeoutsOutputReference) validateSetComplexO
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsPrefixListTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsPrefixListTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataAwsPrefixListTimeoutsOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

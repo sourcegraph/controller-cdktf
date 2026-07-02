@@ -16,11 +16,11 @@ type DataAwsKendraThesaurus interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -55,7 +55,7 @@ type DataAwsKendraThesaurus interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RoleArn() *string
 	SourceS3Path() DataAwsKendraThesaurusSourceS3PathList
 	Status() *string
@@ -67,7 +67,7 @@ type DataAwsKendraThesaurus interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ThesaurusId() *string
@@ -75,9 +75,9 @@ type DataAwsKendraThesaurus interface {
 	ThesaurusIdInput() *string
 	UpdatedAt() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -104,18 +104,18 @@ type DataAwsKendraThesaurus interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTags()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsKendraThesaurus
@@ -143,8 +143,8 @@ func (j *jsiiProxy_DataAwsKendraThesaurus) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsKendraThesaurus) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsKendraThesaurus) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -153,8 +153,8 @@ func (j *jsiiProxy_DataAwsKendraThesaurus) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsKendraThesaurus) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsKendraThesaurus) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -323,8 +323,8 @@ func (j *jsiiProxy_DataAwsKendraThesaurus) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsKendraThesaurus) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsKendraThesaurus) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -413,8 +413,8 @@ func (j *jsiiProxy_DataAwsKendraThesaurus) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsKendraThesaurus) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsKendraThesaurus) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -463,7 +463,6 @@ func (j *jsiiProxy_DataAwsKendraThesaurus) UpdatedAt() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/kendra_thesaurus aws_kendra_thesaurus} Data Source.
 func NewDataAwsKendraThesaurus(scope constructs.Construct, id *string, config *DataAwsKendraThesaurusConfig) DataAwsKendraThesaurus {
 	_init_.Initialize()
@@ -475,7 +474,7 @@ func NewDataAwsKendraThesaurus(scope constructs.Construct, id *string, config *D
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsKendraThesaurus.DataAwsKendraThesaurus",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -488,12 +487,12 @@ func NewDataAwsKendraThesaurus_Override(d DataAwsKendraThesaurus, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsKendraThesaurus.DataAwsKendraThesaurus",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsKendraThesaurus)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsKendraThesaurus) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -504,7 +503,7 @@ func (j *jsiiProxy_DataAwsKendraThesaurus)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsKendraThesaurus)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsKendraThesaurus) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -512,7 +511,7 @@ func (j *jsiiProxy_DataAwsKendraThesaurus)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsKendraThesaurus)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsKendraThesaurus) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -520,7 +519,7 @@ func (j *jsiiProxy_DataAwsKendraThesaurus)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_DataAwsKendraThesaurus)SetId(val *string) {
+func (j *jsiiProxy_DataAwsKendraThesaurus) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -531,7 +530,7 @@ func (j *jsiiProxy_DataAwsKendraThesaurus)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsKendraThesaurus)SetIndexId(val *string) {
+func (j *jsiiProxy_DataAwsKendraThesaurus) SetIndexId(val *string) {
 	if err := j.validateSetIndexIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -542,7 +541,7 @@ func (j *jsiiProxy_DataAwsKendraThesaurus)SetIndexId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsKendraThesaurus)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsKendraThesaurus) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -553,7 +552,7 @@ func (j *jsiiProxy_DataAwsKendraThesaurus)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_DataAwsKendraThesaurus)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsKendraThesaurus) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -561,7 +560,7 @@ func (j *jsiiProxy_DataAwsKendraThesaurus)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_DataAwsKendraThesaurus)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsKendraThesaurus) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -572,7 +571,7 @@ func (j *jsiiProxy_DataAwsKendraThesaurus)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsKendraThesaurus)SetThesaurusId(val *string) {
+func (j *jsiiProxy_DataAwsKendraThesaurus) SetThesaurusId(val *string) {
 	if err := j.validateSetThesaurusIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -595,7 +594,7 @@ func DataAwsKendraThesaurus_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsKendraThesaurus.DataAwsKendraThesaurus",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -619,7 +618,7 @@ func DataAwsKendraThesaurus_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsKendraThesaurus_IsConstruct(x interface{}) *bool {
+func DataAwsKendraThesaurus_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsKendraThesaurus_IsConstructParameters(x); err != nil {
@@ -630,7 +629,7 @@ func DataAwsKendraThesaurus_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsKendraThesaurus.DataAwsKendraThesaurus",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -638,7 +637,7 @@ func DataAwsKendraThesaurus_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsKendraThesaurus_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsKendraThesaurus_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsKendraThesaurus_IsTerraformDataSourceParameters(x); err != nil {
@@ -649,7 +648,7 @@ func DataAwsKendraThesaurus_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsKendraThesaurus.DataAwsKendraThesaurus",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -657,7 +656,7 @@ func DataAwsKendraThesaurus_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsKendraThesaurus_IsTerraformElement(x interface{}) *bool {
+func DataAwsKendraThesaurus_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsKendraThesaurus_IsTerraformElementParameters(x); err != nil {
@@ -668,7 +667,7 @@ func DataAwsKendraThesaurus_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsKendraThesaurus.DataAwsKendraThesaurus",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -686,27 +685,27 @@ func DataAwsKendraThesaurus_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsKendraThesaurus) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsKendraThesaurus) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsKendraThesaurus) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsKendraThesaurus) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -722,7 +721,7 @@ func (d *jsiiProxy_DataAwsKendraThesaurus) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -738,7 +737,7 @@ func (d *jsiiProxy_DataAwsKendraThesaurus) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -754,7 +753,7 @@ func (d *jsiiProxy_DataAwsKendraThesaurus) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -770,7 +769,7 @@ func (d *jsiiProxy_DataAwsKendraThesaurus) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -786,7 +785,7 @@ func (d *jsiiProxy_DataAwsKendraThesaurus) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -802,7 +801,7 @@ func (d *jsiiProxy_DataAwsKendraThesaurus) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -818,7 +817,7 @@ func (d *jsiiProxy_DataAwsKendraThesaurus) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -834,7 +833,7 @@ func (d *jsiiProxy_DataAwsKendraThesaurus) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -850,7 +849,7 @@ func (d *jsiiProxy_DataAwsKendraThesaurus) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -864,7 +863,7 @@ func (d *jsiiProxy_DataAwsKendraThesaurus) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -892,8 +891,8 @@ func (d *jsiiProxy_DataAwsKendraThesaurus) ResetTags() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsKendraThesaurus) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsKendraThesaurus) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -905,8 +904,8 @@ func (d *jsiiProxy_DataAwsKendraThesaurus) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsKendraThesaurus) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsKendraThesaurus) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -918,8 +917,8 @@ func (d *jsiiProxy_DataAwsKendraThesaurus) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsKendraThesaurus) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsKendraThesaurus) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -931,8 +930,8 @@ func (d *jsiiProxy_DataAwsKendraThesaurus) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsKendraThesaurus) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsKendraThesaurus) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -957,8 +956,8 @@ func (d *jsiiProxy_DataAwsKendraThesaurus) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsKendraThesaurus) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsKendraThesaurus) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -969,4 +968,3 @@ func (d *jsiiProxy_DataAwsKendraThesaurus) ToTerraform() interface{} {
 
 	return returns
 }
-

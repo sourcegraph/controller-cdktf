@@ -19,7 +19,7 @@ func (n *jsiiProxy_NetworkmanagerCoreNetworkPolicyAttachment) validateAddMoveTar
 	return nil
 }
 
-func (n *jsiiProxy_NetworkmanagerCoreNetworkPolicyAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NetworkmanagerCoreNetworkPolicyAttachment) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NetworkmanagerCoreNetworkPolicyAttachment) validateMoveFromId
 	return nil
 }
 
-func (n *jsiiProxy_NetworkmanagerCoreNetworkPolicyAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NetworkmanagerCoreNetworkPolicyAttachment) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateNetworkmanagerCoreNetworkPolicyAttachment_GenerateConfigForImportPa
 	return nil
 }
 
-func validateNetworkmanagerCoreNetworkPolicyAttachment_IsConstructParameters(x interface{}) error {
+func validateNetworkmanagerCoreNetworkPolicyAttachment_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateNetworkmanagerCoreNetworkPolicyAttachment_IsConstructParameters(x i
 	return nil
 }
 
-func validateNetworkmanagerCoreNetworkPolicyAttachment_IsTerraformElementParameters(x interface{}) error {
+func validateNetworkmanagerCoreNetworkPolicyAttachment_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateNetworkmanagerCoreNetworkPolicyAttachment_IsTerraformElementParamet
 	return nil
 }
 
-func validateNetworkmanagerCoreNetworkPolicyAttachment_IsTerraformResourceParameters(x interface{}) error {
+func validateNetworkmanagerCoreNetworkPolicyAttachment_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateNetworkmanagerCoreNetworkPolicyAttachment_IsTerraformResourceParame
 	return nil
 }
 
-func (j *jsiiProxy_NetworkmanagerCoreNetworkPolicyAttachment) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkmanagerCoreNetworkPolicyAttachment) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_NetworkmanagerCoreNetworkPolicyAttachment) validateSetCoreNet
 	return nil
 }
 
-func (j *jsiiProxy_NetworkmanagerCoreNetworkPolicyAttachment) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkmanagerCoreNetworkPolicyAttachment) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_NetworkmanagerCoreNetworkPolicyAttachment) validateSetPolicyD
 	return nil
 }
 
-func (j *jsiiProxy_NetworkmanagerCoreNetworkPolicyAttachment) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NetworkmanagerCoreNetworkPolicyAttachment) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -441,4 +441,3 @@ func validateNewNetworkmanagerCoreNetworkPolicyAttachmentParameters(scope constr
 
 	return nil
 }
-

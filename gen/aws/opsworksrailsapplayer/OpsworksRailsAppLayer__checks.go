@@ -19,7 +19,7 @@ func (o *jsiiProxy_OpsworksRailsAppLayer) validateAddMoveTargetParameters(moveTa
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksRailsAppLayer) validateAddOverrideParameters(path *string, value interface{}) error {
+func (o *jsiiProxy_OpsworksRailsAppLayer) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (o *jsiiProxy_OpsworksRailsAppLayer) validateMoveFromIdParameters(id *strin
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksRailsAppLayer) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (o *jsiiProxy_OpsworksRailsAppLayer) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (o *jsiiProxy_OpsworksRailsAppLayer) validatePutCloudwatchConfigurationPara
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksRailsAppLayer) validatePutEbsVolumeParameters(value interface{}) error {
+func (o *jsiiProxy_OpsworksRailsAppLayer) validatePutEbsVolumeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateOpsworksRailsAppLayer_GenerateConfigForImportParameters(scope const
 	return nil
 }
 
-func validateOpsworksRailsAppLayer_IsConstructParameters(x interface{}) error {
+func validateOpsworksRailsAppLayer_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateOpsworksRailsAppLayer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateOpsworksRailsAppLayer_IsTerraformElementParameters(x interface{}) error {
+func validateOpsworksRailsAppLayer_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateOpsworksRailsAppLayer_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
-func validateOpsworksRailsAppLayer_IsTerraformResourceParameters(x interface{}) error {
+func validateOpsworksRailsAppLayer_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -305,7 +305,7 @@ func (j *jsiiProxy_OpsworksRailsAppLayer) validateSetAppServerParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksRailsAppLayer) validateSetAutoAssignElasticIpsParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksRailsAppLayer) validateSetAutoAssignElasticIpsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -325,7 +325,7 @@ func (j *jsiiProxy_OpsworksRailsAppLayer) validateSetAutoAssignElasticIpsParamet
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksRailsAppLayer) validateSetAutoAssignPublicIpsParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksRailsAppLayer) validateSetAutoAssignPublicIpsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -345,7 +345,7 @@ func (j *jsiiProxy_OpsworksRailsAppLayer) validateSetAutoAssignPublicIpsParamete
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksRailsAppLayer) validateSetAutoHealingParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksRailsAppLayer) validateSetAutoHealingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -373,7 +373,7 @@ func (j *jsiiProxy_OpsworksRailsAppLayer) validateSetBundlerVersionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksRailsAppLayer) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksRailsAppLayer) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -406,7 +406,7 @@ func (j *jsiiProxy_OpsworksRailsAppLayer) validateSetConnectionParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksRailsAppLayer) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksRailsAppLayer) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -527,7 +527,7 @@ func (j *jsiiProxy_OpsworksRailsAppLayer) validateSetCustomUndeployRecipesParame
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksRailsAppLayer) validateSetDrainElbOnShutdownParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksRailsAppLayer) validateSetDrainElbOnShutdownParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -563,7 +563,7 @@ func (j *jsiiProxy_OpsworksRailsAppLayer) validateSetIdParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksRailsAppLayer) validateSetInstallUpdatesOnBootParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksRailsAppLayer) validateSetInstallUpdatesOnBootParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -599,7 +599,7 @@ func (j *jsiiProxy_OpsworksRailsAppLayer) validateSetLifecycleParameters(val *cd
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksRailsAppLayer) validateSetManageBundlerParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksRailsAppLayer) validateSetManageBundlerParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -635,7 +635,7 @@ func (j *jsiiProxy_OpsworksRailsAppLayer) validateSetPassengerVersionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksRailsAppLayer) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_OpsworksRailsAppLayer) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -729,7 +729,7 @@ func (j *jsiiProxy_OpsworksRailsAppLayer) validateSetTagsAllParameters(val *map[
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksRailsAppLayer) validateSetUseEbsOptimizedInstancesParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksRailsAppLayer) validateSetUseEbsOptimizedInstancesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -767,4 +767,3 @@ func validateNewOpsworksRailsAppLayerParameters(scope constructs.Construct, id *
 
 	return nil
 }
-

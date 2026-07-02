@@ -98,7 +98,7 @@ func (d *jsiiProxy_DevicefarmTestGridProjectVpcConfigOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_DevicefarmTestGridProjectVpcConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DevicefarmTestGridProjectVpcConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDevicefarmTestGridProjectVpcConfigOutputReferenceParameters(terr
 
 	return nil
 }
-

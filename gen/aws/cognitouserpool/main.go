@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPool",
-		reflect.TypeOf((*CognitoUserPool)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPool](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountRecoverySetting", GoGetter: "AccountRecoverySetting"},
 			_jsii_.MemberProperty{JsiiProperty: "accountRecoverySettingInput", GoGetter: "AccountRecoverySettingInput"},
@@ -150,7 +150,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "verificationMessageTemplate", GoGetter: "VerificationMessageTemplate"},
 			_jsii_.MemberProperty{JsiiProperty: "verificationMessageTemplateInput", GoGetter: "VerificationMessageTemplateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoUserPool{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -158,11 +158,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySetting",
-		reflect.TypeOf((*CognitoUserPoolAccountRecoverySetting)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolAccountRecoverySetting](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingOutputReference",
-		reflect.TypeOf((*CognitoUserPoolAccountRecoverySettingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolAccountRecoverySettingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -189,7 +189,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoUserPoolAccountRecoverySettingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -197,11 +197,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingRecoveryMechanism",
-		reflect.TypeOf((*CognitoUserPoolAccountRecoverySettingRecoveryMechanism)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolAccountRecoverySettingRecoveryMechanism](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingRecoveryMechanismList",
-		reflect.TypeOf((*CognitoUserPoolAccountRecoverySettingRecoveryMechanismList)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolAccountRecoverySettingRecoveryMechanismList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -215,7 +215,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoUserPoolAccountRecoverySettingRecoveryMechanismList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -223,7 +223,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingRecoveryMechanismOutputReference",
-		reflect.TypeOf((*CognitoUserPoolAccountRecoverySettingRecoveryMechanismOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolAccountRecoverySettingRecoveryMechanismOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -251,7 +251,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoUserPoolAccountRecoverySettingRecoveryMechanismOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -259,15 +259,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAdminCreateUserConfig",
-		reflect.TypeOf((*CognitoUserPoolAdminCreateUserConfig)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolAdminCreateUserConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAdminCreateUserConfigInviteMessageTemplate",
-		reflect.TypeOf((*CognitoUserPoolAdminCreateUserConfigInviteMessageTemplate)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolAdminCreateUserConfigInviteMessageTemplate](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAdminCreateUserConfigInviteMessageTemplateOutputReference",
-		reflect.TypeOf((*CognitoUserPoolAdminCreateUserConfigInviteMessageTemplateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolAdminCreateUserConfigInviteMessageTemplateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -300,7 +300,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoUserPoolAdminCreateUserConfigInviteMessageTemplateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -308,7 +308,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAdminCreateUserConfigOutputReference",
-		reflect.TypeOf((*CognitoUserPoolAdminCreateUserConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolAdminCreateUserConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowAdminCreateUserOnly", GoGetter: "AllowAdminCreateUserOnly"},
 			_jsii_.MemberProperty{JsiiProperty: "allowAdminCreateUserOnlyInput", GoGetter: "AllowAdminCreateUserOnlyInput"},
@@ -339,7 +339,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -347,15 +347,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolConfig",
-		reflect.TypeOf((*CognitoUserPoolConfig)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolDeviceConfiguration",
-		reflect.TypeOf((*CognitoUserPoolDeviceConfiguration)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolDeviceConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolDeviceConfigurationOutputReference",
-		reflect.TypeOf((*CognitoUserPoolDeviceConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolDeviceConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "challengeRequiredOnNewDevice", GoGetter: "ChallengeRequiredOnNewDevice"},
 			_jsii_.MemberProperty{JsiiProperty: "challengeRequiredOnNewDeviceInput", GoGetter: "ChallengeRequiredOnNewDeviceInput"},
@@ -385,7 +385,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -393,11 +393,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolEmailConfiguration",
-		reflect.TypeOf((*CognitoUserPoolEmailConfiguration)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolEmailConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolEmailConfigurationOutputReference",
-		reflect.TypeOf((*CognitoUserPoolEmailConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolEmailConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -436,7 +436,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -444,15 +444,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolLambdaConfig",
-		reflect.TypeOf((*CognitoUserPoolLambdaConfig)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolLambdaConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolLambdaConfigCustomEmailSender",
-		reflect.TypeOf((*CognitoUserPoolLambdaConfigCustomEmailSender)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolLambdaConfigCustomEmailSender](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolLambdaConfigCustomEmailSenderOutputReference",
-		reflect.TypeOf((*CognitoUserPoolLambdaConfigCustomEmailSenderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolLambdaConfigCustomEmailSenderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -480,7 +480,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoUserPoolLambdaConfigCustomEmailSenderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -488,11 +488,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolLambdaConfigCustomSmsSender",
-		reflect.TypeOf((*CognitoUserPoolLambdaConfigCustomSmsSender)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolLambdaConfigCustomSmsSender](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolLambdaConfigCustomSmsSenderOutputReference",
-		reflect.TypeOf((*CognitoUserPoolLambdaConfigCustomSmsSenderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolLambdaConfigCustomSmsSenderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -520,7 +520,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoUserPoolLambdaConfigCustomSmsSenderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -528,7 +528,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolLambdaConfigOutputReference",
-		reflect.TypeOf((*CognitoUserPoolLambdaConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolLambdaConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -593,7 +593,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "verifyAuthChallengeResponse", GoGetter: "VerifyAuthChallengeResponse"},
 			_jsii_.MemberProperty{JsiiProperty: "verifyAuthChallengeResponseInput", GoGetter: "VerifyAuthChallengeResponseInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoUserPoolLambdaConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -601,11 +601,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolPasswordPolicy",
-		reflect.TypeOf((*CognitoUserPoolPasswordPolicy)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolPasswordPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolPasswordPolicyOutputReference",
-		reflect.TypeOf((*CognitoUserPoolPasswordPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolPasswordPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -647,7 +647,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoUserPoolPasswordPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -655,11 +655,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSchema",
-		reflect.TypeOf((*CognitoUserPoolSchema)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolSchema](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSchemaList",
-		reflect.TypeOf((*CognitoUserPoolSchemaList)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolSchemaList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -673,7 +673,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoUserPoolSchemaList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -681,11 +681,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSchemaNumberAttributeConstraints",
-		reflect.TypeOf((*CognitoUserPoolSchemaNumberAttributeConstraints)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolSchemaNumberAttributeConstraints](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSchemaNumberAttributeConstraintsOutputReference",
-		reflect.TypeOf((*CognitoUserPoolSchemaNumberAttributeConstraintsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolSchemaNumberAttributeConstraintsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -715,7 +715,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoUserPoolSchemaNumberAttributeConstraintsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -723,7 +723,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSchemaOutputReference",
-		reflect.TypeOf((*CognitoUserPoolSchemaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolSchemaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributeDataType", GoGetter: "AttributeDataType"},
 			_jsii_.MemberProperty{JsiiProperty: "attributeDataTypeInput", GoGetter: "AttributeDataTypeInput"},
@@ -768,7 +768,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoUserPoolSchemaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -776,11 +776,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSchemaStringAttributeConstraints",
-		reflect.TypeOf((*CognitoUserPoolSchemaStringAttributeConstraints)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolSchemaStringAttributeConstraints](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSchemaStringAttributeConstraintsOutputReference",
-		reflect.TypeOf((*CognitoUserPoolSchemaStringAttributeConstraintsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolSchemaStringAttributeConstraintsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -810,7 +810,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoUserPoolSchemaStringAttributeConstraintsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -818,11 +818,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSmsConfiguration",
-		reflect.TypeOf((*CognitoUserPoolSmsConfiguration)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolSmsConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSmsConfigurationOutputReference",
-		reflect.TypeOf((*CognitoUserPoolSmsConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolSmsConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -853,7 +853,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoUserPoolSmsConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -861,11 +861,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSoftwareTokenMfaConfiguration",
-		reflect.TypeOf((*CognitoUserPoolSoftwareTokenMfaConfiguration)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolSoftwareTokenMfaConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSoftwareTokenMfaConfigurationOutputReference",
-		reflect.TypeOf((*CognitoUserPoolSoftwareTokenMfaConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolSoftwareTokenMfaConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -891,7 +891,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoUserPoolSoftwareTokenMfaConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -899,11 +899,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolUserAttributeUpdateSettings",
-		reflect.TypeOf((*CognitoUserPoolUserAttributeUpdateSettings)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolUserAttributeUpdateSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolUserAttributeUpdateSettingsOutputReference",
-		reflect.TypeOf((*CognitoUserPoolUserAttributeUpdateSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolUserAttributeUpdateSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributesRequireVerificationBeforeUpdate", GoGetter: "AttributesRequireVerificationBeforeUpdate"},
 			_jsii_.MemberProperty{JsiiProperty: "attributesRequireVerificationBeforeUpdateInput", GoGetter: "AttributesRequireVerificationBeforeUpdateInput"},
@@ -929,7 +929,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoUserPoolUserAttributeUpdateSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -937,11 +937,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolUserPoolAddOns",
-		reflect.TypeOf((*CognitoUserPoolUserPoolAddOns)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolUserPoolAddOns](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolUserPoolAddOnsOutputReference",
-		reflect.TypeOf((*CognitoUserPoolUserPoolAddOnsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolUserPoolAddOnsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "advancedSecurityMode", GoGetter: "AdvancedSecurityMode"},
 			_jsii_.MemberProperty{JsiiProperty: "advancedSecurityModeInput", GoGetter: "AdvancedSecurityModeInput"},
@@ -967,7 +967,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoUserPoolUserPoolAddOnsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -975,11 +975,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolUsernameConfiguration",
-		reflect.TypeOf((*CognitoUserPoolUsernameConfiguration)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolUsernameConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolUsernameConfigurationOutputReference",
-		reflect.TypeOf((*CognitoUserPoolUsernameConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolUsernameConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "caseSensitive", GoGetter: "CaseSensitive"},
 			_jsii_.MemberProperty{JsiiProperty: "caseSensitiveInput", GoGetter: "CaseSensitiveInput"},
@@ -1005,7 +1005,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoUserPoolUsernameConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1013,11 +1013,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolVerificationMessageTemplate",
-		reflect.TypeOf((*CognitoUserPoolVerificationMessageTemplate)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolVerificationMessageTemplate](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolVerificationMessageTemplateOutputReference",
-		reflect.TypeOf((*CognitoUserPoolVerificationMessageTemplateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolVerificationMessageTemplateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1059,7 +1059,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoUserPoolVerificationMessageTemplateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -12,22 +12,22 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ram_resource_share aws_ram_resource_share}.
 type RamResourceShare interface {
 	cdktf.TerraformResource
-	AllowExternalPrincipals() interface{}
-	SetAllowExternalPrincipals(val interface{})
-	AllowExternalPrincipalsInput() interface{}
+	AllowExternalPrincipals() any
+	SetAllowExternalPrincipals(val any)
+	AllowExternalPrincipalsInput() any
 	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -60,11 +60,11 @@ type RamResourceShare interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -74,18 +74,18 @@ type RamResourceShare interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() RamResourceShareTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type RamResourceShare interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -115,7 +115,7 @@ type RamResourceShare interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -132,17 +132,17 @@ type RamResourceShare interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for RamResourceShare
@@ -150,8 +150,8 @@ type jsiiProxy_RamResourceShare struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_RamResourceShare) AllowExternalPrincipals() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RamResourceShare) AllowExternalPrincipals() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowExternalPrincipals",
@@ -160,8 +160,8 @@ func (j *jsiiProxy_RamResourceShare) AllowExternalPrincipals() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RamResourceShare) AllowExternalPrincipalsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RamResourceShare) AllowExternalPrincipalsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowExternalPrincipalsInput",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_RamResourceShare) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_RamResourceShare) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RamResourceShare) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -200,8 +200,8 @@ func (j *jsiiProxy_RamResourceShare) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RamResourceShare) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RamResourceShare) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -210,8 +210,8 @@ func (j *jsiiProxy_RamResourceShare) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_RamResourceShare) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RamResourceShare) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -350,8 +350,8 @@ func (j *jsiiProxy_RamResourceShare) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_RamResourceShare) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_RamResourceShare) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -360,8 +360,8 @@ func (j *jsiiProxy_RamResourceShare) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RamResourceShare) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RamResourceShare) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -420,8 +420,8 @@ func (j *jsiiProxy_RamResourceShare) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_RamResourceShare) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RamResourceShare) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -450,8 +450,8 @@ func (j *jsiiProxy_RamResourceShare) Timeouts() RamResourceShareTimeoutsOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_RamResourceShare) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RamResourceShare) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -459,7 +459,6 @@ func (j *jsiiProxy_RamResourceShare) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ram_resource_share aws_ram_resource_share} Resource.
 func NewRamResourceShare(scope constructs.Construct, id *string, config *RamResourceShareConfig) RamResourceShare {
@@ -472,7 +471,7 @@ func NewRamResourceShare(scope constructs.Construct, id *string, config *RamReso
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ramResourceShare.RamResourceShare",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -485,12 +484,12 @@ func NewRamResourceShare_Override(r RamResourceShare, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ramResourceShare.RamResourceShare",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RamResourceShare)SetAllowExternalPrincipals(val interface{}) {
+func (j *jsiiProxy_RamResourceShare) SetAllowExternalPrincipals(val any) {
 	if err := j.validateSetAllowExternalPrincipalsParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_RamResourceShare)SetAllowExternalPrincipals(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_RamResourceShare)SetConnection(val interface{}) {
+func (j *jsiiProxy_RamResourceShare) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_RamResourceShare)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RamResourceShare)SetCount(val interface{}) {
+func (j *jsiiProxy_RamResourceShare) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_RamResourceShare)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RamResourceShare)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_RamResourceShare) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -531,7 +530,7 @@ func (j *jsiiProxy_RamResourceShare)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RamResourceShare)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_RamResourceShare) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -539,7 +538,7 @@ func (j *jsiiProxy_RamResourceShare)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_RamResourceShare)SetId(val *string) {
+func (j *jsiiProxy_RamResourceShare) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -550,7 +549,7 @@ func (j *jsiiProxy_RamResourceShare)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RamResourceShare)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_RamResourceShare) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -561,7 +560,7 @@ func (j *jsiiProxy_RamResourceShare)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_RamResourceShare)SetName(val *string) {
+func (j *jsiiProxy_RamResourceShare) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -572,7 +571,7 @@ func (j *jsiiProxy_RamResourceShare)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RamResourceShare)SetPermissionArns(val *[]*string) {
+func (j *jsiiProxy_RamResourceShare) SetPermissionArns(val *[]*string) {
 	if err := j.validateSetPermissionArnsParameters(val); err != nil {
 		panic(err)
 	}
@@ -583,7 +582,7 @@ func (j *jsiiProxy_RamResourceShare)SetPermissionArns(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RamResourceShare)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_RamResourceShare) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -591,7 +590,7 @@ func (j *jsiiProxy_RamResourceShare)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_RamResourceShare)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_RamResourceShare) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -602,7 +601,7 @@ func (j *jsiiProxy_RamResourceShare)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RamResourceShare)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_RamResourceShare) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -613,7 +612,7 @@ func (j *jsiiProxy_RamResourceShare)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_RamResourceShare)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_RamResourceShare) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -636,7 +635,7 @@ func RamResourceShare_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ramResourceShare.RamResourceShare",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -660,7 +659,7 @@ func RamResourceShare_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func RamResourceShare_IsConstruct(x interface{}) *bool {
+func RamResourceShare_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRamResourceShare_IsConstructParameters(x); err != nil {
@@ -671,7 +670,7 @@ func RamResourceShare_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ramResourceShare.RamResourceShare",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func RamResourceShare_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func RamResourceShare_IsTerraformElement(x interface{}) *bool {
+func RamResourceShare_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRamResourceShare_IsTerraformElementParameters(x); err != nil {
@@ -690,7 +689,7 @@ func RamResourceShare_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ramResourceShare.RamResourceShare",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -698,7 +697,7 @@ func RamResourceShare_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func RamResourceShare_IsTerraformResource(x interface{}) *bool {
+func RamResourceShare_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRamResourceShare_IsTerraformResourceParameters(x); err != nil {
@@ -709,7 +708,7 @@ func RamResourceShare_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ramResourceShare.RamResourceShare",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -734,31 +733,31 @@ func (r *jsiiProxy_RamResourceShare) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (r *jsiiProxy_RamResourceShare) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_RamResourceShare) AddOverride(path *string, value any) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (r *jsiiProxy_RamResourceShare) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RamResourceShare) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -774,7 +773,7 @@ func (r *jsiiProxy_RamResourceShare) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -790,7 +789,7 @@ func (r *jsiiProxy_RamResourceShare) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -806,7 +805,7 @@ func (r *jsiiProxy_RamResourceShare) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -822,7 +821,7 @@ func (r *jsiiProxy_RamResourceShare) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -838,7 +837,7 @@ func (r *jsiiProxy_RamResourceShare) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -854,7 +853,7 @@ func (r *jsiiProxy_RamResourceShare) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -870,7 +869,7 @@ func (r *jsiiProxy_RamResourceShare) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -886,15 +885,15 @@ func (r *jsiiProxy_RamResourceShare) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_RamResourceShare) HasResourceMove() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RamResourceShare) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -913,7 +912,7 @@ func (r *jsiiProxy_RamResourceShare) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		r,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -926,7 +925,7 @@ func (r *jsiiProxy_RamResourceShare) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -940,18 +939,18 @@ func (r *jsiiProxy_RamResourceShare) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (r *jsiiProxy_RamResourceShare) MoveTo(moveTarget *string, index interface{}) {
+func (r *jsiiProxy_RamResourceShare) MoveTo(moveTarget *string, index any) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -962,7 +961,7 @@ func (r *jsiiProxy_RamResourceShare) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -973,7 +972,7 @@ func (r *jsiiProxy_RamResourceShare) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -984,7 +983,7 @@ func (r *jsiiProxy_RamResourceShare) PutTimeouts(value *RamResourceShareTimeouts
 	_jsii_.InvokeVoid(
 		r,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1044,8 +1043,8 @@ func (r *jsiiProxy_RamResourceShare) ResetTimeouts() {
 	)
 }
 
-func (r *jsiiProxy_RamResourceShare) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RamResourceShare) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1057,8 +1056,8 @@ func (r *jsiiProxy_RamResourceShare) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (r *jsiiProxy_RamResourceShare) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RamResourceShare) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1070,8 +1069,8 @@ func (r *jsiiProxy_RamResourceShare) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (r *jsiiProxy_RamResourceShare) ToHclTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RamResourceShare) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1083,8 +1082,8 @@ func (r *jsiiProxy_RamResourceShare) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_RamResourceShare) ToMetadata() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RamResourceShare) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1109,8 +1108,8 @@ func (r *jsiiProxy_RamResourceShare) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_RamResourceShare) ToTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RamResourceShare) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1121,4 +1120,3 @@ func (r *jsiiProxy_RamResourceShare) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.vpnConnection.VpnConnection",
-		reflect.TypeOf((*VpnConnection)(nil)).Elem(),
+		reflect.TypeFor[VpnConnection](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -232,7 +232,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpnGatewayId", GoGetter: "VpnGatewayId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpnGatewayIdInput", GoGetter: "VpnGatewayIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VpnConnection{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -240,15 +240,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.vpnConnection.VpnConnectionConfig",
-		reflect.TypeOf((*VpnConnectionConfig)(nil)).Elem(),
+		reflect.TypeFor[VpnConnectionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.vpnConnection.VpnConnectionRoutes",
-		reflect.TypeOf((*VpnConnectionRoutes)(nil)).Elem(),
+		reflect.TypeFor[VpnConnectionRoutes](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesList",
-		reflect.TypeOf((*VpnConnectionRoutesList)(nil)).Elem(),
+		reflect.TypeFor[VpnConnectionRoutesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -261,7 +261,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VpnConnectionRoutesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -269,7 +269,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference",
-		reflect.TypeOf((*VpnConnectionRoutesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VpnConnectionRoutesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -296,7 +296,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VpnConnectionRoutesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -304,15 +304,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptions",
-		reflect.TypeOf((*VpnConnectionTunnel1LogOptions)(nil)).Elem(),
+		reflect.TypeFor[VpnConnectionTunnel1LogOptions](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions",
-		reflect.TypeOf((*VpnConnectionTunnel1LogOptionsCloudwatchLogOptions)(nil)).Elem(),
+		reflect.TypeFor[VpnConnectionTunnel1LogOptionsCloudwatchLogOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference",
-		reflect.TypeOf((*VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -345,7 +345,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -353,7 +353,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference",
-		reflect.TypeOf((*VpnConnectionTunnel1LogOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VpnConnectionTunnel1LogOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchLogOptions", GoGetter: "CloudwatchLogOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchLogOptionsInput", GoGetter: "CloudwatchLogOptionsInput"},
@@ -381,7 +381,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VpnConnectionTunnel1LogOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -389,15 +389,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptions",
-		reflect.TypeOf((*VpnConnectionTunnel2LogOptions)(nil)).Elem(),
+		reflect.TypeFor[VpnConnectionTunnel2LogOptions](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions",
-		reflect.TypeOf((*VpnConnectionTunnel2LogOptionsCloudwatchLogOptions)(nil)).Elem(),
+		reflect.TypeFor[VpnConnectionTunnel2LogOptionsCloudwatchLogOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference",
-		reflect.TypeOf((*VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -430,7 +430,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -438,7 +438,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference",
-		reflect.TypeOf((*VpnConnectionTunnel2LogOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VpnConnectionTunnel2LogOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchLogOptions", GoGetter: "CloudwatchLogOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchLogOptionsInput", GoGetter: "CloudwatchLogOptionsInput"},
@@ -466,7 +466,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VpnConnectionTunnel2LogOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -474,11 +474,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetry",
-		reflect.TypeOf((*VpnConnectionVgwTelemetry)(nil)).Elem(),
+		reflect.TypeFor[VpnConnectionVgwTelemetry](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList",
-		reflect.TypeOf((*VpnConnectionVgwTelemetryList)(nil)).Elem(),
+		reflect.TypeFor[VpnConnectionVgwTelemetryList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -491,7 +491,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VpnConnectionVgwTelemetryList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -499,7 +499,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference",
-		reflect.TypeOf((*VpnConnectionVgwTelemetryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VpnConnectionVgwTelemetryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceptedRouteCount", GoGetter: "AcceptedRouteCount"},
 			_jsii_.MemberProperty{JsiiProperty: "certificateArn", GoGetter: "CertificateArn"},
@@ -529,7 +529,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VpnConnectionVgwTelemetryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

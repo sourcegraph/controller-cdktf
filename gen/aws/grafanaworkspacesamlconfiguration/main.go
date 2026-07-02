@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.grafanaWorkspaceSamlConfiguration.GrafanaWorkspaceSamlConfiguration",
-		reflect.TypeOf((*GrafanaWorkspaceSamlConfiguration)(nil)).Elem(),
+		reflect.TypeFor[GrafanaWorkspaceSamlConfiguration](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -98,7 +98,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workspaceId", GoGetter: "WorkspaceId"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceIdInput", GoGetter: "WorkspaceIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GrafanaWorkspaceSamlConfiguration{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -106,15 +106,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.grafanaWorkspaceSamlConfiguration.GrafanaWorkspaceSamlConfigurationConfig",
-		reflect.TypeOf((*GrafanaWorkspaceSamlConfigurationConfig)(nil)).Elem(),
+		reflect.TypeFor[GrafanaWorkspaceSamlConfigurationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.grafanaWorkspaceSamlConfiguration.GrafanaWorkspaceSamlConfigurationTimeouts",
-		reflect.TypeOf((*GrafanaWorkspaceSamlConfigurationTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GrafanaWorkspaceSamlConfigurationTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.grafanaWorkspaceSamlConfiguration.GrafanaWorkspaceSamlConfigurationTimeoutsOutputReference",
-		reflect.TypeOf((*GrafanaWorkspaceSamlConfigurationTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GrafanaWorkspaceSamlConfigurationTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -144,7 +144,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GrafanaWorkspaceSamlConfigurationTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

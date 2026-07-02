@@ -19,7 +19,7 @@ func (r *jsiiProxy_RedshiftAuthenticationProfile) validateAddMoveTargetParameter
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftAuthenticationProfile) validateAddOverrideParameters(path *string, value interface{}) error {
+func (r *jsiiProxy_RedshiftAuthenticationProfile) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (r *jsiiProxy_RedshiftAuthenticationProfile) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftAuthenticationProfile) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (r *jsiiProxy_RedshiftAuthenticationProfile) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateRedshiftAuthenticationProfile_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateRedshiftAuthenticationProfile_IsConstructParameters(x interface{}) error {
+func validateRedshiftAuthenticationProfile_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateRedshiftAuthenticationProfile_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateRedshiftAuthenticationProfile_IsTerraformElementParameters(x interface{}) error {
+func validateRedshiftAuthenticationProfile_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateRedshiftAuthenticationProfile_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateRedshiftAuthenticationProfile_IsTerraformResourceParameters(x interface{}) error {
+func validateRedshiftAuthenticationProfile_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -260,7 +260,7 @@ func (j *jsiiProxy_RedshiftAuthenticationProfile) validateSetAuthenticationProfi
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftAuthenticationProfile) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftAuthenticationProfile) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -293,7 +293,7 @@ func (j *jsiiProxy_RedshiftAuthenticationProfile) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftAuthenticationProfile) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftAuthenticationProfile) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_RedshiftAuthenticationProfile) validateSetLifecycleParameters
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftAuthenticationProfile) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_RedshiftAuthenticationProfile) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewRedshiftAuthenticationProfileParameters(scope constructs.Constru
 
 	return nil
 }
-

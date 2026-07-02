@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.provider.AwsProvider",
-		reflect.TypeOf((*AwsProvider)(nil)).Elem(),
+		reflect.TypeFor[AwsProvider](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessKey", GoGetter: "AccessKey"},
 			_jsii_.MemberProperty{JsiiProperty: "accessKeyInput", GoGetter: "AccessKeyInput"},
@@ -127,7 +127,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "useFipsEndpoint", GoGetter: "UseFipsEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "useFipsEndpointInput", GoGetter: "UseFipsEndpointInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AwsProvider{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformProvider)
 			return &j
@@ -135,26 +135,26 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.provider.AwsProviderAssumeRole",
-		reflect.TypeOf((*AwsProviderAssumeRole)(nil)).Elem(),
+		reflect.TypeFor[AwsProviderAssumeRole](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity",
-		reflect.TypeOf((*AwsProviderAssumeRoleWithWebIdentity)(nil)).Elem(),
+		reflect.TypeFor[AwsProviderAssumeRoleWithWebIdentity](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.provider.AwsProviderConfig",
-		reflect.TypeOf((*AwsProviderConfig)(nil)).Elem(),
+		reflect.TypeFor[AwsProviderConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.provider.AwsProviderDefaultTags",
-		reflect.TypeOf((*AwsProviderDefaultTags)(nil)).Elem(),
+		reflect.TypeFor[AwsProviderDefaultTags](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.provider.AwsProviderEndpoints",
-		reflect.TypeOf((*AwsProviderEndpoints)(nil)).Elem(),
+		reflect.TypeFor[AwsProviderEndpoints](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.provider.AwsProviderIgnoreTags",
-		reflect.TypeOf((*AwsProviderIgnoreTags)(nil)).Elem(),
+		reflect.TypeFor[AwsProviderIgnoreTags](),
 	)
 }

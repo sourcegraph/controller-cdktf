@@ -90,7 +90,7 @@ func (c *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) validateInterpo
 	return nil
 }
 
-func (c *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) validatePutParameterParameters(value interface{}) error {
+func (c *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) validatePutParameterParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (c *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -277,4 +277,3 @@ func validateNewCeCostCategorySplitChargeRuleOutputReferenceParameters(terraform
 
 	return nil
 }
-

@@ -15,9 +15,9 @@ type BatchJobDefinitionRetryStrategyOutputReference interface {
 	AttemptsInput() *float64
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,7 +29,7 @@ type BatchJobDefinitionRetryStrategyOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	EvaluateOnExit() BatchJobDefinitionRetryStrategyEvaluateOnExitList
-	EvaluateOnExitInput() interface{}
+	EvaluateOnExitInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *BatchJobDefinitionRetryStrategy
@@ -45,7 +45,7 @@ type BatchJobDefinitionRetryStrategyOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,12 +66,12 @@ type BatchJobDefinitionRetryStrategyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutEvaluateOnExit(value interface{})
+	PutEvaluateOnExit(value any)
 	ResetAttempts()
 	ResetEvaluateOnExit()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -104,8 +104,8 @@ func (j *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) AttemptsInput
 	return returns
 }
 
-func (j *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) EvaluateOnExi
 	return returns
 }
 
-func (j *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) EvaluateOnExitInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) EvaluateOnExitInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"evaluateOnExitInput",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) TerraformReso
 	return returns
 }
 
-
 func NewBatchJobDefinitionRetryStrategyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BatchJobDefinitionRetryStrategyOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewBatchJobDefinitionRetryStrategyOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionRetryStrategyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewBatchJobDefinitionRetryStrategyOutputReference_Override(b BatchJobDefini
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionRetryStrategyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference)SetAttempts(val *float64) {
+func (j *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) SetAttempts(val *float64) {
 	if err := j.validateSetAttemptsParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference)SetAttempts(va
 	)
 }
 
-func (j *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference)SetInternalValue(val *BatchJobDefinitionRetryStrategy) {
+func (j *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) SetInternalValue(val *BatchJobDefinitionRetryStrategy) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,16 +300,16 @@ func (b *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (b *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -326,7 +325,7 @@ func (b *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -342,7 +341,7 @@ func (b *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -358,7 +357,7 @@ func (b *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (b *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (b *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) GetNumberList
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (b *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (b *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (b *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,21 +466,21 @@ func (b *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) Interpolation
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) PutEvaluateOnExit(value interface{}) {
+func (b *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) PutEvaluateOnExit(value any) {
 	if err := b.validatePutEvaluateOnExitParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"putEvaluateOnExit",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (b *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) ResetEvaluate
 	)
 }
 
-func (b *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (b *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) ToString() *s
 
 	return returns
 }
-

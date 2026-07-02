@@ -13,14 +13,14 @@ type ConfigConfigurationAggregatorAccountAggregationSourceOutputReference interf
 	AccountIds() *[]*string
 	SetAccountIds(val *[]*string)
 	AccountIdsInput() *[]*string
-	AllRegions() interface{}
-	SetAllRegions(val interface{})
-	AllRegionsInput() interface{}
+	AllRegions() any
+	SetAllRegions(val any)
+	AllRegionsInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type ConfigConfigurationAggregatorAccountAggregationSourceOutputReference interf
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type ConfigConfigurationAggregatorAccountAggregationSourceOutputReference interf
 	ResetRegions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -107,8 +107,8 @@ func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference) AllRegions() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference) AllRegions() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allRegions",
@@ -117,8 +117,8 @@ func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference) AllRegionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference) AllRegionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allRegionsInput",
@@ -127,8 +127,8 @@ func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputRe
 	return returns
 }
 
-
 func NewConfigConfigurationAggregatorAccountAggregationSourceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ConfigConfigurationAggregatorAccountAggregationSourceOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewConfigConfigurationAggregatorAccountAggregationSourceOutputReference(ter
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.configConfigurationAggregator.ConfigConfigurationAggregatorAccountAggregationSourceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewConfigConfigurationAggregatorAccountAggregationSourceOutputReference_Ove
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.configConfigurationAggregator.ConfigConfigurationAggregatorAccountAggregationSourceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference)SetAccountIds(val *[]*string) {
+func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference) SetAccountIds(val *[]*string) {
 	if err := j.validateSetAccountIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputRe
 	)
 }
 
-func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference)SetAllRegions(val interface{}) {
+func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference) SetAllRegions(val any) {
 	if err := j.validateSetAllRegionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputRe
 	)
 }
 
-func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputRe
 	)
 }
 
-func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputRe
 	)
 }
 
-func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference)SetInternalValue(val *ConfigConfigurationAggregatorAccountAggregationSource) {
+func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference) SetInternalValue(val *ConfigConfigurationAggregatorAccountAggregationSource) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputRe
 	)
 }
 
-func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference)SetRegions(val *[]*string) {
+func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference) SetRegions(val *[]*string) {
 	if err := j.validateSetRegionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputRe
 	)
 }
 
-func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputRe
 	)
 }
 
-func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,16 +345,16 @@ func (c *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputRe
 	return returns
 }
 
-func (c *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (c *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputRe
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (c *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputRe
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (c *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputRe
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (c *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputRe
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (c *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputRe
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (c *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputRe
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (c *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputRe
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (c *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputRe
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (c *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputRe
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -535,16 +534,16 @@ func (c *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputRe
 	)
 }
 
-func (c *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (c *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputRe
 
 	return returns
 }
-

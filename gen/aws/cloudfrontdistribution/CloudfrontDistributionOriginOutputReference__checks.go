@@ -90,7 +90,7 @@ func (c *jsiiProxy_CloudfrontDistributionOriginOutputReference) validateInterpol
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistributionOriginOutputReference) validatePutCustomHeaderParameters(value interface{}) error {
+func (c *jsiiProxy_CloudfrontDistributionOriginOutputReference) validatePutCustomHeaderParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -162,7 +162,7 @@ func (c *jsiiProxy_CloudfrontDistributionOriginOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -251,7 +251,7 @@ func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) validateSetDomai
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -334,4 +334,3 @@ func validateNewCloudfrontDistributionOriginOutputReferenceParameters(terraformR
 
 	return nil
 }
-

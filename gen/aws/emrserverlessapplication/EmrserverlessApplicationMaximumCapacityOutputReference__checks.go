@@ -98,7 +98,7 @@ func (e *jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewEmrserverlessApplicationMaximumCapacityOutputReferenceParameters
 
 	return nil
 }
-

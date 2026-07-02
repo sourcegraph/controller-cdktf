@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appstreamFleet.AppstreamFleet",
-		reflect.TypeOf((*AppstreamFleet)(nil)).Elem(),
+		reflect.TypeFor[AppstreamFleet](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -113,7 +113,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcConfig", GoGetter: "VpcConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcConfigInput", GoGetter: "VpcConfigInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppstreamFleet{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -121,11 +121,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appstreamFleet.AppstreamFleetComputeCapacity",
-		reflect.TypeOf((*AppstreamFleetComputeCapacity)(nil)).Elem(),
+		reflect.TypeFor[AppstreamFleetComputeCapacity](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appstreamFleet.AppstreamFleetComputeCapacityOutputReference",
-		reflect.TypeOf((*AppstreamFleetComputeCapacityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppstreamFleetComputeCapacityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "available", GoGetter: "Available"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -154,7 +154,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppstreamFleetComputeCapacityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -162,15 +162,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appstreamFleet.AppstreamFleetConfig",
-		reflect.TypeOf((*AppstreamFleetConfig)(nil)).Elem(),
+		reflect.TypeFor[AppstreamFleetConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appstreamFleet.AppstreamFleetDomainJoinInfo",
-		reflect.TypeOf((*AppstreamFleetDomainJoinInfo)(nil)).Elem(),
+		reflect.TypeFor[AppstreamFleetDomainJoinInfo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appstreamFleet.AppstreamFleetDomainJoinInfoOutputReference",
-		reflect.TypeOf((*AppstreamFleetDomainJoinInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppstreamFleetDomainJoinInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -200,7 +200,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppstreamFleetDomainJoinInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -208,11 +208,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appstreamFleet.AppstreamFleetVpcConfig",
-		reflect.TypeOf((*AppstreamFleetVpcConfig)(nil)).Elem(),
+		reflect.TypeFor[AppstreamFleetVpcConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appstreamFleet.AppstreamFleetVpcConfigOutputReference",
-		reflect.TypeOf((*AppstreamFleetVpcConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppstreamFleetVpcConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -242,7 +242,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppstreamFleetVpcConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

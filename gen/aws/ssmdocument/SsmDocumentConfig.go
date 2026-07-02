@@ -6,9 +6,9 @@ import (
 
 type SsmDocumentConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type SsmDocumentConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ssm_document#content SsmDocument#content}.
 	Content *string `field:"required" json:"content" yaml:"content"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ssm_document#document_type SsmDocument#document_type}.
@@ -28,7 +28,7 @@ type SsmDocumentConfig struct {
 	// attachments_source block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ssm_document#attachments_source SsmDocument#attachments_source}
-	AttachmentsSource interface{} `field:"optional" json:"attachmentsSource" yaml:"attachmentsSource"`
+	AttachmentsSource any `field:"optional" json:"attachmentsSource" yaml:"attachmentsSource"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ssm_document#document_format SsmDocument#document_format}.
 	DocumentFormat *string `field:"optional" json:"documentFormat" yaml:"documentFormat"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ssm_document#id SsmDocument#id}.
@@ -47,4 +47,3 @@ type SsmDocumentConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ssm_document#version_name SsmDocument#version_name}.
 	VersionName *string `field:"optional" json:"versionName" yaml:"versionName"`
 }
-

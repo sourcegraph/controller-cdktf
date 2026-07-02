@@ -98,7 +98,7 @@ func (l *jsiiProxy_LambdaEventSourceMappingScalingConfigOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_LambdaEventSourceMappingScalingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LambdaEventSourceMappingScalingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewLambdaEventSourceMappingScalingConfigOutputReferenceParameters(t
 
 	return nil
 }
-

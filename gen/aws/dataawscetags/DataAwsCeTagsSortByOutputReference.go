@@ -12,9 +12,9 @@ type DataAwsCeTagsSortByOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type DataAwsCeTagsSortByOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Key() *string
 	SetKey(val *string)
 	KeyInput() *string
@@ -46,7 +46,7 @@ type DataAwsCeTagsSortByOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type DataAwsCeTagsSortByOutputReference interface {
 	ResetSortOrder()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_DataAwsCeTagsSortByOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataAwsCeTagsSortByOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsCeTagsSortByOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -124,8 +124,8 @@ func (j *jsiiProxy_DataAwsCeTagsSortByOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCeTagsSortByOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsCeTagsSortByOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_DataAwsCeTagsSortByOutputReference) TerraformResource() cdktf
 	return returns
 }
 
-
 func NewDataAwsCeTagsSortByOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataAwsCeTagsSortByOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewDataAwsCeTagsSortByOutputReference(terraformResource cdktf.IInterpolatin
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsSortByOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewDataAwsCeTagsSortByOutputReference_Override(d DataAwsCeTagsSortByOutputR
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsSortByOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsCeTagsSortByOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataAwsCeTagsSortByOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_DataAwsCeTagsSortByOutputReference)SetComplexObjectIndex(val 
 	)
 }
 
-func (j *jsiiProxy_DataAwsCeTagsSortByOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataAwsCeTagsSortByOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_DataAwsCeTagsSortByOutputReference)SetComplexObjectIsFromSet(
 	)
 }
 
-func (j *jsiiProxy_DataAwsCeTagsSortByOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAwsCeTagsSortByOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_DataAwsCeTagsSortByOutputReference)SetInternalValue(val inter
 	)
 }
 
-func (j *jsiiProxy_DataAwsCeTagsSortByOutputReference)SetKey(val *string) {
+func (j *jsiiProxy_DataAwsCeTagsSortByOutputReference) SetKey(val *string) {
 	if err := j.validateSetKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_DataAwsCeTagsSortByOutputReference)SetKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsCeTagsSortByOutputReference)SetSortOrder(val *string) {
+func (j *jsiiProxy_DataAwsCeTagsSortByOutputReference) SetSortOrder(val *string) {
 	if err := j.validateSetSortOrderParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_DataAwsCeTagsSortByOutputReference)SetSortOrder(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DataAwsCeTagsSortByOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataAwsCeTagsSortByOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_DataAwsCeTagsSortByOutputReference)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_DataAwsCeTagsSortByOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataAwsCeTagsSortByOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (d *jsiiProxy_DataAwsCeTagsSortByOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCeTagsSortByOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsCeTagsSortByOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (d *jsiiProxy_DataAwsCeTagsSortByOutputReference) GetBooleanAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (d *jsiiProxy_DataAwsCeTagsSortByOutputReference) GetBooleanMapAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (d *jsiiProxy_DataAwsCeTagsSortByOutputReference) GetListAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (d *jsiiProxy_DataAwsCeTagsSortByOutputReference) GetNumberAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (d *jsiiProxy_DataAwsCeTagsSortByOutputReference) GetNumberListAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (d *jsiiProxy_DataAwsCeTagsSortByOutputReference) GetNumberMapAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (d *jsiiProxy_DataAwsCeTagsSortByOutputReference) GetStringAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (d *jsiiProxy_DataAwsCeTagsSortByOutputReference) GetStringMapAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (d *jsiiProxy_DataAwsCeTagsSortByOutputReference) InterpolationForAttribute
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (d *jsiiProxy_DataAwsCeTagsSortByOutputReference) ResetSortOrder() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsCeTagsSortByOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataAwsCeTagsSortByOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (d *jsiiProxy_DataAwsCeTagsSortByOutputReference) ToString() *string {
 
 	return returns
 }
-

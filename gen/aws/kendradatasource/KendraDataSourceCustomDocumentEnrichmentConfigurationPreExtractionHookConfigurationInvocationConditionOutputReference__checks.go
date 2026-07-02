@@ -109,7 +109,7 @@ func (k *jsiiProxy_KendraDataSourceCustomDocumentEnrichmentConfigurationPreExtra
 	return nil
 }
 
-func (j *jsiiProxy_KendraDataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KendraDataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,4 +225,3 @@ func validateNewKendraDataSourceCustomDocumentEnrichmentConfigurationPreExtracti
 
 	return nil
 }
-

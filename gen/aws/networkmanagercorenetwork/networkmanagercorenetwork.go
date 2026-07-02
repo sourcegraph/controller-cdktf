@@ -19,18 +19,18 @@ type NetworkmanagerCoreNetwork interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
-	CreateBasePolicy() interface{}
-	SetCreateBasePolicy(val interface{})
-	CreateBasePolicyInput() interface{}
+	SetCount(val any)
+	CreateBasePolicy() any
+	SetCreateBasePolicy(val any)
+	CreateBasePolicyInput() any
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -68,11 +68,11 @@ type NetworkmanagerCoreNetwork interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Segments() NetworkmanagerCoreNetworkSegmentsList
 	State() *string
 	Tags() *map[string]*string
@@ -84,18 +84,18 @@ type NetworkmanagerCoreNetwork interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() NetworkmanagerCoreNetworkTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -113,7 +113,7 @@ type NetworkmanagerCoreNetwork interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -125,7 +125,7 @@ type NetworkmanagerCoreNetwork interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -144,17 +144,17 @@ type NetworkmanagerCoreNetwork interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for NetworkmanagerCoreNetwork
@@ -202,8 +202,8 @@ func (j *jsiiProxy_NetworkmanagerCoreNetwork) CdktfStack() cdktf.TerraformStack 
 	return returns
 }
 
-func (j *jsiiProxy_NetworkmanagerCoreNetwork) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkmanagerCoreNetwork) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_NetworkmanagerCoreNetwork) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkmanagerCoreNetwork) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkmanagerCoreNetwork) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -222,8 +222,8 @@ func (j *jsiiProxy_NetworkmanagerCoreNetwork) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_NetworkmanagerCoreNetwork) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkmanagerCoreNetwork) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -232,8 +232,8 @@ func (j *jsiiProxy_NetworkmanagerCoreNetwork) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkmanagerCoreNetwork) CreateBasePolicy() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkmanagerCoreNetwork) CreateBasePolicy() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"createBasePolicy",
@@ -242,8 +242,8 @@ func (j *jsiiProxy_NetworkmanagerCoreNetwork) CreateBasePolicy() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkmanagerCoreNetwork) CreateBasePolicyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkmanagerCoreNetwork) CreateBasePolicyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"createBasePolicyInput",
@@ -422,8 +422,8 @@ func (j *jsiiProxy_NetworkmanagerCoreNetwork) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_NetworkmanagerCoreNetwork) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_NetworkmanagerCoreNetwork) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -432,8 +432,8 @@ func (j *jsiiProxy_NetworkmanagerCoreNetwork) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkmanagerCoreNetwork) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkmanagerCoreNetwork) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -512,8 +512,8 @@ func (j *jsiiProxy_NetworkmanagerCoreNetwork) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_NetworkmanagerCoreNetwork) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkmanagerCoreNetwork) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -542,8 +542,8 @@ func (j *jsiiProxy_NetworkmanagerCoreNetwork) Timeouts() NetworkmanagerCoreNetwo
 	return returns
 }
 
-func (j *jsiiProxy_NetworkmanagerCoreNetwork) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkmanagerCoreNetwork) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -551,7 +551,6 @@ func (j *jsiiProxy_NetworkmanagerCoreNetwork) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/networkmanager_core_network aws_networkmanager_core_network} Resource.
 func NewNetworkmanagerCoreNetwork(scope constructs.Construct, id *string, config *NetworkmanagerCoreNetworkConfig) NetworkmanagerCoreNetwork {
@@ -564,7 +563,7 @@ func NewNetworkmanagerCoreNetwork(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetwork",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -577,12 +576,12 @@ func NewNetworkmanagerCoreNetwork_Override(n NetworkmanagerCoreNetwork, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetwork",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerCoreNetwork)SetBasePolicyRegion(val *string) {
+func (j *jsiiProxy_NetworkmanagerCoreNetwork) SetBasePolicyRegion(val *string) {
 	if err := j.validateSetBasePolicyRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -593,7 +592,7 @@ func (j *jsiiProxy_NetworkmanagerCoreNetwork)SetBasePolicyRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerCoreNetwork)SetConnection(val interface{}) {
+func (j *jsiiProxy_NetworkmanagerCoreNetwork) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -604,7 +603,7 @@ func (j *jsiiProxy_NetworkmanagerCoreNetwork)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerCoreNetwork)SetCount(val interface{}) {
+func (j *jsiiProxy_NetworkmanagerCoreNetwork) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -615,7 +614,7 @@ func (j *jsiiProxy_NetworkmanagerCoreNetwork)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerCoreNetwork)SetCreateBasePolicy(val interface{}) {
+func (j *jsiiProxy_NetworkmanagerCoreNetwork) SetCreateBasePolicy(val any) {
 	if err := j.validateSetCreateBasePolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -626,7 +625,7 @@ func (j *jsiiProxy_NetworkmanagerCoreNetwork)SetCreateBasePolicy(val interface{}
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerCoreNetwork)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NetworkmanagerCoreNetwork) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -634,7 +633,7 @@ func (j *jsiiProxy_NetworkmanagerCoreNetwork)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerCoreNetwork)SetDescription(val *string) {
+func (j *jsiiProxy_NetworkmanagerCoreNetwork) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -645,7 +644,7 @@ func (j *jsiiProxy_NetworkmanagerCoreNetwork)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerCoreNetwork)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NetworkmanagerCoreNetwork) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -653,7 +652,7 @@ func (j *jsiiProxy_NetworkmanagerCoreNetwork)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerCoreNetwork)SetGlobalNetworkId(val *string) {
+func (j *jsiiProxy_NetworkmanagerCoreNetwork) SetGlobalNetworkId(val *string) {
 	if err := j.validateSetGlobalNetworkIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -664,7 +663,7 @@ func (j *jsiiProxy_NetworkmanagerCoreNetwork)SetGlobalNetworkId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerCoreNetwork)SetId(val *string) {
+func (j *jsiiProxy_NetworkmanagerCoreNetwork) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -675,7 +674,7 @@ func (j *jsiiProxy_NetworkmanagerCoreNetwork)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerCoreNetwork)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NetworkmanagerCoreNetwork) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -686,7 +685,7 @@ func (j *jsiiProxy_NetworkmanagerCoreNetwork)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerCoreNetwork)SetPolicyDocument(val *string) {
+func (j *jsiiProxy_NetworkmanagerCoreNetwork) SetPolicyDocument(val *string) {
 	if err := j.validateSetPolicyDocumentParameters(val); err != nil {
 		panic(err)
 	}
@@ -697,7 +696,7 @@ func (j *jsiiProxy_NetworkmanagerCoreNetwork)SetPolicyDocument(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerCoreNetwork)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NetworkmanagerCoreNetwork) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -705,7 +704,7 @@ func (j *jsiiProxy_NetworkmanagerCoreNetwork)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerCoreNetwork)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NetworkmanagerCoreNetwork) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -716,7 +715,7 @@ func (j *jsiiProxy_NetworkmanagerCoreNetwork)SetProvisioners(val *[]interface{})
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerCoreNetwork)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_NetworkmanagerCoreNetwork) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -727,7 +726,7 @@ func (j *jsiiProxy_NetworkmanagerCoreNetwork)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerCoreNetwork)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_NetworkmanagerCoreNetwork) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -750,7 +749,7 @@ func NetworkmanagerCoreNetwork_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetwork",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -774,7 +773,7 @@ func NetworkmanagerCoreNetwork_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NetworkmanagerCoreNetwork_IsConstruct(x interface{}) *bool {
+func NetworkmanagerCoreNetwork_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkmanagerCoreNetwork_IsConstructParameters(x); err != nil {
@@ -785,7 +784,7 @@ func NetworkmanagerCoreNetwork_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetwork",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -793,7 +792,7 @@ func NetworkmanagerCoreNetwork_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func NetworkmanagerCoreNetwork_IsTerraformElement(x interface{}) *bool {
+func NetworkmanagerCoreNetwork_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkmanagerCoreNetwork_IsTerraformElementParameters(x); err != nil {
@@ -804,7 +803,7 @@ func NetworkmanagerCoreNetwork_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetwork",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -812,7 +811,7 @@ func NetworkmanagerCoreNetwork_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func NetworkmanagerCoreNetwork_IsTerraformResource(x interface{}) *bool {
+func NetworkmanagerCoreNetwork_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkmanagerCoreNetwork_IsTerraformResourceParameters(x); err != nil {
@@ -823,7 +822,7 @@ func NetworkmanagerCoreNetwork_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetwork",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -848,31 +847,31 @@ func (n *jsiiProxy_NetworkmanagerCoreNetwork) AddMoveTarget(moveTarget *string) 
 	_jsii_.InvokeVoid(
 		n,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (n *jsiiProxy_NetworkmanagerCoreNetwork) AddOverride(path *string, value interface{}) {
+func (n *jsiiProxy_NetworkmanagerCoreNetwork) AddOverride(path *string, value any) {
 	if err := n.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (n *jsiiProxy_NetworkmanagerCoreNetwork) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkmanagerCoreNetwork) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -888,7 +887,7 @@ func (n *jsiiProxy_NetworkmanagerCoreNetwork) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -904,7 +903,7 @@ func (n *jsiiProxy_NetworkmanagerCoreNetwork) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -920,7 +919,7 @@ func (n *jsiiProxy_NetworkmanagerCoreNetwork) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -936,7 +935,7 @@ func (n *jsiiProxy_NetworkmanagerCoreNetwork) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -952,7 +951,7 @@ func (n *jsiiProxy_NetworkmanagerCoreNetwork) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -968,7 +967,7 @@ func (n *jsiiProxy_NetworkmanagerCoreNetwork) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -984,7 +983,7 @@ func (n *jsiiProxy_NetworkmanagerCoreNetwork) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1000,15 +999,15 @@ func (n *jsiiProxy_NetworkmanagerCoreNetwork) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkmanagerCoreNetwork) HasResourceMove() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkmanagerCoreNetwork) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1027,7 +1026,7 @@ func (n *jsiiProxy_NetworkmanagerCoreNetwork) ImportFrom(id *string, provider cd
 	_jsii_.InvokeVoid(
 		n,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1040,7 +1039,7 @@ func (n *jsiiProxy_NetworkmanagerCoreNetwork) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1054,18 +1053,18 @@ func (n *jsiiProxy_NetworkmanagerCoreNetwork) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (n *jsiiProxy_NetworkmanagerCoreNetwork) MoveTo(moveTarget *string, index interface{}) {
+func (n *jsiiProxy_NetworkmanagerCoreNetwork) MoveTo(moveTarget *string, index any) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1076,7 +1075,7 @@ func (n *jsiiProxy_NetworkmanagerCoreNetwork) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1087,7 +1086,7 @@ func (n *jsiiProxy_NetworkmanagerCoreNetwork) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1098,7 +1097,7 @@ func (n *jsiiProxy_NetworkmanagerCoreNetwork) PutTimeouts(value *NetworkmanagerC
 	_jsii_.InvokeVoid(
 		n,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1174,8 +1173,8 @@ func (n *jsiiProxy_NetworkmanagerCoreNetwork) ResetTimeouts() {
 	)
 }
 
-func (n *jsiiProxy_NetworkmanagerCoreNetwork) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkmanagerCoreNetwork) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1187,8 +1186,8 @@ func (n *jsiiProxy_NetworkmanagerCoreNetwork) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (n *jsiiProxy_NetworkmanagerCoreNetwork) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkmanagerCoreNetwork) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1200,8 +1199,8 @@ func (n *jsiiProxy_NetworkmanagerCoreNetwork) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (n *jsiiProxy_NetworkmanagerCoreNetwork) ToHclTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkmanagerCoreNetwork) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1213,8 +1212,8 @@ func (n *jsiiProxy_NetworkmanagerCoreNetwork) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (n *jsiiProxy_NetworkmanagerCoreNetwork) ToMetadata() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkmanagerCoreNetwork) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1239,8 +1238,8 @@ func (n *jsiiProxy_NetworkmanagerCoreNetwork) ToString() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NetworkmanagerCoreNetwork) ToTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkmanagerCoreNetwork) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1251,4 +1250,3 @@ func (n *jsiiProxy_NetworkmanagerCoreNetwork) ToTerraform() interface{} {
 
 	return returns
 }
-

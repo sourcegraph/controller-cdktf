@@ -19,7 +19,7 @@ func (e *jsiiProxy_EmrManagedScalingPolicy) validateAddMoveTargetParameters(move
 	return nil
 }
 
-func (e *jsiiProxy_EmrManagedScalingPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_EmrManagedScalingPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (e *jsiiProxy_EmrManagedScalingPolicy) validateMoveFromIdParameters(id *str
 	return nil
 }
 
-func (e *jsiiProxy_EmrManagedScalingPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (e *jsiiProxy_EmrManagedScalingPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (e *jsiiProxy_EmrManagedScalingPolicy) validateOverrideLogicalIdParameters(
 	return nil
 }
 
-func (e *jsiiProxy_EmrManagedScalingPolicy) validatePutComputeLimitsParameters(value interface{}) error {
+func (e *jsiiProxy_EmrManagedScalingPolicy) validatePutComputeLimitsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateEmrManagedScalingPolicy_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateEmrManagedScalingPolicy_IsConstructParameters(x interface{}) error {
+func validateEmrManagedScalingPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateEmrManagedScalingPolicy_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateEmrManagedScalingPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateEmrManagedScalingPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateEmrManagedScalingPolicy_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func validateEmrManagedScalingPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateEmrManagedScalingPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func (j *jsiiProxy_EmrManagedScalingPolicy) validateSetClusterIdParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_EmrManagedScalingPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_EmrManagedScalingPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -316,7 +316,7 @@ func (j *jsiiProxy_EmrManagedScalingPolicy) validateSetConnectionParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_EmrManagedScalingPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_EmrManagedScalingPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -389,7 +389,7 @@ func (j *jsiiProxy_EmrManagedScalingPolicy) validateSetLifecycleParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_EmrManagedScalingPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_EmrManagedScalingPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -453,4 +453,3 @@ func validateNewEmrManagedScalingPolicyParameters(scope constructs.Construct, id
 
 	return nil
 }
-

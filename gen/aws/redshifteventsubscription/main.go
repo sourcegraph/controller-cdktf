@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.redshiftEventSubscription.RedshiftEventSubscription",
-		reflect.TypeOf((*RedshiftEventSubscription)(nil)).Elem(),
+		reflect.TypeFor[RedshiftEventSubscription](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -88,7 +88,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedshiftEventSubscription{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -96,15 +96,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionConfig",
-		reflect.TypeOf((*RedshiftEventSubscriptionConfig)(nil)).Elem(),
+		reflect.TypeFor[RedshiftEventSubscriptionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionTimeouts",
-		reflect.TypeOf((*RedshiftEventSubscriptionTimeouts)(nil)).Elem(),
+		reflect.TypeFor[RedshiftEventSubscriptionTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionTimeoutsOutputReference",
-		reflect.TypeOf((*RedshiftEventSubscriptionTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RedshiftEventSubscriptionTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -137,7 +137,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedshiftEventSubscriptionTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

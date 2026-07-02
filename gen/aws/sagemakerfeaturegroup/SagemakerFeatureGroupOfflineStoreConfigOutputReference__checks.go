@@ -120,7 +120,7 @@ func (s *jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigOutputReference) validateSetDisableGlueTableCreationParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigOutputReference) validateSetDisableGlueTableCreationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -240,4 +240,3 @@ func validateNewSagemakerFeatureGroupOfflineStoreConfigOutputReferenceParameters
 
 	return nil
 }
-

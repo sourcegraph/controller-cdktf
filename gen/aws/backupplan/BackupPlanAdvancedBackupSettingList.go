@@ -17,8 +17,8 @@ type BackupPlanAdvancedBackupSettingList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type BackupPlanAdvancedBackupSettingList interface {
 	Get(index *float64) BackupPlanAdvancedBackupSettingOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_BackupPlanAdvancedBackupSettingList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_BackupPlanAdvancedBackupSettingList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupPlanAdvancedBackupSettingList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_BackupPlanAdvancedBackupSettingList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewBackupPlanAdvancedBackupSettingList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BackupPlanAdvancedBackupSettingList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewBackupPlanAdvancedBackupSettingList(terraformResource cdktf.IInterpolati
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewBackupPlanAdvancedBackupSettingList_Override(b BackupPlanAdvancedBackupS
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BackupPlanAdvancedBackupSettingList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_BackupPlanAdvancedBackupSettingList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_BackupPlanAdvancedBackupSettingList)SetInternalValue(val inte
 	)
 }
 
-func (j *jsiiProxy_BackupPlanAdvancedBackupSettingList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BackupPlanAdvancedBackupSettingList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_BackupPlanAdvancedBackupSettingList)SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_BackupPlanAdvancedBackupSettingList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BackupPlanAdvancedBackupSettingList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_BackupPlanAdvancedBackupSettingList)SetTerraformResource(val 
 	)
 }
 
-func (j *jsiiProxy_BackupPlanAdvancedBackupSettingList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_BackupPlanAdvancedBackupSettingList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (b *jsiiProxy_BackupPlanAdvancedBackupSettingList) AllWithMapKey(mapKeyAttr
 	_jsii_.Invoke(
 		b,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (b *jsiiProxy_BackupPlanAdvancedBackupSettingList) Get(index *float64) Back
 	_jsii_.Invoke(
 		b,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BackupPlanAdvancedBackupSettingList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BackupPlanAdvancedBackupSettingList) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (b *jsiiProxy_BackupPlanAdvancedBackupSettingList) ToString() *string {
 
 	return returns
 }
-

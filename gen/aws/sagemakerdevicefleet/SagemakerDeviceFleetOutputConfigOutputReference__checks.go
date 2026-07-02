@@ -98,7 +98,7 @@ func (s *jsiiProxy_SagemakerDeviceFleetOutputConfigOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerDeviceFleetOutputConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerDeviceFleetOutputConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewSagemakerDeviceFleetOutputConfigOutputReferenceParameters(terraf
 
 	return nil
 }
-

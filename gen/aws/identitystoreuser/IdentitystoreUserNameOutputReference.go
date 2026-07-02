@@ -12,9 +12,9 @@ type IdentitystoreUserNameOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -58,7 +58,7 @@ type IdentitystoreUserNameOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -85,7 +85,7 @@ type IdentitystoreUserNameOutputReference interface {
 	ResetMiddleName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -98,8 +98,8 @@ type jsiiProxy_IdentitystoreUserNameOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_IdentitystoreUserNameOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IdentitystoreUserNameOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -288,7 +288,6 @@ func (j *jsiiProxy_IdentitystoreUserNameOutputReference) TerraformResource() cdk
 	return returns
 }
 
-
 func NewIdentitystoreUserNameOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IdentitystoreUserNameOutputReference {
 	_init_.Initialize()
 
@@ -299,7 +298,7 @@ func NewIdentitystoreUserNameOutputReference(terraformResource cdktf.IInterpolat
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUserNameOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -311,12 +310,12 @@ func NewIdentitystoreUserNameOutputReference_Override(i IdentitystoreUserNameOut
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUserNameOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IdentitystoreUserNameOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IdentitystoreUserNameOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_IdentitystoreUserNameOutputReference)SetComplexObjectIndex(va
 	)
 }
 
-func (j *jsiiProxy_IdentitystoreUserNameOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IdentitystoreUserNameOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_IdentitystoreUserNameOutputReference)SetComplexObjectIsFromSe
 	)
 }
 
-func (j *jsiiProxy_IdentitystoreUserNameOutputReference)SetFamilyName(val *string) {
+func (j *jsiiProxy_IdentitystoreUserNameOutputReference) SetFamilyName(val *string) {
 	if err := j.validateSetFamilyNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_IdentitystoreUserNameOutputReference)SetFamilyName(val *strin
 	)
 }
 
-func (j *jsiiProxy_IdentitystoreUserNameOutputReference)SetFormatted(val *string) {
+func (j *jsiiProxy_IdentitystoreUserNameOutputReference) SetFormatted(val *string) {
 	if err := j.validateSetFormattedParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_IdentitystoreUserNameOutputReference)SetFormatted(val *string
 	)
 }
 
-func (j *jsiiProxy_IdentitystoreUserNameOutputReference)SetGivenName(val *string) {
+func (j *jsiiProxy_IdentitystoreUserNameOutputReference) SetGivenName(val *string) {
 	if err := j.validateSetGivenNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_IdentitystoreUserNameOutputReference)SetGivenName(val *string
 	)
 }
 
-func (j *jsiiProxy_IdentitystoreUserNameOutputReference)SetHonorificPrefix(val *string) {
+func (j *jsiiProxy_IdentitystoreUserNameOutputReference) SetHonorificPrefix(val *string) {
 	if err := j.validateSetHonorificPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_IdentitystoreUserNameOutputReference)SetHonorificPrefix(val *
 	)
 }
 
-func (j *jsiiProxy_IdentitystoreUserNameOutputReference)SetHonorificSuffix(val *string) {
+func (j *jsiiProxy_IdentitystoreUserNameOutputReference) SetHonorificSuffix(val *string) {
 	if err := j.validateSetHonorificSuffixParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_IdentitystoreUserNameOutputReference)SetHonorificSuffix(val *
 	)
 }
 
-func (j *jsiiProxy_IdentitystoreUserNameOutputReference)SetInternalValue(val *IdentitystoreUserName) {
+func (j *jsiiProxy_IdentitystoreUserNameOutputReference) SetInternalValue(val *IdentitystoreUserName) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_IdentitystoreUserNameOutputReference)SetInternalValue(val *Id
 	)
 }
 
-func (j *jsiiProxy_IdentitystoreUserNameOutputReference)SetMiddleName(val *string) {
+func (j *jsiiProxy_IdentitystoreUserNameOutputReference) SetMiddleName(val *string) {
 	if err := j.validateSetMiddleNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,7 +414,7 @@ func (j *jsiiProxy_IdentitystoreUserNameOutputReference)SetMiddleName(val *strin
 	)
 }
 
-func (j *jsiiProxy_IdentitystoreUserNameOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IdentitystoreUserNameOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -426,7 +425,7 @@ func (j *jsiiProxy_IdentitystoreUserNameOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_IdentitystoreUserNameOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IdentitystoreUserNameOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,16 +449,16 @@ func (i *jsiiProxy_IdentitystoreUserNameOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (i *jsiiProxy_IdentitystoreUserNameOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IdentitystoreUserNameOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -475,7 +474,7 @@ func (i *jsiiProxy_IdentitystoreUserNameOutputReference) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -491,7 +490,7 @@ func (i *jsiiProxy_IdentitystoreUserNameOutputReference) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -507,7 +506,7 @@ func (i *jsiiProxy_IdentitystoreUserNameOutputReference) GetListAttribute(terraf
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -523,7 +522,7 @@ func (i *jsiiProxy_IdentitystoreUserNameOutputReference) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -539,7 +538,7 @@ func (i *jsiiProxy_IdentitystoreUserNameOutputReference) GetNumberListAttribute(
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -555,7 +554,7 @@ func (i *jsiiProxy_IdentitystoreUserNameOutputReference) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -571,7 +570,7 @@ func (i *jsiiProxy_IdentitystoreUserNameOutputReference) GetStringAttribute(terr
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func (i *jsiiProxy_IdentitystoreUserNameOutputReference) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func (i *jsiiProxy_IdentitystoreUserNameOutputReference) InterpolationForAttribu
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -655,16 +654,16 @@ func (i *jsiiProxy_IdentitystoreUserNameOutputReference) ResetMiddleName() {
 	)
 }
 
-func (i *jsiiProxy_IdentitystoreUserNameOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IdentitystoreUserNameOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -683,4 +682,3 @@ func (i *jsiiProxy_IdentitystoreUserNameOutputReference) ToString() *string {
 
 	return returns
 }
-

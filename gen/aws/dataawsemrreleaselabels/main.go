@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabels",
-		reflect.TypeOf((*DataAwsEmrReleaseLabels)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEmrReleaseLabels](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -53,7 +53,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsEmrReleaseLabels{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -61,15 +61,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabelsConfig",
-		reflect.TypeOf((*DataAwsEmrReleaseLabelsConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEmrReleaseLabelsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabelsFilters",
-		reflect.TypeOf((*DataAwsEmrReleaseLabelsFilters)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEmrReleaseLabelsFilters](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabelsFiltersOutputReference",
-		reflect.TypeOf((*DataAwsEmrReleaseLabelsFiltersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEmrReleaseLabelsFiltersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "application", GoGetter: "Application"},
 			_jsii_.MemberProperty{JsiiProperty: "applicationInput", GoGetter: "ApplicationInput"},
@@ -99,7 +99,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsEmrReleaseLabelsFiltersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

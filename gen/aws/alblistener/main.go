@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.albListener.AlbListener",
-		reflect.TypeOf((*AlbListener)(nil)).Elem(),
+		reflect.TypeFor[AlbListener](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -87,7 +87,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlbListener{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -95,19 +95,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.albListener.AlbListenerConfig",
-		reflect.TypeOf((*AlbListenerConfig)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.albListener.AlbListenerDefaultAction",
-		reflect.TypeOf((*AlbListenerDefaultAction)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerDefaultAction](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateCognito",
-		reflect.TypeOf((*AlbListenerDefaultActionAuthenticateCognito)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerDefaultActionAuthenticateCognito](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateCognitoOutputReference",
-		reflect.TypeOf((*AlbListenerDefaultActionAuthenticateCognitoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerDefaultActionAuthenticateCognitoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authenticationRequestExtraParams", GoGetter: "AuthenticationRequestExtraParams"},
 			_jsii_.MemberProperty{JsiiProperty: "authenticationRequestExtraParamsInput", GoGetter: "AuthenticationRequestExtraParamsInput"},
@@ -152,7 +152,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userPoolDomain", GoGetter: "UserPoolDomain"},
 			_jsii_.MemberProperty{JsiiProperty: "userPoolDomainInput", GoGetter: "UserPoolDomainInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlbListenerDefaultActionAuthenticateCognitoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -160,11 +160,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateOidc",
-		reflect.TypeOf((*AlbListenerDefaultActionAuthenticateOidc)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerDefaultActionAuthenticateOidc](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateOidcOutputReference",
-		reflect.TypeOf((*AlbListenerDefaultActionAuthenticateOidcOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerDefaultActionAuthenticateOidcOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authenticationRequestExtraParams", GoGetter: "AuthenticationRequestExtraParams"},
 			_jsii_.MemberProperty{JsiiProperty: "authenticationRequestExtraParamsInput", GoGetter: "AuthenticationRequestExtraParamsInput"},
@@ -215,7 +215,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userInfoEndpoint", GoGetter: "UserInfoEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "userInfoEndpointInput", GoGetter: "UserInfoEndpointInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlbListenerDefaultActionAuthenticateOidcOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -223,11 +223,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionFixedResponse",
-		reflect.TypeOf((*AlbListenerDefaultActionFixedResponse)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerDefaultActionFixedResponse](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionFixedResponseOutputReference",
-		reflect.TypeOf((*AlbListenerDefaultActionFixedResponseOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerDefaultActionFixedResponseOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -259,7 +259,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlbListenerDefaultActionFixedResponseOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -267,11 +267,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionForward",
-		reflect.TypeOf((*AlbListenerDefaultActionForward)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerDefaultActionForward](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardOutputReference",
-		reflect.TypeOf((*AlbListenerDefaultActionForwardOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerDefaultActionForwardOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -302,7 +302,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlbListenerDefaultActionForwardOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -310,11 +310,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardStickiness",
-		reflect.TypeOf((*AlbListenerDefaultActionForwardStickiness)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerDefaultActionForwardStickiness](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardStickinessOutputReference",
-		reflect.TypeOf((*AlbListenerDefaultActionForwardStickinessOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerDefaultActionForwardStickinessOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -343,7 +343,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlbListenerDefaultActionForwardStickinessOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -351,11 +351,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroup",
-		reflect.TypeOf((*AlbListenerDefaultActionForwardTargetGroup)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerDefaultActionForwardTargetGroup](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroupList",
-		reflect.TypeOf((*AlbListenerDefaultActionForwardTargetGroupList)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerDefaultActionForwardTargetGroupList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -369,7 +369,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlbListenerDefaultActionForwardTargetGroupList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -377,7 +377,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroupOutputReference",
-		reflect.TypeOf((*AlbListenerDefaultActionForwardTargetGroupOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerDefaultActionForwardTargetGroupOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "arnInput", GoGetter: "ArnInput"},
@@ -406,7 +406,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weight", GoGetter: "Weight"},
 			_jsii_.MemberProperty{JsiiProperty: "weightInput", GoGetter: "WeightInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlbListenerDefaultActionForwardTargetGroupOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -414,7 +414,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionList",
-		reflect.TypeOf((*AlbListenerDefaultActionList)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerDefaultActionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -428,7 +428,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlbListenerDefaultActionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -436,7 +436,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionOutputReference",
-		reflect.TypeOf((*AlbListenerDefaultActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerDefaultActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authenticateCognito", GoGetter: "AuthenticateCognito"},
 			_jsii_.MemberProperty{JsiiProperty: "authenticateCognitoInput", GoGetter: "AuthenticateCognitoInput"},
@@ -488,7 +488,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlbListenerDefaultActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -496,11 +496,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionRedirect",
-		reflect.TypeOf((*AlbListenerDefaultActionRedirect)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerDefaultActionRedirect](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionRedirectOutputReference",
-		reflect.TypeOf((*AlbListenerDefaultActionRedirectOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerDefaultActionRedirectOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -541,7 +541,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlbListenerDefaultActionRedirectOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -549,11 +549,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.albListener.AlbListenerTimeouts",
-		reflect.TypeOf((*AlbListenerTimeouts)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.albListener.AlbListenerTimeoutsOutputReference",
-		reflect.TypeOf((*AlbListenerTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -580,7 +580,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlbListenerTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

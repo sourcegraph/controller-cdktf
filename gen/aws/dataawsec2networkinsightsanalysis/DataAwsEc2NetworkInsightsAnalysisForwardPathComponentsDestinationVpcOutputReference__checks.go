@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsDestina
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsDestinationVpcOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsDestinationVpcOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsDestinatio
 
 	return nil
 }
-

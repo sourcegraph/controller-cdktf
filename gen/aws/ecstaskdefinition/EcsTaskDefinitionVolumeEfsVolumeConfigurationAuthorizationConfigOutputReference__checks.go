@@ -106,7 +106,7 @@ func (j *jsiiProxy_EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationCon
 	return nil
 }
 
-func (j *jsiiProxy_EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewEcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig
 
 	return nil
 }
-

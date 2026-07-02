@@ -109,7 +109,7 @@ func (s *jsiiProxy_SagemakerModelContainerOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerModelContainerOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerModelContainerOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,7 +198,7 @@ func (j *jsiiProxy_SagemakerModelContainerOutputReference) validateSetImageParam
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerModelContainerOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerModelContainerOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -273,4 +273,3 @@ func validateNewSagemakerModelContainerOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

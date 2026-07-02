@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstance",
-		reflect.TypeOf((*DataAwsInstance)(nil)).Elem(),
+		reflect.TypeFor[DataAwsInstance](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "ami", GoGetter: "Ami"},
@@ -111,7 +111,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userDataBase64", GoGetter: "UserDataBase64"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcSecurityGroupIds", GoGetter: "VpcSecurityGroupIds"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsInstance{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -119,15 +119,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceConfig",
-		reflect.TypeOf((*DataAwsInstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsInstanceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceCreditSpecification",
-		reflect.TypeOf((*DataAwsInstanceCreditSpecification)(nil)).Elem(),
+		reflect.TypeFor[DataAwsInstanceCreditSpecification](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceCreditSpecificationList",
-		reflect.TypeOf((*DataAwsInstanceCreditSpecificationList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsInstanceCreditSpecificationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -140,7 +140,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsInstanceCreditSpecificationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -148,7 +148,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceCreditSpecificationOutputReference",
-		reflect.TypeOf((*DataAwsInstanceCreditSpecificationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsInstanceCreditSpecificationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -173,7 +173,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsInstanceCreditSpecificationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -181,11 +181,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceEbsBlockDevice",
-		reflect.TypeOf((*DataAwsInstanceEbsBlockDevice)(nil)).Elem(),
+		reflect.TypeFor[DataAwsInstanceEbsBlockDevice](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceEbsBlockDeviceList",
-		reflect.TypeOf((*DataAwsInstanceEbsBlockDeviceList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsInstanceEbsBlockDeviceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -198,7 +198,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsInstanceEbsBlockDeviceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -206,7 +206,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceEbsBlockDeviceOutputReference",
-		reflect.TypeOf((*DataAwsInstanceEbsBlockDeviceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsInstanceEbsBlockDeviceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -241,7 +241,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumeSize", GoGetter: "VolumeSize"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeType", GoGetter: "VolumeType"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsInstanceEbsBlockDeviceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -249,11 +249,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceEnclaveOptions",
-		reflect.TypeOf((*DataAwsInstanceEnclaveOptions)(nil)).Elem(),
+		reflect.TypeFor[DataAwsInstanceEnclaveOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceEnclaveOptionsList",
-		reflect.TypeOf((*DataAwsInstanceEnclaveOptionsList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsInstanceEnclaveOptionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -266,7 +266,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsInstanceEnclaveOptionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -274,7 +274,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceEnclaveOptionsOutputReference",
-		reflect.TypeOf((*DataAwsInstanceEnclaveOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsInstanceEnclaveOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -299,7 +299,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsInstanceEnclaveOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -307,11 +307,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceEphemeralBlockDevice",
-		reflect.TypeOf((*DataAwsInstanceEphemeralBlockDevice)(nil)).Elem(),
+		reflect.TypeFor[DataAwsInstanceEphemeralBlockDevice](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceEphemeralBlockDeviceList",
-		reflect.TypeOf((*DataAwsInstanceEphemeralBlockDeviceList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsInstanceEphemeralBlockDeviceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -324,7 +324,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsInstanceEphemeralBlockDeviceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -332,7 +332,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceEphemeralBlockDeviceOutputReference",
-		reflect.TypeOf((*DataAwsInstanceEphemeralBlockDeviceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsInstanceEphemeralBlockDeviceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -359,7 +359,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualName", GoGetter: "VirtualName"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsInstanceEphemeralBlockDeviceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -367,11 +367,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceFilter",
-		reflect.TypeOf((*DataAwsInstanceFilter)(nil)).Elem(),
+		reflect.TypeFor[DataAwsInstanceFilter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceFilterList",
-		reflect.TypeOf((*DataAwsInstanceFilterList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsInstanceFilterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -385,7 +385,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsInstanceFilterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -393,7 +393,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceFilterOutputReference",
-		reflect.TypeOf((*DataAwsInstanceFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsInstanceFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -421,7 +421,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsInstanceFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -429,11 +429,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceMaintenanceOptions",
-		reflect.TypeOf((*DataAwsInstanceMaintenanceOptions)(nil)).Elem(),
+		reflect.TypeFor[DataAwsInstanceMaintenanceOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceMaintenanceOptionsList",
-		reflect.TypeOf((*DataAwsInstanceMaintenanceOptionsList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsInstanceMaintenanceOptionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -446,7 +446,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsInstanceMaintenanceOptionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -454,7 +454,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceMaintenanceOptionsOutputReference",
-		reflect.TypeOf((*DataAwsInstanceMaintenanceOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsInstanceMaintenanceOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoRecovery", GoGetter: "AutoRecovery"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -479,7 +479,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsInstanceMaintenanceOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -487,11 +487,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceMetadataOptions",
-		reflect.TypeOf((*DataAwsInstanceMetadataOptions)(nil)).Elem(),
+		reflect.TypeFor[DataAwsInstanceMetadataOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceMetadataOptionsList",
-		reflect.TypeOf((*DataAwsInstanceMetadataOptionsList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsInstanceMetadataOptionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -504,7 +504,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsInstanceMetadataOptionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -512,7 +512,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceMetadataOptionsOutputReference",
-		reflect.TypeOf((*DataAwsInstanceMetadataOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsInstanceMetadataOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -540,7 +540,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsInstanceMetadataOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -548,11 +548,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstancePrivateDnsNameOptions",
-		reflect.TypeOf((*DataAwsInstancePrivateDnsNameOptions)(nil)).Elem(),
+		reflect.TypeFor[DataAwsInstancePrivateDnsNameOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstancePrivateDnsNameOptionsList",
-		reflect.TypeOf((*DataAwsInstancePrivateDnsNameOptionsList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsInstancePrivateDnsNameOptionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -565,7 +565,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsInstancePrivateDnsNameOptionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -573,7 +573,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstancePrivateDnsNameOptionsOutputReference",
-		reflect.TypeOf((*DataAwsInstancePrivateDnsNameOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsInstancePrivateDnsNameOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -600,7 +600,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsInstancePrivateDnsNameOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -608,11 +608,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceRootBlockDevice",
-		reflect.TypeOf((*DataAwsInstanceRootBlockDevice)(nil)).Elem(),
+		reflect.TypeFor[DataAwsInstanceRootBlockDevice](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceRootBlockDeviceList",
-		reflect.TypeOf((*DataAwsInstanceRootBlockDeviceList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsInstanceRootBlockDeviceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -625,7 +625,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsInstanceRootBlockDeviceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -633,7 +633,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceRootBlockDeviceOutputReference",
-		reflect.TypeOf((*DataAwsInstanceRootBlockDeviceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsInstanceRootBlockDeviceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -667,7 +667,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumeSize", GoGetter: "VolumeSize"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeType", GoGetter: "VolumeType"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsInstanceRootBlockDeviceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -675,11 +675,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceTimeouts",
-		reflect.TypeOf((*DataAwsInstanceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DataAwsInstanceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceTimeoutsOutputReference",
-		reflect.TypeOf((*DataAwsInstanceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsInstanceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -706,7 +706,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsInstanceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

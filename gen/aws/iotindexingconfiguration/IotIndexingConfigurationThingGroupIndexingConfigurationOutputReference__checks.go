@@ -90,7 +90,7 @@ func (i *jsiiProxy_IotIndexingConfigurationThingGroupIndexingConfigurationOutput
 	return nil
 }
 
-func (i *jsiiProxy_IotIndexingConfigurationThingGroupIndexingConfigurationOutputReference) validatePutCustomFieldParameters(value interface{}) error {
+func (i *jsiiProxy_IotIndexingConfigurationThingGroupIndexingConfigurationOutputReference) validatePutCustomFieldParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (i *jsiiProxy_IotIndexingConfigurationThingGroupIndexingConfigurationOutput
 	return nil
 }
 
-func (i *jsiiProxy_IotIndexingConfigurationThingGroupIndexingConfigurationOutputReference) validatePutManagedFieldParameters(value interface{}) error {
+func (i *jsiiProxy_IotIndexingConfigurationThingGroupIndexingConfigurationOutputReference) validatePutManagedFieldParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (i *jsiiProxy_IotIndexingConfigurationThingGroupIndexingConfigurationOutput
 	return nil
 }
 
-func (j *jsiiProxy_IotIndexingConfigurationThingGroupIndexingConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IotIndexingConfigurationThingGroupIndexingConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -268,4 +268,3 @@ func validateNewIotIndexingConfigurationThingGroupIndexingConfigurationOutputRef
 
 	return nil
 }
-

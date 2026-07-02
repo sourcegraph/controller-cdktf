@@ -13,22 +13,22 @@ import (
 type AlbListenerRule interface {
 	cdktf.TerraformResource
 	Action() AlbListenerRuleActionList
-	ActionInput() interface{}
+	ActionInput() any
 	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Condition() AlbListenerRuleConditionList
-	ConditionInput() interface{}
+	ConditionInput() any
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -61,11 +61,11 @@ type AlbListenerRule interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -75,16 +75,16 @@ type AlbListenerRule interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,7 +102,7 @@ type AlbListenerRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -114,15 +114,15 @@ type AlbListenerRule interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAction(value interface{})
-	PutCondition(value interface{})
+	PutAction(value any)
+	PutCondition(value any)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -130,17 +130,17 @@ type AlbListenerRule interface {
 	ResetPriority()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AlbListenerRule
@@ -158,8 +158,8 @@ func (j *jsiiProxy_AlbListenerRule) Action() AlbListenerRuleActionList {
 	return returns
 }
 
-func (j *jsiiProxy_AlbListenerRule) ActionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlbListenerRule) ActionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"actionInput",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_AlbListenerRule) Condition() AlbListenerRuleConditionList {
 	return returns
 }
 
-func (j *jsiiProxy_AlbListenerRule) ConditionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlbListenerRule) ConditionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"conditionInput",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_AlbListenerRule) ConditionInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AlbListenerRule) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlbListenerRule) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_AlbListenerRule) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AlbListenerRule) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AlbListenerRule) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -228,8 +228,8 @@ func (j *jsiiProxy_AlbListenerRule) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_AlbListenerRule) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlbListenerRule) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -368,8 +368,8 @@ func (j *jsiiProxy_AlbListenerRule) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_AlbListenerRule) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AlbListenerRule) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -378,8 +378,8 @@ func (j *jsiiProxy_AlbListenerRule) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AlbListenerRule) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlbListenerRule) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -438,8 +438,8 @@ func (j *jsiiProxy_AlbListenerRule) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_AlbListenerRule) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AlbListenerRule) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -458,7 +458,6 @@ func (j *jsiiProxy_AlbListenerRule) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/alb_listener_rule aws_alb_listener_rule} Resource.
 func NewAlbListenerRule(scope constructs.Construct, id *string, config *AlbListenerRuleConfig) AlbListenerRule {
 	_init_.Initialize()
@@ -470,7 +469,7 @@ func NewAlbListenerRule(scope constructs.Construct, id *string, config *AlbListe
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -483,12 +482,12 @@ func NewAlbListenerRule_Override(a AlbListenerRule, scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AlbListenerRule)SetConnection(val interface{}) {
+func (j *jsiiProxy_AlbListenerRule) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_AlbListenerRule)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AlbListenerRule)SetCount(val interface{}) {
+func (j *jsiiProxy_AlbListenerRule) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_AlbListenerRule)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AlbListenerRule)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AlbListenerRule) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -518,7 +517,7 @@ func (j *jsiiProxy_AlbListenerRule)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AlbListenerRule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AlbListenerRule) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -526,7 +525,7 @@ func (j *jsiiProxy_AlbListenerRule)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_AlbListenerRule)SetId(val *string) {
+func (j *jsiiProxy_AlbListenerRule) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +536,7 @@ func (j *jsiiProxy_AlbListenerRule)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlbListenerRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AlbListenerRule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_AlbListenerRule)SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_AlbListenerRule)SetListenerArn(val *string) {
+func (j *jsiiProxy_AlbListenerRule) SetListenerArn(val *string) {
 	if err := j.validateSetListenerArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_AlbListenerRule)SetListenerArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlbListenerRule)SetPriority(val *float64) {
+func (j *jsiiProxy_AlbListenerRule) SetPriority(val *float64) {
 	if err := j.validateSetPriorityParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_AlbListenerRule)SetPriority(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AlbListenerRule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AlbListenerRule) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -578,7 +577,7 @@ func (j *jsiiProxy_AlbListenerRule)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_AlbListenerRule)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AlbListenerRule) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -589,7 +588,7 @@ func (j *jsiiProxy_AlbListenerRule)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AlbListenerRule)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_AlbListenerRule) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -600,7 +599,7 @@ func (j *jsiiProxy_AlbListenerRule)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_AlbListenerRule)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_AlbListenerRule) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -623,7 +622,7 @@ func AlbListenerRule_GenerateConfigForImport(scope constructs.Construct, importT
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRule",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -647,7 +646,7 @@ func AlbListenerRule_GenerateConfigForImport(scope constructs.Construct, importT
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AlbListenerRule_IsConstruct(x interface{}) *bool {
+func AlbListenerRule_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAlbListenerRule_IsConstructParameters(x); err != nil {
@@ -658,7 +657,7 @@ func AlbListenerRule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRule",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -666,7 +665,7 @@ func AlbListenerRule_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AlbListenerRule_IsTerraformElement(x interface{}) *bool {
+func AlbListenerRule_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAlbListenerRule_IsTerraformElementParameters(x); err != nil {
@@ -677,7 +676,7 @@ func AlbListenerRule_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRule",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -685,7 +684,7 @@ func AlbListenerRule_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AlbListenerRule_IsTerraformResource(x interface{}) *bool {
+func AlbListenerRule_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAlbListenerRule_IsTerraformResourceParameters(x); err != nil {
@@ -696,7 +695,7 @@ func AlbListenerRule_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRule",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -721,31 +720,31 @@ func (a *jsiiProxy_AlbListenerRule) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AlbListenerRule) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AlbListenerRule) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AlbListenerRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AlbListenerRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -761,7 +760,7 @@ func (a *jsiiProxy_AlbListenerRule) GetBooleanAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -777,7 +776,7 @@ func (a *jsiiProxy_AlbListenerRule) GetBooleanMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -793,7 +792,7 @@ func (a *jsiiProxy_AlbListenerRule) GetListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -809,7 +808,7 @@ func (a *jsiiProxy_AlbListenerRule) GetNumberAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -825,7 +824,7 @@ func (a *jsiiProxy_AlbListenerRule) GetNumberListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -841,7 +840,7 @@ func (a *jsiiProxy_AlbListenerRule) GetNumberMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -857,7 +856,7 @@ func (a *jsiiProxy_AlbListenerRule) GetStringAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -873,15 +872,15 @@ func (a *jsiiProxy_AlbListenerRule) GetStringMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AlbListenerRule) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AlbListenerRule) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -900,7 +899,7 @@ func (a *jsiiProxy_AlbListenerRule) ImportFrom(id *string, provider cdktf.Terraf
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -913,7 +912,7 @@ func (a *jsiiProxy_AlbListenerRule) InterpolationForAttribute(terraformAttribute
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -927,18 +926,18 @@ func (a *jsiiProxy_AlbListenerRule) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AlbListenerRule) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AlbListenerRule) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -949,7 +948,7 @@ func (a *jsiiProxy_AlbListenerRule) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -960,29 +959,29 @@ func (a *jsiiProxy_AlbListenerRule) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (a *jsiiProxy_AlbListenerRule) PutAction(value interface{}) {
+func (a *jsiiProxy_AlbListenerRule) PutAction(value any) {
 	if err := a.validatePutActionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putAction",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (a *jsiiProxy_AlbListenerRule) PutCondition(value interface{}) {
+func (a *jsiiProxy_AlbListenerRule) PutCondition(value any) {
 	if err := a.validatePutConditionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1026,8 +1025,8 @@ func (a *jsiiProxy_AlbListenerRule) ResetTagsAll() {
 	)
 }
 
-func (a *jsiiProxy_AlbListenerRule) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AlbListenerRule) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1039,8 +1038,8 @@ func (a *jsiiProxy_AlbListenerRule) SynthesizeAttributes() *map[string]interface
 	return returns
 }
 
-func (a *jsiiProxy_AlbListenerRule) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AlbListenerRule) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1052,8 +1051,8 @@ func (a *jsiiProxy_AlbListenerRule) SynthesizeHclAttributes() *map[string]interf
 	return returns
 }
 
-func (a *jsiiProxy_AlbListenerRule) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AlbListenerRule) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1065,8 +1064,8 @@ func (a *jsiiProxy_AlbListenerRule) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AlbListenerRule) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AlbListenerRule) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1091,8 +1090,8 @@ func (a *jsiiProxy_AlbListenerRule) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AlbListenerRule) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AlbListenerRule) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1103,4 +1102,3 @@ func (a *jsiiProxy_AlbListenerRule) ToTerraform() interface{} {
 
 	return returns
 }
-

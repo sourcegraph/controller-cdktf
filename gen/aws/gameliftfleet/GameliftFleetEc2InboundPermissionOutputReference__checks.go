@@ -98,7 +98,7 @@ func (g *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewGameliftFleetEc2InboundPermissionOutputReferenceParameters(terra
 
 	return nil
 }
-

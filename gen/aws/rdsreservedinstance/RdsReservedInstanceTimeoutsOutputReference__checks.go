@@ -98,7 +98,7 @@ func (r *jsiiProxy_RdsReservedInstanceTimeoutsOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_RdsReservedInstanceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RdsReservedInstanceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_RdsReservedInstanceTimeoutsOutputReference) validateSetDelete
 	return nil
 }
 
-func (j *jsiiProxy_RdsReservedInstanceTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RdsReservedInstanceTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewRdsReservedInstanceTimeoutsOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

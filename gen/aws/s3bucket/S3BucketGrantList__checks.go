@@ -34,7 +34,7 @@ func (s *jsiiProxy_S3BucketGrantList) validateResolveParameters(_context cdktf.I
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketGrantList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketGrantList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewS3BucketGrantListParameters(terraformResource cdktf.IInterpolati
 
 	return nil
 }
-

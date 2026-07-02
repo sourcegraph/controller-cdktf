@@ -34,7 +34,7 @@ func (s *jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandPar
 	return nil
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParame
 
 	return nil
 }
-

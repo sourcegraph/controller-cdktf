@@ -1,6 +1,5 @@
 package networkfirewallfirewallpolicy
 
-
 type NetworkfirewallFirewallPolicyFirewallPolicy struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/networkfirewall_firewall_policy#stateless_default_actions NetworkfirewallFirewallPolicy#stateless_default_actions}.
 	StatelessDefaultActions *[]*string `field:"required" json:"statelessDefaultActions" yaml:"statelessDefaultActions"`
@@ -15,14 +14,13 @@ type NetworkfirewallFirewallPolicyFirewallPolicy struct {
 	// stateful_rule_group_reference block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/networkfirewall_firewall_policy#stateful_rule_group_reference NetworkfirewallFirewallPolicy#stateful_rule_group_reference}
-	StatefulRuleGroupReference interface{} `field:"optional" json:"statefulRuleGroupReference" yaml:"statefulRuleGroupReference"`
+	StatefulRuleGroupReference any `field:"optional" json:"statefulRuleGroupReference" yaml:"statefulRuleGroupReference"`
 	// stateless_custom_action block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/networkfirewall_firewall_policy#stateless_custom_action NetworkfirewallFirewallPolicy#stateless_custom_action}
-	StatelessCustomAction interface{} `field:"optional" json:"statelessCustomAction" yaml:"statelessCustomAction"`
+	StatelessCustomAction any `field:"optional" json:"statelessCustomAction" yaml:"statelessCustomAction"`
 	// stateless_rule_group_reference block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/networkfirewall_firewall_policy#stateless_rule_group_reference NetworkfirewallFirewallPolicy#stateless_rule_group_reference}
-	StatelessRuleGroupReference interface{} `field:"optional" json:"statelessRuleGroupReference" yaml:"statelessRuleGroupReference"`
+	StatelessRuleGroupReference any `field:"optional" json:"statelessRuleGroupReference" yaml:"statelessRuleGroupReference"`
 }
-

@@ -122,7 +122,7 @@ func (j *jsiiProxy_S3BucketCorsConfigurationCorsRuleOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketCorsConfigurationCorsRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketCorsConfigurationCorsRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -203,7 +203,7 @@ func (j *jsiiProxy_S3BucketCorsConfigurationCorsRuleOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketCorsConfigurationCorsRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketCorsConfigurationCorsRuleOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -270,4 +270,3 @@ func validateNewS3BucketCorsConfigurationCorsRuleOutputReferenceParameters(terra
 
 	return nil
 }
-

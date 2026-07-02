@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConf
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigu
 
 	return nil
 }
-

@@ -1,9 +1,8 @@
 package opensearchdomainsamloptions
 
-
 type OpensearchDomainSamlOptionsSamlOptions struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opensearch_domain_saml_options#enabled OpensearchDomainSamlOptions#enabled}.
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 	// idp block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opensearch_domain_saml_options#idp OpensearchDomainSamlOptions#idp}
@@ -19,4 +18,3 @@ type OpensearchDomainSamlOptionsSamlOptions struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opensearch_domain_saml_options#subject_key OpensearchDomainSamlOptions#subject_key}.
 	SubjectKey *string `field:"optional" json:"subjectKey" yaml:"subjectKey"`
 }
-

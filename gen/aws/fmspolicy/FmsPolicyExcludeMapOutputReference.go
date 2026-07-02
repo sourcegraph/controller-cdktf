@@ -15,9 +15,9 @@ type FmsPolicyExcludeMapOutputReference interface {
 	AccountInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type FmsPolicyExcludeMapOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type FmsPolicyExcludeMapOutputReference interface {
 	ResetOrgunit()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -104,8 +104,8 @@ func (j *jsiiProxy_FmsPolicyExcludeMapOutputReference) AccountInput() *[]*string
 	return returns
 }
 
-func (j *jsiiProxy_FmsPolicyExcludeMapOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FmsPolicyExcludeMapOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_FmsPolicyExcludeMapOutputReference) TerraformResource() cdktf
 	return returns
 }
 
-
 func NewFmsPolicyExcludeMapOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) FmsPolicyExcludeMapOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewFmsPolicyExcludeMapOutputReference(terraformResource cdktf.IInterpolatin
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.fmsPolicy.FmsPolicyExcludeMapOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewFmsPolicyExcludeMapOutputReference_Override(f FmsPolicyExcludeMapOutputR
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.fmsPolicy.FmsPolicyExcludeMapOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FmsPolicyExcludeMapOutputReference)SetAccount(val *[]*string) {
+func (j *jsiiProxy_FmsPolicyExcludeMapOutputReference) SetAccount(val *[]*string) {
 	if err := j.validateSetAccountParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_FmsPolicyExcludeMapOutputReference)SetAccount(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_FmsPolicyExcludeMapOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_FmsPolicyExcludeMapOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_FmsPolicyExcludeMapOutputReference)SetComplexObjectIndex(val 
 	)
 }
 
-func (j *jsiiProxy_FmsPolicyExcludeMapOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_FmsPolicyExcludeMapOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_FmsPolicyExcludeMapOutputReference)SetComplexObjectIsFromSet(
 	)
 }
 
-func (j *jsiiProxy_FmsPolicyExcludeMapOutputReference)SetInternalValue(val *FmsPolicyExcludeMap) {
+func (j *jsiiProxy_FmsPolicyExcludeMapOutputReference) SetInternalValue(val *FmsPolicyExcludeMap) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_FmsPolicyExcludeMapOutputReference)SetInternalValue(val *FmsP
 	)
 }
 
-func (j *jsiiProxy_FmsPolicyExcludeMapOutputReference)SetOrgunit(val *[]*string) {
+func (j *jsiiProxy_FmsPolicyExcludeMapOutputReference) SetOrgunit(val *[]*string) {
 	if err := j.validateSetOrgunitParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_FmsPolicyExcludeMapOutputReference)SetOrgunit(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_FmsPolicyExcludeMapOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_FmsPolicyExcludeMapOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_FmsPolicyExcludeMapOutputReference)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_FmsPolicyExcludeMapOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FmsPolicyExcludeMapOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (f *jsiiProxy_FmsPolicyExcludeMapOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (f *jsiiProxy_FmsPolicyExcludeMapOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FmsPolicyExcludeMapOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (f *jsiiProxy_FmsPolicyExcludeMapOutputReference) GetBooleanAttribute(terra
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (f *jsiiProxy_FmsPolicyExcludeMapOutputReference) GetBooleanMapAttribute(te
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (f *jsiiProxy_FmsPolicyExcludeMapOutputReference) GetListAttribute(terrafor
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (f *jsiiProxy_FmsPolicyExcludeMapOutputReference) GetNumberAttribute(terraf
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (f *jsiiProxy_FmsPolicyExcludeMapOutputReference) GetNumberListAttribute(te
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (f *jsiiProxy_FmsPolicyExcludeMapOutputReference) GetNumberMapAttribute(ter
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (f *jsiiProxy_FmsPolicyExcludeMapOutputReference) GetStringAttribute(terraf
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (f *jsiiProxy_FmsPolicyExcludeMapOutputReference) GetStringMapAttribute(ter
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (f *jsiiProxy_FmsPolicyExcludeMapOutputReference) InterpolationForAttribute
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (f *jsiiProxy_FmsPolicyExcludeMapOutputReference) ResetOrgunit() {
 	)
 }
 
-func (f *jsiiProxy_FmsPolicyExcludeMapOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (f *jsiiProxy_FmsPolicyExcludeMapOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := f.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (f *jsiiProxy_FmsPolicyExcludeMapOutputReference) ToString() *string {
 
 	return returns
 }
-

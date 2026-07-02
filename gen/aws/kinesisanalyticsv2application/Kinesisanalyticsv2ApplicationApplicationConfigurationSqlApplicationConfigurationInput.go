@@ -1,6 +1,5 @@
 package kinesisanalyticsv2application
 
-
 type Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInput struct {
 	// input_schema block.
 	//
@@ -19,7 +18,7 @@ type Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigur
 	// input_starting_position_configuration block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kinesisanalyticsv2_application#input_starting_position_configuration Kinesisanalyticsv2Application#input_starting_position_configuration}
-	InputStartingPositionConfiguration interface{} `field:"optional" json:"inputStartingPositionConfiguration" yaml:"inputStartingPositionConfiguration"`
+	InputStartingPositionConfiguration any `field:"optional" json:"inputStartingPositionConfiguration" yaml:"inputStartingPositionConfiguration"`
 	// kinesis_firehose_input block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kinesisanalyticsv2_application#kinesis_firehose_input Kinesisanalyticsv2Application#kinesis_firehose_input}
@@ -29,4 +28,3 @@ type Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigur
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kinesisanalyticsv2_application#kinesis_streams_input Kinesisanalyticsv2Application#kinesis_streams_input}
 	KinesisStreamsInput *Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInput `field:"optional" json:"kinesisStreamsInput" yaml:"kinesisStreamsInput"`
 }
-

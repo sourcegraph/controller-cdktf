@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroup",
-		reflect.TypeOf((*GlobalacceleratorEndpointGroup)(nil)).Elem(),
+		reflect.TypeFor[GlobalacceleratorEndpointGroup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -92,7 +92,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "trafficDialPercentage", GoGetter: "TrafficDialPercentage"},
 			_jsii_.MemberProperty{JsiiProperty: "trafficDialPercentageInput", GoGetter: "TrafficDialPercentageInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlobalacceleratorEndpointGroup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -100,15 +100,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupConfig",
-		reflect.TypeOf((*GlobalacceleratorEndpointGroupConfig)(nil)).Elem(),
+		reflect.TypeFor[GlobalacceleratorEndpointGroupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupEndpointConfiguration",
-		reflect.TypeOf((*GlobalacceleratorEndpointGroupEndpointConfiguration)(nil)).Elem(),
+		reflect.TypeFor[GlobalacceleratorEndpointGroupEndpointConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupEndpointConfigurationList",
-		reflect.TypeOf((*GlobalacceleratorEndpointGroupEndpointConfigurationList)(nil)).Elem(),
+		reflect.TypeFor[GlobalacceleratorEndpointGroupEndpointConfigurationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -122,7 +122,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlobalacceleratorEndpointGroupEndpointConfigurationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -130,7 +130,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupEndpointConfigurationOutputReference",
-		reflect.TypeOf((*GlobalacceleratorEndpointGroupEndpointConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlobalacceleratorEndpointGroupEndpointConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientIpPreservationEnabled", GoGetter: "ClientIpPreservationEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "clientIpPreservationEnabledInput", GoGetter: "ClientIpPreservationEnabledInput"},
@@ -163,7 +163,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weight", GoGetter: "Weight"},
 			_jsii_.MemberProperty{JsiiProperty: "weightInput", GoGetter: "WeightInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlobalacceleratorEndpointGroupEndpointConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -171,11 +171,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupPortOverride",
-		reflect.TypeOf((*GlobalacceleratorEndpointGroupPortOverride)(nil)).Elem(),
+		reflect.TypeFor[GlobalacceleratorEndpointGroupPortOverride](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupPortOverrideList",
-		reflect.TypeOf((*GlobalacceleratorEndpointGroupPortOverrideList)(nil)).Elem(),
+		reflect.TypeFor[GlobalacceleratorEndpointGroupPortOverrideList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -189,7 +189,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlobalacceleratorEndpointGroupPortOverrideList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -197,7 +197,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupPortOverrideOutputReference",
-		reflect.TypeOf((*GlobalacceleratorEndpointGroupPortOverrideOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlobalacceleratorEndpointGroupPortOverrideOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -225,7 +225,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlobalacceleratorEndpointGroupPortOverrideOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -233,11 +233,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupTimeouts",
-		reflect.TypeOf((*GlobalacceleratorEndpointGroupTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GlobalacceleratorEndpointGroupTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupTimeoutsOutputReference",
-		reflect.TypeOf((*GlobalacceleratorEndpointGroupTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlobalacceleratorEndpointGroupTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -270,7 +270,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlobalacceleratorEndpointGroupTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

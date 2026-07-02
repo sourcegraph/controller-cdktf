@@ -98,7 +98,7 @@ func (s *jsiiProxy_S3BucketObjectLockConfigurationRuleDefaultRetentionOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketObjectLockConfigurationRuleDefaultRetentionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketObjectLockConfigurationRuleDefaultRetentionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewS3BucketObjectLockConfigurationRuleDefaultRetentionOutputReferen
 
 	return nil
 }
-

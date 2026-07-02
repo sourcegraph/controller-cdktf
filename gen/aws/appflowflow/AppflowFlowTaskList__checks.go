@@ -34,7 +34,7 @@ func (a *jsiiProxy_AppflowFlowTaskList) validateResolveParameters(_context cdktf
 	return nil
 }
 
-func (j *jsiiProxy_AppflowFlowTaskList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AppflowFlowTaskList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAppflowFlowTaskListParameters(terraformResource cdktf.IInterpola
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apigatewayv2Authorizer.Apigatewayv2Authorizer",
-		reflect.TypeOf((*Apigatewayv2Authorizer)(nil)).Elem(),
+		reflect.TypeFor[Apigatewayv2Authorizer](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,7 +84,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Apigatewayv2Authorizer{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -92,15 +92,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apigatewayv2Authorizer.Apigatewayv2AuthorizerConfig",
-		reflect.TypeOf((*Apigatewayv2AuthorizerConfig)(nil)).Elem(),
+		reflect.TypeFor[Apigatewayv2AuthorizerConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apigatewayv2Authorizer.Apigatewayv2AuthorizerJwtConfiguration",
-		reflect.TypeOf((*Apigatewayv2AuthorizerJwtConfiguration)(nil)).Elem(),
+		reflect.TypeFor[Apigatewayv2AuthorizerJwtConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apigatewayv2Authorizer.Apigatewayv2AuthorizerJwtConfigurationOutputReference",
-		reflect.TypeOf((*Apigatewayv2AuthorizerJwtConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Apigatewayv2AuthorizerJwtConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audience", GoGetter: "Audience"},
 			_jsii_.MemberProperty{JsiiProperty: "audienceInput", GoGetter: "AudienceInput"},
@@ -130,7 +130,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Apigatewayv2AuthorizerJwtConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

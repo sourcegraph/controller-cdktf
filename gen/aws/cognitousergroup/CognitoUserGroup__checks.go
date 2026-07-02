@@ -19,7 +19,7 @@ func (c *jsiiProxy_CognitoUserGroup) validateAddMoveTargetParameters(moveTarget 
 	return nil
 }
 
-func (c *jsiiProxy_CognitoUserGroup) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_CognitoUserGroup) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_CognitoUserGroup) validateMoveFromIdParameters(id *string) er
 	return nil
 }
 
-func (c *jsiiProxy_CognitoUserGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_CognitoUserGroup) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateCognitoUserGroup_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validateCognitoUserGroup_IsConstructParameters(x interface{}) error {
+func validateCognitoUserGroup_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateCognitoUserGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateCognitoUserGroup_IsTerraformElementParameters(x interface{}) error {
+func validateCognitoUserGroup_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateCognitoUserGroup_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func validateCognitoUserGroup_IsTerraformResourceParameters(x interface{}) error {
+func validateCognitoUserGroup_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateCognitoUserGroup_IsTerraformResourceParameters(x interface{}) error
 	return nil
 }
 
-func (j *jsiiProxy_CognitoUserGroup) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_CognitoUserGroup) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_CognitoUserGroup) validateSetConnectionParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_CognitoUserGroup) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_CognitoUserGroup) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -374,7 +374,7 @@ func (j *jsiiProxy_CognitoUserGroup) validateSetPrecedenceParameters(val *float6
 	return nil
 }
 
-func (j *jsiiProxy_CognitoUserGroup) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_CognitoUserGroup) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -454,4 +454,3 @@ func validateNewCognitoUserGroupParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-

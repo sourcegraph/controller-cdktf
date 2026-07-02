@@ -12,9 +12,9 @@ type VpcIpv4CidrBlockAssociationTimeoutsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type VpcIpv4CidrBlockAssociationTimeoutsOutputReference interface {
 	DeleteInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type VpcIpv4CidrBlockAssociationTimeoutsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type VpcIpv4CidrBlockAssociationTimeoutsOutputReference interface {
 	ResetDelete()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference) Fqn() *st
 	return returns
 }
 
-func (j *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference) Terraform
 	return returns
 }
 
-
 func NewVpcIpv4CidrBlockAssociationTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) VpcIpv4CidrBlockAssociationTimeoutsOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewVpcIpv4CidrBlockAssociationTimeoutsOutputReference(terraformResource cdk
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociationTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewVpcIpv4CidrBlockAssociationTimeoutsOutputReference_Override(v VpcIpv4Cid
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociationTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		v,
 	)
 }
 
-func (j *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference)SetCreate(val *string) {
+func (j *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference) SetCreate(val *string) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference)SetCreate(
 	)
 }
 
-func (j *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference)SetDelete(val *string) {
+func (j *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference) SetDelete(val *string) {
 	if err := j.validateSetDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference)SetDelete(
 	)
 }
 
-func (j *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference)SetInterna
 	)
 }
 
-func (j *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (v *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference) ComputeFq
 	return returns
 }
 
-func (v *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (v *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (v *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference) GetBoolea
 	_jsii_.Invoke(
 		v,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (v *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference) GetBoolea
 	_jsii_.Invoke(
 		v,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (v *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference) GetListAt
 	_jsii_.Invoke(
 		v,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (v *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference) GetNumber
 	_jsii_.Invoke(
 		v,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (v *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference) GetNumber
 	_jsii_.Invoke(
 		v,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (v *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference) GetNumber
 	_jsii_.Invoke(
 		v,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (v *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference) GetString
 	_jsii_.Invoke(
 		v,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (v *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference) GetString
 	_jsii_.Invoke(
 		v,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (v *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference) Interpola
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (v *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference) ResetDele
 	)
 }
 
-func (v *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (v *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := v.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (v *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference) ToString(
 
 	return returns
 }
-

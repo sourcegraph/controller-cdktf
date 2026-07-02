@@ -15,11 +15,11 @@ type DataAwsRedshiftserverlessCredentials interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DbName() *string
 	SetDbName(val *string)
 	DbNameInput() *string
@@ -55,20 +55,20 @@ type DataAwsRedshiftserverlessCredentials interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	WorkgroupName() *string
 	SetWorkgroupName(val *string)
 	WorkgroupNameInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -96,18 +96,18 @@ type DataAwsRedshiftserverlessCredentials interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsRedshiftserverlessCredentials
@@ -125,8 +125,8 @@ func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials) CdktfStack() cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -135,8 +135,8 @@ func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials) ConstructNodeMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -305,8 +305,8 @@ func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials) Provider() cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -325,8 +325,8 @@ func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials) TerraformGeneratorMetad
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -365,7 +365,6 @@ func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials) WorkgroupNameInput() *s
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/redshiftserverless_credentials aws_redshiftserverless_credentials} Data Source.
 func NewDataAwsRedshiftserverlessCredentials(scope constructs.Construct, id *string, config *DataAwsRedshiftserverlessCredentialsConfig) DataAwsRedshiftserverlessCredentials {
 	_init_.Initialize()
@@ -377,7 +376,7 @@ func NewDataAwsRedshiftserverlessCredentials(scope constructs.Construct, id *str
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsRedshiftserverlessCredentials.DataAwsRedshiftserverlessCredentials",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -390,12 +389,12 @@ func NewDataAwsRedshiftserverlessCredentials_Override(d DataAwsRedshiftserverles
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsRedshiftserverlessCredentials.DataAwsRedshiftserverlessCredentials",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,7 +405,7 @@ func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials)SetCount(val interface{}
 	)
 }
 
-func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials)SetDbName(val *string) {
+func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials) SetDbName(val *string) {
 	if err := j.validateSetDbNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials)SetDbName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -425,7 +424,7 @@ func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials)SetDependsOn(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials)SetDurationSeconds(val *float64) {
+func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials) SetDurationSeconds(val *float64) {
 	if err := j.validateSetDurationSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -436,7 +435,7 @@ func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials)SetDurationSeconds(val *
 	)
 }
 
-func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -444,7 +443,7 @@ func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials)SetForEach(val cdktf.ITe
 	)
 }
 
-func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials)SetId(val *string) {
+func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -455,7 +454,7 @@ func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials)SetLifecycle(val *cdktf.
 	)
 }
 
-func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -474,7 +473,7 @@ func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials)SetProvider(val cdktf.Te
 	)
 }
 
-func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials)SetWorkgroupName(val *string) {
+func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials) SetWorkgroupName(val *string) {
 	if err := j.validateSetWorkgroupNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -497,7 +496,7 @@ func DataAwsRedshiftserverlessCredentials_GenerateConfigForImport(scope construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsRedshiftserverlessCredentials.DataAwsRedshiftserverlessCredentials",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -521,7 +520,7 @@ func DataAwsRedshiftserverlessCredentials_GenerateConfigForImport(scope construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsRedshiftserverlessCredentials_IsConstruct(x interface{}) *bool {
+func DataAwsRedshiftserverlessCredentials_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsRedshiftserverlessCredentials_IsConstructParameters(x); err != nil {
@@ -532,7 +531,7 @@ func DataAwsRedshiftserverlessCredentials_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsRedshiftserverlessCredentials.DataAwsRedshiftserverlessCredentials",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -540,7 +539,7 @@ func DataAwsRedshiftserverlessCredentials_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsRedshiftserverlessCredentials_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsRedshiftserverlessCredentials_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsRedshiftserverlessCredentials_IsTerraformDataSourceParameters(x); err != nil {
@@ -551,7 +550,7 @@ func DataAwsRedshiftserverlessCredentials_IsTerraformDataSource(x interface{}) *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsRedshiftserverlessCredentials.DataAwsRedshiftserverlessCredentials",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -559,7 +558,7 @@ func DataAwsRedshiftserverlessCredentials_IsTerraformDataSource(x interface{}) *
 }
 
 // Experimental.
-func DataAwsRedshiftserverlessCredentials_IsTerraformElement(x interface{}) *bool {
+func DataAwsRedshiftserverlessCredentials_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsRedshiftserverlessCredentials_IsTerraformElementParameters(x); err != nil {
@@ -570,7 +569,7 @@ func DataAwsRedshiftserverlessCredentials_IsTerraformElement(x interface{}) *boo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsRedshiftserverlessCredentials.DataAwsRedshiftserverlessCredentials",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -588,27 +587,27 @@ func DataAwsRedshiftserverlessCredentials_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRedshiftserverlessCredentials) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsRedshiftserverlessCredentials) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsRedshiftserverlessCredentials) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsRedshiftserverlessCredentials) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -624,7 +623,7 @@ func (d *jsiiProxy_DataAwsRedshiftserverlessCredentials) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -640,7 +639,7 @@ func (d *jsiiProxy_DataAwsRedshiftserverlessCredentials) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -656,7 +655,7 @@ func (d *jsiiProxy_DataAwsRedshiftserverlessCredentials) GetListAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -672,7 +671,7 @@ func (d *jsiiProxy_DataAwsRedshiftserverlessCredentials) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -688,7 +687,7 @@ func (d *jsiiProxy_DataAwsRedshiftserverlessCredentials) GetNumberListAttribute(
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -704,7 +703,7 @@ func (d *jsiiProxy_DataAwsRedshiftserverlessCredentials) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -720,7 +719,7 @@ func (d *jsiiProxy_DataAwsRedshiftserverlessCredentials) GetStringAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -736,7 +735,7 @@ func (d *jsiiProxy_DataAwsRedshiftserverlessCredentials) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -752,7 +751,7 @@ func (d *jsiiProxy_DataAwsRedshiftserverlessCredentials) InterpolationForAttribu
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -766,7 +765,7 @@ func (d *jsiiProxy_DataAwsRedshiftserverlessCredentials) OverrideLogicalId(newLo
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -802,8 +801,8 @@ func (d *jsiiProxy_DataAwsRedshiftserverlessCredentials) ResetOverrideLogicalId(
 	)
 }
 
-func (d *jsiiProxy_DataAwsRedshiftserverlessCredentials) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsRedshiftserverlessCredentials) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -815,8 +814,8 @@ func (d *jsiiProxy_DataAwsRedshiftserverlessCredentials) SynthesizeAttributes() 
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRedshiftserverlessCredentials) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsRedshiftserverlessCredentials) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -828,8 +827,8 @@ func (d *jsiiProxy_DataAwsRedshiftserverlessCredentials) SynthesizeHclAttributes
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRedshiftserverlessCredentials) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsRedshiftserverlessCredentials) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -841,8 +840,8 @@ func (d *jsiiProxy_DataAwsRedshiftserverlessCredentials) ToHclTerraform() interf
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRedshiftserverlessCredentials) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsRedshiftserverlessCredentials) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -867,8 +866,8 @@ func (d *jsiiProxy_DataAwsRedshiftserverlessCredentials) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRedshiftserverlessCredentials) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsRedshiftserverlessCredentials) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -879,4 +878,3 @@ func (d *jsiiProxy_DataAwsRedshiftserverlessCredentials) ToTerraform() interface
 
 	return returns
 }
-

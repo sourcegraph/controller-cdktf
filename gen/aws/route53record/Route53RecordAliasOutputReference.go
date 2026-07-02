@@ -12,9 +12,9 @@ type Route53RecordAliasOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,9 +25,9 @@ type Route53RecordAliasOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EvaluateTargetHealth() interface{}
-	SetEvaluateTargetHealth(val interface{})
-	EvaluateTargetHealthInput() interface{}
+	EvaluateTargetHealth() any
+	SetEvaluateTargetHealth(val any)
+	EvaluateTargetHealthInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *Route53RecordAlias
@@ -49,7 +49,7 @@ type Route53RecordAliasOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,7 +72,7 @@ type Route53RecordAliasOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,8 +85,8 @@ type jsiiProxy_Route53RecordAliasOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_Route53RecordAliasOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53RecordAliasOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -115,8 +115,8 @@ func (j *jsiiProxy_Route53RecordAliasOutputReference) CreationStack() *[]*string
 	return returns
 }
 
-func (j *jsiiProxy_Route53RecordAliasOutputReference) EvaluateTargetHealth() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53RecordAliasOutputReference) EvaluateTargetHealth() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"evaluateTargetHealth",
@@ -125,8 +125,8 @@ func (j *jsiiProxy_Route53RecordAliasOutputReference) EvaluateTargetHealth() int
 	return returns
 }
 
-func (j *jsiiProxy_Route53RecordAliasOutputReference) EvaluateTargetHealthInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53RecordAliasOutputReference) EvaluateTargetHealthInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"evaluateTargetHealthInput",
@@ -215,7 +215,6 @@ func (j *jsiiProxy_Route53RecordAliasOutputReference) ZoneIdInput() *string {
 	return returns
 }
 
-
 func NewRoute53RecordAliasOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) Route53RecordAliasOutputReference {
 	_init_.Initialize()
 
@@ -226,7 +225,7 @@ func NewRoute53RecordAliasOutputReference(terraformResource cdktf.IInterpolating
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.route53Record.Route53RecordAliasOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -238,12 +237,12 @@ func NewRoute53RecordAliasOutputReference_Override(r Route53RecordAliasOutputRef
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.route53Record.Route53RecordAliasOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		r,
 	)
 }
 
-func (j *jsiiProxy_Route53RecordAliasOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_Route53RecordAliasOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_Route53RecordAliasOutputReference)SetComplexObjectIndex(val i
 	)
 }
 
-func (j *jsiiProxy_Route53RecordAliasOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_Route53RecordAliasOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_Route53RecordAliasOutputReference)SetComplexObjectIsFromSet(v
 	)
 }
 
-func (j *jsiiProxy_Route53RecordAliasOutputReference)SetEvaluateTargetHealth(val interface{}) {
+func (j *jsiiProxy_Route53RecordAliasOutputReference) SetEvaluateTargetHealth(val any) {
 	if err := j.validateSetEvaluateTargetHealthParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_Route53RecordAliasOutputReference)SetEvaluateTargetHealth(val
 	)
 }
 
-func (j *jsiiProxy_Route53RecordAliasOutputReference)SetInternalValue(val *Route53RecordAlias) {
+func (j *jsiiProxy_Route53RecordAliasOutputReference) SetInternalValue(val *Route53RecordAlias) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_Route53RecordAliasOutputReference)SetInternalValue(val *Route
 	)
 }
 
-func (j *jsiiProxy_Route53RecordAliasOutputReference)SetName(val *string) {
+func (j *jsiiProxy_Route53RecordAliasOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -298,7 +297,7 @@ func (j *jsiiProxy_Route53RecordAliasOutputReference)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Route53RecordAliasOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_Route53RecordAliasOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -309,7 +308,7 @@ func (j *jsiiProxy_Route53RecordAliasOutputReference)SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_Route53RecordAliasOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Route53RecordAliasOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -320,7 +319,7 @@ func (j *jsiiProxy_Route53RecordAliasOutputReference)SetTerraformResource(val cd
 	)
 }
 
-func (j *jsiiProxy_Route53RecordAliasOutputReference)SetZoneId(val *string) {
+func (j *jsiiProxy_Route53RecordAliasOutputReference) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -344,16 +343,16 @@ func (r *jsiiProxy_Route53RecordAliasOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (r *jsiiProxy_Route53RecordAliasOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_Route53RecordAliasOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (r *jsiiProxy_Route53RecordAliasOutputReference) GetBooleanAttribute(terraf
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (r *jsiiProxy_Route53RecordAliasOutputReference) GetBooleanMapAttribute(ter
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (r *jsiiProxy_Route53RecordAliasOutputReference) GetListAttribute(terraform
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (r *jsiiProxy_Route53RecordAliasOutputReference) GetNumberAttribute(terrafo
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (r *jsiiProxy_Route53RecordAliasOutputReference) GetNumberListAttribute(ter
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (r *jsiiProxy_Route53RecordAliasOutputReference) GetNumberMapAttribute(terr
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -465,7 +464,7 @@ func (r *jsiiProxy_Route53RecordAliasOutputReference) GetStringAttribute(terrafo
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (r *jsiiProxy_Route53RecordAliasOutputReference) GetStringMapAttribute(terr
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -510,23 +509,23 @@ func (r *jsiiProxy_Route53RecordAliasOutputReference) InterpolationForAttribute(
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_Route53RecordAliasOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_Route53RecordAliasOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -545,4 +544,3 @@ func (r *jsiiProxy_Route53RecordAliasOutputReference) ToString() *string {
 
 	return returns
 }
-

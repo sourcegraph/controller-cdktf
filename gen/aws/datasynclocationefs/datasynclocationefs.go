@@ -19,15 +19,15 @@ type DatasyncLocationEfs interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -65,11 +65,11 @@ type DatasyncLocationEfs interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Subdirectory() *string
 	SetSubdirectory(val *string)
 	SubdirectoryInput() *string
@@ -82,7 +82,7 @@ type DatasyncLocationEfs interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Uri() *string
@@ -90,9 +90,9 @@ type DatasyncLocationEfs interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -110,7 +110,7 @@ type DatasyncLocationEfs interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -122,7 +122,7 @@ type DatasyncLocationEfs interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -140,17 +140,17 @@ type DatasyncLocationEfs interface {
 	ResetSubdirectory()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DatasyncLocationEfs
@@ -198,8 +198,8 @@ func (j *jsiiProxy_DatasyncLocationEfs) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DatasyncLocationEfs) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DatasyncLocationEfs) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_DatasyncLocationEfs) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DatasyncLocationEfs) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DatasyncLocationEfs) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_DatasyncLocationEfs) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_DatasyncLocationEfs) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DatasyncLocationEfs) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -398,8 +398,8 @@ func (j *jsiiProxy_DatasyncLocationEfs) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DatasyncLocationEfs) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DatasyncLocationEfs) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -408,8 +408,8 @@ func (j *jsiiProxy_DatasyncLocationEfs) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DatasyncLocationEfs) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DatasyncLocationEfs) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -488,8 +488,8 @@ func (j *jsiiProxy_DatasyncLocationEfs) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_DatasyncLocationEfs) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DatasyncLocationEfs) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -518,7 +518,6 @@ func (j *jsiiProxy_DatasyncLocationEfs) Uri() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/datasync_location_efs aws_datasync_location_efs} Resource.
 func NewDatasyncLocationEfs(scope constructs.Construct, id *string, config *DatasyncLocationEfsConfig) DatasyncLocationEfs {
 	_init_.Initialize()
@@ -530,7 +529,7 @@ func NewDatasyncLocationEfs(scope constructs.Construct, id *string, config *Data
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.datasyncLocationEfs.DatasyncLocationEfs",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -543,12 +542,12 @@ func NewDatasyncLocationEfs_Override(d DatasyncLocationEfs, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.datasyncLocationEfs.DatasyncLocationEfs",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DatasyncLocationEfs)SetAccessPointArn(val *string) {
+func (j *jsiiProxy_DatasyncLocationEfs) SetAccessPointArn(val *string) {
 	if err := j.validateSetAccessPointArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_DatasyncLocationEfs)SetAccessPointArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatasyncLocationEfs)SetConnection(val interface{}) {
+func (j *jsiiProxy_DatasyncLocationEfs) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_DatasyncLocationEfs)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DatasyncLocationEfs)SetCount(val interface{}) {
+func (j *jsiiProxy_DatasyncLocationEfs) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_DatasyncLocationEfs)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DatasyncLocationEfs)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DatasyncLocationEfs) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -589,7 +588,7 @@ func (j *jsiiProxy_DatasyncLocationEfs)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DatasyncLocationEfs)SetEfsFileSystemArn(val *string) {
+func (j *jsiiProxy_DatasyncLocationEfs) SetEfsFileSystemArn(val *string) {
 	if err := j.validateSetEfsFileSystemArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -600,7 +599,7 @@ func (j *jsiiProxy_DatasyncLocationEfs)SetEfsFileSystemArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatasyncLocationEfs)SetFileSystemAccessRoleArn(val *string) {
+func (j *jsiiProxy_DatasyncLocationEfs) SetFileSystemAccessRoleArn(val *string) {
 	if err := j.validateSetFileSystemAccessRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,7 +610,7 @@ func (j *jsiiProxy_DatasyncLocationEfs)SetFileSystemAccessRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatasyncLocationEfs)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DatasyncLocationEfs) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -619,7 +618,7 @@ func (j *jsiiProxy_DatasyncLocationEfs)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_DatasyncLocationEfs)SetId(val *string) {
+func (j *jsiiProxy_DatasyncLocationEfs) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -630,7 +629,7 @@ func (j *jsiiProxy_DatasyncLocationEfs)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatasyncLocationEfs)SetInTransitEncryption(val *string) {
+func (j *jsiiProxy_DatasyncLocationEfs) SetInTransitEncryption(val *string) {
 	if err := j.validateSetInTransitEncryptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -641,7 +640,7 @@ func (j *jsiiProxy_DatasyncLocationEfs)SetInTransitEncryption(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatasyncLocationEfs)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DatasyncLocationEfs) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -652,7 +651,7 @@ func (j *jsiiProxy_DatasyncLocationEfs)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_DatasyncLocationEfs)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DatasyncLocationEfs) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -660,7 +659,7 @@ func (j *jsiiProxy_DatasyncLocationEfs)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_DatasyncLocationEfs)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DatasyncLocationEfs) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -671,7 +670,7 @@ func (j *jsiiProxy_DatasyncLocationEfs)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DatasyncLocationEfs)SetSubdirectory(val *string) {
+func (j *jsiiProxy_DatasyncLocationEfs) SetSubdirectory(val *string) {
 	if err := j.validateSetSubdirectoryParameters(val); err != nil {
 		panic(err)
 	}
@@ -682,7 +681,7 @@ func (j *jsiiProxy_DatasyncLocationEfs)SetSubdirectory(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatasyncLocationEfs)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DatasyncLocationEfs) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -693,7 +692,7 @@ func (j *jsiiProxy_DatasyncLocationEfs)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_DatasyncLocationEfs)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_DatasyncLocationEfs) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -716,7 +715,7 @@ func DatasyncLocationEfs_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.datasyncLocationEfs.DatasyncLocationEfs",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -740,7 +739,7 @@ func DatasyncLocationEfs_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DatasyncLocationEfs_IsConstruct(x interface{}) *bool {
+func DatasyncLocationEfs_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDatasyncLocationEfs_IsConstructParameters(x); err != nil {
@@ -751,7 +750,7 @@ func DatasyncLocationEfs_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.datasyncLocationEfs.DatasyncLocationEfs",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func DatasyncLocationEfs_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DatasyncLocationEfs_IsTerraformElement(x interface{}) *bool {
+func DatasyncLocationEfs_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDatasyncLocationEfs_IsTerraformElementParameters(x); err != nil {
@@ -770,7 +769,7 @@ func DatasyncLocationEfs_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.datasyncLocationEfs.DatasyncLocationEfs",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -778,7 +777,7 @@ func DatasyncLocationEfs_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DatasyncLocationEfs_IsTerraformResource(x interface{}) *bool {
+func DatasyncLocationEfs_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDatasyncLocationEfs_IsTerraformResourceParameters(x); err != nil {
@@ -789,7 +788,7 @@ func DatasyncLocationEfs_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.datasyncLocationEfs.DatasyncLocationEfs",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -814,31 +813,31 @@ func (d *jsiiProxy_DatasyncLocationEfs) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DatasyncLocationEfs) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DatasyncLocationEfs) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DatasyncLocationEfs) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DatasyncLocationEfs) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -854,7 +853,7 @@ func (d *jsiiProxy_DatasyncLocationEfs) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -870,7 +869,7 @@ func (d *jsiiProxy_DatasyncLocationEfs) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -886,7 +885,7 @@ func (d *jsiiProxy_DatasyncLocationEfs) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -902,7 +901,7 @@ func (d *jsiiProxy_DatasyncLocationEfs) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -918,7 +917,7 @@ func (d *jsiiProxy_DatasyncLocationEfs) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -934,7 +933,7 @@ func (d *jsiiProxy_DatasyncLocationEfs) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -950,7 +949,7 @@ func (d *jsiiProxy_DatasyncLocationEfs) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -966,15 +965,15 @@ func (d *jsiiProxy_DatasyncLocationEfs) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DatasyncLocationEfs) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DatasyncLocationEfs) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -993,7 +992,7 @@ func (d *jsiiProxy_DatasyncLocationEfs) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1006,7 +1005,7 @@ func (d *jsiiProxy_DatasyncLocationEfs) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1020,18 +1019,18 @@ func (d *jsiiProxy_DatasyncLocationEfs) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DatasyncLocationEfs) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DatasyncLocationEfs) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1042,7 +1041,7 @@ func (d *jsiiProxy_DatasyncLocationEfs) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1053,7 +1052,7 @@ func (d *jsiiProxy_DatasyncLocationEfs) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1064,7 +1063,7 @@ func (d *jsiiProxy_DatasyncLocationEfs) PutEc2Config(value *DatasyncLocationEfsE
 	_jsii_.InvokeVoid(
 		d,
 		"putEc2Config",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1132,8 +1131,8 @@ func (d *jsiiProxy_DatasyncLocationEfs) ResetTagsAll() {
 	)
 }
 
-func (d *jsiiProxy_DatasyncLocationEfs) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DatasyncLocationEfs) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1145,8 +1144,8 @@ func (d *jsiiProxy_DatasyncLocationEfs) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (d *jsiiProxy_DatasyncLocationEfs) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DatasyncLocationEfs) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1158,8 +1157,8 @@ func (d *jsiiProxy_DatasyncLocationEfs) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (d *jsiiProxy_DatasyncLocationEfs) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DatasyncLocationEfs) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1171,8 +1170,8 @@ func (d *jsiiProxy_DatasyncLocationEfs) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DatasyncLocationEfs) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DatasyncLocationEfs) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1197,8 +1196,8 @@ func (d *jsiiProxy_DatasyncLocationEfs) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DatasyncLocationEfs) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DatasyncLocationEfs) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1209,4 +1208,3 @@ func (d *jsiiProxy_DatasyncLocationEfs) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (e *jsiiProxy_EcrRepositoryImageScanningConfigurationOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_EcrRepositoryImageScanningConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EcrRepositoryImageScanningConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_EcrRepositoryImageScanningConfigurationOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_EcrRepositoryImageScanningConfigurationOutputReference) validateSetScanOnPushParameters(val interface{}) error {
+func (j *jsiiProxy_EcrRepositoryImageScanningConfigurationOutputReference) validateSetScanOnPushParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewEcrRepositoryImageScanningConfigurationOutputReferenceParameters
 
 	return nil
 }
-

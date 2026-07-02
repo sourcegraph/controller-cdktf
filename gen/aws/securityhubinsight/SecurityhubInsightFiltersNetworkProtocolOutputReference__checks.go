@@ -106,7 +106,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersNetworkProtocolOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersNetworkProtocolOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityhubInsightFiltersNetworkProtocolOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersNetworkProtocolOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersNetworkProtocolOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityhubInsightFiltersNetworkProtocolOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewSecurityhubInsightFiltersNetworkProtocolOutputReferenceParameter
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (w *jsiiProxy_WafWebAclDefaultActionOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_WafWebAclDefaultActionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WafWebAclDefaultActionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewWafWebAclDefaultActionOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

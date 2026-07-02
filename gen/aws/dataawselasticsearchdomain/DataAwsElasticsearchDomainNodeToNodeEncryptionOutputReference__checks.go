@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsElasticsearchDomainNodeToNodeEncryptionOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsElasticsearchDomainNodeToNodeEncryptionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsElasticsearchDomainNodeToNodeEncryptionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsElasticsearchDomainNodeToNodeEncryptionOutputReferencePar
 
 	return nil
 }
-

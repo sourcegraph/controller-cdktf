@@ -6,9 +6,9 @@ import (
 
 type EmrInstanceGroupConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type EmrInstanceGroupConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/emr_instance_group#cluster_id EmrInstanceGroup#cluster_id}.
 	ClusterId *string `field:"required" json:"clusterId" yaml:"clusterId"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/emr_instance_group#instance_type EmrInstanceGroup#instance_type}.
@@ -32,9 +32,9 @@ type EmrInstanceGroupConfig struct {
 	// ebs_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/emr_instance_group#ebs_config EmrInstanceGroup#ebs_config}
-	EbsConfig interface{} `field:"optional" json:"ebsConfig" yaml:"ebsConfig"`
+	EbsConfig any `field:"optional" json:"ebsConfig" yaml:"ebsConfig"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/emr_instance_group#ebs_optimized EmrInstanceGroup#ebs_optimized}.
-	EbsOptimized interface{} `field:"optional" json:"ebsOptimized" yaml:"ebsOptimized"`
+	EbsOptimized any `field:"optional" json:"ebsOptimized" yaml:"ebsOptimized"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/emr_instance_group#id EmrInstanceGroup#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -45,4 +45,3 @@ type EmrInstanceGroupConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/emr_instance_group#name EmrInstanceGroup#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
-

@@ -18,11 +18,11 @@ type DataAwsCloudfrontOriginAccessIdentities interface {
 	SetComments(val *[]*string)
 	CommentsInput() *[]*string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -51,18 +51,18 @@ type DataAwsCloudfrontOriginAccessIdentities interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	S3CanonicalUserIds() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -89,18 +89,18 @@ type DataAwsCloudfrontOriginAccessIdentities interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsCloudfrontOriginAccessIdentities
@@ -138,8 +138,8 @@ func (j *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) CommentsInput() *[]*
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) ConstructNodeMetadat
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -268,8 +268,8 @@ func (j *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) Provider() cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -298,8 +298,8 @@ func (j *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) TerraformGeneratorMe
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -318,7 +318,6 @@ func (j *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) TerraformResourceTyp
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/cloudfront_origin_access_identities aws_cloudfront_origin_access_identities} Data Source.
 func NewDataAwsCloudfrontOriginAccessIdentities(scope constructs.Construct, id *string, config *DataAwsCloudfrontOriginAccessIdentitiesConfig) DataAwsCloudfrontOriginAccessIdentities {
 	_init_.Initialize()
@@ -330,7 +329,7 @@ func NewDataAwsCloudfrontOriginAccessIdentities(scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsCloudfrontOriginAccessIdentities.DataAwsCloudfrontOriginAccessIdentities",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -343,12 +342,12 @@ func NewDataAwsCloudfrontOriginAccessIdentities_Override(d DataAwsCloudfrontOrig
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsCloudfrontOriginAccessIdentities.DataAwsCloudfrontOriginAccessIdentities",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities)SetComments(val *[]*string) {
+func (j *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) SetComments(val *[]*string) {
 	if err := j.validateSetCommentsParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,7 +358,7 @@ func (j *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities)SetComments(val *[]*s
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,7 +369,7 @@ func (j *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities)SetCount(val interfac
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -378,7 +377,7 @@ func (j *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities)SetDependsOn(val *[]*
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -386,7 +385,7 @@ func (j *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities)SetForEach(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities)SetId(val *string) {
+func (j *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +396,7 @@ func (j *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities)SetLifecycle(val *cdk
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -428,7 +427,7 @@ func DataAwsCloudfrontOriginAccessIdentities_GenerateConfigForImport(scope const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCloudfrontOriginAccessIdentities.DataAwsCloudfrontOriginAccessIdentities",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func DataAwsCloudfrontOriginAccessIdentities_GenerateConfigForImport(scope const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsCloudfrontOriginAccessIdentities_IsConstruct(x interface{}) *bool {
+func DataAwsCloudfrontOriginAccessIdentities_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsCloudfrontOriginAccessIdentities_IsConstructParameters(x); err != nil {
@@ -463,7 +462,7 @@ func DataAwsCloudfrontOriginAccessIdentities_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCloudfrontOriginAccessIdentities.DataAwsCloudfrontOriginAccessIdentities",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func DataAwsCloudfrontOriginAccessIdentities_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsCloudfrontOriginAccessIdentities_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsCloudfrontOriginAccessIdentities_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsCloudfrontOriginAccessIdentities_IsTerraformDataSourceParameters(x); err != nil {
@@ -482,7 +481,7 @@ func DataAwsCloudfrontOriginAccessIdentities_IsTerraformDataSource(x interface{}
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCloudfrontOriginAccessIdentities.DataAwsCloudfrontOriginAccessIdentities",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func DataAwsCloudfrontOriginAccessIdentities_IsTerraformDataSource(x interface{}
 }
 
 // Experimental.
-func DataAwsCloudfrontOriginAccessIdentities_IsTerraformElement(x interface{}) *bool {
+func DataAwsCloudfrontOriginAccessIdentities_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsCloudfrontOriginAccessIdentities_IsTerraformElementParameters(x); err != nil {
@@ -501,7 +500,7 @@ func DataAwsCloudfrontOriginAccessIdentities_IsTerraformElement(x interface{}) *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCloudfrontOriginAccessIdentities.DataAwsCloudfrontOriginAccessIdentities",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -519,27 +518,27 @@ func DataAwsCloudfrontOriginAccessIdentities_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -555,7 +554,7 @@ func (d *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) GetBooleanAttribute(
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -571,7 +570,7 @@ func (d *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func (d *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) GetListAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -603,7 +602,7 @@ func (d *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) GetNumberAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -619,7 +618,7 @@ func (d *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) GetNumberListAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -635,7 +634,7 @@ func (d *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) GetNumberMapAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -651,7 +650,7 @@ func (d *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) GetStringAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -667,7 +666,7 @@ func (d *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) GetStringMapAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -683,7 +682,7 @@ func (d *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) InterpolationForAttr
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -697,7 +696,7 @@ func (d *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) OverrideLogicalId(ne
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -725,8 +724,8 @@ func (d *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) ResetOverrideLogical
 	)
 }
 
-func (d *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -738,8 +737,8 @@ func (d *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) SynthesizeAttributes
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -751,8 +750,8 @@ func (d *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) SynthesizeHclAttribu
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -764,8 +763,8 @@ func (d *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) ToHclTerraform() int
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -790,8 +789,8 @@ func (d *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -802,4 +801,3 @@ func (d *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) ToTerraform() interf
 
 	return returns
 }
-

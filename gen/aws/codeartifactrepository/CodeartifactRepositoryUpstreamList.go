@@ -17,8 +17,8 @@ type CodeartifactRepositoryUpstreamList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type CodeartifactRepositoryUpstreamList interface {
 	Get(index *float64) CodeartifactRepositoryUpstreamOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_CodeartifactRepositoryUpstreamList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CodeartifactRepositoryUpstreamList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodeartifactRepositoryUpstreamList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_CodeartifactRepositoryUpstreamList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewCodeartifactRepositoryUpstreamList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodeartifactRepositoryUpstreamList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewCodeartifactRepositoryUpstreamList(terraformResource cdktf.IInterpolatin
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.codeartifactRepository.CodeartifactRepositoryUpstreamList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewCodeartifactRepositoryUpstreamList_Override(c CodeartifactRepositoryUpst
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.codeartifactRepository.CodeartifactRepositoryUpstreamList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CodeartifactRepositoryUpstreamList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CodeartifactRepositoryUpstreamList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_CodeartifactRepositoryUpstreamList)SetInternalValue(val inter
 	)
 }
 
-func (j *jsiiProxy_CodeartifactRepositoryUpstreamList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CodeartifactRepositoryUpstreamList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_CodeartifactRepositoryUpstreamList)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_CodeartifactRepositoryUpstreamList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CodeartifactRepositoryUpstreamList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_CodeartifactRepositoryUpstreamList)SetTerraformResource(val c
 	)
 }
 
-func (j *jsiiProxy_CodeartifactRepositoryUpstreamList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_CodeartifactRepositoryUpstreamList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (c *jsiiProxy_CodeartifactRepositoryUpstreamList) AllWithMapKey(mapKeyAttri
 	_jsii_.Invoke(
 		c,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (c *jsiiProxy_CodeartifactRepositoryUpstreamList) Get(index *float64) Codea
 	_jsii_.Invoke(
 		c,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CodeartifactRepositoryUpstreamList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CodeartifactRepositoryUpstreamList) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (c *jsiiProxy_CodeartifactRepositoryUpstreamList) ToString() *string {
 
 	return returns
 }
-

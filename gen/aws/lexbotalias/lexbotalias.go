@@ -23,17 +23,17 @@ type LexBotAlias interface {
 	CdktfStack() cdktf.TerraformStack
 	Checksum() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	ConversationLogs() LexBotAliasConversationLogsOutputReference
 	ConversationLogsInput() *LexBotAliasConversationLogs
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedDate() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -68,26 +68,26 @@ type LexBotAlias interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() LexBotAliasTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -105,7 +105,7 @@ type LexBotAlias interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -117,7 +117,7 @@ type LexBotAlias interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -133,17 +133,17 @@ type LexBotAlias interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for LexBotAlias
@@ -221,8 +221,8 @@ func (j *jsiiProxy_LexBotAlias) Checksum() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LexBotAlias) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LexBotAlias) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -231,8 +231,8 @@ func (j *jsiiProxy_LexBotAlias) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LexBotAlias) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LexBotAlias) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -261,8 +261,8 @@ func (j *jsiiProxy_LexBotAlias) ConversationLogsInput() *LexBotAliasConversation
 	return returns
 }
 
-func (j *jsiiProxy_LexBotAlias) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LexBotAlias) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -421,8 +421,8 @@ func (j *jsiiProxy_LexBotAlias) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_LexBotAlias) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_LexBotAlias) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -431,8 +431,8 @@ func (j *jsiiProxy_LexBotAlias) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LexBotAlias) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LexBotAlias) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -451,8 +451,8 @@ func (j *jsiiProxy_LexBotAlias) TerraformGeneratorMetadata() *cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_LexBotAlias) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LexBotAlias) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -481,8 +481,8 @@ func (j *jsiiProxy_LexBotAlias) Timeouts() LexBotAliasTimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_LexBotAlias) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LexBotAlias) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -490,7 +490,6 @@ func (j *jsiiProxy_LexBotAlias) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lex_bot_alias aws_lex_bot_alias} Resource.
 func NewLexBotAlias(scope constructs.Construct, id *string, config *LexBotAliasConfig) LexBotAlias {
@@ -503,7 +502,7 @@ func NewLexBotAlias(scope constructs.Construct, id *string, config *LexBotAliasC
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lexBotAlias.LexBotAlias",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -516,12 +515,12 @@ func NewLexBotAlias_Override(l LexBotAlias, scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lexBotAlias.LexBotAlias",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LexBotAlias)SetBotName(val *string) {
+func (j *jsiiProxy_LexBotAlias) SetBotName(val *string) {
 	if err := j.validateSetBotNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +531,7 @@ func (j *jsiiProxy_LexBotAlias)SetBotName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LexBotAlias)SetBotVersion(val *string) {
+func (j *jsiiProxy_LexBotAlias) SetBotVersion(val *string) {
 	if err := j.validateSetBotVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -543,7 +542,7 @@ func (j *jsiiProxy_LexBotAlias)SetBotVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LexBotAlias)SetConnection(val interface{}) {
+func (j *jsiiProxy_LexBotAlias) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -554,7 +553,7 @@ func (j *jsiiProxy_LexBotAlias)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LexBotAlias)SetCount(val interface{}) {
+func (j *jsiiProxy_LexBotAlias) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +564,7 @@ func (j *jsiiProxy_LexBotAlias)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LexBotAlias)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LexBotAlias) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -573,7 +572,7 @@ func (j *jsiiProxy_LexBotAlias)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LexBotAlias)SetDescription(val *string) {
+func (j *jsiiProxy_LexBotAlias) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -584,7 +583,7 @@ func (j *jsiiProxy_LexBotAlias)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LexBotAlias)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LexBotAlias) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -592,7 +591,7 @@ func (j *jsiiProxy_LexBotAlias)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_LexBotAlias)SetId(val *string) {
+func (j *jsiiProxy_LexBotAlias) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -603,7 +602,7 @@ func (j *jsiiProxy_LexBotAlias)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LexBotAlias)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LexBotAlias) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -614,7 +613,7 @@ func (j *jsiiProxy_LexBotAlias)SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_LexBotAlias)SetName(val *string) {
+func (j *jsiiProxy_LexBotAlias) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -625,7 +624,7 @@ func (j *jsiiProxy_LexBotAlias)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LexBotAlias)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LexBotAlias) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -633,7 +632,7 @@ func (j *jsiiProxy_LexBotAlias)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_LexBotAlias)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LexBotAlias) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -656,7 +655,7 @@ func LexBotAlias_GenerateConfigForImport(scope constructs.Construct, importToId 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lexBotAlias.LexBotAlias",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -680,7 +679,7 @@ func LexBotAlias_GenerateConfigForImport(scope constructs.Construct, importToId 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func LexBotAlias_IsConstruct(x interface{}) *bool {
+func LexBotAlias_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLexBotAlias_IsConstructParameters(x); err != nil {
@@ -691,7 +690,7 @@ func LexBotAlias_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lexBotAlias.LexBotAlias",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -699,7 +698,7 @@ func LexBotAlias_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func LexBotAlias_IsTerraformElement(x interface{}) *bool {
+func LexBotAlias_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLexBotAlias_IsTerraformElementParameters(x); err != nil {
@@ -710,7 +709,7 @@ func LexBotAlias_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lexBotAlias.LexBotAlias",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -718,7 +717,7 @@ func LexBotAlias_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func LexBotAlias_IsTerraformResource(x interface{}) *bool {
+func LexBotAlias_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLexBotAlias_IsTerraformResourceParameters(x); err != nil {
@@ -729,7 +728,7 @@ func LexBotAlias_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lexBotAlias.LexBotAlias",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -754,31 +753,31 @@ func (l *jsiiProxy_LexBotAlias) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (l *jsiiProxy_LexBotAlias) AddOverride(path *string, value interface{}) {
+func (l *jsiiProxy_LexBotAlias) AddOverride(path *string, value any) {
 	if err := l.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (l *jsiiProxy_LexBotAlias) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LexBotAlias) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func (l *jsiiProxy_LexBotAlias) GetBooleanAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func (l *jsiiProxy_LexBotAlias) GetBooleanMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -826,7 +825,7 @@ func (l *jsiiProxy_LexBotAlias) GetListAttribute(terraformAttribute *string) *[]
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -842,7 +841,7 @@ func (l *jsiiProxy_LexBotAlias) GetNumberAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -858,7 +857,7 @@ func (l *jsiiProxy_LexBotAlias) GetNumberListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -874,7 +873,7 @@ func (l *jsiiProxy_LexBotAlias) GetNumberMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -890,7 +889,7 @@ func (l *jsiiProxy_LexBotAlias) GetStringAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -906,15 +905,15 @@ func (l *jsiiProxy_LexBotAlias) GetStringMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LexBotAlias) HasResourceMove() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LexBotAlias) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -933,7 +932,7 @@ func (l *jsiiProxy_LexBotAlias) ImportFrom(id *string, provider cdktf.TerraformP
 	_jsii_.InvokeVoid(
 		l,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -946,7 +945,7 @@ func (l *jsiiProxy_LexBotAlias) InterpolationForAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -960,18 +959,18 @@ func (l *jsiiProxy_LexBotAlias) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (l *jsiiProxy_LexBotAlias) MoveTo(moveTarget *string, index interface{}) {
+func (l *jsiiProxy_LexBotAlias) MoveTo(moveTarget *string, index any) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -982,7 +981,7 @@ func (l *jsiiProxy_LexBotAlias) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -993,7 +992,7 @@ func (l *jsiiProxy_LexBotAlias) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1004,7 +1003,7 @@ func (l *jsiiProxy_LexBotAlias) PutConversationLogs(value *LexBotAliasConversati
 	_jsii_.InvokeVoid(
 		l,
 		"putConversationLogs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1015,7 +1014,7 @@ func (l *jsiiProxy_LexBotAlias) PutTimeouts(value *LexBotAliasTimeouts) {
 	_jsii_.InvokeVoid(
 		l,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1059,8 +1058,8 @@ func (l *jsiiProxy_LexBotAlias) ResetTimeouts() {
 	)
 }
 
-func (l *jsiiProxy_LexBotAlias) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LexBotAlias) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1072,8 +1071,8 @@ func (l *jsiiProxy_LexBotAlias) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LexBotAlias) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LexBotAlias) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1085,8 +1084,8 @@ func (l *jsiiProxy_LexBotAlias) SynthesizeHclAttributes() *map[string]interface{
 	return returns
 }
 
-func (l *jsiiProxy_LexBotAlias) ToHclTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LexBotAlias) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1098,8 +1097,8 @@ func (l *jsiiProxy_LexBotAlias) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LexBotAlias) ToMetadata() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LexBotAlias) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1124,8 +1123,8 @@ func (l *jsiiProxy_LexBotAlias) ToString() *string {
 	return returns
 }
 
-func (l *jsiiProxy_LexBotAlias) ToTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LexBotAlias) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1136,4 +1135,3 @@ func (l *jsiiProxy_LexBotAlias) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -12,9 +12,9 @@ type InternetGatewayAttachmentTimeoutsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type InternetGatewayAttachmentTimeoutsOutputReference interface {
 	DeleteInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type InternetGatewayAttachmentTimeoutsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type InternetGatewayAttachmentTimeoutsOutputReference interface {
 	ResetDelete()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) Fqn() *stri
 	return returns
 }
 
-func (j *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) TerraformRe
 	return returns
 }
 
-
 func NewInternetGatewayAttachmentTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) InternetGatewayAttachmentTimeoutsOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewInternetGatewayAttachmentTimeoutsOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.internetGatewayAttachment.InternetGatewayAttachmentTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewInternetGatewayAttachmentTimeoutsOutputReference_Override(i InternetGate
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.internetGatewayAttachment.InternetGatewayAttachmentTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		i,
 	)
 }
 
-func (j *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference)SetCreate(val *string) {
+func (j *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) SetCreate(val *string) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference)SetCreate(va
 	)
 }
 
-func (j *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference)SetDelete(val *string) {
+func (j *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) SetDelete(val *string) {
 	if err := j.validateSetDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference)SetDelete(va
 	)
 }
 
-func (j *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (i *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) ComputeFqn(
 	return returns
 }
 
-func (i *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (i *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (i *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (i *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) GetListAttr
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (i *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (i *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (i *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (i *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) GetStringAt
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (i *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) GetStringMa
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (i *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) Interpolati
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (i *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) ResetDelete
 	)
 }
 
-func (i *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (i *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) ToString() 
 
 	return returns
 }
-

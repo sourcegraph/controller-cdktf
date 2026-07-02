@@ -98,7 +98,7 @@ func (e *jsiiProxy_EcsTaskSetNetworkConfigurationOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_EcsTaskSetNetworkConfigurationOutputReference) validateSetAssignPublicIpParameters(val interface{}) error {
+func (j *jsiiProxy_EcsTaskSetNetworkConfigurationOutputReference) validateSetAssignPublicIpParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_EcsTaskSetNetworkConfigurationOutputReference) validateSetAss
 	return nil
 }
 
-func (j *jsiiProxy_EcsTaskSetNetworkConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EcsTaskSetNetworkConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -234,4 +234,3 @@ func validateNewEcsTaskSetNetworkConfigurationOutputReferenceParameters(terrafor
 
 	return nil
 }
-

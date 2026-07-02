@@ -98,7 +98,7 @@ func (e *jsiiProxy_EcrRepositoryEncryptionConfigurationOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_EcrRepositoryEncryptionConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EcrRepositoryEncryptionConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_EcrRepositoryEncryptionConfigurationOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_EcrRepositoryEncryptionConfigurationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EcrRepositoryEncryptionConfigurationOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewEcrRepositoryEncryptionConfigurationOutputReferenceParameters(te
 
 	return nil
 }
-

@@ -18,9 +18,9 @@ type LaunchTemplateNetworkInterfacesOutputReference interface {
 	AssociatePublicIpAddressInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -45,8 +45,8 @@ type LaunchTemplateNetworkInterfacesOutputReference interface {
 	InterfaceType() *string
 	SetInterfaceType(val *string)
 	InterfaceTypeInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Ipv4AddressCount() *float64
 	SetIpv4AddressCount(val *float64)
 	Ipv4AddressCountInput() *float64
@@ -97,7 +97,7 @@ type LaunchTemplateNetworkInterfacesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -139,7 +139,7 @@ type LaunchTemplateNetworkInterfacesOutputReference interface {
 	ResetSubnetId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -192,8 +192,8 @@ func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) AssociatePubl
 	return returns
 }
 
-func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -312,8 +312,8 @@ func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) InterfaceType
 	return returns
 }
 
-func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -602,7 +602,6 @@ func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) TerraformReso
 	return returns
 }
 
-
 func NewLaunchTemplateNetworkInterfacesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LaunchTemplateNetworkInterfacesOutputReference {
 	_init_.Initialize()
 
@@ -613,7 +612,7 @@ func NewLaunchTemplateNetworkInterfacesOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfacesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -625,12 +624,12 @@ func NewLaunchTemplateNetworkInterfacesOutputReference_Override(l LaunchTemplate
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfacesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetAssociateCarrierIpAddress(val *string) {
+func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) SetAssociateCarrierIpAddress(val *string) {
 	if err := j.validateSetAssociateCarrierIpAddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -641,7 +640,7 @@ func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetAssociateCa
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetAssociatePublicIpAddress(val *string) {
+func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) SetAssociatePublicIpAddress(val *string) {
 	if err := j.validateSetAssociatePublicIpAddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -652,7 +651,7 @@ func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetAssociatePu
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -663,7 +662,7 @@ func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -674,7 +673,7 @@ func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetDeleteOnTermination(val *string) {
+func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) SetDeleteOnTermination(val *string) {
 	if err := j.validateSetDeleteOnTerminationParameters(val); err != nil {
 		panic(err)
 	}
@@ -685,7 +684,7 @@ func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetDeleteOnTer
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -696,7 +695,7 @@ func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetDescription
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetDeviceIndex(val *float64) {
+func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) SetDeviceIndex(val *float64) {
 	if err := j.validateSetDeviceIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -707,7 +706,7 @@ func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetDeviceIndex
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetInterfaceType(val *string) {
+func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) SetInterfaceType(val *string) {
 	if err := j.validateSetInterfaceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -718,7 +717,7 @@ func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetInterfaceTy
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -729,7 +728,7 @@ func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetIpv4AddressCount(val *float64) {
+func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) SetIpv4AddressCount(val *float64) {
 	if err := j.validateSetIpv4AddressCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -740,7 +739,7 @@ func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetIpv4Address
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetIpv4Addresses(val *[]*string) {
+func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) SetIpv4Addresses(val *[]*string) {
 	if err := j.validateSetIpv4AddressesParameters(val); err != nil {
 		panic(err)
 	}
@@ -751,7 +750,7 @@ func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetIpv4Address
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetIpv4PrefixCount(val *float64) {
+func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) SetIpv4PrefixCount(val *float64) {
 	if err := j.validateSetIpv4PrefixCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -762,7 +761,7 @@ func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetIpv4PrefixC
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetIpv4Prefixes(val *[]*string) {
+func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) SetIpv4Prefixes(val *[]*string) {
 	if err := j.validateSetIpv4PrefixesParameters(val); err != nil {
 		panic(err)
 	}
@@ -773,7 +772,7 @@ func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetIpv4Prefixe
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetIpv6AddressCount(val *float64) {
+func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) SetIpv6AddressCount(val *float64) {
 	if err := j.validateSetIpv6AddressCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -784,7 +783,7 @@ func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetIpv6Address
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetIpv6Addresses(val *[]*string) {
+func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) SetIpv6Addresses(val *[]*string) {
 	if err := j.validateSetIpv6AddressesParameters(val); err != nil {
 		panic(err)
 	}
@@ -795,7 +794,7 @@ func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetIpv6Address
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetIpv6PrefixCount(val *float64) {
+func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) SetIpv6PrefixCount(val *float64) {
 	if err := j.validateSetIpv6PrefixCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -806,7 +805,7 @@ func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetIpv6PrefixC
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetIpv6Prefixes(val *[]*string) {
+func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) SetIpv6Prefixes(val *[]*string) {
 	if err := j.validateSetIpv6PrefixesParameters(val); err != nil {
 		panic(err)
 	}
@@ -817,7 +816,7 @@ func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetIpv6Prefixe
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetNetworkCardIndex(val *float64) {
+func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) SetNetworkCardIndex(val *float64) {
 	if err := j.validateSetNetworkCardIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -828,7 +827,7 @@ func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetNetworkCard
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetNetworkInterfaceId(val *string) {
+func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) SetNetworkInterfaceId(val *string) {
 	if err := j.validateSetNetworkInterfaceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -839,7 +838,7 @@ func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetNetworkInte
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetPrivateIpAddress(val *string) {
+func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) SetPrivateIpAddress(val *string) {
 	if err := j.validateSetPrivateIpAddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -850,7 +849,7 @@ func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetPrivateIpAd
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetSecurityGroups(val *[]*string) {
+func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) SetSecurityGroups(val *[]*string) {
 	if err := j.validateSetSecurityGroupsParameters(val); err != nil {
 		panic(err)
 	}
@@ -861,7 +860,7 @@ func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetSecurityGro
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetSubnetId(val *string) {
+func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) SetSubnetId(val *string) {
 	if err := j.validateSetSubnetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -872,7 +871,7 @@ func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetSubnetId(va
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -883,7 +882,7 @@ func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -907,16 +906,16 @@ func (l *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (l *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -932,7 +931,7 @@ func (l *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -948,7 +947,7 @@ func (l *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -964,7 +963,7 @@ func (l *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -980,7 +979,7 @@ func (l *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -996,7 +995,7 @@ func (l *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) GetNumberList
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1012,7 +1011,7 @@ func (l *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1028,7 +1027,7 @@ func (l *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1044,7 +1043,7 @@ func (l *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1073,7 +1072,7 @@ func (l *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) Interpolation
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -1232,16 +1231,16 @@ func (l *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) ResetSubnetId
 	)
 }
 
-func (l *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1260,4 +1259,3 @@ func (l *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) ToString() *s
 
 	return returns
 }
-

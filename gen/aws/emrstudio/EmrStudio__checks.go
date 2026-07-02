@@ -19,7 +19,7 @@ func (e *jsiiProxy_EmrStudio) validateAddMoveTargetParameters(moveTarget *string
 	return nil
 }
 
-func (e *jsiiProxy_EmrStudio) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_EmrStudio) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (e *jsiiProxy_EmrStudio) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EmrStudio) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (e *jsiiProxy_EmrStudio) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateEmrStudio_GenerateConfigForImportParameters(scope constructs.Constr
 	return nil
 }
 
-func validateEmrStudio_IsConstructParameters(x interface{}) error {
+func validateEmrStudio_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateEmrStudio_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateEmrStudio_IsTerraformElementParameters(x interface{}) error {
+func validateEmrStudio_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateEmrStudio_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateEmrStudio_IsTerraformResourceParameters(x interface{}) error {
+func validateEmrStudio_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_EmrStudio) validateSetAuthModeParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_EmrStudio) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_EmrStudio) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_EmrStudio) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_EmrStudio) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_EmrStudio) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -406,7 +406,7 @@ func (j *jsiiProxy_EmrStudio) validateSetNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_EmrStudio) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_EmrStudio) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -526,4 +526,3 @@ func validateNewEmrStudioParameters(scope constructs.Construct, id *string, conf
 
 	return nil
 }
-

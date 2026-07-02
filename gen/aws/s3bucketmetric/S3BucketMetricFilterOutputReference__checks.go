@@ -98,7 +98,7 @@ func (s *jsiiProxy_S3BucketMetricFilterOutputReference) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketMetricFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketMetricFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewS3BucketMetricFilterOutputReferenceParameters(terraformResource 
 
 	return nil
 }
-

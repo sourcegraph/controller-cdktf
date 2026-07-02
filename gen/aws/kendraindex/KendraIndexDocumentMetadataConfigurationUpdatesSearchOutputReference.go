@@ -12,9 +12,9 @@ type KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference interf
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,22 +25,22 @@ type KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference interf
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Displayable() interface{}
-	SetDisplayable(val interface{})
-	DisplayableInput() interface{}
-	Facetable() interface{}
-	SetFacetable(val interface{})
-	FacetableInput() interface{}
+	Displayable() any
+	SetDisplayable(val any)
+	DisplayableInput() any
+	Facetable() any
+	SetFacetable(val any)
+	FacetableInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *KendraIndexDocumentMetadataConfigurationUpdatesSearch
 	SetInternalValue(val *KendraIndexDocumentMetadataConfigurationUpdatesSearch)
-	Searchable() interface{}
-	SetSearchable(val interface{})
-	SearchableInput() interface{}
-	Sortable() interface{}
-	SetSortable(val interface{})
-	SortableInput() interface{}
+	Searchable() any
+	SetSearchable(val any)
+	SearchableInput() any
+	Sortable() any
+	SetSortable(val any)
+	SortableInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -52,7 +52,7 @@ type KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference interf
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference interf
 	ResetSortable()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputRefere
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -122,8 +122,8 @@ func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) Displayable() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) Displayable() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"displayable",
@@ -132,8 +132,8 @@ func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) DisplayableInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) DisplayableInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"displayableInput",
@@ -142,8 +142,8 @@ func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) Facetable() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) Facetable() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"facetable",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) FacetableInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) FacetableInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"facetableInput",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) Searchable() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) Searchable() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"searchable",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) SearchableInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) SearchableInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"searchableInput",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) Sortable() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) Sortable() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sortable",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) SortableInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) SortableInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sortableInput",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputRe
 	return returns
 }
 
-
 func NewKendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewKendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference(ter
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kendraIndex.KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewKendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference_Ove
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kendraIndex.KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		k,
 	)
 }
 
-func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputRe
 	)
 }
 
-func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputRe
 	)
 }
 
-func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference)SetDisplayable(val interface{}) {
+func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) SetDisplayable(val any) {
 	if err := j.validateSetDisplayableParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputRe
 	)
 }
 
-func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference)SetFacetable(val interface{}) {
+func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) SetFacetable(val any) {
 	if err := j.validateSetFacetableParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputRe
 	)
 }
 
-func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference)SetInternalValue(val *KendraIndexDocumentMetadataConfigurationUpdatesSearch) {
+func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) SetInternalValue(val *KendraIndexDocumentMetadataConfigurationUpdatesSearch) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputRe
 	)
 }
 
-func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference)SetSearchable(val interface{}) {
+func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) SetSearchable(val any) {
 	if err := j.validateSetSearchableParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputRe
 	)
 }
 
-func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference)SetSortable(val interface{}) {
+func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) SetSortable(val any) {
 	if err := j.validateSetSortableParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputRe
 	)
 }
 
-func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputRe
 	)
 }
 
-func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,16 +381,16 @@ func (k *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputRe
 	return returns
 }
 
-func (k *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (k *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (k *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputRe
 	_jsii_.Invoke(
 		k,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (k *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputRe
 	_jsii_.Invoke(
 		k,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (k *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputRe
 	_jsii_.Invoke(
 		k,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (k *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputRe
 	_jsii_.Invoke(
 		k,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (k *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputRe
 	_jsii_.Invoke(
 		k,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (k *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputRe
 	_jsii_.Invoke(
 		k,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (k *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputRe
 	_jsii_.Invoke(
 		k,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (k *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputRe
 	_jsii_.Invoke(
 		k,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (k *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputRe
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -587,16 +586,16 @@ func (k *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputRe
 	)
 }
 
-func (k *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (k *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := k.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		k,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (k *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputRe
 
 	return returns
 }
-

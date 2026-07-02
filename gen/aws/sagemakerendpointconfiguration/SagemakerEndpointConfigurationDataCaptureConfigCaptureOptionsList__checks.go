@@ -34,7 +34,7 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationDataCaptureConfigCaptureOptions
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfigurationDataCaptureConfigCaptureOptionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerEndpointConfigurationDataCaptureConfigCaptureOptionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSagemakerEndpointConfigurationDataCaptureConfigCaptureOptionsLis
 
 	return nil
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_LambdaFunctionSnapStartOutputReference) validateSetApplyOnPar
 	return nil
 }
 
-func (j *jsiiProxy_LambdaFunctionSnapStartOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LambdaFunctionSnapStartOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewLambdaFunctionSnapStartOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

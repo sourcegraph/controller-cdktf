@@ -90,7 +90,7 @@ func (m *jsiiProxy_MedialiveChannelDestinationsOutputReference) validateInterpol
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveChannelDestinationsOutputReference) validatePutMediaPackageSettingsParameters(value interface{}) error {
+func (m *jsiiProxy_MedialiveChannelDestinationsOutputReference) validatePutMediaPackageSettingsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -132,7 +132,7 @@ func (m *jsiiProxy_MedialiveChannelDestinationsOutputReference) validatePutMulti
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveChannelDestinationsOutputReference) validatePutSettingsParameters(value interface{}) error {
+func (m *jsiiProxy_MedialiveChannelDestinationsOutputReference) validatePutSettingsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -171,7 +171,7 @@ func (m *jsiiProxy_MedialiveChannelDestinationsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveChannelDestinationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MedialiveChannelDestinationsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -244,7 +244,7 @@ func (j *jsiiProxy_MedialiveChannelDestinationsOutputReference) validateSetIdPar
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveChannelDestinationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MedialiveChannelDestinationsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -303,4 +303,3 @@ func validateNewMedialiveChannelDestinationsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

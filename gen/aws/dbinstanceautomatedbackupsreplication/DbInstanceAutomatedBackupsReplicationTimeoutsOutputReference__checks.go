@@ -98,7 +98,7 @@ func (d *jsiiProxy_DbInstanceAutomatedBackupsReplicationTimeoutsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_DbInstanceAutomatedBackupsReplicationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DbInstanceAutomatedBackupsReplicationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DbInstanceAutomatedBackupsReplicationTimeoutsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_DbInstanceAutomatedBackupsReplicationTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DbInstanceAutomatedBackupsReplicationTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewDbInstanceAutomatedBackupsReplicationTimeoutsOutputReferencePara
 
 	return nil
 }
-

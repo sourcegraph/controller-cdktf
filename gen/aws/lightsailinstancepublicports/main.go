@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPorts",
-		reflect.TypeOf((*LightsailInstancePublicPorts)(nil)).Elem(),
+		reflect.TypeFor[LightsailInstancePublicPorts](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LightsailInstancePublicPorts{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -69,15 +69,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsConfig",
-		reflect.TypeOf((*LightsailInstancePublicPortsConfig)(nil)).Elem(),
+		reflect.TypeFor[LightsailInstancePublicPortsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfo",
-		reflect.TypeOf((*LightsailInstancePublicPortsPortInfo)(nil)).Elem(),
+		reflect.TypeFor[LightsailInstancePublicPortsPortInfo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfoList",
-		reflect.TypeOf((*LightsailInstancePublicPortsPortInfoList)(nil)).Elem(),
+		reflect.TypeFor[LightsailInstancePublicPortsPortInfoList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -91,7 +91,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LightsailInstancePublicPortsPortInfoList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -99,7 +99,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfoOutputReference",
-		reflect.TypeOf((*LightsailInstancePublicPortsPortInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LightsailInstancePublicPortsPortInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidrListAliases", GoGetter: "CidrListAliases"},
 			_jsii_.MemberProperty{JsiiProperty: "cidrListAliasesInput", GoGetter: "CidrListAliasesInput"},
@@ -138,7 +138,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "toPortInput", GoGetter: "ToPortInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

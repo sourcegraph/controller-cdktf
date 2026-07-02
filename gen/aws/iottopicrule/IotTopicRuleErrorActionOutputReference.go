@@ -18,9 +18,9 @@ type IotTopicRuleErrorActionOutputReference interface {
 	CloudwatchMetricInput() *IotTopicRuleErrorActionCloudwatchMetric
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -78,7 +78,7 @@ type IotTopicRuleErrorActionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -139,7 +139,7 @@ type IotTopicRuleErrorActionOutputReference interface {
 	ResetTimestream()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -212,8 +212,8 @@ func (j *jsiiProxy_IotTopicRuleErrorActionOutputReference) CloudwatchMetricInput
 	return returns
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IotTopicRuleErrorActionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -602,7 +602,6 @@ func (j *jsiiProxy_IotTopicRuleErrorActionOutputReference) TimestreamInput() *Io
 	return returns
 }
 
-
 func NewIotTopicRuleErrorActionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IotTopicRuleErrorActionOutputReference {
 	_init_.Initialize()
 
@@ -613,7 +612,7 @@ func NewIotTopicRuleErrorActionOutputReference(terraformResource cdktf.IInterpol
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -625,12 +624,12 @@ func NewIotTopicRuleErrorActionOutputReference_Override(i IotTopicRuleErrorActio
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IotTopicRuleErrorActionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -641,7 +640,7 @@ func (j *jsiiProxy_IotTopicRuleErrorActionOutputReference)SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IotTopicRuleErrorActionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -652,7 +651,7 @@ func (j *jsiiProxy_IotTopicRuleErrorActionOutputReference)SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionOutputReference)SetInternalValue(val *IotTopicRuleErrorAction) {
+func (j *jsiiProxy_IotTopicRuleErrorActionOutputReference) SetInternalValue(val *IotTopicRuleErrorAction) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -663,7 +662,7 @@ func (j *jsiiProxy_IotTopicRuleErrorActionOutputReference)SetInternalValue(val *
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IotTopicRuleErrorActionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -674,7 +673,7 @@ func (j *jsiiProxy_IotTopicRuleErrorActionOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IotTopicRuleErrorActionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -698,16 +697,16 @@ func (i *jsiiProxy_IotTopicRuleErrorActionOutputReference) ComputeFqn() *string 
 	return returns
 }
 
-func (i *jsiiProxy_IotTopicRuleErrorActionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IotTopicRuleErrorActionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionOutputReference) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -739,7 +738,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionOutputReference) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -755,7 +754,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionOutputReference) GetListAttribute(terr
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -771,7 +770,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionOutputReference) GetNumberAttribute(te
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -787,7 +786,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionOutputReference) GetNumberListAttribut
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -803,7 +802,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionOutputReference) GetNumberMapAttribute
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -819,7 +818,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionOutputReference) GetStringAttribute(te
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -835,7 +834,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionOutputReference) GetStringMapAttribute
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -864,7 +863,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionOutputReference) InterpolationForAttri
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -878,7 +877,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionOutputReference) PutCloudwatchAlarm(va
 	_jsii_.InvokeVoid(
 		i,
 		"putCloudwatchAlarm",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -889,7 +888,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionOutputReference) PutCloudwatchLogs(val
 	_jsii_.InvokeVoid(
 		i,
 		"putCloudwatchLogs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -900,7 +899,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionOutputReference) PutCloudwatchMetric(v
 	_jsii_.InvokeVoid(
 		i,
 		"putCloudwatchMetric",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -911,7 +910,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionOutputReference) PutDynamodb(value *Io
 	_jsii_.InvokeVoid(
 		i,
 		"putDynamodb",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -922,7 +921,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionOutputReference) PutDynamodbv2(value *
 	_jsii_.InvokeVoid(
 		i,
 		"putDynamodbv2",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -933,7 +932,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionOutputReference) PutElasticsearch(valu
 	_jsii_.InvokeVoid(
 		i,
 		"putElasticsearch",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -944,7 +943,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionOutputReference) PutFirehose(value *Io
 	_jsii_.InvokeVoid(
 		i,
 		"putFirehose",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -955,7 +954,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionOutputReference) PutHttp(value *IotTop
 	_jsii_.InvokeVoid(
 		i,
 		"putHttp",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -966,7 +965,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionOutputReference) PutIotAnalytics(value
 	_jsii_.InvokeVoid(
 		i,
 		"putIotAnalytics",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -977,7 +976,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionOutputReference) PutIotEvents(value *I
 	_jsii_.InvokeVoid(
 		i,
 		"putIotEvents",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -988,7 +987,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionOutputReference) PutKafka(value *IotTo
 	_jsii_.InvokeVoid(
 		i,
 		"putKafka",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -999,7 +998,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionOutputReference) PutKinesis(value *Iot
 	_jsii_.InvokeVoid(
 		i,
 		"putKinesis",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1010,7 +1009,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionOutputReference) PutLambda(value *IotT
 	_jsii_.InvokeVoid(
 		i,
 		"putLambda",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1021,7 +1020,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionOutputReference) PutRepublish(value *I
 	_jsii_.InvokeVoid(
 		i,
 		"putRepublish",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1032,7 +1031,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionOutputReference) PutS3(value *IotTopic
 	_jsii_.InvokeVoid(
 		i,
 		"putS3",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1043,7 +1042,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionOutputReference) PutSns(value *IotTopi
 	_jsii_.InvokeVoid(
 		i,
 		"putSns",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1054,7 +1053,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionOutputReference) PutSqs(value *IotTopi
 	_jsii_.InvokeVoid(
 		i,
 		"putSqs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1065,7 +1064,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionOutputReference) PutStepFunctions(valu
 	_jsii_.InvokeVoid(
 		i,
 		"putStepFunctions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1076,7 +1075,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionOutputReference) PutTimestream(value *
 	_jsii_.InvokeVoid(
 		i,
 		"putTimestream",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1232,16 +1231,16 @@ func (i *jsiiProxy_IotTopicRuleErrorActionOutputReference) ResetTimestream() {
 	)
 }
 
-func (i *jsiiProxy_IotTopicRuleErrorActionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IotTopicRuleErrorActionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1260,4 +1259,3 @@ func (i *jsiiProxy_IotTopicRuleErrorActionOutputReference) ToString() *string {
 
 	return returns
 }
-

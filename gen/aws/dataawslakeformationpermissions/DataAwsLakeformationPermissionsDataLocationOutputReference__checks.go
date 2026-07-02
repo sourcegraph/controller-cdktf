@@ -114,7 +114,7 @@ func (j *jsiiProxy_DataAwsLakeformationPermissionsDataLocationOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLakeformationPermissionsDataLocationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsLakeformationPermissionsDataLocationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDataAwsLakeformationPermissionsDataLocationOutputReferenceParame
 
 	return nil
 }
-

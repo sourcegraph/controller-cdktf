@@ -98,7 +98,7 @@ func (g *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) validateSetComplexO
 	return nil
 }
 
-func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) validateSetPathPara
 	return nil
 }
 
-func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) validateSetScanAllParameters(val interface{}) error {
+func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) validateSetScanAllParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewGlueCrawlerDynamodbTargetOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

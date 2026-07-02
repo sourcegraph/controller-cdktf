@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApiGatewayStageAccessLogSettingsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_ApiGatewayStageAccessLogSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApiGatewayStageAccessLogSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewApiGatewayStageAccessLogSettingsOutputReferenceParameters(terraf
 
 	return nil
 }
-

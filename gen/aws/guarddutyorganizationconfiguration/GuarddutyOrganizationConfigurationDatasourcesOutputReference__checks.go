@@ -131,7 +131,7 @@ func (g *jsiiProxy_GuarddutyOrganizationConfigurationDatasourcesOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GuarddutyOrganizationConfigurationDatasourcesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GuarddutyOrganizationConfigurationDatasourcesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -231,4 +231,3 @@ func validateNewGuarddutyOrganizationConfigurationDatasourcesOutputReferencePara
 
 	return nil
 }
-

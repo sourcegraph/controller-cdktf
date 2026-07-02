@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsPortSet
 	return nil
 }
 
-func (j *jsiiProxy_NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsPortSetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsPortSetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewNetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsPortSetOut
 
 	return nil
 }
-

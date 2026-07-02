@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack",
-		reflect.TypeOf((*DataAwsCloudformationStack)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCloudformationStack](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "capabilities", GoGetter: "Capabilities"},
@@ -62,7 +62,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsCloudformationStack{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -70,6 +70,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStackConfig",
-		reflect.TypeOf((*DataAwsCloudformationStackConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCloudformationStackConfig](),
 	)
 }

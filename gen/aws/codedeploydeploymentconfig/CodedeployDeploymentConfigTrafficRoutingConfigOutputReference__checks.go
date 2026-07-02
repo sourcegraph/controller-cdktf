@@ -120,7 +120,7 @@ func (c *jsiiProxy_CodedeployDeploymentConfigTrafficRoutingConfigOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_CodedeployDeploymentConfigTrafficRoutingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CodedeployDeploymentConfigTrafficRoutingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -228,4 +228,3 @@ func validateNewCodedeployDeploymentConfigTrafficRoutingConfigOutputReferencePar
 
 	return nil
 }
-

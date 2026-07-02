@@ -12,9 +12,9 @@ type Ec2FleetTargetCapacitySpecificationOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -55,7 +55,7 @@ type Ec2FleetTargetCapacitySpecificationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -81,7 +81,7 @@ type Ec2FleetTargetCapacitySpecificationOutputReference interface {
 	ResetTargetCapacityUnitType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -94,8 +94,8 @@ type jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -264,7 +264,6 @@ func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) TotalTarg
 	return returns
 }
 
-
 func NewEc2FleetTargetCapacitySpecificationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) Ec2FleetTargetCapacitySpecificationOutputReference {
 	_init_.Initialize()
 
@@ -275,7 +274,7 @@ func NewEc2FleetTargetCapacitySpecificationOutputReference(terraformResource cdk
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ec2Fleet.Ec2FleetTargetCapacitySpecificationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -287,12 +286,12 @@ func NewEc2FleetTargetCapacitySpecificationOutputReference_Override(e Ec2FleetTa
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ec2Fleet.Ec2FleetTargetCapacitySpecificationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		e,
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference)SetDefaultTargetCapacityType(val *string) {
+func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) SetDefaultTargetCapacityType(val *string) {
 	if err := j.validateSetDefaultTargetCapacityTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference)SetDefault
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference)SetInternalValue(val *Ec2FleetTargetCapacitySpecification) {
+func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) SetInternalValue(val *Ec2FleetTargetCapacitySpecification) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference)SetInterna
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference)SetOnDemandTargetCapacity(val *float64) {
+func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) SetOnDemandTargetCapacity(val *float64) {
 	if err := j.validateSetOnDemandTargetCapacityParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference)SetOnDeman
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference)SetSpotTargetCapacity(val *float64) {
+func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) SetSpotTargetCapacity(val *float64) {
 	if err := j.validateSetSpotTargetCapacityParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference)SetSpotTar
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference)SetTargetCapacityUnitType(val *string) {
+func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) SetTargetCapacityUnitType(val *string) {
 	if err := j.validateSetTargetCapacityUnitTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -369,7 +368,7 @@ func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference)SetTargetC
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,7 +379,7 @@ func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -391,7 +390,7 @@ func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference)SetTotalTargetCapacity(val *float64) {
+func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) SetTotalTargetCapacity(val *float64) {
 	if err := j.validateSetTotalTargetCapacityParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,16 +414,16 @@ func (e *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) ComputeFq
 	return returns
 }
 
-func (e *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -440,7 +439,7 @@ func (e *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) GetBoolea
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,7 +455,7 @@ func (e *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) GetBoolea
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -472,7 +471,7 @@ func (e *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) GetListAt
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -488,7 +487,7 @@ func (e *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) GetNumber
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -504,7 +503,7 @@ func (e *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) GetNumber
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -520,7 +519,7 @@ func (e *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) GetNumber
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -536,7 +535,7 @@ func (e *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) GetString
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -552,7 +551,7 @@ func (e *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) GetString
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func (e *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) Interpola
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -612,16 +611,16 @@ func (e *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) ResetTarg
 	)
 }
 
-func (e *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -640,4 +639,3 @@ func (e *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) ToString(
 
 	return returns
 }
-

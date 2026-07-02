@@ -106,7 +106,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputR
 	return nil
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputR
 	return nil
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewSecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputRefe
 
 	return nil
 }
-

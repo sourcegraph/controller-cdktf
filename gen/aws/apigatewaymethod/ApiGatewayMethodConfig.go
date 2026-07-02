@@ -6,9 +6,9 @@ import (
 
 type ApiGatewayMethodConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ApiGatewayMethodConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/api_gateway_method#authorization ApiGatewayMethod#authorization}.
 	Authorization *string `field:"required" json:"authorization" yaml:"authorization"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/api_gateway_method#http_method ApiGatewayMethod#http_method}.
@@ -28,7 +28,7 @@ type ApiGatewayMethodConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/api_gateway_method#rest_api_id ApiGatewayMethod#rest_api_id}.
 	RestApiId *string `field:"required" json:"restApiId" yaml:"restApiId"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/api_gateway_method#api_key_required ApiGatewayMethod#api_key_required}.
-	ApiKeyRequired interface{} `field:"optional" json:"apiKeyRequired" yaml:"apiKeyRequired"`
+	ApiKeyRequired any `field:"optional" json:"apiKeyRequired" yaml:"apiKeyRequired"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/api_gateway_method#authorization_scopes ApiGatewayMethod#authorization_scopes}.
 	AuthorizationScopes *[]*string `field:"optional" json:"authorizationScopes" yaml:"authorizationScopes"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/api_gateway_method#authorizer_id ApiGatewayMethod#authorizer_id}.
@@ -43,8 +43,7 @@ type ApiGatewayMethodConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/api_gateway_method#request_models ApiGatewayMethod#request_models}.
 	RequestModels *map[string]*string `field:"optional" json:"requestModels" yaml:"requestModels"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/api_gateway_method#request_parameters ApiGatewayMethod#request_parameters}.
-	RequestParameters *map[string]interface{} `field:"optional" json:"requestParameters" yaml:"requestParameters"`
+	RequestParameters *map[string]any `field:"optional" json:"requestParameters" yaml:"requestParameters"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/api_gateway_method#request_validator_id ApiGatewayMethod#request_validator_id}.
 	RequestValidatorId *string `field:"optional" json:"requestValidatorId" yaml:"requestValidatorId"`
 }
-

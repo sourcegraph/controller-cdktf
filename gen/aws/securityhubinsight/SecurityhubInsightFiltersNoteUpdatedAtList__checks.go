@@ -34,7 +34,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersNoteUpdatedAtList) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersNoteUpdatedAtList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityhubInsightFiltersNoteUpdatedAtList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSecurityhubInsightFiltersNoteUpdatedAtListParameters(terraformRe
 
 	return nil
 }
-

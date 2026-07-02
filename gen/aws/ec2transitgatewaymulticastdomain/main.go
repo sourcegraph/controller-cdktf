@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2TransitGatewayMulticastDomain.Ec2TransitGatewayMulticastDomain",
-		reflect.TypeOf((*Ec2TransitGatewayMulticastDomain)(nil)).Elem(),
+		reflect.TypeFor[Ec2TransitGatewayMulticastDomain](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,7 +79,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "transitGatewayId", GoGetter: "TransitGatewayId"},
 			_jsii_.MemberProperty{JsiiProperty: "transitGatewayIdInput", GoGetter: "TransitGatewayIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2TransitGatewayMulticastDomain{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -87,15 +87,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2TransitGatewayMulticastDomain.Ec2TransitGatewayMulticastDomainConfig",
-		reflect.TypeOf((*Ec2TransitGatewayMulticastDomainConfig)(nil)).Elem(),
+		reflect.TypeFor[Ec2TransitGatewayMulticastDomainConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2TransitGatewayMulticastDomain.Ec2TransitGatewayMulticastDomainTimeouts",
-		reflect.TypeOf((*Ec2TransitGatewayMulticastDomainTimeouts)(nil)).Elem(),
+		reflect.TypeFor[Ec2TransitGatewayMulticastDomainTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2TransitGatewayMulticastDomain.Ec2TransitGatewayMulticastDomainTimeoutsOutputReference",
-		reflect.TypeOf((*Ec2TransitGatewayMulticastDomainTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2TransitGatewayMulticastDomainTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -125,7 +125,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2TransitGatewayMulticastDomainTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -34,7 +34,7 @@ func (g *jsiiProxy_GameliftFleetEc2InboundPermissionList) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_GameliftFleetEc2InboundPermissionList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GameliftFleetEc2InboundPermissionList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGameliftFleetEc2InboundPermissionListParameters(terraformResourc
 
 	return nil
 }
-

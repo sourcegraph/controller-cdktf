@@ -98,7 +98,7 @@ func (c *jsiiProxy_CodeartifactRepositoryExternalConnectionsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_CodeartifactRepositoryExternalConnectionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CodeartifactRepositoryExternalConnectionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCodeartifactRepositoryExternalConnectionsOutputReferenceParamete
 
 	return nil
 }
-

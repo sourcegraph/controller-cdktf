@@ -16,11 +16,11 @@ type DataAwsKendraQuerySuggestionsBlockList interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -59,7 +59,7 @@ type DataAwsKendraQuerySuggestionsBlockList interface {
 	SetQuerySuggestionsBlockListId(val *string)
 	QuerySuggestionsBlockListIdInput() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RoleArn() *string
 	SourceS3Path() DataAwsKendraQuerySuggestionsBlockListSourceS3PathList
 	Status() *string
@@ -69,14 +69,14 @@ type DataAwsKendraQuerySuggestionsBlockList interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	UpdatedAt() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,18 +103,18 @@ type DataAwsKendraQuerySuggestionsBlockList interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTags()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsKendraQuerySuggestionsBlockList
@@ -142,8 +142,8 @@ func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) CdktfStack() cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) ConstructNodeMetadata
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -352,8 +352,8 @@ func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) QuerySuggestionsBlock
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -422,8 +422,8 @@ func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) TerraformGeneratorMet
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -452,7 +452,6 @@ func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) UpdatedAt() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/kendra_query_suggestions_block_list aws_kendra_query_suggestions_block_list} Data Source.
 func NewDataAwsKendraQuerySuggestionsBlockList(scope constructs.Construct, id *string, config *DataAwsKendraQuerySuggestionsBlockListConfig) DataAwsKendraQuerySuggestionsBlockList {
 	_init_.Initialize()
@@ -464,7 +463,7 @@ func NewDataAwsKendraQuerySuggestionsBlockList(scope constructs.Construct, id *s
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsKendraQuerySuggestionsBlockList.DataAwsKendraQuerySuggestionsBlockList",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -477,12 +476,12 @@ func NewDataAwsKendraQuerySuggestionsBlockList_Override(d DataAwsKendraQuerySugg
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsKendraQuerySuggestionsBlockList.DataAwsKendraQuerySuggestionsBlockList",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -493,7 +492,7 @@ func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList)SetCount(val interface
 	)
 }
 
-func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -501,7 +500,7 @@ func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList)SetDependsOn(val *[]*s
 	)
 }
 
-func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -509,7 +508,7 @@ func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList)SetForEach(val cdktf.I
 	)
 }
 
-func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList)SetId(val *string) {
+func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -520,7 +519,7 @@ func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList)SetIndexId(val *string) {
+func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) SetIndexId(val *string) {
 	if err := j.validateSetIndexIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -531,7 +530,7 @@ func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList)SetIndexId(val *string
 	)
 }
 
-func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -542,7 +541,7 @@ func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList)SetLifecycle(val *cdkt
 	)
 }
 
-func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -550,7 +549,7 @@ func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList)SetProvider(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList)SetQuerySuggestionsBlockListId(val *string) {
+func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) SetQuerySuggestionsBlockListId(val *string) {
 	if err := j.validateSetQuerySuggestionsBlockListIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -561,7 +560,7 @@ func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList)SetQuerySuggestionsBlo
 	)
 }
 
-func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -584,7 +583,7 @@ func DataAwsKendraQuerySuggestionsBlockList_GenerateConfigForImport(scope constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsKendraQuerySuggestionsBlockList.DataAwsKendraQuerySuggestionsBlockList",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -608,7 +607,7 @@ func DataAwsKendraQuerySuggestionsBlockList_GenerateConfigForImport(scope constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsKendraQuerySuggestionsBlockList_IsConstruct(x interface{}) *bool {
+func DataAwsKendraQuerySuggestionsBlockList_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsKendraQuerySuggestionsBlockList_IsConstructParameters(x); err != nil {
@@ -619,7 +618,7 @@ func DataAwsKendraQuerySuggestionsBlockList_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsKendraQuerySuggestionsBlockList.DataAwsKendraQuerySuggestionsBlockList",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func DataAwsKendraQuerySuggestionsBlockList_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsKendraQuerySuggestionsBlockList_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsKendraQuerySuggestionsBlockList_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsKendraQuerySuggestionsBlockList_IsTerraformDataSourceParameters(x); err != nil {
@@ -638,7 +637,7 @@ func DataAwsKendraQuerySuggestionsBlockList_IsTerraformDataSource(x interface{})
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsKendraQuerySuggestionsBlockList.DataAwsKendraQuerySuggestionsBlockList",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func DataAwsKendraQuerySuggestionsBlockList_IsTerraformDataSource(x interface{})
 }
 
 // Experimental.
-func DataAwsKendraQuerySuggestionsBlockList_IsTerraformElement(x interface{}) *bool {
+func DataAwsKendraQuerySuggestionsBlockList_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsKendraQuerySuggestionsBlockList_IsTerraformElementParameters(x); err != nil {
@@ -657,7 +656,7 @@ func DataAwsKendraQuerySuggestionsBlockList_IsTerraformElement(x interface{}) *b
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsKendraQuerySuggestionsBlockList.DataAwsKendraQuerySuggestionsBlockList",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -675,27 +674,27 @@ func DataAwsKendraQuerySuggestionsBlockList_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -711,7 +710,7 @@ func (d *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func (d *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func (d *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) GetListAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func (d *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) GetNumberAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func (d *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) GetNumberListAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -791,7 +790,7 @@ func (d *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) GetNumberMapAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -807,7 +806,7 @@ func (d *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) GetStringAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,7 +822,7 @@ func (d *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) GetStringMapAttribute
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -839,7 +838,7 @@ func (d *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) InterpolationForAttri
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -853,7 +852,7 @@ func (d *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) OverrideLogicalId(new
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -881,8 +880,8 @@ func (d *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) ResetTags() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -894,8 +893,8 @@ func (d *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) SynthesizeAttributes(
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -907,8 +906,8 @@ func (d *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) SynthesizeHclAttribut
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -920,8 +919,8 @@ func (d *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) ToHclTerraform() inte
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -946,8 +945,8 @@ func (d *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -958,4 +957,3 @@ func (d *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) ToTerraform() interfa
 
 	return returns
 }
-

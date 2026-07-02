@@ -6,9 +6,9 @@ import (
 
 type DataAwsCeTagsConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DataAwsCeTagsConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// time_period block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/ce_tags#time_period DataAwsCeTags#time_period}
@@ -37,8 +37,7 @@ type DataAwsCeTagsConfig struct {
 	// sort_by block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/ce_tags#sort_by DataAwsCeTags#sort_by}
-	SortBy interface{} `field:"optional" json:"sortBy" yaml:"sortBy"`
+	SortBy any `field:"optional" json:"sortBy" yaml:"sortBy"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/ce_tags#tag_key DataAwsCeTags#tag_key}.
 	TagKey *string `field:"optional" json:"tagKey" yaml:"tagKey"`
 }
-

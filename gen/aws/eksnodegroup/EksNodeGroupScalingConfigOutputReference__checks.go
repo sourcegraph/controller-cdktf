@@ -98,7 +98,7 @@ func (e *jsiiProxy_EksNodeGroupScalingConfigOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_EksNodeGroupScalingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EksNodeGroupScalingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewEksNodeGroupScalingConfigOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

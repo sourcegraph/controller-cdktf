@@ -34,7 +34,7 @@ func (o *jsiiProxy_OpsworksNodejsAppLayerEbsVolumeList) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksNodejsAppLayerEbsVolumeList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksNodejsAppLayerEbsVolumeList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewOpsworksNodejsAppLayerEbsVolumeListParameters(terraformResource 
 
 	return nil
 }
-

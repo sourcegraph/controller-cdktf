@@ -1,6 +1,5 @@
 package autoscalinggroup
 
-
 type AutoscalingGroupInstanceRefreshPreferences struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/autoscaling_group#checkpoint_delay AutoscalingGroup#checkpoint_delay}.
 	CheckpointDelay *string `field:"optional" json:"checkpointDelay" yaml:"checkpointDelay"`
@@ -11,6 +10,5 @@ type AutoscalingGroupInstanceRefreshPreferences struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/autoscaling_group#min_healthy_percentage AutoscalingGroup#min_healthy_percentage}.
 	MinHealthyPercentage *float64 `field:"optional" json:"minHealthyPercentage" yaml:"minHealthyPercentage"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/autoscaling_group#skip_matching AutoscalingGroup#skip_matching}.
-	SkipMatching interface{} `field:"optional" json:"skipMatching" yaml:"skipMatching"`
+	SkipMatching any `field:"optional" json:"skipMatching" yaml:"skipMatching"`
 }
-

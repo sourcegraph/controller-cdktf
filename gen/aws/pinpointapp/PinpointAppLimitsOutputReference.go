@@ -12,9 +12,9 @@ type PinpointAppLimitsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -52,7 +52,7 @@ type PinpointAppLimitsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type PinpointAppLimitsOutputReference interface {
 	ResetTotal()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_PinpointAppLimitsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_PinpointAppLimitsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PinpointAppLimitsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_PinpointAppLimitsOutputReference) TotalInput() *float64 {
 	return returns
 }
 
-
 func NewPinpointAppLimitsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PinpointAppLimitsOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewPinpointAppLimitsOutputReference(terraformResource cdktf.IInterpolatingP
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.pinpointApp.PinpointAppLimitsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewPinpointAppLimitsOutputReference_Override(p PinpointAppLimitsOutputRefer
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.pinpointApp.PinpointAppLimitsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PinpointAppLimitsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PinpointAppLimitsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_PinpointAppLimitsOutputReference)SetComplexObjectIndex(val in
 	)
 }
 
-func (j *jsiiProxy_PinpointAppLimitsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PinpointAppLimitsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_PinpointAppLimitsOutputReference)SetComplexObjectIsFromSet(va
 	)
 }
 
-func (j *jsiiProxy_PinpointAppLimitsOutputReference)SetDaily(val *float64) {
+func (j *jsiiProxy_PinpointAppLimitsOutputReference) SetDaily(val *float64) {
 	if err := j.validateSetDailyParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_PinpointAppLimitsOutputReference)SetDaily(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PinpointAppLimitsOutputReference)SetInternalValue(val *PinpointAppLimits) {
+func (j *jsiiProxy_PinpointAppLimitsOutputReference) SetInternalValue(val *PinpointAppLimits) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_PinpointAppLimitsOutputReference)SetInternalValue(val *Pinpoi
 	)
 }
 
-func (j *jsiiProxy_PinpointAppLimitsOutputReference)SetMaximumDuration(val *float64) {
+func (j *jsiiProxy_PinpointAppLimitsOutputReference) SetMaximumDuration(val *float64) {
 	if err := j.validateSetMaximumDurationParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_PinpointAppLimitsOutputReference)SetMaximumDuration(val *floa
 	)
 }
 
-func (j *jsiiProxy_PinpointAppLimitsOutputReference)SetMessagesPerSecond(val *float64) {
+func (j *jsiiProxy_PinpointAppLimitsOutputReference) SetMessagesPerSecond(val *float64) {
 	if err := j.validateSetMessagesPerSecondParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_PinpointAppLimitsOutputReference)SetMessagesPerSecond(val *fl
 	)
 }
 
-func (j *jsiiProxy_PinpointAppLimitsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PinpointAppLimitsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_PinpointAppLimitsOutputReference)SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_PinpointAppLimitsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PinpointAppLimitsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_PinpointAppLimitsOutputReference)SetTerraformResource(val cdk
 	)
 }
 
-func (j *jsiiProxy_PinpointAppLimitsOutputReference)SetTotal(val *float64) {
+func (j *jsiiProxy_PinpointAppLimitsOutputReference) SetTotal(val *float64) {
 	if err := j.validateSetTotalParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,16 +381,16 @@ func (p *jsiiProxy_PinpointAppLimitsOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (p *jsiiProxy_PinpointAppLimitsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PinpointAppLimitsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (p *jsiiProxy_PinpointAppLimitsOutputReference) GetBooleanAttribute(terrafo
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (p *jsiiProxy_PinpointAppLimitsOutputReference) GetBooleanMapAttribute(terr
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (p *jsiiProxy_PinpointAppLimitsOutputReference) GetListAttribute(terraformA
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (p *jsiiProxy_PinpointAppLimitsOutputReference) GetNumberAttribute(terrafor
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (p *jsiiProxy_PinpointAppLimitsOutputReference) GetNumberListAttribute(terr
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (p *jsiiProxy_PinpointAppLimitsOutputReference) GetNumberMapAttribute(terra
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (p *jsiiProxy_PinpointAppLimitsOutputReference) GetStringAttribute(terrafor
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (p *jsiiProxy_PinpointAppLimitsOutputReference) GetStringMapAttribute(terra
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (p *jsiiProxy_PinpointAppLimitsOutputReference) InterpolationForAttribute(p
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -587,16 +586,16 @@ func (p *jsiiProxy_PinpointAppLimitsOutputReference) ResetTotal() {
 	)
 }
 
-func (p *jsiiProxy_PinpointAppLimitsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PinpointAppLimitsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (p *jsiiProxy_PinpointAppLimitsOutputReference) ToString() *string {
 
 	return returns
 }
-

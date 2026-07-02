@@ -12,9 +12,9 @@ type AlbTargetGroupStickinessOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -31,9 +31,9 @@ type AlbTargetGroupStickinessOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *AlbTargetGroupStickiness
@@ -52,7 +52,7 @@ type AlbTargetGroupStickinessOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type AlbTargetGroupStickinessOutputReference interface {
 	ResetEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -91,8 +91,8 @@ type jsiiProxy_AlbTargetGroupStickinessOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AlbTargetGroupStickinessOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlbTargetGroupStickinessOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -161,8 +161,8 @@ func (j *jsiiProxy_AlbTargetGroupStickinessOutputReference) CreationStack() *[]*
 	return returns
 }
 
-func (j *jsiiProxy_AlbTargetGroupStickinessOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlbTargetGroupStickinessOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -171,8 +171,8 @@ func (j *jsiiProxy_AlbTargetGroupStickinessOutputReference) Enabled() interface{
 	return returns
 }
 
-func (j *jsiiProxy_AlbTargetGroupStickinessOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlbTargetGroupStickinessOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -241,7 +241,6 @@ func (j *jsiiProxy_AlbTargetGroupStickinessOutputReference) TypeInput() *string 
 	return returns
 }
 
-
 func NewAlbTargetGroupStickinessOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AlbTargetGroupStickinessOutputReference {
 	_init_.Initialize()
 
@@ -252,7 +251,7 @@ func NewAlbTargetGroupStickinessOutputReference(terraformResource cdktf.IInterpo
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroupStickinessOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -264,12 +263,12 @@ func NewAlbTargetGroupStickinessOutputReference_Override(a AlbTargetGroupStickin
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroupStickinessOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AlbTargetGroupStickinessOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AlbTargetGroupStickinessOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,7 +279,7 @@ func (j *jsiiProxy_AlbTargetGroupStickinessOutputReference)SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_AlbTargetGroupStickinessOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AlbTargetGroupStickinessOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,7 +290,7 @@ func (j *jsiiProxy_AlbTargetGroupStickinessOutputReference)SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_AlbTargetGroupStickinessOutputReference)SetCookieDuration(val *float64) {
+func (j *jsiiProxy_AlbTargetGroupStickinessOutputReference) SetCookieDuration(val *float64) {
 	if err := j.validateSetCookieDurationParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_AlbTargetGroupStickinessOutputReference)SetCookieDuration(val
 	)
 }
 
-func (j *jsiiProxy_AlbTargetGroupStickinessOutputReference)SetCookieName(val *string) {
+func (j *jsiiProxy_AlbTargetGroupStickinessOutputReference) SetCookieName(val *string) {
 	if err := j.validateSetCookieNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_AlbTargetGroupStickinessOutputReference)SetCookieName(val *st
 	)
 }
 
-func (j *jsiiProxy_AlbTargetGroupStickinessOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_AlbTargetGroupStickinessOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_AlbTargetGroupStickinessOutputReference)SetEnabled(val interf
 	)
 }
 
-func (j *jsiiProxy_AlbTargetGroupStickinessOutputReference)SetInternalValue(val *AlbTargetGroupStickiness) {
+func (j *jsiiProxy_AlbTargetGroupStickinessOutputReference) SetInternalValue(val *AlbTargetGroupStickiness) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_AlbTargetGroupStickinessOutputReference)SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_AlbTargetGroupStickinessOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AlbTargetGroupStickinessOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,7 +345,7 @@ func (j *jsiiProxy_AlbTargetGroupStickinessOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_AlbTargetGroupStickinessOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AlbTargetGroupStickinessOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -357,7 +356,7 @@ func (j *jsiiProxy_AlbTargetGroupStickinessOutputReference)SetTerraformResource(
 	)
 }
 
-func (j *jsiiProxy_AlbTargetGroupStickinessOutputReference)SetType(val *string) {
+func (j *jsiiProxy_AlbTargetGroupStickinessOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,16 +380,16 @@ func (a *jsiiProxy_AlbTargetGroupStickinessOutputReference) ComputeFqn() *string
 	return returns
 }
 
-func (a *jsiiProxy_AlbTargetGroupStickinessOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AlbTargetGroupStickinessOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (a *jsiiProxy_AlbTargetGroupStickinessOutputReference) GetBooleanAttribute(
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (a *jsiiProxy_AlbTargetGroupStickinessOutputReference) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (a *jsiiProxy_AlbTargetGroupStickinessOutputReference) GetListAttribute(ter
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (a *jsiiProxy_AlbTargetGroupStickinessOutputReference) GetNumberAttribute(t
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (a *jsiiProxy_AlbTargetGroupStickinessOutputReference) GetNumberListAttribu
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (a *jsiiProxy_AlbTargetGroupStickinessOutputReference) GetNumberMapAttribut
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (a *jsiiProxy_AlbTargetGroupStickinessOutputReference) GetStringAttribute(t
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func (a *jsiiProxy_AlbTargetGroupStickinessOutputReference) GetStringMapAttribut
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func (a *jsiiProxy_AlbTargetGroupStickinessOutputReference) InterpolationForAttr
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -578,16 +577,16 @@ func (a *jsiiProxy_AlbTargetGroupStickinessOutputReference) ResetEnabled() {
 	)
 }
 
-func (a *jsiiProxy_AlbTargetGroupStickinessOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AlbTargetGroupStickinessOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -606,4 +605,3 @@ func (a *jsiiProxy_AlbTargetGroupStickinessOutputReference) ToString() *string {
 
 	return returns
 }
-

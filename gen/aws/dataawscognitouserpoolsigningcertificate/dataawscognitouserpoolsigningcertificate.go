@@ -16,11 +16,11 @@ type DataAwsCognitoUserPoolSigningCertificate interface {
 	CdktfStack() cdktf.TerraformStack
 	Certificate() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -47,20 +47,20 @@ type DataAwsCognitoUserPoolSigningCertificate interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	UserPoolId() *string
 	SetUserPoolId(val *string)
 	UserPoolIdInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -86,18 +86,18 @@ type DataAwsCognitoUserPoolSigningCertificate interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsCognitoUserPoolSigningCertificate
@@ -125,8 +125,8 @@ func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) Certificate() *stri
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -135,8 +135,8 @@ func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) ConstructNodeMetada
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -235,8 +235,8 @@ func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) Provider() cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -255,8 +255,8 @@ func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) TerraformGeneratorM
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -295,7 +295,6 @@ func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) UserPoolIdInput() *
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/cognito_user_pool_signing_certificate aws_cognito_user_pool_signing_certificate} Data Source.
 func NewDataAwsCognitoUserPoolSigningCertificate(scope constructs.Construct, id *string, config *DataAwsCognitoUserPoolSigningCertificateConfig) DataAwsCognitoUserPoolSigningCertificate {
 	_init_.Initialize()
@@ -307,7 +306,7 @@ func NewDataAwsCognitoUserPoolSigningCertificate(scope constructs.Construct, id 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsCognitoUserPoolSigningCertificate.DataAwsCognitoUserPoolSigningCertificate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -320,12 +319,12 @@ func NewDataAwsCognitoUserPoolSigningCertificate_Override(d DataAwsCognitoUserPo
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsCognitoUserPoolSigningCertificate.DataAwsCognitoUserPoolSigningCertificate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate)SetCount(val interfa
 	)
 }
 
-func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -344,7 +343,7 @@ func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate)SetDependsOn(val *[]
 	)
 }
 
-func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -352,7 +351,7 @@ func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate)SetForEach(val cdktf
 	)
 }
 
-func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate)SetId(val *string) {
+func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,7 +362,7 @@ func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -374,7 +373,7 @@ func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate)SetLifecycle(val *cd
 	)
 }
 
-func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -382,7 +381,7 @@ func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate)SetProvider(val cdkt
 	)
 }
 
-func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate)SetUserPoolId(val *string) {
+func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) SetUserPoolId(val *string) {
 	if err := j.validateSetUserPoolIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func DataAwsCognitoUserPoolSigningCertificate_GenerateConfigForImport(scope cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCognitoUserPoolSigningCertificate.DataAwsCognitoUserPoolSigningCertificate",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -429,7 +428,7 @@ func DataAwsCognitoUserPoolSigningCertificate_GenerateConfigForImport(scope cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsCognitoUserPoolSigningCertificate_IsConstruct(x interface{}) *bool {
+func DataAwsCognitoUserPoolSigningCertificate_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsCognitoUserPoolSigningCertificate_IsConstructParameters(x); err != nil {
@@ -440,7 +439,7 @@ func DataAwsCognitoUserPoolSigningCertificate_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCognitoUserPoolSigningCertificate.DataAwsCognitoUserPoolSigningCertificate",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func DataAwsCognitoUserPoolSigningCertificate_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsCognitoUserPoolSigningCertificate_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsCognitoUserPoolSigningCertificate_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsCognitoUserPoolSigningCertificate_IsTerraformDataSourceParameters(x); err != nil {
@@ -459,7 +458,7 @@ func DataAwsCognitoUserPoolSigningCertificate_IsTerraformDataSource(x interface{
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCognitoUserPoolSigningCertificate.DataAwsCognitoUserPoolSigningCertificate",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func DataAwsCognitoUserPoolSigningCertificate_IsTerraformDataSource(x interface{
 }
 
 // Experimental.
-func DataAwsCognitoUserPoolSigningCertificate_IsTerraformElement(x interface{}) *bool {
+func DataAwsCognitoUserPoolSigningCertificate_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsCognitoUserPoolSigningCertificate_IsTerraformElementParameters(x); err != nil {
@@ -478,7 +477,7 @@ func DataAwsCognitoUserPoolSigningCertificate_IsTerraformElement(x interface{}) 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCognitoUserPoolSigningCertificate.DataAwsCognitoUserPoolSigningCertificate",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -496,27 +495,27 @@ func DataAwsCognitoUserPoolSigningCertificate_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -532,7 +531,7 @@ func (d *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) GetBooleanAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (d *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -564,7 +563,7 @@ func (d *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) GetListAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -580,7 +579,7 @@ func (d *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) GetNumberAttribute(
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -596,7 +595,7 @@ func (d *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) GetNumberListAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -612,7 +611,7 @@ func (d *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) GetNumberMapAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -628,7 +627,7 @@ func (d *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) GetStringAttribute(
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -644,7 +643,7 @@ func (d *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) GetStringMapAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -660,7 +659,7 @@ func (d *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) InterpolationForAtt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -674,7 +673,7 @@ func (d *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) OverrideLogicalId(n
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -694,8 +693,8 @@ func (d *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) ResetOverrideLogica
 	)
 }
 
-func (d *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -707,8 +706,8 @@ func (d *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) SynthesizeAttribute
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -720,8 +719,8 @@ func (d *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) SynthesizeHclAttrib
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -733,8 +732,8 @@ func (d *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) ToHclTerraform() in
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -759,8 +758,8 @@ func (d *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) ToString() *string 
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -771,4 +770,3 @@ func (d *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) ToTerraform() inter
 
 	return returns
 }
-

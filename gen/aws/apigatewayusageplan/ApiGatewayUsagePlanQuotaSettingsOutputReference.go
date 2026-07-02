@@ -12,9 +12,9 @@ type ApiGatewayUsagePlanQuotaSettingsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type ApiGatewayUsagePlanQuotaSettingsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type ApiGatewayUsagePlanQuotaSettingsOutputReference interface {
 	ResetOffset()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference) TerraformRes
 	return returns
 }
 
-
 func NewApiGatewayUsagePlanQuotaSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ApiGatewayUsagePlanQuotaSettingsOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewApiGatewayUsagePlanQuotaSettingsOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanQuotaSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewApiGatewayUsagePlanQuotaSettingsOutputReference_Override(a ApiGatewayUsa
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanQuotaSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference)SetInternalValue(val *ApiGatewayUsagePlanQuotaSettings) {
+func (j *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference) SetInternalValue(val *ApiGatewayUsagePlanQuotaSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference)SetLimit(val *float64) {
+func (j *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference) SetLimit(val *float64) {
 	if err := j.validateSetLimitParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference)SetLimit(val 
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference)SetOffset(val *float64) {
+func (j *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference) SetOffset(val *float64) {
 	if err := j.validateSetOffsetParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference)SetOffset(val
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference)SetPeriod(val *string) {
+func (j *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference) SetPeriod(val *string) {
 	if err := j.validateSetPeriodParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference)SetPeriod(val
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,16 +344,16 @@ func (a *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference) ComputeFqn()
 	return returns
 }
 
-func (a *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (a *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (a *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (a *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference) GetListAttri
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (a *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (a *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (a *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (a *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (a *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference) GetStringMap
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (a *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference) Interpolatio
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -526,16 +525,16 @@ func (a *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference) ResetOffset(
 	)
 }
 
-func (a *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (a *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference) ToString() *
 
 	return returns
 }
-

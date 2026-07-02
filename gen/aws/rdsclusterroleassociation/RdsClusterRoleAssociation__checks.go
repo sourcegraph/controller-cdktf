@@ -19,7 +19,7 @@ func (r *jsiiProxy_RdsClusterRoleAssociation) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (r *jsiiProxy_RdsClusterRoleAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
+func (r *jsiiProxy_RdsClusterRoleAssociation) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (r *jsiiProxy_RdsClusterRoleAssociation) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (r *jsiiProxy_RdsClusterRoleAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (r *jsiiProxy_RdsClusterRoleAssociation) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateRdsClusterRoleAssociation_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateRdsClusterRoleAssociation_IsConstructParameters(x interface{}) error {
+func validateRdsClusterRoleAssociation_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateRdsClusterRoleAssociation_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateRdsClusterRoleAssociation_IsTerraformElementParameters(x interface{}) error {
+func validateRdsClusterRoleAssociation_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateRdsClusterRoleAssociation_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateRdsClusterRoleAssociation_IsTerraformResourceParameters(x interface{}) error {
+func validateRdsClusterRoleAssociation_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateRdsClusterRoleAssociation_IsTerraformResourceParameters(x interface
 	return nil
 }
 
-func (j *jsiiProxy_RdsClusterRoleAssociation) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_RdsClusterRoleAssociation) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_RdsClusterRoleAssociation) validateSetConnectionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_RdsClusterRoleAssociation) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_RdsClusterRoleAssociation) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_RdsClusterRoleAssociation) validateSetLifecycleParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_RdsClusterRoleAssociation) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_RdsClusterRoleAssociation) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -438,4 +438,3 @@ func validateNewRdsClusterRoleAssociationParameters(scope constructs.Construct, 
 
 	return nil
 }
-

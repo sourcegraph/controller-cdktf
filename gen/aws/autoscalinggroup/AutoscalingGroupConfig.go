@@ -6,9 +6,9 @@ import (
 
 type AutoscalingGroupConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type AutoscalingGroupConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/autoscaling_group#max_size AutoscalingGroup#max_size}.
 	MaxSize *float64 `field:"required" json:"maxSize" yaml:"maxSize"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/autoscaling_group#min_size AutoscalingGroup#min_size}.
@@ -26,7 +26,7 @@ type AutoscalingGroupConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/autoscaling_group#availability_zones AutoscalingGroup#availability_zones}.
 	AvailabilityZones *[]*string `field:"optional" json:"availabilityZones" yaml:"availabilityZones"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/autoscaling_group#capacity_rebalance AutoscalingGroup#capacity_rebalance}.
-	CapacityRebalance interface{} `field:"optional" json:"capacityRebalance" yaml:"capacityRebalance"`
+	CapacityRebalance any `field:"optional" json:"capacityRebalance" yaml:"capacityRebalance"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/autoscaling_group#context AutoscalingGroup#context}.
 	Context *string `field:"optional" json:"context" yaml:"context"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/autoscaling_group#default_cooldown AutoscalingGroup#default_cooldown}.
@@ -40,9 +40,9 @@ type AutoscalingGroupConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/autoscaling_group#enabled_metrics AutoscalingGroup#enabled_metrics}.
 	EnabledMetrics *[]*string `field:"optional" json:"enabledMetrics" yaml:"enabledMetrics"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/autoscaling_group#force_delete AutoscalingGroup#force_delete}.
-	ForceDelete interface{} `field:"optional" json:"forceDelete" yaml:"forceDelete"`
+	ForceDelete any `field:"optional" json:"forceDelete" yaml:"forceDelete"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/autoscaling_group#force_delete_warm_pool AutoscalingGroup#force_delete_warm_pool}.
-	ForceDeleteWarmPool interface{} `field:"optional" json:"forceDeleteWarmPool" yaml:"forceDeleteWarmPool"`
+	ForceDeleteWarmPool any `field:"optional" json:"forceDeleteWarmPool" yaml:"forceDeleteWarmPool"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/autoscaling_group#health_check_grace_period AutoscalingGroup#health_check_grace_period}.
 	HealthCheckGracePeriod *float64 `field:"optional" json:"healthCheckGracePeriod" yaml:"healthCheckGracePeriod"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/autoscaling_group#health_check_type AutoscalingGroup#health_check_type}.
@@ -55,7 +55,7 @@ type AutoscalingGroupConfig struct {
 	// initial_lifecycle_hook block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/autoscaling_group#initial_lifecycle_hook AutoscalingGroup#initial_lifecycle_hook}
-	InitialLifecycleHook interface{} `field:"optional" json:"initialLifecycleHook" yaml:"initialLifecycleHook"`
+	InitialLifecycleHook any `field:"optional" json:"initialLifecycleHook" yaml:"initialLifecycleHook"`
 	// instance_refresh block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/autoscaling_group#instance_refresh AutoscalingGroup#instance_refresh}
@@ -85,7 +85,7 @@ type AutoscalingGroupConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/autoscaling_group#placement_group AutoscalingGroup#placement_group}.
 	PlacementGroup *string `field:"optional" json:"placementGroup" yaml:"placementGroup"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/autoscaling_group#protect_from_scale_in AutoscalingGroup#protect_from_scale_in}.
-	ProtectFromScaleIn interface{} `field:"optional" json:"protectFromScaleIn" yaml:"protectFromScaleIn"`
+	ProtectFromScaleIn any `field:"optional" json:"protectFromScaleIn" yaml:"protectFromScaleIn"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/autoscaling_group#service_linked_role_arn AutoscalingGroup#service_linked_role_arn}.
 	ServiceLinkedRoleArn *string `field:"optional" json:"serviceLinkedRoleArn" yaml:"serviceLinkedRoleArn"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/autoscaling_group#suspended_processes AutoscalingGroup#suspended_processes}.
@@ -93,9 +93,9 @@ type AutoscalingGroupConfig struct {
 	// tag block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/autoscaling_group#tag AutoscalingGroup#tag}
-	Tag interface{} `field:"optional" json:"tag" yaml:"tag"`
+	Tag any `field:"optional" json:"tag" yaml:"tag"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/autoscaling_group#tags AutoscalingGroup#tags}.
-	Tags interface{} `field:"optional" json:"tags" yaml:"tags"`
+	Tags any `field:"optional" json:"tags" yaml:"tags"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/autoscaling_group#target_group_arns AutoscalingGroup#target_group_arns}.
 	TargetGroupArns *[]*string `field:"optional" json:"targetGroupArns" yaml:"targetGroupArns"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/autoscaling_group#termination_policies AutoscalingGroup#termination_policies}.
@@ -115,4 +115,3 @@ type AutoscalingGroupConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/autoscaling_group#warm_pool AutoscalingGroup#warm_pool}
 	WarmPool *AutoscalingGroupWarmPool `field:"optional" json:"warmPool" yaml:"warmPool"`
 }
-

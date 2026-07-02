@@ -12,9 +12,9 @@ type BatchComputeEnvironmentEksConfigurationOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type BatchComputeEnvironmentEksConfigurationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,7 +69,7 @@ type BatchComputeEnvironmentEksConfigurationOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,8 +82,8 @@ type jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference) Terra
 	return returns
 }
 
-
 func NewBatchComputeEnvironmentEksConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BatchComputeEnvironmentEksConfigurationOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewBatchComputeEnvironmentEksConfigurationOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironmentEksConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewBatchComputeEnvironmentEksConfigurationOutputReference_Override(b BatchC
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironmentEksConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference)SetEksClusterArn(val *string) {
+func (j *jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference) SetEksClusterArn(val *string) {
 	if err := j.validateSetEksClusterArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference)SetEks
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference)SetInternalValue(val *BatchComputeEnvironmentEksConfiguration) {
+func (j *jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference) SetInternalValue(val *BatchComputeEnvironmentEksConfiguration) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference)SetKubernetesNamespace(val *string) {
+func (j *jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference) SetKubernetesNamespace(val *string) {
 	if err := j.validateSetKubernetesNamespaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference)SetKub
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -286,7 +285,7 @@ func (j *jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,16 +309,16 @@ func (b *jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference) Compu
 	return returns
 }
 
-func (b *jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -335,7 +334,7 @@ func (b *jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference) GetBo
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -351,7 +350,7 @@ func (b *jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference) GetBo
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -367,7 +366,7 @@ func (b *jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference) GetLi
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -383,7 +382,7 @@ func (b *jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference) GetNu
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -399,7 +398,7 @@ func (b *jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference) GetNu
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -415,7 +414,7 @@ func (b *jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference) GetNu
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (b *jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference) GetSt
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (b *jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference) GetSt
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,23 +475,23 @@ func (b *jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference) Inter
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -511,4 +510,3 @@ func (b *jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference) ToStr
 
 	return returns
 }
-

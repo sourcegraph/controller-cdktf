@@ -98,7 +98,7 @@ func (s *jsiiProxy_SagemakerWorkforceWorkforceVpcConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerWorkforceWorkforceVpcConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerWorkforceWorkforceVpcConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewSagemakerWorkforceWorkforceVpcConfigOutputReferenceParameters(te
 
 	return nil
 }
-

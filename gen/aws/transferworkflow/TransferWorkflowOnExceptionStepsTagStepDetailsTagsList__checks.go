@@ -34,7 +34,7 @@ func (t *jsiiProxy_TransferWorkflowOnExceptionStepsTagStepDetailsTagsList) valid
 	return nil
 }
 
-func (j *jsiiProxy_TransferWorkflowOnExceptionStepsTagStepDetailsTagsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_TransferWorkflowOnExceptionStepsTagStepDetailsTagsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewTransferWorkflowOnExceptionStepsTagStepDetailsTagsListParameters
 
 	return nil
 }
-

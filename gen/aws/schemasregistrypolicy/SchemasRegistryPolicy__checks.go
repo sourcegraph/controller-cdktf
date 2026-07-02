@@ -19,7 +19,7 @@ func (s *jsiiProxy_SchemasRegistryPolicy) validateAddMoveTargetParameters(moveTa
 	return nil
 }
 
-func (s *jsiiProxy_SchemasRegistryPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SchemasRegistryPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SchemasRegistryPolicy) validateMoveFromIdParameters(id *strin
 	return nil
 }
 
-func (s *jsiiProxy_SchemasRegistryPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SchemasRegistryPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateSchemasRegistryPolicy_GenerateConfigForImportParameters(scope const
 	return nil
 }
 
-func validateSchemasRegistryPolicy_IsConstructParameters(x interface{}) error {
+func validateSchemasRegistryPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateSchemasRegistryPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateSchemasRegistryPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateSchemasRegistryPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateSchemasRegistryPolicy_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
-func validateSchemasRegistryPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateSchemasRegistryPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateSchemasRegistryPolicy_IsTerraformResourceParameters(x interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_SchemasRegistryPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SchemasRegistryPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_SchemasRegistryPolicy) validateSetConnectionParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_SchemasRegistryPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SchemasRegistryPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -358,7 +358,7 @@ func (j *jsiiProxy_SchemasRegistryPolicy) validateSetPolicyParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_SchemasRegistryPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SchemasRegistryPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewSchemasRegistryPolicyParameters(scope constructs.Construct, id *
 
 	return nil
 }
-

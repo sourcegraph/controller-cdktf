@@ -17,11 +17,11 @@ type DataAwsWafv2IpSet interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,20 +53,20 @@ type DataAwsWafv2IpSet interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Scope() *string
 	SetScope(val *string)
 	ScopeInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -92,18 +92,18 @@ type DataAwsWafv2IpSet interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsWafv2IpSet
@@ -141,8 +141,8 @@ func (j *jsiiProxy_DataAwsWafv2IpSet) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsWafv2IpSet) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsWafv2IpSet) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -151,8 +151,8 @@ func (j *jsiiProxy_DataAwsWafv2IpSet) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsWafv2IpSet) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsWafv2IpSet) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -291,8 +291,8 @@ func (j *jsiiProxy_DataAwsWafv2IpSet) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsWafv2IpSet) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsWafv2IpSet) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -331,8 +331,8 @@ func (j *jsiiProxy_DataAwsWafv2IpSet) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsWafv2IpSet) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsWafv2IpSet) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -351,7 +351,6 @@ func (j *jsiiProxy_DataAwsWafv2IpSet) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/wafv2_ip_set aws_wafv2_ip_set} Data Source.
 func NewDataAwsWafv2IpSet(scope constructs.Construct, id *string, config *DataAwsWafv2IpSetConfig) DataAwsWafv2IpSet {
 	_init_.Initialize()
@@ -363,7 +362,7 @@ func NewDataAwsWafv2IpSet(scope constructs.Construct, id *string, config *DataAw
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSet",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -376,12 +375,12 @@ func NewDataAwsWafv2IpSet_Override(d DataAwsWafv2IpSet, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSet",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsWafv2IpSet)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsWafv2IpSet) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -392,7 +391,7 @@ func (j *jsiiProxy_DataAwsWafv2IpSet)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsWafv2IpSet)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsWafv2IpSet) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -400,7 +399,7 @@ func (j *jsiiProxy_DataAwsWafv2IpSet)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsWafv2IpSet)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsWafv2IpSet) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -408,7 +407,7 @@ func (j *jsiiProxy_DataAwsWafv2IpSet)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsWafv2IpSet)SetId(val *string) {
+func (j *jsiiProxy_DataAwsWafv2IpSet) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_DataAwsWafv2IpSet)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsWafv2IpSet)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsWafv2IpSet) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_DataAwsWafv2IpSet)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_DataAwsWafv2IpSet)SetName(val *string) {
+func (j *jsiiProxy_DataAwsWafv2IpSet) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_DataAwsWafv2IpSet)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsWafv2IpSet)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsWafv2IpSet) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -449,7 +448,7 @@ func (j *jsiiProxy_DataAwsWafv2IpSet)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsWafv2IpSet)SetScope(val *string) {
+func (j *jsiiProxy_DataAwsWafv2IpSet) SetScope(val *string) {
 	if err := j.validateSetScopeParameters(val); err != nil {
 		panic(err)
 	}
@@ -472,7 +471,7 @@ func DataAwsWafv2IpSet_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSet",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -496,7 +495,7 @@ func DataAwsWafv2IpSet_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsWafv2IpSet_IsConstruct(x interface{}) *bool {
+func DataAwsWafv2IpSet_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsWafv2IpSet_IsConstructParameters(x); err != nil {
@@ -507,7 +506,7 @@ func DataAwsWafv2IpSet_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSet",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -515,7 +514,7 @@ func DataAwsWafv2IpSet_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsWafv2IpSet_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsWafv2IpSet_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsWafv2IpSet_IsTerraformDataSourceParameters(x); err != nil {
@@ -526,7 +525,7 @@ func DataAwsWafv2IpSet_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSet",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -534,7 +533,7 @@ func DataAwsWafv2IpSet_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsWafv2IpSet_IsTerraformElement(x interface{}) *bool {
+func DataAwsWafv2IpSet_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsWafv2IpSet_IsTerraformElementParameters(x); err != nil {
@@ -545,7 +544,7 @@ func DataAwsWafv2IpSet_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSet",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -563,27 +562,27 @@ func DataAwsWafv2IpSet_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsWafv2IpSet) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsWafv2IpSet) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsWafv2IpSet) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsWafv2IpSet) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -599,7 +598,7 @@ func (d *jsiiProxy_DataAwsWafv2IpSet) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -615,7 +614,7 @@ func (d *jsiiProxy_DataAwsWafv2IpSet) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -631,7 +630,7 @@ func (d *jsiiProxy_DataAwsWafv2IpSet) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -647,7 +646,7 @@ func (d *jsiiProxy_DataAwsWafv2IpSet) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -663,7 +662,7 @@ func (d *jsiiProxy_DataAwsWafv2IpSet) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func (d *jsiiProxy_DataAwsWafv2IpSet) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func (d *jsiiProxy_DataAwsWafv2IpSet) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -711,7 +710,7 @@ func (d *jsiiProxy_DataAwsWafv2IpSet) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func (d *jsiiProxy_DataAwsWafv2IpSet) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -741,7 +740,7 @@ func (d *jsiiProxy_DataAwsWafv2IpSet) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -761,8 +760,8 @@ func (d *jsiiProxy_DataAwsWafv2IpSet) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsWafv2IpSet) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsWafv2IpSet) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -774,8 +773,8 @@ func (d *jsiiProxy_DataAwsWafv2IpSet) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsWafv2IpSet) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsWafv2IpSet) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -787,8 +786,8 @@ func (d *jsiiProxy_DataAwsWafv2IpSet) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsWafv2IpSet) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsWafv2IpSet) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -800,8 +799,8 @@ func (d *jsiiProxy_DataAwsWafv2IpSet) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsWafv2IpSet) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsWafv2IpSet) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -826,8 +825,8 @@ func (d *jsiiProxy_DataAwsWafv2IpSet) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsWafv2IpSet) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsWafv2IpSet) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -838,4 +837,3 @@ func (d *jsiiProxy_DataAwsWafv2IpSet) ToTerraform() interface{} {
 
 	return returns
 }
-

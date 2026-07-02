@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinition",
-		reflect.TypeOf((*SagemakerFlowDefinition)(nil)).Elem(),
+		reflect.TypeFor[SagemakerFlowDefinition](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,7 +81,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerFlowDefinition{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -89,19 +89,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinitionConfig",
-		reflect.TypeOf((*SagemakerFlowDefinitionConfig)(nil)).Elem(),
+		reflect.TypeFor[SagemakerFlowDefinitionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopActivationConfig",
-		reflect.TypeOf((*SagemakerFlowDefinitionHumanLoopActivationConfig)(nil)).Elem(),
+		reflect.TypeFor[SagemakerFlowDefinitionHumanLoopActivationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfig",
-		reflect.TypeOf((*SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfig)(nil)).Elem(),
+		reflect.TypeFor[SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfigOutputReference",
-		reflect.TypeOf((*SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -127,7 +127,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -135,7 +135,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopActivationConfigOutputReference",
-		reflect.TypeOf((*SagemakerFlowDefinitionHumanLoopActivationConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SagemakerFlowDefinitionHumanLoopActivationConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -163,7 +163,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerFlowDefinitionHumanLoopActivationConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -171,11 +171,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopConfig",
-		reflect.TypeOf((*SagemakerFlowDefinitionHumanLoopConfig)(nil)).Elem(),
+		reflect.TypeFor[SagemakerFlowDefinitionHumanLoopConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopConfigOutputReference",
-		reflect.TypeOf((*SagemakerFlowDefinitionHumanLoopConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SagemakerFlowDefinitionHumanLoopConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -222,7 +222,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workteamArn", GoGetter: "WorkteamArn"},
 			_jsii_.MemberProperty{JsiiProperty: "workteamArnInput", GoGetter: "WorkteamArnInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -230,15 +230,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPrice",
-		reflect.TypeOf((*SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPrice)(nil)).Elem(),
+		reflect.TypeFor[SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPrice](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsd",
-		reflect.TypeOf((*SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsd)(nil)).Elem(),
+		reflect.TypeFor[SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsd](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsdOutputReference",
-		reflect.TypeOf((*SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsdOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsdOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cents", GoGetter: "Cents"},
 			_jsii_.MemberProperty{JsiiProperty: "centsInput", GoGetter: "CentsInput"},
@@ -271,7 +271,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsdOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -279,7 +279,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceOutputReference",
-		reflect.TypeOf((*SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "amountInUsd", GoGetter: "AmountInUsd"},
 			_jsii_.MemberProperty{JsiiProperty: "amountInUsdInput", GoGetter: "AmountInUsdInput"},
@@ -307,7 +307,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -315,11 +315,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopRequestSource",
-		reflect.TypeOf((*SagemakerFlowDefinitionHumanLoopRequestSource)(nil)).Elem(),
+		reflect.TypeFor[SagemakerFlowDefinitionHumanLoopRequestSource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopRequestSourceOutputReference",
-		reflect.TypeOf((*SagemakerFlowDefinitionHumanLoopRequestSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SagemakerFlowDefinitionHumanLoopRequestSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "awsManagedHumanLoopRequestSource", GoGetter: "AwsManagedHumanLoopRequestSource"},
 			_jsii_.MemberProperty{JsiiProperty: "awsManagedHumanLoopRequestSourceInput", GoGetter: "AwsManagedHumanLoopRequestSourceInput"},
@@ -345,7 +345,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerFlowDefinitionHumanLoopRequestSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -353,11 +353,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinitionOutputConfig",
-		reflect.TypeOf((*SagemakerFlowDefinitionOutputConfig)(nil)).Elem(),
+		reflect.TypeFor[SagemakerFlowDefinitionOutputConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinitionOutputConfigOutputReference",
-		reflect.TypeOf((*SagemakerFlowDefinitionOutputConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SagemakerFlowDefinitionOutputConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -386,7 +386,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerFlowDefinitionOutputConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

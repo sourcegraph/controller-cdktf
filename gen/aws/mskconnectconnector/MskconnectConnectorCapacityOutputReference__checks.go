@@ -120,7 +120,7 @@ func (m *jsiiProxy_MskconnectConnectorCapacityOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_MskconnectConnectorCapacityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MskconnectConnectorCapacityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewMskconnectConnectorCapacityOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

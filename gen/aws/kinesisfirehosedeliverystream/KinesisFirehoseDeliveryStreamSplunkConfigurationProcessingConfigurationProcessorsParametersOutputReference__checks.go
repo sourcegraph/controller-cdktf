@@ -98,7 +98,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingCon
 	return nil
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParametersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParametersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingCon
 	return nil
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParametersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParametersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewKinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfig
 
 	return nil
 }
-

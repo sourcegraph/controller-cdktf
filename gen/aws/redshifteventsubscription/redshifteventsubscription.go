@@ -16,23 +16,23 @@ type RedshiftEventSubscription interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CustomerAwsId() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	EventCategories() *[]*string
 	SetEventCategories(val *[]*string)
 	EventCategoriesInput() *[]*string
@@ -61,11 +61,11 @@ type RedshiftEventSubscription interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Severity() *string
 	SetSeverity(val *string)
 	SeverityInput() *string
@@ -88,18 +88,18 @@ type RedshiftEventSubscription interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() RedshiftEventSubscriptionTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -117,7 +117,7 @@ type RedshiftEventSubscription interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -129,7 +129,7 @@ type RedshiftEventSubscription interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -149,17 +149,17 @@ type RedshiftEventSubscription interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for RedshiftEventSubscription
@@ -187,8 +187,8 @@ func (j *jsiiProxy_RedshiftEventSubscription) CdktfStack() cdktf.TerraformStack 
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftEventSubscription) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftEventSubscription) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -197,8 +197,8 @@ func (j *jsiiProxy_RedshiftEventSubscription) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftEventSubscription) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RedshiftEventSubscription) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -207,8 +207,8 @@ func (j *jsiiProxy_RedshiftEventSubscription) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftEventSubscription) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftEventSubscription) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -237,8 +237,8 @@ func (j *jsiiProxy_RedshiftEventSubscription) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftEventSubscription) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftEventSubscription) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -247,8 +247,8 @@ func (j *jsiiProxy_RedshiftEventSubscription) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftEventSubscription) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftEventSubscription) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -377,8 +377,8 @@ func (j *jsiiProxy_RedshiftEventSubscription) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftEventSubscription) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_RedshiftEventSubscription) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -387,8 +387,8 @@ func (j *jsiiProxy_RedshiftEventSubscription) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftEventSubscription) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftEventSubscription) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -537,8 +537,8 @@ func (j *jsiiProxy_RedshiftEventSubscription) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftEventSubscription) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RedshiftEventSubscription) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -567,8 +567,8 @@ func (j *jsiiProxy_RedshiftEventSubscription) Timeouts() RedshiftEventSubscripti
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftEventSubscription) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftEventSubscription) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -576,7 +576,6 @@ func (j *jsiiProxy_RedshiftEventSubscription) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/redshift_event_subscription aws_redshift_event_subscription} Resource.
 func NewRedshiftEventSubscription(scope constructs.Construct, id *string, config *RedshiftEventSubscriptionConfig) RedshiftEventSubscription {
@@ -589,7 +588,7 @@ func NewRedshiftEventSubscription(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.redshiftEventSubscription.RedshiftEventSubscription",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -602,12 +601,12 @@ func NewRedshiftEventSubscription_Override(r RedshiftEventSubscription, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.redshiftEventSubscription.RedshiftEventSubscription",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RedshiftEventSubscription)SetConnection(val interface{}) {
+func (j *jsiiProxy_RedshiftEventSubscription) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,7 +617,7 @@ func (j *jsiiProxy_RedshiftEventSubscription)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftEventSubscription)SetCount(val interface{}) {
+func (j *jsiiProxy_RedshiftEventSubscription) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_RedshiftEventSubscription)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftEventSubscription)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_RedshiftEventSubscription) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -637,7 +636,7 @@ func (j *jsiiProxy_RedshiftEventSubscription)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftEventSubscription)SetEnabled(val interface{}) {
+func (j *jsiiProxy_RedshiftEventSubscription) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -648,7 +647,7 @@ func (j *jsiiProxy_RedshiftEventSubscription)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftEventSubscription)SetEventCategories(val *[]*string) {
+func (j *jsiiProxy_RedshiftEventSubscription) SetEventCategories(val *[]*string) {
 	if err := j.validateSetEventCategoriesParameters(val); err != nil {
 		panic(err)
 	}
@@ -659,7 +658,7 @@ func (j *jsiiProxy_RedshiftEventSubscription)SetEventCategories(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_RedshiftEventSubscription)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_RedshiftEventSubscription) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -667,7 +666,7 @@ func (j *jsiiProxy_RedshiftEventSubscription)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_RedshiftEventSubscription)SetId(val *string) {
+func (j *jsiiProxy_RedshiftEventSubscription) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -678,7 +677,7 @@ func (j *jsiiProxy_RedshiftEventSubscription)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftEventSubscription)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_RedshiftEventSubscription) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -689,7 +688,7 @@ func (j *jsiiProxy_RedshiftEventSubscription)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_RedshiftEventSubscription)SetName(val *string) {
+func (j *jsiiProxy_RedshiftEventSubscription) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -700,7 +699,7 @@ func (j *jsiiProxy_RedshiftEventSubscription)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftEventSubscription)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_RedshiftEventSubscription) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -708,7 +707,7 @@ func (j *jsiiProxy_RedshiftEventSubscription)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_RedshiftEventSubscription)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_RedshiftEventSubscription) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -719,7 +718,7 @@ func (j *jsiiProxy_RedshiftEventSubscription)SetProvisioners(val *[]interface{})
 	)
 }
 
-func (j *jsiiProxy_RedshiftEventSubscription)SetSeverity(val *string) {
+func (j *jsiiProxy_RedshiftEventSubscription) SetSeverity(val *string) {
 	if err := j.validateSetSeverityParameters(val); err != nil {
 		panic(err)
 	}
@@ -730,7 +729,7 @@ func (j *jsiiProxy_RedshiftEventSubscription)SetSeverity(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftEventSubscription)SetSnsTopicArn(val *string) {
+func (j *jsiiProxy_RedshiftEventSubscription) SetSnsTopicArn(val *string) {
 	if err := j.validateSetSnsTopicArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -741,7 +740,7 @@ func (j *jsiiProxy_RedshiftEventSubscription)SetSnsTopicArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftEventSubscription)SetSourceIds(val *[]*string) {
+func (j *jsiiProxy_RedshiftEventSubscription) SetSourceIds(val *[]*string) {
 	if err := j.validateSetSourceIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -752,7 +751,7 @@ func (j *jsiiProxy_RedshiftEventSubscription)SetSourceIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftEventSubscription)SetSourceType(val *string) {
+func (j *jsiiProxy_RedshiftEventSubscription) SetSourceType(val *string) {
 	if err := j.validateSetSourceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -763,7 +762,7 @@ func (j *jsiiProxy_RedshiftEventSubscription)SetSourceType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftEventSubscription)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_RedshiftEventSubscription) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -774,7 +773,7 @@ func (j *jsiiProxy_RedshiftEventSubscription)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftEventSubscription)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_RedshiftEventSubscription) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -797,7 +796,7 @@ func RedshiftEventSubscription_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.redshiftEventSubscription.RedshiftEventSubscription",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -821,7 +820,7 @@ func RedshiftEventSubscription_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func RedshiftEventSubscription_IsConstruct(x interface{}) *bool {
+func RedshiftEventSubscription_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRedshiftEventSubscription_IsConstructParameters(x); err != nil {
@@ -832,7 +831,7 @@ func RedshiftEventSubscription_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.redshiftEventSubscription.RedshiftEventSubscription",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -840,7 +839,7 @@ func RedshiftEventSubscription_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func RedshiftEventSubscription_IsTerraformElement(x interface{}) *bool {
+func RedshiftEventSubscription_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRedshiftEventSubscription_IsTerraformElementParameters(x); err != nil {
@@ -851,7 +850,7 @@ func RedshiftEventSubscription_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.redshiftEventSubscription.RedshiftEventSubscription",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -859,7 +858,7 @@ func RedshiftEventSubscription_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func RedshiftEventSubscription_IsTerraformResource(x interface{}) *bool {
+func RedshiftEventSubscription_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRedshiftEventSubscription_IsTerraformResourceParameters(x); err != nil {
@@ -870,7 +869,7 @@ func RedshiftEventSubscription_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.redshiftEventSubscription.RedshiftEventSubscription",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -895,31 +894,31 @@ func (r *jsiiProxy_RedshiftEventSubscription) AddMoveTarget(moveTarget *string) 
 	_jsii_.InvokeVoid(
 		r,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (r *jsiiProxy_RedshiftEventSubscription) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_RedshiftEventSubscription) AddOverride(path *string, value any) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (r *jsiiProxy_RedshiftEventSubscription) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RedshiftEventSubscription) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -935,7 +934,7 @@ func (r *jsiiProxy_RedshiftEventSubscription) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -951,7 +950,7 @@ func (r *jsiiProxy_RedshiftEventSubscription) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -967,7 +966,7 @@ func (r *jsiiProxy_RedshiftEventSubscription) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -983,7 +982,7 @@ func (r *jsiiProxy_RedshiftEventSubscription) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -999,7 +998,7 @@ func (r *jsiiProxy_RedshiftEventSubscription) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1015,7 +1014,7 @@ func (r *jsiiProxy_RedshiftEventSubscription) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1031,7 +1030,7 @@ func (r *jsiiProxy_RedshiftEventSubscription) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1047,15 +1046,15 @@ func (r *jsiiProxy_RedshiftEventSubscription) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftEventSubscription) HasResourceMove() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RedshiftEventSubscription) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1074,7 +1073,7 @@ func (r *jsiiProxy_RedshiftEventSubscription) ImportFrom(id *string, provider cd
 	_jsii_.InvokeVoid(
 		r,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1087,7 +1086,7 @@ func (r *jsiiProxy_RedshiftEventSubscription) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1101,18 +1100,18 @@ func (r *jsiiProxy_RedshiftEventSubscription) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (r *jsiiProxy_RedshiftEventSubscription) MoveTo(moveTarget *string, index interface{}) {
+func (r *jsiiProxy_RedshiftEventSubscription) MoveTo(moveTarget *string, index any) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1123,7 +1122,7 @@ func (r *jsiiProxy_RedshiftEventSubscription) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1134,7 +1133,7 @@ func (r *jsiiProxy_RedshiftEventSubscription) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1145,7 +1144,7 @@ func (r *jsiiProxy_RedshiftEventSubscription) PutTimeouts(value *RedshiftEventSu
 	_jsii_.InvokeVoid(
 		r,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1229,8 +1228,8 @@ func (r *jsiiProxy_RedshiftEventSubscription) ResetTimeouts() {
 	)
 }
 
-func (r *jsiiProxy_RedshiftEventSubscription) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RedshiftEventSubscription) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1242,8 +1241,8 @@ func (r *jsiiProxy_RedshiftEventSubscription) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftEventSubscription) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RedshiftEventSubscription) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1255,8 +1254,8 @@ func (r *jsiiProxy_RedshiftEventSubscription) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftEventSubscription) ToHclTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RedshiftEventSubscription) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1268,8 +1267,8 @@ func (r *jsiiProxy_RedshiftEventSubscription) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftEventSubscription) ToMetadata() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RedshiftEventSubscription) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1294,8 +1293,8 @@ func (r *jsiiProxy_RedshiftEventSubscription) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftEventSubscription) ToTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RedshiftEventSubscription) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1306,4 +1305,3 @@ func (r *jsiiProxy_RedshiftEventSubscription) ToTerraform() interface{} {
 
 	return returns
 }
-

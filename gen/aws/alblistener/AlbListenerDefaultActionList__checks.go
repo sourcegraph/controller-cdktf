@@ -34,7 +34,7 @@ func (a *jsiiProxy_AlbListenerDefaultActionList) validateResolveParameters(_cont
 	return nil
 }
 
-func (j *jsiiProxy_AlbListenerDefaultActionList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlbListenerDefaultActionList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAlbListenerDefaultActionListParameters(terraformResource cdktf.I
 
 	return nil
 }
-

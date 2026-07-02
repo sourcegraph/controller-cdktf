@@ -16,15 +16,15 @@ type Macie2CustomDataIdentifier interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -70,11 +70,11 @@ type Macie2CustomDataIdentifier interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Regex() *string
 	SetRegex(val *string)
 	RegexInput() *string
@@ -87,16 +87,16 @@ type Macie2CustomDataIdentifier interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -114,7 +114,7 @@ type Macie2CustomDataIdentifier interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -126,7 +126,7 @@ type Macie2CustomDataIdentifier interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -146,17 +146,17 @@ type Macie2CustomDataIdentifier interface {
 	ResetRegex()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Macie2CustomDataIdentifier
@@ -184,8 +184,8 @@ func (j *jsiiProxy_Macie2CustomDataIdentifier) CdktfStack() cdktf.TerraformStack
 	return returns
 }
 
-func (j *jsiiProxy_Macie2CustomDataIdentifier) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Macie2CustomDataIdentifier) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_Macie2CustomDataIdentifier) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Macie2CustomDataIdentifier) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Macie2CustomDataIdentifier) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -204,8 +204,8 @@ func (j *jsiiProxy_Macie2CustomDataIdentifier) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_Macie2CustomDataIdentifier) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Macie2CustomDataIdentifier) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -434,8 +434,8 @@ func (j *jsiiProxy_Macie2CustomDataIdentifier) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_Macie2CustomDataIdentifier) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Macie2CustomDataIdentifier) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -444,8 +444,8 @@ func (j *jsiiProxy_Macie2CustomDataIdentifier) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Macie2CustomDataIdentifier) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Macie2CustomDataIdentifier) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -524,8 +524,8 @@ func (j *jsiiProxy_Macie2CustomDataIdentifier) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
-func (j *jsiiProxy_Macie2CustomDataIdentifier) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Macie2CustomDataIdentifier) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -544,7 +544,6 @@ func (j *jsiiProxy_Macie2CustomDataIdentifier) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/macie2_custom_data_identifier aws_macie2_custom_data_identifier} Resource.
 func NewMacie2CustomDataIdentifier(scope constructs.Construct, id *string, config *Macie2CustomDataIdentifierConfig) Macie2CustomDataIdentifier {
 	_init_.Initialize()
@@ -556,7 +555,7 @@ func NewMacie2CustomDataIdentifier(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.macie2CustomDataIdentifier.Macie2CustomDataIdentifier",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -569,12 +568,12 @@ func NewMacie2CustomDataIdentifier_Override(m Macie2CustomDataIdentifier, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.macie2CustomDataIdentifier.Macie2CustomDataIdentifier",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		m,
 	)
 }
 
-func (j *jsiiProxy_Macie2CustomDataIdentifier)SetConnection(val interface{}) {
+func (j *jsiiProxy_Macie2CustomDataIdentifier) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -585,7 +584,7 @@ func (j *jsiiProxy_Macie2CustomDataIdentifier)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Macie2CustomDataIdentifier)SetCount(val interface{}) {
+func (j *jsiiProxy_Macie2CustomDataIdentifier) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -596,7 +595,7 @@ func (j *jsiiProxy_Macie2CustomDataIdentifier)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Macie2CustomDataIdentifier)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Macie2CustomDataIdentifier) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -604,7 +603,7 @@ func (j *jsiiProxy_Macie2CustomDataIdentifier)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Macie2CustomDataIdentifier)SetDescription(val *string) {
+func (j *jsiiProxy_Macie2CustomDataIdentifier) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -615,7 +614,7 @@ func (j *jsiiProxy_Macie2CustomDataIdentifier)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Macie2CustomDataIdentifier)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Macie2CustomDataIdentifier) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -623,7 +622,7 @@ func (j *jsiiProxy_Macie2CustomDataIdentifier)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_Macie2CustomDataIdentifier)SetId(val *string) {
+func (j *jsiiProxy_Macie2CustomDataIdentifier) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -634,7 +633,7 @@ func (j *jsiiProxy_Macie2CustomDataIdentifier)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Macie2CustomDataIdentifier)SetIgnoreWords(val *[]*string) {
+func (j *jsiiProxy_Macie2CustomDataIdentifier) SetIgnoreWords(val *[]*string) {
 	if err := j.validateSetIgnoreWordsParameters(val); err != nil {
 		panic(err)
 	}
@@ -645,7 +644,7 @@ func (j *jsiiProxy_Macie2CustomDataIdentifier)SetIgnoreWords(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Macie2CustomDataIdentifier)SetKeywords(val *[]*string) {
+func (j *jsiiProxy_Macie2CustomDataIdentifier) SetKeywords(val *[]*string) {
 	if err := j.validateSetKeywordsParameters(val); err != nil {
 		panic(err)
 	}
@@ -656,7 +655,7 @@ func (j *jsiiProxy_Macie2CustomDataIdentifier)SetKeywords(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Macie2CustomDataIdentifier)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Macie2CustomDataIdentifier) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -667,7 +666,7 @@ func (j *jsiiProxy_Macie2CustomDataIdentifier)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_Macie2CustomDataIdentifier)SetMaximumMatchDistance(val *float64) {
+func (j *jsiiProxy_Macie2CustomDataIdentifier) SetMaximumMatchDistance(val *float64) {
 	if err := j.validateSetMaximumMatchDistanceParameters(val); err != nil {
 		panic(err)
 	}
@@ -678,7 +677,7 @@ func (j *jsiiProxy_Macie2CustomDataIdentifier)SetMaximumMatchDistance(val *float
 	)
 }
 
-func (j *jsiiProxy_Macie2CustomDataIdentifier)SetName(val *string) {
+func (j *jsiiProxy_Macie2CustomDataIdentifier) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -689,7 +688,7 @@ func (j *jsiiProxy_Macie2CustomDataIdentifier)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Macie2CustomDataIdentifier)SetNamePrefix(val *string) {
+func (j *jsiiProxy_Macie2CustomDataIdentifier) SetNamePrefix(val *string) {
 	if err := j.validateSetNamePrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -700,7 +699,7 @@ func (j *jsiiProxy_Macie2CustomDataIdentifier)SetNamePrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Macie2CustomDataIdentifier)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Macie2CustomDataIdentifier) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -708,7 +707,7 @@ func (j *jsiiProxy_Macie2CustomDataIdentifier)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_Macie2CustomDataIdentifier)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Macie2CustomDataIdentifier) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -719,7 +718,7 @@ func (j *jsiiProxy_Macie2CustomDataIdentifier)SetProvisioners(val *[]interface{}
 	)
 }
 
-func (j *jsiiProxy_Macie2CustomDataIdentifier)SetRegex(val *string) {
+func (j *jsiiProxy_Macie2CustomDataIdentifier) SetRegex(val *string) {
 	if err := j.validateSetRegexParameters(val); err != nil {
 		panic(err)
 	}
@@ -730,7 +729,7 @@ func (j *jsiiProxy_Macie2CustomDataIdentifier)SetRegex(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Macie2CustomDataIdentifier)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_Macie2CustomDataIdentifier) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -741,7 +740,7 @@ func (j *jsiiProxy_Macie2CustomDataIdentifier)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Macie2CustomDataIdentifier)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_Macie2CustomDataIdentifier) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -764,7 +763,7 @@ func Macie2CustomDataIdentifier_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.macie2CustomDataIdentifier.Macie2CustomDataIdentifier",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -788,7 +787,7 @@ func Macie2CustomDataIdentifier_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Macie2CustomDataIdentifier_IsConstruct(x interface{}) *bool {
+func Macie2CustomDataIdentifier_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMacie2CustomDataIdentifier_IsConstructParameters(x); err != nil {
@@ -799,7 +798,7 @@ func Macie2CustomDataIdentifier_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.macie2CustomDataIdentifier.Macie2CustomDataIdentifier",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -807,7 +806,7 @@ func Macie2CustomDataIdentifier_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Macie2CustomDataIdentifier_IsTerraformElement(x interface{}) *bool {
+func Macie2CustomDataIdentifier_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMacie2CustomDataIdentifier_IsTerraformElementParameters(x); err != nil {
@@ -818,7 +817,7 @@ func Macie2CustomDataIdentifier_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.macie2CustomDataIdentifier.Macie2CustomDataIdentifier",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -826,7 +825,7 @@ func Macie2CustomDataIdentifier_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Macie2CustomDataIdentifier_IsTerraformResource(x interface{}) *bool {
+func Macie2CustomDataIdentifier_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMacie2CustomDataIdentifier_IsTerraformResourceParameters(x); err != nil {
@@ -837,7 +836,7 @@ func Macie2CustomDataIdentifier_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.macie2CustomDataIdentifier.Macie2CustomDataIdentifier",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -862,31 +861,31 @@ func (m *jsiiProxy_Macie2CustomDataIdentifier) AddMoveTarget(moveTarget *string)
 	_jsii_.InvokeVoid(
 		m,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (m *jsiiProxy_Macie2CustomDataIdentifier) AddOverride(path *string, value interface{}) {
+func (m *jsiiProxy_Macie2CustomDataIdentifier) AddOverride(path *string, value any) {
 	if err := m.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (m *jsiiProxy_Macie2CustomDataIdentifier) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_Macie2CustomDataIdentifier) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -902,7 +901,7 @@ func (m *jsiiProxy_Macie2CustomDataIdentifier) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -918,7 +917,7 @@ func (m *jsiiProxy_Macie2CustomDataIdentifier) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -934,7 +933,7 @@ func (m *jsiiProxy_Macie2CustomDataIdentifier) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -950,7 +949,7 @@ func (m *jsiiProxy_Macie2CustomDataIdentifier) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -966,7 +965,7 @@ func (m *jsiiProxy_Macie2CustomDataIdentifier) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -982,7 +981,7 @@ func (m *jsiiProxy_Macie2CustomDataIdentifier) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -998,7 +997,7 @@ func (m *jsiiProxy_Macie2CustomDataIdentifier) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1014,15 +1013,15 @@ func (m *jsiiProxy_Macie2CustomDataIdentifier) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_Macie2CustomDataIdentifier) HasResourceMove() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_Macie2CustomDataIdentifier) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1041,7 +1040,7 @@ func (m *jsiiProxy_Macie2CustomDataIdentifier) ImportFrom(id *string, provider c
 	_jsii_.InvokeVoid(
 		m,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1054,7 +1053,7 @@ func (m *jsiiProxy_Macie2CustomDataIdentifier) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1068,18 +1067,18 @@ func (m *jsiiProxy_Macie2CustomDataIdentifier) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (m *jsiiProxy_Macie2CustomDataIdentifier) MoveTo(moveTarget *string, index interface{}) {
+func (m *jsiiProxy_Macie2CustomDataIdentifier) MoveTo(moveTarget *string, index any) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1090,7 +1089,7 @@ func (m *jsiiProxy_Macie2CustomDataIdentifier) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1101,7 +1100,7 @@ func (m *jsiiProxy_Macie2CustomDataIdentifier) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1193,8 +1192,8 @@ func (m *jsiiProxy_Macie2CustomDataIdentifier) ResetTagsAll() {
 	)
 }
 
-func (m *jsiiProxy_Macie2CustomDataIdentifier) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_Macie2CustomDataIdentifier) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1206,8 +1205,8 @@ func (m *jsiiProxy_Macie2CustomDataIdentifier) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (m *jsiiProxy_Macie2CustomDataIdentifier) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_Macie2CustomDataIdentifier) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1219,8 +1218,8 @@ func (m *jsiiProxy_Macie2CustomDataIdentifier) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (m *jsiiProxy_Macie2CustomDataIdentifier) ToHclTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_Macie2CustomDataIdentifier) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1232,8 +1231,8 @@ func (m *jsiiProxy_Macie2CustomDataIdentifier) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_Macie2CustomDataIdentifier) ToMetadata() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_Macie2CustomDataIdentifier) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1258,8 +1257,8 @@ func (m *jsiiProxy_Macie2CustomDataIdentifier) ToString() *string {
 	return returns
 }
 
-func (m *jsiiProxy_Macie2CustomDataIdentifier) ToTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_Macie2CustomDataIdentifier) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1270,4 +1269,3 @@ func (m *jsiiProxy_Macie2CustomDataIdentifier) ToTerraform() interface{} {
 
 	return returns
 }
-

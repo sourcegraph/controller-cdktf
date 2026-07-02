@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.defaultNetworkAcl.DefaultNetworkAcl",
-		reflect.TypeOf((*DefaultNetworkAcl)(nil)).Elem(),
+		reflect.TypeFor[DefaultNetworkAcl](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DefaultNetworkAcl{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,15 +86,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.defaultNetworkAcl.DefaultNetworkAclConfig",
-		reflect.TypeOf((*DefaultNetworkAclConfig)(nil)).Elem(),
+		reflect.TypeFor[DefaultNetworkAclConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.defaultNetworkAcl.DefaultNetworkAclEgress",
-		reflect.TypeOf((*DefaultNetworkAclEgress)(nil)).Elem(),
+		reflect.TypeFor[DefaultNetworkAclEgress](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.defaultNetworkAcl.DefaultNetworkAclEgressList",
-		reflect.TypeOf((*DefaultNetworkAclEgressList)(nil)).Elem(),
+		reflect.TypeFor[DefaultNetworkAclEgressList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -108,7 +108,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DefaultNetworkAclEgressList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -116,7 +116,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.defaultNetworkAcl.DefaultNetworkAclEgressOutputReference",
-		reflect.TypeOf((*DefaultNetworkAclEgressOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DefaultNetworkAclEgressOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
@@ -162,7 +162,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "toPortInput", GoGetter: "ToPortInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DefaultNetworkAclEgressOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -170,11 +170,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.defaultNetworkAcl.DefaultNetworkAclIngress",
-		reflect.TypeOf((*DefaultNetworkAclIngress)(nil)).Elem(),
+		reflect.TypeFor[DefaultNetworkAclIngress](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.defaultNetworkAcl.DefaultNetworkAclIngressList",
-		reflect.TypeOf((*DefaultNetworkAclIngressList)(nil)).Elem(),
+		reflect.TypeFor[DefaultNetworkAclIngressList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -188,7 +188,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DefaultNetworkAclIngressList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -196,7 +196,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.defaultNetworkAcl.DefaultNetworkAclIngressOutputReference",
-		reflect.TypeOf((*DefaultNetworkAclIngressOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DefaultNetworkAclIngressOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
@@ -242,7 +242,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "toPortInput", GoGetter: "ToPortInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DefaultNetworkAclIngressOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -19,7 +19,7 @@ func (s *jsiiProxy_SsoadminPermissionSetInlinePolicy) validateAddMoveTargetParam
 	return nil
 }
 
-func (s *jsiiProxy_SsoadminPermissionSetInlinePolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SsoadminPermissionSetInlinePolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SsoadminPermissionSetInlinePolicy) validateMoveFromIdParamete
 	return nil
 }
 
-func (s *jsiiProxy_SsoadminPermissionSetInlinePolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SsoadminPermissionSetInlinePolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateSsoadminPermissionSetInlinePolicy_GenerateConfigForImportParameters
 	return nil
 }
 
-func validateSsoadminPermissionSetInlinePolicy_IsConstructParameters(x interface{}) error {
+func validateSsoadminPermissionSetInlinePolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateSsoadminPermissionSetInlinePolicy_IsConstructParameters(x interface
 	return nil
 }
 
-func validateSsoadminPermissionSetInlinePolicy_IsTerraformElementParameters(x interface{}) error {
+func validateSsoadminPermissionSetInlinePolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateSsoadminPermissionSetInlinePolicy_IsTerraformElementParameters(x in
 	return nil
 }
 
-func validateSsoadminPermissionSetInlinePolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateSsoadminPermissionSetInlinePolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateSsoadminPermissionSetInlinePolicy_IsTerraformResourceParameters(x i
 	return nil
 }
 
-func (j *jsiiProxy_SsoadminPermissionSetInlinePolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SsoadminPermissionSetInlinePolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_SsoadminPermissionSetInlinePolicy) validateSetConnectionParam
 	return nil
 }
 
-func (j *jsiiProxy_SsoadminPermissionSetInlinePolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SsoadminPermissionSetInlinePolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -374,7 +374,7 @@ func (j *jsiiProxy_SsoadminPermissionSetInlinePolicy) validateSetPermissionSetAr
 	return nil
 }
 
-func (j *jsiiProxy_SsoadminPermissionSetInlinePolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SsoadminPermissionSetInlinePolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -438,4 +438,3 @@ func validateNewSsoadminPermissionSetInlinePolicyParameters(scope constructs.Con
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (x *jsiiProxy_XrayGroup) validateAddMoveTargetParameters(moveTarget *string
 	return nil
 }
 
-func (x *jsiiProxy_XrayGroup) validateAddOverrideParameters(path *string, value interface{}) error {
+func (x *jsiiProxy_XrayGroup) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (x *jsiiProxy_XrayGroup) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (x *jsiiProxy_XrayGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (x *jsiiProxy_XrayGroup) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateXrayGroup_GenerateConfigForImportParameters(scope constructs.Constr
 	return nil
 }
 
-func validateXrayGroup_IsConstructParameters(x interface{}) error {
+func validateXrayGroup_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateXrayGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateXrayGroup_IsTerraformElementParameters(x interface{}) error {
+func validateXrayGroup_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateXrayGroup_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateXrayGroup_IsTerraformResourceParameters(x interface{}) error {
+func validateXrayGroup_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateXrayGroup_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_XrayGroup) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_XrayGroup) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_XrayGroup) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_XrayGroup) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_XrayGroup) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_XrayGroup) validateSetLifecycleParameters(val *cdktf.Terrafor
 	return nil
 }
 
-func (j *jsiiProxy_XrayGroup) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_XrayGroup) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -457,4 +457,3 @@ func validateNewXrayGroupParameters(scope constructs.Construct, id *string, conf
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (a *jsiiProxy_AmplifyBackendEnvironment) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (a *jsiiProxy_AmplifyBackendEnvironment) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AmplifyBackendEnvironment) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AmplifyBackendEnvironment) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (a *jsiiProxy_AmplifyBackendEnvironment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AmplifyBackendEnvironment) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateAmplifyBackendEnvironment_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateAmplifyBackendEnvironment_IsConstructParameters(x interface{}) error {
+func validateAmplifyBackendEnvironment_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateAmplifyBackendEnvironment_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateAmplifyBackendEnvironment_IsTerraformElementParameters(x interface{}) error {
+func validateAmplifyBackendEnvironment_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateAmplifyBackendEnvironment_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateAmplifyBackendEnvironment_IsTerraformResourceParameters(x interface{}) error {
+func validateAmplifyBackendEnvironment_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_AmplifyBackendEnvironment) validateSetAppIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_AmplifyBackendEnvironment) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AmplifyBackendEnvironment) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_AmplifyBackendEnvironment) validateSetConnectionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_AmplifyBackendEnvironment) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AmplifyBackendEnvironment) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -374,7 +374,7 @@ func (j *jsiiProxy_AmplifyBackendEnvironment) validateSetLifecycleParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_AmplifyBackendEnvironment) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AmplifyBackendEnvironment) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -446,4 +446,3 @@ func validateNewAmplifyBackendEnvironmentParameters(scope constructs.Construct, 
 
 	return nil
 }
-

@@ -6,9 +6,9 @@ import (
 
 type OpsworksInstanceConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type OpsworksInstanceConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_instance#layer_ids OpsworksInstance#layer_ids}.
 	LayerIds *[]*string `field:"required" json:"layerIds" yaml:"layerIds"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_instance#stack_id OpsworksInstance#stack_id}.
@@ -36,15 +36,15 @@ type OpsworksInstanceConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_instance#created_at OpsworksInstance#created_at}.
 	CreatedAt *string `field:"optional" json:"createdAt" yaml:"createdAt"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_instance#delete_ebs OpsworksInstance#delete_ebs}.
-	DeleteEbs interface{} `field:"optional" json:"deleteEbs" yaml:"deleteEbs"`
+	DeleteEbs any `field:"optional" json:"deleteEbs" yaml:"deleteEbs"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_instance#delete_eip OpsworksInstance#delete_eip}.
-	DeleteEip interface{} `field:"optional" json:"deleteEip" yaml:"deleteEip"`
+	DeleteEip any `field:"optional" json:"deleteEip" yaml:"deleteEip"`
 	// ebs_block_device block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_instance#ebs_block_device OpsworksInstance#ebs_block_device}
-	EbsBlockDevice interface{} `field:"optional" json:"ebsBlockDevice" yaml:"ebsBlockDevice"`
+	EbsBlockDevice any `field:"optional" json:"ebsBlockDevice" yaml:"ebsBlockDevice"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_instance#ebs_optimized OpsworksInstance#ebs_optimized}.
-	EbsOptimized interface{} `field:"optional" json:"ebsOptimized" yaml:"ebsOptimized"`
+	EbsOptimized any `field:"optional" json:"ebsOptimized" yaml:"ebsOptimized"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_instance#ecs_cluster_arn OpsworksInstance#ecs_cluster_arn}.
 	EcsClusterArn *string `field:"optional" json:"ecsClusterArn" yaml:"ecsClusterArn"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_instance#elastic_ip OpsworksInstance#elastic_ip}.
@@ -52,7 +52,7 @@ type OpsworksInstanceConfig struct {
 	// ephemeral_block_device block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_instance#ephemeral_block_device OpsworksInstance#ephemeral_block_device}
-	EphemeralBlockDevice interface{} `field:"optional" json:"ephemeralBlockDevice" yaml:"ephemeralBlockDevice"`
+	EphemeralBlockDevice any `field:"optional" json:"ephemeralBlockDevice" yaml:"ephemeralBlockDevice"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_instance#hostname OpsworksInstance#hostname}.
 	Hostname *string `field:"optional" json:"hostname" yaml:"hostname"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_instance#id OpsworksInstance#id}.
@@ -63,7 +63,7 @@ type OpsworksInstanceConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_instance#infrastructure_class OpsworksInstance#infrastructure_class}.
 	InfrastructureClass *string `field:"optional" json:"infrastructureClass" yaml:"infrastructureClass"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_instance#install_updates_on_boot OpsworksInstance#install_updates_on_boot}.
-	InstallUpdatesOnBoot interface{} `field:"optional" json:"installUpdatesOnBoot" yaml:"installUpdatesOnBoot"`
+	InstallUpdatesOnBoot any `field:"optional" json:"installUpdatesOnBoot" yaml:"installUpdatesOnBoot"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_instance#instance_profile_arn OpsworksInstance#instance_profile_arn}.
 	InstanceProfileArn *string `field:"optional" json:"instanceProfileArn" yaml:"instanceProfileArn"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_instance#instance_type OpsworksInstance#instance_type}.
@@ -73,7 +73,7 @@ type OpsworksInstanceConfig struct {
 	// root_block_device block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_instance#root_block_device OpsworksInstance#root_block_device}
-	RootBlockDevice interface{} `field:"optional" json:"rootBlockDevice" yaml:"rootBlockDevice"`
+	RootBlockDevice any `field:"optional" json:"rootBlockDevice" yaml:"rootBlockDevice"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_instance#root_device_type OpsworksInstance#root_device_type}.
 	RootDeviceType *string `field:"optional" json:"rootDeviceType" yaml:"rootDeviceType"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_instance#security_group_ids OpsworksInstance#security_group_ids}.
@@ -95,4 +95,3 @@ type OpsworksInstanceConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_instance#virtualization_type OpsworksInstance#virtualization_type}.
 	VirtualizationType *string `field:"optional" json:"virtualizationType" yaml:"virtualizationType"`
 }
-

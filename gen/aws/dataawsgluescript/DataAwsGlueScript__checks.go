@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsGlueScript) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsGlueScript) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -111,7 +111,7 @@ func (d *jsiiProxy_DataAwsGlueScript) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsGlueScript) validatePutDagEdgeParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsGlueScript) validatePutDagEdgeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -142,7 +142,7 @@ func (d *jsiiProxy_DataAwsGlueScript) validatePutDagEdgeParameters(value interfa
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsGlueScript) validatePutDagNodeParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsGlueScript) validatePutDagNodeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -189,7 +189,7 @@ func validateDataAwsGlueScript_GenerateConfigForImportParameters(scope construct
 	return nil
 }
 
-func validateDataAwsGlueScript_IsConstructParameters(x interface{}) error {
+func validateDataAwsGlueScript_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -197,7 +197,7 @@ func validateDataAwsGlueScript_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataAwsGlueScript_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsGlueScript_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -205,7 +205,7 @@ func validateDataAwsGlueScript_IsTerraformDataSourceParameters(x interface{}) er
 	return nil
 }
 
-func validateDataAwsGlueScript_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsGlueScript_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -213,7 +213,7 @@ func validateDataAwsGlueScript_IsTerraformElementParameters(x interface{}) error
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsGlueScript) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsGlueScript) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -312,4 +312,3 @@ func validateNewDataAwsGlueScriptParameters(scope constructs.Construct, id *stri
 
 	return nil
 }
-

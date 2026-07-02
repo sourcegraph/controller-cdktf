@@ -34,7 +34,7 @@ func (g *jsiiProxy_GlueTriggerEventBatchingConditionList) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_GlueTriggerEventBatchingConditionList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GlueTriggerEventBatchingConditionList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGlueTriggerEventBatchingConditionListParameters(terraformResourc
 
 	return nil
 }
-

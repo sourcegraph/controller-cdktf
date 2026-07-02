@@ -98,7 +98,7 @@ func (m *jsiiProxy_MqBrokerConfigurationOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_MqBrokerConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MqBrokerConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewMqBrokerConfigurationOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

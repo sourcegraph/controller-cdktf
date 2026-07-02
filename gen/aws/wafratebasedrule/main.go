@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafRateBasedRule.WafRateBasedRule",
-		reflect.TypeOf((*WafRateBasedRule)(nil)).Elem(),
+		reflect.TypeFor[WafRateBasedRule](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WafRateBasedRule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -83,15 +83,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafRateBasedRule.WafRateBasedRuleConfig",
-		reflect.TypeOf((*WafRateBasedRuleConfig)(nil)).Elem(),
+		reflect.TypeFor[WafRateBasedRuleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafRateBasedRule.WafRateBasedRulePredicates",
-		reflect.TypeOf((*WafRateBasedRulePredicates)(nil)).Elem(),
+		reflect.TypeFor[WafRateBasedRulePredicates](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafRateBasedRule.WafRateBasedRulePredicatesList",
-		reflect.TypeOf((*WafRateBasedRulePredicatesList)(nil)).Elem(),
+		reflect.TypeFor[WafRateBasedRulePredicatesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -105,7 +105,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WafRateBasedRulePredicatesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -113,7 +113,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafRateBasedRule.WafRateBasedRulePredicatesOutputReference",
-		reflect.TypeOf((*WafRateBasedRulePredicatesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WafRateBasedRulePredicatesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -143,7 +143,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WafRateBasedRulePredicatesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

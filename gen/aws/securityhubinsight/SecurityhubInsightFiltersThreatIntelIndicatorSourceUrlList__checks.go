@@ -34,7 +34,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlList) v
 	return nil
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSecurityhubInsightFiltersThreatIntelIndicatorSourceUrlListParame
 
 	return nil
 }
-

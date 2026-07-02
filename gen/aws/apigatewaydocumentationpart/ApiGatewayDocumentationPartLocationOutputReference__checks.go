@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApiGatewayDocumentationPartLocationOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_ApiGatewayDocumentationPartLocationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApiGatewayDocumentationPartLocationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewApiGatewayDocumentationPartLocationOutputReferenceParameters(ter
 
 	return nil
 }
-

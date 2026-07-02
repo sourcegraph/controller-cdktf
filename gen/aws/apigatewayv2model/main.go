@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apigatewayv2Model.Apigatewayv2Model",
-		reflect.TypeOf((*Apigatewayv2Model)(nil)).Elem(),
+		reflect.TypeFor[Apigatewayv2Model](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Apigatewayv2Model{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -75,6 +75,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apigatewayv2Model.Apigatewayv2ModelConfig",
-		reflect.TypeOf((*Apigatewayv2ModelConfig)(nil)).Elem(),
+		reflect.TypeFor[Apigatewayv2ModelConfig](),
 	)
 }

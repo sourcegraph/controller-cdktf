@@ -19,7 +19,7 @@ func (c *jsiiProxy_CodebuildProject) validateAddMoveTargetParameters(moveTarget 
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildProject) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_CodebuildProject) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_CodebuildProject) validateMoveFromIdParameters(id *string) er
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildProject) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_CodebuildProject) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -248,7 +248,7 @@ func (c *jsiiProxy_CodebuildProject) validatePutEnvironmentParameters(value *Cod
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildProject) validatePutFileSystemLocationsParameters(value interface{}) error {
+func (c *jsiiProxy_CodebuildProject) validatePutFileSystemLocationsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -290,7 +290,7 @@ func (c *jsiiProxy_CodebuildProject) validatePutLogsConfigParameters(value *Code
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildProject) validatePutSecondaryArtifactsParameters(value interface{}) error {
+func (c *jsiiProxy_CodebuildProject) validatePutSecondaryArtifactsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -321,7 +321,7 @@ func (c *jsiiProxy_CodebuildProject) validatePutSecondaryArtifactsParameters(val
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildProject) validatePutSecondarySourcesParameters(value interface{}) error {
+func (c *jsiiProxy_CodebuildProject) validatePutSecondarySourcesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -352,7 +352,7 @@ func (c *jsiiProxy_CodebuildProject) validatePutSecondarySourcesParameters(value
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildProject) validatePutSecondarySourceVersionParameters(value interface{}) error {
+func (c *jsiiProxy_CodebuildProject) validatePutSecondarySourceVersionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -421,7 +421,7 @@ func validateCodebuildProject_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validateCodebuildProject_IsConstructParameters(x interface{}) error {
+func validateCodebuildProject_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -429,7 +429,7 @@ func validateCodebuildProject_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateCodebuildProject_IsTerraformElementParameters(x interface{}) error {
+func validateCodebuildProject_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -437,7 +437,7 @@ func validateCodebuildProject_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func validateCodebuildProject_IsTerraformResourceParameters(x interface{}) error {
+func validateCodebuildProject_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -445,7 +445,7 @@ func validateCodebuildProject_IsTerraformResourceParameters(x interface{}) error
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildProject) validateSetBadgeEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_CodebuildProject) validateSetBadgeEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -481,7 +481,7 @@ func (j *jsiiProxy_CodebuildProject) validateSetConcurrentBuildLimitParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildProject) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_CodebuildProject) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -514,7 +514,7 @@ func (j *jsiiProxy_CodebuildProject) validateSetConnectionParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildProject) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_CodebuildProject) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -619,7 +619,7 @@ func (j *jsiiProxy_CodebuildProject) validateSetProjectVisibilityParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildProject) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_CodebuildProject) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -731,4 +731,3 @@ func validateNewCodebuildProjectParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-

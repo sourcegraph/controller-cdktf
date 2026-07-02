@@ -15,9 +15,9 @@ type SpotFleetRequestLaunchTemplateConfigOverridesOutputReference interface {
 	AvailabilityZoneInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -35,8 +35,8 @@ type SpotFleetRequestLaunchTemplateConfigOverridesOutputReference interface {
 	InstanceType() *string
 	SetInstanceType(val *string)
 	InstanceTypeInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Priority() *float64
 	SetPriority(val *float64)
 	PriorityInput() *float64
@@ -60,7 +60,7 @@ type SpotFleetRequestLaunchTemplateConfigOverridesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type SpotFleetRequestLaunchTemplateConfigOverridesOutputReference interface {
 	ResetWeightedCapacity()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -124,8 +124,8 @@ func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -204,8 +204,8 @@ func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -314,7 +314,6 @@ func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference)
 	return returns
 }
 
-
 func NewSpotFleetRequestLaunchTemplateConfigOverridesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SpotFleetRequestLaunchTemplateConfigOverridesOutputReference {
 	_init_.Initialize()
 
@@ -325,7 +324,7 @@ func NewSpotFleetRequestLaunchTemplateConfigOverridesOutputReference(terraformRe
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -337,12 +336,12 @@ func NewSpotFleetRequestLaunchTemplateConfigOverridesOutputReference_Override(s 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference)SetAvailabilityZone(val *string) {
+func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference) SetAvailabilityZone(val *string) {
 	if err := j.validateSetAvailabilityZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -353,7 +352,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference)
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,7 +363,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference)
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference)
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference)SetInstanceType(val *string) {
+func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference) SetInstanceType(val *string) {
 	if err := j.validateSetInstanceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference)
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +396,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference)
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference)SetPriority(val *float64) {
+func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference) SetPriority(val *float64) {
 	if err := j.validateSetPriorityParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference)
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference)SetSpotPrice(val *string) {
+func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference) SetSpotPrice(val *string) {
 	if err := j.validateSetSpotPriceParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference)
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference)SetSubnetId(val *string) {
+func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference) SetSubnetId(val *string) {
 	if err := j.validateSetSubnetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference)
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference)
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference)
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference)SetWeightedCapacity(val *float64) {
+func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference) SetWeightedCapacity(val *float64) {
 	if err := j.validateSetWeightedCapacityParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,16 +475,16 @@ func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference)
 	return returns
 }
 
-func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -501,7 +500,7 @@ func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference)
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -517,7 +516,7 @@ func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference)
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -533,7 +532,7 @@ func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference)
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -549,7 +548,7 @@ func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference)
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -565,7 +564,7 @@ func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference)
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference)
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -597,7 +596,7 @@ func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference)
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference)
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -642,7 +641,7 @@ func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference)
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -656,7 +655,7 @@ func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference)
 	_jsii_.InvokeVoid(
 		s,
 		"putInstanceRequirements",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -716,16 +715,16 @@ func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference)
 	)
 }
 
-func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -744,4 +743,3 @@ func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesOutputReference)
 
 	return returns
 }
-

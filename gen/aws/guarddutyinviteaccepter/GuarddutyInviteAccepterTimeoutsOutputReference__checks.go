@@ -98,7 +98,7 @@ func (g *jsiiProxy_GuarddutyInviteAccepterTimeoutsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_GuarddutyInviteAccepterTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GuarddutyInviteAccepterTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GuarddutyInviteAccepterTimeoutsOutputReference) validateSetCr
 	return nil
 }
 
-func (j *jsiiProxy_GuarddutyInviteAccepterTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GuarddutyInviteAccepterTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGuarddutyInviteAccepterTimeoutsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

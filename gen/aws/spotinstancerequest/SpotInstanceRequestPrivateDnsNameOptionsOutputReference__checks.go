@@ -98,7 +98,7 @@ func (s *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) validateSetEnableResourceNameDnsAaaaRecordParameters(val interface{}) error {
+func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) validateSetEnableResourceNameDnsAaaaRecordParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) validateSetEnableResourceNameDnsARecordParameters(val interface{}) error {
+func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) validateSetEnableResourceNameDnsARecordParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -246,4 +246,3 @@ func validateNewSpotInstanceRequestPrivateDnsNameOptionsOutputReferenceParameter
 
 	return nil
 }
-

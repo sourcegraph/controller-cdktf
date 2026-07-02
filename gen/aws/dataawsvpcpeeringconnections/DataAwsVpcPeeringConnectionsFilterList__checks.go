@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataAwsVpcPeeringConnectionsFilterList) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsVpcPeeringConnectionsFilterList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsVpcPeeringConnectionsFilterList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataAwsVpcPeeringConnectionsFilterListParameters(terraformResour
 
 	return nil
 }
-

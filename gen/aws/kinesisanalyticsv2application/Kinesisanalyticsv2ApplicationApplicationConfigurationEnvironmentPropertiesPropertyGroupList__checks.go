@@ -34,7 +34,7 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironm
 	return nil
 }
 
-func (j *jsiiProxy_Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentPropertiesPropertyGroupList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentPropertiesPropertyGroupList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewKinesisanalyticsv2ApplicationApplicationConfigurationEnvironment
 
 	return nil
 }
-

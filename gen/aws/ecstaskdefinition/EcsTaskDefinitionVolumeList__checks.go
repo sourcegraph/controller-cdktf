@@ -34,7 +34,7 @@ func (e *jsiiProxy_EcsTaskDefinitionVolumeList) validateResolveParameters(_conte
 	return nil
 }
 
-func (j *jsiiProxy_EcsTaskDefinitionVolumeList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EcsTaskDefinitionVolumeList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEcsTaskDefinitionVolumeListParameters(terraformResource cdktf.II
 
 	return nil
 }
-

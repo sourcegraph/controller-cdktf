@@ -106,7 +106,7 @@ func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) validateSetAnalys
 	return nil
 }
 
-func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) validateSetDefaul
 	return nil
 }
 
-func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) validateSetFacetParameters(val interface{}) error {
+func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) validateSetFacetParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -199,7 +199,7 @@ func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) validateSetFacetP
 	return nil
 }
 
-func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) validateSetHighlightParameters(val interface{}) error {
+func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) validateSetHighlightParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -219,7 +219,7 @@ func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) validateSetHighli
 	return nil
 }
 
-func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -251,7 +251,7 @@ func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) validateSetNamePa
 	return nil
 }
 
-func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) validateSetReturnParameters(val interface{}) error {
+func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) validateSetReturnParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -271,7 +271,7 @@ func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) validateSetReturn
 	return nil
 }
 
-func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) validateSetSearchParameters(val interface{}) error {
+func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) validateSetSearchParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -291,7 +291,7 @@ func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) validateSetSearch
 	return nil
 }
 
-func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) validateSetSortParameters(val interface{}) error {
+func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) validateSetSortParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -362,4 +362,3 @@ func validateNewCloudsearchDomainIndexFieldOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

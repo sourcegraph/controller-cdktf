@@ -22,15 +22,15 @@ type RdsClusterEndpoint interface {
 	SetClusterIdentifier(val *string)
 	ClusterIdentifierInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CustomEndpointType() *string
 	SetCustomEndpointType(val *string)
 	CustomEndpointTypeInput() *string
@@ -64,11 +64,11 @@ type RdsClusterEndpoint interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	StaticMembers() *[]*string
 	SetStaticMembers(val *[]*string)
 	StaticMembersInput() *[]*string
@@ -81,16 +81,16 @@ type RdsClusterEndpoint interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -108,7 +108,7 @@ type RdsClusterEndpoint interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -120,7 +120,7 @@ type RdsClusterEndpoint interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -135,17 +135,17 @@ type RdsClusterEndpoint interface {
 	ResetStaticMembers()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for RdsClusterEndpoint
@@ -213,8 +213,8 @@ func (j *jsiiProxy_RdsClusterEndpoint) ClusterIdentifierInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RdsClusterEndpoint) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RdsClusterEndpoint) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -223,8 +223,8 @@ func (j *jsiiProxy_RdsClusterEndpoint) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RdsClusterEndpoint) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RdsClusterEndpoint) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -233,8 +233,8 @@ func (j *jsiiProxy_RdsClusterEndpoint) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_RdsClusterEndpoint) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RdsClusterEndpoint) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -383,8 +383,8 @@ func (j *jsiiProxy_RdsClusterEndpoint) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_RdsClusterEndpoint) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_RdsClusterEndpoint) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -393,8 +393,8 @@ func (j *jsiiProxy_RdsClusterEndpoint) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RdsClusterEndpoint) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RdsClusterEndpoint) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -473,8 +473,8 @@ func (j *jsiiProxy_RdsClusterEndpoint) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_RdsClusterEndpoint) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RdsClusterEndpoint) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -493,7 +493,6 @@ func (j *jsiiProxy_RdsClusterEndpoint) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/rds_cluster_endpoint aws_rds_cluster_endpoint} Resource.
 func NewRdsClusterEndpoint(scope constructs.Construct, id *string, config *RdsClusterEndpointConfig) RdsClusterEndpoint {
 	_init_.Initialize()
@@ -505,7 +504,7 @@ func NewRdsClusterEndpoint(scope constructs.Construct, id *string, config *RdsCl
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.rdsClusterEndpoint.RdsClusterEndpoint",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -518,12 +517,12 @@ func NewRdsClusterEndpoint_Override(r RdsClusterEndpoint, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.rdsClusterEndpoint.RdsClusterEndpoint",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RdsClusterEndpoint)SetClusterEndpointIdentifier(val *string) {
+func (j *jsiiProxy_RdsClusterEndpoint) SetClusterEndpointIdentifier(val *string) {
 	if err := j.validateSetClusterEndpointIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_RdsClusterEndpoint)SetClusterEndpointIdentifier(val *string) 
 	)
 }
 
-func (j *jsiiProxy_RdsClusterEndpoint)SetClusterIdentifier(val *string) {
+func (j *jsiiProxy_RdsClusterEndpoint) SetClusterIdentifier(val *string) {
 	if err := j.validateSetClusterIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_RdsClusterEndpoint)SetClusterIdentifier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterEndpoint)SetConnection(val interface{}) {
+func (j *jsiiProxy_RdsClusterEndpoint) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -556,7 +555,7 @@ func (j *jsiiProxy_RdsClusterEndpoint)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterEndpoint)SetCount(val interface{}) {
+func (j *jsiiProxy_RdsClusterEndpoint) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -567,7 +566,7 @@ func (j *jsiiProxy_RdsClusterEndpoint)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterEndpoint)SetCustomEndpointType(val *string) {
+func (j *jsiiProxy_RdsClusterEndpoint) SetCustomEndpointType(val *string) {
 	if err := j.validateSetCustomEndpointTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -578,7 +577,7 @@ func (j *jsiiProxy_RdsClusterEndpoint)SetCustomEndpointType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterEndpoint)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_RdsClusterEndpoint) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -586,7 +585,7 @@ func (j *jsiiProxy_RdsClusterEndpoint)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterEndpoint)SetExcludedMembers(val *[]*string) {
+func (j *jsiiProxy_RdsClusterEndpoint) SetExcludedMembers(val *[]*string) {
 	if err := j.validateSetExcludedMembersParameters(val); err != nil {
 		panic(err)
 	}
@@ -597,7 +596,7 @@ func (j *jsiiProxy_RdsClusterEndpoint)SetExcludedMembers(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterEndpoint)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_RdsClusterEndpoint) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -605,7 +604,7 @@ func (j *jsiiProxy_RdsClusterEndpoint)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterEndpoint)SetId(val *string) {
+func (j *jsiiProxy_RdsClusterEndpoint) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -616,7 +615,7 @@ func (j *jsiiProxy_RdsClusterEndpoint)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterEndpoint)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_RdsClusterEndpoint) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func (j *jsiiProxy_RdsClusterEndpoint)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_RdsClusterEndpoint)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_RdsClusterEndpoint) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -635,7 +634,7 @@ func (j *jsiiProxy_RdsClusterEndpoint)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterEndpoint)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_RdsClusterEndpoint) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -646,7 +645,7 @@ func (j *jsiiProxy_RdsClusterEndpoint)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterEndpoint)SetStaticMembers(val *[]*string) {
+func (j *jsiiProxy_RdsClusterEndpoint) SetStaticMembers(val *[]*string) {
 	if err := j.validateSetStaticMembersParameters(val); err != nil {
 		panic(err)
 	}
@@ -657,7 +656,7 @@ func (j *jsiiProxy_RdsClusterEndpoint)SetStaticMembers(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterEndpoint)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_RdsClusterEndpoint) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -668,7 +667,7 @@ func (j *jsiiProxy_RdsClusterEndpoint)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterEndpoint)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_RdsClusterEndpoint) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -691,7 +690,7 @@ func RdsClusterEndpoint_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.rdsClusterEndpoint.RdsClusterEndpoint",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -715,7 +714,7 @@ func RdsClusterEndpoint_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func RdsClusterEndpoint_IsConstruct(x interface{}) *bool {
+func RdsClusterEndpoint_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRdsClusterEndpoint_IsConstructParameters(x); err != nil {
@@ -726,7 +725,7 @@ func RdsClusterEndpoint_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.rdsClusterEndpoint.RdsClusterEndpoint",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -734,7 +733,7 @@ func RdsClusterEndpoint_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func RdsClusterEndpoint_IsTerraformElement(x interface{}) *bool {
+func RdsClusterEndpoint_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRdsClusterEndpoint_IsTerraformElementParameters(x); err != nil {
@@ -745,7 +744,7 @@ func RdsClusterEndpoint_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.rdsClusterEndpoint.RdsClusterEndpoint",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func RdsClusterEndpoint_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func RdsClusterEndpoint_IsTerraformResource(x interface{}) *bool {
+func RdsClusterEndpoint_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRdsClusterEndpoint_IsTerraformResourceParameters(x); err != nil {
@@ -764,7 +763,7 @@ func RdsClusterEndpoint_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.rdsClusterEndpoint.RdsClusterEndpoint",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -789,31 +788,31 @@ func (r *jsiiProxy_RdsClusterEndpoint) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (r *jsiiProxy_RdsClusterEndpoint) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_RdsClusterEndpoint) AddOverride(path *string, value any) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (r *jsiiProxy_RdsClusterEndpoint) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RdsClusterEndpoint) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -829,7 +828,7 @@ func (r *jsiiProxy_RdsClusterEndpoint) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -845,7 +844,7 @@ func (r *jsiiProxy_RdsClusterEndpoint) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -861,7 +860,7 @@ func (r *jsiiProxy_RdsClusterEndpoint) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -877,7 +876,7 @@ func (r *jsiiProxy_RdsClusterEndpoint) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -893,7 +892,7 @@ func (r *jsiiProxy_RdsClusterEndpoint) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -909,7 +908,7 @@ func (r *jsiiProxy_RdsClusterEndpoint) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -925,7 +924,7 @@ func (r *jsiiProxy_RdsClusterEndpoint) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -941,15 +940,15 @@ func (r *jsiiProxy_RdsClusterEndpoint) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_RdsClusterEndpoint) HasResourceMove() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RdsClusterEndpoint) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -968,7 +967,7 @@ func (r *jsiiProxy_RdsClusterEndpoint) ImportFrom(id *string, provider cdktf.Ter
 	_jsii_.InvokeVoid(
 		r,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -981,7 +980,7 @@ func (r *jsiiProxy_RdsClusterEndpoint) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -995,18 +994,18 @@ func (r *jsiiProxy_RdsClusterEndpoint) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (r *jsiiProxy_RdsClusterEndpoint) MoveTo(moveTarget *string, index interface{}) {
+func (r *jsiiProxy_RdsClusterEndpoint) MoveTo(moveTarget *string, index any) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1017,7 +1016,7 @@ func (r *jsiiProxy_RdsClusterEndpoint) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1028,7 +1027,7 @@ func (r *jsiiProxy_RdsClusterEndpoint) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1080,8 +1079,8 @@ func (r *jsiiProxy_RdsClusterEndpoint) ResetTagsAll() {
 	)
 }
 
-func (r *jsiiProxy_RdsClusterEndpoint) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RdsClusterEndpoint) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1093,8 +1092,8 @@ func (r *jsiiProxy_RdsClusterEndpoint) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (r *jsiiProxy_RdsClusterEndpoint) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RdsClusterEndpoint) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1106,8 +1105,8 @@ func (r *jsiiProxy_RdsClusterEndpoint) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (r *jsiiProxy_RdsClusterEndpoint) ToHclTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RdsClusterEndpoint) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1119,8 +1118,8 @@ func (r *jsiiProxy_RdsClusterEndpoint) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_RdsClusterEndpoint) ToMetadata() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RdsClusterEndpoint) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1145,8 +1144,8 @@ func (r *jsiiProxy_RdsClusterEndpoint) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_RdsClusterEndpoint) ToTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RdsClusterEndpoint) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1157,4 +1156,3 @@ func (r *jsiiProxy_RdsClusterEndpoint) ToTerraform() interface{} {
 
 	return returns
 }
-

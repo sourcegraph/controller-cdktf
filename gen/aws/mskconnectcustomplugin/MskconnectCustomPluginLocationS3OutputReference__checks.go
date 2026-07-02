@@ -106,7 +106,7 @@ func (j *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference) validateSetB
 	return nil
 }
 
-func (j *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewMskconnectCustomPluginLocationS3OutputReferenceParameters(terraf
 
 	return nil
 }
-

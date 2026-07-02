@@ -109,7 +109,7 @@ func (e *jsiiProxy_EvidentlyLaunchMetricMonitorsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_EvidentlyLaunchMetricMonitorsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EvidentlyLaunchMetricMonitorsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_EvidentlyLaunchMetricMonitorsOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_EvidentlyLaunchMetricMonitorsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EvidentlyLaunchMetricMonitorsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -233,4 +233,3 @@ func validateNewEvidentlyLaunchMetricMonitorsOutputReferenceParameters(terraform
 
 	return nil
 }
-

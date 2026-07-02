@@ -15,9 +15,9 @@ type MskconnectCustomPluginLocationS3OutputReference interface {
 	BucketArnInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type MskconnectCustomPluginLocationS3OutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type MskconnectCustomPluginLocationS3OutputReference interface {
 	ResetObjectVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -106,8 +106,8 @@ func (j *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference) BucketArnInp
 	return returns
 }
 
-func (j *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference) TerraformRes
 	return returns
 }
 
-
 func NewMskconnectCustomPluginLocationS3OutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MskconnectCustomPluginLocationS3OutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewMskconnectCustomPluginLocationS3OutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginLocationS3OutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewMskconnectCustomPluginLocationS3OutputReference_Override(m MskconnectCus
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginLocationS3OutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference)SetBucketArn(val *string) {
+func (j *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference) SetBucketArn(val *string) {
 	if err := j.validateSetBucketArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference)SetBucketArn(
 	)
 }
 
-func (j *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference)SetFileKey(val *string) {
+func (j *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference) SetFileKey(val *string) {
 	if err := j.validateSetFileKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference)SetFileKey(va
 	)
 }
 
-func (j *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference)SetInternalValue(val *MskconnectCustomPluginLocationS3) {
+func (j *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference) SetInternalValue(val *MskconnectCustomPluginLocationS3) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference)SetObjectVersion(val *string) {
+func (j *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference) SetObjectVersion(val *string) {
 	if err := j.validateSetObjectVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference)SetObjectVers
 	)
 }
 
-func (j *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,16 +344,16 @@ func (m *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference) ComputeFqn()
 	return returns
 }
 
-func (m *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (m *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (m *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (m *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference) GetListAttri
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (m *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (m *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference) GetNumberLis
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (m *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference) GetNumberMap
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (m *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference) GetStringAtt
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (m *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference) GetStringMap
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (m *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference) Interpolatio
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -526,16 +525,16 @@ func (m *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference) ResetObjectV
 	)
 }
 
-func (m *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (m *jsiiProxy_MskconnectCustomPluginLocationS3OutputReference) ToString() *
 
 	return returns
 }
-

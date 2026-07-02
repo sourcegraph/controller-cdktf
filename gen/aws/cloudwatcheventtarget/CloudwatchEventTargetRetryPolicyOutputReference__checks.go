@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudwatchEventTargetRetryPolicyOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_CloudwatchEventTargetRetryPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudwatchEventTargetRetryPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewCloudwatchEventTargetRetryPolicyOutputReferenceParameters(terraf
 
 	return nil
 }
-

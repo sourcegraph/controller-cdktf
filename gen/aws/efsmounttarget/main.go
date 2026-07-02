@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.efsMountTarget.EfsMountTarget",
-		reflect.TypeOf((*EfsMountTarget)(nil)).Elem(),
+		reflect.TypeFor[EfsMountTarget](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EfsMountTarget{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,15 +85,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.efsMountTarget.EfsMountTargetConfig",
-		reflect.TypeOf((*EfsMountTargetConfig)(nil)).Elem(),
+		reflect.TypeFor[EfsMountTargetConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.efsMountTarget.EfsMountTargetTimeouts",
-		reflect.TypeOf((*EfsMountTargetTimeouts)(nil)).Elem(),
+		reflect.TypeFor[EfsMountTargetTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.efsMountTarget.EfsMountTargetTimeoutsOutputReference",
-		reflect.TypeOf((*EfsMountTargetTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EfsMountTargetTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -123,7 +123,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EfsMountTargetTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

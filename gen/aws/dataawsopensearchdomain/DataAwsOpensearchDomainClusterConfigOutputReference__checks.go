@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsOpensearchDomainClusterConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsOpensearchDomainClusterConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsOpensearchDomainClusterConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsOpensearchDomainClusterConfigOutputReferenceParameters(te
 
 	return nil
 }
-

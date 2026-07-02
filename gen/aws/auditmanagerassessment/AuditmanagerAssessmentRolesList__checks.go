@@ -34,7 +34,7 @@ func (a *jsiiProxy_AuditmanagerAssessmentRolesList) validateResolveParameters(_c
 	return nil
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentRolesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AuditmanagerAssessmentRolesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAuditmanagerAssessmentRolesListParameters(terraformResource cdkt
 
 	return nil
 }
-

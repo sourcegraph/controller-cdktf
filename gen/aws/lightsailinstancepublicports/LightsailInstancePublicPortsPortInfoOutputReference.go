@@ -18,9 +18,9 @@ type LightsailInstancePublicPortsPortInfoOutputReference interface {
 	CidrsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -36,8 +36,8 @@ type LightsailInstancePublicPortsPortInfoOutputReference interface {
 	FromPort() *float64
 	SetFromPort(val *float64)
 	FromPortInput() *float64
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Ipv6Cidrs() *[]*string
 	SetIpv6Cidrs(val *[]*string)
 	Ipv6CidrsInput() *[]*string
@@ -58,7 +58,7 @@ type LightsailInstancePublicPortsPortInfoOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -84,7 +84,7 @@ type LightsailInstancePublicPortsPortInfoOutputReference interface {
 	ResetIpv6Cidrs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -137,8 +137,8 @@ func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) CidrsInp
 	return returns
 }
 
-func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -197,8 +197,8 @@ func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) FromPort
 	return returns
 }
 
-func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -287,7 +287,6 @@ func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) ToPortIn
 	return returns
 }
 
-
 func NewLightsailInstancePublicPortsPortInfoOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LightsailInstancePublicPortsPortInfoOutputReference {
 	_init_.Initialize()
 
@@ -298,7 +297,7 @@ func NewLightsailInstancePublicPortsPortInfoOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfoOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -310,12 +309,12 @@ func NewLightsailInstancePublicPortsPortInfoOutputReference_Override(l Lightsail
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfoOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference)SetCidrListAliases(val *[]*string) {
+func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) SetCidrListAliases(val *[]*string) {
 	if err := j.validateSetCidrListAliasesParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,7 +325,7 @@ func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference)SetCidrLi
 	)
 }
 
-func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference)SetCidrs(val *[]*string) {
+func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) SetCidrs(val *[]*string) {
 	if err := j.validateSetCidrsParameters(val); err != nil {
 		panic(err)
 	}
@@ -337,7 +336,7 @@ func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference)SetCidrs(
 	)
 }
 
-func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -348,7 +347,7 @@ func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,7 +358,7 @@ func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference)SetFromPort(val *float64) {
+func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) SetFromPort(val *float64) {
 	if err := j.validateSetFromPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,7 +369,7 @@ func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference)SetFromPo
 	)
 }
 
-func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,7 +380,7 @@ func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference)SetIpv6Cidrs(val *[]*string) {
+func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) SetIpv6Cidrs(val *[]*string) {
 	if err := j.validateSetIpv6CidrsParameters(val); err != nil {
 		panic(err)
 	}
@@ -392,7 +391,7 @@ func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference)SetIpv6Ci
 	)
 }
 
-func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference)SetProtocol(val *string) {
+func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) SetProtocol(val *string) {
 	if err := j.validateSetProtocolParameters(val); err != nil {
 		panic(err)
 	}
@@ -403,7 +402,7 @@ func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference)SetProtoc
 	)
 }
 
-func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -414,7 +413,7 @@ func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -425,7 +424,7 @@ func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference)SetToPort(val *float64) {
+func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) SetToPort(val *float64) {
 	if err := j.validateSetToPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -449,16 +448,16 @@ func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) ComputeF
 	return returns
 }
 
-func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) GetBoole
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) GetBoole
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) GetListA
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) GetNumbe
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) GetNumbe
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) GetNumbe
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -570,7 +569,7 @@ func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) GetStrin
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -586,7 +585,7 @@ func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) GetStrin
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -615,7 +614,7 @@ func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) Interpol
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -646,16 +645,16 @@ func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) ResetIpv
 	)
 }
 
-func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -674,4 +673,3 @@ func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) ToString
 
 	return returns
 }
-

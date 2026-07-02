@@ -12,9 +12,9 @@ type DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,16 +28,16 @@ type DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference interface {
 	EndpointReference() *string
 	SetEndpointReference(val *string)
 	EndpointReferenceInput() *string
-	EvaluateTargetHealth() interface{}
-	SetEvaluateTargetHealth(val interface{})
-	EvaluateTargetHealthInput() interface{}
+	EvaluateTargetHealth() any
+	SetEvaluateTargetHealth(val any)
+	EvaluateTargetHealthInput() any
 	// Experimental.
 	Fqn() *string
 	HealthCheck() *string
 	SetHealthCheck(val *string)
 	HealthCheckInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -55,7 +55,7 @@ type DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference interface {
 	ResetRuleReference()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ type jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference stru
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -146,8 +146,8 @@ func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference) EvaluateTargetHealth() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference) EvaluateTargetHealth() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"evaluateTargetHealth",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference) EvaluateTargetHealthInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference) EvaluateTargetHealthInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"evaluateTargetHealthInput",
@@ -196,8 +196,8 @@ func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference)
 	return returns
 }
 
-
 func NewDataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewDataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference(terraformRe
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewDataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference_Override(d 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference)
 	)
 }
 
-func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference)
 	)
 }
 
-func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference)SetEndpointReference(val *string) {
+func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference) SetEndpointReference(val *string) {
 	if err := j.validateSetEndpointReferenceParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference)
 	)
 }
 
-func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference)SetEvaluateTargetHealth(val interface{}) {
+func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference) SetEvaluateTargetHealth(val any) {
 	if err := j.validateSetEvaluateTargetHealthParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference)
 	)
 }
 
-func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference)SetHealthCheck(val *string) {
+func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference) SetHealthCheck(val *string) {
 	if err := j.validateSetHealthCheckParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference)
 	)
 }
 
-func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference)
 	)
 }
 
-func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference)SetRegion(val *string) {
+func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference)
 	)
 }
 
-func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference)SetRuleReference(val *string) {
+func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference) SetRuleReference(val *string) {
 	if err := j.validateSetRuleReferenceParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference)
 	)
 }
 
-func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference)
 	)
 }
 
-func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,16 +416,16 @@ func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference)
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference)
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference)
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference)
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference)
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference)
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference)
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference)
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference)
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference)
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -630,16 +629,16 @@ func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference)
 	)
 }
 
-func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference)
 
 	return returns
 }
-

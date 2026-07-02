@@ -19,7 +19,7 @@ func (f *jsiiProxy_FsxDataRepositoryAssociation) validateAddMoveTargetParameters
 	return nil
 }
 
-func (f *jsiiProxy_FsxDataRepositoryAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
+func (f *jsiiProxy_FsxDataRepositoryAssociation) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (f *jsiiProxy_FsxDataRepositoryAssociation) validateMoveFromIdParameters(id
 	return nil
 }
 
-func (f *jsiiProxy_FsxDataRepositoryAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (f *jsiiProxy_FsxDataRepositoryAssociation) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateFsxDataRepositoryAssociation_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateFsxDataRepositoryAssociation_IsConstructParameters(x interface{}) error {
+func validateFsxDataRepositoryAssociation_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateFsxDataRepositoryAssociation_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateFsxDataRepositoryAssociation_IsTerraformElementParameters(x interface{}) error {
+func validateFsxDataRepositoryAssociation_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateFsxDataRepositoryAssociation_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func validateFsxDataRepositoryAssociation_IsTerraformResourceParameters(x interface{}) error {
+func validateFsxDataRepositoryAssociation_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateFsxDataRepositoryAssociation_IsTerraformResourceParameters(x interf
 	return nil
 }
 
-func (j *jsiiProxy_FsxDataRepositoryAssociation) validateSetBatchImportMetaDataOnCreateParameters(val interface{}) error {
+func (j *jsiiProxy_FsxDataRepositoryAssociation) validateSetBatchImportMetaDataOnCreateParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func (j *jsiiProxy_FsxDataRepositoryAssociation) validateSetBatchImportMetaDataO
 	return nil
 }
 
-func (j *jsiiProxy_FsxDataRepositoryAssociation) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_FsxDataRepositoryAssociation) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -319,7 +319,7 @@ func (j *jsiiProxy_FsxDataRepositoryAssociation) validateSetConnectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_FsxDataRepositoryAssociation) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_FsxDataRepositoryAssociation) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -384,7 +384,7 @@ func (j *jsiiProxy_FsxDataRepositoryAssociation) validateSetDataRepositoryPathPa
 	return nil
 }
 
-func (j *jsiiProxy_FsxDataRepositoryAssociation) validateSetDeleteDataInFilesystemParameters(val interface{}) error {
+func (j *jsiiProxy_FsxDataRepositoryAssociation) validateSetDeleteDataInFilesystemParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -444,7 +444,7 @@ func (j *jsiiProxy_FsxDataRepositoryAssociation) validateSetLifecycleParameters(
 	return nil
 }
 
-func (j *jsiiProxy_FsxDataRepositoryAssociation) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_FsxDataRepositoryAssociation) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -524,4 +524,3 @@ func validateNewFsxDataRepositoryAssociationParameters(scope constructs.Construc
 
 	return nil
 }
-

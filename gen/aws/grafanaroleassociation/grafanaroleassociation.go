@@ -15,15 +15,15 @@ type GrafanaRoleAssociation interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,22 +53,22 @@ type GrafanaRoleAssociation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GrafanaRoleAssociationTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UserIds() *[]*string
 	SetUserIds(val *[]*string)
 	UserIdsInput() *[]*string
@@ -79,9 +79,9 @@ type GrafanaRoleAssociation interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type GrafanaRoleAssociation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -111,7 +111,7 @@ type GrafanaRoleAssociation interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -126,17 +126,17 @@ type GrafanaRoleAssociation interface {
 	ResetOverrideLogicalId()
 	ResetTimeouts()
 	ResetUserIds()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GrafanaRoleAssociation
@@ -154,8 +154,8 @@ func (j *jsiiProxy_GrafanaRoleAssociation) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_GrafanaRoleAssociation) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GrafanaRoleAssociation) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_GrafanaRoleAssociation) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GrafanaRoleAssociation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GrafanaRoleAssociation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_GrafanaRoleAssociation) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_GrafanaRoleAssociation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GrafanaRoleAssociation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -294,8 +294,8 @@ func (j *jsiiProxy_GrafanaRoleAssociation) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GrafanaRoleAssociation) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GrafanaRoleAssociation) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -304,8 +304,8 @@ func (j *jsiiProxy_GrafanaRoleAssociation) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GrafanaRoleAssociation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GrafanaRoleAssociation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -344,8 +344,8 @@ func (j *jsiiProxy_GrafanaRoleAssociation) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_GrafanaRoleAssociation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GrafanaRoleAssociation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -374,8 +374,8 @@ func (j *jsiiProxy_GrafanaRoleAssociation) Timeouts() GrafanaRoleAssociationTime
 	return returns
 }
 
-func (j *jsiiProxy_GrafanaRoleAssociation) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GrafanaRoleAssociation) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -424,7 +424,6 @@ func (j *jsiiProxy_GrafanaRoleAssociation) WorkspaceIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/grafana_role_association aws_grafana_role_association} Resource.
 func NewGrafanaRoleAssociation(scope constructs.Construct, id *string, config *GrafanaRoleAssociationConfig) GrafanaRoleAssociation {
 	_init_.Initialize()
@@ -436,7 +435,7 @@ func NewGrafanaRoleAssociation(scope constructs.Construct, id *string, config *G
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.grafanaRoleAssociation.GrafanaRoleAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -449,12 +448,12 @@ func NewGrafanaRoleAssociation_Override(g GrafanaRoleAssociation, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.grafanaRoleAssociation.GrafanaRoleAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GrafanaRoleAssociation)SetConnection(val interface{}) {
+func (j *jsiiProxy_GrafanaRoleAssociation) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_GrafanaRoleAssociation)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GrafanaRoleAssociation)SetCount(val interface{}) {
+func (j *jsiiProxy_GrafanaRoleAssociation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_GrafanaRoleAssociation)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GrafanaRoleAssociation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GrafanaRoleAssociation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -484,7 +483,7 @@ func (j *jsiiProxy_GrafanaRoleAssociation)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GrafanaRoleAssociation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GrafanaRoleAssociation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -492,7 +491,7 @@ func (j *jsiiProxy_GrafanaRoleAssociation)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_GrafanaRoleAssociation)SetGroupIds(val *[]*string) {
+func (j *jsiiProxy_GrafanaRoleAssociation) SetGroupIds(val *[]*string) {
 	if err := j.validateSetGroupIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -503,7 +502,7 @@ func (j *jsiiProxy_GrafanaRoleAssociation)SetGroupIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GrafanaRoleAssociation)SetId(val *string) {
+func (j *jsiiProxy_GrafanaRoleAssociation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -514,7 +513,7 @@ func (j *jsiiProxy_GrafanaRoleAssociation)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GrafanaRoleAssociation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GrafanaRoleAssociation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -525,7 +524,7 @@ func (j *jsiiProxy_GrafanaRoleAssociation)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_GrafanaRoleAssociation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GrafanaRoleAssociation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -533,7 +532,7 @@ func (j *jsiiProxy_GrafanaRoleAssociation)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_GrafanaRoleAssociation)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GrafanaRoleAssociation) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -544,7 +543,7 @@ func (j *jsiiProxy_GrafanaRoleAssociation)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GrafanaRoleAssociation)SetRole(val *string) {
+func (j *jsiiProxy_GrafanaRoleAssociation) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -555,7 +554,7 @@ func (j *jsiiProxy_GrafanaRoleAssociation)SetRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GrafanaRoleAssociation)SetUserIds(val *[]*string) {
+func (j *jsiiProxy_GrafanaRoleAssociation) SetUserIds(val *[]*string) {
 	if err := j.validateSetUserIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -566,7 +565,7 @@ func (j *jsiiProxy_GrafanaRoleAssociation)SetUserIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GrafanaRoleAssociation)SetWorkspaceId(val *string) {
+func (j *jsiiProxy_GrafanaRoleAssociation) SetWorkspaceId(val *string) {
 	if err := j.validateSetWorkspaceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -589,7 +588,7 @@ func GrafanaRoleAssociation_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.grafanaRoleAssociation.GrafanaRoleAssociation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func GrafanaRoleAssociation_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GrafanaRoleAssociation_IsConstruct(x interface{}) *bool {
+func GrafanaRoleAssociation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGrafanaRoleAssociation_IsConstructParameters(x); err != nil {
@@ -624,7 +623,7 @@ func GrafanaRoleAssociation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.grafanaRoleAssociation.GrafanaRoleAssociation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -632,7 +631,7 @@ func GrafanaRoleAssociation_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GrafanaRoleAssociation_IsTerraformElement(x interface{}) *bool {
+func GrafanaRoleAssociation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGrafanaRoleAssociation_IsTerraformElementParameters(x); err != nil {
@@ -643,7 +642,7 @@ func GrafanaRoleAssociation_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.grafanaRoleAssociation.GrafanaRoleAssociation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -651,7 +650,7 @@ func GrafanaRoleAssociation_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GrafanaRoleAssociation_IsTerraformResource(x interface{}) *bool {
+func GrafanaRoleAssociation_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGrafanaRoleAssociation_IsTerraformResourceParameters(x); err != nil {
@@ -662,7 +661,7 @@ func GrafanaRoleAssociation_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.grafanaRoleAssociation.GrafanaRoleAssociation",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -687,31 +686,31 @@ func (g *jsiiProxy_GrafanaRoleAssociation) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GrafanaRoleAssociation) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GrafanaRoleAssociation) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GrafanaRoleAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GrafanaRoleAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func (g *jsiiProxy_GrafanaRoleAssociation) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func (g *jsiiProxy_GrafanaRoleAssociation) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func (g *jsiiProxy_GrafanaRoleAssociation) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func (g *jsiiProxy_GrafanaRoleAssociation) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -791,7 +790,7 @@ func (g *jsiiProxy_GrafanaRoleAssociation) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -807,7 +806,7 @@ func (g *jsiiProxy_GrafanaRoleAssociation) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,7 +822,7 @@ func (g *jsiiProxy_GrafanaRoleAssociation) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -839,15 +838,15 @@ func (g *jsiiProxy_GrafanaRoleAssociation) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GrafanaRoleAssociation) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GrafanaRoleAssociation) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -866,7 +865,7 @@ func (g *jsiiProxy_GrafanaRoleAssociation) ImportFrom(id *string, provider cdktf
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -879,7 +878,7 @@ func (g *jsiiProxy_GrafanaRoleAssociation) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -893,18 +892,18 @@ func (g *jsiiProxy_GrafanaRoleAssociation) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GrafanaRoleAssociation) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GrafanaRoleAssociation) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -915,7 +914,7 @@ func (g *jsiiProxy_GrafanaRoleAssociation) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -926,7 +925,7 @@ func (g *jsiiProxy_GrafanaRoleAssociation) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -937,7 +936,7 @@ func (g *jsiiProxy_GrafanaRoleAssociation) PutTimeouts(value *GrafanaRoleAssocia
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -981,8 +980,8 @@ func (g *jsiiProxy_GrafanaRoleAssociation) ResetUserIds() {
 	)
 }
 
-func (g *jsiiProxy_GrafanaRoleAssociation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GrafanaRoleAssociation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -994,8 +993,8 @@ func (g *jsiiProxy_GrafanaRoleAssociation) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (g *jsiiProxy_GrafanaRoleAssociation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GrafanaRoleAssociation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1007,8 +1006,8 @@ func (g *jsiiProxy_GrafanaRoleAssociation) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (g *jsiiProxy_GrafanaRoleAssociation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GrafanaRoleAssociation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1020,8 +1019,8 @@ func (g *jsiiProxy_GrafanaRoleAssociation) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GrafanaRoleAssociation) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GrafanaRoleAssociation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1046,8 +1045,8 @@ func (g *jsiiProxy_GrafanaRoleAssociation) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GrafanaRoleAssociation) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GrafanaRoleAssociation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1058,4 +1057,3 @@ func (g *jsiiProxy_GrafanaRoleAssociation) ToTerraform() interface{} {
 
 	return returns
 }
-

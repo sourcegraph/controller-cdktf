@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorLambdaFunctionAssoc
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorLambdaFunctionAssociationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorLambdaFunctionAssociationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorLambdaFunctionAssoc
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorLambdaFunctionAssociationOutputReference) validateSetIncludeBodyParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorLambdaFunctionAssociationOutputReference) validateSetIncludeBodyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorLambdaFunctionAssoc
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorLambdaFunctionAssociationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorLambdaFunctionAssociationOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -258,4 +258,3 @@ func validateNewCloudfrontDistributionOrderedCacheBehaviorLambdaFunctionAssociat
 
 	return nil
 }
-

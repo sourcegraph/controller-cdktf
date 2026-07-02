@@ -16,15 +16,15 @@ type KinesisStreamConsumer interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationTimestamp() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -55,27 +55,27 @@ type KinesisStreamConsumer interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	StreamArn() *string
 	SetStreamArn(val *string)
 	StreamArnInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -93,7 +93,7 @@ type KinesisStreamConsumer interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -105,7 +105,7 @@ type KinesisStreamConsumer interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -116,17 +116,17 @@ type KinesisStreamConsumer interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for KinesisStreamConsumer
@@ -154,8 +154,8 @@ func (j *jsiiProxy_KinesisStreamConsumer) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_KinesisStreamConsumer) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KinesisStreamConsumer) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_KinesisStreamConsumer) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KinesisStreamConsumer) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_KinesisStreamConsumer) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_KinesisStreamConsumer) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_KinesisStreamConsumer) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KinesisStreamConsumer) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -304,8 +304,8 @@ func (j *jsiiProxy_KinesisStreamConsumer) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_KinesisStreamConsumer) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_KinesisStreamConsumer) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -314,8 +314,8 @@ func (j *jsiiProxy_KinesisStreamConsumer) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KinesisStreamConsumer) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KinesisStreamConsumer) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -354,8 +354,8 @@ func (j *jsiiProxy_KinesisStreamConsumer) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_KinesisStreamConsumer) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_KinesisStreamConsumer) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -374,7 +374,6 @@ func (j *jsiiProxy_KinesisStreamConsumer) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kinesis_stream_consumer aws_kinesis_stream_consumer} Resource.
 func NewKinesisStreamConsumer(scope constructs.Construct, id *string, config *KinesisStreamConsumerConfig) KinesisStreamConsumer {
 	_init_.Initialize()
@@ -386,7 +385,7 @@ func NewKinesisStreamConsumer(scope constructs.Construct, id *string, config *Ki
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kinesisStreamConsumer.KinesisStreamConsumer",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -399,12 +398,12 @@ func NewKinesisStreamConsumer_Override(k KinesisStreamConsumer, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kinesisStreamConsumer.KinesisStreamConsumer",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		k,
 	)
 }
 
-func (j *jsiiProxy_KinesisStreamConsumer)SetConnection(val interface{}) {
+func (j *jsiiProxy_KinesisStreamConsumer) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,7 +414,7 @@ func (j *jsiiProxy_KinesisStreamConsumer)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KinesisStreamConsumer)SetCount(val interface{}) {
+func (j *jsiiProxy_KinesisStreamConsumer) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -426,7 +425,7 @@ func (j *jsiiProxy_KinesisStreamConsumer)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KinesisStreamConsumer)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_KinesisStreamConsumer) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -434,7 +433,7 @@ func (j *jsiiProxy_KinesisStreamConsumer)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_KinesisStreamConsumer)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_KinesisStreamConsumer) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -442,7 +441,7 @@ func (j *jsiiProxy_KinesisStreamConsumer)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_KinesisStreamConsumer)SetId(val *string) {
+func (j *jsiiProxy_KinesisStreamConsumer) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_KinesisStreamConsumer)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KinesisStreamConsumer)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_KinesisStreamConsumer) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,7 +463,7 @@ func (j *jsiiProxy_KinesisStreamConsumer)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_KinesisStreamConsumer)SetName(val *string) {
+func (j *jsiiProxy_KinesisStreamConsumer) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_KinesisStreamConsumer)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KinesisStreamConsumer)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_KinesisStreamConsumer) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -483,7 +482,7 @@ func (j *jsiiProxy_KinesisStreamConsumer)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_KinesisStreamConsumer)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_KinesisStreamConsumer) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -494,7 +493,7 @@ func (j *jsiiProxy_KinesisStreamConsumer)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KinesisStreamConsumer)SetStreamArn(val *string) {
+func (j *jsiiProxy_KinesisStreamConsumer) SetStreamArn(val *string) {
 	if err := j.validateSetStreamArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -517,7 +516,7 @@ func KinesisStreamConsumer_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kinesisStreamConsumer.KinesisStreamConsumer",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -541,7 +540,7 @@ func KinesisStreamConsumer_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func KinesisStreamConsumer_IsConstruct(x interface{}) *bool {
+func KinesisStreamConsumer_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKinesisStreamConsumer_IsConstructParameters(x); err != nil {
@@ -552,7 +551,7 @@ func KinesisStreamConsumer_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kinesisStreamConsumer.KinesisStreamConsumer",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -560,7 +559,7 @@ func KinesisStreamConsumer_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func KinesisStreamConsumer_IsTerraformElement(x interface{}) *bool {
+func KinesisStreamConsumer_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKinesisStreamConsumer_IsTerraformElementParameters(x); err != nil {
@@ -571,7 +570,7 @@ func KinesisStreamConsumer_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kinesisStreamConsumer.KinesisStreamConsumer",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -579,7 +578,7 @@ func KinesisStreamConsumer_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func KinesisStreamConsumer_IsTerraformResource(x interface{}) *bool {
+func KinesisStreamConsumer_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKinesisStreamConsumer_IsTerraformResourceParameters(x); err != nil {
@@ -590,7 +589,7 @@ func KinesisStreamConsumer_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kinesisStreamConsumer.KinesisStreamConsumer",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -615,31 +614,31 @@ func (k *jsiiProxy_KinesisStreamConsumer) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (k *jsiiProxy_KinesisStreamConsumer) AddOverride(path *string, value interface{}) {
+func (k *jsiiProxy_KinesisStreamConsumer) AddOverride(path *string, value any) {
 	if err := k.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		k,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (k *jsiiProxy_KinesisStreamConsumer) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (k *jsiiProxy_KinesisStreamConsumer) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -655,7 +654,7 @@ func (k *jsiiProxy_KinesisStreamConsumer) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		k,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -671,7 +670,7 @@ func (k *jsiiProxy_KinesisStreamConsumer) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		k,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -687,7 +686,7 @@ func (k *jsiiProxy_KinesisStreamConsumer) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		k,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -703,7 +702,7 @@ func (k *jsiiProxy_KinesisStreamConsumer) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		k,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func (k *jsiiProxy_KinesisStreamConsumer) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		k,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -735,7 +734,7 @@ func (k *jsiiProxy_KinesisStreamConsumer) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		k,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -751,7 +750,7 @@ func (k *jsiiProxy_KinesisStreamConsumer) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		k,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -767,15 +766,15 @@ func (k *jsiiProxy_KinesisStreamConsumer) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		k,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (k *jsiiProxy_KinesisStreamConsumer) HasResourceMove() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KinesisStreamConsumer) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -794,7 +793,7 @@ func (k *jsiiProxy_KinesisStreamConsumer) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		k,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -807,7 +806,7 @@ func (k *jsiiProxy_KinesisStreamConsumer) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -821,18 +820,18 @@ func (k *jsiiProxy_KinesisStreamConsumer) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (k *jsiiProxy_KinesisStreamConsumer) MoveTo(moveTarget *string, index interface{}) {
+func (k *jsiiProxy_KinesisStreamConsumer) MoveTo(moveTarget *string, index any) {
 	if err := k.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		k,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -843,7 +842,7 @@ func (k *jsiiProxy_KinesisStreamConsumer) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -854,7 +853,7 @@ func (k *jsiiProxy_KinesisStreamConsumer) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		k,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -874,8 +873,8 @@ func (k *jsiiProxy_KinesisStreamConsumer) ResetOverrideLogicalId() {
 	)
 }
 
-func (k *jsiiProxy_KinesisStreamConsumer) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (k *jsiiProxy_KinesisStreamConsumer) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
@@ -887,8 +886,8 @@ func (k *jsiiProxy_KinesisStreamConsumer) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (k *jsiiProxy_KinesisStreamConsumer) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (k *jsiiProxy_KinesisStreamConsumer) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
@@ -900,8 +899,8 @@ func (k *jsiiProxy_KinesisStreamConsumer) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (k *jsiiProxy_KinesisStreamConsumer) ToHclTerraform() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KinesisStreamConsumer) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -913,8 +912,8 @@ func (k *jsiiProxy_KinesisStreamConsumer) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (k *jsiiProxy_KinesisStreamConsumer) ToMetadata() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KinesisStreamConsumer) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -939,8 +938,8 @@ func (k *jsiiProxy_KinesisStreamConsumer) ToString() *string {
 	return returns
 }
 
-func (k *jsiiProxy_KinesisStreamConsumer) ToTerraform() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KinesisStreamConsumer) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -951,4 +950,3 @@ func (k *jsiiProxy_KinesisStreamConsumer) ToTerraform() interface{} {
 
 	return returns
 }
-

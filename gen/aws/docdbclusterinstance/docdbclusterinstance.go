@@ -12,13 +12,13 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/docdb_cluster_instance aws_docdb_cluster_instance}.
 type DocdbClusterInstance interface {
 	cdktf.TerraformResource
-	ApplyImmediately() interface{}
-	SetApplyImmediately(val interface{})
-	ApplyImmediatelyInput() interface{}
+	ApplyImmediately() any
+	SetApplyImmediately(val any)
+	ApplyImmediatelyInput() any
 	Arn() *string
-	AutoMinorVersionUpgrade() interface{}
-	SetAutoMinorVersionUpgrade(val interface{})
-	AutoMinorVersionUpgradeInput() interface{}
+	AutoMinorVersionUpgrade() any
+	SetAutoMinorVersionUpgrade(val any)
+	AutoMinorVersionUpgradeInput() any
 	AvailabilityZone() *string
 	SetAvailabilityZone(val *string)
 	AvailabilityZoneInput() *string
@@ -31,24 +31,24 @@ type DocdbClusterInstance interface {
 	SetClusterIdentifier(val *string)
 	ClusterIdentifierInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DbiResourceId() *string
 	DbSubnetGroupName() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	EnablePerformanceInsights() interface{}
-	SetEnablePerformanceInsights(val interface{})
-	EnablePerformanceInsightsInput() interface{}
+	EnablePerformanceInsights() any
+	SetEnablePerformanceInsights(val any)
+	EnablePerformanceInsightsInput() any
 	Endpoint() *string
 	Engine() *string
 	SetEngine(val *string)
@@ -97,12 +97,12 @@ type DocdbClusterInstance interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	PubliclyAccessible() cdktf.IResolvable
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	StorageEncrypted() cdktf.IResolvable
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -113,19 +113,19 @@ type DocdbClusterInstance interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DocdbClusterInstanceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Writer() cdktf.IResolvable
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -143,7 +143,7 @@ type DocdbClusterInstance interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -155,7 +155,7 @@ type DocdbClusterInstance interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -181,17 +181,17 @@ type DocdbClusterInstance interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DocdbClusterInstance
@@ -199,8 +199,8 @@ type jsiiProxy_DocdbClusterInstance struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_DocdbClusterInstance) ApplyImmediately() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DocdbClusterInstance) ApplyImmediately() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"applyImmediately",
@@ -209,8 +209,8 @@ func (j *jsiiProxy_DocdbClusterInstance) ApplyImmediately() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DocdbClusterInstance) ApplyImmediatelyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DocdbClusterInstance) ApplyImmediatelyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"applyImmediatelyInput",
@@ -229,8 +229,8 @@ func (j *jsiiProxy_DocdbClusterInstance) Arn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DocdbClusterInstance) AutoMinorVersionUpgrade() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DocdbClusterInstance) AutoMinorVersionUpgrade() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoMinorVersionUpgrade",
@@ -239,8 +239,8 @@ func (j *jsiiProxy_DocdbClusterInstance) AutoMinorVersionUpgrade() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DocdbClusterInstance) AutoMinorVersionUpgradeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DocdbClusterInstance) AutoMinorVersionUpgradeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoMinorVersionUpgradeInput",
@@ -319,8 +319,8 @@ func (j *jsiiProxy_DocdbClusterInstance) ClusterIdentifierInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DocdbClusterInstance) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DocdbClusterInstance) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -329,8 +329,8 @@ func (j *jsiiProxy_DocdbClusterInstance) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DocdbClusterInstance) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DocdbClusterInstance) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -339,8 +339,8 @@ func (j *jsiiProxy_DocdbClusterInstance) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_DocdbClusterInstance) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DocdbClusterInstance) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -379,8 +379,8 @@ func (j *jsiiProxy_DocdbClusterInstance) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DocdbClusterInstance) EnablePerformanceInsights() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DocdbClusterInstance) EnablePerformanceInsights() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enablePerformanceInsights",
@@ -389,8 +389,8 @@ func (j *jsiiProxy_DocdbClusterInstance) EnablePerformanceInsights() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_DocdbClusterInstance) EnablePerformanceInsightsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DocdbClusterInstance) EnablePerformanceInsightsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enablePerformanceInsightsInput",
@@ -669,8 +669,8 @@ func (j *jsiiProxy_DocdbClusterInstance) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DocdbClusterInstance) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DocdbClusterInstance) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -689,8 +689,8 @@ func (j *jsiiProxy_DocdbClusterInstance) PubliclyAccessible() cdktf.IResolvable 
 	return returns
 }
 
-func (j *jsiiProxy_DocdbClusterInstance) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DocdbClusterInstance) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -759,8 +759,8 @@ func (j *jsiiProxy_DocdbClusterInstance) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_DocdbClusterInstance) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DocdbClusterInstance) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -789,8 +789,8 @@ func (j *jsiiProxy_DocdbClusterInstance) Timeouts() DocdbClusterInstanceTimeouts
 	return returns
 }
 
-func (j *jsiiProxy_DocdbClusterInstance) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DocdbClusterInstance) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -809,7 +809,6 @@ func (j *jsiiProxy_DocdbClusterInstance) Writer() cdktf.IResolvable {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/docdb_cluster_instance aws_docdb_cluster_instance} Resource.
 func NewDocdbClusterInstance(scope constructs.Construct, id *string, config *DocdbClusterInstanceConfig) DocdbClusterInstance {
 	_init_.Initialize()
@@ -821,7 +820,7 @@ func NewDocdbClusterInstance(scope constructs.Construct, id *string, config *Doc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.docdbClusterInstance.DocdbClusterInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -834,12 +833,12 @@ func NewDocdbClusterInstance_Override(d DocdbClusterInstance, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.docdbClusterInstance.DocdbClusterInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DocdbClusterInstance)SetApplyImmediately(val interface{}) {
+func (j *jsiiProxy_DocdbClusterInstance) SetApplyImmediately(val any) {
 	if err := j.validateSetApplyImmediatelyParameters(val); err != nil {
 		panic(err)
 	}
@@ -850,7 +849,7 @@ func (j *jsiiProxy_DocdbClusterInstance)SetApplyImmediately(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DocdbClusterInstance)SetAutoMinorVersionUpgrade(val interface{}) {
+func (j *jsiiProxy_DocdbClusterInstance) SetAutoMinorVersionUpgrade(val any) {
 	if err := j.validateSetAutoMinorVersionUpgradeParameters(val); err != nil {
 		panic(err)
 	}
@@ -861,7 +860,7 @@ func (j *jsiiProxy_DocdbClusterInstance)SetAutoMinorVersionUpgrade(val interface
 	)
 }
 
-func (j *jsiiProxy_DocdbClusterInstance)SetAvailabilityZone(val *string) {
+func (j *jsiiProxy_DocdbClusterInstance) SetAvailabilityZone(val *string) {
 	if err := j.validateSetAvailabilityZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -872,7 +871,7 @@ func (j *jsiiProxy_DocdbClusterInstance)SetAvailabilityZone(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DocdbClusterInstance)SetCaCertIdentifier(val *string) {
+func (j *jsiiProxy_DocdbClusterInstance) SetCaCertIdentifier(val *string) {
 	if err := j.validateSetCaCertIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -883,7 +882,7 @@ func (j *jsiiProxy_DocdbClusterInstance)SetCaCertIdentifier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DocdbClusterInstance)SetClusterIdentifier(val *string) {
+func (j *jsiiProxy_DocdbClusterInstance) SetClusterIdentifier(val *string) {
 	if err := j.validateSetClusterIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -894,7 +893,7 @@ func (j *jsiiProxy_DocdbClusterInstance)SetClusterIdentifier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DocdbClusterInstance)SetConnection(val interface{}) {
+func (j *jsiiProxy_DocdbClusterInstance) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -905,7 +904,7 @@ func (j *jsiiProxy_DocdbClusterInstance)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DocdbClusterInstance)SetCount(val interface{}) {
+func (j *jsiiProxy_DocdbClusterInstance) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -916,7 +915,7 @@ func (j *jsiiProxy_DocdbClusterInstance)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DocdbClusterInstance)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DocdbClusterInstance) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -924,7 +923,7 @@ func (j *jsiiProxy_DocdbClusterInstance)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DocdbClusterInstance)SetEnablePerformanceInsights(val interface{}) {
+func (j *jsiiProxy_DocdbClusterInstance) SetEnablePerformanceInsights(val any) {
 	if err := j.validateSetEnablePerformanceInsightsParameters(val); err != nil {
 		panic(err)
 	}
@@ -935,7 +934,7 @@ func (j *jsiiProxy_DocdbClusterInstance)SetEnablePerformanceInsights(val interfa
 	)
 }
 
-func (j *jsiiProxy_DocdbClusterInstance)SetEngine(val *string) {
+func (j *jsiiProxy_DocdbClusterInstance) SetEngine(val *string) {
 	if err := j.validateSetEngineParameters(val); err != nil {
 		panic(err)
 	}
@@ -946,7 +945,7 @@ func (j *jsiiProxy_DocdbClusterInstance)SetEngine(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DocdbClusterInstance)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DocdbClusterInstance) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -954,7 +953,7 @@ func (j *jsiiProxy_DocdbClusterInstance)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_DocdbClusterInstance)SetId(val *string) {
+func (j *jsiiProxy_DocdbClusterInstance) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -965,7 +964,7 @@ func (j *jsiiProxy_DocdbClusterInstance)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DocdbClusterInstance)SetIdentifier(val *string) {
+func (j *jsiiProxy_DocdbClusterInstance) SetIdentifier(val *string) {
 	if err := j.validateSetIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -976,7 +975,7 @@ func (j *jsiiProxy_DocdbClusterInstance)SetIdentifier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DocdbClusterInstance)SetIdentifierPrefix(val *string) {
+func (j *jsiiProxy_DocdbClusterInstance) SetIdentifierPrefix(val *string) {
 	if err := j.validateSetIdentifierPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -987,7 +986,7 @@ func (j *jsiiProxy_DocdbClusterInstance)SetIdentifierPrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DocdbClusterInstance)SetInstanceClass(val *string) {
+func (j *jsiiProxy_DocdbClusterInstance) SetInstanceClass(val *string) {
 	if err := j.validateSetInstanceClassParameters(val); err != nil {
 		panic(err)
 	}
@@ -998,7 +997,7 @@ func (j *jsiiProxy_DocdbClusterInstance)SetInstanceClass(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DocdbClusterInstance)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DocdbClusterInstance) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1009,7 +1008,7 @@ func (j *jsiiProxy_DocdbClusterInstance)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_DocdbClusterInstance)SetPerformanceInsightsKmsKeyId(val *string) {
+func (j *jsiiProxy_DocdbClusterInstance) SetPerformanceInsightsKmsKeyId(val *string) {
 	if err := j.validateSetPerformanceInsightsKmsKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1020,7 +1019,7 @@ func (j *jsiiProxy_DocdbClusterInstance)SetPerformanceInsightsKmsKeyId(val *stri
 	)
 }
 
-func (j *jsiiProxy_DocdbClusterInstance)SetPreferredMaintenanceWindow(val *string) {
+func (j *jsiiProxy_DocdbClusterInstance) SetPreferredMaintenanceWindow(val *string) {
 	if err := j.validateSetPreferredMaintenanceWindowParameters(val); err != nil {
 		panic(err)
 	}
@@ -1031,7 +1030,7 @@ func (j *jsiiProxy_DocdbClusterInstance)SetPreferredMaintenanceWindow(val *strin
 	)
 }
 
-func (j *jsiiProxy_DocdbClusterInstance)SetPromotionTier(val *float64) {
+func (j *jsiiProxy_DocdbClusterInstance) SetPromotionTier(val *float64) {
 	if err := j.validateSetPromotionTierParameters(val); err != nil {
 		panic(err)
 	}
@@ -1042,7 +1041,7 @@ func (j *jsiiProxy_DocdbClusterInstance)SetPromotionTier(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DocdbClusterInstance)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DocdbClusterInstance) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1050,7 +1049,7 @@ func (j *jsiiProxy_DocdbClusterInstance)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_DocdbClusterInstance)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DocdbClusterInstance) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1061,7 +1060,7 @@ func (j *jsiiProxy_DocdbClusterInstance)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DocdbClusterInstance)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DocdbClusterInstance) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1072,7 +1071,7 @@ func (j *jsiiProxy_DocdbClusterInstance)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_DocdbClusterInstance)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_DocdbClusterInstance) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1095,7 +1094,7 @@ func DocdbClusterInstance_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.docdbClusterInstance.DocdbClusterInstance",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1119,7 +1118,7 @@ func DocdbClusterInstance_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DocdbClusterInstance_IsConstruct(x interface{}) *bool {
+func DocdbClusterInstance_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDocdbClusterInstance_IsConstructParameters(x); err != nil {
@@ -1130,7 +1129,7 @@ func DocdbClusterInstance_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.docdbClusterInstance.DocdbClusterInstance",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1138,7 +1137,7 @@ func DocdbClusterInstance_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DocdbClusterInstance_IsTerraformElement(x interface{}) *bool {
+func DocdbClusterInstance_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDocdbClusterInstance_IsTerraformElementParameters(x); err != nil {
@@ -1149,7 +1148,7 @@ func DocdbClusterInstance_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.docdbClusterInstance.DocdbClusterInstance",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1157,7 +1156,7 @@ func DocdbClusterInstance_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DocdbClusterInstance_IsTerraformResource(x interface{}) *bool {
+func DocdbClusterInstance_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDocdbClusterInstance_IsTerraformResourceParameters(x); err != nil {
@@ -1168,7 +1167,7 @@ func DocdbClusterInstance_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.docdbClusterInstance.DocdbClusterInstance",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1193,31 +1192,31 @@ func (d *jsiiProxy_DocdbClusterInstance) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DocdbClusterInstance) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DocdbClusterInstance) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DocdbClusterInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DocdbClusterInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1233,7 +1232,7 @@ func (d *jsiiProxy_DocdbClusterInstance) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1249,7 +1248,7 @@ func (d *jsiiProxy_DocdbClusterInstance) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1265,7 +1264,7 @@ func (d *jsiiProxy_DocdbClusterInstance) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1281,7 +1280,7 @@ func (d *jsiiProxy_DocdbClusterInstance) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1297,7 +1296,7 @@ func (d *jsiiProxy_DocdbClusterInstance) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1313,7 +1312,7 @@ func (d *jsiiProxy_DocdbClusterInstance) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1329,7 +1328,7 @@ func (d *jsiiProxy_DocdbClusterInstance) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1345,15 +1344,15 @@ func (d *jsiiProxy_DocdbClusterInstance) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DocdbClusterInstance) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DocdbClusterInstance) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1372,7 +1371,7 @@ func (d *jsiiProxy_DocdbClusterInstance) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1385,7 +1384,7 @@ func (d *jsiiProxy_DocdbClusterInstance) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1399,18 +1398,18 @@ func (d *jsiiProxy_DocdbClusterInstance) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DocdbClusterInstance) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DocdbClusterInstance) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1421,7 +1420,7 @@ func (d *jsiiProxy_DocdbClusterInstance) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1432,7 +1431,7 @@ func (d *jsiiProxy_DocdbClusterInstance) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1443,7 +1442,7 @@ func (d *jsiiProxy_DocdbClusterInstance) PutTimeouts(value *DocdbClusterInstance
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1575,8 +1574,8 @@ func (d *jsiiProxy_DocdbClusterInstance) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DocdbClusterInstance) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DocdbClusterInstance) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1588,8 +1587,8 @@ func (d *jsiiProxy_DocdbClusterInstance) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (d *jsiiProxy_DocdbClusterInstance) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DocdbClusterInstance) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1601,8 +1600,8 @@ func (d *jsiiProxy_DocdbClusterInstance) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (d *jsiiProxy_DocdbClusterInstance) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DocdbClusterInstance) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1614,8 +1613,8 @@ func (d *jsiiProxy_DocdbClusterInstance) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DocdbClusterInstance) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DocdbClusterInstance) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1640,8 +1639,8 @@ func (d *jsiiProxy_DocdbClusterInstance) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DocdbClusterInstance) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DocdbClusterInstance) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1652,4 +1651,3 @@ func (d *jsiiProxy_DocdbClusterInstance) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -6,9 +6,9 @@ import (
 
 type SsmMaintenanceWindowTargetConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,13 +18,13 @@ type SsmMaintenanceWindowTargetConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ssm_maintenance_window_target#resource_type SsmMaintenanceWindowTarget#resource_type}.
 	ResourceType *string `field:"required" json:"resourceType" yaml:"resourceType"`
 	// targets block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ssm_maintenance_window_target#targets SsmMaintenanceWindowTarget#targets}
-	Targets interface{} `field:"required" json:"targets" yaml:"targets"`
+	Targets any `field:"required" json:"targets" yaml:"targets"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ssm_maintenance_window_target#window_id SsmMaintenanceWindowTarget#window_id}.
 	WindowId *string `field:"required" json:"windowId" yaml:"windowId"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ssm_maintenance_window_target#description SsmMaintenanceWindowTarget#description}.
@@ -39,4 +39,3 @@ type SsmMaintenanceWindowTargetConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ssm_maintenance_window_target#owner_information SsmMaintenanceWindowTarget#owner_information}.
 	OwnerInformation *string `field:"optional" json:"ownerInformation" yaml:"ownerInformation"`
 }
-

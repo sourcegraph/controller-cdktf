@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroups",
-		reflect.TypeOf((*DataAwsSecurityGroups)(nil)).Elem(),
+		reflect.TypeFor[DataAwsSecurityGroups](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arns", GoGetter: "Arns"},
@@ -62,7 +62,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcIds", GoGetter: "VpcIds"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsSecurityGroups{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -70,15 +70,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsConfig",
-		reflect.TypeOf((*DataAwsSecurityGroupsConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsSecurityGroupsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsFilter",
-		reflect.TypeOf((*DataAwsSecurityGroupsFilter)(nil)).Elem(),
+		reflect.TypeFor[DataAwsSecurityGroupsFilter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsFilterList",
-		reflect.TypeOf((*DataAwsSecurityGroupsFilterList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsSecurityGroupsFilterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -92,7 +92,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsSecurityGroupsFilterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -100,7 +100,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsFilterOutputReference",
-		reflect.TypeOf((*DataAwsSecurityGroupsFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsSecurityGroupsFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -128,7 +128,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsSecurityGroupsFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -136,11 +136,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsTimeouts",
-		reflect.TypeOf((*DataAwsSecurityGroupsTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DataAwsSecurityGroupsTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsTimeoutsOutputReference",
-		reflect.TypeOf((*DataAwsSecurityGroupsTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsSecurityGroupsTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -167,7 +167,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsSecurityGroupsTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

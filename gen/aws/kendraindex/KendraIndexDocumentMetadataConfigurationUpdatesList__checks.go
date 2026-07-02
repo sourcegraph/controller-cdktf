@@ -34,7 +34,7 @@ func (k *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesList) validate
 	return nil
 }
 
-func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewKendraIndexDocumentMetadataConfigurationUpdatesListParameters(te
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (e *jsiiProxy_EbsSnapshotImportDiskContainerUserBucketOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_EbsSnapshotImportDiskContainerUserBucketOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EbsSnapshotImportDiskContainerUserBucketOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewEbsSnapshotImportDiskContainerUserBucketOutputReferenceParameter
 
 	return nil
 }
-

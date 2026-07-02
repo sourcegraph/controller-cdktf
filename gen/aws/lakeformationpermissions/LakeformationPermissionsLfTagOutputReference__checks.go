@@ -106,7 +106,7 @@ func (j *jsiiProxy_LakeformationPermissionsLfTagOutputReference) validateSetCata
 	return nil
 }
 
-func (j *jsiiProxy_LakeformationPermissionsLfTagOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LakeformationPermissionsLfTagOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewLakeformationPermissionsLfTagOutputReferenceParameters(terraform
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (a *jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideLis
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideListPa
 
 	return nil
 }
-

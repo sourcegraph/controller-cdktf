@@ -120,7 +120,7 @@ func (o *jsiiProxy_OpsworksMemcachedLayerLoadBasedAutoScalingOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayerLoadBasedAutoScalingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksMemcachedLayerLoadBasedAutoScalingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayerLoadBasedAutoScalingOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayerLoadBasedAutoScalingOutputReference) validateSetEnableParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksMemcachedLayerLoadBasedAutoScalingOutputReference) validateSetEnableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -240,4 +240,3 @@ func validateNewOpsworksMemcachedLayerLoadBasedAutoScalingOutputReferenceParamet
 
 	return nil
 }
-

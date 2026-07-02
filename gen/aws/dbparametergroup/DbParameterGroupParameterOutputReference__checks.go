@@ -106,7 +106,7 @@ func (j *jsiiProxy_DbParameterGroupParameterOutputReference) validateSetApplyMet
 	return nil
 }
 
-func (j *jsiiProxy_DbParameterGroupParameterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DbParameterGroupParameterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DbParameterGroupParameterOutputReference) validateSetComplexO
 	return nil
 }
 
-func (j *jsiiProxy_DbParameterGroupParameterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DbParameterGroupParameterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewDbParameterGroupParameterOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

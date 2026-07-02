@@ -6,9 +6,9 @@ import (
 
 type GlobalacceleratorListenerConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,13 +18,13 @@ type GlobalacceleratorListenerConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/globalaccelerator_listener#accelerator_arn GlobalacceleratorListener#accelerator_arn}.
 	AcceleratorArn *string `field:"required" json:"acceleratorArn" yaml:"acceleratorArn"`
 	// port_range block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/globalaccelerator_listener#port_range GlobalacceleratorListener#port_range}
-	PortRange interface{} `field:"required" json:"portRange" yaml:"portRange"`
+	PortRange any `field:"required" json:"portRange" yaml:"portRange"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/globalaccelerator_listener#protocol GlobalacceleratorListener#protocol}.
 	Protocol *string `field:"required" json:"protocol" yaml:"protocol"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/globalaccelerator_listener#client_affinity GlobalacceleratorListener#client_affinity}.
@@ -39,4 +39,3 @@ type GlobalacceleratorListenerConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/globalaccelerator_listener#timeouts GlobalacceleratorListener#timeouts}
 	Timeouts *GlobalacceleratorListenerTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

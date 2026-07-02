@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudfrontDistributionTrustedKeyGroupsItemsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontDistributionTrustedKeyGroupsItemsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontDistributionTrustedKeyGroupsItemsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCloudfrontDistributionTrustedKeyGroupsItemsOutputReferenceParame
 
 	return nil
 }
-

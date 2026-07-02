@@ -19,7 +19,7 @@ func (s *jsiiProxy_S3Bucket) validateAddMoveTargetParameters(moveTarget *string)
 	return nil
 }
 
-func (s *jsiiProxy_S3Bucket) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_S3Bucket) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_S3Bucket) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_S3Bucket) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_S3Bucket) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (s *jsiiProxy_S3Bucket) validateOverrideLogicalIdParameters(newLogicalId *s
 	return nil
 }
 
-func (s *jsiiProxy_S3Bucket) validatePutCorsRuleParameters(value interface{}) error {
+func (s *jsiiProxy_S3Bucket) validatePutCorsRuleParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (s *jsiiProxy_S3Bucket) validatePutCorsRuleParameters(value interface{}) er
 	return nil
 }
 
-func (s *jsiiProxy_S3Bucket) validatePutGrantParameters(value interface{}) error {
+func (s *jsiiProxy_S3Bucket) validatePutGrantParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func (s *jsiiProxy_S3Bucket) validatePutGrantParameters(value interface{}) error
 	return nil
 }
 
-func (s *jsiiProxy_S3Bucket) validatePutLifecycleRuleParameters(value interface{}) error {
+func (s *jsiiProxy_S3Bucket) validatePutLifecycleRuleParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -390,7 +390,7 @@ func validateS3Bucket_GenerateConfigForImportParameters(scope constructs.Constru
 	return nil
 }
 
-func validateS3Bucket_IsConstructParameters(x interface{}) error {
+func validateS3Bucket_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -398,7 +398,7 @@ func validateS3Bucket_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateS3Bucket_IsTerraformElementParameters(x interface{}) error {
+func validateS3Bucket_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -406,7 +406,7 @@ func validateS3Bucket_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateS3Bucket_IsTerraformResourceParameters(x interface{}) error {
+func validateS3Bucket_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -446,7 +446,7 @@ func (j *jsiiProxy_S3Bucket) validateSetBucketPrefixParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_S3Bucket) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_S3Bucket) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -479,7 +479,7 @@ func (j *jsiiProxy_S3Bucket) validateSetConnectionParameters(val interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_S3Bucket) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_S3Bucket) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -536,7 +536,7 @@ func (j *jsiiProxy_S3Bucket) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_S3Bucket) validateSetForceDestroyParameters(val interface{}) error {
+func (j *jsiiProxy_S3Bucket) validateSetForceDestroyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -572,7 +572,7 @@ func (j *jsiiProxy_S3Bucket) validateSetLifecycleParameters(val *cdktf.Terraform
 	return nil
 }
 
-func (j *jsiiProxy_S3Bucket) validateSetObjectLockEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_S3Bucket) validateSetObjectLockEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -600,7 +600,7 @@ func (j *jsiiProxy_S3Bucket) validateSetPolicyParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_S3Bucket) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_S3Bucket) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -685,4 +685,3 @@ func validateNewS3BucketParameters(scope constructs.Construct, id *string, confi
 
 	return nil
 }
-

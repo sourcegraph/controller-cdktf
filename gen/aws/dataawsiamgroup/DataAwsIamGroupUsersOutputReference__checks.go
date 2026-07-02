@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsIamGroupUsersOutputReference) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsIamGroupUsersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsIamGroupUsersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsIamGroupUsersOutputReferenceParameters(terraformResource 
 
 	return nil
 }
-

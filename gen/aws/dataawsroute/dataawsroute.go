@@ -18,14 +18,14 @@ type DataAwsRoute interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	CoreNetworkArn() *string
 	SetCoreNetworkArn(val *string)
 	CoreNetworkArnInput() *string
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -79,18 +79,18 @@ type DataAwsRoute interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RouteTableId() *string
 	SetRouteTableId(val *string)
 	RouteTableIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DataAwsRouteTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	TransitGatewayId() *string
 	SetTransitGatewayId(val *string)
 	TransitGatewayIdInput() *string
@@ -98,9 +98,9 @@ type DataAwsRoute interface {
 	SetVpcPeeringConnectionId(val *string)
 	VpcPeeringConnectionIdInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -141,18 +141,18 @@ type DataAwsRoute interface {
 	ResetTimeouts()
 	ResetTransitGatewayId()
 	ResetVpcPeeringConnectionId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsRoute
@@ -190,8 +190,8 @@ func (j *jsiiProxy_DataAwsRoute) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRoute) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsRoute) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -220,8 +220,8 @@ func (j *jsiiProxy_DataAwsRoute) CoreNetworkArnInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRoute) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsRoute) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -500,8 +500,8 @@ func (j *jsiiProxy_DataAwsRoute) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRoute) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsRoute) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -540,8 +540,8 @@ func (j *jsiiProxy_DataAwsRoute) TerraformGeneratorMetadata() *cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRoute) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsRoute) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -570,8 +570,8 @@ func (j *jsiiProxy_DataAwsRoute) Timeouts() DataAwsRouteTimeoutsOutputReference 
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRoute) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsRoute) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -620,7 +620,6 @@ func (j *jsiiProxy_DataAwsRoute) VpcPeeringConnectionIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/route aws_route} Data Source.
 func NewDataAwsRoute(scope constructs.Construct, id *string, config *DataAwsRouteConfig) DataAwsRoute {
 	_init_.Initialize()
@@ -632,7 +631,7 @@ func NewDataAwsRoute(scope constructs.Construct, id *string, config *DataAwsRout
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsRoute.DataAwsRoute",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -645,12 +644,12 @@ func NewDataAwsRoute_Override(d DataAwsRoute, scope constructs.Construct, id *st
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsRoute.DataAwsRoute",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsRoute)SetCarrierGatewayId(val *string) {
+func (j *jsiiProxy_DataAwsRoute) SetCarrierGatewayId(val *string) {
 	if err := j.validateSetCarrierGatewayIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -661,7 +660,7 @@ func (j *jsiiProxy_DataAwsRoute)SetCarrierGatewayId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRoute)SetCoreNetworkArn(val *string) {
+func (j *jsiiProxy_DataAwsRoute) SetCoreNetworkArn(val *string) {
 	if err := j.validateSetCoreNetworkArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -672,7 +671,7 @@ func (j *jsiiProxy_DataAwsRoute)SetCoreNetworkArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRoute)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsRoute) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -683,7 +682,7 @@ func (j *jsiiProxy_DataAwsRoute)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRoute)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsRoute) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -691,7 +690,7 @@ func (j *jsiiProxy_DataAwsRoute)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRoute)SetDestinationCidrBlock(val *string) {
+func (j *jsiiProxy_DataAwsRoute) SetDestinationCidrBlock(val *string) {
 	if err := j.validateSetDestinationCidrBlockParameters(val); err != nil {
 		panic(err)
 	}
@@ -702,7 +701,7 @@ func (j *jsiiProxy_DataAwsRoute)SetDestinationCidrBlock(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRoute)SetDestinationIpv6CidrBlock(val *string) {
+func (j *jsiiProxy_DataAwsRoute) SetDestinationIpv6CidrBlock(val *string) {
 	if err := j.validateSetDestinationIpv6CidrBlockParameters(val); err != nil {
 		panic(err)
 	}
@@ -713,7 +712,7 @@ func (j *jsiiProxy_DataAwsRoute)SetDestinationIpv6CidrBlock(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRoute)SetDestinationPrefixListId(val *string) {
+func (j *jsiiProxy_DataAwsRoute) SetDestinationPrefixListId(val *string) {
 	if err := j.validateSetDestinationPrefixListIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -724,7 +723,7 @@ func (j *jsiiProxy_DataAwsRoute)SetDestinationPrefixListId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRoute)SetEgressOnlyGatewayId(val *string) {
+func (j *jsiiProxy_DataAwsRoute) SetEgressOnlyGatewayId(val *string) {
 	if err := j.validateSetEgressOnlyGatewayIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -735,7 +734,7 @@ func (j *jsiiProxy_DataAwsRoute)SetEgressOnlyGatewayId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRoute)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsRoute) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -743,7 +742,7 @@ func (j *jsiiProxy_DataAwsRoute)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRoute)SetGatewayId(val *string) {
+func (j *jsiiProxy_DataAwsRoute) SetGatewayId(val *string) {
 	if err := j.validateSetGatewayIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -754,7 +753,7 @@ func (j *jsiiProxy_DataAwsRoute)SetGatewayId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRoute)SetId(val *string) {
+func (j *jsiiProxy_DataAwsRoute) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -765,7 +764,7 @@ func (j *jsiiProxy_DataAwsRoute)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRoute)SetInstanceId(val *string) {
+func (j *jsiiProxy_DataAwsRoute) SetInstanceId(val *string) {
 	if err := j.validateSetInstanceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -776,7 +775,7 @@ func (j *jsiiProxy_DataAwsRoute)SetInstanceId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRoute)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsRoute) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -787,7 +786,7 @@ func (j *jsiiProxy_DataAwsRoute)SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_DataAwsRoute)SetLocalGatewayId(val *string) {
+func (j *jsiiProxy_DataAwsRoute) SetLocalGatewayId(val *string) {
 	if err := j.validateSetLocalGatewayIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -798,7 +797,7 @@ func (j *jsiiProxy_DataAwsRoute)SetLocalGatewayId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRoute)SetNatGatewayId(val *string) {
+func (j *jsiiProxy_DataAwsRoute) SetNatGatewayId(val *string) {
 	if err := j.validateSetNatGatewayIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -809,7 +808,7 @@ func (j *jsiiProxy_DataAwsRoute)SetNatGatewayId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRoute)SetNetworkInterfaceId(val *string) {
+func (j *jsiiProxy_DataAwsRoute) SetNetworkInterfaceId(val *string) {
 	if err := j.validateSetNetworkInterfaceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -820,7 +819,7 @@ func (j *jsiiProxy_DataAwsRoute)SetNetworkInterfaceId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRoute)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsRoute) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -828,7 +827,7 @@ func (j *jsiiProxy_DataAwsRoute)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRoute)SetRouteTableId(val *string) {
+func (j *jsiiProxy_DataAwsRoute) SetRouteTableId(val *string) {
 	if err := j.validateSetRouteTableIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -839,7 +838,7 @@ func (j *jsiiProxy_DataAwsRoute)SetRouteTableId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRoute)SetTransitGatewayId(val *string) {
+func (j *jsiiProxy_DataAwsRoute) SetTransitGatewayId(val *string) {
 	if err := j.validateSetTransitGatewayIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -850,7 +849,7 @@ func (j *jsiiProxy_DataAwsRoute)SetTransitGatewayId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRoute)SetVpcPeeringConnectionId(val *string) {
+func (j *jsiiProxy_DataAwsRoute) SetVpcPeeringConnectionId(val *string) {
 	if err := j.validateSetVpcPeeringConnectionIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -873,7 +872,7 @@ func DataAwsRoute_GenerateConfigForImport(scope constructs.Construct, importToId
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsRoute.DataAwsRoute",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -897,7 +896,7 @@ func DataAwsRoute_GenerateConfigForImport(scope constructs.Construct, importToId
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsRoute_IsConstruct(x interface{}) *bool {
+func DataAwsRoute_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsRoute_IsConstructParameters(x); err != nil {
@@ -908,7 +907,7 @@ func DataAwsRoute_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsRoute.DataAwsRoute",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -916,7 +915,7 @@ func DataAwsRoute_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsRoute_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsRoute_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsRoute_IsTerraformDataSourceParameters(x); err != nil {
@@ -927,7 +926,7 @@ func DataAwsRoute_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsRoute.DataAwsRoute",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -935,7 +934,7 @@ func DataAwsRoute_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsRoute_IsTerraformElement(x interface{}) *bool {
+func DataAwsRoute_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsRoute_IsTerraformElementParameters(x); err != nil {
@@ -946,7 +945,7 @@ func DataAwsRoute_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsRoute.DataAwsRoute",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -964,27 +963,27 @@ func DataAwsRoute_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRoute) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsRoute) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsRoute) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsRoute) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1000,7 +999,7 @@ func (d *jsiiProxy_DataAwsRoute) GetBooleanAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1016,7 +1015,7 @@ func (d *jsiiProxy_DataAwsRoute) GetBooleanMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1032,7 +1031,7 @@ func (d *jsiiProxy_DataAwsRoute) GetListAttribute(terraformAttribute *string) *[
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1048,7 +1047,7 @@ func (d *jsiiProxy_DataAwsRoute) GetNumberAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1064,7 +1063,7 @@ func (d *jsiiProxy_DataAwsRoute) GetNumberListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1080,7 +1079,7 @@ func (d *jsiiProxy_DataAwsRoute) GetNumberMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1096,7 +1095,7 @@ func (d *jsiiProxy_DataAwsRoute) GetStringAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1112,7 +1111,7 @@ func (d *jsiiProxy_DataAwsRoute) GetStringMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1128,7 +1127,7 @@ func (d *jsiiProxy_DataAwsRoute) InterpolationForAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1142,7 +1141,7 @@ func (d *jsiiProxy_DataAwsRoute) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1153,7 +1152,7 @@ func (d *jsiiProxy_DataAwsRoute) PutTimeouts(value *DataAwsRouteTimeouts) {
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1285,8 +1284,8 @@ func (d *jsiiProxy_DataAwsRoute) ResetVpcPeeringConnectionId() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsRoute) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsRoute) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1298,8 +1297,8 @@ func (d *jsiiProxy_DataAwsRoute) SynthesizeAttributes() *map[string]interface{} 
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRoute) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsRoute) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1311,8 +1310,8 @@ func (d *jsiiProxy_DataAwsRoute) SynthesizeHclAttributes() *map[string]interface
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRoute) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsRoute) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1324,8 +1323,8 @@ func (d *jsiiProxy_DataAwsRoute) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRoute) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsRoute) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1350,8 +1349,8 @@ func (d *jsiiProxy_DataAwsRoute) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRoute) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsRoute) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1362,4 +1361,3 @@ func (d *jsiiProxy_DataAwsRoute) ToTerraform() interface{} {
 
 	return returns
 }
-

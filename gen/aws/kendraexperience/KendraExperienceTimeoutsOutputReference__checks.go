@@ -98,7 +98,7 @@ func (k *jsiiProxy_KendraExperienceTimeoutsOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_KendraExperienceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KendraExperienceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_KendraExperienceTimeoutsOutputReference) validateSetDeletePar
 	return nil
 }
 
-func (j *jsiiProxy_KendraExperienceTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_KendraExperienceTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewKendraExperienceTimeoutsOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

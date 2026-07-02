@@ -120,7 +120,7 @@ func (s *jsiiProxy_SagemakerAppImageConfigKernelGatewayImageConfigOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerAppImageConfigKernelGatewayImageConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerAppImageConfigKernelGatewayImageConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewSagemakerAppImageConfigKernelGatewayImageConfigOutputReferencePa
 
 	return nil
 }
-

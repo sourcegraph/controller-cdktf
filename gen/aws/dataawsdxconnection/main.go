@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsDxConnection.DataAwsDxConnection",
-		reflect.TypeOf((*DataAwsDxConnection)(nil)).Elem(),
+		reflect.TypeFor[DataAwsDxConnection](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -60,7 +60,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "vlanId", GoGetter: "VlanId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsDxConnection{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -68,6 +68,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsDxConnection.DataAwsDxConnectionConfig",
-		reflect.TypeOf((*DataAwsDxConnectionConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsDxConnectionConfig](),
 	)
 }

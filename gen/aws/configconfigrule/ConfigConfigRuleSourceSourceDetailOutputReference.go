@@ -12,9 +12,9 @@ type ConfigConfigRuleSourceSourceDetailOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type ConfigConfigRuleSourceSourceDetailOutputReference interface {
 	EventSourceInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	MaximumExecutionFrequency() *string
 	SetMaximumExecutionFrequency(val *string)
 	MaximumExecutionFrequencyInput() *string
@@ -49,7 +49,7 @@ type ConfigConfigRuleSourceSourceDetailOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type ConfigConfigRuleSourceSourceDetailOutputReference interface {
 	ResetMessageType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference) Fqn() *str
 	return returns
 }
 
-func (j *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference) TerraformR
 	return returns
 }
 
-
 func NewConfigConfigRuleSourceSourceDetailOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ConfigConfigRuleSourceSourceDetailOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewConfigConfigRuleSourceSourceDetailOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewConfigConfigRuleSourceSourceDetailOutputReference_Override(c ConfigConfi
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference)SetEventSource(val *string) {
+func (j *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference) SetEventSource(val *string) {
 	if err := j.validateSetEventSourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference)SetEventSou
 	)
 }
 
-func (j *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference)SetMaximumExecutionFrequency(val *string) {
+func (j *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference) SetMaximumExecutionFrequency(val *string) {
 	if err := j.validateSetMaximumExecutionFrequencyParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference)SetMaximumE
 	)
 }
 
-func (j *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference)SetMessageType(val *string) {
+func (j *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference) SetMessageType(val *string) {
 	if err := j.validateSetMessageTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference)SetMessageT
 	)
 }
 
-func (j *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (c *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference) ComputeFqn
 	return returns
 }
 
-func (c *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (c *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference) GetBoolean
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (c *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference) GetBoolean
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (c *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference) GetListAtt
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (c *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference) GetNumberA
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (c *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference) GetNumberL
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (c *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference) GetNumberM
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (c *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference) GetStringA
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (c *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference) GetStringM
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (c *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference) Interpolat
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (c *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference) ResetMessa
 	)
 }
 
-func (c *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (c *jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference) ToString()
 
 	return returns
 }
-

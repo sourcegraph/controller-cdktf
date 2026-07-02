@@ -12,9 +12,9 @@ type Inspector2DelegatedAdminAccountTimeoutsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type Inspector2DelegatedAdminAccountTimeoutsOutputReference interface {
 	DeleteInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type Inspector2DelegatedAdminAccountTimeoutsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type Inspector2DelegatedAdminAccountTimeoutsOutputReference interface {
 	ResetDelete()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) Fqn()
 	return returns
 }
 
-func (j *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) Terra
 	return returns
 }
 
-
 func NewInspector2DelegatedAdminAccountTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) Inspector2DelegatedAdminAccountTimeoutsOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewInspector2DelegatedAdminAccountTimeoutsOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.inspector2DelegatedAdminAccount.Inspector2DelegatedAdminAccountTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewInspector2DelegatedAdminAccountTimeoutsOutputReference_Override(i Inspec
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.inspector2DelegatedAdminAccount.Inspector2DelegatedAdminAccountTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		i,
 	)
 }
 
-func (j *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference)SetCreate(val *string) {
+func (j *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) SetCreate(val *string) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference)SetCre
 	)
 }
 
-func (j *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference)SetDelete(val *string) {
+func (j *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) SetDelete(val *string) {
 	if err := j.validateSetDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference)SetDel
 	)
 }
 
-func (j *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (i *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) Compu
 	return returns
 }
 
-func (i *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (i *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) GetBo
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (i *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) GetBo
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (i *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) GetLi
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (i *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) GetNu
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (i *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) GetNu
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (i *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) GetNu
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (i *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) GetSt
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (i *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) GetSt
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (i *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) Inter
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (i *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) Reset
 	)
 }
 
-func (i *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (i *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) ToStr
 
 	return returns
 }
-

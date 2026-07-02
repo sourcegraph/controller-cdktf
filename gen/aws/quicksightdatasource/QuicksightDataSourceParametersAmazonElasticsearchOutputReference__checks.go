@@ -98,7 +98,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersAmazonElasticsearchOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersAmazonElasticsearchOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_QuicksightDataSourceParametersAmazonElasticsearchOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewQuicksightDataSourceParametersAmazonElasticsearchOutputReference
 
 	return nil
 }
-

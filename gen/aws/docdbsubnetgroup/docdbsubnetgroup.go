@@ -16,15 +16,15 @@ type DocdbSubnetGroup interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -60,11 +60,11 @@ type DocdbSubnetGroup interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SubnetIds() *[]*string
 	SetSubnetIds(val *[]*string)
 	SubnetIdsInput() *[]*string
@@ -77,16 +77,16 @@ type DocdbSubnetGroup interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -104,7 +104,7 @@ type DocdbSubnetGroup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -116,7 +116,7 @@ type DocdbSubnetGroup interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -132,17 +132,17 @@ type DocdbSubnetGroup interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DocdbSubnetGroup
@@ -170,8 +170,8 @@ func (j *jsiiProxy_DocdbSubnetGroup) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DocdbSubnetGroup) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DocdbSubnetGroup) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_DocdbSubnetGroup) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DocdbSubnetGroup) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DocdbSubnetGroup) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_DocdbSubnetGroup) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_DocdbSubnetGroup) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DocdbSubnetGroup) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -350,8 +350,8 @@ func (j *jsiiProxy_DocdbSubnetGroup) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DocdbSubnetGroup) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DocdbSubnetGroup) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -360,8 +360,8 @@ func (j *jsiiProxy_DocdbSubnetGroup) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DocdbSubnetGroup) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DocdbSubnetGroup) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -440,8 +440,8 @@ func (j *jsiiProxy_DocdbSubnetGroup) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DocdbSubnetGroup) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DocdbSubnetGroup) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -460,7 +460,6 @@ func (j *jsiiProxy_DocdbSubnetGroup) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/docdb_subnet_group aws_docdb_subnet_group} Resource.
 func NewDocdbSubnetGroup(scope constructs.Construct, id *string, config *DocdbSubnetGroupConfig) DocdbSubnetGroup {
 	_init_.Initialize()
@@ -472,7 +471,7 @@ func NewDocdbSubnetGroup(scope constructs.Construct, id *string, config *DocdbSu
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.docdbSubnetGroup.DocdbSubnetGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -485,12 +484,12 @@ func NewDocdbSubnetGroup_Override(d DocdbSubnetGroup, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.docdbSubnetGroup.DocdbSubnetGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DocdbSubnetGroup)SetConnection(val interface{}) {
+func (j *jsiiProxy_DocdbSubnetGroup) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_DocdbSubnetGroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DocdbSubnetGroup)SetCount(val interface{}) {
+func (j *jsiiProxy_DocdbSubnetGroup) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_DocdbSubnetGroup)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DocdbSubnetGroup)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DocdbSubnetGroup) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -520,7 +519,7 @@ func (j *jsiiProxy_DocdbSubnetGroup)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DocdbSubnetGroup)SetDescription(val *string) {
+func (j *jsiiProxy_DocdbSubnetGroup) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -531,7 +530,7 @@ func (j *jsiiProxy_DocdbSubnetGroup)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DocdbSubnetGroup)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DocdbSubnetGroup) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -539,7 +538,7 @@ func (j *jsiiProxy_DocdbSubnetGroup)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DocdbSubnetGroup)SetId(val *string) {
+func (j *jsiiProxy_DocdbSubnetGroup) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -550,7 +549,7 @@ func (j *jsiiProxy_DocdbSubnetGroup)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DocdbSubnetGroup)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DocdbSubnetGroup) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -561,7 +560,7 @@ func (j *jsiiProxy_DocdbSubnetGroup)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_DocdbSubnetGroup)SetName(val *string) {
+func (j *jsiiProxy_DocdbSubnetGroup) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -572,7 +571,7 @@ func (j *jsiiProxy_DocdbSubnetGroup)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DocdbSubnetGroup)SetNamePrefix(val *string) {
+func (j *jsiiProxy_DocdbSubnetGroup) SetNamePrefix(val *string) {
 	if err := j.validateSetNamePrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -583,7 +582,7 @@ func (j *jsiiProxy_DocdbSubnetGroup)SetNamePrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DocdbSubnetGroup)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DocdbSubnetGroup) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -591,7 +590,7 @@ func (j *jsiiProxy_DocdbSubnetGroup)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DocdbSubnetGroup)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DocdbSubnetGroup) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -602,7 +601,7 @@ func (j *jsiiProxy_DocdbSubnetGroup)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DocdbSubnetGroup)SetSubnetIds(val *[]*string) {
+func (j *jsiiProxy_DocdbSubnetGroup) SetSubnetIds(val *[]*string) {
 	if err := j.validateSetSubnetIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -613,7 +612,7 @@ func (j *jsiiProxy_DocdbSubnetGroup)SetSubnetIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DocdbSubnetGroup)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DocdbSubnetGroup) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -624,7 +623,7 @@ func (j *jsiiProxy_DocdbSubnetGroup)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_DocdbSubnetGroup)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_DocdbSubnetGroup) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -647,7 +646,7 @@ func DocdbSubnetGroup_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.docdbSubnetGroup.DocdbSubnetGroup",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -671,7 +670,7 @@ func DocdbSubnetGroup_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DocdbSubnetGroup_IsConstruct(x interface{}) *bool {
+func DocdbSubnetGroup_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDocdbSubnetGroup_IsConstructParameters(x); err != nil {
@@ -682,7 +681,7 @@ func DocdbSubnetGroup_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.docdbSubnetGroup.DocdbSubnetGroup",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -690,7 +689,7 @@ func DocdbSubnetGroup_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DocdbSubnetGroup_IsTerraformElement(x interface{}) *bool {
+func DocdbSubnetGroup_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDocdbSubnetGroup_IsTerraformElementParameters(x); err != nil {
@@ -701,7 +700,7 @@ func DocdbSubnetGroup_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.docdbSubnetGroup.DocdbSubnetGroup",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -709,7 +708,7 @@ func DocdbSubnetGroup_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DocdbSubnetGroup_IsTerraformResource(x interface{}) *bool {
+func DocdbSubnetGroup_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDocdbSubnetGroup_IsTerraformResourceParameters(x); err != nil {
@@ -720,7 +719,7 @@ func DocdbSubnetGroup_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.docdbSubnetGroup.DocdbSubnetGroup",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -745,31 +744,31 @@ func (d *jsiiProxy_DocdbSubnetGroup) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DocdbSubnetGroup) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DocdbSubnetGroup) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DocdbSubnetGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DocdbSubnetGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (d *jsiiProxy_DocdbSubnetGroup) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func (d *jsiiProxy_DocdbSubnetGroup) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func (d *jsiiProxy_DocdbSubnetGroup) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (d *jsiiProxy_DocdbSubnetGroup) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,7 +848,7 @@ func (d *jsiiProxy_DocdbSubnetGroup) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -865,7 +864,7 @@ func (d *jsiiProxy_DocdbSubnetGroup) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -881,7 +880,7 @@ func (d *jsiiProxy_DocdbSubnetGroup) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -897,15 +896,15 @@ func (d *jsiiProxy_DocdbSubnetGroup) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DocdbSubnetGroup) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DocdbSubnetGroup) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -924,7 +923,7 @@ func (d *jsiiProxy_DocdbSubnetGroup) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -937,7 +936,7 @@ func (d *jsiiProxy_DocdbSubnetGroup) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -951,18 +950,18 @@ func (d *jsiiProxy_DocdbSubnetGroup) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DocdbSubnetGroup) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DocdbSubnetGroup) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -973,7 +972,7 @@ func (d *jsiiProxy_DocdbSubnetGroup) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -984,7 +983,7 @@ func (d *jsiiProxy_DocdbSubnetGroup) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1044,8 +1043,8 @@ func (d *jsiiProxy_DocdbSubnetGroup) ResetTagsAll() {
 	)
 }
 
-func (d *jsiiProxy_DocdbSubnetGroup) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DocdbSubnetGroup) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1057,8 +1056,8 @@ func (d *jsiiProxy_DocdbSubnetGroup) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (d *jsiiProxy_DocdbSubnetGroup) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DocdbSubnetGroup) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1070,8 +1069,8 @@ func (d *jsiiProxy_DocdbSubnetGroup) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (d *jsiiProxy_DocdbSubnetGroup) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DocdbSubnetGroup) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1083,8 +1082,8 @@ func (d *jsiiProxy_DocdbSubnetGroup) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DocdbSubnetGroup) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DocdbSubnetGroup) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1109,8 +1108,8 @@ func (d *jsiiProxy_DocdbSubnetGroup) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DocdbSubnetGroup) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DocdbSubnetGroup) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1121,4 +1120,3 @@ func (d *jsiiProxy_DocdbSubnetGroup) ToTerraform() interface{} {
 
 	return returns
 }
-

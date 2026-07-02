@@ -1,15 +1,14 @@
 package gluecatalogtable
 
-
 type GlueCatalogTableStorageDescriptor struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/glue_catalog_table#bucket_columns GlueCatalogTable#bucket_columns}.
 	BucketColumns *[]*string `field:"optional" json:"bucketColumns" yaml:"bucketColumns"`
 	// columns block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/glue_catalog_table#columns GlueCatalogTable#columns}
-	Columns interface{} `field:"optional" json:"columns" yaml:"columns"`
+	Columns any `field:"optional" json:"columns" yaml:"columns"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/glue_catalog_table#compressed GlueCatalogTable#compressed}.
-	Compressed interface{} `field:"optional" json:"compressed" yaml:"compressed"`
+	Compressed any `field:"optional" json:"compressed" yaml:"compressed"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/glue_catalog_table#input_format GlueCatalogTable#input_format}.
 	InputFormat *string `field:"optional" json:"inputFormat" yaml:"inputFormat"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/glue_catalog_table#location GlueCatalogTable#location}.
@@ -35,8 +34,7 @@ type GlueCatalogTableStorageDescriptor struct {
 	// sort_columns block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/glue_catalog_table#sort_columns GlueCatalogTable#sort_columns}
-	SortColumns interface{} `field:"optional" json:"sortColumns" yaml:"sortColumns"`
+	SortColumns any `field:"optional" json:"sortColumns" yaml:"sortColumns"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/glue_catalog_table#stored_as_sub_directories GlueCatalogTable#stored_as_sub_directories}.
-	StoredAsSubDirectories interface{} `field:"optional" json:"storedAsSubDirectories" yaml:"storedAsSubDirectories"`
+	StoredAsSubDirectories any `field:"optional" json:"storedAsSubDirectories" yaml:"storedAsSubDirectories"`
 }
-

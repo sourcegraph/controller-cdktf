@@ -98,7 +98,7 @@ func (f *jsiiProxy_FsxOntapStorageVirtualMachineActiveDirectoryConfigurationSelf
 	return nil
 }
 
-func (j *jsiiProxy_FsxOntapStorageVirtualMachineActiveDirectoryConfigurationSelfManagedActiveDirectoryConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FsxOntapStorageVirtualMachineActiveDirectoryConfigurationSelfManagedActiveDirectoryConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -246,4 +246,3 @@ func validateNewFsxOntapStorageVirtualMachineActiveDirectoryConfigurationSelfMan
 
 	return nil
 }
-

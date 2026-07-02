@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroup",
-		reflect.TypeOf((*DbProxyDefaultTargetGroup)(nil)).Elem(),
+		reflect.TypeFor[DbProxyDefaultTargetGroup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,7 +68,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DbProxyDefaultTargetGroup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -76,15 +76,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroupConfig",
-		reflect.TypeOf((*DbProxyDefaultTargetGroupConfig)(nil)).Elem(),
+		reflect.TypeFor[DbProxyDefaultTargetGroupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroupConnectionPoolConfig",
-		reflect.TypeOf((*DbProxyDefaultTargetGroupConnectionPoolConfig)(nil)).Elem(),
+		reflect.TypeFor[DbProxyDefaultTargetGroupConnectionPoolConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroupConnectionPoolConfigOutputReference",
-		reflect.TypeOf((*DbProxyDefaultTargetGroupConnectionPoolConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DbProxyDefaultTargetGroupConnectionPoolConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -123,7 +123,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DbProxyDefaultTargetGroupConnectionPoolConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -131,11 +131,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroupTimeouts",
-		reflect.TypeOf((*DbProxyDefaultTargetGroupTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DbProxyDefaultTargetGroupTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroupTimeoutsOutputReference",
-		reflect.TypeOf((*DbProxyDefaultTargetGroupTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DbProxyDefaultTargetGroupTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -165,7 +165,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DbProxyDefaultTargetGroupTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

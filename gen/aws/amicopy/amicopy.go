@@ -18,15 +18,15 @@ type AmiCopy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -41,13 +41,13 @@ type AmiCopy interface {
 	SetDestinationOutpostArn(val *string)
 	DestinationOutpostArnInput() *string
 	EbsBlockDevice() AmiCopyEbsBlockDeviceList
-	EbsBlockDeviceInput() interface{}
+	EbsBlockDeviceInput() any
 	EnaSupport() cdktf.IResolvable
-	Encrypted() interface{}
-	SetEncrypted(val interface{})
-	EncryptedInput() interface{}
+	Encrypted() any
+	SetEncrypted(val any)
+	EncryptedInput() any
 	EphemeralBlockDevice() AmiCopyEphemeralBlockDeviceList
-	EphemeralBlockDeviceInput() interface{}
+	EphemeralBlockDeviceInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -86,13 +86,13 @@ type AmiCopy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	Public() cdktf.IResolvable
 	RamdiskId() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RootDeviceName() *string
 	RootSnapshotId() *string
 	SourceAmiId() *string
@@ -111,11 +111,11 @@ type AmiCopy interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() AmiCopyTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	TpmSupport() *string
 	UsageOperation() *string
 	VirtualizationType() *string
@@ -123,9 +123,9 @@ type AmiCopy interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -143,7 +143,7 @@ type AmiCopy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -155,15 +155,15 @@ type AmiCopy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutEbsBlockDevice(value interface{})
-	PutEphemeralBlockDevice(value interface{})
+	PutEbsBlockDevice(value any)
+	PutEphemeralBlockDevice(value any)
 	PutTimeouts(value *AmiCopyTimeouts)
 	ResetDeprecationTime()
 	ResetDescription()
@@ -179,17 +179,17 @@ type AmiCopy interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AmiCopy
@@ -237,8 +237,8 @@ func (j *jsiiProxy_AmiCopy) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_AmiCopy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AmiCopy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -247,8 +247,8 @@ func (j *jsiiProxy_AmiCopy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AmiCopy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AmiCopy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -257,8 +257,8 @@ func (j *jsiiProxy_AmiCopy) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AmiCopy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AmiCopy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -347,8 +347,8 @@ func (j *jsiiProxy_AmiCopy) EbsBlockDevice() AmiCopyEbsBlockDeviceList {
 	return returns
 }
 
-func (j *jsiiProxy_AmiCopy) EbsBlockDeviceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AmiCopy) EbsBlockDeviceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ebsBlockDeviceInput",
@@ -367,8 +367,8 @@ func (j *jsiiProxy_AmiCopy) EnaSupport() cdktf.IResolvable {
 	return returns
 }
 
-func (j *jsiiProxy_AmiCopy) Encrypted() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AmiCopy) Encrypted() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"encrypted",
@@ -377,8 +377,8 @@ func (j *jsiiProxy_AmiCopy) Encrypted() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AmiCopy) EncryptedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AmiCopy) EncryptedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"encryptedInput",
@@ -397,8 +397,8 @@ func (j *jsiiProxy_AmiCopy) EphemeralBlockDevice() AmiCopyEphemeralBlockDeviceLi
 	return returns
 }
 
-func (j *jsiiProxy_AmiCopy) EphemeralBlockDeviceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AmiCopy) EphemeralBlockDeviceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ephemeralBlockDeviceInput",
@@ -627,8 +627,8 @@ func (j *jsiiProxy_AmiCopy) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_AmiCopy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AmiCopy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -657,8 +657,8 @@ func (j *jsiiProxy_AmiCopy) RamdiskId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AmiCopy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AmiCopy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -787,8 +787,8 @@ func (j *jsiiProxy_AmiCopy) TerraformGeneratorMetadata() *cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_AmiCopy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AmiCopy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -817,8 +817,8 @@ func (j *jsiiProxy_AmiCopy) Timeouts() AmiCopyTimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_AmiCopy) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AmiCopy) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -857,7 +857,6 @@ func (j *jsiiProxy_AmiCopy) VirtualizationType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ami_copy aws_ami_copy} Resource.
 func NewAmiCopy(scope constructs.Construct, id *string, config *AmiCopyConfig) AmiCopy {
 	_init_.Initialize()
@@ -869,7 +868,7 @@ func NewAmiCopy(scope constructs.Construct, id *string, config *AmiCopyConfig) A
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.amiCopy.AmiCopy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -882,12 +881,12 @@ func NewAmiCopy_Override(a AmiCopy, scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.amiCopy.AmiCopy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AmiCopy)SetConnection(val interface{}) {
+func (j *jsiiProxy_AmiCopy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -898,7 +897,7 @@ func (j *jsiiProxy_AmiCopy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AmiCopy)SetCount(val interface{}) {
+func (j *jsiiProxy_AmiCopy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -909,7 +908,7 @@ func (j *jsiiProxy_AmiCopy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AmiCopy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AmiCopy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -917,7 +916,7 @@ func (j *jsiiProxy_AmiCopy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AmiCopy)SetDeprecationTime(val *string) {
+func (j *jsiiProxy_AmiCopy) SetDeprecationTime(val *string) {
 	if err := j.validateSetDeprecationTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -928,7 +927,7 @@ func (j *jsiiProxy_AmiCopy)SetDeprecationTime(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AmiCopy)SetDescription(val *string) {
+func (j *jsiiProxy_AmiCopy) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -939,7 +938,7 @@ func (j *jsiiProxy_AmiCopy)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AmiCopy)SetDestinationOutpostArn(val *string) {
+func (j *jsiiProxy_AmiCopy) SetDestinationOutpostArn(val *string) {
 	if err := j.validateSetDestinationOutpostArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -950,7 +949,7 @@ func (j *jsiiProxy_AmiCopy)SetDestinationOutpostArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AmiCopy)SetEncrypted(val interface{}) {
+func (j *jsiiProxy_AmiCopy) SetEncrypted(val any) {
 	if err := j.validateSetEncryptedParameters(val); err != nil {
 		panic(err)
 	}
@@ -961,7 +960,7 @@ func (j *jsiiProxy_AmiCopy)SetEncrypted(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AmiCopy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AmiCopy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -969,7 +968,7 @@ func (j *jsiiProxy_AmiCopy)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_AmiCopy)SetId(val *string) {
+func (j *jsiiProxy_AmiCopy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -980,7 +979,7 @@ func (j *jsiiProxy_AmiCopy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AmiCopy)SetKmsKeyId(val *string) {
+func (j *jsiiProxy_AmiCopy) SetKmsKeyId(val *string) {
 	if err := j.validateSetKmsKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -991,7 +990,7 @@ func (j *jsiiProxy_AmiCopy)SetKmsKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AmiCopy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AmiCopy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1002,7 +1001,7 @@ func (j *jsiiProxy_AmiCopy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_AmiCopy)SetName(val *string) {
+func (j *jsiiProxy_AmiCopy) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1013,7 +1012,7 @@ func (j *jsiiProxy_AmiCopy)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AmiCopy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AmiCopy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1021,7 +1020,7 @@ func (j *jsiiProxy_AmiCopy)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_AmiCopy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AmiCopy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1032,7 +1031,7 @@ func (j *jsiiProxy_AmiCopy)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AmiCopy)SetSourceAmiId(val *string) {
+func (j *jsiiProxy_AmiCopy) SetSourceAmiId(val *string) {
 	if err := j.validateSetSourceAmiIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1043,7 +1042,7 @@ func (j *jsiiProxy_AmiCopy)SetSourceAmiId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AmiCopy)SetSourceAmiRegion(val *string) {
+func (j *jsiiProxy_AmiCopy) SetSourceAmiRegion(val *string) {
 	if err := j.validateSetSourceAmiRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1054,7 +1053,7 @@ func (j *jsiiProxy_AmiCopy)SetSourceAmiRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AmiCopy)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_AmiCopy) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1065,7 +1064,7 @@ func (j *jsiiProxy_AmiCopy)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_AmiCopy)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_AmiCopy) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1088,7 +1087,7 @@ func AmiCopy_GenerateConfigForImport(scope constructs.Construct, importToId *str
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.amiCopy.AmiCopy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1112,7 +1111,7 @@ func AmiCopy_GenerateConfigForImport(scope constructs.Construct, importToId *str
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AmiCopy_IsConstruct(x interface{}) *bool {
+func AmiCopy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAmiCopy_IsConstructParameters(x); err != nil {
@@ -1123,7 +1122,7 @@ func AmiCopy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.amiCopy.AmiCopy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1131,7 +1130,7 @@ func AmiCopy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AmiCopy_IsTerraformElement(x interface{}) *bool {
+func AmiCopy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAmiCopy_IsTerraformElementParameters(x); err != nil {
@@ -1142,7 +1141,7 @@ func AmiCopy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.amiCopy.AmiCopy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1150,7 +1149,7 @@ func AmiCopy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AmiCopy_IsTerraformResource(x interface{}) *bool {
+func AmiCopy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAmiCopy_IsTerraformResourceParameters(x); err != nil {
@@ -1161,7 +1160,7 @@ func AmiCopy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.amiCopy.AmiCopy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1186,31 +1185,31 @@ func (a *jsiiProxy_AmiCopy) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AmiCopy) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AmiCopy) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AmiCopy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AmiCopy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1226,7 +1225,7 @@ func (a *jsiiProxy_AmiCopy) GetBooleanAttribute(terraformAttribute *string) cdkt
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1242,7 +1241,7 @@ func (a *jsiiProxy_AmiCopy) GetBooleanMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1258,7 +1257,7 @@ func (a *jsiiProxy_AmiCopy) GetListAttribute(terraformAttribute *string) *[]*str
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1274,7 +1273,7 @@ func (a *jsiiProxy_AmiCopy) GetNumberAttribute(terraformAttribute *string) *floa
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1290,7 +1289,7 @@ func (a *jsiiProxy_AmiCopy) GetNumberListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1306,7 +1305,7 @@ func (a *jsiiProxy_AmiCopy) GetNumberMapAttribute(terraformAttribute *string) *m
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1322,7 +1321,7 @@ func (a *jsiiProxy_AmiCopy) GetStringAttribute(terraformAttribute *string) *stri
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1338,15 +1337,15 @@ func (a *jsiiProxy_AmiCopy) GetStringMapAttribute(terraformAttribute *string) *m
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AmiCopy) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AmiCopy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1365,7 +1364,7 @@ func (a *jsiiProxy_AmiCopy) ImportFrom(id *string, provider cdktf.TerraformProvi
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1378,7 +1377,7 @@ func (a *jsiiProxy_AmiCopy) InterpolationForAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1392,18 +1391,18 @@ func (a *jsiiProxy_AmiCopy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AmiCopy) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AmiCopy) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1414,7 +1413,7 @@ func (a *jsiiProxy_AmiCopy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1425,29 +1424,29 @@ func (a *jsiiProxy_AmiCopy) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (a *jsiiProxy_AmiCopy) PutEbsBlockDevice(value interface{}) {
+func (a *jsiiProxy_AmiCopy) PutEbsBlockDevice(value any) {
 	if err := a.validatePutEbsBlockDeviceParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putEbsBlockDevice",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (a *jsiiProxy_AmiCopy) PutEphemeralBlockDevice(value interface{}) {
+func (a *jsiiProxy_AmiCopy) PutEphemeralBlockDevice(value any) {
 	if err := a.validatePutEphemeralBlockDeviceParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putEphemeralBlockDevice",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1458,7 +1457,7 @@ func (a *jsiiProxy_AmiCopy) PutTimeouts(value *AmiCopyTimeouts) {
 	_jsii_.InvokeVoid(
 		a,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1558,8 +1557,8 @@ func (a *jsiiProxy_AmiCopy) ResetTimeouts() {
 	)
 }
 
-func (a *jsiiProxy_AmiCopy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AmiCopy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1571,8 +1570,8 @@ func (a *jsiiProxy_AmiCopy) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AmiCopy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AmiCopy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1584,8 +1583,8 @@ func (a *jsiiProxy_AmiCopy) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AmiCopy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AmiCopy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1597,8 +1596,8 @@ func (a *jsiiProxy_AmiCopy) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AmiCopy) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AmiCopy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1623,8 +1622,8 @@ func (a *jsiiProxy_AmiCopy) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AmiCopy) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AmiCopy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1635,4 +1634,3 @@ func (a *jsiiProxy_AmiCopy) ToTerraform() interface{} {
 
 	return returns
 }
-

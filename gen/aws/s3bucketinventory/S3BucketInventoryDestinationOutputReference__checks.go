@@ -109,7 +109,7 @@ func (s *jsiiProxy_S3BucketInventoryDestinationOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketInventoryDestinationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketInventoryDestinationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewS3BucketInventoryDestinationOutputReferenceParameters(terraformR
 
 	return nil
 }
-

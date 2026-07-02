@@ -98,7 +98,7 @@ func (c *jsiiProxy_CodebuildProjectSourceAuthOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildProjectSourceAuthOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CodebuildProjectSourceAuthOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewCodebuildProjectSourceAuthOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthority",
-		reflect.TypeOf((*DataAwsAcmpcaCertificateAuthority)(nil)).Elem(),
+		reflect.TypeFor[DataAwsAcmpcaCertificateAuthority](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -63,7 +63,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "usageMode", GoGetter: "UsageMode"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsAcmpcaCertificateAuthority{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -71,19 +71,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityConfig",
-		reflect.TypeOf((*DataAwsAcmpcaCertificateAuthorityConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsAcmpcaCertificateAuthorityConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfiguration",
-		reflect.TypeOf((*DataAwsAcmpcaCertificateAuthorityRevocationConfiguration)(nil)).Elem(),
+		reflect.TypeFor[DataAwsAcmpcaCertificateAuthorityRevocationConfiguration](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration",
-		reflect.TypeOf((*DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration)(nil)).Elem(),
+		reflect.TypeFor[DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationList",
-		reflect.TypeOf((*DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -96,7 +96,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -104,7 +104,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOutputReference",
-		reflect.TypeOf((*DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -133,7 +133,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -141,7 +141,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationList",
-		reflect.TypeOf((*DataAwsAcmpcaCertificateAuthorityRevocationConfigurationList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsAcmpcaCertificateAuthorityRevocationConfigurationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -154,7 +154,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -162,11 +162,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration",
-		reflect.TypeOf((*DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration)(nil)).Elem(),
+		reflect.TypeFor[DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationList",
-		reflect.TypeOf((*DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -179,7 +179,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -187,7 +187,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference",
-		reflect.TypeOf((*DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -213,7 +213,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -221,7 +221,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutputReference",
-		reflect.TypeOf((*DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -247,7 +247,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

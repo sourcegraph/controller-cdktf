@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategories",
-		reflect.TypeOf((*DataAwsDbEventCategories)(nil)).Elem(),
+		reflect.TypeFor[DataAwsDbEventCategories](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -52,7 +52,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsDbEventCategories{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -60,6 +60,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategoriesConfig",
-		reflect.TypeOf((*DataAwsDbEventCategoriesConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsDbEventCategoriesConfig](),
 	)
 }

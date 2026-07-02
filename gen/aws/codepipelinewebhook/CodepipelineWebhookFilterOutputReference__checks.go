@@ -98,7 +98,7 @@ func (c *jsiiProxy_CodepipelineWebhookFilterOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_CodepipelineWebhookFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CodepipelineWebhookFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_CodepipelineWebhookFilterOutputReference) validateSetComplexO
 	return nil
 }
 
-func (j *jsiiProxy_CodepipelineWebhookFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CodepipelineWebhookFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewCodepipelineWebhookFilterOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

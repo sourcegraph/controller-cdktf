@@ -139,7 +139,7 @@ func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) validateSetB
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -212,7 +212,7 @@ func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) validateSetG
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) validateSetInsecureSslParameters(val interface{}) error {
+func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) validateSetInsecureSslParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -232,7 +232,7 @@ func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) validateSetI
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -264,7 +264,7 @@ func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) validateSetL
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) validateSetReportBuildStatusParameters(val interface{}) error {
+func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) validateSetReportBuildStatusParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -335,4 +335,3 @@ func validateNewCodebuildProjectSecondarySourcesOutputReferenceParameters(terraf
 
 	return nil
 }
-

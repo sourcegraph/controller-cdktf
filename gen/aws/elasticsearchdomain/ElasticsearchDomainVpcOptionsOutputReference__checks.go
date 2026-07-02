@@ -98,7 +98,7 @@ func (e *jsiiProxy_ElasticsearchDomainVpcOptionsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_ElasticsearchDomainVpcOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticsearchDomainVpcOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewElasticsearchDomainVpcOptionsOutputReferenceParameters(terraform
 
 	return nil
 }
-

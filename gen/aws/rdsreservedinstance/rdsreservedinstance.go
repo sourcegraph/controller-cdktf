@@ -16,15 +16,15 @@ type RdsReservedInstance interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CurrencyCode() *string
 	DbInstanceClass() *string
 	// Experimental.
@@ -65,11 +65,11 @@ type RdsReservedInstance interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RecurringCharges() RdsReservedInstanceRecurringChargesList
 	ReservationId() *string
 	SetReservationId(val *string)
@@ -85,19 +85,19 @@ type RdsReservedInstance interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() RdsReservedInstanceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UsagePrice() *float64
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -115,7 +115,7 @@ type RdsReservedInstance interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -127,7 +127,7 @@ type RdsReservedInstance interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -144,17 +144,17 @@ type RdsReservedInstance interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for RdsReservedInstance
@@ -182,8 +182,8 @@ func (j *jsiiProxy_RdsReservedInstance) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_RdsReservedInstance) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RdsReservedInstance) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_RdsReservedInstance) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RdsReservedInstance) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RdsReservedInstance) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_RdsReservedInstance) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_RdsReservedInstance) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RdsReservedInstance) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -422,8 +422,8 @@ func (j *jsiiProxy_RdsReservedInstance) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_RdsReservedInstance) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_RdsReservedInstance) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -432,8 +432,8 @@ func (j *jsiiProxy_RdsReservedInstance) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RdsReservedInstance) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RdsReservedInstance) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -542,8 +542,8 @@ func (j *jsiiProxy_RdsReservedInstance) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_RdsReservedInstance) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RdsReservedInstance) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -572,8 +572,8 @@ func (j *jsiiProxy_RdsReservedInstance) Timeouts() RdsReservedInstanceTimeoutsOu
 	return returns
 }
 
-func (j *jsiiProxy_RdsReservedInstance) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RdsReservedInstance) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -592,7 +592,6 @@ func (j *jsiiProxy_RdsReservedInstance) UsagePrice() *float64 {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/rds_reserved_instance aws_rds_reserved_instance} Resource.
 func NewRdsReservedInstance(scope constructs.Construct, id *string, config *RdsReservedInstanceConfig) RdsReservedInstance {
 	_init_.Initialize()
@@ -604,7 +603,7 @@ func NewRdsReservedInstance(scope constructs.Construct, id *string, config *RdsR
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.rdsReservedInstance.RdsReservedInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -617,12 +616,12 @@ func NewRdsReservedInstance_Override(r RdsReservedInstance, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.rdsReservedInstance.RdsReservedInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RdsReservedInstance)SetConnection(val interface{}) {
+func (j *jsiiProxy_RdsReservedInstance) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -633,7 +632,7 @@ func (j *jsiiProxy_RdsReservedInstance)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RdsReservedInstance)SetCount(val interface{}) {
+func (j *jsiiProxy_RdsReservedInstance) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -644,7 +643,7 @@ func (j *jsiiProxy_RdsReservedInstance)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RdsReservedInstance)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_RdsReservedInstance) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -652,7 +651,7 @@ func (j *jsiiProxy_RdsReservedInstance)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RdsReservedInstance)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_RdsReservedInstance) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -660,7 +659,7 @@ func (j *jsiiProxy_RdsReservedInstance)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_RdsReservedInstance)SetId(val *string) {
+func (j *jsiiProxy_RdsReservedInstance) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -671,7 +670,7 @@ func (j *jsiiProxy_RdsReservedInstance)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RdsReservedInstance)SetInstanceCount(val *float64) {
+func (j *jsiiProxy_RdsReservedInstance) SetInstanceCount(val *float64) {
 	if err := j.validateSetInstanceCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -682,7 +681,7 @@ func (j *jsiiProxy_RdsReservedInstance)SetInstanceCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RdsReservedInstance)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_RdsReservedInstance) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -693,7 +692,7 @@ func (j *jsiiProxy_RdsReservedInstance)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_RdsReservedInstance)SetOfferingId(val *string) {
+func (j *jsiiProxy_RdsReservedInstance) SetOfferingId(val *string) {
 	if err := j.validateSetOfferingIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -704,7 +703,7 @@ func (j *jsiiProxy_RdsReservedInstance)SetOfferingId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RdsReservedInstance)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_RdsReservedInstance) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -712,7 +711,7 @@ func (j *jsiiProxy_RdsReservedInstance)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_RdsReservedInstance)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_RdsReservedInstance) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -723,7 +722,7 @@ func (j *jsiiProxy_RdsReservedInstance)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RdsReservedInstance)SetReservationId(val *string) {
+func (j *jsiiProxy_RdsReservedInstance) SetReservationId(val *string) {
 	if err := j.validateSetReservationIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -734,7 +733,7 @@ func (j *jsiiProxy_RdsReservedInstance)SetReservationId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RdsReservedInstance)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_RdsReservedInstance) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -745,7 +744,7 @@ func (j *jsiiProxy_RdsReservedInstance)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_RdsReservedInstance)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_RdsReservedInstance) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -768,7 +767,7 @@ func RdsReservedInstance_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.rdsReservedInstance.RdsReservedInstance",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -792,7 +791,7 @@ func RdsReservedInstance_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func RdsReservedInstance_IsConstruct(x interface{}) *bool {
+func RdsReservedInstance_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRdsReservedInstance_IsConstructParameters(x); err != nil {
@@ -803,7 +802,7 @@ func RdsReservedInstance_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.rdsReservedInstance.RdsReservedInstance",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -811,7 +810,7 @@ func RdsReservedInstance_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func RdsReservedInstance_IsTerraformElement(x interface{}) *bool {
+func RdsReservedInstance_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRdsReservedInstance_IsTerraformElementParameters(x); err != nil {
@@ -822,7 +821,7 @@ func RdsReservedInstance_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.rdsReservedInstance.RdsReservedInstance",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -830,7 +829,7 @@ func RdsReservedInstance_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func RdsReservedInstance_IsTerraformResource(x interface{}) *bool {
+func RdsReservedInstance_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRdsReservedInstance_IsTerraformResourceParameters(x); err != nil {
@@ -841,7 +840,7 @@ func RdsReservedInstance_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.rdsReservedInstance.RdsReservedInstance",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -866,31 +865,31 @@ func (r *jsiiProxy_RdsReservedInstance) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (r *jsiiProxy_RdsReservedInstance) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_RdsReservedInstance) AddOverride(path *string, value any) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (r *jsiiProxy_RdsReservedInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RdsReservedInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -906,7 +905,7 @@ func (r *jsiiProxy_RdsReservedInstance) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -922,7 +921,7 @@ func (r *jsiiProxy_RdsReservedInstance) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -938,7 +937,7 @@ func (r *jsiiProxy_RdsReservedInstance) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -954,7 +953,7 @@ func (r *jsiiProxy_RdsReservedInstance) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -970,7 +969,7 @@ func (r *jsiiProxy_RdsReservedInstance) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -986,7 +985,7 @@ func (r *jsiiProxy_RdsReservedInstance) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1002,7 +1001,7 @@ func (r *jsiiProxy_RdsReservedInstance) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1018,15 +1017,15 @@ func (r *jsiiProxy_RdsReservedInstance) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_RdsReservedInstance) HasResourceMove() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RdsReservedInstance) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1045,7 +1044,7 @@ func (r *jsiiProxy_RdsReservedInstance) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		r,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1058,7 +1057,7 @@ func (r *jsiiProxy_RdsReservedInstance) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1072,18 +1071,18 @@ func (r *jsiiProxy_RdsReservedInstance) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (r *jsiiProxy_RdsReservedInstance) MoveTo(moveTarget *string, index interface{}) {
+func (r *jsiiProxy_RdsReservedInstance) MoveTo(moveTarget *string, index any) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1094,7 +1093,7 @@ func (r *jsiiProxy_RdsReservedInstance) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1105,7 +1104,7 @@ func (r *jsiiProxy_RdsReservedInstance) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1116,7 +1115,7 @@ func (r *jsiiProxy_RdsReservedInstance) PutTimeouts(value *RdsReservedInstanceTi
 	_jsii_.InvokeVoid(
 		r,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1176,8 +1175,8 @@ func (r *jsiiProxy_RdsReservedInstance) ResetTimeouts() {
 	)
 }
 
-func (r *jsiiProxy_RdsReservedInstance) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RdsReservedInstance) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1189,8 +1188,8 @@ func (r *jsiiProxy_RdsReservedInstance) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (r *jsiiProxy_RdsReservedInstance) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RdsReservedInstance) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1202,8 +1201,8 @@ func (r *jsiiProxy_RdsReservedInstance) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (r *jsiiProxy_RdsReservedInstance) ToHclTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RdsReservedInstance) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1215,8 +1214,8 @@ func (r *jsiiProxy_RdsReservedInstance) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_RdsReservedInstance) ToMetadata() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RdsReservedInstance) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1241,8 +1240,8 @@ func (r *jsiiProxy_RdsReservedInstance) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_RdsReservedInstance) ToTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RdsReservedInstance) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1253,4 +1252,3 @@ func (r *jsiiProxy_RdsReservedInstance) ToTerraform() interface{} {
 
 	return returns
 }
-

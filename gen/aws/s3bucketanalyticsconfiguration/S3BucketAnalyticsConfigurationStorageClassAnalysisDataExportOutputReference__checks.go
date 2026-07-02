@@ -109,7 +109,7 @@ func (s *jsiiProxy_S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportO
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewS3BucketAnalyticsConfigurationStorageClassAnalysisDataExportOutp
 
 	return nil
 }
-

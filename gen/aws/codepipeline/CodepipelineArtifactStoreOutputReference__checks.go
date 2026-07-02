@@ -109,7 +109,7 @@ func (c *jsiiProxy_CodepipelineArtifactStoreOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_CodepipelineArtifactStoreOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CodepipelineArtifactStoreOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_CodepipelineArtifactStoreOutputReference) validateSetComplexO
 	return nil
 }
 
-func (j *jsiiProxy_CodepipelineArtifactStoreOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CodepipelineArtifactStoreOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -257,4 +257,3 @@ func validateNewCodepipelineArtifactStoreOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

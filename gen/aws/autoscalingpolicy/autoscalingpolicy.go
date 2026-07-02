@@ -22,25 +22,25 @@ type AutoscalingPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	Cooldown() *float64
 	SetCooldown(val *float64)
 	CooldownInput() *float64
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	EstimatedInstanceWarmup() *float64
 	SetEstimatedInstanceWarmup(val *float64)
 	EstimatedInstanceWarmupInput() *float64
@@ -80,31 +80,31 @@ type AutoscalingPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ScalingAdjustment() *float64
 	SetScalingAdjustment(val *float64)
 	ScalingAdjustmentInput() *float64
 	StepAdjustment() AutoscalingPolicyStepAdjustmentList
-	StepAdjustmentInput() interface{}
+	StepAdjustmentInput() any
 	TargetTrackingConfiguration() AutoscalingPolicyTargetTrackingConfigurationOutputReference
 	TargetTrackingConfigurationInput() *AutoscalingPolicyTargetTrackingConfiguration
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -122,7 +122,7 @@ type AutoscalingPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -134,7 +134,7 @@ type AutoscalingPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -142,7 +142,7 @@ type AutoscalingPolicy interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutPredictiveScalingConfiguration(value *AutoscalingPolicyPredictiveScalingConfiguration)
-	PutStepAdjustment(value interface{})
+	PutStepAdjustment(value any)
 	PutTargetTrackingConfiguration(value *AutoscalingPolicyTargetTrackingConfiguration)
 	ResetAdjustmentType()
 	ResetCooldown()
@@ -159,17 +159,17 @@ type AutoscalingPolicy interface {
 	ResetScalingAdjustment()
 	ResetStepAdjustment()
 	ResetTargetTrackingConfiguration()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AutoscalingPolicy
@@ -237,8 +237,8 @@ func (j *jsiiProxy_AutoscalingPolicy) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_AutoscalingPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AutoscalingPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -247,8 +247,8 @@ func (j *jsiiProxy_AutoscalingPolicy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AutoscalingPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AutoscalingPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -277,8 +277,8 @@ func (j *jsiiProxy_AutoscalingPolicy) CooldownInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_AutoscalingPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AutoscalingPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -297,8 +297,8 @@ func (j *jsiiProxy_AutoscalingPolicy) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_AutoscalingPolicy) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AutoscalingPolicy) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -307,8 +307,8 @@ func (j *jsiiProxy_AutoscalingPolicy) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AutoscalingPolicy) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AutoscalingPolicy) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -517,8 +517,8 @@ func (j *jsiiProxy_AutoscalingPolicy) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_AutoscalingPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AutoscalingPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -527,8 +527,8 @@ func (j *jsiiProxy_AutoscalingPolicy) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AutoscalingPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AutoscalingPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -567,8 +567,8 @@ func (j *jsiiProxy_AutoscalingPolicy) StepAdjustment() AutoscalingPolicyStepAdju
 	return returns
 }
 
-func (j *jsiiProxy_AutoscalingPolicy) StepAdjustmentInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AutoscalingPolicy) StepAdjustmentInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"stepAdjustmentInput",
@@ -607,8 +607,8 @@ func (j *jsiiProxy_AutoscalingPolicy) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_AutoscalingPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AutoscalingPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -627,7 +627,6 @@ func (j *jsiiProxy_AutoscalingPolicy) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/autoscaling_policy aws_autoscaling_policy} Resource.
 func NewAutoscalingPolicy(scope constructs.Construct, id *string, config *AutoscalingPolicyConfig) AutoscalingPolicy {
 	_init_.Initialize()
@@ -639,7 +638,7 @@ func NewAutoscalingPolicy(scope constructs.Construct, id *string, config *Autosc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -652,12 +651,12 @@ func NewAutoscalingPolicy_Override(a AutoscalingPolicy, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AutoscalingPolicy)SetAdjustmentType(val *string) {
+func (j *jsiiProxy_AutoscalingPolicy) SetAdjustmentType(val *string) {
 	if err := j.validateSetAdjustmentTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -668,7 +667,7 @@ func (j *jsiiProxy_AutoscalingPolicy)SetAdjustmentType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AutoscalingPolicy)SetAutoscalingGroupName(val *string) {
+func (j *jsiiProxy_AutoscalingPolicy) SetAutoscalingGroupName(val *string) {
 	if err := j.validateSetAutoscalingGroupNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -679,7 +678,7 @@ func (j *jsiiProxy_AutoscalingPolicy)SetAutoscalingGroupName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AutoscalingPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_AutoscalingPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -690,7 +689,7 @@ func (j *jsiiProxy_AutoscalingPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AutoscalingPolicy)SetCooldown(val *float64) {
+func (j *jsiiProxy_AutoscalingPolicy) SetCooldown(val *float64) {
 	if err := j.validateSetCooldownParameters(val); err != nil {
 		panic(err)
 	}
@@ -701,7 +700,7 @@ func (j *jsiiProxy_AutoscalingPolicy)SetCooldown(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AutoscalingPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_AutoscalingPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -712,7 +711,7 @@ func (j *jsiiProxy_AutoscalingPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AutoscalingPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AutoscalingPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -720,7 +719,7 @@ func (j *jsiiProxy_AutoscalingPolicy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AutoscalingPolicy)SetEnabled(val interface{}) {
+func (j *jsiiProxy_AutoscalingPolicy) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -731,7 +730,7 @@ func (j *jsiiProxy_AutoscalingPolicy)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AutoscalingPolicy)SetEstimatedInstanceWarmup(val *float64) {
+func (j *jsiiProxy_AutoscalingPolicy) SetEstimatedInstanceWarmup(val *float64) {
 	if err := j.validateSetEstimatedInstanceWarmupParameters(val); err != nil {
 		panic(err)
 	}
@@ -742,7 +741,7 @@ func (j *jsiiProxy_AutoscalingPolicy)SetEstimatedInstanceWarmup(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AutoscalingPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AutoscalingPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -750,7 +749,7 @@ func (j *jsiiProxy_AutoscalingPolicy)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_AutoscalingPolicy)SetId(val *string) {
+func (j *jsiiProxy_AutoscalingPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -761,7 +760,7 @@ func (j *jsiiProxy_AutoscalingPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AutoscalingPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AutoscalingPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -772,7 +771,7 @@ func (j *jsiiProxy_AutoscalingPolicy)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_AutoscalingPolicy)SetMetricAggregationType(val *string) {
+func (j *jsiiProxy_AutoscalingPolicy) SetMetricAggregationType(val *string) {
 	if err := j.validateSetMetricAggregationTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -783,7 +782,7 @@ func (j *jsiiProxy_AutoscalingPolicy)SetMetricAggregationType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AutoscalingPolicy)SetMinAdjustmentMagnitude(val *float64) {
+func (j *jsiiProxy_AutoscalingPolicy) SetMinAdjustmentMagnitude(val *float64) {
 	if err := j.validateSetMinAdjustmentMagnitudeParameters(val); err != nil {
 		panic(err)
 	}
@@ -794,7 +793,7 @@ func (j *jsiiProxy_AutoscalingPolicy)SetMinAdjustmentMagnitude(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AutoscalingPolicy)SetName(val *string) {
+func (j *jsiiProxy_AutoscalingPolicy) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -805,7 +804,7 @@ func (j *jsiiProxy_AutoscalingPolicy)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AutoscalingPolicy)SetPolicyType(val *string) {
+func (j *jsiiProxy_AutoscalingPolicy) SetPolicyType(val *string) {
 	if err := j.validateSetPolicyTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -816,7 +815,7 @@ func (j *jsiiProxy_AutoscalingPolicy)SetPolicyType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AutoscalingPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AutoscalingPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -824,7 +823,7 @@ func (j *jsiiProxy_AutoscalingPolicy)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_AutoscalingPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AutoscalingPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -835,7 +834,7 @@ func (j *jsiiProxy_AutoscalingPolicy)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AutoscalingPolicy)SetScalingAdjustment(val *float64) {
+func (j *jsiiProxy_AutoscalingPolicy) SetScalingAdjustment(val *float64) {
 	if err := j.validateSetScalingAdjustmentParameters(val); err != nil {
 		panic(err)
 	}
@@ -858,7 +857,7 @@ func AutoscalingPolicy_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -882,7 +881,7 @@ func AutoscalingPolicy_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AutoscalingPolicy_IsConstruct(x interface{}) *bool {
+func AutoscalingPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAutoscalingPolicy_IsConstructParameters(x); err != nil {
@@ -893,7 +892,7 @@ func AutoscalingPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -901,7 +900,7 @@ func AutoscalingPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AutoscalingPolicy_IsTerraformElement(x interface{}) *bool {
+func AutoscalingPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAutoscalingPolicy_IsTerraformElementParameters(x); err != nil {
@@ -912,7 +911,7 @@ func AutoscalingPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -920,7 +919,7 @@ func AutoscalingPolicy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AutoscalingPolicy_IsTerraformResource(x interface{}) *bool {
+func AutoscalingPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAutoscalingPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -931,7 +930,7 @@ func AutoscalingPolicy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -956,31 +955,31 @@ func (a *jsiiProxy_AutoscalingPolicy) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AutoscalingPolicy) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AutoscalingPolicy) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AutoscalingPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AutoscalingPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -996,7 +995,7 @@ func (a *jsiiProxy_AutoscalingPolicy) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1012,7 +1011,7 @@ func (a *jsiiProxy_AutoscalingPolicy) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1028,7 +1027,7 @@ func (a *jsiiProxy_AutoscalingPolicy) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1044,7 +1043,7 @@ func (a *jsiiProxy_AutoscalingPolicy) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1060,7 +1059,7 @@ func (a *jsiiProxy_AutoscalingPolicy) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1076,7 +1075,7 @@ func (a *jsiiProxy_AutoscalingPolicy) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1092,7 +1091,7 @@ func (a *jsiiProxy_AutoscalingPolicy) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1108,15 +1107,15 @@ func (a *jsiiProxy_AutoscalingPolicy) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AutoscalingPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AutoscalingPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1135,7 +1134,7 @@ func (a *jsiiProxy_AutoscalingPolicy) ImportFrom(id *string, provider cdktf.Terr
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1148,7 +1147,7 @@ func (a *jsiiProxy_AutoscalingPolicy) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1162,18 +1161,18 @@ func (a *jsiiProxy_AutoscalingPolicy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AutoscalingPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AutoscalingPolicy) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1184,7 +1183,7 @@ func (a *jsiiProxy_AutoscalingPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1195,7 +1194,7 @@ func (a *jsiiProxy_AutoscalingPolicy) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1206,18 +1205,18 @@ func (a *jsiiProxy_AutoscalingPolicy) PutPredictiveScalingConfiguration(value *A
 	_jsii_.InvokeVoid(
 		a,
 		"putPredictiveScalingConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (a *jsiiProxy_AutoscalingPolicy) PutStepAdjustment(value interface{}) {
+func (a *jsiiProxy_AutoscalingPolicy) PutStepAdjustment(value any) {
 	if err := a.validatePutStepAdjustmentParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putStepAdjustment",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1228,7 +1227,7 @@ func (a *jsiiProxy_AutoscalingPolicy) PutTargetTrackingConfiguration(value *Auto
 	_jsii_.InvokeVoid(
 		a,
 		"putTargetTrackingConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1336,8 +1335,8 @@ func (a *jsiiProxy_AutoscalingPolicy) ResetTargetTrackingConfiguration() {
 	)
 }
 
-func (a *jsiiProxy_AutoscalingPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AutoscalingPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1349,8 +1348,8 @@ func (a *jsiiProxy_AutoscalingPolicy) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (a *jsiiProxy_AutoscalingPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AutoscalingPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1362,8 +1361,8 @@ func (a *jsiiProxy_AutoscalingPolicy) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (a *jsiiProxy_AutoscalingPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AutoscalingPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1375,8 +1374,8 @@ func (a *jsiiProxy_AutoscalingPolicy) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AutoscalingPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AutoscalingPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1401,8 +1400,8 @@ func (a *jsiiProxy_AutoscalingPolicy) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AutoscalingPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AutoscalingPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1413,4 +1412,3 @@ func (a *jsiiProxy_AutoscalingPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

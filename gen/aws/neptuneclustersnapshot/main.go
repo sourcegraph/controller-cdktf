@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.neptuneClusterSnapshot.NeptuneClusterSnapshot",
-		reflect.TypeOf((*NeptuneClusterSnapshot)(nil)).Elem(),
+		reflect.TypeFor[NeptuneClusterSnapshot](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NeptuneClusterSnapshot{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,15 +85,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.neptuneClusterSnapshot.NeptuneClusterSnapshotConfig",
-		reflect.TypeOf((*NeptuneClusterSnapshotConfig)(nil)).Elem(),
+		reflect.TypeFor[NeptuneClusterSnapshotConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.neptuneClusterSnapshot.NeptuneClusterSnapshotTimeouts",
-		reflect.TypeOf((*NeptuneClusterSnapshotTimeouts)(nil)).Elem(),
+		reflect.TypeFor[NeptuneClusterSnapshotTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.neptuneClusterSnapshot.NeptuneClusterSnapshotTimeoutsOutputReference",
-		reflect.TypeOf((*NeptuneClusterSnapshotTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NeptuneClusterSnapshotTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -120,7 +120,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NeptuneClusterSnapshotTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

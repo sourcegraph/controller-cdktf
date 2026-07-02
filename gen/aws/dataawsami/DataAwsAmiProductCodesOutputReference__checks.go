@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsAmiProductCodesOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAmiProductCodesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsAmiProductCodesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsAmiProductCodesOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

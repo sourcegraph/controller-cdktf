@@ -98,7 +98,7 @@ func (d *jsiiProxy_DirectoryServiceRegionVpcSettingsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_DirectoryServiceRegionVpcSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DirectoryServiceRegionVpcSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDirectoryServiceRegionVpcSettingsOutputReferenceParameters(terra
 
 	return nil
 }
-

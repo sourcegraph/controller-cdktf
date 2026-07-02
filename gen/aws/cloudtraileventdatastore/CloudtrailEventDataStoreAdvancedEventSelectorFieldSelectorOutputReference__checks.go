@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOut
 	return nil
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOut
 	return nil
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -278,4 +278,3 @@ func validateNewCloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutput
 
 	return nil
 }
-

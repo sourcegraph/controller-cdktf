@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask",
-		reflect.TypeOf((*SsmMaintenanceWindowTask)(nil)).Elem(),
+		reflect.TypeFor[SsmMaintenanceWindowTask](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -93,7 +93,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "windowIdInput", GoGetter: "WindowIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "windowTaskId", GoGetter: "WindowTaskId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SsmMaintenanceWindowTask{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -101,15 +101,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskConfig",
-		reflect.TypeOf((*SsmMaintenanceWindowTaskConfig)(nil)).Elem(),
+		reflect.TypeFor[SsmMaintenanceWindowTaskConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTargets",
-		reflect.TypeOf((*SsmMaintenanceWindowTaskTargets)(nil)).Elem(),
+		reflect.TypeFor[SsmMaintenanceWindowTaskTargets](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTargetsList",
-		reflect.TypeOf((*SsmMaintenanceWindowTaskTargetsList)(nil)).Elem(),
+		reflect.TypeFor[SsmMaintenanceWindowTaskTargetsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -123,7 +123,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SsmMaintenanceWindowTaskTargetsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -131,7 +131,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTargetsOutputReference",
-		reflect.TypeOf((*SsmMaintenanceWindowTaskTargetsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SsmMaintenanceWindowTaskTargetsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -159,7 +159,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -167,15 +167,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParameters",
-		reflect.TypeOf((*SsmMaintenanceWindowTaskTaskInvocationParameters)(nil)).Elem(),
+		reflect.TypeFor[SsmMaintenanceWindowTaskTaskInvocationParameters](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParameters",
-		reflect.TypeOf((*SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParameters)(nil)).Elem(),
+		reflect.TypeFor[SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParameters](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersOutputReference",
-		reflect.TypeOf((*SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -206,7 +206,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -214,11 +214,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter",
-		reflect.TypeOf((*SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter)(nil)).Elem(),
+		reflect.TypeFor[SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterList",
-		reflect.TypeOf((*SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterList)(nil)).Elem(),
+		reflect.TypeFor[SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -232,7 +232,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -240,7 +240,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterOutputReference",
-		reflect.TypeOf((*SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -268,7 +268,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -276,11 +276,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParameters",
-		reflect.TypeOf((*SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParameters)(nil)).Elem(),
+		reflect.TypeFor[SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParameters](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParametersOutputReference",
-		reflect.TypeOf((*SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParametersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParametersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientContext", GoGetter: "ClientContext"},
 			_jsii_.MemberProperty{JsiiProperty: "clientContextInput", GoGetter: "ClientContextInput"},
@@ -313,7 +313,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParametersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -321,7 +321,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersOutputReference",
-		reflect.TypeOf((*SsmMaintenanceWindowTaskTaskInvocationParametersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SsmMaintenanceWindowTaskTaskInvocationParametersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "automationParameters", GoGetter: "AutomationParameters"},
 			_jsii_.MemberProperty{JsiiProperty: "automationParametersInput", GoGetter: "AutomationParametersInput"},
@@ -361,7 +361,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -369,15 +369,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameters",
-		reflect.TypeOf((*SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameters)(nil)).Elem(),
+		reflect.TypeFor[SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameters](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfig",
-		reflect.TypeOf((*SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfig)(nil)).Elem(),
+		reflect.TypeFor[SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfigOutputReference",
-		reflect.TypeOf((*SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchLogGroupName", GoGetter: "CloudwatchLogGroupName"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchLogGroupNameInput", GoGetter: "CloudwatchLogGroupNameInput"},
@@ -407,7 +407,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -415,11 +415,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfig",
-		reflect.TypeOf((*SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfig)(nil)).Elem(),
+		reflect.TypeFor[SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfigOutputReference",
-		reflect.TypeOf((*SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -452,7 +452,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -460,7 +460,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersOutputReference",
-		reflect.TypeOf((*SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchConfig", GoGetter: "CloudwatchConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchConfigInput", GoGetter: "CloudwatchConfigInput"},
@@ -520,7 +520,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeoutSecondsInput", GoGetter: "TimeoutSecondsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -528,11 +528,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter",
-		reflect.TypeOf((*SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter)(nil)).Elem(),
+		reflect.TypeFor[SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterList",
-		reflect.TypeOf((*SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterList)(nil)).Elem(),
+		reflect.TypeFor[SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -546,7 +546,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -554,7 +554,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterOutputReference",
-		reflect.TypeOf((*SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -582,7 +582,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -590,11 +590,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParameters",
-		reflect.TypeOf((*SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParameters)(nil)).Elem(),
+		reflect.TypeFor[SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParameters](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParametersOutputReference",
-		reflect.TypeOf((*SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParametersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParametersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -624,7 +624,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParametersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

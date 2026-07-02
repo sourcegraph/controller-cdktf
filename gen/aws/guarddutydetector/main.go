@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetector",
-		reflect.TypeOf((*GuarddutyDetector)(nil)).Elem(),
+		reflect.TypeFor[GuarddutyDetector](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GuarddutyDetector{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,23 +82,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorConfig",
-		reflect.TypeOf((*GuarddutyDetectorConfig)(nil)).Elem(),
+		reflect.TypeFor[GuarddutyDetectorConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasources",
-		reflect.TypeOf((*GuarddutyDetectorDatasources)(nil)).Elem(),
+		reflect.TypeFor[GuarddutyDetectorDatasources](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesKubernetes",
-		reflect.TypeOf((*GuarddutyDetectorDatasourcesKubernetes)(nil)).Elem(),
+		reflect.TypeFor[GuarddutyDetectorDatasourcesKubernetes](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesKubernetesAuditLogs",
-		reflect.TypeOf((*GuarddutyDetectorDatasourcesKubernetesAuditLogs)(nil)).Elem(),
+		reflect.TypeFor[GuarddutyDetectorDatasourcesKubernetesAuditLogs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesKubernetesAuditLogsOutputReference",
-		reflect.TypeOf((*GuarddutyDetectorDatasourcesKubernetesAuditLogsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GuarddutyDetectorDatasourcesKubernetesAuditLogsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -124,7 +124,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GuarddutyDetectorDatasourcesKubernetesAuditLogsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -132,7 +132,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesKubernetesOutputReference",
-		reflect.TypeOf((*GuarddutyDetectorDatasourcesKubernetesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GuarddutyDetectorDatasourcesKubernetesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "auditLogs", GoGetter: "AuditLogs"},
 			_jsii_.MemberProperty{JsiiProperty: "auditLogsInput", GoGetter: "AuditLogsInput"},
@@ -159,7 +159,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GuarddutyDetectorDatasourcesKubernetesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -167,11 +167,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesMalwareProtection",
-		reflect.TypeOf((*GuarddutyDetectorDatasourcesMalwareProtection)(nil)).Elem(),
+		reflect.TypeFor[GuarddutyDetectorDatasourcesMalwareProtection](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesMalwareProtectionOutputReference",
-		reflect.TypeOf((*GuarddutyDetectorDatasourcesMalwareProtectionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GuarddutyDetectorDatasourcesMalwareProtectionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -198,7 +198,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GuarddutyDetectorDatasourcesMalwareProtectionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -206,15 +206,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindings",
-		reflect.TypeOf((*GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindings)(nil)).Elem(),
+		reflect.TypeFor[GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindings](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumes",
-		reflect.TypeOf((*GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumes)(nil)).Elem(),
+		reflect.TypeFor[GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumes](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumesOutputReference",
-		reflect.TypeOf((*GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -240,7 +240,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -248,7 +248,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsOutputReference",
-		reflect.TypeOf((*GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -275,7 +275,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -283,7 +283,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesOutputReference",
-		reflect.TypeOf((*GuarddutyDetectorDatasourcesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GuarddutyDetectorDatasourcesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -319,7 +319,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GuarddutyDetectorDatasourcesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -327,11 +327,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesS3Logs",
-		reflect.TypeOf((*GuarddutyDetectorDatasourcesS3Logs)(nil)).Elem(),
+		reflect.TypeFor[GuarddutyDetectorDatasourcesS3Logs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesS3LogsOutputReference",
-		reflect.TypeOf((*GuarddutyDetectorDatasourcesS3LogsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GuarddutyDetectorDatasourcesS3LogsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -357,7 +357,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GuarddutyDetectorDatasourcesS3LogsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

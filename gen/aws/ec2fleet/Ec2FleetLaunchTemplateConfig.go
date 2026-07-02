@@ -1,6 +1,5 @@
 package ec2fleet
 
-
 type Ec2FleetLaunchTemplateConfig struct {
 	// launch_template_specification block.
 	//
@@ -9,6 +8,5 @@ type Ec2FleetLaunchTemplateConfig struct {
 	// override block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ec2_fleet#override Ec2Fleet#override}
-	Override interface{} `field:"optional" json:"override" yaml:"override"`
+	Override any `field:"optional" json:"override" yaml:"override"`
 }
-

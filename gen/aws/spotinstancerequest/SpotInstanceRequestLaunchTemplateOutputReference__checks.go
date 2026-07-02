@@ -98,7 +98,7 @@ func (s *jsiiProxy_SpotInstanceRequestLaunchTemplateOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_SpotInstanceRequestLaunchTemplateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SpotInstanceRequestLaunchTemplateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewSpotInstanceRequestLaunchTemplateOutputReferenceParameters(terra
 
 	return nil
 }
-

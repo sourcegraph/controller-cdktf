@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsEcrRepositoryEncryptionConfigurationOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEcrRepositoryEncryptionConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEcrRepositoryEncryptionConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsEcrRepositoryEncryptionConfigurationOutputReferenceParame
 
 	return nil
 }
-

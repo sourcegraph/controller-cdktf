@@ -19,7 +19,7 @@ func (w *jsiiProxy_WafregionalSizeConstraintSet) validateAddMoveTargetParameters
 	return nil
 }
 
-func (w *jsiiProxy_WafregionalSizeConstraintSet) validateAddOverrideParameters(path *string, value interface{}) error {
+func (w *jsiiProxy_WafregionalSizeConstraintSet) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (w *jsiiProxy_WafregionalSizeConstraintSet) validateMoveFromIdParameters(id
 	return nil
 }
 
-func (w *jsiiProxy_WafregionalSizeConstraintSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (w *jsiiProxy_WafregionalSizeConstraintSet) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (w *jsiiProxy_WafregionalSizeConstraintSet) validateOverrideLogicalIdParame
 	return nil
 }
 
-func (w *jsiiProxy_WafregionalSizeConstraintSet) validatePutSizeConstraintsParameters(value interface{}) error {
+func (w *jsiiProxy_WafregionalSizeConstraintSet) validatePutSizeConstraintsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateWafregionalSizeConstraintSet_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateWafregionalSizeConstraintSet_IsConstructParameters(x interface{}) error {
+func validateWafregionalSizeConstraintSet_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateWafregionalSizeConstraintSet_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateWafregionalSizeConstraintSet_IsTerraformElementParameters(x interface{}) error {
+func validateWafregionalSizeConstraintSet_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateWafregionalSizeConstraintSet_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func validateWafregionalSizeConstraintSet_IsTerraformResourceParameters(x interface{}) error {
+func validateWafregionalSizeConstraintSet_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func validateWafregionalSizeConstraintSet_IsTerraformResourceParameters(x interf
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalSizeConstraintSet) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_WafregionalSizeConstraintSet) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -308,7 +308,7 @@ func (j *jsiiProxy_WafregionalSizeConstraintSet) validateSetConnectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalSizeConstraintSet) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_WafregionalSizeConstraintSet) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -389,7 +389,7 @@ func (j *jsiiProxy_WafregionalSizeConstraintSet) validateSetNameParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalSizeConstraintSet) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_WafregionalSizeConstraintSet) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -453,4 +453,3 @@ func validateNewWafregionalSizeConstraintSetParameters(scope constructs.Construc
 
 	return nil
 }
-

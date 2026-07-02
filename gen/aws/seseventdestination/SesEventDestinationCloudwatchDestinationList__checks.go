@@ -34,7 +34,7 @@ func (s *jsiiProxy_SesEventDestinationCloudwatchDestinationList) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_SesEventDestinationCloudwatchDestinationList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SesEventDestinationCloudwatchDestinationList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSesEventDestinationCloudwatchDestinationListParameters(terraform
 
 	return nil
 }
-

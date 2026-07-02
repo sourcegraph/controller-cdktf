@@ -98,7 +98,7 @@ func (l *jsiiProxy_LambdaFunctionEphemeralStorageOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_LambdaFunctionEphemeralStorageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LambdaFunctionEphemeralStorageOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewLambdaFunctionEphemeralStorageOutputReferenceParameters(terrafor
 
 	return nil
 }
-

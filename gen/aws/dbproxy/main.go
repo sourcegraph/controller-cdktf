@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dbProxy.DbProxy",
-		reflect.TypeOf((*DbProxy)(nil)).Elem(),
+		reflect.TypeFor[DbProxy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -91,7 +91,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcSubnetIds", GoGetter: "VpcSubnetIds"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcSubnetIdsInput", GoGetter: "VpcSubnetIdsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DbProxy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -99,11 +99,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dbProxy.DbProxyAuth",
-		reflect.TypeOf((*DbProxyAuth)(nil)).Elem(),
+		reflect.TypeFor[DbProxyAuth](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dbProxy.DbProxyAuthList",
-		reflect.TypeOf((*DbProxyAuthList)(nil)).Elem(),
+		reflect.TypeFor[DbProxyAuthList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -117,7 +117,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DbProxyAuthList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -125,7 +125,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference",
-		reflect.TypeOf((*DbProxyAuthOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DbProxyAuthOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authScheme", GoGetter: "AuthScheme"},
 			_jsii_.MemberProperty{JsiiProperty: "authSchemeInput", GoGetter: "AuthSchemeInput"},
@@ -164,7 +164,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DbProxyAuthOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -172,15 +172,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dbProxy.DbProxyConfig",
-		reflect.TypeOf((*DbProxyConfig)(nil)).Elem(),
+		reflect.TypeFor[DbProxyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dbProxy.DbProxyTimeouts",
-		reflect.TypeOf((*DbProxyTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DbProxyTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference",
-		reflect.TypeOf((*DbProxyTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DbProxyTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -213,7 +213,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DbProxyTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

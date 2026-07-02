@@ -98,7 +98,7 @@ func (m *jsiiProxy_MqBrokerUserOutputReference) validateResolveParameters(_conte
 	return nil
 }
 
-func (j *jsiiProxy_MqBrokerUserOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MqBrokerUserOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_MqBrokerUserOutputReference) validateSetComplexObjectIsFromSe
 	return nil
 }
 
-func (j *jsiiProxy_MqBrokerUserOutputReference) validateSetConsoleAccessParameters(val interface{}) error {
+func (j *jsiiProxy_MqBrokerUserOutputReference) validateSetConsoleAccessParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_MqBrokerUserOutputReference) validateSetGroupsParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_MqBrokerUserOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MqBrokerUserOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -266,4 +266,3 @@ func validateNewMqBrokerUserOutputReferenceParameters(terraformResource cdktf.II
 
 	return nil
 }
-

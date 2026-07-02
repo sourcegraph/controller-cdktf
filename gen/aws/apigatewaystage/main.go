@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apiGatewayStage.ApiGatewayStage",
-		reflect.TypeOf((*ApiGatewayStage)(nil)).Elem(),
+		reflect.TypeFor[ApiGatewayStage](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessLogSettings", GoGetter: "AccessLogSettings"},
 			_jsii_.MemberProperty{JsiiProperty: "accessLogSettingsInput", GoGetter: "AccessLogSettingsInput"},
@@ -101,7 +101,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "xrayTracingEnabled", GoGetter: "XrayTracingEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "xrayTracingEnabledInput", GoGetter: "XrayTracingEnabledInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApiGatewayStage{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -109,11 +109,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apiGatewayStage.ApiGatewayStageAccessLogSettings",
-		reflect.TypeOf((*ApiGatewayStageAccessLogSettings)(nil)).Elem(),
+		reflect.TypeFor[ApiGatewayStageAccessLogSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apiGatewayStage.ApiGatewayStageAccessLogSettingsOutputReference",
-		reflect.TypeOf((*ApiGatewayStageAccessLogSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApiGatewayStageAccessLogSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -141,7 +141,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApiGatewayStageAccessLogSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -149,11 +149,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apiGatewayStage.ApiGatewayStageCanarySettings",
-		reflect.TypeOf((*ApiGatewayStageCanarySettings)(nil)).Elem(),
+		reflect.TypeFor[ApiGatewayStageCanarySettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apiGatewayStage.ApiGatewayStageCanarySettingsOutputReference",
-		reflect.TypeOf((*ApiGatewayStageCanarySettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApiGatewayStageCanarySettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -186,7 +186,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "useStageCache", GoGetter: "UseStageCache"},
 			_jsii_.MemberProperty{JsiiProperty: "useStageCacheInput", GoGetter: "UseStageCacheInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApiGatewayStageCanarySettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -194,6 +194,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apiGatewayStage.ApiGatewayStageConfig",
-		reflect.TypeOf((*ApiGatewayStageConfig)(nil)).Elem(),
+		reflect.TypeFor[ApiGatewayStageConfig](),
 	)
 }

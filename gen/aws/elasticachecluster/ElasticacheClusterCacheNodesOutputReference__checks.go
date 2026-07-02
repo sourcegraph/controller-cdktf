@@ -98,7 +98,7 @@ func (e *jsiiProxy_ElasticacheClusterCacheNodesOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_ElasticacheClusterCacheNodesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticacheClusterCacheNodesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewElasticacheClusterCacheNodesOutputReferenceParameters(terraformR
 
 	return nil
 }
-

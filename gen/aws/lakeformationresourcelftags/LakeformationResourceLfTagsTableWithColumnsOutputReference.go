@@ -18,9 +18,9 @@ type LakeformationResourceLfTagsTableWithColumnsOutputReference interface {
 	ColumnNamesInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -52,13 +52,13 @@ type LakeformationResourceLfTagsTableWithColumnsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Wildcard() interface{}
-	SetWildcard(val interface{})
-	WildcardInput() interface{}
+	Wildcard() any
+	SetWildcard(val any)
+	WildcardInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -85,7 +85,7 @@ type LakeformationResourceLfTagsTableWithColumnsOutputReference interface {
 	ResetWildcard()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -138,8 +138,8 @@ func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) C
 	return returns
 }
 
-func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -268,8 +268,8 @@ func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) T
 	return returns
 }
 
-func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) Wildcard() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) Wildcard() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"wildcard",
@@ -278,8 +278,8 @@ func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) W
 	return returns
 }
 
-func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) WildcardInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) WildcardInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"wildcardInput",
@@ -287,7 +287,6 @@ func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) W
 	)
 	return returns
 }
-
 
 func NewLakeformationResourceLfTagsTableWithColumnsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LakeformationResourceLfTagsTableWithColumnsOutputReference {
 	_init_.Initialize()
@@ -299,7 +298,7 @@ func NewLakeformationResourceLfTagsTableWithColumnsOutputReference(terraformReso
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTableWithColumnsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -311,12 +310,12 @@ func NewLakeformationResourceLfTagsTableWithColumnsOutputReference_Override(l La
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTableWithColumnsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference)SetCatalogId(val *string) {
+func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) SetCatalogId(val *string) {
 	if err := j.validateSetCatalogIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference)SetColumnNames(val *[]*string) {
+func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) SetColumnNames(val *[]*string) {
 	if err := j.validateSetColumnNamesParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference)SetDatabaseName(val *string) {
+func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) SetDatabaseName(val *string) {
 	if err := j.validateSetDatabaseNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference)SetExcludedColumnNames(val *[]*string) {
+func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) SetExcludedColumnNames(val *[]*string) {
 	if err := j.validateSetExcludedColumnNamesParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference)SetInternalValue(val *LakeformationResourceLfTagsTableWithColumns) {
+func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) SetInternalValue(val *LakeformationResourceLfTagsTableWithColumns) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference)SetName(val *string) {
+func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,7 +414,7 @@ func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -426,7 +425,7 @@ func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference)SetWildcard(val interface{}) {
+func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) SetWildcard(val any) {
 	if err := j.validateSetWildcardParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,16 +449,16 @@ func (l *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) C
 	return returns
 }
 
-func (l *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -475,7 +474,7 @@ func (l *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) G
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -491,7 +490,7 @@ func (l *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) G
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -507,7 +506,7 @@ func (l *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) G
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -523,7 +522,7 @@ func (l *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) G
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -539,7 +538,7 @@ func (l *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) G
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -555,7 +554,7 @@ func (l *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) G
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -571,7 +570,7 @@ func (l *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) G
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func (l *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) G
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func (l *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) I
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -655,16 +654,16 @@ func (l *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) R
 	)
 }
 
-func (l *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -683,4 +682,3 @@ func (l *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) T
 
 	return returns
 }
-

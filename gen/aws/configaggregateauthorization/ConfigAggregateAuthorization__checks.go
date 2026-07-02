@@ -19,7 +19,7 @@ func (c *jsiiProxy_ConfigAggregateAuthorization) validateAddMoveTargetParameters
 	return nil
 }
 
-func (c *jsiiProxy_ConfigAggregateAuthorization) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ConfigAggregateAuthorization) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ConfigAggregateAuthorization) validateMoveFromIdParameters(id
 	return nil
 }
 
-func (c *jsiiProxy_ConfigAggregateAuthorization) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ConfigAggregateAuthorization) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateConfigAggregateAuthorization_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateConfigAggregateAuthorization_IsConstructParameters(x interface{}) error {
+func validateConfigAggregateAuthorization_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateConfigAggregateAuthorization_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateConfigAggregateAuthorization_IsTerraformElementParameters(x interface{}) error {
+func validateConfigAggregateAuthorization_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateConfigAggregateAuthorization_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func validateConfigAggregateAuthorization_IsTerraformResourceParameters(x interface{}) error {
+func validateConfigAggregateAuthorization_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_ConfigAggregateAuthorization) validateSetAccountIdParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ConfigAggregateAuthorization) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ConfigAggregateAuthorization) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_ConfigAggregateAuthorization) validateSetConnectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_ConfigAggregateAuthorization) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ConfigAggregateAuthorization) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -358,7 +358,7 @@ func (j *jsiiProxy_ConfigAggregateAuthorization) validateSetLifecycleParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ConfigAggregateAuthorization) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ConfigAggregateAuthorization) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -446,4 +446,3 @@ func validateNewConfigAggregateAuthorizationParameters(scope constructs.Construc
 
 	return nil
 }
-

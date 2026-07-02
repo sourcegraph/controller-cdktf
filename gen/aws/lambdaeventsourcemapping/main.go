@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping",
-		reflect.TypeOf((*LambdaEventSourceMapping)(nil)).Elem(),
+		reflect.TypeFor[LambdaEventSourceMapping](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -134,7 +134,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tumblingWindowInSecondsInput", GoGetter: "TumblingWindowInSecondsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "uuid", GoGetter: "Uuid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LambdaEventSourceMapping{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -142,11 +142,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig",
-		reflect.TypeOf((*LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig)(nil)).Elem(),
+		reflect.TypeFor[LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputReference",
-		reflect.TypeOf((*LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -173,7 +173,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -181,19 +181,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig",
-		reflect.TypeOf((*LambdaEventSourceMappingConfig)(nil)).Elem(),
+		reflect.TypeFor[LambdaEventSourceMappingConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfig",
-		reflect.TypeOf((*LambdaEventSourceMappingDestinationConfig)(nil)).Elem(),
+		reflect.TypeFor[LambdaEventSourceMappingDestinationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfigOnFailure",
-		reflect.TypeOf((*LambdaEventSourceMappingDestinationConfigOnFailure)(nil)).Elem(),
+		reflect.TypeFor[LambdaEventSourceMappingDestinationConfigOnFailure](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfigOnFailureOutputReference",
-		reflect.TypeOf((*LambdaEventSourceMappingDestinationConfigOnFailureOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LambdaEventSourceMappingDestinationConfigOnFailureOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -219,7 +219,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LambdaEventSourceMappingDestinationConfigOnFailureOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -227,7 +227,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfigOutputReference",
-		reflect.TypeOf((*LambdaEventSourceMappingDestinationConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LambdaEventSourceMappingDestinationConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -255,7 +255,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LambdaEventSourceMappingDestinationConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -263,15 +263,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteria",
-		reflect.TypeOf((*LambdaEventSourceMappingFilterCriteria)(nil)).Elem(),
+		reflect.TypeFor[LambdaEventSourceMappingFilterCriteria](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteriaFilter",
-		reflect.TypeOf((*LambdaEventSourceMappingFilterCriteriaFilter)(nil)).Elem(),
+		reflect.TypeFor[LambdaEventSourceMappingFilterCriteriaFilter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteriaFilterList",
-		reflect.TypeOf((*LambdaEventSourceMappingFilterCriteriaFilterList)(nil)).Elem(),
+		reflect.TypeFor[LambdaEventSourceMappingFilterCriteriaFilterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -285,7 +285,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LambdaEventSourceMappingFilterCriteriaFilterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -293,7 +293,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteriaFilterOutputReference",
-		reflect.TypeOf((*LambdaEventSourceMappingFilterCriteriaFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LambdaEventSourceMappingFilterCriteriaFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -320,7 +320,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LambdaEventSourceMappingFilterCriteriaFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -328,7 +328,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteriaOutputReference",
-		reflect.TypeOf((*LambdaEventSourceMappingFilterCriteriaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LambdaEventSourceMappingFilterCriteriaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -356,7 +356,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -364,11 +364,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingScalingConfig",
-		reflect.TypeOf((*LambdaEventSourceMappingScalingConfig)(nil)).Elem(),
+		reflect.TypeFor[LambdaEventSourceMappingScalingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingScalingConfigOutputReference",
-		reflect.TypeOf((*LambdaEventSourceMappingScalingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LambdaEventSourceMappingScalingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -395,7 +395,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LambdaEventSourceMappingScalingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -403,11 +403,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedEventSource",
-		reflect.TypeOf((*LambdaEventSourceMappingSelfManagedEventSource)(nil)).Elem(),
+		reflect.TypeFor[LambdaEventSourceMappingSelfManagedEventSource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedEventSourceOutputReference",
-		reflect.TypeOf((*LambdaEventSourceMappingSelfManagedEventSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LambdaEventSourceMappingSelfManagedEventSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -433,7 +433,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LambdaEventSourceMappingSelfManagedEventSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -441,11 +441,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig",
-		reflect.TypeOf((*LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig)(nil)).Elem(),
+		reflect.TypeFor[LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference",
-		reflect.TypeOf((*LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -472,7 +472,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -480,11 +480,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSourceAccessConfiguration",
-		reflect.TypeOf((*LambdaEventSourceMappingSourceAccessConfiguration)(nil)).Elem(),
+		reflect.TypeFor[LambdaEventSourceMappingSourceAccessConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSourceAccessConfigurationList",
-		reflect.TypeOf((*LambdaEventSourceMappingSourceAccessConfigurationList)(nil)).Elem(),
+		reflect.TypeFor[LambdaEventSourceMappingSourceAccessConfigurationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -498,7 +498,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LambdaEventSourceMappingSourceAccessConfigurationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -506,7 +506,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSourceAccessConfigurationOutputReference",
-		reflect.TypeOf((*LambdaEventSourceMappingSourceAccessConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LambdaEventSourceMappingSourceAccessConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -534,7 +534,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 			_jsii_.MemberProperty{JsiiProperty: "uriInput", GoGetter: "UriInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LambdaEventSourceMappingSourceAccessConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

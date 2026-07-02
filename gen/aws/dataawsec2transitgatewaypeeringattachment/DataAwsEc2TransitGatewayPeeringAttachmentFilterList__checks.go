@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayPeeringAttachmentFilterList) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayPeeringAttachmentFilterList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEc2TransitGatewayPeeringAttachmentFilterList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataAwsEc2TransitGatewayPeeringAttachmentFilterListParameters(te
 
 	return nil
 }
-

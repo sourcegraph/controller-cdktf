@@ -34,7 +34,7 @@ func (d *jsiiProxy_DynamodbTableLocalSecondaryIndexList) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_DynamodbTableLocalSecondaryIndexList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DynamodbTableLocalSecondaryIndexList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDynamodbTableLocalSecondaryIndexListParameters(terraformResource
 
 	return nil
 }
-

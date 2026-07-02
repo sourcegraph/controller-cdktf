@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsLambdaFunctionUrlCorsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLambdaFunctionUrlCorsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsLambdaFunctionUrlCorsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsLambdaFunctionUrlCorsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

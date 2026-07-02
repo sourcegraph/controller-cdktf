@@ -13,17 +13,17 @@ type SpotFleetRequestLaunchSpecificationOutputReference interface {
 	Ami() *string
 	SetAmi(val *string)
 	AmiInput() *string
-	AssociatePublicIpAddress() interface{}
-	SetAssociatePublicIpAddress(val interface{})
-	AssociatePublicIpAddressInput() interface{}
+	AssociatePublicIpAddress() any
+	SetAssociatePublicIpAddress(val any)
+	AssociatePublicIpAddressInput() any
 	AvailabilityZone() *string
 	SetAvailabilityZone(val *string)
 	AvailabilityZoneInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -35,12 +35,12 @@ type SpotFleetRequestLaunchSpecificationOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	EbsBlockDevice() SpotFleetRequestLaunchSpecificationEbsBlockDeviceList
-	EbsBlockDeviceInput() interface{}
-	EbsOptimized() interface{}
-	SetEbsOptimized(val interface{})
-	EbsOptimizedInput() interface{}
+	EbsBlockDeviceInput() any
+	EbsOptimized() any
+	SetEbsOptimized(val any)
+	EbsOptimizedInput() any
 	EphemeralBlockDevice() SpotFleetRequestLaunchSpecificationEphemeralBlockDeviceList
-	EphemeralBlockDeviceInput() interface{}
+	EphemeralBlockDeviceInput() any
 	// Experimental.
 	Fqn() *string
 	IamInstanceProfile() *string
@@ -52,14 +52,14 @@ type SpotFleetRequestLaunchSpecificationOutputReference interface {
 	InstanceType() *string
 	SetInstanceType(val *string)
 	InstanceTypeInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	KeyName() *string
 	SetKeyName(val *string)
 	KeyNameInput() *string
-	Monitoring() interface{}
-	SetMonitoring(val interface{})
-	MonitoringInput() interface{}
+	Monitoring() any
+	SetMonitoring(val any)
+	MonitoringInput() any
 	PlacementGroup() *string
 	SetPlacementGroup(val *string)
 	PlacementGroupInput() *string
@@ -67,7 +67,7 @@ type SpotFleetRequestLaunchSpecificationOutputReference interface {
 	SetPlacementTenancy(val *string)
 	PlacementTenancyInput() *string
 	RootBlockDevice() SpotFleetRequestLaunchSpecificationRootBlockDeviceList
-	RootBlockDeviceInput() interface{}
+	RootBlockDeviceInput() any
 	SpotPrice() *string
 	SetSpotPrice(val *string)
 	SpotPriceInput() *string
@@ -97,7 +97,7 @@ type SpotFleetRequestLaunchSpecificationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -118,9 +118,9 @@ type SpotFleetRequestLaunchSpecificationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutEbsBlockDevice(value interface{})
-	PutEphemeralBlockDevice(value interface{})
-	PutRootBlockDevice(value interface{})
+	PutEbsBlockDevice(value any)
+	PutEphemeralBlockDevice(value any)
+	PutRootBlockDevice(value any)
 	ResetAssociatePublicIpAddress()
 	ResetAvailabilityZone()
 	ResetEbsBlockDevice()
@@ -141,7 +141,7 @@ type SpotFleetRequestLaunchSpecificationOutputReference interface {
 	ResetWeightedCapacity()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -174,8 +174,8 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) AmiInput(
 	return returns
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) AssociatePublicIpAddress() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) AssociatePublicIpAddress() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"associatePublicIpAddress",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) Associate
 	return returns
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) AssociatePublicIpAddressInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) AssociatePublicIpAddressInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"associatePublicIpAddressInput",
@@ -214,8 +214,8 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) Availabil
 	return returns
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -254,8 +254,8 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) EbsBlockD
 	return returns
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) EbsBlockDeviceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) EbsBlockDeviceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ebsBlockDeviceInput",
@@ -264,8 +264,8 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) EbsBlockD
 	return returns
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) EbsOptimized() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) EbsOptimized() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ebsOptimized",
@@ -274,8 +274,8 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) EbsOptimi
 	return returns
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) EbsOptimizedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) EbsOptimizedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ebsOptimizedInput",
@@ -294,8 +294,8 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) Ephemeral
 	return returns
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) EphemeralBlockDeviceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) EphemeralBlockDeviceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ephemeralBlockDeviceInput",
@@ -374,8 +374,8 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) InstanceT
 	return returns
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -404,8 +404,8 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) KeyNameIn
 	return returns
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) Monitoring() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) Monitoring() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"monitoring",
@@ -414,8 +414,8 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) Monitorin
 	return returns
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) MonitoringInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) MonitoringInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"monitoringInput",
@@ -474,8 +474,8 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) RootBlock
 	return returns
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) RootBlockDeviceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) RootBlockDeviceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rootBlockDeviceInput",
@@ -624,7 +624,6 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) WeightedC
 	return returns
 }
 
-
 func NewSpotFleetRequestLaunchSpecificationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SpotFleetRequestLaunchSpecificationOutputReference {
 	_init_.Initialize()
 
@@ -635,7 +634,7 @@ func NewSpotFleetRequestLaunchSpecificationOutputReference(terraformResource cdk
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -647,12 +646,12 @@ func NewSpotFleetRequestLaunchSpecificationOutputReference_Override(s SpotFleetR
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetAmi(val *string) {
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) SetAmi(val *string) {
 	if err := j.validateSetAmiParameters(val); err != nil {
 		panic(err)
 	}
@@ -663,7 +662,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetAmi(val
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetAssociatePublicIpAddress(val interface{}) {
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) SetAssociatePublicIpAddress(val any) {
 	if err := j.validateSetAssociatePublicIpAddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -674,7 +673,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetAssocia
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetAvailabilityZone(val *string) {
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) SetAvailabilityZone(val *string) {
 	if err := j.validateSetAvailabilityZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -685,7 +684,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetAvailab
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -696,7 +695,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -707,7 +706,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetEbsOptimized(val interface{}) {
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) SetEbsOptimized(val any) {
 	if err := j.validateSetEbsOptimizedParameters(val); err != nil {
 		panic(err)
 	}
@@ -718,7 +717,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetEbsOpti
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetIamInstanceProfile(val *string) {
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) SetIamInstanceProfile(val *string) {
 	if err := j.validateSetIamInstanceProfileParameters(val); err != nil {
 		panic(err)
 	}
@@ -729,7 +728,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetIamInst
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetIamInstanceProfileArn(val *string) {
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) SetIamInstanceProfileArn(val *string) {
 	if err := j.validateSetIamInstanceProfileArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -740,7 +739,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetIamInst
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetInstanceType(val *string) {
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) SetInstanceType(val *string) {
 	if err := j.validateSetInstanceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -751,7 +750,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetInstanc
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -762,7 +761,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetInterna
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetKeyName(val *string) {
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) SetKeyName(val *string) {
 	if err := j.validateSetKeyNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -773,7 +772,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetKeyName
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetMonitoring(val interface{}) {
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) SetMonitoring(val any) {
 	if err := j.validateSetMonitoringParameters(val); err != nil {
 		panic(err)
 	}
@@ -784,7 +783,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetMonitor
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetPlacementGroup(val *string) {
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) SetPlacementGroup(val *string) {
 	if err := j.validateSetPlacementGroupParameters(val); err != nil {
 		panic(err)
 	}
@@ -795,7 +794,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetPlaceme
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetPlacementTenancy(val *string) {
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) SetPlacementTenancy(val *string) {
 	if err := j.validateSetPlacementTenancyParameters(val); err != nil {
 		panic(err)
 	}
@@ -806,7 +805,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetPlaceme
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetSpotPrice(val *string) {
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) SetSpotPrice(val *string) {
 	if err := j.validateSetSpotPriceParameters(val); err != nil {
 		panic(err)
 	}
@@ -817,7 +816,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetSpotPri
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetSubnetId(val *string) {
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) SetSubnetId(val *string) {
 	if err := j.validateSetSubnetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -828,7 +827,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetSubnetI
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -839,7 +838,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetTags(va
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -850,7 +849,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -861,7 +860,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetUserData(val *string) {
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) SetUserData(val *string) {
 	if err := j.validateSetUserDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -872,7 +871,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetUserDat
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetVpcSecurityGroupIds(val *[]*string) {
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) SetVpcSecurityGroupIds(val *[]*string) {
 	if err := j.validateSetVpcSecurityGroupIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -883,7 +882,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetVpcSecu
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference)SetWeightedCapacity(val *string) {
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) SetWeightedCapacity(val *string) {
 	if err := j.validateSetWeightedCapacityParameters(val); err != nil {
 		panic(err)
 	}
@@ -907,16 +906,16 @@ func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) ComputeFq
 	return returns
 }
 
-func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -932,7 +931,7 @@ func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) GetBoolea
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -948,7 +947,7 @@ func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) GetBoolea
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -964,7 +963,7 @@ func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) GetListAt
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -980,7 +979,7 @@ func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) GetNumber
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -996,7 +995,7 @@ func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) GetNumber
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1012,7 +1011,7 @@ func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) GetNumber
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1028,7 +1027,7 @@ func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) GetString
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1044,7 +1043,7 @@ func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) GetString
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1073,43 +1072,43 @@ func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) Interpola
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) PutEbsBlockDevice(value interface{}) {
+func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) PutEbsBlockDevice(value any) {
 	if err := s.validatePutEbsBlockDeviceParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putEbsBlockDevice",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) PutEphemeralBlockDevice(value interface{}) {
+func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) PutEphemeralBlockDevice(value any) {
 	if err := s.validatePutEphemeralBlockDeviceParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putEphemeralBlockDevice",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) PutRootBlockDevice(value interface{}) {
+func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) PutRootBlockDevice(value any) {
 	if err := s.validatePutRootBlockDeviceParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putRootBlockDevice",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1257,16 +1256,16 @@ func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) ResetWeig
 	)
 }
 
-func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1285,4 +1284,3 @@ func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) ToString(
 
 	return returns
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_GlueCatalogTableTargetTableOutputReference) validateSetCatalo
 	return nil
 }
 
-func (j *jsiiProxy_GlueCatalogTableTargetTableOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GlueCatalogTableTargetTableOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGlueCatalogTableTargetTableOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsTransferServer.DataAwsTransferServer",
-		reflect.TypeOf((*DataAwsTransferServer)(nil)).Elem(),
+		reflect.TypeFor[DataAwsTransferServer](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -61,7 +61,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsTransferServer{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -69,6 +69,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsTransferServer.DataAwsTransferServerConfig",
-		reflect.TypeOf((*DataAwsTransferServerConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsTransferServerConfig](),
 	)
 }

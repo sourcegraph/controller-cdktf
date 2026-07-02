@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsCloudformationTypeLoggingConfigOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsCloudformationTypeLoggingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsCloudformationTypeLoggingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsCloudformationTypeLoggingConfigOutputReferenceParameters(
 
 	return nil
 }
-

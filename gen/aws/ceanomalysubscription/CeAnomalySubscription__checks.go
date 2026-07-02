@@ -19,7 +19,7 @@ func (c *jsiiProxy_CeAnomalySubscription) validateAddMoveTargetParameters(moveTa
 	return nil
 }
 
-func (c *jsiiProxy_CeAnomalySubscription) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_CeAnomalySubscription) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_CeAnomalySubscription) validateMoveFromIdParameters(id *strin
 	return nil
 }
 
-func (c *jsiiProxy_CeAnomalySubscription) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_CeAnomalySubscription) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (c *jsiiProxy_CeAnomalySubscription) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
-func (c *jsiiProxy_CeAnomalySubscription) validatePutSubscriberParameters(value interface{}) error {
+func (c *jsiiProxy_CeAnomalySubscription) validatePutSubscriberParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateCeAnomalySubscription_GenerateConfigForImportParameters(scope const
 	return nil
 }
 
-func validateCeAnomalySubscription_IsConstructParameters(x interface{}) error {
+func validateCeAnomalySubscription_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateCeAnomalySubscription_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateCeAnomalySubscription_IsTerraformElementParameters(x interface{}) error {
+func validateCeAnomalySubscription_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateCeAnomalySubscription_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
-func validateCeAnomalySubscription_IsTerraformResourceParameters(x interface{}) error {
+func validateCeAnomalySubscription_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -294,7 +294,7 @@ func (j *jsiiProxy_CeAnomalySubscription) validateSetAccountIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_CeAnomalySubscription) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_CeAnomalySubscription) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -327,7 +327,7 @@ func (j *jsiiProxy_CeAnomalySubscription) validateSetConnectionParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_CeAnomalySubscription) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_CeAnomalySubscription) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -424,7 +424,7 @@ func (j *jsiiProxy_CeAnomalySubscription) validateSetNameParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_CeAnomalySubscription) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_CeAnomalySubscription) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -512,4 +512,3 @@ func validateNewCeAnomalySubscriptionParameters(scope constructs.Construct, id *
 
 	return nil
 }
-

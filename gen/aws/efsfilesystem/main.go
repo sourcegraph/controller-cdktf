@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.efsFileSystem.EfsFileSystem",
-		reflect.TypeOf((*EfsFileSystem)(nil)).Elem(),
+		reflect.TypeFor[EfsFileSystem](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -93,7 +93,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EfsFileSystem{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -101,15 +101,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.efsFileSystem.EfsFileSystemConfig",
-		reflect.TypeOf((*EfsFileSystemConfig)(nil)).Elem(),
+		reflect.TypeFor[EfsFileSystemConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.efsFileSystem.EfsFileSystemLifecyclePolicy",
-		reflect.TypeOf((*EfsFileSystemLifecyclePolicy)(nil)).Elem(),
+		reflect.TypeFor[EfsFileSystemLifecyclePolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.efsFileSystem.EfsFileSystemLifecyclePolicyList",
-		reflect.TypeOf((*EfsFileSystemLifecyclePolicyList)(nil)).Elem(),
+		reflect.TypeFor[EfsFileSystemLifecyclePolicyList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -123,7 +123,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EfsFileSystemLifecyclePolicyList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -131,7 +131,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.efsFileSystem.EfsFileSystemLifecyclePolicyOutputReference",
-		reflect.TypeOf((*EfsFileSystemLifecyclePolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EfsFileSystemLifecyclePolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -161,7 +161,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "transitionToPrimaryStorageClass", GoGetter: "TransitionToPrimaryStorageClass"},
 			_jsii_.MemberProperty{JsiiProperty: "transitionToPrimaryStorageClassInput", GoGetter: "TransitionToPrimaryStorageClassInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EfsFileSystemLifecyclePolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -169,11 +169,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.efsFileSystem.EfsFileSystemSizeInBytes",
-		reflect.TypeOf((*EfsFileSystemSizeInBytes)(nil)).Elem(),
+		reflect.TypeFor[EfsFileSystemSizeInBytes](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.efsFileSystem.EfsFileSystemSizeInBytesList",
-		reflect.TypeOf((*EfsFileSystemSizeInBytesList)(nil)).Elem(),
+		reflect.TypeFor[EfsFileSystemSizeInBytesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -186,7 +186,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EfsFileSystemSizeInBytesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -194,7 +194,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.efsFileSystem.EfsFileSystemSizeInBytesOutputReference",
-		reflect.TypeOf((*EfsFileSystemSizeInBytesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EfsFileSystemSizeInBytesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -221,7 +221,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "valueInIa", GoGetter: "ValueInIa"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInStandard", GoGetter: "ValueInStandard"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EfsFileSystemSizeInBytesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

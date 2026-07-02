@@ -6,9 +6,9 @@ import (
 
 type CodedeployDeploymentGroupConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type CodedeployDeploymentGroupConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/codedeploy_deployment_group#app_name CodedeployDeploymentGroup#app_name}.
 	AppName *string `field:"required" json:"appName" yaml:"appName"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/codedeploy_deployment_group#deployment_group_name CodedeployDeploymentGroup#deployment_group_name}.
@@ -48,11 +48,11 @@ type CodedeployDeploymentGroupConfig struct {
 	// ec2_tag_filter block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/codedeploy_deployment_group#ec2_tag_filter CodedeployDeploymentGroup#ec2_tag_filter}
-	Ec2TagFilter interface{} `field:"optional" json:"ec2TagFilter" yaml:"ec2TagFilter"`
+	Ec2TagFilter any `field:"optional" json:"ec2TagFilter" yaml:"ec2TagFilter"`
 	// ec2_tag_set block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/codedeploy_deployment_group#ec2_tag_set CodedeployDeploymentGroup#ec2_tag_set}
-	Ec2TagSet interface{} `field:"optional" json:"ec2TagSet" yaml:"ec2TagSet"`
+	Ec2TagSet any `field:"optional" json:"ec2TagSet" yaml:"ec2TagSet"`
 	// ecs_service block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/codedeploy_deployment_group#ecs_service CodedeployDeploymentGroup#ecs_service}
@@ -69,7 +69,7 @@ type CodedeployDeploymentGroupConfig struct {
 	// on_premises_instance_tag_filter block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/codedeploy_deployment_group#on_premises_instance_tag_filter CodedeployDeploymentGroup#on_premises_instance_tag_filter}
-	OnPremisesInstanceTagFilter interface{} `field:"optional" json:"onPremisesInstanceTagFilter" yaml:"onPremisesInstanceTagFilter"`
+	OnPremisesInstanceTagFilter any `field:"optional" json:"onPremisesInstanceTagFilter" yaml:"onPremisesInstanceTagFilter"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/codedeploy_deployment_group#tags CodedeployDeploymentGroup#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/codedeploy_deployment_group#tags_all CodedeployDeploymentGroup#tags_all}.
@@ -77,6 +77,5 @@ type CodedeployDeploymentGroupConfig struct {
 	// trigger_configuration block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/codedeploy_deployment_group#trigger_configuration CodedeployDeploymentGroup#trigger_configuration}
-	TriggerConfiguration interface{} `field:"optional" json:"triggerConfiguration" yaml:"triggerConfiguration"`
+	TriggerConfiguration any `field:"optional" json:"triggerConfiguration" yaml:"triggerConfiguration"`
 }
-

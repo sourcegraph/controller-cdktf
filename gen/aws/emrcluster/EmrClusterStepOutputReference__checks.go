@@ -90,7 +90,7 @@ func (e *jsiiProxy_EmrClusterStepOutputReference) validateInterpolationForAttrib
 	return nil
 }
 
-func (e *jsiiProxy_EmrClusterStepOutputReference) validatePutHadoopJarStepParameters(value interface{}) error {
+func (e *jsiiProxy_EmrClusterStepOutputReference) validatePutHadoopJarStepParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -137,7 +137,7 @@ func (j *jsiiProxy_EmrClusterStepOutputReference) validateSetActionOnFailurePara
 	return nil
 }
 
-func (j *jsiiProxy_EmrClusterStepOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EmrClusterStepOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -202,7 +202,7 @@ func (j *jsiiProxy_EmrClusterStepOutputReference) validateSetComplexObjectIsFrom
 	return nil
 }
 
-func (j *jsiiProxy_EmrClusterStepOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EmrClusterStepOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -269,4 +269,3 @@ func validateNewEmrClusterStepOutputReferenceParameters(terraformResource cdktf.
 
 	return nil
 }
-

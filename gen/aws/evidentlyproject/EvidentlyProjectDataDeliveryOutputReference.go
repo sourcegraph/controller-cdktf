@@ -14,9 +14,9 @@ type EvidentlyProjectDataDeliveryOutputReference interface {
 	CloudwatchLogsInput() *EvidentlyProjectDataDeliveryCloudwatchLogs
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -44,7 +44,7 @@ type EvidentlyProjectDataDeliveryOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type EvidentlyProjectDataDeliveryOutputReference interface {
 	ResetS3Destination()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -104,8 +104,8 @@ func (j *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) CloudwatchLogsIn
 	return returns
 }
 
-func (j *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) TerraformResourc
 	return returns
 }
 
-
 func NewEvidentlyProjectDataDeliveryOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EvidentlyProjectDataDeliveryOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewEvidentlyProjectDataDeliveryOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.evidentlyProject.EvidentlyProjectDataDeliveryOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewEvidentlyProjectDataDeliveryOutputReference_Override(e EvidentlyProjectD
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.evidentlyProject.EvidentlyProjectDataDeliveryOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference)SetInternalValue(val *EvidentlyProjectDataDelivery) {
+func (j *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) SetInternalValue(val *EvidentlyProjectDataDelivery) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,16 +289,16 @@ func (e *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (e *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -315,7 +314,7 @@ func (e *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -331,7 +330,7 @@ func (e *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -347,7 +346,7 @@ func (e *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -363,7 +362,7 @@ func (e *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -379,7 +378,7 @@ func (e *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (e *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (e *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (e *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,7 +455,7 @@ func (e *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (e *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) PutCloudwatchLog
 	_jsii_.InvokeVoid(
 		e,
 		"putCloudwatchLogs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -481,7 +480,7 @@ func (e *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) PutS3Destination
 	_jsii_.InvokeVoid(
 		e,
 		"putS3Destination",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (e *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) ResetS3Destinati
 	)
 }
 
-func (e *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (e *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) ToString() *stri
 
 	return returns
 }
-

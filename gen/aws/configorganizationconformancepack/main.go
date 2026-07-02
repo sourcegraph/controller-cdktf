@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePack",
-		reflect.TypeOf((*ConfigOrganizationConformancePack)(nil)).Elem(),
+		reflect.TypeFor[ConfigOrganizationConformancePack](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,7 +82,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConfigOrganizationConformancePack{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -90,15 +90,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePackConfig",
-		reflect.TypeOf((*ConfigOrganizationConformancePackConfig)(nil)).Elem(),
+		reflect.TypeFor[ConfigOrganizationConformancePackConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePackInputParameter",
-		reflect.TypeOf((*ConfigOrganizationConformancePackInputParameter)(nil)).Elem(),
+		reflect.TypeFor[ConfigOrganizationConformancePackInputParameter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePackInputParameterList",
-		reflect.TypeOf((*ConfigOrganizationConformancePackInputParameterList)(nil)).Elem(),
+		reflect.TypeFor[ConfigOrganizationConformancePackInputParameterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -112,7 +112,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConfigOrganizationConformancePackInputParameterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -120,7 +120,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePackInputParameterOutputReference",
-		reflect.TypeOf((*ConfigOrganizationConformancePackInputParameterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ConfigOrganizationConformancePackInputParameterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -148,7 +148,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConfigOrganizationConformancePackInputParameterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -156,11 +156,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePackTimeouts",
-		reflect.TypeOf((*ConfigOrganizationConformancePackTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ConfigOrganizationConformancePackTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePackTimeoutsOutputReference",
-		reflect.TypeOf((*ConfigOrganizationConformancePackTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ConfigOrganizationConformancePackTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -193,7 +193,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConfigOrganizationConformancePackTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

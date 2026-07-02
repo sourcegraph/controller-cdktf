@@ -98,7 +98,7 @@ func (e *jsiiProxy_EksNodeGroupTaintOutputReference) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_EksNodeGroupTaintOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EksNodeGroupTaintOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_EksNodeGroupTaintOutputReference) validateSetEffectParameters
 	return nil
 }
 
-func (j *jsiiProxy_EksNodeGroupTaintOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EksNodeGroupTaintOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewEksNodeGroupTaintOutputReferenceParameters(terraformResource cdk
 
 	return nil
 }
-

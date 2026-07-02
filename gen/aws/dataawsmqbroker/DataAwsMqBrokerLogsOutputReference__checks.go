@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsMqBrokerLogsOutputReference) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsMqBrokerLogsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsMqBrokerLogsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsMqBrokerLogsOutputReferenceParameters(terraformResource c
 
 	return nil
 }
-

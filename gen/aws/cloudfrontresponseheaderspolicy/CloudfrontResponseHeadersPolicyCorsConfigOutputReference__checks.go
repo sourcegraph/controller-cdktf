@@ -142,7 +142,7 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) validateSetAccessControlAllowCredentialsParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) validateSetAccessControlAllowCredentialsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -170,7 +170,7 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -243,7 +243,7 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) validateSetOriginOverrideParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) validateSetOriginOverrideParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -290,4 +290,3 @@ func validateNewCloudfrontResponseHeadersPolicyCorsConfigOutputReferenceParamete
 
 	return nil
 }
-

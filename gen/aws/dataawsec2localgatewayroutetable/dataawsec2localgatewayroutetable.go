@@ -15,17 +15,17 @@ type DataAwsEc2LocalGatewayRouteTable interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Filter() DataAwsEc2LocalGatewayRouteTableFilterList
-	FilterInput() interface{}
+	FilterInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -57,7 +57,7 @@ type DataAwsEc2LocalGatewayRouteTable interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	State() *string
 	SetState(val *string)
 	StateInput() *string
@@ -67,15 +67,15 @@ type DataAwsEc2LocalGatewayRouteTable interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DataAwsEc2LocalGatewayRouteTableTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,7 +97,7 @@ type DataAwsEc2LocalGatewayRouteTable interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutFilter(value interface{})
+	PutFilter(value any)
 	PutTimeouts(value *DataAwsEc2LocalGatewayRouteTableTimeouts)
 	ResetFilter()
 	ResetId()
@@ -110,18 +110,18 @@ type DataAwsEc2LocalGatewayRouteTable interface {
 	ResetState()
 	ResetTags()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsEc2LocalGatewayRouteTable
@@ -139,8 +139,8 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) CdktfStack() cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -149,8 +149,8 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) Filter() DataAwsEc2LocalGat
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) FilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) FilterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"filterInput",
@@ -329,8 +329,8 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) Provider() cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -389,8 +389,8 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) TerraformGeneratorMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -419,8 +419,8 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) Timeouts() DataAwsEc2LocalG
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -428,7 +428,6 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) TimeoutsInput() interface{}
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/ec2_local_gateway_route_table aws_ec2_local_gateway_route_table} Data Source.
 func NewDataAwsEc2LocalGatewayRouteTable(scope constructs.Construct, id *string, config *DataAwsEc2LocalGatewayRouteTableConfig) DataAwsEc2LocalGatewayRouteTable {
@@ -441,7 +440,7 @@ func NewDataAwsEc2LocalGatewayRouteTable(scope constructs.Construct, id *string,
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsEc2LocalGatewayRouteTable.DataAwsEc2LocalGatewayRouteTable",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -454,12 +453,12 @@ func NewDataAwsEc2LocalGatewayRouteTable_Override(d DataAwsEc2LocalGatewayRouteT
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsEc2LocalGatewayRouteTable.DataAwsEc2LocalGatewayRouteTable",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -470,7 +469,7 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -478,7 +477,7 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable)SetDependsOn(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -486,7 +485,7 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable)SetForEach(val cdktf.ITerraf
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable)SetId(val *string) {
+func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -497,7 +496,7 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -508,7 +507,7 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable)SetLifecycle(val *cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable)SetLocalGatewayId(val *string) {
+func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) SetLocalGatewayId(val *string) {
 	if err := j.validateSetLocalGatewayIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,7 +518,7 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable)SetLocalGatewayId(val *strin
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable)SetLocalGatewayRouteTableId(val *string) {
+func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) SetLocalGatewayRouteTableId(val *string) {
 	if err := j.validateSetLocalGatewayRouteTableIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -530,7 +529,7 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable)SetLocalGatewayRouteTableId(
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable)SetOutpostArn(val *string) {
+func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) SetOutpostArn(val *string) {
 	if err := j.validateSetOutpostArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable)SetOutpostArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -549,7 +548,7 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable)SetProvider(val cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable)SetState(val *string) {
+func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) SetState(val *string) {
 	if err := j.validateSetStateParameters(val); err != nil {
 		panic(err)
 	}
@@ -560,7 +559,7 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable)SetState(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -583,7 +582,7 @@ func DataAwsEc2LocalGatewayRouteTable_GenerateConfigForImport(scope constructs.C
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEc2LocalGatewayRouteTable.DataAwsEc2LocalGatewayRouteTable",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -607,7 +606,7 @@ func DataAwsEc2LocalGatewayRouteTable_GenerateConfigForImport(scope constructs.C
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsEc2LocalGatewayRouteTable_IsConstruct(x interface{}) *bool {
+func DataAwsEc2LocalGatewayRouteTable_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEc2LocalGatewayRouteTable_IsConstructParameters(x); err != nil {
@@ -618,7 +617,7 @@ func DataAwsEc2LocalGatewayRouteTable_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEc2LocalGatewayRouteTable.DataAwsEc2LocalGatewayRouteTable",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -626,7 +625,7 @@ func DataAwsEc2LocalGatewayRouteTable_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsEc2LocalGatewayRouteTable_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsEc2LocalGatewayRouteTable_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEc2LocalGatewayRouteTable_IsTerraformDataSourceParameters(x); err != nil {
@@ -637,7 +636,7 @@ func DataAwsEc2LocalGatewayRouteTable_IsTerraformDataSource(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEc2LocalGatewayRouteTable.DataAwsEc2LocalGatewayRouteTable",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -645,7 +644,7 @@ func DataAwsEc2LocalGatewayRouteTable_IsTerraformDataSource(x interface{}) *bool
 }
 
 // Experimental.
-func DataAwsEc2LocalGatewayRouteTable_IsTerraformElement(x interface{}) *bool {
+func DataAwsEc2LocalGatewayRouteTable_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEc2LocalGatewayRouteTable_IsTerraformElementParameters(x); err != nil {
@@ -656,7 +655,7 @@ func DataAwsEc2LocalGatewayRouteTable_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEc2LocalGatewayRouteTable.DataAwsEc2LocalGatewayRouteTable",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -674,27 +673,27 @@ func DataAwsEc2LocalGatewayRouteTable_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -710,7 +709,7 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) GetBooleanAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -726,7 +725,7 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) GetBooleanMapAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -742,7 +741,7 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) GetListAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -758,7 +757,7 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) GetNumberAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -774,7 +773,7 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) GetNumberListAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -790,7 +789,7 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) GetNumberMapAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -806,7 +805,7 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) GetStringAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -822,7 +821,7 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) GetStringMapAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -838,7 +837,7 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) InterpolationForAttribute(t
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -852,18 +851,18 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) OverrideLogicalId(newLogica
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) PutFilter(value interface{}) {
+func (d *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) PutFilter(value any) {
 	if err := d.validatePutFilterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -874,7 +873,7 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) PutTimeouts(value *DataAwsE
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -950,8 +949,8 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -963,8 +962,8 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) SynthesizeAttributes() *map
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -976,8 +975,8 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) SynthesizeHclAttributes() *
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -989,8 +988,8 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) ToHclTerraform() interface{
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1015,8 +1014,8 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1027,4 +1026,3 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) ToTerraform() interface{} {
 
 	return returns
 }
-

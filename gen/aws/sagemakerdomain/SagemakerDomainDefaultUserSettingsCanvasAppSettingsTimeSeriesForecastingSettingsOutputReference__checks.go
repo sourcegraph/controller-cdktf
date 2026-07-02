@@ -106,7 +106,7 @@ func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsCanvasAppSettingsTimeSeries
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsCanvasAppSettingsTimeSeriesForecastingSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsCanvasAppSettingsTimeSeriesForecastingSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewSagemakerDomainDefaultUserSettingsCanvasAppSettingsTimeSeriesFor
 
 	return nil
 }
-

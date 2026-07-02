@@ -19,7 +19,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroup) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroup) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_CodedeployDeploymentGroup) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroup) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_CodedeployDeploymentGroup) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -248,7 +248,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroup) validatePutDeploymentStyleParamete
 	return nil
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroup) validatePutEc2TagFilterParameters(value interface{}) error {
+func (c *jsiiProxy_CodedeployDeploymentGroup) validatePutEc2TagFilterParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -279,7 +279,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroup) validatePutEc2TagFilterParameters(
 	return nil
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroup) validatePutEc2TagSetParameters(value interface{}) error {
+func (c *jsiiProxy_CodedeployDeploymentGroup) validatePutEc2TagSetParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -332,7 +332,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroup) validatePutLoadBalancerInfoParamet
 	return nil
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroup) validatePutOnPremisesInstanceTagFilterParameters(value interface{}) error {
+func (c *jsiiProxy_CodedeployDeploymentGroup) validatePutOnPremisesInstanceTagFilterParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -363,7 +363,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroup) validatePutOnPremisesInstanceTagFi
 	return nil
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroup) validatePutTriggerConfigurationParameters(value interface{}) error {
+func (c *jsiiProxy_CodedeployDeploymentGroup) validatePutTriggerConfigurationParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -410,7 +410,7 @@ func validateCodedeployDeploymentGroup_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateCodedeployDeploymentGroup_IsConstructParameters(x interface{}) error {
+func validateCodedeployDeploymentGroup_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -418,7 +418,7 @@ func validateCodedeployDeploymentGroup_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateCodedeployDeploymentGroup_IsTerraformElementParameters(x interface{}) error {
+func validateCodedeployDeploymentGroup_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -426,7 +426,7 @@ func validateCodedeployDeploymentGroup_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateCodedeployDeploymentGroup_IsTerraformResourceParameters(x interface{}) error {
+func validateCodedeployDeploymentGroup_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -450,7 +450,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroup) validateSetAutoscalingGroupsParame
 	return nil
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroup) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_CodedeployDeploymentGroup) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -483,7 +483,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroup) validateSetConnectionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroup) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_CodedeployDeploymentGroup) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -572,7 +572,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroup) validateSetLifecycleParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroup) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_CodedeployDeploymentGroup) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -660,4 +660,3 @@ func validateNewCodedeployDeploymentGroupParameters(scope constructs.Construct, 
 
 	return nil
 }
-

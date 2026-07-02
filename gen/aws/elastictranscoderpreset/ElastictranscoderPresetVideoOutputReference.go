@@ -21,9 +21,9 @@ type ElastictranscoderPresetVideoOutputReference interface {
 	CodecInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -79,7 +79,7 @@ type ElastictranscoderPresetVideoOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -115,7 +115,7 @@ type ElastictranscoderPresetVideoOutputReference interface {
 	ResetSizingPolicy()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -188,8 +188,8 @@ func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference) CodecInput() *st
 	return returns
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -458,7 +458,6 @@ func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference) TerraformResourc
 	return returns
 }
 
-
 func NewElastictranscoderPresetVideoOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ElastictranscoderPresetVideoOutputReference {
 	_init_.Initialize()
 
@@ -469,7 +468,7 @@ func NewElastictranscoderPresetVideoOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPresetVideoOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -481,12 +480,12 @@ func NewElastictranscoderPresetVideoOutputReference_Override(e Elastictranscoder
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPresetVideoOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		e,
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference)SetAspectRatio(val *string) {
+func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference) SetAspectRatio(val *string) {
 	if err := j.validateSetAspectRatioParameters(val); err != nil {
 		panic(err)
 	}
@@ -497,7 +496,7 @@ func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference)SetAspectRatio(va
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference)SetBitRate(val *string) {
+func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference) SetBitRate(val *string) {
 	if err := j.validateSetBitRateParameters(val); err != nil {
 		panic(err)
 	}
@@ -508,7 +507,7 @@ func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference)SetBitRate(val *s
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference)SetCodec(val *string) {
+func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference) SetCodec(val *string) {
 	if err := j.validateSetCodecParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,7 +518,7 @@ func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference)SetCodec(val *str
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -530,7 +529,7 @@ func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference)SetDisplayAspectRatio(val *string) {
+func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference) SetDisplayAspectRatio(val *string) {
 	if err := j.validateSetDisplayAspectRatioParameters(val); err != nil {
 		panic(err)
 	}
@@ -552,7 +551,7 @@ func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference)SetDisplayAspectR
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference)SetFixedGop(val *string) {
+func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference) SetFixedGop(val *string) {
 	if err := j.validateSetFixedGopParameters(val); err != nil {
 		panic(err)
 	}
@@ -563,7 +562,7 @@ func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference)SetFixedGop(val *
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference)SetFrameRate(val *string) {
+func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference) SetFrameRate(val *string) {
 	if err := j.validateSetFrameRateParameters(val); err != nil {
 		panic(err)
 	}
@@ -574,7 +573,7 @@ func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference)SetFrameRate(val 
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference)SetInternalValue(val *ElastictranscoderPresetVideo) {
+func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference) SetInternalValue(val *ElastictranscoderPresetVideo) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -585,7 +584,7 @@ func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference)SetKeyframesMaxDist(val *string) {
+func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference) SetKeyframesMaxDist(val *string) {
 	if err := j.validateSetKeyframesMaxDistParameters(val); err != nil {
 		panic(err)
 	}
@@ -596,7 +595,7 @@ func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference)SetKeyframesMaxDi
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference)SetMaxFrameRate(val *string) {
+func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference) SetMaxFrameRate(val *string) {
 	if err := j.validateSetMaxFrameRateParameters(val); err != nil {
 		panic(err)
 	}
@@ -607,7 +606,7 @@ func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference)SetMaxFrameRate(v
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference)SetMaxHeight(val *string) {
+func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference) SetMaxHeight(val *string) {
 	if err := j.validateSetMaxHeightParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,7 +617,7 @@ func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference)SetMaxHeight(val 
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference)SetMaxWidth(val *string) {
+func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference) SetMaxWidth(val *string) {
 	if err := j.validateSetMaxWidthParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference)SetMaxWidth(val *
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference)SetPaddingPolicy(val *string) {
+func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference) SetPaddingPolicy(val *string) {
 	if err := j.validateSetPaddingPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -640,7 +639,7 @@ func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference)SetPaddingPolicy(
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference)SetResolution(val *string) {
+func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference) SetResolution(val *string) {
 	if err := j.validateSetResolutionParameters(val); err != nil {
 		panic(err)
 	}
@@ -651,7 +650,7 @@ func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference)SetResolution(val
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference)SetSizingPolicy(val *string) {
+func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference) SetSizingPolicy(val *string) {
 	if err := j.validateSetSizingPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -662,7 +661,7 @@ func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference)SetSizingPolicy(v
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -673,7 +672,7 @@ func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -697,16 +696,16 @@ func (e *jsiiProxy_ElastictranscoderPresetVideoOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (e *jsiiProxy_ElastictranscoderPresetVideoOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_ElastictranscoderPresetVideoOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -722,7 +721,7 @@ func (e *jsiiProxy_ElastictranscoderPresetVideoOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -738,7 +737,7 @@ func (e *jsiiProxy_ElastictranscoderPresetVideoOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -754,7 +753,7 @@ func (e *jsiiProxy_ElastictranscoderPresetVideoOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -770,7 +769,7 @@ func (e *jsiiProxy_ElastictranscoderPresetVideoOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -786,7 +785,7 @@ func (e *jsiiProxy_ElastictranscoderPresetVideoOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -802,7 +801,7 @@ func (e *jsiiProxy_ElastictranscoderPresetVideoOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -818,7 +817,7 @@ func (e *jsiiProxy_ElastictranscoderPresetVideoOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -834,7 +833,7 @@ func (e *jsiiProxy_ElastictranscoderPresetVideoOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -863,7 +862,7 @@ func (e *jsiiProxy_ElastictranscoderPresetVideoOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -974,16 +973,16 @@ func (e *jsiiProxy_ElastictranscoderPresetVideoOutputReference) ResetSizingPolic
 	)
 }
 
-func (e *jsiiProxy_ElastictranscoderPresetVideoOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_ElastictranscoderPresetVideoOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1002,4 +1001,3 @@ func (e *jsiiProxy_ElastictranscoderPresetVideoOutputReference) ToString() *stri
 
 	return returns
 }
-

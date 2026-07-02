@@ -34,7 +34,7 @@ func (g *jsiiProxy_GlueCatalogTableStorageDescriptorSortColumnsList) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_GlueCatalogTableStorageDescriptorSortColumnsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GlueCatalogTableStorageDescriptorSortColumnsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGlueCatalogTableStorageDescriptorSortColumnsListParameters(terra
 
 	return nil
 }
-

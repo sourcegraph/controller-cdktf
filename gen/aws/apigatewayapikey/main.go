@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey",
-		reflect.TypeOf((*ApiGatewayApiKey)(nil)).Elem(),
+		reflect.TypeFor[ApiGatewayApiKey](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,7 +76,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApiGatewayApiKey{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -84,6 +84,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKeyConfig",
-		reflect.TypeOf((*ApiGatewayApiKeyConfig)(nil)).Elem(),
+		reflect.TypeFor[ApiGatewayApiKeyConfig](),
 	)
 }

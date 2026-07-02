@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordO
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordO
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataAwsAuditmanagerControlControlMappingSourcesSourceKeywordOutp
 
 	return nil
 }
-

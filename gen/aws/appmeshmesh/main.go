@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshMesh.AppmeshMesh",
-		reflect.TypeOf((*AppmeshMesh)(nil)).Elem(),
+		reflect.TypeFor[AppmeshMesh](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshMesh{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,19 +81,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshMesh.AppmeshMeshConfig",
-		reflect.TypeOf((*AppmeshMeshConfig)(nil)).Elem(),
+		reflect.TypeFor[AppmeshMeshConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshMesh.AppmeshMeshSpec",
-		reflect.TypeOf((*AppmeshMeshSpec)(nil)).Elem(),
+		reflect.TypeFor[AppmeshMeshSpec](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshMesh.AppmeshMeshSpecEgressFilter",
-		reflect.TypeOf((*AppmeshMeshSpecEgressFilter)(nil)).Elem(),
+		reflect.TypeFor[AppmeshMeshSpecEgressFilter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshMesh.AppmeshMeshSpecEgressFilterOutputReference",
-		reflect.TypeOf((*AppmeshMeshSpecEgressFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshMeshSpecEgressFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -120,7 +120,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshMeshSpecEgressFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -128,7 +128,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshMesh.AppmeshMeshSpecOutputReference",
-		reflect.TypeOf((*AppmeshMeshSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshMeshSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -156,7 +156,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshMeshSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

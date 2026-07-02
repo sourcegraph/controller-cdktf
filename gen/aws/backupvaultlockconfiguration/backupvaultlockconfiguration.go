@@ -22,15 +22,15 @@ type BackupVaultLockConfiguration interface {
 	SetChangeableForDays(val *float64)
 	ChangeableForDaysInput() *float64
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -63,24 +63,24 @@ type BackupVaultLockConfiguration interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,7 +98,7 @@ type BackupVaultLockConfiguration interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -110,7 +110,7 @@ type BackupVaultLockConfiguration interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -124,17 +124,17 @@ type BackupVaultLockConfiguration interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for BackupVaultLockConfiguration
@@ -202,8 +202,8 @@ func (j *jsiiProxy_BackupVaultLockConfiguration) ChangeableForDaysInput() *float
 	return returns
 }
 
-func (j *jsiiProxy_BackupVaultLockConfiguration) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupVaultLockConfiguration) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_BackupVaultLockConfiguration) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BackupVaultLockConfiguration) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BackupVaultLockConfiguration) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -222,8 +222,8 @@ func (j *jsiiProxy_BackupVaultLockConfiguration) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_BackupVaultLockConfiguration) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupVaultLockConfiguration) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -362,8 +362,8 @@ func (j *jsiiProxy_BackupVaultLockConfiguration) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_BackupVaultLockConfiguration) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_BackupVaultLockConfiguration) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -372,8 +372,8 @@ func (j *jsiiProxy_BackupVaultLockConfiguration) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BackupVaultLockConfiguration) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupVaultLockConfiguration) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -392,8 +392,8 @@ func (j *jsiiProxy_BackupVaultLockConfiguration) TerraformGeneratorMetadata() *c
 	return returns
 }
 
-func (j *jsiiProxy_BackupVaultLockConfiguration) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BackupVaultLockConfiguration) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -412,7 +412,6 @@ func (j *jsiiProxy_BackupVaultLockConfiguration) TerraformResourceType() *string
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/backup_vault_lock_configuration aws_backup_vault_lock_configuration} Resource.
 func NewBackupVaultLockConfiguration(scope constructs.Construct, id *string, config *BackupVaultLockConfigurationConfig) BackupVaultLockConfiguration {
 	_init_.Initialize()
@@ -424,7 +423,7 @@ func NewBackupVaultLockConfiguration(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.backupVaultLockConfiguration.BackupVaultLockConfiguration",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -437,12 +436,12 @@ func NewBackupVaultLockConfiguration_Override(b BackupVaultLockConfiguration, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.backupVaultLockConfiguration.BackupVaultLockConfiguration",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BackupVaultLockConfiguration)SetBackupVaultName(val *string) {
+func (j *jsiiProxy_BackupVaultLockConfiguration) SetBackupVaultName(val *string) {
 	if err := j.validateSetBackupVaultNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_BackupVaultLockConfiguration)SetBackupVaultName(val *string) 
 	)
 }
 
-func (j *jsiiProxy_BackupVaultLockConfiguration)SetChangeableForDays(val *float64) {
+func (j *jsiiProxy_BackupVaultLockConfiguration) SetChangeableForDays(val *float64) {
 	if err := j.validateSetChangeableForDaysParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,7 +463,7 @@ func (j *jsiiProxy_BackupVaultLockConfiguration)SetChangeableForDays(val *float6
 	)
 }
 
-func (j *jsiiProxy_BackupVaultLockConfiguration)SetConnection(val interface{}) {
+func (j *jsiiProxy_BackupVaultLockConfiguration) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_BackupVaultLockConfiguration)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BackupVaultLockConfiguration)SetCount(val interface{}) {
+func (j *jsiiProxy_BackupVaultLockConfiguration) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func (j *jsiiProxy_BackupVaultLockConfiguration)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BackupVaultLockConfiguration)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_BackupVaultLockConfiguration) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -494,7 +493,7 @@ func (j *jsiiProxy_BackupVaultLockConfiguration)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_BackupVaultLockConfiguration)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_BackupVaultLockConfiguration) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -502,7 +501,7 @@ func (j *jsiiProxy_BackupVaultLockConfiguration)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_BackupVaultLockConfiguration)SetId(val *string) {
+func (j *jsiiProxy_BackupVaultLockConfiguration) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_BackupVaultLockConfiguration)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BackupVaultLockConfiguration)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_BackupVaultLockConfiguration) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_BackupVaultLockConfiguration)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_BackupVaultLockConfiguration)SetMaxRetentionDays(val *float64) {
+func (j *jsiiProxy_BackupVaultLockConfiguration) SetMaxRetentionDays(val *float64) {
 	if err := j.validateSetMaxRetentionDaysParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_BackupVaultLockConfiguration)SetMaxRetentionDays(val *float64
 	)
 }
 
-func (j *jsiiProxy_BackupVaultLockConfiguration)SetMinRetentionDays(val *float64) {
+func (j *jsiiProxy_BackupVaultLockConfiguration) SetMinRetentionDays(val *float64) {
 	if err := j.validateSetMinRetentionDaysParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_BackupVaultLockConfiguration)SetMinRetentionDays(val *float64
 	)
 }
 
-func (j *jsiiProxy_BackupVaultLockConfiguration)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_BackupVaultLockConfiguration) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -554,7 +553,7 @@ func (j *jsiiProxy_BackupVaultLockConfiguration)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_BackupVaultLockConfiguration)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_BackupVaultLockConfiguration) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -577,7 +576,7 @@ func BackupVaultLockConfiguration_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.backupVaultLockConfiguration.BackupVaultLockConfiguration",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -601,7 +600,7 @@ func BackupVaultLockConfiguration_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func BackupVaultLockConfiguration_IsConstruct(x interface{}) *bool {
+func BackupVaultLockConfiguration_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBackupVaultLockConfiguration_IsConstructParameters(x); err != nil {
@@ -612,7 +611,7 @@ func BackupVaultLockConfiguration_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.backupVaultLockConfiguration.BackupVaultLockConfiguration",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -620,7 +619,7 @@ func BackupVaultLockConfiguration_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func BackupVaultLockConfiguration_IsTerraformElement(x interface{}) *bool {
+func BackupVaultLockConfiguration_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBackupVaultLockConfiguration_IsTerraformElementParameters(x); err != nil {
@@ -631,7 +630,7 @@ func BackupVaultLockConfiguration_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.backupVaultLockConfiguration.BackupVaultLockConfiguration",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -639,7 +638,7 @@ func BackupVaultLockConfiguration_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func BackupVaultLockConfiguration_IsTerraformResource(x interface{}) *bool {
+func BackupVaultLockConfiguration_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBackupVaultLockConfiguration_IsTerraformResourceParameters(x); err != nil {
@@ -650,7 +649,7 @@ func BackupVaultLockConfiguration_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.backupVaultLockConfiguration.BackupVaultLockConfiguration",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -675,31 +674,31 @@ func (b *jsiiProxy_BackupVaultLockConfiguration) AddMoveTarget(moveTarget *strin
 	_jsii_.InvokeVoid(
 		b,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (b *jsiiProxy_BackupVaultLockConfiguration) AddOverride(path *string, value interface{}) {
+func (b *jsiiProxy_BackupVaultLockConfiguration) AddOverride(path *string, value any) {
 	if err := b.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (b *jsiiProxy_BackupVaultLockConfiguration) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BackupVaultLockConfiguration) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -715,7 +714,7 @@ func (b *jsiiProxy_BackupVaultLockConfiguration) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -731,7 +730,7 @@ func (b *jsiiProxy_BackupVaultLockConfiguration) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -747,7 +746,7 @@ func (b *jsiiProxy_BackupVaultLockConfiguration) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -763,7 +762,7 @@ func (b *jsiiProxy_BackupVaultLockConfiguration) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -779,7 +778,7 @@ func (b *jsiiProxy_BackupVaultLockConfiguration) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -795,7 +794,7 @@ func (b *jsiiProxy_BackupVaultLockConfiguration) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -811,7 +810,7 @@ func (b *jsiiProxy_BackupVaultLockConfiguration) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -827,15 +826,15 @@ func (b *jsiiProxy_BackupVaultLockConfiguration) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BackupVaultLockConfiguration) HasResourceMove() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BackupVaultLockConfiguration) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -854,7 +853,7 @@ func (b *jsiiProxy_BackupVaultLockConfiguration) ImportFrom(id *string, provider
 	_jsii_.InvokeVoid(
 		b,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -867,7 +866,7 @@ func (b *jsiiProxy_BackupVaultLockConfiguration) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -881,18 +880,18 @@ func (b *jsiiProxy_BackupVaultLockConfiguration) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (b *jsiiProxy_BackupVaultLockConfiguration) MoveTo(moveTarget *string, index interface{}) {
+func (b *jsiiProxy_BackupVaultLockConfiguration) MoveTo(moveTarget *string, index any) {
 	if err := b.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -903,7 +902,7 @@ func (b *jsiiProxy_BackupVaultLockConfiguration) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -914,7 +913,7 @@ func (b *jsiiProxy_BackupVaultLockConfiguration) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		b,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -958,8 +957,8 @@ func (b *jsiiProxy_BackupVaultLockConfiguration) ResetOverrideLogicalId() {
 	)
 }
 
-func (b *jsiiProxy_BackupVaultLockConfiguration) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BackupVaultLockConfiguration) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -971,8 +970,8 @@ func (b *jsiiProxy_BackupVaultLockConfiguration) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (b *jsiiProxy_BackupVaultLockConfiguration) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BackupVaultLockConfiguration) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -984,8 +983,8 @@ func (b *jsiiProxy_BackupVaultLockConfiguration) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (b *jsiiProxy_BackupVaultLockConfiguration) ToHclTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BackupVaultLockConfiguration) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -997,8 +996,8 @@ func (b *jsiiProxy_BackupVaultLockConfiguration) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (b *jsiiProxy_BackupVaultLockConfiguration) ToMetadata() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BackupVaultLockConfiguration) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1023,8 +1022,8 @@ func (b *jsiiProxy_BackupVaultLockConfiguration) ToString() *string {
 	return returns
 }
 
-func (b *jsiiProxy_BackupVaultLockConfiguration) ToTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BackupVaultLockConfiguration) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1035,4 +1034,3 @@ func (b *jsiiProxy_BackupVaultLockConfiguration) ToTerraform() interface{} {
 
 	return returns
 }
-

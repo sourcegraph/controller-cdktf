@@ -15,15 +15,15 @@ type RedshiftSecurityGroup interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -43,7 +43,7 @@ type RedshiftSecurityGroup interface {
 	SetId(val *string)
 	IdInput() *string
 	Ingress() RedshiftSecurityGroupIngressList
-	IngressInput() interface{}
+	IngressInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -58,24 +58,24 @@ type RedshiftSecurityGroup interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -93,7 +93,7 @@ type RedshiftSecurityGroup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -105,30 +105,30 @@ type RedshiftSecurityGroup interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutIngress(value interface{})
+	PutIngress(value any)
 	ResetDescription()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for RedshiftSecurityGroup
@@ -146,8 +146,8 @@ func (j *jsiiProxy_RedshiftSecurityGroup) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftSecurityGroup) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftSecurityGroup) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_RedshiftSecurityGroup) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftSecurityGroup) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RedshiftSecurityGroup) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_RedshiftSecurityGroup) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftSecurityGroup) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftSecurityGroup) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -266,8 +266,8 @@ func (j *jsiiProxy_RedshiftSecurityGroup) Ingress() RedshiftSecurityGroupIngress
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftSecurityGroup) IngressInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftSecurityGroup) IngressInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ingressInput",
@@ -326,8 +326,8 @@ func (j *jsiiProxy_RedshiftSecurityGroup) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftSecurityGroup) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_RedshiftSecurityGroup) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -336,8 +336,8 @@ func (j *jsiiProxy_RedshiftSecurityGroup) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftSecurityGroup) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftSecurityGroup) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -356,8 +356,8 @@ func (j *jsiiProxy_RedshiftSecurityGroup) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftSecurityGroup) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RedshiftSecurityGroup) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -376,7 +376,6 @@ func (j *jsiiProxy_RedshiftSecurityGroup) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/redshift_security_group aws_redshift_security_group} Resource.
 func NewRedshiftSecurityGroup(scope constructs.Construct, id *string, config *RedshiftSecurityGroupConfig) RedshiftSecurityGroup {
 	_init_.Initialize()
@@ -388,7 +387,7 @@ func NewRedshiftSecurityGroup(scope constructs.Construct, id *string, config *Re
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -401,12 +400,12 @@ func NewRedshiftSecurityGroup_Override(r RedshiftSecurityGroup, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RedshiftSecurityGroup)SetConnection(val interface{}) {
+func (j *jsiiProxy_RedshiftSecurityGroup) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_RedshiftSecurityGroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftSecurityGroup)SetCount(val interface{}) {
+func (j *jsiiProxy_RedshiftSecurityGroup) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_RedshiftSecurityGroup)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftSecurityGroup)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_RedshiftSecurityGroup) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -436,7 +435,7 @@ func (j *jsiiProxy_RedshiftSecurityGroup)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftSecurityGroup)SetDescription(val *string) {
+func (j *jsiiProxy_RedshiftSecurityGroup) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -447,7 +446,7 @@ func (j *jsiiProxy_RedshiftSecurityGroup)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftSecurityGroup)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_RedshiftSecurityGroup) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -455,7 +454,7 @@ func (j *jsiiProxy_RedshiftSecurityGroup)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_RedshiftSecurityGroup)SetId(val *string) {
+func (j *jsiiProxy_RedshiftSecurityGroup) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_RedshiftSecurityGroup)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftSecurityGroup)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_RedshiftSecurityGroup) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -477,7 +476,7 @@ func (j *jsiiProxy_RedshiftSecurityGroup)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_RedshiftSecurityGroup)SetName(val *string) {
+func (j *jsiiProxy_RedshiftSecurityGroup) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_RedshiftSecurityGroup)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftSecurityGroup)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_RedshiftSecurityGroup) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -496,7 +495,7 @@ func (j *jsiiProxy_RedshiftSecurityGroup)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_RedshiftSecurityGroup)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_RedshiftSecurityGroup) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,7 +518,7 @@ func RedshiftSecurityGroup_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroup",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -543,7 +542,7 @@ func RedshiftSecurityGroup_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func RedshiftSecurityGroup_IsConstruct(x interface{}) *bool {
+func RedshiftSecurityGroup_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRedshiftSecurityGroup_IsConstructParameters(x); err != nil {
@@ -554,7 +553,7 @@ func RedshiftSecurityGroup_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroup",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -562,7 +561,7 @@ func RedshiftSecurityGroup_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func RedshiftSecurityGroup_IsTerraformElement(x interface{}) *bool {
+func RedshiftSecurityGroup_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRedshiftSecurityGroup_IsTerraformElementParameters(x); err != nil {
@@ -573,7 +572,7 @@ func RedshiftSecurityGroup_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroup",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func RedshiftSecurityGroup_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func RedshiftSecurityGroup_IsTerraformResource(x interface{}) *bool {
+func RedshiftSecurityGroup_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRedshiftSecurityGroup_IsTerraformResourceParameters(x); err != nil {
@@ -592,7 +591,7 @@ func RedshiftSecurityGroup_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroup",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -617,31 +616,31 @@ func (r *jsiiProxy_RedshiftSecurityGroup) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (r *jsiiProxy_RedshiftSecurityGroup) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_RedshiftSecurityGroup) AddOverride(path *string, value any) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (r *jsiiProxy_RedshiftSecurityGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RedshiftSecurityGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -657,7 +656,7 @@ func (r *jsiiProxy_RedshiftSecurityGroup) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -673,7 +672,7 @@ func (r *jsiiProxy_RedshiftSecurityGroup) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -689,7 +688,7 @@ func (r *jsiiProxy_RedshiftSecurityGroup) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -705,7 +704,7 @@ func (r *jsiiProxy_RedshiftSecurityGroup) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -721,7 +720,7 @@ func (r *jsiiProxy_RedshiftSecurityGroup) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (r *jsiiProxy_RedshiftSecurityGroup) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (r *jsiiProxy_RedshiftSecurityGroup) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,15 +768,15 @@ func (r *jsiiProxy_RedshiftSecurityGroup) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftSecurityGroup) HasResourceMove() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RedshiftSecurityGroup) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -796,7 +795,7 @@ func (r *jsiiProxy_RedshiftSecurityGroup) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		r,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -809,7 +808,7 @@ func (r *jsiiProxy_RedshiftSecurityGroup) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,18 +822,18 @@ func (r *jsiiProxy_RedshiftSecurityGroup) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (r *jsiiProxy_RedshiftSecurityGroup) MoveTo(moveTarget *string, index interface{}) {
+func (r *jsiiProxy_RedshiftSecurityGroup) MoveTo(moveTarget *string, index any) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -845,7 +844,7 @@ func (r *jsiiProxy_RedshiftSecurityGroup) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -856,18 +855,18 @@ func (r *jsiiProxy_RedshiftSecurityGroup) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (r *jsiiProxy_RedshiftSecurityGroup) PutIngress(value interface{}) {
+func (r *jsiiProxy_RedshiftSecurityGroup) PutIngress(value any) {
 	if err := r.validatePutIngressParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"putIngress",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -895,8 +894,8 @@ func (r *jsiiProxy_RedshiftSecurityGroup) ResetOverrideLogicalId() {
 	)
 }
 
-func (r *jsiiProxy_RedshiftSecurityGroup) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RedshiftSecurityGroup) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -908,8 +907,8 @@ func (r *jsiiProxy_RedshiftSecurityGroup) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftSecurityGroup) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RedshiftSecurityGroup) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -921,8 +920,8 @@ func (r *jsiiProxy_RedshiftSecurityGroup) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftSecurityGroup) ToHclTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RedshiftSecurityGroup) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -934,8 +933,8 @@ func (r *jsiiProxy_RedshiftSecurityGroup) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftSecurityGroup) ToMetadata() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RedshiftSecurityGroup) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -960,8 +959,8 @@ func (r *jsiiProxy_RedshiftSecurityGroup) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftSecurityGroup) ToTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RedshiftSecurityGroup) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -972,4 +971,3 @@ func (r *jsiiProxy_RedshiftSecurityGroup) ToTerraform() interface{} {
 
 	return returns
 }
-

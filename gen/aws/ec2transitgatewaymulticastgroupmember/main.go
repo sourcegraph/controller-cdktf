@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2TransitGatewayMulticastGroupMember.Ec2TransitGatewayMulticastGroupMember",
-		reflect.TypeOf((*Ec2TransitGatewayMulticastGroupMember)(nil)).Elem(),
+		reflect.TypeFor[Ec2TransitGatewayMulticastGroupMember](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "transitGatewayMulticastDomainId", GoGetter: "TransitGatewayMulticastDomainId"},
 			_jsii_.MemberProperty{JsiiProperty: "transitGatewayMulticastDomainIdInput", GoGetter: "TransitGatewayMulticastDomainIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2TransitGatewayMulticastGroupMember{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -70,6 +70,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2TransitGatewayMulticastGroupMember.Ec2TransitGatewayMulticastGroupMemberConfig",
-		reflect.TypeOf((*Ec2TransitGatewayMulticastGroupMemberConfig)(nil)).Elem(),
+		reflect.TypeFor[Ec2TransitGatewayMulticastGroupMemberConfig](),
 	)
 }

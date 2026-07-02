@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lexIntent.LexIntent",
-		reflect.TypeOf((*LexIntent)(nil)).Elem(),
+		reflect.TypeFor[LexIntent](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -106,7 +106,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LexIntent{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -114,15 +114,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lexIntent.LexIntentConclusionStatement",
-		reflect.TypeOf((*LexIntentConclusionStatement)(nil)).Elem(),
+		reflect.TypeFor[LexIntentConclusionStatement](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessage",
-		reflect.TypeOf((*LexIntentConclusionStatementMessage)(nil)).Elem(),
+		reflect.TypeFor[LexIntentConclusionStatementMessage](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessageList",
-		reflect.TypeOf((*LexIntentConclusionStatementMessageList)(nil)).Elem(),
+		reflect.TypeFor[LexIntentConclusionStatementMessageList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -136,7 +136,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LexIntentConclusionStatementMessageList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -144,7 +144,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessageOutputReference",
-		reflect.TypeOf((*LexIntentConclusionStatementMessageOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LexIntentConclusionStatementMessageOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -175,7 +175,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LexIntentConclusionStatementMessageOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -183,7 +183,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementOutputReference",
-		reflect.TypeOf((*LexIntentConclusionStatementOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LexIntentConclusionStatementOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -213,7 +213,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LexIntentConclusionStatementOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -221,19 +221,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lexIntent.LexIntentConfig",
-		reflect.TypeOf((*LexIntentConfig)(nil)).Elem(),
+		reflect.TypeFor[LexIntentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lexIntent.LexIntentConfirmationPrompt",
-		reflect.TypeOf((*LexIntentConfirmationPrompt)(nil)).Elem(),
+		reflect.TypeFor[LexIntentConfirmationPrompt](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessage",
-		reflect.TypeOf((*LexIntentConfirmationPromptMessage)(nil)).Elem(),
+		reflect.TypeFor[LexIntentConfirmationPromptMessage](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessageList",
-		reflect.TypeOf((*LexIntentConfirmationPromptMessageList)(nil)).Elem(),
+		reflect.TypeFor[LexIntentConfirmationPromptMessageList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -247,7 +247,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LexIntentConfirmationPromptMessageList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -255,7 +255,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessageOutputReference",
-		reflect.TypeOf((*LexIntentConfirmationPromptMessageOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LexIntentConfirmationPromptMessageOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -286,7 +286,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LexIntentConfirmationPromptMessageOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -294,7 +294,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptOutputReference",
-		reflect.TypeOf((*LexIntentConfirmationPromptOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LexIntentConfirmationPromptOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -326,7 +326,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LexIntentConfirmationPromptOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -334,11 +334,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lexIntent.LexIntentDialogCodeHook",
-		reflect.TypeOf((*LexIntentDialogCodeHook)(nil)).Elem(),
+		reflect.TypeFor[LexIntentDialogCodeHook](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lexIntent.LexIntentDialogCodeHookOutputReference",
-		reflect.TypeOf((*LexIntentDialogCodeHookOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LexIntentDialogCodeHookOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -366,7 +366,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 			_jsii_.MemberProperty{JsiiProperty: "uriInput", GoGetter: "UriInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LexIntentDialogCodeHookOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -374,11 +374,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lexIntent.LexIntentFollowUpPrompt",
-		reflect.TypeOf((*LexIntentFollowUpPrompt)(nil)).Elem(),
+		reflect.TypeFor[LexIntentFollowUpPrompt](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptOutputReference",
-		reflect.TypeOf((*LexIntentFollowUpPromptOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LexIntentFollowUpPromptOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -408,7 +408,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LexIntentFollowUpPromptOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -416,15 +416,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPrompt",
-		reflect.TypeOf((*LexIntentFollowUpPromptPrompt)(nil)).Elem(),
+		reflect.TypeFor[LexIntentFollowUpPromptPrompt](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessage",
-		reflect.TypeOf((*LexIntentFollowUpPromptPromptMessage)(nil)).Elem(),
+		reflect.TypeFor[LexIntentFollowUpPromptPromptMessage](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessageList",
-		reflect.TypeOf((*LexIntentFollowUpPromptPromptMessageList)(nil)).Elem(),
+		reflect.TypeFor[LexIntentFollowUpPromptPromptMessageList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -438,7 +438,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LexIntentFollowUpPromptPromptMessageList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -446,7 +446,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessageOutputReference",
-		reflect.TypeOf((*LexIntentFollowUpPromptPromptMessageOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LexIntentFollowUpPromptPromptMessageOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -477,7 +477,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LexIntentFollowUpPromptPromptMessageOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -485,7 +485,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptOutputReference",
-		reflect.TypeOf((*LexIntentFollowUpPromptPromptOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LexIntentFollowUpPromptPromptOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -517,7 +517,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LexIntentFollowUpPromptPromptOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -525,15 +525,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatement",
-		reflect.TypeOf((*LexIntentFollowUpPromptRejectionStatement)(nil)).Elem(),
+		reflect.TypeFor[LexIntentFollowUpPromptRejectionStatement](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessage",
-		reflect.TypeOf((*LexIntentFollowUpPromptRejectionStatementMessage)(nil)).Elem(),
+		reflect.TypeFor[LexIntentFollowUpPromptRejectionStatementMessage](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessageList",
-		reflect.TypeOf((*LexIntentFollowUpPromptRejectionStatementMessageList)(nil)).Elem(),
+		reflect.TypeFor[LexIntentFollowUpPromptRejectionStatementMessageList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -547,7 +547,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LexIntentFollowUpPromptRejectionStatementMessageList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -555,7 +555,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessageOutputReference",
-		reflect.TypeOf((*LexIntentFollowUpPromptRejectionStatementMessageOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LexIntentFollowUpPromptRejectionStatementMessageOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -586,7 +586,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LexIntentFollowUpPromptRejectionStatementMessageOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -594,7 +594,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementOutputReference",
-		reflect.TypeOf((*LexIntentFollowUpPromptRejectionStatementOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LexIntentFollowUpPromptRejectionStatementOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -624,7 +624,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LexIntentFollowUpPromptRejectionStatementOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -632,15 +632,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lexIntent.LexIntentFulfillmentActivity",
-		reflect.TypeOf((*LexIntentFulfillmentActivity)(nil)).Elem(),
+		reflect.TypeFor[LexIntentFulfillmentActivity](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lexIntent.LexIntentFulfillmentActivityCodeHook",
-		reflect.TypeOf((*LexIntentFulfillmentActivityCodeHook)(nil)).Elem(),
+		reflect.TypeFor[LexIntentFulfillmentActivityCodeHook](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lexIntent.LexIntentFulfillmentActivityCodeHookOutputReference",
-		reflect.TypeOf((*LexIntentFulfillmentActivityCodeHookOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LexIntentFulfillmentActivityCodeHookOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -668,7 +668,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 			_jsii_.MemberProperty{JsiiProperty: "uriInput", GoGetter: "UriInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -676,7 +676,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lexIntent.LexIntentFulfillmentActivityOutputReference",
-		reflect.TypeOf((*LexIntentFulfillmentActivityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LexIntentFulfillmentActivityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "codeHook", GoGetter: "CodeHook"},
 			_jsii_.MemberProperty{JsiiProperty: "codeHookInput", GoGetter: "CodeHookInput"},
@@ -706,7 +706,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LexIntentFulfillmentActivityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -714,15 +714,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lexIntent.LexIntentRejectionStatement",
-		reflect.TypeOf((*LexIntentRejectionStatement)(nil)).Elem(),
+		reflect.TypeFor[LexIntentRejectionStatement](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessage",
-		reflect.TypeOf((*LexIntentRejectionStatementMessage)(nil)).Elem(),
+		reflect.TypeFor[LexIntentRejectionStatementMessage](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessageList",
-		reflect.TypeOf((*LexIntentRejectionStatementMessageList)(nil)).Elem(),
+		reflect.TypeFor[LexIntentRejectionStatementMessageList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -736,7 +736,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LexIntentRejectionStatementMessageList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -744,7 +744,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessageOutputReference",
-		reflect.TypeOf((*LexIntentRejectionStatementMessageOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LexIntentRejectionStatementMessageOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -775,7 +775,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LexIntentRejectionStatementMessageOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -783,7 +783,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementOutputReference",
-		reflect.TypeOf((*LexIntentRejectionStatementOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LexIntentRejectionStatementOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -813,7 +813,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LexIntentRejectionStatementOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -821,11 +821,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lexIntent.LexIntentSlot",
-		reflect.TypeOf((*LexIntentSlot)(nil)).Elem(),
+		reflect.TypeFor[LexIntentSlot](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lexIntent.LexIntentSlotList",
-		reflect.TypeOf((*LexIntentSlotList)(nil)).Elem(),
+		reflect.TypeFor[LexIntentSlotList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -839,7 +839,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LexIntentSlotList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -847,7 +847,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lexIntent.LexIntentSlotOutputReference",
-		reflect.TypeOf((*LexIntentSlotOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LexIntentSlotOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -896,7 +896,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "valueElicitationPrompt", GoGetter: "ValueElicitationPrompt"},
 			_jsii_.MemberProperty{JsiiProperty: "valueElicitationPromptInput", GoGetter: "ValueElicitationPromptInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LexIntentSlotOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -904,15 +904,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPrompt",
-		reflect.TypeOf((*LexIntentSlotValueElicitationPrompt)(nil)).Elem(),
+		reflect.TypeFor[LexIntentSlotValueElicitationPrompt](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessage",
-		reflect.TypeOf((*LexIntentSlotValueElicitationPromptMessage)(nil)).Elem(),
+		reflect.TypeFor[LexIntentSlotValueElicitationPromptMessage](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessageList",
-		reflect.TypeOf((*LexIntentSlotValueElicitationPromptMessageList)(nil)).Elem(),
+		reflect.TypeFor[LexIntentSlotValueElicitationPromptMessageList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -926,7 +926,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LexIntentSlotValueElicitationPromptMessageList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -934,7 +934,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessageOutputReference",
-		reflect.TypeOf((*LexIntentSlotValueElicitationPromptMessageOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LexIntentSlotValueElicitationPromptMessageOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -965,7 +965,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LexIntentSlotValueElicitationPromptMessageOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -973,7 +973,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptOutputReference",
-		reflect.TypeOf((*LexIntentSlotValueElicitationPromptOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LexIntentSlotValueElicitationPromptOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1005,7 +1005,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LexIntentSlotValueElicitationPromptOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1013,11 +1013,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lexIntent.LexIntentTimeouts",
-		reflect.TypeOf((*LexIntentTimeouts)(nil)).Elem(),
+		reflect.TypeFor[LexIntentTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lexIntent.LexIntentTimeoutsOutputReference",
-		reflect.TypeOf((*LexIntentTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LexIntentTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1050,7 +1050,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LexIntentTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

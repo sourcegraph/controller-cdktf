@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentity",
-		reflect.TypeOf((*DataAwsCallerIdentity)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCallerIdentity](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -51,7 +51,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "userId", GoGetter: "UserId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsCallerIdentity{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -59,6 +59,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentityConfig",
-		reflect.TypeOf((*DataAwsCallerIdentityConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCallerIdentityConfig](),
 	)
 }

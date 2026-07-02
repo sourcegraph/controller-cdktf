@@ -6,9 +6,9 @@ import (
 
 type DefaultNetworkAclConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,13 +18,13 @@ type DefaultNetworkAclConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/default_network_acl#default_network_acl_id DefaultNetworkAcl#default_network_acl_id}.
 	DefaultNetworkAclId *string `field:"required" json:"defaultNetworkAclId" yaml:"defaultNetworkAclId"`
 	// egress block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/default_network_acl#egress DefaultNetworkAcl#egress}
-	Egress interface{} `field:"optional" json:"egress" yaml:"egress"`
+	Egress any `field:"optional" json:"egress" yaml:"egress"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/default_network_acl#id DefaultNetworkAcl#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -33,7 +33,7 @@ type DefaultNetworkAclConfig struct {
 	// ingress block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/default_network_acl#ingress DefaultNetworkAcl#ingress}
-	Ingress interface{} `field:"optional" json:"ingress" yaml:"ingress"`
+	Ingress any `field:"optional" json:"ingress" yaml:"ingress"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/default_network_acl#subnet_ids DefaultNetworkAcl#subnet_ids}.
 	SubnetIds *[]*string `field:"optional" json:"subnetIds" yaml:"subnetIds"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/default_network_acl#tags DefaultNetworkAcl#tags}.
@@ -41,4 +41,3 @@ type DefaultNetworkAclConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/default_network_acl#tags_all DefaultNetworkAcl#tags_all}.
 	TagsAll *map[string]*string `field:"optional" json:"tagsAll" yaml:"tagsAll"`
 }
-

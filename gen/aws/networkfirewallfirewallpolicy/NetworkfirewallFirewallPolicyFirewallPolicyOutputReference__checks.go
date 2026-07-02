@@ -101,7 +101,7 @@ func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) v
 	return nil
 }
 
-func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) validatePutStatefulRuleGroupReferenceParameters(value interface{}) error {
+func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) validatePutStatefulRuleGroupReferenceParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -132,7 +132,7 @@ func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) v
 	return nil
 }
 
-func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) validatePutStatelessCustomActionParameters(value interface{}) error {
+func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) validatePutStatelessCustomActionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -163,7 +163,7 @@ func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) v
 	return nil
 }
 
-func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) validatePutStatelessRuleGroupReferenceParameters(value interface{}) error {
+func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) validatePutStatelessRuleGroupReferenceParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -202,7 +202,7 @@ func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -326,4 +326,3 @@ func validateNewNetworkfirewallFirewallPolicyFirewallPolicyOutputReferenceParame
 
 	return nil
 }
-

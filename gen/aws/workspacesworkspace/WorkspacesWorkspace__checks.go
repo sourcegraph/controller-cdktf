@@ -19,7 +19,7 @@ func (w *jsiiProxy_WorkspacesWorkspace) validateAddMoveTargetParameters(moveTarg
 	return nil
 }
 
-func (w *jsiiProxy_WorkspacesWorkspace) validateAddOverrideParameters(path *string, value interface{}) error {
+func (w *jsiiProxy_WorkspacesWorkspace) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (w *jsiiProxy_WorkspacesWorkspace) validateMoveFromIdParameters(id *string)
 	return nil
 }
 
-func (w *jsiiProxy_WorkspacesWorkspace) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (w *jsiiProxy_WorkspacesWorkspace) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateWorkspacesWorkspace_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateWorkspacesWorkspace_IsConstructParameters(x interface{}) error {
+func validateWorkspacesWorkspace_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateWorkspacesWorkspace_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateWorkspacesWorkspace_IsTerraformElementParameters(x interface{}) error {
+func validateWorkspacesWorkspace_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateWorkspacesWorkspace_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
-func validateWorkspacesWorkspace_IsTerraformResourceParameters(x interface{}) error {
+func validateWorkspacesWorkspace_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -274,7 +274,7 @@ func (j *jsiiProxy_WorkspacesWorkspace) validateSetBundleIdParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_WorkspacesWorkspace) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_WorkspacesWorkspace) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -307,7 +307,7 @@ func (j *jsiiProxy_WorkspacesWorkspace) validateSetConnectionParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_WorkspacesWorkspace) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_WorkspacesWorkspace) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -388,7 +388,7 @@ func (j *jsiiProxy_WorkspacesWorkspace) validateSetLifecycleParameters(val *cdkt
 	return nil
 }
 
-func (j *jsiiProxy_WorkspacesWorkspace) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_WorkspacesWorkspace) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -434,7 +434,7 @@ func (j *jsiiProxy_WorkspacesWorkspace) validateSetProvisionersParameters(val *[
 	return nil
 }
 
-func (j *jsiiProxy_WorkspacesWorkspace) validateSetRootVolumeEncryptionEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_WorkspacesWorkspace) validateSetRootVolumeEncryptionEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -478,7 +478,7 @@ func (j *jsiiProxy_WorkspacesWorkspace) validateSetUserNameParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_WorkspacesWorkspace) validateSetUserVolumeEncryptionEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_WorkspacesWorkspace) validateSetUserVolumeEncryptionEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -524,4 +524,3 @@ func validateNewWorkspacesWorkspaceParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

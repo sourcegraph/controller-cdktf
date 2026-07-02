@@ -1,6 +1,5 @@
 package opensearchdomain
 
-
 type OpensearchDomainCognitoOptions struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opensearch_domain#identity_pool_id OpensearchDomain#identity_pool_id}.
 	IdentityPoolId *string `field:"required" json:"identityPoolId" yaml:"identityPoolId"`
@@ -9,6 +8,5 @@ type OpensearchDomainCognitoOptions struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opensearch_domain#user_pool_id OpensearchDomain#user_pool_id}.
 	UserPoolId *string `field:"required" json:"userPoolId" yaml:"userPoolId"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}.
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 }
-

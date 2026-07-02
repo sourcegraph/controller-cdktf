@@ -131,7 +131,7 @@ func (r *jsiiProxy_RedshiftScheduledActionTargetActionOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftScheduledActionTargetActionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftScheduledActionTargetActionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -231,4 +231,3 @@ func validateNewRedshiftScheduledActionTargetActionOutputReferenceParameters(ter
 
 	return nil
 }
-

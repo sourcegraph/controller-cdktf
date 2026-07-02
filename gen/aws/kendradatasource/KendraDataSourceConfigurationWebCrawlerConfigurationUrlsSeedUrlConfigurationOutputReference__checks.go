@@ -98,7 +98,7 @@ func (k *jsiiProxy_KendraDataSourceConfigurationWebCrawlerConfigurationUrlsSeedU
 	return nil
 }
 
-func (j *jsiiProxy_KendraDataSourceConfigurationWebCrawlerConfigurationUrlsSeedUrlConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KendraDataSourceConfigurationWebCrawlerConfigurationUrlsSeedUrlConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewKendraDataSourceConfigurationWebCrawlerConfigurationUrlsSeedUrlC
 
 	return nil
 }
-

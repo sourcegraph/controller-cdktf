@@ -90,7 +90,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionTimestreamOutputReference) validateInt
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleErrorActionTimestreamOutputReference) validatePutDimensionParameters(value interface{}) error {
+func (i *jsiiProxy_IotTopicRuleErrorActionTimestreamOutputReference) validatePutDimensionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionTimestreamOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionTimestreamOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRuleErrorActionTimestreamOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -264,4 +264,3 @@ func validateNewIotTopicRuleErrorActionTimestreamOutputReferenceParameters(terra
 
 	return nil
 }
-

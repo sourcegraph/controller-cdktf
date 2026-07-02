@@ -25,15 +25,15 @@ type SagemakerDomain interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DefaultSpaceSettings() SagemakerDomainDefaultSpaceSettingsOutputReference
 	DefaultSpaceSettingsInput() *SagemakerDomainDefaultSpaceSettings
 	DefaultUserSettings() SagemakerDomainDefaultUserSettingsOutputReference
@@ -73,11 +73,11 @@ type SagemakerDomain interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RetentionPolicy() SagemakerDomainRetentionPolicyOutputReference
 	RetentionPolicyInput() *SagemakerDomainRetentionPolicy
 	SecurityGroupIdForDomainBoundary() *string
@@ -94,7 +94,7 @@ type SagemakerDomain interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Url() *string
@@ -105,9 +105,9 @@ type SagemakerDomain interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -125,7 +125,7 @@ type SagemakerDomain interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -137,7 +137,7 @@ type SagemakerDomain interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -160,17 +160,17 @@ type SagemakerDomain interface {
 	ResetRetentionPolicy()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SagemakerDomain
@@ -258,8 +258,8 @@ func (j *jsiiProxy_SagemakerDomain) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerDomain) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SagemakerDomain) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -268,8 +268,8 @@ func (j *jsiiProxy_SagemakerDomain) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerDomain) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SagemakerDomain) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -278,8 +278,8 @@ func (j *jsiiProxy_SagemakerDomain) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerDomain) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SagemakerDomain) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -488,8 +488,8 @@ func (j *jsiiProxy_SagemakerDomain) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerDomain) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SagemakerDomain) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -498,8 +498,8 @@ func (j *jsiiProxy_SagemakerDomain) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerDomain) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SagemakerDomain) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -618,8 +618,8 @@ func (j *jsiiProxy_SagemakerDomain) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerDomain) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SagemakerDomain) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -668,7 +668,6 @@ func (j *jsiiProxy_SagemakerDomain) VpcIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sagemaker_domain aws_sagemaker_domain} Resource.
 func NewSagemakerDomain(scope constructs.Construct, id *string, config *SagemakerDomainConfig) SagemakerDomain {
 	_init_.Initialize()
@@ -680,7 +679,7 @@ func NewSagemakerDomain(scope constructs.Construct, id *string, config *Sagemake
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomain",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -693,12 +692,12 @@ func NewSagemakerDomain_Override(s SagemakerDomain, scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomain",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SagemakerDomain)SetAppNetworkAccessType(val *string) {
+func (j *jsiiProxy_SagemakerDomain) SetAppNetworkAccessType(val *string) {
 	if err := j.validateSetAppNetworkAccessTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -709,7 +708,7 @@ func (j *jsiiProxy_SagemakerDomain)SetAppNetworkAccessType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerDomain)SetAppSecurityGroupManagement(val *string) {
+func (j *jsiiProxy_SagemakerDomain) SetAppSecurityGroupManagement(val *string) {
 	if err := j.validateSetAppSecurityGroupManagementParameters(val); err != nil {
 		panic(err)
 	}
@@ -720,7 +719,7 @@ func (j *jsiiProxy_SagemakerDomain)SetAppSecurityGroupManagement(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerDomain)SetAuthMode(val *string) {
+func (j *jsiiProxy_SagemakerDomain) SetAuthMode(val *string) {
 	if err := j.validateSetAuthModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -731,7 +730,7 @@ func (j *jsiiProxy_SagemakerDomain)SetAuthMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerDomain)SetConnection(val interface{}) {
+func (j *jsiiProxy_SagemakerDomain) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -742,7 +741,7 @@ func (j *jsiiProxy_SagemakerDomain)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerDomain)SetCount(val interface{}) {
+func (j *jsiiProxy_SagemakerDomain) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -753,7 +752,7 @@ func (j *jsiiProxy_SagemakerDomain)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerDomain)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SagemakerDomain) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -761,7 +760,7 @@ func (j *jsiiProxy_SagemakerDomain)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerDomain)SetDomainName(val *string) {
+func (j *jsiiProxy_SagemakerDomain) SetDomainName(val *string) {
 	if err := j.validateSetDomainNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -772,7 +771,7 @@ func (j *jsiiProxy_SagemakerDomain)SetDomainName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerDomain)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SagemakerDomain) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -780,7 +779,7 @@ func (j *jsiiProxy_SagemakerDomain)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerDomain)SetId(val *string) {
+func (j *jsiiProxy_SagemakerDomain) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -791,7 +790,7 @@ func (j *jsiiProxy_SagemakerDomain)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerDomain)SetKmsKeyId(val *string) {
+func (j *jsiiProxy_SagemakerDomain) SetKmsKeyId(val *string) {
 	if err := j.validateSetKmsKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -802,7 +801,7 @@ func (j *jsiiProxy_SagemakerDomain)SetKmsKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerDomain)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SagemakerDomain) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -813,7 +812,7 @@ func (j *jsiiProxy_SagemakerDomain)SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_SagemakerDomain)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SagemakerDomain) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -821,7 +820,7 @@ func (j *jsiiProxy_SagemakerDomain)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerDomain)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SagemakerDomain) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -832,7 +831,7 @@ func (j *jsiiProxy_SagemakerDomain)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerDomain)SetSubnetIds(val *[]*string) {
+func (j *jsiiProxy_SagemakerDomain) SetSubnetIds(val *[]*string) {
 	if err := j.validateSetSubnetIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -843,7 +842,7 @@ func (j *jsiiProxy_SagemakerDomain)SetSubnetIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerDomain)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_SagemakerDomain) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -854,7 +853,7 @@ func (j *jsiiProxy_SagemakerDomain)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerDomain)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_SagemakerDomain) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -865,7 +864,7 @@ func (j *jsiiProxy_SagemakerDomain)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerDomain)SetVpcId(val *string) {
+func (j *jsiiProxy_SagemakerDomain) SetVpcId(val *string) {
 	if err := j.validateSetVpcIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -888,7 +887,7 @@ func SagemakerDomain_GenerateConfigForImport(scope constructs.Construct, importT
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomain",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -912,7 +911,7 @@ func SagemakerDomain_GenerateConfigForImport(scope constructs.Construct, importT
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SagemakerDomain_IsConstruct(x interface{}) *bool {
+func SagemakerDomain_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSagemakerDomain_IsConstructParameters(x); err != nil {
@@ -923,7 +922,7 @@ func SagemakerDomain_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomain",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -931,7 +930,7 @@ func SagemakerDomain_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SagemakerDomain_IsTerraformElement(x interface{}) *bool {
+func SagemakerDomain_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSagemakerDomain_IsTerraformElementParameters(x); err != nil {
@@ -942,7 +941,7 @@ func SagemakerDomain_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomain",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -950,7 +949,7 @@ func SagemakerDomain_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SagemakerDomain_IsTerraformResource(x interface{}) *bool {
+func SagemakerDomain_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSagemakerDomain_IsTerraformResourceParameters(x); err != nil {
@@ -961,7 +960,7 @@ func SagemakerDomain_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomain",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -986,31 +985,31 @@ func (s *jsiiProxy_SagemakerDomain) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SagemakerDomain) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SagemakerDomain) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SagemakerDomain) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SagemakerDomain) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1026,7 +1025,7 @@ func (s *jsiiProxy_SagemakerDomain) GetBooleanAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1042,7 +1041,7 @@ func (s *jsiiProxy_SagemakerDomain) GetBooleanMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1058,7 +1057,7 @@ func (s *jsiiProxy_SagemakerDomain) GetListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1074,7 +1073,7 @@ func (s *jsiiProxy_SagemakerDomain) GetNumberAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1090,7 +1089,7 @@ func (s *jsiiProxy_SagemakerDomain) GetNumberListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1106,7 +1105,7 @@ func (s *jsiiProxy_SagemakerDomain) GetNumberMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1122,7 +1121,7 @@ func (s *jsiiProxy_SagemakerDomain) GetStringAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1138,15 +1137,15 @@ func (s *jsiiProxy_SagemakerDomain) GetStringMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerDomain) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SagemakerDomain) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1165,7 +1164,7 @@ func (s *jsiiProxy_SagemakerDomain) ImportFrom(id *string, provider cdktf.Terraf
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1178,7 +1177,7 @@ func (s *jsiiProxy_SagemakerDomain) InterpolationForAttribute(terraformAttribute
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1192,18 +1191,18 @@ func (s *jsiiProxy_SagemakerDomain) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SagemakerDomain) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SagemakerDomain) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1214,7 +1213,7 @@ func (s *jsiiProxy_SagemakerDomain) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1225,7 +1224,7 @@ func (s *jsiiProxy_SagemakerDomain) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1236,7 +1235,7 @@ func (s *jsiiProxy_SagemakerDomain) PutDefaultSpaceSettings(value *SagemakerDoma
 	_jsii_.InvokeVoid(
 		s,
 		"putDefaultSpaceSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1247,7 +1246,7 @@ func (s *jsiiProxy_SagemakerDomain) PutDefaultUserSettings(value *SagemakerDomai
 	_jsii_.InvokeVoid(
 		s,
 		"putDefaultUserSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1258,7 +1257,7 @@ func (s *jsiiProxy_SagemakerDomain) PutDomainSettings(value *SagemakerDomainDoma
 	_jsii_.InvokeVoid(
 		s,
 		"putDomainSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1269,7 +1268,7 @@ func (s *jsiiProxy_SagemakerDomain) PutRetentionPolicy(value *SagemakerDomainRet
 	_jsii_.InvokeVoid(
 		s,
 		"putRetentionPolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1353,8 +1352,8 @@ func (s *jsiiProxy_SagemakerDomain) ResetTagsAll() {
 	)
 }
 
-func (s *jsiiProxy_SagemakerDomain) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SagemakerDomain) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1366,8 +1365,8 @@ func (s *jsiiProxy_SagemakerDomain) SynthesizeAttributes() *map[string]interface
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerDomain) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SagemakerDomain) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1379,8 +1378,8 @@ func (s *jsiiProxy_SagemakerDomain) SynthesizeHclAttributes() *map[string]interf
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerDomain) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SagemakerDomain) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1392,8 +1391,8 @@ func (s *jsiiProxy_SagemakerDomain) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerDomain) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SagemakerDomain) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1418,8 +1417,8 @@ func (s *jsiiProxy_SagemakerDomain) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerDomain) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SagemakerDomain) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1430,4 +1429,3 @@ func (s *jsiiProxy_SagemakerDomain) ToTerraform() interface{} {
 
 	return returns
 }
-

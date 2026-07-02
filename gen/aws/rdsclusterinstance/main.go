@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.rdsClusterInstance.RdsClusterInstance",
-		reflect.TypeOf((*RdsClusterInstance)(nil)).Elem(),
+		reflect.TypeFor[RdsClusterInstance](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -139,7 +139,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "writer", GoGetter: "Writer"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RdsClusterInstance{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -147,15 +147,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.rdsClusterInstance.RdsClusterInstanceConfig",
-		reflect.TypeOf((*RdsClusterInstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[RdsClusterInstanceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.rdsClusterInstance.RdsClusterInstanceTimeouts",
-		reflect.TypeOf((*RdsClusterInstanceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[RdsClusterInstanceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.rdsClusterInstance.RdsClusterInstanceTimeoutsOutputReference",
-		reflect.TypeOf((*RdsClusterInstanceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RdsClusterInstanceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -188,7 +188,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RdsClusterInstanceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

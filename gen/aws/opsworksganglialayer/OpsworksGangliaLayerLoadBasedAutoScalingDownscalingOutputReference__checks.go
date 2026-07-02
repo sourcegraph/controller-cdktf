@@ -106,7 +106,7 @@ func (j *jsiiProxy_OpsworksGangliaLayerLoadBasedAutoScalingDownscalingOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksGangliaLayerLoadBasedAutoScalingDownscalingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksGangliaLayerLoadBasedAutoScalingDownscalingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -254,4 +254,3 @@ func validateNewOpsworksGangliaLayerLoadBasedAutoScalingDownscalingOutputReferen
 
 	return nil
 }
-

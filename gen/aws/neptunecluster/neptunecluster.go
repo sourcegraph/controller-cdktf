@@ -12,12 +12,12 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/neptune_cluster aws_neptune_cluster}.
 type NeptuneCluster interface {
 	cdktf.TerraformResource
-	AllowMajorVersionUpgrade() interface{}
-	SetAllowMajorVersionUpgrade(val interface{})
-	AllowMajorVersionUpgradeInput() interface{}
-	ApplyImmediately() interface{}
-	SetApplyImmediately(val interface{})
-	ApplyImmediatelyInput() interface{}
+	AllowMajorVersionUpgrade() any
+	SetAllowMajorVersionUpgrade(val any)
+	AllowMajorVersionUpgradeInput() any
+	ApplyImmediately() any
+	SetApplyImmediately(val any)
+	ApplyImmediatelyInput() any
 	Arn() *string
 	AvailabilityZones() *[]*string
 	SetAvailabilityZones(val *[]*string)
@@ -36,21 +36,21 @@ type NeptuneCluster interface {
 	ClusterMembers() *[]*string
 	ClusterResourceId() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
-	CopyTagsToSnapshot() interface{}
-	SetCopyTagsToSnapshot(val interface{})
-	CopyTagsToSnapshotInput() interface{}
+	ConstructNodeMetadata() *map[string]any
+	CopyTagsToSnapshot() any
+	SetCopyTagsToSnapshot(val any)
+	CopyTagsToSnapshotInput() any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
-	DeletionProtection() interface{}
-	SetDeletionProtection(val interface{})
-	DeletionProtectionInput() interface{}
+	SetCount(val any)
+	DeletionProtection() any
+	SetDeletionProtection(val any)
+	DeletionProtectionInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -80,9 +80,9 @@ type NeptuneCluster interface {
 	SetGlobalClusterIdentifier(val *string)
 	GlobalClusterIdentifierInput() *string
 	HostedZoneId() *string
-	IamDatabaseAuthenticationEnabled() interface{}
-	SetIamDatabaseAuthenticationEnabled(val interface{})
-	IamDatabaseAuthenticationEnabledInput() interface{}
+	IamDatabaseAuthenticationEnabled() any
+	SetIamDatabaseAuthenticationEnabled(val any)
+	IamDatabaseAuthenticationEnabledInput() any
 	IamRoles() *[]*string
 	SetIamRoles(val *[]*string)
 	IamRolesInput() *[]*string
@@ -118,26 +118,26 @@ type NeptuneCluster interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReaderEndpoint() *string
 	ReplicationSourceIdentifier() *string
 	SetReplicationSourceIdentifier(val *string)
 	ReplicationSourceIdentifierInput() *string
 	ServerlessV2ScalingConfiguration() NeptuneClusterServerlessV2ScalingConfigurationOutputReference
 	ServerlessV2ScalingConfigurationInput() *NeptuneClusterServerlessV2ScalingConfiguration
-	SkipFinalSnapshot() interface{}
-	SetSkipFinalSnapshot(val interface{})
-	SkipFinalSnapshotInput() interface{}
+	SkipFinalSnapshot() any
+	SetSkipFinalSnapshot(val any)
+	SkipFinalSnapshotInput() any
 	SnapshotIdentifier() *string
 	SetSnapshotIdentifier(val *string)
 	SnapshotIdentifierInput() *string
-	StorageEncrypted() interface{}
-	SetStorageEncrypted(val interface{})
-	StorageEncryptedInput() interface{}
+	StorageEncrypted() any
+	SetStorageEncrypted(val any)
+	StorageEncryptedInput() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -147,11 +147,11 @@ type NeptuneCluster interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() NeptuneClusterTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	VpcSecurityGroupIds() *[]*string
 	SetVpcSecurityGroupIds(val *[]*string)
 	VpcSecurityGroupIdsInput() *[]*string
@@ -159,9 +159,9 @@ type NeptuneCluster interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -179,7 +179,7 @@ type NeptuneCluster interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -191,7 +191,7 @@ type NeptuneCluster interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -234,17 +234,17 @@ type NeptuneCluster interface {
 	ResetTagsAll()
 	ResetTimeouts()
 	ResetVpcSecurityGroupIds()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for NeptuneCluster
@@ -252,8 +252,8 @@ type jsiiProxy_NeptuneCluster struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_NeptuneCluster) AllowMajorVersionUpgrade() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NeptuneCluster) AllowMajorVersionUpgrade() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowMajorVersionUpgrade",
@@ -262,8 +262,8 @@ func (j *jsiiProxy_NeptuneCluster) AllowMajorVersionUpgrade() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneCluster) AllowMajorVersionUpgradeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NeptuneCluster) AllowMajorVersionUpgradeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowMajorVersionUpgradeInput",
@@ -272,8 +272,8 @@ func (j *jsiiProxy_NeptuneCluster) AllowMajorVersionUpgradeInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneCluster) ApplyImmediately() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NeptuneCluster) ApplyImmediately() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"applyImmediately",
@@ -282,8 +282,8 @@ func (j *jsiiProxy_NeptuneCluster) ApplyImmediately() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneCluster) ApplyImmediatelyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NeptuneCluster) ApplyImmediatelyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"applyImmediatelyInput",
@@ -412,8 +412,8 @@ func (j *jsiiProxy_NeptuneCluster) ClusterResourceId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneCluster) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NeptuneCluster) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -422,8 +422,8 @@ func (j *jsiiProxy_NeptuneCluster) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneCluster) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NeptuneCluster) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -432,8 +432,8 @@ func (j *jsiiProxy_NeptuneCluster) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneCluster) CopyTagsToSnapshot() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NeptuneCluster) CopyTagsToSnapshot() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"copyTagsToSnapshot",
@@ -442,8 +442,8 @@ func (j *jsiiProxy_NeptuneCluster) CopyTagsToSnapshot() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneCluster) CopyTagsToSnapshotInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NeptuneCluster) CopyTagsToSnapshotInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"copyTagsToSnapshotInput",
@@ -452,8 +452,8 @@ func (j *jsiiProxy_NeptuneCluster) CopyTagsToSnapshotInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneCluster) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NeptuneCluster) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -462,8 +462,8 @@ func (j *jsiiProxy_NeptuneCluster) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneCluster) DeletionProtection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NeptuneCluster) DeletionProtection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtection",
@@ -472,8 +472,8 @@ func (j *jsiiProxy_NeptuneCluster) DeletionProtection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneCluster) DeletionProtectionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NeptuneCluster) DeletionProtectionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtectionInput",
@@ -642,8 +642,8 @@ func (j *jsiiProxy_NeptuneCluster) HostedZoneId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneCluster) IamDatabaseAuthenticationEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NeptuneCluster) IamDatabaseAuthenticationEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"iamDatabaseAuthenticationEnabled",
@@ -652,8 +652,8 @@ func (j *jsiiProxy_NeptuneCluster) IamDatabaseAuthenticationEnabled() interface{
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneCluster) IamDatabaseAuthenticationEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NeptuneCluster) IamDatabaseAuthenticationEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"iamDatabaseAuthenticationEnabledInput",
@@ -852,8 +852,8 @@ func (j *jsiiProxy_NeptuneCluster) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneCluster) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_NeptuneCluster) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -862,8 +862,8 @@ func (j *jsiiProxy_NeptuneCluster) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneCluster) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NeptuneCluster) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -922,8 +922,8 @@ func (j *jsiiProxy_NeptuneCluster) ServerlessV2ScalingConfigurationInput() *Nept
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneCluster) SkipFinalSnapshot() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NeptuneCluster) SkipFinalSnapshot() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"skipFinalSnapshot",
@@ -932,8 +932,8 @@ func (j *jsiiProxy_NeptuneCluster) SkipFinalSnapshot() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneCluster) SkipFinalSnapshotInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NeptuneCluster) SkipFinalSnapshotInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"skipFinalSnapshotInput",
@@ -962,8 +962,8 @@ func (j *jsiiProxy_NeptuneCluster) SnapshotIdentifierInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneCluster) StorageEncrypted() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NeptuneCluster) StorageEncrypted() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"storageEncrypted",
@@ -972,8 +972,8 @@ func (j *jsiiProxy_NeptuneCluster) StorageEncrypted() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneCluster) StorageEncryptedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NeptuneCluster) StorageEncryptedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"storageEncryptedInput",
@@ -1032,8 +1032,8 @@ func (j *jsiiProxy_NeptuneCluster) TerraformGeneratorMetadata() *cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneCluster) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NeptuneCluster) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -1062,8 +1062,8 @@ func (j *jsiiProxy_NeptuneCluster) Timeouts() NeptuneClusterTimeoutsOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneCluster) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NeptuneCluster) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -1092,7 +1092,6 @@ func (j *jsiiProxy_NeptuneCluster) VpcSecurityGroupIdsInput() *[]*string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/neptune_cluster aws_neptune_cluster} Resource.
 func NewNeptuneCluster(scope constructs.Construct, id *string, config *NeptuneClusterConfig) NeptuneCluster {
 	_init_.Initialize()
@@ -1104,7 +1103,7 @@ func NewNeptuneCluster(scope constructs.Construct, id *string, config *NeptuneCl
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.neptuneCluster.NeptuneCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -1117,12 +1116,12 @@ func NewNeptuneCluster_Override(n NeptuneCluster, scope constructs.Construct, id
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.neptuneCluster.NeptuneCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NeptuneCluster)SetAllowMajorVersionUpgrade(val interface{}) {
+func (j *jsiiProxy_NeptuneCluster) SetAllowMajorVersionUpgrade(val any) {
 	if err := j.validateSetAllowMajorVersionUpgradeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1133,7 +1132,7 @@ func (j *jsiiProxy_NeptuneCluster)SetAllowMajorVersionUpgrade(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneCluster)SetApplyImmediately(val interface{}) {
+func (j *jsiiProxy_NeptuneCluster) SetApplyImmediately(val any) {
 	if err := j.validateSetApplyImmediatelyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1144,7 +1143,7 @@ func (j *jsiiProxy_NeptuneCluster)SetApplyImmediately(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneCluster)SetAvailabilityZones(val *[]*string) {
+func (j *jsiiProxy_NeptuneCluster) SetAvailabilityZones(val *[]*string) {
 	if err := j.validateSetAvailabilityZonesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1155,7 +1154,7 @@ func (j *jsiiProxy_NeptuneCluster)SetAvailabilityZones(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneCluster)SetBackupRetentionPeriod(val *float64) {
+func (j *jsiiProxy_NeptuneCluster) SetBackupRetentionPeriod(val *float64) {
 	if err := j.validateSetBackupRetentionPeriodParameters(val); err != nil {
 		panic(err)
 	}
@@ -1166,7 +1165,7 @@ func (j *jsiiProxy_NeptuneCluster)SetBackupRetentionPeriod(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneCluster)SetClusterIdentifier(val *string) {
+func (j *jsiiProxy_NeptuneCluster) SetClusterIdentifier(val *string) {
 	if err := j.validateSetClusterIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -1177,7 +1176,7 @@ func (j *jsiiProxy_NeptuneCluster)SetClusterIdentifier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneCluster)SetClusterIdentifierPrefix(val *string) {
+func (j *jsiiProxy_NeptuneCluster) SetClusterIdentifierPrefix(val *string) {
 	if err := j.validateSetClusterIdentifierPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -1188,7 +1187,7 @@ func (j *jsiiProxy_NeptuneCluster)SetClusterIdentifierPrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneCluster)SetConnection(val interface{}) {
+func (j *jsiiProxy_NeptuneCluster) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1199,7 +1198,7 @@ func (j *jsiiProxy_NeptuneCluster)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneCluster)SetCopyTagsToSnapshot(val interface{}) {
+func (j *jsiiProxy_NeptuneCluster) SetCopyTagsToSnapshot(val any) {
 	if err := j.validateSetCopyTagsToSnapshotParameters(val); err != nil {
 		panic(err)
 	}
@@ -1210,7 +1209,7 @@ func (j *jsiiProxy_NeptuneCluster)SetCopyTagsToSnapshot(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneCluster)SetCount(val interface{}) {
+func (j *jsiiProxy_NeptuneCluster) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1221,7 +1220,7 @@ func (j *jsiiProxy_NeptuneCluster)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneCluster)SetDeletionProtection(val interface{}) {
+func (j *jsiiProxy_NeptuneCluster) SetDeletionProtection(val any) {
 	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1232,7 +1231,7 @@ func (j *jsiiProxy_NeptuneCluster)SetDeletionProtection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneCluster)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NeptuneCluster) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1240,7 +1239,7 @@ func (j *jsiiProxy_NeptuneCluster)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneCluster)SetEnableCloudwatchLogsExports(val *[]*string) {
+func (j *jsiiProxy_NeptuneCluster) SetEnableCloudwatchLogsExports(val *[]*string) {
 	if err := j.validateSetEnableCloudwatchLogsExportsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1251,7 +1250,7 @@ func (j *jsiiProxy_NeptuneCluster)SetEnableCloudwatchLogsExports(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_NeptuneCluster)SetEngine(val *string) {
+func (j *jsiiProxy_NeptuneCluster) SetEngine(val *string) {
 	if err := j.validateSetEngineParameters(val); err != nil {
 		panic(err)
 	}
@@ -1262,7 +1261,7 @@ func (j *jsiiProxy_NeptuneCluster)SetEngine(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneCluster)SetEngineVersion(val *string) {
+func (j *jsiiProxy_NeptuneCluster) SetEngineVersion(val *string) {
 	if err := j.validateSetEngineVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1273,7 +1272,7 @@ func (j *jsiiProxy_NeptuneCluster)SetEngineVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneCluster)SetFinalSnapshotIdentifier(val *string) {
+func (j *jsiiProxy_NeptuneCluster) SetFinalSnapshotIdentifier(val *string) {
 	if err := j.validateSetFinalSnapshotIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -1284,7 +1283,7 @@ func (j *jsiiProxy_NeptuneCluster)SetFinalSnapshotIdentifier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneCluster)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NeptuneCluster) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1292,7 +1291,7 @@ func (j *jsiiProxy_NeptuneCluster)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneCluster)SetGlobalClusterIdentifier(val *string) {
+func (j *jsiiProxy_NeptuneCluster) SetGlobalClusterIdentifier(val *string) {
 	if err := j.validateSetGlobalClusterIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -1303,7 +1302,7 @@ func (j *jsiiProxy_NeptuneCluster)SetGlobalClusterIdentifier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneCluster)SetIamDatabaseAuthenticationEnabled(val interface{}) {
+func (j *jsiiProxy_NeptuneCluster) SetIamDatabaseAuthenticationEnabled(val any) {
 	if err := j.validateSetIamDatabaseAuthenticationEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1314,7 +1313,7 @@ func (j *jsiiProxy_NeptuneCluster)SetIamDatabaseAuthenticationEnabled(val interf
 	)
 }
 
-func (j *jsiiProxy_NeptuneCluster)SetIamRoles(val *[]*string) {
+func (j *jsiiProxy_NeptuneCluster) SetIamRoles(val *[]*string) {
 	if err := j.validateSetIamRolesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1325,7 +1324,7 @@ func (j *jsiiProxy_NeptuneCluster)SetIamRoles(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneCluster)SetId(val *string) {
+func (j *jsiiProxy_NeptuneCluster) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1336,7 +1335,7 @@ func (j *jsiiProxy_NeptuneCluster)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneCluster)SetKmsKeyArn(val *string) {
+func (j *jsiiProxy_NeptuneCluster) SetKmsKeyArn(val *string) {
 	if err := j.validateSetKmsKeyArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -1347,7 +1346,7 @@ func (j *jsiiProxy_NeptuneCluster)SetKmsKeyArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NeptuneCluster) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1358,7 +1357,7 @@ func (j *jsiiProxy_NeptuneCluster)SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_NeptuneCluster)SetNeptuneClusterParameterGroupName(val *string) {
+func (j *jsiiProxy_NeptuneCluster) SetNeptuneClusterParameterGroupName(val *string) {
 	if err := j.validateSetNeptuneClusterParameterGroupNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1369,7 +1368,7 @@ func (j *jsiiProxy_NeptuneCluster)SetNeptuneClusterParameterGroupName(val *strin
 	)
 }
 
-func (j *jsiiProxy_NeptuneCluster)SetNeptuneSubnetGroupName(val *string) {
+func (j *jsiiProxy_NeptuneCluster) SetNeptuneSubnetGroupName(val *string) {
 	if err := j.validateSetNeptuneSubnetGroupNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1380,7 +1379,7 @@ func (j *jsiiProxy_NeptuneCluster)SetNeptuneSubnetGroupName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneCluster)SetPort(val *float64) {
+func (j *jsiiProxy_NeptuneCluster) SetPort(val *float64) {
 	if err := j.validateSetPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -1391,7 +1390,7 @@ func (j *jsiiProxy_NeptuneCluster)SetPort(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneCluster)SetPreferredBackupWindow(val *string) {
+func (j *jsiiProxy_NeptuneCluster) SetPreferredBackupWindow(val *string) {
 	if err := j.validateSetPreferredBackupWindowParameters(val); err != nil {
 		panic(err)
 	}
@@ -1402,7 +1401,7 @@ func (j *jsiiProxy_NeptuneCluster)SetPreferredBackupWindow(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneCluster)SetPreferredMaintenanceWindow(val *string) {
+func (j *jsiiProxy_NeptuneCluster) SetPreferredMaintenanceWindow(val *string) {
 	if err := j.validateSetPreferredMaintenanceWindowParameters(val); err != nil {
 		panic(err)
 	}
@@ -1413,7 +1412,7 @@ func (j *jsiiProxy_NeptuneCluster)SetPreferredMaintenanceWindow(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneCluster)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NeptuneCluster) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1421,7 +1420,7 @@ func (j *jsiiProxy_NeptuneCluster)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneCluster)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NeptuneCluster) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1432,7 +1431,7 @@ func (j *jsiiProxy_NeptuneCluster)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneCluster)SetReplicationSourceIdentifier(val *string) {
+func (j *jsiiProxy_NeptuneCluster) SetReplicationSourceIdentifier(val *string) {
 	if err := j.validateSetReplicationSourceIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -1443,7 +1442,7 @@ func (j *jsiiProxy_NeptuneCluster)SetReplicationSourceIdentifier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneCluster)SetSkipFinalSnapshot(val interface{}) {
+func (j *jsiiProxy_NeptuneCluster) SetSkipFinalSnapshot(val any) {
 	if err := j.validateSetSkipFinalSnapshotParameters(val); err != nil {
 		panic(err)
 	}
@@ -1454,7 +1453,7 @@ func (j *jsiiProxy_NeptuneCluster)SetSkipFinalSnapshot(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneCluster)SetSnapshotIdentifier(val *string) {
+func (j *jsiiProxy_NeptuneCluster) SetSnapshotIdentifier(val *string) {
 	if err := j.validateSetSnapshotIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -1465,7 +1464,7 @@ func (j *jsiiProxy_NeptuneCluster)SetSnapshotIdentifier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneCluster)SetStorageEncrypted(val interface{}) {
+func (j *jsiiProxy_NeptuneCluster) SetStorageEncrypted(val any) {
 	if err := j.validateSetStorageEncryptedParameters(val); err != nil {
 		panic(err)
 	}
@@ -1476,7 +1475,7 @@ func (j *jsiiProxy_NeptuneCluster)SetStorageEncrypted(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneCluster)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_NeptuneCluster) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1487,7 +1486,7 @@ func (j *jsiiProxy_NeptuneCluster)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneCluster)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_NeptuneCluster) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1498,7 +1497,7 @@ func (j *jsiiProxy_NeptuneCluster)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneCluster)SetVpcSecurityGroupIds(val *[]*string) {
+func (j *jsiiProxy_NeptuneCluster) SetVpcSecurityGroupIds(val *[]*string) {
 	if err := j.validateSetVpcSecurityGroupIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1521,7 +1520,7 @@ func NeptuneCluster_GenerateConfigForImport(scope constructs.Construct, importTo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.neptuneCluster.NeptuneCluster",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1545,7 +1544,7 @@ func NeptuneCluster_GenerateConfigForImport(scope constructs.Construct, importTo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NeptuneCluster_IsConstruct(x interface{}) *bool {
+func NeptuneCluster_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNeptuneCluster_IsConstructParameters(x); err != nil {
@@ -1556,7 +1555,7 @@ func NeptuneCluster_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.neptuneCluster.NeptuneCluster",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1564,7 +1563,7 @@ func NeptuneCluster_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func NeptuneCluster_IsTerraformElement(x interface{}) *bool {
+func NeptuneCluster_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNeptuneCluster_IsTerraformElementParameters(x); err != nil {
@@ -1575,7 +1574,7 @@ func NeptuneCluster_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.neptuneCluster.NeptuneCluster",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1583,7 +1582,7 @@ func NeptuneCluster_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func NeptuneCluster_IsTerraformResource(x interface{}) *bool {
+func NeptuneCluster_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNeptuneCluster_IsTerraformResourceParameters(x); err != nil {
@@ -1594,7 +1593,7 @@ func NeptuneCluster_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.neptuneCluster.NeptuneCluster",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1619,31 +1618,31 @@ func (n *jsiiProxy_NeptuneCluster) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (n *jsiiProxy_NeptuneCluster) AddOverride(path *string, value interface{}) {
+func (n *jsiiProxy_NeptuneCluster) AddOverride(path *string, value any) {
 	if err := n.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (n *jsiiProxy_NeptuneCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NeptuneCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1659,7 +1658,7 @@ func (n *jsiiProxy_NeptuneCluster) GetBooleanAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1675,7 +1674,7 @@ func (n *jsiiProxy_NeptuneCluster) GetBooleanMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1691,7 +1690,7 @@ func (n *jsiiProxy_NeptuneCluster) GetListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1707,7 +1706,7 @@ func (n *jsiiProxy_NeptuneCluster) GetNumberAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1723,7 +1722,7 @@ func (n *jsiiProxy_NeptuneCluster) GetNumberListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1739,7 +1738,7 @@ func (n *jsiiProxy_NeptuneCluster) GetNumberMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1755,7 +1754,7 @@ func (n *jsiiProxy_NeptuneCluster) GetStringAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1771,15 +1770,15 @@ func (n *jsiiProxy_NeptuneCluster) GetStringMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NeptuneCluster) HasResourceMove() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NeptuneCluster) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1798,7 +1797,7 @@ func (n *jsiiProxy_NeptuneCluster) ImportFrom(id *string, provider cdktf.Terrafo
 	_jsii_.InvokeVoid(
 		n,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1811,7 +1810,7 @@ func (n *jsiiProxy_NeptuneCluster) InterpolationForAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1825,18 +1824,18 @@ func (n *jsiiProxy_NeptuneCluster) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (n *jsiiProxy_NeptuneCluster) MoveTo(moveTarget *string, index interface{}) {
+func (n *jsiiProxy_NeptuneCluster) MoveTo(moveTarget *string, index any) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1847,7 +1846,7 @@ func (n *jsiiProxy_NeptuneCluster) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1858,7 +1857,7 @@ func (n *jsiiProxy_NeptuneCluster) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1869,7 +1868,7 @@ func (n *jsiiProxy_NeptuneCluster) PutServerlessV2ScalingConfiguration(value *Ne
 	_jsii_.InvokeVoid(
 		n,
 		"putServerlessV2ScalingConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1880,7 +1879,7 @@ func (n *jsiiProxy_NeptuneCluster) PutTimeouts(value *NeptuneClusterTimeouts) {
 	_jsii_.InvokeVoid(
 		n,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2140,8 +2139,8 @@ func (n *jsiiProxy_NeptuneCluster) ResetVpcSecurityGroupIds() {
 	)
 }
 
-func (n *jsiiProxy_NeptuneCluster) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NeptuneCluster) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -2153,8 +2152,8 @@ func (n *jsiiProxy_NeptuneCluster) SynthesizeAttributes() *map[string]interface{
 	return returns
 }
 
-func (n *jsiiProxy_NeptuneCluster) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NeptuneCluster) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -2166,8 +2165,8 @@ func (n *jsiiProxy_NeptuneCluster) SynthesizeHclAttributes() *map[string]interfa
 	return returns
 }
 
-func (n *jsiiProxy_NeptuneCluster) ToHclTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NeptuneCluster) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -2179,8 +2178,8 @@ func (n *jsiiProxy_NeptuneCluster) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (n *jsiiProxy_NeptuneCluster) ToMetadata() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NeptuneCluster) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -2205,8 +2204,8 @@ func (n *jsiiProxy_NeptuneCluster) ToString() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NeptuneCluster) ToTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NeptuneCluster) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -2217,4 +2216,3 @@ func (n *jsiiProxy_NeptuneCluster) ToTerraform() interface{} {
 
 	return returns
 }
-

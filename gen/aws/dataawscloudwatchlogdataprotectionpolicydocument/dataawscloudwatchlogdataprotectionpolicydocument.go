@@ -15,11 +15,11 @@ type DataAwsCloudwatchLogDataProtectionPolicyDocument interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,22 +53,22 @@ type DataAwsCloudwatchLogDataProtectionPolicyDocument interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Statement() DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementList
-	StatementInput() interface{}
+	StatementInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Version() *string
 	SetVersion(val *string)
 	VersionInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -90,25 +90,25 @@ type DataAwsCloudwatchLogDataProtectionPolicyDocument interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutStatement(value interface{})
+	PutStatement(value any)
 	ResetDescription()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetVersion()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsCloudwatchLogDataProtectionPolicyDocument
@@ -126,8 +126,8 @@ func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) CdktfStack(
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -136,8 +136,8 @@ func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) ConstructNo
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -286,8 +286,8 @@ func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) Provider() 
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -306,8 +306,8 @@ func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) Statement()
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) StatementInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) StatementInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"statementInput",
@@ -326,8 +326,8 @@ func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) TerraformGe
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -366,7 +366,6 @@ func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) VersionInpu
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/cloudwatch_log_data_protection_policy_document aws_cloudwatch_log_data_protection_policy_document} Data Source.
 func NewDataAwsCloudwatchLogDataProtectionPolicyDocument(scope constructs.Construct, id *string, config *DataAwsCloudwatchLogDataProtectionPolicyDocumentConfig) DataAwsCloudwatchLogDataProtectionPolicyDocument {
 	_init_.Initialize()
@@ -378,7 +377,7 @@ func NewDataAwsCloudwatchLogDataProtectionPolicyDocument(scope constructs.Constr
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocument",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -391,12 +390,12 @@ func NewDataAwsCloudwatchLogDataProtectionPolicyDocument_Override(d DataAwsCloud
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocument",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -407,7 +406,7 @@ func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument)SetCount(val
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -415,7 +414,7 @@ func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument)SetDependsOn
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument)SetDescription(val *string) {
+func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -426,7 +425,7 @@ func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument)SetDescripti
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -434,7 +433,7 @@ func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument)SetForEach(v
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument)SetId(val *string) {
+func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -445,7 +444,7 @@ func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument)SetId(val *s
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,7 +455,7 @@ func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument)SetLifecycle
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument)SetName(val *string) {
+func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument)SetName(val 
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -475,7 +474,7 @@ func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument)SetProvider(
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument)SetVersion(val *string) {
+func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) SetVersion(val *string) {
 	if err := j.validateSetVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func DataAwsCloudwatchLogDataProtectionPolicyDocument_GenerateConfigForImport(sc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocument",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func DataAwsCloudwatchLogDataProtectionPolicyDocument_GenerateConfigForImport(sc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsCloudwatchLogDataProtectionPolicyDocument_IsConstruct(x interface{}) *bool {
+func DataAwsCloudwatchLogDataProtectionPolicyDocument_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsCloudwatchLogDataProtectionPolicyDocument_IsConstructParameters(x); err != nil {
@@ -533,7 +532,7 @@ func DataAwsCloudwatchLogDataProtectionPolicyDocument_IsConstruct(x interface{})
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocument",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -541,7 +540,7 @@ func DataAwsCloudwatchLogDataProtectionPolicyDocument_IsConstruct(x interface{})
 }
 
 // Experimental.
-func DataAwsCloudwatchLogDataProtectionPolicyDocument_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsCloudwatchLogDataProtectionPolicyDocument_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsCloudwatchLogDataProtectionPolicyDocument_IsTerraformDataSourceParameters(x); err != nil {
@@ -552,7 +551,7 @@ func DataAwsCloudwatchLogDataProtectionPolicyDocument_IsTerraformDataSource(x in
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocument",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -560,7 +559,7 @@ func DataAwsCloudwatchLogDataProtectionPolicyDocument_IsTerraformDataSource(x in
 }
 
 // Experimental.
-func DataAwsCloudwatchLogDataProtectionPolicyDocument_IsTerraformElement(x interface{}) *bool {
+func DataAwsCloudwatchLogDataProtectionPolicyDocument_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsCloudwatchLogDataProtectionPolicyDocument_IsTerraformElementParameters(x); err != nil {
@@ -571,7 +570,7 @@ func DataAwsCloudwatchLogDataProtectionPolicyDocument_IsTerraformElement(x inter
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocument",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -589,27 +588,27 @@ func DataAwsCloudwatchLogDataProtectionPolicyDocument_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -625,7 +624,7 @@ func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) GetBooleanA
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -641,7 +640,7 @@ func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) GetBooleanM
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -657,7 +656,7 @@ func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) GetListAttr
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -673,7 +672,7 @@ func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) GetNumberAt
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -689,7 +688,7 @@ func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) GetNumberLi
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -705,7 +704,7 @@ func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) GetNumberMa
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -721,7 +720,7 @@ func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) GetStringAt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) GetStringMa
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) Interpolati
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -767,18 +766,18 @@ func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) OverrideLog
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) PutStatement(value interface{}) {
+func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) PutStatement(value any) {
 	if err := d.validatePutStatementParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putStatement",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -814,8 +813,8 @@ func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) ResetVersio
 	)
 }
 
-func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -827,8 +826,8 @@ func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) SynthesizeA
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -840,8 +839,8 @@ func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) SynthesizeH
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -853,8 +852,8 @@ func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) ToHclTerraf
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -879,8 +878,8 @@ func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) ToString() 
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -891,4 +890,3 @@ func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) ToTerraform
 
 	return returns
 }
-

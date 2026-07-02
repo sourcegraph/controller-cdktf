@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsRedshiftServiceAccount.DataAwsRedshiftServiceAccount",
-		reflect.TypeOf((*DataAwsRedshiftServiceAccount)(nil)).Elem(),
+		reflect.TypeFor[DataAwsRedshiftServiceAccount](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -52,7 +52,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsRedshiftServiceAccount{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -60,6 +60,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsRedshiftServiceAccount.DataAwsRedshiftServiceAccountConfig",
-		reflect.TypeOf((*DataAwsRedshiftServiceAccountConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsRedshiftServiceAccountConfig](),
 	)
 }

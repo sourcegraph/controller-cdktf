@@ -98,7 +98,7 @@ func (m *jsiiProxy_MemorydbSnapshotClusterConfigurationOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_MemorydbSnapshotClusterConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MemorydbSnapshotClusterConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewMemorydbSnapshotClusterConfigurationOutputReferenceParameters(te
 
 	return nil
 }
-

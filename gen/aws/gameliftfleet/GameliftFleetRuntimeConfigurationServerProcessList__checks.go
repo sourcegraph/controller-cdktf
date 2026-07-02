@@ -34,7 +34,7 @@ func (g *jsiiProxy_GameliftFleetRuntimeConfigurationServerProcessList) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GameliftFleetRuntimeConfigurationServerProcessList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GameliftFleetRuntimeConfigurationServerProcessList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGameliftFleetRuntimeConfigurationServerProcessListParameters(ter
 
 	return nil
 }
-

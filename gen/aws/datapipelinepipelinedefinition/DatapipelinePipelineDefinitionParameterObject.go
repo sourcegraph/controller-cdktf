@@ -1,6 +1,5 @@
 package datapipelinepipelinedefinition
 
-
 type DatapipelinePipelineDefinitionParameterObject struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/datapipeline_pipeline_definition#id DatapipelinePipelineDefinition#id}.
 	//
@@ -10,6 +9,5 @@ type DatapipelinePipelineDefinitionParameterObject struct {
 	// attribute block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/datapipeline_pipeline_definition#attribute DatapipelinePipelineDefinition#attribute}
-	Attribute interface{} `field:"optional" json:"attribute" yaml:"attribute"`
+	Attribute any `field:"optional" json:"attribute" yaml:"attribute"`
 }
-

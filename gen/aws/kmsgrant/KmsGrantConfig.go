@@ -6,9 +6,9 @@ import (
 
 type KmsGrantConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type KmsGrantConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kms_grant#grantee_principal KmsGrant#grantee_principal}.
 	GranteePrincipal *string `field:"required" json:"granteePrincipal" yaml:"granteePrincipal"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kms_grant#key_id KmsGrant#key_id}.
@@ -28,7 +28,7 @@ type KmsGrantConfig struct {
 	// constraints block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kms_grant#constraints KmsGrant#constraints}
-	Constraints interface{} `field:"optional" json:"constraints" yaml:"constraints"`
+	Constraints any `field:"optional" json:"constraints" yaml:"constraints"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kms_grant#grant_creation_tokens KmsGrant#grant_creation_tokens}.
 	GrantCreationTokens *[]*string `field:"optional" json:"grantCreationTokens" yaml:"grantCreationTokens"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kms_grant#id KmsGrant#id}.
@@ -39,8 +39,7 @@ type KmsGrantConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kms_grant#name KmsGrant#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kms_grant#retire_on_delete KmsGrant#retire_on_delete}.
-	RetireOnDelete interface{} `field:"optional" json:"retireOnDelete" yaml:"retireOnDelete"`
+	RetireOnDelete any `field:"optional" json:"retireOnDelete" yaml:"retireOnDelete"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kms_grant#retiring_principal KmsGrant#retiring_principal}.
 	RetiringPrincipal *string `field:"optional" json:"retiringPrincipal" yaml:"retiringPrincipal"`
 }
-

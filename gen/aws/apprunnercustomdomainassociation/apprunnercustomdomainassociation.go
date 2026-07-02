@@ -16,15 +16,15 @@ type ApprunnerCustomDomainAssociation interface {
 	CdktfStack() cdktf.TerraformStack
 	CertificateValidationRecords() ApprunnerCustomDomainAssociationCertificateValidationRecordsList
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -33,9 +33,9 @@ type ApprunnerCustomDomainAssociation interface {
 	DomainName() *string
 	SetDomainName(val *string)
 	DomainNameInput() *string
-	EnableWwwSubdomain() interface{}
-	SetEnableWwwSubdomain(val interface{})
-	EnableWwwSubdomainInput() interface{}
+	EnableWwwSubdomain() any
+	SetEnableWwwSubdomain(val any)
+	EnableWwwSubdomainInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -58,11 +58,11 @@ type ApprunnerCustomDomainAssociation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ServiceArn() *string
 	SetServiceArn(val *string)
 	ServiceArnInput() *string
@@ -70,16 +70,16 @@ type ApprunnerCustomDomainAssociation interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,7 +97,7 @@ type ApprunnerCustomDomainAssociation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -109,7 +109,7 @@ type ApprunnerCustomDomainAssociation interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -121,17 +121,17 @@ type ApprunnerCustomDomainAssociation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ApprunnerCustomDomainAssociation
@@ -159,8 +159,8 @@ func (j *jsiiProxy_ApprunnerCustomDomainAssociation) CertificateValidationRecord
 	return returns
 }
 
-func (j *jsiiProxy_ApprunnerCustomDomainAssociation) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApprunnerCustomDomainAssociation) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_ApprunnerCustomDomainAssociation) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApprunnerCustomDomainAssociation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ApprunnerCustomDomainAssociation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_ApprunnerCustomDomainAssociation) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_ApprunnerCustomDomainAssociation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApprunnerCustomDomainAssociation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -229,8 +229,8 @@ func (j *jsiiProxy_ApprunnerCustomDomainAssociation) DomainNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ApprunnerCustomDomainAssociation) EnableWwwSubdomain() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApprunnerCustomDomainAssociation) EnableWwwSubdomain() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableWwwSubdomain",
@@ -239,8 +239,8 @@ func (j *jsiiProxy_ApprunnerCustomDomainAssociation) EnableWwwSubdomain() interf
 	return returns
 }
 
-func (j *jsiiProxy_ApprunnerCustomDomainAssociation) EnableWwwSubdomainInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApprunnerCustomDomainAssociation) EnableWwwSubdomainInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableWwwSubdomainInput",
@@ -329,8 +329,8 @@ func (j *jsiiProxy_ApprunnerCustomDomainAssociation) Provider() cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_ApprunnerCustomDomainAssociation) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ApprunnerCustomDomainAssociation) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -339,8 +339,8 @@ func (j *jsiiProxy_ApprunnerCustomDomainAssociation) Provisioners() *[]interface
 	return returns
 }
 
-func (j *jsiiProxy_ApprunnerCustomDomainAssociation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApprunnerCustomDomainAssociation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -389,8 +389,8 @@ func (j *jsiiProxy_ApprunnerCustomDomainAssociation) TerraformGeneratorMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_ApprunnerCustomDomainAssociation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ApprunnerCustomDomainAssociation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -409,7 +409,6 @@ func (j *jsiiProxy_ApprunnerCustomDomainAssociation) TerraformResourceType() *st
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/apprunner_custom_domain_association aws_apprunner_custom_domain_association} Resource.
 func NewApprunnerCustomDomainAssociation(scope constructs.Construct, id *string, config *ApprunnerCustomDomainAssociationConfig) ApprunnerCustomDomainAssociation {
 	_init_.Initialize()
@@ -421,7 +420,7 @@ func NewApprunnerCustomDomainAssociation(scope constructs.Construct, id *string,
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -434,12 +433,12 @@ func NewApprunnerCustomDomainAssociation_Override(a ApprunnerCustomDomainAssocia
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ApprunnerCustomDomainAssociation)SetConnection(val interface{}) {
+func (j *jsiiProxy_ApprunnerCustomDomainAssociation) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,7 +449,7 @@ func (j *jsiiProxy_ApprunnerCustomDomainAssociation)SetConnection(val interface{
 	)
 }
 
-func (j *jsiiProxy_ApprunnerCustomDomainAssociation)SetCount(val interface{}) {
+func (j *jsiiProxy_ApprunnerCustomDomainAssociation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -461,7 +460,7 @@ func (j *jsiiProxy_ApprunnerCustomDomainAssociation)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApprunnerCustomDomainAssociation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ApprunnerCustomDomainAssociation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -469,7 +468,7 @@ func (j *jsiiProxy_ApprunnerCustomDomainAssociation)SetDependsOn(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_ApprunnerCustomDomainAssociation)SetDomainName(val *string) {
+func (j *jsiiProxy_ApprunnerCustomDomainAssociation) SetDomainName(val *string) {
 	if err := j.validateSetDomainNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -480,7 +479,7 @@ func (j *jsiiProxy_ApprunnerCustomDomainAssociation)SetDomainName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApprunnerCustomDomainAssociation)SetEnableWwwSubdomain(val interface{}) {
+func (j *jsiiProxy_ApprunnerCustomDomainAssociation) SetEnableWwwSubdomain(val any) {
 	if err := j.validateSetEnableWwwSubdomainParameters(val); err != nil {
 		panic(err)
 	}
@@ -491,7 +490,7 @@ func (j *jsiiProxy_ApprunnerCustomDomainAssociation)SetEnableWwwSubdomain(val in
 	)
 }
 
-func (j *jsiiProxy_ApprunnerCustomDomainAssociation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ApprunnerCustomDomainAssociation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -499,7 +498,7 @@ func (j *jsiiProxy_ApprunnerCustomDomainAssociation)SetForEach(val cdktf.ITerraf
 	)
 }
 
-func (j *jsiiProxy_ApprunnerCustomDomainAssociation)SetId(val *string) {
+func (j *jsiiProxy_ApprunnerCustomDomainAssociation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_ApprunnerCustomDomainAssociation)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApprunnerCustomDomainAssociation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ApprunnerCustomDomainAssociation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -521,7 +520,7 @@ func (j *jsiiProxy_ApprunnerCustomDomainAssociation)SetLifecycle(val *cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_ApprunnerCustomDomainAssociation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ApprunnerCustomDomainAssociation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -529,7 +528,7 @@ func (j *jsiiProxy_ApprunnerCustomDomainAssociation)SetProvider(val cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_ApprunnerCustomDomainAssociation)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ApprunnerCustomDomainAssociation) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -540,7 +539,7 @@ func (j *jsiiProxy_ApprunnerCustomDomainAssociation)SetProvisioners(val *[]inter
 	)
 }
 
-func (j *jsiiProxy_ApprunnerCustomDomainAssociation)SetServiceArn(val *string) {
+func (j *jsiiProxy_ApprunnerCustomDomainAssociation) SetServiceArn(val *string) {
 	if err := j.validateSetServiceArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -563,7 +562,7 @@ func ApprunnerCustomDomainAssociation_GenerateConfigForImport(scope constructs.C
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func ApprunnerCustomDomainAssociation_GenerateConfigForImport(scope constructs.C
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ApprunnerCustomDomainAssociation_IsConstruct(x interface{}) *bool {
+func ApprunnerCustomDomainAssociation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApprunnerCustomDomainAssociation_IsConstructParameters(x); err != nil {
@@ -598,7 +597,7 @@ func ApprunnerCustomDomainAssociation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -606,7 +605,7 @@ func ApprunnerCustomDomainAssociation_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ApprunnerCustomDomainAssociation_IsTerraformElement(x interface{}) *bool {
+func ApprunnerCustomDomainAssociation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApprunnerCustomDomainAssociation_IsTerraformElementParameters(x); err != nil {
@@ -617,7 +616,7 @@ func ApprunnerCustomDomainAssociation_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -625,7 +624,7 @@ func ApprunnerCustomDomainAssociation_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ApprunnerCustomDomainAssociation_IsTerraformResource(x interface{}) *bool {
+func ApprunnerCustomDomainAssociation_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApprunnerCustomDomainAssociation_IsTerraformResourceParameters(x); err != nil {
@@ -636,7 +635,7 @@ func ApprunnerCustomDomainAssociation_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociation",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -661,31 +660,31 @@ func (a *jsiiProxy_ApprunnerCustomDomainAssociation) AddMoveTarget(moveTarget *s
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_ApprunnerCustomDomainAssociation) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_ApprunnerCustomDomainAssociation) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_ApprunnerCustomDomainAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ApprunnerCustomDomainAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -701,7 +700,7 @@ func (a *jsiiProxy_ApprunnerCustomDomainAssociation) GetBooleanAttribute(terrafo
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -717,7 +716,7 @@ func (a *jsiiProxy_ApprunnerCustomDomainAssociation) GetBooleanMapAttribute(terr
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -733,7 +732,7 @@ func (a *jsiiProxy_ApprunnerCustomDomainAssociation) GetListAttribute(terraformA
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -749,7 +748,7 @@ func (a *jsiiProxy_ApprunnerCustomDomainAssociation) GetNumberAttribute(terrafor
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -765,7 +764,7 @@ func (a *jsiiProxy_ApprunnerCustomDomainAssociation) GetNumberListAttribute(terr
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -781,7 +780,7 @@ func (a *jsiiProxy_ApprunnerCustomDomainAssociation) GetNumberMapAttribute(terra
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -797,7 +796,7 @@ func (a *jsiiProxy_ApprunnerCustomDomainAssociation) GetStringAttribute(terrafor
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -813,15 +812,15 @@ func (a *jsiiProxy_ApprunnerCustomDomainAssociation) GetStringMapAttribute(terra
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_ApprunnerCustomDomainAssociation) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApprunnerCustomDomainAssociation) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -840,7 +839,7 @@ func (a *jsiiProxy_ApprunnerCustomDomainAssociation) ImportFrom(id *string, prov
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -853,7 +852,7 @@ func (a *jsiiProxy_ApprunnerCustomDomainAssociation) InterpolationForAttribute(t
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -867,18 +866,18 @@ func (a *jsiiProxy_ApprunnerCustomDomainAssociation) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_ApprunnerCustomDomainAssociation) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_ApprunnerCustomDomainAssociation) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -889,7 +888,7 @@ func (a *jsiiProxy_ApprunnerCustomDomainAssociation) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -900,7 +899,7 @@ func (a *jsiiProxy_ApprunnerCustomDomainAssociation) OverrideLogicalId(newLogica
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -928,8 +927,8 @@ func (a *jsiiProxy_ApprunnerCustomDomainAssociation) ResetOverrideLogicalId() {
 	)
 }
 
-func (a *jsiiProxy_ApprunnerCustomDomainAssociation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_ApprunnerCustomDomainAssociation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -941,8 +940,8 @@ func (a *jsiiProxy_ApprunnerCustomDomainAssociation) SynthesizeAttributes() *map
 	return returns
 }
 
-func (a *jsiiProxy_ApprunnerCustomDomainAssociation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_ApprunnerCustomDomainAssociation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -954,8 +953,8 @@ func (a *jsiiProxy_ApprunnerCustomDomainAssociation) SynthesizeHclAttributes() *
 	return returns
 }
 
-func (a *jsiiProxy_ApprunnerCustomDomainAssociation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApprunnerCustomDomainAssociation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -967,8 +966,8 @@ func (a *jsiiProxy_ApprunnerCustomDomainAssociation) ToHclTerraform() interface{
 	return returns
 }
 
-func (a *jsiiProxy_ApprunnerCustomDomainAssociation) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApprunnerCustomDomainAssociation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -993,8 +992,8 @@ func (a *jsiiProxy_ApprunnerCustomDomainAssociation) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_ApprunnerCustomDomainAssociation) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApprunnerCustomDomainAssociation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1005,4 +1004,3 @@ func (a *jsiiProxy_ApprunnerCustomDomainAssociation) ToTerraform() interface{} {
 
 	return returns
 }
-

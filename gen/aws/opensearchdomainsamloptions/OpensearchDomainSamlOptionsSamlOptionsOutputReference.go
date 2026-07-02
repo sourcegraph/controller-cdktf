@@ -12,9 +12,9 @@ type OpensearchDomainSamlOptionsSamlOptionsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,9 +25,9 @@ type OpensearchDomainSamlOptionsSamlOptionsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	Idp() OpensearchDomainSamlOptionsSamlOptionsIdpOutputReference
@@ -60,7 +60,7 @@ type OpensearchDomainSamlOptionsSamlOptionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type OpensearchDomainSamlOptionsSamlOptionsOutputReference interface {
 	ResetSubjectKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -104,8 +104,8 @@ type jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -134,8 +134,8 @@ func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) Creati
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) Enable
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -314,7 +314,6 @@ func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) Terraf
 	return returns
 }
 
-
 func NewOpensearchDomainSamlOptionsSamlOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OpensearchDomainSamlOptionsSamlOptionsOutputReference {
 	_init_.Initialize()
 
@@ -325,7 +324,7 @@ func NewOpensearchDomainSamlOptionsSamlOptionsOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptionsSamlOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -337,12 +336,12 @@ func NewOpensearchDomainSamlOptionsSamlOptionsOutputReference_Override(o Opensea
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptionsSamlOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -353,7 +352,7 @@ func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,7 +363,7 @@ func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference)SetEnab
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference)SetInternalValue(val *OpensearchDomainSamlOptionsSamlOptions) {
+func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) SetInternalValue(val *OpensearchDomainSamlOptionsSamlOptions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference)SetMasterBackendRole(val *string) {
+func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) SetMasterBackendRole(val *string) {
 	if err := j.validateSetMasterBackendRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +396,7 @@ func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference)SetMast
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference)SetMasterUserName(val *string) {
+func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) SetMasterUserName(val *string) {
 	if err := j.validateSetMasterUserNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference)SetMast
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference)SetRolesKey(val *string) {
+func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) SetRolesKey(val *string) {
 	if err := j.validateSetRolesKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference)SetRole
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference)SetSessionTimeoutMinutes(val *float64) {
+func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) SetSessionTimeoutMinutes(val *float64) {
 	if err := j.validateSetSessionTimeoutMinutesParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference)SetSess
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference)SetSubjectKey(val *string) {
+func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) SetSubjectKey(val *string) {
 	if err := j.validateSetSubjectKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference)SetSubj
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,16 +475,16 @@ func (o *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) Comput
 	return returns
 }
 
-func (o *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -501,7 +500,7 @@ func (o *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) GetBoo
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -517,7 +516,7 @@ func (o *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) GetBoo
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -533,7 +532,7 @@ func (o *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) GetLis
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -549,7 +548,7 @@ func (o *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) GetNum
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -565,7 +564,7 @@ func (o *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) GetNum
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func (o *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) GetNum
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -597,7 +596,7 @@ func (o *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) GetStr
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func (o *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) GetStr
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -642,7 +641,7 @@ func (o *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) Interp
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -656,7 +655,7 @@ func (o *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) PutIdp
 	_jsii_.InvokeVoid(
 		o,
 		"putIdp",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -716,16 +715,16 @@ func (o *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) ResetS
 	)
 }
 
-func (o *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (o *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := o.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -744,4 +743,3 @@ func (o *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) ToStri
 
 	return returns
 }
-

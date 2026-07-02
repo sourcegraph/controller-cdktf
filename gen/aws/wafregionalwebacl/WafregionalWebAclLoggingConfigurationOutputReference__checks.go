@@ -109,7 +109,7 @@ func (w *jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewWafregionalWebAclLoggingConfigurationOutputReferenceParameters(t
 
 	return nil
 }
-

@@ -90,7 +90,7 @@ func (s *jsiiProxy_S3BucketAclAccessControlPolicyOutputReference) validateInterp
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketAclAccessControlPolicyOutputReference) validatePutGrantParameters(value interface{}) error {
+func (s *jsiiProxy_S3BucketAclAccessControlPolicyOutputReference) validatePutGrantParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (s *jsiiProxy_S3BucketAclAccessControlPolicyOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketAclAccessControlPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketAclAccessControlPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -240,4 +240,3 @@ func validateNewS3BucketAclAccessControlPolicyOutputReferenceParameters(terrafor
 
 	return nil
 }
-

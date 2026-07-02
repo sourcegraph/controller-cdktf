@@ -90,7 +90,7 @@ func (e *jsiiProxy_EmrClusterCoreInstanceFleetInstanceTypeConfigsOutputReference
 	return nil
 }
 
-func (e *jsiiProxy_EmrClusterCoreInstanceFleetInstanceTypeConfigsOutputReference) validatePutConfigurationsParameters(value interface{}) error {
+func (e *jsiiProxy_EmrClusterCoreInstanceFleetInstanceTypeConfigsOutputReference) validatePutConfigurationsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (e *jsiiProxy_EmrClusterCoreInstanceFleetInstanceTypeConfigsOutputReference
 	return nil
 }
 
-func (e *jsiiProxy_EmrClusterCoreInstanceFleetInstanceTypeConfigsOutputReference) validatePutEbsConfigParameters(value interface{}) error {
+func (e *jsiiProxy_EmrClusterCoreInstanceFleetInstanceTypeConfigsOutputReference) validatePutEbsConfigParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -176,7 +176,7 @@ func (j *jsiiProxy_EmrClusterCoreInstanceFleetInstanceTypeConfigsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_EmrClusterCoreInstanceFleetInstanceTypeConfigsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EmrClusterCoreInstanceFleetInstanceTypeConfigsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -249,7 +249,7 @@ func (j *jsiiProxy_EmrClusterCoreInstanceFleetInstanceTypeConfigsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_EmrClusterCoreInstanceFleetInstanceTypeConfigsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EmrClusterCoreInstanceFleetInstanceTypeConfigsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -316,4 +316,3 @@ func validateNewEmrClusterCoreInstanceFleetInstanceTypeConfigsOutputReferencePar
 
 	return nil
 }
-

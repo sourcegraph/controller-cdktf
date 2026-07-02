@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dmsReplicationInstance.DmsReplicationInstance",
-		reflect.TypeOf((*DmsReplicationInstance)(nil)).Elem(),
+		reflect.TypeFor[DmsReplicationInstance](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -109,7 +109,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcSecurityGroupIds", GoGetter: "VpcSecurityGroupIds"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcSecurityGroupIdsInput", GoGetter: "VpcSecurityGroupIdsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DmsReplicationInstance{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -117,15 +117,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dmsReplicationInstance.DmsReplicationInstanceConfig",
-		reflect.TypeOf((*DmsReplicationInstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[DmsReplicationInstanceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dmsReplicationInstance.DmsReplicationInstanceTimeouts",
-		reflect.TypeOf((*DmsReplicationInstanceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DmsReplicationInstanceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dmsReplicationInstance.DmsReplicationInstanceTimeoutsOutputReference",
-		reflect.TypeOf((*DmsReplicationInstanceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DmsReplicationInstanceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -158,7 +158,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DmsReplicationInstanceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

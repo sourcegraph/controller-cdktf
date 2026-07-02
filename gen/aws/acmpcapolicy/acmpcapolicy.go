@@ -15,15 +15,15 @@ type AcmpcaPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,27 +53,27 @@ type AcmpcaPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ResourceArn() *string
 	SetResourceArn(val *string)
 	ResourceArnInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type AcmpcaPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -103,7 +103,7 @@ type AcmpcaPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -114,17 +114,17 @@ type AcmpcaPolicy interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AcmpcaPolicy
@@ -142,8 +142,8 @@ func (j *jsiiProxy_AcmpcaPolicy) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_AcmpcaPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AcmpcaPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_AcmpcaPolicy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AcmpcaPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AcmpcaPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_AcmpcaPolicy) ConstructNodeMetadata() *map[string]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_AcmpcaPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AcmpcaPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -282,8 +282,8 @@ func (j *jsiiProxy_AcmpcaPolicy) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_AcmpcaPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AcmpcaPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -292,8 +292,8 @@ func (j *jsiiProxy_AcmpcaPolicy) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AcmpcaPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AcmpcaPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -332,8 +332,8 @@ func (j *jsiiProxy_AcmpcaPolicy) TerraformGeneratorMetadata() *cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_AcmpcaPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AcmpcaPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -352,7 +352,6 @@ func (j *jsiiProxy_AcmpcaPolicy) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/acmpca_policy aws_acmpca_policy} Resource.
 func NewAcmpcaPolicy(scope constructs.Construct, id *string, config *AcmpcaPolicyConfig) AcmpcaPolicy {
 	_init_.Initialize()
@@ -364,7 +363,7 @@ func NewAcmpcaPolicy(scope constructs.Construct, id *string, config *AcmpcaPolic
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -377,12 +376,12 @@ func NewAcmpcaPolicy_Override(a AcmpcaPolicy, scope constructs.Construct, id *st
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AcmpcaPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_AcmpcaPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_AcmpcaPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AcmpcaPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_AcmpcaPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_AcmpcaPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AcmpcaPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AcmpcaPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -412,7 +411,7 @@ func (j *jsiiProxy_AcmpcaPolicy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AcmpcaPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AcmpcaPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -420,7 +419,7 @@ func (j *jsiiProxy_AcmpcaPolicy)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_AcmpcaPolicy)SetId(val *string) {
+func (j *jsiiProxy_AcmpcaPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,7 +430,7 @@ func (j *jsiiProxy_AcmpcaPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AcmpcaPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AcmpcaPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_AcmpcaPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_AcmpcaPolicy)SetPolicy(val *string) {
+func (j *jsiiProxy_AcmpcaPolicy) SetPolicy(val *string) {
 	if err := j.validateSetPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_AcmpcaPolicy)SetPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AcmpcaPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AcmpcaPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -461,7 +460,7 @@ func (j *jsiiProxy_AcmpcaPolicy)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_AcmpcaPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AcmpcaPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -472,7 +471,7 @@ func (j *jsiiProxy_AcmpcaPolicy)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AcmpcaPolicy)SetResourceArn(val *string) {
+func (j *jsiiProxy_AcmpcaPolicy) SetResourceArn(val *string) {
 	if err := j.validateSetResourceArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -495,7 +494,7 @@ func AcmpcaPolicy_GenerateConfigForImport(scope constructs.Construct, importToId
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func AcmpcaPolicy_GenerateConfigForImport(scope constructs.Construct, importToId
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AcmpcaPolicy_IsConstruct(x interface{}) *bool {
+func AcmpcaPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAcmpcaPolicy_IsConstructParameters(x); err != nil {
@@ -530,7 +529,7 @@ func AcmpcaPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func AcmpcaPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AcmpcaPolicy_IsTerraformElement(x interface{}) *bool {
+func AcmpcaPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAcmpcaPolicy_IsTerraformElementParameters(x); err != nil {
@@ -549,7 +548,7 @@ func AcmpcaPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func AcmpcaPolicy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AcmpcaPolicy_IsTerraformResource(x interface{}) *bool {
+func AcmpcaPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAcmpcaPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -568,7 +567,7 @@ func AcmpcaPolicy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -593,31 +592,31 @@ func (a *jsiiProxy_AcmpcaPolicy) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AcmpcaPolicy) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AcmpcaPolicy) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AcmpcaPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AcmpcaPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -633,7 +632,7 @@ func (a *jsiiProxy_AcmpcaPolicy) GetBooleanAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -649,7 +648,7 @@ func (a *jsiiProxy_AcmpcaPolicy) GetBooleanMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -665,7 +664,7 @@ func (a *jsiiProxy_AcmpcaPolicy) GetListAttribute(terraformAttribute *string) *[
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -681,7 +680,7 @@ func (a *jsiiProxy_AcmpcaPolicy) GetNumberAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -697,7 +696,7 @@ func (a *jsiiProxy_AcmpcaPolicy) GetNumberListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -713,7 +712,7 @@ func (a *jsiiProxy_AcmpcaPolicy) GetNumberMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func (a *jsiiProxy_AcmpcaPolicy) GetStringAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -745,15 +744,15 @@ func (a *jsiiProxy_AcmpcaPolicy) GetStringMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AcmpcaPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AcmpcaPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -772,7 +771,7 @@ func (a *jsiiProxy_AcmpcaPolicy) ImportFrom(id *string, provider cdktf.Terraform
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -785,7 +784,7 @@ func (a *jsiiProxy_AcmpcaPolicy) InterpolationForAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,18 +798,18 @@ func (a *jsiiProxy_AcmpcaPolicy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AcmpcaPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AcmpcaPolicy) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -821,7 +820,7 @@ func (a *jsiiProxy_AcmpcaPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -832,7 +831,7 @@ func (a *jsiiProxy_AcmpcaPolicy) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -852,8 +851,8 @@ func (a *jsiiProxy_AcmpcaPolicy) ResetOverrideLogicalId() {
 	)
 }
 
-func (a *jsiiProxy_AcmpcaPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AcmpcaPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -865,8 +864,8 @@ func (a *jsiiProxy_AcmpcaPolicy) SynthesizeAttributes() *map[string]interface{} 
 	return returns
 }
 
-func (a *jsiiProxy_AcmpcaPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AcmpcaPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -878,8 +877,8 @@ func (a *jsiiProxy_AcmpcaPolicy) SynthesizeHclAttributes() *map[string]interface
 	return returns
 }
 
-func (a *jsiiProxy_AcmpcaPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AcmpcaPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -891,8 +890,8 @@ func (a *jsiiProxy_AcmpcaPolicy) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AcmpcaPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AcmpcaPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -917,8 +916,8 @@ func (a *jsiiProxy_AcmpcaPolicy) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AcmpcaPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AcmpcaPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -929,4 +928,3 @@ func (a *jsiiProxy_AcmpcaPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

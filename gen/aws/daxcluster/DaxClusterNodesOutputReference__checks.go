@@ -98,7 +98,7 @@ func (d *jsiiProxy_DaxClusterNodesOutputReference) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_DaxClusterNodesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DaxClusterNodesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDaxClusterNodesOutputReferenceParameters(terraformResource cdktf
 
 	return nil
 }
-

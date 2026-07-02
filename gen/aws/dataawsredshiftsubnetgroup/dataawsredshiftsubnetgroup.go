@@ -16,11 +16,11 @@ type DataAwsRedshiftSubnetGroup interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -51,7 +51,7 @@ type DataAwsRedshiftSubnetGroup interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SubnetIds() *[]*string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -59,13 +59,13 @@ type DataAwsRedshiftSubnetGroup interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -92,18 +92,18 @@ type DataAwsRedshiftSubnetGroup interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTags()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsRedshiftSubnetGroup
@@ -131,8 +131,8 @@ func (j *jsiiProxy_DataAwsRedshiftSubnetGroup) CdktfStack() cdktf.TerraformStack
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRedshiftSubnetGroup) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsRedshiftSubnetGroup) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -141,8 +141,8 @@ func (j *jsiiProxy_DataAwsRedshiftSubnetGroup) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRedshiftSubnetGroup) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsRedshiftSubnetGroup) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -271,8 +271,8 @@ func (j *jsiiProxy_DataAwsRedshiftSubnetGroup) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRedshiftSubnetGroup) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsRedshiftSubnetGroup) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -321,8 +321,8 @@ func (j *jsiiProxy_DataAwsRedshiftSubnetGroup) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRedshiftSubnetGroup) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsRedshiftSubnetGroup) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -341,7 +341,6 @@ func (j *jsiiProxy_DataAwsRedshiftSubnetGroup) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/redshift_subnet_group aws_redshift_subnet_group} Data Source.
 func NewDataAwsRedshiftSubnetGroup(scope constructs.Construct, id *string, config *DataAwsRedshiftSubnetGroupConfig) DataAwsRedshiftSubnetGroup {
 	_init_.Initialize()
@@ -353,7 +352,7 @@ func NewDataAwsRedshiftSubnetGroup(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsRedshiftSubnetGroup.DataAwsRedshiftSubnetGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -366,12 +365,12 @@ func NewDataAwsRedshiftSubnetGroup_Override(d DataAwsRedshiftSubnetGroup, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsRedshiftSubnetGroup.DataAwsRedshiftSubnetGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsRedshiftSubnetGroup)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsRedshiftSubnetGroup) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_DataAwsRedshiftSubnetGroup)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRedshiftSubnetGroup)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsRedshiftSubnetGroup) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -390,7 +389,7 @@ func (j *jsiiProxy_DataAwsRedshiftSubnetGroup)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRedshiftSubnetGroup)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsRedshiftSubnetGroup) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -398,7 +397,7 @@ func (j *jsiiProxy_DataAwsRedshiftSubnetGroup)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_DataAwsRedshiftSubnetGroup)SetId(val *string) {
+func (j *jsiiProxy_DataAwsRedshiftSubnetGroup) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -409,7 +408,7 @@ func (j *jsiiProxy_DataAwsRedshiftSubnetGroup)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRedshiftSubnetGroup)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsRedshiftSubnetGroup) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -420,7 +419,7 @@ func (j *jsiiProxy_DataAwsRedshiftSubnetGroup)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_DataAwsRedshiftSubnetGroup)SetName(val *string) {
+func (j *jsiiProxy_DataAwsRedshiftSubnetGroup) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,7 +430,7 @@ func (j *jsiiProxy_DataAwsRedshiftSubnetGroup)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRedshiftSubnetGroup)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsRedshiftSubnetGroup) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -439,7 +438,7 @@ func (j *jsiiProxy_DataAwsRedshiftSubnetGroup)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_DataAwsRedshiftSubnetGroup)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsRedshiftSubnetGroup) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func DataAwsRedshiftSubnetGroup_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsRedshiftSubnetGroup.DataAwsRedshiftSubnetGroup",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func DataAwsRedshiftSubnetGroup_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsRedshiftSubnetGroup_IsConstruct(x interface{}) *bool {
+func DataAwsRedshiftSubnetGroup_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsRedshiftSubnetGroup_IsConstructParameters(x); err != nil {
@@ -497,7 +496,7 @@ func DataAwsRedshiftSubnetGroup_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsRedshiftSubnetGroup.DataAwsRedshiftSubnetGroup",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -505,7 +504,7 @@ func DataAwsRedshiftSubnetGroup_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsRedshiftSubnetGroup_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsRedshiftSubnetGroup_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsRedshiftSubnetGroup_IsTerraformDataSourceParameters(x); err != nil {
@@ -516,7 +515,7 @@ func DataAwsRedshiftSubnetGroup_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsRedshiftSubnetGroup.DataAwsRedshiftSubnetGroup",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -524,7 +523,7 @@ func DataAwsRedshiftSubnetGroup_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsRedshiftSubnetGroup_IsTerraformElement(x interface{}) *bool {
+func DataAwsRedshiftSubnetGroup_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsRedshiftSubnetGroup_IsTerraformElementParameters(x); err != nil {
@@ -535,7 +534,7 @@ func DataAwsRedshiftSubnetGroup_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsRedshiftSubnetGroup.DataAwsRedshiftSubnetGroup",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -553,27 +552,27 @@ func DataAwsRedshiftSubnetGroup_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRedshiftSubnetGroup) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsRedshiftSubnetGroup) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsRedshiftSubnetGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsRedshiftSubnetGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func (d *jsiiProxy_DataAwsRedshiftSubnetGroup) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -605,7 +604,7 @@ func (d *jsiiProxy_DataAwsRedshiftSubnetGroup) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -621,7 +620,7 @@ func (d *jsiiProxy_DataAwsRedshiftSubnetGroup) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -637,7 +636,7 @@ func (d *jsiiProxy_DataAwsRedshiftSubnetGroup) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -653,7 +652,7 @@ func (d *jsiiProxy_DataAwsRedshiftSubnetGroup) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -669,7 +668,7 @@ func (d *jsiiProxy_DataAwsRedshiftSubnetGroup) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -685,7 +684,7 @@ func (d *jsiiProxy_DataAwsRedshiftSubnetGroup) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -701,7 +700,7 @@ func (d *jsiiProxy_DataAwsRedshiftSubnetGroup) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -717,7 +716,7 @@ func (d *jsiiProxy_DataAwsRedshiftSubnetGroup) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -731,7 +730,7 @@ func (d *jsiiProxy_DataAwsRedshiftSubnetGroup) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -759,8 +758,8 @@ func (d *jsiiProxy_DataAwsRedshiftSubnetGroup) ResetTags() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsRedshiftSubnetGroup) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsRedshiftSubnetGroup) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -772,8 +771,8 @@ func (d *jsiiProxy_DataAwsRedshiftSubnetGroup) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRedshiftSubnetGroup) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsRedshiftSubnetGroup) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -785,8 +784,8 @@ func (d *jsiiProxy_DataAwsRedshiftSubnetGroup) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRedshiftSubnetGroup) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsRedshiftSubnetGroup) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -798,8 +797,8 @@ func (d *jsiiProxy_DataAwsRedshiftSubnetGroup) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRedshiftSubnetGroup) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsRedshiftSubnetGroup) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -824,8 +823,8 @@ func (d *jsiiProxy_DataAwsRedshiftSubnetGroup) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRedshiftSubnetGroup) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsRedshiftSubnetGroup) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -836,4 +835,3 @@ func (d *jsiiProxy_DataAwsRedshiftSubnetGroup) ToTerraform() interface{} {
 
 	return returns
 }
-

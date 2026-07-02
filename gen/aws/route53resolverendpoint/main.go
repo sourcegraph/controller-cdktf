@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.route53ResolverEndpoint.Route53ResolverEndpoint",
-		reflect.TypeOf((*Route53ResolverEndpoint)(nil)).Elem(),
+		reflect.TypeFor[Route53ResolverEndpoint](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Route53ResolverEndpoint{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,15 +86,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.route53ResolverEndpoint.Route53ResolverEndpointConfig",
-		reflect.TypeOf((*Route53ResolverEndpointConfig)(nil)).Elem(),
+		reflect.TypeFor[Route53ResolverEndpointConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.route53ResolverEndpoint.Route53ResolverEndpointIpAddress",
-		reflect.TypeOf((*Route53ResolverEndpointIpAddress)(nil)).Elem(),
+		reflect.TypeFor[Route53ResolverEndpointIpAddress](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.route53ResolverEndpoint.Route53ResolverEndpointIpAddressList",
-		reflect.TypeOf((*Route53ResolverEndpointIpAddressList)(nil)).Elem(),
+		reflect.TypeFor[Route53ResolverEndpointIpAddressList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -108,7 +108,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Route53ResolverEndpointIpAddressList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -116,7 +116,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.route53ResolverEndpoint.Route53ResolverEndpointIpAddressOutputReference",
-		reflect.TypeOf((*Route53ResolverEndpointIpAddressOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Route53ResolverEndpointIpAddressOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -146,7 +146,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Route53ResolverEndpointIpAddressOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -154,11 +154,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.route53ResolverEndpoint.Route53ResolverEndpointTimeouts",
-		reflect.TypeOf((*Route53ResolverEndpointTimeouts)(nil)).Elem(),
+		reflect.TypeFor[Route53ResolverEndpointTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.route53ResolverEndpoint.Route53ResolverEndpointTimeoutsOutputReference",
-		reflect.TypeOf((*Route53ResolverEndpointTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Route53ResolverEndpointTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -191,7 +191,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Route53ResolverEndpointTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

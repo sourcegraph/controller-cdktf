@@ -19,7 +19,7 @@ func (c *jsiiProxy_CloudtrailEventDataStore) validateAddMoveTargetParameters(mov
 	return nil
 }
 
-func (c *jsiiProxy_CloudtrailEventDataStore) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_CloudtrailEventDataStore) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_CloudtrailEventDataStore) validateMoveFromIdParameters(id *st
 	return nil
 }
 
-func (c *jsiiProxy_CloudtrailEventDataStore) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_CloudtrailEventDataStore) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (c *jsiiProxy_CloudtrailEventDataStore) validateOverrideLogicalIdParameters
 	return nil
 }
 
-func (c *jsiiProxy_CloudtrailEventDataStore) validatePutAdvancedEventSelectorParameters(value interface{}) error {
+func (c *jsiiProxy_CloudtrailEventDataStore) validatePutAdvancedEventSelectorParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateCloudtrailEventDataStore_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateCloudtrailEventDataStore_IsConstructParameters(x interface{}) error {
+func validateCloudtrailEventDataStore_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateCloudtrailEventDataStore_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateCloudtrailEventDataStore_IsTerraformElementParameters(x interface{}) error {
+func validateCloudtrailEventDataStore_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateCloudtrailEventDataStore_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func validateCloudtrailEventDataStore_IsTerraformResourceParameters(x interface{}) error {
+func validateCloudtrailEventDataStore_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateCloudtrailEventDataStore_IsTerraformResourceParameters(x interface{
 	return nil
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStore) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_CloudtrailEventDataStore) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -319,7 +319,7 @@ func (j *jsiiProxy_CloudtrailEventDataStore) validateSetConnectionParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStore) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_CloudtrailEventDataStore) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -392,7 +392,7 @@ func (j *jsiiProxy_CloudtrailEventDataStore) validateSetLifecycleParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStore) validateSetMultiRegionEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_CloudtrailEventDataStore) validateSetMultiRegionEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -420,7 +420,7 @@ func (j *jsiiProxy_CloudtrailEventDataStore) validateSetNameParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStore) validateSetOrganizationEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_CloudtrailEventDataStore) validateSetOrganizationEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -440,7 +440,7 @@ func (j *jsiiProxy_CloudtrailEventDataStore) validateSetOrganizationEnabledParam
 	return nil
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStore) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_CloudtrailEventDataStore) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -510,7 +510,7 @@ func (j *jsiiProxy_CloudtrailEventDataStore) validateSetTagsAllParameters(val *m
 	return nil
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStore) validateSetTerminationProtectionEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_CloudtrailEventDataStore) validateSetTerminationProtectionEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -548,4 +548,3 @@ func validateNewCloudtrailEventDataStoreParameters(scope constructs.Construct, i
 
 	return nil
 }
-

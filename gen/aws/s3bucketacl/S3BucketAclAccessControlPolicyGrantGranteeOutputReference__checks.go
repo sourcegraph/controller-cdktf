@@ -98,7 +98,7 @@ func (s *jsiiProxy_S3BucketAclAccessControlPolicyGrantGranteeOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketAclAccessControlPolicyGrantGranteeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketAclAccessControlPolicyGrantGranteeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewS3BucketAclAccessControlPolicyGrantGranteeOutputReferenceParamet
 
 	return nil
 }
-

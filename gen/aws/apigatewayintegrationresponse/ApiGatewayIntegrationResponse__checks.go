@@ -19,7 +19,7 @@ func (a *jsiiProxy_ApiGatewayIntegrationResponse) validateAddMoveTargetParameter
 	return nil
 }
 
-func (a *jsiiProxy_ApiGatewayIntegrationResponse) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_ApiGatewayIntegrationResponse) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_ApiGatewayIntegrationResponse) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (a *jsiiProxy_ApiGatewayIntegrationResponse) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_ApiGatewayIntegrationResponse) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateApiGatewayIntegrationResponse_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateApiGatewayIntegrationResponse_IsConstructParameters(x interface{}) error {
+func validateApiGatewayIntegrationResponse_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateApiGatewayIntegrationResponse_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateApiGatewayIntegrationResponse_IsTerraformElementParameters(x interface{}) error {
+func validateApiGatewayIntegrationResponse_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateApiGatewayIntegrationResponse_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateApiGatewayIntegrationResponse_IsTerraformResourceParameters(x interface{}) error {
+func validateApiGatewayIntegrationResponse_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateApiGatewayIntegrationResponse_IsTerraformResourceParameters(x inter
 	return nil
 }
 
-func (j *jsiiProxy_ApiGatewayIntegrationResponse) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ApiGatewayIntegrationResponse) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_ApiGatewayIntegrationResponse) validateSetContentHandlingPara
 	return nil
 }
 
-func (j *jsiiProxy_ApiGatewayIntegrationResponse) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ApiGatewayIntegrationResponse) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_ApiGatewayIntegrationResponse) validateSetLifecycleParameters
 	return nil
 }
 
-func (j *jsiiProxy_ApiGatewayIntegrationResponse) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ApiGatewayIntegrationResponse) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -478,4 +478,3 @@ func validateNewApiGatewayIntegrationResponseParameters(scope constructs.Constru
 
 	return nil
 }
-

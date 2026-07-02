@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsKmsKeyMultiRegionConfigurationOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsKmsKeyMultiRegionConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsKmsKeyMultiRegionConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsKmsKeyMultiRegionConfigurationOutputReferenceParameters(t
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (w *jsiiProxy_WorkspacesIpGroupRulesOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_WorkspacesIpGroupRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkspacesIpGroupRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_WorkspacesIpGroupRulesOutputReference) validateSetDescription
 	return nil
 }
 
-func (j *jsiiProxy_WorkspacesIpGroupRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkspacesIpGroupRulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewWorkspacesIpGroupRulesOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

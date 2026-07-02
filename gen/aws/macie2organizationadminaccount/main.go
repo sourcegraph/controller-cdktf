@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2OrganizationAdminAccount.Macie2OrganizationAdminAccount",
-		reflect.TypeOf((*Macie2OrganizationAdminAccount)(nil)).Elem(),
+		reflect.TypeFor[Macie2OrganizationAdminAccount](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -58,7 +58,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2OrganizationAdminAccount{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -66,6 +66,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.macie2OrganizationAdminAccount.Macie2OrganizationAdminAccountConfig",
-		reflect.TypeOf((*Macie2OrganizationAdminAccountConfig)(nil)).Elem(),
+		reflect.TypeFor[Macie2OrganizationAdminAccountConfig](),
 	)
 }

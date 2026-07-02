@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.redshiftEndpointAuthorization.RedshiftEndpointAuthorization",
-		reflect.TypeOf((*RedshiftEndpointAuthorization)(nil)).Elem(),
+		reflect.TypeFor[RedshiftEndpointAuthorization](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "account", GoGetter: "Account"},
 			_jsii_.MemberProperty{JsiiProperty: "accountInput", GoGetter: "AccountInput"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcIds", GoGetter: "VpcIds"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcIdsInput", GoGetter: "VpcIdsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedshiftEndpointAuthorization{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,6 +78,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.redshiftEndpointAuthorization.RedshiftEndpointAuthorizationConfig",
-		reflect.TypeOf((*RedshiftEndpointAuthorizationConfig)(nil)).Elem(),
+		reflect.TypeFor[RedshiftEndpointAuthorizationConfig](),
 	)
 }

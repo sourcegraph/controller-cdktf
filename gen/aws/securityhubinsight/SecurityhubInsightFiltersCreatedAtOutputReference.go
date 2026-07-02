@@ -12,9 +12,9 @@ type SecurityhubInsightFiltersCreatedAtOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -32,8 +32,8 @@ type SecurityhubInsightFiltersCreatedAtOutputReference interface {
 	EndInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Start() *string
 	SetStart(val *string)
 	StartInput() *string
@@ -48,7 +48,7 @@ type SecurityhubInsightFiltersCreatedAtOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type SecurityhubInsightFiltersCreatedAtOutputReference interface {
 	ResetStart()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference) Fqn() *str
 	return returns
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference) TerraformR
 	return returns
 }
 
-
 func NewSecurityhubInsightFiltersCreatedAtOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersCreatedAtOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewSecurityhubInsightFiltersCreatedAtOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewSecurityhubInsightFiltersCreatedAtOutputReference_Override(s Securityhub
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference)SetEnd(val *string) {
+func (j *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference) SetEnd(val *string) {
 	if err := j.validateSetEndParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference)SetEnd(val 
 	)
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference)SetStart(val *string) {
+func (j *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference) SetStart(val *string) {
 	if err := j.validateSetStartParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference)SetStart(va
 	)
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,16 +335,16 @@ func (s *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference) ComputeFqn
 	return returns
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -361,7 +360,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference) GetBoolean
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -377,7 +376,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference) GetBoolean
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -393,7 +392,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference) GetListAtt
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference) GetNumberA
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference) GetNumberL
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference) GetNumberM
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference) GetStringA
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference) GetStringM
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference) Interpolat
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -516,7 +515,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference) PutDateRan
 	_jsii_.InvokeVoid(
 		s,
 		"putDateRange",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -544,16 +543,16 @@ func (s *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference) ResetStart
 	)
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (s *jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference) ToString()
 
 	return returns
 }
-

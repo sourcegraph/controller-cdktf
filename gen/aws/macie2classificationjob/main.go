@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJob",
-		reflect.TypeOf((*Macie2ClassificationJob)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJob](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -96,7 +96,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "userPausedDetails", GoGetter: "UserPausedDetails"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2ClassificationJob{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -104,27 +104,27 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobConfig",
-		reflect.TypeOf((*Macie2ClassificationJobConfig)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinition",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinition)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinition](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteria",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionBucketCriteria)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionBucketCriteria](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludes",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludes)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludes](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAnd",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAnd)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAnd](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndList",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndList)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -138,7 +138,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -146,7 +146,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndOutputReference",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -178,7 +178,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -186,11 +186,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndSimpleCriterion",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndSimpleCriterion)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndSimpleCriterion](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndSimpleCriterionOutputReference",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndSimpleCriterionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndSimpleCriterionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparator", GoGetter: "Comparator"},
 			_jsii_.MemberProperty{JsiiProperty: "comparatorInput", GoGetter: "ComparatorInput"},
@@ -223,7 +223,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndSimpleCriterionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -231,11 +231,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterion",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterion)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterion](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionOutputReference",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparator", GoGetter: "Comparator"},
 			_jsii_.MemberProperty{JsiiProperty: "comparatorInput", GoGetter: "ComparatorInput"},
@@ -266,7 +266,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -274,11 +274,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionTagValues",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionTagValues)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionTagValues](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionTagValuesList",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionTagValuesList)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionTagValuesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -292,7 +292,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionTagValuesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -300,7 +300,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionTagValuesOutputReference",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionTagValuesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionTagValuesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -330,7 +330,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionTagValuesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -338,7 +338,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesOutputReference",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "and", GoGetter: "And"},
 			_jsii_.MemberProperty{JsiiProperty: "andInput", GoGetter: "AndInput"},
@@ -366,7 +366,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -374,15 +374,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludes",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludes)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludes](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAnd",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAnd)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAnd](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndList",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndList)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -396,7 +396,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -404,7 +404,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndOutputReference",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -436,7 +436,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -444,11 +444,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndSimpleCriterion",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndSimpleCriterion)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndSimpleCriterion](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndSimpleCriterionOutputReference",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndSimpleCriterionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndSimpleCriterionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparator", GoGetter: "Comparator"},
 			_jsii_.MemberProperty{JsiiProperty: "comparatorInput", GoGetter: "ComparatorInput"},
@@ -481,7 +481,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndSimpleCriterionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -489,11 +489,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterion",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterion)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterion](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionOutputReference",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparator", GoGetter: "Comparator"},
 			_jsii_.MemberProperty{JsiiProperty: "comparatorInput", GoGetter: "ComparatorInput"},
@@ -524,7 +524,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -532,11 +532,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionTagValues",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionTagValues)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionTagValues](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionTagValuesList",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionTagValuesList)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionTagValuesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -550,7 +550,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionTagValuesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -558,7 +558,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionTagValuesOutputReference",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionTagValuesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionTagValuesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -588,7 +588,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionTagValuesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -596,7 +596,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesOutputReference",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "and", GoGetter: "And"},
 			_jsii_.MemberProperty{JsiiProperty: "andInput", GoGetter: "AndInput"},
@@ -624,7 +624,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -632,7 +632,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaOutputReference",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionBucketCriteriaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionBucketCriteriaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -664,7 +664,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2ClassificationJobS3JobDefinitionBucketCriteriaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -672,11 +672,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketDefinitions",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionBucketDefinitions)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionBucketDefinitions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketDefinitionsList",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionBucketDefinitionsList)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionBucketDefinitionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -690,7 +690,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2ClassificationJobS3JobDefinitionBucketDefinitionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -698,7 +698,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketDefinitionsOutputReference",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionBucketDefinitionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionBucketDefinitionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -726,7 +726,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2ClassificationJobS3JobDefinitionBucketDefinitionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -734,7 +734,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionOutputReference",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketCriteria", GoGetter: "BucketCriteria"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketCriteriaInput", GoGetter: "BucketCriteriaInput"},
@@ -770,7 +770,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2ClassificationJobS3JobDefinitionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -778,19 +778,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScoping",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionScoping)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionScoping](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludes",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionScopingExcludes)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionScopingExcludes](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludesAnd",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionScopingExcludesAnd)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionScopingExcludesAnd](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludesAndList",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionScopingExcludesAndList)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionScopingExcludesAndList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -804,7 +804,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingExcludesAndList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -812,7 +812,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludesAndOutputReference",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionScopingExcludesAndOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionScopingExcludesAndOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -844,7 +844,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingExcludesAndOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -852,11 +852,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTerm",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTerm)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTerm](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTermOutputReference",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTermOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTermOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparator", GoGetter: "Comparator"},
 			_jsii_.MemberProperty{JsiiProperty: "comparatorInput", GoGetter: "ComparatorInput"},
@@ -889,7 +889,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTermOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -897,11 +897,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTerm",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTerm)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTerm](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermOutputReference",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparator", GoGetter: "Comparator"},
 			_jsii_.MemberProperty{JsiiProperty: "comparatorInput", GoGetter: "ComparatorInput"},
@@ -938,7 +938,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -946,11 +946,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValues",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValues)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValues](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValuesList",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValuesList)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValuesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -964,7 +964,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValuesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -972,7 +972,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValuesOutputReference",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValuesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValuesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1002,7 +1002,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValuesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1010,7 +1010,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludesOutputReference",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionScopingExcludesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionScopingExcludesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "and", GoGetter: "And"},
 			_jsii_.MemberProperty{JsiiProperty: "andInput", GoGetter: "AndInput"},
@@ -1038,7 +1038,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingExcludesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1046,15 +1046,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingIncludes",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionScopingIncludes)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionScopingIncludes](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingIncludesAnd",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionScopingIncludesAnd)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionScopingIncludesAnd](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingIncludesAndList",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionScopingIncludesAndList)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionScopingIncludesAndList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1068,7 +1068,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingIncludesAndList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1076,7 +1076,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingIncludesAndOutputReference",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionScopingIncludesAndOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionScopingIncludesAndOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1108,7 +1108,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingIncludesAndOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1116,11 +1116,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScopeTerm",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScopeTerm)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScopeTerm](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScopeTermOutputReference",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScopeTermOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScopeTermOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparator", GoGetter: "Comparator"},
 			_jsii_.MemberProperty{JsiiProperty: "comparatorInput", GoGetter: "ComparatorInput"},
@@ -1153,7 +1153,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScopeTermOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1161,11 +1161,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTerm",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTerm)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTerm](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermOutputReference",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparator", GoGetter: "Comparator"},
 			_jsii_.MemberProperty{JsiiProperty: "comparatorInput", GoGetter: "ComparatorInput"},
@@ -1202,7 +1202,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1210,11 +1210,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValues",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValues)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValues](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValuesList",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValuesList)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValuesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1228,7 +1228,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValuesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1236,7 +1236,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValuesOutputReference",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValuesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValuesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1266,7 +1266,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValuesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1274,7 +1274,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingIncludesOutputReference",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionScopingIncludesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionScopingIncludesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "and", GoGetter: "And"},
 			_jsii_.MemberProperty{JsiiProperty: "andInput", GoGetter: "AndInput"},
@@ -1302,7 +1302,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingIncludesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1310,7 +1310,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingOutputReference",
-		reflect.TypeOf((*Macie2ClassificationJobS3JobDefinitionScopingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobS3JobDefinitionScopingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1342,7 +1342,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1350,11 +1350,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobScheduleFrequency",
-		reflect.TypeOf((*Macie2ClassificationJobScheduleFrequency)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobScheduleFrequency](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobScheduleFrequencyOutputReference",
-		reflect.TypeOf((*Macie2ClassificationJobScheduleFrequencyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobScheduleFrequencyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1387,7 +1387,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weeklySchedule", GoGetter: "WeeklySchedule"},
 			_jsii_.MemberProperty{JsiiProperty: "weeklyScheduleInput", GoGetter: "WeeklyScheduleInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2ClassificationJobScheduleFrequencyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1395,11 +1395,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobUserPausedDetails",
-		reflect.TypeOf((*Macie2ClassificationJobUserPausedDetails)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobUserPausedDetails](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobUserPausedDetailsList",
-		reflect.TypeOf((*Macie2ClassificationJobUserPausedDetailsList)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobUserPausedDetailsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1412,7 +1412,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2ClassificationJobUserPausedDetailsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1420,7 +1420,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobUserPausedDetailsOutputReference",
-		reflect.TypeOf((*Macie2ClassificationJobUserPausedDetailsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Macie2ClassificationJobUserPausedDetailsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1447,7 +1447,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2ClassificationJobUserPausedDetailsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

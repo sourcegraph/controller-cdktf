@@ -90,7 +90,7 @@ func (e *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) validateInterpo
 	return nil
 }
 
-func (e *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) validatePutInstanceTypeConfigsParameters(value interface{}) error {
+func (e *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) validatePutInstanceTypeConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (e *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -264,4 +264,3 @@ func validateNewEmrClusterMasterInstanceFleetOutputReferenceParameters(terraform
 
 	return nil
 }
-

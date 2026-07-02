@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsLaunchConfigurationEphemeralBlockDeviceOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLaunchConfigurationEphemeralBlockDeviceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsLaunchConfigurationEphemeralBlockDeviceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsLaunchConfigurationEphemeralBlockDeviceOutputReferencePar
 
 	return nil
 }
-

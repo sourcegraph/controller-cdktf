@@ -101,7 +101,7 @@ func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorOutputReference) validatePutFunctionAssociationParameters(value interface{}) error {
+func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorOutputReference) validatePutFunctionAssociationParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -132,7 +132,7 @@ func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorOutputReference) validatePutLambdaFunctionAssociationParameters(value interface{}) error {
+func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorOutputReference) validatePutLambdaFunctionAssociationParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -195,7 +195,7 @@ func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -260,7 +260,7 @@ func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorOutputReference) validateSetCompressParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorOutputReference) validateSetCompressParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -296,7 +296,7 @@ func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -368,7 +368,7 @@ func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorOutputReference) validateSetSmoothStreamingParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorOutputReference) validateSetSmoothStreamingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -455,4 +455,3 @@ func validateNewCloudfrontDistributionOrderedCacheBehaviorOutputReferenceParamet
 
 	return nil
 }
-

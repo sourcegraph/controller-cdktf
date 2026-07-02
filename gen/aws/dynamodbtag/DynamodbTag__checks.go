@@ -19,7 +19,7 @@ func (d *jsiiProxy_DynamodbTag) validateAddMoveTargetParameters(moveTarget *stri
 	return nil
 }
 
-func (d *jsiiProxy_DynamodbTag) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DynamodbTag) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DynamodbTag) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DynamodbTag) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DynamodbTag) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateDynamodbTag_GenerateConfigForImportParameters(scope constructs.Cons
 	return nil
 }
 
-func validateDynamodbTag_IsConstructParameters(x interface{}) error {
+func validateDynamodbTag_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateDynamodbTag_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDynamodbTag_IsTerraformElementParameters(x interface{}) error {
+func validateDynamodbTag_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateDynamodbTag_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateDynamodbTag_IsTerraformResourceParameters(x interface{}) error {
+func validateDynamodbTag_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateDynamodbTag_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_DynamodbTag) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DynamodbTag) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_DynamodbTag) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
-func (j *jsiiProxy_DynamodbTag) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DynamodbTag) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -358,7 +358,7 @@ func (j *jsiiProxy_DynamodbTag) validateSetLifecycleParameters(val *cdktf.Terraf
 	return nil
 }
 
-func (j *jsiiProxy_DynamodbTag) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DynamodbTag) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -438,4 +438,3 @@ func validateNewDynamodbTagParameters(scope constructs.Construct, id *string, co
 
 	return nil
 }
-

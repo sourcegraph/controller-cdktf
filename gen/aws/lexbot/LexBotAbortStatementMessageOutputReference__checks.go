@@ -98,7 +98,7 @@ func (l *jsiiProxy_LexBotAbortStatementMessageOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_LexBotAbortStatementMessageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LexBotAbortStatementMessageOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_LexBotAbortStatementMessageOutputReference) validateSetGroupN
 	return nil
 }
 
-func (j *jsiiProxy_LexBotAbortStatementMessageOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LexBotAbortStatementMessageOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewLexBotAbortStatementMessageOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

@@ -6,9 +6,9 @@ import (
 
 type ChimeVoiceConnectorConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,11 +18,11 @@ type ChimeVoiceConnectorConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/chime_voice_connector#name ChimeVoiceConnector#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/chime_voice_connector#require_encryption ChimeVoiceConnector#require_encryption}.
-	RequireEncryption interface{} `field:"required" json:"requireEncryption" yaml:"requireEncryption"`
+	RequireEncryption any `field:"required" json:"requireEncryption" yaml:"requireEncryption"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/chime_voice_connector#aws_region ChimeVoiceConnector#aws_region}.
 	AwsRegion *string `field:"optional" json:"awsRegion" yaml:"awsRegion"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/chime_voice_connector#id ChimeVoiceConnector#id}.
@@ -31,4 +31,3 @@ type ChimeVoiceConnectorConfig struct {
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 }
-

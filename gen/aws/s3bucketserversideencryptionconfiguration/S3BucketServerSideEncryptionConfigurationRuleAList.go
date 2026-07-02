@@ -17,8 +17,8 @@ type S3BucketServerSideEncryptionConfigurationRuleAList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type S3BucketServerSideEncryptionConfigurationRuleAList interface {
 	Get(index *float64) S3BucketServerSideEncryptionConfigurationRuleAOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAList) Fqn() *st
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAList) WrapsSet(
 	return returns
 }
 
-
 func NewS3BucketServerSideEncryptionConfigurationRuleAList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3BucketServerSideEncryptionConfigurationRuleAList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewS3BucketServerSideEncryptionConfigurationRuleAList(terraformResource cdk
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3BucketServerSideEncryptionConfiguration.S3BucketServerSideEncryptionConfigurationRuleAList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewS3BucketServerSideEncryptionConfigurationRuleAList_Override(s S3BucketSe
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3BucketServerSideEncryptionConfiguration.S3BucketServerSideEncryptionConfigurationRuleAList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAList)SetInterna
 	)
 }
 
-func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAList)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAList)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAList) AllWithMa
 	_jsii_.Invoke(
 		s,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAList) Get(index
 	_jsii_.Invoke(
 		s,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAList) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAList) ToString(
 
 	return returns
 }
-

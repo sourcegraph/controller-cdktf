@@ -12,9 +12,9 @@ type CloudtrailAdvancedEventSelectorOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -26,11 +26,11 @@ type CloudtrailAdvancedEventSelectorOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	FieldSelector() CloudtrailAdvancedEventSelectorFieldSelectorList
-	FieldSelectorInput() interface{}
+	FieldSelectorInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -45,7 +45,7 @@ type CloudtrailAdvancedEventSelectorOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,11 +66,11 @@ type CloudtrailAdvancedEventSelectorOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutFieldSelector(value interface{})
+	PutFieldSelector(value any)
 	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -123,8 +123,8 @@ func (j *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) FieldSelector
 	return returns
 }
 
-func (j *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) FieldSelectorInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) FieldSelectorInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"fieldSelectorInput",
@@ -143,8 +143,8 @@ func (j *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) Fqn() *string
 	return returns
 }
 
-func (j *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) TerraformReso
 	return returns
 }
 
-
 func NewCloudtrailAdvancedEventSelectorOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CloudtrailAdvancedEventSelectorOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewCloudtrailAdvancedEventSelectorOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewCloudtrailAdvancedEventSelectorOutputReference_Override(c CloudtrailAdva
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference)SetName(val *string) {
+func (j *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference)SetName(val *s
 	)
 }
 
-func (j *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,16 +299,16 @@ func (c *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (c *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -325,7 +324,7 @@ func (c *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -341,7 +340,7 @@ func (c *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -357,7 +356,7 @@ func (c *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -373,7 +372,7 @@ func (c *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -389,7 +388,7 @@ func (c *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) GetNumberList
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -405,7 +404,7 @@ func (c *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -421,7 +420,7 @@ func (c *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -437,7 +436,7 @@ func (c *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,21 +465,21 @@ func (c *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) Interpolation
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) PutFieldSelector(value interface{}) {
+func (c *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) PutFieldSelector(value any) {
 	if err := c.validatePutFieldSelectorParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putFieldSelector",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -492,16 +491,16 @@ func (c *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) ResetName() {
 	)
 }
 
-func (c *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (c *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) ToString() *s
 
 	return returns
 }
-

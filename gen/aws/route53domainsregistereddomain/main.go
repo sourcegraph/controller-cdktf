@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomain",
-		reflect.TypeOf((*Route53DomainsRegisteredDomain)(nil)).Elem(),
+		reflect.TypeFor[Route53DomainsRegisteredDomain](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "abuseContactEmail", GoGetter: "AbuseContactEmail"},
 			_jsii_.MemberProperty{JsiiProperty: "abuseContactPhone", GoGetter: "AbuseContactPhone"},
@@ -109,7 +109,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "updatedDate", GoGetter: "UpdatedDate"},
 			_jsii_.MemberProperty{JsiiProperty: "whoisServer", GoGetter: "WhoisServer"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Route53DomainsRegisteredDomain{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -117,11 +117,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainAdminContact",
-		reflect.TypeOf((*Route53DomainsRegisteredDomainAdminContact)(nil)).Elem(),
+		reflect.TypeFor[Route53DomainsRegisteredDomainAdminContact](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainAdminContactOutputReference",
-		reflect.TypeOf((*Route53DomainsRegisteredDomainAdminContactOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Route53DomainsRegisteredDomainAdminContactOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addressLine1", GoGetter: "AddressLine1"},
 			_jsii_.MemberProperty{JsiiProperty: "addressLine1Input", GoGetter: "AddressLine1Input"},
@@ -187,7 +187,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zipCode", GoGetter: "ZipCode"},
 			_jsii_.MemberProperty{JsiiProperty: "zipCodeInput", GoGetter: "ZipCodeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Route53DomainsRegisteredDomainAdminContactOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -195,15 +195,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainConfig",
-		reflect.TypeOf((*Route53DomainsRegisteredDomainConfig)(nil)).Elem(),
+		reflect.TypeFor[Route53DomainsRegisteredDomainConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainNameServer",
-		reflect.TypeOf((*Route53DomainsRegisteredDomainNameServer)(nil)).Elem(),
+		reflect.TypeFor[Route53DomainsRegisteredDomainNameServer](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainNameServerList",
-		reflect.TypeOf((*Route53DomainsRegisteredDomainNameServerList)(nil)).Elem(),
+		reflect.TypeFor[Route53DomainsRegisteredDomainNameServerList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -217,7 +217,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Route53DomainsRegisteredDomainNameServerList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -225,7 +225,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainNameServerOutputReference",
-		reflect.TypeOf((*Route53DomainsRegisteredDomainNameServerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Route53DomainsRegisteredDomainNameServerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -254,7 +254,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Route53DomainsRegisteredDomainNameServerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -262,11 +262,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainRegistrantContact",
-		reflect.TypeOf((*Route53DomainsRegisteredDomainRegistrantContact)(nil)).Elem(),
+		reflect.TypeFor[Route53DomainsRegisteredDomainRegistrantContact](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainRegistrantContactOutputReference",
-		reflect.TypeOf((*Route53DomainsRegisteredDomainRegistrantContactOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Route53DomainsRegisteredDomainRegistrantContactOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addressLine1", GoGetter: "AddressLine1"},
 			_jsii_.MemberProperty{JsiiProperty: "addressLine1Input", GoGetter: "AddressLine1Input"},
@@ -332,7 +332,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zipCode", GoGetter: "ZipCode"},
 			_jsii_.MemberProperty{JsiiProperty: "zipCodeInput", GoGetter: "ZipCodeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Route53DomainsRegisteredDomainRegistrantContactOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -340,11 +340,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainTechContact",
-		reflect.TypeOf((*Route53DomainsRegisteredDomainTechContact)(nil)).Elem(),
+		reflect.TypeFor[Route53DomainsRegisteredDomainTechContact](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainTechContactOutputReference",
-		reflect.TypeOf((*Route53DomainsRegisteredDomainTechContactOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Route53DomainsRegisteredDomainTechContactOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addressLine1", GoGetter: "AddressLine1"},
 			_jsii_.MemberProperty{JsiiProperty: "addressLine1Input", GoGetter: "AddressLine1Input"},
@@ -410,7 +410,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zipCode", GoGetter: "ZipCode"},
 			_jsii_.MemberProperty{JsiiProperty: "zipCodeInput", GoGetter: "ZipCodeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Route53DomainsRegisteredDomainTechContactOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -418,11 +418,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainTimeouts",
-		reflect.TypeOf((*Route53DomainsRegisteredDomainTimeouts)(nil)).Elem(),
+		reflect.TypeFor[Route53DomainsRegisteredDomainTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainTimeoutsOutputReference",
-		reflect.TypeOf((*Route53DomainsRegisteredDomainTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Route53DomainsRegisteredDomainTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -452,7 +452,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Route53DomainsRegisteredDomainTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

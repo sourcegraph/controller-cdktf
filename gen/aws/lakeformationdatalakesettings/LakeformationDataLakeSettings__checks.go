@@ -19,7 +19,7 @@ func (l *jsiiProxy_LakeformationDataLakeSettings) validateAddMoveTargetParameter
 	return nil
 }
 
-func (l *jsiiProxy_LakeformationDataLakeSettings) validateAddOverrideParameters(path *string, value interface{}) error {
+func (l *jsiiProxy_LakeformationDataLakeSettings) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (l *jsiiProxy_LakeformationDataLakeSettings) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (l *jsiiProxy_LakeformationDataLakeSettings) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (l *jsiiProxy_LakeformationDataLakeSettings) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (l *jsiiProxy_LakeformationDataLakeSettings) validateOverrideLogicalIdParam
 	return nil
 }
 
-func (l *jsiiProxy_LakeformationDataLakeSettings) validatePutCreateDatabaseDefaultPermissionsParameters(value interface{}) error {
+func (l *jsiiProxy_LakeformationDataLakeSettings) validatePutCreateDatabaseDefaultPermissionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (l *jsiiProxy_LakeformationDataLakeSettings) validatePutCreateDatabaseDefau
 	return nil
 }
 
-func (l *jsiiProxy_LakeformationDataLakeSettings) validatePutCreateTableDefaultPermissionsParameters(value interface{}) error {
+func (l *jsiiProxy_LakeformationDataLakeSettings) validatePutCreateTableDefaultPermissionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -282,7 +282,7 @@ func validateLakeformationDataLakeSettings_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateLakeformationDataLakeSettings_IsConstructParameters(x interface{}) error {
+func validateLakeformationDataLakeSettings_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -290,7 +290,7 @@ func validateLakeformationDataLakeSettings_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateLakeformationDataLakeSettings_IsTerraformElementParameters(x interface{}) error {
+func validateLakeformationDataLakeSettings_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -298,7 +298,7 @@ func validateLakeformationDataLakeSettings_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateLakeformationDataLakeSettings_IsTerraformResourceParameters(x interface{}) error {
+func validateLakeformationDataLakeSettings_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -322,7 +322,7 @@ func (j *jsiiProxy_LakeformationDataLakeSettings) validateSetCatalogIdParameters
 	return nil
 }
 
-func (j *jsiiProxy_LakeformationDataLakeSettings) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_LakeformationDataLakeSettings) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -355,7 +355,7 @@ func (j *jsiiProxy_LakeformationDataLakeSettings) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_LakeformationDataLakeSettings) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_LakeformationDataLakeSettings) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -428,7 +428,7 @@ func (j *jsiiProxy_LakeformationDataLakeSettings) validateSetLifecycleParameters
 	return nil
 }
 
-func (j *jsiiProxy_LakeformationDataLakeSettings) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_LakeformationDataLakeSettings) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -497,4 +497,3 @@ func validateNewLakeformationDataLakeSettingsParameters(scope constructs.Constru
 
 	return nil
 }
-

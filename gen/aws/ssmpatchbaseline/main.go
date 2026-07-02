@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaseline",
-		reflect.TypeOf((*SsmPatchBaseline)(nil)).Elem(),
+		reflect.TypeFor[SsmPatchBaseline](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -98,7 +98,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SsmPatchBaseline{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -106,11 +106,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineApprovalRule",
-		reflect.TypeOf((*SsmPatchBaselineApprovalRule)(nil)).Elem(),
+		reflect.TypeFor[SsmPatchBaselineApprovalRule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineApprovalRuleList",
-		reflect.TypeOf((*SsmPatchBaselineApprovalRuleList)(nil)).Elem(),
+		reflect.TypeFor[SsmPatchBaselineApprovalRuleList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -124,7 +124,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SsmPatchBaselineApprovalRuleList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -132,7 +132,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineApprovalRuleOutputReference",
-		reflect.TypeOf((*SsmPatchBaselineApprovalRuleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SsmPatchBaselineApprovalRuleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "approveAfterDays", GoGetter: "ApproveAfterDays"},
 			_jsii_.MemberProperty{JsiiProperty: "approveAfterDaysInput", GoGetter: "ApproveAfterDaysInput"},
@@ -171,7 +171,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SsmPatchBaselineApprovalRuleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -179,11 +179,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineApprovalRulePatchFilter",
-		reflect.TypeOf((*SsmPatchBaselineApprovalRulePatchFilter)(nil)).Elem(),
+		reflect.TypeFor[SsmPatchBaselineApprovalRulePatchFilter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineApprovalRulePatchFilterList",
-		reflect.TypeOf((*SsmPatchBaselineApprovalRulePatchFilterList)(nil)).Elem(),
+		reflect.TypeFor[SsmPatchBaselineApprovalRulePatchFilterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -197,7 +197,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SsmPatchBaselineApprovalRulePatchFilterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -205,7 +205,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineApprovalRulePatchFilterOutputReference",
-		reflect.TypeOf((*SsmPatchBaselineApprovalRulePatchFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SsmPatchBaselineApprovalRulePatchFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -233,7 +233,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SsmPatchBaselineApprovalRulePatchFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -241,15 +241,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineConfig",
-		reflect.TypeOf((*SsmPatchBaselineConfig)(nil)).Elem(),
+		reflect.TypeFor[SsmPatchBaselineConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineGlobalFilter",
-		reflect.TypeOf((*SsmPatchBaselineGlobalFilter)(nil)).Elem(),
+		reflect.TypeFor[SsmPatchBaselineGlobalFilter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineGlobalFilterList",
-		reflect.TypeOf((*SsmPatchBaselineGlobalFilterList)(nil)).Elem(),
+		reflect.TypeFor[SsmPatchBaselineGlobalFilterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -263,7 +263,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SsmPatchBaselineGlobalFilterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -271,7 +271,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineGlobalFilterOutputReference",
-		reflect.TypeOf((*SsmPatchBaselineGlobalFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SsmPatchBaselineGlobalFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -299,7 +299,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SsmPatchBaselineGlobalFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -307,11 +307,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineSource",
-		reflect.TypeOf((*SsmPatchBaselineSource)(nil)).Elem(),
+		reflect.TypeFor[SsmPatchBaselineSource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineSourceList",
-		reflect.TypeOf((*SsmPatchBaselineSourceList)(nil)).Elem(),
+		reflect.TypeFor[SsmPatchBaselineSourceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -325,7 +325,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SsmPatchBaselineSourceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -333,7 +333,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineSourceOutputReference",
-		reflect.TypeOf((*SsmPatchBaselineSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SsmPatchBaselineSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -363,7 +363,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SsmPatchBaselineSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

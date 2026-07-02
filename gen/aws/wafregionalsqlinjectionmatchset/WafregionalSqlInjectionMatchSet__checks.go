@@ -19,7 +19,7 @@ func (w *jsiiProxy_WafregionalSqlInjectionMatchSet) validateAddMoveTargetParamet
 	return nil
 }
 
-func (w *jsiiProxy_WafregionalSqlInjectionMatchSet) validateAddOverrideParameters(path *string, value interface{}) error {
+func (w *jsiiProxy_WafregionalSqlInjectionMatchSet) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (w *jsiiProxy_WafregionalSqlInjectionMatchSet) validateMoveFromIdParameters
 	return nil
 }
 
-func (w *jsiiProxy_WafregionalSqlInjectionMatchSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (w *jsiiProxy_WafregionalSqlInjectionMatchSet) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (w *jsiiProxy_WafregionalSqlInjectionMatchSet) validateOverrideLogicalIdPar
 	return nil
 }
 
-func (w *jsiiProxy_WafregionalSqlInjectionMatchSet) validatePutSqlInjectionMatchTupleParameters(value interface{}) error {
+func (w *jsiiProxy_WafregionalSqlInjectionMatchSet) validatePutSqlInjectionMatchTupleParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateWafregionalSqlInjectionMatchSet_GenerateConfigForImportParameters(s
 	return nil
 }
 
-func validateWafregionalSqlInjectionMatchSet_IsConstructParameters(x interface{}) error {
+func validateWafregionalSqlInjectionMatchSet_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateWafregionalSqlInjectionMatchSet_IsConstructParameters(x interface{}
 	return nil
 }
 
-func validateWafregionalSqlInjectionMatchSet_IsTerraformElementParameters(x interface{}) error {
+func validateWafregionalSqlInjectionMatchSet_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateWafregionalSqlInjectionMatchSet_IsTerraformElementParameters(x inte
 	return nil
 }
 
-func validateWafregionalSqlInjectionMatchSet_IsTerraformResourceParameters(x interface{}) error {
+func validateWafregionalSqlInjectionMatchSet_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func validateWafregionalSqlInjectionMatchSet_IsTerraformResourceParameters(x int
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalSqlInjectionMatchSet) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_WafregionalSqlInjectionMatchSet) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -308,7 +308,7 @@ func (j *jsiiProxy_WafregionalSqlInjectionMatchSet) validateSetConnectionParamet
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalSqlInjectionMatchSet) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_WafregionalSqlInjectionMatchSet) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -389,7 +389,7 @@ func (j *jsiiProxy_WafregionalSqlInjectionMatchSet) validateSetNameParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalSqlInjectionMatchSet) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_WafregionalSqlInjectionMatchSet) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -453,4 +453,3 @@ func validateNewWafregionalSqlInjectionMatchSetParameters(scope constructs.Const
 
 	return nil
 }
-

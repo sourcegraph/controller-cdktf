@@ -34,7 +34,7 @@ func (e *jsiiProxy_EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfigList) 
 	return nil
 }
 
-func (j *jsiiProxy_EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfigList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfigList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfigListParam
 
 	return nil
 }
-

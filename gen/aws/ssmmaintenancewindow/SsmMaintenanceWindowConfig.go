@@ -6,9 +6,9 @@ import (
 
 type SsmMaintenanceWindowConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type SsmMaintenanceWindowConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ssm_maintenance_window#cutoff SsmMaintenanceWindow#cutoff}.
 	Cutoff *float64 `field:"required" json:"cutoff" yaml:"cutoff"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ssm_maintenance_window#duration SsmMaintenanceWindow#duration}.
@@ -28,11 +28,11 @@ type SsmMaintenanceWindowConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ssm_maintenance_window#schedule SsmMaintenanceWindow#schedule}.
 	Schedule *string `field:"required" json:"schedule" yaml:"schedule"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ssm_maintenance_window#allow_unassociated_targets SsmMaintenanceWindow#allow_unassociated_targets}.
-	AllowUnassociatedTargets interface{} `field:"optional" json:"allowUnassociatedTargets" yaml:"allowUnassociatedTargets"`
+	AllowUnassociatedTargets any `field:"optional" json:"allowUnassociatedTargets" yaml:"allowUnassociatedTargets"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ssm_maintenance_window#description SsmMaintenanceWindow#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ssm_maintenance_window#enabled SsmMaintenanceWindow#enabled}.
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ssm_maintenance_window#end_date SsmMaintenanceWindow#end_date}.
 	EndDate *string `field:"optional" json:"endDate" yaml:"endDate"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ssm_maintenance_window#id SsmMaintenanceWindow#id}.
@@ -51,4 +51,3 @@ type SsmMaintenanceWindowConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ssm_maintenance_window#tags_all SsmMaintenanceWindow#tags_all}.
 	TagsAll *map[string]*string `field:"optional" json:"tagsAll" yaml:"tagsAll"`
 }
-

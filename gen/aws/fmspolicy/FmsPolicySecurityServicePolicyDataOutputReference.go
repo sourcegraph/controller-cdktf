@@ -12,9 +12,9 @@ type FmsPolicySecurityServicePolicyDataOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type FmsPolicySecurityServicePolicyDataOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type FmsPolicySecurityServicePolicyDataOutputReference interface {
 	ResetManagedServiceData()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) TypeInput(
 	return returns
 }
 
-
 func NewFmsPolicySecurityServicePolicyDataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) FmsPolicySecurityServicePolicyDataOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewFmsPolicySecurityServicePolicyDataOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewFmsPolicySecurityServicePolicyDataOutputReference_Override(f FmsPolicySe
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference)SetInternalValue(val *FmsPolicySecurityServicePolicyData) {
+func (j *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) SetInternalValue(val *FmsPolicySecurityServicePolicyData) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference)SetManagedServiceData(val *string) {
+func (j *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) SetManagedServiceData(val *string) {
 	if err := j.validateSetManagedServiceDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference)SetManagedS
 	)
 }
 
-func (j *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference)SetType(val *string) {
+func (j *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) ComputeFqn
 	return returns
 }
 
-func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) GetBoolean
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) GetBoolean
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) GetListAtt
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) GetNumberA
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) GetNumberL
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) GetNumberM
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) GetStringA
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) GetStringM
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) Interpolat
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) ResetManag
 	)
 }
 
-func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := f.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) ToString()
 
 	return returns
 }
-

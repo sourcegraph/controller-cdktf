@@ -98,7 +98,7 @@ func (f *jsiiProxy_FsxOpenzfsVolumeOriginSnapshotOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_FsxOpenzfsVolumeOriginSnapshotOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FsxOpenzfsVolumeOriginSnapshotOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewFsxOpenzfsVolumeOriginSnapshotOutputReferenceParameters(terrafor
 
 	return nil
 }
-

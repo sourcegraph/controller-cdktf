@@ -12,9 +12,9 @@ type AppsyncResolverSyncConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -48,7 +48,7 @@ type AppsyncResolverSyncConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type AppsyncResolverSyncConfigOutputReference interface {
 	ResetLambdaConflictHandlerConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_AppsyncResolverSyncConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AppsyncResolverSyncConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppsyncResolverSyncConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_AppsyncResolverSyncConfigOutputReference) TerraformResource()
 	return returns
 }
 
-
 func NewAppsyncResolverSyncConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AppsyncResolverSyncConfigOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewAppsyncResolverSyncConfigOutputReference(terraformResource cdktf.IInterp
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appsyncResolver.AppsyncResolverSyncConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewAppsyncResolverSyncConfigOutputReference_Override(a AppsyncResolverSyncC
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appsyncResolver.AppsyncResolverSyncConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppsyncResolverSyncConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AppsyncResolverSyncConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_AppsyncResolverSyncConfigOutputReference)SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_AppsyncResolverSyncConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AppsyncResolverSyncConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_AppsyncResolverSyncConfigOutputReference)SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_AppsyncResolverSyncConfigOutputReference)SetConflictDetection(val *string) {
+func (j *jsiiProxy_AppsyncResolverSyncConfigOutputReference) SetConflictDetection(val *string) {
 	if err := j.validateSetConflictDetectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_AppsyncResolverSyncConfigOutputReference)SetConflictDetection
 	)
 }
 
-func (j *jsiiProxy_AppsyncResolverSyncConfigOutputReference)SetConflictHandler(val *string) {
+func (j *jsiiProxy_AppsyncResolverSyncConfigOutputReference) SetConflictHandler(val *string) {
 	if err := j.validateSetConflictHandlerParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_AppsyncResolverSyncConfigOutputReference)SetConflictHandler(v
 	)
 }
 
-func (j *jsiiProxy_AppsyncResolverSyncConfigOutputReference)SetInternalValue(val *AppsyncResolverSyncConfig) {
+func (j *jsiiProxy_AppsyncResolverSyncConfigOutputReference) SetInternalValue(val *AppsyncResolverSyncConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_AppsyncResolverSyncConfigOutputReference)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_AppsyncResolverSyncConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppsyncResolverSyncConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_AppsyncResolverSyncConfigOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_AppsyncResolverSyncConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppsyncResolverSyncConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,16 +335,16 @@ func (a *jsiiProxy_AppsyncResolverSyncConfigOutputReference) ComputeFqn() *strin
 	return returns
 }
 
-func (a *jsiiProxy_AppsyncResolverSyncConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AppsyncResolverSyncConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -361,7 +360,7 @@ func (a *jsiiProxy_AppsyncResolverSyncConfigOutputReference) GetBooleanAttribute
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -377,7 +376,7 @@ func (a *jsiiProxy_AppsyncResolverSyncConfigOutputReference) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -393,7 +392,7 @@ func (a *jsiiProxy_AppsyncResolverSyncConfigOutputReference) GetListAttribute(te
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (a *jsiiProxy_AppsyncResolverSyncConfigOutputReference) GetNumberAttribute(
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (a *jsiiProxy_AppsyncResolverSyncConfigOutputReference) GetNumberListAttrib
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (a *jsiiProxy_AppsyncResolverSyncConfigOutputReference) GetNumberMapAttribu
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (a *jsiiProxy_AppsyncResolverSyncConfigOutputReference) GetStringAttribute(
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (a *jsiiProxy_AppsyncResolverSyncConfigOutputReference) GetStringMapAttribu
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (a *jsiiProxy_AppsyncResolverSyncConfigOutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -516,7 +515,7 @@ func (a *jsiiProxy_AppsyncResolverSyncConfigOutputReference) PutLambdaConflictHa
 	_jsii_.InvokeVoid(
 		a,
 		"putLambdaConflictHandlerConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -544,16 +543,16 @@ func (a *jsiiProxy_AppsyncResolverSyncConfigOutputReference) ResetLambdaConflict
 	)
 }
 
-func (a *jsiiProxy_AppsyncResolverSyncConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AppsyncResolverSyncConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (a *jsiiProxy_AppsyncResolverSyncConfigOutputReference) ToString() *string 
 
 	return returns
 }
-

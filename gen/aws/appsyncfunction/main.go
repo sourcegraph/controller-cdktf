@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appsyncFunction.AppsyncFunction",
-		reflect.TypeOf((*AppsyncFunction)(nil)).Elem(),
+		reflect.TypeFor[AppsyncFunction](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -90,7 +90,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppsyncFunction{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -98,15 +98,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appsyncFunction.AppsyncFunctionConfig",
-		reflect.TypeOf((*AppsyncFunctionConfig)(nil)).Elem(),
+		reflect.TypeFor[AppsyncFunctionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appsyncFunction.AppsyncFunctionRuntime",
-		reflect.TypeOf((*AppsyncFunctionRuntime)(nil)).Elem(),
+		reflect.TypeFor[AppsyncFunctionRuntime](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appsyncFunction.AppsyncFunctionRuntimeOutputReference",
-		reflect.TypeOf((*AppsyncFunctionRuntimeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppsyncFunctionRuntimeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -134,7 +134,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppsyncFunctionRuntimeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -142,15 +142,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appsyncFunction.AppsyncFunctionSyncConfig",
-		reflect.TypeOf((*AppsyncFunctionSyncConfig)(nil)).Elem(),
+		reflect.TypeFor[AppsyncFunctionSyncConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appsyncFunction.AppsyncFunctionSyncConfigLambdaConflictHandlerConfig",
-		reflect.TypeOf((*AppsyncFunctionSyncConfigLambdaConflictHandlerConfig)(nil)).Elem(),
+		reflect.TypeFor[AppsyncFunctionSyncConfigLambdaConflictHandlerConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appsyncFunction.AppsyncFunctionSyncConfigLambdaConflictHandlerConfigOutputReference",
-		reflect.TypeOf((*AppsyncFunctionSyncConfigLambdaConflictHandlerConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppsyncFunctionSyncConfigLambdaConflictHandlerConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -177,7 +177,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppsyncFunctionSyncConfigLambdaConflictHandlerConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -185,7 +185,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appsyncFunction.AppsyncFunctionSyncConfigOutputReference",
-		reflect.TypeOf((*AppsyncFunctionSyncConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppsyncFunctionSyncConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -219,7 +219,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppsyncFunctionSyncConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

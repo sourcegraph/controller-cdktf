@@ -19,19 +19,19 @@ type ElastictranscoderPipeline interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	ContentConfig() ElastictranscoderPipelineContentConfigOutputReference
 	ContentConfigInput() *ElastictranscoderPipelineContentConfig
 	ContentConfigPermissions() ElastictranscoderPipelineContentConfigPermissionsList
-	ContentConfigPermissionsInput() interface{}
+	ContentConfigPermissionsInput() any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -69,31 +69,31 @@ type ElastictranscoderPipeline interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ThumbnailConfig() ElastictranscoderPipelineThumbnailConfigOutputReference
 	ThumbnailConfigInput() *ElastictranscoderPipelineThumbnailConfig
 	ThumbnailConfigPermissions() ElastictranscoderPipelineThumbnailConfigPermissionsList
-	ThumbnailConfigPermissionsInput() interface{}
+	ThumbnailConfigPermissionsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -111,7 +111,7 @@ type ElastictranscoderPipeline interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -123,7 +123,7 @@ type ElastictranscoderPipeline interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -131,10 +131,10 @@ type ElastictranscoderPipeline interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutContentConfig(value *ElastictranscoderPipelineContentConfig)
-	PutContentConfigPermissions(value interface{})
+	PutContentConfigPermissions(value any)
 	PutNotifications(value *ElastictranscoderPipelineNotifications)
 	PutThumbnailConfig(value *ElastictranscoderPipelineThumbnailConfig)
-	PutThumbnailConfigPermissions(value interface{})
+	PutThumbnailConfigPermissions(value any)
 	ResetAwsKmsKeyArn()
 	ResetContentConfig()
 	ResetContentConfigPermissions()
@@ -147,17 +147,17 @@ type ElastictranscoderPipeline interface {
 	ResetOverrideLogicalId()
 	ResetThumbnailConfig()
 	ResetThumbnailConfigPermissions()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ElastictranscoderPipeline
@@ -205,8 +205,8 @@ func (j *jsiiProxy_ElastictranscoderPipeline) CdktfStack() cdktf.TerraformStack 
 	return returns
 }
 
-func (j *jsiiProxy_ElastictranscoderPipeline) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElastictranscoderPipeline) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -215,8 +215,8 @@ func (j *jsiiProxy_ElastictranscoderPipeline) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ElastictranscoderPipeline) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ElastictranscoderPipeline) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -255,8 +255,8 @@ func (j *jsiiProxy_ElastictranscoderPipeline) ContentConfigPermissions() Elastic
 	return returns
 }
 
-func (j *jsiiProxy_ElastictranscoderPipeline) ContentConfigPermissionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElastictranscoderPipeline) ContentConfigPermissionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"contentConfigPermissionsInput",
@@ -265,8 +265,8 @@ func (j *jsiiProxy_ElastictranscoderPipeline) ContentConfigPermissionsInput() in
 	return returns
 }
 
-func (j *jsiiProxy_ElastictranscoderPipeline) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElastictranscoderPipeline) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -445,8 +445,8 @@ func (j *jsiiProxy_ElastictranscoderPipeline) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_ElastictranscoderPipeline) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ElastictranscoderPipeline) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -455,8 +455,8 @@ func (j *jsiiProxy_ElastictranscoderPipeline) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ElastictranscoderPipeline) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElastictranscoderPipeline) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -495,8 +495,8 @@ func (j *jsiiProxy_ElastictranscoderPipeline) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_ElastictranscoderPipeline) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ElastictranscoderPipeline) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -545,8 +545,8 @@ func (j *jsiiProxy_ElastictranscoderPipeline) ThumbnailConfigPermissions() Elast
 	return returns
 }
 
-func (j *jsiiProxy_ElastictranscoderPipeline) ThumbnailConfigPermissionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElastictranscoderPipeline) ThumbnailConfigPermissionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"thumbnailConfigPermissionsInput",
@@ -554,7 +554,6 @@ func (j *jsiiProxy_ElastictranscoderPipeline) ThumbnailConfigPermissionsInput() 
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elastictranscoder_pipeline aws_elastictranscoder_pipeline} Resource.
 func NewElastictranscoderPipeline(scope constructs.Construct, id *string, config *ElastictranscoderPipelineConfig) ElastictranscoderPipeline {
@@ -567,7 +566,7 @@ func NewElastictranscoderPipeline(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipeline",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -580,12 +579,12 @@ func NewElastictranscoderPipeline_Override(e ElastictranscoderPipeline, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipeline",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPipeline)SetAwsKmsKeyArn(val *string) {
+func (j *jsiiProxy_ElastictranscoderPipeline) SetAwsKmsKeyArn(val *string) {
 	if err := j.validateSetAwsKmsKeyArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -596,7 +595,7 @@ func (j *jsiiProxy_ElastictranscoderPipeline)SetAwsKmsKeyArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPipeline)SetConnection(val interface{}) {
+func (j *jsiiProxy_ElastictranscoderPipeline) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -607,7 +606,7 @@ func (j *jsiiProxy_ElastictranscoderPipeline)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPipeline)SetCount(val interface{}) {
+func (j *jsiiProxy_ElastictranscoderPipeline) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,7 +617,7 @@ func (j *jsiiProxy_ElastictranscoderPipeline)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPipeline)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ElastictranscoderPipeline) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -626,7 +625,7 @@ func (j *jsiiProxy_ElastictranscoderPipeline)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPipeline)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ElastictranscoderPipeline) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -634,7 +633,7 @@ func (j *jsiiProxy_ElastictranscoderPipeline)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPipeline)SetId(val *string) {
+func (j *jsiiProxy_ElastictranscoderPipeline) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -645,7 +644,7 @@ func (j *jsiiProxy_ElastictranscoderPipeline)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPipeline)SetInputBucket(val *string) {
+func (j *jsiiProxy_ElastictranscoderPipeline) SetInputBucket(val *string) {
 	if err := j.validateSetInputBucketParameters(val); err != nil {
 		panic(err)
 	}
@@ -656,7 +655,7 @@ func (j *jsiiProxy_ElastictranscoderPipeline)SetInputBucket(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPipeline)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ElastictranscoderPipeline) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -667,7 +666,7 @@ func (j *jsiiProxy_ElastictranscoderPipeline)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPipeline)SetName(val *string) {
+func (j *jsiiProxy_ElastictranscoderPipeline) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -678,7 +677,7 @@ func (j *jsiiProxy_ElastictranscoderPipeline)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPipeline)SetOutputBucket(val *string) {
+func (j *jsiiProxy_ElastictranscoderPipeline) SetOutputBucket(val *string) {
 	if err := j.validateSetOutputBucketParameters(val); err != nil {
 		panic(err)
 	}
@@ -689,7 +688,7 @@ func (j *jsiiProxy_ElastictranscoderPipeline)SetOutputBucket(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPipeline)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ElastictranscoderPipeline) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -697,7 +696,7 @@ func (j *jsiiProxy_ElastictranscoderPipeline)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPipeline)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ElastictranscoderPipeline) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -708,7 +707,7 @@ func (j *jsiiProxy_ElastictranscoderPipeline)SetProvisioners(val *[]interface{})
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPipeline)SetRole(val *string) {
+func (j *jsiiProxy_ElastictranscoderPipeline) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -731,7 +730,7 @@ func ElastictranscoderPipeline_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipeline",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -755,7 +754,7 @@ func ElastictranscoderPipeline_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ElastictranscoderPipeline_IsConstruct(x interface{}) *bool {
+func ElastictranscoderPipeline_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateElastictranscoderPipeline_IsConstructParameters(x); err != nil {
@@ -766,7 +765,7 @@ func ElastictranscoderPipeline_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipeline",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -774,7 +773,7 @@ func ElastictranscoderPipeline_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ElastictranscoderPipeline_IsTerraformElement(x interface{}) *bool {
+func ElastictranscoderPipeline_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateElastictranscoderPipeline_IsTerraformElementParameters(x); err != nil {
@@ -785,7 +784,7 @@ func ElastictranscoderPipeline_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipeline",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -793,7 +792,7 @@ func ElastictranscoderPipeline_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ElastictranscoderPipeline_IsTerraformResource(x interface{}) *bool {
+func ElastictranscoderPipeline_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateElastictranscoderPipeline_IsTerraformResourceParameters(x); err != nil {
@@ -804,7 +803,7 @@ func ElastictranscoderPipeline_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipeline",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -829,31 +828,31 @@ func (e *jsiiProxy_ElastictranscoderPipeline) AddMoveTarget(moveTarget *string) 
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_ElastictranscoderPipeline) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_ElastictranscoderPipeline) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_ElastictranscoderPipeline) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_ElastictranscoderPipeline) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -869,7 +868,7 @@ func (e *jsiiProxy_ElastictranscoderPipeline) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -885,7 +884,7 @@ func (e *jsiiProxy_ElastictranscoderPipeline) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -901,7 +900,7 @@ func (e *jsiiProxy_ElastictranscoderPipeline) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -917,7 +916,7 @@ func (e *jsiiProxy_ElastictranscoderPipeline) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -933,7 +932,7 @@ func (e *jsiiProxy_ElastictranscoderPipeline) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -949,7 +948,7 @@ func (e *jsiiProxy_ElastictranscoderPipeline) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -965,7 +964,7 @@ func (e *jsiiProxy_ElastictranscoderPipeline) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -981,15 +980,15 @@ func (e *jsiiProxy_ElastictranscoderPipeline) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_ElastictranscoderPipeline) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_ElastictranscoderPipeline) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1008,7 +1007,7 @@ func (e *jsiiProxy_ElastictranscoderPipeline) ImportFrom(id *string, provider cd
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1021,7 +1020,7 @@ func (e *jsiiProxy_ElastictranscoderPipeline) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1035,18 +1034,18 @@ func (e *jsiiProxy_ElastictranscoderPipeline) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_ElastictranscoderPipeline) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_ElastictranscoderPipeline) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1057,7 +1056,7 @@ func (e *jsiiProxy_ElastictranscoderPipeline) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1068,7 +1067,7 @@ func (e *jsiiProxy_ElastictranscoderPipeline) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1079,18 +1078,18 @@ func (e *jsiiProxy_ElastictranscoderPipeline) PutContentConfig(value *Elastictra
 	_jsii_.InvokeVoid(
 		e,
 		"putContentConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (e *jsiiProxy_ElastictranscoderPipeline) PutContentConfigPermissions(value interface{}) {
+func (e *jsiiProxy_ElastictranscoderPipeline) PutContentConfigPermissions(value any) {
 	if err := e.validatePutContentConfigPermissionsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"putContentConfigPermissions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1101,7 +1100,7 @@ func (e *jsiiProxy_ElastictranscoderPipeline) PutNotifications(value *Elastictra
 	_jsii_.InvokeVoid(
 		e,
 		"putNotifications",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1112,18 +1111,18 @@ func (e *jsiiProxy_ElastictranscoderPipeline) PutThumbnailConfig(value *Elastict
 	_jsii_.InvokeVoid(
 		e,
 		"putThumbnailConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (e *jsiiProxy_ElastictranscoderPipeline) PutThumbnailConfigPermissions(value interface{}) {
+func (e *jsiiProxy_ElastictranscoderPipeline) PutThumbnailConfigPermissions(value any) {
 	if err := e.validatePutThumbnailConfigPermissionsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"putThumbnailConfigPermissions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1207,8 +1206,8 @@ func (e *jsiiProxy_ElastictranscoderPipeline) ResetThumbnailConfigPermissions() 
 	)
 }
 
-func (e *jsiiProxy_ElastictranscoderPipeline) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_ElastictranscoderPipeline) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1220,8 +1219,8 @@ func (e *jsiiProxy_ElastictranscoderPipeline) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (e *jsiiProxy_ElastictranscoderPipeline) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_ElastictranscoderPipeline) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1233,8 +1232,8 @@ func (e *jsiiProxy_ElastictranscoderPipeline) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (e *jsiiProxy_ElastictranscoderPipeline) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_ElastictranscoderPipeline) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1246,8 +1245,8 @@ func (e *jsiiProxy_ElastictranscoderPipeline) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_ElastictranscoderPipeline) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_ElastictranscoderPipeline) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1272,8 +1271,8 @@ func (e *jsiiProxy_ElastictranscoderPipeline) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_ElastictranscoderPipeline) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_ElastictranscoderPipeline) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1284,4 +1283,3 @@ func (e *jsiiProxy_ElastictranscoderPipeline) ToTerraform() interface{} {
 
 	return returns
 }
-

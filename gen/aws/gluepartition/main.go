@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.gluePartition.GluePartition",
-		reflect.TypeOf((*GluePartition)(nil)).Elem(),
+		reflect.TypeFor[GluePartition](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GluePartition{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -83,19 +83,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.gluePartition.GluePartitionConfig",
-		reflect.TypeOf((*GluePartitionConfig)(nil)).Elem(),
+		reflect.TypeFor[GluePartitionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptor",
-		reflect.TypeOf((*GluePartitionStorageDescriptor)(nil)).Elem(),
+		reflect.TypeFor[GluePartitionStorageDescriptor](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorColumns",
-		reflect.TypeOf((*GluePartitionStorageDescriptorColumns)(nil)).Elem(),
+		reflect.TypeFor[GluePartitionStorageDescriptorColumns](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorColumnsList",
-		reflect.TypeOf((*GluePartitionStorageDescriptorColumnsList)(nil)).Elem(),
+		reflect.TypeFor[GluePartitionStorageDescriptorColumnsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -109,7 +109,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GluePartitionStorageDescriptorColumnsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -117,7 +117,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorColumnsOutputReference",
-		reflect.TypeOf((*GluePartitionStorageDescriptorColumnsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GluePartitionStorageDescriptorColumnsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comment", GoGetter: "Comment"},
 			_jsii_.MemberProperty{JsiiProperty: "commentInput", GoGetter: "CommentInput"},
@@ -149,7 +149,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GluePartitionStorageDescriptorColumnsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -157,7 +157,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorOutputReference",
-		reflect.TypeOf((*GluePartitionStorageDescriptorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GluePartitionStorageDescriptorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketColumns", GoGetter: "BucketColumns"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketColumnsInput", GoGetter: "BucketColumnsInput"},
@@ -221,7 +221,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GluePartitionStorageDescriptorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -229,11 +229,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSerDeInfo",
-		reflect.TypeOf((*GluePartitionStorageDescriptorSerDeInfo)(nil)).Elem(),
+		reflect.TypeFor[GluePartitionStorageDescriptorSerDeInfo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSerDeInfoOutputReference",
-		reflect.TypeOf((*GluePartitionStorageDescriptorSerDeInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GluePartitionStorageDescriptorSerDeInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -266,7 +266,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GluePartitionStorageDescriptorSerDeInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -274,11 +274,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSkewedInfo",
-		reflect.TypeOf((*GluePartitionStorageDescriptorSkewedInfo)(nil)).Elem(),
+		reflect.TypeFor[GluePartitionStorageDescriptorSkewedInfo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSkewedInfoOutputReference",
-		reflect.TypeOf((*GluePartitionStorageDescriptorSkewedInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GluePartitionStorageDescriptorSkewedInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -311,7 +311,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GluePartitionStorageDescriptorSkewedInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -319,11 +319,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSortColumns",
-		reflect.TypeOf((*GluePartitionStorageDescriptorSortColumns)(nil)).Elem(),
+		reflect.TypeFor[GluePartitionStorageDescriptorSortColumns](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSortColumnsList",
-		reflect.TypeOf((*GluePartitionStorageDescriptorSortColumnsList)(nil)).Elem(),
+		reflect.TypeFor[GluePartitionStorageDescriptorSortColumnsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -337,7 +337,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GluePartitionStorageDescriptorSortColumnsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -345,7 +345,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSortColumnsOutputReference",
-		reflect.TypeOf((*GluePartitionStorageDescriptorSortColumnsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GluePartitionStorageDescriptorSortColumnsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "column", GoGetter: "Column"},
 			_jsii_.MemberProperty{JsiiProperty: "columnInput", GoGetter: "ColumnInput"},
@@ -373,7 +373,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GluePartitionStorageDescriptorSortColumnsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

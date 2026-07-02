@@ -19,7 +19,7 @@ func (d *jsiiProxy_DocdbClusterInstance) validateAddMoveTargetParameters(moveTar
 	return nil
 }
 
-func (d *jsiiProxy_DocdbClusterInstance) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DocdbClusterInstance) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DocdbClusterInstance) validateMoveFromIdParameters(id *string
 	return nil
 }
 
-func (d *jsiiProxy_DocdbClusterInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DocdbClusterInstance) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateDocdbClusterInstance_GenerateConfigForImportParameters(scope constr
 	return nil
 }
 
-func validateDocdbClusterInstance_IsConstructParameters(x interface{}) error {
+func validateDocdbClusterInstance_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateDocdbClusterInstance_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDocdbClusterInstance_IsTerraformElementParameters(x interface{}) error {
+func validateDocdbClusterInstance_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateDocdbClusterInstance_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
-func validateDocdbClusterInstance_IsTerraformResourceParameters(x interface{}) error {
+func validateDocdbClusterInstance_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateDocdbClusterInstance_IsTerraformResourceParameters(x interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_DocdbClusterInstance) validateSetApplyImmediatelyParameters(val interface{}) error {
+func (j *jsiiProxy_DocdbClusterInstance) validateSetApplyImmediatelyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func (j *jsiiProxy_DocdbClusterInstance) validateSetApplyImmediatelyParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_DocdbClusterInstance) validateSetAutoMinorVersionUpgradeParameters(val interface{}) error {
+func (j *jsiiProxy_DocdbClusterInstance) validateSetAutoMinorVersionUpgradeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -319,7 +319,7 @@ func (j *jsiiProxy_DocdbClusterInstance) validateSetClusterIdentifierParameters(
 	return nil
 }
 
-func (j *jsiiProxy_DocdbClusterInstance) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DocdbClusterInstance) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -352,7 +352,7 @@ func (j *jsiiProxy_DocdbClusterInstance) validateSetConnectionParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_DocdbClusterInstance) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DocdbClusterInstance) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -409,7 +409,7 @@ func (j *jsiiProxy_DocdbClusterInstance) validateSetCountParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_DocdbClusterInstance) validateSetEnablePerformanceInsightsParameters(val interface{}) error {
+func (j *jsiiProxy_DocdbClusterInstance) validateSetEnablePerformanceInsightsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -501,7 +501,7 @@ func (j *jsiiProxy_DocdbClusterInstance) validateSetPromotionTierParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_DocdbClusterInstance) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DocdbClusterInstance) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -581,4 +581,3 @@ func validateNewDocdbClusterInstanceParameters(scope constructs.Construct, id *s
 
 	return nil
 }
-

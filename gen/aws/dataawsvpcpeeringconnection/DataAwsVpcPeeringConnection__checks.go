@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsVpcPeeringConnection) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsVpcPeeringConnection) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -111,7 +111,7 @@ func (d *jsiiProxy_DataAwsVpcPeeringConnection) validateOverrideLogicalIdParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsVpcPeeringConnection) validatePutFilterParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsVpcPeeringConnection) validatePutFilterParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -169,7 +169,7 @@ func validateDataAwsVpcPeeringConnection_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateDataAwsVpcPeeringConnection_IsConstructParameters(x interface{}) error {
+func validateDataAwsVpcPeeringConnection_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -177,7 +177,7 @@ func validateDataAwsVpcPeeringConnection_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateDataAwsVpcPeeringConnection_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsVpcPeeringConnection_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -185,7 +185,7 @@ func validateDataAwsVpcPeeringConnection_IsTerraformDataSourceParameters(x inter
 	return nil
 }
 
-func validateDataAwsVpcPeeringConnection_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsVpcPeeringConnection_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -201,7 +201,7 @@ func (j *jsiiProxy_DataAwsVpcPeeringConnection) validateSetCidrBlockParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsVpcPeeringConnection) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsVpcPeeringConnection) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -361,4 +361,3 @@ func validateNewDataAwsVpcPeeringConnectionParameters(scope constructs.Construct
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.chimeVoiceConnectorTermination.ChimeVoiceConnectorTermination",
-		reflect.TypeOf((*ChimeVoiceConnectorTermination)(nil)).Elem(),
+		reflect.TypeFor[ChimeVoiceConnectorTermination](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,7 +71,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "voiceConnectorId", GoGetter: "VoiceConnectorId"},
 			_jsii_.MemberProperty{JsiiProperty: "voiceConnectorIdInput", GoGetter: "VoiceConnectorIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChimeVoiceConnectorTermination{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -79,6 +79,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.chimeVoiceConnectorTermination.ChimeVoiceConnectorTerminationConfig",
-		reflect.TypeOf((*ChimeVoiceConnectorTerminationConfig)(nil)).Elem(),
+		reflect.TypeFor[ChimeVoiceConnectorTerminationConfig](),
 	)
 }

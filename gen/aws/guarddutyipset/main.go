@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.guarddutyIpset.GuarddutyIpset",
-		reflect.TypeOf((*GuarddutyIpset)(nil)).Elem(),
+		reflect.TypeFor[GuarddutyIpset](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activate", GoGetter: "Activate"},
 			_jsii_.MemberProperty{JsiiProperty: "activateInput", GoGetter: "ActivateInput"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GuarddutyIpset{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,6 +81,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.guarddutyIpset.GuarddutyIpsetConfig",
-		reflect.TypeOf((*GuarddutyIpsetConfig)(nil)).Elem(),
+		reflect.TypeFor[GuarddutyIpsetConfig](),
 	)
 }

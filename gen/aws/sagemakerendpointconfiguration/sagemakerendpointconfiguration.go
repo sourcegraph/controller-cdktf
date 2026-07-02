@@ -18,15 +18,15 @@ type SagemakerEndpointConfiguration interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DataCaptureConfig() SagemakerEndpointConfigurationDataCaptureConfigOutputReference
 	DataCaptureConfigInput() *SagemakerEndpointConfigurationDataCaptureConfig
 	// Experimental.
@@ -57,19 +57,19 @@ type SagemakerEndpointConfiguration interface {
 	// The tree node.
 	Node() constructs.Node
 	ProductionVariants() SagemakerEndpointConfigurationProductionVariantsList
-	ProductionVariantsInput() interface{}
+	ProductionVariantsInput() any
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ShadowProductionVariants() SagemakerEndpointConfigurationShadowProductionVariantsList
-	ShadowProductionVariantsInput() interface{}
+	ShadowProductionVariantsInput() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -79,16 +79,16 @@ type SagemakerEndpointConfiguration interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -106,7 +106,7 @@ type SagemakerEndpointConfiguration interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -118,7 +118,7 @@ type SagemakerEndpointConfiguration interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -127,8 +127,8 @@ type SagemakerEndpointConfiguration interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAsyncInferenceConfig(value *SagemakerEndpointConfigurationAsyncInferenceConfig)
 	PutDataCaptureConfig(value *SagemakerEndpointConfigurationDataCaptureConfig)
-	PutProductionVariants(value interface{})
-	PutShadowProductionVariants(value interface{})
+	PutProductionVariants(value any)
+	PutShadowProductionVariants(value any)
 	ResetAsyncInferenceConfig()
 	ResetDataCaptureConfig()
 	ResetId()
@@ -140,17 +140,17 @@ type SagemakerEndpointConfiguration interface {
 	ResetShadowProductionVariants()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SagemakerEndpointConfiguration
@@ -198,8 +198,8 @@ func (j *jsiiProxy_SagemakerEndpointConfiguration) CdktfStack() cdktf.TerraformS
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfiguration) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SagemakerEndpointConfiguration) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_SagemakerEndpointConfiguration) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfiguration) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SagemakerEndpointConfiguration) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_SagemakerEndpointConfiguration) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfiguration) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SagemakerEndpointConfiguration) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -378,8 +378,8 @@ func (j *jsiiProxy_SagemakerEndpointConfiguration) ProductionVariants() Sagemake
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfiguration) ProductionVariantsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SagemakerEndpointConfiguration) ProductionVariantsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"productionVariantsInput",
@@ -398,8 +398,8 @@ func (j *jsiiProxy_SagemakerEndpointConfiguration) Provider() cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfiguration) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SagemakerEndpointConfiguration) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -408,8 +408,8 @@ func (j *jsiiProxy_SagemakerEndpointConfiguration) Provisioners() *[]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfiguration) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SagemakerEndpointConfiguration) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -428,8 +428,8 @@ func (j *jsiiProxy_SagemakerEndpointConfiguration) ShadowProductionVariants() Sa
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfiguration) ShadowProductionVariantsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SagemakerEndpointConfiguration) ShadowProductionVariantsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"shadowProductionVariantsInput",
@@ -488,8 +488,8 @@ func (j *jsiiProxy_SagemakerEndpointConfiguration) TerraformGeneratorMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfiguration) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SagemakerEndpointConfiguration) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -508,7 +508,6 @@ func (j *jsiiProxy_SagemakerEndpointConfiguration) TerraformResourceType() *stri
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sagemaker_endpoint_configuration aws_sagemaker_endpoint_configuration} Resource.
 func NewSagemakerEndpointConfiguration(scope constructs.Construct, id *string, config *SagemakerEndpointConfigurationConfig) SagemakerEndpointConfiguration {
 	_init_.Initialize()
@@ -520,7 +519,7 @@ func NewSagemakerEndpointConfiguration(scope constructs.Construct, id *string, c
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfiguration",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -533,12 +532,12 @@ func NewSagemakerEndpointConfiguration_Override(s SagemakerEndpointConfiguration
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfiguration",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfiguration)SetConnection(val interface{}) {
+func (j *jsiiProxy_SagemakerEndpointConfiguration) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -549,7 +548,7 @@ func (j *jsiiProxy_SagemakerEndpointConfiguration)SetConnection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfiguration)SetCount(val interface{}) {
+func (j *jsiiProxy_SagemakerEndpointConfiguration) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -560,7 +559,7 @@ func (j *jsiiProxy_SagemakerEndpointConfiguration)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfiguration)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SagemakerEndpointConfiguration) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -568,7 +567,7 @@ func (j *jsiiProxy_SagemakerEndpointConfiguration)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfiguration)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SagemakerEndpointConfiguration) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -576,7 +575,7 @@ func (j *jsiiProxy_SagemakerEndpointConfiguration)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfiguration)SetId(val *string) {
+func (j *jsiiProxy_SagemakerEndpointConfiguration) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -587,7 +586,7 @@ func (j *jsiiProxy_SagemakerEndpointConfiguration)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfiguration)SetKmsKeyArn(val *string) {
+func (j *jsiiProxy_SagemakerEndpointConfiguration) SetKmsKeyArn(val *string) {
 	if err := j.validateSetKmsKeyArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -598,7 +597,7 @@ func (j *jsiiProxy_SagemakerEndpointConfiguration)SetKmsKeyArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfiguration)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SagemakerEndpointConfiguration) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -609,7 +608,7 @@ func (j *jsiiProxy_SagemakerEndpointConfiguration)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfiguration)SetName(val *string) {
+func (j *jsiiProxy_SagemakerEndpointConfiguration) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -620,7 +619,7 @@ func (j *jsiiProxy_SagemakerEndpointConfiguration)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfiguration)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SagemakerEndpointConfiguration) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -628,7 +627,7 @@ func (j *jsiiProxy_SagemakerEndpointConfiguration)SetProvider(val cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfiguration)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SagemakerEndpointConfiguration) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -639,7 +638,7 @@ func (j *jsiiProxy_SagemakerEndpointConfiguration)SetProvisioners(val *[]interfa
 	)
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfiguration)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_SagemakerEndpointConfiguration) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -650,7 +649,7 @@ func (j *jsiiProxy_SagemakerEndpointConfiguration)SetTags(val *map[string]*strin
 	)
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfiguration)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_SagemakerEndpointConfiguration) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -673,7 +672,7 @@ func SagemakerEndpointConfiguration_GenerateConfigForImport(scope constructs.Con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfiguration",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -697,7 +696,7 @@ func SagemakerEndpointConfiguration_GenerateConfigForImport(scope constructs.Con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SagemakerEndpointConfiguration_IsConstruct(x interface{}) *bool {
+func SagemakerEndpointConfiguration_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSagemakerEndpointConfiguration_IsConstructParameters(x); err != nil {
@@ -708,7 +707,7 @@ func SagemakerEndpointConfiguration_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfiguration",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -716,7 +715,7 @@ func SagemakerEndpointConfiguration_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SagemakerEndpointConfiguration_IsTerraformElement(x interface{}) *bool {
+func SagemakerEndpointConfiguration_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSagemakerEndpointConfiguration_IsTerraformElementParameters(x); err != nil {
@@ -727,7 +726,7 @@ func SagemakerEndpointConfiguration_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfiguration",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -735,7 +734,7 @@ func SagemakerEndpointConfiguration_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SagemakerEndpointConfiguration_IsTerraformResource(x interface{}) *bool {
+func SagemakerEndpointConfiguration_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSagemakerEndpointConfiguration_IsTerraformResourceParameters(x); err != nil {
@@ -746,7 +745,7 @@ func SagemakerEndpointConfiguration_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfiguration",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -771,31 +770,31 @@ func (s *jsiiProxy_SagemakerEndpointConfiguration) AddMoveTarget(moveTarget *str
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SagemakerEndpointConfiguration) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SagemakerEndpointConfiguration) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SagemakerEndpointConfiguration) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SagemakerEndpointConfiguration) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -811,7 +810,7 @@ func (s *jsiiProxy_SagemakerEndpointConfiguration) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -827,7 +826,7 @@ func (s *jsiiProxy_SagemakerEndpointConfiguration) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -843,7 +842,7 @@ func (s *jsiiProxy_SagemakerEndpointConfiguration) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -859,7 +858,7 @@ func (s *jsiiProxy_SagemakerEndpointConfiguration) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -875,7 +874,7 @@ func (s *jsiiProxy_SagemakerEndpointConfiguration) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -891,7 +890,7 @@ func (s *jsiiProxy_SagemakerEndpointConfiguration) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -907,7 +906,7 @@ func (s *jsiiProxy_SagemakerEndpointConfiguration) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -923,15 +922,15 @@ func (s *jsiiProxy_SagemakerEndpointConfiguration) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerEndpointConfiguration) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SagemakerEndpointConfiguration) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -950,7 +949,7 @@ func (s *jsiiProxy_SagemakerEndpointConfiguration) ImportFrom(id *string, provid
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -963,7 +962,7 @@ func (s *jsiiProxy_SagemakerEndpointConfiguration) InterpolationForAttribute(ter
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -977,18 +976,18 @@ func (s *jsiiProxy_SagemakerEndpointConfiguration) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SagemakerEndpointConfiguration) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SagemakerEndpointConfiguration) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -999,7 +998,7 @@ func (s *jsiiProxy_SagemakerEndpointConfiguration) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1010,7 +1009,7 @@ func (s *jsiiProxy_SagemakerEndpointConfiguration) OverrideLogicalId(newLogicalI
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1021,7 +1020,7 @@ func (s *jsiiProxy_SagemakerEndpointConfiguration) PutAsyncInferenceConfig(value
 	_jsii_.InvokeVoid(
 		s,
 		"putAsyncInferenceConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1032,29 +1031,29 @@ func (s *jsiiProxy_SagemakerEndpointConfiguration) PutDataCaptureConfig(value *S
 	_jsii_.InvokeVoid(
 		s,
 		"putDataCaptureConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SagemakerEndpointConfiguration) PutProductionVariants(value interface{}) {
+func (s *jsiiProxy_SagemakerEndpointConfiguration) PutProductionVariants(value any) {
 	if err := s.validatePutProductionVariantsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putProductionVariants",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SagemakerEndpointConfiguration) PutShadowProductionVariants(value interface{}) {
+func (s *jsiiProxy_SagemakerEndpointConfiguration) PutShadowProductionVariants(value any) {
 	if err := s.validatePutShadowProductionVariantsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putShadowProductionVariants",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1130,8 +1129,8 @@ func (s *jsiiProxy_SagemakerEndpointConfiguration) ResetTagsAll() {
 	)
 }
 
-func (s *jsiiProxy_SagemakerEndpointConfiguration) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SagemakerEndpointConfiguration) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1143,8 +1142,8 @@ func (s *jsiiProxy_SagemakerEndpointConfiguration) SynthesizeAttributes() *map[s
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerEndpointConfiguration) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SagemakerEndpointConfiguration) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1156,8 +1155,8 @@ func (s *jsiiProxy_SagemakerEndpointConfiguration) SynthesizeHclAttributes() *ma
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerEndpointConfiguration) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SagemakerEndpointConfiguration) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1169,8 +1168,8 @@ func (s *jsiiProxy_SagemakerEndpointConfiguration) ToHclTerraform() interface{} 
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerEndpointConfiguration) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SagemakerEndpointConfiguration) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1195,8 +1194,8 @@ func (s *jsiiProxy_SagemakerEndpointConfiguration) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerEndpointConfiguration) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SagemakerEndpointConfiguration) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1207,4 +1206,3 @@ func (s *jsiiProxy_SagemakerEndpointConfiguration) ToTerraform() interface{} {
 
 	return returns
 }
-

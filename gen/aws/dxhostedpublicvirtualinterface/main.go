@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dxHostedPublicVirtualInterface.DxHostedPublicVirtualInterface",
-		reflect.TypeOf((*DxHostedPublicVirtualInterface)(nil)).Elem(),
+		reflect.TypeFor[DxHostedPublicVirtualInterface](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -86,7 +86,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vlan", GoGetter: "Vlan"},
 			_jsii_.MemberProperty{JsiiProperty: "vlanInput", GoGetter: "VlanInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DxHostedPublicVirtualInterface{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -94,15 +94,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dxHostedPublicVirtualInterface.DxHostedPublicVirtualInterfaceConfig",
-		reflect.TypeOf((*DxHostedPublicVirtualInterfaceConfig)(nil)).Elem(),
+		reflect.TypeFor[DxHostedPublicVirtualInterfaceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dxHostedPublicVirtualInterface.DxHostedPublicVirtualInterfaceTimeouts",
-		reflect.TypeOf((*DxHostedPublicVirtualInterfaceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DxHostedPublicVirtualInterfaceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dxHostedPublicVirtualInterface.DxHostedPublicVirtualInterfaceTimeoutsOutputReference",
-		reflect.TypeOf((*DxHostedPublicVirtualInterfaceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DxHostedPublicVirtualInterfaceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -132,7 +132,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DxHostedPublicVirtualInterfaceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

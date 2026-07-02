@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataAwsImagebuilderImagePipelinesFilterList) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsImagebuilderImagePipelinesFilterList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsImagebuilderImagePipelinesFilterList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataAwsImagebuilderImagePipelinesFilterListParameters(terraformR
 
 	return nil
 }
-

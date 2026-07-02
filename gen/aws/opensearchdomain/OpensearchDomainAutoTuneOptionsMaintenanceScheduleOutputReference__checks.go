@@ -109,7 +109,7 @@ func (o *jsiiProxy_OpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_OpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_OpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_OpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -249,4 +249,3 @@ func validateNewOpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputReferenc
 
 	return nil
 }
-

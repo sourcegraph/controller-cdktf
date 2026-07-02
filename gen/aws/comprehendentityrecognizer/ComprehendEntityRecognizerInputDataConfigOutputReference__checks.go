@@ -101,7 +101,7 @@ func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) validatePutAugmentedManifestsParameters(value interface{}) error {
+func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) validatePutAugmentedManifestsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -154,7 +154,7 @@ func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) validatePutEntityTypesParameters(value interface{}) error {
+func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) validatePutEntityTypesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -193,7 +193,7 @@ func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -301,4 +301,3 @@ func validateNewComprehendEntityRecognizerInputDataConfigOutputReferenceParamete
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudhsmV2ClusterClusterCertificatesOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_CloudhsmV2ClusterClusterCertificatesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudhsmV2ClusterClusterCertificatesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCloudhsmV2ClusterClusterCertificatesOutputReferenceParameters(te
 
 	return nil
 }
-

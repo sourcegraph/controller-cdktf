@@ -98,7 +98,7 @@ func (k *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesRelevanceOutpu
 	return nil
 }
 
-func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesRelevanceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesRelevanceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesRelevanceOutpu
 	return nil
 }
 
-func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesRelevanceOutputReference) validateSetFreshnessParameters(val interface{}) error {
+func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesRelevanceOutputReference) validateSetFreshnessParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -250,4 +250,3 @@ func validateNewKendraIndexDocumentMetadataConfigurationUpdatesRelevanceOutputRe
 
 	return nil
 }
-

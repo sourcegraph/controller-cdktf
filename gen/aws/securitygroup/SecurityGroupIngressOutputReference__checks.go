@@ -106,7 +106,7 @@ func (j *jsiiProxy_SecurityGroupIngressOutputReference) validateSetCidrBlocksPar
 	return nil
 }
 
-func (j *jsiiProxy_SecurityGroupIngressOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityGroupIngressOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_SecurityGroupIngressOutputReference) validateSetFromPortParam
 	return nil
 }
 
-func (j *jsiiProxy_SecurityGroupIngressOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityGroupIngressOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -243,7 +243,7 @@ func (j *jsiiProxy_SecurityGroupIngressOutputReference) validateSetSecurityGroup
 	return nil
 }
 
-func (j *jsiiProxy_SecurityGroupIngressOutputReference) validateSetSelfAttributeParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityGroupIngressOutputReference) validateSetSelfAttributeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -306,4 +306,3 @@ func validateNewSecurityGroupIngressOutputReferenceParameters(terraformResource 
 
 	return nil
 }
-

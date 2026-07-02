@@ -98,7 +98,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSetSuppressionOptionsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_Sesv2ConfigurationSetSuppressionOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Sesv2ConfigurationSetSuppressionOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewSesv2ConfigurationSetSuppressionOptionsOutputReferenceParameters
 
 	return nil
 }
-

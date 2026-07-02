@@ -114,7 +114,7 @@ func (j *jsiiProxy_EcsClusterCapacityProvidersDefaultCapacityProviderStrategyOut
 	return nil
 }
 
-func (j *jsiiProxy_EcsClusterCapacityProvidersDefaultCapacityProviderStrategyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EcsClusterCapacityProvidersDefaultCapacityProviderStrategyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_EcsClusterCapacityProvidersDefaultCapacityProviderStrategyOut
 	return nil
 }
 
-func (j *jsiiProxy_EcsClusterCapacityProvidersDefaultCapacityProviderStrategyOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EcsClusterCapacityProvidersDefaultCapacityProviderStrategyOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewEcsClusterCapacityProvidersDefaultCapacityProviderStrategyOutput
 
 	return nil
 }
-

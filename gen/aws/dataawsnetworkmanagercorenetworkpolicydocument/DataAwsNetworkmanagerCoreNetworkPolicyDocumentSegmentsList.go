@@ -17,8 +17,8 @@ type DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsList interface {
 	Get(index *float64) DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsList) F
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsList) W
 	return returns
 }
 
-
 func NewDataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewDataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsList(terraformReso
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsNetworkmanagerCoreNetworkPolicyDocument.DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewDataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsList_Override(d Da
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsNetworkmanagerCoreNetworkPolicyDocument.DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsList)Se
 	)
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsList)Se
 	)
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsList)Se
 	)
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsList) A
 	_jsii_.Invoke(
 		d,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsList) G
 	_jsii_.Invoke(
 		d,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsList) T
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DirectoryServiceDirectoryConnectSettingsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DirectoryServiceDirectoryConnectSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DirectoryServiceDirectoryConnectSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewDirectoryServiceDirectoryConnectSettingsOutputReferenceParameter
 
 	return nil
 }
-

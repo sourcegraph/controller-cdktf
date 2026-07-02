@@ -133,7 +133,7 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupC
 	return nil
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -273,4 +273,3 @@ func validateNewKinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConf
 
 	return nil
 }
-

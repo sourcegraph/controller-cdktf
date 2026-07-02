@@ -19,7 +19,7 @@ func (a *jsiiProxy_AppsyncApiKey) validateAddMoveTargetParameters(moveTarget *st
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncApiKey) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AppsyncApiKey) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AppsyncApiKey) validateMoveFromIdParameters(id *string) error
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncApiKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AppsyncApiKey) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateAppsyncApiKey_GenerateConfigForImportParameters(scope constructs.Co
 	return nil
 }
 
-func validateAppsyncApiKey_IsConstructParameters(x interface{}) error {
+func validateAppsyncApiKey_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateAppsyncApiKey_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateAppsyncApiKey_IsTerraformElementParameters(x interface{}) error {
+func validateAppsyncApiKey_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateAppsyncApiKey_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateAppsyncApiKey_IsTerraformResourceParameters(x interface{}) error {
+func validateAppsyncApiKey_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_AppsyncApiKey) validateSetApiIdParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_AppsyncApiKey) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AppsyncApiKey) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_AppsyncApiKey) validateSetConnectionParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_AppsyncApiKey) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AppsyncApiKey) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -374,7 +374,7 @@ func (j *jsiiProxy_AppsyncApiKey) validateSetLifecycleParameters(val *cdktf.Terr
 	return nil
 }
 
-func (j *jsiiProxy_AppsyncApiKey) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AppsyncApiKey) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -438,4 +438,3 @@ func validateNewAppsyncApiKeyParameters(scope constructs.Construct, id *string, 
 
 	return nil
 }
-

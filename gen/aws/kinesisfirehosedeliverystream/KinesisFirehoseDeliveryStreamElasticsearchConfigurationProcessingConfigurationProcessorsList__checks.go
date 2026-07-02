@@ -34,7 +34,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamElasticsearchConfigurationProces
 	return nil
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewKinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessin
 
 	return nil
 }
-

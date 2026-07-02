@@ -6,9 +6,9 @@ import (
 
 type EcrRepositoryConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,15 +18,15 @@ type EcrRepositoryConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecr_repository#name EcrRepository#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// encryption_configuration block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecr_repository#encryption_configuration EcrRepository#encryption_configuration}
-	EncryptionConfiguration interface{} `field:"optional" json:"encryptionConfiguration" yaml:"encryptionConfiguration"`
+	EncryptionConfiguration any `field:"optional" json:"encryptionConfiguration" yaml:"encryptionConfiguration"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecr_repository#force_delete EcrRepository#force_delete}.
-	ForceDelete interface{} `field:"optional" json:"forceDelete" yaml:"forceDelete"`
+	ForceDelete any `field:"optional" json:"forceDelete" yaml:"forceDelete"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecr_repository#id EcrRepository#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -47,4 +47,3 @@ type EcrRepositoryConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecr_repository#timeouts EcrRepository#timeouts}
 	Timeouts *EcrRepositoryTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

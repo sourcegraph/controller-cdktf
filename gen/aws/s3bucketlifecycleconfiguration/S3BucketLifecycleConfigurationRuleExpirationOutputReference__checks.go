@@ -98,7 +98,7 @@ func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleExpirationOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleExpirationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleExpirationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleExpirationOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleExpirationOutputReference) validateSetExpiredObjectDeleteMarkerParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleExpirationOutputReference) validateSetExpiredObjectDeleteMarkerParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewS3BucketLifecycleConfigurationRuleExpirationOutputReferenceParam
 
 	return nil
 }
-

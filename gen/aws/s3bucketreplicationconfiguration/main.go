@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA",
-		reflect.TypeOf((*S3BucketReplicationConfigurationA)(nil)).Elem(),
+		reflect.TypeFor[S3BucketReplicationConfigurationA](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3BucketReplicationConfigurationA{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -74,19 +74,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationAConfig",
-		reflect.TypeOf((*S3BucketReplicationConfigurationAConfig)(nil)).Elem(),
+		reflect.TypeFor[S3BucketReplicationConfigurationAConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRule",
-		reflect.TypeOf((*S3BucketReplicationConfigurationRule)(nil)).Elem(),
+		reflect.TypeFor[S3BucketReplicationConfigurationRule](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDeleteMarkerReplication",
-		reflect.TypeOf((*S3BucketReplicationConfigurationRuleDeleteMarkerReplication)(nil)).Elem(),
+		reflect.TypeFor[S3BucketReplicationConfigurationRuleDeleteMarkerReplication](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDeleteMarkerReplicationOutputReference",
-		reflect.TypeOf((*S3BucketReplicationConfigurationRuleDeleteMarkerReplicationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3BucketReplicationConfigurationRuleDeleteMarkerReplicationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -112,7 +112,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3BucketReplicationConfigurationRuleDeleteMarkerReplicationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -120,15 +120,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestination",
-		reflect.TypeOf((*S3BucketReplicationConfigurationRuleDestination)(nil)).Elem(),
+		reflect.TypeFor[S3BucketReplicationConfigurationRuleDestination](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationAccessControlTranslation",
-		reflect.TypeOf((*S3BucketReplicationConfigurationRuleDestinationAccessControlTranslation)(nil)).Elem(),
+		reflect.TypeFor[S3BucketReplicationConfigurationRuleDestinationAccessControlTranslation](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationAccessControlTranslationOutputReference",
-		reflect.TypeOf((*S3BucketReplicationConfigurationRuleDestinationAccessControlTranslationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3BucketReplicationConfigurationRuleDestinationAccessControlTranslationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -154,7 +154,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3BucketReplicationConfigurationRuleDestinationAccessControlTranslationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -162,11 +162,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationEncryptionConfiguration",
-		reflect.TypeOf((*S3BucketReplicationConfigurationRuleDestinationEncryptionConfiguration)(nil)).Elem(),
+		reflect.TypeFor[S3BucketReplicationConfigurationRuleDestinationEncryptionConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationEncryptionConfigurationOutputReference",
-		reflect.TypeOf((*S3BucketReplicationConfigurationRuleDestinationEncryptionConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3BucketReplicationConfigurationRuleDestinationEncryptionConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -192,7 +192,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3BucketReplicationConfigurationRuleDestinationEncryptionConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -200,15 +200,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationMetrics",
-		reflect.TypeOf((*S3BucketReplicationConfigurationRuleDestinationMetrics)(nil)).Elem(),
+		reflect.TypeFor[S3BucketReplicationConfigurationRuleDestinationMetrics](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationMetricsEventThreshold",
-		reflect.TypeOf((*S3BucketReplicationConfigurationRuleDestinationMetricsEventThreshold)(nil)).Elem(),
+		reflect.TypeFor[S3BucketReplicationConfigurationRuleDestinationMetricsEventThreshold](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationMetricsEventThresholdOutputReference",
-		reflect.TypeOf((*S3BucketReplicationConfigurationRuleDestinationMetricsEventThresholdOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3BucketReplicationConfigurationRuleDestinationMetricsEventThresholdOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -234,7 +234,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3BucketReplicationConfigurationRuleDestinationMetricsEventThresholdOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -242,7 +242,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationMetricsOutputReference",
-		reflect.TypeOf((*S3BucketReplicationConfigurationRuleDestinationMetricsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3BucketReplicationConfigurationRuleDestinationMetricsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -272,7 +272,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3BucketReplicationConfigurationRuleDestinationMetricsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -280,7 +280,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationOutputReference",
-		reflect.TypeOf((*S3BucketReplicationConfigurationRuleDestinationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3BucketReplicationConfigurationRuleDestinationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessControlTranslation", GoGetter: "AccessControlTranslation"},
 			_jsii_.MemberProperty{JsiiProperty: "accessControlTranslationInput", GoGetter: "AccessControlTranslationInput"},
@@ -328,7 +328,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3BucketReplicationConfigurationRuleDestinationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -336,11 +336,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationReplicationTime",
-		reflect.TypeOf((*S3BucketReplicationConfigurationRuleDestinationReplicationTime)(nil)).Elem(),
+		reflect.TypeFor[S3BucketReplicationConfigurationRuleDestinationReplicationTime](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationReplicationTimeOutputReference",
-		reflect.TypeOf((*S3BucketReplicationConfigurationRuleDestinationReplicationTimeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3BucketReplicationConfigurationRuleDestinationReplicationTimeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -369,7 +369,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeInput", GoGetter: "TimeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3BucketReplicationConfigurationRuleDestinationReplicationTimeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -377,11 +377,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationReplicationTimeTime",
-		reflect.TypeOf((*S3BucketReplicationConfigurationRuleDestinationReplicationTimeTime)(nil)).Elem(),
+		reflect.TypeFor[S3BucketReplicationConfigurationRuleDestinationReplicationTimeTime](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationReplicationTimeTimeOutputReference",
-		reflect.TypeOf((*S3BucketReplicationConfigurationRuleDestinationReplicationTimeTimeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3BucketReplicationConfigurationRuleDestinationReplicationTimeTimeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -407,7 +407,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3BucketReplicationConfigurationRuleDestinationReplicationTimeTimeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -415,11 +415,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleExistingObjectReplication",
-		reflect.TypeOf((*S3BucketReplicationConfigurationRuleExistingObjectReplication)(nil)).Elem(),
+		reflect.TypeFor[S3BucketReplicationConfigurationRuleExistingObjectReplication](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleExistingObjectReplicationOutputReference",
-		reflect.TypeOf((*S3BucketReplicationConfigurationRuleExistingObjectReplicationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3BucketReplicationConfigurationRuleExistingObjectReplicationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -445,7 +445,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3BucketReplicationConfigurationRuleExistingObjectReplicationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -453,15 +453,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilter",
-		reflect.TypeOf((*S3BucketReplicationConfigurationRuleFilter)(nil)).Elem(),
+		reflect.TypeFor[S3BucketReplicationConfigurationRuleFilter](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilterAnd",
-		reflect.TypeOf((*S3BucketReplicationConfigurationRuleFilterAnd)(nil)).Elem(),
+		reflect.TypeFor[S3BucketReplicationConfigurationRuleFilterAnd](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilterAndOutputReference",
-		reflect.TypeOf((*S3BucketReplicationConfigurationRuleFilterAndOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3BucketReplicationConfigurationRuleFilterAndOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -491,7 +491,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3BucketReplicationConfigurationRuleFilterAndOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -499,7 +499,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilterOutputReference",
-		reflect.TypeOf((*S3BucketReplicationConfigurationRuleFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3BucketReplicationConfigurationRuleFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "and", GoGetter: "And"},
 			_jsii_.MemberProperty{JsiiProperty: "andInput", GoGetter: "AndInput"},
@@ -534,7 +534,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3BucketReplicationConfigurationRuleFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -542,11 +542,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilterTag",
-		reflect.TypeOf((*S3BucketReplicationConfigurationRuleFilterTag)(nil)).Elem(),
+		reflect.TypeFor[S3BucketReplicationConfigurationRuleFilterTag](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilterTagOutputReference",
-		reflect.TypeOf((*S3BucketReplicationConfigurationRuleFilterTagOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3BucketReplicationConfigurationRuleFilterTagOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -574,7 +574,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3BucketReplicationConfigurationRuleFilterTagOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -582,7 +582,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleList",
-		reflect.TypeOf((*S3BucketReplicationConfigurationRuleList)(nil)).Elem(),
+		reflect.TypeFor[S3BucketReplicationConfigurationRuleList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -596,7 +596,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3BucketReplicationConfigurationRuleList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -604,7 +604,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleOutputReference",
-		reflect.TypeOf((*S3BucketReplicationConfigurationRuleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3BucketReplicationConfigurationRuleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -658,7 +658,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -666,11 +666,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteria",
-		reflect.TypeOf((*S3BucketReplicationConfigurationRuleSourceSelectionCriteria)(nil)).Elem(),
+		reflect.TypeFor[S3BucketReplicationConfigurationRuleSourceSelectionCriteria](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteriaOutputReference",
-		reflect.TypeOf((*S3BucketReplicationConfigurationRuleSourceSelectionCriteriaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3BucketReplicationConfigurationRuleSourceSelectionCriteriaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -702,7 +702,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3BucketReplicationConfigurationRuleSourceSelectionCriteriaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -710,11 +710,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModifications",
-		reflect.TypeOf((*S3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModifications)(nil)).Elem(),
+		reflect.TypeFor[S3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModifications](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModificationsOutputReference",
-		reflect.TypeOf((*S3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModificationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModificationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -740,7 +740,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModificationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -748,11 +748,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects",
-		reflect.TypeOf((*S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects)(nil)).Elem(),
+		reflect.TypeFor[S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjectsOutputReference",
-		reflect.TypeOf((*S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjectsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjectsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -778,7 +778,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjectsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

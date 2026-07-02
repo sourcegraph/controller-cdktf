@@ -6,9 +6,9 @@ import (
 
 type VpcPeeringConnectionConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type VpcPeeringConnectionConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/vpc_peering_connection#peer_vpc_id VpcPeeringConnection#peer_vpc_id}.
 	PeerVpcId *string `field:"required" json:"peerVpcId" yaml:"peerVpcId"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/vpc_peering_connection#vpc_id VpcPeeringConnection#vpc_id}.
@@ -28,7 +28,7 @@ type VpcPeeringConnectionConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/vpc_peering_connection#accepter VpcPeeringConnection#accepter}
 	Accepter *VpcPeeringConnectionAccepter `field:"optional" json:"accepter" yaml:"accepter"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/vpc_peering_connection#auto_accept VpcPeeringConnection#auto_accept}.
-	AutoAccept interface{} `field:"optional" json:"autoAccept" yaml:"autoAccept"`
+	AutoAccept any `field:"optional" json:"autoAccept" yaml:"autoAccept"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/vpc_peering_connection#id VpcPeeringConnection#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -51,4 +51,3 @@ type VpcPeeringConnectionConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/vpc_peering_connection#timeouts VpcPeeringConnection#timeouts}
 	Timeouts *VpcPeeringConnectionTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

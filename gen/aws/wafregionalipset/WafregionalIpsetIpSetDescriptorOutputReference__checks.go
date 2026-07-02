@@ -98,7 +98,7 @@ func (w *jsiiProxy_WafregionalIpsetIpSetDescriptorOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalIpsetIpSetDescriptorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WafregionalIpsetIpSetDescriptorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_WafregionalIpsetIpSetDescriptorOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalIpsetIpSetDescriptorOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WafregionalIpsetIpSetDescriptorOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewWafregionalIpsetIpSetDescriptorOutputReferenceParameters(terrafo
 
 	return nil
 }
-

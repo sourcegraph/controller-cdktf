@@ -34,7 +34,7 @@ func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsList) valida
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewMedialiveMultiplexProgramMultiplexProgramSettingsListParameters(
 
 	return nil
 }
-

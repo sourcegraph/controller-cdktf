@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentEndpointList) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentEndpointList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentEndpointList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataAwsRoute53TrafficPolicyDocumentEndpointListParameters(terraf
 
 	return nil
 }
-

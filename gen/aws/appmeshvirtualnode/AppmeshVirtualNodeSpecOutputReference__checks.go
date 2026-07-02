@@ -90,7 +90,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validateInterpolationF
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validatePutBackendParameters(value interface{}) error {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validatePutBackendParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -132,7 +132,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validatePutBackendDefa
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validatePutListenerParameters(value interface{}) error {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validatePutListenerParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -193,7 +193,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -293,4 +293,3 @@ func validateNewAppmeshVirtualNodeSpecOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

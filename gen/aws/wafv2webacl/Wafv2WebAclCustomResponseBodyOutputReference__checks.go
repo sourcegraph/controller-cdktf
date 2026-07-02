@@ -98,7 +98,7 @@ func (w *jsiiProxy_Wafv2WebAclCustomResponseBodyOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2WebAclCustomResponseBodyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Wafv2WebAclCustomResponseBodyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_Wafv2WebAclCustomResponseBodyOutputReference) validateSetCont
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2WebAclCustomResponseBodyOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Wafv2WebAclCustomResponseBodyOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewWafv2WebAclCustomResponseBodyOutputReferenceParameters(terraform
 
 	return nil
 }
-

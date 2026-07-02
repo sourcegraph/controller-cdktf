@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsSsmMaintenanceWindowsFilterOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSsmMaintenanceWindowsFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsSsmMaintenanceWindowsFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataAwsSsmMaintenanceWindowsFilterOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSsmMaintenanceWindowsFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsSsmMaintenanceWindowsFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDataAwsSsmMaintenanceWindowsFilterOutputReferenceParameters(terr
 
 	return nil
 }
-

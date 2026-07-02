@@ -18,9 +18,9 @@ type GlueTriggerEventBatchingConditionOutputReference interface {
 	BatchWindowInput() *float64
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type GlueTriggerEventBatchingConditionOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type GlueTriggerEventBatchingConditionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type GlueTriggerEventBatchingConditionOutputReference interface {
 	ResetBatchWindow()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -123,8 +123,8 @@ func (j *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference) BatchWindow
 	return returns
 }
 
-func (j *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference) Fqn() *stri
 	return returns
 }
 
-func (j *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference) TerraformRe
 	return returns
 }
 
-
 func NewGlueTriggerEventBatchingConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GlueTriggerEventBatchingConditionOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewGlueTriggerEventBatchingConditionOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.glueTrigger.GlueTriggerEventBatchingConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewGlueTriggerEventBatchingConditionOutputReference_Override(g GlueTriggerE
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.glueTrigger.GlueTriggerEventBatchingConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference)SetBatchSize(val *float64) {
+func (j *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference) SetBatchSize(val *float64) {
 	if err := j.validateSetBatchSizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference)SetBatchSize
 	)
 }
 
-func (j *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference)SetBatchWindow(val *float64) {
+func (j *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference) SetBatchWindow(val *float64) {
 	if err := j.validateSetBatchWindowParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference)SetBatchWind
 	)
 }
 
-func (j *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (g *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference) ComputeFqn(
 	return returns
 }
 
-func (g *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (g *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (g *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (g *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference) GetListAttr
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (g *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (g *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (g *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (g *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference) GetStringAt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (g *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference) GetStringMa
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (g *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference) Interpolati
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (g *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference) ResetBatchW
 	)
 }
 
-func (g *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (g *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference) ToString() 
 
 	return returns
 }
-

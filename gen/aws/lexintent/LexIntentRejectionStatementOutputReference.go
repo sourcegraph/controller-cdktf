@@ -12,9 +12,9 @@ type LexIntentRejectionStatementOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,7 +30,7 @@ type LexIntentRejectionStatementOutputReference interface {
 	InternalValue() *LexIntentRejectionStatement
 	SetInternalValue(val *LexIntentRejectionStatement)
 	Message() LexIntentRejectionStatementMessageList
-	MessageInput() interface{}
+	MessageInput() any
 	ResponseCard() *string
 	SetResponseCard(val *string)
 	ResponseCardInput() *string
@@ -45,7 +45,7 @@ type LexIntentRejectionStatementOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,11 +66,11 @@ type LexIntentRejectionStatementOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutMessage(value interface{})
+	PutMessage(value any)
 	ResetResponseCard()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_LexIntentRejectionStatementOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_LexIntentRejectionStatementOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LexIntentRejectionStatementOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -143,8 +143,8 @@ func (j *jsiiProxy_LexIntentRejectionStatementOutputReference) Message() LexInte
 	return returns
 }
 
-func (j *jsiiProxy_LexIntentRejectionStatementOutputReference) MessageInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LexIntentRejectionStatementOutputReference) MessageInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"messageInput",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_LexIntentRejectionStatementOutputReference) TerraformResource
 	return returns
 }
 
-
 func NewLexIntentRejectionStatementOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LexIntentRejectionStatementOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewLexIntentRejectionStatementOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewLexIntentRejectionStatementOutputReference_Override(l LexIntentRejection
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LexIntentRejectionStatementOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LexIntentRejectionStatementOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_LexIntentRejectionStatementOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_LexIntentRejectionStatementOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LexIntentRejectionStatementOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_LexIntentRejectionStatementOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_LexIntentRejectionStatementOutputReference)SetInternalValue(val *LexIntentRejectionStatement) {
+func (j *jsiiProxy_LexIntentRejectionStatementOutputReference) SetInternalValue(val *LexIntentRejectionStatement) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_LexIntentRejectionStatementOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_LexIntentRejectionStatementOutputReference)SetResponseCard(val *string) {
+func (j *jsiiProxy_LexIntentRejectionStatementOutputReference) SetResponseCard(val *string) {
 	if err := j.validateSetResponseCardParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_LexIntentRejectionStatementOutputReference)SetResponseCard(va
 	)
 }
 
-func (j *jsiiProxy_LexIntentRejectionStatementOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LexIntentRejectionStatementOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_LexIntentRejectionStatementOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_LexIntentRejectionStatementOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LexIntentRejectionStatementOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,16 +299,16 @@ func (l *jsiiProxy_LexIntentRejectionStatementOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (l *jsiiProxy_LexIntentRejectionStatementOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LexIntentRejectionStatementOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -325,7 +324,7 @@ func (l *jsiiProxy_LexIntentRejectionStatementOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -341,7 +340,7 @@ func (l *jsiiProxy_LexIntentRejectionStatementOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -357,7 +356,7 @@ func (l *jsiiProxy_LexIntentRejectionStatementOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -373,7 +372,7 @@ func (l *jsiiProxy_LexIntentRejectionStatementOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -389,7 +388,7 @@ func (l *jsiiProxy_LexIntentRejectionStatementOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -405,7 +404,7 @@ func (l *jsiiProxy_LexIntentRejectionStatementOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -421,7 +420,7 @@ func (l *jsiiProxy_LexIntentRejectionStatementOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -437,7 +436,7 @@ func (l *jsiiProxy_LexIntentRejectionStatementOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,21 +465,21 @@ func (l *jsiiProxy_LexIntentRejectionStatementOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LexIntentRejectionStatementOutputReference) PutMessage(value interface{}) {
+func (l *jsiiProxy_LexIntentRejectionStatementOutputReference) PutMessage(value any) {
 	if err := l.validatePutMessageParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"putMessage",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -492,16 +491,16 @@ func (l *jsiiProxy_LexIntentRejectionStatementOutputReference) ResetResponseCard
 	)
 }
 
-func (l *jsiiProxy_LexIntentRejectionStatementOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LexIntentRejectionStatementOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (l *jsiiProxy_LexIntentRejectionStatementOutputReference) ToString() *strin
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_CognitoUserPoolSchemaNumberAttributeConstraintsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_CognitoUserPoolSchemaNumberAttributeConstraintsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CognitoUserPoolSchemaNumberAttributeConstraintsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewCognitoUserPoolSchemaNumberAttributeConstraintsOutputReferencePa
 
 	return nil
 }
-

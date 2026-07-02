@@ -15,15 +15,15 @@ type VpnConnectionRoute interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,15 +53,15 @@ type VpnConnectionRoute interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	VpnConnectionId() *string
@@ -71,9 +71,9 @@ type VpnConnectionRoute interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type VpnConnectionRoute interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -103,7 +103,7 @@ type VpnConnectionRoute interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -114,17 +114,17 @@ type VpnConnectionRoute interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for VpnConnectionRoute
@@ -142,8 +142,8 @@ func (j *jsiiProxy_VpnConnectionRoute) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_VpnConnectionRoute) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpnConnectionRoute) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_VpnConnectionRoute) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VpnConnectionRoute) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_VpnConnectionRoute) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_VpnConnectionRoute) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_VpnConnectionRoute) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpnConnectionRoute) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -282,8 +282,8 @@ func (j *jsiiProxy_VpnConnectionRoute) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_VpnConnectionRoute) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_VpnConnectionRoute) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -292,8 +292,8 @@ func (j *jsiiProxy_VpnConnectionRoute) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VpnConnectionRoute) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpnConnectionRoute) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -312,8 +312,8 @@ func (j *jsiiProxy_VpnConnectionRoute) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_VpnConnectionRoute) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_VpnConnectionRoute) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -352,7 +352,6 @@ func (j *jsiiProxy_VpnConnectionRoute) VpnConnectionIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/vpn_connection_route aws_vpn_connection_route} Resource.
 func NewVpnConnectionRoute(scope constructs.Construct, id *string, config *VpnConnectionRouteConfig) VpnConnectionRoute {
 	_init_.Initialize()
@@ -364,7 +363,7 @@ func NewVpnConnectionRoute(scope constructs.Construct, id *string, config *VpnCo
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.vpnConnectionRoute.VpnConnectionRoute",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -377,12 +376,12 @@ func NewVpnConnectionRoute_Override(v VpnConnectionRoute, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.vpnConnectionRoute.VpnConnectionRoute",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		v,
 	)
 }
 
-func (j *jsiiProxy_VpnConnectionRoute)SetConnection(val interface{}) {
+func (j *jsiiProxy_VpnConnectionRoute) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_VpnConnectionRoute)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnectionRoute)SetCount(val interface{}) {
+func (j *jsiiProxy_VpnConnectionRoute) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_VpnConnectionRoute)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnectionRoute)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_VpnConnectionRoute) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -412,7 +411,7 @@ func (j *jsiiProxy_VpnConnectionRoute)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnectionRoute)SetDestinationCidrBlock(val *string) {
+func (j *jsiiProxy_VpnConnectionRoute) SetDestinationCidrBlock(val *string) {
 	if err := j.validateSetDestinationCidrBlockParameters(val); err != nil {
 		panic(err)
 	}
@@ -423,7 +422,7 @@ func (j *jsiiProxy_VpnConnectionRoute)SetDestinationCidrBlock(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnectionRoute)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_VpnConnectionRoute) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -431,7 +430,7 @@ func (j *jsiiProxy_VpnConnectionRoute)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnectionRoute)SetId(val *string) {
+func (j *jsiiProxy_VpnConnectionRoute) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_VpnConnectionRoute)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnectionRoute)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_VpnConnectionRoute) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_VpnConnectionRoute)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_VpnConnectionRoute)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_VpnConnectionRoute) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -461,7 +460,7 @@ func (j *jsiiProxy_VpnConnectionRoute)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnectionRoute)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_VpnConnectionRoute) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -472,7 +471,7 @@ func (j *jsiiProxy_VpnConnectionRoute)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnectionRoute)SetVpnConnectionId(val *string) {
+func (j *jsiiProxy_VpnConnectionRoute) SetVpnConnectionId(val *string) {
 	if err := j.validateSetVpnConnectionIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -495,7 +494,7 @@ func VpnConnectionRoute_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpnConnectionRoute.VpnConnectionRoute",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func VpnConnectionRoute_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func VpnConnectionRoute_IsConstruct(x interface{}) *bool {
+func VpnConnectionRoute_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVpnConnectionRoute_IsConstructParameters(x); err != nil {
@@ -530,7 +529,7 @@ func VpnConnectionRoute_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpnConnectionRoute.VpnConnectionRoute",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func VpnConnectionRoute_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func VpnConnectionRoute_IsTerraformElement(x interface{}) *bool {
+func VpnConnectionRoute_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVpnConnectionRoute_IsTerraformElementParameters(x); err != nil {
@@ -549,7 +548,7 @@ func VpnConnectionRoute_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpnConnectionRoute.VpnConnectionRoute",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func VpnConnectionRoute_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func VpnConnectionRoute_IsTerraformResource(x interface{}) *bool {
+func VpnConnectionRoute_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVpnConnectionRoute_IsTerraformResourceParameters(x); err != nil {
@@ -568,7 +567,7 @@ func VpnConnectionRoute_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpnConnectionRoute.VpnConnectionRoute",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -593,31 +592,31 @@ func (v *jsiiProxy_VpnConnectionRoute) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (v *jsiiProxy_VpnConnectionRoute) AddOverride(path *string, value interface{}) {
+func (v *jsiiProxy_VpnConnectionRoute) AddOverride(path *string, value any) {
 	if err := v.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (v *jsiiProxy_VpnConnectionRoute) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (v *jsiiProxy_VpnConnectionRoute) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -633,7 +632,7 @@ func (v *jsiiProxy_VpnConnectionRoute) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		v,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -649,7 +648,7 @@ func (v *jsiiProxy_VpnConnectionRoute) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		v,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -665,7 +664,7 @@ func (v *jsiiProxy_VpnConnectionRoute) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		v,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -681,7 +680,7 @@ func (v *jsiiProxy_VpnConnectionRoute) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		v,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -697,7 +696,7 @@ func (v *jsiiProxy_VpnConnectionRoute) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		v,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -713,7 +712,7 @@ func (v *jsiiProxy_VpnConnectionRoute) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		v,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func (v *jsiiProxy_VpnConnectionRoute) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		v,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -745,15 +744,15 @@ func (v *jsiiProxy_VpnConnectionRoute) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		v,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (v *jsiiProxy_VpnConnectionRoute) HasResourceMove() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VpnConnectionRoute) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -772,7 +771,7 @@ func (v *jsiiProxy_VpnConnectionRoute) ImportFrom(id *string, provider cdktf.Ter
 	_jsii_.InvokeVoid(
 		v,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -785,7 +784,7 @@ func (v *jsiiProxy_VpnConnectionRoute) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,18 +798,18 @@ func (v *jsiiProxy_VpnConnectionRoute) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (v *jsiiProxy_VpnConnectionRoute) MoveTo(moveTarget *string, index interface{}) {
+func (v *jsiiProxy_VpnConnectionRoute) MoveTo(moveTarget *string, index any) {
 	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -821,7 +820,7 @@ func (v *jsiiProxy_VpnConnectionRoute) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -832,7 +831,7 @@ func (v *jsiiProxy_VpnConnectionRoute) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -852,8 +851,8 @@ func (v *jsiiProxy_VpnConnectionRoute) ResetOverrideLogicalId() {
 	)
 }
 
-func (v *jsiiProxy_VpnConnectionRoute) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_VpnConnectionRoute) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -865,8 +864,8 @@ func (v *jsiiProxy_VpnConnectionRoute) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (v *jsiiProxy_VpnConnectionRoute) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_VpnConnectionRoute) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -878,8 +877,8 @@ func (v *jsiiProxy_VpnConnectionRoute) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (v *jsiiProxy_VpnConnectionRoute) ToHclTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VpnConnectionRoute) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -891,8 +890,8 @@ func (v *jsiiProxy_VpnConnectionRoute) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (v *jsiiProxy_VpnConnectionRoute) ToMetadata() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VpnConnectionRoute) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -917,8 +916,8 @@ func (v *jsiiProxy_VpnConnectionRoute) ToString() *string {
 	return returns
 }
 
-func (v *jsiiProxy_VpnConnectionRoute) ToTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VpnConnectionRoute) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -929,4 +928,3 @@ func (v *jsiiProxy_VpnConnectionRoute) ToTerraform() interface{} {
 
 	return returns
 }
-

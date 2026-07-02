@@ -18,9 +18,9 @@ type MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOut
 	CodingModeInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -67,7 +67,7 @@ type MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOut
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOut
 	ResetVbrQuality()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -152,8 +152,8 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -362,7 +362,6 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings
 	return returns
 }
 
-
 func NewMedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference {
 	_init_.Initialize()
 
@@ -373,7 +372,7 @@ func NewMedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettings
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -385,12 +384,12 @@ func NewMedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettings
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference)SetBitrate(val *float64) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference) SetBitrate(val *float64) {
 	if err := j.validateSetBitrateParameters(val); err != nil {
 		panic(err)
 	}
@@ -401,7 +400,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference)SetCodingMode(val *string) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference) SetCodingMode(val *string) {
 	if err := j.validateSetCodingModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -412,7 +411,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -423,7 +422,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,7 +433,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference)SetInputType(val *string) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference) SetInputType(val *string) {
 	if err := j.validateSetInputTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -445,7 +444,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference)SetInternalValue(val *MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettings) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference) SetInternalValue(val *MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,7 +455,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference)SetProfile(val *string) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference) SetProfile(val *string) {
 	if err := j.validateSetProfileParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference)SetRateControlMode(val *string) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference) SetRateControlMode(val *string) {
 	if err := j.validateSetRateControlModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference)SetRawFormat(val *string) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference) SetRawFormat(val *string) {
 	if err := j.validateSetRawFormatParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference)SetSampleRate(val *float64) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference) SetSampleRate(val *float64) {
 	if err := j.validateSetSampleRateParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference)SetSpec(val *string) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference) SetSpec(val *string) {
 	if err := j.validateSetSpecParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference)SetVbrQuality(val *string) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference) SetVbrQuality(val *string) {
 	if err := j.validateSetVbrQualityParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,16 +556,16 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings
 	return returns
 }
 
-func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -598,7 +597,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -614,7 +613,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -630,7 +629,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -802,16 +801,16 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings
 	)
 }
 
-func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -830,4 +829,3 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings
 
 	return returns
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.connectUser.ConnectUser",
-		reflect.TypeOf((*ConnectUser)(nil)).Elem(),
+		reflect.TypeFor[ConnectUser](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -88,7 +88,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "userId", GoGetter: "UserId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConnectUser{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -96,15 +96,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.connectUser.ConnectUserConfig",
-		reflect.TypeOf((*ConnectUserConfig)(nil)).Elem(),
+		reflect.TypeFor[ConnectUserConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.connectUser.ConnectUserIdentityInfo",
-		reflect.TypeOf((*ConnectUserIdentityInfo)(nil)).Elem(),
+		reflect.TypeFor[ConnectUserIdentityInfo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.connectUser.ConnectUserIdentityInfoOutputReference",
-		reflect.TypeOf((*ConnectUserIdentityInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ConnectUserIdentityInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -137,7 +137,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConnectUserIdentityInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -145,11 +145,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.connectUser.ConnectUserPhoneConfig",
-		reflect.TypeOf((*ConnectUserPhoneConfig)(nil)).Elem(),
+		reflect.TypeFor[ConnectUserPhoneConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.connectUser.ConnectUserPhoneConfigOutputReference",
-		reflect.TypeOf((*ConnectUserPhoneConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ConnectUserPhoneConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "afterContactWorkTimeLimit", GoGetter: "AfterContactWorkTimeLimit"},
 			_jsii_.MemberProperty{JsiiProperty: "afterContactWorkTimeLimitInput", GoGetter: "AfterContactWorkTimeLimitInput"},
@@ -184,7 +184,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConnectUserPhoneConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

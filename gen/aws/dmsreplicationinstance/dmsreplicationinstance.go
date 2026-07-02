@@ -15,30 +15,30 @@ type DmsReplicationInstance interface {
 	AllocatedStorage() *float64
 	SetAllocatedStorage(val *float64)
 	AllocatedStorageInput() *float64
-	AllowMajorVersionUpgrade() interface{}
-	SetAllowMajorVersionUpgrade(val interface{})
-	AllowMajorVersionUpgradeInput() interface{}
-	ApplyImmediately() interface{}
-	SetApplyImmediately(val interface{})
-	ApplyImmediatelyInput() interface{}
-	AutoMinorVersionUpgrade() interface{}
-	SetAutoMinorVersionUpgrade(val interface{})
-	AutoMinorVersionUpgradeInput() interface{}
+	AllowMajorVersionUpgrade() any
+	SetAllowMajorVersionUpgrade(val any)
+	AllowMajorVersionUpgradeInput() any
+	ApplyImmediately() any
+	SetApplyImmediately(val any)
+	ApplyImmediatelyInput() any
+	AutoMinorVersionUpgrade() any
+	SetAutoMinorVersionUpgrade(val any)
+	AutoMinorVersionUpgradeInput() any
 	AvailabilityZone() *string
 	SetAvailabilityZone(val *string)
 	AvailabilityZoneInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -64,9 +64,9 @@ type DmsReplicationInstance interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	MultiAz() interface{}
-	SetMultiAz(val interface{})
-	MultiAzInput() interface{}
+	MultiAz() any
+	SetMultiAz(val any)
+	MultiAzInput() any
 	// The tree node.
 	Node() constructs.Node
 	PreferredMaintenanceWindow() *string
@@ -77,14 +77,14 @@ type DmsReplicationInstance interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
-	PubliclyAccessible() interface{}
-	SetPubliclyAccessible(val interface{})
-	PubliclyAccessibleInput() interface{}
+	SetProvisioners(val *[]any)
+	PubliclyAccessible() any
+	SetPubliclyAccessible(val any)
+	PubliclyAccessibleInput() any
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReplicationInstanceArn() *string
 	ReplicationInstanceClass() *string
 	SetReplicationInstanceClass(val *string)
@@ -106,11 +106,11 @@ type DmsReplicationInstance interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DmsReplicationInstanceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	VpcSecurityGroupIds() *[]*string
 	SetVpcSecurityGroupIds(val *[]*string)
 	VpcSecurityGroupIdsInput() *[]*string
@@ -118,9 +118,9 @@ type DmsReplicationInstance interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -138,7 +138,7 @@ type DmsReplicationInstance interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -150,7 +150,7 @@ type DmsReplicationInstance interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -177,17 +177,17 @@ type DmsReplicationInstance interface {
 	ResetTagsAll()
 	ResetTimeouts()
 	ResetVpcSecurityGroupIds()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DmsReplicationInstance
@@ -215,8 +215,8 @@ func (j *jsiiProxy_DmsReplicationInstance) AllocatedStorageInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DmsReplicationInstance) AllowMajorVersionUpgrade() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsReplicationInstance) AllowMajorVersionUpgrade() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowMajorVersionUpgrade",
@@ -225,8 +225,8 @@ func (j *jsiiProxy_DmsReplicationInstance) AllowMajorVersionUpgrade() interface{
 	return returns
 }
 
-func (j *jsiiProxy_DmsReplicationInstance) AllowMajorVersionUpgradeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsReplicationInstance) AllowMajorVersionUpgradeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowMajorVersionUpgradeInput",
@@ -235,8 +235,8 @@ func (j *jsiiProxy_DmsReplicationInstance) AllowMajorVersionUpgradeInput() inter
 	return returns
 }
 
-func (j *jsiiProxy_DmsReplicationInstance) ApplyImmediately() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsReplicationInstance) ApplyImmediately() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"applyImmediately",
@@ -245,8 +245,8 @@ func (j *jsiiProxy_DmsReplicationInstance) ApplyImmediately() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DmsReplicationInstance) ApplyImmediatelyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsReplicationInstance) ApplyImmediatelyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"applyImmediatelyInput",
@@ -255,8 +255,8 @@ func (j *jsiiProxy_DmsReplicationInstance) ApplyImmediatelyInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DmsReplicationInstance) AutoMinorVersionUpgrade() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsReplicationInstance) AutoMinorVersionUpgrade() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoMinorVersionUpgrade",
@@ -265,8 +265,8 @@ func (j *jsiiProxy_DmsReplicationInstance) AutoMinorVersionUpgrade() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_DmsReplicationInstance) AutoMinorVersionUpgradeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsReplicationInstance) AutoMinorVersionUpgradeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoMinorVersionUpgradeInput",
@@ -305,8 +305,8 @@ func (j *jsiiProxy_DmsReplicationInstance) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DmsReplicationInstance) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsReplicationInstance) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -315,8 +315,8 @@ func (j *jsiiProxy_DmsReplicationInstance) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DmsReplicationInstance) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DmsReplicationInstance) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -325,8 +325,8 @@ func (j *jsiiProxy_DmsReplicationInstance) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_DmsReplicationInstance) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsReplicationInstance) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -445,8 +445,8 @@ func (j *jsiiProxy_DmsReplicationInstance) Lifecycle() *cdktf.TerraformResourceL
 	return returns
 }
 
-func (j *jsiiProxy_DmsReplicationInstance) MultiAz() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsReplicationInstance) MultiAz() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"multiAz",
@@ -455,8 +455,8 @@ func (j *jsiiProxy_DmsReplicationInstance) MultiAz() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DmsReplicationInstance) MultiAzInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsReplicationInstance) MultiAzInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"multiAzInput",
@@ -505,8 +505,8 @@ func (j *jsiiProxy_DmsReplicationInstance) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DmsReplicationInstance) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DmsReplicationInstance) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -515,8 +515,8 @@ func (j *jsiiProxy_DmsReplicationInstance) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DmsReplicationInstance) PubliclyAccessible() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsReplicationInstance) PubliclyAccessible() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"publiclyAccessible",
@@ -525,8 +525,8 @@ func (j *jsiiProxy_DmsReplicationInstance) PubliclyAccessible() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DmsReplicationInstance) PubliclyAccessibleInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsReplicationInstance) PubliclyAccessibleInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"publiclyAccessibleInput",
@@ -535,8 +535,8 @@ func (j *jsiiProxy_DmsReplicationInstance) PubliclyAccessibleInput() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_DmsReplicationInstance) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsReplicationInstance) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -685,8 +685,8 @@ func (j *jsiiProxy_DmsReplicationInstance) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_DmsReplicationInstance) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DmsReplicationInstance) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -715,8 +715,8 @@ func (j *jsiiProxy_DmsReplicationInstance) Timeouts() DmsReplicationInstanceTime
 	return returns
 }
 
-func (j *jsiiProxy_DmsReplicationInstance) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsReplicationInstance) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -745,7 +745,6 @@ func (j *jsiiProxy_DmsReplicationInstance) VpcSecurityGroupIdsInput() *[]*string
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/dms_replication_instance aws_dms_replication_instance} Resource.
 func NewDmsReplicationInstance(scope constructs.Construct, id *string, config *DmsReplicationInstanceConfig) DmsReplicationInstance {
 	_init_.Initialize()
@@ -757,7 +756,7 @@ func NewDmsReplicationInstance(scope constructs.Construct, id *string, config *D
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dmsReplicationInstance.DmsReplicationInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -770,12 +769,12 @@ func NewDmsReplicationInstance_Override(d DmsReplicationInstance, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dmsReplicationInstance.DmsReplicationInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DmsReplicationInstance)SetAllocatedStorage(val *float64) {
+func (j *jsiiProxy_DmsReplicationInstance) SetAllocatedStorage(val *float64) {
 	if err := j.validateSetAllocatedStorageParameters(val); err != nil {
 		panic(err)
 	}
@@ -786,7 +785,7 @@ func (j *jsiiProxy_DmsReplicationInstance)SetAllocatedStorage(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DmsReplicationInstance)SetAllowMajorVersionUpgrade(val interface{}) {
+func (j *jsiiProxy_DmsReplicationInstance) SetAllowMajorVersionUpgrade(val any) {
 	if err := j.validateSetAllowMajorVersionUpgradeParameters(val); err != nil {
 		panic(err)
 	}
@@ -797,7 +796,7 @@ func (j *jsiiProxy_DmsReplicationInstance)SetAllowMajorVersionUpgrade(val interf
 	)
 }
 
-func (j *jsiiProxy_DmsReplicationInstance)SetApplyImmediately(val interface{}) {
+func (j *jsiiProxy_DmsReplicationInstance) SetApplyImmediately(val any) {
 	if err := j.validateSetApplyImmediatelyParameters(val); err != nil {
 		panic(err)
 	}
@@ -808,7 +807,7 @@ func (j *jsiiProxy_DmsReplicationInstance)SetApplyImmediately(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DmsReplicationInstance)SetAutoMinorVersionUpgrade(val interface{}) {
+func (j *jsiiProxy_DmsReplicationInstance) SetAutoMinorVersionUpgrade(val any) {
 	if err := j.validateSetAutoMinorVersionUpgradeParameters(val); err != nil {
 		panic(err)
 	}
@@ -819,7 +818,7 @@ func (j *jsiiProxy_DmsReplicationInstance)SetAutoMinorVersionUpgrade(val interfa
 	)
 }
 
-func (j *jsiiProxy_DmsReplicationInstance)SetAvailabilityZone(val *string) {
+func (j *jsiiProxy_DmsReplicationInstance) SetAvailabilityZone(val *string) {
 	if err := j.validateSetAvailabilityZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -830,7 +829,7 @@ func (j *jsiiProxy_DmsReplicationInstance)SetAvailabilityZone(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DmsReplicationInstance)SetConnection(val interface{}) {
+func (j *jsiiProxy_DmsReplicationInstance) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -841,7 +840,7 @@ func (j *jsiiProxy_DmsReplicationInstance)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DmsReplicationInstance)SetCount(val interface{}) {
+func (j *jsiiProxy_DmsReplicationInstance) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -852,7 +851,7 @@ func (j *jsiiProxy_DmsReplicationInstance)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DmsReplicationInstance)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DmsReplicationInstance) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -860,7 +859,7 @@ func (j *jsiiProxy_DmsReplicationInstance)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DmsReplicationInstance)SetEngineVersion(val *string) {
+func (j *jsiiProxy_DmsReplicationInstance) SetEngineVersion(val *string) {
 	if err := j.validateSetEngineVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -871,7 +870,7 @@ func (j *jsiiProxy_DmsReplicationInstance)SetEngineVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DmsReplicationInstance)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DmsReplicationInstance) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -879,7 +878,7 @@ func (j *jsiiProxy_DmsReplicationInstance)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_DmsReplicationInstance)SetId(val *string) {
+func (j *jsiiProxy_DmsReplicationInstance) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -890,7 +889,7 @@ func (j *jsiiProxy_DmsReplicationInstance)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DmsReplicationInstance)SetKmsKeyArn(val *string) {
+func (j *jsiiProxy_DmsReplicationInstance) SetKmsKeyArn(val *string) {
 	if err := j.validateSetKmsKeyArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -901,7 +900,7 @@ func (j *jsiiProxy_DmsReplicationInstance)SetKmsKeyArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DmsReplicationInstance)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DmsReplicationInstance) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -912,7 +911,7 @@ func (j *jsiiProxy_DmsReplicationInstance)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_DmsReplicationInstance)SetMultiAz(val interface{}) {
+func (j *jsiiProxy_DmsReplicationInstance) SetMultiAz(val any) {
 	if err := j.validateSetMultiAzParameters(val); err != nil {
 		panic(err)
 	}
@@ -923,7 +922,7 @@ func (j *jsiiProxy_DmsReplicationInstance)SetMultiAz(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DmsReplicationInstance)SetPreferredMaintenanceWindow(val *string) {
+func (j *jsiiProxy_DmsReplicationInstance) SetPreferredMaintenanceWindow(val *string) {
 	if err := j.validateSetPreferredMaintenanceWindowParameters(val); err != nil {
 		panic(err)
 	}
@@ -934,7 +933,7 @@ func (j *jsiiProxy_DmsReplicationInstance)SetPreferredMaintenanceWindow(val *str
 	)
 }
 
-func (j *jsiiProxy_DmsReplicationInstance)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DmsReplicationInstance) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -942,7 +941,7 @@ func (j *jsiiProxy_DmsReplicationInstance)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_DmsReplicationInstance)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DmsReplicationInstance) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -953,7 +952,7 @@ func (j *jsiiProxy_DmsReplicationInstance)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DmsReplicationInstance)SetPubliclyAccessible(val interface{}) {
+func (j *jsiiProxy_DmsReplicationInstance) SetPubliclyAccessible(val any) {
 	if err := j.validateSetPubliclyAccessibleParameters(val); err != nil {
 		panic(err)
 	}
@@ -964,7 +963,7 @@ func (j *jsiiProxy_DmsReplicationInstance)SetPubliclyAccessible(val interface{})
 	)
 }
 
-func (j *jsiiProxy_DmsReplicationInstance)SetReplicationInstanceClass(val *string) {
+func (j *jsiiProxy_DmsReplicationInstance) SetReplicationInstanceClass(val *string) {
 	if err := j.validateSetReplicationInstanceClassParameters(val); err != nil {
 		panic(err)
 	}
@@ -975,7 +974,7 @@ func (j *jsiiProxy_DmsReplicationInstance)SetReplicationInstanceClass(val *strin
 	)
 }
 
-func (j *jsiiProxy_DmsReplicationInstance)SetReplicationInstanceId(val *string) {
+func (j *jsiiProxy_DmsReplicationInstance) SetReplicationInstanceId(val *string) {
 	if err := j.validateSetReplicationInstanceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -986,7 +985,7 @@ func (j *jsiiProxy_DmsReplicationInstance)SetReplicationInstanceId(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DmsReplicationInstance)SetReplicationSubnetGroupId(val *string) {
+func (j *jsiiProxy_DmsReplicationInstance) SetReplicationSubnetGroupId(val *string) {
 	if err := j.validateSetReplicationSubnetGroupIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -997,7 +996,7 @@ func (j *jsiiProxy_DmsReplicationInstance)SetReplicationSubnetGroupId(val *strin
 	)
 }
 
-func (j *jsiiProxy_DmsReplicationInstance)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DmsReplicationInstance) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1008,7 +1007,7 @@ func (j *jsiiProxy_DmsReplicationInstance)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_DmsReplicationInstance)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_DmsReplicationInstance) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1019,7 +1018,7 @@ func (j *jsiiProxy_DmsReplicationInstance)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_DmsReplicationInstance)SetVpcSecurityGroupIds(val *[]*string) {
+func (j *jsiiProxy_DmsReplicationInstance) SetVpcSecurityGroupIds(val *[]*string) {
 	if err := j.validateSetVpcSecurityGroupIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1042,7 +1041,7 @@ func DmsReplicationInstance_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dmsReplicationInstance.DmsReplicationInstance",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1066,7 +1065,7 @@ func DmsReplicationInstance_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DmsReplicationInstance_IsConstruct(x interface{}) *bool {
+func DmsReplicationInstance_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDmsReplicationInstance_IsConstructParameters(x); err != nil {
@@ -1077,7 +1076,7 @@ func DmsReplicationInstance_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dmsReplicationInstance.DmsReplicationInstance",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1085,7 +1084,7 @@ func DmsReplicationInstance_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DmsReplicationInstance_IsTerraformElement(x interface{}) *bool {
+func DmsReplicationInstance_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDmsReplicationInstance_IsTerraformElementParameters(x); err != nil {
@@ -1096,7 +1095,7 @@ func DmsReplicationInstance_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dmsReplicationInstance.DmsReplicationInstance",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1104,7 +1103,7 @@ func DmsReplicationInstance_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DmsReplicationInstance_IsTerraformResource(x interface{}) *bool {
+func DmsReplicationInstance_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDmsReplicationInstance_IsTerraformResourceParameters(x); err != nil {
@@ -1115,7 +1114,7 @@ func DmsReplicationInstance_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dmsReplicationInstance.DmsReplicationInstance",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1140,31 +1139,31 @@ func (d *jsiiProxy_DmsReplicationInstance) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DmsReplicationInstance) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DmsReplicationInstance) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DmsReplicationInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DmsReplicationInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1180,7 +1179,7 @@ func (d *jsiiProxy_DmsReplicationInstance) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1196,7 +1195,7 @@ func (d *jsiiProxy_DmsReplicationInstance) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1212,7 +1211,7 @@ func (d *jsiiProxy_DmsReplicationInstance) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1228,7 +1227,7 @@ func (d *jsiiProxy_DmsReplicationInstance) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1244,7 +1243,7 @@ func (d *jsiiProxy_DmsReplicationInstance) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1260,7 +1259,7 @@ func (d *jsiiProxy_DmsReplicationInstance) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1276,7 +1275,7 @@ func (d *jsiiProxy_DmsReplicationInstance) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1292,15 +1291,15 @@ func (d *jsiiProxy_DmsReplicationInstance) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DmsReplicationInstance) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DmsReplicationInstance) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1319,7 +1318,7 @@ func (d *jsiiProxy_DmsReplicationInstance) ImportFrom(id *string, provider cdktf
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1332,7 +1331,7 @@ func (d *jsiiProxy_DmsReplicationInstance) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1346,18 +1345,18 @@ func (d *jsiiProxy_DmsReplicationInstance) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DmsReplicationInstance) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DmsReplicationInstance) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1368,7 +1367,7 @@ func (d *jsiiProxy_DmsReplicationInstance) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1379,7 +1378,7 @@ func (d *jsiiProxy_DmsReplicationInstance) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1390,7 +1389,7 @@ func (d *jsiiProxy_DmsReplicationInstance) PutTimeouts(value *DmsReplicationInst
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1530,8 +1529,8 @@ func (d *jsiiProxy_DmsReplicationInstance) ResetVpcSecurityGroupIds() {
 	)
 }
 
-func (d *jsiiProxy_DmsReplicationInstance) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DmsReplicationInstance) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1543,8 +1542,8 @@ func (d *jsiiProxy_DmsReplicationInstance) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (d *jsiiProxy_DmsReplicationInstance) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DmsReplicationInstance) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1556,8 +1555,8 @@ func (d *jsiiProxy_DmsReplicationInstance) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (d *jsiiProxy_DmsReplicationInstance) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DmsReplicationInstance) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1569,8 +1568,8 @@ func (d *jsiiProxy_DmsReplicationInstance) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DmsReplicationInstance) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DmsReplicationInstance) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1595,8 +1594,8 @@ func (d *jsiiProxy_DmsReplicationInstance) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DmsReplicationInstance) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DmsReplicationInstance) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1607,4 +1606,3 @@ func (d *jsiiProxy_DmsReplicationInstance) ToTerraform() interface{} {
 
 	return returns
 }
-

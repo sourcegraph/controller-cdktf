@@ -106,7 +106,7 @@ func (j *jsiiProxy_CodecommitTriggerTriggerOutputReference) validateSetBranchesP
 	return nil
 }
 
-func (j *jsiiProxy_CodecommitTriggerTriggerOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CodecommitTriggerTriggerOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_CodecommitTriggerTriggerOutputReference) validateSetEventsPar
 	return nil
 }
 
-func (j *jsiiProxy_CodecommitTriggerTriggerOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CodecommitTriggerTriggerOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -262,4 +262,3 @@ func validateNewCodecommitTriggerTriggerOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

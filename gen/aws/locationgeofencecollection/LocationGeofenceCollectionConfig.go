@@ -6,9 +6,9 @@ import (
 
 type LocationGeofenceCollectionConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type LocationGeofenceCollectionConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/location_geofence_collection#collection_name LocationGeofenceCollection#collection_name}.
 	CollectionName *string `field:"required" json:"collectionName" yaml:"collectionName"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/location_geofence_collection#description LocationGeofenceCollection#description}.
@@ -39,4 +39,3 @@ type LocationGeofenceCollectionConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/location_geofence_collection#timeouts LocationGeofenceCollection#timeouts}
 	Timeouts *LocationGeofenceCollectionTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

@@ -15,17 +15,17 @@ type DataAwsRouteTables interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Filter() DataAwsRouteTablesFilterList
-	FilterInput() interface{}
+	FilterInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -49,25 +49,25 @@ type DataAwsRouteTables interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DataAwsRouteTablesTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	VpcId() *string
 	SetVpcId(val *string)
 	VpcIdInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -89,7 +89,7 @@ type DataAwsRouteTables interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutFilter(value interface{})
+	PutFilter(value any)
 	PutTimeouts(value *DataAwsRouteTablesTimeouts)
 	ResetFilter()
 	ResetId()
@@ -99,18 +99,18 @@ type DataAwsRouteTables interface {
 	ResetTags()
 	ResetTimeouts()
 	ResetVpcId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsRouteTables
@@ -128,8 +128,8 @@ func (j *jsiiProxy_DataAwsRouteTables) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRouteTables) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsRouteTables) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -138,8 +138,8 @@ func (j *jsiiProxy_DataAwsRouteTables) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRouteTables) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsRouteTables) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_DataAwsRouteTables) Filter() DataAwsRouteTablesFilterList {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRouteTables) FilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsRouteTables) FilterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"filterInput",
@@ -268,8 +268,8 @@ func (j *jsiiProxy_DataAwsRouteTables) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRouteTables) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsRouteTables) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -308,8 +308,8 @@ func (j *jsiiProxy_DataAwsRouteTables) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRouteTables) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsRouteTables) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -338,8 +338,8 @@ func (j *jsiiProxy_DataAwsRouteTables) Timeouts() DataAwsRouteTablesTimeoutsOutp
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRouteTables) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsRouteTables) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -368,7 +368,6 @@ func (j *jsiiProxy_DataAwsRouteTables) VpcIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/route_tables aws_route_tables} Data Source.
 func NewDataAwsRouteTables(scope constructs.Construct, id *string, config *DataAwsRouteTablesConfig) DataAwsRouteTables {
 	_init_.Initialize()
@@ -380,7 +379,7 @@ func NewDataAwsRouteTables(scope constructs.Construct, id *string, config *DataA
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsRouteTables.DataAwsRouteTables",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -393,12 +392,12 @@ func NewDataAwsRouteTables_Override(d DataAwsRouteTables, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsRouteTables.DataAwsRouteTables",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsRouteTables)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsRouteTables) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -409,7 +408,7 @@ func (j *jsiiProxy_DataAwsRouteTables)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRouteTables)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsRouteTables) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -417,7 +416,7 @@ func (j *jsiiProxy_DataAwsRouteTables)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRouteTables)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsRouteTables) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -425,7 +424,7 @@ func (j *jsiiProxy_DataAwsRouteTables)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRouteTables)SetId(val *string) {
+func (j *jsiiProxy_DataAwsRouteTables) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -436,7 +435,7 @@ func (j *jsiiProxy_DataAwsRouteTables)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRouteTables)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsRouteTables) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -447,7 +446,7 @@ func (j *jsiiProxy_DataAwsRouteTables)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_DataAwsRouteTables)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsRouteTables) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -455,7 +454,7 @@ func (j *jsiiProxy_DataAwsRouteTables)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRouteTables)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsRouteTables) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_DataAwsRouteTables)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRouteTables)SetVpcId(val *string) {
+func (j *jsiiProxy_DataAwsRouteTables) SetVpcId(val *string) {
 	if err := j.validateSetVpcIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func DataAwsRouteTables_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsRouteTables.DataAwsRouteTables",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func DataAwsRouteTables_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsRouteTables_IsConstruct(x interface{}) *bool {
+func DataAwsRouteTables_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsRouteTables_IsConstructParameters(x); err != nil {
@@ -524,7 +523,7 @@ func DataAwsRouteTables_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsRouteTables.DataAwsRouteTables",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -532,7 +531,7 @@ func DataAwsRouteTables_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsRouteTables_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsRouteTables_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsRouteTables_IsTerraformDataSourceParameters(x); err != nil {
@@ -543,7 +542,7 @@ func DataAwsRouteTables_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsRouteTables.DataAwsRouteTables",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -551,7 +550,7 @@ func DataAwsRouteTables_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsRouteTables_IsTerraformElement(x interface{}) *bool {
+func DataAwsRouteTables_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsRouteTables_IsTerraformElementParameters(x); err != nil {
@@ -562,7 +561,7 @@ func DataAwsRouteTables_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsRouteTables.DataAwsRouteTables",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -580,27 +579,27 @@ func DataAwsRouteTables_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRouteTables) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsRouteTables) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsRouteTables) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsRouteTables) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func (d *jsiiProxy_DataAwsRouteTables) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -632,7 +631,7 @@ func (d *jsiiProxy_DataAwsRouteTables) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -648,7 +647,7 @@ func (d *jsiiProxy_DataAwsRouteTables) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -664,7 +663,7 @@ func (d *jsiiProxy_DataAwsRouteTables) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -680,7 +679,7 @@ func (d *jsiiProxy_DataAwsRouteTables) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func (d *jsiiProxy_DataAwsRouteTables) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -712,7 +711,7 @@ func (d *jsiiProxy_DataAwsRouteTables) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -728,7 +727,7 @@ func (d *jsiiProxy_DataAwsRouteTables) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -744,7 +743,7 @@ func (d *jsiiProxy_DataAwsRouteTables) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -758,18 +757,18 @@ func (d *jsiiProxy_DataAwsRouteTables) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DataAwsRouteTables) PutFilter(value interface{}) {
+func (d *jsiiProxy_DataAwsRouteTables) PutFilter(value any) {
 	if err := d.validatePutFilterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -780,7 +779,7 @@ func (d *jsiiProxy_DataAwsRouteTables) PutTimeouts(value *DataAwsRouteTablesTime
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -832,8 +831,8 @@ func (d *jsiiProxy_DataAwsRouteTables) ResetVpcId() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsRouteTables) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsRouteTables) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -845,8 +844,8 @@ func (d *jsiiProxy_DataAwsRouteTables) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRouteTables) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsRouteTables) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -858,8 +857,8 @@ func (d *jsiiProxy_DataAwsRouteTables) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRouteTables) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsRouteTables) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -871,8 +870,8 @@ func (d *jsiiProxy_DataAwsRouteTables) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRouteTables) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsRouteTables) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -897,8 +896,8 @@ func (d *jsiiProxy_DataAwsRouteTables) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRouteTables) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsRouteTables) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -909,4 +908,3 @@ func (d *jsiiProxy_DataAwsRouteTables) ToTerraform() interface{} {
 
 	return returns
 }
-

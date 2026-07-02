@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway",
-		reflect.TypeOf((*StoragegatewayGateway)(nil)).Elem(),
+		reflect.TypeFor[StoragegatewayGateway](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activationKey", GoGetter: "ActivationKey"},
 			_jsii_.MemberProperty{JsiiProperty: "activationKeyInput", GoGetter: "ActivationKeyInput"},
@@ -120,7 +120,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StoragegatewayGateway{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -128,15 +128,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewayConfig",
-		reflect.TypeOf((*StoragegatewayGatewayConfig)(nil)).Elem(),
+		reflect.TypeFor[StoragegatewayGatewayConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewayGatewayNetworkInterface",
-		reflect.TypeOf((*StoragegatewayGatewayGatewayNetworkInterface)(nil)).Elem(),
+		reflect.TypeFor[StoragegatewayGatewayGatewayNetworkInterface](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewayGatewayNetworkInterfaceList",
-		reflect.TypeOf((*StoragegatewayGatewayGatewayNetworkInterfaceList)(nil)).Elem(),
+		reflect.TypeFor[StoragegatewayGatewayGatewayNetworkInterfaceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -149,7 +149,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StoragegatewayGatewayGatewayNetworkInterfaceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -157,7 +157,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewayGatewayNetworkInterfaceOutputReference",
-		reflect.TypeOf((*StoragegatewayGatewayGatewayNetworkInterfaceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StoragegatewayGatewayGatewayNetworkInterfaceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -182,7 +182,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StoragegatewayGatewayGatewayNetworkInterfaceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -190,11 +190,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewayMaintenanceStartTime",
-		reflect.TypeOf((*StoragegatewayGatewayMaintenanceStartTime)(nil)).Elem(),
+		reflect.TypeFor[StoragegatewayGatewayMaintenanceStartTime](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewayMaintenanceStartTimeOutputReference",
-		reflect.TypeOf((*StoragegatewayGatewayMaintenanceStartTimeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StoragegatewayGatewayMaintenanceStartTimeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -229,7 +229,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StoragegatewayGatewayMaintenanceStartTimeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -237,11 +237,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewaySmbActiveDirectorySettings",
-		reflect.TypeOf((*StoragegatewayGatewaySmbActiveDirectorySettings)(nil)).Elem(),
+		reflect.TypeFor[StoragegatewayGatewaySmbActiveDirectorySettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference",
-		reflect.TypeOf((*StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeDirectoryStatus", GoGetter: "ActiveDirectoryStatus"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -281,7 +281,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -289,11 +289,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewayTimeouts",
-		reflect.TypeOf((*StoragegatewayGatewayTimeouts)(nil)).Elem(),
+		reflect.TypeFor[StoragegatewayGatewayTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewayTimeoutsOutputReference",
-		reflect.TypeOf((*StoragegatewayGatewayTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StoragegatewayGatewayTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -320,7 +320,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StoragegatewayGatewayTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

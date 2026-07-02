@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewCloudsearchDomainScalingParametersOutputReferenceParameters(terr
 
 	return nil
 }
-

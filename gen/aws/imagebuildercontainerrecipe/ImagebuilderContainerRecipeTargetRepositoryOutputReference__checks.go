@@ -98,7 +98,7 @@ func (i *jsiiProxy_ImagebuilderContainerRecipeTargetRepositoryOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_ImagebuilderContainerRecipeTargetRepositoryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ImagebuilderContainerRecipeTargetRepositoryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewImagebuilderContainerRecipeTargetRepositoryOutputReferenceParame
 
 	return nil
 }
-

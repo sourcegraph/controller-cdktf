@@ -98,7 +98,7 @@ func (g *jsiiProxy_GrafanaLicenseAssociationTimeoutsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_GrafanaLicenseAssociationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GrafanaLicenseAssociationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GrafanaLicenseAssociationTimeoutsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GrafanaLicenseAssociationTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GrafanaLicenseAssociationTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGrafanaLicenseAssociationTimeoutsOutputReferenceParameters(terra
 
 	return nil
 }
-

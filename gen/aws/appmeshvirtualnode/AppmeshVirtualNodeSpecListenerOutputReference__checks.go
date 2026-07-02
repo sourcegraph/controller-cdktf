@@ -164,7 +164,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,7 +229,7 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -288,4 +288,3 @@ func validateNewAppmeshVirtualNodeSpecListenerOutputReferenceParameters(terrafor
 
 	return nil
 }
-

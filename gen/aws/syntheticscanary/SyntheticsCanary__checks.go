@@ -19,7 +19,7 @@ func (s *jsiiProxy_SyntheticsCanary) validateAddMoveTargetParameters(moveTarget 
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsCanary) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SyntheticsCanary) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SyntheticsCanary) validateMoveFromIdParameters(id *string) er
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsCanary) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SyntheticsCanary) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -264,7 +264,7 @@ func validateSyntheticsCanary_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validateSyntheticsCanary_IsConstructParameters(x interface{}) error {
+func validateSyntheticsCanary_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -272,7 +272,7 @@ func validateSyntheticsCanary_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateSyntheticsCanary_IsTerraformElementParameters(x interface{}) error {
+func validateSyntheticsCanary_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -280,7 +280,7 @@ func validateSyntheticsCanary_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func validateSyntheticsCanary_IsTerraformResourceParameters(x interface{}) error {
+func validateSyntheticsCanary_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -296,7 +296,7 @@ func (j *jsiiProxy_SyntheticsCanary) validateSetArtifactS3LocationParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsCanary) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SyntheticsCanary) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -329,7 +329,7 @@ func (j *jsiiProxy_SyntheticsCanary) validateSetConnectionParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsCanary) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SyntheticsCanary) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -386,7 +386,7 @@ func (j *jsiiProxy_SyntheticsCanary) validateSetCountParameters(val interface{})
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsCanary) validateSetDeleteLambdaParameters(val interface{}) error {
+func (j *jsiiProxy_SyntheticsCanary) validateSetDeleteLambdaParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -454,7 +454,7 @@ func (j *jsiiProxy_SyntheticsCanary) validateSetNameParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsCanary) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SyntheticsCanary) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -532,7 +532,7 @@ func (j *jsiiProxy_SyntheticsCanary) validateSetS3VersionParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsCanary) validateSetStartCanaryParameters(val interface{}) error {
+func (j *jsiiProxy_SyntheticsCanary) validateSetStartCanaryParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -602,4 +602,3 @@ func validateNewSyntheticsCanaryParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-

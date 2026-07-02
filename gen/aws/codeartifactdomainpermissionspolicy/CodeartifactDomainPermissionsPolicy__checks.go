@@ -19,7 +19,7 @@ func (c *jsiiProxy_CodeartifactDomainPermissionsPolicy) validateAddMoveTargetPar
 	return nil
 }
 
-func (c *jsiiProxy_CodeartifactDomainPermissionsPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_CodeartifactDomainPermissionsPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_CodeartifactDomainPermissionsPolicy) validateMoveFromIdParame
 	return nil
 }
 
-func (c *jsiiProxy_CodeartifactDomainPermissionsPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_CodeartifactDomainPermissionsPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateCodeartifactDomainPermissionsPolicy_GenerateConfigForImportParamete
 	return nil
 }
 
-func validateCodeartifactDomainPermissionsPolicy_IsConstructParameters(x interface{}) error {
+func validateCodeartifactDomainPermissionsPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateCodeartifactDomainPermissionsPolicy_IsConstructParameters(x interfa
 	return nil
 }
 
-func validateCodeartifactDomainPermissionsPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateCodeartifactDomainPermissionsPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateCodeartifactDomainPermissionsPolicy_IsTerraformElementParameters(x 
 	return nil
 }
 
-func validateCodeartifactDomainPermissionsPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateCodeartifactDomainPermissionsPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateCodeartifactDomainPermissionsPolicy_IsTerraformResourceParameters(x
 	return nil
 }
 
-func (j *jsiiProxy_CodeartifactDomainPermissionsPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_CodeartifactDomainPermissionsPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_CodeartifactDomainPermissionsPolicy) validateSetConnectionPar
 	return nil
 }
 
-func (j *jsiiProxy_CodeartifactDomainPermissionsPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_CodeartifactDomainPermissionsPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -382,7 +382,7 @@ func (j *jsiiProxy_CodeartifactDomainPermissionsPolicy) validateSetPolicyRevisio
 	return nil
 }
 
-func (j *jsiiProxy_CodeartifactDomainPermissionsPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_CodeartifactDomainPermissionsPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -446,4 +446,3 @@ func validateNewCodeartifactDomainPermissionsPolicyParameters(scope constructs.C
 
 	return nil
 }
-

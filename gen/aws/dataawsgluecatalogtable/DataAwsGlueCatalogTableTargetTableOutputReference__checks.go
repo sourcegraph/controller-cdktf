@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsGlueCatalogTableTargetTableOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsGlueCatalogTableTargetTableOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsGlueCatalogTableTargetTableOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsGlueCatalogTableTargetTableOutputReferenceParameters(terr
 
 	return nil
 }
-

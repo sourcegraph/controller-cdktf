@@ -21,15 +21,15 @@ type S3ControlObjectLambdaAccessPoint interface {
 	Configuration() S3ControlObjectLambdaAccessPointConfigurationOutputReference
 	ConfigurationInput() *S3ControlObjectLambdaAccessPointConfiguration
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,24 +59,24 @@ type S3ControlObjectLambdaAccessPoint interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -94,7 +94,7 @@ type S3ControlObjectLambdaAccessPoint interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -106,7 +106,7 @@ type S3ControlObjectLambdaAccessPoint interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -119,17 +119,17 @@ type S3ControlObjectLambdaAccessPoint interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for S3ControlObjectLambdaAccessPoint
@@ -197,8 +197,8 @@ func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint) ConfigurationInput() *S3Con
 	return returns
 }
 
-func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -207,8 +207,8 @@ func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -217,8 +217,8 @@ func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -337,8 +337,8 @@ func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint) Provider() cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -347,8 +347,8 @@ func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint) Provisioners() *[]interface
 	return returns
 }
 
-func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -367,8 +367,8 @@ func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint) TerraformGeneratorMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -387,7 +387,6 @@ func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint) TerraformResourceType() *st
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3control_object_lambda_access_point aws_s3control_object_lambda_access_point} Resource.
 func NewS3ControlObjectLambdaAccessPoint(scope constructs.Construct, id *string, config *S3ControlObjectLambdaAccessPointConfig) S3ControlObjectLambdaAccessPoint {
 	_init_.Initialize()
@@ -399,7 +398,7 @@ func NewS3ControlObjectLambdaAccessPoint(scope constructs.Construct, id *string,
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3ControlObjectLambdaAccessPoint.S3ControlObjectLambdaAccessPoint",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -412,12 +411,12 @@ func NewS3ControlObjectLambdaAccessPoint_Override(s S3ControlObjectLambdaAccessP
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3ControlObjectLambdaAccessPoint.S3ControlObjectLambdaAccessPoint",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint)SetAccountId(val *string) {
+func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint)SetConnection(val interface{}) {
+func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -439,7 +438,7 @@ func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint)SetConnection(val interface{
 	)
 }
 
-func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint)SetCount(val interface{}) {
+func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,7 +449,7 @@ func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -458,7 +457,7 @@ func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint)SetDependsOn(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -466,7 +465,7 @@ func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint)SetForEach(val cdktf.ITerraf
 	)
 }
 
-func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint)SetId(val *string) {
+func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -477,7 +476,7 @@ func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint)SetLifecycle(val *cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint)SetName(val *string) {
+func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -507,7 +506,7 @@ func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint)SetProvider(val cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -530,7 +529,7 @@ func S3ControlObjectLambdaAccessPoint_GenerateConfigForImport(scope constructs.C
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3ControlObjectLambdaAccessPoint.S3ControlObjectLambdaAccessPoint",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func S3ControlObjectLambdaAccessPoint_GenerateConfigForImport(scope constructs.C
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func S3ControlObjectLambdaAccessPoint_IsConstruct(x interface{}) *bool {
+func S3ControlObjectLambdaAccessPoint_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateS3ControlObjectLambdaAccessPoint_IsConstructParameters(x); err != nil {
@@ -565,7 +564,7 @@ func S3ControlObjectLambdaAccessPoint_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3ControlObjectLambdaAccessPoint.S3ControlObjectLambdaAccessPoint",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -573,7 +572,7 @@ func S3ControlObjectLambdaAccessPoint_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func S3ControlObjectLambdaAccessPoint_IsTerraformElement(x interface{}) *bool {
+func S3ControlObjectLambdaAccessPoint_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateS3ControlObjectLambdaAccessPoint_IsTerraformElementParameters(x); err != nil {
@@ -584,7 +583,7 @@ func S3ControlObjectLambdaAccessPoint_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3ControlObjectLambdaAccessPoint.S3ControlObjectLambdaAccessPoint",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -592,7 +591,7 @@ func S3ControlObjectLambdaAccessPoint_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func S3ControlObjectLambdaAccessPoint_IsTerraformResource(x interface{}) *bool {
+func S3ControlObjectLambdaAccessPoint_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateS3ControlObjectLambdaAccessPoint_IsTerraformResourceParameters(x); err != nil {
@@ -603,7 +602,7 @@ func S3ControlObjectLambdaAccessPoint_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3ControlObjectLambdaAccessPoint.S3ControlObjectLambdaAccessPoint",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -628,31 +627,31 @@ func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) AddMoveTarget(moveTarget *s
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -668,7 +667,7 @@ func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) GetBooleanAttribute(terrafo
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -684,7 +683,7 @@ func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) GetBooleanMapAttribute(terr
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -700,7 +699,7 @@ func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) GetListAttribute(terraformA
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -716,7 +715,7 @@ func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) GetNumberAttribute(terrafor
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -732,7 +731,7 @@ func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) GetNumberListAttribute(terr
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -748,7 +747,7 @@ func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) GetNumberMapAttribute(terra
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) GetStringAttribute(terrafor
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -780,15 +779,15 @@ func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) GetStringMapAttribute(terra
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -807,7 +806,7 @@ func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) ImportFrom(id *string, prov
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -820,7 +819,7 @@ func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) InterpolationForAttribute(t
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -834,18 +833,18 @@ func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -856,7 +855,7 @@ func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -867,7 +866,7 @@ func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) OverrideLogicalId(newLogica
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -878,7 +877,7 @@ func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) PutConfiguration(value *S3C
 	_jsii_.InvokeVoid(
 		s,
 		"putConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -906,8 +905,8 @@ func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) ResetOverrideLogicalId() {
 	)
 }
 
-func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -919,8 +918,8 @@ func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) SynthesizeAttributes() *map
 	return returns
 }
 
-func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -932,8 +931,8 @@ func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) SynthesizeHclAttributes() *
 	return returns
 }
 
-func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -945,8 +944,8 @@ func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) ToHclTerraform() interface{
 	return returns
 }
 
-func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -971,8 +970,8 @@ func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -983,4 +982,3 @@ func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) ToTerraform() interface{} {
 
 	return returns
 }
-

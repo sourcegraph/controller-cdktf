@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataAwsIamPolicy_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validateDataAwsIamPolicy_IsConstructParameters(x interface{}) error {
+func validateDataAwsIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataAwsIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataAwsIamPolicy_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsIamPolicy_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataAwsIamPolicy_IsTerraformDataSourceParameters(x interface{}) err
 	return nil
 }
 
-func validateDataAwsIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataAwsIamPolicy) validateSetArnParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -271,4 +271,3 @@ func validateNewDataAwsIamPolicyParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-

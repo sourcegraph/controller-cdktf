@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetAction",
-		reflect.TypeOf((*BudgetsBudgetAction)(nil)).Elem(),
+		reflect.TypeFor[BudgetsBudgetAction](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -81,7 +81,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BudgetsBudgetAction{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -89,11 +89,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionActionThreshold",
-		reflect.TypeOf((*BudgetsBudgetActionActionThreshold)(nil)).Elem(),
+		reflect.TypeFor[BudgetsBudgetActionActionThreshold](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionActionThresholdOutputReference",
-		reflect.TypeOf((*BudgetsBudgetActionActionThresholdOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BudgetsBudgetActionActionThresholdOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actionThresholdType", GoGetter: "ActionThresholdType"},
 			_jsii_.MemberProperty{JsiiProperty: "actionThresholdTypeInput", GoGetter: "ActionThresholdTypeInput"},
@@ -121,7 +121,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BudgetsBudgetActionActionThresholdOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -129,19 +129,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionConfig",
-		reflect.TypeOf((*BudgetsBudgetActionConfig)(nil)).Elem(),
+		reflect.TypeFor[BudgetsBudgetActionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinition",
-		reflect.TypeOf((*BudgetsBudgetActionDefinition)(nil)).Elem(),
+		reflect.TypeFor[BudgetsBudgetActionDefinition](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionIamActionDefinition",
-		reflect.TypeOf((*BudgetsBudgetActionDefinitionIamActionDefinition)(nil)).Elem(),
+		reflect.TypeFor[BudgetsBudgetActionDefinitionIamActionDefinition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference",
-		reflect.TypeOf((*BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -176,7 +176,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "users", GoGetter: "Users"},
 			_jsii_.MemberProperty{JsiiProperty: "usersInput", GoGetter: "UsersInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -184,7 +184,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionOutputReference",
-		reflect.TypeOf((*BudgetsBudgetActionDefinitionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BudgetsBudgetActionDefinitionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -220,7 +220,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BudgetsBudgetActionDefinitionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -228,11 +228,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionScpActionDefinition",
-		reflect.TypeOf((*BudgetsBudgetActionDefinitionScpActionDefinition)(nil)).Elem(),
+		reflect.TypeFor[BudgetsBudgetActionDefinitionScpActionDefinition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionScpActionDefinitionOutputReference",
-		reflect.TypeOf((*BudgetsBudgetActionDefinitionScpActionDefinitionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BudgetsBudgetActionDefinitionScpActionDefinitionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -260,7 +260,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BudgetsBudgetActionDefinitionScpActionDefinitionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -268,11 +268,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionSsmActionDefinition",
-		reflect.TypeOf((*BudgetsBudgetActionDefinitionSsmActionDefinition)(nil)).Elem(),
+		reflect.TypeFor[BudgetsBudgetActionDefinitionSsmActionDefinition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionSsmActionDefinitionOutputReference",
-		reflect.TypeOf((*BudgetsBudgetActionDefinitionSsmActionDefinitionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BudgetsBudgetActionDefinitionSsmActionDefinitionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actionSubType", GoGetter: "ActionSubType"},
 			_jsii_.MemberProperty{JsiiProperty: "actionSubTypeInput", GoGetter: "ActionSubTypeInput"},
@@ -302,7 +302,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BudgetsBudgetActionDefinitionSsmActionDefinitionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -310,11 +310,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionSubscriber",
-		reflect.TypeOf((*BudgetsBudgetActionSubscriber)(nil)).Elem(),
+		reflect.TypeFor[BudgetsBudgetActionSubscriber](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionSubscriberList",
-		reflect.TypeOf((*BudgetsBudgetActionSubscriberList)(nil)).Elem(),
+		reflect.TypeFor[BudgetsBudgetActionSubscriberList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -328,7 +328,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BudgetsBudgetActionSubscriberList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -336,7 +336,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionSubscriberOutputReference",
-		reflect.TypeOf((*BudgetsBudgetActionSubscriberOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BudgetsBudgetActionSubscriberOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
 			_jsii_.MemberProperty{JsiiProperty: "addressInput", GoGetter: "AddressInput"},
@@ -364,7 +364,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BudgetsBudgetActionSubscriberOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

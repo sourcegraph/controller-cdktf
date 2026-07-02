@@ -98,7 +98,7 @@ func (w *jsiiProxy_WafXssMatchSetXssMatchTuplesFieldToMatchOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_WafXssMatchSetXssMatchTuplesFieldToMatchOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WafXssMatchSetXssMatchTuplesFieldToMatchOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewWafXssMatchSetXssMatchTuplesFieldToMatchOutputReferenceParameter
 
 	return nil
 }
-

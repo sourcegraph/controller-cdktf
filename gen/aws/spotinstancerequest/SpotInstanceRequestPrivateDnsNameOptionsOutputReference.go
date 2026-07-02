@@ -12,9 +12,9 @@ type SpotInstanceRequestPrivateDnsNameOptionsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,12 +25,12 @@ type SpotInstanceRequestPrivateDnsNameOptionsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableResourceNameDnsAaaaRecord() interface{}
-	SetEnableResourceNameDnsAaaaRecord(val interface{})
-	EnableResourceNameDnsAaaaRecordInput() interface{}
-	EnableResourceNameDnsARecord() interface{}
-	SetEnableResourceNameDnsARecord(val interface{})
-	EnableResourceNameDnsARecordInput() interface{}
+	EnableResourceNameDnsAaaaRecord() any
+	SetEnableResourceNameDnsAaaaRecord(val any)
+	EnableResourceNameDnsAaaaRecordInput() any
+	EnableResourceNameDnsARecord() any
+	SetEnableResourceNameDnsARecord(val any)
+	EnableResourceNameDnsARecordInput() any
 	// Experimental.
 	Fqn() *string
 	HostnameType() *string
@@ -49,7 +49,7 @@ type SpotInstanceRequestPrivateDnsNameOptionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type SpotInstanceRequestPrivateDnsNameOptionsOutputReference interface {
 	ResetHostnameType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -118,8 +118,8 @@ func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) Crea
 	return returns
 }
 
-func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) EnableResourceNameDnsAaaaRecord() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) EnableResourceNameDnsAaaaRecord() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableResourceNameDnsAaaaRecord",
@@ -128,8 +128,8 @@ func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) Enab
 	return returns
 }
 
-func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) EnableResourceNameDnsAaaaRecordInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) EnableResourceNameDnsAaaaRecordInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableResourceNameDnsAaaaRecordInput",
@@ -138,8 +138,8 @@ func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) Enab
 	return returns
 }
 
-func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) EnableResourceNameDnsARecord() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) EnableResourceNameDnsARecord() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableResourceNameDnsARecord",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) Enab
 	return returns
 }
 
-func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) EnableResourceNameDnsARecordInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) EnableResourceNameDnsARecordInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableResourceNameDnsARecordInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) Terr
 	return returns
 }
 
-
 func NewSpotInstanceRequestPrivateDnsNameOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SpotInstanceRequestPrivateDnsNameOptionsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewSpotInstanceRequestPrivateDnsNameOptionsOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestPrivateDnsNameOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewSpotInstanceRequestPrivateDnsNameOptionsOutputReference_Override(s SpotI
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestPrivateDnsNameOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference)SetEnableResourceNameDnsAaaaRecord(val interface{}) {
+func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) SetEnableResourceNameDnsAaaaRecord(val any) {
 	if err := j.validateSetEnableResourceNameDnsAaaaRecordParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference)SetEn
 	)
 }
 
-func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference)SetEnableResourceNameDnsARecord(val interface{}) {
+func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) SetEnableResourceNameDnsARecord(val any) {
 	if err := j.validateSetEnableResourceNameDnsARecordParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference)SetEn
 	)
 }
 
-func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference)SetHostnameType(val *string) {
+func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) SetHostnameType(val *string) {
 	if err := j.validateSetHostnameTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference)SetHo
 	)
 }
 
-func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference)SetInternalValue(val *SpotInstanceRequestPrivateDnsNameOptions) {
+func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) SetInternalValue(val *SpotInstanceRequestPrivateDnsNameOptions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (s *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) Comp
 	return returns
 }
 
-func (s *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (s *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) GetB
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (s *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) GetB
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (s *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) GetL
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (s *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) GetN
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (s *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) GetN
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (s *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) GetN
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (s *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) GetS
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (s *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) GetS
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (s *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) Inte
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (s *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) Rese
 	)
 }
 
-func (s *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (s *jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference) ToSt
 
 	return returns
 }
-

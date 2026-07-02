@@ -106,7 +106,7 @@ func (j *jsiiProxy_AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfigOu
 	return nil
 }
 
-func (j *jsiiProxy_AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewAppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfigOutpu
 
 	return nil
 }
-

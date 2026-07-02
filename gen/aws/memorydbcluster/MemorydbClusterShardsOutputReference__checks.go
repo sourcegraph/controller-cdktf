@@ -98,7 +98,7 @@ func (m *jsiiProxy_MemorydbClusterShardsOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_MemorydbClusterShardsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MemorydbClusterShardsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewMemorydbClusterShardsOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

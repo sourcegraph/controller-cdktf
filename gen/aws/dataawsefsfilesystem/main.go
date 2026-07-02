@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsEfsFileSystem.DataAwsEfsFileSystem",
-		reflect.TypeOf((*DataAwsEfsFileSystem)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEfsFileSystem](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -68,7 +68,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsEfsFileSystem{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -76,15 +76,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsEfsFileSystem.DataAwsEfsFileSystemConfig",
-		reflect.TypeOf((*DataAwsEfsFileSystemConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEfsFileSystemConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsEfsFileSystem.DataAwsEfsFileSystemLifecyclePolicy",
-		reflect.TypeOf((*DataAwsEfsFileSystemLifecyclePolicy)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEfsFileSystemLifecyclePolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsEfsFileSystem.DataAwsEfsFileSystemLifecyclePolicyList",
-		reflect.TypeOf((*DataAwsEfsFileSystemLifecyclePolicyList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEfsFileSystemLifecyclePolicyList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -97,7 +97,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsEfsFileSystemLifecyclePolicyList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -105,7 +105,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsEfsFileSystem.DataAwsEfsFileSystemLifecyclePolicyOutputReference",
-		reflect.TypeOf((*DataAwsEfsFileSystemLifecyclePolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEfsFileSystemLifecyclePolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -131,7 +131,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "transitionToIa", GoGetter: "TransitionToIa"},
 			_jsii_.MemberProperty{JsiiProperty: "transitionToPrimaryStorageClass", GoGetter: "TransitionToPrimaryStorageClass"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsEfsFileSystemLifecyclePolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

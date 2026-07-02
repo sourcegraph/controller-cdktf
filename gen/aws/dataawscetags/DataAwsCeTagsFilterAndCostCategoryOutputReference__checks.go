@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsCeTagsFilterAndCostCategoryOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsCeTagsFilterAndCostCategoryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsCeTagsFilterAndCostCategoryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataAwsCeTagsFilterAndCostCategoryOutputReferenceParameters(terr
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueCrawler.GlueCrawler",
-		reflect.TypeOf((*GlueCrawler)(nil)).Elem(),
+		reflect.TypeFor[GlueCrawler](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -127,7 +127,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueCrawler{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -135,11 +135,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueCrawler.GlueCrawlerCatalogTarget",
-		reflect.TypeOf((*GlueCrawlerCatalogTarget)(nil)).Elem(),
+		reflect.TypeFor[GlueCrawlerCatalogTarget](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueCrawler.GlueCrawlerCatalogTargetList",
-		reflect.TypeOf((*GlueCrawlerCatalogTargetList)(nil)).Elem(),
+		reflect.TypeFor[GlueCrawlerCatalogTargetList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -153,7 +153,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueCrawlerCatalogTargetList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -161,7 +161,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueCrawler.GlueCrawlerCatalogTargetOutputReference",
-		reflect.TypeOf((*GlueCrawlerCatalogTargetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlueCrawlerCatalogTargetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -198,7 +198,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueCrawlerCatalogTargetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -206,15 +206,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueCrawler.GlueCrawlerConfig",
-		reflect.TypeOf((*GlueCrawlerConfig)(nil)).Elem(),
+		reflect.TypeFor[GlueCrawlerConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTarget",
-		reflect.TypeOf((*GlueCrawlerDeltaTarget)(nil)).Elem(),
+		reflect.TypeFor[GlueCrawlerDeltaTarget](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTargetList",
-		reflect.TypeOf((*GlueCrawlerDeltaTargetList)(nil)).Elem(),
+		reflect.TypeFor[GlueCrawlerDeltaTargetList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -228,7 +228,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueCrawlerDeltaTargetList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -236,7 +236,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTargetOutputReference",
-		reflect.TypeOf((*GlueCrawlerDeltaTargetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlueCrawlerDeltaTargetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -267,7 +267,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "writeManifest", GoGetter: "WriteManifest"},
 			_jsii_.MemberProperty{JsiiProperty: "writeManifestInput", GoGetter: "WriteManifestInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueCrawlerDeltaTargetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -275,11 +275,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueCrawler.GlueCrawlerDynamodbTarget",
-		reflect.TypeOf((*GlueCrawlerDynamodbTarget)(nil)).Elem(),
+		reflect.TypeFor[GlueCrawlerDynamodbTarget](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueCrawler.GlueCrawlerDynamodbTargetList",
-		reflect.TypeOf((*GlueCrawlerDynamodbTargetList)(nil)).Elem(),
+		reflect.TypeFor[GlueCrawlerDynamodbTargetList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -293,7 +293,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueCrawlerDynamodbTargetList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -301,7 +301,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueCrawler.GlueCrawlerDynamodbTargetOutputReference",
-		reflect.TypeOf((*GlueCrawlerDynamodbTargetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlueCrawlerDynamodbTargetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -333,7 +333,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueCrawlerDynamodbTargetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -341,11 +341,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueCrawler.GlueCrawlerJdbcTarget",
-		reflect.TypeOf((*GlueCrawlerJdbcTarget)(nil)).Elem(),
+		reflect.TypeFor[GlueCrawlerJdbcTarget](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueCrawler.GlueCrawlerJdbcTargetList",
-		reflect.TypeOf((*GlueCrawlerJdbcTargetList)(nil)).Elem(),
+		reflect.TypeFor[GlueCrawlerJdbcTargetList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -359,7 +359,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueCrawlerJdbcTargetList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -367,7 +367,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueCrawler.GlueCrawlerJdbcTargetOutputReference",
-		reflect.TypeOf((*GlueCrawlerJdbcTargetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlueCrawlerJdbcTargetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -401,7 +401,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueCrawlerJdbcTargetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -409,11 +409,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueCrawler.GlueCrawlerLakeFormationConfiguration",
-		reflect.TypeOf((*GlueCrawlerLakeFormationConfiguration)(nil)).Elem(),
+		reflect.TypeFor[GlueCrawlerLakeFormationConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueCrawler.GlueCrawlerLakeFormationConfigurationOutputReference",
-		reflect.TypeOf((*GlueCrawlerLakeFormationConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlueCrawlerLakeFormationConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -443,7 +443,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "useLakeFormationCredentials", GoGetter: "UseLakeFormationCredentials"},
 			_jsii_.MemberProperty{JsiiProperty: "useLakeFormationCredentialsInput", GoGetter: "UseLakeFormationCredentialsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueCrawlerLakeFormationConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -451,11 +451,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueCrawler.GlueCrawlerLineageConfiguration",
-		reflect.TypeOf((*GlueCrawlerLineageConfiguration)(nil)).Elem(),
+		reflect.TypeFor[GlueCrawlerLineageConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueCrawler.GlueCrawlerLineageConfigurationOutputReference",
-		reflect.TypeOf((*GlueCrawlerLineageConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlueCrawlerLineageConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -482,7 +482,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueCrawlerLineageConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -490,11 +490,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueCrawler.GlueCrawlerMongodbTarget",
-		reflect.TypeOf((*GlueCrawlerMongodbTarget)(nil)).Elem(),
+		reflect.TypeFor[GlueCrawlerMongodbTarget](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueCrawler.GlueCrawlerMongodbTargetList",
-		reflect.TypeOf((*GlueCrawlerMongodbTargetList)(nil)).Elem(),
+		reflect.TypeFor[GlueCrawlerMongodbTargetList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -508,7 +508,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueCrawlerMongodbTargetList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -516,7 +516,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueCrawler.GlueCrawlerMongodbTargetOutputReference",
-		reflect.TypeOf((*GlueCrawlerMongodbTargetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlueCrawlerMongodbTargetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -547,7 +547,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueCrawlerMongodbTargetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -555,11 +555,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueCrawler.GlueCrawlerRecrawlPolicy",
-		reflect.TypeOf((*GlueCrawlerRecrawlPolicy)(nil)).Elem(),
+		reflect.TypeFor[GlueCrawlerRecrawlPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueCrawler.GlueCrawlerRecrawlPolicyOutputReference",
-		reflect.TypeOf((*GlueCrawlerRecrawlPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlueCrawlerRecrawlPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -586,7 +586,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueCrawlerRecrawlPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -594,11 +594,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueCrawler.GlueCrawlerS3Target",
-		reflect.TypeOf((*GlueCrawlerS3Target)(nil)).Elem(),
+		reflect.TypeFor[GlueCrawlerS3Target](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueCrawler.GlueCrawlerS3TargetList",
-		reflect.TypeOf((*GlueCrawlerS3TargetList)(nil)).Elem(),
+		reflect.TypeFor[GlueCrawlerS3TargetList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -612,7 +612,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueCrawlerS3TargetList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -620,7 +620,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueCrawler.GlueCrawlerS3TargetOutputReference",
-		reflect.TypeOf((*GlueCrawlerS3TargetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlueCrawlerS3TargetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -661,7 +661,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueCrawlerS3TargetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -669,11 +669,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueCrawler.GlueCrawlerSchemaChangePolicy",
-		reflect.TypeOf((*GlueCrawlerSchemaChangePolicy)(nil)).Elem(),
+		reflect.TypeFor[GlueCrawlerSchemaChangePolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueCrawler.GlueCrawlerSchemaChangePolicyOutputReference",
-		reflect.TypeOf((*GlueCrawlerSchemaChangePolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlueCrawlerSchemaChangePolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -703,7 +703,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "updateBehavior", GoGetter: "UpdateBehavior"},
 			_jsii_.MemberProperty{JsiiProperty: "updateBehaviorInput", GoGetter: "UpdateBehaviorInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

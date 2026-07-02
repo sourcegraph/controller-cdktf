@@ -34,7 +34,7 @@ func (m *jsiiProxy_MskconnectConnectorPluginList) validateResolveParameters(_con
 	return nil
 }
 
-func (j *jsiiProxy_MskconnectConnectorPluginList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MskconnectConnectorPluginList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewMskconnectConnectorPluginListParameters(terraformResource cdktf.
 
 	return nil
 }
-

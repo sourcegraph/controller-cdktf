@@ -14,9 +14,9 @@ type MskconnectConnectorKafkaClusterOutputReference interface {
 	ApacheKafkaClusterInput() *MskconnectConnectorKafkaClusterApacheKafkaCluster
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -42,7 +42,7 @@ type MskconnectConnectorKafkaClusterOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,7 +66,7 @@ type MskconnectConnectorKafkaClusterOutputReference interface {
 	PutApacheKafkaCluster(value *MskconnectConnectorKafkaClusterApacheKafkaCluster)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,8 +99,8 @@ func (j *jsiiProxy_MskconnectConnectorKafkaClusterOutputReference) ApacheKafkaCl
 	return returns
 }
 
-func (j *jsiiProxy_MskconnectConnectorKafkaClusterOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MskconnectConnectorKafkaClusterOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -169,7 +169,6 @@ func (j *jsiiProxy_MskconnectConnectorKafkaClusterOutputReference) TerraformReso
 	return returns
 }
 
-
 func NewMskconnectConnectorKafkaClusterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MskconnectConnectorKafkaClusterOutputReference {
 	_init_.Initialize()
 
@@ -180,7 +179,7 @@ func NewMskconnectConnectorKafkaClusterOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorKafkaClusterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -192,12 +191,12 @@ func NewMskconnectConnectorKafkaClusterOutputReference_Override(m MskconnectConn
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorKafkaClusterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MskconnectConnectorKafkaClusterOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MskconnectConnectorKafkaClusterOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +207,7 @@ func (j *jsiiProxy_MskconnectConnectorKafkaClusterOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_MskconnectConnectorKafkaClusterOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MskconnectConnectorKafkaClusterOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_MskconnectConnectorKafkaClusterOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_MskconnectConnectorKafkaClusterOutputReference)SetInternalValue(val *MskconnectConnectorKafkaCluster) {
+func (j *jsiiProxy_MskconnectConnectorKafkaClusterOutputReference) SetInternalValue(val *MskconnectConnectorKafkaCluster) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_MskconnectConnectorKafkaClusterOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_MskconnectConnectorKafkaClusterOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MskconnectConnectorKafkaClusterOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_MskconnectConnectorKafkaClusterOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_MskconnectConnectorKafkaClusterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MskconnectConnectorKafkaClusterOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,16 +264,16 @@ func (m *jsiiProxy_MskconnectConnectorKafkaClusterOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (m *jsiiProxy_MskconnectConnectorKafkaClusterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MskconnectConnectorKafkaClusterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -290,7 +289,7 @@ func (m *jsiiProxy_MskconnectConnectorKafkaClusterOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -306,7 +305,7 @@ func (m *jsiiProxy_MskconnectConnectorKafkaClusterOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -322,7 +321,7 @@ func (m *jsiiProxy_MskconnectConnectorKafkaClusterOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -338,7 +337,7 @@ func (m *jsiiProxy_MskconnectConnectorKafkaClusterOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -354,7 +353,7 @@ func (m *jsiiProxy_MskconnectConnectorKafkaClusterOutputReference) GetNumberList
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (m *jsiiProxy_MskconnectConnectorKafkaClusterOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (m *jsiiProxy_MskconnectConnectorKafkaClusterOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (m *jsiiProxy_MskconnectConnectorKafkaClusterOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (m *jsiiProxy_MskconnectConnectorKafkaClusterOutputReference) Interpolation
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -445,20 +444,20 @@ func (m *jsiiProxy_MskconnectConnectorKafkaClusterOutputReference) PutApacheKafk
 	_jsii_.InvokeVoid(
 		m,
 		"putApacheKafkaCluster",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (m *jsiiProxy_MskconnectConnectorKafkaClusterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MskconnectConnectorKafkaClusterOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -477,4 +476,3 @@ func (m *jsiiProxy_MskconnectConnectorKafkaClusterOutputReference) ToString() *s
 
 	return returns
 }
-

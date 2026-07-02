@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesInforNexu
 	return nil
 }
 
-func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesInforNexusOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesInforNexusOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewAppflowFlowSourceFlowConfigSourceConnectorPropertiesInforNexusOu
 
 	return nil
 }
-

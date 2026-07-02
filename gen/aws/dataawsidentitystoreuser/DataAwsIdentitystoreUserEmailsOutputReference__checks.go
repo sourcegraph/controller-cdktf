@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsIdentitystoreUserEmailsOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsIdentitystoreUserEmailsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsIdentitystoreUserEmailsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsIdentitystoreUserEmailsOutputReferenceParameters(terrafor
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (s *jsiiProxy_S3Object) validateAddMoveTargetParameters(moveTarget *string)
 	return nil
 }
 
-func (s *jsiiProxy_S3Object) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_S3Object) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_S3Object) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_S3Object) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_S3Object) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateS3Object_GenerateConfigForImportParameters(scope constructs.Constru
 	return nil
 }
 
-func validateS3Object_IsConstructParameters(x interface{}) error {
+func validateS3Object_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateS3Object_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateS3Object_IsTerraformElementParameters(x interface{}) error {
+func validateS3Object_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateS3Object_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateS3Object_IsTerraformResourceParameters(x interface{}) error {
+func validateS3Object_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -260,7 +260,7 @@ func (j *jsiiProxy_S3Object) validateSetBucketParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_S3Object) validateSetBucketKeyEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_S3Object) validateSetBucketKeyEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -288,7 +288,7 @@ func (j *jsiiProxy_S3Object) validateSetCacheControlParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_S3Object) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_S3Object) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -369,7 +369,7 @@ func (j *jsiiProxy_S3Object) validateSetContentTypeParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_S3Object) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_S3Object) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -434,7 +434,7 @@ func (j *jsiiProxy_S3Object) validateSetEtagParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_S3Object) validateSetForceDestroyParameters(val interface{}) error {
+func (j *jsiiProxy_S3Object) validateSetForceDestroyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -518,7 +518,7 @@ func (j *jsiiProxy_S3Object) validateSetObjectLockRetainUntilDateParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_S3Object) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_S3Object) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -638,4 +638,3 @@ func validateNewS3ObjectParameters(scope constructs.Construct, id *string, confi
 
 	return nil
 }
-

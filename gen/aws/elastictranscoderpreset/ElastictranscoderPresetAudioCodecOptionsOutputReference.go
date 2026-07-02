@@ -18,9 +18,9 @@ type ElastictranscoderPresetAudioCodecOptionsOutputReference interface {
 	BitOrderInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -52,7 +52,7 @@ type ElastictranscoderPresetAudioCodecOptionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type ElastictranscoderPresetAudioCodecOptionsOutputReference interface {
 	ResetSigned()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -132,8 +132,8 @@ func (j *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference) BitO
 	return returns
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference) Terr
 	return returns
 }
 
-
 func NewElastictranscoderPresetAudioCodecOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ElastictranscoderPresetAudioCodecOptionsOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewElastictranscoderPresetAudioCodecOptionsOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPresetAudioCodecOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewElastictranscoderPresetAudioCodecOptionsOutputReference_Override(e Elast
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPresetAudioCodecOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		e,
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference)SetBitDepth(val *string) {
+func (j *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference) SetBitDepth(val *string) {
 	if err := j.validateSetBitDepthParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference)SetBi
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference)SetBitOrder(val *string) {
+func (j *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference) SetBitOrder(val *string) {
 	if err := j.validateSetBitOrderParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference)SetBi
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference)SetInternalValue(val *ElastictranscoderPresetAudioCodecOptions) {
+func (j *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference) SetInternalValue(val *ElastictranscoderPresetAudioCodecOptions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference)SetProfile(val *string) {
+func (j *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference) SetProfile(val *string) {
 	if err := j.validateSetProfileParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference)SetPr
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference)SetSigned(val *string) {
+func (j *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference) SetSigned(val *string) {
 	if err := j.validateSetSignedParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference)SetSi
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,16 +381,16 @@ func (e *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference) Comp
 	return returns
 }
 
-func (e *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (e *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference) GetB
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (e *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference) GetB
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (e *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference) GetL
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (e *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference) GetN
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (e *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference) GetN
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (e *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference) GetN
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (e *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference) GetS
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (e *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference) GetS
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (e *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference) Inte
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -587,16 +586,16 @@ func (e *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference) Rese
 	)
 }
 
-func (e *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (e *jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference) ToSt
 
 	return returns
 }
-

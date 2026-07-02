@@ -98,7 +98,7 @@ func (l *jsiiProxy_LbTargetGroupStickinessOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_LbTargetGroupStickinessOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LbTargetGroupStickinessOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_LbTargetGroupStickinessOutputReference) validateSetCookieName
 	return nil
 }
 
-func (j *jsiiProxy_LbTargetGroupStickinessOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_LbTargetGroupStickinessOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -242,4 +242,3 @@ func validateNewLbTargetGroupStickinessOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

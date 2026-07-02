@@ -16,15 +16,15 @@ type CloudfrontRealtimeLogConfig interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,27 +59,27 @@ type CloudfrontRealtimeLogConfig interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SamplingRate() *float64
 	SetSamplingRate(val *float64)
 	SamplingRateInput() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,7 +97,7 @@ type CloudfrontRealtimeLogConfig interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -109,7 +109,7 @@ type CloudfrontRealtimeLogConfig interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -121,17 +121,17 @@ type CloudfrontRealtimeLogConfig interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CloudfrontRealtimeLogConfig
@@ -159,8 +159,8 @@ func (j *jsiiProxy_CloudfrontRealtimeLogConfig) CdktfStack() cdktf.TerraformStac
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontRealtimeLogConfig) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontRealtimeLogConfig) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_CloudfrontRealtimeLogConfig) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontRealtimeLogConfig) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudfrontRealtimeLogConfig) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_CloudfrontRealtimeLogConfig) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontRealtimeLogConfig) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontRealtimeLogConfig) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -339,8 +339,8 @@ func (j *jsiiProxy_CloudfrontRealtimeLogConfig) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontRealtimeLogConfig) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CloudfrontRealtimeLogConfig) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -349,8 +349,8 @@ func (j *jsiiProxy_CloudfrontRealtimeLogConfig) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontRealtimeLogConfig) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontRealtimeLogConfig) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -389,8 +389,8 @@ func (j *jsiiProxy_CloudfrontRealtimeLogConfig) TerraformGeneratorMetadata() *cd
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontRealtimeLogConfig) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudfrontRealtimeLogConfig) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -409,7 +409,6 @@ func (j *jsiiProxy_CloudfrontRealtimeLogConfig) TerraformResourceType() *string 
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudfront_realtime_log_config aws_cloudfront_realtime_log_config} Resource.
 func NewCloudfrontRealtimeLogConfig(scope constructs.Construct, id *string, config *CloudfrontRealtimeLogConfigConfig) CloudfrontRealtimeLogConfig {
 	_init_.Initialize()
@@ -421,7 +420,7 @@ func NewCloudfrontRealtimeLogConfig(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudfrontRealtimeLogConfig.CloudfrontRealtimeLogConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -434,12 +433,12 @@ func NewCloudfrontRealtimeLogConfig_Override(c CloudfrontRealtimeLogConfig, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudfrontRealtimeLogConfig.CloudfrontRealtimeLogConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudfrontRealtimeLogConfig)SetConnection(val interface{}) {
+func (j *jsiiProxy_CloudfrontRealtimeLogConfig) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,7 +449,7 @@ func (j *jsiiProxy_CloudfrontRealtimeLogConfig)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudfrontRealtimeLogConfig)SetCount(val interface{}) {
+func (j *jsiiProxy_CloudfrontRealtimeLogConfig) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -461,7 +460,7 @@ func (j *jsiiProxy_CloudfrontRealtimeLogConfig)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudfrontRealtimeLogConfig)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CloudfrontRealtimeLogConfig) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -469,7 +468,7 @@ func (j *jsiiProxy_CloudfrontRealtimeLogConfig)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudfrontRealtimeLogConfig)SetFields(val *[]*string) {
+func (j *jsiiProxy_CloudfrontRealtimeLogConfig) SetFields(val *[]*string) {
 	if err := j.validateSetFieldsParameters(val); err != nil {
 		panic(err)
 	}
@@ -480,7 +479,7 @@ func (j *jsiiProxy_CloudfrontRealtimeLogConfig)SetFields(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudfrontRealtimeLogConfig)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CloudfrontRealtimeLogConfig) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -488,7 +487,7 @@ func (j *jsiiProxy_CloudfrontRealtimeLogConfig)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_CloudfrontRealtimeLogConfig)SetId(val *string) {
+func (j *jsiiProxy_CloudfrontRealtimeLogConfig) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_CloudfrontRealtimeLogConfig)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudfrontRealtimeLogConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CloudfrontRealtimeLogConfig) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_CloudfrontRealtimeLogConfig)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_CloudfrontRealtimeLogConfig)SetName(val *string) {
+func (j *jsiiProxy_CloudfrontRealtimeLogConfig) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -521,7 +520,7 @@ func (j *jsiiProxy_CloudfrontRealtimeLogConfig)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudfrontRealtimeLogConfig)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CloudfrontRealtimeLogConfig) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -529,7 +528,7 @@ func (j *jsiiProxy_CloudfrontRealtimeLogConfig)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_CloudfrontRealtimeLogConfig)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CloudfrontRealtimeLogConfig) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -540,7 +539,7 @@ func (j *jsiiProxy_CloudfrontRealtimeLogConfig)SetProvisioners(val *[]interface{
 	)
 }
 
-func (j *jsiiProxy_CloudfrontRealtimeLogConfig)SetSamplingRate(val *float64) {
+func (j *jsiiProxy_CloudfrontRealtimeLogConfig) SetSamplingRate(val *float64) {
 	if err := j.validateSetSamplingRateParameters(val); err != nil {
 		panic(err)
 	}
@@ -563,7 +562,7 @@ func CloudfrontRealtimeLogConfig_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudfrontRealtimeLogConfig.CloudfrontRealtimeLogConfig",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func CloudfrontRealtimeLogConfig_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CloudfrontRealtimeLogConfig_IsConstruct(x interface{}) *bool {
+func CloudfrontRealtimeLogConfig_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudfrontRealtimeLogConfig_IsConstructParameters(x); err != nil {
@@ -598,7 +597,7 @@ func CloudfrontRealtimeLogConfig_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudfrontRealtimeLogConfig.CloudfrontRealtimeLogConfig",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -606,7 +605,7 @@ func CloudfrontRealtimeLogConfig_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudfrontRealtimeLogConfig_IsTerraformElement(x interface{}) *bool {
+func CloudfrontRealtimeLogConfig_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudfrontRealtimeLogConfig_IsTerraformElementParameters(x); err != nil {
@@ -617,7 +616,7 @@ func CloudfrontRealtimeLogConfig_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudfrontRealtimeLogConfig.CloudfrontRealtimeLogConfig",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -625,7 +624,7 @@ func CloudfrontRealtimeLogConfig_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudfrontRealtimeLogConfig_IsTerraformResource(x interface{}) *bool {
+func CloudfrontRealtimeLogConfig_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudfrontRealtimeLogConfig_IsTerraformResourceParameters(x); err != nil {
@@ -636,7 +635,7 @@ func CloudfrontRealtimeLogConfig_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudfrontRealtimeLogConfig.CloudfrontRealtimeLogConfig",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -661,31 +660,31 @@ func (c *jsiiProxy_CloudfrontRealtimeLogConfig) AddMoveTarget(moveTarget *string
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CloudfrontRealtimeLogConfig) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CloudfrontRealtimeLogConfig) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CloudfrontRealtimeLogConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudfrontRealtimeLogConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -701,7 +700,7 @@ func (c *jsiiProxy_CloudfrontRealtimeLogConfig) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -717,7 +716,7 @@ func (c *jsiiProxy_CloudfrontRealtimeLogConfig) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -733,7 +732,7 @@ func (c *jsiiProxy_CloudfrontRealtimeLogConfig) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -749,7 +748,7 @@ func (c *jsiiProxy_CloudfrontRealtimeLogConfig) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -765,7 +764,7 @@ func (c *jsiiProxy_CloudfrontRealtimeLogConfig) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -781,7 +780,7 @@ func (c *jsiiProxy_CloudfrontRealtimeLogConfig) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -797,7 +796,7 @@ func (c *jsiiProxy_CloudfrontRealtimeLogConfig) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -813,15 +812,15 @@ func (c *jsiiProxy_CloudfrontRealtimeLogConfig) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CloudfrontRealtimeLogConfig) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudfrontRealtimeLogConfig) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -840,7 +839,7 @@ func (c *jsiiProxy_CloudfrontRealtimeLogConfig) ImportFrom(id *string, provider 
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -853,7 +852,7 @@ func (c *jsiiProxy_CloudfrontRealtimeLogConfig) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -867,18 +866,18 @@ func (c *jsiiProxy_CloudfrontRealtimeLogConfig) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CloudfrontRealtimeLogConfig) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CloudfrontRealtimeLogConfig) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -889,7 +888,7 @@ func (c *jsiiProxy_CloudfrontRealtimeLogConfig) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -900,7 +899,7 @@ func (c *jsiiProxy_CloudfrontRealtimeLogConfig) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -911,7 +910,7 @@ func (c *jsiiProxy_CloudfrontRealtimeLogConfig) PutEndpoint(value *CloudfrontRea
 	_jsii_.InvokeVoid(
 		c,
 		"putEndpoint",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -931,8 +930,8 @@ func (c *jsiiProxy_CloudfrontRealtimeLogConfig) ResetOverrideLogicalId() {
 	)
 }
 
-func (c *jsiiProxy_CloudfrontRealtimeLogConfig) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudfrontRealtimeLogConfig) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -944,8 +943,8 @@ func (c *jsiiProxy_CloudfrontRealtimeLogConfig) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (c *jsiiProxy_CloudfrontRealtimeLogConfig) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudfrontRealtimeLogConfig) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -957,8 +956,8 @@ func (c *jsiiProxy_CloudfrontRealtimeLogConfig) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (c *jsiiProxy_CloudfrontRealtimeLogConfig) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudfrontRealtimeLogConfig) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -970,8 +969,8 @@ func (c *jsiiProxy_CloudfrontRealtimeLogConfig) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CloudfrontRealtimeLogConfig) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudfrontRealtimeLogConfig) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -996,8 +995,8 @@ func (c *jsiiProxy_CloudfrontRealtimeLogConfig) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CloudfrontRealtimeLogConfig) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudfrontRealtimeLogConfig) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1008,4 +1007,3 @@ func (c *jsiiProxy_CloudfrontRealtimeLogConfig) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -15,9 +15,9 @@ type AppflowFlowDestinationFlowConfigOutputReference interface {
 	ApiVersionInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -38,8 +38,8 @@ type AppflowFlowDestinationFlowConfigOutputReference interface {
 	DestinationConnectorPropertiesInput() *AppflowFlowDestinationFlowConfigDestinationConnectorProperties
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -51,7 +51,7 @@ type AppflowFlowDestinationFlowConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -77,7 +77,7 @@ type AppflowFlowDestinationFlowConfigOutputReference interface {
 	ResetConnectorProfileName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -110,8 +110,8 @@ func (j *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference) ApiVersionIn
 	return returns
 }
 
-func (j *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -210,8 +210,8 @@ func (j *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference) Fqn() *strin
 	return returns
 }
 
-func (j *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -240,7 +240,6 @@ func (j *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference) TerraformRes
 	return returns
 }
 
-
 func NewAppflowFlowDestinationFlowConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AppflowFlowDestinationFlowConfigOutputReference {
 	_init_.Initialize()
 
@@ -251,7 +250,7 @@ func NewAppflowFlowDestinationFlowConfigOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -263,12 +262,12 @@ func NewAppflowFlowDestinationFlowConfigOutputReference_Override(a AppflowFlowDe
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference)SetApiVersion(val *string) {
+func (j *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference) SetApiVersion(val *string) {
 	if err := j.validateSetApiVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference)SetApiVersion
 	)
 }
 
-func (j *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference)SetConnectorProfileName(val *string) {
+func (j *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference) SetConnectorProfileName(val *string) {
 	if err := j.validateSetConnectorProfileNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference)SetConnectorP
 	)
 }
 
-func (j *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference)SetConnectorType(val *string) {
+func (j *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference) SetConnectorType(val *string) {
 	if err := j.validateSetConnectorTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference)SetConnectorT
 	)
 }
 
-func (j *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,7 +333,7 @@ func (j *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,7 +344,7 @@ func (j *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -369,16 +368,16 @@ func (a *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference) ComputeFqn()
 	return returns
 }
 
-func (a *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -394,7 +393,7 @@ func (a *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -410,7 +409,7 @@ func (a *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -426,7 +425,7 @@ func (a *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference) GetListAttri
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (a *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (a *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (a *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (a *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (a *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference) GetStringMap
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -535,7 +534,7 @@ func (a *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference) Interpolatio
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -549,7 +548,7 @@ func (a *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference) PutDestinati
 	_jsii_.InvokeVoid(
 		a,
 		"putDestinationConnectorProperties",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -569,16 +568,16 @@ func (a *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference) ResetConnect
 	)
 }
 
-func (a *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -597,4 +596,3 @@ func (a *jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference) ToString() *
 
 	return returns
 }
-

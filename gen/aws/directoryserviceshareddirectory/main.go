@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectory",
-		reflect.TypeOf((*DirectoryServiceSharedDirectory)(nil)).Elem(),
+		reflect.TypeFor[DirectoryServiceSharedDirectory](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,7 +72,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectoryServiceSharedDirectory{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -80,15 +80,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryConfig",
-		reflect.TypeOf((*DirectoryServiceSharedDirectoryConfig)(nil)).Elem(),
+		reflect.TypeFor[DirectoryServiceSharedDirectoryConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTarget",
-		reflect.TypeOf((*DirectoryServiceSharedDirectoryTarget)(nil)).Elem(),
+		reflect.TypeFor[DirectoryServiceSharedDirectoryTarget](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTargetOutputReference",
-		reflect.TypeOf((*DirectoryServiceSharedDirectoryTargetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DirectoryServiceSharedDirectoryTargetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -117,7 +117,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectoryServiceSharedDirectoryTargetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -125,11 +125,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTimeouts",
-		reflect.TypeOf((*DirectoryServiceSharedDirectoryTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DirectoryServiceSharedDirectoryTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTimeoutsOutputReference",
-		reflect.TypeOf((*DirectoryServiceSharedDirectoryTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DirectoryServiceSharedDirectoryTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -156,7 +156,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectoryServiceSharedDirectoryTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

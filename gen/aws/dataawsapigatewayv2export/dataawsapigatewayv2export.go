@@ -19,11 +19,11 @@ type DataAwsApigatewayv2Export interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -42,9 +42,9 @@ type DataAwsApigatewayv2Export interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IncludeExtensions() interface{}
-	SetIncludeExtensions(val interface{})
-	IncludeExtensionsInput() interface{}
+	IncludeExtensions() any
+	SetIncludeExtensions(val any)
+	IncludeExtensionsInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -59,7 +59,7 @@ type DataAwsApigatewayv2Export interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Specification() *string
 	SetSpecification(val *string)
 	SpecificationInput() *string
@@ -69,13 +69,13 @@ type DataAwsApigatewayv2Export interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -104,18 +104,18 @@ type DataAwsApigatewayv2Export interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetStageName()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsApigatewayv2Export
@@ -163,8 +163,8 @@ func (j *jsiiProxy_DataAwsApigatewayv2Export) CdktfStack() cdktf.TerraformStack 
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsApigatewayv2Export) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsApigatewayv2Export) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -173,8 +173,8 @@ func (j *jsiiProxy_DataAwsApigatewayv2Export) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsApigatewayv2Export) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsApigatewayv2Export) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -263,8 +263,8 @@ func (j *jsiiProxy_DataAwsApigatewayv2Export) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsApigatewayv2Export) IncludeExtensions() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsApigatewayv2Export) IncludeExtensions() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeExtensions",
@@ -273,8 +273,8 @@ func (j *jsiiProxy_DataAwsApigatewayv2Export) IncludeExtensions() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsApigatewayv2Export) IncludeExtensionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsApigatewayv2Export) IncludeExtensionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeExtensionsInput",
@@ -333,8 +333,8 @@ func (j *jsiiProxy_DataAwsApigatewayv2Export) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsApigatewayv2Export) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsApigatewayv2Export) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -393,8 +393,8 @@ func (j *jsiiProxy_DataAwsApigatewayv2Export) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsApigatewayv2Export) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsApigatewayv2Export) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -413,7 +413,6 @@ func (j *jsiiProxy_DataAwsApigatewayv2Export) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/apigatewayv2_export aws_apigatewayv2_export} Data Source.
 func NewDataAwsApigatewayv2Export(scope constructs.Construct, id *string, config *DataAwsApigatewayv2ExportConfig) DataAwsApigatewayv2Export {
 	_init_.Initialize()
@@ -425,7 +424,7 @@ func NewDataAwsApigatewayv2Export(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsApigatewayv2Export.DataAwsApigatewayv2Export",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -438,12 +437,12 @@ func NewDataAwsApigatewayv2Export_Override(d DataAwsApigatewayv2Export, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsApigatewayv2Export.DataAwsApigatewayv2Export",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsApigatewayv2Export)SetApiId(val *string) {
+func (j *jsiiProxy_DataAwsApigatewayv2Export) SetApiId(val *string) {
 	if err := j.validateSetApiIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_DataAwsApigatewayv2Export)SetApiId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsApigatewayv2Export)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsApigatewayv2Export) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_DataAwsApigatewayv2Export)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsApigatewayv2Export)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsApigatewayv2Export) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -473,7 +472,7 @@ func (j *jsiiProxy_DataAwsApigatewayv2Export)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsApigatewayv2Export)SetExportVersion(val *string) {
+func (j *jsiiProxy_DataAwsApigatewayv2Export) SetExportVersion(val *string) {
 	if err := j.validateSetExportVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -484,7 +483,7 @@ func (j *jsiiProxy_DataAwsApigatewayv2Export)SetExportVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsApigatewayv2Export)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsApigatewayv2Export) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -492,7 +491,7 @@ func (j *jsiiProxy_DataAwsApigatewayv2Export)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_DataAwsApigatewayv2Export)SetId(val *string) {
+func (j *jsiiProxy_DataAwsApigatewayv2Export) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -503,7 +502,7 @@ func (j *jsiiProxy_DataAwsApigatewayv2Export)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsApigatewayv2Export)SetIncludeExtensions(val interface{}) {
+func (j *jsiiProxy_DataAwsApigatewayv2Export) SetIncludeExtensions(val any) {
 	if err := j.validateSetIncludeExtensionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -514,7 +513,7 @@ func (j *jsiiProxy_DataAwsApigatewayv2Export)SetIncludeExtensions(val interface{
 	)
 }
 
-func (j *jsiiProxy_DataAwsApigatewayv2Export)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsApigatewayv2Export) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -525,7 +524,7 @@ func (j *jsiiProxy_DataAwsApigatewayv2Export)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_DataAwsApigatewayv2Export)SetOutputType(val *string) {
+func (j *jsiiProxy_DataAwsApigatewayv2Export) SetOutputType(val *string) {
 	if err := j.validateSetOutputTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -536,7 +535,7 @@ func (j *jsiiProxy_DataAwsApigatewayv2Export)SetOutputType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsApigatewayv2Export)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsApigatewayv2Export) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -544,7 +543,7 @@ func (j *jsiiProxy_DataAwsApigatewayv2Export)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_DataAwsApigatewayv2Export)SetSpecification(val *string) {
+func (j *jsiiProxy_DataAwsApigatewayv2Export) SetSpecification(val *string) {
 	if err := j.validateSetSpecificationParameters(val); err != nil {
 		panic(err)
 	}
@@ -555,7 +554,7 @@ func (j *jsiiProxy_DataAwsApigatewayv2Export)SetSpecification(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsApigatewayv2Export)SetStageName(val *string) {
+func (j *jsiiProxy_DataAwsApigatewayv2Export) SetStageName(val *string) {
 	if err := j.validateSetStageNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -578,7 +577,7 @@ func DataAwsApigatewayv2Export_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsApigatewayv2Export.DataAwsApigatewayv2Export",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -602,7 +601,7 @@ func DataAwsApigatewayv2Export_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsApigatewayv2Export_IsConstruct(x interface{}) *bool {
+func DataAwsApigatewayv2Export_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsApigatewayv2Export_IsConstructParameters(x); err != nil {
@@ -613,7 +612,7 @@ func DataAwsApigatewayv2Export_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsApigatewayv2Export.DataAwsApigatewayv2Export",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -621,7 +620,7 @@ func DataAwsApigatewayv2Export_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsApigatewayv2Export_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsApigatewayv2Export_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsApigatewayv2Export_IsTerraformDataSourceParameters(x); err != nil {
@@ -632,7 +631,7 @@ func DataAwsApigatewayv2Export_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsApigatewayv2Export.DataAwsApigatewayv2Export",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -640,7 +639,7 @@ func DataAwsApigatewayv2Export_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsApigatewayv2Export_IsTerraformElement(x interface{}) *bool {
+func DataAwsApigatewayv2Export_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsApigatewayv2Export_IsTerraformElementParameters(x); err != nil {
@@ -651,7 +650,7 @@ func DataAwsApigatewayv2Export_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsApigatewayv2Export.DataAwsApigatewayv2Export",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -669,27 +668,27 @@ func DataAwsApigatewayv2Export_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsApigatewayv2Export) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsApigatewayv2Export) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsApigatewayv2Export) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsApigatewayv2Export) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -705,7 +704,7 @@ func (d *jsiiProxy_DataAwsApigatewayv2Export) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -721,7 +720,7 @@ func (d *jsiiProxy_DataAwsApigatewayv2Export) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (d *jsiiProxy_DataAwsApigatewayv2Export) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (d *jsiiProxy_DataAwsApigatewayv2Export) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,7 +768,7 @@ func (d *jsiiProxy_DataAwsApigatewayv2Export) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (d *jsiiProxy_DataAwsApigatewayv2Export) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func (d *jsiiProxy_DataAwsApigatewayv2Export) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func (d *jsiiProxy_DataAwsApigatewayv2Export) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (d *jsiiProxy_DataAwsApigatewayv2Export) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -847,7 +846,7 @@ func (d *jsiiProxy_DataAwsApigatewayv2Export) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -891,8 +890,8 @@ func (d *jsiiProxy_DataAwsApigatewayv2Export) ResetStageName() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsApigatewayv2Export) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsApigatewayv2Export) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -904,8 +903,8 @@ func (d *jsiiProxy_DataAwsApigatewayv2Export) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsApigatewayv2Export) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsApigatewayv2Export) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -917,8 +916,8 @@ func (d *jsiiProxy_DataAwsApigatewayv2Export) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsApigatewayv2Export) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsApigatewayv2Export) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -930,8 +929,8 @@ func (d *jsiiProxy_DataAwsApigatewayv2Export) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsApigatewayv2Export) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsApigatewayv2Export) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -956,8 +955,8 @@ func (d *jsiiProxy_DataAwsApigatewayv2Export) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsApigatewayv2Export) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsApigatewayv2Export) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -968,4 +967,3 @@ func (d *jsiiProxy_DataAwsApigatewayv2Export) ToTerraform() interface{} {
 
 	return returns
 }
-

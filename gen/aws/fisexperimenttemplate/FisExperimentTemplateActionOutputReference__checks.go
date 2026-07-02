@@ -90,7 +90,7 @@ func (f *jsiiProxy_FisExperimentTemplateActionOutputReference) validateInterpola
 	return nil
 }
 
-func (f *jsiiProxy_FisExperimentTemplateActionOutputReference) validatePutParameterParameters(value interface{}) error {
+func (f *jsiiProxy_FisExperimentTemplateActionOutputReference) validatePutParameterParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -148,7 +148,7 @@ func (j *jsiiProxy_FisExperimentTemplateActionOutputReference) validateSetAction
 	return nil
 }
 
-func (j *jsiiProxy_FisExperimentTemplateActionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FisExperimentTemplateActionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -221,7 +221,7 @@ func (j *jsiiProxy_FisExperimentTemplateActionOutputReference) validateSetDescri
 	return nil
 }
 
-func (j *jsiiProxy_FisExperimentTemplateActionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FisExperimentTemplateActionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -296,4 +296,3 @@ func validateNewFisExperimentTemplateActionOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

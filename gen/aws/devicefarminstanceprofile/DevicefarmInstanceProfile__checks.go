@@ -19,7 +19,7 @@ func (d *jsiiProxy_DevicefarmInstanceProfile) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (d *jsiiProxy_DevicefarmInstanceProfile) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DevicefarmInstanceProfile) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DevicefarmInstanceProfile) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (d *jsiiProxy_DevicefarmInstanceProfile) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DevicefarmInstanceProfile) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateDevicefarmInstanceProfile_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateDevicefarmInstanceProfile_IsConstructParameters(x interface{}) error {
+func validateDevicefarmInstanceProfile_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateDevicefarmInstanceProfile_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateDevicefarmInstanceProfile_IsTerraformElementParameters(x interface{}) error {
+func validateDevicefarmInstanceProfile_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateDevicefarmInstanceProfile_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateDevicefarmInstanceProfile_IsTerraformResourceParameters(x interface{}) error {
+func validateDevicefarmInstanceProfile_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateDevicefarmInstanceProfile_IsTerraformResourceParameters(x interface
 	return nil
 }
 
-func (j *jsiiProxy_DevicefarmInstanceProfile) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DevicefarmInstanceProfile) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_DevicefarmInstanceProfile) validateSetConnectionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_DevicefarmInstanceProfile) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DevicefarmInstanceProfile) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -374,7 +374,7 @@ func (j *jsiiProxy_DevicefarmInstanceProfile) validateSetNameParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_DevicefarmInstanceProfile) validateSetPackageCleanupParameters(val interface{}) error {
+func (j *jsiiProxy_DevicefarmInstanceProfile) validateSetPackageCleanupParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -394,7 +394,7 @@ func (j *jsiiProxy_DevicefarmInstanceProfile) validateSetPackageCleanupParameter
 	return nil
 }
 
-func (j *jsiiProxy_DevicefarmInstanceProfile) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DevicefarmInstanceProfile) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -440,7 +440,7 @@ func (j *jsiiProxy_DevicefarmInstanceProfile) validateSetProvisionersParameters(
 	return nil
 }
 
-func (j *jsiiProxy_DevicefarmInstanceProfile) validateSetRebootAfterUseParameters(val interface{}) error {
+func (j *jsiiProxy_DevicefarmInstanceProfile) validateSetRebootAfterUseParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -494,4 +494,3 @@ func validateNewDevicefarmInstanceProfileParameters(scope constructs.Construct, 
 
 	return nil
 }
-

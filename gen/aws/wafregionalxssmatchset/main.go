@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafregionalXssMatchSet.WafregionalXssMatchSet",
-		reflect.TypeOf((*WafregionalXssMatchSet)(nil)).Elem(),
+		reflect.TypeFor[WafregionalXssMatchSet](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "xssMatchTuple", GoGetter: "XssMatchTuple"},
 			_jsii_.MemberProperty{JsiiProperty: "xssMatchTupleInput", GoGetter: "XssMatchTupleInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WafregionalXssMatchSet{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -70,19 +70,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafregionalXssMatchSet.WafregionalXssMatchSetConfig",
-		reflect.TypeOf((*WafregionalXssMatchSetConfig)(nil)).Elem(),
+		reflect.TypeFor[WafregionalXssMatchSetConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafregionalXssMatchSet.WafregionalXssMatchSetXssMatchTuple",
-		reflect.TypeOf((*WafregionalXssMatchSetXssMatchTuple)(nil)).Elem(),
+		reflect.TypeFor[WafregionalXssMatchSetXssMatchTuple](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafregionalXssMatchSet.WafregionalXssMatchSetXssMatchTupleFieldToMatch",
-		reflect.TypeOf((*WafregionalXssMatchSetXssMatchTupleFieldToMatch)(nil)).Elem(),
+		reflect.TypeFor[WafregionalXssMatchSetXssMatchTupleFieldToMatch](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafregionalXssMatchSet.WafregionalXssMatchSetXssMatchTupleFieldToMatchOutputReference",
-		reflect.TypeOf((*WafregionalXssMatchSetXssMatchTupleFieldToMatchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WafregionalXssMatchSetXssMatchTupleFieldToMatchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -111,7 +111,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WafregionalXssMatchSetXssMatchTupleFieldToMatchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -119,7 +119,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafregionalXssMatchSet.WafregionalXssMatchSetXssMatchTupleList",
-		reflect.TypeOf((*WafregionalXssMatchSetXssMatchTupleList)(nil)).Elem(),
+		reflect.TypeFor[WafregionalXssMatchSetXssMatchTupleList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -133,7 +133,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WafregionalXssMatchSetXssMatchTupleList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -141,7 +141,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafregionalXssMatchSet.WafregionalXssMatchSetXssMatchTupleOutputReference",
-		reflect.TypeOf((*WafregionalXssMatchSetXssMatchTupleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WafregionalXssMatchSetXssMatchTupleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -170,7 +170,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "textTransformationInput", GoGetter: "TextTransformationInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WafregionalXssMatchSetXssMatchTupleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

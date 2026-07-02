@@ -98,7 +98,7 @@ func (o *jsiiProxy_OpsworksInstanceRootBlockDeviceOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksInstanceRootBlockDeviceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksInstanceRootBlockDeviceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_OpsworksInstanceRootBlockDeviceOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksInstanceRootBlockDeviceOutputReference) validateSetDeleteOnTerminationParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksInstanceRootBlockDeviceOutputReference) validateSetDeleteOnTerminationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_OpsworksInstanceRootBlockDeviceOutputReference) validateSetDe
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksInstanceRootBlockDeviceOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksInstanceRootBlockDeviceOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -266,4 +266,3 @@ func validateNewOpsworksInstanceRootBlockDeviceOutputReferenceParameters(terrafo
 
 	return nil
 }
-

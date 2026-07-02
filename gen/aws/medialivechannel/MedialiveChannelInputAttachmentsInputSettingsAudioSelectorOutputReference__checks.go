@@ -109,7 +109,7 @@ func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsAudioSelectorOut
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsAudioSelectorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsAudioSelectorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsAudioSelectorOut
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsAudioSelectorOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsAudioSelectorOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -241,4 +241,3 @@ func validateNewMedialiveChannelInputAttachmentsInputSettingsAudioSelectorOutput
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsEksCluster.DataAwsEksCluster",
-		reflect.TypeOf((*DataAwsEksCluster)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEksCluster](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcConfig", GoGetter: "VpcConfig"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsEksCluster{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -75,11 +75,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsEksCluster.DataAwsEksClusterCertificateAuthority",
-		reflect.TypeOf((*DataAwsEksClusterCertificateAuthority)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEksClusterCertificateAuthority](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsEksCluster.DataAwsEksClusterCertificateAuthorityList",
-		reflect.TypeOf((*DataAwsEksClusterCertificateAuthorityList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEksClusterCertificateAuthorityList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -92,7 +92,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsEksClusterCertificateAuthorityList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -100,7 +100,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsEksCluster.DataAwsEksClusterCertificateAuthorityOutputReference",
-		reflect.TypeOf((*DataAwsEksClusterCertificateAuthorityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEksClusterCertificateAuthorityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -125,7 +125,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsEksClusterCertificateAuthorityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -133,15 +133,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsEksCluster.DataAwsEksClusterConfig",
-		reflect.TypeOf((*DataAwsEksClusterConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEksClusterConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsEksCluster.DataAwsEksClusterIdentity",
-		reflect.TypeOf((*DataAwsEksClusterIdentity)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEksClusterIdentity](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsEksCluster.DataAwsEksClusterIdentityList",
-		reflect.TypeOf((*DataAwsEksClusterIdentityList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEksClusterIdentityList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -154,7 +154,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsEksClusterIdentityList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -162,11 +162,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsEksCluster.DataAwsEksClusterIdentityOidc",
-		reflect.TypeOf((*DataAwsEksClusterIdentityOidc)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEksClusterIdentityOidc](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsEksCluster.DataAwsEksClusterIdentityOidcList",
-		reflect.TypeOf((*DataAwsEksClusterIdentityOidcList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEksClusterIdentityOidcList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -179,7 +179,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsEksClusterIdentityOidcList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -187,7 +187,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsEksCluster.DataAwsEksClusterIdentityOidcOutputReference",
-		reflect.TypeOf((*DataAwsEksClusterIdentityOidcOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEksClusterIdentityOidcOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -212,7 +212,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsEksClusterIdentityOidcOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -220,7 +220,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsEksCluster.DataAwsEksClusterIdentityOutputReference",
-		reflect.TypeOf((*DataAwsEksClusterIdentityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEksClusterIdentityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -245,7 +245,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsEksClusterIdentityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -253,11 +253,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsEksCluster.DataAwsEksClusterKubernetesNetworkConfig",
-		reflect.TypeOf((*DataAwsEksClusterKubernetesNetworkConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEksClusterKubernetesNetworkConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsEksCluster.DataAwsEksClusterKubernetesNetworkConfigList",
-		reflect.TypeOf((*DataAwsEksClusterKubernetesNetworkConfigList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEksClusterKubernetesNetworkConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -270,7 +270,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsEksClusterKubernetesNetworkConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -278,7 +278,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsEksCluster.DataAwsEksClusterKubernetesNetworkConfigOutputReference",
-		reflect.TypeOf((*DataAwsEksClusterKubernetesNetworkConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEksClusterKubernetesNetworkConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -305,7 +305,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsEksClusterKubernetesNetworkConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -313,15 +313,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsEksCluster.DataAwsEksClusterOutpostConfig",
-		reflect.TypeOf((*DataAwsEksClusterOutpostConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEksClusterOutpostConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsEksCluster.DataAwsEksClusterOutpostConfigControlPlanePlacement",
-		reflect.TypeOf((*DataAwsEksClusterOutpostConfigControlPlanePlacement)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEksClusterOutpostConfigControlPlanePlacement](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsEksCluster.DataAwsEksClusterOutpostConfigControlPlanePlacementList",
-		reflect.TypeOf((*DataAwsEksClusterOutpostConfigControlPlanePlacementList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEksClusterOutpostConfigControlPlanePlacementList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -334,7 +334,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsEksClusterOutpostConfigControlPlanePlacementList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -342,7 +342,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsEksCluster.DataAwsEksClusterOutpostConfigControlPlanePlacementOutputReference",
-		reflect.TypeOf((*DataAwsEksClusterOutpostConfigControlPlanePlacementOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEksClusterOutpostConfigControlPlanePlacementOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -367,7 +367,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsEksClusterOutpostConfigControlPlanePlacementOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -375,7 +375,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsEksCluster.DataAwsEksClusterOutpostConfigList",
-		reflect.TypeOf((*DataAwsEksClusterOutpostConfigList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEksClusterOutpostConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -388,7 +388,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsEksClusterOutpostConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -396,7 +396,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsEksCluster.DataAwsEksClusterOutpostConfigOutputReference",
-		reflect.TypeOf((*DataAwsEksClusterOutpostConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEksClusterOutpostConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -423,7 +423,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsEksClusterOutpostConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -431,11 +431,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsEksCluster.DataAwsEksClusterVpcConfig",
-		reflect.TypeOf((*DataAwsEksClusterVpcConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEksClusterVpcConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsEksCluster.DataAwsEksClusterVpcConfigList",
-		reflect.TypeOf((*DataAwsEksClusterVpcConfigList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEksClusterVpcConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -448,7 +448,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsEksClusterVpcConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -456,7 +456,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsEksCluster.DataAwsEksClusterVpcConfigOutputReference",
-		reflect.TypeOf((*DataAwsEksClusterVpcConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEksClusterVpcConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clusterSecurityGroupId", GoGetter: "ClusterSecurityGroupId"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -487,7 +487,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsEksClusterVpcConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

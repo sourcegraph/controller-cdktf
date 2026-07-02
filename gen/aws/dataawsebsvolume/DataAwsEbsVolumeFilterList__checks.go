@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataAwsEbsVolumeFilterList) validateResolveParameters(_contex
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEbsVolumeFilterList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEbsVolumeFilterList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataAwsEbsVolumeFilterListParameters(terraformResource cdktf.IIn
 
 	return nil
 }
-

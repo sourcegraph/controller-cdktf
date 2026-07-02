@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsElasticBeanstalkApplicationAppversionLifecycleOutputRefer
 
 	return nil
 }
-

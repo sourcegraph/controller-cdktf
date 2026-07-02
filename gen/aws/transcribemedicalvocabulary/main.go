@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.transcribeMedicalVocabulary.TranscribeMedicalVocabulary",
-		reflect.TypeOf((*TranscribeMedicalVocabulary)(nil)).Elem(),
+		reflect.TypeFor[TranscribeMedicalVocabulary](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vocabularyName", GoGetter: "VocabularyName"},
 			_jsii_.MemberProperty{JsiiProperty: "vocabularyNameInput", GoGetter: "VocabularyNameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscribeMedicalVocabulary{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,15 +82,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.transcribeMedicalVocabulary.TranscribeMedicalVocabularyConfig",
-		reflect.TypeOf((*TranscribeMedicalVocabularyConfig)(nil)).Elem(),
+		reflect.TypeFor[TranscribeMedicalVocabularyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.transcribeMedicalVocabulary.TranscribeMedicalVocabularyTimeouts",
-		reflect.TypeOf((*TranscribeMedicalVocabularyTimeouts)(nil)).Elem(),
+		reflect.TypeFor[TranscribeMedicalVocabularyTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.transcribeMedicalVocabulary.TranscribeMedicalVocabularyTimeoutsOutputReference",
-		reflect.TypeOf((*TranscribeMedicalVocabularyTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TranscribeMedicalVocabularyTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -123,7 +123,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscribeMedicalVocabularyTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

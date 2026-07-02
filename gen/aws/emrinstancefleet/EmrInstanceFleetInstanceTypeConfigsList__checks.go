@@ -34,7 +34,7 @@ func (e *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsList) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEmrInstanceFleetInstanceTypeConfigsListParameters(terraformResou
 
 	return nil
 }
-

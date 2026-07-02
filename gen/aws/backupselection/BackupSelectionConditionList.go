@@ -17,8 +17,8 @@ type BackupSelectionConditionList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type BackupSelectionConditionList interface {
 	Get(index *float64) BackupSelectionConditionOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_BackupSelectionConditionList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_BackupSelectionConditionList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupSelectionConditionList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_BackupSelectionConditionList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewBackupSelectionConditionList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BackupSelectionConditionList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewBackupSelectionConditionList(terraformResource cdktf.IInterpolatingParen
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.backupSelection.BackupSelectionConditionList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewBackupSelectionConditionList_Override(b BackupSelectionConditionList, te
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.backupSelection.BackupSelectionConditionList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BackupSelectionConditionList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_BackupSelectionConditionList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_BackupSelectionConditionList)SetInternalValue(val interface{}
 	)
 }
 
-func (j *jsiiProxy_BackupSelectionConditionList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BackupSelectionConditionList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_BackupSelectionConditionList)SetTerraformAttribute(val *strin
 	)
 }
 
-func (j *jsiiProxy_BackupSelectionConditionList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BackupSelectionConditionList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_BackupSelectionConditionList)SetTerraformResource(val cdktf.I
 	)
 }
 
-func (j *jsiiProxy_BackupSelectionConditionList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_BackupSelectionConditionList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (b *jsiiProxy_BackupSelectionConditionList) AllWithMapKey(mapKeyAttributeNa
 	_jsii_.Invoke(
 		b,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (b *jsiiProxy_BackupSelectionConditionList) Get(index *float64) BackupSelec
 	_jsii_.Invoke(
 		b,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BackupSelectionConditionList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BackupSelectionConditionList) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (b *jsiiProxy_BackupSelectionConditionList) ToString() *string {
 
 	return returns
 }
-

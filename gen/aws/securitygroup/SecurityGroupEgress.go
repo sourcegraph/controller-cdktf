@@ -1,6 +1,5 @@
 package securitygroup
 
-
 type SecurityGroupEgress struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/security_group#cidr_blocks SecurityGroup#cidr_blocks}.
 	CidrBlocks *[]*string `field:"optional" json:"cidrBlocks" yaml:"cidrBlocks"`
@@ -17,8 +16,7 @@ type SecurityGroupEgress struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/security_group#security_groups SecurityGroup#security_groups}.
 	SecurityGroups *[]*string `field:"optional" json:"securityGroups" yaml:"securityGroups"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/security_group#self SecurityGroup#self}.
-	SelfAttribute interface{} `field:"optional" json:"selfAttribute" yaml:"selfAttribute"`
+	SelfAttribute any `field:"optional" json:"selfAttribute" yaml:"selfAttribute"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/security_group#to_port SecurityGroup#to_port}.
 	ToPort *float64 `field:"optional" json:"toPort" yaml:"toPort"`
 }
-

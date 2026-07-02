@@ -109,7 +109,7 @@ func (m *jsiiProxy_MskServerlessClusterClientAuthenticationOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_MskServerlessClusterClientAuthenticationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewMskServerlessClusterClientAuthenticationOutputReferenceParameter
 
 	return nil
 }
-

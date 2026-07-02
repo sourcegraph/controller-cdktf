@@ -34,7 +34,7 @@ func (v *jsiiProxy_VpcIpamOperatingRegionsList) validateResolveParameters(_conte
 	return nil
 }
 
-func (j *jsiiProxy_VpcIpamOperatingRegionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_VpcIpamOperatingRegionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewVpcIpamOperatingRegionsListParameters(terraformResource cdktf.II
 
 	return nil
 }
-

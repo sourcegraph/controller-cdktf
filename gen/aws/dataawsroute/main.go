@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsRoute.DataAwsRoute",
-		reflect.TypeOf((*DataAwsRoute)(nil)).Elem(),
+		reflect.TypeFor[DataAwsRoute](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "carrierGatewayId", GoGetter: "CarrierGatewayId"},
@@ -93,7 +93,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcPeeringConnectionId", GoGetter: "VpcPeeringConnectionId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcPeeringConnectionIdInput", GoGetter: "VpcPeeringConnectionIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsRoute{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -101,15 +101,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsRoute.DataAwsRouteConfig",
-		reflect.TypeOf((*DataAwsRouteConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsRouteConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsRoute.DataAwsRouteTimeouts",
-		reflect.TypeOf((*DataAwsRouteTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DataAwsRouteTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsRoute.DataAwsRouteTimeoutsOutputReference",
-		reflect.TypeOf((*DataAwsRouteTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsRouteTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -136,7 +136,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsRouteTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

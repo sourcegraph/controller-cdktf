@@ -18,15 +18,15 @@ type WorklinkWebsiteCertificateAuthorityAssociation interface {
 	SetCertificate(val *string)
 	CertificateInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,15 +59,15 @@ type WorklinkWebsiteCertificateAuthorityAssociation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	WebsiteCaId() *string
@@ -75,9 +75,9 @@ type WorklinkWebsiteCertificateAuthorityAssociation interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,7 +95,7 @@ type WorklinkWebsiteCertificateAuthorityAssociation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -107,7 +107,7 @@ type WorklinkWebsiteCertificateAuthorityAssociation interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -119,17 +119,17 @@ type WorklinkWebsiteCertificateAuthorityAssociation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for WorklinkWebsiteCertificateAuthorityAssociation
@@ -167,8 +167,8 @@ func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) CertificateIn
 	return returns
 }
 
-func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -177,8 +177,8 @@ func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) Connection() 
 	return returns
 }
 
-func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) ConstructNode
 	return returns
 }
 
-func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -327,8 +327,8 @@ func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) Provider() cd
 	return returns
 }
 
-func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -337,8 +337,8 @@ func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) Provisioners(
 	return returns
 }
 
-func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -357,8 +357,8 @@ func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) TerraformGene
 	return returns
 }
 
-func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -387,7 +387,6 @@ func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) WebsiteCaId()
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/worklink_website_certificate_authority_association aws_worklink_website_certificate_authority_association} Resource.
 func NewWorklinkWebsiteCertificateAuthorityAssociation(scope constructs.Construct, id *string, config *WorklinkWebsiteCertificateAuthorityAssociationConfig) WorklinkWebsiteCertificateAuthorityAssociation {
 	_init_.Initialize()
@@ -399,7 +398,7 @@ func NewWorklinkWebsiteCertificateAuthorityAssociation(scope constructs.Construc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.worklinkWebsiteCertificateAuthorityAssociation.WorklinkWebsiteCertificateAuthorityAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -412,12 +411,12 @@ func NewWorklinkWebsiteCertificateAuthorityAssociation_Override(w WorklinkWebsit
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.worklinkWebsiteCertificateAuthorityAssociation.WorklinkWebsiteCertificateAuthorityAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation)SetCertificate(val *string) {
+func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) SetCertificate(val *string) {
 	if err := j.validateSetCertificateParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation)SetCertificate
 	)
 }
 
-func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation)SetConnection(val interface{}) {
+func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -439,7 +438,7 @@ func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation)SetConnection(
 	)
 }
 
-func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation)SetCount(val interface{}) {
+func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,7 +449,7 @@ func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation)SetCount(val i
 	)
 }
 
-func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -458,7 +457,7 @@ func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation)SetDependsOn(v
 	)
 }
 
-func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation)SetDisplayName(val *string) {
+func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -469,7 +468,7 @@ func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation)SetDisplayName
 	)
 }
 
-func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation)SetFleetArn(val *string) {
+func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) SetFleetArn(val *string) {
 	if err := j.validateSetFleetArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -480,7 +479,7 @@ func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation)SetFleetArn(va
 	)
 }
 
-func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -488,7 +487,7 @@ func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation)SetForEach(val
 	)
 }
 
-func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation)SetId(val *string) {
+func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation)SetId(val *str
 	)
 }
 
-func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation)SetLifecycle(v
 	)
 }
 
-func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -518,7 +517,7 @@ func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation)SetProvider(va
 	)
 }
 
-func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func WorklinkWebsiteCertificateAuthorityAssociation_GenerateConfigForImport(scop
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.worklinkWebsiteCertificateAuthorityAssociation.WorklinkWebsiteCertificateAuthorityAssociation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -565,7 +564,7 @@ func WorklinkWebsiteCertificateAuthorityAssociation_GenerateConfigForImport(scop
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func WorklinkWebsiteCertificateAuthorityAssociation_IsConstruct(x interface{}) *bool {
+func WorklinkWebsiteCertificateAuthorityAssociation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWorklinkWebsiteCertificateAuthorityAssociation_IsConstructParameters(x); err != nil {
@@ -576,7 +575,7 @@ func WorklinkWebsiteCertificateAuthorityAssociation_IsConstruct(x interface{}) *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.worklinkWebsiteCertificateAuthorityAssociation.WorklinkWebsiteCertificateAuthorityAssociation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -584,7 +583,7 @@ func WorklinkWebsiteCertificateAuthorityAssociation_IsConstruct(x interface{}) *
 }
 
 // Experimental.
-func WorklinkWebsiteCertificateAuthorityAssociation_IsTerraformElement(x interface{}) *bool {
+func WorklinkWebsiteCertificateAuthorityAssociation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWorklinkWebsiteCertificateAuthorityAssociation_IsTerraformElementParameters(x); err != nil {
@@ -595,7 +594,7 @@ func WorklinkWebsiteCertificateAuthorityAssociation_IsTerraformElement(x interfa
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.worklinkWebsiteCertificateAuthorityAssociation.WorklinkWebsiteCertificateAuthorityAssociation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -603,7 +602,7 @@ func WorklinkWebsiteCertificateAuthorityAssociation_IsTerraformElement(x interfa
 }
 
 // Experimental.
-func WorklinkWebsiteCertificateAuthorityAssociation_IsTerraformResource(x interface{}) *bool {
+func WorklinkWebsiteCertificateAuthorityAssociation_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWorklinkWebsiteCertificateAuthorityAssociation_IsTerraformResourceParameters(x); err != nil {
@@ -614,7 +613,7 @@ func WorklinkWebsiteCertificateAuthorityAssociation_IsTerraformResource(x interf
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.worklinkWebsiteCertificateAuthorityAssociation.WorklinkWebsiteCertificateAuthorityAssociation",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -639,31 +638,31 @@ func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) AddMoveTarget
 	_jsii_.InvokeVoid(
 		w,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) AddOverride(path *string, value interface{}) {
+func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) AddOverride(path *string, value any) {
 	if err := w.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) GetBooleanAtt
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) GetBooleanMap
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -711,7 +710,7 @@ func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) GetListAttrib
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) GetNumberAttr
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) GetNumberList
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) GetNumberMapA
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) GetStringAttr
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -791,15 +790,15 @@ func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) GetStringMapA
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) HasResourceMove() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -818,7 +817,7 @@ func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) ImportFrom(id
 	_jsii_.InvokeVoid(
 		w,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -831,7 +830,7 @@ func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) Interpolation
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -845,18 +844,18 @@ func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) MoveFromId(id
 	_jsii_.InvokeVoid(
 		w,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) MoveTo(moveTarget *string, index interface{}) {
+func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) MoveTo(moveTarget *string, index any) {
 	if err := w.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -867,7 +866,7 @@ func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) MoveToId(id *
 	_jsii_.InvokeVoid(
 		w,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -878,7 +877,7 @@ func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) OverrideLogic
 	_jsii_.InvokeVoid(
 		w,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -906,8 +905,8 @@ func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) ResetOverride
 	)
 }
 
-func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -919,8 +918,8 @@ func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) SynthesizeAtt
 	return returns
 }
 
-func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -932,8 +931,8 @@ func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) SynthesizeHcl
 	return returns
 }
 
-func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -945,8 +944,8 @@ func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) ToHclTerrafor
 	return returns
 }
 
-func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) ToMetadata() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -971,8 +970,8 @@ func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) ToString() *s
 	return returns
 }
 
-func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) ToTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -983,4 +982,3 @@ func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) ToTerraform()
 
 	return returns
 }
-

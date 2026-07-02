@@ -18,18 +18,18 @@ type GlueJob interface {
 	Command() GlueJobCommandOutputReference
 	CommandInput() *GlueJobCommand
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	Connections() *[]*string
 	SetConnections(val *[]*string)
 	ConnectionsInput() *[]*string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DefaultArguments() *map[string]*string
 	SetDefaultArguments(val *map[string]*string)
 	DefaultArgumentsInput() *map[string]*string
@@ -87,11 +87,11 @@ type GlueJob interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RoleArn() *string
 	SetRoleArn(val *string)
 	RoleArnInput() *string
@@ -107,7 +107,7 @@ type GlueJob interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeout() *float64
@@ -120,9 +120,9 @@ type GlueJob interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -140,7 +140,7 @@ type GlueJob interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -152,7 +152,7 @@ type GlueJob interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -182,17 +182,17 @@ type GlueJob interface {
 	ResetTagsAll()
 	ResetTimeout()
 	ResetWorkerType()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GlueJob
@@ -240,8 +240,8 @@ func (j *jsiiProxy_GlueJob) CommandInput() *GlueJobCommand {
 	return returns
 }
 
-func (j *jsiiProxy_GlueJob) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlueJob) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -270,8 +270,8 @@ func (j *jsiiProxy_GlueJob) ConnectionsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_GlueJob) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GlueJob) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -280,8 +280,8 @@ func (j *jsiiProxy_GlueJob) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GlueJob) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlueJob) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -600,8 +600,8 @@ func (j *jsiiProxy_GlueJob) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GlueJob) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GlueJob) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -610,8 +610,8 @@ func (j *jsiiProxy_GlueJob) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GlueJob) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlueJob) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -710,8 +710,8 @@ func (j *jsiiProxy_GlueJob) TerraformGeneratorMetadata() *cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_GlueJob) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GlueJob) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -770,7 +770,6 @@ func (j *jsiiProxy_GlueJob) WorkerTypeInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/glue_job aws_glue_job} Resource.
 func NewGlueJob(scope constructs.Construct, id *string, config *GlueJobConfig) GlueJob {
 	_init_.Initialize()
@@ -782,7 +781,7 @@ func NewGlueJob(scope constructs.Construct, id *string, config *GlueJobConfig) G
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.glueJob.GlueJob",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -795,12 +794,12 @@ func NewGlueJob_Override(g GlueJob, scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.glueJob.GlueJob",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GlueJob)SetConnection(val interface{}) {
+func (j *jsiiProxy_GlueJob) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -811,7 +810,7 @@ func (j *jsiiProxy_GlueJob)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GlueJob)SetConnections(val *[]*string) {
+func (j *jsiiProxy_GlueJob) SetConnections(val *[]*string) {
 	if err := j.validateSetConnectionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -822,7 +821,7 @@ func (j *jsiiProxy_GlueJob)SetConnections(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GlueJob)SetCount(val interface{}) {
+func (j *jsiiProxy_GlueJob) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -833,7 +832,7 @@ func (j *jsiiProxy_GlueJob)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GlueJob)SetDefaultArguments(val *map[string]*string) {
+func (j *jsiiProxy_GlueJob) SetDefaultArguments(val *map[string]*string) {
 	if err := j.validateSetDefaultArgumentsParameters(val); err != nil {
 		panic(err)
 	}
@@ -844,7 +843,7 @@ func (j *jsiiProxy_GlueJob)SetDefaultArguments(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_GlueJob)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GlueJob) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -852,7 +851,7 @@ func (j *jsiiProxy_GlueJob)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GlueJob)SetDescription(val *string) {
+func (j *jsiiProxy_GlueJob) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -863,7 +862,7 @@ func (j *jsiiProxy_GlueJob)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlueJob)SetExecutionClass(val *string) {
+func (j *jsiiProxy_GlueJob) SetExecutionClass(val *string) {
 	if err := j.validateSetExecutionClassParameters(val); err != nil {
 		panic(err)
 	}
@@ -874,7 +873,7 @@ func (j *jsiiProxy_GlueJob)SetExecutionClass(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlueJob)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GlueJob) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -882,7 +881,7 @@ func (j *jsiiProxy_GlueJob)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_GlueJob)SetGlueVersion(val *string) {
+func (j *jsiiProxy_GlueJob) SetGlueVersion(val *string) {
 	if err := j.validateSetGlueVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -893,7 +892,7 @@ func (j *jsiiProxy_GlueJob)SetGlueVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlueJob)SetId(val *string) {
+func (j *jsiiProxy_GlueJob) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -904,7 +903,7 @@ func (j *jsiiProxy_GlueJob)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlueJob)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GlueJob) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -915,7 +914,7 @@ func (j *jsiiProxy_GlueJob)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_GlueJob)SetMaxCapacity(val *float64) {
+func (j *jsiiProxy_GlueJob) SetMaxCapacity(val *float64) {
 	if err := j.validateSetMaxCapacityParameters(val); err != nil {
 		panic(err)
 	}
@@ -926,7 +925,7 @@ func (j *jsiiProxy_GlueJob)SetMaxCapacity(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GlueJob)SetMaxRetries(val *float64) {
+func (j *jsiiProxy_GlueJob) SetMaxRetries(val *float64) {
 	if err := j.validateSetMaxRetriesParameters(val); err != nil {
 		panic(err)
 	}
@@ -937,7 +936,7 @@ func (j *jsiiProxy_GlueJob)SetMaxRetries(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GlueJob)SetName(val *string) {
+func (j *jsiiProxy_GlueJob) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -948,7 +947,7 @@ func (j *jsiiProxy_GlueJob)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlueJob)SetNonOverridableArguments(val *map[string]*string) {
+func (j *jsiiProxy_GlueJob) SetNonOverridableArguments(val *map[string]*string) {
 	if err := j.validateSetNonOverridableArgumentsParameters(val); err != nil {
 		panic(err)
 	}
@@ -959,7 +958,7 @@ func (j *jsiiProxy_GlueJob)SetNonOverridableArguments(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_GlueJob)SetNumberOfWorkers(val *float64) {
+func (j *jsiiProxy_GlueJob) SetNumberOfWorkers(val *float64) {
 	if err := j.validateSetNumberOfWorkersParameters(val); err != nil {
 		panic(err)
 	}
@@ -970,7 +969,7 @@ func (j *jsiiProxy_GlueJob)SetNumberOfWorkers(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GlueJob)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GlueJob) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -978,7 +977,7 @@ func (j *jsiiProxy_GlueJob)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_GlueJob)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GlueJob) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -989,7 +988,7 @@ func (j *jsiiProxy_GlueJob)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GlueJob)SetRoleArn(val *string) {
+func (j *jsiiProxy_GlueJob) SetRoleArn(val *string) {
 	if err := j.validateSetRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -1000,7 +999,7 @@ func (j *jsiiProxy_GlueJob)SetRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlueJob)SetSecurityConfiguration(val *string) {
+func (j *jsiiProxy_GlueJob) SetSecurityConfiguration(val *string) {
 	if err := j.validateSetSecurityConfigurationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1011,7 +1010,7 @@ func (j *jsiiProxy_GlueJob)SetSecurityConfiguration(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlueJob)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_GlueJob) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1022,7 +1021,7 @@ func (j *jsiiProxy_GlueJob)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_GlueJob)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_GlueJob) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1033,7 +1032,7 @@ func (j *jsiiProxy_GlueJob)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_GlueJob)SetTimeout(val *float64) {
+func (j *jsiiProxy_GlueJob) SetTimeout(val *float64) {
 	if err := j.validateSetTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -1044,7 +1043,7 @@ func (j *jsiiProxy_GlueJob)SetTimeout(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GlueJob)SetWorkerType(val *string) {
+func (j *jsiiProxy_GlueJob) SetWorkerType(val *string) {
 	if err := j.validateSetWorkerTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1067,7 +1066,7 @@ func GlueJob_GenerateConfigForImport(scope constructs.Construct, importToId *str
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.glueJob.GlueJob",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1091,7 +1090,7 @@ func GlueJob_GenerateConfigForImport(scope constructs.Construct, importToId *str
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GlueJob_IsConstruct(x interface{}) *bool {
+func GlueJob_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGlueJob_IsConstructParameters(x); err != nil {
@@ -1102,7 +1101,7 @@ func GlueJob_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.glueJob.GlueJob",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1110,7 +1109,7 @@ func GlueJob_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GlueJob_IsTerraformElement(x interface{}) *bool {
+func GlueJob_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGlueJob_IsTerraformElementParameters(x); err != nil {
@@ -1121,7 +1120,7 @@ func GlueJob_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.glueJob.GlueJob",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1129,7 +1128,7 @@ func GlueJob_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GlueJob_IsTerraformResource(x interface{}) *bool {
+func GlueJob_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGlueJob_IsTerraformResourceParameters(x); err != nil {
@@ -1140,7 +1139,7 @@ func GlueJob_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.glueJob.GlueJob",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1165,31 +1164,31 @@ func (g *jsiiProxy_GlueJob) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GlueJob) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GlueJob) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GlueJob) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GlueJob) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1205,7 +1204,7 @@ func (g *jsiiProxy_GlueJob) GetBooleanAttribute(terraformAttribute *string) cdkt
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1221,7 +1220,7 @@ func (g *jsiiProxy_GlueJob) GetBooleanMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1237,7 +1236,7 @@ func (g *jsiiProxy_GlueJob) GetListAttribute(terraformAttribute *string) *[]*str
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1253,7 +1252,7 @@ func (g *jsiiProxy_GlueJob) GetNumberAttribute(terraformAttribute *string) *floa
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1269,7 +1268,7 @@ func (g *jsiiProxy_GlueJob) GetNumberListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1285,7 +1284,7 @@ func (g *jsiiProxy_GlueJob) GetNumberMapAttribute(terraformAttribute *string) *m
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1301,7 +1300,7 @@ func (g *jsiiProxy_GlueJob) GetStringAttribute(terraformAttribute *string) *stri
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1317,15 +1316,15 @@ func (g *jsiiProxy_GlueJob) GetStringMapAttribute(terraformAttribute *string) *m
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GlueJob) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GlueJob) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1344,7 +1343,7 @@ func (g *jsiiProxy_GlueJob) ImportFrom(id *string, provider cdktf.TerraformProvi
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1357,7 +1356,7 @@ func (g *jsiiProxy_GlueJob) InterpolationForAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1371,18 +1370,18 @@ func (g *jsiiProxy_GlueJob) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GlueJob) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GlueJob) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1393,7 +1392,7 @@ func (g *jsiiProxy_GlueJob) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1404,7 +1403,7 @@ func (g *jsiiProxy_GlueJob) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1415,7 +1414,7 @@ func (g *jsiiProxy_GlueJob) PutCommand(value *GlueJobCommand) {
 	_jsii_.InvokeVoid(
 		g,
 		"putCommand",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1426,7 +1425,7 @@ func (g *jsiiProxy_GlueJob) PutExecutionProperty(value *GlueJobExecutionProperty
 	_jsii_.InvokeVoid(
 		g,
 		"putExecutionProperty",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1437,7 +1436,7 @@ func (g *jsiiProxy_GlueJob) PutNotificationProperty(value *GlueJobNotificationPr
 	_jsii_.InvokeVoid(
 		g,
 		"putNotificationProperty",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1585,8 +1584,8 @@ func (g *jsiiProxy_GlueJob) ResetWorkerType() {
 	)
 }
 
-func (g *jsiiProxy_GlueJob) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GlueJob) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1598,8 +1597,8 @@ func (g *jsiiProxy_GlueJob) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GlueJob) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GlueJob) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1611,8 +1610,8 @@ func (g *jsiiProxy_GlueJob) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GlueJob) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GlueJob) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1624,8 +1623,8 @@ func (g *jsiiProxy_GlueJob) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GlueJob) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GlueJob) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1650,8 +1649,8 @@ func (g *jsiiProxy_GlueJob) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GlueJob) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GlueJob) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1662,4 +1661,3 @@ func (g *jsiiProxy_GlueJob) ToTerraform() interface{} {
 
 	return returns
 }
-

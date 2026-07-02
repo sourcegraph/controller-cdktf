@@ -19,7 +19,7 @@ func (r *jsiiProxy_Route53ResolverFirewallRuleGroupAssociation) validateAddMoveT
 	return nil
 }
 
-func (r *jsiiProxy_Route53ResolverFirewallRuleGroupAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
+func (r *jsiiProxy_Route53ResolverFirewallRuleGroupAssociation) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (r *jsiiProxy_Route53ResolverFirewallRuleGroupAssociation) validateMoveFrom
 	return nil
 }
 
-func (r *jsiiProxy_Route53ResolverFirewallRuleGroupAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (r *jsiiProxy_Route53ResolverFirewallRuleGroupAssociation) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateRoute53ResolverFirewallRuleGroupAssociation_GenerateConfigForImport
 	return nil
 }
 
-func validateRoute53ResolverFirewallRuleGroupAssociation_IsConstructParameters(x interface{}) error {
+func validateRoute53ResolverFirewallRuleGroupAssociation_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateRoute53ResolverFirewallRuleGroupAssociation_IsConstructParameters(x
 	return nil
 }
 
-func validateRoute53ResolverFirewallRuleGroupAssociation_IsTerraformElementParameters(x interface{}) error {
+func validateRoute53ResolverFirewallRuleGroupAssociation_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateRoute53ResolverFirewallRuleGroupAssociation_IsTerraformElementParam
 	return nil
 }
 
-func validateRoute53ResolverFirewallRuleGroupAssociation_IsTerraformResourceParameters(x interface{}) error {
+func validateRoute53ResolverFirewallRuleGroupAssociation_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateRoute53ResolverFirewallRuleGroupAssociation_IsTerraformResourcePara
 	return nil
 }
 
-func (j *jsiiProxy_Route53ResolverFirewallRuleGroupAssociation) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Route53ResolverFirewallRuleGroupAssociation) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_Route53ResolverFirewallRuleGroupAssociation) validateSetConne
 	return nil
 }
 
-func (j *jsiiProxy_Route53ResolverFirewallRuleGroupAssociation) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Route53ResolverFirewallRuleGroupAssociation) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -382,7 +382,7 @@ func (j *jsiiProxy_Route53ResolverFirewallRuleGroupAssociation) validateSetPrior
 	return nil
 }
 
-func (j *jsiiProxy_Route53ResolverFirewallRuleGroupAssociation) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Route53ResolverFirewallRuleGroupAssociation) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -470,4 +470,3 @@ func validateNewRoute53ResolverFirewallRuleGroupAssociationParameters(scope cons
 
 	return nil
 }
-

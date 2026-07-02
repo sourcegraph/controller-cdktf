@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsRedshiftserverlessCredentials.DataAwsRedshiftserverlessCredentials",
-		reflect.TypeOf((*DataAwsRedshiftserverlessCredentials)(nil)).Elem(),
+		reflect.TypeFor[DataAwsRedshiftserverlessCredentials](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -59,7 +59,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workgroupName", GoGetter: "WorkgroupName"},
 			_jsii_.MemberProperty{JsiiProperty: "workgroupNameInput", GoGetter: "WorkgroupNameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsRedshiftserverlessCredentials{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -67,6 +67,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsRedshiftserverlessCredentials.DataAwsRedshiftserverlessCredentialsConfig",
-		reflect.TypeOf((*DataAwsRedshiftserverlessCredentialsConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsRedshiftserverlessCredentialsConfig](),
 	)
 }

@@ -226,7 +226,7 @@ func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -347,7 +347,7 @@ func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) validateSetRequireHibernateSupportParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) validateSetRequireHibernateSupportParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -402,4 +402,3 @@ func validateNewLaunchTemplateInstanceRequirementsOutputReferenceParameters(terr
 
 	return nil
 }
-

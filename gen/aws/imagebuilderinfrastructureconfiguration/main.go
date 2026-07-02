@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfiguration",
-		reflect.TypeOf((*ImagebuilderInfrastructureConfiguration)(nil)).Elem(),
+		reflect.TypeFor[ImagebuilderInfrastructureConfiguration](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -101,7 +101,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ImagebuilderInfrastructureConfiguration{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -109,15 +109,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfigurationConfig",
-		reflect.TypeOf((*ImagebuilderInfrastructureConfigurationConfig)(nil)).Elem(),
+		reflect.TypeFor[ImagebuilderInfrastructureConfigurationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfigurationInstanceMetadataOptions",
-		reflect.TypeOf((*ImagebuilderInfrastructureConfigurationInstanceMetadataOptions)(nil)).Elem(),
+		reflect.TypeFor[ImagebuilderInfrastructureConfigurationInstanceMetadataOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference",
-		reflect.TypeOf((*ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -147,7 +147,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -155,11 +155,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfigurationLogging",
-		reflect.TypeOf((*ImagebuilderInfrastructureConfigurationLogging)(nil)).Elem(),
+		reflect.TypeFor[ImagebuilderInfrastructureConfigurationLogging](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfigurationLoggingOutputReference",
-		reflect.TypeOf((*ImagebuilderInfrastructureConfigurationLoggingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ImagebuilderInfrastructureConfigurationLoggingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -186,7 +186,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ImagebuilderInfrastructureConfigurationLoggingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -194,11 +194,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfigurationLoggingS3Logs",
-		reflect.TypeOf((*ImagebuilderInfrastructureConfigurationLoggingS3Logs)(nil)).Elem(),
+		reflect.TypeFor[ImagebuilderInfrastructureConfigurationLoggingS3Logs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference",
-		reflect.TypeOf((*ImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -227,7 +227,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

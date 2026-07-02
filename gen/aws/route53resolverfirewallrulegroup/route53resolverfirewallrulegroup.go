@@ -16,15 +16,15 @@ type Route53ResolverFirewallRuleGroup interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -55,11 +55,11 @@ type Route53ResolverFirewallRuleGroup interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ShareStatus() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -70,16 +70,16 @@ type Route53ResolverFirewallRuleGroup interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,7 +97,7 @@ type Route53ResolverFirewallRuleGroup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -109,7 +109,7 @@ type Route53ResolverFirewallRuleGroup interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -122,17 +122,17 @@ type Route53ResolverFirewallRuleGroup interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Route53ResolverFirewallRuleGroup
@@ -160,8 +160,8 @@ func (j *jsiiProxy_Route53ResolverFirewallRuleGroup) CdktfStack() cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_Route53ResolverFirewallRuleGroup) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53ResolverFirewallRuleGroup) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -170,8 +170,8 @@ func (j *jsiiProxy_Route53ResolverFirewallRuleGroup) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Route53ResolverFirewallRuleGroup) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Route53ResolverFirewallRuleGroup) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_Route53ResolverFirewallRuleGroup) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_Route53ResolverFirewallRuleGroup) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53ResolverFirewallRuleGroup) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -310,8 +310,8 @@ func (j *jsiiProxy_Route53ResolverFirewallRuleGroup) Provider() cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_Route53ResolverFirewallRuleGroup) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Route53ResolverFirewallRuleGroup) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -320,8 +320,8 @@ func (j *jsiiProxy_Route53ResolverFirewallRuleGroup) Provisioners() *[]interface
 	return returns
 }
 
-func (j *jsiiProxy_Route53ResolverFirewallRuleGroup) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53ResolverFirewallRuleGroup) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -390,8 +390,8 @@ func (j *jsiiProxy_Route53ResolverFirewallRuleGroup) TerraformGeneratorMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_Route53ResolverFirewallRuleGroup) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Route53ResolverFirewallRuleGroup) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -410,7 +410,6 @@ func (j *jsiiProxy_Route53ResolverFirewallRuleGroup) TerraformResourceType() *st
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53_resolver_firewall_rule_group aws_route53_resolver_firewall_rule_group} Resource.
 func NewRoute53ResolverFirewallRuleGroup(scope constructs.Construct, id *string, config *Route53ResolverFirewallRuleGroupConfig) Route53ResolverFirewallRuleGroup {
 	_init_.Initialize()
@@ -422,7 +421,7 @@ func NewRoute53ResolverFirewallRuleGroup(scope constructs.Construct, id *string,
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.route53ResolverFirewallRuleGroup.Route53ResolverFirewallRuleGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -435,12 +434,12 @@ func NewRoute53ResolverFirewallRuleGroup_Override(r Route53ResolverFirewallRuleG
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.route53ResolverFirewallRuleGroup.Route53ResolverFirewallRuleGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverFirewallRuleGroup)SetConnection(val interface{}) {
+func (j *jsiiProxy_Route53ResolverFirewallRuleGroup) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,7 +450,7 @@ func (j *jsiiProxy_Route53ResolverFirewallRuleGroup)SetConnection(val interface{
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverFirewallRuleGroup)SetCount(val interface{}) {
+func (j *jsiiProxy_Route53ResolverFirewallRuleGroup) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func (j *jsiiProxy_Route53ResolverFirewallRuleGroup)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverFirewallRuleGroup)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Route53ResolverFirewallRuleGroup) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -470,7 +469,7 @@ func (j *jsiiProxy_Route53ResolverFirewallRuleGroup)SetDependsOn(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverFirewallRuleGroup)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Route53ResolverFirewallRuleGroup) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -478,7 +477,7 @@ func (j *jsiiProxy_Route53ResolverFirewallRuleGroup)SetForEach(val cdktf.ITerraf
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverFirewallRuleGroup)SetId(val *string) {
+func (j *jsiiProxy_Route53ResolverFirewallRuleGroup) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_Route53ResolverFirewallRuleGroup)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverFirewallRuleGroup)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Route53ResolverFirewallRuleGroup) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_Route53ResolverFirewallRuleGroup)SetLifecycle(val *cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverFirewallRuleGroup)SetName(val *string) {
+func (j *jsiiProxy_Route53ResolverFirewallRuleGroup) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_Route53ResolverFirewallRuleGroup)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverFirewallRuleGroup)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Route53ResolverFirewallRuleGroup) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -519,7 +518,7 @@ func (j *jsiiProxy_Route53ResolverFirewallRuleGroup)SetProvider(val cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverFirewallRuleGroup)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Route53ResolverFirewallRuleGroup) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -530,7 +529,7 @@ func (j *jsiiProxy_Route53ResolverFirewallRuleGroup)SetProvisioners(val *[]inter
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverFirewallRuleGroup)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_Route53ResolverFirewallRuleGroup) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func (j *jsiiProxy_Route53ResolverFirewallRuleGroup)SetTags(val *map[string]*str
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverFirewallRuleGroup)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_Route53ResolverFirewallRuleGroup) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -564,7 +563,7 @@ func Route53ResolverFirewallRuleGroup_GenerateConfigForImport(scope constructs.C
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.route53ResolverFirewallRuleGroup.Route53ResolverFirewallRuleGroup",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -588,7 +587,7 @@ func Route53ResolverFirewallRuleGroup_GenerateConfigForImport(scope constructs.C
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Route53ResolverFirewallRuleGroup_IsConstruct(x interface{}) *bool {
+func Route53ResolverFirewallRuleGroup_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRoute53ResolverFirewallRuleGroup_IsConstructParameters(x); err != nil {
@@ -599,7 +598,7 @@ func Route53ResolverFirewallRuleGroup_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.route53ResolverFirewallRuleGroup.Route53ResolverFirewallRuleGroup",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -607,7 +606,7 @@ func Route53ResolverFirewallRuleGroup_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Route53ResolverFirewallRuleGroup_IsTerraformElement(x interface{}) *bool {
+func Route53ResolverFirewallRuleGroup_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRoute53ResolverFirewallRuleGroup_IsTerraformElementParameters(x); err != nil {
@@ -618,7 +617,7 @@ func Route53ResolverFirewallRuleGroup_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.route53ResolverFirewallRuleGroup.Route53ResolverFirewallRuleGroup",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -626,7 +625,7 @@ func Route53ResolverFirewallRuleGroup_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Route53ResolverFirewallRuleGroup_IsTerraformResource(x interface{}) *bool {
+func Route53ResolverFirewallRuleGroup_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRoute53ResolverFirewallRuleGroup_IsTerraformResourceParameters(x); err != nil {
@@ -637,7 +636,7 @@ func Route53ResolverFirewallRuleGroup_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.route53ResolverFirewallRuleGroup.Route53ResolverFirewallRuleGroup",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -662,31 +661,31 @@ func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) AddMoveTarget(moveTarget *s
 	_jsii_.InvokeVoid(
 		r,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) AddOverride(path *string, value any) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -702,7 +701,7 @@ func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) GetBooleanAttribute(terrafo
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -718,7 +717,7 @@ func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) GetBooleanMapAttribute(terr
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -734,7 +733,7 @@ func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) GetListAttribute(terraformA
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -750,7 +749,7 @@ func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) GetNumberAttribute(terrafor
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -766,7 +765,7 @@ func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) GetNumberListAttribute(terr
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -782,7 +781,7 @@ func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) GetNumberMapAttribute(terra
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -798,7 +797,7 @@ func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) GetStringAttribute(terrafor
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -814,15 +813,15 @@ func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) GetStringMapAttribute(terra
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) HasResourceMove() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -841,7 +840,7 @@ func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) ImportFrom(id *string, prov
 	_jsii_.InvokeVoid(
 		r,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -854,7 +853,7 @@ func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) InterpolationForAttribute(t
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,18 +867,18 @@ func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) MoveTo(moveTarget *string, index interface{}) {
+func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) MoveTo(moveTarget *string, index any) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -890,7 +889,7 @@ func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -901,7 +900,7 @@ func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) OverrideLogicalId(newLogica
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -937,8 +936,8 @@ func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) ResetTagsAll() {
 	)
 }
 
-func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -950,8 +949,8 @@ func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) SynthesizeAttributes() *map
 	return returns
 }
 
-func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -963,8 +962,8 @@ func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) SynthesizeHclAttributes() *
 	return returns
 }
 
-func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) ToHclTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -976,8 +975,8 @@ func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) ToHclTerraform() interface{
 	return returns
 }
 
-func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) ToMetadata() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1002,8 +1001,8 @@ func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) ToTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1014,4 +1013,3 @@ func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) ToTerraform() interface{} {
 
 	return returns
 }
-

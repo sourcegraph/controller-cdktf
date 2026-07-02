@@ -16,15 +16,15 @@ type ElasticacheParameterGroup interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -56,17 +56,17 @@ type ElasticacheParameterGroup interface {
 	// The tree node.
 	Node() constructs.Node
 	Parameter() ElasticacheParameterGroupParameterList
-	ParameterInput() interface{}
+	ParameterInput() any
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -76,16 +76,16 @@ type ElasticacheParameterGroup interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type ElasticacheParameterGroup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -115,14 +115,14 @@ type ElasticacheParameterGroup interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutParameter(value interface{})
+	PutParameter(value any)
 	ResetDescription()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -131,17 +131,17 @@ type ElasticacheParameterGroup interface {
 	ResetParameter()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ElasticacheParameterGroup
@@ -169,8 +169,8 @@ func (j *jsiiProxy_ElasticacheParameterGroup) CdktfStack() cdktf.TerraformStack 
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheParameterGroup) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticacheParameterGroup) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_ElasticacheParameterGroup) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheParameterGroup) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ElasticacheParameterGroup) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -189,8 +189,8 @@ func (j *jsiiProxy_ElasticacheParameterGroup) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheParameterGroup) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticacheParameterGroup) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -349,8 +349,8 @@ func (j *jsiiProxy_ElasticacheParameterGroup) Parameter() ElasticacheParameterGr
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheParameterGroup) ParameterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticacheParameterGroup) ParameterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"parameterInput",
@@ -369,8 +369,8 @@ func (j *jsiiProxy_ElasticacheParameterGroup) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheParameterGroup) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ElasticacheParameterGroup) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -379,8 +379,8 @@ func (j *jsiiProxy_ElasticacheParameterGroup) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheParameterGroup) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticacheParameterGroup) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -439,8 +439,8 @@ func (j *jsiiProxy_ElasticacheParameterGroup) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheParameterGroup) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ElasticacheParameterGroup) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -459,7 +459,6 @@ func (j *jsiiProxy_ElasticacheParameterGroup) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elasticache_parameter_group aws_elasticache_parameter_group} Resource.
 func NewElasticacheParameterGroup(scope constructs.Construct, id *string, config *ElasticacheParameterGroupConfig) ElasticacheParameterGroup {
 	_init_.Initialize()
@@ -471,7 +470,7 @@ func NewElasticacheParameterGroup(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -484,12 +483,12 @@ func NewElasticacheParameterGroup_Override(e ElasticacheParameterGroup, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_ElasticacheParameterGroup)SetConnection(val interface{}) {
+func (j *jsiiProxy_ElasticacheParameterGroup) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_ElasticacheParameterGroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheParameterGroup)SetCount(val interface{}) {
+func (j *jsiiProxy_ElasticacheParameterGroup) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_ElasticacheParameterGroup)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheParameterGroup)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ElasticacheParameterGroup) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -519,7 +518,7 @@ func (j *jsiiProxy_ElasticacheParameterGroup)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheParameterGroup)SetDescription(val *string) {
+func (j *jsiiProxy_ElasticacheParameterGroup) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -530,7 +529,7 @@ func (j *jsiiProxy_ElasticacheParameterGroup)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheParameterGroup)SetFamily(val *string) {
+func (j *jsiiProxy_ElasticacheParameterGroup) SetFamily(val *string) {
 	if err := j.validateSetFamilyParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func (j *jsiiProxy_ElasticacheParameterGroup)SetFamily(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheParameterGroup)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ElasticacheParameterGroup) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -549,7 +548,7 @@ func (j *jsiiProxy_ElasticacheParameterGroup)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_ElasticacheParameterGroup)SetId(val *string) {
+func (j *jsiiProxy_ElasticacheParameterGroup) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -560,7 +559,7 @@ func (j *jsiiProxy_ElasticacheParameterGroup)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheParameterGroup)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ElasticacheParameterGroup) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -571,7 +570,7 @@ func (j *jsiiProxy_ElasticacheParameterGroup)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_ElasticacheParameterGroup)SetName(val *string) {
+func (j *jsiiProxy_ElasticacheParameterGroup) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -582,7 +581,7 @@ func (j *jsiiProxy_ElasticacheParameterGroup)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheParameterGroup)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ElasticacheParameterGroup) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -590,7 +589,7 @@ func (j *jsiiProxy_ElasticacheParameterGroup)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_ElasticacheParameterGroup)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ElasticacheParameterGroup) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -601,7 +600,7 @@ func (j *jsiiProxy_ElasticacheParameterGroup)SetProvisioners(val *[]interface{})
 	)
 }
 
-func (j *jsiiProxy_ElasticacheParameterGroup)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_ElasticacheParameterGroup) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -612,7 +611,7 @@ func (j *jsiiProxy_ElasticacheParameterGroup)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheParameterGroup)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_ElasticacheParameterGroup) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -635,7 +634,7 @@ func ElasticacheParameterGroup_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroup",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func ElasticacheParameterGroup_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ElasticacheParameterGroup_IsConstruct(x interface{}) *bool {
+func ElasticacheParameterGroup_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateElasticacheParameterGroup_IsConstructParameters(x); err != nil {
@@ -670,7 +669,7 @@ func ElasticacheParameterGroup_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroup",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func ElasticacheParameterGroup_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ElasticacheParameterGroup_IsTerraformElement(x interface{}) *bool {
+func ElasticacheParameterGroup_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateElasticacheParameterGroup_IsTerraformElementParameters(x); err != nil {
@@ -689,7 +688,7 @@ func ElasticacheParameterGroup_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroup",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -697,7 +696,7 @@ func ElasticacheParameterGroup_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ElasticacheParameterGroup_IsTerraformResource(x interface{}) *bool {
+func ElasticacheParameterGroup_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateElasticacheParameterGroup_IsTerraformResourceParameters(x); err != nil {
@@ -708,7 +707,7 @@ func ElasticacheParameterGroup_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroup",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -733,31 +732,31 @@ func (e *jsiiProxy_ElasticacheParameterGroup) AddMoveTarget(moveTarget *string) 
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_ElasticacheParameterGroup) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_ElasticacheParameterGroup) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_ElasticacheParameterGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_ElasticacheParameterGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -773,7 +772,7 @@ func (e *jsiiProxy_ElasticacheParameterGroup) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -789,7 +788,7 @@ func (e *jsiiProxy_ElasticacheParameterGroup) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -805,7 +804,7 @@ func (e *jsiiProxy_ElasticacheParameterGroup) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -821,7 +820,7 @@ func (e *jsiiProxy_ElasticacheParameterGroup) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -837,7 +836,7 @@ func (e *jsiiProxy_ElasticacheParameterGroup) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -853,7 +852,7 @@ func (e *jsiiProxy_ElasticacheParameterGroup) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -869,7 +868,7 @@ func (e *jsiiProxy_ElasticacheParameterGroup) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -885,15 +884,15 @@ func (e *jsiiProxy_ElasticacheParameterGroup) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_ElasticacheParameterGroup) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_ElasticacheParameterGroup) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -912,7 +911,7 @@ func (e *jsiiProxy_ElasticacheParameterGroup) ImportFrom(id *string, provider cd
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -925,7 +924,7 @@ func (e *jsiiProxy_ElasticacheParameterGroup) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -939,18 +938,18 @@ func (e *jsiiProxy_ElasticacheParameterGroup) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_ElasticacheParameterGroup) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_ElasticacheParameterGroup) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -961,7 +960,7 @@ func (e *jsiiProxy_ElasticacheParameterGroup) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -972,18 +971,18 @@ func (e *jsiiProxy_ElasticacheParameterGroup) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (e *jsiiProxy_ElasticacheParameterGroup) PutParameter(value interface{}) {
+func (e *jsiiProxy_ElasticacheParameterGroup) PutParameter(value any) {
 	if err := e.validatePutParameterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"putParameter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1035,8 +1034,8 @@ func (e *jsiiProxy_ElasticacheParameterGroup) ResetTagsAll() {
 	)
 }
 
-func (e *jsiiProxy_ElasticacheParameterGroup) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_ElasticacheParameterGroup) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1048,8 +1047,8 @@ func (e *jsiiProxy_ElasticacheParameterGroup) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (e *jsiiProxy_ElasticacheParameterGroup) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_ElasticacheParameterGroup) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1061,8 +1060,8 @@ func (e *jsiiProxy_ElasticacheParameterGroup) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (e *jsiiProxy_ElasticacheParameterGroup) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_ElasticacheParameterGroup) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1074,8 +1073,8 @@ func (e *jsiiProxy_ElasticacheParameterGroup) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_ElasticacheParameterGroup) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_ElasticacheParameterGroup) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1100,8 +1099,8 @@ func (e *jsiiProxy_ElasticacheParameterGroup) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_ElasticacheParameterGroup) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_ElasticacheParameterGroup) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1112,4 +1111,3 @@ func (e *jsiiProxy_ElasticacheParameterGroup) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -32,15 +32,15 @@ type MskCluster interface {
 	ConfigurationInfo() MskClusterConfigurationInfoOutputReference
 	ConfigurationInfoInput() *MskClusterConfigurationInfo
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CurrentVersion() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -83,11 +83,11 @@ type MskCluster interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	StorageMode() *string
 	SetStorageMode(val *string)
 	StorageModeInput() *string
@@ -100,20 +100,20 @@ type MskCluster interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() MskClusterTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	ZookeeperConnectString() *string
 	ZookeeperConnectStringTls() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -131,7 +131,7 @@ type MskCluster interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -143,7 +143,7 @@ type MskCluster interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -171,17 +171,17 @@ type MskCluster interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for MskCluster
@@ -359,8 +359,8 @@ func (j *jsiiProxy_MskCluster) ConfigurationInfoInput() *MskClusterConfiguration
 	return returns
 }
 
-func (j *jsiiProxy_MskCluster) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MskCluster) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -369,8 +369,8 @@ func (j *jsiiProxy_MskCluster) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MskCluster) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MskCluster) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -379,8 +379,8 @@ func (j *jsiiProxy_MskCluster) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MskCluster) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MskCluster) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -609,8 +609,8 @@ func (j *jsiiProxy_MskCluster) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_MskCluster) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_MskCluster) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -619,8 +619,8 @@ func (j *jsiiProxy_MskCluster) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MskCluster) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MskCluster) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -699,8 +699,8 @@ func (j *jsiiProxy_MskCluster) TerraformGeneratorMetadata() *cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_MskCluster) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MskCluster) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -729,8 +729,8 @@ func (j *jsiiProxy_MskCluster) Timeouts() MskClusterTimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_MskCluster) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MskCluster) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -759,7 +759,6 @@ func (j *jsiiProxy_MskCluster) ZookeeperConnectStringTls() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/msk_cluster aws_msk_cluster} Resource.
 func NewMskCluster(scope constructs.Construct, id *string, config *MskClusterConfig) MskCluster {
 	_init_.Initialize()
@@ -771,7 +770,7 @@ func NewMskCluster(scope constructs.Construct, id *string, config *MskClusterCon
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.mskCluster.MskCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -784,12 +783,12 @@ func NewMskCluster_Override(m MskCluster, scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.mskCluster.MskCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MskCluster)SetClusterName(val *string) {
+func (j *jsiiProxy_MskCluster) SetClusterName(val *string) {
 	if err := j.validateSetClusterNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -800,7 +799,7 @@ func (j *jsiiProxy_MskCluster)SetClusterName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MskCluster)SetConnection(val interface{}) {
+func (j *jsiiProxy_MskCluster) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -811,7 +810,7 @@ func (j *jsiiProxy_MskCluster)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MskCluster)SetCount(val interface{}) {
+func (j *jsiiProxy_MskCluster) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -822,7 +821,7 @@ func (j *jsiiProxy_MskCluster)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MskCluster)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_MskCluster) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -830,7 +829,7 @@ func (j *jsiiProxy_MskCluster)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MskCluster)SetEnhancedMonitoring(val *string) {
+func (j *jsiiProxy_MskCluster) SetEnhancedMonitoring(val *string) {
 	if err := j.validateSetEnhancedMonitoringParameters(val); err != nil {
 		panic(err)
 	}
@@ -841,7 +840,7 @@ func (j *jsiiProxy_MskCluster)SetEnhancedMonitoring(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MskCluster)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MskCluster) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -849,7 +848,7 @@ func (j *jsiiProxy_MskCluster)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_MskCluster)SetId(val *string) {
+func (j *jsiiProxy_MskCluster) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -860,7 +859,7 @@ func (j *jsiiProxy_MskCluster)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MskCluster)SetKafkaVersion(val *string) {
+func (j *jsiiProxy_MskCluster) SetKafkaVersion(val *string) {
 	if err := j.validateSetKafkaVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -871,7 +870,7 @@ func (j *jsiiProxy_MskCluster)SetKafkaVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MskCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MskCluster) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -882,7 +881,7 @@ func (j *jsiiProxy_MskCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	)
 }
 
-func (j *jsiiProxy_MskCluster)SetNumberOfBrokerNodes(val *float64) {
+func (j *jsiiProxy_MskCluster) SetNumberOfBrokerNodes(val *float64) {
 	if err := j.validateSetNumberOfBrokerNodesParameters(val); err != nil {
 		panic(err)
 	}
@@ -893,7 +892,7 @@ func (j *jsiiProxy_MskCluster)SetNumberOfBrokerNodes(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MskCluster)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MskCluster) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -901,7 +900,7 @@ func (j *jsiiProxy_MskCluster)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_MskCluster)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_MskCluster) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -912,7 +911,7 @@ func (j *jsiiProxy_MskCluster)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MskCluster)SetStorageMode(val *string) {
+func (j *jsiiProxy_MskCluster) SetStorageMode(val *string) {
 	if err := j.validateSetStorageModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -923,7 +922,7 @@ func (j *jsiiProxy_MskCluster)SetStorageMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MskCluster)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_MskCluster) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -934,7 +933,7 @@ func (j *jsiiProxy_MskCluster)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_MskCluster)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_MskCluster) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -957,7 +956,7 @@ func MskCluster_GenerateConfigForImport(scope constructs.Construct, importToId *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.mskCluster.MskCluster",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -981,7 +980,7 @@ func MskCluster_GenerateConfigForImport(scope constructs.Construct, importToId *
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func MskCluster_IsConstruct(x interface{}) *bool {
+func MskCluster_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMskCluster_IsConstructParameters(x); err != nil {
@@ -992,7 +991,7 @@ func MskCluster_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.mskCluster.MskCluster",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1000,7 +999,7 @@ func MskCluster_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func MskCluster_IsTerraformElement(x interface{}) *bool {
+func MskCluster_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMskCluster_IsTerraformElementParameters(x); err != nil {
@@ -1011,7 +1010,7 @@ func MskCluster_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.mskCluster.MskCluster",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1019,7 +1018,7 @@ func MskCluster_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func MskCluster_IsTerraformResource(x interface{}) *bool {
+func MskCluster_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMskCluster_IsTerraformResourceParameters(x); err != nil {
@@ -1030,7 +1029,7 @@ func MskCluster_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.mskCluster.MskCluster",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1055,31 +1054,31 @@ func (m *jsiiProxy_MskCluster) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (m *jsiiProxy_MskCluster) AddOverride(path *string, value interface{}) {
+func (m *jsiiProxy_MskCluster) AddOverride(path *string, value any) {
 	if err := m.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (m *jsiiProxy_MskCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MskCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1095,7 +1094,7 @@ func (m *jsiiProxy_MskCluster) GetBooleanAttribute(terraformAttribute *string) c
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1111,7 +1110,7 @@ func (m *jsiiProxy_MskCluster) GetBooleanMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1127,7 +1126,7 @@ func (m *jsiiProxy_MskCluster) GetListAttribute(terraformAttribute *string) *[]*
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1143,7 +1142,7 @@ func (m *jsiiProxy_MskCluster) GetNumberAttribute(terraformAttribute *string) *f
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1159,7 +1158,7 @@ func (m *jsiiProxy_MskCluster) GetNumberListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1175,7 +1174,7 @@ func (m *jsiiProxy_MskCluster) GetNumberMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1191,7 +1190,7 @@ func (m *jsiiProxy_MskCluster) GetStringAttribute(terraformAttribute *string) *s
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1207,15 +1206,15 @@ func (m *jsiiProxy_MskCluster) GetStringMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MskCluster) HasResourceMove() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MskCluster) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1234,7 +1233,7 @@ func (m *jsiiProxy_MskCluster) ImportFrom(id *string, provider cdktf.TerraformPr
 	_jsii_.InvokeVoid(
 		m,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1247,7 +1246,7 @@ func (m *jsiiProxy_MskCluster) InterpolationForAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1261,18 +1260,18 @@ func (m *jsiiProxy_MskCluster) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (m *jsiiProxy_MskCluster) MoveTo(moveTarget *string, index interface{}) {
+func (m *jsiiProxy_MskCluster) MoveTo(moveTarget *string, index any) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1283,7 +1282,7 @@ func (m *jsiiProxy_MskCluster) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1294,7 +1293,7 @@ func (m *jsiiProxy_MskCluster) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1305,7 +1304,7 @@ func (m *jsiiProxy_MskCluster) PutBrokerNodeGroupInfo(value *MskClusterBrokerNod
 	_jsii_.InvokeVoid(
 		m,
 		"putBrokerNodeGroupInfo",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1316,7 +1315,7 @@ func (m *jsiiProxy_MskCluster) PutClientAuthentication(value *MskClusterClientAu
 	_jsii_.InvokeVoid(
 		m,
 		"putClientAuthentication",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1327,7 +1326,7 @@ func (m *jsiiProxy_MskCluster) PutConfigurationInfo(value *MskClusterConfigurati
 	_jsii_.InvokeVoid(
 		m,
 		"putConfigurationInfo",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1338,7 +1337,7 @@ func (m *jsiiProxy_MskCluster) PutEncryptionInfo(value *MskClusterEncryptionInfo
 	_jsii_.InvokeVoid(
 		m,
 		"putEncryptionInfo",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1349,7 +1348,7 @@ func (m *jsiiProxy_MskCluster) PutLoggingInfo(value *MskClusterLoggingInfo) {
 	_jsii_.InvokeVoid(
 		m,
 		"putLoggingInfo",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1360,7 +1359,7 @@ func (m *jsiiProxy_MskCluster) PutOpenMonitoring(value *MskClusterOpenMonitoring
 	_jsii_.InvokeVoid(
 		m,
 		"putOpenMonitoring",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1371,7 +1370,7 @@ func (m *jsiiProxy_MskCluster) PutTimeouts(value *MskClusterTimeouts) {
 	_jsii_.InvokeVoid(
 		m,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1471,8 +1470,8 @@ func (m *jsiiProxy_MskCluster) ResetTimeouts() {
 	)
 }
 
-func (m *jsiiProxy_MskCluster) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MskCluster) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1484,8 +1483,8 @@ func (m *jsiiProxy_MskCluster) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_MskCluster) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MskCluster) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1497,8 +1496,8 @@ func (m *jsiiProxy_MskCluster) SynthesizeHclAttributes() *map[string]interface{}
 	return returns
 }
 
-func (m *jsiiProxy_MskCluster) ToHclTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MskCluster) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1510,8 +1509,8 @@ func (m *jsiiProxy_MskCluster) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_MskCluster) ToMetadata() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MskCluster) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1536,8 +1535,8 @@ func (m *jsiiProxy_MskCluster) ToString() *string {
 	return returns
 }
 
-func (m *jsiiProxy_MskCluster) ToTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MskCluster) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1548,4 +1547,3 @@ func (m *jsiiProxy_MskCluster) ToTerraform() interface{} {
 
 	return returns
 }
-

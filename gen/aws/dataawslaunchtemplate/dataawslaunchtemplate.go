@@ -18,11 +18,11 @@ type DataAwsLaunchTemplate interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CpuOptions() DataAwsLaunchTemplateCpuOptionsList
 	CreditSpecification() DataAwsLaunchTemplateCreditSpecificationList
 	DefaultVersion() *float64
@@ -38,7 +38,7 @@ type DataAwsLaunchTemplate interface {
 	ElasticInferenceAccelerator() DataAwsLaunchTemplateElasticInferenceAcceleratorList
 	EnclaveOptions() DataAwsLaunchTemplateEnclaveOptionsList
 	Filter() DataAwsLaunchTemplateFilterList
-	FilterInput() interface{}
+	FilterInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -82,7 +82,7 @@ type DataAwsLaunchTemplate interface {
 	SetProvider(val cdktf.TerraformProvider)
 	RamDiskId() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SecurityGroupNames() *[]*string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -91,17 +91,17 @@ type DataAwsLaunchTemplate interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DataAwsLaunchTemplateTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UserData() *string
 	VpcSecurityGroupIds() *[]*string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -123,7 +123,7 @@ type DataAwsLaunchTemplate interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutFilter(value interface{})
+	PutFilter(value any)
 	PutTimeouts(value *DataAwsLaunchTemplateTimeouts)
 	ResetFilter()
 	ResetId()
@@ -133,18 +133,18 @@ type DataAwsLaunchTemplate interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsLaunchTemplate
@@ -192,8 +192,8 @@ func (j *jsiiProxy_DataAwsLaunchTemplate) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLaunchTemplate) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsLaunchTemplate) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_DataAwsLaunchTemplate) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLaunchTemplate) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsLaunchTemplate) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -332,8 +332,8 @@ func (j *jsiiProxy_DataAwsLaunchTemplate) Filter() DataAwsLaunchTemplateFilterLi
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLaunchTemplate) FilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsLaunchTemplate) FilterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"filterInput",
@@ -622,8 +622,8 @@ func (j *jsiiProxy_DataAwsLaunchTemplate) RamDiskId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLaunchTemplate) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsLaunchTemplate) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -682,8 +682,8 @@ func (j *jsiiProxy_DataAwsLaunchTemplate) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLaunchTemplate) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsLaunchTemplate) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -712,8 +712,8 @@ func (j *jsiiProxy_DataAwsLaunchTemplate) Timeouts() DataAwsLaunchTemplateTimeou
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLaunchTemplate) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsLaunchTemplate) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -742,7 +742,6 @@ func (j *jsiiProxy_DataAwsLaunchTemplate) VpcSecurityGroupIds() *[]*string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/launch_template aws_launch_template} Data Source.
 func NewDataAwsLaunchTemplate(scope constructs.Construct, id *string, config *DataAwsLaunchTemplateConfig) DataAwsLaunchTemplate {
 	_init_.Initialize()
@@ -754,7 +753,7 @@ func NewDataAwsLaunchTemplate(scope constructs.Construct, id *string, config *Da
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -767,12 +766,12 @@ func NewDataAwsLaunchTemplate_Override(d DataAwsLaunchTemplate, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsLaunchTemplate)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsLaunchTemplate) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -783,7 +782,7 @@ func (j *jsiiProxy_DataAwsLaunchTemplate)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsLaunchTemplate)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsLaunchTemplate) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -791,7 +790,7 @@ func (j *jsiiProxy_DataAwsLaunchTemplate)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsLaunchTemplate)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsLaunchTemplate) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -799,7 +798,7 @@ func (j *jsiiProxy_DataAwsLaunchTemplate)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_DataAwsLaunchTemplate)SetId(val *string) {
+func (j *jsiiProxy_DataAwsLaunchTemplate) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -810,7 +809,7 @@ func (j *jsiiProxy_DataAwsLaunchTemplate)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsLaunchTemplate)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsLaunchTemplate) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -821,7 +820,7 @@ func (j *jsiiProxy_DataAwsLaunchTemplate)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_DataAwsLaunchTemplate)SetName(val *string) {
+func (j *jsiiProxy_DataAwsLaunchTemplate) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -832,7 +831,7 @@ func (j *jsiiProxy_DataAwsLaunchTemplate)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsLaunchTemplate)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsLaunchTemplate) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -840,7 +839,7 @@ func (j *jsiiProxy_DataAwsLaunchTemplate)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_DataAwsLaunchTemplate)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsLaunchTemplate) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -863,7 +862,7 @@ func DataAwsLaunchTemplate_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplate",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -887,7 +886,7 @@ func DataAwsLaunchTemplate_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsLaunchTemplate_IsConstruct(x interface{}) *bool {
+func DataAwsLaunchTemplate_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsLaunchTemplate_IsConstructParameters(x); err != nil {
@@ -898,7 +897,7 @@ func DataAwsLaunchTemplate_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplate",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -906,7 +905,7 @@ func DataAwsLaunchTemplate_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsLaunchTemplate_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsLaunchTemplate_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsLaunchTemplate_IsTerraformDataSourceParameters(x); err != nil {
@@ -917,7 +916,7 @@ func DataAwsLaunchTemplate_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplate",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -925,7 +924,7 @@ func DataAwsLaunchTemplate_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsLaunchTemplate_IsTerraformElement(x interface{}) *bool {
+func DataAwsLaunchTemplate_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsLaunchTemplate_IsTerraformElementParameters(x); err != nil {
@@ -936,7 +935,7 @@ func DataAwsLaunchTemplate_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplate",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -954,27 +953,27 @@ func DataAwsLaunchTemplate_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsLaunchTemplate) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsLaunchTemplate) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsLaunchTemplate) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsLaunchTemplate) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -990,7 +989,7 @@ func (d *jsiiProxy_DataAwsLaunchTemplate) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1006,7 +1005,7 @@ func (d *jsiiProxy_DataAwsLaunchTemplate) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1022,7 +1021,7 @@ func (d *jsiiProxy_DataAwsLaunchTemplate) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1038,7 +1037,7 @@ func (d *jsiiProxy_DataAwsLaunchTemplate) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1054,7 +1053,7 @@ func (d *jsiiProxy_DataAwsLaunchTemplate) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1070,7 +1069,7 @@ func (d *jsiiProxy_DataAwsLaunchTemplate) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1086,7 +1085,7 @@ func (d *jsiiProxy_DataAwsLaunchTemplate) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1102,7 +1101,7 @@ func (d *jsiiProxy_DataAwsLaunchTemplate) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1118,7 +1117,7 @@ func (d *jsiiProxy_DataAwsLaunchTemplate) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1132,18 +1131,18 @@ func (d *jsiiProxy_DataAwsLaunchTemplate) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DataAwsLaunchTemplate) PutFilter(value interface{}) {
+func (d *jsiiProxy_DataAwsLaunchTemplate) PutFilter(value any) {
 	if err := d.validatePutFilterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1154,7 +1153,7 @@ func (d *jsiiProxy_DataAwsLaunchTemplate) PutTimeouts(value *DataAwsLaunchTempla
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1206,8 +1205,8 @@ func (d *jsiiProxy_DataAwsLaunchTemplate) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsLaunchTemplate) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsLaunchTemplate) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1219,8 +1218,8 @@ func (d *jsiiProxy_DataAwsLaunchTemplate) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsLaunchTemplate) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsLaunchTemplate) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1232,8 +1231,8 @@ func (d *jsiiProxy_DataAwsLaunchTemplate) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsLaunchTemplate) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsLaunchTemplate) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1245,8 +1244,8 @@ func (d *jsiiProxy_DataAwsLaunchTemplate) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsLaunchTemplate) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsLaunchTemplate) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1271,8 +1270,8 @@ func (d *jsiiProxy_DataAwsLaunchTemplate) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsLaunchTemplate) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsLaunchTemplate) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1283,4 +1282,3 @@ func (d *jsiiProxy_DataAwsLaunchTemplate) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (e *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationSecretOp
 	return nil
 }
 
-func (j *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationSecretOp
 	return nil
 }
 
-func (j *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewEcsServiceServiceConnectConfigurationLogConfigurationSecretOptio
 
 	return nil
 }
-

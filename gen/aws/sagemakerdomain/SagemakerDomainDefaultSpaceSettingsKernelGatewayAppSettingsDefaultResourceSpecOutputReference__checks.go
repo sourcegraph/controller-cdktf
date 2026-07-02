@@ -98,7 +98,7 @@ func (s *jsiiProxy_SagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettingsDe
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettingsDefaultResourceSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettingsDefaultResourceSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewSagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettingsDefau
 
 	return nil
 }
-

@@ -19,15 +19,15 @@ type QuicksightGroup interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -63,24 +63,24 @@ type QuicksightGroup interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,7 +98,7 @@ type QuicksightGroup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -110,7 +110,7 @@ type QuicksightGroup interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -124,17 +124,17 @@ type QuicksightGroup interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for QuicksightGroup
@@ -182,8 +182,8 @@ func (j *jsiiProxy_QuicksightGroup) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_QuicksightGroup) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_QuicksightGroup) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_QuicksightGroup) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_QuicksightGroup) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_QuicksightGroup) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_QuicksightGroup) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_QuicksightGroup) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_QuicksightGroup) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -362,8 +362,8 @@ func (j *jsiiProxy_QuicksightGroup) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_QuicksightGroup) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_QuicksightGroup) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -372,8 +372,8 @@ func (j *jsiiProxy_QuicksightGroup) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_QuicksightGroup) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_QuicksightGroup) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -392,8 +392,8 @@ func (j *jsiiProxy_QuicksightGroup) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_QuicksightGroup) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_QuicksightGroup) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -412,7 +412,6 @@ func (j *jsiiProxy_QuicksightGroup) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/quicksight_group aws_quicksight_group} Resource.
 func NewQuicksightGroup(scope constructs.Construct, id *string, config *QuicksightGroupConfig) QuicksightGroup {
 	_init_.Initialize()
@@ -424,7 +423,7 @@ func NewQuicksightGroup(scope constructs.Construct, id *string, config *Quicksig
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.quicksightGroup.QuicksightGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -437,12 +436,12 @@ func NewQuicksightGroup_Override(q QuicksightGroup, scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.quicksightGroup.QuicksightGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		q,
 	)
 }
 
-func (j *jsiiProxy_QuicksightGroup)SetAwsAccountId(val *string) {
+func (j *jsiiProxy_QuicksightGroup) SetAwsAccountId(val *string) {
 	if err := j.validateSetAwsAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_QuicksightGroup)SetAwsAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_QuicksightGroup)SetConnection(val interface{}) {
+func (j *jsiiProxy_QuicksightGroup) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,7 +463,7 @@ func (j *jsiiProxy_QuicksightGroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_QuicksightGroup)SetCount(val interface{}) {
+func (j *jsiiProxy_QuicksightGroup) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_QuicksightGroup)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_QuicksightGroup)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_QuicksightGroup) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -483,7 +482,7 @@ func (j *jsiiProxy_QuicksightGroup)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_QuicksightGroup)SetDescription(val *string) {
+func (j *jsiiProxy_QuicksightGroup) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -494,7 +493,7 @@ func (j *jsiiProxy_QuicksightGroup)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_QuicksightGroup)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_QuicksightGroup) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -502,7 +501,7 @@ func (j *jsiiProxy_QuicksightGroup)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_QuicksightGroup)SetGroupName(val *string) {
+func (j *jsiiProxy_QuicksightGroup) SetGroupName(val *string) {
 	if err := j.validateSetGroupNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_QuicksightGroup)SetGroupName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_QuicksightGroup)SetId(val *string) {
+func (j *jsiiProxy_QuicksightGroup) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_QuicksightGroup)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_QuicksightGroup)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_QuicksightGroup) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_QuicksightGroup)SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_QuicksightGroup)SetNamespace(val *string) {
+func (j *jsiiProxy_QuicksightGroup) SetNamespace(val *string) {
 	if err := j.validateSetNamespaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_QuicksightGroup)SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_QuicksightGroup)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_QuicksightGroup) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -554,7 +553,7 @@ func (j *jsiiProxy_QuicksightGroup)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_QuicksightGroup)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_QuicksightGroup) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -577,7 +576,7 @@ func QuicksightGroup_GenerateConfigForImport(scope constructs.Construct, importT
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.quicksightGroup.QuicksightGroup",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -601,7 +600,7 @@ func QuicksightGroup_GenerateConfigForImport(scope constructs.Construct, importT
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func QuicksightGroup_IsConstruct(x interface{}) *bool {
+func QuicksightGroup_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateQuicksightGroup_IsConstructParameters(x); err != nil {
@@ -612,7 +611,7 @@ func QuicksightGroup_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.quicksightGroup.QuicksightGroup",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -620,7 +619,7 @@ func QuicksightGroup_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func QuicksightGroup_IsTerraformElement(x interface{}) *bool {
+func QuicksightGroup_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateQuicksightGroup_IsTerraformElementParameters(x); err != nil {
@@ -631,7 +630,7 @@ func QuicksightGroup_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.quicksightGroup.QuicksightGroup",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -639,7 +638,7 @@ func QuicksightGroup_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func QuicksightGroup_IsTerraformResource(x interface{}) *bool {
+func QuicksightGroup_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateQuicksightGroup_IsTerraformResourceParameters(x); err != nil {
@@ -650,7 +649,7 @@ func QuicksightGroup_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.quicksightGroup.QuicksightGroup",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -675,31 +674,31 @@ func (q *jsiiProxy_QuicksightGroup) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		q,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (q *jsiiProxy_QuicksightGroup) AddOverride(path *string, value interface{}) {
+func (q *jsiiProxy_QuicksightGroup) AddOverride(path *string, value any) {
 	if err := q.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		q,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (q *jsiiProxy_QuicksightGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (q *jsiiProxy_QuicksightGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := q.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		q,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -715,7 +714,7 @@ func (q *jsiiProxy_QuicksightGroup) GetBooleanAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		q,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -731,7 +730,7 @@ func (q *jsiiProxy_QuicksightGroup) GetBooleanMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		q,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -747,7 +746,7 @@ func (q *jsiiProxy_QuicksightGroup) GetListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		q,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -763,7 +762,7 @@ func (q *jsiiProxy_QuicksightGroup) GetNumberAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		q,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -779,7 +778,7 @@ func (q *jsiiProxy_QuicksightGroup) GetNumberListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		q,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -795,7 +794,7 @@ func (q *jsiiProxy_QuicksightGroup) GetNumberMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		q,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -811,7 +810,7 @@ func (q *jsiiProxy_QuicksightGroup) GetStringAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		q,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -827,15 +826,15 @@ func (q *jsiiProxy_QuicksightGroup) GetStringMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		q,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (q *jsiiProxy_QuicksightGroup) HasResourceMove() interface{} {
-	var returns interface{}
+func (q *jsiiProxy_QuicksightGroup) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		q,
@@ -854,7 +853,7 @@ func (q *jsiiProxy_QuicksightGroup) ImportFrom(id *string, provider cdktf.Terraf
 	_jsii_.InvokeVoid(
 		q,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -867,7 +866,7 @@ func (q *jsiiProxy_QuicksightGroup) InterpolationForAttribute(terraformAttribute
 	_jsii_.Invoke(
 		q,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -881,18 +880,18 @@ func (q *jsiiProxy_QuicksightGroup) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		q,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (q *jsiiProxy_QuicksightGroup) MoveTo(moveTarget *string, index interface{}) {
+func (q *jsiiProxy_QuicksightGroup) MoveTo(moveTarget *string, index any) {
 	if err := q.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		q,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -903,7 +902,7 @@ func (q *jsiiProxy_QuicksightGroup) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		q,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -914,7 +913,7 @@ func (q *jsiiProxy_QuicksightGroup) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		q,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -958,8 +957,8 @@ func (q *jsiiProxy_QuicksightGroup) ResetOverrideLogicalId() {
 	)
 }
 
-func (q *jsiiProxy_QuicksightGroup) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (q *jsiiProxy_QuicksightGroup) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		q,
@@ -971,8 +970,8 @@ func (q *jsiiProxy_QuicksightGroup) SynthesizeAttributes() *map[string]interface
 	return returns
 }
 
-func (q *jsiiProxy_QuicksightGroup) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (q *jsiiProxy_QuicksightGroup) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		q,
@@ -984,8 +983,8 @@ func (q *jsiiProxy_QuicksightGroup) SynthesizeHclAttributes() *map[string]interf
 	return returns
 }
 
-func (q *jsiiProxy_QuicksightGroup) ToHclTerraform() interface{} {
-	var returns interface{}
+func (q *jsiiProxy_QuicksightGroup) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		q,
@@ -997,8 +996,8 @@ func (q *jsiiProxy_QuicksightGroup) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (q *jsiiProxy_QuicksightGroup) ToMetadata() interface{} {
-	var returns interface{}
+func (q *jsiiProxy_QuicksightGroup) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		q,
@@ -1023,8 +1022,8 @@ func (q *jsiiProxy_QuicksightGroup) ToString() *string {
 	return returns
 }
 
-func (q *jsiiProxy_QuicksightGroup) ToTerraform() interface{} {
-	var returns interface{}
+func (q *jsiiProxy_QuicksightGroup) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		q,
@@ -1035,4 +1034,3 @@ func (q *jsiiProxy_QuicksightGroup) ToTerraform() interface{} {
 
 	return returns
 }
-

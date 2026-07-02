@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.internetGatewayAttachment.InternetGatewayAttachment",
-		reflect.TypeOf((*InternetGatewayAttachment)(nil)).Elem(),
+		reflect.TypeFor[InternetGatewayAttachment](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcIdInput", GoGetter: "VpcIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_InternetGatewayAttachment{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -72,15 +72,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.internetGatewayAttachment.InternetGatewayAttachmentConfig",
-		reflect.TypeOf((*InternetGatewayAttachmentConfig)(nil)).Elem(),
+		reflect.TypeFor[InternetGatewayAttachmentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.internetGatewayAttachment.InternetGatewayAttachmentTimeouts",
-		reflect.TypeOf((*InternetGatewayAttachmentTimeouts)(nil)).Elem(),
+		reflect.TypeFor[InternetGatewayAttachmentTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.internetGatewayAttachment.InternetGatewayAttachmentTimeoutsOutputReference",
-		reflect.TypeOf((*InternetGatewayAttachmentTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[InternetGatewayAttachmentTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -110,7 +110,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

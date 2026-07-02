@@ -1,6 +1,5 @@
 package mskcluster
 
-
 type MskClusterClientAuthentication struct {
 	// sasl block.
 	//
@@ -11,6 +10,5 @@ type MskClusterClientAuthentication struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/msk_cluster#tls MskCluster#tls}
 	Tls *MskClusterClientAuthenticationTls `field:"optional" json:"tls" yaml:"tls"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/msk_cluster#unauthenticated MskCluster#unauthenticated}.
-	Unauthenticated interface{} `field:"optional" json:"unauthenticated" yaml:"unauthenticated"`
+	Unauthenticated any `field:"optional" json:"unauthenticated" yaml:"unauthenticated"`
 }
-

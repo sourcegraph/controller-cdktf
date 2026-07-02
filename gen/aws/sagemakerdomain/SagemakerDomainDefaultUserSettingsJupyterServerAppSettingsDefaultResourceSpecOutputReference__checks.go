@@ -98,7 +98,7 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsDef
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsDefaultResourceSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsDefaultResourceSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewSagemakerDomainDefaultUserSettingsJupyterServerAppSettingsDefaul
 
 	return nil
 }
-

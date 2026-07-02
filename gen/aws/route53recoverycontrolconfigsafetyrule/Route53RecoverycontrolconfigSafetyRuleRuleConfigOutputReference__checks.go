@@ -98,7 +98,7 @@ func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRuleRuleConfigOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRuleRuleConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRuleRuleConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRuleRuleConfigOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRuleRuleConfigOutputReference) validateSetInvertedParameters(val interface{}) error {
+func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRuleRuleConfigOutputReference) validateSetInvertedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewRoute53RecoverycontrolconfigSafetyRuleRuleConfigOutputReferenceP
 
 	return nil
 }
-

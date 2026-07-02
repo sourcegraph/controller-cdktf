@@ -10,20 +10,20 @@ import (
 
 type VpcPeeringConnectionAccepterRequesterOutputReference interface {
 	cdktf.ComplexObject
-	AllowClassicLinkToRemoteVpc() interface{}
-	SetAllowClassicLinkToRemoteVpc(val interface{})
-	AllowClassicLinkToRemoteVpcInput() interface{}
-	AllowRemoteVpcDnsResolution() interface{}
-	SetAllowRemoteVpcDnsResolution(val interface{})
-	AllowRemoteVpcDnsResolutionInput() interface{}
-	AllowVpcToRemoteClassicLink() interface{}
-	SetAllowVpcToRemoteClassicLink(val interface{})
-	AllowVpcToRemoteClassicLinkInput() interface{}
+	AllowClassicLinkToRemoteVpc() any
+	SetAllowClassicLinkToRemoteVpc(val any)
+	AllowClassicLinkToRemoteVpcInput() any
+	AllowRemoteVpcDnsResolution() any
+	SetAllowRemoteVpcDnsResolution(val any)
+	AllowRemoteVpcDnsResolutionInput() any
+	AllowVpcToRemoteClassicLink() any
+	SetAllowVpcToRemoteClassicLink(val any)
+	AllowVpcToRemoteClassicLinkInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type VpcPeeringConnectionAccepterRequesterOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type VpcPeeringConnectionAccepterRequesterOutputReference interface {
 	ResetAllowVpcToRemoteClassicLink()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) AllowClassicLinkToRemoteVpc() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) AllowClassicLinkToRemoteVpc() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowClassicLinkToRemoteVpc",
@@ -98,8 +98,8 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) AllowCl
 	return returns
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) AllowClassicLinkToRemoteVpcInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) AllowClassicLinkToRemoteVpcInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowClassicLinkToRemoteVpcInput",
@@ -108,8 +108,8 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) AllowCl
 	return returns
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) AllowRemoteVpcDnsResolution() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) AllowRemoteVpcDnsResolution() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowRemoteVpcDnsResolution",
@@ -118,8 +118,8 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) AllowRe
 	return returns
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) AllowRemoteVpcDnsResolutionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) AllowRemoteVpcDnsResolutionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowRemoteVpcDnsResolutionInput",
@@ -128,8 +128,8 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) AllowRe
 	return returns
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) AllowVpcToRemoteClassicLink() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) AllowVpcToRemoteClassicLink() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowVpcToRemoteClassicLink",
@@ -138,8 +138,8 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) AllowVp
 	return returns
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) AllowVpcToRemoteClassicLinkInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) AllowVpcToRemoteClassicLinkInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowVpcToRemoteClassicLinkInput",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) AllowVp
 	return returns
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) Terrafo
 	return returns
 }
 
-
 func NewVpcPeeringConnectionAccepterRequesterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) VpcPeeringConnectionAccepterRequesterOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewVpcPeeringConnectionAccepterRequesterOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepterRequesterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewVpcPeeringConnectionAccepterRequesterOutputReference_Override(v VpcPeeri
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepterRequesterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		v,
 	)
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference)SetAllowClassicLinkToRemoteVpc(val interface{}) {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) SetAllowClassicLinkToRemoteVpc(val any) {
 	if err := j.validateSetAllowClassicLinkToRemoteVpcParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference)SetAllow
 	)
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference)SetAllowRemoteVpcDnsResolution(val interface{}) {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) SetAllowRemoteVpcDnsResolution(val any) {
 	if err := j.validateSetAllowRemoteVpcDnsResolutionParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference)SetAllow
 	)
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference)SetAllowVpcToRemoteClassicLink(val interface{}) {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) SetAllowVpcToRemoteClassicLink(val any) {
 	if err := j.validateSetAllowVpcToRemoteClassicLinkParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference)SetAllow
 	)
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference)SetInternalValue(val *VpcPeeringConnectionAccepterRequester) {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) SetInternalValue(val *VpcPeeringConnectionAccepterRequester) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) Compute
 	return returns
 }
 
-func (v *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (v *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) GetBool
 	_jsii_.Invoke(
 		v,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) GetBool
 	_jsii_.Invoke(
 		v,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) GetList
 	_jsii_.Invoke(
 		v,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) GetNumb
 	_jsii_.Invoke(
 		v,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) GetNumb
 	_jsii_.Invoke(
 		v,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) GetNumb
 	_jsii_.Invoke(
 		v,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) GetStri
 	_jsii_.Invoke(
 		v,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) GetStri
 	_jsii_.Invoke(
 		v,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) Interpo
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) ResetAl
 	)
 }
 
-func (v *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (v *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := v.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterRequesterOutputReference) ToStrin
 
 	return returns
 }
-

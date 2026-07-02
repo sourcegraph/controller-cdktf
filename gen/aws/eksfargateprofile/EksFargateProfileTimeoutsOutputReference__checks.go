@@ -98,7 +98,7 @@ func (e *jsiiProxy_EksFargateProfileTimeoutsOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_EksFargateProfileTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EksFargateProfileTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_EksFargateProfileTimeoutsOutputReference) validateSetDeletePa
 	return nil
 }
 
-func (j *jsiiProxy_EksFargateProfileTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EksFargateProfileTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewEksFargateProfileTimeoutsOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsKendraIndexIndexStatisticsTextDocumentStatisticsOutput
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsKendraIndexIndexStatisticsTextDocumentStatisticsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsKendraIndexIndexStatisticsTextDocumentStatisticsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsKendraIndexIndexStatisticsTextDocumentStatisticsOutputRef
 
 	return nil
 }
-

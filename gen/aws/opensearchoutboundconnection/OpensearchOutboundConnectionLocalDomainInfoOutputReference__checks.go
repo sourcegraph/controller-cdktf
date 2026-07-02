@@ -98,7 +98,7 @@ func (o *jsiiProxy_OpensearchOutboundConnectionLocalDomainInfoOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_OpensearchOutboundConnectionLocalDomainInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OpensearchOutboundConnectionLocalDomainInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewOpensearchOutboundConnectionLocalDomainInfoOutputReferenceParame
 
 	return nil
 }
-

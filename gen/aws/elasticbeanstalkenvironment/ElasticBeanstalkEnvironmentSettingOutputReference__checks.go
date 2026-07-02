@@ -98,7 +98,7 @@ func (e *jsiiProxy_ElasticBeanstalkEnvironmentSettingOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_ElasticBeanstalkEnvironmentSettingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticBeanstalkEnvironmentSettingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ElasticBeanstalkEnvironmentSettingOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ElasticBeanstalkEnvironmentSettingOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticBeanstalkEnvironmentSettingOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewElasticBeanstalkEnvironmentSettingOutputReferenceParameters(terr
 
 	return nil
 }
-

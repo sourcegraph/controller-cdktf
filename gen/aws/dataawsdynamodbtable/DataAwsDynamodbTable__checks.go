@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsDynamodbTable) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsDynamodbTable) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -138,7 +138,7 @@ func validateDataAwsDynamodbTable_GenerateConfigForImportParameters(scope constr
 	return nil
 }
 
-func validateDataAwsDynamodbTable_IsConstructParameters(x interface{}) error {
+func validateDataAwsDynamodbTable_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -146,7 +146,7 @@ func validateDataAwsDynamodbTable_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataAwsDynamodbTable_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsDynamodbTable_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -154,7 +154,7 @@ func validateDataAwsDynamodbTable_IsTerraformDataSourceParameters(x interface{})
 	return nil
 }
 
-func validateDataAwsDynamodbTable_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsDynamodbTable_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -162,7 +162,7 @@ func validateDataAwsDynamodbTable_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsDynamodbTable) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsDynamodbTable) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -269,4 +269,3 @@ func validateNewDataAwsDynamodbTableParameters(scope constructs.Construct, id *s
 
 	return nil
 }
-

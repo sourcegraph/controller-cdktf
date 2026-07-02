@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkmanagerDeviceAwsLocationOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_NetworkmanagerDeviceAwsLocationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkmanagerDeviceAwsLocationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewNetworkmanagerDeviceAwsLocationOutputReferenceParameters(terrafo
 
 	return nil
 }
-

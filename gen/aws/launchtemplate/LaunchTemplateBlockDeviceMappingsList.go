@@ -17,8 +17,8 @@ type LaunchTemplateBlockDeviceMappingsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type LaunchTemplateBlockDeviceMappingsList interface {
 	Get(index *float64) LaunchTemplateBlockDeviceMappingsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_LaunchTemplateBlockDeviceMappingsList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LaunchTemplateBlockDeviceMappingsList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LaunchTemplateBlockDeviceMappingsList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_LaunchTemplateBlockDeviceMappingsList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewLaunchTemplateBlockDeviceMappingsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LaunchTemplateBlockDeviceMappingsList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewLaunchTemplateBlockDeviceMappingsList(terraformResource cdktf.IInterpola
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewLaunchTemplateBlockDeviceMappingsList_Override(l LaunchTemplateBlockDevi
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateBlockDeviceMappingsList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_LaunchTemplateBlockDeviceMappingsList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_LaunchTemplateBlockDeviceMappingsList)SetInternalValue(val in
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateBlockDeviceMappingsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LaunchTemplateBlockDeviceMappingsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_LaunchTemplateBlockDeviceMappingsList)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateBlockDeviceMappingsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LaunchTemplateBlockDeviceMappingsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_LaunchTemplateBlockDeviceMappingsList)SetTerraformResource(va
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateBlockDeviceMappingsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_LaunchTemplateBlockDeviceMappingsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (l *jsiiProxy_LaunchTemplateBlockDeviceMappingsList) AllWithMapKey(mapKeyAt
 	_jsii_.Invoke(
 		l,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (l *jsiiProxy_LaunchTemplateBlockDeviceMappingsList) Get(index *float64) La
 	_jsii_.Invoke(
 		l,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LaunchTemplateBlockDeviceMappingsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LaunchTemplateBlockDeviceMappingsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (l *jsiiProxy_LaunchTemplateBlockDeviceMappingsList) ToString() *string {
 
 	return returns
 }
-

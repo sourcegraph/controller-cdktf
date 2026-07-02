@@ -34,7 +34,7 @@ func (e *jsiiProxy_EcsServicePlacementConstraintsList) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_EcsServicePlacementConstraintsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EcsServicePlacementConstraintsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEcsServicePlacementConstraintsListParameters(terraformResource c
 
 	return nil
 }
-

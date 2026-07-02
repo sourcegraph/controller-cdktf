@@ -19,7 +19,7 @@ func (s *jsiiProxy_SnsTopic) validateAddMoveTargetParameters(moveTarget *string)
 	return nil
 }
 
-func (s *jsiiProxy_SnsTopic) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SnsTopic) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SnsTopic) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SnsTopic) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SnsTopic) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateSnsTopic_GenerateConfigForImportParameters(scope constructs.Constru
 	return nil
 }
 
-func validateSnsTopic_IsConstructParameters(x interface{}) error {
+func validateSnsTopic_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateSnsTopic_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateSnsTopic_IsTerraformElementParameters(x interface{}) error {
+func validateSnsTopic_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateSnsTopic_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateSnsTopic_IsTerraformResourceParameters(x interface{}) error {
+func validateSnsTopic_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -268,7 +268,7 @@ func (j *jsiiProxy_SnsTopic) validateSetApplicationSuccessFeedbackSampleRatePara
 	return nil
 }
 
-func (j *jsiiProxy_SnsTopic) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SnsTopic) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -301,7 +301,7 @@ func (j *jsiiProxy_SnsTopic) validateSetConnectionParameters(val interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_SnsTopic) validateSetContentBasedDeduplicationParameters(val interface{}) error {
+func (j *jsiiProxy_SnsTopic) validateSetContentBasedDeduplicationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -321,7 +321,7 @@ func (j *jsiiProxy_SnsTopic) validateSetContentBasedDeduplicationParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_SnsTopic) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SnsTopic) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -394,7 +394,7 @@ func (j *jsiiProxy_SnsTopic) validateSetDisplayNameParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_SnsTopic) validateSetFifoTopicParameters(val interface{}) error {
+func (j *jsiiProxy_SnsTopic) validateSetFifoTopicParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -534,7 +534,7 @@ func (j *jsiiProxy_SnsTopic) validateSetPolicyParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_SnsTopic) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SnsTopic) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -635,4 +635,3 @@ func validateNewSnsTopicParameters(scope constructs.Construct, id *string, confi
 
 	return nil
 }
-

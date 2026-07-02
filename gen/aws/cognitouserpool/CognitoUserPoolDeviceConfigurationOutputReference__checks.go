@@ -98,7 +98,7 @@ func (c *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) validateSetChallengeRequiredOnNewDeviceParameters(val interface{}) error {
+func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) validateSetChallengeRequiredOnNewDeviceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -183,7 +183,7 @@ func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) validateSetDeviceOnlyRememberedOnUserPromptParameters(val interface{}) error {
+func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) validateSetDeviceOnlyRememberedOnUserPromptParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -238,4 +238,3 @@ func validateNewCognitoUserPoolDeviceConfigurationOutputReferenceParameters(terr
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsVpcIpamPoolCidrsFilterOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsVpcIpamPoolCidrsFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsVpcIpamPoolCidrsFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataAwsVpcIpamPoolCidrsFilterOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsVpcIpamPoolCidrsFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsVpcIpamPoolCidrsFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDataAwsVpcIpamPoolCidrsFilterOutputReferenceParameters(terraform
 
 	return nil
 }
-

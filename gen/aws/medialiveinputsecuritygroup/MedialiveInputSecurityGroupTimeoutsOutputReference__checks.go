@@ -98,7 +98,7 @@ func (m *jsiiProxy_MedialiveInputSecurityGroupTimeoutsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveInputSecurityGroupTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MedialiveInputSecurityGroupTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_MedialiveInputSecurityGroupTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveInputSecurityGroupTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MedialiveInputSecurityGroupTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewMedialiveInputSecurityGroupTimeoutsOutputReferenceParameters(ter
 
 	return nil
 }
-

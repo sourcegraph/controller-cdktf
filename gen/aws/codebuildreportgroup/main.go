@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codebuildReportGroup.CodebuildReportGroup",
-		reflect.TypeOf((*CodebuildReportGroup)(nil)).Elem(),
+		reflect.TypeFor[CodebuildReportGroup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodebuildReportGroup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,15 +82,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codebuildReportGroup.CodebuildReportGroupConfig",
-		reflect.TypeOf((*CodebuildReportGroupConfig)(nil)).Elem(),
+		reflect.TypeFor[CodebuildReportGroupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codebuildReportGroup.CodebuildReportGroupExportConfig",
-		reflect.TypeOf((*CodebuildReportGroupExportConfig)(nil)).Elem(),
+		reflect.TypeFor[CodebuildReportGroupExportConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codebuildReportGroup.CodebuildReportGroupExportConfigOutputReference",
-		reflect.TypeOf((*CodebuildReportGroupExportConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CodebuildReportGroupExportConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -120,7 +120,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodebuildReportGroupExportConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -128,11 +128,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codebuildReportGroup.CodebuildReportGroupExportConfigS3Destination",
-		reflect.TypeOf((*CodebuildReportGroupExportConfigS3Destination)(nil)).Elem(),
+		reflect.TypeFor[CodebuildReportGroupExportConfigS3Destination](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codebuildReportGroup.CodebuildReportGroupExportConfigS3DestinationOutputReference",
-		reflect.TypeOf((*CodebuildReportGroupExportConfigS3DestinationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CodebuildReportGroupExportConfigS3DestinationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketInput", GoGetter: "BucketInput"},
@@ -169,7 +169,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodebuildReportGroupExportConfigS3DestinationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

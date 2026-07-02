@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsAlb) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsAlb) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -138,7 +138,7 @@ func validateDataAwsAlb_GenerateConfigForImportParameters(scope constructs.Const
 	return nil
 }
 
-func validateDataAwsAlb_IsConstructParameters(x interface{}) error {
+func validateDataAwsAlb_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -146,7 +146,7 @@ func validateDataAwsAlb_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataAwsAlb_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsAlb_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -154,7 +154,7 @@ func validateDataAwsAlb_IsTerraformDataSourceParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataAwsAlb_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsAlb_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -170,7 +170,7 @@ func (j *jsiiProxy_DataAwsAlb) validateSetArnParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAlb) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsAlb) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -274,4 +274,3 @@ func validateNewDataAwsAlbParameters(scope constructs.Construct, id *string, con
 
 	return nil
 }
-

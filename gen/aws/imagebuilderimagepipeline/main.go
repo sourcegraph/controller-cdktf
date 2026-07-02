@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.imagebuilderImagePipeline.ImagebuilderImagePipeline",
-		reflect.TypeOf((*ImagebuilderImagePipeline)(nil)).Elem(),
+		reflect.TypeFor[ImagebuilderImagePipeline](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -98,7 +98,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ImagebuilderImagePipeline{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -106,15 +106,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.imagebuilderImagePipeline.ImagebuilderImagePipelineConfig",
-		reflect.TypeOf((*ImagebuilderImagePipelineConfig)(nil)).Elem(),
+		reflect.TypeFor[ImagebuilderImagePipelineConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.imagebuilderImagePipeline.ImagebuilderImagePipelineImageTestsConfiguration",
-		reflect.TypeOf((*ImagebuilderImagePipelineImageTestsConfiguration)(nil)).Elem(),
+		reflect.TypeFor[ImagebuilderImagePipelineImageTestsConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.imagebuilderImagePipeline.ImagebuilderImagePipelineImageTestsConfigurationOutputReference",
-		reflect.TypeOf((*ImagebuilderImagePipelineImageTestsConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ImagebuilderImagePipelineImageTestsConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -144,7 +144,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeoutMinutesInput", GoGetter: "TimeoutMinutesInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ImagebuilderImagePipelineImageTestsConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -152,11 +152,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.imagebuilderImagePipeline.ImagebuilderImagePipelineSchedule",
-		reflect.TypeOf((*ImagebuilderImagePipelineSchedule)(nil)).Elem(),
+		reflect.TypeFor[ImagebuilderImagePipelineSchedule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.imagebuilderImagePipeline.ImagebuilderImagePipelineScheduleOutputReference",
-		reflect.TypeOf((*ImagebuilderImagePipelineScheduleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ImagebuilderImagePipelineScheduleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -188,7 +188,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timezoneInput", GoGetter: "TimezoneInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

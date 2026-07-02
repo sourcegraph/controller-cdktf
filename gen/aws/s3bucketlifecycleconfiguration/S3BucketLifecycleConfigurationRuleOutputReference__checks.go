@@ -134,7 +134,7 @@ func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) validatePu
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) validatePutNoncurrentVersionTransitionParameters(value interface{}) error {
+func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) validatePutNoncurrentVersionTransitionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -165,7 +165,7 @@ func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) validatePu
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) validatePutTransitionParameters(value interface{}) error {
+func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) validatePutTransitionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -277,7 +277,7 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -352,4 +352,3 @@ func validateNewS3BucketLifecycleConfigurationRuleOutputReferenceParameters(terr
 
 	return nil
 }
-

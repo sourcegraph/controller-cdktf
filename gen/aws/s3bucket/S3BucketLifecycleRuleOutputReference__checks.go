@@ -112,7 +112,7 @@ func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) validatePutNoncurrentVe
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) validatePutNoncurrentVersionTransitionParameters(value interface{}) error {
+func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) validatePutNoncurrentVersionTransitionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) validatePutNoncurrentVe
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) validatePutTransitionParameters(value interface{}) error {
+func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) validatePutTransitionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -190,7 +190,7 @@ func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference) validateSetAbortIncompl
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -255,7 +255,7 @@ func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference) validateSetComplexObjec
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference) validateSetIdParameters
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -358,4 +358,3 @@ func validateNewS3BucketLifecycleRuleOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

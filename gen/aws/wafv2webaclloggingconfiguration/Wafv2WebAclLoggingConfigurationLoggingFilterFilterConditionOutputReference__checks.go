@@ -120,7 +120,7 @@ func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionOu
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionOu
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -244,4 +244,3 @@ func validateNewWafv2WebAclLoggingConfigurationLoggingFilterFilterConditionOutpu
 
 	return nil
 }
-

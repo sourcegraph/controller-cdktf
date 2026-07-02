@@ -17,8 +17,8 @@ type EcsClusterDefaultCapacityProviderStrategyList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type EcsClusterDefaultCapacityProviderStrategyList interface {
 	Get(index *float64) EcsClusterDefaultCapacityProviderStrategyOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_EcsClusterDefaultCapacityProviderStrategyList) Fqn() *string 
 	return returns
 }
 
-func (j *jsiiProxy_EcsClusterDefaultCapacityProviderStrategyList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsClusterDefaultCapacityProviderStrategyList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_EcsClusterDefaultCapacityProviderStrategyList) WrapsSet() *bo
 	return returns
 }
 
-
 func NewEcsClusterDefaultCapacityProviderStrategyList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsClusterDefaultCapacityProviderStrategyList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewEcsClusterDefaultCapacityProviderStrategyList(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ecsCluster.EcsClusterDefaultCapacityProviderStrategyList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewEcsClusterDefaultCapacityProviderStrategyList_Override(e EcsClusterDefau
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ecsCluster.EcsClusterDefaultCapacityProviderStrategyList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EcsClusterDefaultCapacityProviderStrategyList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_EcsClusterDefaultCapacityProviderStrategyList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_EcsClusterDefaultCapacityProviderStrategyList)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_EcsClusterDefaultCapacityProviderStrategyList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EcsClusterDefaultCapacityProviderStrategyList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_EcsClusterDefaultCapacityProviderStrategyList)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_EcsClusterDefaultCapacityProviderStrategyList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EcsClusterDefaultCapacityProviderStrategyList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_EcsClusterDefaultCapacityProviderStrategyList)SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_EcsClusterDefaultCapacityProviderStrategyList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_EcsClusterDefaultCapacityProviderStrategyList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (e *jsiiProxy_EcsClusterDefaultCapacityProviderStrategyList) AllWithMapKey(
 	_jsii_.Invoke(
 		e,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (e *jsiiProxy_EcsClusterDefaultCapacityProviderStrategyList) Get(index *flo
 	_jsii_.Invoke(
 		e,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EcsClusterDefaultCapacityProviderStrategyList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EcsClusterDefaultCapacityProviderStrategyList) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (e *jsiiProxy_EcsClusterDefaultCapacityProviderStrategyList) ToString() *st
 
 	return returns
 }
-

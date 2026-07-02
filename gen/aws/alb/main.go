@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.alb.Alb",
-		reflect.TypeOf((*Alb)(nil)).Elem(),
+		reflect.TypeFor[Alb](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessLogs", GoGetter: "AccessLogs"},
 			_jsii_.MemberProperty{JsiiProperty: "accessLogsInput", GoGetter: "AccessLogsInput"},
@@ -127,7 +127,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Alb{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -135,11 +135,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.alb.AlbAccessLogs",
-		reflect.TypeOf((*AlbAccessLogs)(nil)).Elem(),
+		reflect.TypeFor[AlbAccessLogs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.alb.AlbAccessLogsOutputReference",
-		reflect.TypeOf((*AlbAccessLogsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlbAccessLogsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketInput", GoGetter: "BucketInput"},
@@ -171,7 +171,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlbAccessLogsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -179,15 +179,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.alb.AlbConfig",
-		reflect.TypeOf((*AlbConfig)(nil)).Elem(),
+		reflect.TypeFor[AlbConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.alb.AlbSubnetMapping",
-		reflect.TypeOf((*AlbSubnetMapping)(nil)).Elem(),
+		reflect.TypeFor[AlbSubnetMapping](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.alb.AlbSubnetMappingList",
-		reflect.TypeOf((*AlbSubnetMappingList)(nil)).Elem(),
+		reflect.TypeFor[AlbSubnetMappingList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -201,7 +201,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlbSubnetMappingList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -209,7 +209,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.alb.AlbSubnetMappingOutputReference",
-		reflect.TypeOf((*AlbSubnetMappingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlbSubnetMappingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allocationId", GoGetter: "AllocationId"},
 			_jsii_.MemberProperty{JsiiProperty: "allocationIdInput", GoGetter: "AllocationIdInput"},
@@ -245,7 +245,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlbSubnetMappingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -253,11 +253,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.alb.AlbTimeouts",
-		reflect.TypeOf((*AlbTimeouts)(nil)).Elem(),
+		reflect.TypeFor[AlbTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.alb.AlbTimeoutsOutputReference",
-		reflect.TypeOf((*AlbTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlbTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -290,7 +290,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlbTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

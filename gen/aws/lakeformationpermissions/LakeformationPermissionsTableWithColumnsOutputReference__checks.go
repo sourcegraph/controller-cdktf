@@ -114,7 +114,7 @@ func (j *jsiiProxy_LakeformationPermissionsTableWithColumnsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_LakeformationPermissionsTableWithColumnsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LakeformationPermissionsTableWithColumnsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -227,7 +227,7 @@ func (j *jsiiProxy_LakeformationPermissionsTableWithColumnsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_LakeformationPermissionsTableWithColumnsOutputReference) validateSetWildcardParameters(val interface{}) error {
+func (j *jsiiProxy_LakeformationPermissionsTableWithColumnsOutputReference) validateSetWildcardParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewLakeformationPermissionsTableWithColumnsOutputReferenceParameter
 
 	return nil
 }
-

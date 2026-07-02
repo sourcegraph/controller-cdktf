@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow",
-		reflect.TypeOf((*DataAwsConnectContactFlow)(nil)).Elem(),
+		reflect.TypeFor[DataAwsConnectContactFlow](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -65,7 +65,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsConnectContactFlow{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -73,6 +73,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlowConfig",
-		reflect.TypeOf((*DataAwsConnectContactFlowConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsConnectContactFlowConfig](),
 	)
 }

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey",
-		reflect.TypeOf((*DataAwsIvsStreamKey)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIvsStreamKey](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -55,7 +55,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsIvsStreamKey{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -63,6 +63,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKeyConfig",
-		reflect.TypeOf((*DataAwsIvsStreamKeyConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIvsStreamKeyConfig](),
 	)
 }

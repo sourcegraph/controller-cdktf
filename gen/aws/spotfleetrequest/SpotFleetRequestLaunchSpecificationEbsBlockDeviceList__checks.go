@@ -34,7 +34,7 @@ func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceList) valida
 	return nil
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSpotFleetRequestLaunchSpecificationEbsBlockDeviceListParameters(
 
 	return nil
 }
-

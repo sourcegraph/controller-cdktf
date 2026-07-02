@@ -106,7 +106,7 @@ func (j *jsiiProxy_AppstreamStackUserSettingsOutputReference) validateSetActionP
 	return nil
 }
 
-func (j *jsiiProxy_AppstreamStackUserSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppstreamStackUserSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_AppstreamStackUserSettingsOutputReference) validateSetComplex
 	return nil
 }
 
-func (j *jsiiProxy_AppstreamStackUserSettingsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AppstreamStackUserSettingsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewAppstreamStackUserSettingsOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

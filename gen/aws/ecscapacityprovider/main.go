@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ecsCapacityProvider.EcsCapacityProvider",
-		reflect.TypeOf((*EcsCapacityProvider)(nil)).Elem(),
+		reflect.TypeFor[EcsCapacityProvider](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,7 +68,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EcsCapacityProvider{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -76,15 +76,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ecsCapacityProvider.EcsCapacityProviderAutoScalingGroupProvider",
-		reflect.TypeOf((*EcsCapacityProviderAutoScalingGroupProvider)(nil)).Elem(),
+		reflect.TypeFor[EcsCapacityProviderAutoScalingGroupProvider](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ecsCapacityProvider.EcsCapacityProviderAutoScalingGroupProviderManagedScaling",
-		reflect.TypeOf((*EcsCapacityProviderAutoScalingGroupProviderManagedScaling)(nil)).Elem(),
+		reflect.TypeFor[EcsCapacityProviderAutoScalingGroupProviderManagedScaling](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ecsCapacityProvider.EcsCapacityProviderAutoScalingGroupProviderManagedScalingOutputReference",
-		reflect.TypeOf((*EcsCapacityProviderAutoScalingGroupProviderManagedScalingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EcsCapacityProviderAutoScalingGroupProviderManagedScalingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -123,7 +123,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderManagedScalingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -131,7 +131,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ecsCapacityProvider.EcsCapacityProviderAutoScalingGroupProviderOutputReference",
-		reflect.TypeOf((*EcsCapacityProviderAutoScalingGroupProviderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EcsCapacityProviderAutoScalingGroupProviderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoScalingGroupArn", GoGetter: "AutoScalingGroupArn"},
 			_jsii_.MemberProperty{JsiiProperty: "autoScalingGroupArnInput", GoGetter: "AutoScalingGroupArnInput"},
@@ -164,7 +164,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -172,6 +172,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ecsCapacityProvider.EcsCapacityProviderConfig",
-		reflect.TypeOf((*EcsCapacityProviderConfig)(nil)).Elem(),
+		reflect.TypeFor[EcsCapacityProviderConfig](),
 	)
 }

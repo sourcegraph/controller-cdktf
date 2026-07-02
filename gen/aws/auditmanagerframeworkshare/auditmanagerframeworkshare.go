@@ -18,15 +18,15 @@ type AuditmanagerFrameworkShare interface {
 	SetComment(val *string)
 	CommentInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -60,25 +60,25 @@ type AuditmanagerFrameworkShare interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -96,7 +96,7 @@ type AuditmanagerFrameworkShare interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -108,7 +108,7 @@ type AuditmanagerFrameworkShare interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -119,17 +119,17 @@ type AuditmanagerFrameworkShare interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AuditmanagerFrameworkShare
@@ -167,8 +167,8 @@ func (j *jsiiProxy_AuditmanagerFrameworkShare) CommentInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AuditmanagerFrameworkShare) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AuditmanagerFrameworkShare) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -177,8 +177,8 @@ func (j *jsiiProxy_AuditmanagerFrameworkShare) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AuditmanagerFrameworkShare) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AuditmanagerFrameworkShare) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_AuditmanagerFrameworkShare) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_AuditmanagerFrameworkShare) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AuditmanagerFrameworkShare) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -337,8 +337,8 @@ func (j *jsiiProxy_AuditmanagerFrameworkShare) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_AuditmanagerFrameworkShare) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AuditmanagerFrameworkShare) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -347,8 +347,8 @@ func (j *jsiiProxy_AuditmanagerFrameworkShare) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AuditmanagerFrameworkShare) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AuditmanagerFrameworkShare) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -377,8 +377,8 @@ func (j *jsiiProxy_AuditmanagerFrameworkShare) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
-func (j *jsiiProxy_AuditmanagerFrameworkShare) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AuditmanagerFrameworkShare) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -397,7 +397,6 @@ func (j *jsiiProxy_AuditmanagerFrameworkShare) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/auditmanager_framework_share aws_auditmanager_framework_share} Resource.
 func NewAuditmanagerFrameworkShare(scope constructs.Construct, id *string, config *AuditmanagerFrameworkShareConfig) AuditmanagerFrameworkShare {
 	_init_.Initialize()
@@ -409,7 +408,7 @@ func NewAuditmanagerFrameworkShare(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.auditmanagerFrameworkShare.AuditmanagerFrameworkShare",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -422,12 +421,12 @@ func NewAuditmanagerFrameworkShare_Override(a AuditmanagerFrameworkShare, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.auditmanagerFrameworkShare.AuditmanagerFrameworkShare",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerFrameworkShare)SetComment(val *string) {
+func (j *jsiiProxy_AuditmanagerFrameworkShare) SetComment(val *string) {
 	if err := j.validateSetCommentParameters(val); err != nil {
 		panic(err)
 	}
@@ -438,7 +437,7 @@ func (j *jsiiProxy_AuditmanagerFrameworkShare)SetComment(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerFrameworkShare)SetConnection(val interface{}) {
+func (j *jsiiProxy_AuditmanagerFrameworkShare) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -449,7 +448,7 @@ func (j *jsiiProxy_AuditmanagerFrameworkShare)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerFrameworkShare)SetCount(val interface{}) {
+func (j *jsiiProxy_AuditmanagerFrameworkShare) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -460,7 +459,7 @@ func (j *jsiiProxy_AuditmanagerFrameworkShare)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerFrameworkShare)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AuditmanagerFrameworkShare) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -468,7 +467,7 @@ func (j *jsiiProxy_AuditmanagerFrameworkShare)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerFrameworkShare)SetDestinationAccount(val *string) {
+func (j *jsiiProxy_AuditmanagerFrameworkShare) SetDestinationAccount(val *string) {
 	if err := j.validateSetDestinationAccountParameters(val); err != nil {
 		panic(err)
 	}
@@ -479,7 +478,7 @@ func (j *jsiiProxy_AuditmanagerFrameworkShare)SetDestinationAccount(val *string)
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerFrameworkShare)SetDestinationRegion(val *string) {
+func (j *jsiiProxy_AuditmanagerFrameworkShare) SetDestinationRegion(val *string) {
 	if err := j.validateSetDestinationRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_AuditmanagerFrameworkShare)SetDestinationRegion(val *string) 
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerFrameworkShare)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AuditmanagerFrameworkShare) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -498,7 +497,7 @@ func (j *jsiiProxy_AuditmanagerFrameworkShare)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerFrameworkShare)SetFrameworkId(val *string) {
+func (j *jsiiProxy_AuditmanagerFrameworkShare) SetFrameworkId(val *string) {
 	if err := j.validateSetFrameworkIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -509,7 +508,7 @@ func (j *jsiiProxy_AuditmanagerFrameworkShare)SetFrameworkId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerFrameworkShare)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AuditmanagerFrameworkShare) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -520,7 +519,7 @@ func (j *jsiiProxy_AuditmanagerFrameworkShare)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerFrameworkShare)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AuditmanagerFrameworkShare) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -528,7 +527,7 @@ func (j *jsiiProxy_AuditmanagerFrameworkShare)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerFrameworkShare)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AuditmanagerFrameworkShare) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -551,7 +550,7 @@ func AuditmanagerFrameworkShare_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.auditmanagerFrameworkShare.AuditmanagerFrameworkShare",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -575,7 +574,7 @@ func AuditmanagerFrameworkShare_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AuditmanagerFrameworkShare_IsConstruct(x interface{}) *bool {
+func AuditmanagerFrameworkShare_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAuditmanagerFrameworkShare_IsConstructParameters(x); err != nil {
@@ -586,7 +585,7 @@ func AuditmanagerFrameworkShare_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.auditmanagerFrameworkShare.AuditmanagerFrameworkShare",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -594,7 +593,7 @@ func AuditmanagerFrameworkShare_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AuditmanagerFrameworkShare_IsTerraformElement(x interface{}) *bool {
+func AuditmanagerFrameworkShare_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAuditmanagerFrameworkShare_IsTerraformElementParameters(x); err != nil {
@@ -605,7 +604,7 @@ func AuditmanagerFrameworkShare_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.auditmanagerFrameworkShare.AuditmanagerFrameworkShare",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func AuditmanagerFrameworkShare_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AuditmanagerFrameworkShare_IsTerraformResource(x interface{}) *bool {
+func AuditmanagerFrameworkShare_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAuditmanagerFrameworkShare_IsTerraformResourceParameters(x); err != nil {
@@ -624,7 +623,7 @@ func AuditmanagerFrameworkShare_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.auditmanagerFrameworkShare.AuditmanagerFrameworkShare",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -649,31 +648,31 @@ func (a *jsiiProxy_AuditmanagerFrameworkShare) AddMoveTarget(moveTarget *string)
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AuditmanagerFrameworkShare) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AuditmanagerFrameworkShare) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AuditmanagerFrameworkShare) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AuditmanagerFrameworkShare) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -689,7 +688,7 @@ func (a *jsiiProxy_AuditmanagerFrameworkShare) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -705,7 +704,7 @@ func (a *jsiiProxy_AuditmanagerFrameworkShare) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -721,7 +720,7 @@ func (a *jsiiProxy_AuditmanagerFrameworkShare) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (a *jsiiProxy_AuditmanagerFrameworkShare) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (a *jsiiProxy_AuditmanagerFrameworkShare) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,7 +768,7 @@ func (a *jsiiProxy_AuditmanagerFrameworkShare) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (a *jsiiProxy_AuditmanagerFrameworkShare) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -801,15 +800,15 @@ func (a *jsiiProxy_AuditmanagerFrameworkShare) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AuditmanagerFrameworkShare) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AuditmanagerFrameworkShare) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -828,7 +827,7 @@ func (a *jsiiProxy_AuditmanagerFrameworkShare) ImportFrom(id *string, provider c
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -841,7 +840,7 @@ func (a *jsiiProxy_AuditmanagerFrameworkShare) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -855,18 +854,18 @@ func (a *jsiiProxy_AuditmanagerFrameworkShare) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AuditmanagerFrameworkShare) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AuditmanagerFrameworkShare) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -877,7 +876,7 @@ func (a *jsiiProxy_AuditmanagerFrameworkShare) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -888,7 +887,7 @@ func (a *jsiiProxy_AuditmanagerFrameworkShare) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -908,8 +907,8 @@ func (a *jsiiProxy_AuditmanagerFrameworkShare) ResetOverrideLogicalId() {
 	)
 }
 
-func (a *jsiiProxy_AuditmanagerFrameworkShare) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AuditmanagerFrameworkShare) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -921,8 +920,8 @@ func (a *jsiiProxy_AuditmanagerFrameworkShare) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (a *jsiiProxy_AuditmanagerFrameworkShare) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AuditmanagerFrameworkShare) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -934,8 +933,8 @@ func (a *jsiiProxy_AuditmanagerFrameworkShare) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (a *jsiiProxy_AuditmanagerFrameworkShare) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AuditmanagerFrameworkShare) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -947,8 +946,8 @@ func (a *jsiiProxy_AuditmanagerFrameworkShare) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AuditmanagerFrameworkShare) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AuditmanagerFrameworkShare) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -973,8 +972,8 @@ func (a *jsiiProxy_AuditmanagerFrameworkShare) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AuditmanagerFrameworkShare) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AuditmanagerFrameworkShare) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -985,4 +984,3 @@ func (a *jsiiProxy_AuditmanagerFrameworkShare) ToTerraform() interface{} {
 
 	return returns
 }
-

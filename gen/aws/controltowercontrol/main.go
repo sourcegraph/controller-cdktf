@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.controltowerControl.ControltowerControl",
-		reflect.TypeOf((*ControltowerControl)(nil)).Elem(),
+		reflect.TypeFor[ControltowerControl](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ControltowerControl{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -72,15 +72,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.controltowerControl.ControltowerControlConfig",
-		reflect.TypeOf((*ControltowerControlConfig)(nil)).Elem(),
+		reflect.TypeFor[ControltowerControlConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.controltowerControl.ControltowerControlTimeouts",
-		reflect.TypeOf((*ControltowerControlTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ControltowerControlTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.controltowerControl.ControltowerControlTimeoutsOutputReference",
-		reflect.TypeOf((*ControltowerControlTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ControltowerControlTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -110,7 +110,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ControltowerControlTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

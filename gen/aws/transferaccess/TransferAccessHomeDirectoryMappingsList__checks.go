@@ -34,7 +34,7 @@ func (t *jsiiProxy_TransferAccessHomeDirectoryMappingsList) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_TransferAccessHomeDirectoryMappingsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_TransferAccessHomeDirectoryMappingsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewTransferAccessHomeDirectoryMappingsListParameters(terraformResou
 
 	return nil
 }
-

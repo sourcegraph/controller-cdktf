@@ -98,7 +98,7 @@ func (c *jsiiProxy_CognitoUserPoolPasswordPolicyOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_CognitoUserPoolPasswordPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CognitoUserPoolPasswordPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_CognitoUserPoolPasswordPolicyOutputReference) validateSetMini
 	return nil
 }
 
-func (j *jsiiProxy_CognitoUserPoolPasswordPolicyOutputReference) validateSetRequireLowercaseParameters(val interface{}) error {
+func (j *jsiiProxy_CognitoUserPoolPasswordPolicyOutputReference) validateSetRequireLowercaseParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -199,7 +199,7 @@ func (j *jsiiProxy_CognitoUserPoolPasswordPolicyOutputReference) validateSetRequ
 	return nil
 }
 
-func (j *jsiiProxy_CognitoUserPoolPasswordPolicyOutputReference) validateSetRequireNumbersParameters(val interface{}) error {
+func (j *jsiiProxy_CognitoUserPoolPasswordPolicyOutputReference) validateSetRequireNumbersParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -219,7 +219,7 @@ func (j *jsiiProxy_CognitoUserPoolPasswordPolicyOutputReference) validateSetRequ
 	return nil
 }
 
-func (j *jsiiProxy_CognitoUserPoolPasswordPolicyOutputReference) validateSetRequireSymbolsParameters(val interface{}) error {
+func (j *jsiiProxy_CognitoUserPoolPasswordPolicyOutputReference) validateSetRequireSymbolsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func (j *jsiiProxy_CognitoUserPoolPasswordPolicyOutputReference) validateSetRequ
 	return nil
 }
 
-func (j *jsiiProxy_CognitoUserPoolPasswordPolicyOutputReference) validateSetRequireUppercaseParameters(val interface{}) error {
+func (j *jsiiProxy_CognitoUserPoolPasswordPolicyOutputReference) validateSetRequireUppercaseParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -294,4 +294,3 @@ func validateNewCognitoUserPoolPasswordPolicyOutputReferenceParameters(terraform
 
 	return nil
 }
-

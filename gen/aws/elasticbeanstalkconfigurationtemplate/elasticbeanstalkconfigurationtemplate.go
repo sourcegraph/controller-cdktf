@@ -18,15 +18,15 @@ type ElasticBeanstalkConfigurationTemplate interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,29 +62,29 @@ type ElasticBeanstalkConfigurationTemplate interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Setting() ElasticBeanstalkConfigurationTemplateSettingList
-	SettingInput() interface{}
+	SettingInput() any
 	SolutionStackName() *string
 	SetSolutionStackName(val *string)
 	SolutionStackNameInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,7 +102,7 @@ type ElasticBeanstalkConfigurationTemplate interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -114,14 +114,14 @@ type ElasticBeanstalkConfigurationTemplate interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutSetting(value interface{})
+	PutSetting(value any)
 	ResetDescription()
 	ResetEnvironmentId()
 	ResetId()
@@ -130,17 +130,17 @@ type ElasticBeanstalkConfigurationTemplate interface {
 	ResetOverrideLogicalId()
 	ResetSetting()
 	ResetSolutionStackName()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ElasticBeanstalkConfigurationTemplate
@@ -178,8 +178,8 @@ func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) CdktfStack() cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) Connection() interface
 	return returns
 }
 
-func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) ConstructNodeMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -358,8 +358,8 @@ func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) Provider() cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -368,8 +368,8 @@ func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) Provisioners() *[]inte
 	return returns
 }
 
-func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -388,8 +388,8 @@ func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) Setting() ElasticBeans
 	return returns
 }
 
-func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) SettingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) SettingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"settingInput",
@@ -428,8 +428,8 @@ func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) TerraformGeneratorMeta
 	return returns
 }
 
-func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -448,7 +448,6 @@ func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) TerraformResourceType(
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elastic_beanstalk_configuration_template aws_elastic_beanstalk_configuration_template} Resource.
 func NewElasticBeanstalkConfigurationTemplate(scope constructs.Construct, id *string, config *ElasticBeanstalkConfigurationTemplateConfig) ElasticBeanstalkConfigurationTemplate {
 	_init_.Initialize()
@@ -460,7 +459,7 @@ func NewElasticBeanstalkConfigurationTemplate(scope constructs.Construct, id *st
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elasticBeanstalkConfigurationTemplate.ElasticBeanstalkConfigurationTemplate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -473,12 +472,12 @@ func NewElasticBeanstalkConfigurationTemplate_Override(e ElasticBeanstalkConfigu
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elasticBeanstalkConfigurationTemplate.ElasticBeanstalkConfigurationTemplate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate)SetApplication(val *string) {
+func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) SetApplication(val *string) {
 	if err := j.validateSetApplicationParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate)SetApplication(val *str
 	)
 }
 
-func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate)SetConnection(val interface{}) {
+func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate)SetConnection(val inter
 	)
 }
 
-func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate)SetCount(val interface{}) {
+func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate)SetCount(val interface{
 	)
 }
 
-func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -519,7 +518,7 @@ func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate)SetDependsOn(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate)SetDescription(val *string) {
+func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -530,7 +529,7 @@ func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate)SetDescription(val *str
 	)
 }
 
-func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate)SetEnvironmentId(val *string) {
+func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) SetEnvironmentId(val *string) {
 	if err := j.validateSetEnvironmentIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate)SetEnvironmentId(val *s
 	)
 }
 
-func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -549,7 +548,7 @@ func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate)SetForEach(val cdktf.IT
 	)
 }
 
-func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate)SetId(val *string) {
+func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -560,7 +559,7 @@ func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -571,7 +570,7 @@ func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate)SetLifecycle(val *cdktf
 	)
 }
 
-func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate)SetName(val *string) {
+func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -582,7 +581,7 @@ func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -590,7 +589,7 @@ func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate)SetProvider(val cdktf.T
 	)
 }
 
-func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -601,7 +600,7 @@ func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate)SetProvisioners(val *[]
 	)
 }
 
-func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate)SetSolutionStackName(val *string) {
+func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) SetSolutionStackName(val *string) {
 	if err := j.validateSetSolutionStackNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -624,7 +623,7 @@ func ElasticBeanstalkConfigurationTemplate_GenerateConfigForImport(scope constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elasticBeanstalkConfigurationTemplate.ElasticBeanstalkConfigurationTemplate",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -648,7 +647,7 @@ func ElasticBeanstalkConfigurationTemplate_GenerateConfigForImport(scope constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ElasticBeanstalkConfigurationTemplate_IsConstruct(x interface{}) *bool {
+func ElasticBeanstalkConfigurationTemplate_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateElasticBeanstalkConfigurationTemplate_IsConstructParameters(x); err != nil {
@@ -659,7 +658,7 @@ func ElasticBeanstalkConfigurationTemplate_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elasticBeanstalkConfigurationTemplate.ElasticBeanstalkConfigurationTemplate",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -667,7 +666,7 @@ func ElasticBeanstalkConfigurationTemplate_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ElasticBeanstalkConfigurationTemplate_IsTerraformElement(x interface{}) *bool {
+func ElasticBeanstalkConfigurationTemplate_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateElasticBeanstalkConfigurationTemplate_IsTerraformElementParameters(x); err != nil {
@@ -678,7 +677,7 @@ func ElasticBeanstalkConfigurationTemplate_IsTerraformElement(x interface{}) *bo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elasticBeanstalkConfigurationTemplate.ElasticBeanstalkConfigurationTemplate",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -686,7 +685,7 @@ func ElasticBeanstalkConfigurationTemplate_IsTerraformElement(x interface{}) *bo
 }
 
 // Experimental.
-func ElasticBeanstalkConfigurationTemplate_IsTerraformResource(x interface{}) *bool {
+func ElasticBeanstalkConfigurationTemplate_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateElasticBeanstalkConfigurationTemplate_IsTerraformResourceParameters(x); err != nil {
@@ -697,7 +696,7 @@ func ElasticBeanstalkConfigurationTemplate_IsTerraformResource(x interface{}) *b
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elasticBeanstalkConfigurationTemplate.ElasticBeanstalkConfigurationTemplate",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -722,31 +721,31 @@ func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) AddMoveTarget(moveTarg
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -762,7 +761,7 @@ func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) GetBooleanAttribute(te
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -778,7 +777,7 @@ func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) GetBooleanMapAttribute
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) GetListAttribute(terra
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) GetNumberAttribute(ter
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -826,7 +825,7 @@ func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) GetNumberListAttribute
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -842,7 +841,7 @@ func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) GetNumberMapAttribute(
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -858,7 +857,7 @@ func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) GetStringAttribute(ter
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -874,15 +873,15 @@ func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) GetStringMapAttribute(
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -901,7 +900,7 @@ func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) ImportFrom(id *string,
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -914,7 +913,7 @@ func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) InterpolationForAttrib
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -928,18 +927,18 @@ func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) MoveFromId(id *string)
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -950,7 +949,7 @@ func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -961,18 +960,18 @@ func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) OverrideLogicalId(newL
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) PutSetting(value interface{}) {
+func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) PutSetting(value any) {
 	if err := e.validatePutSettingParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"putSetting",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1024,8 +1023,8 @@ func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) ResetSolutionStackName
 	)
 }
 
-func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1037,8 +1036,8 @@ func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) SynthesizeAttributes()
 	return returns
 }
 
-func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1050,8 +1049,8 @@ func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) SynthesizeHclAttribute
 	return returns
 }
 
-func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1063,8 +1062,8 @@ func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) ToHclTerraform() inter
 	return returns
 }
 
-func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1089,8 +1088,8 @@ func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1101,4 +1100,3 @@ func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) ToTerraform() interfac
 
 	return returns
 }
-

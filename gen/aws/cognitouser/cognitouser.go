@@ -21,15 +21,15 @@ type CognitoUser interface {
 	SetClientMetadata(val *map[string]*string)
 	ClientMetadataInput() *map[string]*string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationDate() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -38,12 +38,12 @@ type CognitoUser interface {
 	DesiredDeliveryMediums() *[]*string
 	SetDesiredDeliveryMediums(val *[]*string)
 	DesiredDeliveryMediumsInput() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
-	ForceAliasCreation() interface{}
-	SetForceAliasCreation(val interface{})
-	ForceAliasCreationInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
+	ForceAliasCreation() any
+	SetForceAliasCreation(val any)
+	ForceAliasCreationInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -75,11 +75,11 @@ type CognitoUser interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Status() *string
 	Sub() *string
 	TemporaryPassword() *string
@@ -88,7 +88,7 @@ type CognitoUser interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Username() *string
@@ -104,9 +104,9 @@ type CognitoUser interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -124,7 +124,7 @@ type CognitoUser interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -136,7 +136,7 @@ type CognitoUser interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -156,17 +156,17 @@ type CognitoUser interface {
 	ResetPassword()
 	ResetTemporaryPassword()
 	ResetValidationData()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CognitoUser
@@ -224,8 +224,8 @@ func (j *jsiiProxy_CognitoUser) ClientMetadataInput() *map[string]*string {
 	return returns
 }
 
-func (j *jsiiProxy_CognitoUser) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CognitoUser) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -234,8 +234,8 @@ func (j *jsiiProxy_CognitoUser) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CognitoUser) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CognitoUser) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -244,8 +244,8 @@ func (j *jsiiProxy_CognitoUser) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_CognitoUser) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CognitoUser) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -294,8 +294,8 @@ func (j *jsiiProxy_CognitoUser) DesiredDeliveryMediumsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_CognitoUser) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CognitoUser) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -304,8 +304,8 @@ func (j *jsiiProxy_CognitoUser) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CognitoUser) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CognitoUser) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -314,8 +314,8 @@ func (j *jsiiProxy_CognitoUser) EnabledInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CognitoUser) ForceAliasCreation() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CognitoUser) ForceAliasCreation() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forceAliasCreation",
@@ -324,8 +324,8 @@ func (j *jsiiProxy_CognitoUser) ForceAliasCreation() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CognitoUser) ForceAliasCreationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CognitoUser) ForceAliasCreationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forceAliasCreationInput",
@@ -484,8 +484,8 @@ func (j *jsiiProxy_CognitoUser) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_CognitoUser) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CognitoUser) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -494,8 +494,8 @@ func (j *jsiiProxy_CognitoUser) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CognitoUser) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CognitoUser) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -554,8 +554,8 @@ func (j *jsiiProxy_CognitoUser) TerraformGeneratorMetadata() *cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_CognitoUser) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CognitoUser) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -634,7 +634,6 @@ func (j *jsiiProxy_CognitoUser) ValidationDataInput() *map[string]*string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cognito_user aws_cognito_user} Resource.
 func NewCognitoUser(scope constructs.Construct, id *string, config *CognitoUserConfig) CognitoUser {
 	_init_.Initialize()
@@ -646,7 +645,7 @@ func NewCognitoUser(scope constructs.Construct, id *string, config *CognitoUserC
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cognitoUser.CognitoUser",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -659,12 +658,12 @@ func NewCognitoUser_Override(c CognitoUser, scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cognitoUser.CognitoUser",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CognitoUser)SetAttributes(val *map[string]*string) {
+func (j *jsiiProxy_CognitoUser) SetAttributes(val *map[string]*string) {
 	if err := j.validateSetAttributesParameters(val); err != nil {
 		panic(err)
 	}
@@ -675,7 +674,7 @@ func (j *jsiiProxy_CognitoUser)SetAttributes(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_CognitoUser)SetClientMetadata(val *map[string]*string) {
+func (j *jsiiProxy_CognitoUser) SetClientMetadata(val *map[string]*string) {
 	if err := j.validateSetClientMetadataParameters(val); err != nil {
 		panic(err)
 	}
@@ -686,7 +685,7 @@ func (j *jsiiProxy_CognitoUser)SetClientMetadata(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_CognitoUser)SetConnection(val interface{}) {
+func (j *jsiiProxy_CognitoUser) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -697,7 +696,7 @@ func (j *jsiiProxy_CognitoUser)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CognitoUser)SetCount(val interface{}) {
+func (j *jsiiProxy_CognitoUser) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -708,7 +707,7 @@ func (j *jsiiProxy_CognitoUser)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CognitoUser)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CognitoUser) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -716,7 +715,7 @@ func (j *jsiiProxy_CognitoUser)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CognitoUser)SetDesiredDeliveryMediums(val *[]*string) {
+func (j *jsiiProxy_CognitoUser) SetDesiredDeliveryMediums(val *[]*string) {
 	if err := j.validateSetDesiredDeliveryMediumsParameters(val); err != nil {
 		panic(err)
 	}
@@ -727,7 +726,7 @@ func (j *jsiiProxy_CognitoUser)SetDesiredDeliveryMediums(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CognitoUser)SetEnabled(val interface{}) {
+func (j *jsiiProxy_CognitoUser) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -738,7 +737,7 @@ func (j *jsiiProxy_CognitoUser)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CognitoUser)SetForceAliasCreation(val interface{}) {
+func (j *jsiiProxy_CognitoUser) SetForceAliasCreation(val any) {
 	if err := j.validateSetForceAliasCreationParameters(val); err != nil {
 		panic(err)
 	}
@@ -749,7 +748,7 @@ func (j *jsiiProxy_CognitoUser)SetForceAliasCreation(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CognitoUser)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CognitoUser) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -757,7 +756,7 @@ func (j *jsiiProxy_CognitoUser)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_CognitoUser)SetId(val *string) {
+func (j *jsiiProxy_CognitoUser) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -768,7 +767,7 @@ func (j *jsiiProxy_CognitoUser)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CognitoUser)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CognitoUser) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -779,7 +778,7 @@ func (j *jsiiProxy_CognitoUser)SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_CognitoUser)SetMessageAction(val *string) {
+func (j *jsiiProxy_CognitoUser) SetMessageAction(val *string) {
 	if err := j.validateSetMessageActionParameters(val); err != nil {
 		panic(err)
 	}
@@ -790,7 +789,7 @@ func (j *jsiiProxy_CognitoUser)SetMessageAction(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CognitoUser)SetPassword(val *string) {
+func (j *jsiiProxy_CognitoUser) SetPassword(val *string) {
 	if err := j.validateSetPasswordParameters(val); err != nil {
 		panic(err)
 	}
@@ -801,7 +800,7 @@ func (j *jsiiProxy_CognitoUser)SetPassword(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CognitoUser)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CognitoUser) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -809,7 +808,7 @@ func (j *jsiiProxy_CognitoUser)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_CognitoUser)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CognitoUser) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -820,7 +819,7 @@ func (j *jsiiProxy_CognitoUser)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CognitoUser)SetTemporaryPassword(val *string) {
+func (j *jsiiProxy_CognitoUser) SetTemporaryPassword(val *string) {
 	if err := j.validateSetTemporaryPasswordParameters(val); err != nil {
 		panic(err)
 	}
@@ -831,7 +830,7 @@ func (j *jsiiProxy_CognitoUser)SetTemporaryPassword(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CognitoUser)SetUsername(val *string) {
+func (j *jsiiProxy_CognitoUser) SetUsername(val *string) {
 	if err := j.validateSetUsernameParameters(val); err != nil {
 		panic(err)
 	}
@@ -842,7 +841,7 @@ func (j *jsiiProxy_CognitoUser)SetUsername(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CognitoUser)SetUserPoolId(val *string) {
+func (j *jsiiProxy_CognitoUser) SetUserPoolId(val *string) {
 	if err := j.validateSetUserPoolIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -853,7 +852,7 @@ func (j *jsiiProxy_CognitoUser)SetUserPoolId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CognitoUser)SetValidationData(val *map[string]*string) {
+func (j *jsiiProxy_CognitoUser) SetValidationData(val *map[string]*string) {
 	if err := j.validateSetValidationDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -876,7 +875,7 @@ func CognitoUser_GenerateConfigForImport(scope constructs.Construct, importToId 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cognitoUser.CognitoUser",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -900,7 +899,7 @@ func CognitoUser_GenerateConfigForImport(scope constructs.Construct, importToId 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CognitoUser_IsConstruct(x interface{}) *bool {
+func CognitoUser_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCognitoUser_IsConstructParameters(x); err != nil {
@@ -911,7 +910,7 @@ func CognitoUser_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cognitoUser.CognitoUser",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -919,7 +918,7 @@ func CognitoUser_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CognitoUser_IsTerraformElement(x interface{}) *bool {
+func CognitoUser_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCognitoUser_IsTerraformElementParameters(x); err != nil {
@@ -930,7 +929,7 @@ func CognitoUser_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cognitoUser.CognitoUser",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -938,7 +937,7 @@ func CognitoUser_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CognitoUser_IsTerraformResource(x interface{}) *bool {
+func CognitoUser_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCognitoUser_IsTerraformResourceParameters(x); err != nil {
@@ -949,7 +948,7 @@ func CognitoUser_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cognitoUser.CognitoUser",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -974,31 +973,31 @@ func (c *jsiiProxy_CognitoUser) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CognitoUser) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CognitoUser) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CognitoUser) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CognitoUser) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1014,7 +1013,7 @@ func (c *jsiiProxy_CognitoUser) GetBooleanAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1030,7 +1029,7 @@ func (c *jsiiProxy_CognitoUser) GetBooleanMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1046,7 +1045,7 @@ func (c *jsiiProxy_CognitoUser) GetListAttribute(terraformAttribute *string) *[]
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1062,7 +1061,7 @@ func (c *jsiiProxy_CognitoUser) GetNumberAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1078,7 +1077,7 @@ func (c *jsiiProxy_CognitoUser) GetNumberListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1094,7 +1093,7 @@ func (c *jsiiProxy_CognitoUser) GetNumberMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1110,7 +1109,7 @@ func (c *jsiiProxy_CognitoUser) GetStringAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1126,15 +1125,15 @@ func (c *jsiiProxy_CognitoUser) GetStringMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CognitoUser) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CognitoUser) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1153,7 +1152,7 @@ func (c *jsiiProxy_CognitoUser) ImportFrom(id *string, provider cdktf.TerraformP
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1166,7 +1165,7 @@ func (c *jsiiProxy_CognitoUser) InterpolationForAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1180,18 +1179,18 @@ func (c *jsiiProxy_CognitoUser) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CognitoUser) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CognitoUser) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1202,7 +1201,7 @@ func (c *jsiiProxy_CognitoUser) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1213,7 +1212,7 @@ func (c *jsiiProxy_CognitoUser) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1305,8 +1304,8 @@ func (c *jsiiProxy_CognitoUser) ResetValidationData() {
 	)
 }
 
-func (c *jsiiProxy_CognitoUser) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CognitoUser) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1318,8 +1317,8 @@ func (c *jsiiProxy_CognitoUser) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CognitoUser) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CognitoUser) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1331,8 +1330,8 @@ func (c *jsiiProxy_CognitoUser) SynthesizeHclAttributes() *map[string]interface{
 	return returns
 }
 
-func (c *jsiiProxy_CognitoUser) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CognitoUser) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1344,8 +1343,8 @@ func (c *jsiiProxy_CognitoUser) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CognitoUser) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CognitoUser) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1370,8 +1369,8 @@ func (c *jsiiProxy_CognitoUser) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CognitoUser) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CognitoUser) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1382,4 +1381,3 @@ func (c *jsiiProxy_CognitoUser) ToTerraform() interface{} {
 
 	return returns
 }
-

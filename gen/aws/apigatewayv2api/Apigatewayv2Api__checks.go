@@ -19,7 +19,7 @@ func (a *jsiiProxy_Apigatewayv2Api) validateAddMoveTargetParameters(moveTarget *
 	return nil
 }
 
-func (a *jsiiProxy_Apigatewayv2Api) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_Apigatewayv2Api) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_Apigatewayv2Api) validateMoveFromIdParameters(id *string) err
 	return nil
 }
 
-func (a *jsiiProxy_Apigatewayv2Api) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_Apigatewayv2Api) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateApigatewayv2Api_GenerateConfigForImportParameters(scope constructs.
 	return nil
 }
 
-func validateApigatewayv2Api_IsConstructParameters(x interface{}) error {
+func validateApigatewayv2Api_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateApigatewayv2Api_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateApigatewayv2Api_IsTerraformElementParameters(x interface{}) error {
+func validateApigatewayv2Api_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateApigatewayv2Api_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateApigatewayv2Api_IsTerraformResourceParameters(x interface{}) error {
+func validateApigatewayv2Api_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -271,7 +271,7 @@ func (j *jsiiProxy_Apigatewayv2Api) validateSetBodyParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_Apigatewayv2Api) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Apigatewayv2Api) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -304,7 +304,7 @@ func (j *jsiiProxy_Apigatewayv2Api) validateSetConnectionParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_Apigatewayv2Api) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Apigatewayv2Api) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_Apigatewayv2Api) validateSetDescriptionParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_Apigatewayv2Api) validateSetDisableExecuteApiEndpointParameters(val interface{}) error {
+func (j *jsiiProxy_Apigatewayv2Api) validateSetDisableExecuteApiEndpointParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -397,7 +397,7 @@ func (j *jsiiProxy_Apigatewayv2Api) validateSetDisableExecuteApiEndpointParamete
 	return nil
 }
 
-func (j *jsiiProxy_Apigatewayv2Api) validateSetFailOnWarningsParameters(val interface{}) error {
+func (j *jsiiProxy_Apigatewayv2Api) validateSetFailOnWarningsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -449,7 +449,7 @@ func (j *jsiiProxy_Apigatewayv2Api) validateSetProtocolTypeParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_Apigatewayv2Api) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Apigatewayv2Api) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -561,4 +561,3 @@ func validateNewApigatewayv2ApiParameters(scope constructs.Construct, id *string
 
 	return nil
 }
-

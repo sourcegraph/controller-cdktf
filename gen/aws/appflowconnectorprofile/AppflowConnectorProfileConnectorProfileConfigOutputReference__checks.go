@@ -120,7 +120,7 @@ func (a *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewAppflowConnectorProfileConnectorProfileConfigOutputReferencePara
 
 	return nil
 }
-

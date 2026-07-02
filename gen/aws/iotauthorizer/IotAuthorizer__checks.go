@@ -19,7 +19,7 @@ func (i *jsiiProxy_IotAuthorizer) validateAddMoveTargetParameters(moveTarget *st
 	return nil
 }
 
-func (i *jsiiProxy_IotAuthorizer) validateAddOverrideParameters(path *string, value interface{}) error {
+func (i *jsiiProxy_IotAuthorizer) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (i *jsiiProxy_IotAuthorizer) validateMoveFromIdParameters(id *string) error
 	return nil
 }
 
-func (i *jsiiProxy_IotAuthorizer) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (i *jsiiProxy_IotAuthorizer) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateIotAuthorizer_GenerateConfigForImportParameters(scope constructs.Co
 	return nil
 }
 
-func validateIotAuthorizer_IsConstructParameters(x interface{}) error {
+func validateIotAuthorizer_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateIotAuthorizer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateIotAuthorizer_IsTerraformElementParameters(x interface{}) error {
+func validateIotAuthorizer_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateIotAuthorizer_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateIotAuthorizer_IsTerraformResourceParameters(x interface{}) error {
+func validateIotAuthorizer_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_IotAuthorizer) validateSetAuthorizerFunctionArnParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_IotAuthorizer) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_IotAuthorizer) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_IotAuthorizer) validateSetConnectionParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_IotAuthorizer) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_IotAuthorizer) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -342,7 +342,7 @@ func (j *jsiiProxy_IotAuthorizer) validateSetCountParameters(val interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_IotAuthorizer) validateSetEnableCachingForHttpParameters(val interface{}) error {
+func (j *jsiiProxy_IotAuthorizer) validateSetEnableCachingForHttpParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -386,7 +386,7 @@ func (j *jsiiProxy_IotAuthorizer) validateSetNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_IotAuthorizer) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_IotAuthorizer) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -432,7 +432,7 @@ func (j *jsiiProxy_IotAuthorizer) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
-func (j *jsiiProxy_IotAuthorizer) validateSetSigningDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_IotAuthorizer) validateSetSigningDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -494,4 +494,3 @@ func validateNewIotAuthorizerParameters(scope constructs.Construct, id *string, 
 
 	return nil
 }
-

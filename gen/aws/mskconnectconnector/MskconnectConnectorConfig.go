@@ -6,9 +6,9 @@ import (
 
 type MskconnectConnectorConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type MskconnectConnectorConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// capacity block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/mskconnect_connector#capacity MskconnectConnector#capacity}
@@ -44,7 +44,7 @@ type MskconnectConnectorConfig struct {
 	// plugin block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/mskconnect_connector#plugin MskconnectConnector#plugin}
-	Plugin interface{} `field:"required" json:"plugin" yaml:"plugin"`
+	Plugin any `field:"required" json:"plugin" yaml:"plugin"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/mskconnect_connector#service_execution_role_arn MskconnectConnector#service_execution_role_arn}.
 	ServiceExecutionRoleArn *string `field:"required" json:"serviceExecutionRoleArn" yaml:"serviceExecutionRoleArn"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/mskconnect_connector#description MskconnectConnector#description}.
@@ -67,4 +67,3 @@ type MskconnectConnectorConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/mskconnect_connector#worker_configuration MskconnectConnector#worker_configuration}
 	WorkerConfiguration *MskconnectConnectorWorkerConfiguration `field:"optional" json:"workerConfiguration" yaml:"workerConfiguration"`
 }
-

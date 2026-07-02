@@ -34,7 +34,7 @@ func (w *jsiiProxy_WafRateBasedRulePredicatesList) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_WafRateBasedRulePredicatesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WafRateBasedRulePredicatesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewWafRateBasedRulePredicatesListParameters(terraformResource cdktf
 
 	return nil
 }
-

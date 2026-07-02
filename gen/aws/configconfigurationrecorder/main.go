@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorder",
-		reflect.TypeOf((*ConfigConfigurationRecorder)(nil)).Elem(),
+		reflect.TypeFor[ConfigConfigurationRecorder](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConfigConfigurationRecorder{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -73,15 +73,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderConfig",
-		reflect.TypeOf((*ConfigConfigurationRecorderConfig)(nil)).Elem(),
+		reflect.TypeFor[ConfigConfigurationRecorderConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroup",
-		reflect.TypeOf((*ConfigConfigurationRecorderRecordingGroup)(nil)).Elem(),
+		reflect.TypeFor[ConfigConfigurationRecorderRecordingGroup](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroupOutputReference",
-		reflect.TypeOf((*ConfigConfigurationRecorderRecordingGroupOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ConfigConfigurationRecorderRecordingGroupOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allSupported", GoGetter: "AllSupported"},
 			_jsii_.MemberProperty{JsiiProperty: "allSupportedInput", GoGetter: "AllSupportedInput"},
@@ -114,7 +114,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

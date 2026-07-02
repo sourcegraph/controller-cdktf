@@ -98,7 +98,7 @@ func (s *jsiiProxy_SsmMaintenanceWindowTargetTargetsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindowTargetTargetsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SsmMaintenanceWindowTargetTargetsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SsmMaintenanceWindowTargetTargetsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindowTargetTargetsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SsmMaintenanceWindowTargetTargetsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewSsmMaintenanceWindowTargetTargetsOutputReferenceParameters(terra
 
 	return nil
 }
-

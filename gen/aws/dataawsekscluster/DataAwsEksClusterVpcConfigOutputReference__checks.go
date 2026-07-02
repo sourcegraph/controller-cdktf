@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsEksClusterVpcConfigOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEksClusterVpcConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEksClusterVpcConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsEksClusterVpcConfigOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

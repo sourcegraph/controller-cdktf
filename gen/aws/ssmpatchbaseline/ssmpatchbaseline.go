@@ -13,29 +13,29 @@ import (
 type SsmPatchBaseline interface {
 	cdktf.TerraformResource
 	ApprovalRule() SsmPatchBaselineApprovalRuleList
-	ApprovalRuleInput() interface{}
+	ApprovalRuleInput() any
 	ApprovedPatches() *[]*string
 	SetApprovedPatches(val *[]*string)
 	ApprovedPatchesComplianceLevel() *string
 	SetApprovedPatchesComplianceLevel(val *string)
 	ApprovedPatchesComplianceLevelInput() *string
-	ApprovedPatchesEnableNonSecurity() interface{}
-	SetApprovedPatchesEnableNonSecurity(val interface{})
-	ApprovedPatchesEnableNonSecurityInput() interface{}
+	ApprovedPatchesEnableNonSecurity() any
+	SetApprovedPatchesEnableNonSecurity(val any)
+	ApprovedPatchesEnableNonSecurityInput() any
 	ApprovedPatchesInput() *[]*string
 	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -52,7 +52,7 @@ type SsmPatchBaseline interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	GlobalFilter() SsmPatchBaselineGlobalFilterList
-	GlobalFilterInput() interface{}
+	GlobalFilterInput() any
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -73,11 +73,11 @@ type SsmPatchBaseline interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RejectedPatches() *[]*string
 	SetRejectedPatches(val *[]*string)
 	RejectedPatchesAction() *string
@@ -85,7 +85,7 @@ type SsmPatchBaseline interface {
 	RejectedPatchesActionInput() *string
 	RejectedPatchesInput() *[]*string
 	Source() SsmPatchBaselineSourceList
-	SourceInput() interface{}
+	SourceInput() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -95,16 +95,16 @@ type SsmPatchBaseline interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -122,7 +122,7 @@ type SsmPatchBaseline interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -134,16 +134,16 @@ type SsmPatchBaseline interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutApprovalRule(value interface{})
-	PutGlobalFilter(value interface{})
-	PutSource(value interface{})
+	PutApprovalRule(value any)
+	PutGlobalFilter(value any)
+	PutSource(value any)
 	ResetApprovalRule()
 	ResetApprovedPatches()
 	ResetApprovedPatchesComplianceLevel()
@@ -160,17 +160,17 @@ type SsmPatchBaseline interface {
 	ResetSource()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SsmPatchBaseline
@@ -188,8 +188,8 @@ func (j *jsiiProxy_SsmPatchBaseline) ApprovalRule() SsmPatchBaselineApprovalRule
 	return returns
 }
 
-func (j *jsiiProxy_SsmPatchBaseline) ApprovalRuleInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SsmPatchBaseline) ApprovalRuleInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"approvalRuleInput",
@@ -228,8 +228,8 @@ func (j *jsiiProxy_SsmPatchBaseline) ApprovedPatchesComplianceLevelInput() *stri
 	return returns
 }
 
-func (j *jsiiProxy_SsmPatchBaseline) ApprovedPatchesEnableNonSecurity() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SsmPatchBaseline) ApprovedPatchesEnableNonSecurity() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"approvedPatchesEnableNonSecurity",
@@ -238,8 +238,8 @@ func (j *jsiiProxy_SsmPatchBaseline) ApprovedPatchesEnableNonSecurity() interfac
 	return returns
 }
 
-func (j *jsiiProxy_SsmPatchBaseline) ApprovedPatchesEnableNonSecurityInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SsmPatchBaseline) ApprovedPatchesEnableNonSecurityInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"approvedPatchesEnableNonSecurityInput",
@@ -278,8 +278,8 @@ func (j *jsiiProxy_SsmPatchBaseline) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_SsmPatchBaseline) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SsmPatchBaseline) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -288,8 +288,8 @@ func (j *jsiiProxy_SsmPatchBaseline) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SsmPatchBaseline) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SsmPatchBaseline) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -298,8 +298,8 @@ func (j *jsiiProxy_SsmPatchBaseline) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_SsmPatchBaseline) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SsmPatchBaseline) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -378,8 +378,8 @@ func (j *jsiiProxy_SsmPatchBaseline) GlobalFilter() SsmPatchBaselineGlobalFilter
 	return returns
 }
 
-func (j *jsiiProxy_SsmPatchBaseline) GlobalFilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SsmPatchBaseline) GlobalFilterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"globalFilterInput",
@@ -478,8 +478,8 @@ func (j *jsiiProxy_SsmPatchBaseline) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_SsmPatchBaseline) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SsmPatchBaseline) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -488,8 +488,8 @@ func (j *jsiiProxy_SsmPatchBaseline) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SsmPatchBaseline) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SsmPatchBaseline) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -548,8 +548,8 @@ func (j *jsiiProxy_SsmPatchBaseline) Source() SsmPatchBaselineSourceList {
 	return returns
 }
 
-func (j *jsiiProxy_SsmPatchBaseline) SourceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SsmPatchBaseline) SourceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sourceInput",
@@ -608,8 +608,8 @@ func (j *jsiiProxy_SsmPatchBaseline) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_SsmPatchBaseline) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SsmPatchBaseline) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -628,7 +628,6 @@ func (j *jsiiProxy_SsmPatchBaseline) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ssm_patch_baseline aws_ssm_patch_baseline} Resource.
 func NewSsmPatchBaseline(scope constructs.Construct, id *string, config *SsmPatchBaselineConfig) SsmPatchBaseline {
 	_init_.Initialize()
@@ -640,7 +639,7 @@ func NewSsmPatchBaseline(scope constructs.Construct, id *string, config *SsmPatc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaseline",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -653,12 +652,12 @@ func NewSsmPatchBaseline_Override(s SsmPatchBaseline, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaseline",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SsmPatchBaseline)SetApprovedPatches(val *[]*string) {
+func (j *jsiiProxy_SsmPatchBaseline) SetApprovedPatches(val *[]*string) {
 	if err := j.validateSetApprovedPatchesParameters(val); err != nil {
 		panic(err)
 	}
@@ -669,7 +668,7 @@ func (j *jsiiProxy_SsmPatchBaseline)SetApprovedPatches(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SsmPatchBaseline)SetApprovedPatchesComplianceLevel(val *string) {
+func (j *jsiiProxy_SsmPatchBaseline) SetApprovedPatchesComplianceLevel(val *string) {
 	if err := j.validateSetApprovedPatchesComplianceLevelParameters(val); err != nil {
 		panic(err)
 	}
@@ -680,7 +679,7 @@ func (j *jsiiProxy_SsmPatchBaseline)SetApprovedPatchesComplianceLevel(val *strin
 	)
 }
 
-func (j *jsiiProxy_SsmPatchBaseline)SetApprovedPatchesEnableNonSecurity(val interface{}) {
+func (j *jsiiProxy_SsmPatchBaseline) SetApprovedPatchesEnableNonSecurity(val any) {
 	if err := j.validateSetApprovedPatchesEnableNonSecurityParameters(val); err != nil {
 		panic(err)
 	}
@@ -691,7 +690,7 @@ func (j *jsiiProxy_SsmPatchBaseline)SetApprovedPatchesEnableNonSecurity(val inte
 	)
 }
 
-func (j *jsiiProxy_SsmPatchBaseline)SetConnection(val interface{}) {
+func (j *jsiiProxy_SsmPatchBaseline) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -702,7 +701,7 @@ func (j *jsiiProxy_SsmPatchBaseline)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SsmPatchBaseline)SetCount(val interface{}) {
+func (j *jsiiProxy_SsmPatchBaseline) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -713,7 +712,7 @@ func (j *jsiiProxy_SsmPatchBaseline)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SsmPatchBaseline)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SsmPatchBaseline) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -721,7 +720,7 @@ func (j *jsiiProxy_SsmPatchBaseline)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SsmPatchBaseline)SetDescription(val *string) {
+func (j *jsiiProxy_SsmPatchBaseline) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -732,7 +731,7 @@ func (j *jsiiProxy_SsmPatchBaseline)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SsmPatchBaseline)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SsmPatchBaseline) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -740,7 +739,7 @@ func (j *jsiiProxy_SsmPatchBaseline)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_SsmPatchBaseline)SetId(val *string) {
+func (j *jsiiProxy_SsmPatchBaseline) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -751,7 +750,7 @@ func (j *jsiiProxy_SsmPatchBaseline)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SsmPatchBaseline)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SsmPatchBaseline) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -762,7 +761,7 @@ func (j *jsiiProxy_SsmPatchBaseline)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_SsmPatchBaseline)SetName(val *string) {
+func (j *jsiiProxy_SsmPatchBaseline) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -773,7 +772,7 @@ func (j *jsiiProxy_SsmPatchBaseline)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SsmPatchBaseline)SetOperatingSystem(val *string) {
+func (j *jsiiProxy_SsmPatchBaseline) SetOperatingSystem(val *string) {
 	if err := j.validateSetOperatingSystemParameters(val); err != nil {
 		panic(err)
 	}
@@ -784,7 +783,7 @@ func (j *jsiiProxy_SsmPatchBaseline)SetOperatingSystem(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SsmPatchBaseline)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SsmPatchBaseline) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -792,7 +791,7 @@ func (j *jsiiProxy_SsmPatchBaseline)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_SsmPatchBaseline)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SsmPatchBaseline) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -803,7 +802,7 @@ func (j *jsiiProxy_SsmPatchBaseline)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SsmPatchBaseline)SetRejectedPatches(val *[]*string) {
+func (j *jsiiProxy_SsmPatchBaseline) SetRejectedPatches(val *[]*string) {
 	if err := j.validateSetRejectedPatchesParameters(val); err != nil {
 		panic(err)
 	}
@@ -814,7 +813,7 @@ func (j *jsiiProxy_SsmPatchBaseline)SetRejectedPatches(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SsmPatchBaseline)SetRejectedPatchesAction(val *string) {
+func (j *jsiiProxy_SsmPatchBaseline) SetRejectedPatchesAction(val *string) {
 	if err := j.validateSetRejectedPatchesActionParameters(val); err != nil {
 		panic(err)
 	}
@@ -825,7 +824,7 @@ func (j *jsiiProxy_SsmPatchBaseline)SetRejectedPatchesAction(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SsmPatchBaseline)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_SsmPatchBaseline) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -836,7 +835,7 @@ func (j *jsiiProxy_SsmPatchBaseline)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_SsmPatchBaseline)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_SsmPatchBaseline) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -859,7 +858,7 @@ func SsmPatchBaseline_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaseline",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -883,7 +882,7 @@ func SsmPatchBaseline_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SsmPatchBaseline_IsConstruct(x interface{}) *bool {
+func SsmPatchBaseline_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSsmPatchBaseline_IsConstructParameters(x); err != nil {
@@ -894,7 +893,7 @@ func SsmPatchBaseline_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaseline",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -902,7 +901,7 @@ func SsmPatchBaseline_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SsmPatchBaseline_IsTerraformElement(x interface{}) *bool {
+func SsmPatchBaseline_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSsmPatchBaseline_IsTerraformElementParameters(x); err != nil {
@@ -913,7 +912,7 @@ func SsmPatchBaseline_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaseline",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -921,7 +920,7 @@ func SsmPatchBaseline_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SsmPatchBaseline_IsTerraformResource(x interface{}) *bool {
+func SsmPatchBaseline_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSsmPatchBaseline_IsTerraformResourceParameters(x); err != nil {
@@ -932,7 +931,7 @@ func SsmPatchBaseline_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaseline",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -957,31 +956,31 @@ func (s *jsiiProxy_SsmPatchBaseline) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SsmPatchBaseline) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SsmPatchBaseline) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SsmPatchBaseline) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SsmPatchBaseline) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -997,7 +996,7 @@ func (s *jsiiProxy_SsmPatchBaseline) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1013,7 +1012,7 @@ func (s *jsiiProxy_SsmPatchBaseline) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1029,7 +1028,7 @@ func (s *jsiiProxy_SsmPatchBaseline) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1045,7 +1044,7 @@ func (s *jsiiProxy_SsmPatchBaseline) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1061,7 +1060,7 @@ func (s *jsiiProxy_SsmPatchBaseline) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1077,7 +1076,7 @@ func (s *jsiiProxy_SsmPatchBaseline) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1093,7 +1092,7 @@ func (s *jsiiProxy_SsmPatchBaseline) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1109,15 +1108,15 @@ func (s *jsiiProxy_SsmPatchBaseline) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SsmPatchBaseline) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SsmPatchBaseline) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1136,7 +1135,7 @@ func (s *jsiiProxy_SsmPatchBaseline) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1149,7 +1148,7 @@ func (s *jsiiProxy_SsmPatchBaseline) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1163,18 +1162,18 @@ func (s *jsiiProxy_SsmPatchBaseline) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SsmPatchBaseline) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SsmPatchBaseline) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1185,7 +1184,7 @@ func (s *jsiiProxy_SsmPatchBaseline) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1196,40 +1195,40 @@ func (s *jsiiProxy_SsmPatchBaseline) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (s *jsiiProxy_SsmPatchBaseline) PutApprovalRule(value interface{}) {
+func (s *jsiiProxy_SsmPatchBaseline) PutApprovalRule(value any) {
 	if err := s.validatePutApprovalRuleParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putApprovalRule",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SsmPatchBaseline) PutGlobalFilter(value interface{}) {
+func (s *jsiiProxy_SsmPatchBaseline) PutGlobalFilter(value any) {
 	if err := s.validatePutGlobalFilterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putGlobalFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SsmPatchBaseline) PutSource(value interface{}) {
+func (s *jsiiProxy_SsmPatchBaseline) PutSource(value any) {
 	if err := s.validatePutSourceParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putSource",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1345,8 +1344,8 @@ func (s *jsiiProxy_SsmPatchBaseline) ResetTagsAll() {
 	)
 }
 
-func (s *jsiiProxy_SsmPatchBaseline) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SsmPatchBaseline) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1358,8 +1357,8 @@ func (s *jsiiProxy_SsmPatchBaseline) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (s *jsiiProxy_SsmPatchBaseline) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SsmPatchBaseline) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1371,8 +1370,8 @@ func (s *jsiiProxy_SsmPatchBaseline) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (s *jsiiProxy_SsmPatchBaseline) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SsmPatchBaseline) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1384,8 +1383,8 @@ func (s *jsiiProxy_SsmPatchBaseline) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SsmPatchBaseline) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SsmPatchBaseline) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1410,8 +1409,8 @@ func (s *jsiiProxy_SsmPatchBaseline) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SsmPatchBaseline) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SsmPatchBaseline) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1422,4 +1421,3 @@ func (s *jsiiProxy_SsmPatchBaseline) ToTerraform() interface{} {
 
 	return returns
 }
-

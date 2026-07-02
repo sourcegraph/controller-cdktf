@@ -12,9 +12,9 @@ type Wafv2RegexPatternSetRegularExpressionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type Wafv2RegexPatternSetRegularExpressionOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	RegexString() *string
 	SetRegexString(val *string)
 	RegexStringInput() *string
@@ -43,7 +43,7 @@ type Wafv2RegexPatternSetRegularExpressionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,7 +66,7 @@ type Wafv2RegexPatternSetRegularExpressionOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,8 +79,8 @@ type jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -119,8 +119,8 @@ func (j *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference) Fqn() *
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -169,7 +169,6 @@ func (j *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference) Terrafo
 	return returns
 }
 
-
 func NewWafv2RegexPatternSetRegularExpressionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) Wafv2RegexPatternSetRegularExpressionOutputReference {
 	_init_.Initialize()
 
@@ -180,7 +179,7 @@ func NewWafv2RegexPatternSetRegularExpressionOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.wafv2RegexPatternSet.Wafv2RegexPatternSetRegularExpressionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -192,12 +191,12 @@ func NewWafv2RegexPatternSetRegularExpressionOutputReference_Override(w Wafv2Reg
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.wafv2RegexPatternSet.Wafv2RegexPatternSetRegularExpressionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)
 }
 
-func (j *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +207,7 @@ func (j *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference)SetRegexString(val *string) {
+func (j *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference) SetRegexString(val *string) {
 	if err := j.validateSetRegexStringParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference)SetRegex
 	)
 }
 
-func (j *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -252,7 +251,7 @@ func (j *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,16 +275,16 @@ func (w *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference) Compute
 	return returns
 }
 
-func (w *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -301,7 +300,7 @@ func (w *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference) GetBool
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -317,7 +316,7 @@ func (w *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference) GetBool
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -333,7 +332,7 @@ func (w *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference) GetList
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -349,7 +348,7 @@ func (w *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference) GetNumb
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -365,7 +364,7 @@ func (w *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference) GetNumb
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -381,7 +380,7 @@ func (w *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference) GetNumb
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (w *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference) GetStri
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (w *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference) GetStri
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,23 +441,23 @@ func (w *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference) Interpo
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := w.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -477,4 +476,3 @@ func (w *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference) ToStrin
 
 	return returns
 }
-

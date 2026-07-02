@@ -15,9 +15,9 @@ type GlueClassifierXmlClassifierOutputReference interface {
 	ClassificationInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type GlueClassifierXmlClassifierOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,7 +69,7 @@ type GlueClassifierXmlClassifierOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -102,8 +102,8 @@ func (j *jsiiProxy_GlueClassifierXmlClassifierOutputReference) ClassificationInp
 	return returns
 }
 
-func (j *jsiiProxy_GlueClassifierXmlClassifierOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlueClassifierXmlClassifierOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_GlueClassifierXmlClassifierOutputReference) TerraformResource
 	return returns
 }
 
-
 func NewGlueClassifierXmlClassifierOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GlueClassifierXmlClassifierOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewGlueClassifierXmlClassifierOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewGlueClassifierXmlClassifierOutputReference_Override(g GlueClassifierXmlC
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GlueClassifierXmlClassifierOutputReference)SetClassification(val *string) {
+func (j *jsiiProxy_GlueClassifierXmlClassifierOutputReference) SetClassification(val *string) {
 	if err := j.validateSetClassificationParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_GlueClassifierXmlClassifierOutputReference)SetClassification(
 	)
 }
 
-func (j *jsiiProxy_GlueClassifierXmlClassifierOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GlueClassifierXmlClassifierOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_GlueClassifierXmlClassifierOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_GlueClassifierXmlClassifierOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GlueClassifierXmlClassifierOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_GlueClassifierXmlClassifierOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_GlueClassifierXmlClassifierOutputReference)SetInternalValue(val *GlueClassifierXmlClassifier) {
+func (j *jsiiProxy_GlueClassifierXmlClassifierOutputReference) SetInternalValue(val *GlueClassifierXmlClassifier) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_GlueClassifierXmlClassifierOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_GlueClassifierXmlClassifierOutputReference)SetRowTag(val *string) {
+func (j *jsiiProxy_GlueClassifierXmlClassifierOutputReference) SetRowTag(val *string) {
 	if err := j.validateSetRowTagParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_GlueClassifierXmlClassifierOutputReference)SetRowTag(val *str
 	)
 }
 
-func (j *jsiiProxy_GlueClassifierXmlClassifierOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GlueClassifierXmlClassifierOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -286,7 +285,7 @@ func (j *jsiiProxy_GlueClassifierXmlClassifierOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_GlueClassifierXmlClassifierOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GlueClassifierXmlClassifierOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,16 +309,16 @@ func (g *jsiiProxy_GlueClassifierXmlClassifierOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (g *jsiiProxy_GlueClassifierXmlClassifierOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GlueClassifierXmlClassifierOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -335,7 +334,7 @@ func (g *jsiiProxy_GlueClassifierXmlClassifierOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -351,7 +350,7 @@ func (g *jsiiProxy_GlueClassifierXmlClassifierOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -367,7 +366,7 @@ func (g *jsiiProxy_GlueClassifierXmlClassifierOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -383,7 +382,7 @@ func (g *jsiiProxy_GlueClassifierXmlClassifierOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -399,7 +398,7 @@ func (g *jsiiProxy_GlueClassifierXmlClassifierOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -415,7 +414,7 @@ func (g *jsiiProxy_GlueClassifierXmlClassifierOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (g *jsiiProxy_GlueClassifierXmlClassifierOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (g *jsiiProxy_GlueClassifierXmlClassifierOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,23 +475,23 @@ func (g *jsiiProxy_GlueClassifierXmlClassifierOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GlueClassifierXmlClassifierOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GlueClassifierXmlClassifierOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -511,4 +510,3 @@ func (g *jsiiProxy_GlueClassifierXmlClassifierOutputReference) ToString() *strin
 
 	return returns
 }
-

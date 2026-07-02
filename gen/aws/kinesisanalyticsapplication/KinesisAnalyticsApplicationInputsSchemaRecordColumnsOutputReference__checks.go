@@ -98,7 +98,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordColumnsOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordColumnsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordColumnsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordColumnsOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordColumnsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordColumnsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewKinesisAnalyticsApplicationInputsSchemaRecordColumnsOutputRefere
 
 	return nil
 }
-

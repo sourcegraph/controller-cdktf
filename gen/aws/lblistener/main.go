@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lbListener.LbListener",
-		reflect.TypeOf((*LbListener)(nil)).Elem(),
+		reflect.TypeFor[LbListener](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -87,7 +87,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LbListener{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -95,19 +95,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lbListener.LbListenerConfig",
-		reflect.TypeOf((*LbListenerConfig)(nil)).Elem(),
+		reflect.TypeFor[LbListenerConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lbListener.LbListenerDefaultAction",
-		reflect.TypeOf((*LbListenerDefaultAction)(nil)).Elem(),
+		reflect.TypeFor[LbListenerDefaultAction](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateCognito",
-		reflect.TypeOf((*LbListenerDefaultActionAuthenticateCognito)(nil)).Elem(),
+		reflect.TypeFor[LbListenerDefaultActionAuthenticateCognito](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateCognitoOutputReference",
-		reflect.TypeOf((*LbListenerDefaultActionAuthenticateCognitoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LbListenerDefaultActionAuthenticateCognitoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authenticationRequestExtraParams", GoGetter: "AuthenticationRequestExtraParams"},
 			_jsii_.MemberProperty{JsiiProperty: "authenticationRequestExtraParamsInput", GoGetter: "AuthenticationRequestExtraParamsInput"},
@@ -152,7 +152,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userPoolDomain", GoGetter: "UserPoolDomain"},
 			_jsii_.MemberProperty{JsiiProperty: "userPoolDomainInput", GoGetter: "UserPoolDomainInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LbListenerDefaultActionAuthenticateCognitoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -160,11 +160,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateOidc",
-		reflect.TypeOf((*LbListenerDefaultActionAuthenticateOidc)(nil)).Elem(),
+		reflect.TypeFor[LbListenerDefaultActionAuthenticateOidc](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateOidcOutputReference",
-		reflect.TypeOf((*LbListenerDefaultActionAuthenticateOidcOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LbListenerDefaultActionAuthenticateOidcOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authenticationRequestExtraParams", GoGetter: "AuthenticationRequestExtraParams"},
 			_jsii_.MemberProperty{JsiiProperty: "authenticationRequestExtraParamsInput", GoGetter: "AuthenticationRequestExtraParamsInput"},
@@ -215,7 +215,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userInfoEndpoint", GoGetter: "UserInfoEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "userInfoEndpointInput", GoGetter: "UserInfoEndpointInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LbListenerDefaultActionAuthenticateOidcOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -223,11 +223,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lbListener.LbListenerDefaultActionFixedResponse",
-		reflect.TypeOf((*LbListenerDefaultActionFixedResponse)(nil)).Elem(),
+		reflect.TypeFor[LbListenerDefaultActionFixedResponse](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lbListener.LbListenerDefaultActionFixedResponseOutputReference",
-		reflect.TypeOf((*LbListenerDefaultActionFixedResponseOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LbListenerDefaultActionFixedResponseOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -259,7 +259,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LbListenerDefaultActionFixedResponseOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -267,11 +267,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lbListener.LbListenerDefaultActionForward",
-		reflect.TypeOf((*LbListenerDefaultActionForward)(nil)).Elem(),
+		reflect.TypeFor[LbListenerDefaultActionForward](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lbListener.LbListenerDefaultActionForwardOutputReference",
-		reflect.TypeOf((*LbListenerDefaultActionForwardOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LbListenerDefaultActionForwardOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -302,7 +302,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LbListenerDefaultActionForwardOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -310,11 +310,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lbListener.LbListenerDefaultActionForwardStickiness",
-		reflect.TypeOf((*LbListenerDefaultActionForwardStickiness)(nil)).Elem(),
+		reflect.TypeFor[LbListenerDefaultActionForwardStickiness](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lbListener.LbListenerDefaultActionForwardStickinessOutputReference",
-		reflect.TypeOf((*LbListenerDefaultActionForwardStickinessOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LbListenerDefaultActionForwardStickinessOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -343,7 +343,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -351,11 +351,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lbListener.LbListenerDefaultActionForwardTargetGroup",
-		reflect.TypeOf((*LbListenerDefaultActionForwardTargetGroup)(nil)).Elem(),
+		reflect.TypeFor[LbListenerDefaultActionForwardTargetGroup](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lbListener.LbListenerDefaultActionForwardTargetGroupList",
-		reflect.TypeOf((*LbListenerDefaultActionForwardTargetGroupList)(nil)).Elem(),
+		reflect.TypeFor[LbListenerDefaultActionForwardTargetGroupList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -369,7 +369,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LbListenerDefaultActionForwardTargetGroupList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -377,7 +377,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lbListener.LbListenerDefaultActionForwardTargetGroupOutputReference",
-		reflect.TypeOf((*LbListenerDefaultActionForwardTargetGroupOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LbListenerDefaultActionForwardTargetGroupOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "arnInput", GoGetter: "ArnInput"},
@@ -406,7 +406,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weight", GoGetter: "Weight"},
 			_jsii_.MemberProperty{JsiiProperty: "weightInput", GoGetter: "WeightInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -414,7 +414,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lbListener.LbListenerDefaultActionList",
-		reflect.TypeOf((*LbListenerDefaultActionList)(nil)).Elem(),
+		reflect.TypeFor[LbListenerDefaultActionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -428,7 +428,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LbListenerDefaultActionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -436,7 +436,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lbListener.LbListenerDefaultActionOutputReference",
-		reflect.TypeOf((*LbListenerDefaultActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LbListenerDefaultActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authenticateCognito", GoGetter: "AuthenticateCognito"},
 			_jsii_.MemberProperty{JsiiProperty: "authenticateCognitoInput", GoGetter: "AuthenticateCognitoInput"},
@@ -488,7 +488,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LbListenerDefaultActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -496,11 +496,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lbListener.LbListenerDefaultActionRedirect",
-		reflect.TypeOf((*LbListenerDefaultActionRedirect)(nil)).Elem(),
+		reflect.TypeFor[LbListenerDefaultActionRedirect](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lbListener.LbListenerDefaultActionRedirectOutputReference",
-		reflect.TypeOf((*LbListenerDefaultActionRedirectOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LbListenerDefaultActionRedirectOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -541,7 +541,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LbListenerDefaultActionRedirectOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -549,11 +549,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lbListener.LbListenerTimeouts",
-		reflect.TypeOf((*LbListenerTimeouts)(nil)).Elem(),
+		reflect.TypeFor[LbListenerTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lbListener.LbListenerTimeoutsOutputReference",
-		reflect.TypeOf((*LbListenerTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LbListenerTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -580,7 +580,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LbListenerTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

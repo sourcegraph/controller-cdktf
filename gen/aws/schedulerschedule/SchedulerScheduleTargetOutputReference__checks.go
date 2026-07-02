@@ -183,7 +183,7 @@ func (j *jsiiProxy_SchedulerScheduleTargetOutputReference) validateSetArnParamet
 	return nil
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SchedulerScheduleTargetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -299,4 +299,3 @@ func validateNewSchedulerScheduleTargetOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

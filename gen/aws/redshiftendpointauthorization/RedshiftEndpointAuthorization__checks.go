@@ -19,7 +19,7 @@ func (r *jsiiProxy_RedshiftEndpointAuthorization) validateAddMoveTargetParameter
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftEndpointAuthorization) validateAddOverrideParameters(path *string, value interface{}) error {
+func (r *jsiiProxy_RedshiftEndpointAuthorization) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (r *jsiiProxy_RedshiftEndpointAuthorization) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftEndpointAuthorization) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (r *jsiiProxy_RedshiftEndpointAuthorization) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateRedshiftEndpointAuthorization_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateRedshiftEndpointAuthorization_IsConstructParameters(x interface{}) error {
+func validateRedshiftEndpointAuthorization_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateRedshiftEndpointAuthorization_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateRedshiftEndpointAuthorization_IsTerraformElementParameters(x interface{}) error {
+func validateRedshiftEndpointAuthorization_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateRedshiftEndpointAuthorization_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateRedshiftEndpointAuthorization_IsTerraformResourceParameters(x interface{}) error {
+func validateRedshiftEndpointAuthorization_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -260,7 +260,7 @@ func (j *jsiiProxy_RedshiftEndpointAuthorization) validateSetClusterIdentifierPa
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftEndpointAuthorization) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftEndpointAuthorization) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -293,7 +293,7 @@ func (j *jsiiProxy_RedshiftEndpointAuthorization) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftEndpointAuthorization) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftEndpointAuthorization) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -350,7 +350,7 @@ func (j *jsiiProxy_RedshiftEndpointAuthorization) validateSetCountParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftEndpointAuthorization) validateSetForceDeleteParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftEndpointAuthorization) validateSetForceDeleteParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -386,7 +386,7 @@ func (j *jsiiProxy_RedshiftEndpointAuthorization) validateSetLifecycleParameters
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftEndpointAuthorization) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_RedshiftEndpointAuthorization) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -458,4 +458,3 @@ func validateNewRedshiftEndpointAuthorizationParameters(scope constructs.Constru
 
 	return nil
 }
-

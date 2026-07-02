@@ -16,15 +16,15 @@ type Route53ResolverDnssecConfig interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -52,18 +52,18 @@ type Route53ResolverDnssecConfig interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ResourceId() *string
 	SetResourceId(val *string)
 	ResourceIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ValidationStatus() *string
@@ -71,9 +71,9 @@ type Route53ResolverDnssecConfig interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type Route53ResolverDnssecConfig interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -103,7 +103,7 @@ type Route53ResolverDnssecConfig interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -114,17 +114,17 @@ type Route53ResolverDnssecConfig interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Route53ResolverDnssecConfig
@@ -152,8 +152,8 @@ func (j *jsiiProxy_Route53ResolverDnssecConfig) CdktfStack() cdktf.TerraformStac
 	return returns
 }
 
-func (j *jsiiProxy_Route53ResolverDnssecConfig) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53ResolverDnssecConfig) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_Route53ResolverDnssecConfig) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Route53ResolverDnssecConfig) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Route53ResolverDnssecConfig) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_Route53ResolverDnssecConfig) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_Route53ResolverDnssecConfig) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53ResolverDnssecConfig) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -282,8 +282,8 @@ func (j *jsiiProxy_Route53ResolverDnssecConfig) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_Route53ResolverDnssecConfig) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Route53ResolverDnssecConfig) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -292,8 +292,8 @@ func (j *jsiiProxy_Route53ResolverDnssecConfig) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Route53ResolverDnssecConfig) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53ResolverDnssecConfig) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -332,8 +332,8 @@ func (j *jsiiProxy_Route53ResolverDnssecConfig) TerraformGeneratorMetadata() *cd
 	return returns
 }
 
-func (j *jsiiProxy_Route53ResolverDnssecConfig) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Route53ResolverDnssecConfig) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -362,7 +362,6 @@ func (j *jsiiProxy_Route53ResolverDnssecConfig) ValidationStatus() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53_resolver_dnssec_config aws_route53_resolver_dnssec_config} Resource.
 func NewRoute53ResolverDnssecConfig(scope constructs.Construct, id *string, config *Route53ResolverDnssecConfigConfig) Route53ResolverDnssecConfig {
 	_init_.Initialize()
@@ -374,7 +373,7 @@ func NewRoute53ResolverDnssecConfig(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.route53ResolverDnssecConfig.Route53ResolverDnssecConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -387,12 +386,12 @@ func NewRoute53ResolverDnssecConfig_Override(r Route53ResolverDnssecConfig, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.route53ResolverDnssecConfig.Route53ResolverDnssecConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverDnssecConfig)SetConnection(val interface{}) {
+func (j *jsiiProxy_Route53ResolverDnssecConfig) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -403,7 +402,7 @@ func (j *jsiiProxy_Route53ResolverDnssecConfig)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverDnssecConfig)SetCount(val interface{}) {
+func (j *jsiiProxy_Route53ResolverDnssecConfig) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -414,7 +413,7 @@ func (j *jsiiProxy_Route53ResolverDnssecConfig)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverDnssecConfig)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Route53ResolverDnssecConfig) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -422,7 +421,7 @@ func (j *jsiiProxy_Route53ResolverDnssecConfig)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverDnssecConfig)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Route53ResolverDnssecConfig) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -430,7 +429,7 @@ func (j *jsiiProxy_Route53ResolverDnssecConfig)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverDnssecConfig)SetId(val *string) {
+func (j *jsiiProxy_Route53ResolverDnssecConfig) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_Route53ResolverDnssecConfig)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverDnssecConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Route53ResolverDnssecConfig) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_Route53ResolverDnssecConfig)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverDnssecConfig)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Route53ResolverDnssecConfig) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -460,7 +459,7 @@ func (j *jsiiProxy_Route53ResolverDnssecConfig)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverDnssecConfig)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Route53ResolverDnssecConfig) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -471,7 +470,7 @@ func (j *jsiiProxy_Route53ResolverDnssecConfig)SetProvisioners(val *[]interface{
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverDnssecConfig)SetResourceId(val *string) {
+func (j *jsiiProxy_Route53ResolverDnssecConfig) SetResourceId(val *string) {
 	if err := j.validateSetResourceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -494,7 +493,7 @@ func Route53ResolverDnssecConfig_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.route53ResolverDnssecConfig.Route53ResolverDnssecConfig",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func Route53ResolverDnssecConfig_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Route53ResolverDnssecConfig_IsConstruct(x interface{}) *bool {
+func Route53ResolverDnssecConfig_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRoute53ResolverDnssecConfig_IsConstructParameters(x); err != nil {
@@ -529,7 +528,7 @@ func Route53ResolverDnssecConfig_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.route53ResolverDnssecConfig.Route53ResolverDnssecConfig",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func Route53ResolverDnssecConfig_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Route53ResolverDnssecConfig_IsTerraformElement(x interface{}) *bool {
+func Route53ResolverDnssecConfig_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRoute53ResolverDnssecConfig_IsTerraformElementParameters(x); err != nil {
@@ -548,7 +547,7 @@ func Route53ResolverDnssecConfig_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.route53ResolverDnssecConfig.Route53ResolverDnssecConfig",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -556,7 +555,7 @@ func Route53ResolverDnssecConfig_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Route53ResolverDnssecConfig_IsTerraformResource(x interface{}) *bool {
+func Route53ResolverDnssecConfig_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRoute53ResolverDnssecConfig_IsTerraformResourceParameters(x); err != nil {
@@ -567,7 +566,7 @@ func Route53ResolverDnssecConfig_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.route53ResolverDnssecConfig.Route53ResolverDnssecConfig",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -592,31 +591,31 @@ func (r *jsiiProxy_Route53ResolverDnssecConfig) AddMoveTarget(moveTarget *string
 	_jsii_.InvokeVoid(
 		r,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (r *jsiiProxy_Route53ResolverDnssecConfig) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_Route53ResolverDnssecConfig) AddOverride(path *string, value any) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (r *jsiiProxy_Route53ResolverDnssecConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_Route53ResolverDnssecConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -632,7 +631,7 @@ func (r *jsiiProxy_Route53ResolverDnssecConfig) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -648,7 +647,7 @@ func (r *jsiiProxy_Route53ResolverDnssecConfig) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -664,7 +663,7 @@ func (r *jsiiProxy_Route53ResolverDnssecConfig) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -680,7 +679,7 @@ func (r *jsiiProxy_Route53ResolverDnssecConfig) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func (r *jsiiProxy_Route53ResolverDnssecConfig) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -712,7 +711,7 @@ func (r *jsiiProxy_Route53ResolverDnssecConfig) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -728,7 +727,7 @@ func (r *jsiiProxy_Route53ResolverDnssecConfig) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -744,15 +743,15 @@ func (r *jsiiProxy_Route53ResolverDnssecConfig) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_Route53ResolverDnssecConfig) HasResourceMove() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Route53ResolverDnssecConfig) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -771,7 +770,7 @@ func (r *jsiiProxy_Route53ResolverDnssecConfig) ImportFrom(id *string, provider 
 	_jsii_.InvokeVoid(
 		r,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -784,7 +783,7 @@ func (r *jsiiProxy_Route53ResolverDnssecConfig) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -798,18 +797,18 @@ func (r *jsiiProxy_Route53ResolverDnssecConfig) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (r *jsiiProxy_Route53ResolverDnssecConfig) MoveTo(moveTarget *string, index interface{}) {
+func (r *jsiiProxy_Route53ResolverDnssecConfig) MoveTo(moveTarget *string, index any) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -820,7 +819,7 @@ func (r *jsiiProxy_Route53ResolverDnssecConfig) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -831,7 +830,7 @@ func (r *jsiiProxy_Route53ResolverDnssecConfig) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -851,8 +850,8 @@ func (r *jsiiProxy_Route53ResolverDnssecConfig) ResetOverrideLogicalId() {
 	)
 }
 
-func (r *jsiiProxy_Route53ResolverDnssecConfig) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_Route53ResolverDnssecConfig) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -864,8 +863,8 @@ func (r *jsiiProxy_Route53ResolverDnssecConfig) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (r *jsiiProxy_Route53ResolverDnssecConfig) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_Route53ResolverDnssecConfig) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -877,8 +876,8 @@ func (r *jsiiProxy_Route53ResolverDnssecConfig) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (r *jsiiProxy_Route53ResolverDnssecConfig) ToHclTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Route53ResolverDnssecConfig) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -890,8 +889,8 @@ func (r *jsiiProxy_Route53ResolverDnssecConfig) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_Route53ResolverDnssecConfig) ToMetadata() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Route53ResolverDnssecConfig) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -916,8 +915,8 @@ func (r *jsiiProxy_Route53ResolverDnssecConfig) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_Route53ResolverDnssecConfig) ToTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Route53ResolverDnssecConfig) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -928,4 +927,3 @@ func (r *jsiiProxy_Route53ResolverDnssecConfig) ToTerraform() interface{} {
 
 	return returns
 }
-

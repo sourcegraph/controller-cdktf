@@ -117,7 +117,7 @@ func (j *jsiiProxy_S3ControlObjectLambdaAccessPointConfigurationTransformationCo
 	return nil
 }
 
-func (j *jsiiProxy_S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_S3ControlObjectLambdaAccessPointConfigurationTransformationCo
 	return nil
 }
 
-func (j *jsiiProxy_S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -241,4 +241,3 @@ func validateNewS3ControlObjectLambdaAccessPointConfigurationTransformationConfi
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (r *jsiiProxy_RumAppMonitorAppMonitorConfigurationOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_RumAppMonitorAppMonitorConfigurationOutputReference) validateSetAllowCookiesParameters(val interface{}) error {
+func (j *jsiiProxy_RumAppMonitorAppMonitorConfigurationOutputReference) validateSetAllowCookiesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_RumAppMonitorAppMonitorConfigurationOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_RumAppMonitorAppMonitorConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RumAppMonitorAppMonitorConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -183,7 +183,7 @@ func (j *jsiiProxy_RumAppMonitorAppMonitorConfigurationOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_RumAppMonitorAppMonitorConfigurationOutputReference) validateSetEnableXrayParameters(val interface{}) error {
+func (j *jsiiProxy_RumAppMonitorAppMonitorConfigurationOutputReference) validateSetEnableXrayParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -294,4 +294,3 @@ func validateNewRumAppMonitorAppMonitorConfigurationOutputReferenceParameters(te
 
 	return nil
 }
-

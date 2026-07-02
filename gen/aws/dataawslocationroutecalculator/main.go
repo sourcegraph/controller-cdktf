@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculator",
-		reflect.TypeOf((*DataAwsLocationRouteCalculator)(nil)).Elem(),
+		reflect.TypeFor[DataAwsLocationRouteCalculator](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "calculatorArn", GoGetter: "CalculatorArn"},
@@ -58,7 +58,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsLocationRouteCalculator{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -66,6 +66,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculatorConfig",
-		reflect.TypeOf((*DataAwsLocationRouteCalculatorConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsLocationRouteCalculatorConfig](),
 	)
 }

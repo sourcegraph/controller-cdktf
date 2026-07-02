@@ -16,27 +16,27 @@ type SesEventDestination interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	CloudwatchDestination() SesEventDestinationCloudwatchDestinationList
-	CloudwatchDestinationInput() interface{}
+	CloudwatchDestinationInput() any
 	ConfigurationSetName() *string
 	SetConfigurationSetName(val *string)
 	ConfigurationSetNameInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -67,26 +67,26 @@ type SesEventDestination interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SnsDestination() SesEventDestinationSnsDestinationOutputReference
 	SnsDestinationInput() *SesEventDestinationSnsDestination
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -104,7 +104,7 @@ type SesEventDestination interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -116,14 +116,14 @@ type SesEventDestination interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutCloudwatchDestination(value interface{})
+	PutCloudwatchDestination(value any)
 	PutKinesisDestination(value *SesEventDestinationKinesisDestination)
 	PutSnsDestination(value *SesEventDestinationSnsDestination)
 	ResetCloudwatchDestination()
@@ -134,17 +134,17 @@ type SesEventDestination interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSnsDestination()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SesEventDestination
@@ -182,8 +182,8 @@ func (j *jsiiProxy_SesEventDestination) CloudwatchDestination() SesEventDestinat
 	return returns
 }
 
-func (j *jsiiProxy_SesEventDestination) CloudwatchDestinationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SesEventDestination) CloudwatchDestinationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"cloudwatchDestinationInput",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_SesEventDestination) ConfigurationSetNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SesEventDestination) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SesEventDestination) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -222,8 +222,8 @@ func (j *jsiiProxy_SesEventDestination) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SesEventDestination) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SesEventDestination) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -232,8 +232,8 @@ func (j *jsiiProxy_SesEventDestination) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_SesEventDestination) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SesEventDestination) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -252,8 +252,8 @@ func (j *jsiiProxy_SesEventDestination) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_SesEventDestination) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SesEventDestination) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -262,8 +262,8 @@ func (j *jsiiProxy_SesEventDestination) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SesEventDestination) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SesEventDestination) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -412,8 +412,8 @@ func (j *jsiiProxy_SesEventDestination) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_SesEventDestination) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SesEventDestination) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -422,8 +422,8 @@ func (j *jsiiProxy_SesEventDestination) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SesEventDestination) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SesEventDestination) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -462,8 +462,8 @@ func (j *jsiiProxy_SesEventDestination) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_SesEventDestination) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SesEventDestination) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -482,7 +482,6 @@ func (j *jsiiProxy_SesEventDestination) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ses_event_destination aws_ses_event_destination} Resource.
 func NewSesEventDestination(scope constructs.Construct, id *string, config *SesEventDestinationConfig) SesEventDestination {
 	_init_.Initialize()
@@ -494,7 +493,7 @@ func NewSesEventDestination(scope constructs.Construct, id *string, config *SesE
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sesEventDestination.SesEventDestination",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -507,12 +506,12 @@ func NewSesEventDestination_Override(s SesEventDestination, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sesEventDestination.SesEventDestination",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SesEventDestination)SetConfigurationSetName(val *string) {
+func (j *jsiiProxy_SesEventDestination) SetConfigurationSetName(val *string) {
 	if err := j.validateSetConfigurationSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_SesEventDestination)SetConfigurationSetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SesEventDestination)SetConnection(val interface{}) {
+func (j *jsiiProxy_SesEventDestination) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_SesEventDestination)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SesEventDestination)SetCount(val interface{}) {
+func (j *jsiiProxy_SesEventDestination) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_SesEventDestination)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SesEventDestination)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SesEventDestination) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -553,7 +552,7 @@ func (j *jsiiProxy_SesEventDestination)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SesEventDestination)SetEnabled(val interface{}) {
+func (j *jsiiProxy_SesEventDestination) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -564,7 +563,7 @@ func (j *jsiiProxy_SesEventDestination)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SesEventDestination)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SesEventDestination) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -572,7 +571,7 @@ func (j *jsiiProxy_SesEventDestination)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_SesEventDestination)SetId(val *string) {
+func (j *jsiiProxy_SesEventDestination) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -583,7 +582,7 @@ func (j *jsiiProxy_SesEventDestination)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SesEventDestination)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SesEventDestination) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -594,7 +593,7 @@ func (j *jsiiProxy_SesEventDestination)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_SesEventDestination)SetMatchingTypes(val *[]*string) {
+func (j *jsiiProxy_SesEventDestination) SetMatchingTypes(val *[]*string) {
 	if err := j.validateSetMatchingTypesParameters(val); err != nil {
 		panic(err)
 	}
@@ -605,7 +604,7 @@ func (j *jsiiProxy_SesEventDestination)SetMatchingTypes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SesEventDestination)SetName(val *string) {
+func (j *jsiiProxy_SesEventDestination) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -616,7 +615,7 @@ func (j *jsiiProxy_SesEventDestination)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SesEventDestination)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SesEventDestination) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -624,7 +623,7 @@ func (j *jsiiProxy_SesEventDestination)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_SesEventDestination)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SesEventDestination) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -647,7 +646,7 @@ func SesEventDestination_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sesEventDestination.SesEventDestination",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -671,7 +670,7 @@ func SesEventDestination_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SesEventDestination_IsConstruct(x interface{}) *bool {
+func SesEventDestination_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSesEventDestination_IsConstructParameters(x); err != nil {
@@ -682,7 +681,7 @@ func SesEventDestination_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sesEventDestination.SesEventDestination",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -690,7 +689,7 @@ func SesEventDestination_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SesEventDestination_IsTerraformElement(x interface{}) *bool {
+func SesEventDestination_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSesEventDestination_IsTerraformElementParameters(x); err != nil {
@@ -701,7 +700,7 @@ func SesEventDestination_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sesEventDestination.SesEventDestination",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -709,7 +708,7 @@ func SesEventDestination_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SesEventDestination_IsTerraformResource(x interface{}) *bool {
+func SesEventDestination_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSesEventDestination_IsTerraformResourceParameters(x); err != nil {
@@ -720,7 +719,7 @@ func SesEventDestination_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sesEventDestination.SesEventDestination",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -745,31 +744,31 @@ func (s *jsiiProxy_SesEventDestination) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SesEventDestination) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SesEventDestination) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SesEventDestination) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SesEventDestination) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (s *jsiiProxy_SesEventDestination) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func (s *jsiiProxy_SesEventDestination) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func (s *jsiiProxy_SesEventDestination) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (s *jsiiProxy_SesEventDestination) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,7 +848,7 @@ func (s *jsiiProxy_SesEventDestination) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -865,7 +864,7 @@ func (s *jsiiProxy_SesEventDestination) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -881,7 +880,7 @@ func (s *jsiiProxy_SesEventDestination) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -897,15 +896,15 @@ func (s *jsiiProxy_SesEventDestination) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SesEventDestination) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SesEventDestination) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -924,7 +923,7 @@ func (s *jsiiProxy_SesEventDestination) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -937,7 +936,7 @@ func (s *jsiiProxy_SesEventDestination) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -951,18 +950,18 @@ func (s *jsiiProxy_SesEventDestination) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SesEventDestination) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SesEventDestination) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -973,7 +972,7 @@ func (s *jsiiProxy_SesEventDestination) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -984,18 +983,18 @@ func (s *jsiiProxy_SesEventDestination) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (s *jsiiProxy_SesEventDestination) PutCloudwatchDestination(value interface{}) {
+func (s *jsiiProxy_SesEventDestination) PutCloudwatchDestination(value any) {
 	if err := s.validatePutCloudwatchDestinationParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putCloudwatchDestination",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1006,7 +1005,7 @@ func (s *jsiiProxy_SesEventDestination) PutKinesisDestination(value *SesEventDes
 	_jsii_.InvokeVoid(
 		s,
 		"putKinesisDestination",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1017,7 +1016,7 @@ func (s *jsiiProxy_SesEventDestination) PutSnsDestination(value *SesEventDestina
 	_jsii_.InvokeVoid(
 		s,
 		"putSnsDestination",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1069,8 +1068,8 @@ func (s *jsiiProxy_SesEventDestination) ResetSnsDestination() {
 	)
 }
 
-func (s *jsiiProxy_SesEventDestination) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SesEventDestination) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1082,8 +1081,8 @@ func (s *jsiiProxy_SesEventDestination) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (s *jsiiProxy_SesEventDestination) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SesEventDestination) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1095,8 +1094,8 @@ func (s *jsiiProxy_SesEventDestination) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (s *jsiiProxy_SesEventDestination) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SesEventDestination) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1108,8 +1107,8 @@ func (s *jsiiProxy_SesEventDestination) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SesEventDestination) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SesEventDestination) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1134,8 +1133,8 @@ func (s *jsiiProxy_SesEventDestination) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SesEventDestination) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SesEventDestination) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1146,4 +1145,3 @@ func (s *jsiiProxy_SesEventDestination) ToTerraform() interface{} {
 
 	return returns
 }
-

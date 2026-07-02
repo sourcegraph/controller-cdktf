@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsIdentitystoreUserPhoneNumbersOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsIdentitystoreUserPhoneNumbersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsIdentitystoreUserPhoneNumbersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsIdentitystoreUserPhoneNumbersOutputReferenceParameters(te
 
 	return nil
 }
-

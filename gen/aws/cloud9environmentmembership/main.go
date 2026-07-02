@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloud9EnvironmentMembership.Cloud9EnvironmentMembership",
-		reflect.TypeOf((*Cloud9EnvironmentMembership)(nil)).Elem(),
+		reflect.TypeFor[Cloud9EnvironmentMembership](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,7 +63,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userArnInput", GoGetter: "UserArnInput"},
 			_jsii_.MemberProperty{JsiiProperty: "userId", GoGetter: "UserId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Cloud9EnvironmentMembership{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -71,6 +71,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloud9EnvironmentMembership.Cloud9EnvironmentMembershipConfig",
-		reflect.TypeOf((*Cloud9EnvironmentMembershipConfig)(nil)).Elem(),
+		reflect.TypeFor[Cloud9EnvironmentMembershipConfig](),
 	)
 }

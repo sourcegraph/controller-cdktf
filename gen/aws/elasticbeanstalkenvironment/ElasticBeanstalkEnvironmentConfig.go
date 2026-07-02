@@ -6,9 +6,9 @@ import (
 
 type ElasticBeanstalkEnvironmentConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ElasticBeanstalkEnvironmentConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elastic_beanstalk_environment#application ElasticBeanstalkEnvironment#application}.
 	Application *string `field:"required" json:"application" yaml:"application"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elastic_beanstalk_environment#name ElasticBeanstalkEnvironment#name}.
@@ -39,7 +39,7 @@ type ElasticBeanstalkEnvironmentConfig struct {
 	// setting block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elastic_beanstalk_environment#setting ElasticBeanstalkEnvironment#setting}
-	Setting interface{} `field:"optional" json:"setting" yaml:"setting"`
+	Setting any `field:"optional" json:"setting" yaml:"setting"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elastic_beanstalk_environment#solution_stack_name ElasticBeanstalkEnvironment#solution_stack_name}.
 	SolutionStackName *string `field:"optional" json:"solutionStackName" yaml:"solutionStackName"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elastic_beanstalk_environment#tags ElasticBeanstalkEnvironment#tags}.
@@ -55,4 +55,3 @@ type ElasticBeanstalkEnvironmentConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elastic_beanstalk_environment#wait_for_ready_timeout ElasticBeanstalkEnvironment#wait_for_ready_timeout}.
 	WaitForReadyTimeout *string `field:"optional" json:"waitForReadyTimeout" yaml:"waitForReadyTimeout"`
 }
-

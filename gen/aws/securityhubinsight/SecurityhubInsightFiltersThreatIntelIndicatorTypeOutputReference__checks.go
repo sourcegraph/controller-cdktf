@@ -106,7 +106,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewSecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference
 
 	return nil
 }
-

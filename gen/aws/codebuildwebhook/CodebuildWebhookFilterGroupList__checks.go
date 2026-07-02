@@ -34,7 +34,7 @@ func (c *jsiiProxy_CodebuildWebhookFilterGroupList) validateResolveParameters(_c
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildWebhookFilterGroupList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CodebuildWebhookFilterGroupList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCodebuildWebhookFilterGroupListParameters(terraformResource cdkt
 
 	return nil
 }
-

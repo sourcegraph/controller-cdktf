@@ -122,7 +122,7 @@ func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference) validateSetCodec
 	return nil
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ElastictranscoderPresetVideoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -302,4 +302,3 @@ func validateNewElastictranscoderPresetVideoOutputReferenceParameters(terraformR
 
 	return nil
 }
-

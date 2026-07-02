@@ -34,7 +34,7 @@ func (s *jsiiProxy_SesReceiptRuleS3ActionList) validateResolveParameters(_contex
 	return nil
 }
 
-func (j *jsiiProxy_SesReceiptRuleS3ActionList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SesReceiptRuleS3ActionList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSesReceiptRuleS3ActionListParameters(terraformResource cdktf.IIn
 
 	return nil
 }
-

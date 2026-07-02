@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachment",
-		reflect.TypeOf((*NetworkmanagerConnectAttachment)(nil)).Elem(),
+		reflect.TypeFor[NetworkmanagerConnectAttachment](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,7 +84,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "transportAttachmentId", GoGetter: "TransportAttachmentId"},
 			_jsii_.MemberProperty{JsiiProperty: "transportAttachmentIdInput", GoGetter: "TransportAttachmentIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkmanagerConnectAttachment{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -92,15 +92,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentConfig",
-		reflect.TypeOf((*NetworkmanagerConnectAttachmentConfig)(nil)).Elem(),
+		reflect.TypeFor[NetworkmanagerConnectAttachmentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentOptions",
-		reflect.TypeOf((*NetworkmanagerConnectAttachmentOptions)(nil)).Elem(),
+		reflect.TypeFor[NetworkmanagerConnectAttachmentOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentOptionsOutputReference",
-		reflect.TypeOf((*NetworkmanagerConnectAttachmentOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkmanagerConnectAttachmentOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -127,7 +127,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkmanagerConnectAttachmentOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -135,11 +135,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentTimeouts",
-		reflect.TypeOf((*NetworkmanagerConnectAttachmentTimeouts)(nil)).Elem(),
+		reflect.TypeFor[NetworkmanagerConnectAttachmentTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentTimeoutsOutputReference",
-		reflect.TypeOf((*NetworkmanagerConnectAttachmentTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkmanagerConnectAttachmentTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -169,7 +169,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkmanagerConnectAttachmentTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

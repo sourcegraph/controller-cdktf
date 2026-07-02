@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.eksIdentityProviderConfig.EksIdentityProviderConfig",
-		reflect.TypeOf((*EksIdentityProviderConfig)(nil)).Elem(),
+		reflect.TypeFor[EksIdentityProviderConfig](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EksIdentityProviderConfig{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,15 +81,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.eksIdentityProviderConfig.EksIdentityProviderConfigConfig",
-		reflect.TypeOf((*EksIdentityProviderConfigConfig)(nil)).Elem(),
+		reflect.TypeFor[EksIdentityProviderConfigConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.eksIdentityProviderConfig.EksIdentityProviderConfigOidc",
-		reflect.TypeOf((*EksIdentityProviderConfigOidc)(nil)).Elem(),
+		reflect.TypeFor[EksIdentityProviderConfigOidc](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.eksIdentityProviderConfig.EksIdentityProviderConfigOidcOutputReference",
-		reflect.TypeOf((*EksIdentityProviderConfigOidcOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EksIdentityProviderConfigOidcOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
 			_jsii_.MemberProperty{JsiiProperty: "clientIdInput", GoGetter: "ClientIdInput"},
@@ -134,7 +134,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "usernamePrefix", GoGetter: "UsernamePrefix"},
 			_jsii_.MemberProperty{JsiiProperty: "usernamePrefixInput", GoGetter: "UsernamePrefixInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EksIdentityProviderConfigOidcOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -142,11 +142,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.eksIdentityProviderConfig.EksIdentityProviderConfigTimeouts",
-		reflect.TypeOf((*EksIdentityProviderConfigTimeouts)(nil)).Elem(),
+		reflect.TypeFor[EksIdentityProviderConfigTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.eksIdentityProviderConfig.EksIdentityProviderConfigTimeoutsOutputReference",
-		reflect.TypeOf((*EksIdentityProviderConfigTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EksIdentityProviderConfigTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -176,7 +176,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EksIdentityProviderConfigTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

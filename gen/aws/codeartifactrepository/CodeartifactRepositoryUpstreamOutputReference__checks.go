@@ -98,7 +98,7 @@ func (c *jsiiProxy_CodeartifactRepositoryUpstreamOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_CodeartifactRepositoryUpstreamOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CodeartifactRepositoryUpstreamOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_CodeartifactRepositoryUpstreamOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_CodeartifactRepositoryUpstreamOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CodeartifactRepositoryUpstreamOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewCodeartifactRepositoryUpstreamOutputReferenceParameters(terrafor
 
 	return nil
 }
-

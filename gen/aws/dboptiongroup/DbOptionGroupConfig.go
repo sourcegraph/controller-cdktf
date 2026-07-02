@@ -6,9 +6,9 @@ import (
 
 type DbOptionGroupConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DbOptionGroupConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/db_option_group#engine_name DbOptionGroup#engine_name}.
 	EngineName *string `field:"required" json:"engineName" yaml:"engineName"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/db_option_group#major_engine_version DbOptionGroup#major_engine_version}.
@@ -35,7 +35,7 @@ type DbOptionGroupConfig struct {
 	// option block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/db_option_group#option DbOptionGroup#option}
-	Option interface{} `field:"optional" json:"option" yaml:"option"`
+	Option any `field:"optional" json:"option" yaml:"option"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/db_option_group#option_group_description DbOptionGroup#option_group_description}.
 	OptionGroupDescription *string `field:"optional" json:"optionGroupDescription" yaml:"optionGroupDescription"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/db_option_group#tags DbOptionGroup#tags}.
@@ -47,4 +47,3 @@ type DbOptionGroupConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/db_option_group#timeouts DbOptionGroup#timeouts}
 	Timeouts *DbOptionGroupTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

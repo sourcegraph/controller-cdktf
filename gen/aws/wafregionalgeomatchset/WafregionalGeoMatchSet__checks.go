@@ -19,7 +19,7 @@ func (w *jsiiProxy_WafregionalGeoMatchSet) validateAddMoveTargetParameters(moveT
 	return nil
 }
 
-func (w *jsiiProxy_WafregionalGeoMatchSet) validateAddOverrideParameters(path *string, value interface{}) error {
+func (w *jsiiProxy_WafregionalGeoMatchSet) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (w *jsiiProxy_WafregionalGeoMatchSet) validateMoveFromIdParameters(id *stri
 	return nil
 }
 
-func (w *jsiiProxy_WafregionalGeoMatchSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (w *jsiiProxy_WafregionalGeoMatchSet) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (w *jsiiProxy_WafregionalGeoMatchSet) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
-func (w *jsiiProxy_WafregionalGeoMatchSet) validatePutGeoMatchConstraintParameters(value interface{}) error {
+func (w *jsiiProxy_WafregionalGeoMatchSet) validatePutGeoMatchConstraintParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateWafregionalGeoMatchSet_GenerateConfigForImportParameters(scope cons
 	return nil
 }
 
-func validateWafregionalGeoMatchSet_IsConstructParameters(x interface{}) error {
+func validateWafregionalGeoMatchSet_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateWafregionalGeoMatchSet_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateWafregionalGeoMatchSet_IsTerraformElementParameters(x interface{}) error {
+func validateWafregionalGeoMatchSet_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateWafregionalGeoMatchSet_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
-func validateWafregionalGeoMatchSet_IsTerraformResourceParameters(x interface{}) error {
+func validateWafregionalGeoMatchSet_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func validateWafregionalGeoMatchSet_IsTerraformResourceParameters(x interface{})
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalGeoMatchSet) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_WafregionalGeoMatchSet) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -308,7 +308,7 @@ func (j *jsiiProxy_WafregionalGeoMatchSet) validateSetConnectionParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalGeoMatchSet) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_WafregionalGeoMatchSet) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -389,7 +389,7 @@ func (j *jsiiProxy_WafregionalGeoMatchSet) validateSetNameParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalGeoMatchSet) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_WafregionalGeoMatchSet) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -453,4 +453,3 @@ func validateNewWafregionalGeoMatchSetParameters(scope constructs.Construct, id 
 
 	return nil
 }
-

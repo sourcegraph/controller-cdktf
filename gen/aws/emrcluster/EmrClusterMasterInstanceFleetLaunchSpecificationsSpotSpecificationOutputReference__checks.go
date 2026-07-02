@@ -114,7 +114,7 @@ func (j *jsiiProxy_EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecific
 	return nil
 }
 
-func (j *jsiiProxy_EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecific
 	return nil
 }
 
-func (j *jsiiProxy_EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewEmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecificati
 
 	return nil
 }
-

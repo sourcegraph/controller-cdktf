@@ -98,7 +98,7 @@ func (e *jsiiProxy_EcsTaskSetServiceRegistriesOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_EcsTaskSetServiceRegistriesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EcsTaskSetServiceRegistriesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewEcsTaskSetServiceRegistriesOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

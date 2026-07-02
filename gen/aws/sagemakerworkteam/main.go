@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteam",
-		reflect.TypeOf((*SagemakerWorkteam)(nil)).Elem(),
+		reflect.TypeFor[SagemakerWorkteam](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workteamName", GoGetter: "WorkteamName"},
 			_jsii_.MemberProperty{JsiiProperty: "workteamNameInput", GoGetter: "WorkteamNameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerWorkteam{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,19 +85,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamConfig",
-		reflect.TypeOf((*SagemakerWorkteamConfig)(nil)).Elem(),
+		reflect.TypeFor[SagemakerWorkteamConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinition",
-		reflect.TypeOf((*SagemakerWorkteamMemberDefinition)(nil)).Elem(),
+		reflect.TypeFor[SagemakerWorkteamMemberDefinition](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionCognitoMemberDefinition",
-		reflect.TypeOf((*SagemakerWorkteamMemberDefinitionCognitoMemberDefinition)(nil)).Elem(),
+		reflect.TypeFor[SagemakerWorkteamMemberDefinitionCognitoMemberDefinition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionCognitoMemberDefinitionOutputReference",
-		reflect.TypeOf((*SagemakerWorkteamMemberDefinitionCognitoMemberDefinitionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SagemakerWorkteamMemberDefinitionCognitoMemberDefinitionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
 			_jsii_.MemberProperty{JsiiProperty: "clientIdInput", GoGetter: "ClientIdInput"},
@@ -127,7 +127,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userPool", GoGetter: "UserPool"},
 			_jsii_.MemberProperty{JsiiProperty: "userPoolInput", GoGetter: "UserPoolInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerWorkteamMemberDefinitionCognitoMemberDefinitionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -135,7 +135,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionList",
-		reflect.TypeOf((*SagemakerWorkteamMemberDefinitionList)(nil)).Elem(),
+		reflect.TypeFor[SagemakerWorkteamMemberDefinitionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -149,7 +149,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerWorkteamMemberDefinitionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -157,11 +157,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionOidcMemberDefinition",
-		reflect.TypeOf((*SagemakerWorkteamMemberDefinitionOidcMemberDefinition)(nil)).Elem(),
+		reflect.TypeFor[SagemakerWorkteamMemberDefinitionOidcMemberDefinition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionOidcMemberDefinitionOutputReference",
-		reflect.TypeOf((*SagemakerWorkteamMemberDefinitionOidcMemberDefinitionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SagemakerWorkteamMemberDefinitionOidcMemberDefinitionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -187,7 +187,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerWorkteamMemberDefinitionOidcMemberDefinitionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -195,7 +195,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionOutputReference",
-		reflect.TypeOf((*SagemakerWorkteamMemberDefinitionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SagemakerWorkteamMemberDefinitionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cognitoMemberDefinition", GoGetter: "CognitoMemberDefinition"},
 			_jsii_.MemberProperty{JsiiProperty: "cognitoMemberDefinitionInput", GoGetter: "CognitoMemberDefinitionInput"},
@@ -227,7 +227,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerWorkteamMemberDefinitionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -235,11 +235,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamNotificationConfiguration",
-		reflect.TypeOf((*SagemakerWorkteamNotificationConfiguration)(nil)).Elem(),
+		reflect.TypeFor[SagemakerWorkteamNotificationConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamNotificationConfigurationOutputReference",
-		reflect.TypeOf((*SagemakerWorkteamNotificationConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SagemakerWorkteamNotificationConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -266,7 +266,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerWorkteamNotificationConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.devicefarmUpload.DevicefarmUpload",
-		reflect.TypeOf((*DevicefarmUpload)(nil)).Elem(),
+		reflect.TypeFor[DevicefarmUpload](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DevicefarmUpload{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -77,6 +77,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.devicefarmUpload.DevicefarmUploadConfig",
-		reflect.TypeOf((*DevicefarmUploadConfig)(nil)).Elem(),
+		reflect.TypeFor[DevicefarmUploadConfig](),
 	)
 }

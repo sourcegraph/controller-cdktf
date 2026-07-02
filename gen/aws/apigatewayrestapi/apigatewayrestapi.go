@@ -25,15 +25,15 @@ type ApiGatewayRestApi interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedDate() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -42,9 +42,9 @@ type ApiGatewayRestApi interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	DisableExecuteApiEndpoint() interface{}
-	SetDisableExecuteApiEndpoint(val interface{})
-	DisableExecuteApiEndpointInput() interface{}
+	DisableExecuteApiEndpoint() any
+	SetDisableExecuteApiEndpoint(val any)
+	DisableExecuteApiEndpointInput() any
 	EndpointConfiguration() ApiGatewayRestApiEndpointConfigurationOutputReference
 	EndpointConfigurationInput() *ApiGatewayRestApiEndpointConfiguration
 	ExecutionArn() *string
@@ -82,14 +82,14 @@ type ApiGatewayRestApi interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	PutRestApiMode() *string
 	SetPutRestApiMode(val *string)
 	PutRestApiModeInput() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RootResourceId() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -100,16 +100,16 @@ type ApiGatewayRestApi interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -127,7 +127,7 @@ type ApiGatewayRestApi interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -139,7 +139,7 @@ type ApiGatewayRestApi interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -163,17 +163,17 @@ type ApiGatewayRestApi interface {
 	ResetPutRestApiMode()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ApiGatewayRestApi
@@ -261,8 +261,8 @@ func (j *jsiiProxy_ApiGatewayRestApi) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayRestApi) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiGatewayRestApi) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -271,8 +271,8 @@ func (j *jsiiProxy_ApiGatewayRestApi) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayRestApi) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ApiGatewayRestApi) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -281,8 +281,8 @@ func (j *jsiiProxy_ApiGatewayRestApi) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayRestApi) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiGatewayRestApi) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -331,8 +331,8 @@ func (j *jsiiProxy_ApiGatewayRestApi) DescriptionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayRestApi) DisableExecuteApiEndpoint() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiGatewayRestApi) DisableExecuteApiEndpoint() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableExecuteApiEndpoint",
@@ -341,8 +341,8 @@ func (j *jsiiProxy_ApiGatewayRestApi) DisableExecuteApiEndpoint() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayRestApi) DisableExecuteApiEndpointInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiGatewayRestApi) DisableExecuteApiEndpointInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableExecuteApiEndpointInput",
@@ -541,8 +541,8 @@ func (j *jsiiProxy_ApiGatewayRestApi) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayRestApi) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ApiGatewayRestApi) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -571,8 +571,8 @@ func (j *jsiiProxy_ApiGatewayRestApi) PutRestApiModeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayRestApi) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiGatewayRestApi) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -641,8 +641,8 @@ func (j *jsiiProxy_ApiGatewayRestApi) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayRestApi) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ApiGatewayRestApi) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -661,7 +661,6 @@ func (j *jsiiProxy_ApiGatewayRestApi) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/api_gateway_rest_api aws_api_gateway_rest_api} Resource.
 func NewApiGatewayRestApi(scope constructs.Construct, id *string, config *ApiGatewayRestApiConfig) ApiGatewayRestApi {
 	_init_.Initialize()
@@ -673,7 +672,7 @@ func NewApiGatewayRestApi(scope constructs.Construct, id *string, config *ApiGat
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.apiGatewayRestApi.ApiGatewayRestApi",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -686,12 +685,12 @@ func NewApiGatewayRestApi_Override(a ApiGatewayRestApi, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.apiGatewayRestApi.ApiGatewayRestApi",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayRestApi)SetApiKeySource(val *string) {
+func (j *jsiiProxy_ApiGatewayRestApi) SetApiKeySource(val *string) {
 	if err := j.validateSetApiKeySourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -702,7 +701,7 @@ func (j *jsiiProxy_ApiGatewayRestApi)SetApiKeySource(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayRestApi)SetBinaryMediaTypes(val *[]*string) {
+func (j *jsiiProxy_ApiGatewayRestApi) SetBinaryMediaTypes(val *[]*string) {
 	if err := j.validateSetBinaryMediaTypesParameters(val); err != nil {
 		panic(err)
 	}
@@ -713,7 +712,7 @@ func (j *jsiiProxy_ApiGatewayRestApi)SetBinaryMediaTypes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayRestApi)SetBody(val *string) {
+func (j *jsiiProxy_ApiGatewayRestApi) SetBody(val *string) {
 	if err := j.validateSetBodyParameters(val); err != nil {
 		panic(err)
 	}
@@ -724,7 +723,7 @@ func (j *jsiiProxy_ApiGatewayRestApi)SetBody(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayRestApi)SetConnection(val interface{}) {
+func (j *jsiiProxy_ApiGatewayRestApi) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -735,7 +734,7 @@ func (j *jsiiProxy_ApiGatewayRestApi)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayRestApi)SetCount(val interface{}) {
+func (j *jsiiProxy_ApiGatewayRestApi) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -746,7 +745,7 @@ func (j *jsiiProxy_ApiGatewayRestApi)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayRestApi)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ApiGatewayRestApi) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -754,7 +753,7 @@ func (j *jsiiProxy_ApiGatewayRestApi)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayRestApi)SetDescription(val *string) {
+func (j *jsiiProxy_ApiGatewayRestApi) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -765,7 +764,7 @@ func (j *jsiiProxy_ApiGatewayRestApi)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayRestApi)SetDisableExecuteApiEndpoint(val interface{}) {
+func (j *jsiiProxy_ApiGatewayRestApi) SetDisableExecuteApiEndpoint(val any) {
 	if err := j.validateSetDisableExecuteApiEndpointParameters(val); err != nil {
 		panic(err)
 	}
@@ -776,7 +775,7 @@ func (j *jsiiProxy_ApiGatewayRestApi)SetDisableExecuteApiEndpoint(val interface{
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayRestApi)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ApiGatewayRestApi) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -784,7 +783,7 @@ func (j *jsiiProxy_ApiGatewayRestApi)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayRestApi)SetId(val *string) {
+func (j *jsiiProxy_ApiGatewayRestApi) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -795,7 +794,7 @@ func (j *jsiiProxy_ApiGatewayRestApi)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayRestApi)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ApiGatewayRestApi) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -806,7 +805,7 @@ func (j *jsiiProxy_ApiGatewayRestApi)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayRestApi)SetMinimumCompressionSize(val *float64) {
+func (j *jsiiProxy_ApiGatewayRestApi) SetMinimumCompressionSize(val *float64) {
 	if err := j.validateSetMinimumCompressionSizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -817,7 +816,7 @@ func (j *jsiiProxy_ApiGatewayRestApi)SetMinimumCompressionSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayRestApi)SetName(val *string) {
+func (j *jsiiProxy_ApiGatewayRestApi) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -828,7 +827,7 @@ func (j *jsiiProxy_ApiGatewayRestApi)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayRestApi)SetParameters(val *map[string]*string) {
+func (j *jsiiProxy_ApiGatewayRestApi) SetParameters(val *map[string]*string) {
 	if err := j.validateSetParametersParameters(val); err != nil {
 		panic(err)
 	}
@@ -839,7 +838,7 @@ func (j *jsiiProxy_ApiGatewayRestApi)SetParameters(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayRestApi)SetPolicy(val *string) {
+func (j *jsiiProxy_ApiGatewayRestApi) SetPolicy(val *string) {
 	if err := j.validateSetPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -850,7 +849,7 @@ func (j *jsiiProxy_ApiGatewayRestApi)SetPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayRestApi)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ApiGatewayRestApi) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -858,7 +857,7 @@ func (j *jsiiProxy_ApiGatewayRestApi)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayRestApi)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ApiGatewayRestApi) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -869,7 +868,7 @@ func (j *jsiiProxy_ApiGatewayRestApi)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayRestApi)SetPutRestApiMode(val *string) {
+func (j *jsiiProxy_ApiGatewayRestApi) SetPutRestApiMode(val *string) {
 	if err := j.validateSetPutRestApiModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -880,7 +879,7 @@ func (j *jsiiProxy_ApiGatewayRestApi)SetPutRestApiMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayRestApi)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_ApiGatewayRestApi) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -891,7 +890,7 @@ func (j *jsiiProxy_ApiGatewayRestApi)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayRestApi)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_ApiGatewayRestApi) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -914,7 +913,7 @@ func ApiGatewayRestApi_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.apiGatewayRestApi.ApiGatewayRestApi",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -938,7 +937,7 @@ func ApiGatewayRestApi_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ApiGatewayRestApi_IsConstruct(x interface{}) *bool {
+func ApiGatewayRestApi_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApiGatewayRestApi_IsConstructParameters(x); err != nil {
@@ -949,7 +948,7 @@ func ApiGatewayRestApi_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.apiGatewayRestApi.ApiGatewayRestApi",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -957,7 +956,7 @@ func ApiGatewayRestApi_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ApiGatewayRestApi_IsTerraformElement(x interface{}) *bool {
+func ApiGatewayRestApi_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApiGatewayRestApi_IsTerraformElementParameters(x); err != nil {
@@ -968,7 +967,7 @@ func ApiGatewayRestApi_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.apiGatewayRestApi.ApiGatewayRestApi",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -976,7 +975,7 @@ func ApiGatewayRestApi_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ApiGatewayRestApi_IsTerraformResource(x interface{}) *bool {
+func ApiGatewayRestApi_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApiGatewayRestApi_IsTerraformResourceParameters(x); err != nil {
@@ -987,7 +986,7 @@ func ApiGatewayRestApi_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.apiGatewayRestApi.ApiGatewayRestApi",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1012,31 +1011,31 @@ func (a *jsiiProxy_ApiGatewayRestApi) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_ApiGatewayRestApi) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_ApiGatewayRestApi) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_ApiGatewayRestApi) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ApiGatewayRestApi) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1052,7 +1051,7 @@ func (a *jsiiProxy_ApiGatewayRestApi) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1068,7 +1067,7 @@ func (a *jsiiProxy_ApiGatewayRestApi) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1084,7 +1083,7 @@ func (a *jsiiProxy_ApiGatewayRestApi) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1100,7 +1099,7 @@ func (a *jsiiProxy_ApiGatewayRestApi) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1116,7 +1115,7 @@ func (a *jsiiProxy_ApiGatewayRestApi) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1132,7 +1131,7 @@ func (a *jsiiProxy_ApiGatewayRestApi) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1148,7 +1147,7 @@ func (a *jsiiProxy_ApiGatewayRestApi) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1164,15 +1163,15 @@ func (a *jsiiProxy_ApiGatewayRestApi) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_ApiGatewayRestApi) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApiGatewayRestApi) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1191,7 +1190,7 @@ func (a *jsiiProxy_ApiGatewayRestApi) ImportFrom(id *string, provider cdktf.Terr
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1204,7 +1203,7 @@ func (a *jsiiProxy_ApiGatewayRestApi) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1218,18 +1217,18 @@ func (a *jsiiProxy_ApiGatewayRestApi) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_ApiGatewayRestApi) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_ApiGatewayRestApi) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1240,7 +1239,7 @@ func (a *jsiiProxy_ApiGatewayRestApi) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1251,7 +1250,7 @@ func (a *jsiiProxy_ApiGatewayRestApi) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1262,7 +1261,7 @@ func (a *jsiiProxy_ApiGatewayRestApi) PutEndpointConfiguration(value *ApiGateway
 	_jsii_.InvokeVoid(
 		a,
 		"putEndpointConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1378,8 +1377,8 @@ func (a *jsiiProxy_ApiGatewayRestApi) ResetTagsAll() {
 	)
 }
 
-func (a *jsiiProxy_ApiGatewayRestApi) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_ApiGatewayRestApi) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1391,8 +1390,8 @@ func (a *jsiiProxy_ApiGatewayRestApi) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (a *jsiiProxy_ApiGatewayRestApi) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_ApiGatewayRestApi) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1404,8 +1403,8 @@ func (a *jsiiProxy_ApiGatewayRestApi) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (a *jsiiProxy_ApiGatewayRestApi) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApiGatewayRestApi) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1417,8 +1416,8 @@ func (a *jsiiProxy_ApiGatewayRestApi) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_ApiGatewayRestApi) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApiGatewayRestApi) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1443,8 +1442,8 @@ func (a *jsiiProxy_ApiGatewayRestApi) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_ApiGatewayRestApi) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApiGatewayRestApi) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1455,4 +1454,3 @@ func (a *jsiiProxy_ApiGatewayRestApi) ToTerraform() interface{} {
 
 	return returns
 }
-

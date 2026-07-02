@@ -34,7 +34,7 @@ func (g *jsiiProxy_GlueTriggerActionsList) validateResolveParameters(_context cd
 	return nil
 }
 
-func (j *jsiiProxy_GlueTriggerActionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GlueTriggerActionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGlueTriggerActionsListParameters(terraformResource cdktf.IInterp
 
 	return nil
 }
-

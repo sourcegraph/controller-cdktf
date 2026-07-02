@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appstreamUser.AppstreamUser",
-		reflect.TypeOf((*AppstreamUser)(nil)).Elem(),
+		reflect.TypeFor[AppstreamUser](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userName", GoGetter: "UserName"},
 			_jsii_.MemberProperty{JsiiProperty: "userNameInput", GoGetter: "UserNameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppstreamUser{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,6 +82,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appstreamUser.AppstreamUserConfig",
-		reflect.TypeOf((*AppstreamUserConfig)(nil)).Elem(),
+		reflect.TypeFor[AppstreamUserConfig](),
 	)
 }

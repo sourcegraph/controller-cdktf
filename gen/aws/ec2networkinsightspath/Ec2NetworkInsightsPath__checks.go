@@ -19,7 +19,7 @@ func (e *jsiiProxy_Ec2NetworkInsightsPath) validateAddMoveTargetParameters(moveT
 	return nil
 }
 
-func (e *jsiiProxy_Ec2NetworkInsightsPath) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_Ec2NetworkInsightsPath) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (e *jsiiProxy_Ec2NetworkInsightsPath) validateMoveFromIdParameters(id *stri
 	return nil
 }
 
-func (e *jsiiProxy_Ec2NetworkInsightsPath) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (e *jsiiProxy_Ec2NetworkInsightsPath) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateEc2NetworkInsightsPath_GenerateConfigForImportParameters(scope cons
 	return nil
 }
 
-func validateEc2NetworkInsightsPath_IsConstructParameters(x interface{}) error {
+func validateEc2NetworkInsightsPath_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateEc2NetworkInsightsPath_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateEc2NetworkInsightsPath_IsTerraformElementParameters(x interface{}) error {
+func validateEc2NetworkInsightsPath_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateEc2NetworkInsightsPath_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
-func validateEc2NetworkInsightsPath_IsTerraformResourceParameters(x interface{}) error {
+func validateEc2NetworkInsightsPath_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateEc2NetworkInsightsPath_IsTerraformResourceParameters(x interface{})
 	return nil
 }
 
-func (j *jsiiProxy_Ec2NetworkInsightsPath) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2NetworkInsightsPath) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_Ec2NetworkInsightsPath) validateSetConnectionParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_Ec2NetworkInsightsPath) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2NetworkInsightsPath) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -382,7 +382,7 @@ func (j *jsiiProxy_Ec2NetworkInsightsPath) validateSetProtocolParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_Ec2NetworkInsightsPath) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Ec2NetworkInsightsPath) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -478,4 +478,3 @@ func validateNewEc2NetworkInsightsPathParameters(scope constructs.Construct, id 
 
 	return nil
 }
-

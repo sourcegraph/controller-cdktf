@@ -19,7 +19,7 @@ func (s *jsiiProxy_ServicecatalogTagOptionResourceAssociation) validateAddMoveTa
 	return nil
 }
 
-func (s *jsiiProxy_ServicecatalogTagOptionResourceAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_ServicecatalogTagOptionResourceAssociation) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_ServicecatalogTagOptionResourceAssociation) validateMoveFromI
 	return nil
 }
 
-func (s *jsiiProxy_ServicecatalogTagOptionResourceAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_ServicecatalogTagOptionResourceAssociation) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateServicecatalogTagOptionResourceAssociation_GenerateConfigForImportP
 	return nil
 }
 
-func validateServicecatalogTagOptionResourceAssociation_IsConstructParameters(x interface{}) error {
+func validateServicecatalogTagOptionResourceAssociation_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateServicecatalogTagOptionResourceAssociation_IsConstructParameters(x 
 	return nil
 }
 
-func validateServicecatalogTagOptionResourceAssociation_IsTerraformElementParameters(x interface{}) error {
+func validateServicecatalogTagOptionResourceAssociation_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateServicecatalogTagOptionResourceAssociation_IsTerraformElementParame
 	return nil
 }
 
-func validateServicecatalogTagOptionResourceAssociation_IsTerraformResourceParameters(x interface{}) error {
+func validateServicecatalogTagOptionResourceAssociation_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateServicecatalogTagOptionResourceAssociation_IsTerraformResourceParam
 	return nil
 }
 
-func (j *jsiiProxy_ServicecatalogTagOptionResourceAssociation) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ServicecatalogTagOptionResourceAssociation) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_ServicecatalogTagOptionResourceAssociation) validateSetConnec
 	return nil
 }
 
-func (j *jsiiProxy_ServicecatalogTagOptionResourceAssociation) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ServicecatalogTagOptionResourceAssociation) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -361,7 +361,7 @@ func (j *jsiiProxy_ServicecatalogTagOptionResourceAssociation) validateSetLifecy
 	return nil
 }
 
-func (j *jsiiProxy_ServicecatalogTagOptionResourceAssociation) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ServicecatalogTagOptionResourceAssociation) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -441,4 +441,3 @@ func validateNewServicecatalogTagOptionResourceAssociationParameters(scope const
 
 	return nil
 }
-

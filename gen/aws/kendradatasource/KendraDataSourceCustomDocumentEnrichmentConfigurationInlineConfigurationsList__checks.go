@@ -34,7 +34,7 @@ func (k *jsiiProxy_KendraDataSourceCustomDocumentEnrichmentConfigurationInlineCo
 	return nil
 }
 
-func (j *jsiiProxy_KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewKendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfi
 
 	return nil
 }
-

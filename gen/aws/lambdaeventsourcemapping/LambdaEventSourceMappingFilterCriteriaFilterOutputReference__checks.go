@@ -98,7 +98,7 @@ func (l *jsiiProxy_LambdaEventSourceMappingFilterCriteriaFilterOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_LambdaEventSourceMappingFilterCriteriaFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LambdaEventSourceMappingFilterCriteriaFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_LambdaEventSourceMappingFilterCriteriaFilterOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_LambdaEventSourceMappingFilterCriteriaFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LambdaEventSourceMappingFilterCriteriaFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewLambdaEventSourceMappingFilterCriteriaFilterOutputReferenceParam
 
 	return nil
 }
-

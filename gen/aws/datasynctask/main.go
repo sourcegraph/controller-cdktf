@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.datasyncTask.DatasyncTask",
-		reflect.TypeOf((*DatasyncTask)(nil)).Elem(),
+		reflect.TypeFor[DatasyncTask](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -93,7 +93,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatasyncTask{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -101,15 +101,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.datasyncTask.DatasyncTaskConfig",
-		reflect.TypeOf((*DatasyncTaskConfig)(nil)).Elem(),
+		reflect.TypeFor[DatasyncTaskConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.datasyncTask.DatasyncTaskExcludes",
-		reflect.TypeOf((*DatasyncTaskExcludes)(nil)).Elem(),
+		reflect.TypeFor[DatasyncTaskExcludes](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.datasyncTask.DatasyncTaskExcludesOutputReference",
-		reflect.TypeOf((*DatasyncTaskExcludesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatasyncTaskExcludesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -139,7 +139,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatasyncTaskExcludesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -147,11 +147,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.datasyncTask.DatasyncTaskIncludes",
-		reflect.TypeOf((*DatasyncTaskIncludes)(nil)).Elem(),
+		reflect.TypeFor[DatasyncTaskIncludes](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.datasyncTask.DatasyncTaskIncludesOutputReference",
-		reflect.TypeOf((*DatasyncTaskIncludesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatasyncTaskIncludesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -181,7 +181,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatasyncTaskIncludesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -189,11 +189,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.datasyncTask.DatasyncTaskOptions",
-		reflect.TypeOf((*DatasyncTaskOptions)(nil)).Elem(),
+		reflect.TypeFor[DatasyncTaskOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.datasyncTask.DatasyncTaskOptionsOutputReference",
-		reflect.TypeOf((*DatasyncTaskOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatasyncTaskOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "atime", GoGetter: "Atime"},
 			_jsii_.MemberProperty{JsiiProperty: "atimeInput", GoGetter: "AtimeInput"},
@@ -259,7 +259,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "verifyMode", GoGetter: "VerifyMode"},
 			_jsii_.MemberProperty{JsiiProperty: "verifyModeInput", GoGetter: "VerifyModeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatasyncTaskOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -267,11 +267,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.datasyncTask.DatasyncTaskSchedule",
-		reflect.TypeOf((*DatasyncTaskSchedule)(nil)).Elem(),
+		reflect.TypeFor[DatasyncTaskSchedule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.datasyncTask.DatasyncTaskScheduleOutputReference",
-		reflect.TypeOf((*DatasyncTaskScheduleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatasyncTaskScheduleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -297,7 +297,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatasyncTaskScheduleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -305,11 +305,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.datasyncTask.DatasyncTaskTimeouts",
-		reflect.TypeOf((*DatasyncTaskTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DatasyncTaskTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.datasyncTask.DatasyncTaskTimeoutsOutputReference",
-		reflect.TypeOf((*DatasyncTaskTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatasyncTaskTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -336,7 +336,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatasyncTaskTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

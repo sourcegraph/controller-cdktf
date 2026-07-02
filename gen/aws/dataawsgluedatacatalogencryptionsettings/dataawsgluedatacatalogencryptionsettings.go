@@ -18,11 +18,11 @@ type DataAwsGlueDataCatalogEncryptionSettings interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DataCatalogEncryptionSettings() DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsList
 	// Experimental.
 	DependsOn() *[]*string
@@ -50,17 +50,17 @@ type DataAwsGlueDataCatalogEncryptionSettings interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -86,18 +86,18 @@ type DataAwsGlueDataCatalogEncryptionSettings interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsGlueDataCatalogEncryptionSettings
@@ -135,8 +135,8 @@ func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) CdktfStack() cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -145,8 +145,8 @@ func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) ConstructNodeMetada
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -255,8 +255,8 @@ func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) Provider() cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -275,8 +275,8 @@ func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) TerraformGeneratorM
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -295,7 +295,6 @@ func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) TerraformResourceTy
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/glue_data_catalog_encryption_settings aws_glue_data_catalog_encryption_settings} Data Source.
 func NewDataAwsGlueDataCatalogEncryptionSettings(scope constructs.Construct, id *string, config *DataAwsGlueDataCatalogEncryptionSettingsConfig) DataAwsGlueDataCatalogEncryptionSettings {
 	_init_.Initialize()
@@ -307,7 +306,7 @@ func NewDataAwsGlueDataCatalogEncryptionSettings(scope constructs.Construct, id 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsGlueDataCatalogEncryptionSettings.DataAwsGlueDataCatalogEncryptionSettings",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -320,12 +319,12 @@ func NewDataAwsGlueDataCatalogEncryptionSettings_Override(d DataAwsGlueDataCatal
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsGlueDataCatalogEncryptionSettings.DataAwsGlueDataCatalogEncryptionSettings",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings)SetCatalogId(val *string) {
+func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) SetCatalogId(val *string) {
 	if err := j.validateSetCatalogIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings)SetCatalogId(val *st
 	)
 }
 
-func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings)SetCount(val interfa
 	)
 }
 
-func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -355,7 +354,7 @@ func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings)SetDependsOn(val *[]
 	)
 }
 
-func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -363,7 +362,7 @@ func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings)SetForEach(val cdktf
 	)
 }
 
-func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings)SetId(val *string) {
+func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -374,7 +373,7 @@ func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -385,7 +384,7 @@ func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings)SetLifecycle(val *cd
 	)
 }
 
-func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -405,7 +404,7 @@ func DataAwsGlueDataCatalogEncryptionSettings_GenerateConfigForImport(scope cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsGlueDataCatalogEncryptionSettings.DataAwsGlueDataCatalogEncryptionSettings",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -429,7 +428,7 @@ func DataAwsGlueDataCatalogEncryptionSettings_GenerateConfigForImport(scope cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsGlueDataCatalogEncryptionSettings_IsConstruct(x interface{}) *bool {
+func DataAwsGlueDataCatalogEncryptionSettings_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsGlueDataCatalogEncryptionSettings_IsConstructParameters(x); err != nil {
@@ -440,7 +439,7 @@ func DataAwsGlueDataCatalogEncryptionSettings_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsGlueDataCatalogEncryptionSettings.DataAwsGlueDataCatalogEncryptionSettings",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func DataAwsGlueDataCatalogEncryptionSettings_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsGlueDataCatalogEncryptionSettings_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsGlueDataCatalogEncryptionSettings_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsGlueDataCatalogEncryptionSettings_IsTerraformDataSourceParameters(x); err != nil {
@@ -459,7 +458,7 @@ func DataAwsGlueDataCatalogEncryptionSettings_IsTerraformDataSource(x interface{
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsGlueDataCatalogEncryptionSettings.DataAwsGlueDataCatalogEncryptionSettings",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func DataAwsGlueDataCatalogEncryptionSettings_IsTerraformDataSource(x interface{
 }
 
 // Experimental.
-func DataAwsGlueDataCatalogEncryptionSettings_IsTerraformElement(x interface{}) *bool {
+func DataAwsGlueDataCatalogEncryptionSettings_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsGlueDataCatalogEncryptionSettings_IsTerraformElementParameters(x); err != nil {
@@ -478,7 +477,7 @@ func DataAwsGlueDataCatalogEncryptionSettings_IsTerraformElement(x interface{}) 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsGlueDataCatalogEncryptionSettings.DataAwsGlueDataCatalogEncryptionSettings",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -496,27 +495,27 @@ func DataAwsGlueDataCatalogEncryptionSettings_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -532,7 +531,7 @@ func (d *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) GetBooleanAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (d *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -564,7 +563,7 @@ func (d *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) GetListAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -580,7 +579,7 @@ func (d *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) GetNumberAttribute(
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -596,7 +595,7 @@ func (d *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) GetNumberListAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -612,7 +611,7 @@ func (d *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) GetNumberMapAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -628,7 +627,7 @@ func (d *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) GetStringAttribute(
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -644,7 +643,7 @@ func (d *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) GetStringMapAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -660,7 +659,7 @@ func (d *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) InterpolationForAtt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -674,7 +673,7 @@ func (d *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) OverrideLogicalId(n
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -694,8 +693,8 @@ func (d *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) ResetOverrideLogica
 	)
 }
 
-func (d *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -707,8 +706,8 @@ func (d *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) SynthesizeAttribute
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -720,8 +719,8 @@ func (d *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) SynthesizeHclAttrib
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -733,8 +732,8 @@ func (d *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) ToHclTerraform() in
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -759,8 +758,8 @@ func (d *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) ToString() *string 
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -771,4 +770,3 @@ func (d *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) ToTerraform() inter
 
 	return returns
 }
-

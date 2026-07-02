@@ -98,7 +98,7 @@ func (f *jsiiProxy_FsxOntapStorageVirtualMachineTimeoutsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_FsxOntapStorageVirtualMachineTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FsxOntapStorageVirtualMachineTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_FsxOntapStorageVirtualMachineTimeoutsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_FsxOntapStorageVirtualMachineTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FsxOntapStorageVirtualMachineTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewFsxOntapStorageVirtualMachineTimeoutsOutputReferenceParameters(t
 
 	return nil
 }
-

@@ -120,7 +120,7 @@ func (a *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertie
 	return nil
 }
 
-func (j *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -244,4 +244,3 @@ func validateNewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSa
 
 	return nil
 }
-

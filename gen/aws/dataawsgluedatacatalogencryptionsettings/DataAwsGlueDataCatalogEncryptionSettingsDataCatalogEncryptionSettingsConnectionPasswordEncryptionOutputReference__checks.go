@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryption
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryptionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryptionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSet
 
 	return nil
 }
-

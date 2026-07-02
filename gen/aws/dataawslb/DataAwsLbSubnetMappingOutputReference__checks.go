@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsLbSubnetMappingOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLbSubnetMappingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsLbSubnetMappingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsLbSubnetMappingOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

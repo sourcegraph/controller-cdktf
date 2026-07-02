@@ -98,7 +98,7 @@ func (w *jsiiProxy_WafGeoMatchSetGeoMatchConstraintOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_WafGeoMatchSetGeoMatchConstraintOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WafGeoMatchSetGeoMatchConstraintOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_WafGeoMatchSetGeoMatchConstraintOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_WafGeoMatchSetGeoMatchConstraintOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WafGeoMatchSetGeoMatchConstraintOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewWafGeoMatchSetGeoMatchConstraintOutputReferenceParameters(terraf
 
 	return nil
 }
-

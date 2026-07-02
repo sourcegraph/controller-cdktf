@@ -15,15 +15,15 @@ type LightsailInstancePublicPorts interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -49,30 +49,30 @@ type LightsailInstancePublicPorts interface {
 	// The tree node.
 	Node() constructs.Node
 	PortInfo() LightsailInstancePublicPortsPortInfoList
-	PortInfoInput() interface{}
+	PortInfoInput() any
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -90,7 +90,7 @@ type LightsailInstancePublicPorts interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -102,29 +102,29 @@ type LightsailInstancePublicPorts interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutPortInfo(value interface{})
+	PutPortInfo(value any)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for LightsailInstancePublicPorts
@@ -142,8 +142,8 @@ func (j *jsiiProxy_LightsailInstancePublicPorts) CdktfStack() cdktf.TerraformSta
 	return returns
 }
 
-func (j *jsiiProxy_LightsailInstancePublicPorts) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LightsailInstancePublicPorts) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_LightsailInstancePublicPorts) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LightsailInstancePublicPorts) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LightsailInstancePublicPorts) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_LightsailInstancePublicPorts) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_LightsailInstancePublicPorts) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LightsailInstancePublicPorts) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -282,8 +282,8 @@ func (j *jsiiProxy_LightsailInstancePublicPorts) PortInfo() LightsailInstancePub
 	return returns
 }
 
-func (j *jsiiProxy_LightsailInstancePublicPorts) PortInfoInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LightsailInstancePublicPorts) PortInfoInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"portInfoInput",
@@ -302,8 +302,8 @@ func (j *jsiiProxy_LightsailInstancePublicPorts) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_LightsailInstancePublicPorts) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_LightsailInstancePublicPorts) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -312,8 +312,8 @@ func (j *jsiiProxy_LightsailInstancePublicPorts) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LightsailInstancePublicPorts) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LightsailInstancePublicPorts) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -332,8 +332,8 @@ func (j *jsiiProxy_LightsailInstancePublicPorts) TerraformGeneratorMetadata() *c
 	return returns
 }
 
-func (j *jsiiProxy_LightsailInstancePublicPorts) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LightsailInstancePublicPorts) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -352,7 +352,6 @@ func (j *jsiiProxy_LightsailInstancePublicPorts) TerraformResourceType() *string
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lightsail_instance_public_ports aws_lightsail_instance_public_ports} Resource.
 func NewLightsailInstancePublicPorts(scope constructs.Construct, id *string, config *LightsailInstancePublicPortsConfig) LightsailInstancePublicPorts {
 	_init_.Initialize()
@@ -364,7 +363,7 @@ func NewLightsailInstancePublicPorts(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPorts",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -377,12 +376,12 @@ func NewLightsailInstancePublicPorts_Override(l LightsailInstancePublicPorts, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPorts",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LightsailInstancePublicPorts)SetConnection(val interface{}) {
+func (j *jsiiProxy_LightsailInstancePublicPorts) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_LightsailInstancePublicPorts)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LightsailInstancePublicPorts)SetCount(val interface{}) {
+func (j *jsiiProxy_LightsailInstancePublicPorts) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_LightsailInstancePublicPorts)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LightsailInstancePublicPorts)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LightsailInstancePublicPorts) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -412,7 +411,7 @@ func (j *jsiiProxy_LightsailInstancePublicPorts)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LightsailInstancePublicPorts)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LightsailInstancePublicPorts) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -420,7 +419,7 @@ func (j *jsiiProxy_LightsailInstancePublicPorts)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_LightsailInstancePublicPorts)SetId(val *string) {
+func (j *jsiiProxy_LightsailInstancePublicPorts) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,7 +430,7 @@ func (j *jsiiProxy_LightsailInstancePublicPorts)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LightsailInstancePublicPorts)SetInstanceName(val *string) {
+func (j *jsiiProxy_LightsailInstancePublicPorts) SetInstanceName(val *string) {
 	if err := j.validateSetInstanceNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_LightsailInstancePublicPorts)SetInstanceName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LightsailInstancePublicPorts)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LightsailInstancePublicPorts) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_LightsailInstancePublicPorts)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_LightsailInstancePublicPorts)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LightsailInstancePublicPorts) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -461,7 +460,7 @@ func (j *jsiiProxy_LightsailInstancePublicPorts)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_LightsailInstancePublicPorts)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LightsailInstancePublicPorts) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -484,7 +483,7 @@ func LightsailInstancePublicPorts_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPorts",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -508,7 +507,7 @@ func LightsailInstancePublicPorts_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func LightsailInstancePublicPorts_IsConstruct(x interface{}) *bool {
+func LightsailInstancePublicPorts_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLightsailInstancePublicPorts_IsConstructParameters(x); err != nil {
@@ -519,7 +518,7 @@ func LightsailInstancePublicPorts_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPorts",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -527,7 +526,7 @@ func LightsailInstancePublicPorts_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func LightsailInstancePublicPorts_IsTerraformElement(x interface{}) *bool {
+func LightsailInstancePublicPorts_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLightsailInstancePublicPorts_IsTerraformElementParameters(x); err != nil {
@@ -538,7 +537,7 @@ func LightsailInstancePublicPorts_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPorts",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -546,7 +545,7 @@ func LightsailInstancePublicPorts_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func LightsailInstancePublicPorts_IsTerraformResource(x interface{}) *bool {
+func LightsailInstancePublicPorts_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLightsailInstancePublicPorts_IsTerraformResourceParameters(x); err != nil {
@@ -557,7 +556,7 @@ func LightsailInstancePublicPorts_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPorts",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -582,31 +581,31 @@ func (l *jsiiProxy_LightsailInstancePublicPorts) AddMoveTarget(moveTarget *strin
 	_jsii_.InvokeVoid(
 		l,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (l *jsiiProxy_LightsailInstancePublicPorts) AddOverride(path *string, value interface{}) {
+func (l *jsiiProxy_LightsailInstancePublicPorts) AddOverride(path *string, value any) {
 	if err := l.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (l *jsiiProxy_LightsailInstancePublicPorts) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LightsailInstancePublicPorts) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -622,7 +621,7 @@ func (l *jsiiProxy_LightsailInstancePublicPorts) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -638,7 +637,7 @@ func (l *jsiiProxy_LightsailInstancePublicPorts) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -654,7 +653,7 @@ func (l *jsiiProxy_LightsailInstancePublicPorts) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -670,7 +669,7 @@ func (l *jsiiProxy_LightsailInstancePublicPorts) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -686,7 +685,7 @@ func (l *jsiiProxy_LightsailInstancePublicPorts) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -702,7 +701,7 @@ func (l *jsiiProxy_LightsailInstancePublicPorts) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -718,7 +717,7 @@ func (l *jsiiProxy_LightsailInstancePublicPorts) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -734,15 +733,15 @@ func (l *jsiiProxy_LightsailInstancePublicPorts) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LightsailInstancePublicPorts) HasResourceMove() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LightsailInstancePublicPorts) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -761,7 +760,7 @@ func (l *jsiiProxy_LightsailInstancePublicPorts) ImportFrom(id *string, provider
 	_jsii_.InvokeVoid(
 		l,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -774,7 +773,7 @@ func (l *jsiiProxy_LightsailInstancePublicPorts) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -788,18 +787,18 @@ func (l *jsiiProxy_LightsailInstancePublicPorts) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (l *jsiiProxy_LightsailInstancePublicPorts) MoveTo(moveTarget *string, index interface{}) {
+func (l *jsiiProxy_LightsailInstancePublicPorts) MoveTo(moveTarget *string, index any) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -810,7 +809,7 @@ func (l *jsiiProxy_LightsailInstancePublicPorts) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -821,18 +820,18 @@ func (l *jsiiProxy_LightsailInstancePublicPorts) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (l *jsiiProxy_LightsailInstancePublicPorts) PutPortInfo(value interface{}) {
+func (l *jsiiProxy_LightsailInstancePublicPorts) PutPortInfo(value any) {
 	if err := l.validatePutPortInfoParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"putPortInfo",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -852,8 +851,8 @@ func (l *jsiiProxy_LightsailInstancePublicPorts) ResetOverrideLogicalId() {
 	)
 }
 
-func (l *jsiiProxy_LightsailInstancePublicPorts) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LightsailInstancePublicPorts) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -865,8 +864,8 @@ func (l *jsiiProxy_LightsailInstancePublicPorts) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (l *jsiiProxy_LightsailInstancePublicPorts) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LightsailInstancePublicPorts) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -878,8 +877,8 @@ func (l *jsiiProxy_LightsailInstancePublicPorts) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (l *jsiiProxy_LightsailInstancePublicPorts) ToHclTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LightsailInstancePublicPorts) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -891,8 +890,8 @@ func (l *jsiiProxy_LightsailInstancePublicPorts) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LightsailInstancePublicPorts) ToMetadata() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LightsailInstancePublicPorts) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -917,8 +916,8 @@ func (l *jsiiProxy_LightsailInstancePublicPorts) ToString() *string {
 	return returns
 }
 
-func (l *jsiiProxy_LightsailInstancePublicPorts) ToTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LightsailInstancePublicPorts) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -929,4 +928,3 @@ func (l *jsiiProxy_LightsailInstancePublicPorts) ToTerraform() interface{} {
 
 	return returns
 }
-

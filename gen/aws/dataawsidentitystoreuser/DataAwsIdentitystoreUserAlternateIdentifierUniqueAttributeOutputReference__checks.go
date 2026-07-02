@@ -114,7 +114,7 @@ func (j *jsiiProxy_DataAwsIdentitystoreUserAlternateIdentifierUniqueAttributeOut
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsIdentitystoreUserAlternateIdentifierUniqueAttributeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsIdentitystoreUserAlternateIdentifierUniqueAttributeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDataAwsIdentitystoreUserAlternateIdentifierUniqueAttributeOutput
 
 	return nil
 }
-

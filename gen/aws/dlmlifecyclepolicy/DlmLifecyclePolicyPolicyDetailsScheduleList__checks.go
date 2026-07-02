@@ -34,7 +34,7 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleList) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDlmLifecyclePolicyPolicyDetailsScheduleListParameters(terraformR
 
 	return nil
 }
-

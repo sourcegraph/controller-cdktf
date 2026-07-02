@@ -19,7 +19,7 @@ func (m *jsiiProxy_MediaStoreContainerPolicy) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (m *jsiiProxy_MediaStoreContainerPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (m *jsiiProxy_MediaStoreContainerPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (m *jsiiProxy_MediaStoreContainerPolicy) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (m *jsiiProxy_MediaStoreContainerPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (m *jsiiProxy_MediaStoreContainerPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateMediaStoreContainerPolicy_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateMediaStoreContainerPolicy_IsConstructParameters(x interface{}) error {
+func validateMediaStoreContainerPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateMediaStoreContainerPolicy_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateMediaStoreContainerPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateMediaStoreContainerPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateMediaStoreContainerPolicy_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateMediaStoreContainerPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateMediaStoreContainerPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateMediaStoreContainerPolicy_IsTerraformResourceParameters(x interface
 	return nil
 }
 
-func (j *jsiiProxy_MediaStoreContainerPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_MediaStoreContainerPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_MediaStoreContainerPolicy) validateSetContainerNameParameters
 	return nil
 }
 
-func (j *jsiiProxy_MediaStoreContainerPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_MediaStoreContainerPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_MediaStoreContainerPolicy) validateSetPolicyParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_MediaStoreContainerPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_MediaStoreContainerPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewMediaStoreContainerPolicyParameters(scope constructs.Construct, 
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodes",
-		reflect.TypeOf((*DataAwsMskBrokerNodes)(nil)).Elem(),
+		reflect.TypeFor[DataAwsMskBrokerNodes](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -51,7 +51,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsMskBrokerNodes{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -59,15 +59,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodesConfig",
-		reflect.TypeOf((*DataAwsMskBrokerNodesConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsMskBrokerNodesConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodesNodeInfoListStruct",
-		reflect.TypeOf((*DataAwsMskBrokerNodesNodeInfoListStruct)(nil)).Elem(),
+		reflect.TypeFor[DataAwsMskBrokerNodesNodeInfoListStruct](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodesNodeInfoListStructList",
-		reflect.TypeOf((*DataAwsMskBrokerNodesNodeInfoListStructList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsMskBrokerNodesNodeInfoListStructList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -80,7 +80,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsMskBrokerNodesNodeInfoListStructList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -88,7 +88,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodesNodeInfoListStructOutputReference",
-		reflect.TypeOf((*DataAwsMskBrokerNodesNodeInfoListStructOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsMskBrokerNodesNodeInfoListStructOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attachedEniId", GoGetter: "AttachedEniId"},
 			_jsii_.MemberProperty{JsiiProperty: "brokerId", GoGetter: "BrokerId"},
@@ -118,7 +118,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsMskBrokerNodesNodeInfoListStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -106,7 +106,7 @@ func (j *jsiiProxy_GlueConnectionPhysicalConnectionRequirementsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GlueConnectionPhysicalConnectionRequirementsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GlueConnectionPhysicalConnectionRequirementsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGlueConnectionPhysicalConnectionRequirementsOutputReferenceParam
 
 	return nil
 }
-

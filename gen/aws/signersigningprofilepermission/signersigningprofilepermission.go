@@ -18,15 +18,15 @@ type SignerSigningProfilePermission interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,11 +62,11 @@ type SignerSigningProfilePermission interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	StatementId() *string
 	SetStatementId(val *string)
 	StatementIdInput() *string
@@ -76,16 +76,16 @@ type SignerSigningProfilePermission interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type SignerSigningProfilePermission interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -115,7 +115,7 @@ type SignerSigningProfilePermission interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -129,17 +129,17 @@ type SignerSigningProfilePermission interface {
 	ResetProfileVersion()
 	ResetStatementId()
 	ResetStatementIdPrefix()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SignerSigningProfilePermission
@@ -177,8 +177,8 @@ func (j *jsiiProxy_SignerSigningProfilePermission) CdktfStack() cdktf.TerraformS
 	return returns
 }
 
-func (j *jsiiProxy_SignerSigningProfilePermission) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SignerSigningProfilePermission) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_SignerSigningProfilePermission) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SignerSigningProfilePermission) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SignerSigningProfilePermission) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -197,8 +197,8 @@ func (j *jsiiProxy_SignerSigningProfilePermission) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_SignerSigningProfilePermission) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SignerSigningProfilePermission) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -357,8 +357,8 @@ func (j *jsiiProxy_SignerSigningProfilePermission) Provider() cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_SignerSigningProfilePermission) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SignerSigningProfilePermission) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -367,8 +367,8 @@ func (j *jsiiProxy_SignerSigningProfilePermission) Provisioners() *[]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_SignerSigningProfilePermission) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SignerSigningProfilePermission) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -427,8 +427,8 @@ func (j *jsiiProxy_SignerSigningProfilePermission) TerraformGeneratorMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_SignerSigningProfilePermission) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SignerSigningProfilePermission) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -447,7 +447,6 @@ func (j *jsiiProxy_SignerSigningProfilePermission) TerraformResourceType() *stri
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/signer_signing_profile_permission aws_signer_signing_profile_permission} Resource.
 func NewSignerSigningProfilePermission(scope constructs.Construct, id *string, config *SignerSigningProfilePermissionConfig) SignerSigningProfilePermission {
 	_init_.Initialize()
@@ -459,7 +458,7 @@ func NewSignerSigningProfilePermission(scope constructs.Construct, id *string, c
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.signerSigningProfilePermission.SignerSigningProfilePermission",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -472,12 +471,12 @@ func NewSignerSigningProfilePermission_Override(s SignerSigningProfilePermission
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.signerSigningProfilePermission.SignerSigningProfilePermission",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SignerSigningProfilePermission)SetAction(val *string) {
+func (j *jsiiProxy_SignerSigningProfilePermission) SetAction(val *string) {
 	if err := j.validateSetActionParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_SignerSigningProfilePermission)SetAction(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SignerSigningProfilePermission)SetConnection(val interface{}) {
+func (j *jsiiProxy_SignerSigningProfilePermission) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_SignerSigningProfilePermission)SetConnection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_SignerSigningProfilePermission)SetCount(val interface{}) {
+func (j *jsiiProxy_SignerSigningProfilePermission) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_SignerSigningProfilePermission)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SignerSigningProfilePermission)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SignerSigningProfilePermission) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -518,7 +517,7 @@ func (j *jsiiProxy_SignerSigningProfilePermission)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SignerSigningProfilePermission)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SignerSigningProfilePermission) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -526,7 +525,7 @@ func (j *jsiiProxy_SignerSigningProfilePermission)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_SignerSigningProfilePermission)SetId(val *string) {
+func (j *jsiiProxy_SignerSigningProfilePermission) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +536,7 @@ func (j *jsiiProxy_SignerSigningProfilePermission)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SignerSigningProfilePermission)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SignerSigningProfilePermission) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_SignerSigningProfilePermission)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_SignerSigningProfilePermission)SetPrincipal(val *string) {
+func (j *jsiiProxy_SignerSigningProfilePermission) SetPrincipal(val *string) {
 	if err := j.validateSetPrincipalParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_SignerSigningProfilePermission)SetPrincipal(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SignerSigningProfilePermission)SetProfileName(val *string) {
+func (j *jsiiProxy_SignerSigningProfilePermission) SetProfileName(val *string) {
 	if err := j.validateSetProfileNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_SignerSigningProfilePermission)SetProfileName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SignerSigningProfilePermission)SetProfileVersion(val *string) {
+func (j *jsiiProxy_SignerSigningProfilePermission) SetProfileVersion(val *string) {
 	if err := j.validateSetProfileVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_SignerSigningProfilePermission)SetProfileVersion(val *string)
 	)
 }
 
-func (j *jsiiProxy_SignerSigningProfilePermission)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SignerSigningProfilePermission) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -589,7 +588,7 @@ func (j *jsiiProxy_SignerSigningProfilePermission)SetProvider(val cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_SignerSigningProfilePermission)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SignerSigningProfilePermission) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -600,7 +599,7 @@ func (j *jsiiProxy_SignerSigningProfilePermission)SetProvisioners(val *[]interfa
 	)
 }
 
-func (j *jsiiProxy_SignerSigningProfilePermission)SetStatementId(val *string) {
+func (j *jsiiProxy_SignerSigningProfilePermission) SetStatementId(val *string) {
 	if err := j.validateSetStatementIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,7 +610,7 @@ func (j *jsiiProxy_SignerSigningProfilePermission)SetStatementId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SignerSigningProfilePermission)SetStatementIdPrefix(val *string) {
+func (j *jsiiProxy_SignerSigningProfilePermission) SetStatementIdPrefix(val *string) {
 	if err := j.validateSetStatementIdPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -634,7 +633,7 @@ func SignerSigningProfilePermission_GenerateConfigForImport(scope constructs.Con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.signerSigningProfilePermission.SignerSigningProfilePermission",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -658,7 +657,7 @@ func SignerSigningProfilePermission_GenerateConfigForImport(scope constructs.Con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SignerSigningProfilePermission_IsConstruct(x interface{}) *bool {
+func SignerSigningProfilePermission_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSignerSigningProfilePermission_IsConstructParameters(x); err != nil {
@@ -669,7 +668,7 @@ func SignerSigningProfilePermission_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.signerSigningProfilePermission.SignerSigningProfilePermission",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func SignerSigningProfilePermission_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SignerSigningProfilePermission_IsTerraformElement(x interface{}) *bool {
+func SignerSigningProfilePermission_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSignerSigningProfilePermission_IsTerraformElementParameters(x); err != nil {
@@ -688,7 +687,7 @@ func SignerSigningProfilePermission_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.signerSigningProfilePermission.SignerSigningProfilePermission",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func SignerSigningProfilePermission_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SignerSigningProfilePermission_IsTerraformResource(x interface{}) *bool {
+func SignerSigningProfilePermission_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSignerSigningProfilePermission_IsTerraformResourceParameters(x); err != nil {
@@ -707,7 +706,7 @@ func SignerSigningProfilePermission_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.signerSigningProfilePermission.SignerSigningProfilePermission",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -732,31 +731,31 @@ func (s *jsiiProxy_SignerSigningProfilePermission) AddMoveTarget(moveTarget *str
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SignerSigningProfilePermission) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SignerSigningProfilePermission) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SignerSigningProfilePermission) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SignerSigningProfilePermission) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -772,7 +771,7 @@ func (s *jsiiProxy_SignerSigningProfilePermission) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -788,7 +787,7 @@ func (s *jsiiProxy_SignerSigningProfilePermission) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -804,7 +803,7 @@ func (s *jsiiProxy_SignerSigningProfilePermission) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -820,7 +819,7 @@ func (s *jsiiProxy_SignerSigningProfilePermission) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -836,7 +835,7 @@ func (s *jsiiProxy_SignerSigningProfilePermission) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -852,7 +851,7 @@ func (s *jsiiProxy_SignerSigningProfilePermission) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,7 +867,7 @@ func (s *jsiiProxy_SignerSigningProfilePermission) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -884,15 +883,15 @@ func (s *jsiiProxy_SignerSigningProfilePermission) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SignerSigningProfilePermission) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SignerSigningProfilePermission) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -911,7 +910,7 @@ func (s *jsiiProxy_SignerSigningProfilePermission) ImportFrom(id *string, provid
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -924,7 +923,7 @@ func (s *jsiiProxy_SignerSigningProfilePermission) InterpolationForAttribute(ter
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -938,18 +937,18 @@ func (s *jsiiProxy_SignerSigningProfilePermission) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SignerSigningProfilePermission) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SignerSigningProfilePermission) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -960,7 +959,7 @@ func (s *jsiiProxy_SignerSigningProfilePermission) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -971,7 +970,7 @@ func (s *jsiiProxy_SignerSigningProfilePermission) OverrideLogicalId(newLogicalI
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1015,8 +1014,8 @@ func (s *jsiiProxy_SignerSigningProfilePermission) ResetStatementIdPrefix() {
 	)
 }
 
-func (s *jsiiProxy_SignerSigningProfilePermission) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SignerSigningProfilePermission) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1028,8 +1027,8 @@ func (s *jsiiProxy_SignerSigningProfilePermission) SynthesizeAttributes() *map[s
 	return returns
 }
 
-func (s *jsiiProxy_SignerSigningProfilePermission) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SignerSigningProfilePermission) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1041,8 +1040,8 @@ func (s *jsiiProxy_SignerSigningProfilePermission) SynthesizeHclAttributes() *ma
 	return returns
 }
 
-func (s *jsiiProxy_SignerSigningProfilePermission) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SignerSigningProfilePermission) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1054,8 +1053,8 @@ func (s *jsiiProxy_SignerSigningProfilePermission) ToHclTerraform() interface{} 
 	return returns
 }
 
-func (s *jsiiProxy_SignerSigningProfilePermission) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SignerSigningProfilePermission) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1080,8 +1079,8 @@ func (s *jsiiProxy_SignerSigningProfilePermission) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SignerSigningProfilePermission) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SignerSigningProfilePermission) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1092,4 +1091,3 @@ func (s *jsiiProxy_SignerSigningProfilePermission) ToTerraform() interface{} {
 
 	return returns
 }
-

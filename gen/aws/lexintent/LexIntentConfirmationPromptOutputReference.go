@@ -12,9 +12,9 @@ type LexIntentConfirmationPromptOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,7 +33,7 @@ type LexIntentConfirmationPromptOutputReference interface {
 	SetMaxAttempts(val *float64)
 	MaxAttemptsInput() *float64
 	Message() LexIntentConfirmationPromptMessageList
-	MessageInput() interface{}
+	MessageInput() any
 	ResponseCard() *string
 	SetResponseCard(val *string)
 	ResponseCardInput() *string
@@ -48,7 +48,7 @@ type LexIntentConfirmationPromptOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,11 +69,11 @@ type LexIntentConfirmationPromptOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutMessage(value interface{})
+	PutMessage(value any)
 	ResetResponseCard()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_LexIntentConfirmationPromptOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_LexIntentConfirmationPromptOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LexIntentConfirmationPromptOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_LexIntentConfirmationPromptOutputReference) Message() LexInte
 	return returns
 }
 
-func (j *jsiiProxy_LexIntentConfirmationPromptOutputReference) MessageInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LexIntentConfirmationPromptOutputReference) MessageInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"messageInput",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_LexIntentConfirmationPromptOutputReference) TerraformResource
 	return returns
 }
 
-
 func NewLexIntentConfirmationPromptOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LexIntentConfirmationPromptOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewLexIntentConfirmationPromptOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewLexIntentConfirmationPromptOutputReference_Override(l LexIntentConfirmat
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LexIntentConfirmationPromptOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LexIntentConfirmationPromptOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_LexIntentConfirmationPromptOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_LexIntentConfirmationPromptOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LexIntentConfirmationPromptOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_LexIntentConfirmationPromptOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_LexIntentConfirmationPromptOutputReference)SetInternalValue(val *LexIntentConfirmationPrompt) {
+func (j *jsiiProxy_LexIntentConfirmationPromptOutputReference) SetInternalValue(val *LexIntentConfirmationPrompt) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_LexIntentConfirmationPromptOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_LexIntentConfirmationPromptOutputReference)SetMaxAttempts(val *float64) {
+func (j *jsiiProxy_LexIntentConfirmationPromptOutputReference) SetMaxAttempts(val *float64) {
 	if err := j.validateSetMaxAttemptsParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_LexIntentConfirmationPromptOutputReference)SetMaxAttempts(val
 	)
 }
 
-func (j *jsiiProxy_LexIntentConfirmationPromptOutputReference)SetResponseCard(val *string) {
+func (j *jsiiProxy_LexIntentConfirmationPromptOutputReference) SetResponseCard(val *string) {
 	if err := j.validateSetResponseCardParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_LexIntentConfirmationPromptOutputReference)SetResponseCard(va
 	)
 }
 
-func (j *jsiiProxy_LexIntentConfirmationPromptOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LexIntentConfirmationPromptOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_LexIntentConfirmationPromptOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_LexIntentConfirmationPromptOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LexIntentConfirmationPromptOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,16 +333,16 @@ func (l *jsiiProxy_LexIntentConfirmationPromptOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (l *jsiiProxy_LexIntentConfirmationPromptOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LexIntentConfirmationPromptOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -359,7 +358,7 @@ func (l *jsiiProxy_LexIntentConfirmationPromptOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -375,7 +374,7 @@ func (l *jsiiProxy_LexIntentConfirmationPromptOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -391,7 +390,7 @@ func (l *jsiiProxy_LexIntentConfirmationPromptOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (l *jsiiProxy_LexIntentConfirmationPromptOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (l *jsiiProxy_LexIntentConfirmationPromptOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (l *jsiiProxy_LexIntentConfirmationPromptOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (l *jsiiProxy_LexIntentConfirmationPromptOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (l *jsiiProxy_LexIntentConfirmationPromptOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -500,21 +499,21 @@ func (l *jsiiProxy_LexIntentConfirmationPromptOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LexIntentConfirmationPromptOutputReference) PutMessage(value interface{}) {
+func (l *jsiiProxy_LexIntentConfirmationPromptOutputReference) PutMessage(value any) {
 	if err := l.validatePutMessageParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"putMessage",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -526,16 +525,16 @@ func (l *jsiiProxy_LexIntentConfirmationPromptOutputReference) ResetResponseCard
 	)
 }
 
-func (l *jsiiProxy_LexIntentConfirmationPromptOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LexIntentConfirmationPromptOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (l *jsiiProxy_LexIntentConfirmationPromptOutputReference) ToString() *strin
 
 	return returns
 }
-

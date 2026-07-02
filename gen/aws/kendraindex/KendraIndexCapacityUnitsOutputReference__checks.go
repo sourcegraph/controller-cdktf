@@ -98,7 +98,7 @@ func (k *jsiiProxy_KendraIndexCapacityUnitsOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_KendraIndexCapacityUnitsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KendraIndexCapacityUnitsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewKendraIndexCapacityUnitsOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

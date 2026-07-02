@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicy",
-		reflect.TypeOf((*CloudfrontResponseHeadersPolicy)(nil)).Elem(),
+		reflect.TypeFor[CloudfrontResponseHeadersPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,7 +80,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudfrontResponseHeadersPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -88,19 +88,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyConfig",
-		reflect.TypeOf((*CloudfrontResponseHeadersPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[CloudfrontResponseHeadersPolicyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCorsConfig",
-		reflect.TypeOf((*CloudfrontResponseHeadersPolicyCorsConfig)(nil)).Elem(),
+		reflect.TypeFor[CloudfrontResponseHeadersPolicyCorsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeaders",
-		reflect.TypeOf((*CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeaders)(nil)).Elem(),
+		reflect.TypeFor[CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeaders](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersOutputReference",
-		reflect.TypeOf((*CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -127,7 +127,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -135,11 +135,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethods",
-		reflect.TypeOf((*CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethods)(nil)).Elem(),
+		reflect.TypeFor[CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethods](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethodsOutputReference",
-		reflect.TypeOf((*CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethodsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethodsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -166,7 +166,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethodsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -174,11 +174,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOrigins",
-		reflect.TypeOf((*CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOrigins)(nil)).Elem(),
+		reflect.TypeFor[CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOrigins](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOriginsOutputReference",
-		reflect.TypeOf((*CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOriginsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOriginsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -205,7 +205,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOriginsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -213,11 +213,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeaders",
-		reflect.TypeOf((*CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeaders)(nil)).Elem(),
+		reflect.TypeFor[CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeaders](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeadersOutputReference",
-		reflect.TypeOf((*CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeadersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeadersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -244,7 +244,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeadersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -252,7 +252,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCorsConfigOutputReference",
-		reflect.TypeOf((*CloudfrontResponseHeadersPolicyCorsConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudfrontResponseHeadersPolicyCorsConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessControlAllowCredentials", GoGetter: "AccessControlAllowCredentials"},
 			_jsii_.MemberProperty{JsiiProperty: "accessControlAllowCredentialsInput", GoGetter: "AccessControlAllowCredentialsInput"},
@@ -296,7 +296,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -304,15 +304,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCustomHeadersConfig",
-		reflect.TypeOf((*CloudfrontResponseHeadersPolicyCustomHeadersConfig)(nil)).Elem(),
+		reflect.TypeFor[CloudfrontResponseHeadersPolicyCustomHeadersConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCustomHeadersConfigItems",
-		reflect.TypeOf((*CloudfrontResponseHeadersPolicyCustomHeadersConfigItems)(nil)).Elem(),
+		reflect.TypeFor[CloudfrontResponseHeadersPolicyCustomHeadersConfigItems](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCustomHeadersConfigItemsList",
-		reflect.TypeOf((*CloudfrontResponseHeadersPolicyCustomHeadersConfigItemsList)(nil)).Elem(),
+		reflect.TypeFor[CloudfrontResponseHeadersPolicyCustomHeadersConfigItemsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -326,7 +326,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudfrontResponseHeadersPolicyCustomHeadersConfigItemsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -334,7 +334,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCustomHeadersConfigItemsOutputReference",
-		reflect.TypeOf((*CloudfrontResponseHeadersPolicyCustomHeadersConfigItemsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudfrontResponseHeadersPolicyCustomHeadersConfigItemsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -364,7 +364,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudfrontResponseHeadersPolicyCustomHeadersConfigItemsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -372,7 +372,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCustomHeadersConfigOutputReference",
-		reflect.TypeOf((*CloudfrontResponseHeadersPolicyCustomHeadersConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudfrontResponseHeadersPolicyCustomHeadersConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -400,7 +400,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudfrontResponseHeadersPolicyCustomHeadersConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -408,15 +408,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfig",
-		reflect.TypeOf((*CloudfrontResponseHeadersPolicySecurityHeadersConfig)(nil)).Elem(),
+		reflect.TypeFor[CloudfrontResponseHeadersPolicySecurityHeadersConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicy",
-		reflect.TypeOf((*CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicy)(nil)).Elem(),
+		reflect.TypeFor[CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicyOutputReference",
-		reflect.TypeOf((*CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -444,7 +444,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -452,11 +452,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptions",
-		reflect.TypeOf((*CloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptions)(nil)).Elem(),
+		reflect.TypeFor[CloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptionsOutputReference",
-		reflect.TypeOf((*CloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -482,7 +482,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -490,11 +490,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptions",
-		reflect.TypeOf((*CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptions)(nil)).Elem(),
+		reflect.TypeFor[CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptionsOutputReference",
-		reflect.TypeOf((*CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -522,7 +522,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -530,7 +530,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference",
-		reflect.TypeOf((*CloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -578,7 +578,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "xssProtection", GoGetter: "XssProtection"},
 			_jsii_.MemberProperty{JsiiProperty: "xssProtectionInput", GoGetter: "XssProtectionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -586,11 +586,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicy",
-		reflect.TypeOf((*CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicy)(nil)).Elem(),
+		reflect.TypeFor[CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicyOutputReference",
-		reflect.TypeOf((*CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -618,7 +618,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -626,11 +626,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurity",
-		reflect.TypeOf((*CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurity)(nil)).Elem(),
+		reflect.TypeFor[CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurity](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference",
-		reflect.TypeOf((*CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessControlMaxAgeSec", GoGetter: "AccessControlMaxAgeSec"},
 			_jsii_.MemberProperty{JsiiProperty: "accessControlMaxAgeSecInput", GoGetter: "AccessControlMaxAgeSecInput"},
@@ -664,7 +664,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -672,11 +672,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtection",
-		reflect.TypeOf((*CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtection)(nil)).Elem(),
+		reflect.TypeFor[CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtection](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtectionOutputReference",
-		reflect.TypeOf((*CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtectionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtectionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -710,7 +710,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtectionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -718,11 +718,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyServerTimingHeadersConfig",
-		reflect.TypeOf((*CloudfrontResponseHeadersPolicyServerTimingHeadersConfig)(nil)).Elem(),
+		reflect.TypeFor[CloudfrontResponseHeadersPolicyServerTimingHeadersConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyServerTimingHeadersConfigOutputReference",
-		reflect.TypeOf((*CloudfrontResponseHeadersPolicyServerTimingHeadersConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudfrontResponseHeadersPolicyServerTimingHeadersConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -750,7 +750,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudfrontResponseHeadersPolicyServerTimingHeadersConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

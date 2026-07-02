@@ -19,7 +19,7 @@ func (m *jsiiProxy_MskCluster) validateAddMoveTargetParameters(moveTarget *strin
 	return nil
 }
 
-func (m *jsiiProxy_MskCluster) validateAddOverrideParameters(path *string, value interface{}) error {
+func (m *jsiiProxy_MskCluster) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (m *jsiiProxy_MskCluster) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MskCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (m *jsiiProxy_MskCluster) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func validateMskCluster_GenerateConfigForImportParameters(scope constructs.Const
 	return nil
 }
 
-func validateMskCluster_IsConstructParameters(x interface{}) error {
+func validateMskCluster_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -305,7 +305,7 @@ func validateMskCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateMskCluster_IsTerraformElementParameters(x interface{}) error {
+func validateMskCluster_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -313,7 +313,7 @@ func validateMskCluster_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateMskCluster_IsTerraformResourceParameters(x interface{}) error {
+func validateMskCluster_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -329,7 +329,7 @@ func (j *jsiiProxy_MskCluster) validateSetClusterNameParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_MskCluster) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_MskCluster) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -362,7 +362,7 @@ func (j *jsiiProxy_MskCluster) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_MskCluster) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_MskCluster) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -459,7 +459,7 @@ func (j *jsiiProxy_MskCluster) validateSetNumberOfBrokerNodesParameters(val *flo
 	return nil
 }
 
-func (j *jsiiProxy_MskCluster) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_MskCluster) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -547,4 +547,3 @@ func validateNewMskClusterParameters(scope constructs.Construct, id *string, con
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (e *jsiiProxy_EipTimeoutsOutputReference) validateResolveParameters(_contex
 	return nil
 }
 
-func (j *jsiiProxy_EipTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EipTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_EipTimeoutsOutputReference) validateSetDeleteParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_EipTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EipTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewEipTimeoutsOutputReferenceParameters(terraformResource cdktf.IIn
 
 	return nil
 }
-

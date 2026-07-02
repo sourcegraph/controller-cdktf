@@ -34,7 +34,7 @@ func (e *jsiiProxy_EcsClusterDefaultCapacityProviderStrategyList) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_EcsClusterDefaultCapacityProviderStrategyList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EcsClusterDefaultCapacityProviderStrategyList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEcsClusterDefaultCapacityProviderStrategyListParameters(terrafor
 
 	return nil
 }
-

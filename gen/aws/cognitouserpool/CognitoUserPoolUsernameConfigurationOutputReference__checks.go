@@ -98,7 +98,7 @@ func (c *jsiiProxy_CognitoUserPoolUsernameConfigurationOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_CognitoUserPoolUsernameConfigurationOutputReference) validateSetCaseSensitiveParameters(val interface{}) error {
+func (j *jsiiProxy_CognitoUserPoolUsernameConfigurationOutputReference) validateSetCaseSensitiveParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_CognitoUserPoolUsernameConfigurationOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_CognitoUserPoolUsernameConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CognitoUserPoolUsernameConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -218,4 +218,3 @@ func validateNewCognitoUserPoolUsernameConfigurationOutputReferenceParameters(te
 
 	return nil
 }
-

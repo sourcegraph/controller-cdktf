@@ -1,11 +1,10 @@
 package rumappmonitor
 
-
 type RumAppMonitorAppMonitorConfiguration struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/rum_app_monitor#allow_cookies RumAppMonitor#allow_cookies}.
-	AllowCookies interface{} `field:"optional" json:"allowCookies" yaml:"allowCookies"`
+	AllowCookies any `field:"optional" json:"allowCookies" yaml:"allowCookies"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/rum_app_monitor#enable_xray RumAppMonitor#enable_xray}.
-	EnableXray interface{} `field:"optional" json:"enableXray" yaml:"enableXray"`
+	EnableXray any `field:"optional" json:"enableXray" yaml:"enableXray"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/rum_app_monitor#excluded_pages RumAppMonitor#excluded_pages}.
 	ExcludedPages *[]*string `field:"optional" json:"excludedPages" yaml:"excludedPages"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/rum_app_monitor#favorite_pages RumAppMonitor#favorite_pages}.
@@ -21,4 +20,3 @@ type RumAppMonitorAppMonitorConfiguration struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/rum_app_monitor#telemetries RumAppMonitor#telemetries}.
 	Telemetries *[]*string `field:"optional" json:"telemetries" yaml:"telemetries"`
 }
-

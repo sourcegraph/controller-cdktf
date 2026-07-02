@@ -98,7 +98,7 @@ func (l *jsiiProxy_LexIntentDialogCodeHookOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_LexIntentDialogCodeHookOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LexIntentDialogCodeHookOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewLexIntentDialogCodeHookOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

@@ -12,13 +12,13 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/rds_cluster_instance aws_rds_cluster_instance}.
 type RdsClusterInstance interface {
 	cdktf.TerraformResource
-	ApplyImmediately() interface{}
-	SetApplyImmediately(val interface{})
-	ApplyImmediatelyInput() interface{}
+	ApplyImmediately() any
+	SetApplyImmediately(val any)
+	ApplyImmediatelyInput() any
 	Arn() *string
-	AutoMinorVersionUpgrade() interface{}
-	SetAutoMinorVersionUpgrade(val interface{})
-	AutoMinorVersionUpgradeInput() interface{}
+	AutoMinorVersionUpgrade() any
+	SetAutoMinorVersionUpgrade(val any)
+	AutoMinorVersionUpgradeInput() any
 	AvailabilityZone() *string
 	SetAvailabilityZone(val *string)
 	AvailabilityZoneInput() *string
@@ -31,18 +31,18 @@ type RdsClusterInstance interface {
 	SetClusterIdentifier(val *string)
 	ClusterIdentifierInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
-	CopyTagsToSnapshot() interface{}
-	SetCopyTagsToSnapshot(val interface{})
-	CopyTagsToSnapshotInput() interface{}
+	ConstructNodeMetadata() *map[string]any
+	CopyTagsToSnapshot() any
+	SetCopyTagsToSnapshot(val any)
+	CopyTagsToSnapshotInput() any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DbiResourceId() *string
 	DbParameterGroupName() *string
 	SetDbParameterGroupName(val *string)
@@ -96,9 +96,9 @@ type RdsClusterInstance interface {
 	NetworkType() *string
 	// The tree node.
 	Node() constructs.Node
-	PerformanceInsightsEnabled() interface{}
-	SetPerformanceInsightsEnabled(val interface{})
-	PerformanceInsightsEnabledInput() interface{}
+	PerformanceInsightsEnabled() any
+	SetPerformanceInsightsEnabled(val any)
+	PerformanceInsightsEnabledInput() any
 	PerformanceInsightsKmsKeyId() *string
 	SetPerformanceInsightsKmsKeyId(val *string)
 	PerformanceInsightsKmsKeyIdInput() *string
@@ -120,14 +120,14 @@ type RdsClusterInstance interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
-	PubliclyAccessible() interface{}
-	SetPubliclyAccessible(val interface{})
-	PubliclyAccessibleInput() interface{}
+	SetProvisioners(val *[]any)
+	PubliclyAccessible() any
+	SetPubliclyAccessible(val any)
+	PubliclyAccessibleInput() any
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	StorageEncrypted() cdktf.IResolvable
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -138,19 +138,19 @@ type RdsClusterInstance interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() RdsClusterInstanceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Writer() cdktf.IResolvable
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -168,7 +168,7 @@ type RdsClusterInstance interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -180,7 +180,7 @@ type RdsClusterInstance interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -215,17 +215,17 @@ type RdsClusterInstance interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for RdsClusterInstance
@@ -233,8 +233,8 @@ type jsiiProxy_RdsClusterInstance struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_RdsClusterInstance) ApplyImmediately() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RdsClusterInstance) ApplyImmediately() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"applyImmediately",
@@ -243,8 +243,8 @@ func (j *jsiiProxy_RdsClusterInstance) ApplyImmediately() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RdsClusterInstance) ApplyImmediatelyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RdsClusterInstance) ApplyImmediatelyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"applyImmediatelyInput",
@@ -263,8 +263,8 @@ func (j *jsiiProxy_RdsClusterInstance) Arn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RdsClusterInstance) AutoMinorVersionUpgrade() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RdsClusterInstance) AutoMinorVersionUpgrade() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoMinorVersionUpgrade",
@@ -273,8 +273,8 @@ func (j *jsiiProxy_RdsClusterInstance) AutoMinorVersionUpgrade() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RdsClusterInstance) AutoMinorVersionUpgradeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RdsClusterInstance) AutoMinorVersionUpgradeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoMinorVersionUpgradeInput",
@@ -353,8 +353,8 @@ func (j *jsiiProxy_RdsClusterInstance) ClusterIdentifierInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RdsClusterInstance) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RdsClusterInstance) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -363,8 +363,8 @@ func (j *jsiiProxy_RdsClusterInstance) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RdsClusterInstance) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RdsClusterInstance) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -373,8 +373,8 @@ func (j *jsiiProxy_RdsClusterInstance) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_RdsClusterInstance) CopyTagsToSnapshot() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RdsClusterInstance) CopyTagsToSnapshot() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"copyTagsToSnapshot",
@@ -383,8 +383,8 @@ func (j *jsiiProxy_RdsClusterInstance) CopyTagsToSnapshot() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RdsClusterInstance) CopyTagsToSnapshotInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RdsClusterInstance) CopyTagsToSnapshotInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"copyTagsToSnapshotInput",
@@ -393,8 +393,8 @@ func (j *jsiiProxy_RdsClusterInstance) CopyTagsToSnapshotInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RdsClusterInstance) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RdsClusterInstance) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -713,8 +713,8 @@ func (j *jsiiProxy_RdsClusterInstance) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_RdsClusterInstance) PerformanceInsightsEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RdsClusterInstance) PerformanceInsightsEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"performanceInsightsEnabled",
@@ -723,8 +723,8 @@ func (j *jsiiProxy_RdsClusterInstance) PerformanceInsightsEnabled() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_RdsClusterInstance) PerformanceInsightsEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RdsClusterInstance) PerformanceInsightsEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"performanceInsightsEnabledInput",
@@ -853,8 +853,8 @@ func (j *jsiiProxy_RdsClusterInstance) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_RdsClusterInstance) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_RdsClusterInstance) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -863,8 +863,8 @@ func (j *jsiiProxy_RdsClusterInstance) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RdsClusterInstance) PubliclyAccessible() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RdsClusterInstance) PubliclyAccessible() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"publiclyAccessible",
@@ -873,8 +873,8 @@ func (j *jsiiProxy_RdsClusterInstance) PubliclyAccessible() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RdsClusterInstance) PubliclyAccessibleInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RdsClusterInstance) PubliclyAccessibleInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"publiclyAccessibleInput",
@@ -883,8 +883,8 @@ func (j *jsiiProxy_RdsClusterInstance) PubliclyAccessibleInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RdsClusterInstance) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RdsClusterInstance) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -953,8 +953,8 @@ func (j *jsiiProxy_RdsClusterInstance) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_RdsClusterInstance) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RdsClusterInstance) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -983,8 +983,8 @@ func (j *jsiiProxy_RdsClusterInstance) Timeouts() RdsClusterInstanceTimeoutsOutp
 	return returns
 }
 
-func (j *jsiiProxy_RdsClusterInstance) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RdsClusterInstance) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -1003,7 +1003,6 @@ func (j *jsiiProxy_RdsClusterInstance) Writer() cdktf.IResolvable {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/rds_cluster_instance aws_rds_cluster_instance} Resource.
 func NewRdsClusterInstance(scope constructs.Construct, id *string, config *RdsClusterInstanceConfig) RdsClusterInstance {
 	_init_.Initialize()
@@ -1015,7 +1014,7 @@ func NewRdsClusterInstance(scope constructs.Construct, id *string, config *RdsCl
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.rdsClusterInstance.RdsClusterInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -1028,12 +1027,12 @@ func NewRdsClusterInstance_Override(r RdsClusterInstance, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.rdsClusterInstance.RdsClusterInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RdsClusterInstance)SetApplyImmediately(val interface{}) {
+func (j *jsiiProxy_RdsClusterInstance) SetApplyImmediately(val any) {
 	if err := j.validateSetApplyImmediatelyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1044,7 +1043,7 @@ func (j *jsiiProxy_RdsClusterInstance)SetApplyImmediately(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterInstance)SetAutoMinorVersionUpgrade(val interface{}) {
+func (j *jsiiProxy_RdsClusterInstance) SetAutoMinorVersionUpgrade(val any) {
 	if err := j.validateSetAutoMinorVersionUpgradeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1055,7 +1054,7 @@ func (j *jsiiProxy_RdsClusterInstance)SetAutoMinorVersionUpgrade(val interface{}
 	)
 }
 
-func (j *jsiiProxy_RdsClusterInstance)SetAvailabilityZone(val *string) {
+func (j *jsiiProxy_RdsClusterInstance) SetAvailabilityZone(val *string) {
 	if err := j.validateSetAvailabilityZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -1066,7 +1065,7 @@ func (j *jsiiProxy_RdsClusterInstance)SetAvailabilityZone(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterInstance)SetCaCertIdentifier(val *string) {
+func (j *jsiiProxy_RdsClusterInstance) SetCaCertIdentifier(val *string) {
 	if err := j.validateSetCaCertIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -1077,7 +1076,7 @@ func (j *jsiiProxy_RdsClusterInstance)SetCaCertIdentifier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterInstance)SetClusterIdentifier(val *string) {
+func (j *jsiiProxy_RdsClusterInstance) SetClusterIdentifier(val *string) {
 	if err := j.validateSetClusterIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -1088,7 +1087,7 @@ func (j *jsiiProxy_RdsClusterInstance)SetClusterIdentifier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterInstance)SetConnection(val interface{}) {
+func (j *jsiiProxy_RdsClusterInstance) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1099,7 +1098,7 @@ func (j *jsiiProxy_RdsClusterInstance)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterInstance)SetCopyTagsToSnapshot(val interface{}) {
+func (j *jsiiProxy_RdsClusterInstance) SetCopyTagsToSnapshot(val any) {
 	if err := j.validateSetCopyTagsToSnapshotParameters(val); err != nil {
 		panic(err)
 	}
@@ -1110,7 +1109,7 @@ func (j *jsiiProxy_RdsClusterInstance)SetCopyTagsToSnapshot(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterInstance)SetCount(val interface{}) {
+func (j *jsiiProxy_RdsClusterInstance) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1121,7 +1120,7 @@ func (j *jsiiProxy_RdsClusterInstance)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterInstance)SetDbParameterGroupName(val *string) {
+func (j *jsiiProxy_RdsClusterInstance) SetDbParameterGroupName(val *string) {
 	if err := j.validateSetDbParameterGroupNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1132,7 +1131,7 @@ func (j *jsiiProxy_RdsClusterInstance)SetDbParameterGroupName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterInstance)SetDbSubnetGroupName(val *string) {
+func (j *jsiiProxy_RdsClusterInstance) SetDbSubnetGroupName(val *string) {
 	if err := j.validateSetDbSubnetGroupNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1143,7 +1142,7 @@ func (j *jsiiProxy_RdsClusterInstance)SetDbSubnetGroupName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterInstance)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_RdsClusterInstance) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1151,7 +1150,7 @@ func (j *jsiiProxy_RdsClusterInstance)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterInstance)SetEngine(val *string) {
+func (j *jsiiProxy_RdsClusterInstance) SetEngine(val *string) {
 	if err := j.validateSetEngineParameters(val); err != nil {
 		panic(err)
 	}
@@ -1162,7 +1161,7 @@ func (j *jsiiProxy_RdsClusterInstance)SetEngine(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterInstance)SetEngineVersion(val *string) {
+func (j *jsiiProxy_RdsClusterInstance) SetEngineVersion(val *string) {
 	if err := j.validateSetEngineVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1173,7 +1172,7 @@ func (j *jsiiProxy_RdsClusterInstance)SetEngineVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterInstance)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_RdsClusterInstance) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1181,7 +1180,7 @@ func (j *jsiiProxy_RdsClusterInstance)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterInstance)SetId(val *string) {
+func (j *jsiiProxy_RdsClusterInstance) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1192,7 +1191,7 @@ func (j *jsiiProxy_RdsClusterInstance)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterInstance)SetIdentifier(val *string) {
+func (j *jsiiProxy_RdsClusterInstance) SetIdentifier(val *string) {
 	if err := j.validateSetIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -1203,7 +1202,7 @@ func (j *jsiiProxy_RdsClusterInstance)SetIdentifier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterInstance)SetIdentifierPrefix(val *string) {
+func (j *jsiiProxy_RdsClusterInstance) SetIdentifierPrefix(val *string) {
 	if err := j.validateSetIdentifierPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -1214,7 +1213,7 @@ func (j *jsiiProxy_RdsClusterInstance)SetIdentifierPrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterInstance)SetInstanceClass(val *string) {
+func (j *jsiiProxy_RdsClusterInstance) SetInstanceClass(val *string) {
 	if err := j.validateSetInstanceClassParameters(val); err != nil {
 		panic(err)
 	}
@@ -1225,7 +1224,7 @@ func (j *jsiiProxy_RdsClusterInstance)SetInstanceClass(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterInstance)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_RdsClusterInstance) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1236,7 +1235,7 @@ func (j *jsiiProxy_RdsClusterInstance)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_RdsClusterInstance)SetMonitoringInterval(val *float64) {
+func (j *jsiiProxy_RdsClusterInstance) SetMonitoringInterval(val *float64) {
 	if err := j.validateSetMonitoringIntervalParameters(val); err != nil {
 		panic(err)
 	}
@@ -1247,7 +1246,7 @@ func (j *jsiiProxy_RdsClusterInstance)SetMonitoringInterval(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterInstance)SetMonitoringRoleArn(val *string) {
+func (j *jsiiProxy_RdsClusterInstance) SetMonitoringRoleArn(val *string) {
 	if err := j.validateSetMonitoringRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -1258,7 +1257,7 @@ func (j *jsiiProxy_RdsClusterInstance)SetMonitoringRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterInstance)SetPerformanceInsightsEnabled(val interface{}) {
+func (j *jsiiProxy_RdsClusterInstance) SetPerformanceInsightsEnabled(val any) {
 	if err := j.validateSetPerformanceInsightsEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1269,7 +1268,7 @@ func (j *jsiiProxy_RdsClusterInstance)SetPerformanceInsightsEnabled(val interfac
 	)
 }
 
-func (j *jsiiProxy_RdsClusterInstance)SetPerformanceInsightsKmsKeyId(val *string) {
+func (j *jsiiProxy_RdsClusterInstance) SetPerformanceInsightsKmsKeyId(val *string) {
 	if err := j.validateSetPerformanceInsightsKmsKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1280,7 +1279,7 @@ func (j *jsiiProxy_RdsClusterInstance)SetPerformanceInsightsKmsKeyId(val *string
 	)
 }
 
-func (j *jsiiProxy_RdsClusterInstance)SetPerformanceInsightsRetentionPeriod(val *float64) {
+func (j *jsiiProxy_RdsClusterInstance) SetPerformanceInsightsRetentionPeriod(val *float64) {
 	if err := j.validateSetPerformanceInsightsRetentionPeriodParameters(val); err != nil {
 		panic(err)
 	}
@@ -1291,7 +1290,7 @@ func (j *jsiiProxy_RdsClusterInstance)SetPerformanceInsightsRetentionPeriod(val 
 	)
 }
 
-func (j *jsiiProxy_RdsClusterInstance)SetPreferredBackupWindow(val *string) {
+func (j *jsiiProxy_RdsClusterInstance) SetPreferredBackupWindow(val *string) {
 	if err := j.validateSetPreferredBackupWindowParameters(val); err != nil {
 		panic(err)
 	}
@@ -1302,7 +1301,7 @@ func (j *jsiiProxy_RdsClusterInstance)SetPreferredBackupWindow(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterInstance)SetPreferredMaintenanceWindow(val *string) {
+func (j *jsiiProxy_RdsClusterInstance) SetPreferredMaintenanceWindow(val *string) {
 	if err := j.validateSetPreferredMaintenanceWindowParameters(val); err != nil {
 		panic(err)
 	}
@@ -1313,7 +1312,7 @@ func (j *jsiiProxy_RdsClusterInstance)SetPreferredMaintenanceWindow(val *string)
 	)
 }
 
-func (j *jsiiProxy_RdsClusterInstance)SetPromotionTier(val *float64) {
+func (j *jsiiProxy_RdsClusterInstance) SetPromotionTier(val *float64) {
 	if err := j.validateSetPromotionTierParameters(val); err != nil {
 		panic(err)
 	}
@@ -1324,7 +1323,7 @@ func (j *jsiiProxy_RdsClusterInstance)SetPromotionTier(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterInstance)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_RdsClusterInstance) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1332,7 +1331,7 @@ func (j *jsiiProxy_RdsClusterInstance)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterInstance)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_RdsClusterInstance) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1343,7 +1342,7 @@ func (j *jsiiProxy_RdsClusterInstance)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterInstance)SetPubliclyAccessible(val interface{}) {
+func (j *jsiiProxy_RdsClusterInstance) SetPubliclyAccessible(val any) {
 	if err := j.validateSetPubliclyAccessibleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1354,7 +1353,7 @@ func (j *jsiiProxy_RdsClusterInstance)SetPubliclyAccessible(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterInstance)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_RdsClusterInstance) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1365,7 +1364,7 @@ func (j *jsiiProxy_RdsClusterInstance)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterInstance)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_RdsClusterInstance) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1388,7 +1387,7 @@ func RdsClusterInstance_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.rdsClusterInstance.RdsClusterInstance",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1412,7 +1411,7 @@ func RdsClusterInstance_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func RdsClusterInstance_IsConstruct(x interface{}) *bool {
+func RdsClusterInstance_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRdsClusterInstance_IsConstructParameters(x); err != nil {
@@ -1423,7 +1422,7 @@ func RdsClusterInstance_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.rdsClusterInstance.RdsClusterInstance",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1431,7 +1430,7 @@ func RdsClusterInstance_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func RdsClusterInstance_IsTerraformElement(x interface{}) *bool {
+func RdsClusterInstance_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRdsClusterInstance_IsTerraformElementParameters(x); err != nil {
@@ -1442,7 +1441,7 @@ func RdsClusterInstance_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.rdsClusterInstance.RdsClusterInstance",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1450,7 +1449,7 @@ func RdsClusterInstance_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func RdsClusterInstance_IsTerraformResource(x interface{}) *bool {
+func RdsClusterInstance_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRdsClusterInstance_IsTerraformResourceParameters(x); err != nil {
@@ -1461,7 +1460,7 @@ func RdsClusterInstance_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.rdsClusterInstance.RdsClusterInstance",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1486,31 +1485,31 @@ func (r *jsiiProxy_RdsClusterInstance) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (r *jsiiProxy_RdsClusterInstance) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_RdsClusterInstance) AddOverride(path *string, value any) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (r *jsiiProxy_RdsClusterInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RdsClusterInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1526,7 +1525,7 @@ func (r *jsiiProxy_RdsClusterInstance) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1542,7 +1541,7 @@ func (r *jsiiProxy_RdsClusterInstance) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1558,7 +1557,7 @@ func (r *jsiiProxy_RdsClusterInstance) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1574,7 +1573,7 @@ func (r *jsiiProxy_RdsClusterInstance) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1590,7 +1589,7 @@ func (r *jsiiProxy_RdsClusterInstance) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1606,7 +1605,7 @@ func (r *jsiiProxy_RdsClusterInstance) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1622,7 +1621,7 @@ func (r *jsiiProxy_RdsClusterInstance) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1638,15 +1637,15 @@ func (r *jsiiProxy_RdsClusterInstance) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_RdsClusterInstance) HasResourceMove() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RdsClusterInstance) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1665,7 +1664,7 @@ func (r *jsiiProxy_RdsClusterInstance) ImportFrom(id *string, provider cdktf.Ter
 	_jsii_.InvokeVoid(
 		r,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1678,7 +1677,7 @@ func (r *jsiiProxy_RdsClusterInstance) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1692,18 +1691,18 @@ func (r *jsiiProxy_RdsClusterInstance) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (r *jsiiProxy_RdsClusterInstance) MoveTo(moveTarget *string, index interface{}) {
+func (r *jsiiProxy_RdsClusterInstance) MoveTo(moveTarget *string, index any) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1714,7 +1713,7 @@ func (r *jsiiProxy_RdsClusterInstance) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1725,7 +1724,7 @@ func (r *jsiiProxy_RdsClusterInstance) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1736,7 +1735,7 @@ func (r *jsiiProxy_RdsClusterInstance) PutTimeouts(value *RdsClusterInstanceTime
 	_jsii_.InvokeVoid(
 		r,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1940,8 +1939,8 @@ func (r *jsiiProxy_RdsClusterInstance) ResetTimeouts() {
 	)
 }
 
-func (r *jsiiProxy_RdsClusterInstance) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RdsClusterInstance) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1953,8 +1952,8 @@ func (r *jsiiProxy_RdsClusterInstance) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (r *jsiiProxy_RdsClusterInstance) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RdsClusterInstance) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1966,8 +1965,8 @@ func (r *jsiiProxy_RdsClusterInstance) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (r *jsiiProxy_RdsClusterInstance) ToHclTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RdsClusterInstance) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1979,8 +1978,8 @@ func (r *jsiiProxy_RdsClusterInstance) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_RdsClusterInstance) ToMetadata() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RdsClusterInstance) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -2005,8 +2004,8 @@ func (r *jsiiProxy_RdsClusterInstance) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_RdsClusterInstance) ToTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RdsClusterInstance) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -2017,4 +2016,3 @@ func (r *jsiiProxy_RdsClusterInstance) ToTerraform() interface{} {
 
 	return returns
 }
-

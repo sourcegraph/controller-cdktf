@@ -114,7 +114,7 @@ func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyO
 	return nil
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyO
 	return nil
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewSchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutp
 
 	return nil
 }
-

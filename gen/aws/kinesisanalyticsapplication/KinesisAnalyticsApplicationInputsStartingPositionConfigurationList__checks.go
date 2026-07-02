@@ -34,7 +34,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationInputsStartingPositionConfiguratio
 	return nil
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationInputsStartingPositionConfigurationList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_KinesisAnalyticsApplicationInputsStartingPositionConfigurationList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewKinesisAnalyticsApplicationInputsStartingPositionConfigurationLi
 
 	return nil
 }
-

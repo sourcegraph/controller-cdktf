@@ -98,7 +98,7 @@ func (r *jsiiProxy_RedshiftClusterClusterNodesOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftClusterClusterNodesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftClusterClusterNodesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewRedshiftClusterClusterNodesOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

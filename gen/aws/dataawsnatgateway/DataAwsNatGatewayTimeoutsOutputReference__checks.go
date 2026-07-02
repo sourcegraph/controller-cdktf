@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsNatGatewayTimeoutsOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsNatGatewayTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsNatGatewayTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataAwsNatGatewayTimeoutsOutputReference) validateSetComplexO
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsNatGatewayTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsNatGatewayTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataAwsNatGatewayTimeoutsOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

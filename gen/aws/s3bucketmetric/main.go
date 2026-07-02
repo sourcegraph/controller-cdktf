@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3BucketMetric.S3BucketMetric",
-		reflect.TypeOf((*S3BucketMetric)(nil)).Elem(),
+		reflect.TypeFor[S3BucketMetric](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3BucketMetric{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -72,15 +72,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3BucketMetric.S3BucketMetricConfig",
-		reflect.TypeOf((*S3BucketMetricConfig)(nil)).Elem(),
+		reflect.TypeFor[S3BucketMetricConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3BucketMetric.S3BucketMetricFilter",
-		reflect.TypeOf((*S3BucketMetricFilter)(nil)).Elem(),
+		reflect.TypeFor[S3BucketMetricFilter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3BucketMetric.S3BucketMetricFilterOutputReference",
-		reflect.TypeOf((*S3BucketMetricFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3BucketMetricFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -110,7 +110,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3BucketMetricFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

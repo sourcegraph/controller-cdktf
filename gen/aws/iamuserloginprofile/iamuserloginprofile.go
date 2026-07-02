@@ -15,15 +15,15 @@ type IamUserLoginProfile interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -51,9 +51,9 @@ type IamUserLoginProfile interface {
 	PasswordLength() *float64
 	SetPasswordLength(val *float64)
 	PasswordLengthInput() *float64
-	PasswordResetRequired() interface{}
-	SetPasswordResetRequired(val interface{})
-	PasswordResetRequiredInput() interface{}
+	PasswordResetRequired() any
+	SetPasswordResetRequired(val any)
+	PasswordResetRequiredInput() any
 	PgpKey() *string
 	SetPgpKey(val *string)
 	PgpKeyInput() *string
@@ -62,15 +62,15 @@ type IamUserLoginProfile interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	User() *string
@@ -80,9 +80,9 @@ type IamUserLoginProfile interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,7 +100,7 @@ type IamUserLoginProfile interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -112,7 +112,7 @@ type IamUserLoginProfile interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -126,17 +126,17 @@ type IamUserLoginProfile interface {
 	ResetPasswordLength()
 	ResetPasswordResetRequired()
 	ResetPgpKey()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for IamUserLoginProfile
@@ -154,8 +154,8 @@ func (j *jsiiProxy_IamUserLoginProfile) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_IamUserLoginProfile) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamUserLoginProfile) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_IamUserLoginProfile) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IamUserLoginProfile) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IamUserLoginProfile) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_IamUserLoginProfile) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_IamUserLoginProfile) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamUserLoginProfile) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -314,8 +314,8 @@ func (j *jsiiProxy_IamUserLoginProfile) PasswordLengthInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_IamUserLoginProfile) PasswordResetRequired() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamUserLoginProfile) PasswordResetRequired() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"passwordResetRequired",
@@ -324,8 +324,8 @@ func (j *jsiiProxy_IamUserLoginProfile) PasswordResetRequired() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IamUserLoginProfile) PasswordResetRequiredInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamUserLoginProfile) PasswordResetRequiredInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"passwordResetRequiredInput",
@@ -364,8 +364,8 @@ func (j *jsiiProxy_IamUserLoginProfile) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_IamUserLoginProfile) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_IamUserLoginProfile) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -374,8 +374,8 @@ func (j *jsiiProxy_IamUserLoginProfile) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IamUserLoginProfile) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamUserLoginProfile) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -394,8 +394,8 @@ func (j *jsiiProxy_IamUserLoginProfile) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_IamUserLoginProfile) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IamUserLoginProfile) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -434,7 +434,6 @@ func (j *jsiiProxy_IamUserLoginProfile) UserInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/iam_user_login_profile aws_iam_user_login_profile} Resource.
 func NewIamUserLoginProfile(scope constructs.Construct, id *string, config *IamUserLoginProfileConfig) IamUserLoginProfile {
 	_init_.Initialize()
@@ -446,7 +445,7 @@ func NewIamUserLoginProfile(scope constructs.Construct, id *string, config *IamU
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iamUserLoginProfile.IamUserLoginProfile",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -459,12 +458,12 @@ func NewIamUserLoginProfile_Override(i IamUserLoginProfile, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iamUserLoginProfile.IamUserLoginProfile",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IamUserLoginProfile)SetConnection(val interface{}) {
+func (j *jsiiProxy_IamUserLoginProfile) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_IamUserLoginProfile)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IamUserLoginProfile)SetCount(val interface{}) {
+func (j *jsiiProxy_IamUserLoginProfile) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func (j *jsiiProxy_IamUserLoginProfile)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IamUserLoginProfile)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_IamUserLoginProfile) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -494,7 +493,7 @@ func (j *jsiiProxy_IamUserLoginProfile)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IamUserLoginProfile)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IamUserLoginProfile) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -502,7 +501,7 @@ func (j *jsiiProxy_IamUserLoginProfile)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_IamUserLoginProfile)SetId(val *string) {
+func (j *jsiiProxy_IamUserLoginProfile) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_IamUserLoginProfile)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IamUserLoginProfile)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IamUserLoginProfile) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_IamUserLoginProfile)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_IamUserLoginProfile)SetPasswordLength(val *float64) {
+func (j *jsiiProxy_IamUserLoginProfile) SetPasswordLength(val *float64) {
 	if err := j.validateSetPasswordLengthParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_IamUserLoginProfile)SetPasswordLength(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_IamUserLoginProfile)SetPasswordResetRequired(val interface{}) {
+func (j *jsiiProxy_IamUserLoginProfile) SetPasswordResetRequired(val any) {
 	if err := j.validateSetPasswordResetRequiredParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_IamUserLoginProfile)SetPasswordResetRequired(val interface{})
 	)
 }
 
-func (j *jsiiProxy_IamUserLoginProfile)SetPgpKey(val *string) {
+func (j *jsiiProxy_IamUserLoginProfile) SetPgpKey(val *string) {
 	if err := j.validateSetPgpKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_IamUserLoginProfile)SetPgpKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IamUserLoginProfile)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IamUserLoginProfile) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -565,7 +564,7 @@ func (j *jsiiProxy_IamUserLoginProfile)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_IamUserLoginProfile)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_IamUserLoginProfile) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func (j *jsiiProxy_IamUserLoginProfile)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IamUserLoginProfile)SetUser(val *string) {
+func (j *jsiiProxy_IamUserLoginProfile) SetUser(val *string) {
 	if err := j.validateSetUserParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func IamUserLoginProfile_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iamUserLoginProfile.IamUserLoginProfile",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -623,7 +622,7 @@ func IamUserLoginProfile_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func IamUserLoginProfile_IsConstruct(x interface{}) *bool {
+func IamUserLoginProfile_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIamUserLoginProfile_IsConstructParameters(x); err != nil {
@@ -634,7 +633,7 @@ func IamUserLoginProfile_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iamUserLoginProfile.IamUserLoginProfile",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -642,7 +641,7 @@ func IamUserLoginProfile_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func IamUserLoginProfile_IsTerraformElement(x interface{}) *bool {
+func IamUserLoginProfile_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIamUserLoginProfile_IsTerraformElementParameters(x); err != nil {
@@ -653,7 +652,7 @@ func IamUserLoginProfile_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iamUserLoginProfile.IamUserLoginProfile",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func IamUserLoginProfile_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func IamUserLoginProfile_IsTerraformResource(x interface{}) *bool {
+func IamUserLoginProfile_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIamUserLoginProfile_IsTerraformResourceParameters(x); err != nil {
@@ -672,7 +671,7 @@ func IamUserLoginProfile_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iamUserLoginProfile.IamUserLoginProfile",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -697,31 +696,31 @@ func (i *jsiiProxy_IamUserLoginProfile) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (i *jsiiProxy_IamUserLoginProfile) AddOverride(path *string, value interface{}) {
+func (i *jsiiProxy_IamUserLoginProfile) AddOverride(path *string, value any) {
 	if err := i.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (i *jsiiProxy_IamUserLoginProfile) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IamUserLoginProfile) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (i *jsiiProxy_IamUserLoginProfile) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (i *jsiiProxy_IamUserLoginProfile) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,7 +768,7 @@ func (i *jsiiProxy_IamUserLoginProfile) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (i *jsiiProxy_IamUserLoginProfile) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func (i *jsiiProxy_IamUserLoginProfile) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func (i *jsiiProxy_IamUserLoginProfile) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (i *jsiiProxy_IamUserLoginProfile) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,15 +848,15 @@ func (i *jsiiProxy_IamUserLoginProfile) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IamUserLoginProfile) HasResourceMove() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamUserLoginProfile) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -876,7 +875,7 @@ func (i *jsiiProxy_IamUserLoginProfile) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		i,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -889,7 +888,7 @@ func (i *jsiiProxy_IamUserLoginProfile) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -903,18 +902,18 @@ func (i *jsiiProxy_IamUserLoginProfile) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (i *jsiiProxy_IamUserLoginProfile) MoveTo(moveTarget *string, index interface{}) {
+func (i *jsiiProxy_IamUserLoginProfile) MoveTo(moveTarget *string, index any) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -925,7 +924,7 @@ func (i *jsiiProxy_IamUserLoginProfile) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -936,7 +935,7 @@ func (i *jsiiProxy_IamUserLoginProfile) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -980,8 +979,8 @@ func (i *jsiiProxy_IamUserLoginProfile) ResetPgpKey() {
 	)
 }
 
-func (i *jsiiProxy_IamUserLoginProfile) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IamUserLoginProfile) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -993,8 +992,8 @@ func (i *jsiiProxy_IamUserLoginProfile) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (i *jsiiProxy_IamUserLoginProfile) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IamUserLoginProfile) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -1006,8 +1005,8 @@ func (i *jsiiProxy_IamUserLoginProfile) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (i *jsiiProxy_IamUserLoginProfile) ToHclTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamUserLoginProfile) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1019,8 +1018,8 @@ func (i *jsiiProxy_IamUserLoginProfile) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IamUserLoginProfile) ToMetadata() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamUserLoginProfile) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1045,8 +1044,8 @@ func (i *jsiiProxy_IamUserLoginProfile) ToString() *string {
 	return returns
 }
 
-func (i *jsiiProxy_IamUserLoginProfile) ToTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamUserLoginProfile) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1057,4 +1056,3 @@ func (i *jsiiProxy_IamUserLoginProfile) ToTerraform() interface{} {
 
 	return returns
 }
-

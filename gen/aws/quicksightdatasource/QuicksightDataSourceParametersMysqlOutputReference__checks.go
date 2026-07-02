@@ -98,7 +98,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersMysqlOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersMysqlOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_QuicksightDataSourceParametersMysqlOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewQuicksightDataSourceParametersMysqlOutputReferenceParameters(ter
 
 	return nil
 }
-

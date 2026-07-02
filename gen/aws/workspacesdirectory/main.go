@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.workspacesDirectory.WorkspacesDirectory",
-		reflect.TypeOf((*WorkspacesDirectory)(nil)).Elem(),
+		reflect.TypeFor[WorkspacesDirectory](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -90,7 +90,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workspaceCreationPropertiesInput", GoGetter: "WorkspaceCreationPropertiesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceSecurityGroupId", GoGetter: "WorkspaceSecurityGroupId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkspacesDirectory{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -98,15 +98,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.workspacesDirectory.WorkspacesDirectoryConfig",
-		reflect.TypeOf((*WorkspacesDirectoryConfig)(nil)).Elem(),
+		reflect.TypeFor[WorkspacesDirectoryConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.workspacesDirectory.WorkspacesDirectorySelfServicePermissions",
-		reflect.TypeOf((*WorkspacesDirectorySelfServicePermissions)(nil)).Elem(),
+		reflect.TypeFor[WorkspacesDirectorySelfServicePermissions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.workspacesDirectory.WorkspacesDirectorySelfServicePermissionsOutputReference",
-		reflect.TypeOf((*WorkspacesDirectorySelfServicePermissionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkspacesDirectorySelfServicePermissionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "changeComputeType", GoGetter: "ChangeComputeType"},
 			_jsii_.MemberProperty{JsiiProperty: "changeComputeTypeInput", GoGetter: "ChangeComputeTypeInput"},
@@ -145,7 +145,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -153,11 +153,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.workspacesDirectory.WorkspacesDirectoryWorkspaceAccessProperties",
-		reflect.TypeOf((*WorkspacesDirectoryWorkspaceAccessProperties)(nil)).Elem(),
+		reflect.TypeFor[WorkspacesDirectoryWorkspaceAccessProperties](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.workspacesDirectory.WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference",
-		reflect.TypeOf((*WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -205,7 +205,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -213,11 +213,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.workspacesDirectory.WorkspacesDirectoryWorkspaceCreationProperties",
-		reflect.TypeOf((*WorkspacesDirectoryWorkspaceCreationProperties)(nil)).Elem(),
+		reflect.TypeFor[WorkspacesDirectoryWorkspaceCreationProperties](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.workspacesDirectory.WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference",
-		reflect.TypeOf((*WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -256,7 +256,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userEnabledAsLocalAdministrator", GoGetter: "UserEnabledAsLocalAdministrator"},
 			_jsii_.MemberProperty{JsiiProperty: "userEnabledAsLocalAdministratorInput", GoGetter: "UserEnabledAsLocalAdministratorInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

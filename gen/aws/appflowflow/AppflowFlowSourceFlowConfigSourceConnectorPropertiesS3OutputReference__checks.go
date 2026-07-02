@@ -125,7 +125,7 @@ func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3OutputR
 	return nil
 }
 
-func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3OutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3OutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,4 +225,3 @@ func validateNewAppflowFlowSourceFlowConfigSourceConnectorPropertiesS3OutputRefe
 
 	return nil
 }
-

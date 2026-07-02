@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsF
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsFieldPatternsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsFieldPatternsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsFiel
 
 	return nil
 }
-

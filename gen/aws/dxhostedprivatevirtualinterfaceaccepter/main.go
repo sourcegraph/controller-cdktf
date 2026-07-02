@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dxHostedPrivateVirtualInterfaceAccepter.DxHostedPrivateVirtualInterfaceAccepter",
-		reflect.TypeOf((*DxHostedPrivateVirtualInterfaceAccepter)(nil)).Elem(),
+		reflect.TypeFor[DxHostedPrivateVirtualInterfaceAccepter](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpnGatewayId", GoGetter: "VpnGatewayId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpnGatewayIdInput", GoGetter: "VpnGatewayIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DxHostedPrivateVirtualInterfaceAccepter{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -83,15 +83,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dxHostedPrivateVirtualInterfaceAccepter.DxHostedPrivateVirtualInterfaceAccepterConfig",
-		reflect.TypeOf((*DxHostedPrivateVirtualInterfaceAccepterConfig)(nil)).Elem(),
+		reflect.TypeFor[DxHostedPrivateVirtualInterfaceAccepterConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dxHostedPrivateVirtualInterfaceAccepter.DxHostedPrivateVirtualInterfaceAccepterTimeouts",
-		reflect.TypeOf((*DxHostedPrivateVirtualInterfaceAccepterTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DxHostedPrivateVirtualInterfaceAccepterTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dxHostedPrivateVirtualInterfaceAccepter.DxHostedPrivateVirtualInterfaceAccepterTimeoutsOutputReference",
-		reflect.TypeOf((*DxHostedPrivateVirtualInterfaceAccepterTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DxHostedPrivateVirtualInterfaceAccepterTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -121,7 +121,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DxHostedPrivateVirtualInterfaceAccepterTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -20,11 +20,11 @@ type DataAwsS3ControlMultiRegionAccessPoint interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -57,19 +57,19 @@ type DataAwsS3ControlMultiRegionAccessPoint interface {
 	SetProvider(val cdktf.TerraformProvider)
 	PublicAccessBlock() DataAwsS3ControlMultiRegionAccessPointPublicAccessBlockList
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Regions() DataAwsS3ControlMultiRegionAccessPointRegionsList
 	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -96,18 +96,18 @@ type DataAwsS3ControlMultiRegionAccessPoint interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsS3ControlMultiRegionAccessPoint
@@ -165,8 +165,8 @@ func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) CdktfStack() cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -175,8 +175,8 @@ func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) ConstructNodeMetadata
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -325,8 +325,8 @@ func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) PublicAccessBlock() D
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -365,8 +365,8 @@ func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) TerraformGeneratorMet
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -385,7 +385,6 @@ func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) TerraformResourceType
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/s3control_multi_region_access_point aws_s3control_multi_region_access_point} Data Source.
 func NewDataAwsS3ControlMultiRegionAccessPoint(scope constructs.Construct, id *string, config *DataAwsS3ControlMultiRegionAccessPointConfig) DataAwsS3ControlMultiRegionAccessPoint {
 	_init_.Initialize()
@@ -397,7 +396,7 @@ func NewDataAwsS3ControlMultiRegionAccessPoint(scope constructs.Construct, id *s
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsS3ControlMultiRegionAccessPoint.DataAwsS3ControlMultiRegionAccessPoint",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -410,12 +409,12 @@ func NewDataAwsS3ControlMultiRegionAccessPoint_Override(d DataAwsS3ControlMultiR
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsS3ControlMultiRegionAccessPoint.DataAwsS3ControlMultiRegionAccessPoint",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint)SetAccountId(val *string) {
+func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -426,7 +425,7 @@ func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint)SetAccountId(val *stri
 	)
 }
 
-func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -437,7 +436,7 @@ func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint)SetCount(val interface
 	)
 }
 
-func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -445,7 +444,7 @@ func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint)SetDependsOn(val *[]*s
 	)
 }
 
-func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -453,7 +452,7 @@ func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint)SetForEach(val cdktf.I
 	)
 }
 
-func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint)SetId(val *string) {
+func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,7 +463,7 @@ func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint)SetLifecycle(val *cdkt
 	)
 }
 
-func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint)SetName(val *string) {
+func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -506,7 +505,7 @@ func DataAwsS3ControlMultiRegionAccessPoint_GenerateConfigForImport(scope constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsS3ControlMultiRegionAccessPoint.DataAwsS3ControlMultiRegionAccessPoint",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -530,7 +529,7 @@ func DataAwsS3ControlMultiRegionAccessPoint_GenerateConfigForImport(scope constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsS3ControlMultiRegionAccessPoint_IsConstruct(x interface{}) *bool {
+func DataAwsS3ControlMultiRegionAccessPoint_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsS3ControlMultiRegionAccessPoint_IsConstructParameters(x); err != nil {
@@ -541,7 +540,7 @@ func DataAwsS3ControlMultiRegionAccessPoint_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsS3ControlMultiRegionAccessPoint.DataAwsS3ControlMultiRegionAccessPoint",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -549,7 +548,7 @@ func DataAwsS3ControlMultiRegionAccessPoint_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsS3ControlMultiRegionAccessPoint_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsS3ControlMultiRegionAccessPoint_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsS3ControlMultiRegionAccessPoint_IsTerraformDataSourceParameters(x); err != nil {
@@ -560,7 +559,7 @@ func DataAwsS3ControlMultiRegionAccessPoint_IsTerraformDataSource(x interface{})
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsS3ControlMultiRegionAccessPoint.DataAwsS3ControlMultiRegionAccessPoint",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -568,7 +567,7 @@ func DataAwsS3ControlMultiRegionAccessPoint_IsTerraformDataSource(x interface{})
 }
 
 // Experimental.
-func DataAwsS3ControlMultiRegionAccessPoint_IsTerraformElement(x interface{}) *bool {
+func DataAwsS3ControlMultiRegionAccessPoint_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsS3ControlMultiRegionAccessPoint_IsTerraformElementParameters(x); err != nil {
@@ -579,7 +578,7 @@ func DataAwsS3ControlMultiRegionAccessPoint_IsTerraformElement(x interface{}) *b
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsS3ControlMultiRegionAccessPoint.DataAwsS3ControlMultiRegionAccessPoint",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -597,27 +596,27 @@ func DataAwsS3ControlMultiRegionAccessPoint_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -633,7 +632,7 @@ func (d *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -649,7 +648,7 @@ func (d *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -665,7 +664,7 @@ func (d *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) GetListAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -681,7 +680,7 @@ func (d *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) GetNumberAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -697,7 +696,7 @@ func (d *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) GetNumberListAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -713,7 +712,7 @@ func (d *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) GetNumberMapAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func (d *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) GetStringAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -745,7 +744,7 @@ func (d *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) GetStringMapAttribute
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -761,7 +760,7 @@ func (d *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) InterpolationForAttri
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func (d *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) OverrideLogicalId(new
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -803,8 +802,8 @@ func (d *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) ResetOverrideLogicalI
 	)
 }
 
-func (d *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -816,8 +815,8 @@ func (d *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) SynthesizeAttributes(
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -829,8 +828,8 @@ func (d *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) SynthesizeHclAttribut
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -842,8 +841,8 @@ func (d *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) ToHclTerraform() inte
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -868,8 +867,8 @@ func (d *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -880,4 +879,3 @@ func (d *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) ToTerraform() interfa
 
 	return returns
 }
-

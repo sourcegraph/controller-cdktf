@@ -34,7 +34,7 @@ func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteActionWeightedTargetList) validateR
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteActionWeightedTargetList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteActionWeightedTargetList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAppmeshRouteSpecHttp2RouteActionWeightedTargetListParameters(ter
 
 	return nil
 }
-

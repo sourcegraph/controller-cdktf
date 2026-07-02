@@ -16,15 +16,15 @@ type TranscribeVocabularyFilter interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -55,11 +55,11 @@ type TranscribeVocabularyFilter interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -69,7 +69,7 @@ type TranscribeVocabularyFilter interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	VocabularyFilterFileUri() *string
@@ -85,9 +85,9 @@ type TranscribeVocabularyFilter interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -105,7 +105,7 @@ type TranscribeVocabularyFilter interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -117,7 +117,7 @@ type TranscribeVocabularyFilter interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -132,17 +132,17 @@ type TranscribeVocabularyFilter interface {
 	ResetTagsAll()
 	ResetVocabularyFilterFileUri()
 	ResetWords()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for TranscribeVocabularyFilter
@@ -170,8 +170,8 @@ func (j *jsiiProxy_TranscribeVocabularyFilter) CdktfStack() cdktf.TerraformStack
 	return returns
 }
 
-func (j *jsiiProxy_TranscribeVocabularyFilter) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TranscribeVocabularyFilter) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_TranscribeVocabularyFilter) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TranscribeVocabularyFilter) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_TranscribeVocabularyFilter) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_TranscribeVocabularyFilter) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_TranscribeVocabularyFilter) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TranscribeVocabularyFilter) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -320,8 +320,8 @@ func (j *jsiiProxy_TranscribeVocabularyFilter) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_TranscribeVocabularyFilter) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_TranscribeVocabularyFilter) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -330,8 +330,8 @@ func (j *jsiiProxy_TranscribeVocabularyFilter) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TranscribeVocabularyFilter) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TranscribeVocabularyFilter) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -390,8 +390,8 @@ func (j *jsiiProxy_TranscribeVocabularyFilter) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
-func (j *jsiiProxy_TranscribeVocabularyFilter) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_TranscribeVocabularyFilter) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -470,7 +470,6 @@ func (j *jsiiProxy_TranscribeVocabularyFilter) WordsInput() *[]*string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/transcribe_vocabulary_filter aws_transcribe_vocabulary_filter} Resource.
 func NewTranscribeVocabularyFilter(scope constructs.Construct, id *string, config *TranscribeVocabularyFilterConfig) TranscribeVocabularyFilter {
 	_init_.Initialize()
@@ -482,7 +481,7 @@ func NewTranscribeVocabularyFilter(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -495,12 +494,12 @@ func NewTranscribeVocabularyFilter_Override(t TranscribeVocabularyFilter, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		t,
 	)
 }
 
-func (j *jsiiProxy_TranscribeVocabularyFilter)SetConnection(val interface{}) {
+func (j *jsiiProxy_TranscribeVocabularyFilter) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_TranscribeVocabularyFilter)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TranscribeVocabularyFilter)SetCount(val interface{}) {
+func (j *jsiiProxy_TranscribeVocabularyFilter) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_TranscribeVocabularyFilter)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TranscribeVocabularyFilter)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_TranscribeVocabularyFilter) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -530,7 +529,7 @@ func (j *jsiiProxy_TranscribeVocabularyFilter)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_TranscribeVocabularyFilter)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_TranscribeVocabularyFilter) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -538,7 +537,7 @@ func (j *jsiiProxy_TranscribeVocabularyFilter)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_TranscribeVocabularyFilter)SetId(val *string) {
+func (j *jsiiProxy_TranscribeVocabularyFilter) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -549,7 +548,7 @@ func (j *jsiiProxy_TranscribeVocabularyFilter)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TranscribeVocabularyFilter)SetLanguageCode(val *string) {
+func (j *jsiiProxy_TranscribeVocabularyFilter) SetLanguageCode(val *string) {
 	if err := j.validateSetLanguageCodeParameters(val); err != nil {
 		panic(err)
 	}
@@ -560,7 +559,7 @@ func (j *jsiiProxy_TranscribeVocabularyFilter)SetLanguageCode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TranscribeVocabularyFilter)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_TranscribeVocabularyFilter) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -571,7 +570,7 @@ func (j *jsiiProxy_TranscribeVocabularyFilter)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_TranscribeVocabularyFilter)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_TranscribeVocabularyFilter) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -579,7 +578,7 @@ func (j *jsiiProxy_TranscribeVocabularyFilter)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_TranscribeVocabularyFilter)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_TranscribeVocabularyFilter) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -590,7 +589,7 @@ func (j *jsiiProxy_TranscribeVocabularyFilter)SetProvisioners(val *[]interface{}
 	)
 }
 
-func (j *jsiiProxy_TranscribeVocabularyFilter)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_TranscribeVocabularyFilter) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -601,7 +600,7 @@ func (j *jsiiProxy_TranscribeVocabularyFilter)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_TranscribeVocabularyFilter)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_TranscribeVocabularyFilter) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -612,7 +611,7 @@ func (j *jsiiProxy_TranscribeVocabularyFilter)SetTagsAll(val *map[string]*string
 	)
 }
 
-func (j *jsiiProxy_TranscribeVocabularyFilter)SetVocabularyFilterFileUri(val *string) {
+func (j *jsiiProxy_TranscribeVocabularyFilter) SetVocabularyFilterFileUri(val *string) {
 	if err := j.validateSetVocabularyFilterFileUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -623,7 +622,7 @@ func (j *jsiiProxy_TranscribeVocabularyFilter)SetVocabularyFilterFileUri(val *st
 	)
 }
 
-func (j *jsiiProxy_TranscribeVocabularyFilter)SetVocabularyFilterName(val *string) {
+func (j *jsiiProxy_TranscribeVocabularyFilter) SetVocabularyFilterName(val *string) {
 	if err := j.validateSetVocabularyFilterNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -634,7 +633,7 @@ func (j *jsiiProxy_TranscribeVocabularyFilter)SetVocabularyFilterName(val *strin
 	)
 }
 
-func (j *jsiiProxy_TranscribeVocabularyFilter)SetWords(val *[]*string) {
+func (j *jsiiProxy_TranscribeVocabularyFilter) SetWords(val *[]*string) {
 	if err := j.validateSetWordsParameters(val); err != nil {
 		panic(err)
 	}
@@ -657,7 +656,7 @@ func TranscribeVocabularyFilter_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -681,7 +680,7 @@ func TranscribeVocabularyFilter_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func TranscribeVocabularyFilter_IsConstruct(x interface{}) *bool {
+func TranscribeVocabularyFilter_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTranscribeVocabularyFilter_IsConstructParameters(x); err != nil {
@@ -692,7 +691,7 @@ func TranscribeVocabularyFilter_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -700,7 +699,7 @@ func TranscribeVocabularyFilter_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func TranscribeVocabularyFilter_IsTerraformElement(x interface{}) *bool {
+func TranscribeVocabularyFilter_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTranscribeVocabularyFilter_IsTerraformElementParameters(x); err != nil {
@@ -711,7 +710,7 @@ func TranscribeVocabularyFilter_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func TranscribeVocabularyFilter_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func TranscribeVocabularyFilter_IsTerraformResource(x interface{}) *bool {
+func TranscribeVocabularyFilter_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTranscribeVocabularyFilter_IsTerraformResourceParameters(x); err != nil {
@@ -730,7 +729,7 @@ func TranscribeVocabularyFilter_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -755,31 +754,31 @@ func (t *jsiiProxy_TranscribeVocabularyFilter) AddMoveTarget(moveTarget *string)
 	_jsii_.InvokeVoid(
 		t,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (t *jsiiProxy_TranscribeVocabularyFilter) AddOverride(path *string, value interface{}) {
+func (t *jsiiProxy_TranscribeVocabularyFilter) AddOverride(path *string, value any) {
 	if err := t.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		t,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (t *jsiiProxy_TranscribeVocabularyFilter) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (t *jsiiProxy_TranscribeVocabularyFilter) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -795,7 +794,7 @@ func (t *jsiiProxy_TranscribeVocabularyFilter) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		t,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -811,7 +810,7 @@ func (t *jsiiProxy_TranscribeVocabularyFilter) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		t,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -827,7 +826,7 @@ func (t *jsiiProxy_TranscribeVocabularyFilter) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		t,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -843,7 +842,7 @@ func (t *jsiiProxy_TranscribeVocabularyFilter) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		t,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -859,7 +858,7 @@ func (t *jsiiProxy_TranscribeVocabularyFilter) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		t,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -875,7 +874,7 @@ func (t *jsiiProxy_TranscribeVocabularyFilter) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		t,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -891,7 +890,7 @@ func (t *jsiiProxy_TranscribeVocabularyFilter) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		t,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -907,15 +906,15 @@ func (t *jsiiProxy_TranscribeVocabularyFilter) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		t,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (t *jsiiProxy_TranscribeVocabularyFilter) HasResourceMove() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TranscribeVocabularyFilter) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -934,7 +933,7 @@ func (t *jsiiProxy_TranscribeVocabularyFilter) ImportFrom(id *string, provider c
 	_jsii_.InvokeVoid(
 		t,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -947,7 +946,7 @@ func (t *jsiiProxy_TranscribeVocabularyFilter) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -961,18 +960,18 @@ func (t *jsiiProxy_TranscribeVocabularyFilter) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (t *jsiiProxy_TranscribeVocabularyFilter) MoveTo(moveTarget *string, index interface{}) {
+func (t *jsiiProxy_TranscribeVocabularyFilter) MoveTo(moveTarget *string, index any) {
 	if err := t.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		t,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -983,7 +982,7 @@ func (t *jsiiProxy_TranscribeVocabularyFilter) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -994,7 +993,7 @@ func (t *jsiiProxy_TranscribeVocabularyFilter) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		t,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1046,8 +1045,8 @@ func (t *jsiiProxy_TranscribeVocabularyFilter) ResetWords() {
 	)
 }
 
-func (t *jsiiProxy_TranscribeVocabularyFilter) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (t *jsiiProxy_TranscribeVocabularyFilter) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
@@ -1059,8 +1058,8 @@ func (t *jsiiProxy_TranscribeVocabularyFilter) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (t *jsiiProxy_TranscribeVocabularyFilter) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (t *jsiiProxy_TranscribeVocabularyFilter) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
@@ -1072,8 +1071,8 @@ func (t *jsiiProxy_TranscribeVocabularyFilter) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (t *jsiiProxy_TranscribeVocabularyFilter) ToHclTerraform() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TranscribeVocabularyFilter) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -1085,8 +1084,8 @@ func (t *jsiiProxy_TranscribeVocabularyFilter) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (t *jsiiProxy_TranscribeVocabularyFilter) ToMetadata() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TranscribeVocabularyFilter) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -1111,8 +1110,8 @@ func (t *jsiiProxy_TranscribeVocabularyFilter) ToString() *string {
 	return returns
 }
 
-func (t *jsiiProxy_TranscribeVocabularyFilter) ToTerraform() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TranscribeVocabularyFilter) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -1123,4 +1122,3 @@ func (t *jsiiProxy_TranscribeVocabularyFilter) ToTerraform() interface{} {
 
 	return returns
 }
-

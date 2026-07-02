@@ -12,9 +12,9 @@ type DataAwsInstanceEnclaveOptionsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -41,7 +41,7 @@ type DataAwsInstanceEnclaveOptionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -64,7 +64,7 @@ type DataAwsInstanceEnclaveOptionsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,8 +77,8 @@ type jsiiProxy_DataAwsInstanceEnclaveOptionsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataAwsInstanceEnclaveOptionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsInstanceEnclaveOptionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -157,7 +157,6 @@ func (j *jsiiProxy_DataAwsInstanceEnclaveOptionsOutputReference) TerraformResour
 	return returns
 }
 
-
 func NewDataAwsInstanceEnclaveOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataAwsInstanceEnclaveOptionsOutputReference {
 	_init_.Initialize()
 
@@ -168,7 +167,7 @@ func NewDataAwsInstanceEnclaveOptionsOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceEnclaveOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -180,12 +179,12 @@ func NewDataAwsInstanceEnclaveOptionsOutputReference_Override(d DataAwsInstanceE
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceEnclaveOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsInstanceEnclaveOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataAwsInstanceEnclaveOptionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -196,7 +195,7 @@ func (j *jsiiProxy_DataAwsInstanceEnclaveOptionsOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_DataAwsInstanceEnclaveOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataAwsInstanceEnclaveOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -207,7 +206,7 @@ func (j *jsiiProxy_DataAwsInstanceEnclaveOptionsOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_DataAwsInstanceEnclaveOptionsOutputReference)SetInternalValue(val *DataAwsInstanceEnclaveOptions) {
+func (j *jsiiProxy_DataAwsInstanceEnclaveOptionsOutputReference) SetInternalValue(val *DataAwsInstanceEnclaveOptions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -218,7 +217,7 @@ func (j *jsiiProxy_DataAwsInstanceEnclaveOptionsOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_DataAwsInstanceEnclaveOptionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataAwsInstanceEnclaveOptionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -229,7 +228,7 @@ func (j *jsiiProxy_DataAwsInstanceEnclaveOptionsOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_DataAwsInstanceEnclaveOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataAwsInstanceEnclaveOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,16 +252,16 @@ func (d *jsiiProxy_DataAwsInstanceEnclaveOptionsOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsInstanceEnclaveOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsInstanceEnclaveOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -278,7 +277,7 @@ func (d *jsiiProxy_DataAwsInstanceEnclaveOptionsOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -294,7 +293,7 @@ func (d *jsiiProxy_DataAwsInstanceEnclaveOptionsOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -310,7 +309,7 @@ func (d *jsiiProxy_DataAwsInstanceEnclaveOptionsOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -326,7 +325,7 @@ func (d *jsiiProxy_DataAwsInstanceEnclaveOptionsOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -342,7 +341,7 @@ func (d *jsiiProxy_DataAwsInstanceEnclaveOptionsOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -358,7 +357,7 @@ func (d *jsiiProxy_DataAwsInstanceEnclaveOptionsOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (d *jsiiProxy_DataAwsInstanceEnclaveOptionsOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (d *jsiiProxy_DataAwsInstanceEnclaveOptionsOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,23 +418,23 @@ func (d *jsiiProxy_DataAwsInstanceEnclaveOptionsOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsInstanceEnclaveOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataAwsInstanceEnclaveOptionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -454,4 +453,3 @@ func (d *jsiiProxy_DataAwsInstanceEnclaveOptionsOutputReference) ToString() *str
 
 	return returns
 }
-

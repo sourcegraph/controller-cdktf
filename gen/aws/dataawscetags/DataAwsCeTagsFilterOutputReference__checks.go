@@ -90,7 +90,7 @@ func (d *jsiiProxy_DataAwsCeTagsFilterOutputReference) validateInterpolationForA
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCeTagsFilterOutputReference) validatePutAndParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsCeTagsFilterOutputReference) validatePutAndParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -154,7 +154,7 @@ func (d *jsiiProxy_DataAwsCeTagsFilterOutputReference) validatePutNotParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCeTagsFilterOutputReference) validatePutOrParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsCeTagsFilterOutputReference) validatePutOrParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (d *jsiiProxy_DataAwsCeTagsFilterOutputReference) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsCeTagsFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsCeTagsFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -304,4 +304,3 @@ func validateNewDataAwsCeTagsFilterOutputReferenceParameters(terraformResource c
 
 	return nil
 }
-

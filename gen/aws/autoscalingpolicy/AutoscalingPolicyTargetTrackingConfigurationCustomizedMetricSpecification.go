@@ -1,6 +1,5 @@
 package autoscalingpolicy
 
-
 type AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecification struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/autoscaling_policy#metric_name AutoscalingPolicy#metric_name}.
 	MetricName *string `field:"required" json:"metricName" yaml:"metricName"`
@@ -11,8 +10,7 @@ type AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecification s
 	// metric_dimension block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/autoscaling_policy#metric_dimension AutoscalingPolicy#metric_dimension}
-	MetricDimension interface{} `field:"optional" json:"metricDimension" yaml:"metricDimension"`
+	MetricDimension any `field:"optional" json:"metricDimension" yaml:"metricDimension"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/autoscaling_policy#unit AutoscalingPolicy#unit}.
 	Unit *string `field:"optional" json:"unit" yaml:"unit"`
 }
-

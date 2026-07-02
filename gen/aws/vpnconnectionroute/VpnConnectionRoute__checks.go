@@ -19,7 +19,7 @@ func (v *jsiiProxy_VpnConnectionRoute) validateAddMoveTargetParameters(moveTarge
 	return nil
 }
 
-func (v *jsiiProxy_VpnConnectionRoute) validateAddOverrideParameters(path *string, value interface{}) error {
+func (v *jsiiProxy_VpnConnectionRoute) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (v *jsiiProxy_VpnConnectionRoute) validateMoveFromIdParameters(id *string) 
 	return nil
 }
 
-func (v *jsiiProxy_VpnConnectionRoute) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (v *jsiiProxy_VpnConnectionRoute) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateVpnConnectionRoute_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateVpnConnectionRoute_IsConstructParameters(x interface{}) error {
+func validateVpnConnectionRoute_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateVpnConnectionRoute_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateVpnConnectionRoute_IsTerraformElementParameters(x interface{}) error {
+func validateVpnConnectionRoute_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateVpnConnectionRoute_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func validateVpnConnectionRoute_IsTerraformResourceParameters(x interface{}) error {
+func validateVpnConnectionRoute_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateVpnConnectionRoute_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_VpnConnectionRoute) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_VpnConnectionRoute) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_VpnConnectionRoute) validateSetConnectionParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_VpnConnectionRoute) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_VpnConnectionRoute) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -358,7 +358,7 @@ func (j *jsiiProxy_VpnConnectionRoute) validateSetLifecycleParameters(val *cdktf
 	return nil
 }
 
-func (j *jsiiProxy_VpnConnectionRoute) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_VpnConnectionRoute) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewVpnConnectionRouteParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

@@ -114,7 +114,7 @@ func (j *jsiiProxy_DefaultNetworkAclIngressOutputReference) validateSetCidrBlock
 	return nil
 }
 
-func (j *jsiiProxy_DefaultNetworkAclIngressOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DefaultNetworkAclIngressOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -203,7 +203,7 @@ func (j *jsiiProxy_DefaultNetworkAclIngressOutputReference) validateSetIcmpTypeP
 	return nil
 }
 
-func (j *jsiiProxy_DefaultNetworkAclIngressOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DefaultNetworkAclIngressOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -294,4 +294,3 @@ func validateNewDefaultNetworkAclIngressOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

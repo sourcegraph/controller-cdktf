@@ -34,7 +34,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputsList) valid
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewMedialiveChannelEncoderSettingsOutputGroupsOutputsListParameters
 
 	return nil
 }
-

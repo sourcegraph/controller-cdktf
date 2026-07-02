@@ -16,15 +16,15 @@ type ConnectRoutingProfile interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DefaultOutboundQueueId() *string
 	SetDefaultOutboundQueueId(val *string)
 	DefaultOutboundQueueIdInput() *string
@@ -54,7 +54,7 @@ type ConnectRoutingProfile interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	MediaConcurrencies() ConnectRoutingProfileMediaConcurrenciesList
-	MediaConcurrenciesInput() interface{}
+	MediaConcurrenciesInput() any
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -65,14 +65,14 @@ type ConnectRoutingProfile interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	QueueConfigs() ConnectRoutingProfileQueueConfigsList
 	QueueConfigsAssociated() ConnectRoutingProfileQueueConfigsAssociatedList
-	QueueConfigsInput() interface{}
+	QueueConfigsInput() any
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RoutingProfileId() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -83,16 +83,16 @@ type ConnectRoutingProfile interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -110,7 +110,7 @@ type ConnectRoutingProfile interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -122,15 +122,15 @@ type ConnectRoutingProfile interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutMediaConcurrencies(value interface{})
-	PutQueueConfigs(value interface{})
+	PutMediaConcurrencies(value any)
+	PutQueueConfigs(value any)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -138,17 +138,17 @@ type ConnectRoutingProfile interface {
 	ResetQueueConfigs()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ConnectRoutingProfile
@@ -176,8 +176,8 @@ func (j *jsiiProxy_ConnectRoutingProfile) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ConnectRoutingProfile) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConnectRoutingProfile) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_ConnectRoutingProfile) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ConnectRoutingProfile) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ConnectRoutingProfile) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -196,8 +196,8 @@ func (j *jsiiProxy_ConnectRoutingProfile) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_ConnectRoutingProfile) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConnectRoutingProfile) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -346,8 +346,8 @@ func (j *jsiiProxy_ConnectRoutingProfile) MediaConcurrencies() ConnectRoutingPro
 	return returns
 }
 
-func (j *jsiiProxy_ConnectRoutingProfile) MediaConcurrenciesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConnectRoutingProfile) MediaConcurrenciesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"mediaConcurrenciesInput",
@@ -396,8 +396,8 @@ func (j *jsiiProxy_ConnectRoutingProfile) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ConnectRoutingProfile) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ConnectRoutingProfile) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -426,8 +426,8 @@ func (j *jsiiProxy_ConnectRoutingProfile) QueueConfigsAssociated() ConnectRoutin
 	return returns
 }
 
-func (j *jsiiProxy_ConnectRoutingProfile) QueueConfigsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConnectRoutingProfile) QueueConfigsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"queueConfigsInput",
@@ -436,8 +436,8 @@ func (j *jsiiProxy_ConnectRoutingProfile) QueueConfigsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ConnectRoutingProfile) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConnectRoutingProfile) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -506,8 +506,8 @@ func (j *jsiiProxy_ConnectRoutingProfile) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_ConnectRoutingProfile) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ConnectRoutingProfile) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -526,7 +526,6 @@ func (j *jsiiProxy_ConnectRoutingProfile) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/connect_routing_profile aws_connect_routing_profile} Resource.
 func NewConnectRoutingProfile(scope constructs.Construct, id *string, config *ConnectRoutingProfileConfig) ConnectRoutingProfile {
 	_init_.Initialize()
@@ -538,7 +537,7 @@ func NewConnectRoutingProfile(scope constructs.Construct, id *string, config *Co
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfile",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -551,12 +550,12 @@ func NewConnectRoutingProfile_Override(c ConnectRoutingProfile, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfile",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ConnectRoutingProfile)SetConnection(val interface{}) {
+func (j *jsiiProxy_ConnectRoutingProfile) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -567,7 +566,7 @@ func (j *jsiiProxy_ConnectRoutingProfile)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ConnectRoutingProfile)SetCount(val interface{}) {
+func (j *jsiiProxy_ConnectRoutingProfile) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -578,7 +577,7 @@ func (j *jsiiProxy_ConnectRoutingProfile)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ConnectRoutingProfile)SetDefaultOutboundQueueId(val *string) {
+func (j *jsiiProxy_ConnectRoutingProfile) SetDefaultOutboundQueueId(val *string) {
 	if err := j.validateSetDefaultOutboundQueueIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -589,7 +588,7 @@ func (j *jsiiProxy_ConnectRoutingProfile)SetDefaultOutboundQueueId(val *string) 
 	)
 }
 
-func (j *jsiiProxy_ConnectRoutingProfile)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ConnectRoutingProfile) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -597,7 +596,7 @@ func (j *jsiiProxy_ConnectRoutingProfile)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ConnectRoutingProfile)SetDescription(val *string) {
+func (j *jsiiProxy_ConnectRoutingProfile) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -608,7 +607,7 @@ func (j *jsiiProxy_ConnectRoutingProfile)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ConnectRoutingProfile)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ConnectRoutingProfile) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -616,7 +615,7 @@ func (j *jsiiProxy_ConnectRoutingProfile)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_ConnectRoutingProfile)SetId(val *string) {
+func (j *jsiiProxy_ConnectRoutingProfile) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func (j *jsiiProxy_ConnectRoutingProfile)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ConnectRoutingProfile)SetInstanceId(val *string) {
+func (j *jsiiProxy_ConnectRoutingProfile) SetInstanceId(val *string) {
 	if err := j.validateSetInstanceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -638,7 +637,7 @@ func (j *jsiiProxy_ConnectRoutingProfile)SetInstanceId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ConnectRoutingProfile)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ConnectRoutingProfile) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func (j *jsiiProxy_ConnectRoutingProfile)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_ConnectRoutingProfile)SetName(val *string) {
+func (j *jsiiProxy_ConnectRoutingProfile) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -660,7 +659,7 @@ func (j *jsiiProxy_ConnectRoutingProfile)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ConnectRoutingProfile)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ConnectRoutingProfile) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -668,7 +667,7 @@ func (j *jsiiProxy_ConnectRoutingProfile)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_ConnectRoutingProfile)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ConnectRoutingProfile) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -679,7 +678,7 @@ func (j *jsiiProxy_ConnectRoutingProfile)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ConnectRoutingProfile)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_ConnectRoutingProfile) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -690,7 +689,7 @@ func (j *jsiiProxy_ConnectRoutingProfile)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_ConnectRoutingProfile)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_ConnectRoutingProfile) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -713,7 +712,7 @@ func ConnectRoutingProfile_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfile",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func ConnectRoutingProfile_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ConnectRoutingProfile_IsConstruct(x interface{}) *bool {
+func ConnectRoutingProfile_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateConnectRoutingProfile_IsConstructParameters(x); err != nil {
@@ -748,7 +747,7 @@ func ConnectRoutingProfile_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfile",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -756,7 +755,7 @@ func ConnectRoutingProfile_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ConnectRoutingProfile_IsTerraformElement(x interface{}) *bool {
+func ConnectRoutingProfile_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateConnectRoutingProfile_IsTerraformElementParameters(x); err != nil {
@@ -767,7 +766,7 @@ func ConnectRoutingProfile_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfile",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func ConnectRoutingProfile_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ConnectRoutingProfile_IsTerraformResource(x interface{}) *bool {
+func ConnectRoutingProfile_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateConnectRoutingProfile_IsTerraformResourceParameters(x); err != nil {
@@ -786,7 +785,7 @@ func ConnectRoutingProfile_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfile",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -811,31 +810,31 @@ func (c *jsiiProxy_ConnectRoutingProfile) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ConnectRoutingProfile) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ConnectRoutingProfile) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ConnectRoutingProfile) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ConnectRoutingProfile) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -851,7 +850,7 @@ func (c *jsiiProxy_ConnectRoutingProfile) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -867,7 +866,7 @@ func (c *jsiiProxy_ConnectRoutingProfile) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -883,7 +882,7 @@ func (c *jsiiProxy_ConnectRoutingProfile) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -899,7 +898,7 @@ func (c *jsiiProxy_ConnectRoutingProfile) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -915,7 +914,7 @@ func (c *jsiiProxy_ConnectRoutingProfile) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -931,7 +930,7 @@ func (c *jsiiProxy_ConnectRoutingProfile) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -947,7 +946,7 @@ func (c *jsiiProxy_ConnectRoutingProfile) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -963,15 +962,15 @@ func (c *jsiiProxy_ConnectRoutingProfile) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ConnectRoutingProfile) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ConnectRoutingProfile) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -990,7 +989,7 @@ func (c *jsiiProxy_ConnectRoutingProfile) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1003,7 +1002,7 @@ func (c *jsiiProxy_ConnectRoutingProfile) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1017,18 +1016,18 @@ func (c *jsiiProxy_ConnectRoutingProfile) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ConnectRoutingProfile) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ConnectRoutingProfile) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1039,7 +1038,7 @@ func (c *jsiiProxy_ConnectRoutingProfile) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1050,29 +1049,29 @@ func (c *jsiiProxy_ConnectRoutingProfile) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (c *jsiiProxy_ConnectRoutingProfile) PutMediaConcurrencies(value interface{}) {
+func (c *jsiiProxy_ConnectRoutingProfile) PutMediaConcurrencies(value any) {
 	if err := c.validatePutMediaConcurrenciesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putMediaConcurrencies",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ConnectRoutingProfile) PutQueueConfigs(value interface{}) {
+func (c *jsiiProxy_ConnectRoutingProfile) PutQueueConfigs(value any) {
 	if err := c.validatePutQueueConfigsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putQueueConfigs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1116,8 +1115,8 @@ func (c *jsiiProxy_ConnectRoutingProfile) ResetTagsAll() {
 	)
 }
 
-func (c *jsiiProxy_ConnectRoutingProfile) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ConnectRoutingProfile) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1129,8 +1128,8 @@ func (c *jsiiProxy_ConnectRoutingProfile) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (c *jsiiProxy_ConnectRoutingProfile) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ConnectRoutingProfile) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1142,8 +1141,8 @@ func (c *jsiiProxy_ConnectRoutingProfile) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (c *jsiiProxy_ConnectRoutingProfile) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ConnectRoutingProfile) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1155,8 +1154,8 @@ func (c *jsiiProxy_ConnectRoutingProfile) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_ConnectRoutingProfile) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ConnectRoutingProfile) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1181,8 +1180,8 @@ func (c *jsiiProxy_ConnectRoutingProfile) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ConnectRoutingProfile) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ConnectRoutingProfile) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1193,4 +1192,3 @@ func (c *jsiiProxy_ConnectRoutingProfile) ToTerraform() interface{} {
 
 	return returns
 }
-

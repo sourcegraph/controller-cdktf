@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsEcrRepositoryImageScanningConfigurationOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEcrRepositoryImageScanningConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEcrRepositoryImageScanningConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsEcrRepositoryImageScanningConfigurationOutputReferencePar
 
 	return nil
 }
-

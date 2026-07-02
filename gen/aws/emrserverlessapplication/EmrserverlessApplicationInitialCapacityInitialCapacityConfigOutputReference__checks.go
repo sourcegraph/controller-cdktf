@@ -109,7 +109,7 @@ func (e *jsiiProxy_EmrserverlessApplicationInitialCapacityInitialCapacityConfigO
 	return nil
 }
 
-func (j *jsiiProxy_EmrserverlessApplicationInitialCapacityInitialCapacityConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EmrserverlessApplicationInitialCapacityInitialCapacityConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewEmrserverlessApplicationInitialCapacityInitialCapacityConfigOutp
 
 	return nil
 }
-

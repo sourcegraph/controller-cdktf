@@ -120,7 +120,7 @@ func (a *jsiiProxy_AcmpcaCertificateAuthorityRevocationConfigurationOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_AcmpcaCertificateAuthorityRevocationConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AcmpcaCertificateAuthorityRevocationConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewAcmpcaCertificateAuthorityRevocationConfigurationOutputReference
 
 	return nil
 }
-

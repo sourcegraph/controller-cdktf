@@ -17,11 +17,11 @@ type DataAwsDbClusterSnapshot interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DbClusterIdentifier() *string
 	SetDbClusterIdentifier(val *string)
 	DbClusterIdentifierInput() *string
@@ -46,21 +46,21 @@ type DataAwsDbClusterSnapshot interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IncludePublic() interface{}
-	SetIncludePublic(val interface{})
-	IncludePublicInput() interface{}
-	IncludeShared() interface{}
-	SetIncludeShared(val interface{})
-	IncludeSharedInput() interface{}
+	IncludePublic() any
+	SetIncludePublic(val any)
+	IncludePublicInput() any
+	IncludeShared() any
+	SetIncludeShared(val any)
+	IncludeSharedInput() any
 	KmsKeyId() *string
 	LicenseModel() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	MostRecent() interface{}
-	SetMostRecent(val interface{})
-	MostRecentInput() interface{}
+	MostRecent() any
+	SetMostRecent(val any)
+	MostRecentInput() any
 	// The tree node.
 	Node() constructs.Node
 	Port() *float64
@@ -69,7 +69,7 @@ type DataAwsDbClusterSnapshot interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SnapshotCreateTime() *string
 	SnapshotType() *string
 	SetSnapshotType(val *string)
@@ -83,14 +83,14 @@ type DataAwsDbClusterSnapshot interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	VpcId() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -123,18 +123,18 @@ type DataAwsDbClusterSnapshot interface {
 	ResetOverrideLogicalId()
 	ResetSnapshotType()
 	ResetTags()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsDbClusterSnapshot
@@ -172,8 +172,8 @@ func (j *jsiiProxy_DataAwsDbClusterSnapshot) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsDbClusterSnapshot) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsDbClusterSnapshot) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_DataAwsDbClusterSnapshot) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsDbClusterSnapshot) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsDbClusterSnapshot) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -322,8 +322,8 @@ func (j *jsiiProxy_DataAwsDbClusterSnapshot) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsDbClusterSnapshot) IncludePublic() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsDbClusterSnapshot) IncludePublic() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includePublic",
@@ -332,8 +332,8 @@ func (j *jsiiProxy_DataAwsDbClusterSnapshot) IncludePublic() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsDbClusterSnapshot) IncludePublicInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsDbClusterSnapshot) IncludePublicInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includePublicInput",
@@ -342,8 +342,8 @@ func (j *jsiiProxy_DataAwsDbClusterSnapshot) IncludePublicInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsDbClusterSnapshot) IncludeShared() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsDbClusterSnapshot) IncludeShared() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeShared",
@@ -352,8 +352,8 @@ func (j *jsiiProxy_DataAwsDbClusterSnapshot) IncludeShared() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsDbClusterSnapshot) IncludeSharedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsDbClusterSnapshot) IncludeSharedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeSharedInput",
@@ -392,8 +392,8 @@ func (j *jsiiProxy_DataAwsDbClusterSnapshot) Lifecycle() *cdktf.TerraformResourc
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsDbClusterSnapshot) MostRecent() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsDbClusterSnapshot) MostRecent() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"mostRecent",
@@ -402,8 +402,8 @@ func (j *jsiiProxy_DataAwsDbClusterSnapshot) MostRecent() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsDbClusterSnapshot) MostRecentInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsDbClusterSnapshot) MostRecentInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"mostRecentInput",
@@ -442,8 +442,8 @@ func (j *jsiiProxy_DataAwsDbClusterSnapshot) Provider() cdktf.TerraformProvider 
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsDbClusterSnapshot) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsDbClusterSnapshot) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -542,8 +542,8 @@ func (j *jsiiProxy_DataAwsDbClusterSnapshot) TerraformGeneratorMetadata() *cdktf
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsDbClusterSnapshot) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsDbClusterSnapshot) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -572,7 +572,6 @@ func (j *jsiiProxy_DataAwsDbClusterSnapshot) VpcId() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/db_cluster_snapshot aws_db_cluster_snapshot} Data Source.
 func NewDataAwsDbClusterSnapshot(scope constructs.Construct, id *string, config *DataAwsDbClusterSnapshotConfig) DataAwsDbClusterSnapshot {
 	_init_.Initialize()
@@ -584,7 +583,7 @@ func NewDataAwsDbClusterSnapshot(scope constructs.Construct, id *string, config 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsDbClusterSnapshot.DataAwsDbClusterSnapshot",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -597,12 +596,12 @@ func NewDataAwsDbClusterSnapshot_Override(d DataAwsDbClusterSnapshot, scope cons
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsDbClusterSnapshot.DataAwsDbClusterSnapshot",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsDbClusterSnapshot)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsDbClusterSnapshot) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -613,7 +612,7 @@ func (j *jsiiProxy_DataAwsDbClusterSnapshot)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsDbClusterSnapshot)SetDbClusterIdentifier(val *string) {
+func (j *jsiiProxy_DataAwsDbClusterSnapshot) SetDbClusterIdentifier(val *string) {
 	if err := j.validateSetDbClusterIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -624,7 +623,7 @@ func (j *jsiiProxy_DataAwsDbClusterSnapshot)SetDbClusterIdentifier(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DataAwsDbClusterSnapshot)SetDbClusterSnapshotIdentifier(val *string) {
+func (j *jsiiProxy_DataAwsDbClusterSnapshot) SetDbClusterSnapshotIdentifier(val *string) {
 	if err := j.validateSetDbClusterSnapshotIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -635,7 +634,7 @@ func (j *jsiiProxy_DataAwsDbClusterSnapshot)SetDbClusterSnapshotIdentifier(val *
 	)
 }
 
-func (j *jsiiProxy_DataAwsDbClusterSnapshot)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsDbClusterSnapshot) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -643,7 +642,7 @@ func (j *jsiiProxy_DataAwsDbClusterSnapshot)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsDbClusterSnapshot)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsDbClusterSnapshot) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -651,7 +650,7 @@ func (j *jsiiProxy_DataAwsDbClusterSnapshot)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_DataAwsDbClusterSnapshot)SetId(val *string) {
+func (j *jsiiProxy_DataAwsDbClusterSnapshot) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -662,7 +661,7 @@ func (j *jsiiProxy_DataAwsDbClusterSnapshot)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsDbClusterSnapshot)SetIncludePublic(val interface{}) {
+func (j *jsiiProxy_DataAwsDbClusterSnapshot) SetIncludePublic(val any) {
 	if err := j.validateSetIncludePublicParameters(val); err != nil {
 		panic(err)
 	}
@@ -673,7 +672,7 @@ func (j *jsiiProxy_DataAwsDbClusterSnapshot)SetIncludePublic(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsDbClusterSnapshot)SetIncludeShared(val interface{}) {
+func (j *jsiiProxy_DataAwsDbClusterSnapshot) SetIncludeShared(val any) {
 	if err := j.validateSetIncludeSharedParameters(val); err != nil {
 		panic(err)
 	}
@@ -684,7 +683,7 @@ func (j *jsiiProxy_DataAwsDbClusterSnapshot)SetIncludeShared(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsDbClusterSnapshot)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsDbClusterSnapshot) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -695,7 +694,7 @@ func (j *jsiiProxy_DataAwsDbClusterSnapshot)SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_DataAwsDbClusterSnapshot)SetMostRecent(val interface{}) {
+func (j *jsiiProxy_DataAwsDbClusterSnapshot) SetMostRecent(val any) {
 	if err := j.validateSetMostRecentParameters(val); err != nil {
 		panic(err)
 	}
@@ -706,7 +705,7 @@ func (j *jsiiProxy_DataAwsDbClusterSnapshot)SetMostRecent(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsDbClusterSnapshot)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsDbClusterSnapshot) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -714,7 +713,7 @@ func (j *jsiiProxy_DataAwsDbClusterSnapshot)SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_DataAwsDbClusterSnapshot)SetSnapshotType(val *string) {
+func (j *jsiiProxy_DataAwsDbClusterSnapshot) SetSnapshotType(val *string) {
 	if err := j.validateSetSnapshotTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -725,7 +724,7 @@ func (j *jsiiProxy_DataAwsDbClusterSnapshot)SetSnapshotType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsDbClusterSnapshot)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsDbClusterSnapshot) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -748,7 +747,7 @@ func DataAwsDbClusterSnapshot_GenerateConfigForImport(scope constructs.Construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsDbClusterSnapshot.DataAwsDbClusterSnapshot",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -772,7 +771,7 @@ func DataAwsDbClusterSnapshot_GenerateConfigForImport(scope constructs.Construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsDbClusterSnapshot_IsConstruct(x interface{}) *bool {
+func DataAwsDbClusterSnapshot_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsDbClusterSnapshot_IsConstructParameters(x); err != nil {
@@ -783,7 +782,7 @@ func DataAwsDbClusterSnapshot_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsDbClusterSnapshot.DataAwsDbClusterSnapshot",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -791,7 +790,7 @@ func DataAwsDbClusterSnapshot_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsDbClusterSnapshot_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsDbClusterSnapshot_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsDbClusterSnapshot_IsTerraformDataSourceParameters(x); err != nil {
@@ -802,7 +801,7 @@ func DataAwsDbClusterSnapshot_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsDbClusterSnapshot.DataAwsDbClusterSnapshot",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func DataAwsDbClusterSnapshot_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsDbClusterSnapshot_IsTerraformElement(x interface{}) *bool {
+func DataAwsDbClusterSnapshot_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsDbClusterSnapshot_IsTerraformElementParameters(x); err != nil {
@@ -821,7 +820,7 @@ func DataAwsDbClusterSnapshot_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsDbClusterSnapshot.DataAwsDbClusterSnapshot",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -839,27 +838,27 @@ func DataAwsDbClusterSnapshot_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsDbClusterSnapshot) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsDbClusterSnapshot) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsDbClusterSnapshot) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsDbClusterSnapshot) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -875,7 +874,7 @@ func (d *jsiiProxy_DataAwsDbClusterSnapshot) GetBooleanAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -891,7 +890,7 @@ func (d *jsiiProxy_DataAwsDbClusterSnapshot) GetBooleanMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -907,7 +906,7 @@ func (d *jsiiProxy_DataAwsDbClusterSnapshot) GetListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -923,7 +922,7 @@ func (d *jsiiProxy_DataAwsDbClusterSnapshot) GetNumberAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -939,7 +938,7 @@ func (d *jsiiProxy_DataAwsDbClusterSnapshot) GetNumberListAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -955,7 +954,7 @@ func (d *jsiiProxy_DataAwsDbClusterSnapshot) GetNumberMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -971,7 +970,7 @@ func (d *jsiiProxy_DataAwsDbClusterSnapshot) GetStringAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -987,7 +986,7 @@ func (d *jsiiProxy_DataAwsDbClusterSnapshot) GetStringMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1003,7 +1002,7 @@ func (d *jsiiProxy_DataAwsDbClusterSnapshot) InterpolationForAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1017,7 +1016,7 @@ func (d *jsiiProxy_DataAwsDbClusterSnapshot) OverrideLogicalId(newLogicalId *str
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1093,8 +1092,8 @@ func (d *jsiiProxy_DataAwsDbClusterSnapshot) ResetTags() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsDbClusterSnapshot) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsDbClusterSnapshot) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1106,8 +1105,8 @@ func (d *jsiiProxy_DataAwsDbClusterSnapshot) SynthesizeAttributes() *map[string]
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsDbClusterSnapshot) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsDbClusterSnapshot) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1119,8 +1118,8 @@ func (d *jsiiProxy_DataAwsDbClusterSnapshot) SynthesizeHclAttributes() *map[stri
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsDbClusterSnapshot) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsDbClusterSnapshot) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1132,8 +1131,8 @@ func (d *jsiiProxy_DataAwsDbClusterSnapshot) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsDbClusterSnapshot) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsDbClusterSnapshot) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1158,8 +1157,8 @@ func (d *jsiiProxy_DataAwsDbClusterSnapshot) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsDbClusterSnapshot) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsDbClusterSnapshot) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1170,4 +1169,3 @@ func (d *jsiiProxy_DataAwsDbClusterSnapshot) ToTerraform() interface{} {
 
 	return returns
 }
-

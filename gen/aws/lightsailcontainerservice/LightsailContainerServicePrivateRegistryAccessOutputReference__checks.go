@@ -109,7 +109,7 @@ func (l *jsiiProxy_LightsailContainerServicePrivateRegistryAccessOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_LightsailContainerServicePrivateRegistryAccessOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LightsailContainerServicePrivateRegistryAccessOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewLightsailContainerServicePrivateRegistryAccessOutputReferencePar
 
 	return nil
 }
-

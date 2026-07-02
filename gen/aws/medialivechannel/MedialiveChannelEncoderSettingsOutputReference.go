@@ -11,14 +11,14 @@ import (
 type MedialiveChannelEncoderSettingsOutputReference interface {
 	cdktf.ComplexObject
 	AudioDescriptions() MedialiveChannelEncoderSettingsAudioDescriptionsList
-	AudioDescriptionsInput() interface{}
+	AudioDescriptionsInput() any
 	AvailBlanking() MedialiveChannelEncoderSettingsAvailBlankingOutputReference
 	AvailBlankingInput() *MedialiveChannelEncoderSettingsAvailBlanking
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -34,7 +34,7 @@ type MedialiveChannelEncoderSettingsOutputReference interface {
 	InternalValue() *MedialiveChannelEncoderSettings
 	SetInternalValue(val *MedialiveChannelEncoderSettings)
 	OutputGroups() MedialiveChannelEncoderSettingsOutputGroupsList
-	OutputGroupsInput() interface{}
+	OutputGroupsInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,11 +46,11 @@ type MedialiveChannelEncoderSettingsOutputReference interface {
 	TimecodeConfig() MedialiveChannelEncoderSettingsTimecodeConfigOutputReference
 	TimecodeConfigInput() *MedialiveChannelEncoderSettingsTimecodeConfig
 	VideoDescriptions() MedialiveChannelEncoderSettingsVideoDescriptionsList
-	VideoDescriptionsInput() interface{}
+	VideoDescriptionsInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,17 +71,17 @@ type MedialiveChannelEncoderSettingsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAudioDescriptions(value interface{})
+	PutAudioDescriptions(value any)
 	PutAvailBlanking(value *MedialiveChannelEncoderSettingsAvailBlanking)
-	PutOutputGroups(value interface{})
+	PutOutputGroups(value any)
 	PutTimecodeConfig(value *MedialiveChannelEncoderSettingsTimecodeConfig)
-	PutVideoDescriptions(value interface{})
+	PutVideoDescriptions(value any)
 	ResetAudioDescriptions()
 	ResetAvailBlanking()
 	ResetVideoDescriptions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -104,8 +104,8 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) AudioDescript
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) AudioDescriptionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) AudioDescriptionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"audioDescriptionsInput",
@@ -134,8 +134,8 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) AvailBlanking
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) OutputGroups(
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) OutputGroupsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) OutputGroupsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"outputGroupsInput",
@@ -254,8 +254,8 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) VideoDescript
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) VideoDescriptionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) VideoDescriptionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"videoDescriptionsInput",
@@ -263,7 +263,6 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) VideoDescript
 	)
 	return returns
 }
-
 
 func NewMedialiveChannelEncoderSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputReference {
 	_init_.Initialize()
@@ -275,7 +274,7 @@ func NewMedialiveChannelEncoderSettingsOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -287,12 +286,12 @@ func NewMedialiveChannelEncoderSettingsOutputReference_Override(m MedialiveChann
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference)SetInternalValue(val *MedialiveChannelEncoderSettings) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) SetInternalValue(val *MedialiveChannelEncoderSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,16 +359,16 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) GetNumberList
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -465,7 +464,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -497,7 +496,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -526,21 +525,21 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) Interpolation
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) PutAudioDescriptions(value interface{}) {
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) PutAudioDescriptions(value any) {
 	if err := m.validatePutAudioDescriptionsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"putAudioDescriptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -551,18 +550,18 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) PutAvailBlank
 	_jsii_.InvokeVoid(
 		m,
 		"putAvailBlanking",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) PutOutputGroups(value interface{}) {
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) PutOutputGroups(value any) {
 	if err := m.validatePutOutputGroupsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"putOutputGroups",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -573,18 +572,18 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) PutTimecodeCo
 	_jsii_.InvokeVoid(
 		m,
 		"putTimecodeConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) PutVideoDescriptions(value interface{}) {
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) PutVideoDescriptions(value any) {
 	if err := m.validatePutVideoDescriptionsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"putVideoDescriptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -612,16 +611,16 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) ResetVideoDes
 	)
 }
 
-func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -640,4 +639,3 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) ToString() *s
 
 	return returns
 }
-

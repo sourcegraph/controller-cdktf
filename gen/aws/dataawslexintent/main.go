@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntent",
-		reflect.TypeOf((*DataAwsLexIntent)(nil)).Elem(),
+		reflect.TypeFor[DataAwsLexIntent](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -59,7 +59,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsLexIntent{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -67,6 +67,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntentConfig",
-		reflect.TypeOf((*DataAwsLexIntentConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsLexIntentConfig](),
 	)
 }

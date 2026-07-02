@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsGlobalacceleratorAcceleratorAttributesOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsGlobalacceleratorAcceleratorAttributesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsGlobalacceleratorAcceleratorAttributesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsGlobalacceleratorAcceleratorAttributesOutputReferencePara
 
 	return nil
 }
-

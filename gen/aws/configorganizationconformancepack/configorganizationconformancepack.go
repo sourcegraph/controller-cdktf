@@ -16,15 +16,15 @@ type ConfigOrganizationConformancePack interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DeliveryS3Bucket() *string
 	SetDeliveryS3Bucket(val *string)
 	DeliveryS3BucketInput() *string
@@ -50,7 +50,7 @@ type ConfigOrganizationConformancePack interface {
 	SetId(val *string)
 	IdInput() *string
 	InputParameter() ConfigOrganizationConformancePackInputParameterList
-	InputParameterInput() interface{}
+	InputParameterInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -65,11 +65,11 @@ type ConfigOrganizationConformancePack interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	TemplateBody() *string
 	SetTemplateBody(val *string)
 	TemplateBodyInput() *string
@@ -79,18 +79,18 @@ type ConfigOrganizationConformancePack interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ConfigOrganizationConformancePackTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -108,7 +108,7 @@ type ConfigOrganizationConformancePack interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -120,14 +120,14 @@ type ConfigOrganizationConformancePack interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutInputParameter(value interface{})
+	PutInputParameter(value any)
 	PutTimeouts(value *ConfigOrganizationConformancePackTimeouts)
 	ResetDeliveryS3Bucket()
 	ResetDeliveryS3KeyPrefix()
@@ -140,17 +140,17 @@ type ConfigOrganizationConformancePack interface {
 	ResetTemplateBody()
 	ResetTemplateS3Uri()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ConfigOrganizationConformancePack
@@ -178,8 +178,8 @@ func (j *jsiiProxy_ConfigOrganizationConformancePack) CdktfStack() cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_ConfigOrganizationConformancePack) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConfigOrganizationConformancePack) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_ConfigOrganizationConformancePack) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ConfigOrganizationConformancePack) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ConfigOrganizationConformancePack) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_ConfigOrganizationConformancePack) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_ConfigOrganizationConformancePack) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConfigOrganizationConformancePack) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -338,8 +338,8 @@ func (j *jsiiProxy_ConfigOrganizationConformancePack) InputParameter() ConfigOrg
 	return returns
 }
 
-func (j *jsiiProxy_ConfigOrganizationConformancePack) InputParameterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConfigOrganizationConformancePack) InputParameterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"inputParameterInput",
@@ -398,8 +398,8 @@ func (j *jsiiProxy_ConfigOrganizationConformancePack) Provider() cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_ConfigOrganizationConformancePack) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ConfigOrganizationConformancePack) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -408,8 +408,8 @@ func (j *jsiiProxy_ConfigOrganizationConformancePack) Provisioners() *[]interfac
 	return returns
 }
 
-func (j *jsiiProxy_ConfigOrganizationConformancePack) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConfigOrganizationConformancePack) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -468,8 +468,8 @@ func (j *jsiiProxy_ConfigOrganizationConformancePack) TerraformGeneratorMetadata
 	return returns
 }
 
-func (j *jsiiProxy_ConfigOrganizationConformancePack) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ConfigOrganizationConformancePack) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -498,8 +498,8 @@ func (j *jsiiProxy_ConfigOrganizationConformancePack) Timeouts() ConfigOrganizat
 	return returns
 }
 
-func (j *jsiiProxy_ConfigOrganizationConformancePack) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConfigOrganizationConformancePack) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -507,7 +507,6 @@ func (j *jsiiProxy_ConfigOrganizationConformancePack) TimeoutsInput() interface{
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/config_organization_conformance_pack aws_config_organization_conformance_pack} Resource.
 func NewConfigOrganizationConformancePack(scope constructs.Construct, id *string, config *ConfigOrganizationConformancePackConfig) ConfigOrganizationConformancePack {
@@ -520,7 +519,7 @@ func NewConfigOrganizationConformancePack(scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePack",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -533,12 +532,12 @@ func NewConfigOrganizationConformancePack_Override(c ConfigOrganizationConforman
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePack",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ConfigOrganizationConformancePack)SetConnection(val interface{}) {
+func (j *jsiiProxy_ConfigOrganizationConformancePack) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -549,7 +548,7 @@ func (j *jsiiProxy_ConfigOrganizationConformancePack)SetConnection(val interface
 	)
 }
 
-func (j *jsiiProxy_ConfigOrganizationConformancePack)SetCount(val interface{}) {
+func (j *jsiiProxy_ConfigOrganizationConformancePack) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -560,7 +559,7 @@ func (j *jsiiProxy_ConfigOrganizationConformancePack)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ConfigOrganizationConformancePack)SetDeliveryS3Bucket(val *string) {
+func (j *jsiiProxy_ConfigOrganizationConformancePack) SetDeliveryS3Bucket(val *string) {
 	if err := j.validateSetDeliveryS3BucketParameters(val); err != nil {
 		panic(err)
 	}
@@ -571,7 +570,7 @@ func (j *jsiiProxy_ConfigOrganizationConformancePack)SetDeliveryS3Bucket(val *st
 	)
 }
 
-func (j *jsiiProxy_ConfigOrganizationConformancePack)SetDeliveryS3KeyPrefix(val *string) {
+func (j *jsiiProxy_ConfigOrganizationConformancePack) SetDeliveryS3KeyPrefix(val *string) {
 	if err := j.validateSetDeliveryS3KeyPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -582,7 +581,7 @@ func (j *jsiiProxy_ConfigOrganizationConformancePack)SetDeliveryS3KeyPrefix(val 
 	)
 }
 
-func (j *jsiiProxy_ConfigOrganizationConformancePack)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ConfigOrganizationConformancePack) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -590,7 +589,7 @@ func (j *jsiiProxy_ConfigOrganizationConformancePack)SetDependsOn(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_ConfigOrganizationConformancePack)SetExcludedAccounts(val *[]*string) {
+func (j *jsiiProxy_ConfigOrganizationConformancePack) SetExcludedAccounts(val *[]*string) {
 	if err := j.validateSetExcludedAccountsParameters(val); err != nil {
 		panic(err)
 	}
@@ -601,7 +600,7 @@ func (j *jsiiProxy_ConfigOrganizationConformancePack)SetExcludedAccounts(val *[]
 	)
 }
 
-func (j *jsiiProxy_ConfigOrganizationConformancePack)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ConfigOrganizationConformancePack) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -609,7 +608,7 @@ func (j *jsiiProxy_ConfigOrganizationConformancePack)SetForEach(val cdktf.ITerra
 	)
 }
 
-func (j *jsiiProxy_ConfigOrganizationConformancePack)SetId(val *string) {
+func (j *jsiiProxy_ConfigOrganizationConformancePack) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -620,7 +619,7 @@ func (j *jsiiProxy_ConfigOrganizationConformancePack)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ConfigOrganizationConformancePack)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ConfigOrganizationConformancePack) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -631,7 +630,7 @@ func (j *jsiiProxy_ConfigOrganizationConformancePack)SetLifecycle(val *cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_ConfigOrganizationConformancePack)SetName(val *string) {
+func (j *jsiiProxy_ConfigOrganizationConformancePack) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -642,7 +641,7 @@ func (j *jsiiProxy_ConfigOrganizationConformancePack)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ConfigOrganizationConformancePack)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ConfigOrganizationConformancePack) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -650,7 +649,7 @@ func (j *jsiiProxy_ConfigOrganizationConformancePack)SetProvider(val cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_ConfigOrganizationConformancePack)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ConfigOrganizationConformancePack) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -661,7 +660,7 @@ func (j *jsiiProxy_ConfigOrganizationConformancePack)SetProvisioners(val *[]inte
 	)
 }
 
-func (j *jsiiProxy_ConfigOrganizationConformancePack)SetTemplateBody(val *string) {
+func (j *jsiiProxy_ConfigOrganizationConformancePack) SetTemplateBody(val *string) {
 	if err := j.validateSetTemplateBodyParameters(val); err != nil {
 		panic(err)
 	}
@@ -672,7 +671,7 @@ func (j *jsiiProxy_ConfigOrganizationConformancePack)SetTemplateBody(val *string
 	)
 }
 
-func (j *jsiiProxy_ConfigOrganizationConformancePack)SetTemplateS3Uri(val *string) {
+func (j *jsiiProxy_ConfigOrganizationConformancePack) SetTemplateS3Uri(val *string) {
 	if err := j.validateSetTemplateS3UriParameters(val); err != nil {
 		panic(err)
 	}
@@ -695,7 +694,7 @@ func ConfigOrganizationConformancePack_GenerateConfigForImport(scope constructs.
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePack",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func ConfigOrganizationConformancePack_GenerateConfigForImport(scope constructs.
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ConfigOrganizationConformancePack_IsConstruct(x interface{}) *bool {
+func ConfigOrganizationConformancePack_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateConfigOrganizationConformancePack_IsConstructParameters(x); err != nil {
@@ -730,7 +729,7 @@ func ConfigOrganizationConformancePack_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePack",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -738,7 +737,7 @@ func ConfigOrganizationConformancePack_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ConfigOrganizationConformancePack_IsTerraformElement(x interface{}) *bool {
+func ConfigOrganizationConformancePack_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateConfigOrganizationConformancePack_IsTerraformElementParameters(x); err != nil {
@@ -749,7 +748,7 @@ func ConfigOrganizationConformancePack_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePack",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -757,7 +756,7 @@ func ConfigOrganizationConformancePack_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ConfigOrganizationConformancePack_IsTerraformResource(x interface{}) *bool {
+func ConfigOrganizationConformancePack_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateConfigOrganizationConformancePack_IsTerraformResourceParameters(x); err != nil {
@@ -768,7 +767,7 @@ func ConfigOrganizationConformancePack_IsTerraformResource(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePack",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -793,31 +792,31 @@ func (c *jsiiProxy_ConfigOrganizationConformancePack) AddMoveTarget(moveTarget *
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ConfigOrganizationConformancePack) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ConfigOrganizationConformancePack) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ConfigOrganizationConformancePack) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ConfigOrganizationConformancePack) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (c *jsiiProxy_ConfigOrganizationConformancePack) GetBooleanAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,7 +848,7 @@ func (c *jsiiProxy_ConfigOrganizationConformancePack) GetBooleanMapAttribute(ter
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -865,7 +864,7 @@ func (c *jsiiProxy_ConfigOrganizationConformancePack) GetListAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -881,7 +880,7 @@ func (c *jsiiProxy_ConfigOrganizationConformancePack) GetNumberAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -897,7 +896,7 @@ func (c *jsiiProxy_ConfigOrganizationConformancePack) GetNumberListAttribute(ter
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -913,7 +912,7 @@ func (c *jsiiProxy_ConfigOrganizationConformancePack) GetNumberMapAttribute(terr
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -929,7 +928,7 @@ func (c *jsiiProxy_ConfigOrganizationConformancePack) GetStringAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -945,15 +944,15 @@ func (c *jsiiProxy_ConfigOrganizationConformancePack) GetStringMapAttribute(terr
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ConfigOrganizationConformancePack) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ConfigOrganizationConformancePack) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -972,7 +971,7 @@ func (c *jsiiProxy_ConfigOrganizationConformancePack) ImportFrom(id *string, pro
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -985,7 +984,7 @@ func (c *jsiiProxy_ConfigOrganizationConformancePack) InterpolationForAttribute(
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -999,18 +998,18 @@ func (c *jsiiProxy_ConfigOrganizationConformancePack) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ConfigOrganizationConformancePack) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ConfigOrganizationConformancePack) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1021,7 +1020,7 @@ func (c *jsiiProxy_ConfigOrganizationConformancePack) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1032,18 +1031,18 @@ func (c *jsiiProxy_ConfigOrganizationConformancePack) OverrideLogicalId(newLogic
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (c *jsiiProxy_ConfigOrganizationConformancePack) PutInputParameter(value interface{}) {
+func (c *jsiiProxy_ConfigOrganizationConformancePack) PutInputParameter(value any) {
 	if err := c.validatePutInputParameterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putInputParameter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1054,7 +1053,7 @@ func (c *jsiiProxy_ConfigOrganizationConformancePack) PutTimeouts(value *ConfigO
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1130,8 +1129,8 @@ func (c *jsiiProxy_ConfigOrganizationConformancePack) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_ConfigOrganizationConformancePack) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ConfigOrganizationConformancePack) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1143,8 +1142,8 @@ func (c *jsiiProxy_ConfigOrganizationConformancePack) SynthesizeAttributes() *ma
 	return returns
 }
 
-func (c *jsiiProxy_ConfigOrganizationConformancePack) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ConfigOrganizationConformancePack) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1156,8 +1155,8 @@ func (c *jsiiProxy_ConfigOrganizationConformancePack) SynthesizeHclAttributes() 
 	return returns
 }
 
-func (c *jsiiProxy_ConfigOrganizationConformancePack) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ConfigOrganizationConformancePack) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1169,8 +1168,8 @@ func (c *jsiiProxy_ConfigOrganizationConformancePack) ToHclTerraform() interface
 	return returns
 }
 
-func (c *jsiiProxy_ConfigOrganizationConformancePack) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ConfigOrganizationConformancePack) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1195,8 +1194,8 @@ func (c *jsiiProxy_ConfigOrganizationConformancePack) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ConfigOrganizationConformancePack) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ConfigOrganizationConformancePack) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1207,4 +1206,3 @@ func (c *jsiiProxy_ConfigOrganizationConformancePack) ToTerraform() interface{} 
 
 	return returns
 }
-

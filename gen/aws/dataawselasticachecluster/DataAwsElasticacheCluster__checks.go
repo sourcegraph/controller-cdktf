@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsElasticacheCluster) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsElasticacheCluster) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataAwsElasticacheCluster_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateDataAwsElasticacheCluster_IsConstructParameters(x interface{}) error {
+func validateDataAwsElasticacheCluster_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataAwsElasticacheCluster_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateDataAwsElasticacheCluster_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsElasticacheCluster_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataAwsElasticacheCluster_IsTerraformDataSourceParameters(x interfa
 	return nil
 }
 
-func validateDataAwsElasticacheCluster_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsElasticacheCluster_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataAwsElasticacheCluster) validateSetClusterIdParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsElasticacheCluster) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsElasticacheCluster) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -258,4 +258,3 @@ func validateNewDataAwsElasticacheClusterParameters(scope constructs.Construct, 
 
 	return nil
 }
-

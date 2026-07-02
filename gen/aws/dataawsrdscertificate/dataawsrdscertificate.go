@@ -17,11 +17,11 @@ type DataAwsRdsCertificate interface {
 	CdktfStack() cdktf.TerraformStack
 	CertificateType() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CustomerOverride() cdktf.IResolvable
 	CustomerOverrideValidTill() *string
 	// Experimental.
@@ -39,9 +39,9 @@ type DataAwsRdsCertificate interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	LatestValidTill() interface{}
-	SetLatestValidTill(val interface{})
-	LatestValidTillInput() interface{}
+	LatestValidTill() any
+	SetLatestValidTill(val any)
+	LatestValidTillInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -53,20 +53,20 @@ type DataAwsRdsCertificate interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Thumbprint() *string
 	ValidFrom() *string
 	ValidTill() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -93,18 +93,18 @@ type DataAwsRdsCertificate interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsRdsCertificate
@@ -142,8 +142,8 @@ func (j *jsiiProxy_DataAwsRdsCertificate) CertificateType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRdsCertificate) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsRdsCertificate) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_DataAwsRdsCertificate) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRdsCertificate) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsRdsCertificate) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -242,8 +242,8 @@ func (j *jsiiProxy_DataAwsRdsCertificate) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRdsCertificate) LatestValidTill() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsRdsCertificate) LatestValidTill() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"latestValidTill",
@@ -252,8 +252,8 @@ func (j *jsiiProxy_DataAwsRdsCertificate) LatestValidTill() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRdsCertificate) LatestValidTillInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsRdsCertificate) LatestValidTillInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"latestValidTillInput",
@@ -292,8 +292,8 @@ func (j *jsiiProxy_DataAwsRdsCertificate) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRdsCertificate) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsRdsCertificate) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -312,8 +312,8 @@ func (j *jsiiProxy_DataAwsRdsCertificate) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRdsCertificate) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsRdsCertificate) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -362,7 +362,6 @@ func (j *jsiiProxy_DataAwsRdsCertificate) ValidTill() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/rds_certificate aws_rds_certificate} Data Source.
 func NewDataAwsRdsCertificate(scope constructs.Construct, id *string, config *DataAwsRdsCertificateConfig) DataAwsRdsCertificate {
 	_init_.Initialize()
@@ -374,7 +373,7 @@ func NewDataAwsRdsCertificate(scope constructs.Construct, id *string, config *Da
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsRdsCertificate.DataAwsRdsCertificate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -387,12 +386,12 @@ func NewDataAwsRdsCertificate_Override(d DataAwsRdsCertificate, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsRdsCertificate.DataAwsRdsCertificate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsRdsCertificate)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsRdsCertificate) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -403,7 +402,7 @@ func (j *jsiiProxy_DataAwsRdsCertificate)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRdsCertificate)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsRdsCertificate) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -411,7 +410,7 @@ func (j *jsiiProxy_DataAwsRdsCertificate)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRdsCertificate)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsRdsCertificate) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -419,7 +418,7 @@ func (j *jsiiProxy_DataAwsRdsCertificate)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_DataAwsRdsCertificate)SetId(val *string) {
+func (j *jsiiProxy_DataAwsRdsCertificate) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_DataAwsRdsCertificate)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRdsCertificate)SetLatestValidTill(val interface{}) {
+func (j *jsiiProxy_DataAwsRdsCertificate) SetLatestValidTill(val any) {
 	if err := j.validateSetLatestValidTillParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_DataAwsRdsCertificate)SetLatestValidTill(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRdsCertificate)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsRdsCertificate) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_DataAwsRdsCertificate)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_DataAwsRdsCertificate)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsRdsCertificate) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -472,7 +471,7 @@ func DataAwsRdsCertificate_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsRdsCertificate.DataAwsRdsCertificate",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -496,7 +495,7 @@ func DataAwsRdsCertificate_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsRdsCertificate_IsConstruct(x interface{}) *bool {
+func DataAwsRdsCertificate_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsRdsCertificate_IsConstructParameters(x); err != nil {
@@ -507,7 +506,7 @@ func DataAwsRdsCertificate_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsRdsCertificate.DataAwsRdsCertificate",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -515,7 +514,7 @@ func DataAwsRdsCertificate_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsRdsCertificate_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsRdsCertificate_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsRdsCertificate_IsTerraformDataSourceParameters(x); err != nil {
@@ -526,7 +525,7 @@ func DataAwsRdsCertificate_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsRdsCertificate.DataAwsRdsCertificate",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -534,7 +533,7 @@ func DataAwsRdsCertificate_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsRdsCertificate_IsTerraformElement(x interface{}) *bool {
+func DataAwsRdsCertificate_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsRdsCertificate_IsTerraformElementParameters(x); err != nil {
@@ -545,7 +544,7 @@ func DataAwsRdsCertificate_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsRdsCertificate.DataAwsRdsCertificate",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -563,27 +562,27 @@ func DataAwsRdsCertificate_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRdsCertificate) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsRdsCertificate) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsRdsCertificate) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsRdsCertificate) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -599,7 +598,7 @@ func (d *jsiiProxy_DataAwsRdsCertificate) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -615,7 +614,7 @@ func (d *jsiiProxy_DataAwsRdsCertificate) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -631,7 +630,7 @@ func (d *jsiiProxy_DataAwsRdsCertificate) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -647,7 +646,7 @@ func (d *jsiiProxy_DataAwsRdsCertificate) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -663,7 +662,7 @@ func (d *jsiiProxy_DataAwsRdsCertificate) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func (d *jsiiProxy_DataAwsRdsCertificate) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func (d *jsiiProxy_DataAwsRdsCertificate) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -711,7 +710,7 @@ func (d *jsiiProxy_DataAwsRdsCertificate) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func (d *jsiiProxy_DataAwsRdsCertificate) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -741,7 +740,7 @@ func (d *jsiiProxy_DataAwsRdsCertificate) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -769,8 +768,8 @@ func (d *jsiiProxy_DataAwsRdsCertificate) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsRdsCertificate) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsRdsCertificate) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -782,8 +781,8 @@ func (d *jsiiProxy_DataAwsRdsCertificate) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRdsCertificate) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsRdsCertificate) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -795,8 +794,8 @@ func (d *jsiiProxy_DataAwsRdsCertificate) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRdsCertificate) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsRdsCertificate) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -808,8 +807,8 @@ func (d *jsiiProxy_DataAwsRdsCertificate) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRdsCertificate) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsRdsCertificate) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -834,8 +833,8 @@ func (d *jsiiProxy_DataAwsRdsCertificate) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRdsCertificate) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsRdsCertificate) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -846,4 +845,3 @@ func (d *jsiiProxy_DataAwsRdsCertificate) ToTerraform() interface{} {
 
 	return returns
 }
-

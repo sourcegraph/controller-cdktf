@@ -98,7 +98,7 @@ func (e *jsiiProxy_EcsClusterSettingOutputReference) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_EcsClusterSettingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EcsClusterSettingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_EcsClusterSettingOutputReference) validateSetComplexObjectIsF
 	return nil
 }
 
-func (j *jsiiProxy_EcsClusterSettingOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EcsClusterSettingOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewEcsClusterSettingOutputReferenceParameters(terraformResource cdk
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type MemorydbParameterGroupParameterOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type MemorydbParameterGroupParameterOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -46,7 +46,7 @@ type MemorydbParameterGroupParameterOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,7 +69,7 @@ type MemorydbParameterGroupParameterOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,8 +82,8 @@ type jsiiProxy_MemorydbParameterGroupParameterOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_MemorydbParameterGroupParameterOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MemorydbParameterGroupParameterOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -122,8 +122,8 @@ func (j *jsiiProxy_MemorydbParameterGroupParameterOutputReference) Fqn() *string
 	return returns
 }
 
-func (j *jsiiProxy_MemorydbParameterGroupParameterOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MemorydbParameterGroupParameterOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_MemorydbParameterGroupParameterOutputReference) ValueInput() 
 	return returns
 }
 
-
 func NewMemorydbParameterGroupParameterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MemorydbParameterGroupParameterOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewMemorydbParameterGroupParameterOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.memorydbParameterGroup.MemorydbParameterGroupParameterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewMemorydbParameterGroupParameterOutputReference_Override(m MemorydbParame
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.memorydbParameterGroup.MemorydbParameterGroupParameterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MemorydbParameterGroupParameterOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MemorydbParameterGroupParameterOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_MemorydbParameterGroupParameterOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_MemorydbParameterGroupParameterOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MemorydbParameterGroupParameterOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_MemorydbParameterGroupParameterOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_MemorydbParameterGroupParameterOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MemorydbParameterGroupParameterOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_MemorydbParameterGroupParameterOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_MemorydbParameterGroupParameterOutputReference)SetName(val *string) {
+func (j *jsiiProxy_MemorydbParameterGroupParameterOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_MemorydbParameterGroupParameterOutputReference)SetName(val *s
 	)
 }
 
-func (j *jsiiProxy_MemorydbParameterGroupParameterOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MemorydbParameterGroupParameterOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_MemorydbParameterGroupParameterOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_MemorydbParameterGroupParameterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MemorydbParameterGroupParameterOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -286,7 +285,7 @@ func (j *jsiiProxy_MemorydbParameterGroupParameterOutputReference)SetTerraformRe
 	)
 }
 
-func (j *jsiiProxy_MemorydbParameterGroupParameterOutputReference)SetValue(val *string) {
+func (j *jsiiProxy_MemorydbParameterGroupParameterOutputReference) SetValue(val *string) {
 	if err := j.validateSetValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,16 +309,16 @@ func (m *jsiiProxy_MemorydbParameterGroupParameterOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (m *jsiiProxy_MemorydbParameterGroupParameterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MemorydbParameterGroupParameterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -335,7 +334,7 @@ func (m *jsiiProxy_MemorydbParameterGroupParameterOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -351,7 +350,7 @@ func (m *jsiiProxy_MemorydbParameterGroupParameterOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -367,7 +366,7 @@ func (m *jsiiProxy_MemorydbParameterGroupParameterOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -383,7 +382,7 @@ func (m *jsiiProxy_MemorydbParameterGroupParameterOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -399,7 +398,7 @@ func (m *jsiiProxy_MemorydbParameterGroupParameterOutputReference) GetNumberList
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -415,7 +414,7 @@ func (m *jsiiProxy_MemorydbParameterGroupParameterOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (m *jsiiProxy_MemorydbParameterGroupParameterOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (m *jsiiProxy_MemorydbParameterGroupParameterOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,23 +475,23 @@ func (m *jsiiProxy_MemorydbParameterGroupParameterOutputReference) Interpolation
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MemorydbParameterGroupParameterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MemorydbParameterGroupParameterOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -511,4 +510,3 @@ func (m *jsiiProxy_MemorydbParameterGroupParameterOutputReference) ToString() *s
 
 	return returns
 }
-

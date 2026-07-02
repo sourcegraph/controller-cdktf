@@ -1,6 +1,5 @@
 package evidentlylaunch
 
-
 type EvidentlyLaunchScheduledSplitsConfigSteps struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/evidently_launch#group_weights EvidentlyLaunch#group_weights}.
 	GroupWeights *map[string]*float64 `field:"required" json:"groupWeights" yaml:"groupWeights"`
@@ -9,6 +8,5 @@ type EvidentlyLaunchScheduledSplitsConfigSteps struct {
 	// segment_overrides block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/evidently_launch#segment_overrides EvidentlyLaunch#segment_overrides}
-	SegmentOverrides interface{} `field:"optional" json:"segmentOverrides" yaml:"segmentOverrides"`
+	SegmentOverrides any `field:"optional" json:"segmentOverrides" yaml:"segmentOverrides"`
 }
-

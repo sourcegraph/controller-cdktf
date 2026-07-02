@@ -98,7 +98,7 @@ func (f *jsiiProxy_FsxOpenzfsVolumeUserAndGroupQuotasOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_FsxOpenzfsVolumeUserAndGroupQuotasOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FsxOpenzfsVolumeUserAndGroupQuotasOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_FsxOpenzfsVolumeUserAndGroupQuotasOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_FsxOpenzfsVolumeUserAndGroupQuotasOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FsxOpenzfsVolumeUserAndGroupQuotasOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewFsxOpenzfsVolumeUserAndGroupQuotasOutputReferenceParameters(terr
 
 	return nil
 }
-

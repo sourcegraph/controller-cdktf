@@ -12,9 +12,9 @@ type InstanceNetworkInterfaceOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,16 +25,16 @@ type InstanceNetworkInterfaceOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DeleteOnTermination() interface{}
-	SetDeleteOnTermination(val interface{})
-	DeleteOnTerminationInput() interface{}
+	DeleteOnTermination() any
+	SetDeleteOnTermination(val any)
+	DeleteOnTerminationInput() any
 	DeviceIndex() *float64
 	SetDeviceIndex(val *float64)
 	DeviceIndexInput() *float64
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	NetworkCardIndex() *float64
 	SetNetworkCardIndex(val *float64)
 	NetworkCardIndexInput() *float64
@@ -52,7 +52,7 @@ type InstanceNetworkInterfaceOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -77,7 +77,7 @@ type InstanceNetworkInterfaceOutputReference interface {
 	ResetNetworkCardIndex()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -90,8 +90,8 @@ type jsiiProxy_InstanceNetworkInterfaceOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_InstanceNetworkInterfaceOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_InstanceNetworkInterfaceOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -120,8 +120,8 @@ func (j *jsiiProxy_InstanceNetworkInterfaceOutputReference) CreationStack() *[]*
 	return returns
 }
 
-func (j *jsiiProxy_InstanceNetworkInterfaceOutputReference) DeleteOnTermination() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_InstanceNetworkInterfaceOutputReference) DeleteOnTermination() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deleteOnTermination",
@@ -130,8 +130,8 @@ func (j *jsiiProxy_InstanceNetworkInterfaceOutputReference) DeleteOnTermination(
 	return returns
 }
 
-func (j *jsiiProxy_InstanceNetworkInterfaceOutputReference) DeleteOnTerminationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_InstanceNetworkInterfaceOutputReference) DeleteOnTerminationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deleteOnTerminationInput",
@@ -170,8 +170,8 @@ func (j *jsiiProxy_InstanceNetworkInterfaceOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_InstanceNetworkInterfaceOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_InstanceNetworkInterfaceOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -240,7 +240,6 @@ func (j *jsiiProxy_InstanceNetworkInterfaceOutputReference) TerraformResource() 
 	return returns
 }
 
-
 func NewInstanceNetworkInterfaceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) InstanceNetworkInterfaceOutputReference {
 	_init_.Initialize()
 
@@ -251,7 +250,7 @@ func NewInstanceNetworkInterfaceOutputReference(terraformResource cdktf.IInterpo
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.instance.InstanceNetworkInterfaceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -263,12 +262,12 @@ func NewInstanceNetworkInterfaceOutputReference_Override(i InstanceNetworkInterf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.instance.InstanceNetworkInterfaceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)
 }
 
-func (j *jsiiProxy_InstanceNetworkInterfaceOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_InstanceNetworkInterfaceOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_InstanceNetworkInterfaceOutputReference)SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_InstanceNetworkInterfaceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_InstanceNetworkInterfaceOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_InstanceNetworkInterfaceOutputReference)SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_InstanceNetworkInterfaceOutputReference)SetDeleteOnTermination(val interface{}) {
+func (j *jsiiProxy_InstanceNetworkInterfaceOutputReference) SetDeleteOnTermination(val any) {
 	if err := j.validateSetDeleteOnTerminationParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_InstanceNetworkInterfaceOutputReference)SetDeleteOnTerminatio
 	)
 }
 
-func (j *jsiiProxy_InstanceNetworkInterfaceOutputReference)SetDeviceIndex(val *float64) {
+func (j *jsiiProxy_InstanceNetworkInterfaceOutputReference) SetDeviceIndex(val *float64) {
 	if err := j.validateSetDeviceIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_InstanceNetworkInterfaceOutputReference)SetDeviceIndex(val *f
 	)
 }
 
-func (j *jsiiProxy_InstanceNetworkInterfaceOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_InstanceNetworkInterfaceOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_InstanceNetworkInterfaceOutputReference)SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_InstanceNetworkInterfaceOutputReference)SetNetworkCardIndex(val *float64) {
+func (j *jsiiProxy_InstanceNetworkInterfaceOutputReference) SetNetworkCardIndex(val *float64) {
 	if err := j.validateSetNetworkCardIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,7 +333,7 @@ func (j *jsiiProxy_InstanceNetworkInterfaceOutputReference)SetNetworkCardIndex(v
 	)
 }
 
-func (j *jsiiProxy_InstanceNetworkInterfaceOutputReference)SetNetworkInterfaceId(val *string) {
+func (j *jsiiProxy_InstanceNetworkInterfaceOutputReference) SetNetworkInterfaceId(val *string) {
 	if err := j.validateSetNetworkInterfaceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,7 +344,7 @@ func (j *jsiiProxy_InstanceNetworkInterfaceOutputReference)SetNetworkInterfaceId
 	)
 }
 
-func (j *jsiiProxy_InstanceNetworkInterfaceOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_InstanceNetworkInterfaceOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -356,7 +355,7 @@ func (j *jsiiProxy_InstanceNetworkInterfaceOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_InstanceNetworkInterfaceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_InstanceNetworkInterfaceOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,16 +379,16 @@ func (i *jsiiProxy_InstanceNetworkInterfaceOutputReference) ComputeFqn() *string
 	return returns
 }
 
-func (i *jsiiProxy_InstanceNetworkInterfaceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_InstanceNetworkInterfaceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -405,7 +404,7 @@ func (i *jsiiProxy_InstanceNetworkInterfaceOutputReference) GetBooleanAttribute(
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -421,7 +420,7 @@ func (i *jsiiProxy_InstanceNetworkInterfaceOutputReference) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -437,7 +436,7 @@ func (i *jsiiProxy_InstanceNetworkInterfaceOutputReference) GetListAttribute(ter
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -453,7 +452,7 @@ func (i *jsiiProxy_InstanceNetworkInterfaceOutputReference) GetNumberAttribute(t
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -469,7 +468,7 @@ func (i *jsiiProxy_InstanceNetworkInterfaceOutputReference) GetNumberListAttribu
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -485,7 +484,7 @@ func (i *jsiiProxy_InstanceNetworkInterfaceOutputReference) GetNumberMapAttribut
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -501,7 +500,7 @@ func (i *jsiiProxy_InstanceNetworkInterfaceOutputReference) GetStringAttribute(t
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -517,7 +516,7 @@ func (i *jsiiProxy_InstanceNetworkInterfaceOutputReference) GetStringMapAttribut
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -546,7 +545,7 @@ func (i *jsiiProxy_InstanceNetworkInterfaceOutputReference) InterpolationForAttr
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -569,16 +568,16 @@ func (i *jsiiProxy_InstanceNetworkInterfaceOutputReference) ResetNetworkCardInde
 	)
 }
 
-func (i *jsiiProxy_InstanceNetworkInterfaceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_InstanceNetworkInterfaceOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -597,4 +596,3 @@ func (i *jsiiProxy_InstanceNetworkInterfaceOutputReference) ToString() *string {
 
 	return returns
 }
-

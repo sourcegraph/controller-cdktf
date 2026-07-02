@@ -98,7 +98,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionFirehoseOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionFirehoseOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRuleErrorActionFirehoseOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewIotTopicRuleErrorActionFirehoseOutputReferenceParameters(terrafo
 
 	return nil
 }
-

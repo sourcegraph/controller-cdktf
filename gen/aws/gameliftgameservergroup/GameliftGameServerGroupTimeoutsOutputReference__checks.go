@@ -98,7 +98,7 @@ func (g *jsiiProxy_GameliftGameServerGroupTimeoutsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_GameliftGameServerGroupTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GameliftGameServerGroupTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GameliftGameServerGroupTimeoutsOutputReference) validateSetDe
 	return nil
 }
 
-func (j *jsiiProxy_GameliftGameServerGroupTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GameliftGameServerGroupTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGameliftGameServerGroupTimeoutsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

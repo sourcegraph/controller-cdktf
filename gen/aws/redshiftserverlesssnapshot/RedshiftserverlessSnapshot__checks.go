@@ -19,7 +19,7 @@ func (r *jsiiProxy_RedshiftserverlessSnapshot) validateAddMoveTargetParameters(m
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftserverlessSnapshot) validateAddOverrideParameters(path *string, value interface{}) error {
+func (r *jsiiProxy_RedshiftserverlessSnapshot) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (r *jsiiProxy_RedshiftserverlessSnapshot) validateMoveFromIdParameters(id *
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftserverlessSnapshot) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (r *jsiiProxy_RedshiftserverlessSnapshot) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateRedshiftserverlessSnapshot_GenerateConfigForImportParameters(scope 
 	return nil
 }
 
-func validateRedshiftserverlessSnapshot_IsConstructParameters(x interface{}) error {
+func validateRedshiftserverlessSnapshot_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateRedshiftserverlessSnapshot_IsConstructParameters(x interface{}) err
 	return nil
 }
 
-func validateRedshiftserverlessSnapshot_IsTerraformElementParameters(x interface{}) error {
+func validateRedshiftserverlessSnapshot_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateRedshiftserverlessSnapshot_IsTerraformElementParameters(x interface
 	return nil
 }
 
-func validateRedshiftserverlessSnapshot_IsTerraformResourceParameters(x interface{}) error {
+func validateRedshiftserverlessSnapshot_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateRedshiftserverlessSnapshot_IsTerraformResourceParameters(x interfac
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftserverlessSnapshot) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftserverlessSnapshot) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_RedshiftserverlessSnapshot) validateSetConnectionParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftserverlessSnapshot) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftserverlessSnapshot) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -358,7 +358,7 @@ func (j *jsiiProxy_RedshiftserverlessSnapshot) validateSetNamespaceNameParameter
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftserverlessSnapshot) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_RedshiftserverlessSnapshot) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -438,4 +438,3 @@ func validateNewRedshiftserverlessSnapshotParameters(scope constructs.Construct,
 
 	return nil
 }
-

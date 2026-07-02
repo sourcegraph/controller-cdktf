@@ -34,7 +34,7 @@ func (a *jsiiProxy_AppmeshVirtualGatewaySpecListenerList) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshVirtualGatewaySpecListenerList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshVirtualGatewaySpecListenerList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAppmeshVirtualGatewaySpecListenerListParameters(terraformResourc
 
 	return nil
 }
-

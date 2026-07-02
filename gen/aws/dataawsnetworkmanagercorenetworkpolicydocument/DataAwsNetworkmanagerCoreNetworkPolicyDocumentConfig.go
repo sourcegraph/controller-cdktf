@@ -6,9 +6,9 @@ import (
 
 type DataAwsNetworkmanagerCoreNetworkPolicyDocumentConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,19 +18,19 @@ type DataAwsNetworkmanagerCoreNetworkPolicyDocumentConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// core_network_configuration block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/networkmanager_core_network_policy_document#core_network_configuration DataAwsNetworkmanagerCoreNetworkPolicyDocument#core_network_configuration}
-	CoreNetworkConfiguration interface{} `field:"required" json:"coreNetworkConfiguration" yaml:"coreNetworkConfiguration"`
+	CoreNetworkConfiguration any `field:"required" json:"coreNetworkConfiguration" yaml:"coreNetworkConfiguration"`
 	// segments block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/networkmanager_core_network_policy_document#segments DataAwsNetworkmanagerCoreNetworkPolicyDocument#segments}
-	Segments interface{} `field:"required" json:"segments" yaml:"segments"`
+	Segments any `field:"required" json:"segments" yaml:"segments"`
 	// attachment_policies block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/networkmanager_core_network_policy_document#attachment_policies DataAwsNetworkmanagerCoreNetworkPolicyDocument#attachment_policies}
-	AttachmentPolicies interface{} `field:"optional" json:"attachmentPolicies" yaml:"attachmentPolicies"`
+	AttachmentPolicies any `field:"optional" json:"attachmentPolicies" yaml:"attachmentPolicies"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/networkmanager_core_network_policy_document#id DataAwsNetworkmanagerCoreNetworkPolicyDocument#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -39,8 +39,7 @@ type DataAwsNetworkmanagerCoreNetworkPolicyDocumentConfig struct {
 	// segment_actions block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/networkmanager_core_network_policy_document#segment_actions DataAwsNetworkmanagerCoreNetworkPolicyDocument#segment_actions}
-	SegmentActions interface{} `field:"optional" json:"segmentActions" yaml:"segmentActions"`
+	SegmentActions any `field:"optional" json:"segmentActions" yaml:"segmentActions"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/networkmanager_core_network_policy_document#version DataAwsNetworkmanagerCoreNetworkPolicyDocument#version}.
 	Version *string `field:"optional" json:"version" yaml:"version"`
 }
-

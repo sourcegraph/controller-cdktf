@@ -98,7 +98,7 @@ func (k *jsiiProxy_KendraDataSourceConfigurationS3ConfigurationAccessControlList
 	return nil
 }
 
-func (j *jsiiProxy_KendraDataSourceConfigurationS3ConfigurationAccessControlListConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KendraDataSourceConfigurationS3ConfigurationAccessControlListConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewKendraDataSourceConfigurationS3ConfigurationAccessControlListCon
 
 	return nil
 }
-

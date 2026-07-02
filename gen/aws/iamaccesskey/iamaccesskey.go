@@ -15,15 +15,15 @@ type IamAccessKey interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateDate() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -57,11 +57,11 @@ type IamAccessKey interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Secret() *string
 	SesSmtpPasswordV4() *string
 	Status() *string
@@ -70,7 +70,7 @@ type IamAccessKey interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	User() *string
@@ -80,9 +80,9 @@ type IamAccessKey interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,7 +100,7 @@ type IamAccessKey interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -112,7 +112,7 @@ type IamAccessKey interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -125,17 +125,17 @@ type IamAccessKey interface {
 	ResetOverrideLogicalId()
 	ResetPgpKey()
 	ResetStatus()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for IamAccessKey
@@ -153,8 +153,8 @@ func (j *jsiiProxy_IamAccessKey) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_IamAccessKey) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamAccessKey) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_IamAccessKey) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IamAccessKey) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IamAccessKey) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -173,8 +173,8 @@ func (j *jsiiProxy_IamAccessKey) ConstructNodeMetadata() *map[string]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_IamAccessKey) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamAccessKey) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -333,8 +333,8 @@ func (j *jsiiProxy_IamAccessKey) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_IamAccessKey) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_IamAccessKey) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -343,8 +343,8 @@ func (j *jsiiProxy_IamAccessKey) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IamAccessKey) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamAccessKey) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -403,8 +403,8 @@ func (j *jsiiProxy_IamAccessKey) TerraformGeneratorMetadata() *cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_IamAccessKey) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IamAccessKey) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -443,7 +443,6 @@ func (j *jsiiProxy_IamAccessKey) UserInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/iam_access_key aws_iam_access_key} Resource.
 func NewIamAccessKey(scope constructs.Construct, id *string, config *IamAccessKeyConfig) IamAccessKey {
 	_init_.Initialize()
@@ -455,7 +454,7 @@ func NewIamAccessKey(scope constructs.Construct, id *string, config *IamAccessKe
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iamAccessKey.IamAccessKey",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -468,12 +467,12 @@ func NewIamAccessKey_Override(i IamAccessKey, scope constructs.Construct, id *st
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iamAccessKey.IamAccessKey",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IamAccessKey)SetConnection(val interface{}) {
+func (j *jsiiProxy_IamAccessKey) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -484,7 +483,7 @@ func (j *jsiiProxy_IamAccessKey)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IamAccessKey)SetCount(val interface{}) {
+func (j *jsiiProxy_IamAccessKey) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -495,7 +494,7 @@ func (j *jsiiProxy_IamAccessKey)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IamAccessKey)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_IamAccessKey) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -503,7 +502,7 @@ func (j *jsiiProxy_IamAccessKey)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IamAccessKey)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IamAccessKey) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -511,7 +510,7 @@ func (j *jsiiProxy_IamAccessKey)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_IamAccessKey)SetId(val *string) {
+func (j *jsiiProxy_IamAccessKey) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_IamAccessKey)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IamAccessKey)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IamAccessKey) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_IamAccessKey)SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_IamAccessKey)SetPgpKey(val *string) {
+func (j *jsiiProxy_IamAccessKey) SetPgpKey(val *string) {
 	if err := j.validateSetPgpKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -544,7 +543,7 @@ func (j *jsiiProxy_IamAccessKey)SetPgpKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IamAccessKey)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IamAccessKey) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -552,7 +551,7 @@ func (j *jsiiProxy_IamAccessKey)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_IamAccessKey)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_IamAccessKey) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -563,7 +562,7 @@ func (j *jsiiProxy_IamAccessKey)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IamAccessKey)SetStatus(val *string) {
+func (j *jsiiProxy_IamAccessKey) SetStatus(val *string) {
 	if err := j.validateSetStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -574,7 +573,7 @@ func (j *jsiiProxy_IamAccessKey)SetStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IamAccessKey)SetUser(val *string) {
+func (j *jsiiProxy_IamAccessKey) SetUser(val *string) {
 	if err := j.validateSetUserParameters(val); err != nil {
 		panic(err)
 	}
@@ -597,7 +596,7 @@ func IamAccessKey_GenerateConfigForImport(scope constructs.Construct, importToId
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iamAccessKey.IamAccessKey",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -621,7 +620,7 @@ func IamAccessKey_GenerateConfigForImport(scope constructs.Construct, importToId
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func IamAccessKey_IsConstruct(x interface{}) *bool {
+func IamAccessKey_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIamAccessKey_IsConstructParameters(x); err != nil {
@@ -632,7 +631,7 @@ func IamAccessKey_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iamAccessKey.IamAccessKey",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -640,7 +639,7 @@ func IamAccessKey_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func IamAccessKey_IsTerraformElement(x interface{}) *bool {
+func IamAccessKey_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIamAccessKey_IsTerraformElementParameters(x); err != nil {
@@ -651,7 +650,7 @@ func IamAccessKey_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iamAccessKey.IamAccessKey",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func IamAccessKey_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func IamAccessKey_IsTerraformResource(x interface{}) *bool {
+func IamAccessKey_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIamAccessKey_IsTerraformResourceParameters(x); err != nil {
@@ -670,7 +669,7 @@ func IamAccessKey_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iamAccessKey.IamAccessKey",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -695,31 +694,31 @@ func (i *jsiiProxy_IamAccessKey) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (i *jsiiProxy_IamAccessKey) AddOverride(path *string, value interface{}) {
+func (i *jsiiProxy_IamAccessKey) AddOverride(path *string, value any) {
 	if err := i.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (i *jsiiProxy_IamAccessKey) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IamAccessKey) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -735,7 +734,7 @@ func (i *jsiiProxy_IamAccessKey) GetBooleanAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -751,7 +750,7 @@ func (i *jsiiProxy_IamAccessKey) GetBooleanMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -767,7 +766,7 @@ func (i *jsiiProxy_IamAccessKey) GetListAttribute(terraformAttribute *string) *[
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -783,7 +782,7 @@ func (i *jsiiProxy_IamAccessKey) GetNumberAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,7 +798,7 @@ func (i *jsiiProxy_IamAccessKey) GetNumberListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -815,7 +814,7 @@ func (i *jsiiProxy_IamAccessKey) GetNumberMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -831,7 +830,7 @@ func (i *jsiiProxy_IamAccessKey) GetStringAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -847,15 +846,15 @@ func (i *jsiiProxy_IamAccessKey) GetStringMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IamAccessKey) HasResourceMove() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamAccessKey) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -874,7 +873,7 @@ func (i *jsiiProxy_IamAccessKey) ImportFrom(id *string, provider cdktf.Terraform
 	_jsii_.InvokeVoid(
 		i,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -887,7 +886,7 @@ func (i *jsiiProxy_IamAccessKey) InterpolationForAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -901,18 +900,18 @@ func (i *jsiiProxy_IamAccessKey) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (i *jsiiProxy_IamAccessKey) MoveTo(moveTarget *string, index interface{}) {
+func (i *jsiiProxy_IamAccessKey) MoveTo(moveTarget *string, index any) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -923,7 +922,7 @@ func (i *jsiiProxy_IamAccessKey) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -934,7 +933,7 @@ func (i *jsiiProxy_IamAccessKey) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -970,8 +969,8 @@ func (i *jsiiProxy_IamAccessKey) ResetStatus() {
 	)
 }
 
-func (i *jsiiProxy_IamAccessKey) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IamAccessKey) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -983,8 +982,8 @@ func (i *jsiiProxy_IamAccessKey) SynthesizeAttributes() *map[string]interface{} 
 	return returns
 }
 
-func (i *jsiiProxy_IamAccessKey) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IamAccessKey) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -996,8 +995,8 @@ func (i *jsiiProxy_IamAccessKey) SynthesizeHclAttributes() *map[string]interface
 	return returns
 }
 
-func (i *jsiiProxy_IamAccessKey) ToHclTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamAccessKey) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1009,8 +1008,8 @@ func (i *jsiiProxy_IamAccessKey) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IamAccessKey) ToMetadata() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamAccessKey) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1035,8 +1034,8 @@ func (i *jsiiProxy_IamAccessKey) ToString() *string {
 	return returns
 }
 
-func (i *jsiiProxy_IamAccessKey) ToTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamAccessKey) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1047,4 +1046,3 @@ func (i *jsiiProxy_IamAccessKey) ToTerraform() interface{} {
 
 	return returns
 }
-

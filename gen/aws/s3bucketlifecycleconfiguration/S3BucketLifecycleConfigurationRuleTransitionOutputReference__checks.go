@@ -98,7 +98,7 @@ func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleTransitionOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleTransitionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleTransitionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleTransitionOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleTransitionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleTransitionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewS3BucketLifecycleConfigurationRuleTransitionOutputReferenceParam
 
 	return nil
 }
-

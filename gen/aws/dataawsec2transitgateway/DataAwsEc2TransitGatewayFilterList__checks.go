@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayFilterList) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayFilterList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEc2TransitGatewayFilterList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataAwsEc2TransitGatewayFilterListParameters(terraformResource c
 
 	return nil
 }
-

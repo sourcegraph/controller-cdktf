@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsRdsCertificate.DataAwsRdsCertificate",
-		reflect.TypeOf((*DataAwsRdsCertificate)(nil)).Elem(),
+		reflect.TypeFor[DataAwsRdsCertificate](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -58,7 +58,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "validFrom", GoGetter: "ValidFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "validTill", GoGetter: "ValidTill"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsRdsCertificate{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -66,6 +66,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsRdsCertificate.DataAwsRdsCertificateConfig",
-		reflect.TypeOf((*DataAwsRdsCertificateConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsRdsCertificateConfig](),
 	)
 }

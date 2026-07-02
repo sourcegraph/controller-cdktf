@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsAlbListenerDefaultActionOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAlbListenerDefaultActionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsAlbListenerDefaultActionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsAlbListenerDefaultActionOutputReferenceParameters(terrafo
 
 	return nil
 }
-

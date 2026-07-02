@@ -18,15 +18,15 @@ type GuarddutyMember interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -34,9 +34,9 @@ type GuarddutyMember interface {
 	DetectorId() *string
 	SetDetectorId(val *string)
 	DetectorIdInput() *string
-	DisableEmailNotification() interface{}
-	SetDisableEmailNotification(val interface{})
-	DisableEmailNotificationInput() interface{}
+	DisableEmailNotification() any
+	SetDisableEmailNotification(val any)
+	DisableEmailNotificationInput() any
 	Email() *string
 	SetEmail(val *string)
 	EmailInput() *string
@@ -54,9 +54,9 @@ type GuarddutyMember interface {
 	InvitationMessage() *string
 	SetInvitationMessage(val *string)
 	InvitationMessageInput() *string
-	Invite() interface{}
-	SetInvite(val interface{})
-	InviteInput() interface{}
+	Invite() any
+	SetInvite(val any)
+	InviteInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -68,27 +68,27 @@ type GuarddutyMember interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RelationshipStatus() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GuarddutyMemberTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -106,7 +106,7 @@ type GuarddutyMember interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -118,7 +118,7 @@ type GuarddutyMember interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -134,17 +134,17 @@ type GuarddutyMember interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GuarddutyMember
@@ -182,8 +182,8 @@ func (j *jsiiProxy_GuarddutyMember) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_GuarddutyMember) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GuarddutyMember) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_GuarddutyMember) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GuarddutyMember) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GuarddutyMember) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_GuarddutyMember) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_GuarddutyMember) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GuarddutyMember) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -242,8 +242,8 @@ func (j *jsiiProxy_GuarddutyMember) DetectorIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GuarddutyMember) DisableEmailNotification() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GuarddutyMember) DisableEmailNotification() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableEmailNotification",
@@ -252,8 +252,8 @@ func (j *jsiiProxy_GuarddutyMember) DisableEmailNotification() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GuarddutyMember) DisableEmailNotificationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GuarddutyMember) DisableEmailNotificationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableEmailNotificationInput",
@@ -352,8 +352,8 @@ func (j *jsiiProxy_GuarddutyMember) InvitationMessageInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GuarddutyMember) Invite() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GuarddutyMember) Invite() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"invite",
@@ -362,8 +362,8 @@ func (j *jsiiProxy_GuarddutyMember) Invite() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GuarddutyMember) InviteInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GuarddutyMember) InviteInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"inviteInput",
@@ -402,8 +402,8 @@ func (j *jsiiProxy_GuarddutyMember) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GuarddutyMember) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GuarddutyMember) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -412,8 +412,8 @@ func (j *jsiiProxy_GuarddutyMember) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GuarddutyMember) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GuarddutyMember) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -442,8 +442,8 @@ func (j *jsiiProxy_GuarddutyMember) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_GuarddutyMember) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GuarddutyMember) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -472,8 +472,8 @@ func (j *jsiiProxy_GuarddutyMember) Timeouts() GuarddutyMemberTimeoutsOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_GuarddutyMember) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GuarddutyMember) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -481,7 +481,6 @@ func (j *jsiiProxy_GuarddutyMember) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/guardduty_member aws_guardduty_member} Resource.
 func NewGuarddutyMember(scope constructs.Construct, id *string, config *GuarddutyMemberConfig) GuarddutyMember {
@@ -494,7 +493,7 @@ func NewGuarddutyMember(scope constructs.Construct, id *string, config *Guarddut
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.guarddutyMember.GuarddutyMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -507,12 +506,12 @@ func NewGuarddutyMember_Override(g GuarddutyMember, scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.guarddutyMember.GuarddutyMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GuarddutyMember)SetAccountId(val *string) {
+func (j *jsiiProxy_GuarddutyMember) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_GuarddutyMember)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GuarddutyMember)SetConnection(val interface{}) {
+func (j *jsiiProxy_GuarddutyMember) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_GuarddutyMember)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GuarddutyMember)SetCount(val interface{}) {
+func (j *jsiiProxy_GuarddutyMember) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_GuarddutyMember)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GuarddutyMember)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GuarddutyMember) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -553,7 +552,7 @@ func (j *jsiiProxy_GuarddutyMember)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GuarddutyMember)SetDetectorId(val *string) {
+func (j *jsiiProxy_GuarddutyMember) SetDetectorId(val *string) {
 	if err := j.validateSetDetectorIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -564,7 +563,7 @@ func (j *jsiiProxy_GuarddutyMember)SetDetectorId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GuarddutyMember)SetDisableEmailNotification(val interface{}) {
+func (j *jsiiProxy_GuarddutyMember) SetDisableEmailNotification(val any) {
 	if err := j.validateSetDisableEmailNotificationParameters(val); err != nil {
 		panic(err)
 	}
@@ -575,7 +574,7 @@ func (j *jsiiProxy_GuarddutyMember)SetDisableEmailNotification(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_GuarddutyMember)SetEmail(val *string) {
+func (j *jsiiProxy_GuarddutyMember) SetEmail(val *string) {
 	if err := j.validateSetEmailParameters(val); err != nil {
 		panic(err)
 	}
@@ -586,7 +585,7 @@ func (j *jsiiProxy_GuarddutyMember)SetEmail(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GuarddutyMember)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GuarddutyMember) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -594,7 +593,7 @@ func (j *jsiiProxy_GuarddutyMember)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_GuarddutyMember)SetId(val *string) {
+func (j *jsiiProxy_GuarddutyMember) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -605,7 +604,7 @@ func (j *jsiiProxy_GuarddutyMember)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GuarddutyMember)SetInvitationMessage(val *string) {
+func (j *jsiiProxy_GuarddutyMember) SetInvitationMessage(val *string) {
 	if err := j.validateSetInvitationMessageParameters(val); err != nil {
 		panic(err)
 	}
@@ -616,7 +615,7 @@ func (j *jsiiProxy_GuarddutyMember)SetInvitationMessage(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GuarddutyMember)SetInvite(val interface{}) {
+func (j *jsiiProxy_GuarddutyMember) SetInvite(val any) {
 	if err := j.validateSetInviteParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func (j *jsiiProxy_GuarddutyMember)SetInvite(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GuarddutyMember)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GuarddutyMember) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -638,7 +637,7 @@ func (j *jsiiProxy_GuarddutyMember)SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_GuarddutyMember)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GuarddutyMember) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -646,7 +645,7 @@ func (j *jsiiProxy_GuarddutyMember)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_GuarddutyMember)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GuarddutyMember) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -669,7 +668,7 @@ func GuarddutyMember_GenerateConfigForImport(scope constructs.Construct, importT
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.guarddutyMember.GuarddutyMember",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -693,7 +692,7 @@ func GuarddutyMember_GenerateConfigForImport(scope constructs.Construct, importT
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GuarddutyMember_IsConstruct(x interface{}) *bool {
+func GuarddutyMember_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGuarddutyMember_IsConstructParameters(x); err != nil {
@@ -704,7 +703,7 @@ func GuarddutyMember_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.guarddutyMember.GuarddutyMember",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -712,7 +711,7 @@ func GuarddutyMember_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GuarddutyMember_IsTerraformElement(x interface{}) *bool {
+func GuarddutyMember_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGuarddutyMember_IsTerraformElementParameters(x); err != nil {
@@ -723,7 +722,7 @@ func GuarddutyMember_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.guarddutyMember.GuarddutyMember",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -731,7 +730,7 @@ func GuarddutyMember_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GuarddutyMember_IsTerraformResource(x interface{}) *bool {
+func GuarddutyMember_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGuarddutyMember_IsTerraformResourceParameters(x); err != nil {
@@ -742,7 +741,7 @@ func GuarddutyMember_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.guarddutyMember.GuarddutyMember",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -767,31 +766,31 @@ func (g *jsiiProxy_GuarddutyMember) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GuarddutyMember) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GuarddutyMember) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GuarddutyMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GuarddutyMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -807,7 +806,7 @@ func (g *jsiiProxy_GuarddutyMember) GetBooleanAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,7 +822,7 @@ func (g *jsiiProxy_GuarddutyMember) GetBooleanMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -839,7 +838,7 @@ func (g *jsiiProxy_GuarddutyMember) GetListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -855,7 +854,7 @@ func (g *jsiiProxy_GuarddutyMember) GetNumberAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -871,7 +870,7 @@ func (g *jsiiProxy_GuarddutyMember) GetNumberListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -887,7 +886,7 @@ func (g *jsiiProxy_GuarddutyMember) GetNumberMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -903,7 +902,7 @@ func (g *jsiiProxy_GuarddutyMember) GetStringAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -919,15 +918,15 @@ func (g *jsiiProxy_GuarddutyMember) GetStringMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GuarddutyMember) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GuarddutyMember) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -946,7 +945,7 @@ func (g *jsiiProxy_GuarddutyMember) ImportFrom(id *string, provider cdktf.Terraf
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -959,7 +958,7 @@ func (g *jsiiProxy_GuarddutyMember) InterpolationForAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -973,18 +972,18 @@ func (g *jsiiProxy_GuarddutyMember) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GuarddutyMember) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GuarddutyMember) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -995,7 +994,7 @@ func (g *jsiiProxy_GuarddutyMember) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1006,7 +1005,7 @@ func (g *jsiiProxy_GuarddutyMember) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1017,7 +1016,7 @@ func (g *jsiiProxy_GuarddutyMember) PutTimeouts(value *GuarddutyMemberTimeouts) 
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1069,8 +1068,8 @@ func (g *jsiiProxy_GuarddutyMember) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GuarddutyMember) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GuarddutyMember) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1082,8 +1081,8 @@ func (g *jsiiProxy_GuarddutyMember) SynthesizeAttributes() *map[string]interface
 	return returns
 }
 
-func (g *jsiiProxy_GuarddutyMember) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GuarddutyMember) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1095,8 +1094,8 @@ func (g *jsiiProxy_GuarddutyMember) SynthesizeHclAttributes() *map[string]interf
 	return returns
 }
 
-func (g *jsiiProxy_GuarddutyMember) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GuarddutyMember) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1108,8 +1107,8 @@ func (g *jsiiProxy_GuarddutyMember) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GuarddutyMember) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GuarddutyMember) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1134,8 +1133,8 @@ func (g *jsiiProxy_GuarddutyMember) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GuarddutyMember) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GuarddutyMember) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1146,4 +1145,3 @@ func (g *jsiiProxy_GuarddutyMember) ToTerraform() interface{} {
 
 	return returns
 }
-

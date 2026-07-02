@@ -14,21 +14,21 @@ type LaunchTemplate interface {
 	cdktf.TerraformResource
 	Arn() *string
 	BlockDeviceMappings() LaunchTemplateBlockDeviceMappingsList
-	BlockDeviceMappingsInput() interface{}
+	BlockDeviceMappingsInput() any
 	CapacityReservationSpecification() LaunchTemplateCapacityReservationSpecificationOutputReference
 	CapacityReservationSpecificationInput() *LaunchTemplateCapacityReservationSpecification
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CpuOptions() LaunchTemplateCpuOptionsOutputReference
 	CpuOptionsInput() *LaunchTemplateCpuOptions
 	CreditSpecification() LaunchTemplateCreditSpecificationOutputReference
@@ -43,17 +43,17 @@ type LaunchTemplate interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	DisableApiStop() interface{}
-	SetDisableApiStop(val interface{})
-	DisableApiStopInput() interface{}
-	DisableApiTermination() interface{}
-	SetDisableApiTermination(val interface{})
-	DisableApiTerminationInput() interface{}
+	DisableApiStop() any
+	SetDisableApiStop(val any)
+	DisableApiStopInput() any
+	DisableApiTermination() any
+	SetDisableApiTermination(val any)
+	DisableApiTerminationInput() any
 	EbsOptimized() *string
 	SetEbsOptimized(val *string)
 	EbsOptimizedInput() *string
 	ElasticGpuSpecifications() LaunchTemplateElasticGpuSpecificationsList
-	ElasticGpuSpecificationsInput() interface{}
+	ElasticGpuSpecificationsInput() any
 	ElasticInferenceAccelerator() LaunchTemplateElasticInferenceAcceleratorOutputReference
 	ElasticInferenceAcceleratorInput() *LaunchTemplateElasticInferenceAccelerator
 	EnclaveOptions() LaunchTemplateEnclaveOptionsOutputReference
@@ -94,7 +94,7 @@ type LaunchTemplate interface {
 	KeyNameInput() *string
 	LatestVersion() *float64
 	LicenseSpecification() LaunchTemplateLicenseSpecificationList
-	LicenseSpecificationInput() interface{}
+	LicenseSpecificationInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -112,7 +112,7 @@ type LaunchTemplate interface {
 	SetNamePrefix(val *string)
 	NamePrefixInput() *string
 	NetworkInterfaces() LaunchTemplateNetworkInterfacesList
-	NetworkInterfacesInput() interface{}
+	NetworkInterfacesInput() any
 	// The tree node.
 	Node() constructs.Node
 	Placement() LaunchTemplatePlacementOutputReference
@@ -124,14 +124,14 @@ type LaunchTemplate interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	RamDiskId() *string
 	SetRamDiskId(val *string)
 	RamDiskIdInput() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SecurityGroupNames() *[]*string
 	SetSecurityGroupNames(val *[]*string)
 	SecurityGroupNamesInput() *[]*string
@@ -142,16 +142,16 @@ type LaunchTemplate interface {
 	TagsAllInput() *map[string]*string
 	TagsInput() *map[string]*string
 	TagSpecifications() LaunchTemplateTagSpecificationsList
-	TagSpecificationsInput() interface{}
+	TagSpecificationsInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
-	UpdateDefaultVersion() interface{}
-	SetUpdateDefaultVersion(val interface{})
-	UpdateDefaultVersionInput() interface{}
+	UpdateDefaultVersion() any
+	SetUpdateDefaultVersion(val any)
+	UpdateDefaultVersionInput() any
 	UserData() *string
 	SetUserData(val *string)
 	UserDataInput() *string
@@ -162,9 +162,9 @@ type LaunchTemplate interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -182,7 +182,7 @@ type LaunchTemplate interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -194,32 +194,32 @@ type LaunchTemplate interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutBlockDeviceMappings(value interface{})
+	PutBlockDeviceMappings(value any)
 	PutCapacityReservationSpecification(value *LaunchTemplateCapacityReservationSpecification)
 	PutCpuOptions(value *LaunchTemplateCpuOptions)
 	PutCreditSpecification(value *LaunchTemplateCreditSpecification)
-	PutElasticGpuSpecifications(value interface{})
+	PutElasticGpuSpecifications(value any)
 	PutElasticInferenceAccelerator(value *LaunchTemplateElasticInferenceAccelerator)
 	PutEnclaveOptions(value *LaunchTemplateEnclaveOptions)
 	PutHibernationOptions(value *LaunchTemplateHibernationOptions)
 	PutIamInstanceProfile(value *LaunchTemplateIamInstanceProfile)
 	PutInstanceMarketOptions(value *LaunchTemplateInstanceMarketOptions)
 	PutInstanceRequirements(value *LaunchTemplateInstanceRequirements)
-	PutLicenseSpecification(value interface{})
+	PutLicenseSpecification(value any)
 	PutMaintenanceOptions(value *LaunchTemplateMaintenanceOptions)
 	PutMetadataOptions(value *LaunchTemplateMetadataOptions)
 	PutMonitoring(value *LaunchTemplateMonitoring)
-	PutNetworkInterfaces(value interface{})
+	PutNetworkInterfaces(value any)
 	PutPlacement(value *LaunchTemplatePlacement)
 	PutPrivateDnsNameOptions(value *LaunchTemplatePrivateDnsNameOptions)
-	PutTagSpecifications(value interface{})
+	PutTagSpecifications(value any)
 	ResetBlockDeviceMappings()
 	ResetCapacityReservationSpecification()
 	ResetCpuOptions()
@@ -262,17 +262,17 @@ type LaunchTemplate interface {
 	ResetUpdateDefaultVersion()
 	ResetUserData()
 	ResetVpcSecurityGroupIds()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for LaunchTemplate
@@ -300,8 +300,8 @@ func (j *jsiiProxy_LaunchTemplate) BlockDeviceMappings() LaunchTemplateBlockDevi
 	return returns
 }
 
-func (j *jsiiProxy_LaunchTemplate) BlockDeviceMappingsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LaunchTemplate) BlockDeviceMappingsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"blockDeviceMappingsInput",
@@ -340,8 +340,8 @@ func (j *jsiiProxy_LaunchTemplate) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_LaunchTemplate) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LaunchTemplate) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -350,8 +350,8 @@ func (j *jsiiProxy_LaunchTemplate) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LaunchTemplate) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LaunchTemplate) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -360,8 +360,8 @@ func (j *jsiiProxy_LaunchTemplate) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_LaunchTemplate) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LaunchTemplate) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -460,8 +460,8 @@ func (j *jsiiProxy_LaunchTemplate) DescriptionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LaunchTemplate) DisableApiStop() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LaunchTemplate) DisableApiStop() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableApiStop",
@@ -470,8 +470,8 @@ func (j *jsiiProxy_LaunchTemplate) DisableApiStop() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LaunchTemplate) DisableApiStopInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LaunchTemplate) DisableApiStopInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableApiStopInput",
@@ -480,8 +480,8 @@ func (j *jsiiProxy_LaunchTemplate) DisableApiStopInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LaunchTemplate) DisableApiTermination() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LaunchTemplate) DisableApiTermination() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableApiTermination",
@@ -490,8 +490,8 @@ func (j *jsiiProxy_LaunchTemplate) DisableApiTermination() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LaunchTemplate) DisableApiTerminationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LaunchTemplate) DisableApiTerminationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableApiTerminationInput",
@@ -530,8 +530,8 @@ func (j *jsiiProxy_LaunchTemplate) ElasticGpuSpecifications() LaunchTemplateElas
 	return returns
 }
 
-func (j *jsiiProxy_LaunchTemplate) ElasticGpuSpecificationsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LaunchTemplate) ElasticGpuSpecificationsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"elasticGpuSpecificationsInput",
@@ -830,8 +830,8 @@ func (j *jsiiProxy_LaunchTemplate) LicenseSpecification() LaunchTemplateLicenseS
 	return returns
 }
 
-func (j *jsiiProxy_LaunchTemplate) LicenseSpecificationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LaunchTemplate) LicenseSpecificationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"licenseSpecificationInput",
@@ -960,8 +960,8 @@ func (j *jsiiProxy_LaunchTemplate) NetworkInterfaces() LaunchTemplateNetworkInte
 	return returns
 }
 
-func (j *jsiiProxy_LaunchTemplate) NetworkInterfacesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LaunchTemplate) NetworkInterfacesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"networkInterfacesInput",
@@ -1030,8 +1030,8 @@ func (j *jsiiProxy_LaunchTemplate) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_LaunchTemplate) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_LaunchTemplate) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -1060,8 +1060,8 @@ func (j *jsiiProxy_LaunchTemplate) RamDiskIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LaunchTemplate) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LaunchTemplate) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -1140,8 +1140,8 @@ func (j *jsiiProxy_LaunchTemplate) TagSpecifications() LaunchTemplateTagSpecific
 	return returns
 }
 
-func (j *jsiiProxy_LaunchTemplate) TagSpecificationsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LaunchTemplate) TagSpecificationsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tagSpecificationsInput",
@@ -1160,8 +1160,8 @@ func (j *jsiiProxy_LaunchTemplate) TerraformGeneratorMetadata() *cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_LaunchTemplate) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LaunchTemplate) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -1180,8 +1180,8 @@ func (j *jsiiProxy_LaunchTemplate) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LaunchTemplate) UpdateDefaultVersion() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LaunchTemplate) UpdateDefaultVersion() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"updateDefaultVersion",
@@ -1190,8 +1190,8 @@ func (j *jsiiProxy_LaunchTemplate) UpdateDefaultVersion() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LaunchTemplate) UpdateDefaultVersionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LaunchTemplate) UpdateDefaultVersionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"updateDefaultVersionInput",
@@ -1240,7 +1240,6 @@ func (j *jsiiProxy_LaunchTemplate) VpcSecurityGroupIdsInput() *[]*string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/launch_template aws_launch_template} Resource.
 func NewLaunchTemplate(scope constructs.Construct, id *string, config *LaunchTemplateConfig) LaunchTemplate {
 	_init_.Initialize()
@@ -1252,7 +1251,7 @@ func NewLaunchTemplate(scope constructs.Construct, id *string, config *LaunchTem
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -1265,12 +1264,12 @@ func NewLaunchTemplate_Override(l LaunchTemplate, scope constructs.Construct, id
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplate)SetConnection(val interface{}) {
+func (j *jsiiProxy_LaunchTemplate) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1281,7 +1280,7 @@ func (j *jsiiProxy_LaunchTemplate)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplate)SetCount(val interface{}) {
+func (j *jsiiProxy_LaunchTemplate) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1292,7 +1291,7 @@ func (j *jsiiProxy_LaunchTemplate)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplate)SetDefaultVersion(val *float64) {
+func (j *jsiiProxy_LaunchTemplate) SetDefaultVersion(val *float64) {
 	if err := j.validateSetDefaultVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1303,7 +1302,7 @@ func (j *jsiiProxy_LaunchTemplate)SetDefaultVersion(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplate)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LaunchTemplate) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1311,7 +1310,7 @@ func (j *jsiiProxy_LaunchTemplate)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplate)SetDescription(val *string) {
+func (j *jsiiProxy_LaunchTemplate) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1322,7 +1321,7 @@ func (j *jsiiProxy_LaunchTemplate)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplate)SetDisableApiStop(val interface{}) {
+func (j *jsiiProxy_LaunchTemplate) SetDisableApiStop(val any) {
 	if err := j.validateSetDisableApiStopParameters(val); err != nil {
 		panic(err)
 	}
@@ -1333,7 +1332,7 @@ func (j *jsiiProxy_LaunchTemplate)SetDisableApiStop(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplate)SetDisableApiTermination(val interface{}) {
+func (j *jsiiProxy_LaunchTemplate) SetDisableApiTermination(val any) {
 	if err := j.validateSetDisableApiTerminationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1344,7 +1343,7 @@ func (j *jsiiProxy_LaunchTemplate)SetDisableApiTermination(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplate)SetEbsOptimized(val *string) {
+func (j *jsiiProxy_LaunchTemplate) SetEbsOptimized(val *string) {
 	if err := j.validateSetEbsOptimizedParameters(val); err != nil {
 		panic(err)
 	}
@@ -1355,7 +1354,7 @@ func (j *jsiiProxy_LaunchTemplate)SetEbsOptimized(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplate)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LaunchTemplate) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1363,7 +1362,7 @@ func (j *jsiiProxy_LaunchTemplate)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplate)SetId(val *string) {
+func (j *jsiiProxy_LaunchTemplate) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1374,7 +1373,7 @@ func (j *jsiiProxy_LaunchTemplate)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplate)SetImageId(val *string) {
+func (j *jsiiProxy_LaunchTemplate) SetImageId(val *string) {
 	if err := j.validateSetImageIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1385,7 +1384,7 @@ func (j *jsiiProxy_LaunchTemplate)SetImageId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplate)SetInstanceInitiatedShutdownBehavior(val *string) {
+func (j *jsiiProxy_LaunchTemplate) SetInstanceInitiatedShutdownBehavior(val *string) {
 	if err := j.validateSetInstanceInitiatedShutdownBehaviorParameters(val); err != nil {
 		panic(err)
 	}
@@ -1396,7 +1395,7 @@ func (j *jsiiProxy_LaunchTemplate)SetInstanceInitiatedShutdownBehavior(val *stri
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplate)SetInstanceType(val *string) {
+func (j *jsiiProxy_LaunchTemplate) SetInstanceType(val *string) {
 	if err := j.validateSetInstanceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1407,7 +1406,7 @@ func (j *jsiiProxy_LaunchTemplate)SetInstanceType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplate)SetKernelId(val *string) {
+func (j *jsiiProxy_LaunchTemplate) SetKernelId(val *string) {
 	if err := j.validateSetKernelIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1418,7 +1417,7 @@ func (j *jsiiProxy_LaunchTemplate)SetKernelId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplate)SetKeyName(val *string) {
+func (j *jsiiProxy_LaunchTemplate) SetKeyName(val *string) {
 	if err := j.validateSetKeyNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1429,7 +1428,7 @@ func (j *jsiiProxy_LaunchTemplate)SetKeyName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplate)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LaunchTemplate) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1440,7 +1439,7 @@ func (j *jsiiProxy_LaunchTemplate)SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplate)SetName(val *string) {
+func (j *jsiiProxy_LaunchTemplate) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1451,7 +1450,7 @@ func (j *jsiiProxy_LaunchTemplate)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplate)SetNamePrefix(val *string) {
+func (j *jsiiProxy_LaunchTemplate) SetNamePrefix(val *string) {
 	if err := j.validateSetNamePrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -1462,7 +1461,7 @@ func (j *jsiiProxy_LaunchTemplate)SetNamePrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplate)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LaunchTemplate) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1470,7 +1469,7 @@ func (j *jsiiProxy_LaunchTemplate)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplate)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LaunchTemplate) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1481,7 +1480,7 @@ func (j *jsiiProxy_LaunchTemplate)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplate)SetRamDiskId(val *string) {
+func (j *jsiiProxy_LaunchTemplate) SetRamDiskId(val *string) {
 	if err := j.validateSetRamDiskIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1492,7 +1491,7 @@ func (j *jsiiProxy_LaunchTemplate)SetRamDiskId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplate)SetSecurityGroupNames(val *[]*string) {
+func (j *jsiiProxy_LaunchTemplate) SetSecurityGroupNames(val *[]*string) {
 	if err := j.validateSetSecurityGroupNamesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1503,7 +1502,7 @@ func (j *jsiiProxy_LaunchTemplate)SetSecurityGroupNames(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplate)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_LaunchTemplate) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1514,7 +1513,7 @@ func (j *jsiiProxy_LaunchTemplate)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplate)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_LaunchTemplate) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1525,7 +1524,7 @@ func (j *jsiiProxy_LaunchTemplate)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplate)SetUpdateDefaultVersion(val interface{}) {
+func (j *jsiiProxy_LaunchTemplate) SetUpdateDefaultVersion(val any) {
 	if err := j.validateSetUpdateDefaultVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1536,7 +1535,7 @@ func (j *jsiiProxy_LaunchTemplate)SetUpdateDefaultVersion(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplate)SetUserData(val *string) {
+func (j *jsiiProxy_LaunchTemplate) SetUserData(val *string) {
 	if err := j.validateSetUserDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -1547,7 +1546,7 @@ func (j *jsiiProxy_LaunchTemplate)SetUserData(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplate)SetVpcSecurityGroupIds(val *[]*string) {
+func (j *jsiiProxy_LaunchTemplate) SetVpcSecurityGroupIds(val *[]*string) {
 	if err := j.validateSetVpcSecurityGroupIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1570,7 +1569,7 @@ func LaunchTemplate_GenerateConfigForImport(scope constructs.Construct, importTo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplate",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1594,7 +1593,7 @@ func LaunchTemplate_GenerateConfigForImport(scope constructs.Construct, importTo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func LaunchTemplate_IsConstruct(x interface{}) *bool {
+func LaunchTemplate_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLaunchTemplate_IsConstructParameters(x); err != nil {
@@ -1605,7 +1604,7 @@ func LaunchTemplate_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplate",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1613,7 +1612,7 @@ func LaunchTemplate_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func LaunchTemplate_IsTerraformElement(x interface{}) *bool {
+func LaunchTemplate_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLaunchTemplate_IsTerraformElementParameters(x); err != nil {
@@ -1624,7 +1623,7 @@ func LaunchTemplate_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplate",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1632,7 +1631,7 @@ func LaunchTemplate_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func LaunchTemplate_IsTerraformResource(x interface{}) *bool {
+func LaunchTemplate_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLaunchTemplate_IsTerraformResourceParameters(x); err != nil {
@@ -1643,7 +1642,7 @@ func LaunchTemplate_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplate",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1668,31 +1667,31 @@ func (l *jsiiProxy_LaunchTemplate) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (l *jsiiProxy_LaunchTemplate) AddOverride(path *string, value interface{}) {
+func (l *jsiiProxy_LaunchTemplate) AddOverride(path *string, value any) {
 	if err := l.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (l *jsiiProxy_LaunchTemplate) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LaunchTemplate) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1708,7 +1707,7 @@ func (l *jsiiProxy_LaunchTemplate) GetBooleanAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1724,7 +1723,7 @@ func (l *jsiiProxy_LaunchTemplate) GetBooleanMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1740,7 +1739,7 @@ func (l *jsiiProxy_LaunchTemplate) GetListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1756,7 +1755,7 @@ func (l *jsiiProxy_LaunchTemplate) GetNumberAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1772,7 +1771,7 @@ func (l *jsiiProxy_LaunchTemplate) GetNumberListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1788,7 +1787,7 @@ func (l *jsiiProxy_LaunchTemplate) GetNumberMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1804,7 +1803,7 @@ func (l *jsiiProxy_LaunchTemplate) GetStringAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1820,15 +1819,15 @@ func (l *jsiiProxy_LaunchTemplate) GetStringMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LaunchTemplate) HasResourceMove() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LaunchTemplate) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1847,7 +1846,7 @@ func (l *jsiiProxy_LaunchTemplate) ImportFrom(id *string, provider cdktf.Terrafo
 	_jsii_.InvokeVoid(
 		l,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1860,7 +1859,7 @@ func (l *jsiiProxy_LaunchTemplate) InterpolationForAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1874,18 +1873,18 @@ func (l *jsiiProxy_LaunchTemplate) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (l *jsiiProxy_LaunchTemplate) MoveTo(moveTarget *string, index interface{}) {
+func (l *jsiiProxy_LaunchTemplate) MoveTo(moveTarget *string, index any) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1896,7 +1895,7 @@ func (l *jsiiProxy_LaunchTemplate) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1907,18 +1906,18 @@ func (l *jsiiProxy_LaunchTemplate) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (l *jsiiProxy_LaunchTemplate) PutBlockDeviceMappings(value interface{}) {
+func (l *jsiiProxy_LaunchTemplate) PutBlockDeviceMappings(value any) {
 	if err := l.validatePutBlockDeviceMappingsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"putBlockDeviceMappings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1929,7 +1928,7 @@ func (l *jsiiProxy_LaunchTemplate) PutCapacityReservationSpecification(value *La
 	_jsii_.InvokeVoid(
 		l,
 		"putCapacityReservationSpecification",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1940,7 +1939,7 @@ func (l *jsiiProxy_LaunchTemplate) PutCpuOptions(value *LaunchTemplateCpuOptions
 	_jsii_.InvokeVoid(
 		l,
 		"putCpuOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1951,18 +1950,18 @@ func (l *jsiiProxy_LaunchTemplate) PutCreditSpecification(value *LaunchTemplateC
 	_jsii_.InvokeVoid(
 		l,
 		"putCreditSpecification",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (l *jsiiProxy_LaunchTemplate) PutElasticGpuSpecifications(value interface{}) {
+func (l *jsiiProxy_LaunchTemplate) PutElasticGpuSpecifications(value any) {
 	if err := l.validatePutElasticGpuSpecificationsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"putElasticGpuSpecifications",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1973,7 +1972,7 @@ func (l *jsiiProxy_LaunchTemplate) PutElasticInferenceAccelerator(value *LaunchT
 	_jsii_.InvokeVoid(
 		l,
 		"putElasticInferenceAccelerator",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1984,7 +1983,7 @@ func (l *jsiiProxy_LaunchTemplate) PutEnclaveOptions(value *LaunchTemplateEnclav
 	_jsii_.InvokeVoid(
 		l,
 		"putEnclaveOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1995,7 +1994,7 @@ func (l *jsiiProxy_LaunchTemplate) PutHibernationOptions(value *LaunchTemplateHi
 	_jsii_.InvokeVoid(
 		l,
 		"putHibernationOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2006,7 +2005,7 @@ func (l *jsiiProxy_LaunchTemplate) PutIamInstanceProfile(value *LaunchTemplateIa
 	_jsii_.InvokeVoid(
 		l,
 		"putIamInstanceProfile",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2017,7 +2016,7 @@ func (l *jsiiProxy_LaunchTemplate) PutInstanceMarketOptions(value *LaunchTemplat
 	_jsii_.InvokeVoid(
 		l,
 		"putInstanceMarketOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2028,18 +2027,18 @@ func (l *jsiiProxy_LaunchTemplate) PutInstanceRequirements(value *LaunchTemplate
 	_jsii_.InvokeVoid(
 		l,
 		"putInstanceRequirements",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (l *jsiiProxy_LaunchTemplate) PutLicenseSpecification(value interface{}) {
+func (l *jsiiProxy_LaunchTemplate) PutLicenseSpecification(value any) {
 	if err := l.validatePutLicenseSpecificationParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"putLicenseSpecification",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2050,7 +2049,7 @@ func (l *jsiiProxy_LaunchTemplate) PutMaintenanceOptions(value *LaunchTemplateMa
 	_jsii_.InvokeVoid(
 		l,
 		"putMaintenanceOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2061,7 +2060,7 @@ func (l *jsiiProxy_LaunchTemplate) PutMetadataOptions(value *LaunchTemplateMetad
 	_jsii_.InvokeVoid(
 		l,
 		"putMetadataOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2072,18 +2071,18 @@ func (l *jsiiProxy_LaunchTemplate) PutMonitoring(value *LaunchTemplateMonitoring
 	_jsii_.InvokeVoid(
 		l,
 		"putMonitoring",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (l *jsiiProxy_LaunchTemplate) PutNetworkInterfaces(value interface{}) {
+func (l *jsiiProxy_LaunchTemplate) PutNetworkInterfaces(value any) {
 	if err := l.validatePutNetworkInterfacesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"putNetworkInterfaces",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2094,7 +2093,7 @@ func (l *jsiiProxy_LaunchTemplate) PutPlacement(value *LaunchTemplatePlacement) 
 	_jsii_.InvokeVoid(
 		l,
 		"putPlacement",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2105,18 +2104,18 @@ func (l *jsiiProxy_LaunchTemplate) PutPrivateDnsNameOptions(value *LaunchTemplat
 	_jsii_.InvokeVoid(
 		l,
 		"putPrivateDnsNameOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (l *jsiiProxy_LaunchTemplate) PutTagSpecifications(value interface{}) {
+func (l *jsiiProxy_LaunchTemplate) PutTagSpecifications(value any) {
 	if err := l.validatePutTagSpecificationsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"putTagSpecifications",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2440,8 +2439,8 @@ func (l *jsiiProxy_LaunchTemplate) ResetVpcSecurityGroupIds() {
 	)
 }
 
-func (l *jsiiProxy_LaunchTemplate) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LaunchTemplate) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -2453,8 +2452,8 @@ func (l *jsiiProxy_LaunchTemplate) SynthesizeAttributes() *map[string]interface{
 	return returns
 }
 
-func (l *jsiiProxy_LaunchTemplate) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LaunchTemplate) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -2466,8 +2465,8 @@ func (l *jsiiProxy_LaunchTemplate) SynthesizeHclAttributes() *map[string]interfa
 	return returns
 }
 
-func (l *jsiiProxy_LaunchTemplate) ToHclTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LaunchTemplate) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -2479,8 +2478,8 @@ func (l *jsiiProxy_LaunchTemplate) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LaunchTemplate) ToMetadata() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LaunchTemplate) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -2505,8 +2504,8 @@ func (l *jsiiProxy_LaunchTemplate) ToString() *string {
 	return returns
 }
 
-func (l *jsiiProxy_LaunchTemplate) ToTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LaunchTemplate) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -2517,4 +2516,3 @@ func (l *jsiiProxy_LaunchTemplate) ToTerraform() interface{} {
 
 	return returns
 }
-

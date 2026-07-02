@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesServiceNo
 	return nil
 }
 
-func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesServiceNowOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesServiceNowOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewAppflowFlowSourceFlowConfigSourceConnectorPropertiesServiceNowOu
 
 	return nil
 }
-

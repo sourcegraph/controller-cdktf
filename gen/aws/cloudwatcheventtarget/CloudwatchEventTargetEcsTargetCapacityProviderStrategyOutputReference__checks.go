@@ -114,7 +114,7 @@ func (j *jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputR
 	return nil
 }
 
-func (j *jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputR
 	return nil
 }
 
-func (j *jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewCloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputRefe
 
 	return nil
 }
-

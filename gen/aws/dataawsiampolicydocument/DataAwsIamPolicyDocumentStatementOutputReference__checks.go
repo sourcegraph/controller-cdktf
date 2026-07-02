@@ -90,7 +90,7 @@ func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) validateInt
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) validatePutConditionParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) validatePutConditionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) validatePut
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) validatePutNotPrincipalsParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) validatePutNotPrincipalsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) validatePut
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) validatePutPrincipalsParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) validatePutPrincipalsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -199,7 +199,7 @@ func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -272,7 +272,7 @@ func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -363,4 +363,3 @@ func validateNewDataAwsIamPolicyDocumentStatementOutputReferenceParameters(terra
 
 	return nil
 }
-

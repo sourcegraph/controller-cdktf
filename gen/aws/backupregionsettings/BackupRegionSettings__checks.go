@@ -19,7 +19,7 @@ func (b *jsiiProxy_BackupRegionSettings) validateAddMoveTargetParameters(moveTar
 	return nil
 }
 
-func (b *jsiiProxy_BackupRegionSettings) validateAddOverrideParameters(path *string, value interface{}) error {
+func (b *jsiiProxy_BackupRegionSettings) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (b *jsiiProxy_BackupRegionSettings) validateMoveFromIdParameters(id *string
 	return nil
 }
 
-func (b *jsiiProxy_BackupRegionSettings) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (b *jsiiProxy_BackupRegionSettings) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateBackupRegionSettings_GenerateConfigForImportParameters(scope constr
 	return nil
 }
 
-func validateBackupRegionSettings_IsConstructParameters(x interface{}) error {
+func validateBackupRegionSettings_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateBackupRegionSettings_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateBackupRegionSettings_IsTerraformElementParameters(x interface{}) error {
+func validateBackupRegionSettings_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateBackupRegionSettings_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
-func validateBackupRegionSettings_IsTerraformResourceParameters(x interface{}) error {
+func validateBackupRegionSettings_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateBackupRegionSettings_IsTerraformResourceParameters(x interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_BackupRegionSettings) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_BackupRegionSettings) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_BackupRegionSettings) validateSetConnectionParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_BackupRegionSettings) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_BackupRegionSettings) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -350,7 +350,7 @@ func (j *jsiiProxy_BackupRegionSettings) validateSetLifecycleParameters(val *cdk
 	return nil
 }
 
-func (j *jsiiProxy_BackupRegionSettings) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_BackupRegionSettings) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -396,7 +396,7 @@ func (j *jsiiProxy_BackupRegionSettings) validateSetProvisionersParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_BackupRegionSettings) validateSetResourceTypeManagementPreferenceParameters(val *map[string]interface{}) error {
+func (j *jsiiProxy_BackupRegionSettings) validateSetResourceTypeManagementPreferenceParameters(val *map[string]any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -418,7 +418,7 @@ func (j *jsiiProxy_BackupRegionSettings) validateSetResourceTypeManagementPrefer
 	return nil
 }
 
-func (j *jsiiProxy_BackupRegionSettings) validateSetResourceTypeOptInPreferenceParameters(val *map[string]interface{}) error {
+func (j *jsiiProxy_BackupRegionSettings) validateSetResourceTypeOptInPreferenceParameters(val *map[string]any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -458,4 +458,3 @@ func validateNewBackupRegionSettingsParameters(scope constructs.Construct, id *s
 
 	return nil
 }
-

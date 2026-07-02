@@ -1,11 +1,10 @@
 package medialivechannel
 
-
 type MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettings struct {
 	// archive_group_settings block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/medialive_channel#archive_group_settings MedialiveChannel#archive_group_settings}
-	ArchiveGroupSettings interface{} `field:"optional" json:"archiveGroupSettings" yaml:"archiveGroupSettings"`
+	ArchiveGroupSettings any `field:"optional" json:"archiveGroupSettings" yaml:"archiveGroupSettings"`
 	// frame_capture_group_settings block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/medialive_channel#frame_capture_group_settings MedialiveChannel#frame_capture_group_settings}
@@ -35,4 +34,3 @@ type MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettings struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/medialive_channel#udp_group_settings MedialiveChannel#udp_group_settings}
 	UdpGroupSettings *MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsUdpGroupSettings `field:"optional" json:"udpGroupSettings" yaml:"udpGroupSettings"`
 }
-

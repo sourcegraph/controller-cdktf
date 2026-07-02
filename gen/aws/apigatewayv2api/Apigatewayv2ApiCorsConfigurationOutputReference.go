@@ -10,9 +10,9 @@ import (
 
 type Apigatewayv2ApiCorsConfigurationOutputReference interface {
 	cdktf.ComplexObject
-	AllowCredentials() interface{}
-	SetAllowCredentials(val interface{})
-	AllowCredentialsInput() interface{}
+	AllowCredentials() any
+	SetAllowCredentials(val any)
+	AllowCredentialsInput() any
 	AllowHeaders() *[]*string
 	SetAllowHeaders(val *[]*string)
 	AllowHeadersInput() *[]*string
@@ -24,9 +24,9 @@ type Apigatewayv2ApiCorsConfigurationOutputReference interface {
 	AllowOriginsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -58,7 +58,7 @@ type Apigatewayv2ApiCorsConfigurationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -87,7 +87,7 @@ type Apigatewayv2ApiCorsConfigurationOutputReference interface {
 	ResetMaxAge()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -100,8 +100,8 @@ type jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) AllowCredentials() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) AllowCredentials() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowCredentials",
@@ -110,8 +110,8 @@ func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) AllowCredent
 	return returns
 }
 
-func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) AllowCredentialsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) AllowCredentialsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowCredentialsInput",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) AllowOrigins
 	return returns
 }
 
-func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -290,7 +290,6 @@ func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) TerraformRes
 	return returns
 }
 
-
 func NewApigatewayv2ApiCorsConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) Apigatewayv2ApiCorsConfigurationOutputReference {
 	_init_.Initialize()
 
@@ -301,7 +300,7 @@ func NewApigatewayv2ApiCorsConfigurationOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -313,12 +312,12 @@ func NewApigatewayv2ApiCorsConfigurationOutputReference_Override(a Apigatewayv2A
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference)SetAllowCredentials(val interface{}) {
+func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) SetAllowCredentials(val any) {
 	if err := j.validateSetAllowCredentialsParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,7 +328,7 @@ func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference)SetAllowCrede
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference)SetAllowHeaders(val *[]*string) {
+func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) SetAllowHeaders(val *[]*string) {
 	if err := j.validateSetAllowHeadersParameters(val); err != nil {
 		panic(err)
 	}
@@ -340,7 +339,7 @@ func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference)SetAllowHeade
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference)SetAllowMethods(val *[]*string) {
+func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) SetAllowMethods(val *[]*string) {
 	if err := j.validateSetAllowMethodsParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference)SetAllowMetho
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference)SetAllowOrigins(val *[]*string) {
+func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) SetAllowOrigins(val *[]*string) {
 	if err := j.validateSetAllowOriginsParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference)SetAllowOrigi
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference)SetExposeHeaders(val *[]*string) {
+func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) SetExposeHeaders(val *[]*string) {
 	if err := j.validateSetExposeHeadersParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference)SetExposeHead
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference)SetInternalValue(val *Apigatewayv2ApiCorsConfiguration) {
+func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) SetInternalValue(val *Apigatewayv2ApiCorsConfiguration) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,7 +405,7 @@ func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference)SetMaxAge(val *float64) {
+func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) SetMaxAge(val *float64) {
 	if err := j.validateSetMaxAgeParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference)SetMaxAge(val
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,16 +451,16 @@ func (a *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) ComputeFqn()
 	return returns
 }
 
-func (a *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (a *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -493,7 +492,7 @@ func (a *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -509,7 +508,7 @@ func (a *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) GetListAttri
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -525,7 +524,7 @@ func (a *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -541,7 +540,7 @@ func (a *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func (a *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -573,7 +572,7 @@ func (a *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func (a *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) GetStringMap
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -618,7 +617,7 @@ func (a *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) Interpolatio
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -673,16 +672,16 @@ func (a *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) ResetMaxAge(
 	)
 }
 
-func (a *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -701,4 +700,3 @@ func (a *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) ToString() *
 
 	return returns
 }
-

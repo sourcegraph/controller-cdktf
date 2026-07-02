@@ -90,7 +90,7 @@ func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteActionOutputReference) validateInte
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteActionOutputReference) validatePutWeightedTargetParameters(value interface{}) error {
+func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteActionOutputReference) validatePutWeightedTargetParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteActionOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteActionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteActionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewAppmeshRouteSpecHttp2RouteActionOutputReferenceParameters(terraf
 
 	return nil
 }
-

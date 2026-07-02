@@ -30,9 +30,9 @@ type MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOu
 	ColorMetadataInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -159,7 +159,7 @@ type MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOu
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -223,7 +223,7 @@ type MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOu
 	ResetTimecodeInsertion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -356,8 +356,8 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -1106,7 +1106,6 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	return returns
 }
 
-
 func NewMedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference {
 	_init_.Initialize()
 
@@ -1117,7 +1116,7 @@ func NewMedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Setting
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -1129,12 +1128,12 @@ func NewMedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Setting
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetAdaptiveQuantization(val *string) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetAdaptiveQuantization(val *string) {
 	if err := j.validateSetAdaptiveQuantizationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1145,7 +1144,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetAfdSignaling(val *string) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetAfdSignaling(val *string) {
 	if err := j.validateSetAfdSignalingParameters(val); err != nil {
 		panic(err)
 	}
@@ -1156,7 +1155,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetBitrate(val *float64) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetBitrate(val *float64) {
 	if err := j.validateSetBitrateParameters(val); err != nil {
 		panic(err)
 	}
@@ -1167,7 +1166,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetBufFillPct(val *float64) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetBufFillPct(val *float64) {
 	if err := j.validateSetBufFillPctParameters(val); err != nil {
 		panic(err)
 	}
@@ -1178,7 +1177,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetBufSize(val *float64) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetBufSize(val *float64) {
 	if err := j.validateSetBufSizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1189,7 +1188,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetColorMetadata(val *string) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetColorMetadata(val *string) {
 	if err := j.validateSetColorMetadataParameters(val); err != nil {
 		panic(err)
 	}
@@ -1200,7 +1199,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -1211,7 +1210,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -1222,7 +1221,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetEntropyEncoding(val *string) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetEntropyEncoding(val *string) {
 	if err := j.validateSetEntropyEncodingParameters(val); err != nil {
 		panic(err)
 	}
@@ -1233,7 +1232,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetFixedAfd(val *string) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetFixedAfd(val *string) {
 	if err := j.validateSetFixedAfdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1244,7 +1243,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetFlickerAq(val *string) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetFlickerAq(val *string) {
 	if err := j.validateSetFlickerAqParameters(val); err != nil {
 		panic(err)
 	}
@@ -1255,7 +1254,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetForceFieldPictures(val *string) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetForceFieldPictures(val *string) {
 	if err := j.validateSetForceFieldPicturesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1266,7 +1265,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetFramerateControl(val *string) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetFramerateControl(val *string) {
 	if err := j.validateSetFramerateControlParameters(val); err != nil {
 		panic(err)
 	}
@@ -1277,7 +1276,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetFramerateDenominator(val *float64) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetFramerateDenominator(val *float64) {
 	if err := j.validateSetFramerateDenominatorParameters(val); err != nil {
 		panic(err)
 	}
@@ -1288,7 +1287,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetFramerateNumerator(val *float64) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetFramerateNumerator(val *float64) {
 	if err := j.validateSetFramerateNumeratorParameters(val); err != nil {
 		panic(err)
 	}
@@ -1299,7 +1298,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetGopBReference(val *string) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetGopBReference(val *string) {
 	if err := j.validateSetGopBReferenceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1310,7 +1309,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetGopClosedCadence(val *float64) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetGopClosedCadence(val *float64) {
 	if err := j.validateSetGopClosedCadenceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1321,7 +1320,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetGopNumBFrames(val *float64) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetGopNumBFrames(val *float64) {
 	if err := j.validateSetGopNumBFramesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1332,7 +1331,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetGopSize(val *float64) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetGopSize(val *float64) {
 	if err := j.validateSetGopSizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1343,7 +1342,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetGopSizeUnits(val *string) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetGopSizeUnits(val *string) {
 	if err := j.validateSetGopSizeUnitsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1354,7 +1353,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetInternalValue(val *MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetInternalValue(val *MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -1365,7 +1364,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetLevel(val *string) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetLevel(val *string) {
 	if err := j.validateSetLevelParameters(val); err != nil {
 		panic(err)
 	}
@@ -1376,7 +1375,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetLookAheadRateControl(val *string) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetLookAheadRateControl(val *string) {
 	if err := j.validateSetLookAheadRateControlParameters(val); err != nil {
 		panic(err)
 	}
@@ -1387,7 +1386,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetMaxBitrate(val *float64) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetMaxBitrate(val *float64) {
 	if err := j.validateSetMaxBitrateParameters(val); err != nil {
 		panic(err)
 	}
@@ -1398,7 +1397,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetMinIInterval(val *float64) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetMinIInterval(val *float64) {
 	if err := j.validateSetMinIIntervalParameters(val); err != nil {
 		panic(err)
 	}
@@ -1409,7 +1408,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetNumRefFrames(val *float64) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetNumRefFrames(val *float64) {
 	if err := j.validateSetNumRefFramesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1420,7 +1419,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetParControl(val *string) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetParControl(val *string) {
 	if err := j.validateSetParControlParameters(val); err != nil {
 		panic(err)
 	}
@@ -1431,7 +1430,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetParDenominator(val *float64) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetParDenominator(val *float64) {
 	if err := j.validateSetParDenominatorParameters(val); err != nil {
 		panic(err)
 	}
@@ -1442,7 +1441,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetParNumerator(val *float64) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetParNumerator(val *float64) {
 	if err := j.validateSetParNumeratorParameters(val); err != nil {
 		panic(err)
 	}
@@ -1453,7 +1452,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetProfile(val *string) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetProfile(val *string) {
 	if err := j.validateSetProfileParameters(val); err != nil {
 		panic(err)
 	}
@@ -1464,7 +1463,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetQualityLevel(val *string) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetQualityLevel(val *string) {
 	if err := j.validateSetQualityLevelParameters(val); err != nil {
 		panic(err)
 	}
@@ -1475,7 +1474,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetQvbrQualityLevel(val *float64) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetQvbrQualityLevel(val *float64) {
 	if err := j.validateSetQvbrQualityLevelParameters(val); err != nil {
 		panic(err)
 	}
@@ -1486,7 +1485,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetRateControlMode(val *string) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetRateControlMode(val *string) {
 	if err := j.validateSetRateControlModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1497,7 +1496,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetScanType(val *string) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetScanType(val *string) {
 	if err := j.validateSetScanTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1508,7 +1507,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetSceneChangeDetect(val *string) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetSceneChangeDetect(val *string) {
 	if err := j.validateSetSceneChangeDetectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1519,7 +1518,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetSlices(val *float64) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetSlices(val *float64) {
 	if err := j.validateSetSlicesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1530,7 +1529,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetSoftness(val *float64) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetSoftness(val *float64) {
 	if err := j.validateSetSoftnessParameters(val); err != nil {
 		panic(err)
 	}
@@ -1541,7 +1540,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetSpatialAq(val *string) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetSpatialAq(val *string) {
 	if err := j.validateSetSpatialAqParameters(val); err != nil {
 		panic(err)
 	}
@@ -1552,7 +1551,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetSubgopLength(val *string) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetSubgopLength(val *string) {
 	if err := j.validateSetSubgopLengthParameters(val); err != nil {
 		panic(err)
 	}
@@ -1563,7 +1562,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetSyntax(val *string) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetSyntax(val *string) {
 	if err := j.validateSetSyntaxParameters(val); err != nil {
 		panic(err)
 	}
@@ -1574,7 +1573,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetTemporalAq(val *string) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetTemporalAq(val *string) {
 	if err := j.validateSetTemporalAqParameters(val); err != nil {
 		panic(err)
 	}
@@ -1585,7 +1584,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1596,7 +1595,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1607,7 +1606,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetTimecodeInsertion(val *string) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) SetTimecodeInsertion(val *string) {
 	if err := j.validateSetTimecodeInsertionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1631,16 +1630,16 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	return returns
 }
 
-func (m *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1656,7 +1655,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1672,7 +1671,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1688,7 +1687,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1704,7 +1703,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1720,7 +1719,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1736,7 +1735,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1752,7 +1751,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1768,7 +1767,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1797,7 +1796,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -1811,7 +1810,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	_jsii_.InvokeVoid(
 		m,
 		"putFilterSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2135,16 +2134,16 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
-func (m *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -2163,4 +2162,3 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 
 	return returns
 }
-

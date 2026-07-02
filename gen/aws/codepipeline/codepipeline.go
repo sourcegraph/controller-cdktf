@@ -14,19 +14,19 @@ type Codepipeline interface {
 	cdktf.TerraformResource
 	Arn() *string
 	ArtifactStore() CodepipelineArtifactStoreList
-	ArtifactStoreInput() interface{}
+	ArtifactStoreInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -56,16 +56,16 @@ type Codepipeline interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RoleArn() *string
 	SetRoleArn(val *string)
 	RoleArnInput() *string
 	Stage() CodepipelineStageList
-	StageInput() interface{}
+	StageInput() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -75,16 +75,16 @@ type Codepipeline interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,7 +102,7 @@ type Codepipeline interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -114,32 +114,32 @@ type Codepipeline interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutArtifactStore(value interface{})
-	PutStage(value interface{})
+	PutArtifactStore(value any)
+	PutStage(value any)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Codepipeline
@@ -167,8 +167,8 @@ func (j *jsiiProxy_Codepipeline) ArtifactStore() CodepipelineArtifactStoreList {
 	return returns
 }
 
-func (j *jsiiProxy_Codepipeline) ArtifactStoreInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Codepipeline) ArtifactStoreInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"artifactStoreInput",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_Codepipeline) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_Codepipeline) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Codepipeline) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -197,8 +197,8 @@ func (j *jsiiProxy_Codepipeline) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Codepipeline) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Codepipeline) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -207,8 +207,8 @@ func (j *jsiiProxy_Codepipeline) ConstructNodeMetadata() *map[string]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_Codepipeline) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Codepipeline) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -327,8 +327,8 @@ func (j *jsiiProxy_Codepipeline) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Codepipeline) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Codepipeline) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -337,8 +337,8 @@ func (j *jsiiProxy_Codepipeline) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Codepipeline) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Codepipeline) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -377,8 +377,8 @@ func (j *jsiiProxy_Codepipeline) Stage() CodepipelineStageList {
 	return returns
 }
 
-func (j *jsiiProxy_Codepipeline) StageInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Codepipeline) StageInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"stageInput",
@@ -437,8 +437,8 @@ func (j *jsiiProxy_Codepipeline) TerraformGeneratorMetadata() *cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_Codepipeline) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Codepipeline) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -457,7 +457,6 @@ func (j *jsiiProxy_Codepipeline) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/codepipeline aws_codepipeline} Resource.
 func NewCodepipeline(scope constructs.Construct, id *string, config *CodepipelineConfig) Codepipeline {
 	_init_.Initialize()
@@ -469,7 +468,7 @@ func NewCodepipeline(scope constructs.Construct, id *string, config *Codepipelin
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.codepipeline.Codepipeline",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -482,12 +481,12 @@ func NewCodepipeline_Override(c Codepipeline, scope constructs.Construct, id *st
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.codepipeline.Codepipeline",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_Codepipeline)SetConnection(val interface{}) {
+func (j *jsiiProxy_Codepipeline) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_Codepipeline)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Codepipeline)SetCount(val interface{}) {
+func (j *jsiiProxy_Codepipeline) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -509,7 +508,7 @@ func (j *jsiiProxy_Codepipeline)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Codepipeline)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Codepipeline) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -517,7 +516,7 @@ func (j *jsiiProxy_Codepipeline)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Codepipeline)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Codepipeline) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -525,7 +524,7 @@ func (j *jsiiProxy_Codepipeline)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Codepipeline)SetId(val *string) {
+func (j *jsiiProxy_Codepipeline) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -536,7 +535,7 @@ func (j *jsiiProxy_Codepipeline)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Codepipeline)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Codepipeline) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_Codepipeline)SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_Codepipeline)SetName(val *string) {
+func (j *jsiiProxy_Codepipeline) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -558,7 +557,7 @@ func (j *jsiiProxy_Codepipeline)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Codepipeline)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Codepipeline) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -566,7 +565,7 @@ func (j *jsiiProxy_Codepipeline)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Codepipeline)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Codepipeline) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -577,7 +576,7 @@ func (j *jsiiProxy_Codepipeline)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Codepipeline)SetRoleArn(val *string) {
+func (j *jsiiProxy_Codepipeline) SetRoleArn(val *string) {
 	if err := j.validateSetRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -588,7 +587,7 @@ func (j *jsiiProxy_Codepipeline)SetRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Codepipeline)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_Codepipeline) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func (j *jsiiProxy_Codepipeline)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Codepipeline)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_Codepipeline) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -622,7 +621,7 @@ func Codepipeline_GenerateConfigForImport(scope constructs.Construct, importToId
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.codepipeline.Codepipeline",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func Codepipeline_GenerateConfigForImport(scope constructs.Construct, importToId
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Codepipeline_IsConstruct(x interface{}) *bool {
+func Codepipeline_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCodepipeline_IsConstructParameters(x); err != nil {
@@ -657,7 +656,7 @@ func Codepipeline_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.codepipeline.Codepipeline",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -665,7 +664,7 @@ func Codepipeline_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Codepipeline_IsTerraformElement(x interface{}) *bool {
+func Codepipeline_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCodepipeline_IsTerraformElementParameters(x); err != nil {
@@ -676,7 +675,7 @@ func Codepipeline_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.codepipeline.Codepipeline",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -684,7 +683,7 @@ func Codepipeline_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Codepipeline_IsTerraformResource(x interface{}) *bool {
+func Codepipeline_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCodepipeline_IsTerraformResourceParameters(x); err != nil {
@@ -695,7 +694,7 @@ func Codepipeline_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.codepipeline.Codepipeline",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -720,31 +719,31 @@ func (c *jsiiProxy_Codepipeline) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_Codepipeline) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_Codepipeline) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_Codepipeline) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_Codepipeline) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -760,7 +759,7 @@ func (c *jsiiProxy_Codepipeline) GetBooleanAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -776,7 +775,7 @@ func (c *jsiiProxy_Codepipeline) GetBooleanMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -792,7 +791,7 @@ func (c *jsiiProxy_Codepipeline) GetListAttribute(terraformAttribute *string) *[
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -808,7 +807,7 @@ func (c *jsiiProxy_Codepipeline) GetNumberAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -824,7 +823,7 @@ func (c *jsiiProxy_Codepipeline) GetNumberListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -840,7 +839,7 @@ func (c *jsiiProxy_Codepipeline) GetNumberMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -856,7 +855,7 @@ func (c *jsiiProxy_Codepipeline) GetStringAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -872,15 +871,15 @@ func (c *jsiiProxy_Codepipeline) GetStringMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_Codepipeline) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_Codepipeline) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -899,7 +898,7 @@ func (c *jsiiProxy_Codepipeline) ImportFrom(id *string, provider cdktf.Terraform
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -912,7 +911,7 @@ func (c *jsiiProxy_Codepipeline) InterpolationForAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -926,18 +925,18 @@ func (c *jsiiProxy_Codepipeline) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_Codepipeline) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_Codepipeline) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -948,7 +947,7 @@ func (c *jsiiProxy_Codepipeline) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -959,29 +958,29 @@ func (c *jsiiProxy_Codepipeline) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (c *jsiiProxy_Codepipeline) PutArtifactStore(value interface{}) {
+func (c *jsiiProxy_Codepipeline) PutArtifactStore(value any) {
 	if err := c.validatePutArtifactStoreParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putArtifactStore",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_Codepipeline) PutStage(value interface{}) {
+func (c *jsiiProxy_Codepipeline) PutStage(value any) {
 	if err := c.validatePutStageParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putStage",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1017,8 +1016,8 @@ func (c *jsiiProxy_Codepipeline) ResetTagsAll() {
 	)
 }
 
-func (c *jsiiProxy_Codepipeline) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_Codepipeline) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1030,8 +1029,8 @@ func (c *jsiiProxy_Codepipeline) SynthesizeAttributes() *map[string]interface{} 
 	return returns
 }
 
-func (c *jsiiProxy_Codepipeline) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_Codepipeline) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1043,8 +1042,8 @@ func (c *jsiiProxy_Codepipeline) SynthesizeHclAttributes() *map[string]interface
 	return returns
 }
 
-func (c *jsiiProxy_Codepipeline) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_Codepipeline) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1056,8 +1055,8 @@ func (c *jsiiProxy_Codepipeline) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_Codepipeline) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_Codepipeline) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1082,8 +1081,8 @@ func (c *jsiiProxy_Codepipeline) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_Codepipeline) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_Codepipeline) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1094,4 +1093,3 @@ func (c *jsiiProxy_Codepipeline) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DbSnapshotCopyTimeoutsOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_DbSnapshotCopyTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DbSnapshotCopyTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DbSnapshotCopyTimeoutsOutputReference) validateSetCreateParam
 	return nil
 }
 
-func (j *jsiiProxy_DbSnapshotCopyTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DbSnapshotCopyTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDbSnapshotCopyTimeoutsOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

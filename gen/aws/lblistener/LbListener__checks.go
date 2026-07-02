@@ -19,7 +19,7 @@ func (l *jsiiProxy_LbListener) validateAddMoveTargetParameters(moveTarget *strin
 	return nil
 }
 
-func (l *jsiiProxy_LbListener) validateAddOverrideParameters(path *string, value interface{}) error {
+func (l *jsiiProxy_LbListener) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (l *jsiiProxy_LbListener) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LbListener) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (l *jsiiProxy_LbListener) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (l *jsiiProxy_LbListener) validateOverrideLogicalIdParameters(newLogicalId 
 	return nil
 }
 
-func (l *jsiiProxy_LbListener) validatePutDefaultActionParameters(value interface{}) error {
+func (l *jsiiProxy_LbListener) validatePutDefaultActionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateLbListener_GenerateConfigForImportParameters(scope constructs.Const
 	return nil
 }
 
-func validateLbListener_IsConstructParameters(x interface{}) error {
+func validateLbListener_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateLbListener_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateLbListener_IsTerraformElementParameters(x interface{}) error {
+func validateLbListener_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateLbListener_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateLbListener_IsTerraformResourceParameters(x interface{}) error {
+func validateLbListener_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -302,7 +302,7 @@ func (j *jsiiProxy_LbListener) validateSetCertificateArnParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_LbListener) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_LbListener) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -335,7 +335,7 @@ func (j *jsiiProxy_LbListener) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_LbListener) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_LbListener) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -432,7 +432,7 @@ func (j *jsiiProxy_LbListener) validateSetProtocolParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_LbListener) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_LbListener) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -520,4 +520,3 @@ func validateNewLbListenerParameters(scope constructs.Construct, id *string, con
 
 	return nil
 }
-

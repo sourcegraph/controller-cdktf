@@ -98,7 +98,7 @@ func (c *jsiiProxy_ConnectHoursOfOperationConfigEndTimeOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_ConnectHoursOfOperationConfigEndTimeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ConnectHoursOfOperationConfigEndTimeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewConnectHoursOfOperationConfigEndTimeOutputReferenceParameters(te
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionCostCategoryOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionCostCategoryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionCostCategoryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewCeAnomalySubscriptionThresholdExpressionCostCategoryOutputRefere
 
 	return nil
 }
-

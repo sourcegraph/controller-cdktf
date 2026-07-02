@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsWorkspacesBundleComputeTypeOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsWorkspacesBundleComputeTypeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsWorkspacesBundleComputeTypeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsWorkspacesBundleComputeTypeOutputReferenceParameters(terr
 
 	return nil
 }
-

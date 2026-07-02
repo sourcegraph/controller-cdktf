@@ -98,7 +98,7 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationDataCaptureConfigCaptureContent
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfigurationDataCaptureConfigCaptureContentTypeHeaderOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerEndpointConfigurationDataCaptureConfigCaptureContentTypeHeaderOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewSagemakerEndpointConfigurationDataCaptureConfigCaptureContentTyp
 
 	return nil
 }
-

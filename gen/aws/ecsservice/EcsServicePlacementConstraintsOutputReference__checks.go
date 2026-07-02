@@ -98,7 +98,7 @@ func (e *jsiiProxy_EcsServicePlacementConstraintsOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_EcsServicePlacementConstraintsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EcsServicePlacementConstraintsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_EcsServicePlacementConstraintsOutputReference) validateSetExp
 	return nil
 }
 
-func (j *jsiiProxy_EcsServicePlacementConstraintsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EcsServicePlacementConstraintsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewEcsServicePlacementConstraintsOutputReferenceParameters(terrafor
 
 	return nil
 }
-

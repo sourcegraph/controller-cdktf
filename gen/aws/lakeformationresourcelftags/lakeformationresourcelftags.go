@@ -18,15 +18,15 @@ type LakeformationResourceLfTags interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	Database() LakeformationResourceLfTagsDatabaseOutputReference
 	DatabaseInput() *LakeformationResourceLfTagsDatabase
 	// Experimental.
@@ -45,7 +45,7 @@ type LakeformationResourceLfTags interface {
 	SetId(val *string)
 	IdInput() *string
 	LfTag() LakeformationResourceLfTagsLfTagList
-	LfTagInput() interface{}
+	LfTagInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -57,11 +57,11 @@ type LakeformationResourceLfTags interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Table() LakeformationResourceLfTagsTableOutputReference
 	TableInput() *LakeformationResourceLfTagsTable
 	TableWithColumns() LakeformationResourceLfTagsTableWithColumnsOutputReference
@@ -69,18 +69,18 @@ type LakeformationResourceLfTags interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() LakeformationResourceLfTagsTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,7 +98,7 @@ type LakeformationResourceLfTags interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -110,7 +110,7 @@ type LakeformationResourceLfTags interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -118,7 +118,7 @@ type LakeformationResourceLfTags interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutDatabase(value *LakeformationResourceLfTagsDatabase)
-	PutLfTag(value interface{})
+	PutLfTag(value any)
 	PutTable(value *LakeformationResourceLfTagsTable)
 	PutTableWithColumns(value *LakeformationResourceLfTagsTableWithColumns)
 	PutTimeouts(value *LakeformationResourceLfTagsTimeouts)
@@ -131,17 +131,17 @@ type LakeformationResourceLfTags interface {
 	ResetTable()
 	ResetTableWithColumns()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for LakeformationResourceLfTags
@@ -179,8 +179,8 @@ func (j *jsiiProxy_LakeformationResourceLfTags) CdktfStack() cdktf.TerraformStac
 	return returns
 }
 
-func (j *jsiiProxy_LakeformationResourceLfTags) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LakeformationResourceLfTags) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -189,8 +189,8 @@ func (j *jsiiProxy_LakeformationResourceLfTags) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LakeformationResourceLfTags) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LakeformationResourceLfTags) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -199,8 +199,8 @@ func (j *jsiiProxy_LakeformationResourceLfTags) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_LakeformationResourceLfTags) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LakeformationResourceLfTags) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -299,8 +299,8 @@ func (j *jsiiProxy_LakeformationResourceLfTags) LfTag() LakeformationResourceLfT
 	return returns
 }
 
-func (j *jsiiProxy_LakeformationResourceLfTags) LfTagInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LakeformationResourceLfTags) LfTagInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"lfTagInput",
@@ -339,8 +339,8 @@ func (j *jsiiProxy_LakeformationResourceLfTags) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_LakeformationResourceLfTags) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_LakeformationResourceLfTags) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -349,8 +349,8 @@ func (j *jsiiProxy_LakeformationResourceLfTags) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LakeformationResourceLfTags) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LakeformationResourceLfTags) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -409,8 +409,8 @@ func (j *jsiiProxy_LakeformationResourceLfTags) TerraformGeneratorMetadata() *cd
 	return returns
 }
 
-func (j *jsiiProxy_LakeformationResourceLfTags) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LakeformationResourceLfTags) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -439,8 +439,8 @@ func (j *jsiiProxy_LakeformationResourceLfTags) Timeouts() LakeformationResource
 	return returns
 }
 
-func (j *jsiiProxy_LakeformationResourceLfTags) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LakeformationResourceLfTags) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -448,7 +448,6 @@ func (j *jsiiProxy_LakeformationResourceLfTags) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lakeformation_resource_lf_tags aws_lakeformation_resource_lf_tags} Resource.
 func NewLakeformationResourceLfTags(scope constructs.Construct, id *string, config *LakeformationResourceLfTagsConfig) LakeformationResourceLfTags {
@@ -461,7 +460,7 @@ func NewLakeformationResourceLfTags(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTags",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -474,12 +473,12 @@ func NewLakeformationResourceLfTags_Override(l LakeformationResourceLfTags, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTags",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LakeformationResourceLfTags)SetCatalogId(val *string) {
+func (j *jsiiProxy_LakeformationResourceLfTags) SetCatalogId(val *string) {
 	if err := j.validateSetCatalogIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_LakeformationResourceLfTags)SetCatalogId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LakeformationResourceLfTags)SetConnection(val interface{}) {
+func (j *jsiiProxy_LakeformationResourceLfTags) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_LakeformationResourceLfTags)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LakeformationResourceLfTags)SetCount(val interface{}) {
+func (j *jsiiProxy_LakeformationResourceLfTags) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_LakeformationResourceLfTags)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LakeformationResourceLfTags)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LakeformationResourceLfTags) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -520,7 +519,7 @@ func (j *jsiiProxy_LakeformationResourceLfTags)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LakeformationResourceLfTags)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LakeformationResourceLfTags) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -528,7 +527,7 @@ func (j *jsiiProxy_LakeformationResourceLfTags)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_LakeformationResourceLfTags)SetId(val *string) {
+func (j *jsiiProxy_LakeformationResourceLfTags) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -539,7 +538,7 @@ func (j *jsiiProxy_LakeformationResourceLfTags)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LakeformationResourceLfTags)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LakeformationResourceLfTags) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -550,7 +549,7 @@ func (j *jsiiProxy_LakeformationResourceLfTags)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_LakeformationResourceLfTags)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LakeformationResourceLfTags) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -558,7 +557,7 @@ func (j *jsiiProxy_LakeformationResourceLfTags)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_LakeformationResourceLfTags)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LakeformationResourceLfTags) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func LakeformationResourceLfTags_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTags",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -605,7 +604,7 @@ func LakeformationResourceLfTags_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func LakeformationResourceLfTags_IsConstruct(x interface{}) *bool {
+func LakeformationResourceLfTags_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLakeformationResourceLfTags_IsConstructParameters(x); err != nil {
@@ -616,7 +615,7 @@ func LakeformationResourceLfTags_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTags",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -624,7 +623,7 @@ func LakeformationResourceLfTags_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func LakeformationResourceLfTags_IsTerraformElement(x interface{}) *bool {
+func LakeformationResourceLfTags_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLakeformationResourceLfTags_IsTerraformElementParameters(x); err != nil {
@@ -635,7 +634,7 @@ func LakeformationResourceLfTags_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTags",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -643,7 +642,7 @@ func LakeformationResourceLfTags_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func LakeformationResourceLfTags_IsTerraformResource(x interface{}) *bool {
+func LakeformationResourceLfTags_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLakeformationResourceLfTags_IsTerraformResourceParameters(x); err != nil {
@@ -654,7 +653,7 @@ func LakeformationResourceLfTags_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTags",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -679,31 +678,31 @@ func (l *jsiiProxy_LakeformationResourceLfTags) AddMoveTarget(moveTarget *string
 	_jsii_.InvokeVoid(
 		l,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (l *jsiiProxy_LakeformationResourceLfTags) AddOverride(path *string, value interface{}) {
+func (l *jsiiProxy_LakeformationResourceLfTags) AddOverride(path *string, value any) {
 	if err := l.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (l *jsiiProxy_LakeformationResourceLfTags) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LakeformationResourceLfTags) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func (l *jsiiProxy_LakeformationResourceLfTags) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -735,7 +734,7 @@ func (l *jsiiProxy_LakeformationResourceLfTags) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -751,7 +750,7 @@ func (l *jsiiProxy_LakeformationResourceLfTags) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -767,7 +766,7 @@ func (l *jsiiProxy_LakeformationResourceLfTags) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -783,7 +782,7 @@ func (l *jsiiProxy_LakeformationResourceLfTags) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,7 +798,7 @@ func (l *jsiiProxy_LakeformationResourceLfTags) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -815,7 +814,7 @@ func (l *jsiiProxy_LakeformationResourceLfTags) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -831,15 +830,15 @@ func (l *jsiiProxy_LakeformationResourceLfTags) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LakeformationResourceLfTags) HasResourceMove() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LakeformationResourceLfTags) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -858,7 +857,7 @@ func (l *jsiiProxy_LakeformationResourceLfTags) ImportFrom(id *string, provider 
 	_jsii_.InvokeVoid(
 		l,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -871,7 +870,7 @@ func (l *jsiiProxy_LakeformationResourceLfTags) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -885,18 +884,18 @@ func (l *jsiiProxy_LakeformationResourceLfTags) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (l *jsiiProxy_LakeformationResourceLfTags) MoveTo(moveTarget *string, index interface{}) {
+func (l *jsiiProxy_LakeformationResourceLfTags) MoveTo(moveTarget *string, index any) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -907,7 +906,7 @@ func (l *jsiiProxy_LakeformationResourceLfTags) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -918,7 +917,7 @@ func (l *jsiiProxy_LakeformationResourceLfTags) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -929,18 +928,18 @@ func (l *jsiiProxy_LakeformationResourceLfTags) PutDatabase(value *Lakeformation
 	_jsii_.InvokeVoid(
 		l,
 		"putDatabase",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (l *jsiiProxy_LakeformationResourceLfTags) PutLfTag(value interface{}) {
+func (l *jsiiProxy_LakeformationResourceLfTags) PutLfTag(value any) {
 	if err := l.validatePutLfTagParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"putLfTag",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -951,7 +950,7 @@ func (l *jsiiProxy_LakeformationResourceLfTags) PutTable(value *LakeformationRes
 	_jsii_.InvokeVoid(
 		l,
 		"putTable",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -962,7 +961,7 @@ func (l *jsiiProxy_LakeformationResourceLfTags) PutTableWithColumns(value *Lakef
 	_jsii_.InvokeVoid(
 		l,
 		"putTableWithColumns",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -973,7 +972,7 @@ func (l *jsiiProxy_LakeformationResourceLfTags) PutTimeouts(value *Lakeformation
 	_jsii_.InvokeVoid(
 		l,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1033,8 +1032,8 @@ func (l *jsiiProxy_LakeformationResourceLfTags) ResetTimeouts() {
 	)
 }
 
-func (l *jsiiProxy_LakeformationResourceLfTags) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LakeformationResourceLfTags) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1046,8 +1045,8 @@ func (l *jsiiProxy_LakeformationResourceLfTags) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (l *jsiiProxy_LakeformationResourceLfTags) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LakeformationResourceLfTags) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1059,8 +1058,8 @@ func (l *jsiiProxy_LakeformationResourceLfTags) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (l *jsiiProxy_LakeformationResourceLfTags) ToHclTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LakeformationResourceLfTags) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1072,8 +1071,8 @@ func (l *jsiiProxy_LakeformationResourceLfTags) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LakeformationResourceLfTags) ToMetadata() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LakeformationResourceLfTags) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1098,8 +1097,8 @@ func (l *jsiiProxy_LakeformationResourceLfTags) ToString() *string {
 	return returns
 }
 
-func (l *jsiiProxy_LakeformationResourceLfTags) ToTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LakeformationResourceLfTags) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1110,4 +1109,3 @@ func (l *jsiiProxy_LakeformationResourceLfTags) ToTerraform() interface{} {
 
 	return returns
 }
-

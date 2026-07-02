@@ -98,7 +98,7 @@ func (i *jsiiProxy_ImagebuilderInfrastructureConfigurationInstanceMetadataOption
 	return nil
 }
 
-func (j *jsiiProxy_ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOu
 
 	return nil
 }
-

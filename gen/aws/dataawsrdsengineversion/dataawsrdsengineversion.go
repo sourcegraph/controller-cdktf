@@ -15,15 +15,15 @@ type DataAwsRdsEngineVersion interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DefaultCharacterSet() *string
-	DefaultOnly() interface{}
-	SetDefaultOnly(val interface{})
-	DefaultOnlyInput() interface{}
+	DefaultOnly() any
+	SetDefaultOnly(val any)
+	DefaultOnlyInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -34,7 +34,7 @@ type DataAwsRdsEngineVersion interface {
 	EngineInput() *string
 	ExportableLogTypes() *[]*string
 	Filter() DataAwsRdsEngineVersionFilterList
-	FilterInput() interface{}
+	FilterInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -46,9 +46,9 @@ type DataAwsRdsEngineVersion interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IncludeAll() interface{}
-	SetIncludeAll(val interface{})
-	IncludeAllInput() interface{}
+	IncludeAll() any
+	SetIncludeAll(val any)
+	IncludeAllInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -66,7 +66,7 @@ type DataAwsRdsEngineVersion interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Status() *string
 	SupportedCharacterSets() *[]*string
 	SupportedFeatureNames() *[]*string
@@ -79,7 +79,7 @@ type DataAwsRdsEngineVersion interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ValidUpgradeTargets() *[]*string
@@ -88,9 +88,9 @@ type DataAwsRdsEngineVersion interface {
 	VersionDescription() *string
 	VersionInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -112,7 +112,7 @@ type DataAwsRdsEngineVersion interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutFilter(value interface{})
+	PutFilter(value any)
 	ResetDefaultOnly()
 	ResetFilter()
 	ResetId()
@@ -123,18 +123,18 @@ type DataAwsRdsEngineVersion interface {
 	ResetParameterGroupFamily()
 	ResetPreferredVersions()
 	ResetVersion()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsRdsEngineVersion
@@ -152,8 +152,8 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRdsEngineVersion) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsRdsEngineVersion) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRdsEngineVersion) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsRdsEngineVersion) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion) DefaultCharacterSet() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRdsEngineVersion) DefaultOnly() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsRdsEngineVersion) DefaultOnly() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"defaultOnly",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion) DefaultOnly() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRdsEngineVersion) DefaultOnlyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsRdsEngineVersion) DefaultOnlyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"defaultOnlyInput",
@@ -262,8 +262,8 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion) Filter() DataAwsRdsEngineVersionFilt
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRdsEngineVersion) FilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsRdsEngineVersion) FilterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"filterInput",
@@ -322,8 +322,8 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRdsEngineVersion) IncludeAll() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsRdsEngineVersion) IncludeAll() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeAll",
@@ -332,8 +332,8 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion) IncludeAll() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRdsEngineVersion) IncludeAllInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsRdsEngineVersion) IncludeAllInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeAllInput",
@@ -412,8 +412,8 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRdsEngineVersion) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsRdsEngineVersion) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -522,8 +522,8 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRdsEngineVersion) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsRdsEngineVersion) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -582,7 +582,6 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion) VersionInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/rds_engine_version aws_rds_engine_version} Data Source.
 func NewDataAwsRdsEngineVersion(scope constructs.Construct, id *string, config *DataAwsRdsEngineVersionConfig) DataAwsRdsEngineVersion {
 	_init_.Initialize()
@@ -594,7 +593,7 @@ func NewDataAwsRdsEngineVersion(scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -607,12 +606,12 @@ func NewDataAwsRdsEngineVersion_Override(d DataAwsRdsEngineVersion, scope constr
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsRdsEngineVersion)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsRdsEngineVersion) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -623,7 +622,7 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRdsEngineVersion)SetDefaultOnly(val interface{}) {
+func (j *jsiiProxy_DataAwsRdsEngineVersion) SetDefaultOnly(val any) {
 	if err := j.validateSetDefaultOnlyParameters(val); err != nil {
 		panic(err)
 	}
@@ -634,7 +633,7 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion)SetDefaultOnly(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRdsEngineVersion)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsRdsEngineVersion) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -642,7 +641,7 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRdsEngineVersion)SetEngine(val *string) {
+func (j *jsiiProxy_DataAwsRdsEngineVersion) SetEngine(val *string) {
 	if err := j.validateSetEngineParameters(val); err != nil {
 		panic(err)
 	}
@@ -653,7 +652,7 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion)SetEngine(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRdsEngineVersion)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsRdsEngineVersion) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -661,7 +660,7 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_DataAwsRdsEngineVersion)SetId(val *string) {
+func (j *jsiiProxy_DataAwsRdsEngineVersion) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -672,7 +671,7 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRdsEngineVersion)SetIncludeAll(val interface{}) {
+func (j *jsiiProxy_DataAwsRdsEngineVersion) SetIncludeAll(val any) {
 	if err := j.validateSetIncludeAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -683,7 +682,7 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion)SetIncludeAll(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRdsEngineVersion)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsRdsEngineVersion) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -694,7 +693,7 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_DataAwsRdsEngineVersion)SetParameterGroupFamily(val *string) {
+func (j *jsiiProxy_DataAwsRdsEngineVersion) SetParameterGroupFamily(val *string) {
 	if err := j.validateSetParameterGroupFamilyParameters(val); err != nil {
 		panic(err)
 	}
@@ -705,7 +704,7 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion)SetParameterGroupFamily(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DataAwsRdsEngineVersion)SetPreferredVersions(val *[]*string) {
+func (j *jsiiProxy_DataAwsRdsEngineVersion) SetPreferredVersions(val *[]*string) {
 	if err := j.validateSetPreferredVersionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -716,7 +715,7 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion)SetPreferredVersions(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_DataAwsRdsEngineVersion)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsRdsEngineVersion) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -724,7 +723,7 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion)SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_DataAwsRdsEngineVersion)SetVersion(val *string) {
+func (j *jsiiProxy_DataAwsRdsEngineVersion) SetVersion(val *string) {
 	if err := j.validateSetVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -747,7 +746,7 @@ func DataAwsRdsEngineVersion_GenerateConfigForImport(scope constructs.Construct,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -771,7 +770,7 @@ func DataAwsRdsEngineVersion_GenerateConfigForImport(scope constructs.Construct,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsRdsEngineVersion_IsConstruct(x interface{}) *bool {
+func DataAwsRdsEngineVersion_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsRdsEngineVersion_IsConstructParameters(x); err != nil {
@@ -782,7 +781,7 @@ func DataAwsRdsEngineVersion_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -790,7 +789,7 @@ func DataAwsRdsEngineVersion_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsRdsEngineVersion_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsRdsEngineVersion_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsRdsEngineVersion_IsTerraformDataSourceParameters(x); err != nil {
@@ -801,7 +800,7 @@ func DataAwsRdsEngineVersion_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -809,7 +808,7 @@ func DataAwsRdsEngineVersion_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsRdsEngineVersion_IsTerraformElement(x interface{}) *bool {
+func DataAwsRdsEngineVersion_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsRdsEngineVersion_IsTerraformElementParameters(x); err != nil {
@@ -820,7 +819,7 @@ func DataAwsRdsEngineVersion_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -838,27 +837,27 @@ func DataAwsRdsEngineVersion_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRdsEngineVersion) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsRdsEngineVersion) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsRdsEngineVersion) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsRdsEngineVersion) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -874,7 +873,7 @@ func (d *jsiiProxy_DataAwsRdsEngineVersion) GetBooleanAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -890,7 +889,7 @@ func (d *jsiiProxy_DataAwsRdsEngineVersion) GetBooleanMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -906,7 +905,7 @@ func (d *jsiiProxy_DataAwsRdsEngineVersion) GetListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -922,7 +921,7 @@ func (d *jsiiProxy_DataAwsRdsEngineVersion) GetNumberAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -938,7 +937,7 @@ func (d *jsiiProxy_DataAwsRdsEngineVersion) GetNumberListAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -954,7 +953,7 @@ func (d *jsiiProxy_DataAwsRdsEngineVersion) GetNumberMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -970,7 +969,7 @@ func (d *jsiiProxy_DataAwsRdsEngineVersion) GetStringAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -986,7 +985,7 @@ func (d *jsiiProxy_DataAwsRdsEngineVersion) GetStringMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1002,7 +1001,7 @@ func (d *jsiiProxy_DataAwsRdsEngineVersion) InterpolationForAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1016,18 +1015,18 @@ func (d *jsiiProxy_DataAwsRdsEngineVersion) OverrideLogicalId(newLogicalId *stri
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DataAwsRdsEngineVersion) PutFilter(value interface{}) {
+func (d *jsiiProxy_DataAwsRdsEngineVersion) PutFilter(value any) {
 	if err := d.validatePutFilterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1095,8 +1094,8 @@ func (d *jsiiProxy_DataAwsRdsEngineVersion) ResetVersion() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsRdsEngineVersion) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsRdsEngineVersion) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1108,8 +1107,8 @@ func (d *jsiiProxy_DataAwsRdsEngineVersion) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRdsEngineVersion) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsRdsEngineVersion) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1121,8 +1120,8 @@ func (d *jsiiProxy_DataAwsRdsEngineVersion) SynthesizeHclAttributes() *map[strin
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRdsEngineVersion) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsRdsEngineVersion) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1134,8 +1133,8 @@ func (d *jsiiProxy_DataAwsRdsEngineVersion) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRdsEngineVersion) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsRdsEngineVersion) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1160,8 +1159,8 @@ func (d *jsiiProxy_DataAwsRdsEngineVersion) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRdsEngineVersion) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsRdsEngineVersion) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1172,4 +1171,3 @@ func (d *jsiiProxy_DataAwsRdsEngineVersion) ToTerraform() interface{} {
 
 	return returns
 }
-

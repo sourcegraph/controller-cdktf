@@ -109,7 +109,7 @@ func (n *jsiiProxy_NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsOutputR
 	return nil
 }
 
-func (j *jsiiProxy_NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsOutputR
 	return nil
 }
 
-func (j *jsiiProxy_NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -241,4 +241,3 @@ func validateNewNetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsOutputRefe
 
 	return nil
 }
-

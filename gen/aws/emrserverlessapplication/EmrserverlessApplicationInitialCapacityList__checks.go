@@ -34,7 +34,7 @@ func (e *jsiiProxy_EmrserverlessApplicationInitialCapacityList) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_EmrserverlessApplicationInitialCapacityList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EmrserverlessApplicationInitialCapacityList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEmrserverlessApplicationInitialCapacityListParameters(terraformR
 
 	return nil
 }
-

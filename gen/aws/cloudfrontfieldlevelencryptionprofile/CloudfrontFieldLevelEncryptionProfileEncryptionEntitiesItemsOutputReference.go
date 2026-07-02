@@ -12,9 +12,9 @@ type CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputReference
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,8 +29,8 @@ type CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputReference
 	FieldPatternsInput() *CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsFieldPatterns
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	ProviderId() *string
 	SetProviderId(val *string)
 	ProviderIdInput() *string
@@ -48,7 +48,7 @@ type CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputReference
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,7 +72,7 @@ type CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputReference
 	PutFieldPatterns(value *CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsFieldPatterns)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,8 +85,8 @@ type jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutpu
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -145,8 +145,8 @@ func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsO
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -215,7 +215,6 @@ func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsO
 	return returns
 }
 
-
 func NewCloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputReference {
 	_init_.Initialize()
 
@@ -226,7 +225,7 @@ func NewCloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputRefere
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudfrontFieldLevelEncryptionProfile.CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -238,12 +237,12 @@ func NewCloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputRefere
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudfrontFieldLevelEncryptionProfile.CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsO
 	)
 }
 
-func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsO
 	)
 }
 
-func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsO
 	)
 }
 
-func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputReference)SetProviderId(val *string) {
+func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputReference) SetProviderId(val *string) {
 	if err := j.validateSetProviderIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsO
 	)
 }
 
-func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputReference)SetPublicKeyId(val *string) {
+func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputReference) SetPublicKeyId(val *string) {
 	if err := j.validateSetPublicKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -298,7 +297,7 @@ func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsO
 	)
 }
 
-func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -309,7 +308,7 @@ func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsO
 	)
 }
 
-func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -333,16 +332,16 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsO
 	return returns
 }
 
-func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -358,7 +357,7 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsO
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsO
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsO
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsO
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsO
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsO
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsO
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsO
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -499,7 +498,7 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsO
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -513,20 +512,20 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsO
 	_jsii_.InvokeVoid(
 		c,
 		"putFieldPatterns",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -545,4 +544,3 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsO
 
 	return returns
 }
-

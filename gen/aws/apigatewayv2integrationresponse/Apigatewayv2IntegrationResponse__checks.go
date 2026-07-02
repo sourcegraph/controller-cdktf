@@ -19,7 +19,7 @@ func (a *jsiiProxy_Apigatewayv2IntegrationResponse) validateAddMoveTargetParamet
 	return nil
 }
 
-func (a *jsiiProxy_Apigatewayv2IntegrationResponse) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_Apigatewayv2IntegrationResponse) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_Apigatewayv2IntegrationResponse) validateMoveFromIdParameters
 	return nil
 }
 
-func (a *jsiiProxy_Apigatewayv2IntegrationResponse) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_Apigatewayv2IntegrationResponse) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateApigatewayv2IntegrationResponse_GenerateConfigForImportParameters(s
 	return nil
 }
 
-func validateApigatewayv2IntegrationResponse_IsConstructParameters(x interface{}) error {
+func validateApigatewayv2IntegrationResponse_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateApigatewayv2IntegrationResponse_IsConstructParameters(x interface{}
 	return nil
 }
 
-func validateApigatewayv2IntegrationResponse_IsTerraformElementParameters(x interface{}) error {
+func validateApigatewayv2IntegrationResponse_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateApigatewayv2IntegrationResponse_IsTerraformElementParameters(x inte
 	return nil
 }
 
-func validateApigatewayv2IntegrationResponse_IsTerraformResourceParameters(x interface{}) error {
+func validateApigatewayv2IntegrationResponse_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_Apigatewayv2IntegrationResponse) validateSetApiIdParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_Apigatewayv2IntegrationResponse) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Apigatewayv2IntegrationResponse) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -293,7 +293,7 @@ func (j *jsiiProxy_Apigatewayv2IntegrationResponse) validateSetContentHandlingSt
 	return nil
 }
 
-func (j *jsiiProxy_Apigatewayv2IntegrationResponse) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Apigatewayv2IntegrationResponse) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -382,7 +382,7 @@ func (j *jsiiProxy_Apigatewayv2IntegrationResponse) validateSetLifecycleParamete
 	return nil
 }
 
-func (j *jsiiProxy_Apigatewayv2IntegrationResponse) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Apigatewayv2IntegrationResponse) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -462,4 +462,3 @@ func validateNewApigatewayv2IntegrationResponseParameters(scope constructs.Const
 
 	return nil
 }
-

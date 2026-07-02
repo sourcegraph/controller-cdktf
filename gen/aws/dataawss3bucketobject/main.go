@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsS3BucketObject.DataAwsS3BucketObject",
-		reflect.TypeOf((*DataAwsS3BucketObject)(nil)).Elem(),
+		reflect.TypeFor[DataAwsS3BucketObject](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "body", GoGetter: "Body"},
@@ -81,7 +81,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "versionIdInput", GoGetter: "VersionIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "websiteRedirectLocation", GoGetter: "WebsiteRedirectLocation"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsS3BucketObject{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -89,6 +89,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsS3BucketObject.DataAwsS3BucketObjectConfig",
-		reflect.TypeOf((*DataAwsS3BucketObjectConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsS3BucketObjectConfig](),
 	)
 }

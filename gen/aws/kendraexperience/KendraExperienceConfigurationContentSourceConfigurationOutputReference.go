@@ -12,9 +12,9 @@ type KendraExperienceConfigurationContentSourceConfigurationOutputReference inte
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,9 +28,9 @@ type KendraExperienceConfigurationContentSourceConfigurationOutputReference inte
 	DataSourceIds() *[]*string
 	SetDataSourceIds(val *[]*string)
 	DataSourceIdsInput() *[]*string
-	DirectPutContent() interface{}
-	SetDirectPutContent(val interface{})
-	DirectPutContentInput() interface{}
+	DirectPutContent() any
+	SetDirectPutContent(val any)
+	DirectPutContentInput() any
 	FaqIds() *[]*string
 	SetFaqIds(val *[]*string)
 	FaqIdsInput() *[]*string
@@ -49,7 +49,7 @@ type KendraExperienceConfigurationContentSourceConfigurationOutputReference inte
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type KendraExperienceConfigurationContentSourceConfigurationOutputReference inte
 	ResetFaqIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutputRefe
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -138,8 +138,8 @@ func (j *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutput
 	return returns
 }
 
-func (j *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutputReference) DirectPutContent() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutputReference) DirectPutContent() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"directPutContent",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutput
 	return returns
 }
 
-func (j *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutputReference) DirectPutContentInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutputReference) DirectPutContentInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"directPutContentInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutput
 	return returns
 }
 
-
 func NewKendraExperienceConfigurationContentSourceConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) KendraExperienceConfigurationContentSourceConfigurationOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewKendraExperienceConfigurationContentSourceConfigurationOutputReference(t
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kendraExperience.KendraExperienceConfigurationContentSourceConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewKendraExperienceConfigurationContentSourceConfigurationOutputReference_O
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kendraExperience.KendraExperienceConfigurationContentSourceConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		k,
 	)
 }
 
-func (j *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutput
 	)
 }
 
-func (j *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutput
 	)
 }
 
-func (j *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutputReference)SetDataSourceIds(val *[]*string) {
+func (j *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutputReference) SetDataSourceIds(val *[]*string) {
 	if err := j.validateSetDataSourceIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutput
 	)
 }
 
-func (j *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutputReference)SetDirectPutContent(val interface{}) {
+func (j *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutputReference) SetDirectPutContent(val any) {
 	if err := j.validateSetDirectPutContentParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutput
 	)
 }
 
-func (j *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutputReference)SetFaqIds(val *[]*string) {
+func (j *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutputReference) SetFaqIds(val *[]*string) {
 	if err := j.validateSetFaqIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutput
 	)
 }
 
-func (j *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutputReference)SetInternalValue(val *KendraExperienceConfigurationContentSourceConfiguration) {
+func (j *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutputReference) SetInternalValue(val *KendraExperienceConfigurationContentSourceConfiguration) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutput
 	)
 }
 
-func (j *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutput
 	)
 }
 
-func (j *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (k *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutput
 	return returns
 }
 
-func (k *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (k *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (k *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutput
 	_jsii_.Invoke(
 		k,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (k *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutput
 	_jsii_.Invoke(
 		k,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (k *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutput
 	_jsii_.Invoke(
 		k,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (k *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutput
 	_jsii_.Invoke(
 		k,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (k *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutput
 	_jsii_.Invoke(
 		k,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (k *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutput
 	_jsii_.Invoke(
 		k,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (k *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutput
 	_jsii_.Invoke(
 		k,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (k *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutput
 	_jsii_.Invoke(
 		k,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (k *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutput
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (k *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutput
 	)
 }
 
-func (k *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (k *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := k.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		k,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (k *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutput
 
 	return returns
 }
-

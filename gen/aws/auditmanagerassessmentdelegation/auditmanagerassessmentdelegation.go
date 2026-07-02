@@ -21,18 +21,18 @@ type AuditmanagerAssessmentDelegation interface {
 	SetComment(val *string)
 	CommentInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	ControlSetId() *string
 	SetControlSetId(val *string)
 	ControlSetIdInput() *string
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DelegationId() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -58,11 +58,11 @@ type AuditmanagerAssessmentDelegation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RoleArn() *string
 	SetRoleArn(val *string)
 	RoleArnInput() *string
@@ -73,16 +73,16 @@ type AuditmanagerAssessmentDelegation interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,7 +100,7 @@ type AuditmanagerAssessmentDelegation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -112,7 +112,7 @@ type AuditmanagerAssessmentDelegation interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -123,17 +123,17 @@ type AuditmanagerAssessmentDelegation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AuditmanagerAssessmentDelegation
@@ -191,8 +191,8 @@ func (j *jsiiProxy_AuditmanagerAssessmentDelegation) CommentInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentDelegation) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AuditmanagerAssessmentDelegation) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -201,8 +201,8 @@ func (j *jsiiProxy_AuditmanagerAssessmentDelegation) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentDelegation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AuditmanagerAssessmentDelegation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -231,8 +231,8 @@ func (j *jsiiProxy_AuditmanagerAssessmentDelegation) ControlSetIdInput() *string
 	return returns
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentDelegation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AuditmanagerAssessmentDelegation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -331,8 +331,8 @@ func (j *jsiiProxy_AuditmanagerAssessmentDelegation) Provider() cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentDelegation) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AuditmanagerAssessmentDelegation) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -341,8 +341,8 @@ func (j *jsiiProxy_AuditmanagerAssessmentDelegation) Provisioners() *[]interface
 	return returns
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentDelegation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AuditmanagerAssessmentDelegation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -411,8 +411,8 @@ func (j *jsiiProxy_AuditmanagerAssessmentDelegation) TerraformGeneratorMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentDelegation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AuditmanagerAssessmentDelegation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -431,7 +431,6 @@ func (j *jsiiProxy_AuditmanagerAssessmentDelegation) TerraformResourceType() *st
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/auditmanager_assessment_delegation aws_auditmanager_assessment_delegation} Resource.
 func NewAuditmanagerAssessmentDelegation(scope constructs.Construct, id *string, config *AuditmanagerAssessmentDelegationConfig) AuditmanagerAssessmentDelegation {
 	_init_.Initialize()
@@ -443,7 +442,7 @@ func NewAuditmanagerAssessmentDelegation(scope constructs.Construct, id *string,
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.auditmanagerAssessmentDelegation.AuditmanagerAssessmentDelegation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -456,12 +455,12 @@ func NewAuditmanagerAssessmentDelegation_Override(a AuditmanagerAssessmentDelega
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.auditmanagerAssessmentDelegation.AuditmanagerAssessmentDelegation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentDelegation)SetAssessmentId(val *string) {
+func (j *jsiiProxy_AuditmanagerAssessmentDelegation) SetAssessmentId(val *string) {
 	if err := j.validateSetAssessmentIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -472,7 +471,7 @@ func (j *jsiiProxy_AuditmanagerAssessmentDelegation)SetAssessmentId(val *string)
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentDelegation)SetComment(val *string) {
+func (j *jsiiProxy_AuditmanagerAssessmentDelegation) SetComment(val *string) {
 	if err := j.validateSetCommentParameters(val); err != nil {
 		panic(err)
 	}
@@ -483,7 +482,7 @@ func (j *jsiiProxy_AuditmanagerAssessmentDelegation)SetComment(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentDelegation)SetConnection(val interface{}) {
+func (j *jsiiProxy_AuditmanagerAssessmentDelegation) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -494,7 +493,7 @@ func (j *jsiiProxy_AuditmanagerAssessmentDelegation)SetConnection(val interface{
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentDelegation)SetControlSetId(val *string) {
+func (j *jsiiProxy_AuditmanagerAssessmentDelegation) SetControlSetId(val *string) {
 	if err := j.validateSetControlSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -505,7 +504,7 @@ func (j *jsiiProxy_AuditmanagerAssessmentDelegation)SetControlSetId(val *string)
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentDelegation)SetCount(val interface{}) {
+func (j *jsiiProxy_AuditmanagerAssessmentDelegation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -516,7 +515,7 @@ func (j *jsiiProxy_AuditmanagerAssessmentDelegation)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentDelegation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AuditmanagerAssessmentDelegation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -524,7 +523,7 @@ func (j *jsiiProxy_AuditmanagerAssessmentDelegation)SetDependsOn(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentDelegation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AuditmanagerAssessmentDelegation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -532,7 +531,7 @@ func (j *jsiiProxy_AuditmanagerAssessmentDelegation)SetForEach(val cdktf.ITerraf
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentDelegation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AuditmanagerAssessmentDelegation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -543,7 +542,7 @@ func (j *jsiiProxy_AuditmanagerAssessmentDelegation)SetLifecycle(val *cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentDelegation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AuditmanagerAssessmentDelegation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -551,7 +550,7 @@ func (j *jsiiProxy_AuditmanagerAssessmentDelegation)SetProvider(val cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentDelegation)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AuditmanagerAssessmentDelegation) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -562,7 +561,7 @@ func (j *jsiiProxy_AuditmanagerAssessmentDelegation)SetProvisioners(val *[]inter
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentDelegation)SetRoleArn(val *string) {
+func (j *jsiiProxy_AuditmanagerAssessmentDelegation) SetRoleArn(val *string) {
 	if err := j.validateSetRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -573,7 +572,7 @@ func (j *jsiiProxy_AuditmanagerAssessmentDelegation)SetRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentDelegation)SetRoleType(val *string) {
+func (j *jsiiProxy_AuditmanagerAssessmentDelegation) SetRoleType(val *string) {
 	if err := j.validateSetRoleTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -596,7 +595,7 @@ func AuditmanagerAssessmentDelegation_GenerateConfigForImport(scope constructs.C
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.auditmanagerAssessmentDelegation.AuditmanagerAssessmentDelegation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -620,7 +619,7 @@ func AuditmanagerAssessmentDelegation_GenerateConfigForImport(scope constructs.C
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AuditmanagerAssessmentDelegation_IsConstruct(x interface{}) *bool {
+func AuditmanagerAssessmentDelegation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAuditmanagerAssessmentDelegation_IsConstructParameters(x); err != nil {
@@ -631,7 +630,7 @@ func AuditmanagerAssessmentDelegation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.auditmanagerAssessmentDelegation.AuditmanagerAssessmentDelegation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -639,7 +638,7 @@ func AuditmanagerAssessmentDelegation_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AuditmanagerAssessmentDelegation_IsTerraformElement(x interface{}) *bool {
+func AuditmanagerAssessmentDelegation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAuditmanagerAssessmentDelegation_IsTerraformElementParameters(x); err != nil {
@@ -650,7 +649,7 @@ func AuditmanagerAssessmentDelegation_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.auditmanagerAssessmentDelegation.AuditmanagerAssessmentDelegation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -658,7 +657,7 @@ func AuditmanagerAssessmentDelegation_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AuditmanagerAssessmentDelegation_IsTerraformResource(x interface{}) *bool {
+func AuditmanagerAssessmentDelegation_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAuditmanagerAssessmentDelegation_IsTerraformResourceParameters(x); err != nil {
@@ -669,7 +668,7 @@ func AuditmanagerAssessmentDelegation_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.auditmanagerAssessmentDelegation.AuditmanagerAssessmentDelegation",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -694,31 +693,31 @@ func (a *jsiiProxy_AuditmanagerAssessmentDelegation) AddMoveTarget(moveTarget *s
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AuditmanagerAssessmentDelegation) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AuditmanagerAssessmentDelegation) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AuditmanagerAssessmentDelegation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AuditmanagerAssessmentDelegation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -734,7 +733,7 @@ func (a *jsiiProxy_AuditmanagerAssessmentDelegation) GetBooleanAttribute(terrafo
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -750,7 +749,7 @@ func (a *jsiiProxy_AuditmanagerAssessmentDelegation) GetBooleanMapAttribute(terr
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -766,7 +765,7 @@ func (a *jsiiProxy_AuditmanagerAssessmentDelegation) GetListAttribute(terraformA
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -782,7 +781,7 @@ func (a *jsiiProxy_AuditmanagerAssessmentDelegation) GetNumberAttribute(terrafor
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -798,7 +797,7 @@ func (a *jsiiProxy_AuditmanagerAssessmentDelegation) GetNumberListAttribute(terr
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -814,7 +813,7 @@ func (a *jsiiProxy_AuditmanagerAssessmentDelegation) GetNumberMapAttribute(terra
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -830,7 +829,7 @@ func (a *jsiiProxy_AuditmanagerAssessmentDelegation) GetStringAttribute(terrafor
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -846,15 +845,15 @@ func (a *jsiiProxy_AuditmanagerAssessmentDelegation) GetStringMapAttribute(terra
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AuditmanagerAssessmentDelegation) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AuditmanagerAssessmentDelegation) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -873,7 +872,7 @@ func (a *jsiiProxy_AuditmanagerAssessmentDelegation) ImportFrom(id *string, prov
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -886,7 +885,7 @@ func (a *jsiiProxy_AuditmanagerAssessmentDelegation) InterpolationForAttribute(t
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -900,18 +899,18 @@ func (a *jsiiProxy_AuditmanagerAssessmentDelegation) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AuditmanagerAssessmentDelegation) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AuditmanagerAssessmentDelegation) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -922,7 +921,7 @@ func (a *jsiiProxy_AuditmanagerAssessmentDelegation) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -933,7 +932,7 @@ func (a *jsiiProxy_AuditmanagerAssessmentDelegation) OverrideLogicalId(newLogica
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -953,8 +952,8 @@ func (a *jsiiProxy_AuditmanagerAssessmentDelegation) ResetOverrideLogicalId() {
 	)
 }
 
-func (a *jsiiProxy_AuditmanagerAssessmentDelegation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AuditmanagerAssessmentDelegation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -966,8 +965,8 @@ func (a *jsiiProxy_AuditmanagerAssessmentDelegation) SynthesizeAttributes() *map
 	return returns
 }
 
-func (a *jsiiProxy_AuditmanagerAssessmentDelegation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AuditmanagerAssessmentDelegation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -979,8 +978,8 @@ func (a *jsiiProxy_AuditmanagerAssessmentDelegation) SynthesizeHclAttributes() *
 	return returns
 }
 
-func (a *jsiiProxy_AuditmanagerAssessmentDelegation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AuditmanagerAssessmentDelegation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -992,8 +991,8 @@ func (a *jsiiProxy_AuditmanagerAssessmentDelegation) ToHclTerraform() interface{
 	return returns
 }
 
-func (a *jsiiProxy_AuditmanagerAssessmentDelegation) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AuditmanagerAssessmentDelegation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1018,8 +1017,8 @@ func (a *jsiiProxy_AuditmanagerAssessmentDelegation) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AuditmanagerAssessmentDelegation) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AuditmanagerAssessmentDelegation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1030,4 +1029,3 @@ func (a *jsiiProxy_AuditmanagerAssessmentDelegation) ToTerraform() interface{} {
 
 	return returns
 }
-

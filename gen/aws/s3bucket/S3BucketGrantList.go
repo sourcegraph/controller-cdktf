@@ -17,8 +17,8 @@ type S3BucketGrantList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type S3BucketGrantList interface {
 	Get(index *float64) S3BucketGrantOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_S3BucketGrantList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketGrantList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketGrantList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_S3BucketGrantList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewS3BucketGrantList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3BucketGrantList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewS3BucketGrantList(terraformResource cdktf.IInterpolatingParent, terrafor
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3Bucket.S3BucketGrantList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewS3BucketGrantList_Override(s S3BucketGrantList, terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3Bucket.S3BucketGrantList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_S3BucketGrantList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_S3BucketGrantList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_S3BucketGrantList)SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketGrantList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_S3BucketGrantList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_S3BucketGrantList)SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketGrantList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_S3BucketGrantList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_S3BucketGrantList)SetTerraformResource(val cdktf.IInterpolati
 	)
 }
 
-func (j *jsiiProxy_S3BucketGrantList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_S3BucketGrantList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (s *jsiiProxy_S3BucketGrantList) AllWithMapKey(mapKeyAttributeName *string)
 	_jsii_.Invoke(
 		s,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (s *jsiiProxy_S3BucketGrantList) Get(index *float64) S3BucketGrantOutputRef
 	_jsii_.Invoke(
 		s,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketGrantList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_S3BucketGrantList) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (s *jsiiProxy_S3BucketGrantList) ToString() *string {
 
 	return returns
 }
-

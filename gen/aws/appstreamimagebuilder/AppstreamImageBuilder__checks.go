@@ -19,7 +19,7 @@ func (a *jsiiProxy_AppstreamImageBuilder) validateAddMoveTargetParameters(moveTa
 	return nil
 }
 
-func (a *jsiiProxy_AppstreamImageBuilder) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AppstreamImageBuilder) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AppstreamImageBuilder) validateMoveFromIdParameters(id *strin
 	return nil
 }
 
-func (a *jsiiProxy_AppstreamImageBuilder) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AppstreamImageBuilder) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (a *jsiiProxy_AppstreamImageBuilder) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
-func (a *jsiiProxy_AppstreamImageBuilder) validatePutAccessEndpointParameters(value interface{}) error {
+func (a *jsiiProxy_AppstreamImageBuilder) validatePutAccessEndpointParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateAppstreamImageBuilder_GenerateConfigForImportParameters(scope const
 	return nil
 }
 
-func validateAppstreamImageBuilder_IsConstructParameters(x interface{}) error {
+func validateAppstreamImageBuilder_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateAppstreamImageBuilder_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateAppstreamImageBuilder_IsTerraformElementParameters(x interface{}) error {
+func validateAppstreamImageBuilder_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateAppstreamImageBuilder_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
-func validateAppstreamImageBuilder_IsTerraformResourceParameters(x interface{}) error {
+func validateAppstreamImageBuilder_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -305,7 +305,7 @@ func (j *jsiiProxy_AppstreamImageBuilder) validateSetAppstreamAgentVersionParame
 	return nil
 }
 
-func (j *jsiiProxy_AppstreamImageBuilder) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AppstreamImageBuilder) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -338,7 +338,7 @@ func (j *jsiiProxy_AppstreamImageBuilder) validateSetConnectionParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_AppstreamImageBuilder) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AppstreamImageBuilder) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -411,7 +411,7 @@ func (j *jsiiProxy_AppstreamImageBuilder) validateSetDisplayNameParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_AppstreamImageBuilder) validateSetEnableDefaultInternetAccessParameters(val interface{}) error {
+func (j *jsiiProxy_AppstreamImageBuilder) validateSetEnableDefaultInternetAccessParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -487,7 +487,7 @@ func (j *jsiiProxy_AppstreamImageBuilder) validateSetNameParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_AppstreamImageBuilder) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AppstreamImageBuilder) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -567,4 +567,3 @@ func validateNewAppstreamImageBuilderParameters(scope constructs.Construct, id *
 
 	return nil
 }
-

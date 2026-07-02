@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.vpcEndpointSubnetAssociation.VpcEndpointSubnetAssociation",
-		reflect.TypeOf((*VpcEndpointSubnetAssociation)(nil)).Elem(),
+		reflect.TypeFor[VpcEndpointSubnetAssociation](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcEndpointId", GoGetter: "VpcEndpointId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcEndpointIdInput", GoGetter: "VpcEndpointIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VpcEndpointSubnetAssociation{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -72,15 +72,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.vpcEndpointSubnetAssociation.VpcEndpointSubnetAssociationConfig",
-		reflect.TypeOf((*VpcEndpointSubnetAssociationConfig)(nil)).Elem(),
+		reflect.TypeFor[VpcEndpointSubnetAssociationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.vpcEndpointSubnetAssociation.VpcEndpointSubnetAssociationTimeouts",
-		reflect.TypeOf((*VpcEndpointSubnetAssociationTimeouts)(nil)).Elem(),
+		reflect.TypeFor[VpcEndpointSubnetAssociationTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.vpcEndpointSubnetAssociation.VpcEndpointSubnetAssociationTimeoutsOutputReference",
-		reflect.TypeOf((*VpcEndpointSubnetAssociationTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VpcEndpointSubnetAssociationTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -110,7 +110,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VpcEndpointSubnetAssociationTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

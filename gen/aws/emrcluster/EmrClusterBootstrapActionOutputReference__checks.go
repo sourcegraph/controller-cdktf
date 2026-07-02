@@ -106,7 +106,7 @@ func (j *jsiiProxy_EmrClusterBootstrapActionOutputReference) validateSetArgsPara
 	return nil
 }
 
-func (j *jsiiProxy_EmrClusterBootstrapActionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EmrClusterBootstrapActionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_EmrClusterBootstrapActionOutputReference) validateSetComplexO
 	return nil
 }
 
-func (j *jsiiProxy_EmrClusterBootstrapActionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EmrClusterBootstrapActionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewEmrClusterBootstrapActionOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

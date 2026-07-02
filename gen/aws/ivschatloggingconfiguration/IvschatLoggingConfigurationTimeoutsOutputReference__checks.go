@@ -98,7 +98,7 @@ func (i *jsiiProxy_IvschatLoggingConfigurationTimeoutsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_IvschatLoggingConfigurationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IvschatLoggingConfigurationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_IvschatLoggingConfigurationTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_IvschatLoggingConfigurationTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IvschatLoggingConfigurationTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewIvschatLoggingConfigurationTimeoutsOutputReferenceParameters(ter
 
 	return nil
 }
-

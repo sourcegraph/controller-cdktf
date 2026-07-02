@@ -109,7 +109,7 @@ func (e *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -233,4 +233,3 @@ func validateNewEbsSnapshotImportDiskContainerOutputReferenceParameters(terrafor
 
 	return nil
 }
-

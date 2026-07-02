@@ -12,9 +12,9 @@ type AutoscalingGroupTagTagOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -32,9 +32,9 @@ type AutoscalingGroupTagTagOutputReference interface {
 	Key() *string
 	SetKey(val *string)
 	KeyInput() *string
-	PropagateAtLaunch() interface{}
-	SetPropagateAtLaunch(val interface{})
-	PropagateAtLaunchInput() interface{}
+	PropagateAtLaunch() any
+	SetPropagateAtLaunch(val any)
+	PropagateAtLaunchInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type AutoscalingGroupTagTagOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,7 +72,7 @@ type AutoscalingGroupTagTagOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,8 +85,8 @@ type jsiiProxy_AutoscalingGroupTagTagOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AutoscalingGroupTagTagOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AutoscalingGroupTagTagOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -155,8 +155,8 @@ func (j *jsiiProxy_AutoscalingGroupTagTagOutputReference) KeyInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AutoscalingGroupTagTagOutputReference) PropagateAtLaunch() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AutoscalingGroupTagTagOutputReference) PropagateAtLaunch() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"propagateAtLaunch",
@@ -165,8 +165,8 @@ func (j *jsiiProxy_AutoscalingGroupTagTagOutputReference) PropagateAtLaunch() in
 	return returns
 }
 
-func (j *jsiiProxy_AutoscalingGroupTagTagOutputReference) PropagateAtLaunchInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AutoscalingGroupTagTagOutputReference) PropagateAtLaunchInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"propagateAtLaunchInput",
@@ -215,7 +215,6 @@ func (j *jsiiProxy_AutoscalingGroupTagTagOutputReference) ValueInput() *string {
 	return returns
 }
 
-
 func NewAutoscalingGroupTagTagOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AutoscalingGroupTagTagOutputReference {
 	_init_.Initialize()
 
@@ -226,7 +225,7 @@ func NewAutoscalingGroupTagTagOutputReference(terraformResource cdktf.IInterpola
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagTagOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -238,12 +237,12 @@ func NewAutoscalingGroupTagTagOutputReference_Override(a AutoscalingGroupTagTagO
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagTagOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AutoscalingGroupTagTagOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AutoscalingGroupTagTagOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_AutoscalingGroupTagTagOutputReference)SetComplexObjectIndex(v
 	)
 }
 
-func (j *jsiiProxy_AutoscalingGroupTagTagOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AutoscalingGroupTagTagOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_AutoscalingGroupTagTagOutputReference)SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_AutoscalingGroupTagTagOutputReference)SetInternalValue(val *AutoscalingGroupTagTag) {
+func (j *jsiiProxy_AutoscalingGroupTagTagOutputReference) SetInternalValue(val *AutoscalingGroupTagTag) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_AutoscalingGroupTagTagOutputReference)SetInternalValue(val *A
 	)
 }
 
-func (j *jsiiProxy_AutoscalingGroupTagTagOutputReference)SetKey(val *string) {
+func (j *jsiiProxy_AutoscalingGroupTagTagOutputReference) SetKey(val *string) {
 	if err := j.validateSetKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_AutoscalingGroupTagTagOutputReference)SetKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AutoscalingGroupTagTagOutputReference)SetPropagateAtLaunch(val interface{}) {
+func (j *jsiiProxy_AutoscalingGroupTagTagOutputReference) SetPropagateAtLaunch(val any) {
 	if err := j.validateSetPropagateAtLaunchParameters(val); err != nil {
 		panic(err)
 	}
@@ -298,7 +297,7 @@ func (j *jsiiProxy_AutoscalingGroupTagTagOutputReference)SetPropagateAtLaunch(va
 	)
 }
 
-func (j *jsiiProxy_AutoscalingGroupTagTagOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AutoscalingGroupTagTagOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -309,7 +308,7 @@ func (j *jsiiProxy_AutoscalingGroupTagTagOutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_AutoscalingGroupTagTagOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AutoscalingGroupTagTagOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -320,7 +319,7 @@ func (j *jsiiProxy_AutoscalingGroupTagTagOutputReference)SetTerraformResource(va
 	)
 }
 
-func (j *jsiiProxy_AutoscalingGroupTagTagOutputReference)SetValue(val *string) {
+func (j *jsiiProxy_AutoscalingGroupTagTagOutputReference) SetValue(val *string) {
 	if err := j.validateSetValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -344,16 +343,16 @@ func (a *jsiiProxy_AutoscalingGroupTagTagOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AutoscalingGroupTagTagOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AutoscalingGroupTagTagOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (a *jsiiProxy_AutoscalingGroupTagTagOutputReference) GetBooleanAttribute(te
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (a *jsiiProxy_AutoscalingGroupTagTagOutputReference) GetBooleanMapAttribute
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (a *jsiiProxy_AutoscalingGroupTagTagOutputReference) GetListAttribute(terra
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (a *jsiiProxy_AutoscalingGroupTagTagOutputReference) GetNumberAttribute(ter
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (a *jsiiProxy_AutoscalingGroupTagTagOutputReference) GetNumberListAttribute
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (a *jsiiProxy_AutoscalingGroupTagTagOutputReference) GetNumberMapAttribute(
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -465,7 +464,7 @@ func (a *jsiiProxy_AutoscalingGroupTagTagOutputReference) GetStringAttribute(ter
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (a *jsiiProxy_AutoscalingGroupTagTagOutputReference) GetStringMapAttribute(
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -510,23 +509,23 @@ func (a *jsiiProxy_AutoscalingGroupTagTagOutputReference) InterpolationForAttrib
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AutoscalingGroupTagTagOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AutoscalingGroupTagTagOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -545,4 +544,3 @@ func (a *jsiiProxy_AutoscalingGroupTagTagOutputReference) ToString() *string {
 
 	return returns
 }
-

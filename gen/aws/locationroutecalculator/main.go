@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculator",
-		reflect.TypeOf((*LocationRouteCalculator)(nil)).Elem(),
+		reflect.TypeFor[LocationRouteCalculator](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,7 +76,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LocationRouteCalculator{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -84,15 +84,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculatorConfig",
-		reflect.TypeOf((*LocationRouteCalculatorConfig)(nil)).Elem(),
+		reflect.TypeFor[LocationRouteCalculatorConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculatorTimeouts",
-		reflect.TypeOf((*LocationRouteCalculatorTimeouts)(nil)).Elem(),
+		reflect.TypeFor[LocationRouteCalculatorTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculatorTimeoutsOutputReference",
-		reflect.TypeOf((*LocationRouteCalculatorTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LocationRouteCalculatorTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -125,7 +125,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

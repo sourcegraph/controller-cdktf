@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystem",
-		reflect.TypeOf((*FsxOpenzfsFileSystem)(nil)).Elem(),
+		reflect.TypeFor[FsxOpenzfsFileSystem](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weeklyMaintenanceStartTime", GoGetter: "WeeklyMaintenanceStartTime"},
 			_jsii_.MemberProperty{JsiiProperty: "weeklyMaintenanceStartTimeInput", GoGetter: "WeeklyMaintenanceStartTimeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FsxOpenzfsFileSystem{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -124,15 +124,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemConfig",
-		reflect.TypeOf((*FsxOpenzfsFileSystemConfig)(nil)).Elem(),
+		reflect.TypeFor[FsxOpenzfsFileSystemConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemDiskIopsConfiguration",
-		reflect.TypeOf((*FsxOpenzfsFileSystemDiskIopsConfiguration)(nil)).Elem(),
+		reflect.TypeFor[FsxOpenzfsFileSystemDiskIopsConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference",
-		reflect.TypeOf((*FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -162,7 +162,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -170,19 +170,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemRootVolumeConfiguration",
-		reflect.TypeOf((*FsxOpenzfsFileSystemRootVolumeConfiguration)(nil)).Elem(),
+		reflect.TypeFor[FsxOpenzfsFileSystemRootVolumeConfiguration](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemRootVolumeConfigurationNfsExports",
-		reflect.TypeOf((*FsxOpenzfsFileSystemRootVolumeConfigurationNfsExports)(nil)).Elem(),
+		reflect.TypeFor[FsxOpenzfsFileSystemRootVolumeConfigurationNfsExports](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsClientConfigurations",
-		reflect.TypeOf((*FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsClientConfigurations)(nil)).Elem(),
+		reflect.TypeFor[FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsClientConfigurations](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsClientConfigurationsList",
-		reflect.TypeOf((*FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsClientConfigurationsList)(nil)).Elem(),
+		reflect.TypeFor[FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsClientConfigurationsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -196,7 +196,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsClientConfigurationsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -204,7 +204,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsClientConfigurationsOutputReference",
-		reflect.TypeOf((*FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsClientConfigurationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsClientConfigurationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clients", GoGetter: "Clients"},
 			_jsii_.MemberProperty{JsiiProperty: "clientsInput", GoGetter: "ClientsInput"},
@@ -232,7 +232,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsClientConfigurationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -240,7 +240,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsOutputReference",
-		reflect.TypeOf((*FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientConfigurations", GoGetter: "ClientConfigurations"},
 			_jsii_.MemberProperty{JsiiProperty: "clientConfigurationsInput", GoGetter: "ClientConfigurationsInput"},
@@ -267,7 +267,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -275,7 +275,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference",
-		reflect.TypeOf((*FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -319,7 +319,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userAndGroupQuotas", GoGetter: "UserAndGroupQuotas"},
 			_jsii_.MemberProperty{JsiiProperty: "userAndGroupQuotasInput", GoGetter: "UserAndGroupQuotasInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -327,11 +327,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotas",
-		reflect.TypeOf((*FsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotas)(nil)).Elem(),
+		reflect.TypeFor[FsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotas](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotasList",
-		reflect.TypeOf((*FsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotasList)(nil)).Elem(),
+		reflect.TypeFor[FsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotasList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -345,7 +345,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotasList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -353,7 +353,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotasOutputReference",
-		reflect.TypeOf((*FsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotasOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotasOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -383,7 +383,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotasOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -391,11 +391,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemTimeouts",
-		reflect.TypeOf((*FsxOpenzfsFileSystemTimeouts)(nil)).Elem(),
+		reflect.TypeFor[FsxOpenzfsFileSystemTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemTimeoutsOutputReference",
-		reflect.TypeOf((*FsxOpenzfsFileSystemTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FsxOpenzfsFileSystemTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -428,7 +428,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FsxOpenzfsFileSystemTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

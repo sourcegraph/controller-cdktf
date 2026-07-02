@@ -19,7 +19,7 @@ func (q *jsiiProxy_QuicksightDataSource) validateAddMoveTargetParameters(moveTar
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSource) validateAddOverrideParameters(path *string, value interface{}) error {
+func (q *jsiiProxy_QuicksightDataSource) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (q *jsiiProxy_QuicksightDataSource) validateMoveFromIdParameters(id *string
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSource) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (q *jsiiProxy_QuicksightDataSource) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -226,7 +226,7 @@ func (q *jsiiProxy_QuicksightDataSource) validatePutParametersParameters(value *
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSource) validatePutPermissionParameters(value interface{}) error {
+func (q *jsiiProxy_QuicksightDataSource) validatePutPermissionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -295,7 +295,7 @@ func validateQuicksightDataSource_GenerateConfigForImportParameters(scope constr
 	return nil
 }
 
-func validateQuicksightDataSource_IsConstructParameters(x interface{}) error {
+func validateQuicksightDataSource_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -303,7 +303,7 @@ func validateQuicksightDataSource_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateQuicksightDataSource_IsTerraformElementParameters(x interface{}) error {
+func validateQuicksightDataSource_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -311,7 +311,7 @@ func validateQuicksightDataSource_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
-func validateQuicksightDataSource_IsTerraformResourceParameters(x interface{}) error {
+func validateQuicksightDataSource_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -327,7 +327,7 @@ func (j *jsiiProxy_QuicksightDataSource) validateSetAwsAccountIdParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_QuicksightDataSource) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_QuicksightDataSource) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -360,7 +360,7 @@ func (j *jsiiProxy_QuicksightDataSource) validateSetConnectionParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_QuicksightDataSource) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_QuicksightDataSource) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -449,7 +449,7 @@ func (j *jsiiProxy_QuicksightDataSource) validateSetNameParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_QuicksightDataSource) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_QuicksightDataSource) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -537,4 +537,3 @@ func validateNewQuicksightDataSourceParameters(scope constructs.Construct, id *s
 
 	return nil
 }
-

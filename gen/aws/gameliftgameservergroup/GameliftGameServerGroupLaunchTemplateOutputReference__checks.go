@@ -98,7 +98,7 @@ func (g *jsiiProxy_GameliftGameServerGroupLaunchTemplateOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GameliftGameServerGroupLaunchTemplateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GameliftGameServerGroupLaunchTemplateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGameliftGameServerGroupLaunchTemplateOutputReferenceParameters(t
 
 	return nil
 }
-

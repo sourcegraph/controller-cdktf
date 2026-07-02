@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteActionWeightedTargetOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteActionWeightedTargetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteActionWeightedTargetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteActionWeightedTargetOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteActionWeightedTargetOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteActionWeightedTargetOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewAppmeshRouteSpecHttp2RouteActionWeightedTargetOutputReferencePar
 
 	return nil
 }
-

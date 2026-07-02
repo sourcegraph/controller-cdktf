@@ -98,7 +98,7 @@ func (s *jsiiProxy_SecretsmanagerSecretReplicaOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_SecretsmanagerSecretReplicaOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SecretsmanagerSecretReplicaOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SecretsmanagerSecretReplicaOutputReference) validateSetComple
 	return nil
 }
 
-func (j *jsiiProxy_SecretsmanagerSecretReplicaOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SecretsmanagerSecretReplicaOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewSecretsmanagerSecretReplicaOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

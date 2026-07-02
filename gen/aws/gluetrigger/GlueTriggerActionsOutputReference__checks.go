@@ -117,7 +117,7 @@ func (j *jsiiProxy_GlueTriggerActionsOutputReference) validateSetArgumentsParame
 	return nil
 }
 
-func (j *jsiiProxy_GlueTriggerActionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GlueTriggerActionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -190,7 +190,7 @@ func (j *jsiiProxy_GlueTriggerActionsOutputReference) validateSetCrawlerNamePara
 	return nil
 }
 
-func (j *jsiiProxy_GlueTriggerActionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GlueTriggerActionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -273,4 +273,3 @@ func validateNewGlueTriggerActionsOutputReferenceParameters(terraformResource cd
 
 	return nil
 }
-

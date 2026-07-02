@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApiGatewayDomainNameEndpointConfigurationOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ApiGatewayDomainNameEndpointConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApiGatewayDomainNameEndpointConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewApiGatewayDomainNameEndpointConfigurationOutputReferenceParamete
 
 	return nil
 }
-

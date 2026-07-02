@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfig",
-		reflect.TypeOf((*LambdaCodeSigningConfig)(nil)).Elem(),
+		reflect.TypeFor[LambdaCodeSigningConfig](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LambdaCodeSigningConfig{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -77,11 +77,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfigAllowedPublishers",
-		reflect.TypeOf((*LambdaCodeSigningConfigAllowedPublishers)(nil)).Elem(),
+		reflect.TypeFor[LambdaCodeSigningConfigAllowedPublishers](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfigAllowedPublishersOutputReference",
-		reflect.TypeOf((*LambdaCodeSigningConfigAllowedPublishersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LambdaCodeSigningConfigAllowedPublishersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -107,7 +107,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LambdaCodeSigningConfigAllowedPublishersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -115,15 +115,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfigConfig",
-		reflect.TypeOf((*LambdaCodeSigningConfigConfig)(nil)).Elem(),
+		reflect.TypeFor[LambdaCodeSigningConfigConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfigPolicies",
-		reflect.TypeOf((*LambdaCodeSigningConfigPolicies)(nil)).Elem(),
+		reflect.TypeFor[LambdaCodeSigningConfigPolicies](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfigPoliciesOutputReference",
-		reflect.TypeOf((*LambdaCodeSigningConfigPoliciesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LambdaCodeSigningConfigPoliciesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -149,7 +149,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "untrustedArtifactOnDeployment", GoGetter: "UntrustedArtifactOnDeployment"},
 			_jsii_.MemberProperty{JsiiProperty: "untrustedArtifactOnDeploymentInput", GoGetter: "UntrustedArtifactOnDeploymentInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

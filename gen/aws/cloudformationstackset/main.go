@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudformationStackSet.CloudformationStackSet",
-		reflect.TypeOf((*CloudformationStackSet)(nil)).Elem(),
+		reflect.TypeFor[CloudformationStackSet](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -105,7 +105,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudformationStackSet{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -113,11 +113,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudformationStackSet.CloudformationStackSetAutoDeployment",
-		reflect.TypeOf((*CloudformationStackSetAutoDeployment)(nil)).Elem(),
+		reflect.TypeFor[CloudformationStackSetAutoDeployment](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudformationStackSet.CloudformationStackSetAutoDeploymentOutputReference",
-		reflect.TypeOf((*CloudformationStackSetAutoDeploymentOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudformationStackSetAutoDeploymentOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -147,7 +147,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudformationStackSetAutoDeploymentOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -155,15 +155,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudformationStackSet.CloudformationStackSetConfig",
-		reflect.TypeOf((*CloudformationStackSetConfig)(nil)).Elem(),
+		reflect.TypeFor[CloudformationStackSetConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudformationStackSet.CloudformationStackSetOperationPreferences",
-		reflect.TypeOf((*CloudformationStackSetOperationPreferences)(nil)).Elem(),
+		reflect.TypeFor[CloudformationStackSetOperationPreferences](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudformationStackSet.CloudformationStackSetOperationPreferencesOutputReference",
-		reflect.TypeOf((*CloudformationStackSetOperationPreferencesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudformationStackSetOperationPreferencesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -205,7 +205,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudformationStackSetOperationPreferencesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -213,11 +213,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudformationStackSet.CloudformationStackSetTimeouts",
-		reflect.TypeOf((*CloudformationStackSetTimeouts)(nil)).Elem(),
+		reflect.TypeFor[CloudformationStackSetTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudformationStackSet.CloudformationStackSetTimeoutsOutputReference",
-		reflect.TypeOf((*CloudformationStackSetTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudformationStackSetTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -244,7 +244,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudformationStackSetTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

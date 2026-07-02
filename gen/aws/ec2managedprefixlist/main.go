@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2ManagedPrefixList.Ec2ManagedPrefixList",
-		reflect.TypeOf((*Ec2ManagedPrefixList)(nil)).Elem(),
+		reflect.TypeFor[Ec2ManagedPrefixList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2ManagedPrefixList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -83,15 +83,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2ManagedPrefixList.Ec2ManagedPrefixListConfig",
-		reflect.TypeOf((*Ec2ManagedPrefixListConfig)(nil)).Elem(),
+		reflect.TypeFor[Ec2ManagedPrefixListConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2ManagedPrefixList.Ec2ManagedPrefixListEntry",
-		reflect.TypeOf((*Ec2ManagedPrefixListEntry)(nil)).Elem(),
+		reflect.TypeFor[Ec2ManagedPrefixListEntry](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2ManagedPrefixList.Ec2ManagedPrefixListEntryList",
-		reflect.TypeOf((*Ec2ManagedPrefixListEntryList)(nil)).Elem(),
+		reflect.TypeFor[Ec2ManagedPrefixListEntryList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -105,7 +105,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2ManagedPrefixListEntryList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -113,7 +113,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2ManagedPrefixList.Ec2ManagedPrefixListEntryOutputReference",
-		reflect.TypeOf((*Ec2ManagedPrefixListEntryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2ManagedPrefixListEntryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidr", GoGetter: "Cidr"},
 			_jsii_.MemberProperty{JsiiProperty: "cidrInput", GoGetter: "CidrInput"},
@@ -142,7 +142,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2ManagedPrefixListEntryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

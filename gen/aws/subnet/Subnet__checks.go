@@ -19,7 +19,7 @@ func (s *jsiiProxy_Subnet) validateAddMoveTargetParameters(moveTarget *string) e
 	return nil
 }
 
-func (s *jsiiProxy_Subnet) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_Subnet) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_Subnet) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_Subnet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_Subnet) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateSubnet_GenerateConfigForImportParameters(scope constructs.Construct
 	return nil
 }
 
-func validateSubnet_IsConstructParameters(x interface{}) error {
+func validateSubnet_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateSubnet_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateSubnet_IsTerraformElementParameters(x interface{}) error {
+func validateSubnet_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateSubnet_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateSubnet_IsTerraformResourceParameters(x interface{}) error {
+func validateSubnet_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateSubnet_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Subnet) validateSetAssignIpv6AddressOnCreationParameters(val interface{}) error {
+func (j *jsiiProxy_Subnet) validateSetAssignIpv6AddressOnCreationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -299,7 +299,7 @@ func (j *jsiiProxy_Subnet) validateSetCidrBlockParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Subnet) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Subnet) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -332,7 +332,7 @@ func (j *jsiiProxy_Subnet) validateSetConnectionParameters(val interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_Subnet) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Subnet) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -397,7 +397,7 @@ func (j *jsiiProxy_Subnet) validateSetCustomerOwnedIpv4PoolParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_Subnet) validateSetEnableDns64Parameters(val interface{}) error {
+func (j *jsiiProxy_Subnet) validateSetEnableDns64Parameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -417,7 +417,7 @@ func (j *jsiiProxy_Subnet) validateSetEnableDns64Parameters(val interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_Subnet) validateSetEnableResourceNameDnsAaaaRecordOnLaunchParameters(val interface{}) error {
+func (j *jsiiProxy_Subnet) validateSetEnableResourceNameDnsAaaaRecordOnLaunchParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -437,7 +437,7 @@ func (j *jsiiProxy_Subnet) validateSetEnableResourceNameDnsAaaaRecordOnLaunchPar
 	return nil
 }
 
-func (j *jsiiProxy_Subnet) validateSetEnableResourceNameDnsARecordOnLaunchParameters(val interface{}) error {
+func (j *jsiiProxy_Subnet) validateSetEnableResourceNameDnsARecordOnLaunchParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -473,7 +473,7 @@ func (j *jsiiProxy_Subnet) validateSetIpv6CidrBlockParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_Subnet) validateSetIpv6NativeParameters(val interface{}) error {
+func (j *jsiiProxy_Subnet) validateSetIpv6NativeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -501,7 +501,7 @@ func (j *jsiiProxy_Subnet) validateSetLifecycleParameters(val *cdktf.TerraformRe
 	return nil
 }
 
-func (j *jsiiProxy_Subnet) validateSetMapCustomerOwnedIpOnLaunchParameters(val interface{}) error {
+func (j *jsiiProxy_Subnet) validateSetMapCustomerOwnedIpOnLaunchParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -521,7 +521,7 @@ func (j *jsiiProxy_Subnet) validateSetMapCustomerOwnedIpOnLaunchParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_Subnet) validateSetMapPublicIpOnLaunchParameters(val interface{}) error {
+func (j *jsiiProxy_Subnet) validateSetMapPublicIpOnLaunchParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -557,7 +557,7 @@ func (j *jsiiProxy_Subnet) validateSetPrivateDnsHostnameTypeOnLaunchParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_Subnet) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Subnet) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -645,4 +645,3 @@ func validateNewSubnetParameters(scope constructs.Construct, id *string, config 
 
 	return nil
 }
-

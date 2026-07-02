@@ -34,7 +34,7 @@ func (s *jsiiProxy_SagemakerWorkteamMemberDefinitionList) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerWorkteamMemberDefinitionList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerWorkteamMemberDefinitionList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSagemakerWorkteamMemberDefinitionListParameters(terraformResourc
 
 	return nil
 }
-

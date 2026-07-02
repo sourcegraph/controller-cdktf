@@ -98,7 +98,7 @@ func (i *jsiiProxy_IvschatRoomMessageReviewHandlerOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_IvschatRoomMessageReviewHandlerOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IvschatRoomMessageReviewHandlerOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewIvschatRoomMessageReviewHandlerOutputReferenceParameters(terrafo
 
 	return nil
 }
-

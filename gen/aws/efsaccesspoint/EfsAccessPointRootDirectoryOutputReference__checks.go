@@ -109,7 +109,7 @@ func (e *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewEfsAccessPointRootDirectoryOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

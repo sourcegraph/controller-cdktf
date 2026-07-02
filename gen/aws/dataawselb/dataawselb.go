@@ -20,11 +20,11 @@ type DataAwsElb interface {
 	ConnectionDraining() cdktf.IResolvable
 	ConnectionDrainingTimeout() *float64
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CrossZoneLoadBalancing() cdktf.IResolvable
 	// Experimental.
 	DependsOn() *[]*string
@@ -62,7 +62,7 @@ type DataAwsElb interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SecurityGroups() *[]*string
 	SourceSecurityGroup() *string
 	SourceSecurityGroupId() *string
@@ -73,14 +73,14 @@ type DataAwsElb interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ZoneId() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -107,18 +107,18 @@ type DataAwsElb interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTags()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsElb
@@ -186,8 +186,8 @@ func (j *jsiiProxy_DataAwsElb) ConnectionDrainingTimeout() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsElb) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsElb) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -196,8 +196,8 @@ func (j *jsiiProxy_DataAwsElb) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsElb) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsElb) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -396,8 +396,8 @@ func (j *jsiiProxy_DataAwsElb) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsElb) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsElb) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -476,8 +476,8 @@ func (j *jsiiProxy_DataAwsElb) TerraformGeneratorMetadata() *cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsElb) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsElb) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -506,7 +506,6 @@ func (j *jsiiProxy_DataAwsElb) ZoneId() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/elb aws_elb} Data Source.
 func NewDataAwsElb(scope constructs.Construct, id *string, config *DataAwsElbConfig) DataAwsElb {
 	_init_.Initialize()
@@ -518,7 +517,7 @@ func NewDataAwsElb(scope constructs.Construct, id *string, config *DataAwsElbCon
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsElb.DataAwsElb",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -531,12 +530,12 @@ func NewDataAwsElb_Override(d DataAwsElb, scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsElb.DataAwsElb",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsElb)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsElb) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_DataAwsElb)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsElb)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsElb) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -555,7 +554,7 @@ func (j *jsiiProxy_DataAwsElb)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsElb)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsElb) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -563,7 +562,7 @@ func (j *jsiiProxy_DataAwsElb)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsElb)SetId(val *string) {
+func (j *jsiiProxy_DataAwsElb) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -574,7 +573,7 @@ func (j *jsiiProxy_DataAwsElb)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsElb)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsElb) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -585,7 +584,7 @@ func (j *jsiiProxy_DataAwsElb)SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	)
 }
 
-func (j *jsiiProxy_DataAwsElb)SetName(val *string) {
+func (j *jsiiProxy_DataAwsElb) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -596,7 +595,7 @@ func (j *jsiiProxy_DataAwsElb)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsElb)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsElb) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -604,7 +603,7 @@ func (j *jsiiProxy_DataAwsElb)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsElb)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsElb) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func DataAwsElb_GenerateConfigForImport(scope constructs.Construct, importToId *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsElb.DataAwsElb",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -651,7 +650,7 @@ func DataAwsElb_GenerateConfigForImport(scope constructs.Construct, importToId *
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsElb_IsConstruct(x interface{}) *bool {
+func DataAwsElb_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsElb_IsConstructParameters(x); err != nil {
@@ -662,7 +661,7 @@ func DataAwsElb_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsElb.DataAwsElb",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -670,7 +669,7 @@ func DataAwsElb_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsElb_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsElb_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsElb_IsTerraformDataSourceParameters(x); err != nil {
@@ -681,7 +680,7 @@ func DataAwsElb_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsElb.DataAwsElb",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -689,7 +688,7 @@ func DataAwsElb_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsElb_IsTerraformElement(x interface{}) *bool {
+func DataAwsElb_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsElb_IsTerraformElementParameters(x); err != nil {
@@ -700,7 +699,7 @@ func DataAwsElb_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsElb.DataAwsElb",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -718,27 +717,27 @@ func DataAwsElb_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsElb) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsElb) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsElb) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsElb) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -754,7 +753,7 @@ func (d *jsiiProxy_DataAwsElb) GetBooleanAttribute(terraformAttribute *string) c
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -770,7 +769,7 @@ func (d *jsiiProxy_DataAwsElb) GetBooleanMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -786,7 +785,7 @@ func (d *jsiiProxy_DataAwsElb) GetListAttribute(terraformAttribute *string) *[]*
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -802,7 +801,7 @@ func (d *jsiiProxy_DataAwsElb) GetNumberAttribute(terraformAttribute *string) *f
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -818,7 +817,7 @@ func (d *jsiiProxy_DataAwsElb) GetNumberListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -834,7 +833,7 @@ func (d *jsiiProxy_DataAwsElb) GetNumberMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -850,7 +849,7 @@ func (d *jsiiProxy_DataAwsElb) GetStringAttribute(terraformAttribute *string) *s
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -866,7 +865,7 @@ func (d *jsiiProxy_DataAwsElb) GetStringMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -882,7 +881,7 @@ func (d *jsiiProxy_DataAwsElb) InterpolationForAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -896,7 +895,7 @@ func (d *jsiiProxy_DataAwsElb) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -924,8 +923,8 @@ func (d *jsiiProxy_DataAwsElb) ResetTags() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsElb) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsElb) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -937,8 +936,8 @@ func (d *jsiiProxy_DataAwsElb) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsElb) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsElb) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -950,8 +949,8 @@ func (d *jsiiProxy_DataAwsElb) SynthesizeHclAttributes() *map[string]interface{}
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsElb) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsElb) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -963,8 +962,8 @@ func (d *jsiiProxy_DataAwsElb) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsElb) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsElb) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -989,8 +988,8 @@ func (d *jsiiProxy_DataAwsElb) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsElb) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsElb) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1001,4 +1000,3 @@ func (d *jsiiProxy_DataAwsElb) ToTerraform() interface{} {
 
 	return returns
 }
-

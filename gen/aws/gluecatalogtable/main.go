@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTable",
-		reflect.TypeOf((*GlueCatalogTable)(nil)).Elem(),
+		reflect.TypeFor[GlueCatalogTable](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -101,7 +101,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "viewOriginalText", GoGetter: "ViewOriginalText"},
 			_jsii_.MemberProperty{JsiiProperty: "viewOriginalTextInput", GoGetter: "ViewOriginalTextInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueCatalogTable{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -109,15 +109,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTableConfig",
-		reflect.TypeOf((*GlueCatalogTableConfig)(nil)).Elem(),
+		reflect.TypeFor[GlueCatalogTableConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTablePartitionIndex",
-		reflect.TypeOf((*GlueCatalogTablePartitionIndex)(nil)).Elem(),
+		reflect.TypeFor[GlueCatalogTablePartitionIndex](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTablePartitionIndexList",
-		reflect.TypeOf((*GlueCatalogTablePartitionIndexList)(nil)).Elem(),
+		reflect.TypeFor[GlueCatalogTablePartitionIndexList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -131,7 +131,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueCatalogTablePartitionIndexList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -139,7 +139,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTablePartitionIndexOutputReference",
-		reflect.TypeOf((*GlueCatalogTablePartitionIndexOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlueCatalogTablePartitionIndexOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -168,7 +168,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueCatalogTablePartitionIndexOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -176,11 +176,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTablePartitionKeys",
-		reflect.TypeOf((*GlueCatalogTablePartitionKeys)(nil)).Elem(),
+		reflect.TypeFor[GlueCatalogTablePartitionKeys](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTablePartitionKeysList",
-		reflect.TypeOf((*GlueCatalogTablePartitionKeysList)(nil)).Elem(),
+		reflect.TypeFor[GlueCatalogTablePartitionKeysList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -194,7 +194,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueCatalogTablePartitionKeysList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -202,7 +202,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTablePartitionKeysOutputReference",
-		reflect.TypeOf((*GlueCatalogTablePartitionKeysOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlueCatalogTablePartitionKeysOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comment", GoGetter: "Comment"},
 			_jsii_.MemberProperty{JsiiProperty: "commentInput", GoGetter: "CommentInput"},
@@ -234,7 +234,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueCatalogTablePartitionKeysOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -242,15 +242,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTableStorageDescriptor",
-		reflect.TypeOf((*GlueCatalogTableStorageDescriptor)(nil)).Elem(),
+		reflect.TypeFor[GlueCatalogTableStorageDescriptor](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTableStorageDescriptorColumns",
-		reflect.TypeOf((*GlueCatalogTableStorageDescriptorColumns)(nil)).Elem(),
+		reflect.TypeFor[GlueCatalogTableStorageDescriptorColumns](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTableStorageDescriptorColumnsList",
-		reflect.TypeOf((*GlueCatalogTableStorageDescriptorColumnsList)(nil)).Elem(),
+		reflect.TypeFor[GlueCatalogTableStorageDescriptorColumnsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -264,7 +264,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueCatalogTableStorageDescriptorColumnsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -272,7 +272,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTableStorageDescriptorColumnsOutputReference",
-		reflect.TypeOf((*GlueCatalogTableStorageDescriptorColumnsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlueCatalogTableStorageDescriptorColumnsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comment", GoGetter: "Comment"},
 			_jsii_.MemberProperty{JsiiProperty: "commentInput", GoGetter: "CommentInput"},
@@ -307,7 +307,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -315,7 +315,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTableStorageDescriptorOutputReference",
-		reflect.TypeOf((*GlueCatalogTableStorageDescriptorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlueCatalogTableStorageDescriptorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketColumns", GoGetter: "BucketColumns"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketColumnsInput", GoGetter: "BucketColumnsInput"},
@@ -383,7 +383,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueCatalogTableStorageDescriptorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -391,11 +391,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTableStorageDescriptorSchemaReference",
-		reflect.TypeOf((*GlueCatalogTableStorageDescriptorSchemaReference)(nil)).Elem(),
+		reflect.TypeFor[GlueCatalogTableStorageDescriptorSchemaReference](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTableStorageDescriptorSchemaReferenceOutputReference",
-		reflect.TypeOf((*GlueCatalogTableStorageDescriptorSchemaReferenceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlueCatalogTableStorageDescriptorSchemaReferenceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -428,7 +428,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueCatalogTableStorageDescriptorSchemaReferenceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -436,11 +436,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTableStorageDescriptorSchemaReferenceSchemaId",
-		reflect.TypeOf((*GlueCatalogTableStorageDescriptorSchemaReferenceSchemaId)(nil)).Elem(),
+		reflect.TypeFor[GlueCatalogTableStorageDescriptorSchemaReferenceSchemaId](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTableStorageDescriptorSchemaReferenceSchemaIdOutputReference",
-		reflect.TypeOf((*GlueCatalogTableStorageDescriptorSchemaReferenceSchemaIdOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlueCatalogTableStorageDescriptorSchemaReferenceSchemaIdOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -473,7 +473,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueCatalogTableStorageDescriptorSchemaReferenceSchemaIdOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -481,11 +481,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTableStorageDescriptorSerDeInfo",
-		reflect.TypeOf((*GlueCatalogTableStorageDescriptorSerDeInfo)(nil)).Elem(),
+		reflect.TypeFor[GlueCatalogTableStorageDescriptorSerDeInfo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTableStorageDescriptorSerDeInfoOutputReference",
-		reflect.TypeOf((*GlueCatalogTableStorageDescriptorSerDeInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlueCatalogTableStorageDescriptorSerDeInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -518,7 +518,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueCatalogTableStorageDescriptorSerDeInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -526,11 +526,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTableStorageDescriptorSkewedInfo",
-		reflect.TypeOf((*GlueCatalogTableStorageDescriptorSkewedInfo)(nil)).Elem(),
+		reflect.TypeFor[GlueCatalogTableStorageDescriptorSkewedInfo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTableStorageDescriptorSkewedInfoOutputReference",
-		reflect.TypeOf((*GlueCatalogTableStorageDescriptorSkewedInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlueCatalogTableStorageDescriptorSkewedInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -563,7 +563,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueCatalogTableStorageDescriptorSkewedInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -571,11 +571,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTableStorageDescriptorSortColumns",
-		reflect.TypeOf((*GlueCatalogTableStorageDescriptorSortColumns)(nil)).Elem(),
+		reflect.TypeFor[GlueCatalogTableStorageDescriptorSortColumns](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTableStorageDescriptorSortColumnsList",
-		reflect.TypeOf((*GlueCatalogTableStorageDescriptorSortColumnsList)(nil)).Elem(),
+		reflect.TypeFor[GlueCatalogTableStorageDescriptorSortColumnsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -589,7 +589,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueCatalogTableStorageDescriptorSortColumnsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -597,7 +597,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTableStorageDescriptorSortColumnsOutputReference",
-		reflect.TypeOf((*GlueCatalogTableStorageDescriptorSortColumnsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlueCatalogTableStorageDescriptorSortColumnsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "column", GoGetter: "Column"},
 			_jsii_.MemberProperty{JsiiProperty: "columnInput", GoGetter: "ColumnInput"},
@@ -625,7 +625,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueCatalogTableStorageDescriptorSortColumnsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -633,11 +633,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTableTargetTable",
-		reflect.TypeOf((*GlueCatalogTableTargetTable)(nil)).Elem(),
+		reflect.TypeFor[GlueCatalogTableTargetTable](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTableTargetTableOutputReference",
-		reflect.TypeOf((*GlueCatalogTableTargetTableOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlueCatalogTableTargetTableOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "catalogId", GoGetter: "CatalogId"},
 			_jsii_.MemberProperty{JsiiProperty: "catalogIdInput", GoGetter: "CatalogIdInput"},
@@ -667,7 +667,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueCatalogTableTargetTableOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

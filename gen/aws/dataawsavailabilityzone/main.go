@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZone",
-		reflect.TypeOf((*DataAwsAvailabilityZone)(nil)).Elem(),
+		reflect.TypeFor[DataAwsAvailabilityZone](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "allAvailabilityZones", GoGetter: "AllAvailabilityZones"},
@@ -76,7 +76,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneType", GoGetter: "ZoneType"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsAvailabilityZone{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -84,15 +84,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneConfig",
-		reflect.TypeOf((*DataAwsAvailabilityZoneConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsAvailabilityZoneConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneFilter",
-		reflect.TypeOf((*DataAwsAvailabilityZoneFilter)(nil)).Elem(),
+		reflect.TypeFor[DataAwsAvailabilityZoneFilter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneFilterList",
-		reflect.TypeOf((*DataAwsAvailabilityZoneFilterList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsAvailabilityZoneFilterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -106,7 +106,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsAvailabilityZoneFilterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -114,7 +114,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneFilterOutputReference",
-		reflect.TypeOf((*DataAwsAvailabilityZoneFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsAvailabilityZoneFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -142,7 +142,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsAvailabilityZoneFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -150,11 +150,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneTimeouts",
-		reflect.TypeOf((*DataAwsAvailabilityZoneTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DataAwsAvailabilityZoneTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneTimeoutsOutputReference",
-		reflect.TypeOf((*DataAwsAvailabilityZoneTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsAvailabilityZoneTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -181,7 +181,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsAvailabilityZoneTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

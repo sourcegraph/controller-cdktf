@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudsearchDomainEndpointOptionsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_CloudsearchDomainEndpointOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudsearchDomainEndpointOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_CloudsearchDomainEndpointOptionsOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_CloudsearchDomainEndpointOptionsOutputReference) validateSetEnforceHttpsParameters(val interface{}) error {
+func (j *jsiiProxy_CloudsearchDomainEndpointOptionsOutputReference) validateSetEnforceHttpsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewCloudsearchDomainEndpointOptionsOutputReferenceParameters(terraf
 
 	return nil
 }
-

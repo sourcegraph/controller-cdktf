@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComprehendEntityRecognizerVpcConfigOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizerVpcConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComprehendEntityRecognizerVpcConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewComprehendEntityRecognizerVpcConfigOutputReferenceParameters(ter
 
 	return nil
 }
-

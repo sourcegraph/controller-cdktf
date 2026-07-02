@@ -24,9 +24,9 @@ type LbListenerRuleActionAuthenticateOidcOutputReference interface {
 	ClientSecretInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -73,7 +73,7 @@ type LbListenerRuleActionAuthenticateOidcOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -101,7 +101,7 @@ type LbListenerRuleActionAuthenticateOidcOutputReference interface {
 	ResetSessionTimeout()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -194,8 +194,8 @@ func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference) ClientSe
 	return returns
 }
 
-func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -404,7 +404,6 @@ func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference) UserInfo
 	return returns
 }
 
-
 func NewLbListenerRuleActionAuthenticateOidcOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LbListenerRuleActionAuthenticateOidcOutputReference {
 	_init_.Initialize()
 
@@ -415,7 +414,7 @@ func NewLbListenerRuleActionAuthenticateOidcOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateOidcOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -427,12 +426,12 @@ func NewLbListenerRuleActionAuthenticateOidcOutputReference_Override(l LbListene
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateOidcOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference)SetAuthenticationRequestExtraParams(val *map[string]*string) {
+func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference) SetAuthenticationRequestExtraParams(val *map[string]*string) {
 	if err := j.validateSetAuthenticationRequestExtraParamsParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference)SetAuthen
 	)
 }
 
-func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference)SetAuthorizationEndpoint(val *string) {
+func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference) SetAuthorizationEndpoint(val *string) {
 	if err := j.validateSetAuthorizationEndpointParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference)SetAuthor
 	)
 }
 
-func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference)SetClientId(val *string) {
+func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference) SetClientId(val *string) {
 	if err := j.validateSetClientIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference)SetClient
 	)
 }
 
-func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference)SetClientSecret(val *string) {
+func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference) SetClientSecret(val *string) {
 	if err := j.validateSetClientSecretParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference)SetClient
 	)
 }
 
-func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference)SetInternalValue(val *LbListenerRuleActionAuthenticateOidc) {
+func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference) SetInternalValue(val *LbListenerRuleActionAuthenticateOidc) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -509,7 +508,7 @@ func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference)SetIssuer(val *string) {
+func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference) SetIssuer(val *string) {
 	if err := j.validateSetIssuerParameters(val); err != nil {
 		panic(err)
 	}
@@ -520,7 +519,7 @@ func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference)SetIssuer
 	)
 }
 
-func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference)SetOnUnauthenticatedRequest(val *string) {
+func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference) SetOnUnauthenticatedRequest(val *string) {
 	if err := j.validateSetOnUnauthenticatedRequestParameters(val); err != nil {
 		panic(err)
 	}
@@ -531,7 +530,7 @@ func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference)SetOnUnau
 	)
 }
 
-func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference)SetScope(val *string) {
+func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference) SetScope(val *string) {
 	if err := j.validateSetScopeParameters(val); err != nil {
 		panic(err)
 	}
@@ -542,7 +541,7 @@ func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference)SetScope(
 	)
 }
 
-func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference)SetSessionCookieName(val *string) {
+func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference) SetSessionCookieName(val *string) {
 	if err := j.validateSetSessionCookieNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -553,7 +552,7 @@ func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference)SetSessio
 	)
 }
 
-func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference)SetSessionTimeout(val *float64) {
+func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference) SetSessionTimeout(val *float64) {
 	if err := j.validateSetSessionTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -564,7 +563,7 @@ func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference)SetSessio
 	)
 }
 
-func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -575,7 +574,7 @@ func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -586,7 +585,7 @@ func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference)SetTokenEndpoint(val *string) {
+func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference) SetTokenEndpoint(val *string) {
 	if err := j.validateSetTokenEndpointParameters(val); err != nil {
 		panic(err)
 	}
@@ -597,7 +596,7 @@ func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference)SetTokenE
 	)
 }
 
-func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference)SetUserInfoEndpoint(val *string) {
+func (j *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference) SetUserInfoEndpoint(val *string) {
 	if err := j.validateSetUserInfoEndpointParameters(val); err != nil {
 		panic(err)
 	}
@@ -621,16 +620,16 @@ func (l *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference) ComputeF
 	return returns
 }
 
-func (l *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func (l *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference) GetBoole
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func (l *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference) GetBoole
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func (l *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference) GetListA
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func (l *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference) GetNumbe
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -710,7 +709,7 @@ func (l *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference) GetNumbe
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -726,7 +725,7 @@ func (l *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference) GetNumbe
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -742,7 +741,7 @@ func (l *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference) GetStrin
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -758,7 +757,7 @@ func (l *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference) GetStrin
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -787,7 +786,7 @@ func (l *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference) Interpol
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -834,16 +833,16 @@ func (l *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference) ResetSes
 	)
 }
 
-func (l *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -862,4 +861,3 @@ func (l *jsiiProxy_LbListenerRuleActionAuthenticateOidcOutputReference) ToString
 
 	return returns
 }
-

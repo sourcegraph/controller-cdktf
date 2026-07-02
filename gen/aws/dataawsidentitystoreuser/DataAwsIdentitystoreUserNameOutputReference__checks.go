@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsIdentitystoreUserNameOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsIdentitystoreUserNameOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsIdentitystoreUserNameOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsIdentitystoreUserNameOutputReferenceParameters(terraformR
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (c *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyList) valida
 	return nil
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCodepipelineCustomActionTypeConfigurationPropertyListParameters(
 
 	return nil
 }
-

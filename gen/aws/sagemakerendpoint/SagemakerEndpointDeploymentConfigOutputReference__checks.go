@@ -120,7 +120,7 @@ func (s *jsiiProxy_SagemakerEndpointDeploymentConfigOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerEndpointDeploymentConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerEndpointDeploymentConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewSagemakerEndpointDeploymentConfigOutputReferenceParameters(terra
 
 	return nil
 }
-

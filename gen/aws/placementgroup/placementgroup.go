@@ -16,15 +16,15 @@ type PlacementGroup interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -58,11 +58,11 @@ type PlacementGroup interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SpreadLevel() *string
 	SetSpreadLevel(val *string)
 	SpreadLevelInput() *string
@@ -78,16 +78,16 @@ type PlacementGroup interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -105,7 +105,7 @@ type PlacementGroup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -117,7 +117,7 @@ type PlacementGroup interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -132,17 +132,17 @@ type PlacementGroup interface {
 	ResetSpreadLevel()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for PlacementGroup
@@ -170,8 +170,8 @@ func (j *jsiiProxy_PlacementGroup) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_PlacementGroup) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PlacementGroup) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_PlacementGroup) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PlacementGroup) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PlacementGroup) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_PlacementGroup) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_PlacementGroup) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PlacementGroup) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -340,8 +340,8 @@ func (j *jsiiProxy_PlacementGroup) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_PlacementGroup) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_PlacementGroup) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -350,8 +350,8 @@ func (j *jsiiProxy_PlacementGroup) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PlacementGroup) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PlacementGroup) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -450,8 +450,8 @@ func (j *jsiiProxy_PlacementGroup) TerraformGeneratorMetadata() *cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_PlacementGroup) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PlacementGroup) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -470,7 +470,6 @@ func (j *jsiiProxy_PlacementGroup) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/placement_group aws_placement_group} Resource.
 func NewPlacementGroup(scope constructs.Construct, id *string, config *PlacementGroupConfig) PlacementGroup {
 	_init_.Initialize()
@@ -482,7 +481,7 @@ func NewPlacementGroup(scope constructs.Construct, id *string, config *Placement
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.placementGroup.PlacementGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -495,12 +494,12 @@ func NewPlacementGroup_Override(p PlacementGroup, scope constructs.Construct, id
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.placementGroup.PlacementGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PlacementGroup)SetConnection(val interface{}) {
+func (j *jsiiProxy_PlacementGroup) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_PlacementGroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PlacementGroup)SetCount(val interface{}) {
+func (j *jsiiProxy_PlacementGroup) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_PlacementGroup)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PlacementGroup)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_PlacementGroup) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -530,7 +529,7 @@ func (j *jsiiProxy_PlacementGroup)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PlacementGroup)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_PlacementGroup) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -538,7 +537,7 @@ func (j *jsiiProxy_PlacementGroup)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_PlacementGroup)SetId(val *string) {
+func (j *jsiiProxy_PlacementGroup) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -549,7 +548,7 @@ func (j *jsiiProxy_PlacementGroup)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PlacementGroup)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_PlacementGroup) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -560,7 +559,7 @@ func (j *jsiiProxy_PlacementGroup)SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_PlacementGroup)SetName(val *string) {
+func (j *jsiiProxy_PlacementGroup) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -571,7 +570,7 @@ func (j *jsiiProxy_PlacementGroup)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PlacementGroup)SetPartitionCount(val *float64) {
+func (j *jsiiProxy_PlacementGroup) SetPartitionCount(val *float64) {
 	if err := j.validateSetPartitionCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -582,7 +581,7 @@ func (j *jsiiProxy_PlacementGroup)SetPartitionCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PlacementGroup)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_PlacementGroup) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -590,7 +589,7 @@ func (j *jsiiProxy_PlacementGroup)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_PlacementGroup)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_PlacementGroup) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -601,7 +600,7 @@ func (j *jsiiProxy_PlacementGroup)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PlacementGroup)SetSpreadLevel(val *string) {
+func (j *jsiiProxy_PlacementGroup) SetSpreadLevel(val *string) {
 	if err := j.validateSetSpreadLevelParameters(val); err != nil {
 		panic(err)
 	}
@@ -612,7 +611,7 @@ func (j *jsiiProxy_PlacementGroup)SetSpreadLevel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PlacementGroup)SetStrategy(val *string) {
+func (j *jsiiProxy_PlacementGroup) SetStrategy(val *string) {
 	if err := j.validateSetStrategyParameters(val); err != nil {
 		panic(err)
 	}
@@ -623,7 +622,7 @@ func (j *jsiiProxy_PlacementGroup)SetStrategy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PlacementGroup)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_PlacementGroup) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -634,7 +633,7 @@ func (j *jsiiProxy_PlacementGroup)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_PlacementGroup)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_PlacementGroup) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -657,7 +656,7 @@ func PlacementGroup_GenerateConfigForImport(scope constructs.Construct, importTo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.placementGroup.PlacementGroup",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -681,7 +680,7 @@ func PlacementGroup_GenerateConfigForImport(scope constructs.Construct, importTo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func PlacementGroup_IsConstruct(x interface{}) *bool {
+func PlacementGroup_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePlacementGroup_IsConstructParameters(x); err != nil {
@@ -692,7 +691,7 @@ func PlacementGroup_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.placementGroup.PlacementGroup",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -700,7 +699,7 @@ func PlacementGroup_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func PlacementGroup_IsTerraformElement(x interface{}) *bool {
+func PlacementGroup_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePlacementGroup_IsTerraformElementParameters(x); err != nil {
@@ -711,7 +710,7 @@ func PlacementGroup_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.placementGroup.PlacementGroup",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func PlacementGroup_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func PlacementGroup_IsTerraformResource(x interface{}) *bool {
+func PlacementGroup_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePlacementGroup_IsTerraformResourceParameters(x); err != nil {
@@ -730,7 +729,7 @@ func PlacementGroup_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.placementGroup.PlacementGroup",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -755,31 +754,31 @@ func (p *jsiiProxy_PlacementGroup) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (p *jsiiProxy_PlacementGroup) AddOverride(path *string, value interface{}) {
+func (p *jsiiProxy_PlacementGroup) AddOverride(path *string, value any) {
 	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (p *jsiiProxy_PlacementGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PlacementGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -795,7 +794,7 @@ func (p *jsiiProxy_PlacementGroup) GetBooleanAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -811,7 +810,7 @@ func (p *jsiiProxy_PlacementGroup) GetBooleanMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -827,7 +826,7 @@ func (p *jsiiProxy_PlacementGroup) GetListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -843,7 +842,7 @@ func (p *jsiiProxy_PlacementGroup) GetNumberAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -859,7 +858,7 @@ func (p *jsiiProxy_PlacementGroup) GetNumberListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -875,7 +874,7 @@ func (p *jsiiProxy_PlacementGroup) GetNumberMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -891,7 +890,7 @@ func (p *jsiiProxy_PlacementGroup) GetStringAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -907,15 +906,15 @@ func (p *jsiiProxy_PlacementGroup) GetStringMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PlacementGroup) HasResourceMove() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PlacementGroup) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -934,7 +933,7 @@ func (p *jsiiProxy_PlacementGroup) ImportFrom(id *string, provider cdktf.Terrafo
 	_jsii_.InvokeVoid(
 		p,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -947,7 +946,7 @@ func (p *jsiiProxy_PlacementGroup) InterpolationForAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -961,18 +960,18 @@ func (p *jsiiProxy_PlacementGroup) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (p *jsiiProxy_PlacementGroup) MoveTo(moveTarget *string, index interface{}) {
+func (p *jsiiProxy_PlacementGroup) MoveTo(moveTarget *string, index any) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -983,7 +982,7 @@ func (p *jsiiProxy_PlacementGroup) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -994,7 +993,7 @@ func (p *jsiiProxy_PlacementGroup) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1046,8 +1045,8 @@ func (p *jsiiProxy_PlacementGroup) ResetTagsAll() {
 	)
 }
 
-func (p *jsiiProxy_PlacementGroup) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PlacementGroup) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1059,8 +1058,8 @@ func (p *jsiiProxy_PlacementGroup) SynthesizeAttributes() *map[string]interface{
 	return returns
 }
 
-func (p *jsiiProxy_PlacementGroup) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PlacementGroup) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1072,8 +1071,8 @@ func (p *jsiiProxy_PlacementGroup) SynthesizeHclAttributes() *map[string]interfa
 	return returns
 }
 
-func (p *jsiiProxy_PlacementGroup) ToHclTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PlacementGroup) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1085,8 +1084,8 @@ func (p *jsiiProxy_PlacementGroup) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_PlacementGroup) ToMetadata() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PlacementGroup) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1111,8 +1110,8 @@ func (p *jsiiProxy_PlacementGroup) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_PlacementGroup) ToTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PlacementGroup) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1123,4 +1122,3 @@ func (p *jsiiProxy_PlacementGroup) ToTerraform() interface{} {
 
 	return returns
 }
-

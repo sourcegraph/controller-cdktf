@@ -16,17 +16,17 @@ type DataAwsPrefixList interface {
 	CdktfStack() cdktf.TerraformStack
 	CidrBlocks() *[]*string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Filter() DataAwsPrefixListFilterList
-	FilterInput() interface{}
+	FilterInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -55,19 +55,19 @@ type DataAwsPrefixList interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DataAwsPrefixListTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -89,7 +89,7 @@ type DataAwsPrefixList interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutFilter(value interface{})
+	PutFilter(value any)
 	PutTimeouts(value *DataAwsPrefixListTimeouts)
 	ResetFilter()
 	ResetId()
@@ -99,18 +99,18 @@ type DataAwsPrefixList interface {
 	ResetOverrideLogicalId()
 	ResetPrefixListId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsPrefixList
@@ -138,8 +138,8 @@ func (j *jsiiProxy_DataAwsPrefixList) CidrBlocks() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsPrefixList) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsPrefixList) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_DataAwsPrefixList) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsPrefixList) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsPrefixList) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_DataAwsPrefixList) Filter() DataAwsPrefixListFilterList {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsPrefixList) FilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsPrefixList) FilterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"filterInput",
@@ -308,8 +308,8 @@ func (j *jsiiProxy_DataAwsPrefixList) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsPrefixList) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsPrefixList) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -328,8 +328,8 @@ func (j *jsiiProxy_DataAwsPrefixList) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsPrefixList) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsPrefixList) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -358,8 +358,8 @@ func (j *jsiiProxy_DataAwsPrefixList) Timeouts() DataAwsPrefixListTimeoutsOutput
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsPrefixList) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsPrefixList) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -367,7 +367,6 @@ func (j *jsiiProxy_DataAwsPrefixList) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/prefix_list aws_prefix_list} Data Source.
 func NewDataAwsPrefixList(scope constructs.Construct, id *string, config *DataAwsPrefixListConfig) DataAwsPrefixList {
@@ -380,7 +379,7 @@ func NewDataAwsPrefixList(scope constructs.Construct, id *string, config *DataAw
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixList",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -393,12 +392,12 @@ func NewDataAwsPrefixList_Override(d DataAwsPrefixList, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixList",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsPrefixList)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsPrefixList) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -409,7 +408,7 @@ func (j *jsiiProxy_DataAwsPrefixList)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsPrefixList)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsPrefixList) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -417,7 +416,7 @@ func (j *jsiiProxy_DataAwsPrefixList)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsPrefixList)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsPrefixList) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -425,7 +424,7 @@ func (j *jsiiProxy_DataAwsPrefixList)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsPrefixList)SetId(val *string) {
+func (j *jsiiProxy_DataAwsPrefixList) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -436,7 +435,7 @@ func (j *jsiiProxy_DataAwsPrefixList)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsPrefixList)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsPrefixList) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -447,7 +446,7 @@ func (j *jsiiProxy_DataAwsPrefixList)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_DataAwsPrefixList)SetName(val *string) {
+func (j *jsiiProxy_DataAwsPrefixList) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -458,7 +457,7 @@ func (j *jsiiProxy_DataAwsPrefixList)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsPrefixList)SetPrefixListId(val *string) {
+func (j *jsiiProxy_DataAwsPrefixList) SetPrefixListId(val *string) {
 	if err := j.validateSetPrefixListIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -469,7 +468,7 @@ func (j *jsiiProxy_DataAwsPrefixList)SetPrefixListId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsPrefixList)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsPrefixList) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -489,7 +488,7 @@ func DataAwsPrefixList_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixList",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func DataAwsPrefixList_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsPrefixList_IsConstruct(x interface{}) *bool {
+func DataAwsPrefixList_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsPrefixList_IsConstructParameters(x); err != nil {
@@ -524,7 +523,7 @@ func DataAwsPrefixList_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixList",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -532,7 +531,7 @@ func DataAwsPrefixList_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsPrefixList_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsPrefixList_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsPrefixList_IsTerraformDataSourceParameters(x); err != nil {
@@ -543,7 +542,7 @@ func DataAwsPrefixList_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixList",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -551,7 +550,7 @@ func DataAwsPrefixList_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsPrefixList_IsTerraformElement(x interface{}) *bool {
+func DataAwsPrefixList_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsPrefixList_IsTerraformElementParameters(x); err != nil {
@@ -562,7 +561,7 @@ func DataAwsPrefixList_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixList",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -580,27 +579,27 @@ func DataAwsPrefixList_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsPrefixList) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsPrefixList) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsPrefixList) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsPrefixList) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func (d *jsiiProxy_DataAwsPrefixList) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -632,7 +631,7 @@ func (d *jsiiProxy_DataAwsPrefixList) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -648,7 +647,7 @@ func (d *jsiiProxy_DataAwsPrefixList) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -664,7 +663,7 @@ func (d *jsiiProxy_DataAwsPrefixList) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -680,7 +679,7 @@ func (d *jsiiProxy_DataAwsPrefixList) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func (d *jsiiProxy_DataAwsPrefixList) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -712,7 +711,7 @@ func (d *jsiiProxy_DataAwsPrefixList) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -728,7 +727,7 @@ func (d *jsiiProxy_DataAwsPrefixList) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -744,7 +743,7 @@ func (d *jsiiProxy_DataAwsPrefixList) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -758,18 +757,18 @@ func (d *jsiiProxy_DataAwsPrefixList) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DataAwsPrefixList) PutFilter(value interface{}) {
+func (d *jsiiProxy_DataAwsPrefixList) PutFilter(value any) {
 	if err := d.validatePutFilterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -780,7 +779,7 @@ func (d *jsiiProxy_DataAwsPrefixList) PutTimeouts(value *DataAwsPrefixListTimeou
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -832,8 +831,8 @@ func (d *jsiiProxy_DataAwsPrefixList) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsPrefixList) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsPrefixList) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -845,8 +844,8 @@ func (d *jsiiProxy_DataAwsPrefixList) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsPrefixList) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsPrefixList) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -858,8 +857,8 @@ func (d *jsiiProxy_DataAwsPrefixList) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsPrefixList) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsPrefixList) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -871,8 +870,8 @@ func (d *jsiiProxy_DataAwsPrefixList) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsPrefixList) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsPrefixList) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -897,8 +896,8 @@ func (d *jsiiProxy_DataAwsPrefixList) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsPrefixList) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsPrefixList) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -909,4 +908,3 @@ func (d *jsiiProxy_DataAwsPrefixList) ToTerraform() interface{} {
 
 	return returns
 }
-

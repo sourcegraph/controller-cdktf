@@ -34,7 +34,7 @@ func (c *jsiiProxy_CloudwatchEventTargetRunCommandTargetsList) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_CloudwatchEventTargetRunCommandTargetsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudwatchEventTargetRunCommandTargetsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCloudwatchEventTargetRunCommandTargetsListParameters(terraformRe
 
 	return nil
 }
-

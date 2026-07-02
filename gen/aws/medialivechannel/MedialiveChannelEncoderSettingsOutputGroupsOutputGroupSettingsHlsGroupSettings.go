@@ -1,6 +1,5 @@
 package medialivechannel
 
-
 type MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings struct {
 	// destination block.
 	//
@@ -19,7 +18,7 @@ type MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSetti
 	// caption_language_mappings block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/medialive_channel#caption_language_mappings MedialiveChannel#caption_language_mappings}
-	CaptionLanguageMappings interface{} `field:"optional" json:"captionLanguageMappings" yaml:"captionLanguageMappings"`
+	CaptionLanguageMappings any `field:"optional" json:"captionLanguageMappings" yaml:"captionLanguageMappings"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/medialive_channel#caption_language_setting MedialiveChannel#caption_language_setting}.
 	CaptionLanguageSetting *string `field:"optional" json:"captionLanguageSetting" yaml:"captionLanguageSetting"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/medialive_channel#client_cache MedialiveChannel#client_cache}.
@@ -37,7 +36,7 @@ type MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSetti
 	// hls_cdn_settings block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/medialive_channel#hls_cdn_settings MedialiveChannel#hls_cdn_settings}
-	HlsCdnSettings interface{} `field:"optional" json:"hlsCdnSettings" yaml:"hlsCdnSettings"`
+	HlsCdnSettings any `field:"optional" json:"hlsCdnSettings" yaml:"hlsCdnSettings"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/medialive_channel#hls_id3_segment_tagging MedialiveChannel#hls_id3_segment_tagging}.
 	HlsId3SegmentTagging *string `field:"optional" json:"hlsId3SegmentTagging" yaml:"hlsId3SegmentTagging"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/medialive_channel#iframe_only_playlists MedialiveChannel#iframe_only_playlists}.
@@ -95,4 +94,3 @@ type MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSetti
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/medialive_channel#ts_file_mode MedialiveChannel#ts_file_mode}.
 	TsFileMode *string `field:"optional" json:"tsFileMode" yaml:"tsFileMode"`
 }
-

@@ -98,7 +98,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionSqsOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionSqsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRuleErrorActionSqsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -203,7 +203,7 @@ func (j *jsiiProxy_IotTopicRuleErrorActionSqsOutputReference) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionSqsOutputReference) validateSetUseBase64Parameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRuleErrorActionSqsOutputReference) validateSetUseBase64Parameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewIotTopicRuleErrorActionSqsOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

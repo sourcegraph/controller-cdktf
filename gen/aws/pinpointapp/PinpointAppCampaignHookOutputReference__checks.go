@@ -98,7 +98,7 @@ func (p *jsiiProxy_PinpointAppCampaignHookOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_PinpointAppCampaignHookOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PinpointAppCampaignHookOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewPinpointAppCampaignHookOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (r *jsiiProxy_RedshiftEndpointAccess) validateAddMoveTargetParameters(moveT
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftEndpointAccess) validateAddOverrideParameters(path *string, value interface{}) error {
+func (r *jsiiProxy_RedshiftEndpointAccess) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (r *jsiiProxy_RedshiftEndpointAccess) validateMoveFromIdParameters(id *stri
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftEndpointAccess) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (r *jsiiProxy_RedshiftEndpointAccess) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateRedshiftEndpointAccess_GenerateConfigForImportParameters(scope cons
 	return nil
 }
 
-func validateRedshiftEndpointAccess_IsConstructParameters(x interface{}) error {
+func validateRedshiftEndpointAccess_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateRedshiftEndpointAccess_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateRedshiftEndpointAccess_IsTerraformElementParameters(x interface{}) error {
+func validateRedshiftEndpointAccess_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateRedshiftEndpointAccess_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
-func validateRedshiftEndpointAccess_IsTerraformResourceParameters(x interface{}) error {
+func validateRedshiftEndpointAccess_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_RedshiftEndpointAccess) validateSetClusterIdentifierParameter
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftEndpointAccess) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftEndpointAccess) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_RedshiftEndpointAccess) validateSetConnectionParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftEndpointAccess) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftEndpointAccess) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_RedshiftEndpointAccess) validateSetLifecycleParameters(val *c
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftEndpointAccess) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_RedshiftEndpointAccess) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -454,4 +454,3 @@ func validateNewRedshiftEndpointAccessParameters(scope constructs.Construct, id 
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (e *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewEc2FleetTargetCapacitySpecificationOutputReferenceParameters(ter
 
 	return nil
 }
-

@@ -90,7 +90,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsOutputRe
 	return nil
 }
 
-func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsOutputReference) validatePutClientConfigurationsParameters(value interface{}) error {
+func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsOutputReference) validatePutClientConfigurationsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewFsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsOutputRefer
 
 	return nil
 }
-

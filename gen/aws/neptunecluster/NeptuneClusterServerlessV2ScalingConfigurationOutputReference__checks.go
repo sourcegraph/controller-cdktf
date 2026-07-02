@@ -98,7 +98,7 @@ func (n *jsiiProxy_NeptuneClusterServerlessV2ScalingConfigurationOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_NeptuneClusterServerlessV2ScalingConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NeptuneClusterServerlessV2ScalingConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewNeptuneClusterServerlessV2ScalingConfigurationOutputReferencePar
 
 	return nil
 }
-

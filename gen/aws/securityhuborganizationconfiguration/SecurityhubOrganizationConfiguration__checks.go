@@ -19,7 +19,7 @@ func (s *jsiiProxy_SecurityhubOrganizationConfiguration) validateAddMoveTargetPa
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubOrganizationConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SecurityhubOrganizationConfiguration) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SecurityhubOrganizationConfiguration) validateMoveFromIdParam
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubOrganizationConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SecurityhubOrganizationConfiguration) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateSecurityhubOrganizationConfiguration_GenerateConfigForImportParamet
 	return nil
 }
 
-func validateSecurityhubOrganizationConfiguration_IsConstructParameters(x interface{}) error {
+func validateSecurityhubOrganizationConfiguration_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateSecurityhubOrganizationConfiguration_IsConstructParameters(x interf
 	return nil
 }
 
-func validateSecurityhubOrganizationConfiguration_IsTerraformElementParameters(x interface{}) error {
+func validateSecurityhubOrganizationConfiguration_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateSecurityhubOrganizationConfiguration_IsTerraformElementParameters(x
 	return nil
 }
 
-func validateSecurityhubOrganizationConfiguration_IsTerraformResourceParameters(x interface{}) error {
+func validateSecurityhubOrganizationConfiguration_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateSecurityhubOrganizationConfiguration_IsTerraformResourceParameters(
 	return nil
 }
 
-func (j *jsiiProxy_SecurityhubOrganizationConfiguration) validateSetAutoEnableParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityhubOrganizationConfiguration) validateSetAutoEnableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -264,7 +264,7 @@ func (j *jsiiProxy_SecurityhubOrganizationConfiguration) validateSetAutoEnablePa
 	return nil
 }
 
-func (j *jsiiProxy_SecurityhubOrganizationConfiguration) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityhubOrganizationConfiguration) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -297,7 +297,7 @@ func (j *jsiiProxy_SecurityhubOrganizationConfiguration) validateSetConnectionPa
 	return nil
 }
 
-func (j *jsiiProxy_SecurityhubOrganizationConfiguration) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityhubOrganizationConfiguration) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -370,7 +370,7 @@ func (j *jsiiProxy_SecurityhubOrganizationConfiguration) validateSetLifecyclePar
 	return nil
 }
 
-func (j *jsiiProxy_SecurityhubOrganizationConfiguration) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SecurityhubOrganizationConfiguration) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -434,4 +434,3 @@ func validateNewSecurityhubOrganizationConfigurationParameters(scope constructs.
 
 	return nil
 }
-

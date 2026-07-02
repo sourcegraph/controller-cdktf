@@ -17,8 +17,8 @@ type MedialiveInputSecurityGroupWhitelistRulesList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type MedialiveInputSecurityGroupWhitelistRulesList interface {
 	Get(index *float64) MedialiveInputSecurityGroupWhitelistRulesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_MedialiveInputSecurityGroupWhitelistRulesList) Fqn() *string 
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveInputSecurityGroupWhitelistRulesList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MedialiveInputSecurityGroupWhitelistRulesList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_MedialiveInputSecurityGroupWhitelistRulesList) WrapsSet() *bo
 	return returns
 }
 
-
 func NewMedialiveInputSecurityGroupWhitelistRulesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MedialiveInputSecurityGroupWhitelistRulesList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewMedialiveInputSecurityGroupWhitelistRulesList(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroupWhitelistRulesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewMedialiveInputSecurityGroupWhitelistRulesList_Override(m MedialiveInputS
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroupWhitelistRulesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MedialiveInputSecurityGroupWhitelistRulesList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MedialiveInputSecurityGroupWhitelistRulesList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_MedialiveInputSecurityGroupWhitelistRulesList)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_MedialiveInputSecurityGroupWhitelistRulesList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MedialiveInputSecurityGroupWhitelistRulesList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_MedialiveInputSecurityGroupWhitelistRulesList)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_MedialiveInputSecurityGroupWhitelistRulesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MedialiveInputSecurityGroupWhitelistRulesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_MedialiveInputSecurityGroupWhitelistRulesList)SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_MedialiveInputSecurityGroupWhitelistRulesList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_MedialiveInputSecurityGroupWhitelistRulesList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (m *jsiiProxy_MedialiveInputSecurityGroupWhitelistRulesList) AllWithMapKey(
 	_jsii_.Invoke(
 		m,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (m *jsiiProxy_MedialiveInputSecurityGroupWhitelistRulesList) Get(index *flo
 	_jsii_.Invoke(
 		m,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MedialiveInputSecurityGroupWhitelistRulesList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MedialiveInputSecurityGroupWhitelistRulesList) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (m *jsiiProxy_MedialiveInputSecurityGroupWhitelistRulesList) ToString() *st
 
 	return returns
 }
-

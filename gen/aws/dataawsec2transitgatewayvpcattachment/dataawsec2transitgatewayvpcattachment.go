@@ -16,18 +16,18 @@ type DataAwsEc2TransitGatewayVpcAttachment interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	DnsSupport() *string
 	Filter() DataAwsEc2TransitGatewayVpcAttachmentFilterList
-	FilterInput() interface{}
+	FilterInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -51,7 +51,7 @@ type DataAwsEc2TransitGatewayVpcAttachment interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SubnetIds() *[]*string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -59,18 +59,18 @@ type DataAwsEc2TransitGatewayVpcAttachment interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DataAwsEc2TransitGatewayVpcAttachmentTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	TransitGatewayId() *string
 	VpcId() *string
 	VpcOwnerId() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -92,7 +92,7 @@ type DataAwsEc2TransitGatewayVpcAttachment interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutFilter(value interface{})
+	PutFilter(value any)
 	PutTimeouts(value *DataAwsEc2TransitGatewayVpcAttachmentTimeouts)
 	ResetFilter()
 	ResetId()
@@ -101,18 +101,18 @@ type DataAwsEc2TransitGatewayVpcAttachment interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsEc2TransitGatewayVpcAttachment
@@ -140,8 +140,8 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) CdktfStack() cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -150,8 +150,8 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) ConstructNodeMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) Filter() DataAwsEc2Tra
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) FilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) FilterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"filterInput",
@@ -290,8 +290,8 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) Provider() cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -340,8 +340,8 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) TerraformGeneratorMeta
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -370,8 +370,8 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) Timeouts() DataAwsEc2T
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -410,7 +410,6 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) VpcOwnerId() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/ec2_transit_gateway_vpc_attachment aws_ec2_transit_gateway_vpc_attachment} Data Source.
 func NewDataAwsEc2TransitGatewayVpcAttachment(scope constructs.Construct, id *string, config *DataAwsEc2TransitGatewayVpcAttachmentConfig) DataAwsEc2TransitGatewayVpcAttachment {
 	_init_.Initialize()
@@ -422,7 +421,7 @@ func NewDataAwsEc2TransitGatewayVpcAttachment(scope constructs.Construct, id *st
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsEc2TransitGatewayVpcAttachment.DataAwsEc2TransitGatewayVpcAttachment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -435,12 +434,12 @@ func NewDataAwsEc2TransitGatewayVpcAttachment_Override(d DataAwsEc2TransitGatewa
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsEc2TransitGatewayVpcAttachment.DataAwsEc2TransitGatewayVpcAttachment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,7 +450,7 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment)SetCount(val interface{
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -459,7 +458,7 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment)SetDependsOn(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -467,7 +466,7 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment)SetForEach(val cdktf.IT
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment)SetId(val *string) {
+func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment)SetLifecycle(val *cdktf
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -497,7 +496,7 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment)SetProvider(val cdktf.T
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -520,7 +519,7 @@ func DataAwsEc2TransitGatewayVpcAttachment_GenerateConfigForImport(scope constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEc2TransitGatewayVpcAttachment.DataAwsEc2TransitGatewayVpcAttachment",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -544,7 +543,7 @@ func DataAwsEc2TransitGatewayVpcAttachment_GenerateConfigForImport(scope constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsEc2TransitGatewayVpcAttachment_IsConstruct(x interface{}) *bool {
+func DataAwsEc2TransitGatewayVpcAttachment_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEc2TransitGatewayVpcAttachment_IsConstructParameters(x); err != nil {
@@ -555,7 +554,7 @@ func DataAwsEc2TransitGatewayVpcAttachment_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEc2TransitGatewayVpcAttachment.DataAwsEc2TransitGatewayVpcAttachment",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -563,7 +562,7 @@ func DataAwsEc2TransitGatewayVpcAttachment_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsEc2TransitGatewayVpcAttachment_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsEc2TransitGatewayVpcAttachment_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEc2TransitGatewayVpcAttachment_IsTerraformDataSourceParameters(x); err != nil {
@@ -574,7 +573,7 @@ func DataAwsEc2TransitGatewayVpcAttachment_IsTerraformDataSource(x interface{}) 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEc2TransitGatewayVpcAttachment.DataAwsEc2TransitGatewayVpcAttachment",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func DataAwsEc2TransitGatewayVpcAttachment_IsTerraformDataSource(x interface{}) 
 }
 
 // Experimental.
-func DataAwsEc2TransitGatewayVpcAttachment_IsTerraformElement(x interface{}) *bool {
+func DataAwsEc2TransitGatewayVpcAttachment_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEc2TransitGatewayVpcAttachment_IsTerraformElementParameters(x); err != nil {
@@ -593,7 +592,7 @@ func DataAwsEc2TransitGatewayVpcAttachment_IsTerraformElement(x interface{}) *bo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEc2TransitGatewayVpcAttachment.DataAwsEc2TransitGatewayVpcAttachment",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -611,27 +610,27 @@ func DataAwsEc2TransitGatewayVpcAttachment_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -647,7 +646,7 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) GetBooleanAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -663,7 +662,7 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) GetBooleanMapAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) GetListAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) GetNumberAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -711,7 +710,7 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) GetNumberListAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) GetNumberMapAttribute(
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) GetStringAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) GetStringMapAttribute(
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) InterpolationForAttrib
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -789,18 +788,18 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) OverrideLogicalId(newL
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) PutFilter(value interface{}) {
+func (d *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) PutFilter(value any) {
 	if err := d.validatePutFilterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -811,7 +810,7 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) PutTimeouts(value *Dat
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -855,8 +854,8 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -868,8 +867,8 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) SynthesizeAttributes()
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -881,8 +880,8 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) SynthesizeHclAttribute
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -894,8 +893,8 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) ToHclTerraform() inter
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -920,8 +919,8 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -932,4 +931,3 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) ToTerraform() interfac
 
 	return returns
 }
-

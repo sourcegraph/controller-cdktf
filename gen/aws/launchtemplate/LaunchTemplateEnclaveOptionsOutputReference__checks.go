@@ -98,7 +98,7 @@ func (l *jsiiProxy_LaunchTemplateEnclaveOptionsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_LaunchTemplateEnclaveOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchTemplateEnclaveOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_LaunchTemplateEnclaveOptionsOutputReference) validateSetCompl
 	return nil
 }
 
-func (j *jsiiProxy_LaunchTemplateEnclaveOptionsOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchTemplateEnclaveOptionsOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewLaunchTemplateEnclaveOptionsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ssmDocument.SsmDocument",
-		reflect.TypeOf((*SsmDocument)(nil)).Elem(),
+		reflect.TypeFor[SsmDocument](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -97,7 +97,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "versionName", GoGetter: "VersionName"},
 			_jsii_.MemberProperty{JsiiProperty: "versionNameInput", GoGetter: "VersionNameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SsmDocument{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -105,11 +105,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ssmDocument.SsmDocumentAttachmentsSource",
-		reflect.TypeOf((*SsmDocumentAttachmentsSource)(nil)).Elem(),
+		reflect.TypeFor[SsmDocumentAttachmentsSource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ssmDocument.SsmDocumentAttachmentsSourceList",
-		reflect.TypeOf((*SsmDocumentAttachmentsSourceList)(nil)).Elem(),
+		reflect.TypeFor[SsmDocumentAttachmentsSourceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -123,7 +123,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SsmDocumentAttachmentsSourceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -131,7 +131,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ssmDocument.SsmDocumentAttachmentsSourceOutputReference",
-		reflect.TypeOf((*SsmDocumentAttachmentsSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SsmDocumentAttachmentsSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -162,7 +162,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SsmDocumentAttachmentsSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -170,15 +170,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ssmDocument.SsmDocumentConfig",
-		reflect.TypeOf((*SsmDocumentConfig)(nil)).Elem(),
+		reflect.TypeFor[SsmDocumentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ssmDocument.SsmDocumentParameter",
-		reflect.TypeOf((*SsmDocumentParameter)(nil)).Elem(),
+		reflect.TypeFor[SsmDocumentParameter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ssmDocument.SsmDocumentParameterList",
-		reflect.TypeOf((*SsmDocumentParameterList)(nil)).Elem(),
+		reflect.TypeFor[SsmDocumentParameterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -191,7 +191,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SsmDocumentParameterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -199,7 +199,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ssmDocument.SsmDocumentParameterOutputReference",
-		reflect.TypeOf((*SsmDocumentParameterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SsmDocumentParameterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -227,7 +227,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SsmDocumentParameterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

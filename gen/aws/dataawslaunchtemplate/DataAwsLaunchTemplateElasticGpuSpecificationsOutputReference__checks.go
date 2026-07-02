@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsLaunchTemplateElasticGpuSpecificationsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLaunchTemplateElasticGpuSpecificationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsLaunchTemplateElasticGpuSpecificationsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsLaunchTemplateElasticGpuSpecificationsOutputReferencePara
 
 	return nil
 }
-

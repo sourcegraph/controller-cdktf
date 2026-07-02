@@ -1,11 +1,10 @@
 package dataawscetags
 
-
 type DataAwsCeTagsFilter struct {
 	// and block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/ce_tags#and DataAwsCeTags#and}
-	And interface{} `field:"optional" json:"and" yaml:"and"`
+	And any `field:"optional" json:"and" yaml:"and"`
 	// cost_category block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/ce_tags#cost_category DataAwsCeTags#cost_category}
@@ -21,10 +20,9 @@ type DataAwsCeTagsFilter struct {
 	// or block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/ce_tags#or DataAwsCeTags#or}
-	Or interface{} `field:"optional" json:"or" yaml:"or"`
+	Or any `field:"optional" json:"or" yaml:"or"`
 	// tags block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/ce_tags#tags DataAwsCeTags#tags}
 	Tags *DataAwsCeTagsFilterTags `field:"optional" json:"tags" yaml:"tags"`
 }
-

@@ -98,7 +98,7 @@ func (l *jsiiProxy_LambdaFunctionEventInvokeConfigDestinationConfigOnSuccessOutp
 	return nil
 }
 
-func (j *jsiiProxy_LambdaFunctionEventInvokeConfigDestinationConfigOnSuccessOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LambdaFunctionEventInvokeConfigDestinationConfigOnSuccessOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewLambdaFunctionEventInvokeConfigDestinationConfigOnSuccessOutputR
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroup",
-		reflect.TypeOf((*SagemakerFeatureGroup)(nil)).Elem(),
+		reflect.TypeFor[SagemakerFeatureGroup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -85,7 +85,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerFeatureGroup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -93,15 +93,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupConfig",
-		reflect.TypeOf((*SagemakerFeatureGroupConfig)(nil)).Elem(),
+		reflect.TypeFor[SagemakerFeatureGroupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupFeatureDefinition",
-		reflect.TypeOf((*SagemakerFeatureGroupFeatureDefinition)(nil)).Elem(),
+		reflect.TypeFor[SagemakerFeatureGroupFeatureDefinition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupFeatureDefinitionList",
-		reflect.TypeOf((*SagemakerFeatureGroupFeatureDefinitionList)(nil)).Elem(),
+		reflect.TypeFor[SagemakerFeatureGroupFeatureDefinitionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -115,7 +115,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerFeatureGroupFeatureDefinitionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -123,7 +123,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupFeatureDefinitionOutputReference",
-		reflect.TypeOf((*SagemakerFeatureGroupFeatureDefinitionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SagemakerFeatureGroupFeatureDefinitionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -153,7 +153,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerFeatureGroupFeatureDefinitionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -161,15 +161,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfig",
-		reflect.TypeOf((*SagemakerFeatureGroupOfflineStoreConfig)(nil)).Elem(),
+		reflect.TypeFor[SagemakerFeatureGroupOfflineStoreConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfig",
-		reflect.TypeOf((*SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfig)(nil)).Elem(),
+		reflect.TypeFor[SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfigOutputReference",
-		reflect.TypeOf((*SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "catalog", GoGetter: "Catalog"},
 			_jsii_.MemberProperty{JsiiProperty: "catalogInput", GoGetter: "CatalogInput"},
@@ -202,7 +202,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -210,7 +210,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigOutputReference",
-		reflect.TypeOf((*SagemakerFeatureGroupOfflineStoreConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SagemakerFeatureGroupOfflineStoreConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -244,7 +244,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -252,11 +252,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigS3StorageConfig",
-		reflect.TypeOf((*SagemakerFeatureGroupOfflineStoreConfigS3StorageConfig)(nil)).Elem(),
+		reflect.TypeFor[SagemakerFeatureGroupOfflineStoreConfigS3StorageConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigS3StorageConfigOutputReference",
-		reflect.TypeOf((*SagemakerFeatureGroupOfflineStoreConfigS3StorageConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SagemakerFeatureGroupOfflineStoreConfigS3StorageConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -285,7 +285,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigS3StorageConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -293,11 +293,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOnlineStoreConfig",
-		reflect.TypeOf((*SagemakerFeatureGroupOnlineStoreConfig)(nil)).Elem(),
+		reflect.TypeFor[SagemakerFeatureGroupOnlineStoreConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOnlineStoreConfigOutputReference",
-		reflect.TypeOf((*SagemakerFeatureGroupOnlineStoreConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SagemakerFeatureGroupOnlineStoreConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -328,7 +328,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerFeatureGroupOnlineStoreConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -336,11 +336,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOnlineStoreConfigSecurityConfig",
-		reflect.TypeOf((*SagemakerFeatureGroupOnlineStoreConfigSecurityConfig)(nil)).Elem(),
+		reflect.TypeFor[SagemakerFeatureGroupOnlineStoreConfigSecurityConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputReference",
-		reflect.TypeOf((*SagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -367,7 +367,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

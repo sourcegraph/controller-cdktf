@@ -16,11 +16,11 @@ type DataAwsLexSlotType interface {
 	CdktfStack() cdktf.TerraformStack
 	Checksum() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedDate() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -54,11 +54,11 @@ type DataAwsLexSlotType interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ValueSelectionStrategy() *string
@@ -66,9 +66,9 @@ type DataAwsLexSlotType interface {
 	SetVersion(val *string)
 	VersionInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,18 +95,18 @@ type DataAwsLexSlotType interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetVersion()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsLexSlotType
@@ -134,8 +134,8 @@ func (j *jsiiProxy_DataAwsLexSlotType) Checksum() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLexSlotType) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsLexSlotType) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_DataAwsLexSlotType) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLexSlotType) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsLexSlotType) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -304,8 +304,8 @@ func (j *jsiiProxy_DataAwsLexSlotType) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLexSlotType) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsLexSlotType) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -324,8 +324,8 @@ func (j *jsiiProxy_DataAwsLexSlotType) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLexSlotType) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsLexSlotType) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -374,7 +374,6 @@ func (j *jsiiProxy_DataAwsLexSlotType) VersionInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/lex_slot_type aws_lex_slot_type} Data Source.
 func NewDataAwsLexSlotType(scope constructs.Construct, id *string, config *DataAwsLexSlotTypeConfig) DataAwsLexSlotType {
 	_init_.Initialize()
@@ -386,7 +385,7 @@ func NewDataAwsLexSlotType(scope constructs.Construct, id *string, config *DataA
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotType",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -399,12 +398,12 @@ func NewDataAwsLexSlotType_Override(d DataAwsLexSlotType, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotType",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsLexSlotType)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsLexSlotType) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,7 +414,7 @@ func (j *jsiiProxy_DataAwsLexSlotType)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsLexSlotType)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsLexSlotType) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -423,7 +422,7 @@ func (j *jsiiProxy_DataAwsLexSlotType)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsLexSlotType)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsLexSlotType) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -431,7 +430,7 @@ func (j *jsiiProxy_DataAwsLexSlotType)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsLexSlotType)SetId(val *string) {
+func (j *jsiiProxy_DataAwsLexSlotType) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_DataAwsLexSlotType)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsLexSlotType)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsLexSlotType) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_DataAwsLexSlotType)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_DataAwsLexSlotType)SetName(val *string) {
+func (j *jsiiProxy_DataAwsLexSlotType) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,7 +463,7 @@ func (j *jsiiProxy_DataAwsLexSlotType)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsLexSlotType)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsLexSlotType) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -472,7 +471,7 @@ func (j *jsiiProxy_DataAwsLexSlotType)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsLexSlotType)SetVersion(val *string) {
+func (j *jsiiProxy_DataAwsLexSlotType) SetVersion(val *string) {
 	if err := j.validateSetVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -495,7 +494,7 @@ func DataAwsLexSlotType_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotType",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func DataAwsLexSlotType_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsLexSlotType_IsConstruct(x interface{}) *bool {
+func DataAwsLexSlotType_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsLexSlotType_IsConstructParameters(x); err != nil {
@@ -530,7 +529,7 @@ func DataAwsLexSlotType_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotType",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func DataAwsLexSlotType_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsLexSlotType_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsLexSlotType_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsLexSlotType_IsTerraformDataSourceParameters(x); err != nil {
@@ -549,7 +548,7 @@ func DataAwsLexSlotType_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotType",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func DataAwsLexSlotType_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsLexSlotType_IsTerraformElement(x interface{}) *bool {
+func DataAwsLexSlotType_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsLexSlotType_IsTerraformElementParameters(x); err != nil {
@@ -568,7 +567,7 @@ func DataAwsLexSlotType_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotType",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -586,27 +585,27 @@ func DataAwsLexSlotType_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsLexSlotType) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsLexSlotType) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsLexSlotType) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsLexSlotType) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -622,7 +621,7 @@ func (d *jsiiProxy_DataAwsLexSlotType) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -638,7 +637,7 @@ func (d *jsiiProxy_DataAwsLexSlotType) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -654,7 +653,7 @@ func (d *jsiiProxy_DataAwsLexSlotType) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -670,7 +669,7 @@ func (d *jsiiProxy_DataAwsLexSlotType) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -686,7 +685,7 @@ func (d *jsiiProxy_DataAwsLexSlotType) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -702,7 +701,7 @@ func (d *jsiiProxy_DataAwsLexSlotType) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -718,7 +717,7 @@ func (d *jsiiProxy_DataAwsLexSlotType) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -734,7 +733,7 @@ func (d *jsiiProxy_DataAwsLexSlotType) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -750,7 +749,7 @@ func (d *jsiiProxy_DataAwsLexSlotType) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func (d *jsiiProxy_DataAwsLexSlotType) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -792,8 +791,8 @@ func (d *jsiiProxy_DataAwsLexSlotType) ResetVersion() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsLexSlotType) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsLexSlotType) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -805,8 +804,8 @@ func (d *jsiiProxy_DataAwsLexSlotType) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsLexSlotType) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsLexSlotType) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -818,8 +817,8 @@ func (d *jsiiProxy_DataAwsLexSlotType) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsLexSlotType) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsLexSlotType) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -831,8 +830,8 @@ func (d *jsiiProxy_DataAwsLexSlotType) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsLexSlotType) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsLexSlotType) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -857,8 +856,8 @@ func (d *jsiiProxy_DataAwsLexSlotType) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsLexSlotType) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsLexSlotType) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -869,4 +868,3 @@ func (d *jsiiProxy_DataAwsLexSlotType) ToTerraform() interface{} {
 
 	return returns
 }
-

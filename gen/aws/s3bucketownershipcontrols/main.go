@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3BucketOwnershipControls.S3BucketOwnershipControls",
-		reflect.TypeOf((*S3BucketOwnershipControls)(nil)).Elem(),
+		reflect.TypeFor[S3BucketOwnershipControls](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3BucketOwnershipControls{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -69,15 +69,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3BucketOwnershipControls.S3BucketOwnershipControlsConfig",
-		reflect.TypeOf((*S3BucketOwnershipControlsConfig)(nil)).Elem(),
+		reflect.TypeFor[S3BucketOwnershipControlsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3BucketOwnershipControls.S3BucketOwnershipControlsRule",
-		reflect.TypeOf((*S3BucketOwnershipControlsRule)(nil)).Elem(),
+		reflect.TypeFor[S3BucketOwnershipControlsRule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3BucketOwnershipControls.S3BucketOwnershipControlsRuleOutputReference",
-		reflect.TypeOf((*S3BucketOwnershipControlsRuleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3BucketOwnershipControlsRuleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -103,7 +103,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3BucketOwnershipControlsRuleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

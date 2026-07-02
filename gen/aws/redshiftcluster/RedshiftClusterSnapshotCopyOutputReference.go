@@ -12,9 +12,9 @@ type RedshiftClusterSnapshotCopyOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type RedshiftClusterSnapshotCopyOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type RedshiftClusterSnapshotCopyOutputReference interface {
 	ResetRetentionPeriod()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_RedshiftClusterSnapshotCopyOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) TerraformResource
 	return returns
 }
 
-
 func NewRedshiftClusterSnapshotCopyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RedshiftClusterSnapshotCopyOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewRedshiftClusterSnapshotCopyOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.redshiftCluster.RedshiftClusterSnapshotCopyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewRedshiftClusterSnapshotCopyOutputReference_Override(r RedshiftClusterSna
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.redshiftCluster.RedshiftClusterSnapshotCopyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference)SetDestinationRegion(val *string) {
+func (j *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) SetDestinationRegion(val *string) {
 	if err := j.validateSetDestinationRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference)SetDestinationRegi
 	)
 }
 
-func (j *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference)SetGrantName(val *string) {
+func (j *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) SetGrantName(val *string) {
 	if err := j.validateSetGrantNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference)SetGrantName(val *
 	)
 }
 
-func (j *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference)SetInternalValue(val *RedshiftClusterSnapshotCopy) {
+func (j *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) SetInternalValue(val *RedshiftClusterSnapshotCopy) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference)SetRetentionPeriod(val *float64) {
+func (j *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) SetRetentionPeriod(val *float64) {
 	if err := j.validateSetRetentionPeriodParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference)SetRetentionPeriod
 	)
 }
 
-func (j *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,16 +345,16 @@ func (r *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (r *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (r *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (r *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (r *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (r *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (r *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (r *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (r *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (r *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -535,16 +534,16 @@ func (r *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) ResetRetentionPer
 	)
 }
 
-func (r *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (r *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) ToString() *strin
 
 	return returns
 }
-

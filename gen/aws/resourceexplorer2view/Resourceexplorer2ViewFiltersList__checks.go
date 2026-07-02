@@ -34,7 +34,7 @@ func (r *jsiiProxy_Resourceexplorer2ViewFiltersList) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_Resourceexplorer2ViewFiltersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Resourceexplorer2ViewFiltersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewResourceexplorer2ViewFiltersListParameters(terraformResource cdk
 
 	return nil
 }
-

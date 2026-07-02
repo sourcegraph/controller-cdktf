@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRule",
-		reflect.TypeOf((*ConfigOrganizationCustomRule)(nil)).Elem(),
+		reflect.TypeFor[ConfigOrganizationCustomRule](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -91,7 +91,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "triggerTypes", GoGetter: "TriggerTypes"},
 			_jsii_.MemberProperty{JsiiProperty: "triggerTypesInput", GoGetter: "TriggerTypesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConfigOrganizationCustomRule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -99,15 +99,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleConfig",
-		reflect.TypeOf((*ConfigOrganizationCustomRuleConfig)(nil)).Elem(),
+		reflect.TypeFor[ConfigOrganizationCustomRuleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleTimeouts",
-		reflect.TypeOf((*ConfigOrganizationCustomRuleTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ConfigOrganizationCustomRuleTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleTimeoutsOutputReference",
-		reflect.TypeOf((*ConfigOrganizationCustomRuleTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ConfigOrganizationCustomRuleTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -140,7 +140,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConfigOrganizationCustomRuleTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

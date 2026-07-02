@@ -19,7 +19,7 @@ func (a *jsiiProxy_Alb) validateAddMoveTargetParameters(moveTarget *string) erro
 	return nil
 }
 
-func (a *jsiiProxy_Alb) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_Alb) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_Alb) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_Alb) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_Alb) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (a *jsiiProxy_Alb) validatePutAccessLogsParameters(value *AlbAccessLogs) er
 	return nil
 }
 
-func (a *jsiiProxy_Alb) validatePutSubnetMappingParameters(value interface{}) error {
+func (a *jsiiProxy_Alb) validatePutSubnetMappingParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateAlb_GenerateConfigForImportParameters(scope constructs.Construct, i
 	return nil
 }
 
-func validateAlb_IsConstructParameters(x interface{}) error {
+func validateAlb_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateAlb_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateAlb_IsTerraformElementParameters(x interface{}) error {
+func validateAlb_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateAlb_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateAlb_IsTerraformResourceParameters(x interface{}) error {
+func validateAlb_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func validateAlb_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Alb) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Alb) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -330,7 +330,7 @@ func (j *jsiiProxy_Alb) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Alb) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Alb) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -403,7 +403,7 @@ func (j *jsiiProxy_Alb) validateSetDesyncMitigationModeParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_Alb) validateSetDropInvalidHeaderFieldsParameters(val interface{}) error {
+func (j *jsiiProxy_Alb) validateSetDropInvalidHeaderFieldsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -423,7 +423,7 @@ func (j *jsiiProxy_Alb) validateSetDropInvalidHeaderFieldsParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_Alb) validateSetEnableCrossZoneLoadBalancingParameters(val interface{}) error {
+func (j *jsiiProxy_Alb) validateSetEnableCrossZoneLoadBalancingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -443,7 +443,7 @@ func (j *jsiiProxy_Alb) validateSetEnableCrossZoneLoadBalancingParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_Alb) validateSetEnableDeletionProtectionParameters(val interface{}) error {
+func (j *jsiiProxy_Alb) validateSetEnableDeletionProtectionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -463,7 +463,7 @@ func (j *jsiiProxy_Alb) validateSetEnableDeletionProtectionParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_Alb) validateSetEnableHttp2Parameters(val interface{}) error {
+func (j *jsiiProxy_Alb) validateSetEnableHttp2Parameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -483,7 +483,7 @@ func (j *jsiiProxy_Alb) validateSetEnableHttp2Parameters(val interface{}) error 
 	return nil
 }
 
-func (j *jsiiProxy_Alb) validateSetEnableWafFailOpenParameters(val interface{}) error {
+func (j *jsiiProxy_Alb) validateSetEnableWafFailOpenParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -519,7 +519,7 @@ func (j *jsiiProxy_Alb) validateSetIdleTimeoutParameters(val *float64) error {
 	return nil
 }
 
-func (j *jsiiProxy_Alb) validateSetInternalParameters(val interface{}) error {
+func (j *jsiiProxy_Alb) validateSetInternalParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -579,7 +579,7 @@ func (j *jsiiProxy_Alb) validateSetNamePrefixParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Alb) validateSetPreserveHostHeaderParameters(val interface{}) error {
+func (j *jsiiProxy_Alb) validateSetPreserveHostHeaderParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -599,7 +599,7 @@ func (j *jsiiProxy_Alb) validateSetPreserveHostHeaderParameters(val interface{})
 	return nil
 }
 
-func (j *jsiiProxy_Alb) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Alb) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -692,4 +692,3 @@ func validateNewAlbParameters(scope constructs.Construct, id *string, config *Al
 
 	return nil
 }
-

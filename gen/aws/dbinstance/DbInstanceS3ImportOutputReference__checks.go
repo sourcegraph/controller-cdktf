@@ -114,7 +114,7 @@ func (j *jsiiProxy_DbInstanceS3ImportOutputReference) validateSetBucketPrefixPar
 	return nil
 }
 
-func (j *jsiiProxy_DbInstanceS3ImportOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DbInstanceS3ImportOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDbInstanceS3ImportOutputReferenceParameters(terraformResource cd
 
 	return nil
 }
-

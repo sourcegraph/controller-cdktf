@@ -90,7 +90,7 @@ func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) validatePutPhoneConfigParameters(value interface{}) error {
+func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) validatePutPhoneConfigParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) validatePutQueueConfigParameters(value interface{}) error {
+func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) validatePutQueueConfigParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) validatePutUserConfigParameters(value interface{}) error {
+func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) validatePutUserConfigParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -299,4 +299,3 @@ func validateNewConnectQuickConnectQuickConnectConfigOutputReferenceParameters(t
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.docdbCluster.DocdbCluster",
-		reflect.TypeOf((*DocdbCluster)(nil)).Elem(),
+		reflect.TypeFor[DocdbCluster](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -143,7 +143,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcSecurityGroupIds", GoGetter: "VpcSecurityGroupIds"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcSecurityGroupIdsInput", GoGetter: "VpcSecurityGroupIdsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DocdbCluster{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -151,15 +151,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.docdbCluster.DocdbClusterConfig",
-		reflect.TypeOf((*DocdbClusterConfig)(nil)).Elem(),
+		reflect.TypeFor[DocdbClusterConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.docdbCluster.DocdbClusterTimeouts",
-		reflect.TypeOf((*DocdbClusterTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DocdbClusterTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.docdbCluster.DocdbClusterTimeoutsOutputReference",
-		reflect.TypeOf((*DocdbClusterTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DocdbClusterTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -192,7 +192,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DocdbClusterTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

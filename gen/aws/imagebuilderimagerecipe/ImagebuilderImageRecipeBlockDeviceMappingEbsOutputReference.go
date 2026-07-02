@@ -12,9 +12,9 @@ type ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -64,7 +64,7 @@ type ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,7 +95,7 @@ type ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference interface {
 	ResetVolumeType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,8 +108,8 @@ type jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference struc
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -338,7 +338,6 @@ func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) 
 	return returns
 }
 
-
 func NewImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference {
 	_init_.Initialize()
 
@@ -349,7 +348,7 @@ func NewImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference(terraformRes
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.imagebuilderImageRecipe.ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -361,12 +360,12 @@ func NewImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference_Override(i I
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.imagebuilderImageRecipe.ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		i,
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -377,7 +376,7 @@ func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -388,7 +387,7 @@ func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference)SetDeleteOnTermination(val *string) {
+func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) SetDeleteOnTermination(val *string) {
 	if err := j.validateSetDeleteOnTerminationParameters(val); err != nil {
 		panic(err)
 	}
@@ -399,7 +398,7 @@ func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference)SetEncrypted(val *string) {
+func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) SetEncrypted(val *string) {
 	if err := j.validateSetEncryptedParameters(val); err != nil {
 		panic(err)
 	}
@@ -410,7 +409,7 @@ func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference)SetInternalValue(val *ImagebuilderImageRecipeBlockDeviceMappingEbs) {
+func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) SetInternalValue(val *ImagebuilderImageRecipeBlockDeviceMappingEbs) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -421,7 +420,7 @@ func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference)SetIops(val *float64) {
+func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) SetIops(val *float64) {
 	if err := j.validateSetIopsParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,7 +431,7 @@ func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference)SetKmsKeyId(val *string) {
+func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) SetKmsKeyId(val *string) {
 	if err := j.validateSetKmsKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference)SetSnapshotId(val *string) {
+func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) SetSnapshotId(val *string) {
 	if err := j.validateSetSnapshotIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference)SetThroughput(val *float64) {
+func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) SetThroughput(val *float64) {
 	if err := j.validateSetThroughputParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference)SetVolumeSize(val *float64) {
+func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) SetVolumeSize(val *float64) {
 	if err := j.validateSetVolumeSizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference)SetVolumeType(val *string) {
+func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) SetVolumeType(val *string) {
 	if err := j.validateSetVolumeTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,16 +521,16 @@ func (i *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) 
 	return returns
 }
 
-func (i *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func (i *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) 
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -563,7 +562,7 @@ func (i *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) 
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -579,7 +578,7 @@ func (i *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) 
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -595,7 +594,7 @@ func (i *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) 
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -611,7 +610,7 @@ func (i *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) 
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func (i *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) 
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -643,7 +642,7 @@ func (i *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) 
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func (i *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) 
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -688,7 +687,7 @@ func (i *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) 
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -759,16 +758,16 @@ func (i *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) 
 	)
 }
 
-func (i *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -787,4 +786,3 @@ func (i *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) 
 
 	return returns
 }
-

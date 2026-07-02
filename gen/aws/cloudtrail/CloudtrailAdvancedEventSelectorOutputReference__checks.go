@@ -90,7 +90,7 @@ func (c *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) validateInter
 	return nil
 }
 
-func (c *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) validatePutFieldSelectorParameters(value interface{}) error {
+func (c *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) validatePutFieldSelectorParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (c *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -261,4 +261,3 @@ func validateNewCloudtrailAdvancedEventSelectorOutputReferenceParameters(terrafo
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type RdsClusterRestoreToPointInTimeOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,13 +46,13 @@ type RdsClusterRestoreToPointInTimeOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	UseLatestRestorableTime() interface{}
-	SetUseLatestRestorableTime(val interface{})
-	UseLatestRestorableTimeInput() interface{}
+	UseLatestRestorableTime() any
+	SetUseLatestRestorableTime(val any)
+	UseLatestRestorableTimeInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type RdsClusterRestoreToPointInTimeOutputReference interface {
 	ResetUseLatestRestorableTime()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -91,8 +91,8 @@ type jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -221,8 +221,8 @@ func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) TerraformResou
 	return returns
 }
 
-func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) UseLatestRestorableTime() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) UseLatestRestorableTime() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useLatestRestorableTime",
@@ -231,8 +231,8 @@ func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) UseLatestResto
 	return returns
 }
 
-func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) UseLatestRestorableTimeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) UseLatestRestorableTimeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useLatestRestorableTimeInput",
@@ -240,7 +240,6 @@ func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) UseLatestResto
 	)
 	return returns
 }
-
 
 func NewRdsClusterRestoreToPointInTimeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RdsClusterRestoreToPointInTimeOutputReference {
 	_init_.Initialize()
@@ -252,7 +251,7 @@ func NewRdsClusterRestoreToPointInTimeOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.rdsCluster.RdsClusterRestoreToPointInTimeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -264,12 +263,12 @@ func NewRdsClusterRestoreToPointInTimeOutputReference_Override(r RdsClusterResto
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.rdsCluster.RdsClusterRestoreToPointInTimeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,7 +279,7 @@ func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,7 +290,7 @@ func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference)SetInternalValue(val *RdsClusterRestoreToPointInTime) {
+func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) SetInternalValue(val *RdsClusterRestoreToPointInTime) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference)SetRestoreToTime(val *string) {
+func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) SetRestoreToTime(val *string) {
 	if err := j.validateSetRestoreToTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference)SetRestoreToTim
 	)
 }
 
-func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference)SetRestoreType(val *string) {
+func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) SetRestoreType(val *string) {
 	if err := j.validateSetRestoreTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference)SetRestoreType(
 	)
 }
 
-func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference)SetSourceClusterIdentifier(val *string) {
+func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) SetSourceClusterIdentifier(val *string) {
 	if err := j.validateSetSourceClusterIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference)SetSourceCluste
 	)
 }
 
-func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,7 +345,7 @@ func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -357,7 +356,7 @@ func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference)SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference)SetUseLatestRestorableTime(val interface{}) {
+func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) SetUseLatestRestorableTime(val any) {
 	if err := j.validateSetUseLatestRestorableTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,16 +380,16 @@ func (r *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (r *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (r *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (r *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (r *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (r *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (r *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (r *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (r *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func (r *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func (r *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) InterpolationF
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -578,16 +577,16 @@ func (r *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) ResetUseLatest
 	)
 }
 
-func (r *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -606,4 +605,3 @@ func (r *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) ToString() *st
 
 	return returns
 }
-

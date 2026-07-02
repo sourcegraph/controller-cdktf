@@ -16,17 +16,17 @@ type DataAwsRamResourceShare interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Filter() DataAwsRamResourceShareFilterList
-	FilterInput() interface{}
+	FilterInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -53,7 +53,7 @@ type DataAwsRamResourceShare interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ResourceOwner() *string
 	SetResourceOwner(val *string)
 	ResourceOwnerInput() *string
@@ -67,13 +67,13 @@ type DataAwsRamResourceShare interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,7 +95,7 @@ type DataAwsRamResourceShare interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutFilter(value interface{})
+	PutFilter(value any)
 	ResetFilter()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -103,18 +103,18 @@ type DataAwsRamResourceShare interface {
 	ResetOverrideLogicalId()
 	ResetResourceShareStatus()
 	ResetTags()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsRamResourceShare
@@ -142,8 +142,8 @@ func (j *jsiiProxy_DataAwsRamResourceShare) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRamResourceShare) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsRamResourceShare) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_DataAwsRamResourceShare) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRamResourceShare) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsRamResourceShare) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_DataAwsRamResourceShare) Filter() DataAwsRamResourceShareFilt
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRamResourceShare) FilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsRamResourceShare) FilterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"filterInput",
@@ -302,8 +302,8 @@ func (j *jsiiProxy_DataAwsRamResourceShare) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRamResourceShare) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsRamResourceShare) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -392,8 +392,8 @@ func (j *jsiiProxy_DataAwsRamResourceShare) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRamResourceShare) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsRamResourceShare) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -412,7 +412,6 @@ func (j *jsiiProxy_DataAwsRamResourceShare) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/ram_resource_share aws_ram_resource_share} Data Source.
 func NewDataAwsRamResourceShare(scope constructs.Construct, id *string, config *DataAwsRamResourceShareConfig) DataAwsRamResourceShare {
 	_init_.Initialize()
@@ -424,7 +423,7 @@ func NewDataAwsRamResourceShare(scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsRamResourceShare.DataAwsRamResourceShare",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -437,12 +436,12 @@ func NewDataAwsRamResourceShare_Override(d DataAwsRamResourceShare, scope constr
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsRamResourceShare.DataAwsRamResourceShare",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsRamResourceShare)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsRamResourceShare) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_DataAwsRamResourceShare)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRamResourceShare)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsRamResourceShare) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -461,7 +460,7 @@ func (j *jsiiProxy_DataAwsRamResourceShare)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRamResourceShare)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsRamResourceShare) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -469,7 +468,7 @@ func (j *jsiiProxy_DataAwsRamResourceShare)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_DataAwsRamResourceShare)SetId(val *string) {
+func (j *jsiiProxy_DataAwsRamResourceShare) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -480,7 +479,7 @@ func (j *jsiiProxy_DataAwsRamResourceShare)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRamResourceShare)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsRamResourceShare) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -491,7 +490,7 @@ func (j *jsiiProxy_DataAwsRamResourceShare)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_DataAwsRamResourceShare)SetName(val *string) {
+func (j *jsiiProxy_DataAwsRamResourceShare) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -502,7 +501,7 @@ func (j *jsiiProxy_DataAwsRamResourceShare)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRamResourceShare)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsRamResourceShare) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -510,7 +509,7 @@ func (j *jsiiProxy_DataAwsRamResourceShare)SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_DataAwsRamResourceShare)SetResourceOwner(val *string) {
+func (j *jsiiProxy_DataAwsRamResourceShare) SetResourceOwner(val *string) {
 	if err := j.validateSetResourceOwnerParameters(val); err != nil {
 		panic(err)
 	}
@@ -521,7 +520,7 @@ func (j *jsiiProxy_DataAwsRamResourceShare)SetResourceOwner(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRamResourceShare)SetResourceShareStatus(val *string) {
+func (j *jsiiProxy_DataAwsRamResourceShare) SetResourceShareStatus(val *string) {
 	if err := j.validateSetResourceShareStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +531,7 @@ func (j *jsiiProxy_DataAwsRamResourceShare)SetResourceShareStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRamResourceShare)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsRamResourceShare) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -555,7 +554,7 @@ func DataAwsRamResourceShare_GenerateConfigForImport(scope constructs.Construct,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsRamResourceShare.DataAwsRamResourceShare",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -579,7 +578,7 @@ func DataAwsRamResourceShare_GenerateConfigForImport(scope constructs.Construct,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsRamResourceShare_IsConstruct(x interface{}) *bool {
+func DataAwsRamResourceShare_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsRamResourceShare_IsConstructParameters(x); err != nil {
@@ -590,7 +589,7 @@ func DataAwsRamResourceShare_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsRamResourceShare.DataAwsRamResourceShare",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -598,7 +597,7 @@ func DataAwsRamResourceShare_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsRamResourceShare_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsRamResourceShare_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsRamResourceShare_IsTerraformDataSourceParameters(x); err != nil {
@@ -609,7 +608,7 @@ func DataAwsRamResourceShare_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsRamResourceShare.DataAwsRamResourceShare",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -617,7 +616,7 @@ func DataAwsRamResourceShare_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsRamResourceShare_IsTerraformElement(x interface{}) *bool {
+func DataAwsRamResourceShare_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsRamResourceShare_IsTerraformElementParameters(x); err != nil {
@@ -628,7 +627,7 @@ func DataAwsRamResourceShare_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsRamResourceShare.DataAwsRamResourceShare",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -646,27 +645,27 @@ func DataAwsRamResourceShare_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRamResourceShare) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsRamResourceShare) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsRamResourceShare) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsRamResourceShare) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -682,7 +681,7 @@ func (d *jsiiProxy_DataAwsRamResourceShare) GetBooleanAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -698,7 +697,7 @@ func (d *jsiiProxy_DataAwsRamResourceShare) GetBooleanMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func (d *jsiiProxy_DataAwsRamResourceShare) GetListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func (d *jsiiProxy_DataAwsRamResourceShare) GetNumberAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -746,7 +745,7 @@ func (d *jsiiProxy_DataAwsRamResourceShare) GetNumberListAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -762,7 +761,7 @@ func (d *jsiiProxy_DataAwsRamResourceShare) GetNumberMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -778,7 +777,7 @@ func (d *jsiiProxy_DataAwsRamResourceShare) GetStringAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func (d *jsiiProxy_DataAwsRamResourceShare) GetStringMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func (d *jsiiProxy_DataAwsRamResourceShare) InterpolationForAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -824,18 +823,18 @@ func (d *jsiiProxy_DataAwsRamResourceShare) OverrideLogicalId(newLogicalId *stri
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DataAwsRamResourceShare) PutFilter(value interface{}) {
+func (d *jsiiProxy_DataAwsRamResourceShare) PutFilter(value any) {
 	if err := d.validatePutFilterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -879,8 +878,8 @@ func (d *jsiiProxy_DataAwsRamResourceShare) ResetTags() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsRamResourceShare) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsRamResourceShare) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -892,8 +891,8 @@ func (d *jsiiProxy_DataAwsRamResourceShare) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRamResourceShare) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsRamResourceShare) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -905,8 +904,8 @@ func (d *jsiiProxy_DataAwsRamResourceShare) SynthesizeHclAttributes() *map[strin
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRamResourceShare) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsRamResourceShare) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -918,8 +917,8 @@ func (d *jsiiProxy_DataAwsRamResourceShare) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRamResourceShare) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsRamResourceShare) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -944,8 +943,8 @@ func (d *jsiiProxy_DataAwsRamResourceShare) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRamResourceShare) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsRamResourceShare) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -956,4 +955,3 @@ func (d *jsiiProxy_DataAwsRamResourceShare) ToTerraform() interface{} {
 
 	return returns
 }
-

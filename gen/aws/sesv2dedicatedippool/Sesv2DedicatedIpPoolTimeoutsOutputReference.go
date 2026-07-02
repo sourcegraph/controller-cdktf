@@ -12,9 +12,9 @@ type Sesv2DedicatedIpPoolTimeoutsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type Sesv2DedicatedIpPoolTimeoutsOutputReference interface {
 	DeleteInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type Sesv2DedicatedIpPoolTimeoutsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type Sesv2DedicatedIpPoolTimeoutsOutputReference interface {
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference) UpdateInput() *s
 	return returns
 }
 
-
 func NewSesv2DedicatedIpPoolTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) Sesv2DedicatedIpPoolTimeoutsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewSesv2DedicatedIpPoolTimeoutsOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sesv2DedicatedIpPool.Sesv2DedicatedIpPoolTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewSesv2DedicatedIpPoolTimeoutsOutputReference_Override(s Sesv2DedicatedIpP
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sesv2DedicatedIpPool.Sesv2DedicatedIpPoolTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference)SetCreate(val *string) {
+func (j *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference) SetCreate(val *string) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference)SetCreate(val *st
 	)
 }
 
-func (j *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference)SetDelete(val *string) {
+func (j *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference) SetDelete(val *string) {
 	if err := j.validateSetDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference)SetDelete(val *st
 	)
 }
 
-func (j *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference)SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference)SetUpdate(val *string) {
+func (j *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference) SetUpdate(val *string) {
 	if err := j.validateSetUpdateParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (s *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (s *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (s *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (s *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (s *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (s *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (s *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (s *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (s *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (s *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (s *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (s *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference) ResetUpdate() {
 	)
 }
 
-func (s *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (s *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference) ToString() *stri
 
 	return returns
 }
-

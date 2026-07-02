@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsEbsDefaultKmsKey) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsEbsDefaultKmsKey) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -138,7 +138,7 @@ func validateDataAwsEbsDefaultKmsKey_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateDataAwsEbsDefaultKmsKey_IsConstructParameters(x interface{}) error {
+func validateDataAwsEbsDefaultKmsKey_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -146,7 +146,7 @@ func validateDataAwsEbsDefaultKmsKey_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateDataAwsEbsDefaultKmsKey_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsEbsDefaultKmsKey_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -154,7 +154,7 @@ func validateDataAwsEbsDefaultKmsKey_IsTerraformDataSourceParameters(x interface
 	return nil
 }
 
-func validateDataAwsEbsDefaultKmsKey_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsEbsDefaultKmsKey_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -162,7 +162,7 @@ func validateDataAwsEbsDefaultKmsKey_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEbsDefaultKmsKey) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEbsDefaultKmsKey) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -250,4 +250,3 @@ func validateNewDataAwsEbsDefaultKmsKeyParameters(scope constructs.Construct, id
 
 	return nil
 }
-

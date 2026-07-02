@@ -15,15 +15,15 @@ type ElasticsearchDomainSamlOptions interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,28 +53,28 @@ type ElasticsearchDomainSamlOptions interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SamlOptions() ElasticsearchDomainSamlOptionsSamlOptionsOutputReference
 	SamlOptionsInput() *ElasticsearchDomainSamlOptionsSamlOptions
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ElasticsearchDomainSamlOptionsTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -92,7 +92,7 @@ type ElasticsearchDomainSamlOptions interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -104,7 +104,7 @@ type ElasticsearchDomainSamlOptions interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -119,17 +119,17 @@ type ElasticsearchDomainSamlOptions interface {
 	ResetOverrideLogicalId()
 	ResetSamlOptions()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ElasticsearchDomainSamlOptions
@@ -147,8 +147,8 @@ func (j *jsiiProxy_ElasticsearchDomainSamlOptions) CdktfStack() cdktf.TerraformS
 	return returns
 }
 
-func (j *jsiiProxy_ElasticsearchDomainSamlOptions) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticsearchDomainSamlOptions) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -157,8 +157,8 @@ func (j *jsiiProxy_ElasticsearchDomainSamlOptions) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ElasticsearchDomainSamlOptions) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ElasticsearchDomainSamlOptions) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_ElasticsearchDomainSamlOptions) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_ElasticsearchDomainSamlOptions) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticsearchDomainSamlOptions) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -287,8 +287,8 @@ func (j *jsiiProxy_ElasticsearchDomainSamlOptions) Provider() cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_ElasticsearchDomainSamlOptions) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ElasticsearchDomainSamlOptions) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -297,8 +297,8 @@ func (j *jsiiProxy_ElasticsearchDomainSamlOptions) Provisioners() *[]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_ElasticsearchDomainSamlOptions) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticsearchDomainSamlOptions) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -337,8 +337,8 @@ func (j *jsiiProxy_ElasticsearchDomainSamlOptions) TerraformGeneratorMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_ElasticsearchDomainSamlOptions) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ElasticsearchDomainSamlOptions) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -367,8 +367,8 @@ func (j *jsiiProxy_ElasticsearchDomainSamlOptions) Timeouts() ElasticsearchDomai
 	return returns
 }
 
-func (j *jsiiProxy_ElasticsearchDomainSamlOptions) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticsearchDomainSamlOptions) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -376,7 +376,6 @@ func (j *jsiiProxy_ElasticsearchDomainSamlOptions) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elasticsearch_domain_saml_options aws_elasticsearch_domain_saml_options} Resource.
 func NewElasticsearchDomainSamlOptions(scope constructs.Construct, id *string, config *ElasticsearchDomainSamlOptionsConfig) ElasticsearchDomainSamlOptions {
@@ -389,7 +388,7 @@ func NewElasticsearchDomainSamlOptions(scope constructs.Construct, id *string, c
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptions",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -402,12 +401,12 @@ func NewElasticsearchDomainSamlOptions_Override(e ElasticsearchDomainSamlOptions
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptions",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomainSamlOptions)SetConnection(val interface{}) {
+func (j *jsiiProxy_ElasticsearchDomainSamlOptions) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -418,7 +417,7 @@ func (j *jsiiProxy_ElasticsearchDomainSamlOptions)SetConnection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomainSamlOptions)SetCount(val interface{}) {
+func (j *jsiiProxy_ElasticsearchDomainSamlOptions) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -429,7 +428,7 @@ func (j *jsiiProxy_ElasticsearchDomainSamlOptions)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomainSamlOptions)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ElasticsearchDomainSamlOptions) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -437,7 +436,7 @@ func (j *jsiiProxy_ElasticsearchDomainSamlOptions)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomainSamlOptions)SetDomainName(val *string) {
+func (j *jsiiProxy_ElasticsearchDomainSamlOptions) SetDomainName(val *string) {
 	if err := j.validateSetDomainNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -448,7 +447,7 @@ func (j *jsiiProxy_ElasticsearchDomainSamlOptions)SetDomainName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomainSamlOptions)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ElasticsearchDomainSamlOptions) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -456,7 +455,7 @@ func (j *jsiiProxy_ElasticsearchDomainSamlOptions)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomainSamlOptions)SetId(val *string) {
+func (j *jsiiProxy_ElasticsearchDomainSamlOptions) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_ElasticsearchDomainSamlOptions)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomainSamlOptions)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ElasticsearchDomainSamlOptions) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_ElasticsearchDomainSamlOptions)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomainSamlOptions)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ElasticsearchDomainSamlOptions) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -486,7 +485,7 @@ func (j *jsiiProxy_ElasticsearchDomainSamlOptions)SetProvider(val cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomainSamlOptions)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ElasticsearchDomainSamlOptions) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -509,7 +508,7 @@ func ElasticsearchDomainSamlOptions_GenerateConfigForImport(scope constructs.Con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptions",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -533,7 +532,7 @@ func ElasticsearchDomainSamlOptions_GenerateConfigForImport(scope constructs.Con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ElasticsearchDomainSamlOptions_IsConstruct(x interface{}) *bool {
+func ElasticsearchDomainSamlOptions_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateElasticsearchDomainSamlOptions_IsConstructParameters(x); err != nil {
@@ -544,7 +543,7 @@ func ElasticsearchDomainSamlOptions_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptions",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -552,7 +551,7 @@ func ElasticsearchDomainSamlOptions_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ElasticsearchDomainSamlOptions_IsTerraformElement(x interface{}) *bool {
+func ElasticsearchDomainSamlOptions_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateElasticsearchDomainSamlOptions_IsTerraformElementParameters(x); err != nil {
@@ -563,7 +562,7 @@ func ElasticsearchDomainSamlOptions_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptions",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -571,7 +570,7 @@ func ElasticsearchDomainSamlOptions_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ElasticsearchDomainSamlOptions_IsTerraformResource(x interface{}) *bool {
+func ElasticsearchDomainSamlOptions_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateElasticsearchDomainSamlOptions_IsTerraformResourceParameters(x); err != nil {
@@ -582,7 +581,7 @@ func ElasticsearchDomainSamlOptions_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptions",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -607,31 +606,31 @@ func (e *jsiiProxy_ElasticsearchDomainSamlOptions) AddMoveTarget(moveTarget *str
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_ElasticsearchDomainSamlOptions) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_ElasticsearchDomainSamlOptions) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_ElasticsearchDomainSamlOptions) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_ElasticsearchDomainSamlOptions) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -647,7 +646,7 @@ func (e *jsiiProxy_ElasticsearchDomainSamlOptions) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -663,7 +662,7 @@ func (e *jsiiProxy_ElasticsearchDomainSamlOptions) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func (e *jsiiProxy_ElasticsearchDomainSamlOptions) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func (e *jsiiProxy_ElasticsearchDomainSamlOptions) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -711,7 +710,7 @@ func (e *jsiiProxy_ElasticsearchDomainSamlOptions) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func (e *jsiiProxy_ElasticsearchDomainSamlOptions) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func (e *jsiiProxy_ElasticsearchDomainSamlOptions) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -759,15 +758,15 @@ func (e *jsiiProxy_ElasticsearchDomainSamlOptions) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_ElasticsearchDomainSamlOptions) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_ElasticsearchDomainSamlOptions) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -786,7 +785,7 @@ func (e *jsiiProxy_ElasticsearchDomainSamlOptions) ImportFrom(id *string, provid
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -799,7 +798,7 @@ func (e *jsiiProxy_ElasticsearchDomainSamlOptions) InterpolationForAttribute(ter
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -813,18 +812,18 @@ func (e *jsiiProxy_ElasticsearchDomainSamlOptions) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_ElasticsearchDomainSamlOptions) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_ElasticsearchDomainSamlOptions) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -835,7 +834,7 @@ func (e *jsiiProxy_ElasticsearchDomainSamlOptions) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -846,7 +845,7 @@ func (e *jsiiProxy_ElasticsearchDomainSamlOptions) OverrideLogicalId(newLogicalI
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -857,7 +856,7 @@ func (e *jsiiProxy_ElasticsearchDomainSamlOptions) PutSamlOptions(value *Elastic
 	_jsii_.InvokeVoid(
 		e,
 		"putSamlOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -868,7 +867,7 @@ func (e *jsiiProxy_ElasticsearchDomainSamlOptions) PutTimeouts(value *Elasticsea
 	_jsii_.InvokeVoid(
 		e,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -904,8 +903,8 @@ func (e *jsiiProxy_ElasticsearchDomainSamlOptions) ResetTimeouts() {
 	)
 }
 
-func (e *jsiiProxy_ElasticsearchDomainSamlOptions) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_ElasticsearchDomainSamlOptions) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -917,8 +916,8 @@ func (e *jsiiProxy_ElasticsearchDomainSamlOptions) SynthesizeAttributes() *map[s
 	return returns
 }
 
-func (e *jsiiProxy_ElasticsearchDomainSamlOptions) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_ElasticsearchDomainSamlOptions) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -930,8 +929,8 @@ func (e *jsiiProxy_ElasticsearchDomainSamlOptions) SynthesizeHclAttributes() *ma
 	return returns
 }
 
-func (e *jsiiProxy_ElasticsearchDomainSamlOptions) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_ElasticsearchDomainSamlOptions) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -943,8 +942,8 @@ func (e *jsiiProxy_ElasticsearchDomainSamlOptions) ToHclTerraform() interface{} 
 	return returns
 }
 
-func (e *jsiiProxy_ElasticsearchDomainSamlOptions) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_ElasticsearchDomainSamlOptions) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -969,8 +968,8 @@ func (e *jsiiProxy_ElasticsearchDomainSamlOptions) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_ElasticsearchDomainSamlOptions) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_ElasticsearchDomainSamlOptions) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -981,4 +980,3 @@ func (e *jsiiProxy_ElasticsearchDomainSamlOptions) ToTerraform() interface{} {
 
 	return returns
 }
-

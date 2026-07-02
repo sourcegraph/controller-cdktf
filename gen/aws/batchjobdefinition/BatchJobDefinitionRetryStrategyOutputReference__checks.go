@@ -90,7 +90,7 @@ func (b *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) validateInter
 	return nil
 }
 
-func (b *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) validatePutEvaluateOnExitParameters(value interface{}) error {
+func (b *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) validatePutEvaluateOnExitParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -137,7 +137,7 @@ func (j *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) validateSetAt
 	return nil
 }
 
-func (j *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewBatchJobDefinitionRetryStrategyOutputReferenceParameters(terrafo
 
 	return nil
 }
-

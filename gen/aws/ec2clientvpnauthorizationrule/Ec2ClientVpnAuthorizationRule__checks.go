@@ -19,7 +19,7 @@ func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) validateAddMoveTargetParameter
 	return nil
 }
 
-func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateEc2ClientVpnAuthorizationRule_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateEc2ClientVpnAuthorizationRule_IsConstructParameters(x interface{}) error {
+func validateEc2ClientVpnAuthorizationRule_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateEc2ClientVpnAuthorizationRule_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateEc2ClientVpnAuthorizationRule_IsTerraformElementParameters(x interface{}) error {
+func validateEc2ClientVpnAuthorizationRule_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateEc2ClientVpnAuthorizationRule_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateEc2ClientVpnAuthorizationRule_IsTerraformResourceParameters(x interface{}) error {
+func validateEc2ClientVpnAuthorizationRule_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) validateSetAccessGroupIdParame
 	return nil
 }
 
-func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) validateSetAuthorizeAllGroupsParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) validateSetAuthorizeAllGroupsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -291,7 +291,7 @@ func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) validateSetClientVpnEndpointId
 	return nil
 }
 
-func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -324,7 +324,7 @@ func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -405,7 +405,7 @@ func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) validateSetLifecycleParameters
 	return nil
 }
 
-func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -477,4 +477,3 @@ func validateNewEc2ClientVpnAuthorizationRuleParameters(scope constructs.Constru
 
 	return nil
 }
-

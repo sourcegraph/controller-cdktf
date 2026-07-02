@@ -34,7 +34,7 @@ func (i *jsiiProxy_IotTopicRuleIotEventsList) validateResolveParameters(_context
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleIotEventsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRuleIotEventsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewIotTopicRuleIotEventsListParameters(terraformResource cdktf.IInt
 
 	return nil
 }
-

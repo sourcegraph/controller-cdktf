@@ -15,9 +15,9 @@ type AcmCertificateOptionsOutputReference interface {
 	CertificateTransparencyLoggingPreferenceInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,7 +43,7 @@ type AcmCertificateOptionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type AcmCertificateOptionsOutputReference interface {
 	ResetCertificateTransparencyLoggingPreference()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -100,8 +100,8 @@ func (j *jsiiProxy_AcmCertificateOptionsOutputReference) CertificateTransparency
 	return returns
 }
 
-func (j *jsiiProxy_AcmCertificateOptionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AcmCertificateOptionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_AcmCertificateOptionsOutputReference) TerraformResource() cdk
 	return returns
 }
 
-
 func NewAcmCertificateOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AcmCertificateOptionsOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewAcmCertificateOptionsOutputReference(terraformResource cdktf.IInterpolat
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.acmCertificate.AcmCertificateOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewAcmCertificateOptionsOutputReference_Override(a AcmCertificateOptionsOut
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.acmCertificate.AcmCertificateOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AcmCertificateOptionsOutputReference)SetCertificateTransparencyLoggingPreference(val *string) {
+func (j *jsiiProxy_AcmCertificateOptionsOutputReference) SetCertificateTransparencyLoggingPreference(val *string) {
 	if err := j.validateSetCertificateTransparencyLoggingPreferenceParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_AcmCertificateOptionsOutputReference)SetCertificateTransparen
 	)
 }
 
-func (j *jsiiProxy_AcmCertificateOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AcmCertificateOptionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_AcmCertificateOptionsOutputReference)SetComplexObjectIndex(va
 	)
 }
 
-func (j *jsiiProxy_AcmCertificateOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AcmCertificateOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_AcmCertificateOptionsOutputReference)SetComplexObjectIsFromSe
 	)
 }
 
-func (j *jsiiProxy_AcmCertificateOptionsOutputReference)SetInternalValue(val *AcmCertificateOptions) {
+func (j *jsiiProxy_AcmCertificateOptionsOutputReference) SetInternalValue(val *AcmCertificateOptions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_AcmCertificateOptionsOutputReference)SetInternalValue(val *Ac
 	)
 }
 
-func (j *jsiiProxy_AcmCertificateOptionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AcmCertificateOptionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_AcmCertificateOptionsOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_AcmCertificateOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AcmCertificateOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,16 +276,16 @@ func (a *jsiiProxy_AcmCertificateOptionsOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AcmCertificateOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AcmCertificateOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -302,7 +301,7 @@ func (a *jsiiProxy_AcmCertificateOptionsOutputReference) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -318,7 +317,7 @@ func (a *jsiiProxy_AcmCertificateOptionsOutputReference) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -334,7 +333,7 @@ func (a *jsiiProxy_AcmCertificateOptionsOutputReference) GetListAttribute(terraf
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (a *jsiiProxy_AcmCertificateOptionsOutputReference) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (a *jsiiProxy_AcmCertificateOptionsOutputReference) GetNumberListAttribute(
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (a *jsiiProxy_AcmCertificateOptionsOutputReference) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (a *jsiiProxy_AcmCertificateOptionsOutputReference) GetStringAttribute(terr
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (a *jsiiProxy_AcmCertificateOptionsOutputReference) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (a *jsiiProxy_AcmCertificateOptionsOutputReference) InterpolationForAttribu
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -458,16 +457,16 @@ func (a *jsiiProxy_AcmCertificateOptionsOutputReference) ResetCertificateTranspa
 	)
 }
 
-func (a *jsiiProxy_AcmCertificateOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AcmCertificateOptionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (a *jsiiProxy_AcmCertificateOptionsOutputReference) ToString() *string {
 
 	return returns
 }
-

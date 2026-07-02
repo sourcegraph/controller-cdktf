@@ -98,7 +98,7 @@ func (w *jsiiProxy_WafregionalRegexMatchSetRegexMatchTupleFieldToMatchOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalRegexMatchSetRegexMatchTupleFieldToMatchOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WafregionalRegexMatchSetRegexMatchTupleFieldToMatchOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewWafregionalRegexMatchSetRegexMatchTupleFieldToMatchOutputReferen
 
 	return nil
 }
-

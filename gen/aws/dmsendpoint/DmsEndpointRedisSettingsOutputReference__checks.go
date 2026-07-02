@@ -122,7 +122,7 @@ func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference) validateSetAuthUserN
 	return nil
 }
 
-func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -254,4 +254,3 @@ func validateNewDmsEndpointRedisSettingsOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (s *jsiiProxy_S3BucketOwnershipControls) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketOwnershipControls) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_S3BucketOwnershipControls) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_S3BucketOwnershipControls) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketOwnershipControls) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_S3BucketOwnershipControls) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateS3BucketOwnershipControls_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateS3BucketOwnershipControls_IsConstructParameters(x interface{}) error {
+func validateS3BucketOwnershipControls_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateS3BucketOwnershipControls_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateS3BucketOwnershipControls_IsTerraformElementParameters(x interface{}) error {
+func validateS3BucketOwnershipControls_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateS3BucketOwnershipControls_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateS3BucketOwnershipControls_IsTerraformResourceParameters(x interface{}) error {
+func validateS3BucketOwnershipControls_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_S3BucketOwnershipControls) validateSetBucketParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketOwnershipControls) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketOwnershipControls) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_S3BucketOwnershipControls) validateSetConnectionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketOwnershipControls) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketOwnershipControls) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -369,7 +369,7 @@ func (j *jsiiProxy_S3BucketOwnershipControls) validateSetLifecycleParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketOwnershipControls) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_S3BucketOwnershipControls) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -433,4 +433,3 @@ func validateNewS3BucketOwnershipControlsParameters(scope constructs.Construct, 
 
 	return nil
 }
-

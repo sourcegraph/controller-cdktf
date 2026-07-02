@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfig",
-		reflect.TypeOf((*SagemakerAppImageConfig)(nil)).Elem(),
+		reflect.TypeFor[SagemakerAppImageConfig](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerAppImageConfig{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -77,19 +77,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfigConfig",
-		reflect.TypeOf((*SagemakerAppImageConfigConfig)(nil)).Elem(),
+		reflect.TypeFor[SagemakerAppImageConfigConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfigKernelGatewayImageConfig",
-		reflect.TypeOf((*SagemakerAppImageConfigKernelGatewayImageConfig)(nil)).Elem(),
+		reflect.TypeFor[SagemakerAppImageConfigKernelGatewayImageConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfig",
-		reflect.TypeOf((*SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfig)(nil)).Elem(),
+		reflect.TypeFor[SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfigOutputReference",
-		reflect.TypeOf((*SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -122,7 +122,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -130,11 +130,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfigKernelGatewayImageConfigKernelSpec",
-		reflect.TypeOf((*SagemakerAppImageConfigKernelGatewayImageConfigKernelSpec)(nil)).Elem(),
+		reflect.TypeFor[SagemakerAppImageConfigKernelGatewayImageConfigKernelSpec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfigKernelGatewayImageConfigKernelSpecOutputReference",
-		reflect.TypeOf((*SagemakerAppImageConfigKernelGatewayImageConfigKernelSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SagemakerAppImageConfigKernelGatewayImageConfigKernelSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -163,7 +163,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerAppImageConfigKernelGatewayImageConfigKernelSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -171,7 +171,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfigKernelGatewayImageConfigOutputReference",
-		reflect.TypeOf((*SagemakerAppImageConfigKernelGatewayImageConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SagemakerAppImageConfigKernelGatewayImageConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -202,7 +202,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerAppImageConfigKernelGatewayImageConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

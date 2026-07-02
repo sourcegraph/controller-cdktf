@@ -98,7 +98,7 @@ func (a *jsiiProxy_AlbListenerRuleActionForwardStickinessOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_AlbListenerRuleActionForwardStickinessOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlbListenerRuleActionForwardStickinessOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_AlbListenerRuleActionForwardStickinessOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_AlbListenerRuleActionForwardStickinessOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_AlbListenerRuleActionForwardStickinessOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewAlbListenerRuleActionForwardStickinessOutputReferenceParameters(
 
 	return nil
 }
-

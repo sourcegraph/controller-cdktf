@@ -20,15 +20,15 @@ type MacieS3BucketAssociation interface {
 	ClassificationType() MacieS3BucketAssociationClassificationTypeOutputReference
 	ClassificationTypeInput() *MacieS3BucketAssociationClassificationType
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -61,24 +61,24 @@ type MacieS3BucketAssociation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -96,7 +96,7 @@ type MacieS3BucketAssociation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -108,7 +108,7 @@ type MacieS3BucketAssociation interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -123,17 +123,17 @@ type MacieS3BucketAssociation interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPrefix()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for MacieS3BucketAssociation
@@ -191,8 +191,8 @@ func (j *jsiiProxy_MacieS3BucketAssociation) ClassificationTypeInput() *MacieS3B
 	return returns
 }
 
-func (j *jsiiProxy_MacieS3BucketAssociation) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MacieS3BucketAssociation) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -201,8 +201,8 @@ func (j *jsiiProxy_MacieS3BucketAssociation) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MacieS3BucketAssociation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MacieS3BucketAssociation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -211,8 +211,8 @@ func (j *jsiiProxy_MacieS3BucketAssociation) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_MacieS3BucketAssociation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MacieS3BucketAssociation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -351,8 +351,8 @@ func (j *jsiiProxy_MacieS3BucketAssociation) Provider() cdktf.TerraformProvider 
 	return returns
 }
 
-func (j *jsiiProxy_MacieS3BucketAssociation) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_MacieS3BucketAssociation) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -361,8 +361,8 @@ func (j *jsiiProxy_MacieS3BucketAssociation) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MacieS3BucketAssociation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MacieS3BucketAssociation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -381,8 +381,8 @@ func (j *jsiiProxy_MacieS3BucketAssociation) TerraformGeneratorMetadata() *cdktf
 	return returns
 }
 
-func (j *jsiiProxy_MacieS3BucketAssociation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MacieS3BucketAssociation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -401,7 +401,6 @@ func (j *jsiiProxy_MacieS3BucketAssociation) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/macie_s3_bucket_association aws_macie_s3_bucket_association} Resource.
 func NewMacieS3BucketAssociation(scope constructs.Construct, id *string, config *MacieS3BucketAssociationConfig) MacieS3BucketAssociation {
 	_init_.Initialize()
@@ -413,7 +412,7 @@ func NewMacieS3BucketAssociation(scope constructs.Construct, id *string, config 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -426,12 +425,12 @@ func NewMacieS3BucketAssociation_Override(m MacieS3BucketAssociation, scope cons
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MacieS3BucketAssociation)SetBucketName(val *string) {
+func (j *jsiiProxy_MacieS3BucketAssociation) SetBucketName(val *string) {
 	if err := j.validateSetBucketNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_MacieS3BucketAssociation)SetBucketName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MacieS3BucketAssociation)SetConnection(val interface{}) {
+func (j *jsiiProxy_MacieS3BucketAssociation) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_MacieS3BucketAssociation)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MacieS3BucketAssociation)SetCount(val interface{}) {
+func (j *jsiiProxy_MacieS3BucketAssociation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,7 +463,7 @@ func (j *jsiiProxy_MacieS3BucketAssociation)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MacieS3BucketAssociation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_MacieS3BucketAssociation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -472,7 +471,7 @@ func (j *jsiiProxy_MacieS3BucketAssociation)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MacieS3BucketAssociation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MacieS3BucketAssociation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -480,7 +479,7 @@ func (j *jsiiProxy_MacieS3BucketAssociation)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_MacieS3BucketAssociation)SetId(val *string) {
+func (j *jsiiProxy_MacieS3BucketAssociation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -491,7 +490,7 @@ func (j *jsiiProxy_MacieS3BucketAssociation)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MacieS3BucketAssociation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MacieS3BucketAssociation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -502,7 +501,7 @@ func (j *jsiiProxy_MacieS3BucketAssociation)SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_MacieS3BucketAssociation)SetMemberAccountId(val *string) {
+func (j *jsiiProxy_MacieS3BucketAssociation) SetMemberAccountId(val *string) {
 	if err := j.validateSetMemberAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_MacieS3BucketAssociation)SetMemberAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MacieS3BucketAssociation)SetPrefix(val *string) {
+func (j *jsiiProxy_MacieS3BucketAssociation) SetPrefix(val *string) {
 	if err := j.validateSetPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_MacieS3BucketAssociation)SetPrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MacieS3BucketAssociation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MacieS3BucketAssociation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -532,7 +531,7 @@ func (j *jsiiProxy_MacieS3BucketAssociation)SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_MacieS3BucketAssociation)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_MacieS3BucketAssociation) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -555,7 +554,7 @@ func MacieS3BucketAssociation_GenerateConfigForImport(scope constructs.Construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -579,7 +578,7 @@ func MacieS3BucketAssociation_GenerateConfigForImport(scope constructs.Construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func MacieS3BucketAssociation_IsConstruct(x interface{}) *bool {
+func MacieS3BucketAssociation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMacieS3BucketAssociation_IsConstructParameters(x); err != nil {
@@ -590,7 +589,7 @@ func MacieS3BucketAssociation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -598,7 +597,7 @@ func MacieS3BucketAssociation_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func MacieS3BucketAssociation_IsTerraformElement(x interface{}) *bool {
+func MacieS3BucketAssociation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMacieS3BucketAssociation_IsTerraformElementParameters(x); err != nil {
@@ -609,7 +608,7 @@ func MacieS3BucketAssociation_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -617,7 +616,7 @@ func MacieS3BucketAssociation_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func MacieS3BucketAssociation_IsTerraformResource(x interface{}) *bool {
+func MacieS3BucketAssociation_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMacieS3BucketAssociation_IsTerraformResourceParameters(x); err != nil {
@@ -628,7 +627,7 @@ func MacieS3BucketAssociation_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociation",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -653,31 +652,31 @@ func (m *jsiiProxy_MacieS3BucketAssociation) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (m *jsiiProxy_MacieS3BucketAssociation) AddOverride(path *string, value interface{}) {
+func (m *jsiiProxy_MacieS3BucketAssociation) AddOverride(path *string, value any) {
 	if err := m.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (m *jsiiProxy_MacieS3BucketAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MacieS3BucketAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -693,7 +692,7 @@ func (m *jsiiProxy_MacieS3BucketAssociation) GetBooleanAttribute(terraformAttrib
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -709,7 +708,7 @@ func (m *jsiiProxy_MacieS3BucketAssociation) GetBooleanMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -725,7 +724,7 @@ func (m *jsiiProxy_MacieS3BucketAssociation) GetListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -741,7 +740,7 @@ func (m *jsiiProxy_MacieS3BucketAssociation) GetNumberAttribute(terraformAttribu
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -757,7 +756,7 @@ func (m *jsiiProxy_MacieS3BucketAssociation) GetNumberListAttribute(terraformAtt
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -773,7 +772,7 @@ func (m *jsiiProxy_MacieS3BucketAssociation) GetNumberMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -789,7 +788,7 @@ func (m *jsiiProxy_MacieS3BucketAssociation) GetStringAttribute(terraformAttribu
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -805,15 +804,15 @@ func (m *jsiiProxy_MacieS3BucketAssociation) GetStringMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MacieS3BucketAssociation) HasResourceMove() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MacieS3BucketAssociation) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -832,7 +831,7 @@ func (m *jsiiProxy_MacieS3BucketAssociation) ImportFrom(id *string, provider cdk
 	_jsii_.InvokeVoid(
 		m,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -845,7 +844,7 @@ func (m *jsiiProxy_MacieS3BucketAssociation) InterpolationForAttribute(terraform
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -859,18 +858,18 @@ func (m *jsiiProxy_MacieS3BucketAssociation) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (m *jsiiProxy_MacieS3BucketAssociation) MoveTo(moveTarget *string, index interface{}) {
+func (m *jsiiProxy_MacieS3BucketAssociation) MoveTo(moveTarget *string, index any) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -881,7 +880,7 @@ func (m *jsiiProxy_MacieS3BucketAssociation) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -892,7 +891,7 @@ func (m *jsiiProxy_MacieS3BucketAssociation) OverrideLogicalId(newLogicalId *str
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -903,7 +902,7 @@ func (m *jsiiProxy_MacieS3BucketAssociation) PutClassificationType(value *MacieS
 	_jsii_.InvokeVoid(
 		m,
 		"putClassificationType",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -947,8 +946,8 @@ func (m *jsiiProxy_MacieS3BucketAssociation) ResetPrefix() {
 	)
 }
 
-func (m *jsiiProxy_MacieS3BucketAssociation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MacieS3BucketAssociation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -960,8 +959,8 @@ func (m *jsiiProxy_MacieS3BucketAssociation) SynthesizeAttributes() *map[string]
 	return returns
 }
 
-func (m *jsiiProxy_MacieS3BucketAssociation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MacieS3BucketAssociation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -973,8 +972,8 @@ func (m *jsiiProxy_MacieS3BucketAssociation) SynthesizeHclAttributes() *map[stri
 	return returns
 }
 
-func (m *jsiiProxy_MacieS3BucketAssociation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MacieS3BucketAssociation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -986,8 +985,8 @@ func (m *jsiiProxy_MacieS3BucketAssociation) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_MacieS3BucketAssociation) ToMetadata() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MacieS3BucketAssociation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1012,8 +1011,8 @@ func (m *jsiiProxy_MacieS3BucketAssociation) ToString() *string {
 	return returns
 }
 
-func (m *jsiiProxy_MacieS3BucketAssociation) ToTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MacieS3BucketAssociation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1024,4 +1023,3 @@ func (m *jsiiProxy_MacieS3BucketAssociation) ToTerraform() interface{} {
 
 	return returns
 }
-

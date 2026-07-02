@@ -6,9 +6,9 @@ import (
 
 type VpcIpamPoolConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type VpcIpamPoolConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/vpc_ipam_pool#address_family VpcIpamPool#address_family}.
 	AddressFamily *string `field:"required" json:"addressFamily" yaml:"addressFamily"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/vpc_ipam_pool#ipam_scope_id VpcIpamPool#ipam_scope_id}.
@@ -32,7 +32,7 @@ type VpcIpamPoolConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/vpc_ipam_pool#allocation_resource_tags VpcIpamPool#allocation_resource_tags}.
 	AllocationResourceTags *map[string]*string `field:"optional" json:"allocationResourceTags" yaml:"allocationResourceTags"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/vpc_ipam_pool#auto_import VpcIpamPool#auto_import}.
-	AutoImport interface{} `field:"optional" json:"autoImport" yaml:"autoImport"`
+	AutoImport any `field:"optional" json:"autoImport" yaml:"autoImport"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/vpc_ipam_pool#aws_service VpcIpamPool#aws_service}.
 	AwsService *string `field:"optional" json:"awsService" yaml:"awsService"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/vpc_ipam_pool#description VpcIpamPool#description}.
@@ -47,7 +47,7 @@ type VpcIpamPoolConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/vpc_ipam_pool#public_ip_source VpcIpamPool#public_ip_source}.
 	PublicIpSource *string `field:"optional" json:"publicIpSource" yaml:"publicIpSource"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/vpc_ipam_pool#publicly_advertisable VpcIpamPool#publicly_advertisable}.
-	PubliclyAdvertisable interface{} `field:"optional" json:"publiclyAdvertisable" yaml:"publiclyAdvertisable"`
+	PubliclyAdvertisable any `field:"optional" json:"publiclyAdvertisable" yaml:"publiclyAdvertisable"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/vpc_ipam_pool#source_ipam_pool_id VpcIpamPool#source_ipam_pool_id}.
 	SourceIpamPoolId *string `field:"optional" json:"sourceIpamPoolId" yaml:"sourceIpamPoolId"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/vpc_ipam_pool#tags VpcIpamPool#tags}.
@@ -59,4 +59,3 @@ type VpcIpamPoolConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/vpc_ipam_pool#timeouts VpcIpamPool#timeouts}
 	Timeouts *VpcIpamPoolTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

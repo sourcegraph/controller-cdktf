@@ -16,15 +16,15 @@ type TranscribeMedicalVocabulary interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -55,11 +55,11 @@ type TranscribeMedicalVocabulary interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -69,11 +69,11 @@ type TranscribeMedicalVocabulary interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() TranscribeMedicalVocabularyTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	VocabularyFileUri() *string
 	SetVocabularyFileUri(val *string)
 	VocabularyFileUriInput() *string
@@ -84,9 +84,9 @@ type TranscribeMedicalVocabulary interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -104,7 +104,7 @@ type TranscribeMedicalVocabulary interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -116,7 +116,7 @@ type TranscribeMedicalVocabulary interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -131,17 +131,17 @@ type TranscribeMedicalVocabulary interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for TranscribeMedicalVocabulary
@@ -169,8 +169,8 @@ func (j *jsiiProxy_TranscribeMedicalVocabulary) CdktfStack() cdktf.TerraformStac
 	return returns
 }
 
-func (j *jsiiProxy_TranscribeMedicalVocabulary) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TranscribeMedicalVocabulary) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_TranscribeMedicalVocabulary) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TranscribeMedicalVocabulary) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_TranscribeMedicalVocabulary) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -189,8 +189,8 @@ func (j *jsiiProxy_TranscribeMedicalVocabulary) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_TranscribeMedicalVocabulary) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TranscribeMedicalVocabulary) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -319,8 +319,8 @@ func (j *jsiiProxy_TranscribeMedicalVocabulary) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_TranscribeMedicalVocabulary) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_TranscribeMedicalVocabulary) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -329,8 +329,8 @@ func (j *jsiiProxy_TranscribeMedicalVocabulary) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TranscribeMedicalVocabulary) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TranscribeMedicalVocabulary) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -389,8 +389,8 @@ func (j *jsiiProxy_TranscribeMedicalVocabulary) TerraformGeneratorMetadata() *cd
 	return returns
 }
 
-func (j *jsiiProxy_TranscribeMedicalVocabulary) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_TranscribeMedicalVocabulary) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -419,8 +419,8 @@ func (j *jsiiProxy_TranscribeMedicalVocabulary) Timeouts() TranscribeMedicalVoca
 	return returns
 }
 
-func (j *jsiiProxy_TranscribeMedicalVocabulary) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TranscribeMedicalVocabulary) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -469,7 +469,6 @@ func (j *jsiiProxy_TranscribeMedicalVocabulary) VocabularyNameInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/transcribe_medical_vocabulary aws_transcribe_medical_vocabulary} Resource.
 func NewTranscribeMedicalVocabulary(scope constructs.Construct, id *string, config *TranscribeMedicalVocabularyConfig) TranscribeMedicalVocabulary {
 	_init_.Initialize()
@@ -481,7 +480,7 @@ func NewTranscribeMedicalVocabulary(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.transcribeMedicalVocabulary.TranscribeMedicalVocabulary",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -494,12 +493,12 @@ func NewTranscribeMedicalVocabulary_Override(t TranscribeMedicalVocabulary, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.transcribeMedicalVocabulary.TranscribeMedicalVocabulary",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		t,
 	)
 }
 
-func (j *jsiiProxy_TranscribeMedicalVocabulary)SetConnection(val interface{}) {
+func (j *jsiiProxy_TranscribeMedicalVocabulary) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_TranscribeMedicalVocabulary)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TranscribeMedicalVocabulary)SetCount(val interface{}) {
+func (j *jsiiProxy_TranscribeMedicalVocabulary) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -521,7 +520,7 @@ func (j *jsiiProxy_TranscribeMedicalVocabulary)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TranscribeMedicalVocabulary)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_TranscribeMedicalVocabulary) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -529,7 +528,7 @@ func (j *jsiiProxy_TranscribeMedicalVocabulary)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_TranscribeMedicalVocabulary)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_TranscribeMedicalVocabulary) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -537,7 +536,7 @@ func (j *jsiiProxy_TranscribeMedicalVocabulary)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_TranscribeMedicalVocabulary)SetId(val *string) {
+func (j *jsiiProxy_TranscribeMedicalVocabulary) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_TranscribeMedicalVocabulary)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TranscribeMedicalVocabulary)SetLanguageCode(val *string) {
+func (j *jsiiProxy_TranscribeMedicalVocabulary) SetLanguageCode(val *string) {
 	if err := j.validateSetLanguageCodeParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_TranscribeMedicalVocabulary)SetLanguageCode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TranscribeMedicalVocabulary)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_TranscribeMedicalVocabulary) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_TranscribeMedicalVocabulary)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_TranscribeMedicalVocabulary)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_TranscribeMedicalVocabulary) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -578,7 +577,7 @@ func (j *jsiiProxy_TranscribeMedicalVocabulary)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_TranscribeMedicalVocabulary)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_TranscribeMedicalVocabulary) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -589,7 +588,7 @@ func (j *jsiiProxy_TranscribeMedicalVocabulary)SetProvisioners(val *[]interface{
 	)
 }
 
-func (j *jsiiProxy_TranscribeMedicalVocabulary)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_TranscribeMedicalVocabulary) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -600,7 +599,7 @@ func (j *jsiiProxy_TranscribeMedicalVocabulary)SetTags(val *map[string]*string) 
 	)
 }
 
-func (j *jsiiProxy_TranscribeMedicalVocabulary)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_TranscribeMedicalVocabulary) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,7 +610,7 @@ func (j *jsiiProxy_TranscribeMedicalVocabulary)SetTagsAll(val *map[string]*strin
 	)
 }
 
-func (j *jsiiProxy_TranscribeMedicalVocabulary)SetVocabularyFileUri(val *string) {
+func (j *jsiiProxy_TranscribeMedicalVocabulary) SetVocabularyFileUri(val *string) {
 	if err := j.validateSetVocabularyFileUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -622,7 +621,7 @@ func (j *jsiiProxy_TranscribeMedicalVocabulary)SetVocabularyFileUri(val *string)
 	)
 }
 
-func (j *jsiiProxy_TranscribeMedicalVocabulary)SetVocabularyName(val *string) {
+func (j *jsiiProxy_TranscribeMedicalVocabulary) SetVocabularyName(val *string) {
 	if err := j.validateSetVocabularyNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -645,7 +644,7 @@ func TranscribeMedicalVocabulary_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.transcribeMedicalVocabulary.TranscribeMedicalVocabulary",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -669,7 +668,7 @@ func TranscribeMedicalVocabulary_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func TranscribeMedicalVocabulary_IsConstruct(x interface{}) *bool {
+func TranscribeMedicalVocabulary_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTranscribeMedicalVocabulary_IsConstructParameters(x); err != nil {
@@ -680,7 +679,7 @@ func TranscribeMedicalVocabulary_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.transcribeMedicalVocabulary.TranscribeMedicalVocabulary",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -688,7 +687,7 @@ func TranscribeMedicalVocabulary_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func TranscribeMedicalVocabulary_IsTerraformElement(x interface{}) *bool {
+func TranscribeMedicalVocabulary_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTranscribeMedicalVocabulary_IsTerraformElementParameters(x); err != nil {
@@ -699,7 +698,7 @@ func TranscribeMedicalVocabulary_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.transcribeMedicalVocabulary.TranscribeMedicalVocabulary",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -707,7 +706,7 @@ func TranscribeMedicalVocabulary_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func TranscribeMedicalVocabulary_IsTerraformResource(x interface{}) *bool {
+func TranscribeMedicalVocabulary_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTranscribeMedicalVocabulary_IsTerraformResourceParameters(x); err != nil {
@@ -718,7 +717,7 @@ func TranscribeMedicalVocabulary_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.transcribeMedicalVocabulary.TranscribeMedicalVocabulary",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -743,31 +742,31 @@ func (t *jsiiProxy_TranscribeMedicalVocabulary) AddMoveTarget(moveTarget *string
 	_jsii_.InvokeVoid(
 		t,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (t *jsiiProxy_TranscribeMedicalVocabulary) AddOverride(path *string, value interface{}) {
+func (t *jsiiProxy_TranscribeMedicalVocabulary) AddOverride(path *string, value any) {
 	if err := t.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		t,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (t *jsiiProxy_TranscribeMedicalVocabulary) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (t *jsiiProxy_TranscribeMedicalVocabulary) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -783,7 +782,7 @@ func (t *jsiiProxy_TranscribeMedicalVocabulary) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		t,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,7 +798,7 @@ func (t *jsiiProxy_TranscribeMedicalVocabulary) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		t,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -815,7 +814,7 @@ func (t *jsiiProxy_TranscribeMedicalVocabulary) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		t,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -831,7 +830,7 @@ func (t *jsiiProxy_TranscribeMedicalVocabulary) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		t,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -847,7 +846,7 @@ func (t *jsiiProxy_TranscribeMedicalVocabulary) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		t,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -863,7 +862,7 @@ func (t *jsiiProxy_TranscribeMedicalVocabulary) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		t,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -879,7 +878,7 @@ func (t *jsiiProxy_TranscribeMedicalVocabulary) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		t,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -895,15 +894,15 @@ func (t *jsiiProxy_TranscribeMedicalVocabulary) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		t,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (t *jsiiProxy_TranscribeMedicalVocabulary) HasResourceMove() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TranscribeMedicalVocabulary) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -922,7 +921,7 @@ func (t *jsiiProxy_TranscribeMedicalVocabulary) ImportFrom(id *string, provider 
 	_jsii_.InvokeVoid(
 		t,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -935,7 +934,7 @@ func (t *jsiiProxy_TranscribeMedicalVocabulary) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -949,18 +948,18 @@ func (t *jsiiProxy_TranscribeMedicalVocabulary) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (t *jsiiProxy_TranscribeMedicalVocabulary) MoveTo(moveTarget *string, index interface{}) {
+func (t *jsiiProxy_TranscribeMedicalVocabulary) MoveTo(moveTarget *string, index any) {
 	if err := t.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		t,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -971,7 +970,7 @@ func (t *jsiiProxy_TranscribeMedicalVocabulary) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -982,7 +981,7 @@ func (t *jsiiProxy_TranscribeMedicalVocabulary) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		t,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -993,7 +992,7 @@ func (t *jsiiProxy_TranscribeMedicalVocabulary) PutTimeouts(value *TranscribeMed
 	_jsii_.InvokeVoid(
 		t,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1037,8 +1036,8 @@ func (t *jsiiProxy_TranscribeMedicalVocabulary) ResetTimeouts() {
 	)
 }
 
-func (t *jsiiProxy_TranscribeMedicalVocabulary) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (t *jsiiProxy_TranscribeMedicalVocabulary) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
@@ -1050,8 +1049,8 @@ func (t *jsiiProxy_TranscribeMedicalVocabulary) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (t *jsiiProxy_TranscribeMedicalVocabulary) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (t *jsiiProxy_TranscribeMedicalVocabulary) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
@@ -1063,8 +1062,8 @@ func (t *jsiiProxy_TranscribeMedicalVocabulary) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (t *jsiiProxy_TranscribeMedicalVocabulary) ToHclTerraform() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TranscribeMedicalVocabulary) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -1076,8 +1075,8 @@ func (t *jsiiProxy_TranscribeMedicalVocabulary) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (t *jsiiProxy_TranscribeMedicalVocabulary) ToMetadata() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TranscribeMedicalVocabulary) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -1102,8 +1101,8 @@ func (t *jsiiProxy_TranscribeMedicalVocabulary) ToString() *string {
 	return returns
 }
 
-func (t *jsiiProxy_TranscribeMedicalVocabulary) ToTerraform() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TranscribeMedicalVocabulary) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -1114,4 +1113,3 @@ func (t *jsiiProxy_TranscribeMedicalVocabulary) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationLi
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationListP
 
 	return nil
 }
-

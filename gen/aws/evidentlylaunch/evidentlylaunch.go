@@ -16,15 +16,15 @@ type EvidentlyLaunch interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -43,7 +43,7 @@ type EvidentlyLaunch interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Groups() EvidentlyLaunchGroupsList
-	GroupsInput() interface{}
+	GroupsInput() any
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -53,7 +53,7 @@ type EvidentlyLaunch interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	MetricMonitors() EvidentlyLaunchMetricMonitorsList
-	MetricMonitorsInput() interface{}
+	MetricMonitorsInput() any
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -67,14 +67,14 @@ type EvidentlyLaunch interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	RandomizationSalt() *string
 	SetRandomizationSalt(val *string)
 	RandomizationSaltInput() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ScheduledSplitsConfig() EvidentlyLaunchScheduledSplitsConfigOutputReference
 	ScheduledSplitsConfigInput() *EvidentlyLaunchScheduledSplitsConfig
 	Status() *string
@@ -88,19 +88,19 @@ type EvidentlyLaunch interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() EvidentlyLaunchTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Type() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -118,7 +118,7 @@ type EvidentlyLaunch interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -130,15 +130,15 @@ type EvidentlyLaunch interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutGroups(value interface{})
-	PutMetricMonitors(value interface{})
+	PutGroups(value any)
+	PutMetricMonitors(value any)
 	PutScheduledSplitsConfig(value *EvidentlyLaunchScheduledSplitsConfig)
 	PutTimeouts(value *EvidentlyLaunchTimeouts)
 	ResetDescription()
@@ -152,17 +152,17 @@ type EvidentlyLaunch interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for EvidentlyLaunch
@@ -190,8 +190,8 @@ func (j *jsiiProxy_EvidentlyLaunch) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_EvidentlyLaunch) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EvidentlyLaunch) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -200,8 +200,8 @@ func (j *jsiiProxy_EvidentlyLaunch) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EvidentlyLaunch) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EvidentlyLaunch) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -210,8 +210,8 @@ func (j *jsiiProxy_EvidentlyLaunch) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_EvidentlyLaunch) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EvidentlyLaunch) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -310,8 +310,8 @@ func (j *jsiiProxy_EvidentlyLaunch) Groups() EvidentlyLaunchGroupsList {
 	return returns
 }
 
-func (j *jsiiProxy_EvidentlyLaunch) GroupsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EvidentlyLaunch) GroupsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"groupsInput",
@@ -370,8 +370,8 @@ func (j *jsiiProxy_EvidentlyLaunch) MetricMonitors() EvidentlyLaunchMetricMonito
 	return returns
 }
 
-func (j *jsiiProxy_EvidentlyLaunch) MetricMonitorsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EvidentlyLaunch) MetricMonitorsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"metricMonitorsInput",
@@ -440,8 +440,8 @@ func (j *jsiiProxy_EvidentlyLaunch) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_EvidentlyLaunch) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_EvidentlyLaunch) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -470,8 +470,8 @@ func (j *jsiiProxy_EvidentlyLaunch) RandomizationSaltInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EvidentlyLaunch) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EvidentlyLaunch) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -570,8 +570,8 @@ func (j *jsiiProxy_EvidentlyLaunch) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_EvidentlyLaunch) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EvidentlyLaunch) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -600,8 +600,8 @@ func (j *jsiiProxy_EvidentlyLaunch) Timeouts() EvidentlyLaunchTimeoutsOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_EvidentlyLaunch) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EvidentlyLaunch) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -620,7 +620,6 @@ func (j *jsiiProxy_EvidentlyLaunch) Type() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/evidently_launch aws_evidently_launch} Resource.
 func NewEvidentlyLaunch(scope constructs.Construct, id *string, config *EvidentlyLaunchConfig) EvidentlyLaunch {
 	_init_.Initialize()
@@ -632,7 +631,7 @@ func NewEvidentlyLaunch(scope constructs.Construct, id *string, config *Evidentl
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunch",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -645,12 +644,12 @@ func NewEvidentlyLaunch_Override(e EvidentlyLaunch, scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunch",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EvidentlyLaunch)SetConnection(val interface{}) {
+func (j *jsiiProxy_EvidentlyLaunch) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -661,7 +660,7 @@ func (j *jsiiProxy_EvidentlyLaunch)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EvidentlyLaunch)SetCount(val interface{}) {
+func (j *jsiiProxy_EvidentlyLaunch) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -672,7 +671,7 @@ func (j *jsiiProxy_EvidentlyLaunch)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EvidentlyLaunch)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_EvidentlyLaunch) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -680,7 +679,7 @@ func (j *jsiiProxy_EvidentlyLaunch)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EvidentlyLaunch)SetDescription(val *string) {
+func (j *jsiiProxy_EvidentlyLaunch) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -691,7 +690,7 @@ func (j *jsiiProxy_EvidentlyLaunch)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EvidentlyLaunch)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_EvidentlyLaunch) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -699,7 +698,7 @@ func (j *jsiiProxy_EvidentlyLaunch)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_EvidentlyLaunch)SetId(val *string) {
+func (j *jsiiProxy_EvidentlyLaunch) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -710,7 +709,7 @@ func (j *jsiiProxy_EvidentlyLaunch)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EvidentlyLaunch)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_EvidentlyLaunch) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -721,7 +720,7 @@ func (j *jsiiProxy_EvidentlyLaunch)SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_EvidentlyLaunch)SetName(val *string) {
+func (j *jsiiProxy_EvidentlyLaunch) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -732,7 +731,7 @@ func (j *jsiiProxy_EvidentlyLaunch)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EvidentlyLaunch)SetProject(val *string) {
+func (j *jsiiProxy_EvidentlyLaunch) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -743,7 +742,7 @@ func (j *jsiiProxy_EvidentlyLaunch)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EvidentlyLaunch)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_EvidentlyLaunch) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -751,7 +750,7 @@ func (j *jsiiProxy_EvidentlyLaunch)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_EvidentlyLaunch)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_EvidentlyLaunch) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -762,7 +761,7 @@ func (j *jsiiProxy_EvidentlyLaunch)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EvidentlyLaunch)SetRandomizationSalt(val *string) {
+func (j *jsiiProxy_EvidentlyLaunch) SetRandomizationSalt(val *string) {
 	if err := j.validateSetRandomizationSaltParameters(val); err != nil {
 		panic(err)
 	}
@@ -773,7 +772,7 @@ func (j *jsiiProxy_EvidentlyLaunch)SetRandomizationSalt(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EvidentlyLaunch)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_EvidentlyLaunch) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -784,7 +783,7 @@ func (j *jsiiProxy_EvidentlyLaunch)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_EvidentlyLaunch)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_EvidentlyLaunch) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -807,7 +806,7 @@ func EvidentlyLaunch_GenerateConfigForImport(scope constructs.Construct, importT
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunch",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -831,7 +830,7 @@ func EvidentlyLaunch_GenerateConfigForImport(scope constructs.Construct, importT
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func EvidentlyLaunch_IsConstruct(x interface{}) *bool {
+func EvidentlyLaunch_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEvidentlyLaunch_IsConstructParameters(x); err != nil {
@@ -842,7 +841,7 @@ func EvidentlyLaunch_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunch",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -850,7 +849,7 @@ func EvidentlyLaunch_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func EvidentlyLaunch_IsTerraformElement(x interface{}) *bool {
+func EvidentlyLaunch_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEvidentlyLaunch_IsTerraformElementParameters(x); err != nil {
@@ -861,7 +860,7 @@ func EvidentlyLaunch_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunch",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -869,7 +868,7 @@ func EvidentlyLaunch_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func EvidentlyLaunch_IsTerraformResource(x interface{}) *bool {
+func EvidentlyLaunch_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEvidentlyLaunch_IsTerraformResourceParameters(x); err != nil {
@@ -880,7 +879,7 @@ func EvidentlyLaunch_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunch",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -905,31 +904,31 @@ func (e *jsiiProxy_EvidentlyLaunch) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_EvidentlyLaunch) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_EvidentlyLaunch) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_EvidentlyLaunch) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EvidentlyLaunch) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -945,7 +944,7 @@ func (e *jsiiProxy_EvidentlyLaunch) GetBooleanAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -961,7 +960,7 @@ func (e *jsiiProxy_EvidentlyLaunch) GetBooleanMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -977,7 +976,7 @@ func (e *jsiiProxy_EvidentlyLaunch) GetListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -993,7 +992,7 @@ func (e *jsiiProxy_EvidentlyLaunch) GetNumberAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1009,7 +1008,7 @@ func (e *jsiiProxy_EvidentlyLaunch) GetNumberListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1025,7 +1024,7 @@ func (e *jsiiProxy_EvidentlyLaunch) GetNumberMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1041,7 +1040,7 @@ func (e *jsiiProxy_EvidentlyLaunch) GetStringAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1057,15 +1056,15 @@ func (e *jsiiProxy_EvidentlyLaunch) GetStringMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EvidentlyLaunch) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EvidentlyLaunch) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1084,7 +1083,7 @@ func (e *jsiiProxy_EvidentlyLaunch) ImportFrom(id *string, provider cdktf.Terraf
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1097,7 +1096,7 @@ func (e *jsiiProxy_EvidentlyLaunch) InterpolationForAttribute(terraformAttribute
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1111,18 +1110,18 @@ func (e *jsiiProxy_EvidentlyLaunch) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_EvidentlyLaunch) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_EvidentlyLaunch) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1133,7 +1132,7 @@ func (e *jsiiProxy_EvidentlyLaunch) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1144,29 +1143,29 @@ func (e *jsiiProxy_EvidentlyLaunch) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (e *jsiiProxy_EvidentlyLaunch) PutGroups(value interface{}) {
+func (e *jsiiProxy_EvidentlyLaunch) PutGroups(value any) {
 	if err := e.validatePutGroupsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"putGroups",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (e *jsiiProxy_EvidentlyLaunch) PutMetricMonitors(value interface{}) {
+func (e *jsiiProxy_EvidentlyLaunch) PutMetricMonitors(value any) {
 	if err := e.validatePutMetricMonitorsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"putMetricMonitors",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1177,7 +1176,7 @@ func (e *jsiiProxy_EvidentlyLaunch) PutScheduledSplitsConfig(value *EvidentlyLau
 	_jsii_.InvokeVoid(
 		e,
 		"putScheduledSplitsConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1188,7 +1187,7 @@ func (e *jsiiProxy_EvidentlyLaunch) PutTimeouts(value *EvidentlyLaunchTimeouts) 
 	_jsii_.InvokeVoid(
 		e,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1264,8 +1263,8 @@ func (e *jsiiProxy_EvidentlyLaunch) ResetTimeouts() {
 	)
 }
 
-func (e *jsiiProxy_EvidentlyLaunch) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EvidentlyLaunch) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1277,8 +1276,8 @@ func (e *jsiiProxy_EvidentlyLaunch) SynthesizeAttributes() *map[string]interface
 	return returns
 }
 
-func (e *jsiiProxy_EvidentlyLaunch) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EvidentlyLaunch) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1290,8 +1289,8 @@ func (e *jsiiProxy_EvidentlyLaunch) SynthesizeHclAttributes() *map[string]interf
 	return returns
 }
 
-func (e *jsiiProxy_EvidentlyLaunch) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EvidentlyLaunch) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1303,8 +1302,8 @@ func (e *jsiiProxy_EvidentlyLaunch) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_EvidentlyLaunch) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EvidentlyLaunch) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1329,8 +1328,8 @@ func (e *jsiiProxy_EvidentlyLaunch) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_EvidentlyLaunch) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EvidentlyLaunch) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1341,4 +1340,3 @@ func (e *jsiiProxy_EvidentlyLaunch) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -120,7 +120,7 @@ func (m *jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingIncludesAndOutpu
 	return nil
 }
 
-func (j *jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingIncludesAndOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingIncludesAndOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingIncludesAndOutpu
 	return nil
 }
 
-func (j *jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingIncludesAndOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingIncludesAndOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -244,4 +244,3 @@ func validateNewMacie2ClassificationJobS3JobDefinitionScopingIncludesAndOutputRe
 
 	return nil
 }
-

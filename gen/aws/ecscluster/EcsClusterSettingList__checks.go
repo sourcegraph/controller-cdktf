@@ -34,7 +34,7 @@ func (e *jsiiProxy_EcsClusterSettingList) validateResolveParameters(_context cdk
 	return nil
 }
 
-func (j *jsiiProxy_EcsClusterSettingList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EcsClusterSettingList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEcsClusterSettingListParameters(terraformResource cdktf.IInterpo
 
 	return nil
 }
-

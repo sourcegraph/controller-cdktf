@@ -19,7 +19,7 @@ func (n *jsiiProxy_NeptuneCluster) validateAddMoveTargetParameters(moveTarget *s
 	return nil
 }
 
-func (n *jsiiProxy_NeptuneCluster) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NeptuneCluster) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NeptuneCluster) validateMoveFromIdParameters(id *string) erro
 	return nil
 }
 
-func (n *jsiiProxy_NeptuneCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NeptuneCluster) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateNeptuneCluster_GenerateConfigForImportParameters(scope constructs.C
 	return nil
 }
 
-func validateNeptuneCluster_IsConstructParameters(x interface{}) error {
+func validateNeptuneCluster_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateNeptuneCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateNeptuneCluster_IsTerraformElementParameters(x interface{}) error {
+func validateNeptuneCluster_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateNeptuneCluster_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateNeptuneCluster_IsTerraformResourceParameters(x interface{}) error {
+func validateNeptuneCluster_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateNeptuneCluster_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_NeptuneCluster) validateSetAllowMajorVersionUpgradeParameters(val interface{}) error {
+func (j *jsiiProxy_NeptuneCluster) validateSetAllowMajorVersionUpgradeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func (j *jsiiProxy_NeptuneCluster) validateSetAllowMajorVersionUpgradeParameters
 	return nil
 }
 
-func (j *jsiiProxy_NeptuneCluster) validateSetApplyImmediatelyParameters(val interface{}) error {
+func (j *jsiiProxy_NeptuneCluster) validateSetApplyImmediatelyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -338,7 +338,7 @@ func (j *jsiiProxy_NeptuneCluster) validateSetClusterIdentifierPrefixParameters(
 	return nil
 }
 
-func (j *jsiiProxy_NeptuneCluster) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NeptuneCluster) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -371,7 +371,7 @@ func (j *jsiiProxy_NeptuneCluster) validateSetConnectionParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_NeptuneCluster) validateSetCopyTagsToSnapshotParameters(val interface{}) error {
+func (j *jsiiProxy_NeptuneCluster) validateSetCopyTagsToSnapshotParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -391,7 +391,7 @@ func (j *jsiiProxy_NeptuneCluster) validateSetCopyTagsToSnapshotParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_NeptuneCluster) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NeptuneCluster) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -448,7 +448,7 @@ func (j *jsiiProxy_NeptuneCluster) validateSetCountParameters(val interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_NeptuneCluster) validateSetDeletionProtectionParameters(val interface{}) error {
+func (j *jsiiProxy_NeptuneCluster) validateSetDeletionProtectionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -508,7 +508,7 @@ func (j *jsiiProxy_NeptuneCluster) validateSetGlobalClusterIdentifierParameters(
 	return nil
 }
 
-func (j *jsiiProxy_NeptuneCluster) validateSetIamDatabaseAuthenticationEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_NeptuneCluster) validateSetIamDatabaseAuthenticationEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -600,7 +600,7 @@ func (j *jsiiProxy_NeptuneCluster) validateSetPreferredMaintenanceWindowParamete
 	return nil
 }
 
-func (j *jsiiProxy_NeptuneCluster) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NeptuneCluster) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -654,7 +654,7 @@ func (j *jsiiProxy_NeptuneCluster) validateSetReplicationSourceIdentifierParamet
 	return nil
 }
 
-func (j *jsiiProxy_NeptuneCluster) validateSetSkipFinalSnapshotParameters(val interface{}) error {
+func (j *jsiiProxy_NeptuneCluster) validateSetSkipFinalSnapshotParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -682,7 +682,7 @@ func (j *jsiiProxy_NeptuneCluster) validateSetSnapshotIdentifierParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_NeptuneCluster) validateSetStorageEncryptedParameters(val interface{}) error {
+func (j *jsiiProxy_NeptuneCluster) validateSetStorageEncryptedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -741,4 +741,3 @@ func validateNewNeptuneClusterParameters(scope constructs.Construct, id *string,
 
 	return nil
 }
-

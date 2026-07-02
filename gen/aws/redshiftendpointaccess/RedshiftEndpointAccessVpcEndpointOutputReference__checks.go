@@ -98,7 +98,7 @@ func (r *jsiiProxy_RedshiftEndpointAccessVpcEndpointOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftEndpointAccessVpcEndpointOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftEndpointAccessVpcEndpointOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewRedshiftEndpointAccessVpcEndpointOutputReferenceParameters(terra
 
 	return nil
 }
-

@@ -114,7 +114,7 @@ func (j *jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference) validateSetArc
 	return nil
 }
 
-func (j *jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -246,4 +246,3 @@ func validateNewEcrpublicRepositoryCatalogDataOutputReferenceParameters(terrafor
 
 	return nil
 }
-

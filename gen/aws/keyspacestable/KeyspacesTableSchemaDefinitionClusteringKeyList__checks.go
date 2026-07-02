@@ -34,7 +34,7 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionClusteringKeyList) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_KeyspacesTableSchemaDefinitionClusteringKeyList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_KeyspacesTableSchemaDefinitionClusteringKeyList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewKeyspacesTableSchemaDefinitionClusteringKeyListParameters(terraf
 
 	return nil
 }
-

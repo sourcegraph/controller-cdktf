@@ -109,7 +109,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFo
 	return nil
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewKinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordForma
 
 	return nil
 }
-

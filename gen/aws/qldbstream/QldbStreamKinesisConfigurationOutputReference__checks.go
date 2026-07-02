@@ -98,7 +98,7 @@ func (q *jsiiProxy_QldbStreamKinesisConfigurationOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_QldbStreamKinesisConfigurationOutputReference) validateSetAggregationEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_QldbStreamKinesisConfigurationOutputReference) validateSetAggregationEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_QldbStreamKinesisConfigurationOutputReference) validateSetAgg
 	return nil
 }
 
-func (j *jsiiProxy_QldbStreamKinesisConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_QldbStreamKinesisConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -226,4 +226,3 @@ func validateNewQldbStreamKinesisConfigurationOutputReferenceParameters(terrafor
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.accessanalyzerArchiveRule.AccessanalyzerArchiveRule",
-		reflect.TypeOf((*AccessanalyzerArchiveRule)(nil)).Elem(),
+		reflect.TypeFor[AccessanalyzerArchiveRule](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,7 +63,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessanalyzerArchiveRule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -71,15 +71,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.accessanalyzerArchiveRule.AccessanalyzerArchiveRuleConfig",
-		reflect.TypeOf((*AccessanalyzerArchiveRuleConfig)(nil)).Elem(),
+		reflect.TypeFor[AccessanalyzerArchiveRuleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.accessanalyzerArchiveRule.AccessanalyzerArchiveRuleFilter",
-		reflect.TypeOf((*AccessanalyzerArchiveRuleFilter)(nil)).Elem(),
+		reflect.TypeFor[AccessanalyzerArchiveRuleFilter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.accessanalyzerArchiveRule.AccessanalyzerArchiveRuleFilterList",
-		reflect.TypeOf((*AccessanalyzerArchiveRuleFilterList)(nil)).Elem(),
+		reflect.TypeFor[AccessanalyzerArchiveRuleFilterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -93,7 +93,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessanalyzerArchiveRuleFilterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -101,7 +101,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.accessanalyzerArchiveRule.AccessanalyzerArchiveRuleFilterOutputReference",
-		reflect.TypeOf((*AccessanalyzerArchiveRuleFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessanalyzerArchiveRuleFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -139,7 +139,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

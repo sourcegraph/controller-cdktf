@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.configConfigRule.ConfigConfigRule",
-		reflect.TypeOf((*ConfigConfigRule)(nil)).Elem(),
+		reflect.TypeFor[ConfigConfigRule](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,7 +82,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConfigConfigRule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -90,15 +90,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig",
-		reflect.TypeOf((*ConfigConfigRuleConfig)(nil)).Elem(),
+		reflect.TypeFor[ConfigConfigRuleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScope",
-		reflect.TypeOf((*ConfigConfigRuleScope)(nil)).Elem(),
+		reflect.TypeFor[ConfigConfigRuleScope](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference",
-		reflect.TypeOf((*ConfigConfigRuleScopeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ConfigConfigRuleScopeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -134,7 +134,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConfigConfigRuleScopeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -142,15 +142,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSource",
-		reflect.TypeOf((*ConfigConfigRuleSource)(nil)).Elem(),
+		reflect.TypeFor[ConfigConfigRuleSource](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails",
-		reflect.TypeOf((*ConfigConfigRuleSourceCustomPolicyDetails)(nil)).Elem(),
+		reflect.TypeFor[ConfigConfigRuleSourceCustomPolicyDetails](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference",
-		reflect.TypeOf((*ConfigConfigRuleSourceCustomPolicyDetailsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ConfigConfigRuleSourceCustomPolicyDetailsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -181,7 +181,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConfigConfigRuleSourceCustomPolicyDetailsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -189,7 +189,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference",
-		reflect.TypeOf((*ConfigConfigRuleSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ConfigConfigRuleSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -226,7 +226,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConfigConfigRuleSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -234,11 +234,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail",
-		reflect.TypeOf((*ConfigConfigRuleSourceSourceDetail)(nil)).Elem(),
+		reflect.TypeFor[ConfigConfigRuleSourceSourceDetail](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList",
-		reflect.TypeOf((*ConfigConfigRuleSourceSourceDetailList)(nil)).Elem(),
+		reflect.TypeFor[ConfigConfigRuleSourceSourceDetailList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -252,7 +252,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConfigConfigRuleSourceSourceDetailList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -260,7 +260,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference",
-		reflect.TypeOf((*ConfigConfigRuleSourceSourceDetailOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ConfigConfigRuleSourceSourceDetailOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -293,7 +293,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

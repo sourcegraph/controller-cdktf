@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfiguration",
-		reflect.TypeOf((*ConfigRemediationConfiguration)(nil)).Elem(),
+		reflect.TypeFor[ConfigRemediationConfiguration](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -86,7 +86,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConfigRemediationConfiguration{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -94,15 +94,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfigurationConfig",
-		reflect.TypeOf((*ConfigRemediationConfigurationConfig)(nil)).Elem(),
+		reflect.TypeFor[ConfigRemediationConfigurationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfigurationExecutionControls",
-		reflect.TypeOf((*ConfigRemediationConfigurationExecutionControls)(nil)).Elem(),
+		reflect.TypeFor[ConfigRemediationConfigurationExecutionControls](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfigurationExecutionControlsOutputReference",
-		reflect.TypeOf((*ConfigRemediationConfigurationExecutionControlsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ConfigRemediationConfigurationExecutionControlsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -130,7 +130,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConfigRemediationConfigurationExecutionControlsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -138,11 +138,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfigurationExecutionControlsSsmControls",
-		reflect.TypeOf((*ConfigRemediationConfigurationExecutionControlsSsmControls)(nil)).Elem(),
+		reflect.TypeFor[ConfigRemediationConfigurationExecutionControlsSsmControls](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfigurationExecutionControlsSsmControlsOutputReference",
-		reflect.TypeOf((*ConfigRemediationConfigurationExecutionControlsSsmControlsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ConfigRemediationConfigurationExecutionControlsSsmControlsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -172,7 +172,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConfigRemediationConfigurationExecutionControlsSsmControlsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -180,11 +180,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfigurationParameter",
-		reflect.TypeOf((*ConfigRemediationConfigurationParameter)(nil)).Elem(),
+		reflect.TypeFor[ConfigRemediationConfigurationParameter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfigurationParameterList",
-		reflect.TypeOf((*ConfigRemediationConfigurationParameterList)(nil)).Elem(),
+		reflect.TypeFor[ConfigRemediationConfigurationParameterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -198,7 +198,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConfigRemediationConfigurationParameterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -206,7 +206,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfigurationParameterOutputReference",
-		reflect.TypeOf((*ConfigRemediationConfigurationParameterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ConfigRemediationConfigurationParameterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -241,7 +241,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConfigRemediationConfigurationParameterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

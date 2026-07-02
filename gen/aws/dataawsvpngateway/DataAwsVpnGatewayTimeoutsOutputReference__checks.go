@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsVpnGatewayTimeoutsOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsVpnGatewayTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsVpnGatewayTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataAwsVpnGatewayTimeoutsOutputReference) validateSetComplexO
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsVpnGatewayTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsVpnGatewayTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataAwsVpnGatewayTimeoutsOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

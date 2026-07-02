@@ -90,7 +90,7 @@ func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleOutputReference) validatePutGeoProximityLocationParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleOutputReference) validatePutGeoProximityLocationParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleOutputReference) validatePutItemsParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleOutputReference) validatePutItemsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleOutputReference) validatePutLocationParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleOutputReference) validatePutLocationParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -194,7 +194,7 @@ func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleOutputReference) validatePutRegionParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleOutputReference) validatePutRegionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -317,7 +317,7 @@ func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -384,4 +384,3 @@ func validateNewDataAwsRoute53TrafficPolicyDocumentRuleOutputReferenceParameters
 
 	return nil
 }
-

@@ -19,15 +19,15 @@ type MqConfiguration interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	Data() *string
 	SetData(val *string)
 	DataInput() *string
@@ -70,11 +70,11 @@ type MqConfiguration interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -84,16 +84,16 @@ type MqConfiguration interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -111,7 +111,7 @@ type MqConfiguration interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -123,7 +123,7 @@ type MqConfiguration interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -138,17 +138,17 @@ type MqConfiguration interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for MqConfiguration
@@ -196,8 +196,8 @@ func (j *jsiiProxy_MqConfiguration) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_MqConfiguration) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MqConfiguration) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_MqConfiguration) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MqConfiguration) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MqConfiguration) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_MqConfiguration) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_MqConfiguration) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MqConfiguration) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -426,8 +426,8 @@ func (j *jsiiProxy_MqConfiguration) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_MqConfiguration) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_MqConfiguration) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -436,8 +436,8 @@ func (j *jsiiProxy_MqConfiguration) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MqConfiguration) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MqConfiguration) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -496,8 +496,8 @@ func (j *jsiiProxy_MqConfiguration) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_MqConfiguration) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MqConfiguration) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -516,7 +516,6 @@ func (j *jsiiProxy_MqConfiguration) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/mq_configuration aws_mq_configuration} Resource.
 func NewMqConfiguration(scope constructs.Construct, id *string, config *MqConfigurationConfig) MqConfiguration {
 	_init_.Initialize()
@@ -528,7 +527,7 @@ func NewMqConfiguration(scope constructs.Construct, id *string, config *MqConfig
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.mqConfiguration.MqConfiguration",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -541,12 +540,12 @@ func NewMqConfiguration_Override(m MqConfiguration, scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.mqConfiguration.MqConfiguration",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MqConfiguration)SetAuthenticationStrategy(val *string) {
+func (j *jsiiProxy_MqConfiguration) SetAuthenticationStrategy(val *string) {
 	if err := j.validateSetAuthenticationStrategyParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_MqConfiguration)SetAuthenticationStrategy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MqConfiguration)SetConnection(val interface{}) {
+func (j *jsiiProxy_MqConfiguration) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -568,7 +567,7 @@ func (j *jsiiProxy_MqConfiguration)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MqConfiguration)SetCount(val interface{}) {
+func (j *jsiiProxy_MqConfiguration) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -579,7 +578,7 @@ func (j *jsiiProxy_MqConfiguration)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MqConfiguration)SetData(val *string) {
+func (j *jsiiProxy_MqConfiguration) SetData(val *string) {
 	if err := j.validateSetDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -590,7 +589,7 @@ func (j *jsiiProxy_MqConfiguration)SetData(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MqConfiguration)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_MqConfiguration) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -598,7 +597,7 @@ func (j *jsiiProxy_MqConfiguration)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MqConfiguration)SetDescription(val *string) {
+func (j *jsiiProxy_MqConfiguration) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -609,7 +608,7 @@ func (j *jsiiProxy_MqConfiguration)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MqConfiguration)SetEngineType(val *string) {
+func (j *jsiiProxy_MqConfiguration) SetEngineType(val *string) {
 	if err := j.validateSetEngineTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -620,7 +619,7 @@ func (j *jsiiProxy_MqConfiguration)SetEngineType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MqConfiguration)SetEngineVersion(val *string) {
+func (j *jsiiProxy_MqConfiguration) SetEngineVersion(val *string) {
 	if err := j.validateSetEngineVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -631,7 +630,7 @@ func (j *jsiiProxy_MqConfiguration)SetEngineVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MqConfiguration)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MqConfiguration) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -639,7 +638,7 @@ func (j *jsiiProxy_MqConfiguration)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_MqConfiguration)SetId(val *string) {
+func (j *jsiiProxy_MqConfiguration) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -650,7 +649,7 @@ func (j *jsiiProxy_MqConfiguration)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MqConfiguration)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MqConfiguration) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -661,7 +660,7 @@ func (j *jsiiProxy_MqConfiguration)SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_MqConfiguration)SetName(val *string) {
+func (j *jsiiProxy_MqConfiguration) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -672,7 +671,7 @@ func (j *jsiiProxy_MqConfiguration)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MqConfiguration)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MqConfiguration) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -680,7 +679,7 @@ func (j *jsiiProxy_MqConfiguration)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_MqConfiguration)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_MqConfiguration) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -691,7 +690,7 @@ func (j *jsiiProxy_MqConfiguration)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MqConfiguration)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_MqConfiguration) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -702,7 +701,7 @@ func (j *jsiiProxy_MqConfiguration)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_MqConfiguration)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_MqConfiguration) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -725,7 +724,7 @@ func MqConfiguration_GenerateConfigForImport(scope constructs.Construct, importT
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.mqConfiguration.MqConfiguration",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -749,7 +748,7 @@ func MqConfiguration_GenerateConfigForImport(scope constructs.Construct, importT
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func MqConfiguration_IsConstruct(x interface{}) *bool {
+func MqConfiguration_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMqConfiguration_IsConstructParameters(x); err != nil {
@@ -760,7 +759,7 @@ func MqConfiguration_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.mqConfiguration.MqConfiguration",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -768,7 +767,7 @@ func MqConfiguration_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func MqConfiguration_IsTerraformElement(x interface{}) *bool {
+func MqConfiguration_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMqConfiguration_IsTerraformElementParameters(x); err != nil {
@@ -779,7 +778,7 @@ func MqConfiguration_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.mqConfiguration.MqConfiguration",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -787,7 +786,7 @@ func MqConfiguration_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func MqConfiguration_IsTerraformResource(x interface{}) *bool {
+func MqConfiguration_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMqConfiguration_IsTerraformResourceParameters(x); err != nil {
@@ -798,7 +797,7 @@ func MqConfiguration_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.mqConfiguration.MqConfiguration",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -823,31 +822,31 @@ func (m *jsiiProxy_MqConfiguration) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (m *jsiiProxy_MqConfiguration) AddOverride(path *string, value interface{}) {
+func (m *jsiiProxy_MqConfiguration) AddOverride(path *string, value any) {
 	if err := m.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (m *jsiiProxy_MqConfiguration) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MqConfiguration) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -863,7 +862,7 @@ func (m *jsiiProxy_MqConfiguration) GetBooleanAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -879,7 +878,7 @@ func (m *jsiiProxy_MqConfiguration) GetBooleanMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -895,7 +894,7 @@ func (m *jsiiProxy_MqConfiguration) GetListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -911,7 +910,7 @@ func (m *jsiiProxy_MqConfiguration) GetNumberAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -927,7 +926,7 @@ func (m *jsiiProxy_MqConfiguration) GetNumberListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -943,7 +942,7 @@ func (m *jsiiProxy_MqConfiguration) GetNumberMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -959,7 +958,7 @@ func (m *jsiiProxy_MqConfiguration) GetStringAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -975,15 +974,15 @@ func (m *jsiiProxy_MqConfiguration) GetStringMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MqConfiguration) HasResourceMove() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MqConfiguration) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1002,7 +1001,7 @@ func (m *jsiiProxy_MqConfiguration) ImportFrom(id *string, provider cdktf.Terraf
 	_jsii_.InvokeVoid(
 		m,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1015,7 +1014,7 @@ func (m *jsiiProxy_MqConfiguration) InterpolationForAttribute(terraformAttribute
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1029,18 +1028,18 @@ func (m *jsiiProxy_MqConfiguration) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (m *jsiiProxy_MqConfiguration) MoveTo(moveTarget *string, index interface{}) {
+func (m *jsiiProxy_MqConfiguration) MoveTo(moveTarget *string, index any) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1051,7 +1050,7 @@ func (m *jsiiProxy_MqConfiguration) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1062,7 +1061,7 @@ func (m *jsiiProxy_MqConfiguration) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1114,8 +1113,8 @@ func (m *jsiiProxy_MqConfiguration) ResetTagsAll() {
 	)
 }
 
-func (m *jsiiProxy_MqConfiguration) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MqConfiguration) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1127,8 +1126,8 @@ func (m *jsiiProxy_MqConfiguration) SynthesizeAttributes() *map[string]interface
 	return returns
 }
 
-func (m *jsiiProxy_MqConfiguration) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MqConfiguration) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1140,8 +1139,8 @@ func (m *jsiiProxy_MqConfiguration) SynthesizeHclAttributes() *map[string]interf
 	return returns
 }
 
-func (m *jsiiProxy_MqConfiguration) ToHclTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MqConfiguration) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1153,8 +1152,8 @@ func (m *jsiiProxy_MqConfiguration) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_MqConfiguration) ToMetadata() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MqConfiguration) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1179,8 +1178,8 @@ func (m *jsiiProxy_MqConfiguration) ToString() *string {
 	return returns
 }
 
-func (m *jsiiProxy_MqConfiguration) ToTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MqConfiguration) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1191,4 +1190,3 @@ func (m *jsiiProxy_MqConfiguration) ToTerraform() interface{} {
 
 	return returns
 }
-

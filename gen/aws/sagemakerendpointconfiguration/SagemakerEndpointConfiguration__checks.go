@@ -19,7 +19,7 @@ func (s *jsiiProxy_SagemakerEndpointConfiguration) validateAddMoveTargetParamete
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerEndpointConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SagemakerEndpointConfiguration) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SagemakerEndpointConfiguration) validateMoveFromIdParameters(
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerEndpointConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SagemakerEndpointConfiguration) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -226,7 +226,7 @@ func (s *jsiiProxy_SagemakerEndpointConfiguration) validatePutDataCaptureConfigP
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerEndpointConfiguration) validatePutProductionVariantsParameters(value interface{}) error {
+func (s *jsiiProxy_SagemakerEndpointConfiguration) validatePutProductionVariantsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -257,7 +257,7 @@ func (s *jsiiProxy_SagemakerEndpointConfiguration) validatePutProductionVariants
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerEndpointConfiguration) validatePutShadowProductionVariantsParameters(value interface{}) error {
+func (s *jsiiProxy_SagemakerEndpointConfiguration) validatePutShadowProductionVariantsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -304,7 +304,7 @@ func validateSagemakerEndpointConfiguration_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateSagemakerEndpointConfiguration_IsConstructParameters(x interface{}) error {
+func validateSagemakerEndpointConfiguration_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -312,7 +312,7 @@ func validateSagemakerEndpointConfiguration_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateSagemakerEndpointConfiguration_IsTerraformElementParameters(x interface{}) error {
+func validateSagemakerEndpointConfiguration_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -320,7 +320,7 @@ func validateSagemakerEndpointConfiguration_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func validateSagemakerEndpointConfiguration_IsTerraformResourceParameters(x interface{}) error {
+func validateSagemakerEndpointConfiguration_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -328,7 +328,7 @@ func validateSagemakerEndpointConfiguration_IsTerraformResourceParameters(x inte
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfiguration) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerEndpointConfiguration) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -361,7 +361,7 @@ func (j *jsiiProxy_SagemakerEndpointConfiguration) validateSetConnectionParamete
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfiguration) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerEndpointConfiguration) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -450,7 +450,7 @@ func (j *jsiiProxy_SagemakerEndpointConfiguration) validateSetNameParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfiguration) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SagemakerEndpointConfiguration) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -530,4 +530,3 @@ func validateNewSagemakerEndpointConfigurationParameters(scope constructs.Constr
 
 	return nil
 }
-

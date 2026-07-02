@@ -20,15 +20,15 @@ type SnsTopicSubscription interface {
 	ConfirmationTimeoutInMinutesInput() *float64
 	ConfirmationWasAuthenticated() cdktf.IResolvable
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DeliveryPolicy() *string
 	SetDeliveryPolicy(val *string)
 	DeliveryPolicyInput() *string
@@ -38,9 +38,9 @@ type SnsTopicSubscription interface {
 	SetDependsOn(val *[]*string)
 	Endpoint() *string
 	SetEndpoint(val *string)
-	EndpointAutoConfirms() interface{}
-	SetEndpointAutoConfirms(val interface{})
-	EndpointAutoConfirmsInput() interface{}
+	EndpointAutoConfirms() any
+	SetEndpointAutoConfirms(val any)
+	EndpointAutoConfirmsInput() any
 	EndpointInput() *string
 	FilterPolicy() *string
 	SetFilterPolicy(val *string)
@@ -75,14 +75,14 @@ type SnsTopicSubscription interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
-	RawMessageDelivery() interface{}
-	SetRawMessageDelivery(val interface{})
-	RawMessageDeliveryInput() interface{}
+	SetProvisioners(val *[]any)
+	RawMessageDelivery() any
+	SetRawMessageDelivery(val any)
+	RawMessageDeliveryInput() any
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RedrivePolicy() *string
 	SetRedrivePolicy(val *string)
 	RedrivePolicyInput() *string
@@ -92,7 +92,7 @@ type SnsTopicSubscription interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TopicArn() *string
@@ -102,9 +102,9 @@ type SnsTopicSubscription interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -122,7 +122,7 @@ type SnsTopicSubscription interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -134,7 +134,7 @@ type SnsTopicSubscription interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -153,17 +153,17 @@ type SnsTopicSubscription interface {
 	ResetRawMessageDelivery()
 	ResetRedrivePolicy()
 	ResetSubscriptionRoleArn()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SnsTopicSubscription
@@ -221,8 +221,8 @@ func (j *jsiiProxy_SnsTopicSubscription) ConfirmationWasAuthenticated() cdktf.IR
 	return returns
 }
 
-func (j *jsiiProxy_SnsTopicSubscription) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SnsTopicSubscription) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -231,8 +231,8 @@ func (j *jsiiProxy_SnsTopicSubscription) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SnsTopicSubscription) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SnsTopicSubscription) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -241,8 +241,8 @@ func (j *jsiiProxy_SnsTopicSubscription) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_SnsTopicSubscription) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SnsTopicSubscription) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -291,8 +291,8 @@ func (j *jsiiProxy_SnsTopicSubscription) Endpoint() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SnsTopicSubscription) EndpointAutoConfirms() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SnsTopicSubscription) EndpointAutoConfirms() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"endpointAutoConfirms",
@@ -301,8 +301,8 @@ func (j *jsiiProxy_SnsTopicSubscription) EndpointAutoConfirms() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SnsTopicSubscription) EndpointAutoConfirmsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SnsTopicSubscription) EndpointAutoConfirmsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"endpointAutoConfirmsInput",
@@ -481,8 +481,8 @@ func (j *jsiiProxy_SnsTopicSubscription) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_SnsTopicSubscription) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SnsTopicSubscription) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -491,8 +491,8 @@ func (j *jsiiProxy_SnsTopicSubscription) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SnsTopicSubscription) RawMessageDelivery() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SnsTopicSubscription) RawMessageDelivery() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawMessageDelivery",
@@ -501,8 +501,8 @@ func (j *jsiiProxy_SnsTopicSubscription) RawMessageDelivery() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SnsTopicSubscription) RawMessageDeliveryInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SnsTopicSubscription) RawMessageDeliveryInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawMessageDeliveryInput",
@@ -511,8 +511,8 @@ func (j *jsiiProxy_SnsTopicSubscription) RawMessageDeliveryInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SnsTopicSubscription) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SnsTopicSubscription) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -571,8 +571,8 @@ func (j *jsiiProxy_SnsTopicSubscription) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_SnsTopicSubscription) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SnsTopicSubscription) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -611,7 +611,6 @@ func (j *jsiiProxy_SnsTopicSubscription) TopicArnInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sns_topic_subscription aws_sns_topic_subscription} Resource.
 func NewSnsTopicSubscription(scope constructs.Construct, id *string, config *SnsTopicSubscriptionConfig) SnsTopicSubscription {
 	_init_.Initialize()
@@ -623,7 +622,7 @@ func NewSnsTopicSubscription(scope constructs.Construct, id *string, config *Sns
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -636,12 +635,12 @@ func NewSnsTopicSubscription_Override(s SnsTopicSubscription, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SnsTopicSubscription)SetConfirmationTimeoutInMinutes(val *float64) {
+func (j *jsiiProxy_SnsTopicSubscription) SetConfirmationTimeoutInMinutes(val *float64) {
 	if err := j.validateSetConfirmationTimeoutInMinutesParameters(val); err != nil {
 		panic(err)
 	}
@@ -652,7 +651,7 @@ func (j *jsiiProxy_SnsTopicSubscription)SetConfirmationTimeoutInMinutes(val *flo
 	)
 }
 
-func (j *jsiiProxy_SnsTopicSubscription)SetConnection(val interface{}) {
+func (j *jsiiProxy_SnsTopicSubscription) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -663,7 +662,7 @@ func (j *jsiiProxy_SnsTopicSubscription)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopicSubscription)SetCount(val interface{}) {
+func (j *jsiiProxy_SnsTopicSubscription) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -674,7 +673,7 @@ func (j *jsiiProxy_SnsTopicSubscription)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopicSubscription)SetDeliveryPolicy(val *string) {
+func (j *jsiiProxy_SnsTopicSubscription) SetDeliveryPolicy(val *string) {
 	if err := j.validateSetDeliveryPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -685,7 +684,7 @@ func (j *jsiiProxy_SnsTopicSubscription)SetDeliveryPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopicSubscription)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SnsTopicSubscription) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -693,7 +692,7 @@ func (j *jsiiProxy_SnsTopicSubscription)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopicSubscription)SetEndpoint(val *string) {
+func (j *jsiiProxy_SnsTopicSubscription) SetEndpoint(val *string) {
 	if err := j.validateSetEndpointParameters(val); err != nil {
 		panic(err)
 	}
@@ -704,7 +703,7 @@ func (j *jsiiProxy_SnsTopicSubscription)SetEndpoint(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopicSubscription)SetEndpointAutoConfirms(val interface{}) {
+func (j *jsiiProxy_SnsTopicSubscription) SetEndpointAutoConfirms(val any) {
 	if err := j.validateSetEndpointAutoConfirmsParameters(val); err != nil {
 		panic(err)
 	}
@@ -715,7 +714,7 @@ func (j *jsiiProxy_SnsTopicSubscription)SetEndpointAutoConfirms(val interface{})
 	)
 }
 
-func (j *jsiiProxy_SnsTopicSubscription)SetFilterPolicy(val *string) {
+func (j *jsiiProxy_SnsTopicSubscription) SetFilterPolicy(val *string) {
 	if err := j.validateSetFilterPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -726,7 +725,7 @@ func (j *jsiiProxy_SnsTopicSubscription)SetFilterPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopicSubscription)SetFilterPolicyScope(val *string) {
+func (j *jsiiProxy_SnsTopicSubscription) SetFilterPolicyScope(val *string) {
 	if err := j.validateSetFilterPolicyScopeParameters(val); err != nil {
 		panic(err)
 	}
@@ -737,7 +736,7 @@ func (j *jsiiProxy_SnsTopicSubscription)SetFilterPolicyScope(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopicSubscription)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SnsTopicSubscription) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -745,7 +744,7 @@ func (j *jsiiProxy_SnsTopicSubscription)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_SnsTopicSubscription)SetId(val *string) {
+func (j *jsiiProxy_SnsTopicSubscription) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -756,7 +755,7 @@ func (j *jsiiProxy_SnsTopicSubscription)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopicSubscription)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SnsTopicSubscription) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -767,7 +766,7 @@ func (j *jsiiProxy_SnsTopicSubscription)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_SnsTopicSubscription)SetProtocol(val *string) {
+func (j *jsiiProxy_SnsTopicSubscription) SetProtocol(val *string) {
 	if err := j.validateSetProtocolParameters(val); err != nil {
 		panic(err)
 	}
@@ -778,7 +777,7 @@ func (j *jsiiProxy_SnsTopicSubscription)SetProtocol(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopicSubscription)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SnsTopicSubscription) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -786,7 +785,7 @@ func (j *jsiiProxy_SnsTopicSubscription)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_SnsTopicSubscription)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SnsTopicSubscription) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -797,7 +796,7 @@ func (j *jsiiProxy_SnsTopicSubscription)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopicSubscription)SetRawMessageDelivery(val interface{}) {
+func (j *jsiiProxy_SnsTopicSubscription) SetRawMessageDelivery(val any) {
 	if err := j.validateSetRawMessageDeliveryParameters(val); err != nil {
 		panic(err)
 	}
@@ -808,7 +807,7 @@ func (j *jsiiProxy_SnsTopicSubscription)SetRawMessageDelivery(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopicSubscription)SetRedrivePolicy(val *string) {
+func (j *jsiiProxy_SnsTopicSubscription) SetRedrivePolicy(val *string) {
 	if err := j.validateSetRedrivePolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -819,7 +818,7 @@ func (j *jsiiProxy_SnsTopicSubscription)SetRedrivePolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopicSubscription)SetSubscriptionRoleArn(val *string) {
+func (j *jsiiProxy_SnsTopicSubscription) SetSubscriptionRoleArn(val *string) {
 	if err := j.validateSetSubscriptionRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -830,7 +829,7 @@ func (j *jsiiProxy_SnsTopicSubscription)SetSubscriptionRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopicSubscription)SetTopicArn(val *string) {
+func (j *jsiiProxy_SnsTopicSubscription) SetTopicArn(val *string) {
 	if err := j.validateSetTopicArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -853,7 +852,7 @@ func SnsTopicSubscription_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -877,7 +876,7 @@ func SnsTopicSubscription_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SnsTopicSubscription_IsConstruct(x interface{}) *bool {
+func SnsTopicSubscription_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSnsTopicSubscription_IsConstructParameters(x); err != nil {
@@ -888,7 +887,7 @@ func SnsTopicSubscription_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -896,7 +895,7 @@ func SnsTopicSubscription_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SnsTopicSubscription_IsTerraformElement(x interface{}) *bool {
+func SnsTopicSubscription_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSnsTopicSubscription_IsTerraformElementParameters(x); err != nil {
@@ -907,7 +906,7 @@ func SnsTopicSubscription_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -915,7 +914,7 @@ func SnsTopicSubscription_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SnsTopicSubscription_IsTerraformResource(x interface{}) *bool {
+func SnsTopicSubscription_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSnsTopicSubscription_IsTerraformResourceParameters(x); err != nil {
@@ -926,7 +925,7 @@ func SnsTopicSubscription_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -951,31 +950,31 @@ func (s *jsiiProxy_SnsTopicSubscription) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SnsTopicSubscription) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SnsTopicSubscription) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SnsTopicSubscription) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SnsTopicSubscription) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -991,7 +990,7 @@ func (s *jsiiProxy_SnsTopicSubscription) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1007,7 +1006,7 @@ func (s *jsiiProxy_SnsTopicSubscription) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1023,7 +1022,7 @@ func (s *jsiiProxy_SnsTopicSubscription) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1039,7 +1038,7 @@ func (s *jsiiProxy_SnsTopicSubscription) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1055,7 +1054,7 @@ func (s *jsiiProxy_SnsTopicSubscription) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1071,7 +1070,7 @@ func (s *jsiiProxy_SnsTopicSubscription) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1087,7 +1086,7 @@ func (s *jsiiProxy_SnsTopicSubscription) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1103,15 +1102,15 @@ func (s *jsiiProxy_SnsTopicSubscription) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SnsTopicSubscription) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SnsTopicSubscription) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1130,7 +1129,7 @@ func (s *jsiiProxy_SnsTopicSubscription) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1143,7 +1142,7 @@ func (s *jsiiProxy_SnsTopicSubscription) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1157,18 +1156,18 @@ func (s *jsiiProxy_SnsTopicSubscription) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SnsTopicSubscription) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SnsTopicSubscription) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1179,7 +1178,7 @@ func (s *jsiiProxy_SnsTopicSubscription) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1190,7 +1189,7 @@ func (s *jsiiProxy_SnsTopicSubscription) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1274,8 +1273,8 @@ func (s *jsiiProxy_SnsTopicSubscription) ResetSubscriptionRoleArn() {
 	)
 }
 
-func (s *jsiiProxy_SnsTopicSubscription) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SnsTopicSubscription) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1287,8 +1286,8 @@ func (s *jsiiProxy_SnsTopicSubscription) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (s *jsiiProxy_SnsTopicSubscription) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SnsTopicSubscription) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1300,8 +1299,8 @@ func (s *jsiiProxy_SnsTopicSubscription) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (s *jsiiProxy_SnsTopicSubscription) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SnsTopicSubscription) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1313,8 +1312,8 @@ func (s *jsiiProxy_SnsTopicSubscription) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SnsTopicSubscription) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SnsTopicSubscription) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1339,8 +1338,8 @@ func (s *jsiiProxy_SnsTopicSubscription) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SnsTopicSubscription) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SnsTopicSubscription) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1351,4 +1350,3 @@ func (s *jsiiProxy_SnsTopicSubscription) ToTerraform() interface{} {
 
 	return returns
 }
-

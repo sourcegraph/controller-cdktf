@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsApiGatewayRestApi.DataAwsApiGatewayRestApi",
-		reflect.TypeOf((*DataAwsApiGatewayRestApi)(nil)).Elem(),
+		reflect.TypeFor[DataAwsApiGatewayRestApi](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "apiKeySource", GoGetter: "ApiKeySource"},
@@ -62,7 +62,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsApiGatewayRestApi{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -70,15 +70,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsApiGatewayRestApi.DataAwsApiGatewayRestApiConfig",
-		reflect.TypeOf((*DataAwsApiGatewayRestApiConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsApiGatewayRestApiConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsApiGatewayRestApi.DataAwsApiGatewayRestApiEndpointConfiguration",
-		reflect.TypeOf((*DataAwsApiGatewayRestApiEndpointConfiguration)(nil)).Elem(),
+		reflect.TypeFor[DataAwsApiGatewayRestApiEndpointConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsApiGatewayRestApi.DataAwsApiGatewayRestApiEndpointConfigurationList",
-		reflect.TypeOf((*DataAwsApiGatewayRestApiEndpointConfigurationList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsApiGatewayRestApiEndpointConfigurationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -91,7 +91,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsApiGatewayRestApiEndpointConfigurationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -99,7 +99,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsApiGatewayRestApi.DataAwsApiGatewayRestApiEndpointConfigurationOutputReference",
-		reflect.TypeOf((*DataAwsApiGatewayRestApiEndpointConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsApiGatewayRestApiEndpointConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -125,7 +125,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "types", GoGetter: "Types"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcEndpointIds", GoGetter: "VpcEndpointIds"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsApiGatewayRestApiEndpointConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

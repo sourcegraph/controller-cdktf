@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataAwsVpcFilterList) validateResolveParameters(_context cdkt
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsVpcFilterList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsVpcFilterList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataAwsVpcFilterListParameters(terraformResource cdktf.IInterpol
 
 	return nil
 }
-

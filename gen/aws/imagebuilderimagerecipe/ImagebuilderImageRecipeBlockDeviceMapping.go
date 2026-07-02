@@ -1,6 +1,5 @@
 package imagebuilderimagerecipe
 
-
 type ImagebuilderImageRecipeBlockDeviceMapping struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/imagebuilder_image_recipe#device_name ImagebuilderImageRecipe#device_name}.
 	DeviceName *string `field:"optional" json:"deviceName" yaml:"deviceName"`
@@ -9,8 +8,7 @@ type ImagebuilderImageRecipeBlockDeviceMapping struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/imagebuilder_image_recipe#ebs ImagebuilderImageRecipe#ebs}
 	Ebs *ImagebuilderImageRecipeBlockDeviceMappingEbs `field:"optional" json:"ebs" yaml:"ebs"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/imagebuilder_image_recipe#no_device ImagebuilderImageRecipe#no_device}.
-	NoDevice interface{} `field:"optional" json:"noDevice" yaml:"noDevice"`
+	NoDevice any `field:"optional" json:"noDevice" yaml:"noDevice"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/imagebuilder_image_recipe#virtual_name ImagebuilderImageRecipe#virtual_name}.
 	VirtualName *string `field:"optional" json:"virtualName" yaml:"virtualName"`
 }
-

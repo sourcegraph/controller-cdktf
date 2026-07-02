@@ -15,15 +15,15 @@ type Route53ResolverRuleAssociation interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,22 +53,22 @@ type Route53ResolverRuleAssociation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ResolverRuleId() *string
 	SetResolverRuleId(val *string)
 	ResolverRuleIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() Route53ResolverRuleAssociationTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	VpcId() *string
 	SetVpcId(val *string)
 	VpcIdInput() *string
@@ -76,9 +76,9 @@ type Route53ResolverRuleAssociation interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -96,7 +96,7 @@ type Route53ResolverRuleAssociation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -108,7 +108,7 @@ type Route53ResolverRuleAssociation interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -122,17 +122,17 @@ type Route53ResolverRuleAssociation interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Route53ResolverRuleAssociation
@@ -150,8 +150,8 @@ func (j *jsiiProxy_Route53ResolverRuleAssociation) CdktfStack() cdktf.TerraformS
 	return returns
 }
 
-func (j *jsiiProxy_Route53ResolverRuleAssociation) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53ResolverRuleAssociation) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -160,8 +160,8 @@ func (j *jsiiProxy_Route53ResolverRuleAssociation) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Route53ResolverRuleAssociation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Route53ResolverRuleAssociation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -170,8 +170,8 @@ func (j *jsiiProxy_Route53ResolverRuleAssociation) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_Route53ResolverRuleAssociation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53ResolverRuleAssociation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -290,8 +290,8 @@ func (j *jsiiProxy_Route53ResolverRuleAssociation) Provider() cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_Route53ResolverRuleAssociation) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Route53ResolverRuleAssociation) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -300,8 +300,8 @@ func (j *jsiiProxy_Route53ResolverRuleAssociation) Provisioners() *[]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_Route53ResolverRuleAssociation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53ResolverRuleAssociation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -340,8 +340,8 @@ func (j *jsiiProxy_Route53ResolverRuleAssociation) TerraformGeneratorMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_Route53ResolverRuleAssociation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Route53ResolverRuleAssociation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -370,8 +370,8 @@ func (j *jsiiProxy_Route53ResolverRuleAssociation) Timeouts() Route53ResolverRul
 	return returns
 }
 
-func (j *jsiiProxy_Route53ResolverRuleAssociation) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53ResolverRuleAssociation) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -400,7 +400,6 @@ func (j *jsiiProxy_Route53ResolverRuleAssociation) VpcIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53_resolver_rule_association aws_route53_resolver_rule_association} Resource.
 func NewRoute53ResolverRuleAssociation(scope constructs.Construct, id *string, config *Route53ResolverRuleAssociationConfig) Route53ResolverRuleAssociation {
 	_init_.Initialize()
@@ -412,7 +411,7 @@ func NewRoute53ResolverRuleAssociation(scope constructs.Construct, id *string, c
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.route53ResolverRuleAssociation.Route53ResolverRuleAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -425,12 +424,12 @@ func NewRoute53ResolverRuleAssociation_Override(r Route53ResolverRuleAssociation
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.route53ResolverRuleAssociation.Route53ResolverRuleAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverRuleAssociation)SetConnection(val interface{}) {
+func (j *jsiiProxy_Route53ResolverRuleAssociation) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_Route53ResolverRuleAssociation)SetConnection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverRuleAssociation)SetCount(val interface{}) {
+func (j *jsiiProxy_Route53ResolverRuleAssociation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_Route53ResolverRuleAssociation)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverRuleAssociation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Route53ResolverRuleAssociation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -460,7 +459,7 @@ func (j *jsiiProxy_Route53ResolverRuleAssociation)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverRuleAssociation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Route53ResolverRuleAssociation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -468,7 +467,7 @@ func (j *jsiiProxy_Route53ResolverRuleAssociation)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverRuleAssociation)SetId(val *string) {
+func (j *jsiiProxy_Route53ResolverRuleAssociation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -479,7 +478,7 @@ func (j *jsiiProxy_Route53ResolverRuleAssociation)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverRuleAssociation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Route53ResolverRuleAssociation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_Route53ResolverRuleAssociation)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverRuleAssociation)SetName(val *string) {
+func (j *jsiiProxy_Route53ResolverRuleAssociation) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_Route53ResolverRuleAssociation)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverRuleAssociation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Route53ResolverRuleAssociation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -509,7 +508,7 @@ func (j *jsiiProxy_Route53ResolverRuleAssociation)SetProvider(val cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverRuleAssociation)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Route53ResolverRuleAssociation) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -520,7 +519,7 @@ func (j *jsiiProxy_Route53ResolverRuleAssociation)SetProvisioners(val *[]interfa
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverRuleAssociation)SetResolverRuleId(val *string) {
+func (j *jsiiProxy_Route53ResolverRuleAssociation) SetResolverRuleId(val *string) {
 	if err := j.validateSetResolverRuleIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -531,7 +530,7 @@ func (j *jsiiProxy_Route53ResolverRuleAssociation)SetResolverRuleId(val *string)
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverRuleAssociation)SetVpcId(val *string) {
+func (j *jsiiProxy_Route53ResolverRuleAssociation) SetVpcId(val *string) {
 	if err := j.validateSetVpcIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -554,7 +553,7 @@ func Route53ResolverRuleAssociation_GenerateConfigForImport(scope constructs.Con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.route53ResolverRuleAssociation.Route53ResolverRuleAssociation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -578,7 +577,7 @@ func Route53ResolverRuleAssociation_GenerateConfigForImport(scope constructs.Con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Route53ResolverRuleAssociation_IsConstruct(x interface{}) *bool {
+func Route53ResolverRuleAssociation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRoute53ResolverRuleAssociation_IsConstructParameters(x); err != nil {
@@ -589,7 +588,7 @@ func Route53ResolverRuleAssociation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.route53ResolverRuleAssociation.Route53ResolverRuleAssociation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -597,7 +596,7 @@ func Route53ResolverRuleAssociation_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Route53ResolverRuleAssociation_IsTerraformElement(x interface{}) *bool {
+func Route53ResolverRuleAssociation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRoute53ResolverRuleAssociation_IsTerraformElementParameters(x); err != nil {
@@ -608,7 +607,7 @@ func Route53ResolverRuleAssociation_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.route53ResolverRuleAssociation.Route53ResolverRuleAssociation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func Route53ResolverRuleAssociation_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Route53ResolverRuleAssociation_IsTerraformResource(x interface{}) *bool {
+func Route53ResolverRuleAssociation_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRoute53ResolverRuleAssociation_IsTerraformResourceParameters(x); err != nil {
@@ -627,7 +626,7 @@ func Route53ResolverRuleAssociation_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.route53ResolverRuleAssociation.Route53ResolverRuleAssociation",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -652,31 +651,31 @@ func (r *jsiiProxy_Route53ResolverRuleAssociation) AddMoveTarget(moveTarget *str
 	_jsii_.InvokeVoid(
 		r,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (r *jsiiProxy_Route53ResolverRuleAssociation) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_Route53ResolverRuleAssociation) AddOverride(path *string, value any) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (r *jsiiProxy_Route53ResolverRuleAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_Route53ResolverRuleAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -692,7 +691,7 @@ func (r *jsiiProxy_Route53ResolverRuleAssociation) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -708,7 +707,7 @@ func (r *jsiiProxy_Route53ResolverRuleAssociation) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -724,7 +723,7 @@ func (r *jsiiProxy_Route53ResolverRuleAssociation) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -740,7 +739,7 @@ func (r *jsiiProxy_Route53ResolverRuleAssociation) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -756,7 +755,7 @@ func (r *jsiiProxy_Route53ResolverRuleAssociation) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -772,7 +771,7 @@ func (r *jsiiProxy_Route53ResolverRuleAssociation) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -788,7 +787,7 @@ func (r *jsiiProxy_Route53ResolverRuleAssociation) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -804,15 +803,15 @@ func (r *jsiiProxy_Route53ResolverRuleAssociation) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_Route53ResolverRuleAssociation) HasResourceMove() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Route53ResolverRuleAssociation) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -831,7 +830,7 @@ func (r *jsiiProxy_Route53ResolverRuleAssociation) ImportFrom(id *string, provid
 	_jsii_.InvokeVoid(
 		r,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -844,7 +843,7 @@ func (r *jsiiProxy_Route53ResolverRuleAssociation) InterpolationForAttribute(ter
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -858,18 +857,18 @@ func (r *jsiiProxy_Route53ResolverRuleAssociation) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (r *jsiiProxy_Route53ResolverRuleAssociation) MoveTo(moveTarget *string, index interface{}) {
+func (r *jsiiProxy_Route53ResolverRuleAssociation) MoveTo(moveTarget *string, index any) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -880,7 +879,7 @@ func (r *jsiiProxy_Route53ResolverRuleAssociation) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -891,7 +890,7 @@ func (r *jsiiProxy_Route53ResolverRuleAssociation) OverrideLogicalId(newLogicalI
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -902,7 +901,7 @@ func (r *jsiiProxy_Route53ResolverRuleAssociation) PutTimeouts(value *Route53Res
 	_jsii_.InvokeVoid(
 		r,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -938,8 +937,8 @@ func (r *jsiiProxy_Route53ResolverRuleAssociation) ResetTimeouts() {
 	)
 }
 
-func (r *jsiiProxy_Route53ResolverRuleAssociation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_Route53ResolverRuleAssociation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -951,8 +950,8 @@ func (r *jsiiProxy_Route53ResolverRuleAssociation) SynthesizeAttributes() *map[s
 	return returns
 }
 
-func (r *jsiiProxy_Route53ResolverRuleAssociation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_Route53ResolverRuleAssociation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -964,8 +963,8 @@ func (r *jsiiProxy_Route53ResolverRuleAssociation) SynthesizeHclAttributes() *ma
 	return returns
 }
 
-func (r *jsiiProxy_Route53ResolverRuleAssociation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Route53ResolverRuleAssociation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -977,8 +976,8 @@ func (r *jsiiProxy_Route53ResolverRuleAssociation) ToHclTerraform() interface{} 
 	return returns
 }
 
-func (r *jsiiProxy_Route53ResolverRuleAssociation) ToMetadata() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Route53ResolverRuleAssociation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1003,8 +1002,8 @@ func (r *jsiiProxy_Route53ResolverRuleAssociation) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_Route53ResolverRuleAssociation) ToTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Route53ResolverRuleAssociation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1015,4 +1014,3 @@ func (r *jsiiProxy_Route53ResolverRuleAssociation) ToTerraform() interface{} {
 
 	return returns
 }
-

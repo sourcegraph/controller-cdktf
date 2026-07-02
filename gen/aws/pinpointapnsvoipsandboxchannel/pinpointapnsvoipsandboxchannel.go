@@ -24,15 +24,15 @@ type PinpointApnsVoipSandboxChannel interface {
 	SetCertificate(val *string)
 	CertificateInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DefaultAuthenticationMethod() *string
 	SetDefaultAuthenticationMethod(val *string)
 	DefaultAuthenticationMethodInput() *string
@@ -40,9 +40,9 @@ type PinpointApnsVoipSandboxChannel interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -68,18 +68,18 @@ type PinpointApnsVoipSandboxChannel interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	TeamId() *string
 	SetTeamId(val *string)
 	TeamIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TokenKey() *string
@@ -92,9 +92,9 @@ type PinpointApnsVoipSandboxChannel interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -112,7 +112,7 @@ type PinpointApnsVoipSandboxChannel interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -124,7 +124,7 @@ type PinpointApnsVoipSandboxChannel interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -143,17 +143,17 @@ type PinpointApnsVoipSandboxChannel interface {
 	ResetTeamId()
 	ResetTokenKey()
 	ResetTokenKeyId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for PinpointApnsVoipSandboxChannel
@@ -231,8 +231,8 @@ func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) CertificateInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -241,8 +241,8 @@ func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -251,8 +251,8 @@ func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -291,8 +291,8 @@ func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -301,8 +301,8 @@ func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -411,8 +411,8 @@ func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) Provider() cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -421,8 +421,8 @@ func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) Provisioners() *[]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -461,8 +461,8 @@ func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) TerraformGeneratorMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -521,7 +521,6 @@ func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) TokenKeyInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/pinpoint_apns_voip_sandbox_channel aws_pinpoint_apns_voip_sandbox_channel} Resource.
 func NewPinpointApnsVoipSandboxChannel(scope constructs.Construct, id *string, config *PinpointApnsVoipSandboxChannelConfig) PinpointApnsVoipSandboxChannel {
 	_init_.Initialize()
@@ -533,7 +532,7 @@ func NewPinpointApnsVoipSandboxChannel(scope constructs.Construct, id *string, c
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.pinpointApnsVoipSandboxChannel.PinpointApnsVoipSandboxChannel",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -546,12 +545,12 @@ func NewPinpointApnsVoipSandboxChannel_Override(p PinpointApnsVoipSandboxChannel
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.pinpointApnsVoipSandboxChannel.PinpointApnsVoipSandboxChannel",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PinpointApnsVoipSandboxChannel)SetApplicationId(val *string) {
+func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) SetApplicationId(val *string) {
 	if err := j.validateSetApplicationIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -562,7 +561,7 @@ func (j *jsiiProxy_PinpointApnsVoipSandboxChannel)SetApplicationId(val *string) 
 	)
 }
 
-func (j *jsiiProxy_PinpointApnsVoipSandboxChannel)SetBundleId(val *string) {
+func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) SetBundleId(val *string) {
 	if err := j.validateSetBundleIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -573,7 +572,7 @@ func (j *jsiiProxy_PinpointApnsVoipSandboxChannel)SetBundleId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PinpointApnsVoipSandboxChannel)SetCertificate(val *string) {
+func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) SetCertificate(val *string) {
 	if err := j.validateSetCertificateParameters(val); err != nil {
 		panic(err)
 	}
@@ -584,7 +583,7 @@ func (j *jsiiProxy_PinpointApnsVoipSandboxChannel)SetCertificate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PinpointApnsVoipSandboxChannel)SetConnection(val interface{}) {
+func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -595,7 +594,7 @@ func (j *jsiiProxy_PinpointApnsVoipSandboxChannel)SetConnection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_PinpointApnsVoipSandboxChannel)SetCount(val interface{}) {
+func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -606,7 +605,7 @@ func (j *jsiiProxy_PinpointApnsVoipSandboxChannel)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PinpointApnsVoipSandboxChannel)SetDefaultAuthenticationMethod(val *string) {
+func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) SetDefaultAuthenticationMethod(val *string) {
 	if err := j.validateSetDefaultAuthenticationMethodParameters(val); err != nil {
 		panic(err)
 	}
@@ -617,7 +616,7 @@ func (j *jsiiProxy_PinpointApnsVoipSandboxChannel)SetDefaultAuthenticationMethod
 	)
 }
 
-func (j *jsiiProxy_PinpointApnsVoipSandboxChannel)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -625,7 +624,7 @@ func (j *jsiiProxy_PinpointApnsVoipSandboxChannel)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PinpointApnsVoipSandboxChannel)SetEnabled(val interface{}) {
+func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -636,7 +635,7 @@ func (j *jsiiProxy_PinpointApnsVoipSandboxChannel)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PinpointApnsVoipSandboxChannel)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -644,7 +643,7 @@ func (j *jsiiProxy_PinpointApnsVoipSandboxChannel)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_PinpointApnsVoipSandboxChannel)SetId(val *string) {
+func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -655,7 +654,7 @@ func (j *jsiiProxy_PinpointApnsVoipSandboxChannel)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PinpointApnsVoipSandboxChannel)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -666,7 +665,7 @@ func (j *jsiiProxy_PinpointApnsVoipSandboxChannel)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_PinpointApnsVoipSandboxChannel)SetPrivateKey(val *string) {
+func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) SetPrivateKey(val *string) {
 	if err := j.validateSetPrivateKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -677,7 +676,7 @@ func (j *jsiiProxy_PinpointApnsVoipSandboxChannel)SetPrivateKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PinpointApnsVoipSandboxChannel)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -685,7 +684,7 @@ func (j *jsiiProxy_PinpointApnsVoipSandboxChannel)SetProvider(val cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_PinpointApnsVoipSandboxChannel)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -696,7 +695,7 @@ func (j *jsiiProxy_PinpointApnsVoipSandboxChannel)SetProvisioners(val *[]interfa
 	)
 }
 
-func (j *jsiiProxy_PinpointApnsVoipSandboxChannel)SetTeamId(val *string) {
+func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) SetTeamId(val *string) {
 	if err := j.validateSetTeamIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -707,7 +706,7 @@ func (j *jsiiProxy_PinpointApnsVoipSandboxChannel)SetTeamId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PinpointApnsVoipSandboxChannel)SetTokenKey(val *string) {
+func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) SetTokenKey(val *string) {
 	if err := j.validateSetTokenKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -718,7 +717,7 @@ func (j *jsiiProxy_PinpointApnsVoipSandboxChannel)SetTokenKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PinpointApnsVoipSandboxChannel)SetTokenKeyId(val *string) {
+func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) SetTokenKeyId(val *string) {
 	if err := j.validateSetTokenKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -741,7 +740,7 @@ func PinpointApnsVoipSandboxChannel_GenerateConfigForImport(scope constructs.Con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.pinpointApnsVoipSandboxChannel.PinpointApnsVoipSandboxChannel",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -765,7 +764,7 @@ func PinpointApnsVoipSandboxChannel_GenerateConfigForImport(scope constructs.Con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func PinpointApnsVoipSandboxChannel_IsConstruct(x interface{}) *bool {
+func PinpointApnsVoipSandboxChannel_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePinpointApnsVoipSandboxChannel_IsConstructParameters(x); err != nil {
@@ -776,7 +775,7 @@ func PinpointApnsVoipSandboxChannel_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.pinpointApnsVoipSandboxChannel.PinpointApnsVoipSandboxChannel",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -784,7 +783,7 @@ func PinpointApnsVoipSandboxChannel_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func PinpointApnsVoipSandboxChannel_IsTerraformElement(x interface{}) *bool {
+func PinpointApnsVoipSandboxChannel_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePinpointApnsVoipSandboxChannel_IsTerraformElementParameters(x); err != nil {
@@ -795,7 +794,7 @@ func PinpointApnsVoipSandboxChannel_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.pinpointApnsVoipSandboxChannel.PinpointApnsVoipSandboxChannel",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -803,7 +802,7 @@ func PinpointApnsVoipSandboxChannel_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func PinpointApnsVoipSandboxChannel_IsTerraformResource(x interface{}) *bool {
+func PinpointApnsVoipSandboxChannel_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePinpointApnsVoipSandboxChannel_IsTerraformResourceParameters(x); err != nil {
@@ -814,7 +813,7 @@ func PinpointApnsVoipSandboxChannel_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.pinpointApnsVoipSandboxChannel.PinpointApnsVoipSandboxChannel",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -839,31 +838,31 @@ func (p *jsiiProxy_PinpointApnsVoipSandboxChannel) AddMoveTarget(moveTarget *str
 	_jsii_.InvokeVoid(
 		p,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (p *jsiiProxy_PinpointApnsVoipSandboxChannel) AddOverride(path *string, value interface{}) {
+func (p *jsiiProxy_PinpointApnsVoipSandboxChannel) AddOverride(path *string, value any) {
 	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (p *jsiiProxy_PinpointApnsVoipSandboxChannel) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PinpointApnsVoipSandboxChannel) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -879,7 +878,7 @@ func (p *jsiiProxy_PinpointApnsVoipSandboxChannel) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -895,7 +894,7 @@ func (p *jsiiProxy_PinpointApnsVoipSandboxChannel) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -911,7 +910,7 @@ func (p *jsiiProxy_PinpointApnsVoipSandboxChannel) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -927,7 +926,7 @@ func (p *jsiiProxy_PinpointApnsVoipSandboxChannel) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -943,7 +942,7 @@ func (p *jsiiProxy_PinpointApnsVoipSandboxChannel) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -959,7 +958,7 @@ func (p *jsiiProxy_PinpointApnsVoipSandboxChannel) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -975,7 +974,7 @@ func (p *jsiiProxy_PinpointApnsVoipSandboxChannel) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -991,15 +990,15 @@ func (p *jsiiProxy_PinpointApnsVoipSandboxChannel) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PinpointApnsVoipSandboxChannel) HasResourceMove() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PinpointApnsVoipSandboxChannel) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1018,7 +1017,7 @@ func (p *jsiiProxy_PinpointApnsVoipSandboxChannel) ImportFrom(id *string, provid
 	_jsii_.InvokeVoid(
 		p,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1031,7 +1030,7 @@ func (p *jsiiProxy_PinpointApnsVoipSandboxChannel) InterpolationForAttribute(ter
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1045,18 +1044,18 @@ func (p *jsiiProxy_PinpointApnsVoipSandboxChannel) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (p *jsiiProxy_PinpointApnsVoipSandboxChannel) MoveTo(moveTarget *string, index interface{}) {
+func (p *jsiiProxy_PinpointApnsVoipSandboxChannel) MoveTo(moveTarget *string, index any) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1067,7 +1066,7 @@ func (p *jsiiProxy_PinpointApnsVoipSandboxChannel) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1078,7 +1077,7 @@ func (p *jsiiProxy_PinpointApnsVoipSandboxChannel) OverrideLogicalId(newLogicalI
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1162,8 +1161,8 @@ func (p *jsiiProxy_PinpointApnsVoipSandboxChannel) ResetTokenKeyId() {
 	)
 }
 
-func (p *jsiiProxy_PinpointApnsVoipSandboxChannel) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PinpointApnsVoipSandboxChannel) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1175,8 +1174,8 @@ func (p *jsiiProxy_PinpointApnsVoipSandboxChannel) SynthesizeAttributes() *map[s
 	return returns
 }
 
-func (p *jsiiProxy_PinpointApnsVoipSandboxChannel) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PinpointApnsVoipSandboxChannel) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1188,8 +1187,8 @@ func (p *jsiiProxy_PinpointApnsVoipSandboxChannel) SynthesizeHclAttributes() *ma
 	return returns
 }
 
-func (p *jsiiProxy_PinpointApnsVoipSandboxChannel) ToHclTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PinpointApnsVoipSandboxChannel) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1201,8 +1200,8 @@ func (p *jsiiProxy_PinpointApnsVoipSandboxChannel) ToHclTerraform() interface{} 
 	return returns
 }
 
-func (p *jsiiProxy_PinpointApnsVoipSandboxChannel) ToMetadata() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PinpointApnsVoipSandboxChannel) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1227,8 +1226,8 @@ func (p *jsiiProxy_PinpointApnsVoipSandboxChannel) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_PinpointApnsVoipSandboxChannel) ToTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PinpointApnsVoipSandboxChannel) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1239,4 +1238,3 @@ func (p *jsiiProxy_PinpointApnsVoipSandboxChannel) ToTerraform() interface{} {
 
 	return returns
 }
-

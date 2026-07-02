@@ -6,9 +6,9 @@ import (
 
 type LaunchTemplateConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,11 +18,11 @@ type LaunchTemplateConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// block_device_mappings block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/launch_template#block_device_mappings LaunchTemplate#block_device_mappings}
-	BlockDeviceMappings interface{} `field:"optional" json:"blockDeviceMappings" yaml:"blockDeviceMappings"`
+	BlockDeviceMappings any `field:"optional" json:"blockDeviceMappings" yaml:"blockDeviceMappings"`
 	// capacity_reservation_specification block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/launch_template#capacity_reservation_specification LaunchTemplate#capacity_reservation_specification}
@@ -40,15 +40,15 @@ type LaunchTemplateConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/launch_template#description LaunchTemplate#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/launch_template#disable_api_stop LaunchTemplate#disable_api_stop}.
-	DisableApiStop interface{} `field:"optional" json:"disableApiStop" yaml:"disableApiStop"`
+	DisableApiStop any `field:"optional" json:"disableApiStop" yaml:"disableApiStop"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/launch_template#disable_api_termination LaunchTemplate#disable_api_termination}.
-	DisableApiTermination interface{} `field:"optional" json:"disableApiTermination" yaml:"disableApiTermination"`
+	DisableApiTermination any `field:"optional" json:"disableApiTermination" yaml:"disableApiTermination"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/launch_template#ebs_optimized LaunchTemplate#ebs_optimized}.
 	EbsOptimized *string `field:"optional" json:"ebsOptimized" yaml:"ebsOptimized"`
 	// elastic_gpu_specifications block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/launch_template#elastic_gpu_specifications LaunchTemplate#elastic_gpu_specifications}
-	ElasticGpuSpecifications interface{} `field:"optional" json:"elasticGpuSpecifications" yaml:"elasticGpuSpecifications"`
+	ElasticGpuSpecifications any `field:"optional" json:"elasticGpuSpecifications" yaml:"elasticGpuSpecifications"`
 	// elastic_inference_accelerator block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/launch_template#elastic_inference_accelerator LaunchTemplate#elastic_inference_accelerator}
@@ -91,7 +91,7 @@ type LaunchTemplateConfig struct {
 	// license_specification block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/launch_template#license_specification LaunchTemplate#license_specification}
-	LicenseSpecification interface{} `field:"optional" json:"licenseSpecification" yaml:"licenseSpecification"`
+	LicenseSpecification any `field:"optional" json:"licenseSpecification" yaml:"licenseSpecification"`
 	// maintenance_options block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/launch_template#maintenance_options LaunchTemplate#maintenance_options}
@@ -111,7 +111,7 @@ type LaunchTemplateConfig struct {
 	// network_interfaces block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/launch_template#network_interfaces LaunchTemplate#network_interfaces}
-	NetworkInterfaces interface{} `field:"optional" json:"networkInterfaces" yaml:"networkInterfaces"`
+	NetworkInterfaces any `field:"optional" json:"networkInterfaces" yaml:"networkInterfaces"`
 	// placement block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/launch_template#placement LaunchTemplate#placement}
@@ -131,12 +131,11 @@ type LaunchTemplateConfig struct {
 	// tag_specifications block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/launch_template#tag_specifications LaunchTemplate#tag_specifications}
-	TagSpecifications interface{} `field:"optional" json:"tagSpecifications" yaml:"tagSpecifications"`
+	TagSpecifications any `field:"optional" json:"tagSpecifications" yaml:"tagSpecifications"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/launch_template#update_default_version LaunchTemplate#update_default_version}.
-	UpdateDefaultVersion interface{} `field:"optional" json:"updateDefaultVersion" yaml:"updateDefaultVersion"`
+	UpdateDefaultVersion any `field:"optional" json:"updateDefaultVersion" yaml:"updateDefaultVersion"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/launch_template#user_data LaunchTemplate#user_data}.
 	UserData *string `field:"optional" json:"userData" yaml:"userData"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/launch_template#vpc_security_group_ids LaunchTemplate#vpc_security_group_ids}.
 	VpcSecurityGroupIds *[]*string `field:"optional" json:"vpcSecurityGroupIds" yaml:"vpcSecurityGroupIds"`
 }
-

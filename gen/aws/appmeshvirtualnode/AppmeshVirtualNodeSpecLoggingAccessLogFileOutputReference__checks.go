@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewAppmeshVirtualNodeSpecLoggingAccessLogFileOutputReferenceParamet
 
 	return nil
 }
-

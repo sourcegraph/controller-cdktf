@@ -98,7 +98,7 @@ func (e *jsiiProxy_EksClusterEncryptionConfigProviderOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_EksClusterEncryptionConfigProviderOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EksClusterEncryptionConfigProviderOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewEksClusterEncryptionConfigProviderOutputReferenceParameters(terr
 
 	return nil
 }
-

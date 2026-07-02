@@ -12,9 +12,9 @@ type IotThingTypePropertiesOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type IotThingTypePropertiesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type IotThingTypePropertiesOutputReference interface {
 	ResetSearchableAttributes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_IotThingTypePropertiesOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_IotThingTypePropertiesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IotThingTypePropertiesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_IotThingTypePropertiesOutputReference) TerraformResource() cd
 	return returns
 }
 
-
 func NewIotThingTypePropertiesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IotThingTypePropertiesOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewIotThingTypePropertiesOutputReference(terraformResource cdktf.IInterpola
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iotThingType.IotThingTypePropertiesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewIotThingTypePropertiesOutputReference_Override(i IotThingTypePropertiesO
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iotThingType.IotThingTypePropertiesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IotThingTypePropertiesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IotThingTypePropertiesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_IotThingTypePropertiesOutputReference)SetComplexObjectIndex(v
 	)
 }
 
-func (j *jsiiProxy_IotThingTypePropertiesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IotThingTypePropertiesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_IotThingTypePropertiesOutputReference)SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_IotThingTypePropertiesOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_IotThingTypePropertiesOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_IotThingTypePropertiesOutputReference)SetDescription(val *str
 	)
 }
 
-func (j *jsiiProxy_IotThingTypePropertiesOutputReference)SetInternalValue(val *IotThingTypeProperties) {
+func (j *jsiiProxy_IotThingTypePropertiesOutputReference) SetInternalValue(val *IotThingTypeProperties) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_IotThingTypePropertiesOutputReference)SetInternalValue(val *I
 	)
 }
 
-func (j *jsiiProxy_IotThingTypePropertiesOutputReference)SetSearchableAttributes(val *[]*string) {
+func (j *jsiiProxy_IotThingTypePropertiesOutputReference) SetSearchableAttributes(val *[]*string) {
 	if err := j.validateSetSearchableAttributesParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_IotThingTypePropertiesOutputReference)SetSearchableAttributes
 	)
 }
 
-func (j *jsiiProxy_IotThingTypePropertiesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IotThingTypePropertiesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_IotThingTypePropertiesOutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_IotThingTypePropertiesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IotThingTypePropertiesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (i *jsiiProxy_IotThingTypePropertiesOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (i *jsiiProxy_IotThingTypePropertiesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IotThingTypePropertiesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (i *jsiiProxy_IotThingTypePropertiesOutputReference) GetBooleanAttribute(te
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (i *jsiiProxy_IotThingTypePropertiesOutputReference) GetBooleanMapAttribute
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (i *jsiiProxy_IotThingTypePropertiesOutputReference) GetListAttribute(terra
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (i *jsiiProxy_IotThingTypePropertiesOutputReference) GetNumberAttribute(ter
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (i *jsiiProxy_IotThingTypePropertiesOutputReference) GetNumberListAttribute
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (i *jsiiProxy_IotThingTypePropertiesOutputReference) GetNumberMapAttribute(
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (i *jsiiProxy_IotThingTypePropertiesOutputReference) GetStringAttribute(ter
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (i *jsiiProxy_IotThingTypePropertiesOutputReference) GetStringMapAttribute(
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (i *jsiiProxy_IotThingTypePropertiesOutputReference) InterpolationForAttrib
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (i *jsiiProxy_IotThingTypePropertiesOutputReference) ResetSearchableAttribu
 	)
 }
 
-func (i *jsiiProxy_IotThingTypePropertiesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IotThingTypePropertiesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (i *jsiiProxy_IotThingTypePropertiesOutputReference) ToString() *string {
 
 	return returns
 }
-

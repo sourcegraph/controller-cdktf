@@ -98,7 +98,7 @@ func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewFmsPolicySecurityServicePolicyDataOutputReferenceParameters(terr
 
 	return nil
 }
-

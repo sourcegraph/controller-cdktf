@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsImagebuilderImageRecipeBlockDeviceMappingEbsOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsImagebuilderImageRecipeBlockDeviceMappingEbsOutputReferen
 
 	return nil
 }
-

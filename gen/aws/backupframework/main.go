@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.backupFramework.BackupFramework",
-		reflect.TypeOf((*BackupFramework)(nil)).Elem(),
+		reflect.TypeFor[BackupFramework](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BackupFramework{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,19 +86,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.backupFramework.BackupFrameworkConfig",
-		reflect.TypeOf((*BackupFrameworkConfig)(nil)).Elem(),
+		reflect.TypeFor[BackupFrameworkConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.backupFramework.BackupFrameworkControl",
-		reflect.TypeOf((*BackupFrameworkControl)(nil)).Elem(),
+		reflect.TypeFor[BackupFrameworkControl](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.backupFramework.BackupFrameworkControlInputParameter",
-		reflect.TypeOf((*BackupFrameworkControlInputParameter)(nil)).Elem(),
+		reflect.TypeFor[BackupFrameworkControlInputParameter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.backupFramework.BackupFrameworkControlInputParameterList",
-		reflect.TypeOf((*BackupFrameworkControlInputParameterList)(nil)).Elem(),
+		reflect.TypeFor[BackupFrameworkControlInputParameterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -112,7 +112,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BackupFrameworkControlInputParameterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -120,7 +120,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.backupFramework.BackupFrameworkControlInputParameterOutputReference",
-		reflect.TypeOf((*BackupFrameworkControlInputParameterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BackupFrameworkControlInputParameterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -150,7 +150,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BackupFrameworkControlInputParameterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -158,7 +158,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.backupFramework.BackupFrameworkControlList",
-		reflect.TypeOf((*BackupFrameworkControlList)(nil)).Elem(),
+		reflect.TypeFor[BackupFrameworkControlList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -172,7 +172,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BackupFrameworkControlList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -180,7 +180,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.backupFramework.BackupFrameworkControlOutputReference",
-		reflect.TypeOf((*BackupFrameworkControlOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BackupFrameworkControlOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -214,7 +214,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BackupFrameworkControlOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -222,11 +222,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.backupFramework.BackupFrameworkControlScope",
-		reflect.TypeOf((*BackupFrameworkControlScope)(nil)).Elem(),
+		reflect.TypeFor[BackupFrameworkControlScope](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.backupFramework.BackupFrameworkControlScopeOutputReference",
-		reflect.TypeOf((*BackupFrameworkControlScopeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BackupFrameworkControlScopeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -259,7 +259,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BackupFrameworkControlScopeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -267,11 +267,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.backupFramework.BackupFrameworkTimeouts",
-		reflect.TypeOf((*BackupFrameworkTimeouts)(nil)).Elem(),
+		reflect.TypeFor[BackupFrameworkTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.backupFramework.BackupFrameworkTimeoutsOutputReference",
-		reflect.TypeOf((*BackupFrameworkTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BackupFrameworkTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -304,7 +304,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BackupFrameworkTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

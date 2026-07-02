@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appconfigConfigurationProfile.AppconfigConfigurationProfile",
-		reflect.TypeOf((*AppconfigConfigurationProfile)(nil)).Elem(),
+		reflect.TypeFor[AppconfigConfigurationProfile](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -83,7 +83,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "validator", GoGetter: "Validator"},
 			_jsii_.MemberProperty{JsiiProperty: "validatorInput", GoGetter: "ValidatorInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppconfigConfigurationProfile{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -91,15 +91,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appconfigConfigurationProfile.AppconfigConfigurationProfileConfig",
-		reflect.TypeOf((*AppconfigConfigurationProfileConfig)(nil)).Elem(),
+		reflect.TypeFor[AppconfigConfigurationProfileConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appconfigConfigurationProfile.AppconfigConfigurationProfileValidator",
-		reflect.TypeOf((*AppconfigConfigurationProfileValidator)(nil)).Elem(),
+		reflect.TypeFor[AppconfigConfigurationProfileValidator](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appconfigConfigurationProfile.AppconfigConfigurationProfileValidatorList",
-		reflect.TypeOf((*AppconfigConfigurationProfileValidatorList)(nil)).Elem(),
+		reflect.TypeFor[AppconfigConfigurationProfileValidatorList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -113,7 +113,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppconfigConfigurationProfileValidatorList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -121,7 +121,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appconfigConfigurationProfile.AppconfigConfigurationProfileValidatorOutputReference",
-		reflect.TypeOf((*AppconfigConfigurationProfileValidatorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppconfigConfigurationProfileValidatorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -150,7 +150,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppconfigConfigurationProfileValidatorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

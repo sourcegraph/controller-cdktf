@@ -16,15 +16,15 @@ type WafregionalRule interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,17 +53,17 @@ type WafregionalRule interface {
 	// The tree node.
 	Node() constructs.Node
 	Predicate() WafregionalRulePredicateList
-	PredicateInput() interface{}
+	PredicateInput() any
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -73,16 +73,16 @@ type WafregionalRule interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,7 +100,7 @@ type WafregionalRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -112,14 +112,14 @@ type WafregionalRule interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutPredicate(value interface{})
+	PutPredicate(value any)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -127,17 +127,17 @@ type WafregionalRule interface {
 	ResetPredicate()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for WafregionalRule
@@ -165,8 +165,8 @@ func (j *jsiiProxy_WafregionalRule) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_WafregionalRule) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WafregionalRule) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -175,8 +175,8 @@ func (j *jsiiProxy_WafregionalRule) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WafregionalRule) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_WafregionalRule) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -185,8 +185,8 @@ func (j *jsiiProxy_WafregionalRule) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_WafregionalRule) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WafregionalRule) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -325,8 +325,8 @@ func (j *jsiiProxy_WafregionalRule) Predicate() WafregionalRulePredicateList {
 	return returns
 }
 
-func (j *jsiiProxy_WafregionalRule) PredicateInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WafregionalRule) PredicateInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"predicateInput",
@@ -345,8 +345,8 @@ func (j *jsiiProxy_WafregionalRule) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_WafregionalRule) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_WafregionalRule) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -355,8 +355,8 @@ func (j *jsiiProxy_WafregionalRule) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WafregionalRule) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WafregionalRule) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -415,8 +415,8 @@ func (j *jsiiProxy_WafregionalRule) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_WafregionalRule) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_WafregionalRule) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -435,7 +435,6 @@ func (j *jsiiProxy_WafregionalRule) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/wafregional_rule aws_wafregional_rule} Resource.
 func NewWafregionalRule(scope constructs.Construct, id *string, config *WafregionalRuleConfig) WafregionalRule {
 	_init_.Initialize()
@@ -447,7 +446,7 @@ func NewWafregionalRule(scope constructs.Construct, id *string, config *Wafregio
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.wafregionalRule.WafregionalRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -460,12 +459,12 @@ func NewWafregionalRule_Override(w WafregionalRule, scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.wafregionalRule.WafregionalRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WafregionalRule)SetConnection(val interface{}) {
+func (j *jsiiProxy_WafregionalRule) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_WafregionalRule)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WafregionalRule)SetCount(val interface{}) {
+func (j *jsiiProxy_WafregionalRule) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_WafregionalRule)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WafregionalRule)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_WafregionalRule) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -495,7 +494,7 @@ func (j *jsiiProxy_WafregionalRule)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_WafregionalRule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_WafregionalRule) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -503,7 +502,7 @@ func (j *jsiiProxy_WafregionalRule)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_WafregionalRule)SetId(val *string) {
+func (j *jsiiProxy_WafregionalRule) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -514,7 +513,7 @@ func (j *jsiiProxy_WafregionalRule)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WafregionalRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_WafregionalRule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -525,7 +524,7 @@ func (j *jsiiProxy_WafregionalRule)SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_WafregionalRule)SetMetricName(val *string) {
+func (j *jsiiProxy_WafregionalRule) SetMetricName(val *string) {
 	if err := j.validateSetMetricNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -536,7 +535,7 @@ func (j *jsiiProxy_WafregionalRule)SetMetricName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WafregionalRule)SetName(val *string) {
+func (j *jsiiProxy_WafregionalRule) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_WafregionalRule)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WafregionalRule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_WafregionalRule) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -555,7 +554,7 @@ func (j *jsiiProxy_WafregionalRule)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_WafregionalRule)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_WafregionalRule) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -566,7 +565,7 @@ func (j *jsiiProxy_WafregionalRule)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WafregionalRule)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_WafregionalRule) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -577,7 +576,7 @@ func (j *jsiiProxy_WafregionalRule)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_WafregionalRule)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_WafregionalRule) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -600,7 +599,7 @@ func WafregionalRule_GenerateConfigForImport(scope constructs.Construct, importT
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.wafregionalRule.WafregionalRule",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -624,7 +623,7 @@ func WafregionalRule_GenerateConfigForImport(scope constructs.Construct, importT
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func WafregionalRule_IsConstruct(x interface{}) *bool {
+func WafregionalRule_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWafregionalRule_IsConstructParameters(x); err != nil {
@@ -635,7 +634,7 @@ func WafregionalRule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.wafregionalRule.WafregionalRule",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -643,7 +642,7 @@ func WafregionalRule_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func WafregionalRule_IsTerraformElement(x interface{}) *bool {
+func WafregionalRule_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWafregionalRule_IsTerraformElementParameters(x); err != nil {
@@ -654,7 +653,7 @@ func WafregionalRule_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.wafregionalRule.WafregionalRule",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func WafregionalRule_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func WafregionalRule_IsTerraformResource(x interface{}) *bool {
+func WafregionalRule_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWafregionalRule_IsTerraformResourceParameters(x); err != nil {
@@ -673,7 +672,7 @@ func WafregionalRule_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.wafregionalRule.WafregionalRule",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -698,31 +697,31 @@ func (w *jsiiProxy_WafregionalRule) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (w *jsiiProxy_WafregionalRule) AddOverride(path *string, value interface{}) {
+func (w *jsiiProxy_WafregionalRule) AddOverride(path *string, value any) {
 	if err := w.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (w *jsiiProxy_WafregionalRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WafregionalRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -738,7 +737,7 @@ func (w *jsiiProxy_WafregionalRule) GetBooleanAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -754,7 +753,7 @@ func (w *jsiiProxy_WafregionalRule) GetBooleanMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -770,7 +769,7 @@ func (w *jsiiProxy_WafregionalRule) GetListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -786,7 +785,7 @@ func (w *jsiiProxy_WafregionalRule) GetNumberAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -802,7 +801,7 @@ func (w *jsiiProxy_WafregionalRule) GetNumberListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -818,7 +817,7 @@ func (w *jsiiProxy_WafregionalRule) GetNumberMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -834,7 +833,7 @@ func (w *jsiiProxy_WafregionalRule) GetStringAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -850,15 +849,15 @@ func (w *jsiiProxy_WafregionalRule) GetStringMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_WafregionalRule) HasResourceMove() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WafregionalRule) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -877,7 +876,7 @@ func (w *jsiiProxy_WafregionalRule) ImportFrom(id *string, provider cdktf.Terraf
 	_jsii_.InvokeVoid(
 		w,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -890,7 +889,7 @@ func (w *jsiiProxy_WafregionalRule) InterpolationForAttribute(terraformAttribute
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -904,18 +903,18 @@ func (w *jsiiProxy_WafregionalRule) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (w *jsiiProxy_WafregionalRule) MoveTo(moveTarget *string, index interface{}) {
+func (w *jsiiProxy_WafregionalRule) MoveTo(moveTarget *string, index any) {
 	if err := w.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -926,7 +925,7 @@ func (w *jsiiProxy_WafregionalRule) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -937,18 +936,18 @@ func (w *jsiiProxy_WafregionalRule) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (w *jsiiProxy_WafregionalRule) PutPredicate(value interface{}) {
+func (w *jsiiProxy_WafregionalRule) PutPredicate(value any) {
 	if err := w.validatePutPredicateParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"putPredicate",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -992,8 +991,8 @@ func (w *jsiiProxy_WafregionalRule) ResetTagsAll() {
 	)
 }
 
-func (w *jsiiProxy_WafregionalRule) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_WafregionalRule) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -1005,8 +1004,8 @@ func (w *jsiiProxy_WafregionalRule) SynthesizeAttributes() *map[string]interface
 	return returns
 }
 
-func (w *jsiiProxy_WafregionalRule) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_WafregionalRule) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -1018,8 +1017,8 @@ func (w *jsiiProxy_WafregionalRule) SynthesizeHclAttributes() *map[string]interf
 	return returns
 }
 
-func (w *jsiiProxy_WafregionalRule) ToHclTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WafregionalRule) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -1031,8 +1030,8 @@ func (w *jsiiProxy_WafregionalRule) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (w *jsiiProxy_WafregionalRule) ToMetadata() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WafregionalRule) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -1057,8 +1056,8 @@ func (w *jsiiProxy_WafregionalRule) ToString() *string {
 	return returns
 }
 
-func (w *jsiiProxy_WafregionalRule) ToTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WafregionalRule) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -1069,4 +1068,3 @@ func (w *jsiiProxy_WafregionalRule) ToTerraform() interface{} {
 
 	return returns
 }
-

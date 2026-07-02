@@ -16,15 +16,15 @@ type RedshiftHsmConfiguration interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -69,11 +69,11 @@ type RedshiftHsmConfiguration interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -83,16 +83,16 @@ type RedshiftHsmConfiguration interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -110,7 +110,7 @@ type RedshiftHsmConfiguration interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -122,7 +122,7 @@ type RedshiftHsmConfiguration interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -135,17 +135,17 @@ type RedshiftHsmConfiguration interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for RedshiftHsmConfiguration
@@ -173,8 +173,8 @@ func (j *jsiiProxy_RedshiftHsmConfiguration) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftHsmConfiguration) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftHsmConfiguration) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -183,8 +183,8 @@ func (j *jsiiProxy_RedshiftHsmConfiguration) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftHsmConfiguration) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RedshiftHsmConfiguration) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -193,8 +193,8 @@ func (j *jsiiProxy_RedshiftHsmConfiguration) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftHsmConfiguration) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftHsmConfiguration) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -413,8 +413,8 @@ func (j *jsiiProxy_RedshiftHsmConfiguration) Provider() cdktf.TerraformProvider 
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftHsmConfiguration) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_RedshiftHsmConfiguration) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -423,8 +423,8 @@ func (j *jsiiProxy_RedshiftHsmConfiguration) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftHsmConfiguration) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftHsmConfiguration) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -483,8 +483,8 @@ func (j *jsiiProxy_RedshiftHsmConfiguration) TerraformGeneratorMetadata() *cdktf
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftHsmConfiguration) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RedshiftHsmConfiguration) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -503,7 +503,6 @@ func (j *jsiiProxy_RedshiftHsmConfiguration) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/redshift_hsm_configuration aws_redshift_hsm_configuration} Resource.
 func NewRedshiftHsmConfiguration(scope constructs.Construct, id *string, config *RedshiftHsmConfigurationConfig) RedshiftHsmConfiguration {
 	_init_.Initialize()
@@ -515,7 +514,7 @@ func NewRedshiftHsmConfiguration(scope constructs.Construct, id *string, config 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfiguration",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -528,12 +527,12 @@ func NewRedshiftHsmConfiguration_Override(r RedshiftHsmConfiguration, scope cons
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfiguration",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RedshiftHsmConfiguration)SetConnection(val interface{}) {
+func (j *jsiiProxy_RedshiftHsmConfiguration) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -544,7 +543,7 @@ func (j *jsiiProxy_RedshiftHsmConfiguration)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftHsmConfiguration)SetCount(val interface{}) {
+func (j *jsiiProxy_RedshiftHsmConfiguration) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -555,7 +554,7 @@ func (j *jsiiProxy_RedshiftHsmConfiguration)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftHsmConfiguration)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_RedshiftHsmConfiguration) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -563,7 +562,7 @@ func (j *jsiiProxy_RedshiftHsmConfiguration)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftHsmConfiguration)SetDescription(val *string) {
+func (j *jsiiProxy_RedshiftHsmConfiguration) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -574,7 +573,7 @@ func (j *jsiiProxy_RedshiftHsmConfiguration)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftHsmConfiguration)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_RedshiftHsmConfiguration) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -582,7 +581,7 @@ func (j *jsiiProxy_RedshiftHsmConfiguration)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_RedshiftHsmConfiguration)SetHsmConfigurationIdentifier(val *string) {
+func (j *jsiiProxy_RedshiftHsmConfiguration) SetHsmConfigurationIdentifier(val *string) {
 	if err := j.validateSetHsmConfigurationIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -593,7 +592,7 @@ func (j *jsiiProxy_RedshiftHsmConfiguration)SetHsmConfigurationIdentifier(val *s
 	)
 }
 
-func (j *jsiiProxy_RedshiftHsmConfiguration)SetHsmIpAddress(val *string) {
+func (j *jsiiProxy_RedshiftHsmConfiguration) SetHsmIpAddress(val *string) {
 	if err := j.validateSetHsmIpAddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -604,7 +603,7 @@ func (j *jsiiProxy_RedshiftHsmConfiguration)SetHsmIpAddress(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftHsmConfiguration)SetHsmPartitionName(val *string) {
+func (j *jsiiProxy_RedshiftHsmConfiguration) SetHsmPartitionName(val *string) {
 	if err := j.validateSetHsmPartitionNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -615,7 +614,7 @@ func (j *jsiiProxy_RedshiftHsmConfiguration)SetHsmPartitionName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftHsmConfiguration)SetHsmPartitionPassword(val *string) {
+func (j *jsiiProxy_RedshiftHsmConfiguration) SetHsmPartitionPassword(val *string) {
 	if err := j.validateSetHsmPartitionPasswordParameters(val); err != nil {
 		panic(err)
 	}
@@ -626,7 +625,7 @@ func (j *jsiiProxy_RedshiftHsmConfiguration)SetHsmPartitionPassword(val *string)
 	)
 }
 
-func (j *jsiiProxy_RedshiftHsmConfiguration)SetHsmServerPublicCertificate(val *string) {
+func (j *jsiiProxy_RedshiftHsmConfiguration) SetHsmServerPublicCertificate(val *string) {
 	if err := j.validateSetHsmServerPublicCertificateParameters(val); err != nil {
 		panic(err)
 	}
@@ -637,7 +636,7 @@ func (j *jsiiProxy_RedshiftHsmConfiguration)SetHsmServerPublicCertificate(val *s
 	)
 }
 
-func (j *jsiiProxy_RedshiftHsmConfiguration)SetId(val *string) {
+func (j *jsiiProxy_RedshiftHsmConfiguration) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -648,7 +647,7 @@ func (j *jsiiProxy_RedshiftHsmConfiguration)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftHsmConfiguration)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_RedshiftHsmConfiguration) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -659,7 +658,7 @@ func (j *jsiiProxy_RedshiftHsmConfiguration)SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_RedshiftHsmConfiguration)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_RedshiftHsmConfiguration) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -667,7 +666,7 @@ func (j *jsiiProxy_RedshiftHsmConfiguration)SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_RedshiftHsmConfiguration)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_RedshiftHsmConfiguration) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -678,7 +677,7 @@ func (j *jsiiProxy_RedshiftHsmConfiguration)SetProvisioners(val *[]interface{}) 
 	)
 }
 
-func (j *jsiiProxy_RedshiftHsmConfiguration)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_RedshiftHsmConfiguration) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -689,7 +688,7 @@ func (j *jsiiProxy_RedshiftHsmConfiguration)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftHsmConfiguration)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_RedshiftHsmConfiguration) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -712,7 +711,7 @@ func RedshiftHsmConfiguration_GenerateConfigForImport(scope constructs.Construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfiguration",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -736,7 +735,7 @@ func RedshiftHsmConfiguration_GenerateConfigForImport(scope constructs.Construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func RedshiftHsmConfiguration_IsConstruct(x interface{}) *bool {
+func RedshiftHsmConfiguration_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRedshiftHsmConfiguration_IsConstructParameters(x); err != nil {
@@ -747,7 +746,7 @@ func RedshiftHsmConfiguration_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfiguration",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -755,7 +754,7 @@ func RedshiftHsmConfiguration_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func RedshiftHsmConfiguration_IsTerraformElement(x interface{}) *bool {
+func RedshiftHsmConfiguration_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRedshiftHsmConfiguration_IsTerraformElementParameters(x); err != nil {
@@ -766,7 +765,7 @@ func RedshiftHsmConfiguration_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfiguration",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -774,7 +773,7 @@ func RedshiftHsmConfiguration_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func RedshiftHsmConfiguration_IsTerraformResource(x interface{}) *bool {
+func RedshiftHsmConfiguration_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRedshiftHsmConfiguration_IsTerraformResourceParameters(x); err != nil {
@@ -785,7 +784,7 @@ func RedshiftHsmConfiguration_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfiguration",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -810,31 +809,31 @@ func (r *jsiiProxy_RedshiftHsmConfiguration) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (r *jsiiProxy_RedshiftHsmConfiguration) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_RedshiftHsmConfiguration) AddOverride(path *string, value any) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (r *jsiiProxy_RedshiftHsmConfiguration) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RedshiftHsmConfiguration) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -850,7 +849,7 @@ func (r *jsiiProxy_RedshiftHsmConfiguration) GetBooleanAttribute(terraformAttrib
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -866,7 +865,7 @@ func (r *jsiiProxy_RedshiftHsmConfiguration) GetBooleanMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -882,7 +881,7 @@ func (r *jsiiProxy_RedshiftHsmConfiguration) GetListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -898,7 +897,7 @@ func (r *jsiiProxy_RedshiftHsmConfiguration) GetNumberAttribute(terraformAttribu
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -914,7 +913,7 @@ func (r *jsiiProxy_RedshiftHsmConfiguration) GetNumberListAttribute(terraformAtt
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -930,7 +929,7 @@ func (r *jsiiProxy_RedshiftHsmConfiguration) GetNumberMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -946,7 +945,7 @@ func (r *jsiiProxy_RedshiftHsmConfiguration) GetStringAttribute(terraformAttribu
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -962,15 +961,15 @@ func (r *jsiiProxy_RedshiftHsmConfiguration) GetStringMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftHsmConfiguration) HasResourceMove() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RedshiftHsmConfiguration) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -989,7 +988,7 @@ func (r *jsiiProxy_RedshiftHsmConfiguration) ImportFrom(id *string, provider cdk
 	_jsii_.InvokeVoid(
 		r,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1002,7 +1001,7 @@ func (r *jsiiProxy_RedshiftHsmConfiguration) InterpolationForAttribute(terraform
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1016,18 +1015,18 @@ func (r *jsiiProxy_RedshiftHsmConfiguration) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (r *jsiiProxy_RedshiftHsmConfiguration) MoveTo(moveTarget *string, index interface{}) {
+func (r *jsiiProxy_RedshiftHsmConfiguration) MoveTo(moveTarget *string, index any) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1038,7 +1037,7 @@ func (r *jsiiProxy_RedshiftHsmConfiguration) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1049,7 +1048,7 @@ func (r *jsiiProxy_RedshiftHsmConfiguration) OverrideLogicalId(newLogicalId *str
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1085,8 +1084,8 @@ func (r *jsiiProxy_RedshiftHsmConfiguration) ResetTagsAll() {
 	)
 }
 
-func (r *jsiiProxy_RedshiftHsmConfiguration) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RedshiftHsmConfiguration) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1098,8 +1097,8 @@ func (r *jsiiProxy_RedshiftHsmConfiguration) SynthesizeAttributes() *map[string]
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftHsmConfiguration) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RedshiftHsmConfiguration) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1111,8 +1110,8 @@ func (r *jsiiProxy_RedshiftHsmConfiguration) SynthesizeHclAttributes() *map[stri
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftHsmConfiguration) ToHclTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RedshiftHsmConfiguration) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1124,8 +1123,8 @@ func (r *jsiiProxy_RedshiftHsmConfiguration) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftHsmConfiguration) ToMetadata() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RedshiftHsmConfiguration) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1150,8 +1149,8 @@ func (r *jsiiProxy_RedshiftHsmConfiguration) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftHsmConfiguration) ToTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RedshiftHsmConfiguration) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1162,4 +1161,3 @@ func (r *jsiiProxy_RedshiftHsmConfiguration) ToTerraform() interface{} {
 
 	return returns
 }
-

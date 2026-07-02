@@ -19,7 +19,7 @@ func (w *jsiiProxy_Wafv2WebAclLoggingConfiguration) validateAddMoveTargetParamet
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclLoggingConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
+func (w *jsiiProxy_Wafv2WebAclLoggingConfiguration) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (w *jsiiProxy_Wafv2WebAclLoggingConfiguration) validateMoveFromIdParameters
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclLoggingConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (w *jsiiProxy_Wafv2WebAclLoggingConfiguration) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (w *jsiiProxy_Wafv2WebAclLoggingConfiguration) validatePutLoggingFilterPara
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclLoggingConfiguration) validatePutRedactedFieldsParameters(value interface{}) error {
+func (w *jsiiProxy_Wafv2WebAclLoggingConfiguration) validatePutRedactedFieldsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateWafv2WebAclLoggingConfiguration_GenerateConfigForImportParameters(s
 	return nil
 }
 
-func validateWafv2WebAclLoggingConfiguration_IsConstructParameters(x interface{}) error {
+func validateWafv2WebAclLoggingConfiguration_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateWafv2WebAclLoggingConfiguration_IsConstructParameters(x interface{}
 	return nil
 }
 
-func validateWafv2WebAclLoggingConfiguration_IsTerraformElementParameters(x interface{}) error {
+func validateWafv2WebAclLoggingConfiguration_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateWafv2WebAclLoggingConfiguration_IsTerraformElementParameters(x inte
 	return nil
 }
 
-func validateWafv2WebAclLoggingConfiguration_IsTerraformResourceParameters(x interface{}) error {
+func validateWafv2WebAclLoggingConfiguration_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateWafv2WebAclLoggingConfiguration_IsTerraformResourceParameters(x int
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2WebAclLoggingConfiguration) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Wafv2WebAclLoggingConfiguration) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -319,7 +319,7 @@ func (j *jsiiProxy_Wafv2WebAclLoggingConfiguration) validateSetConnectionParamet
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2WebAclLoggingConfiguration) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Wafv2WebAclLoggingConfiguration) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -400,7 +400,7 @@ func (j *jsiiProxy_Wafv2WebAclLoggingConfiguration) validateSetLogDestinationCon
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2WebAclLoggingConfiguration) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Wafv2WebAclLoggingConfiguration) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -472,4 +472,3 @@ func validateNewWafv2WebAclLoggingConfigurationParameters(scope constructs.Const
 
 	return nil
 }
-

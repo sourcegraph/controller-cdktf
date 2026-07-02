@@ -6,9 +6,9 @@ import (
 
 type SpotInstanceRequestConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,11 +18,11 @@ type SpotInstanceRequestConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_instance_request#ami SpotInstanceRequest#ami}.
 	Ami *string `field:"optional" json:"ami" yaml:"ami"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_instance_request#associate_public_ip_address SpotInstanceRequest#associate_public_ip_address}.
-	AssociatePublicIpAddress interface{} `field:"optional" json:"associatePublicIpAddress" yaml:"associatePublicIpAddress"`
+	AssociatePublicIpAddress any `field:"optional" json:"associatePublicIpAddress" yaml:"associatePublicIpAddress"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_instance_request#availability_zone SpotInstanceRequest#availability_zone}.
 	AvailabilityZone *string `field:"optional" json:"availabilityZone" yaml:"availabilityZone"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_instance_request#block_duration_minutes SpotInstanceRequest#block_duration_minutes}.
@@ -40,15 +40,15 @@ type SpotInstanceRequestConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_instance_request#credit_specification SpotInstanceRequest#credit_specification}
 	CreditSpecification *SpotInstanceRequestCreditSpecification `field:"optional" json:"creditSpecification" yaml:"creditSpecification"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_instance_request#disable_api_stop SpotInstanceRequest#disable_api_stop}.
-	DisableApiStop interface{} `field:"optional" json:"disableApiStop" yaml:"disableApiStop"`
+	DisableApiStop any `field:"optional" json:"disableApiStop" yaml:"disableApiStop"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_instance_request#disable_api_termination SpotInstanceRequest#disable_api_termination}.
-	DisableApiTermination interface{} `field:"optional" json:"disableApiTermination" yaml:"disableApiTermination"`
+	DisableApiTermination any `field:"optional" json:"disableApiTermination" yaml:"disableApiTermination"`
 	// ebs_block_device block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_instance_request#ebs_block_device SpotInstanceRequest#ebs_block_device}
-	EbsBlockDevice interface{} `field:"optional" json:"ebsBlockDevice" yaml:"ebsBlockDevice"`
+	EbsBlockDevice any `field:"optional" json:"ebsBlockDevice" yaml:"ebsBlockDevice"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_instance_request#ebs_optimized SpotInstanceRequest#ebs_optimized}.
-	EbsOptimized interface{} `field:"optional" json:"ebsOptimized" yaml:"ebsOptimized"`
+	EbsOptimized any `field:"optional" json:"ebsOptimized" yaml:"ebsOptimized"`
 	// enclave_options block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_instance_request#enclave_options SpotInstanceRequest#enclave_options}
@@ -56,11 +56,11 @@ type SpotInstanceRequestConfig struct {
 	// ephemeral_block_device block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_instance_request#ephemeral_block_device SpotInstanceRequest#ephemeral_block_device}
-	EphemeralBlockDevice interface{} `field:"optional" json:"ephemeralBlockDevice" yaml:"ephemeralBlockDevice"`
+	EphemeralBlockDevice any `field:"optional" json:"ephemeralBlockDevice" yaml:"ephemeralBlockDevice"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_instance_request#get_password_data SpotInstanceRequest#get_password_data}.
-	FetchPasswordData interface{} `field:"optional" json:"fetchPasswordData" yaml:"fetchPasswordData"`
+	FetchPasswordData any `field:"optional" json:"fetchPasswordData" yaml:"fetchPasswordData"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_instance_request#hibernation SpotInstanceRequest#hibernation}.
-	Hibernation interface{} `field:"optional" json:"hibernation" yaml:"hibernation"`
+	Hibernation any `field:"optional" json:"hibernation" yaml:"hibernation"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_instance_request#host_id SpotInstanceRequest#host_id}.
 	HostId *string `field:"optional" json:"hostId" yaml:"hostId"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_instance_request#host_resource_group_arn SpotInstanceRequest#host_resource_group_arn}.
@@ -99,11 +99,11 @@ type SpotInstanceRequestConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_instance_request#metadata_options SpotInstanceRequest#metadata_options}
 	MetadataOptions *SpotInstanceRequestMetadataOptions `field:"optional" json:"metadataOptions" yaml:"metadataOptions"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_instance_request#monitoring SpotInstanceRequest#monitoring}.
-	Monitoring interface{} `field:"optional" json:"monitoring" yaml:"monitoring"`
+	Monitoring any `field:"optional" json:"monitoring" yaml:"monitoring"`
 	// network_interface block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_instance_request#network_interface SpotInstanceRequest#network_interface}
-	NetworkInterface interface{} `field:"optional" json:"networkInterface" yaml:"networkInterface"`
+	NetworkInterface any `field:"optional" json:"networkInterface" yaml:"networkInterface"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_instance_request#placement_group SpotInstanceRequest#placement_group}.
 	PlacementGroup *string `field:"optional" json:"placementGroup" yaml:"placementGroup"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_instance_request#placement_partition_number SpotInstanceRequest#placement_partition_number}.
@@ -123,7 +123,7 @@ type SpotInstanceRequestConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_instance_request#security_groups SpotInstanceRequest#security_groups}.
 	SecurityGroups *[]*string `field:"optional" json:"securityGroups" yaml:"securityGroups"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_instance_request#source_dest_check SpotInstanceRequest#source_dest_check}.
-	SourceDestCheck interface{} `field:"optional" json:"sourceDestCheck" yaml:"sourceDestCheck"`
+	SourceDestCheck any `field:"optional" json:"sourceDestCheck" yaml:"sourceDestCheck"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_instance_request#spot_price SpotInstanceRequest#spot_price}.
 	SpotPrice *string `field:"optional" json:"spotPrice" yaml:"spotPrice"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_instance_request#spot_type SpotInstanceRequest#spot_type}.
@@ -145,7 +145,7 @@ type SpotInstanceRequestConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_instance_request#user_data_base64 SpotInstanceRequest#user_data_base64}.
 	UserDataBase64 *string `field:"optional" json:"userDataBase64" yaml:"userDataBase64"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_instance_request#user_data_replace_on_change SpotInstanceRequest#user_data_replace_on_change}.
-	UserDataReplaceOnChange interface{} `field:"optional" json:"userDataReplaceOnChange" yaml:"userDataReplaceOnChange"`
+	UserDataReplaceOnChange any `field:"optional" json:"userDataReplaceOnChange" yaml:"userDataReplaceOnChange"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_instance_request#valid_from SpotInstanceRequest#valid_from}.
 	ValidFrom *string `field:"optional" json:"validFrom" yaml:"validFrom"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_instance_request#valid_until SpotInstanceRequest#valid_until}.
@@ -155,6 +155,5 @@ type SpotInstanceRequestConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_instance_request#vpc_security_group_ids SpotInstanceRequest#vpc_security_group_ids}.
 	VpcSecurityGroupIds *[]*string `field:"optional" json:"vpcSecurityGroupIds" yaml:"vpcSecurityGroupIds"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_instance_request#wait_for_fulfillment SpotInstanceRequest#wait_for_fulfillment}.
-	WaitForFulfillment interface{} `field:"optional" json:"waitForFulfillment" yaml:"waitForFulfillment"`
+	WaitForFulfillment any `field:"optional" json:"waitForFulfillment" yaml:"waitForFulfillment"`
 }
-

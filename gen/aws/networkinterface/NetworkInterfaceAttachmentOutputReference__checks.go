@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkInterfaceAttachmentOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_NetworkInterfaceAttachmentOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkInterfaceAttachmentOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_NetworkInterfaceAttachmentOutputReference) validateSetInstanc
 	return nil
 }
 
-func (j *jsiiProxy_NetworkInterfaceAttachmentOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkInterfaceAttachmentOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewNetworkInterfaceAttachmentOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

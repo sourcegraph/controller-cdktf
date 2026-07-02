@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsConnectBotAssociation.DataAwsConnectBotAssociation",
-		reflect.TypeOf((*DataAwsConnectBotAssociation)(nil)).Elem(),
+		reflect.TypeFor[DataAwsConnectBotAssociation](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -53,7 +53,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsConnectBotAssociation{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -61,15 +61,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsConnectBotAssociation.DataAwsConnectBotAssociationConfig",
-		reflect.TypeOf((*DataAwsConnectBotAssociationConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsConnectBotAssociationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsConnectBotAssociation.DataAwsConnectBotAssociationLexBot",
-		reflect.TypeOf((*DataAwsConnectBotAssociationLexBot)(nil)).Elem(),
+		reflect.TypeFor[DataAwsConnectBotAssociationLexBot](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsConnectBotAssociation.DataAwsConnectBotAssociationLexBotOutputReference",
-		reflect.TypeOf((*DataAwsConnectBotAssociationLexBotOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsConnectBotAssociationLexBotOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -98,7 +98,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsConnectBotAssociationLexBotOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

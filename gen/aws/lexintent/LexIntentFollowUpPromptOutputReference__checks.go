@@ -120,7 +120,7 @@ func (l *jsiiProxy_LexIntentFollowUpPromptOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_LexIntentFollowUpPromptOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LexIntentFollowUpPromptOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewLexIntentFollowUpPromptOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

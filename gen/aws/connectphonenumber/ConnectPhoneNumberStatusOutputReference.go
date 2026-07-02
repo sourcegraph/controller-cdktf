@@ -12,9 +12,9 @@ type ConnectPhoneNumberStatusOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -42,7 +42,7 @@ type ConnectPhoneNumberStatusOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -65,7 +65,7 @@ type ConnectPhoneNumberStatusOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -78,8 +78,8 @@ type jsiiProxy_ConnectPhoneNumberStatusOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ConnectPhoneNumberStatusOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConnectPhoneNumberStatusOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,7 +168,6 @@ func (j *jsiiProxy_ConnectPhoneNumberStatusOutputReference) TerraformResource() 
 	return returns
 }
 
-
 func NewConnectPhoneNumberStatusOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ConnectPhoneNumberStatusOutputReference {
 	_init_.Initialize()
 
@@ -179,7 +178,7 @@ func NewConnectPhoneNumberStatusOutputReference(terraformResource cdktf.IInterpo
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.connectPhoneNumber.ConnectPhoneNumberStatusOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -191,12 +190,12 @@ func NewConnectPhoneNumberStatusOutputReference_Override(c ConnectPhoneNumberSta
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.connectPhoneNumber.ConnectPhoneNumberStatusOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ConnectPhoneNumberStatusOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ConnectPhoneNumberStatusOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -207,7 +206,7 @@ func (j *jsiiProxy_ConnectPhoneNumberStatusOutputReference)SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_ConnectPhoneNumberStatusOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ConnectPhoneNumberStatusOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -218,7 +217,7 @@ func (j *jsiiProxy_ConnectPhoneNumberStatusOutputReference)SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_ConnectPhoneNumberStatusOutputReference)SetInternalValue(val *ConnectPhoneNumberStatus) {
+func (j *jsiiProxy_ConnectPhoneNumberStatusOutputReference) SetInternalValue(val *ConnectPhoneNumberStatus) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -229,7 +228,7 @@ func (j *jsiiProxy_ConnectPhoneNumberStatusOutputReference)SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_ConnectPhoneNumberStatusOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ConnectPhoneNumberStatusOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -240,7 +239,7 @@ func (j *jsiiProxy_ConnectPhoneNumberStatusOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_ConnectPhoneNumberStatusOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ConnectPhoneNumberStatusOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,16 +263,16 @@ func (c *jsiiProxy_ConnectPhoneNumberStatusOutputReference) ComputeFqn() *string
 	return returns
 }
 
-func (c *jsiiProxy_ConnectPhoneNumberStatusOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ConnectPhoneNumberStatusOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -289,7 +288,7 @@ func (c *jsiiProxy_ConnectPhoneNumberStatusOutputReference) GetBooleanAttribute(
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -305,7 +304,7 @@ func (c *jsiiProxy_ConnectPhoneNumberStatusOutputReference) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -321,7 +320,7 @@ func (c *jsiiProxy_ConnectPhoneNumberStatusOutputReference) GetListAttribute(ter
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (c *jsiiProxy_ConnectPhoneNumberStatusOutputReference) GetNumberAttribute(t
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (c *jsiiProxy_ConnectPhoneNumberStatusOutputReference) GetNumberListAttribu
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (c *jsiiProxy_ConnectPhoneNumberStatusOutputReference) GetNumberMapAttribut
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (c *jsiiProxy_ConnectPhoneNumberStatusOutputReference) GetStringAttribute(t
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (c *jsiiProxy_ConnectPhoneNumberStatusOutputReference) GetStringMapAttribut
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -430,23 +429,23 @@ func (c *jsiiProxy_ConnectPhoneNumberStatusOutputReference) InterpolationForAttr
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ConnectPhoneNumberStatusOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ConnectPhoneNumberStatusOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -465,4 +464,3 @@ func (c *jsiiProxy_ConnectPhoneNumberStatusOutputReference) ToString() *string {
 
 	return returns
 }
-

@@ -16,21 +16,21 @@ type GlobalacceleratorEndpointGroup interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	EndpointConfiguration() GlobalacceleratorEndpointGroupEndpointConfigurationList
-	EndpointConfigurationInput() interface{}
+	EndpointConfigurationInput() any
 	EndpointGroupRegion() *string
 	SetEndpointGroupRegion(val *string)
 	EndpointGroupRegionInput() *string
@@ -67,28 +67,28 @@ type GlobalacceleratorEndpointGroup interface {
 	// The tree node.
 	Node() constructs.Node
 	PortOverride() GlobalacceleratorEndpointGroupPortOverrideList
-	PortOverrideInput() interface{}
+	PortOverrideInput() any
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ThresholdCount() *float64
 	SetThresholdCount(val *float64)
 	ThresholdCountInput() *float64
 	Timeouts() GlobalacceleratorEndpointGroupTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	TrafficDialPercentage() *float64
 	SetTrafficDialPercentage(val *float64)
 	TrafficDialPercentageInput() *float64
@@ -96,9 +96,9 @@ type GlobalacceleratorEndpointGroup interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -116,7 +116,7 @@ type GlobalacceleratorEndpointGroup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -128,15 +128,15 @@ type GlobalacceleratorEndpointGroup interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutEndpointConfiguration(value interface{})
-	PutPortOverride(value interface{})
+	PutEndpointConfiguration(value any)
+	PutPortOverride(value any)
 	PutTimeouts(value *GlobalacceleratorEndpointGroupTimeouts)
 	ResetEndpointConfiguration()
 	ResetEndpointGroupRegion()
@@ -152,17 +152,17 @@ type GlobalacceleratorEndpointGroup interface {
 	ResetThresholdCount()
 	ResetTimeouts()
 	ResetTrafficDialPercentage()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GlobalacceleratorEndpointGroup
@@ -190,8 +190,8 @@ func (j *jsiiProxy_GlobalacceleratorEndpointGroup) CdktfStack() cdktf.TerraformS
 	return returns
 }
 
-func (j *jsiiProxy_GlobalacceleratorEndpointGroup) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlobalacceleratorEndpointGroup) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -200,8 +200,8 @@ func (j *jsiiProxy_GlobalacceleratorEndpointGroup) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GlobalacceleratorEndpointGroup) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GlobalacceleratorEndpointGroup) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -210,8 +210,8 @@ func (j *jsiiProxy_GlobalacceleratorEndpointGroup) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_GlobalacceleratorEndpointGroup) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlobalacceleratorEndpointGroup) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -240,8 +240,8 @@ func (j *jsiiProxy_GlobalacceleratorEndpointGroup) EndpointConfiguration() Globa
 	return returns
 }
 
-func (j *jsiiProxy_GlobalacceleratorEndpointGroup) EndpointConfigurationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlobalacceleratorEndpointGroup) EndpointConfigurationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"endpointConfigurationInput",
@@ -450,8 +450,8 @@ func (j *jsiiProxy_GlobalacceleratorEndpointGroup) PortOverride() Globalaccelera
 	return returns
 }
 
-func (j *jsiiProxy_GlobalacceleratorEndpointGroup) PortOverrideInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlobalacceleratorEndpointGroup) PortOverrideInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"portOverrideInput",
@@ -470,8 +470,8 @@ func (j *jsiiProxy_GlobalacceleratorEndpointGroup) Provider() cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_GlobalacceleratorEndpointGroup) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GlobalacceleratorEndpointGroup) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -480,8 +480,8 @@ func (j *jsiiProxy_GlobalacceleratorEndpointGroup) Provisioners() *[]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_GlobalacceleratorEndpointGroup) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlobalacceleratorEndpointGroup) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -500,8 +500,8 @@ func (j *jsiiProxy_GlobalacceleratorEndpointGroup) TerraformGeneratorMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_GlobalacceleratorEndpointGroup) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GlobalacceleratorEndpointGroup) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -550,8 +550,8 @@ func (j *jsiiProxy_GlobalacceleratorEndpointGroup) Timeouts() GlobalacceleratorE
 	return returns
 }
 
-func (j *jsiiProxy_GlobalacceleratorEndpointGroup) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlobalacceleratorEndpointGroup) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -580,7 +580,6 @@ func (j *jsiiProxy_GlobalacceleratorEndpointGroup) TrafficDialPercentageInput() 
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/globalaccelerator_endpoint_group aws_globalaccelerator_endpoint_group} Resource.
 func NewGlobalacceleratorEndpointGroup(scope constructs.Construct, id *string, config *GlobalacceleratorEndpointGroupConfig) GlobalacceleratorEndpointGroup {
 	_init_.Initialize()
@@ -592,7 +591,7 @@ func NewGlobalacceleratorEndpointGroup(scope constructs.Construct, id *string, c
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -605,12 +604,12 @@ func NewGlobalacceleratorEndpointGroup_Override(g GlobalacceleratorEndpointGroup
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GlobalacceleratorEndpointGroup)SetConnection(val interface{}) {
+func (j *jsiiProxy_GlobalacceleratorEndpointGroup) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -621,7 +620,7 @@ func (j *jsiiProxy_GlobalacceleratorEndpointGroup)SetConnection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_GlobalacceleratorEndpointGroup)SetCount(val interface{}) {
+func (j *jsiiProxy_GlobalacceleratorEndpointGroup) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -632,7 +631,7 @@ func (j *jsiiProxy_GlobalacceleratorEndpointGroup)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GlobalacceleratorEndpointGroup)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GlobalacceleratorEndpointGroup) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -640,7 +639,7 @@ func (j *jsiiProxy_GlobalacceleratorEndpointGroup)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GlobalacceleratorEndpointGroup)SetEndpointGroupRegion(val *string) {
+func (j *jsiiProxy_GlobalacceleratorEndpointGroup) SetEndpointGroupRegion(val *string) {
 	if err := j.validateSetEndpointGroupRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -651,7 +650,7 @@ func (j *jsiiProxy_GlobalacceleratorEndpointGroup)SetEndpointGroupRegion(val *st
 	)
 }
 
-func (j *jsiiProxy_GlobalacceleratorEndpointGroup)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GlobalacceleratorEndpointGroup) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -659,7 +658,7 @@ func (j *jsiiProxy_GlobalacceleratorEndpointGroup)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_GlobalacceleratorEndpointGroup)SetHealthCheckIntervalSeconds(val *float64) {
+func (j *jsiiProxy_GlobalacceleratorEndpointGroup) SetHealthCheckIntervalSeconds(val *float64) {
 	if err := j.validateSetHealthCheckIntervalSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -670,7 +669,7 @@ func (j *jsiiProxy_GlobalacceleratorEndpointGroup)SetHealthCheckIntervalSeconds(
 	)
 }
 
-func (j *jsiiProxy_GlobalacceleratorEndpointGroup)SetHealthCheckPath(val *string) {
+func (j *jsiiProxy_GlobalacceleratorEndpointGroup) SetHealthCheckPath(val *string) {
 	if err := j.validateSetHealthCheckPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -681,7 +680,7 @@ func (j *jsiiProxy_GlobalacceleratorEndpointGroup)SetHealthCheckPath(val *string
 	)
 }
 
-func (j *jsiiProxy_GlobalacceleratorEndpointGroup)SetHealthCheckPort(val *float64) {
+func (j *jsiiProxy_GlobalacceleratorEndpointGroup) SetHealthCheckPort(val *float64) {
 	if err := j.validateSetHealthCheckPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -692,7 +691,7 @@ func (j *jsiiProxy_GlobalacceleratorEndpointGroup)SetHealthCheckPort(val *float6
 	)
 }
 
-func (j *jsiiProxy_GlobalacceleratorEndpointGroup)SetHealthCheckProtocol(val *string) {
+func (j *jsiiProxy_GlobalacceleratorEndpointGroup) SetHealthCheckProtocol(val *string) {
 	if err := j.validateSetHealthCheckProtocolParameters(val); err != nil {
 		panic(err)
 	}
@@ -703,7 +702,7 @@ func (j *jsiiProxy_GlobalacceleratorEndpointGroup)SetHealthCheckProtocol(val *st
 	)
 }
 
-func (j *jsiiProxy_GlobalacceleratorEndpointGroup)SetId(val *string) {
+func (j *jsiiProxy_GlobalacceleratorEndpointGroup) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -714,7 +713,7 @@ func (j *jsiiProxy_GlobalacceleratorEndpointGroup)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlobalacceleratorEndpointGroup)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GlobalacceleratorEndpointGroup) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -725,7 +724,7 @@ func (j *jsiiProxy_GlobalacceleratorEndpointGroup)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_GlobalacceleratorEndpointGroup)SetListenerArn(val *string) {
+func (j *jsiiProxy_GlobalacceleratorEndpointGroup) SetListenerArn(val *string) {
 	if err := j.validateSetListenerArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -736,7 +735,7 @@ func (j *jsiiProxy_GlobalacceleratorEndpointGroup)SetListenerArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlobalacceleratorEndpointGroup)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GlobalacceleratorEndpointGroup) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -744,7 +743,7 @@ func (j *jsiiProxy_GlobalacceleratorEndpointGroup)SetProvider(val cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_GlobalacceleratorEndpointGroup)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GlobalacceleratorEndpointGroup) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -755,7 +754,7 @@ func (j *jsiiProxy_GlobalacceleratorEndpointGroup)SetProvisioners(val *[]interfa
 	)
 }
 
-func (j *jsiiProxy_GlobalacceleratorEndpointGroup)SetThresholdCount(val *float64) {
+func (j *jsiiProxy_GlobalacceleratorEndpointGroup) SetThresholdCount(val *float64) {
 	if err := j.validateSetThresholdCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -766,7 +765,7 @@ func (j *jsiiProxy_GlobalacceleratorEndpointGroup)SetThresholdCount(val *float64
 	)
 }
 
-func (j *jsiiProxy_GlobalacceleratorEndpointGroup)SetTrafficDialPercentage(val *float64) {
+func (j *jsiiProxy_GlobalacceleratorEndpointGroup) SetTrafficDialPercentage(val *float64) {
 	if err := j.validateSetTrafficDialPercentageParameters(val); err != nil {
 		panic(err)
 	}
@@ -789,7 +788,7 @@ func GlobalacceleratorEndpointGroup_GenerateConfigForImport(scope constructs.Con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroup",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -813,7 +812,7 @@ func GlobalacceleratorEndpointGroup_GenerateConfigForImport(scope constructs.Con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GlobalacceleratorEndpointGroup_IsConstruct(x interface{}) *bool {
+func GlobalacceleratorEndpointGroup_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGlobalacceleratorEndpointGroup_IsConstructParameters(x); err != nil {
@@ -824,7 +823,7 @@ func GlobalacceleratorEndpointGroup_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroup",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -832,7 +831,7 @@ func GlobalacceleratorEndpointGroup_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GlobalacceleratorEndpointGroup_IsTerraformElement(x interface{}) *bool {
+func GlobalacceleratorEndpointGroup_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGlobalacceleratorEndpointGroup_IsTerraformElementParameters(x); err != nil {
@@ -843,7 +842,7 @@ func GlobalacceleratorEndpointGroup_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroup",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -851,7 +850,7 @@ func GlobalacceleratorEndpointGroup_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GlobalacceleratorEndpointGroup_IsTerraformResource(x interface{}) *bool {
+func GlobalacceleratorEndpointGroup_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGlobalacceleratorEndpointGroup_IsTerraformResourceParameters(x); err != nil {
@@ -862,7 +861,7 @@ func GlobalacceleratorEndpointGroup_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroup",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -887,31 +886,31 @@ func (g *jsiiProxy_GlobalacceleratorEndpointGroup) AddMoveTarget(moveTarget *str
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GlobalacceleratorEndpointGroup) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GlobalacceleratorEndpointGroup) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GlobalacceleratorEndpointGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GlobalacceleratorEndpointGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -927,7 +926,7 @@ func (g *jsiiProxy_GlobalacceleratorEndpointGroup) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -943,7 +942,7 @@ func (g *jsiiProxy_GlobalacceleratorEndpointGroup) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -959,7 +958,7 @@ func (g *jsiiProxy_GlobalacceleratorEndpointGroup) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -975,7 +974,7 @@ func (g *jsiiProxy_GlobalacceleratorEndpointGroup) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -991,7 +990,7 @@ func (g *jsiiProxy_GlobalacceleratorEndpointGroup) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1007,7 +1006,7 @@ func (g *jsiiProxy_GlobalacceleratorEndpointGroup) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1023,7 +1022,7 @@ func (g *jsiiProxy_GlobalacceleratorEndpointGroup) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1039,15 +1038,15 @@ func (g *jsiiProxy_GlobalacceleratorEndpointGroup) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GlobalacceleratorEndpointGroup) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GlobalacceleratorEndpointGroup) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1066,7 +1065,7 @@ func (g *jsiiProxy_GlobalacceleratorEndpointGroup) ImportFrom(id *string, provid
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1079,7 +1078,7 @@ func (g *jsiiProxy_GlobalacceleratorEndpointGroup) InterpolationForAttribute(ter
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1093,18 +1092,18 @@ func (g *jsiiProxy_GlobalacceleratorEndpointGroup) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GlobalacceleratorEndpointGroup) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GlobalacceleratorEndpointGroup) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1115,7 +1114,7 @@ func (g *jsiiProxy_GlobalacceleratorEndpointGroup) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1126,29 +1125,29 @@ func (g *jsiiProxy_GlobalacceleratorEndpointGroup) OverrideLogicalId(newLogicalI
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (g *jsiiProxy_GlobalacceleratorEndpointGroup) PutEndpointConfiguration(value interface{}) {
+func (g *jsiiProxy_GlobalacceleratorEndpointGroup) PutEndpointConfiguration(value any) {
 	if err := g.validatePutEndpointConfigurationParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putEndpointConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GlobalacceleratorEndpointGroup) PutPortOverride(value interface{}) {
+func (g *jsiiProxy_GlobalacceleratorEndpointGroup) PutPortOverride(value any) {
 	if err := g.validatePutPortOverrideParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putPortOverride",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1159,7 +1158,7 @@ func (g *jsiiProxy_GlobalacceleratorEndpointGroup) PutTimeouts(value *Globalacce
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1259,8 +1258,8 @@ func (g *jsiiProxy_GlobalacceleratorEndpointGroup) ResetTrafficDialPercentage() 
 	)
 }
 
-func (g *jsiiProxy_GlobalacceleratorEndpointGroup) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GlobalacceleratorEndpointGroup) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1272,8 +1271,8 @@ func (g *jsiiProxy_GlobalacceleratorEndpointGroup) SynthesizeAttributes() *map[s
 	return returns
 }
 
-func (g *jsiiProxy_GlobalacceleratorEndpointGroup) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GlobalacceleratorEndpointGroup) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1285,8 +1284,8 @@ func (g *jsiiProxy_GlobalacceleratorEndpointGroup) SynthesizeHclAttributes() *ma
 	return returns
 }
 
-func (g *jsiiProxy_GlobalacceleratorEndpointGroup) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GlobalacceleratorEndpointGroup) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1298,8 +1297,8 @@ func (g *jsiiProxy_GlobalacceleratorEndpointGroup) ToHclTerraform() interface{} 
 	return returns
 }
 
-func (g *jsiiProxy_GlobalacceleratorEndpointGroup) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GlobalacceleratorEndpointGroup) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1324,8 +1323,8 @@ func (g *jsiiProxy_GlobalacceleratorEndpointGroup) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GlobalacceleratorEndpointGroup) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GlobalacceleratorEndpointGroup) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1336,4 +1335,3 @@ func (g *jsiiProxy_GlobalacceleratorEndpointGroup) ToTerraform() interface{} {
 
 	return returns
 }
-

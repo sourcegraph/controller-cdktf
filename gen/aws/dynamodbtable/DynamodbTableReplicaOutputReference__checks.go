@@ -98,7 +98,7 @@ func (d *jsiiProxy_DynamodbTableReplicaOutputReference) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_DynamodbTableReplicaOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DynamodbTableReplicaOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DynamodbTableReplicaOutputReference) validateSetComplexObject
 	return nil
 }
 
-func (j *jsiiProxy_DynamodbTableReplicaOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DynamodbTableReplicaOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_DynamodbTableReplicaOutputReference) validateSetKmsKeyArnPara
 	return nil
 }
 
-func (j *jsiiProxy_DynamodbTableReplicaOutputReference) validateSetPointInTimeRecoveryParameters(val interface{}) error {
+func (j *jsiiProxy_DynamodbTableReplicaOutputReference) validateSetPointInTimeRecoveryParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (j *jsiiProxy_DynamodbTableReplicaOutputReference) validateSetPointInTimeRe
 	return nil
 }
 
-func (j *jsiiProxy_DynamodbTableReplicaOutputReference) validateSetPropagateTagsParameters(val interface{}) error {
+func (j *jsiiProxy_DynamodbTableReplicaOutputReference) validateSetPropagateTagsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -278,4 +278,3 @@ func validateNewDynamodbTableReplicaOutputReferenceParameters(terraformResource 
 
 	return nil
 }
-

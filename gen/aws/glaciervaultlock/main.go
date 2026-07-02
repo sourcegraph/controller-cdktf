@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glacierVaultLock.GlacierVaultLock",
-		reflect.TypeOf((*GlacierVaultLock)(nil)).Elem(),
+		reflect.TypeFor[GlacierVaultLock](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vaultName", GoGetter: "VaultName"},
 			_jsii_.MemberProperty{JsiiProperty: "vaultNameInput", GoGetter: "VaultNameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlacierVaultLock{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -73,6 +73,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glacierVaultLock.GlacierVaultLockConfig",
-		reflect.TypeOf((*GlacierVaultLockConfig)(nil)).Elem(),
+		reflect.TypeFor[GlacierVaultLockConfig](),
 	)
 }

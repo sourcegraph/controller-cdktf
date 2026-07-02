@@ -36,7 +36,7 @@ type KendraIndexIndexStatisticsTextDocumentStatisticsList interface {
 	Get(index *float64) KendraIndexIndexStatisticsTextDocumentStatisticsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_KendraIndexIndexStatisticsTextDocumentStatisticsList) WrapsSe
 	return returns
 }
 
-
 func NewKendraIndexIndexStatisticsTextDocumentStatisticsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KendraIndexIndexStatisticsTextDocumentStatisticsList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewKendraIndexIndexStatisticsTextDocumentStatisticsList(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kendraIndex.KendraIndexIndexStatisticsTextDocumentStatisticsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewKendraIndexIndexStatisticsTextDocumentStatisticsList_Override(k KendraIn
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kendraIndex.KendraIndexIndexStatisticsTextDocumentStatisticsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		k,
 	)
 }
 
-func (j *jsiiProxy_KendraIndexIndexStatisticsTextDocumentStatisticsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_KendraIndexIndexStatisticsTextDocumentStatisticsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_KendraIndexIndexStatisticsTextDocumentStatisticsList)SetTerra
 	)
 }
 
-func (j *jsiiProxy_KendraIndexIndexStatisticsTextDocumentStatisticsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_KendraIndexIndexStatisticsTextDocumentStatisticsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_KendraIndexIndexStatisticsTextDocumentStatisticsList)SetTerra
 	)
 }
 
-func (j *jsiiProxy_KendraIndexIndexStatisticsTextDocumentStatisticsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_KendraIndexIndexStatisticsTextDocumentStatisticsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (k *jsiiProxy_KendraIndexIndexStatisticsTextDocumentStatisticsList) AllWith
 	_jsii_.Invoke(
 		k,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (k *jsiiProxy_KendraIndexIndexStatisticsTextDocumentStatisticsList) Get(ind
 	_jsii_.Invoke(
 		k,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (k *jsiiProxy_KendraIndexIndexStatisticsTextDocumentStatisticsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (k *jsiiProxy_KendraIndexIndexStatisticsTextDocumentStatisticsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := k.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		k,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (k *jsiiProxy_KendraIndexIndexStatisticsTextDocumentStatisticsList) ToStrin
 
 	return returns
 }
-

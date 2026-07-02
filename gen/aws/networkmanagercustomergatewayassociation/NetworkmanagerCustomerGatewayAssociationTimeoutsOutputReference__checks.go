@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociationTimeoutsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociationTimeoutsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociationTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociationTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewNetworkmanagerCustomerGatewayAssociationTimeoutsOutputReferenceP
 
 	return nil
 }
-

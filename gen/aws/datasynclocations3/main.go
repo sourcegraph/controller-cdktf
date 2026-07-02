@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.datasyncLocationS3.DatasyncLocationS3",
-		reflect.TypeOf((*DatasyncLocationS3)(nil)).Elem(),
+		reflect.TypeFor[DatasyncLocationS3](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatasyncLocationS3{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,15 +85,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.datasyncLocationS3.DatasyncLocationS3Config",
-		reflect.TypeOf((*DatasyncLocationS3Config)(nil)).Elem(),
+		reflect.TypeFor[DatasyncLocationS3Config](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.datasyncLocationS3.DatasyncLocationS3S3Config",
-		reflect.TypeOf((*DatasyncLocationS3S3Config)(nil)).Elem(),
+		reflect.TypeFor[DatasyncLocationS3S3Config](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.datasyncLocationS3.DatasyncLocationS3S3ConfigOutputReference",
-		reflect.TypeOf((*DatasyncLocationS3S3ConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatasyncLocationS3S3ConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketAccessRoleArn", GoGetter: "BucketAccessRoleArn"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketAccessRoleArnInput", GoGetter: "BucketAccessRoleArnInput"},
@@ -119,7 +119,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatasyncLocationS3S3ConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

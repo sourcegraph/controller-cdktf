@@ -12,9 +12,9 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudwatch_composite_alarm aws_cloudwatch_composite_alarm}.
 type CloudwatchCompositeAlarm interface {
 	cdktf.TerraformResource
-	ActionsEnabled() interface{}
-	SetActionsEnabled(val interface{})
-	ActionsEnabledInput() interface{}
+	ActionsEnabled() any
+	SetActionsEnabled(val any)
+	ActionsEnabledInput() any
 	AlarmActions() *[]*string
 	SetAlarmActions(val *[]*string)
 	AlarmActionsInput() *[]*string
@@ -31,15 +31,15 @@ type CloudwatchCompositeAlarm interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -72,11 +72,11 @@ type CloudwatchCompositeAlarm interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -86,16 +86,16 @@ type CloudwatchCompositeAlarm interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -113,7 +113,7 @@ type CloudwatchCompositeAlarm interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -125,7 +125,7 @@ type CloudwatchCompositeAlarm interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -143,17 +143,17 @@ type CloudwatchCompositeAlarm interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CloudwatchCompositeAlarm
@@ -161,8 +161,8 @@ type jsiiProxy_CloudwatchCompositeAlarm struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_CloudwatchCompositeAlarm) ActionsEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudwatchCompositeAlarm) ActionsEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"actionsEnabled",
@@ -171,8 +171,8 @@ func (j *jsiiProxy_CloudwatchCompositeAlarm) ActionsEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchCompositeAlarm) ActionsEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudwatchCompositeAlarm) ActionsEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"actionsEnabledInput",
@@ -281,8 +281,8 @@ func (j *jsiiProxy_CloudwatchCompositeAlarm) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchCompositeAlarm) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudwatchCompositeAlarm) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -291,8 +291,8 @@ func (j *jsiiProxy_CloudwatchCompositeAlarm) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchCompositeAlarm) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudwatchCompositeAlarm) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -301,8 +301,8 @@ func (j *jsiiProxy_CloudwatchCompositeAlarm) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchCompositeAlarm) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudwatchCompositeAlarm) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -441,8 +441,8 @@ func (j *jsiiProxy_CloudwatchCompositeAlarm) Provider() cdktf.TerraformProvider 
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchCompositeAlarm) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CloudwatchCompositeAlarm) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -451,8 +451,8 @@ func (j *jsiiProxy_CloudwatchCompositeAlarm) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchCompositeAlarm) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudwatchCompositeAlarm) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -511,8 +511,8 @@ func (j *jsiiProxy_CloudwatchCompositeAlarm) TerraformGeneratorMetadata() *cdktf
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchCompositeAlarm) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudwatchCompositeAlarm) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -531,7 +531,6 @@ func (j *jsiiProxy_CloudwatchCompositeAlarm) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudwatch_composite_alarm aws_cloudwatch_composite_alarm} Resource.
 func NewCloudwatchCompositeAlarm(scope constructs.Construct, id *string, config *CloudwatchCompositeAlarmConfig) CloudwatchCompositeAlarm {
 	_init_.Initialize()
@@ -543,7 +542,7 @@ func NewCloudwatchCompositeAlarm(scope constructs.Construct, id *string, config 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudwatchCompositeAlarm.CloudwatchCompositeAlarm",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -556,12 +555,12 @@ func NewCloudwatchCompositeAlarm_Override(c CloudwatchCompositeAlarm, scope cons
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudwatchCompositeAlarm.CloudwatchCompositeAlarm",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudwatchCompositeAlarm)SetActionsEnabled(val interface{}) {
+func (j *jsiiProxy_CloudwatchCompositeAlarm) SetActionsEnabled(val any) {
 	if err := j.validateSetActionsEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -572,7 +571,7 @@ func (j *jsiiProxy_CloudwatchCompositeAlarm)SetActionsEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchCompositeAlarm)SetAlarmActions(val *[]*string) {
+func (j *jsiiProxy_CloudwatchCompositeAlarm) SetAlarmActions(val *[]*string) {
 	if err := j.validateSetAlarmActionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -583,7 +582,7 @@ func (j *jsiiProxy_CloudwatchCompositeAlarm)SetAlarmActions(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchCompositeAlarm)SetAlarmDescription(val *string) {
+func (j *jsiiProxy_CloudwatchCompositeAlarm) SetAlarmDescription(val *string) {
 	if err := j.validateSetAlarmDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -594,7 +593,7 @@ func (j *jsiiProxy_CloudwatchCompositeAlarm)SetAlarmDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchCompositeAlarm)SetAlarmName(val *string) {
+func (j *jsiiProxy_CloudwatchCompositeAlarm) SetAlarmName(val *string) {
 	if err := j.validateSetAlarmNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -605,7 +604,7 @@ func (j *jsiiProxy_CloudwatchCompositeAlarm)SetAlarmName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchCompositeAlarm)SetAlarmRule(val *string) {
+func (j *jsiiProxy_CloudwatchCompositeAlarm) SetAlarmRule(val *string) {
 	if err := j.validateSetAlarmRuleParameters(val); err != nil {
 		panic(err)
 	}
@@ -616,7 +615,7 @@ func (j *jsiiProxy_CloudwatchCompositeAlarm)SetAlarmRule(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchCompositeAlarm)SetConnection(val interface{}) {
+func (j *jsiiProxy_CloudwatchCompositeAlarm) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func (j *jsiiProxy_CloudwatchCompositeAlarm)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchCompositeAlarm)SetCount(val interface{}) {
+func (j *jsiiProxy_CloudwatchCompositeAlarm) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -638,7 +637,7 @@ func (j *jsiiProxy_CloudwatchCompositeAlarm)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchCompositeAlarm)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CloudwatchCompositeAlarm) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -646,7 +645,7 @@ func (j *jsiiProxy_CloudwatchCompositeAlarm)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchCompositeAlarm)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CloudwatchCompositeAlarm) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -654,7 +653,7 @@ func (j *jsiiProxy_CloudwatchCompositeAlarm)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_CloudwatchCompositeAlarm)SetId(val *string) {
+func (j *jsiiProxy_CloudwatchCompositeAlarm) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -665,7 +664,7 @@ func (j *jsiiProxy_CloudwatchCompositeAlarm)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchCompositeAlarm)SetInsufficientDataActions(val *[]*string) {
+func (j *jsiiProxy_CloudwatchCompositeAlarm) SetInsufficientDataActions(val *[]*string) {
 	if err := j.validateSetInsufficientDataActionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -676,7 +675,7 @@ func (j *jsiiProxy_CloudwatchCompositeAlarm)SetInsufficientDataActions(val *[]*s
 	)
 }
 
-func (j *jsiiProxy_CloudwatchCompositeAlarm)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CloudwatchCompositeAlarm) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -687,7 +686,7 @@ func (j *jsiiProxy_CloudwatchCompositeAlarm)SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_CloudwatchCompositeAlarm)SetOkActions(val *[]*string) {
+func (j *jsiiProxy_CloudwatchCompositeAlarm) SetOkActions(val *[]*string) {
 	if err := j.validateSetOkActionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -698,7 +697,7 @@ func (j *jsiiProxy_CloudwatchCompositeAlarm)SetOkActions(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchCompositeAlarm)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CloudwatchCompositeAlarm) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -706,7 +705,7 @@ func (j *jsiiProxy_CloudwatchCompositeAlarm)SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_CloudwatchCompositeAlarm)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CloudwatchCompositeAlarm) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -717,7 +716,7 @@ func (j *jsiiProxy_CloudwatchCompositeAlarm)SetProvisioners(val *[]interface{}) 
 	)
 }
 
-func (j *jsiiProxy_CloudwatchCompositeAlarm)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_CloudwatchCompositeAlarm) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -728,7 +727,7 @@ func (j *jsiiProxy_CloudwatchCompositeAlarm)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchCompositeAlarm)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_CloudwatchCompositeAlarm) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -751,7 +750,7 @@ func CloudwatchCompositeAlarm_GenerateConfigForImport(scope constructs.Construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudwatchCompositeAlarm.CloudwatchCompositeAlarm",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func CloudwatchCompositeAlarm_GenerateConfigForImport(scope constructs.Construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CloudwatchCompositeAlarm_IsConstruct(x interface{}) *bool {
+func CloudwatchCompositeAlarm_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudwatchCompositeAlarm_IsConstructParameters(x); err != nil {
@@ -786,7 +785,7 @@ func CloudwatchCompositeAlarm_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudwatchCompositeAlarm.CloudwatchCompositeAlarm",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func CloudwatchCompositeAlarm_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudwatchCompositeAlarm_IsTerraformElement(x interface{}) *bool {
+func CloudwatchCompositeAlarm_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudwatchCompositeAlarm_IsTerraformElementParameters(x); err != nil {
@@ -805,7 +804,7 @@ func CloudwatchCompositeAlarm_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudwatchCompositeAlarm.CloudwatchCompositeAlarm",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -813,7 +812,7 @@ func CloudwatchCompositeAlarm_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudwatchCompositeAlarm_IsTerraformResource(x interface{}) *bool {
+func CloudwatchCompositeAlarm_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudwatchCompositeAlarm_IsTerraformResourceParameters(x); err != nil {
@@ -824,7 +823,7 @@ func CloudwatchCompositeAlarm_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudwatchCompositeAlarm.CloudwatchCompositeAlarm",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -849,31 +848,31 @@ func (c *jsiiProxy_CloudwatchCompositeAlarm) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CloudwatchCompositeAlarm) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CloudwatchCompositeAlarm) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CloudwatchCompositeAlarm) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudwatchCompositeAlarm) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -889,7 +888,7 @@ func (c *jsiiProxy_CloudwatchCompositeAlarm) GetBooleanAttribute(terraformAttrib
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -905,7 +904,7 @@ func (c *jsiiProxy_CloudwatchCompositeAlarm) GetBooleanMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -921,7 +920,7 @@ func (c *jsiiProxy_CloudwatchCompositeAlarm) GetListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -937,7 +936,7 @@ func (c *jsiiProxy_CloudwatchCompositeAlarm) GetNumberAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -953,7 +952,7 @@ func (c *jsiiProxy_CloudwatchCompositeAlarm) GetNumberListAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -969,7 +968,7 @@ func (c *jsiiProxy_CloudwatchCompositeAlarm) GetNumberMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -985,7 +984,7 @@ func (c *jsiiProxy_CloudwatchCompositeAlarm) GetStringAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1001,15 +1000,15 @@ func (c *jsiiProxy_CloudwatchCompositeAlarm) GetStringMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CloudwatchCompositeAlarm) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudwatchCompositeAlarm) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1028,7 +1027,7 @@ func (c *jsiiProxy_CloudwatchCompositeAlarm) ImportFrom(id *string, provider cdk
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1041,7 +1040,7 @@ func (c *jsiiProxy_CloudwatchCompositeAlarm) InterpolationForAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1055,18 +1054,18 @@ func (c *jsiiProxy_CloudwatchCompositeAlarm) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CloudwatchCompositeAlarm) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CloudwatchCompositeAlarm) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1077,7 +1076,7 @@ func (c *jsiiProxy_CloudwatchCompositeAlarm) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1088,7 +1087,7 @@ func (c *jsiiProxy_CloudwatchCompositeAlarm) OverrideLogicalId(newLogicalId *str
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1164,8 +1163,8 @@ func (c *jsiiProxy_CloudwatchCompositeAlarm) ResetTagsAll() {
 	)
 }
 
-func (c *jsiiProxy_CloudwatchCompositeAlarm) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudwatchCompositeAlarm) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1177,8 +1176,8 @@ func (c *jsiiProxy_CloudwatchCompositeAlarm) SynthesizeAttributes() *map[string]
 	return returns
 }
 
-func (c *jsiiProxy_CloudwatchCompositeAlarm) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudwatchCompositeAlarm) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1190,8 +1189,8 @@ func (c *jsiiProxy_CloudwatchCompositeAlarm) SynthesizeHclAttributes() *map[stri
 	return returns
 }
 
-func (c *jsiiProxy_CloudwatchCompositeAlarm) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudwatchCompositeAlarm) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1203,8 +1202,8 @@ func (c *jsiiProxy_CloudwatchCompositeAlarm) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CloudwatchCompositeAlarm) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudwatchCompositeAlarm) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1229,8 +1228,8 @@ func (c *jsiiProxy_CloudwatchCompositeAlarm) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CloudwatchCompositeAlarm) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudwatchCompositeAlarm) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1241,4 +1240,3 @@ func (c *jsiiProxy_CloudwatchCompositeAlarm) ToTerraform() interface{} {
 
 	return returns
 }
-

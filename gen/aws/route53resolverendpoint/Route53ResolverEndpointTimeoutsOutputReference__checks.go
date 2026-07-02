@@ -98,7 +98,7 @@ func (r *jsiiProxy_Route53ResolverEndpointTimeoutsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_Route53ResolverEndpointTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Route53ResolverEndpointTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_Route53ResolverEndpointTimeoutsOutputReference) validateSetDe
 	return nil
 }
 
-func (j *jsiiProxy_Route53ResolverEndpointTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Route53ResolverEndpointTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewRoute53ResolverEndpointTimeoutsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

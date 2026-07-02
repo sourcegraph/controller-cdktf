@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -246,4 +246,3 @@ func validateNewApprunnerServiceHealthCheckConfigurationOutputReferenceParameter
 
 	return nil
 }
-

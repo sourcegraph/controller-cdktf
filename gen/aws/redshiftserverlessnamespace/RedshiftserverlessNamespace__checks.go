@@ -19,7 +19,7 @@ func (r *jsiiProxy_RedshiftserverlessNamespace) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftserverlessNamespace) validateAddOverrideParameters(path *string, value interface{}) error {
+func (r *jsiiProxy_RedshiftserverlessNamespace) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (r *jsiiProxy_RedshiftserverlessNamespace) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftserverlessNamespace) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (r *jsiiProxy_RedshiftserverlessNamespace) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateRedshiftserverlessNamespace_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateRedshiftserverlessNamespace_IsConstructParameters(x interface{}) error {
+func validateRedshiftserverlessNamespace_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateRedshiftserverlessNamespace_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateRedshiftserverlessNamespace_IsTerraformElementParameters(x interface{}) error {
+func validateRedshiftserverlessNamespace_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateRedshiftserverlessNamespace_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateRedshiftserverlessNamespace_IsTerraformResourceParameters(x interface{}) error {
+func validateRedshiftserverlessNamespace_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -260,7 +260,7 @@ func (j *jsiiProxy_RedshiftserverlessNamespace) validateSetAdminUserPasswordPara
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftserverlessNamespace) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftserverlessNamespace) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -293,7 +293,7 @@ func (j *jsiiProxy_RedshiftserverlessNamespace) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftserverlessNamespace) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftserverlessNamespace) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -414,7 +414,7 @@ func (j *jsiiProxy_RedshiftserverlessNamespace) validateSetNamespaceNameParamete
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftserverlessNamespace) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_RedshiftserverlessNamespace) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -494,4 +494,3 @@ func validateNewRedshiftserverlessNamespaceParameters(scope constructs.Construct
 
 	return nil
 }
-

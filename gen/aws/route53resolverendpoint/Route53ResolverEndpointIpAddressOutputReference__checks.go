@@ -98,7 +98,7 @@ func (r *jsiiProxy_Route53ResolverEndpointIpAddressOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_Route53ResolverEndpointIpAddressOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Route53ResolverEndpointIpAddressOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_Route53ResolverEndpointIpAddressOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_Route53ResolverEndpointIpAddressOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Route53ResolverEndpointIpAddressOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewRoute53ResolverEndpointIpAddressOutputReferenceParameters(terraf
 
 	return nil
 }
-

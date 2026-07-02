@@ -12,9 +12,9 @@ type ServicecatalogTagOptionTimeoutsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type ServicecatalogTagOptionTimeoutsOutputReference interface {
 	DeleteInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Read() *string
 	SetRead(val *string)
 	ReadInput() *string
@@ -52,7 +52,7 @@ type ServicecatalogTagOptionTimeoutsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type ServicecatalogTagOptionTimeoutsOutputReference interface {
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference) Fqn() *string
 	return returns
 }
 
-func (j *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference) UpdateInput()
 	return returns
 }
 
-
 func NewServicecatalogTagOptionTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ServicecatalogTagOptionTimeoutsOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewServicecatalogTagOptionTimeoutsOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewServicecatalogTagOptionTimeoutsOutputReference_Override(s Servicecatalog
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference)SetCreate(val *string) {
+func (j *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference) SetCreate(val *string) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference)SetCreate(val 
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference)SetDelete(val *string) {
+func (j *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference) SetDelete(val *string) {
 	if err := j.validateSetDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference)SetDelete(val 
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference)SetRead(val *string) {
+func (j *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference) SetRead(val *string) {
 	if err := j.validateSetReadParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference)SetRead(val *s
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference)SetTerraformRe
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference)SetUpdate(val *string) {
+func (j *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference) SetUpdate(val *string) {
 	if err := j.validateSetUpdateParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,16 +381,16 @@ func (s *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (s *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (s *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (s *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (s *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (s *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (s *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference) GetNumberList
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (s *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (s *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (s *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (s *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference) Interpolation
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -587,16 +586,16 @@ func (s *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference) ResetUpdate()
 	)
 }
 
-func (s *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (s *jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference) ToString() *s
 
 	return returns
 }
-

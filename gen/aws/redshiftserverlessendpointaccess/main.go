@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.redshiftserverlessEndpointAccess.RedshiftserverlessEndpointAccess",
-		reflect.TypeOf((*RedshiftserverlessEndpointAccess)(nil)).Elem(),
+		reflect.TypeFor[RedshiftserverlessEndpointAccess](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workgroupName", GoGetter: "WorkgroupName"},
 			_jsii_.MemberProperty{JsiiProperty: "workgroupNameInput", GoGetter: "WorkgroupNameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedshiftserverlessEndpointAccess{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -77,15 +77,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.redshiftserverlessEndpointAccess.RedshiftserverlessEndpointAccessConfig",
-		reflect.TypeOf((*RedshiftserverlessEndpointAccessConfig)(nil)).Elem(),
+		reflect.TypeFor[RedshiftserverlessEndpointAccessConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.redshiftserverlessEndpointAccess.RedshiftserverlessEndpointAccessVpcEndpoint",
-		reflect.TypeOf((*RedshiftserverlessEndpointAccessVpcEndpoint)(nil)).Elem(),
+		reflect.TypeFor[RedshiftserverlessEndpointAccessVpcEndpoint](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.redshiftserverlessEndpointAccess.RedshiftserverlessEndpointAccessVpcEndpointList",
-		reflect.TypeOf((*RedshiftserverlessEndpointAccessVpcEndpointList)(nil)).Elem(),
+		reflect.TypeFor[RedshiftserverlessEndpointAccessVpcEndpointList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -98,7 +98,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedshiftserverlessEndpointAccessVpcEndpointList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -106,11 +106,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.redshiftserverlessEndpointAccess.RedshiftserverlessEndpointAccessVpcEndpointNetworkInterface",
-		reflect.TypeOf((*RedshiftserverlessEndpointAccessVpcEndpointNetworkInterface)(nil)).Elem(),
+		reflect.TypeFor[RedshiftserverlessEndpointAccessVpcEndpointNetworkInterface](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.redshiftserverlessEndpointAccess.RedshiftserverlessEndpointAccessVpcEndpointNetworkInterfaceList",
-		reflect.TypeOf((*RedshiftserverlessEndpointAccessVpcEndpointNetworkInterfaceList)(nil)).Elem(),
+		reflect.TypeFor[RedshiftserverlessEndpointAccessVpcEndpointNetworkInterfaceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -123,7 +123,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedshiftserverlessEndpointAccessVpcEndpointNetworkInterfaceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -131,7 +131,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.redshiftserverlessEndpointAccess.RedshiftserverlessEndpointAccessVpcEndpointNetworkInterfaceOutputReference",
-		reflect.TypeOf((*RedshiftserverlessEndpointAccessVpcEndpointNetworkInterfaceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RedshiftserverlessEndpointAccessVpcEndpointNetworkInterfaceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availabilityZone", GoGetter: "AvailabilityZone"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -159,7 +159,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedshiftserverlessEndpointAccessVpcEndpointNetworkInterfaceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -167,7 +167,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.redshiftserverlessEndpointAccess.RedshiftserverlessEndpointAccessVpcEndpointOutputReference",
-		reflect.TypeOf((*RedshiftserverlessEndpointAccessVpcEndpointOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RedshiftserverlessEndpointAccessVpcEndpointOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -194,7 +194,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcEndpointId", GoGetter: "VpcEndpointId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedshiftserverlessEndpointAccessVpcEndpointOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

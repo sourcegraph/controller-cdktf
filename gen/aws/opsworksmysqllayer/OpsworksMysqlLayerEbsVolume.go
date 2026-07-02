@@ -1,6 +1,5 @@
 package opsworksmysqllayer
 
-
 type OpsworksMysqlLayerEbsVolume struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_mysql_layer#mount_point OpsworksMysqlLayer#mount_point}.
 	MountPoint *string `field:"required" json:"mountPoint" yaml:"mountPoint"`
@@ -9,7 +8,7 @@ type OpsworksMysqlLayerEbsVolume struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_mysql_layer#size OpsworksMysqlLayer#size}.
 	Size *float64 `field:"required" json:"size" yaml:"size"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_mysql_layer#encrypted OpsworksMysqlLayer#encrypted}.
-	Encrypted interface{} `field:"optional" json:"encrypted" yaml:"encrypted"`
+	Encrypted any `field:"optional" json:"encrypted" yaml:"encrypted"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_mysql_layer#iops OpsworksMysqlLayer#iops}.
 	Iops *float64 `field:"optional" json:"iops" yaml:"iops"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_mysql_layer#raid_level OpsworksMysqlLayer#raid_level}.
@@ -17,4 +16,3 @@ type OpsworksMysqlLayerEbsVolume struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_mysql_layer#type OpsworksMysqlLayer#type}.
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
-

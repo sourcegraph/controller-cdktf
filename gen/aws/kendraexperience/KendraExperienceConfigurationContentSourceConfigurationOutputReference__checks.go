@@ -98,7 +98,7 @@ func (k *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutput
 	return nil
 }
 
-func (j *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutput
 	return nil
 }
 
-func (j *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutputReference) validateSetDirectPutContentParameters(val interface{}) error {
+func (j *jsiiProxy_KendraExperienceConfigurationContentSourceConfigurationOutputReference) validateSetDirectPutContentParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewKendraExperienceConfigurationContentSourceConfigurationOutputRef
 
 	return nil
 }
-

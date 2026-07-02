@@ -98,7 +98,7 @@ func (v *jsiiProxy_VpcEndpointSubnetAssociationTimeoutsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_VpcEndpointSubnetAssociationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VpcEndpointSubnetAssociationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_VpcEndpointSubnetAssociationTimeoutsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_VpcEndpointSubnetAssociationTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_VpcEndpointSubnetAssociationTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewVpcEndpointSubnetAssociationTimeoutsOutputReferenceParameters(te
 
 	return nil
 }
-

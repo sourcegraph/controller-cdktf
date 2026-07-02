@@ -18,22 +18,22 @@ type S3BucketNotification interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Eventbridge() interface{}
-	SetEventbridge(val interface{})
-	EventbridgeInput() interface{}
+	Eventbridge() any
+	SetEventbridge(val any)
+	EventbridgeInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -46,7 +46,7 @@ type S3BucketNotification interface {
 	SetId(val *string)
 	IdInput() *string
 	LambdaFunction() S3BucketNotificationLambdaFunctionList
-	LambdaFunctionInput() interface{}
+	LambdaFunctionInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -58,28 +58,28 @@ type S3BucketNotification interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	Queue() S3BucketNotificationQueueList
-	QueueInput() interface{}
+	QueueInput() any
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Topic() S3BucketNotificationTopicList
-	TopicInput() interface{}
+	TopicInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,7 +97,7 @@ type S3BucketNotification interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -109,16 +109,16 @@ type S3BucketNotification interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutLambdaFunction(value interface{})
-	PutQueue(value interface{})
-	PutTopic(value interface{})
+	PutLambdaFunction(value any)
+	PutQueue(value any)
+	PutTopic(value any)
 	ResetEventbridge()
 	ResetId()
 	ResetLambdaFunction()
@@ -127,17 +127,17 @@ type S3BucketNotification interface {
 	ResetOverrideLogicalId()
 	ResetQueue()
 	ResetTopic()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for S3BucketNotification
@@ -175,8 +175,8 @@ func (j *jsiiProxy_S3BucketNotification) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketNotification) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketNotification) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -185,8 +185,8 @@ func (j *jsiiProxy_S3BucketNotification) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketNotification) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_S3BucketNotification) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -195,8 +195,8 @@ func (j *jsiiProxy_S3BucketNotification) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketNotification) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketNotification) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -215,8 +215,8 @@ func (j *jsiiProxy_S3BucketNotification) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketNotification) Eventbridge() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketNotification) Eventbridge() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"eventbridge",
@@ -225,8 +225,8 @@ func (j *jsiiProxy_S3BucketNotification) Eventbridge() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketNotification) EventbridgeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketNotification) EventbridgeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"eventbridgeInput",
@@ -295,8 +295,8 @@ func (j *jsiiProxy_S3BucketNotification) LambdaFunction() S3BucketNotificationLa
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketNotification) LambdaFunctionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketNotification) LambdaFunctionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"lambdaFunctionInput",
@@ -335,8 +335,8 @@ func (j *jsiiProxy_S3BucketNotification) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketNotification) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_S3BucketNotification) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -355,8 +355,8 @@ func (j *jsiiProxy_S3BucketNotification) Queue() S3BucketNotificationQueueList {
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketNotification) QueueInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketNotification) QueueInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"queueInput",
@@ -365,8 +365,8 @@ func (j *jsiiProxy_S3BucketNotification) QueueInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketNotification) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketNotification) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -385,8 +385,8 @@ func (j *jsiiProxy_S3BucketNotification) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketNotification) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_S3BucketNotification) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -415,8 +415,8 @@ func (j *jsiiProxy_S3BucketNotification) Topic() S3BucketNotificationTopicList {
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketNotification) TopicInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketNotification) TopicInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"topicInput",
@@ -424,7 +424,6 @@ func (j *jsiiProxy_S3BucketNotification) TopicInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_bucket_notification aws_s3_bucket_notification} Resource.
 func NewS3BucketNotification(scope constructs.Construct, id *string, config *S3BucketNotificationConfig) S3BucketNotification {
@@ -437,7 +436,7 @@ func NewS3BucketNotification(scope constructs.Construct, id *string, config *S3B
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3BucketNotification.S3BucketNotification",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -450,12 +449,12 @@ func NewS3BucketNotification_Override(s S3BucketNotification, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3BucketNotification.S3BucketNotification",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_S3BucketNotification)SetBucket(val *string) {
+func (j *jsiiProxy_S3BucketNotification) SetBucket(val *string) {
 	if err := j.validateSetBucketParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_S3BucketNotification)SetBucket(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketNotification)SetConnection(val interface{}) {
+func (j *jsiiProxy_S3BucketNotification) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -477,7 +476,7 @@ func (j *jsiiProxy_S3BucketNotification)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketNotification)SetCount(val interface{}) {
+func (j *jsiiProxy_S3BucketNotification) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_S3BucketNotification)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketNotification)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_S3BucketNotification) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -496,7 +495,7 @@ func (j *jsiiProxy_S3BucketNotification)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketNotification)SetEventbridge(val interface{}) {
+func (j *jsiiProxy_S3BucketNotification) SetEventbridge(val any) {
 	if err := j.validateSetEventbridgeParameters(val); err != nil {
 		panic(err)
 	}
@@ -507,7 +506,7 @@ func (j *jsiiProxy_S3BucketNotification)SetEventbridge(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketNotification)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_S3BucketNotification) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -515,7 +514,7 @@ func (j *jsiiProxy_S3BucketNotification)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_S3BucketNotification)SetId(val *string) {
+func (j *jsiiProxy_S3BucketNotification) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -526,7 +525,7 @@ func (j *jsiiProxy_S3BucketNotification)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketNotification)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_S3BucketNotification) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +536,7 @@ func (j *jsiiProxy_S3BucketNotification)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_S3BucketNotification)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_S3BucketNotification) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -545,7 +544,7 @@ func (j *jsiiProxy_S3BucketNotification)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_S3BucketNotification)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_S3BucketNotification) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -568,7 +567,7 @@ func S3BucketNotification_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3BucketNotification.S3BucketNotification",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -592,7 +591,7 @@ func S3BucketNotification_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func S3BucketNotification_IsConstruct(x interface{}) *bool {
+func S3BucketNotification_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateS3BucketNotification_IsConstructParameters(x); err != nil {
@@ -603,7 +602,7 @@ func S3BucketNotification_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3BucketNotification.S3BucketNotification",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -611,7 +610,7 @@ func S3BucketNotification_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func S3BucketNotification_IsTerraformElement(x interface{}) *bool {
+func S3BucketNotification_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateS3BucketNotification_IsTerraformElementParameters(x); err != nil {
@@ -622,7 +621,7 @@ func S3BucketNotification_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3BucketNotification.S3BucketNotification",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -630,7 +629,7 @@ func S3BucketNotification_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func S3BucketNotification_IsTerraformResource(x interface{}) *bool {
+func S3BucketNotification_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateS3BucketNotification_IsTerraformResourceParameters(x); err != nil {
@@ -641,7 +640,7 @@ func S3BucketNotification_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3BucketNotification.S3BucketNotification",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -666,31 +665,31 @@ func (s *jsiiProxy_S3BucketNotification) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_S3BucketNotification) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_S3BucketNotification) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_S3BucketNotification) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_S3BucketNotification) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -706,7 +705,7 @@ func (s *jsiiProxy_S3BucketNotification) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -722,7 +721,7 @@ func (s *jsiiProxy_S3BucketNotification) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -738,7 +737,7 @@ func (s *jsiiProxy_S3BucketNotification) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -754,7 +753,7 @@ func (s *jsiiProxy_S3BucketNotification) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -770,7 +769,7 @@ func (s *jsiiProxy_S3BucketNotification) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -786,7 +785,7 @@ func (s *jsiiProxy_S3BucketNotification) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -802,7 +801,7 @@ func (s *jsiiProxy_S3BucketNotification) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -818,15 +817,15 @@ func (s *jsiiProxy_S3BucketNotification) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketNotification) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3BucketNotification) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -845,7 +844,7 @@ func (s *jsiiProxy_S3BucketNotification) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -858,7 +857,7 @@ func (s *jsiiProxy_S3BucketNotification) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -872,18 +871,18 @@ func (s *jsiiProxy_S3BucketNotification) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_S3BucketNotification) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_S3BucketNotification) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -894,7 +893,7 @@ func (s *jsiiProxy_S3BucketNotification) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -905,40 +904,40 @@ func (s *jsiiProxy_S3BucketNotification) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (s *jsiiProxy_S3BucketNotification) PutLambdaFunction(value interface{}) {
+func (s *jsiiProxy_S3BucketNotification) PutLambdaFunction(value any) {
 	if err := s.validatePutLambdaFunctionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putLambdaFunction",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_S3BucketNotification) PutQueue(value interface{}) {
+func (s *jsiiProxy_S3BucketNotification) PutQueue(value any) {
 	if err := s.validatePutQueueParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putQueue",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_S3BucketNotification) PutTopic(value interface{}) {
+func (s *jsiiProxy_S3BucketNotification) PutTopic(value any) {
 	if err := s.validatePutTopicParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putTopic",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -990,8 +989,8 @@ func (s *jsiiProxy_S3BucketNotification) ResetTopic() {
 	)
 }
 
-func (s *jsiiProxy_S3BucketNotification) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_S3BucketNotification) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1003,8 +1002,8 @@ func (s *jsiiProxy_S3BucketNotification) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketNotification) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_S3BucketNotification) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1016,8 +1015,8 @@ func (s *jsiiProxy_S3BucketNotification) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketNotification) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3BucketNotification) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1029,8 +1028,8 @@ func (s *jsiiProxy_S3BucketNotification) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketNotification) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3BucketNotification) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1055,8 +1054,8 @@ func (s *jsiiProxy_S3BucketNotification) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketNotification) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3BucketNotification) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1067,4 +1066,3 @@ func (s *jsiiProxy_S3BucketNotification) ToTerraform() interface{} {
 
 	return returns
 }
-

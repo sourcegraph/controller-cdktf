@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewAppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference
 
 	return nil
 }
-

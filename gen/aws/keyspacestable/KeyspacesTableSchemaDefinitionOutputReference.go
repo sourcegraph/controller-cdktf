@@ -11,14 +11,14 @@ import (
 type KeyspacesTableSchemaDefinitionOutputReference interface {
 	cdktf.ComplexObject
 	ClusteringKey() KeyspacesTableSchemaDefinitionClusteringKeyList
-	ClusteringKeyInput() interface{}
+	ClusteringKeyInput() any
 	Column() KeyspacesTableSchemaDefinitionColumnList
-	ColumnInput() interface{}
+	ColumnInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -34,9 +34,9 @@ type KeyspacesTableSchemaDefinitionOutputReference interface {
 	InternalValue() *KeyspacesTableSchemaDefinition
 	SetInternalValue(val *KeyspacesTableSchemaDefinition)
 	PartitionKey() KeyspacesTableSchemaDefinitionPartitionKeyList
-	PartitionKeyInput() interface{}
+	PartitionKeyInput() any
 	StaticColumn() KeyspacesTableSchemaDefinitionStaticColumnList
-	StaticColumnInput() interface{}
+	StaticColumnInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -48,7 +48,7 @@ type KeyspacesTableSchemaDefinitionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,15 +69,15 @@ type KeyspacesTableSchemaDefinitionOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutClusteringKey(value interface{})
-	PutColumn(value interface{})
-	PutPartitionKey(value interface{})
-	PutStaticColumn(value interface{})
+	PutClusteringKey(value any)
+	PutColumn(value any)
+	PutPartitionKey(value any)
+	PutStaticColumn(value any)
 	ResetClusteringKey()
 	ResetStaticColumn()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -100,8 +100,8 @@ func (j *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) ClusteringKey(
 	return returns
 }
 
-func (j *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) ClusteringKeyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) ClusteringKeyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"clusteringKeyInput",
@@ -120,8 +120,8 @@ func (j *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) Column() Keysp
 	return returns
 }
 
-func (j *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) ColumnInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) ColumnInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"columnInput",
@@ -130,8 +130,8 @@ func (j *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) ColumnInput() 
 	return returns
 }
 
-func (j *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) PartitionKey()
 	return returns
 }
 
-func (j *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) PartitionKeyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) PartitionKeyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"partitionKeyInput",
@@ -210,8 +210,8 @@ func (j *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) StaticColumn()
 	return returns
 }
 
-func (j *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) StaticColumnInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) StaticColumnInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"staticColumnInput",
@@ -240,7 +240,6 @@ func (j *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) TerraformResou
 	return returns
 }
 
-
 func NewKeyspacesTableSchemaDefinitionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) KeyspacesTableSchemaDefinitionOutputReference {
 	_init_.Initialize()
 
@@ -251,7 +250,7 @@ func NewKeyspacesTableSchemaDefinitionOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -263,12 +262,12 @@ func NewKeyspacesTableSchemaDefinitionOutputReference_Override(k KeyspacesTableS
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		k,
 	)
 }
 
-func (j *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference)SetInternalValue(val *KeyspacesTableSchemaDefinition) {
+func (j *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) SetInternalValue(val *KeyspacesTableSchemaDefinition) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,16 +335,16 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -361,7 +360,7 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		k,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -377,7 +376,7 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		k,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -393,7 +392,7 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		k,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		k,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		k,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		k,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		k,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		k,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,54 +501,54 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) InterpolationF
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) PutClusteringKey(value interface{}) {
+func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) PutClusteringKey(value any) {
 	if err := k.validatePutClusteringKeyParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		k,
 		"putClusteringKey",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) PutColumn(value interface{}) {
+func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) PutColumn(value any) {
 	if err := k.validatePutColumnParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		k,
 		"putColumn",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) PutPartitionKey(value interface{}) {
+func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) PutPartitionKey(value any) {
 	if err := k.validatePutPartitionKeyParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		k,
 		"putPartitionKey",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) PutStaticColumn(value interface{}) {
+func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) PutStaticColumn(value any) {
 	if err := k.validatePutStaticColumnParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		k,
 		"putStaticColumn",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -569,16 +568,16 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) ResetStaticCol
 	)
 }
 
-func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := k.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		k,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -597,4 +596,3 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) ToString() *st
 
 	return returns
 }
-

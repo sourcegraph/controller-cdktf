@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsVpcIpamPoolTimeoutsOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsVpcIpamPoolTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsVpcIpamPoolTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataAwsVpcIpamPoolTimeoutsOutputReference) validateSetComplex
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsVpcIpamPoolTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsVpcIpamPoolTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataAwsVpcIpamPoolTimeoutsOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

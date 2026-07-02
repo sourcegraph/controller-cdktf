@@ -106,7 +106,7 @@ func (j *jsiiProxy_LbSubnetMappingOutputReference) validateSetAllocationIdParame
 	return nil
 }
 
-func (j *jsiiProxy_LbSubnetMappingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LbSubnetMappingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_LbSubnetMappingOutputReference) validateSetComplexObjectIsFro
 	return nil
 }
 
-func (j *jsiiProxy_LbSubnetMappingOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LbSubnetMappingOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewLbSubnetMappingOutputReferenceParameters(terraformResource cdktf
 
 	return nil
 }
-

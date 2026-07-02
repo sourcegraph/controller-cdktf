@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.vpcEndpointService.VpcEndpointService",
-		reflect.TypeOf((*VpcEndpointService)(nil)).Elem(),
+		reflect.TypeFor[VpcEndpointService](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceptanceRequired", GoGetter: "AcceptanceRequired"},
 			_jsii_.MemberProperty{JsiiProperty: "acceptanceRequiredInput", GoGetter: "AcceptanceRequiredInput"},
@@ -91,7 +91,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VpcEndpointService{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -99,15 +99,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.vpcEndpointService.VpcEndpointServiceConfig",
-		reflect.TypeOf((*VpcEndpointServiceConfig)(nil)).Elem(),
+		reflect.TypeFor[VpcEndpointServiceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.vpcEndpointService.VpcEndpointServicePrivateDnsNameConfiguration",
-		reflect.TypeOf((*VpcEndpointServicePrivateDnsNameConfiguration)(nil)).Elem(),
+		reflect.TypeFor[VpcEndpointServicePrivateDnsNameConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.vpcEndpointService.VpcEndpointServicePrivateDnsNameConfigurationList",
-		reflect.TypeOf((*VpcEndpointServicePrivateDnsNameConfigurationList)(nil)).Elem(),
+		reflect.TypeFor[VpcEndpointServicePrivateDnsNameConfigurationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -120,7 +120,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VpcEndpointServicePrivateDnsNameConfigurationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -128,7 +128,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.vpcEndpointService.VpcEndpointServicePrivateDnsNameConfigurationOutputReference",
-		reflect.TypeOf((*VpcEndpointServicePrivateDnsNameConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VpcEndpointServicePrivateDnsNameConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -156,7 +156,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VpcEndpointServicePrivateDnsNameConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -164,11 +164,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.vpcEndpointService.VpcEndpointServiceTimeouts",
-		reflect.TypeOf((*VpcEndpointServiceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[VpcEndpointServiceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.vpcEndpointService.VpcEndpointServiceTimeoutsOutputReference",
-		reflect.TypeOf((*VpcEndpointServiceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VpcEndpointServiceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -201,7 +201,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VpcEndpointServiceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

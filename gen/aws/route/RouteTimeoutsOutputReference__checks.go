@@ -98,7 +98,7 @@ func (r *jsiiProxy_RouteTimeoutsOutputReference) validateResolveParameters(_cont
 	return nil
 }
 
-func (j *jsiiProxy_RouteTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RouteTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_RouteTimeoutsOutputReference) validateSetDeleteParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_RouteTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RouteTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewRouteTimeoutsOutputReferenceParameters(terraformResource cdktf.I
 
 	return nil
 }
-

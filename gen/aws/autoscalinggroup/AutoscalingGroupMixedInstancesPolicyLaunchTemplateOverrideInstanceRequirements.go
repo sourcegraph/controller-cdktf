@@ -1,6 +1,5 @@
 package autoscalinggroup
 
-
 type AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirements struct {
 	// accelerator_count block.
 	//
@@ -49,7 +48,7 @@ type AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequireme
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/autoscaling_group#on_demand_max_price_percentage_over_lowest_price AutoscalingGroup#on_demand_max_price_percentage_over_lowest_price}.
 	OnDemandMaxPricePercentageOverLowestPrice *float64 `field:"optional" json:"onDemandMaxPricePercentageOverLowestPrice" yaml:"onDemandMaxPricePercentageOverLowestPrice"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/autoscaling_group#require_hibernate_support AutoscalingGroup#require_hibernate_support}.
-	RequireHibernateSupport interface{} `field:"optional" json:"requireHibernateSupport" yaml:"requireHibernateSupport"`
+	RequireHibernateSupport any `field:"optional" json:"requireHibernateSupport" yaml:"requireHibernateSupport"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/autoscaling_group#spot_max_price_percentage_over_lowest_price AutoscalingGroup#spot_max_price_percentage_over_lowest_price}.
 	SpotMaxPricePercentageOverLowestPrice *float64 `field:"optional" json:"spotMaxPricePercentageOverLowestPrice" yaml:"spotMaxPricePercentageOverLowestPrice"`
 	// total_local_storage_gb block.
@@ -61,4 +60,3 @@ type AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequireme
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/autoscaling_group#vcpu_count AutoscalingGroup#vcpu_count}
 	VcpuCount *AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsVcpuCount `field:"optional" json:"vcpuCount" yaml:"vcpuCount"`
 }
-

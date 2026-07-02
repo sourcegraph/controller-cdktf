@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepter",
-		reflect.TypeOf((*DirectoryServiceSharedDirectoryAccepter)(nil)).Elem(),
+		reflect.TypeFor[DirectoryServiceSharedDirectoryAccepter](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectoryServiceSharedDirectoryAccepter{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -74,15 +74,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepterConfig",
-		reflect.TypeOf((*DirectoryServiceSharedDirectoryAccepterConfig)(nil)).Elem(),
+		reflect.TypeFor[DirectoryServiceSharedDirectoryAccepterConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepterTimeouts",
-		reflect.TypeOf((*DirectoryServiceSharedDirectoryAccepterTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DirectoryServiceSharedDirectoryAccepterTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepterTimeoutsOutputReference",
-		reflect.TypeOf((*DirectoryServiceSharedDirectoryAccepterTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DirectoryServiceSharedDirectoryAccepterTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -112,7 +112,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectoryServiceSharedDirectoryAccepterTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

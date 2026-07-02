@@ -98,7 +98,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersTeradataOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersTeradataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_QuicksightDataSourceParametersTeradataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewQuicksightDataSourceParametersTeradataOutputReferenceParameters(
 
 	return nil
 }
-

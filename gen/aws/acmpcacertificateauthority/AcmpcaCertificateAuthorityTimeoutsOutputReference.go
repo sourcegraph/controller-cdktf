@@ -12,9 +12,9 @@ type AcmpcaCertificateAuthorityTimeoutsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type AcmpcaCertificateAuthorityTimeoutsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -43,7 +43,7 @@ type AcmpcaCertificateAuthorityTimeoutsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type AcmpcaCertificateAuthorityTimeoutsOutputReference interface {
 	ResetCreate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -140,8 +140,8 @@ func (j *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference) Fqn() *str
 	return returns
 }
 
-func (j *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference) TerraformR
 	return returns
 }
 
-
 func NewAcmpcaCertificateAuthorityTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AcmpcaCertificateAuthorityTimeoutsOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewAcmpcaCertificateAuthorityTimeoutsOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewAcmpcaCertificateAuthorityTimeoutsOutputReference_Override(a AcmpcaCerti
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference)SetCreate(val *string) {
+func (j *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference) SetCreate(val *string) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference)SetCreate(v
 	)
 }
 
-func (j *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,16 +276,16 @@ func (a *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference) ComputeFqn
 	return returns
 }
 
-func (a *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -302,7 +301,7 @@ func (a *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference) GetBoolean
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -318,7 +317,7 @@ func (a *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference) GetBoolean
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -334,7 +333,7 @@ func (a *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference) GetListAtt
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (a *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference) GetNumberA
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (a *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference) GetNumberL
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (a *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference) GetNumberM
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (a *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference) GetStringA
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (a *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference) GetStringM
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (a *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference) Interpolat
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -458,16 +457,16 @@ func (a *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference) ResetCreat
 	)
 }
 
-func (a *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (a *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference) ToString()
 
 	return returns
 }
-

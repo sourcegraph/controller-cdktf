@@ -19,7 +19,7 @@ func (e *jsiiProxy_Ec2TransitGatewayVpcAttachmentAccepter) validateAddMoveTarget
 	return nil
 }
 
-func (e *jsiiProxy_Ec2TransitGatewayVpcAttachmentAccepter) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_Ec2TransitGatewayVpcAttachmentAccepter) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (e *jsiiProxy_Ec2TransitGatewayVpcAttachmentAccepter) validateMoveFromIdPar
 	return nil
 }
 
-func (e *jsiiProxy_Ec2TransitGatewayVpcAttachmentAccepter) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (e *jsiiProxy_Ec2TransitGatewayVpcAttachmentAccepter) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateEc2TransitGatewayVpcAttachmentAccepter_GenerateConfigForImportParam
 	return nil
 }
 
-func validateEc2TransitGatewayVpcAttachmentAccepter_IsConstructParameters(x interface{}) error {
+func validateEc2TransitGatewayVpcAttachmentAccepter_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateEc2TransitGatewayVpcAttachmentAccepter_IsConstructParameters(x inte
 	return nil
 }
 
-func validateEc2TransitGatewayVpcAttachmentAccepter_IsTerraformElementParameters(x interface{}) error {
+func validateEc2TransitGatewayVpcAttachmentAccepter_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateEc2TransitGatewayVpcAttachmentAccepter_IsTerraformElementParameters
 	return nil
 }
 
-func validateEc2TransitGatewayVpcAttachmentAccepter_IsTerraformResourceParameters(x interface{}) error {
+func validateEc2TransitGatewayVpcAttachmentAccepter_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateEc2TransitGatewayVpcAttachmentAccepter_IsTerraformResourceParameter
 	return nil
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayVpcAttachmentAccepter) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2TransitGatewayVpcAttachmentAccepter) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_Ec2TransitGatewayVpcAttachmentAccepter) validateSetConnection
 	return nil
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayVpcAttachmentAccepter) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2TransitGatewayVpcAttachmentAccepter) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -350,7 +350,7 @@ func (j *jsiiProxy_Ec2TransitGatewayVpcAttachmentAccepter) validateSetLifecycleP
 	return nil
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayVpcAttachmentAccepter) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Ec2TransitGatewayVpcAttachmentAccepter) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -420,7 +420,7 @@ func (j *jsiiProxy_Ec2TransitGatewayVpcAttachmentAccepter) validateSetTransitGat
 	return nil
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayVpcAttachmentAccepter) validateSetTransitGatewayDefaultRouteTableAssociationParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2TransitGatewayVpcAttachmentAccepter) validateSetTransitGatewayDefaultRouteTableAssociationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -440,7 +440,7 @@ func (j *jsiiProxy_Ec2TransitGatewayVpcAttachmentAccepter) validateSetTransitGat
 	return nil
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayVpcAttachmentAccepter) validateSetTransitGatewayDefaultRouteTablePropagationParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2TransitGatewayVpcAttachmentAccepter) validateSetTransitGatewayDefaultRouteTablePropagationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -478,4 +478,3 @@ func validateNewEc2TransitGatewayVpcAttachmentAccepterParameters(scope construct
 
 	return nil
 }
-

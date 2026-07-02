@@ -106,7 +106,7 @@ func (j *jsiiProxy_ApiGatewayUsagePlanThrottleSettingsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_ApiGatewayUsagePlanThrottleSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApiGatewayUsagePlanThrottleSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewApiGatewayUsagePlanThrottleSettingsOutputReferenceParameters(ter
 
 	return nil
 }
-

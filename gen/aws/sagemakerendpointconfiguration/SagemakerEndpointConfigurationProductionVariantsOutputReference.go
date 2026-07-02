@@ -15,9 +15,9 @@ type SagemakerEndpointConfigurationProductionVariantsOutputReference interface {
 	AcceleratorTypeInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -44,8 +44,8 @@ type SagemakerEndpointConfigurationProductionVariantsOutputReference interface {
 	InstanceType() *string
 	SetInstanceType(val *string)
 	InstanceTypeInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	ModelDataDownloadTimeoutInSeconds() *float64
 	SetModelDataDownloadTimeoutInSeconds(val *float64)
 	ModelDataDownloadTimeoutInSecondsInput() *float64
@@ -71,7 +71,7 @@ type SagemakerEndpointConfigurationProductionVariantsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -106,7 +106,7 @@ type SagemakerEndpointConfigurationProductionVariantsOutputReference interface {
 	ResetVolumeSizeInGb()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -139,8 +139,8 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -279,8 +279,8 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -409,7 +409,6 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	return returns
 }
 
-
 func NewSagemakerEndpointConfigurationProductionVariantsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SagemakerEndpointConfigurationProductionVariantsOutputReference {
 	_init_.Initialize()
 
@@ -420,7 +419,7 @@ func NewSagemakerEndpointConfigurationProductionVariantsOutputReference(terrafor
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationProductionVariantsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -432,12 +431,12 @@ func NewSagemakerEndpointConfigurationProductionVariantsOutputReference_Override
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationProductionVariantsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference)SetAcceleratorType(val *string) {
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) SetAcceleratorType(val *string) {
 	if err := j.validateSetAcceleratorTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -448,7 +447,7 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	)
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -459,7 +458,7 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	)
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -470,7 +469,7 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	)
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference)SetContainerStartupHealthCheckTimeoutInSeconds(val *float64) {
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) SetContainerStartupHealthCheckTimeoutInSeconds(val *float64) {
 	if err := j.validateSetContainerStartupHealthCheckTimeoutInSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -481,7 +480,7 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	)
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference)SetInitialInstanceCount(val *float64) {
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) SetInitialInstanceCount(val *float64) {
 	if err := j.validateSetInitialInstanceCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -492,7 +491,7 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	)
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference)SetInitialVariantWeight(val *float64) {
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) SetInitialVariantWeight(val *float64) {
 	if err := j.validateSetInitialVariantWeightParameters(val); err != nil {
 		panic(err)
 	}
@@ -503,7 +502,7 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	)
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference)SetInstanceType(val *string) {
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) SetInstanceType(val *string) {
 	if err := j.validateSetInstanceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -514,7 +513,7 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	)
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -525,7 +524,7 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	)
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference)SetModelDataDownloadTimeoutInSeconds(val *float64) {
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) SetModelDataDownloadTimeoutInSeconds(val *float64) {
 	if err := j.validateSetModelDataDownloadTimeoutInSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -536,7 +535,7 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	)
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference)SetModelName(val *string) {
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) SetModelName(val *string) {
 	if err := j.validateSetModelNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	)
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -558,7 +557,7 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	)
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	)
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference)SetVariantName(val *string) {
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) SetVariantName(val *string) {
 	if err := j.validateSetVariantNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,7 +579,7 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	)
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference)SetVolumeSizeInGb(val *float64) {
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) SetVolumeSizeInGb(val *float64) {
 	if err := j.validateSetVolumeSizeInGbParameters(val); err != nil {
 		panic(err)
 	}
@@ -604,16 +603,16 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -629,7 +628,7 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -645,7 +644,7 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -693,7 +692,7 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -709,7 +708,7 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -725,7 +724,7 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -741,7 +740,7 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -770,7 +769,7 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -784,7 +783,7 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	_jsii_.InvokeVoid(
 		s,
 		"putCoreDumpConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -795,7 +794,7 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	_jsii_.InvokeVoid(
 		s,
 		"putServerlessConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -879,16 +878,16 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	)
 }
 
-func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -907,4 +906,3 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 
 	return returns
 }
-

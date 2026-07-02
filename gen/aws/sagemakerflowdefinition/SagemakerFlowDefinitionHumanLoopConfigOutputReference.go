@@ -12,9 +12,9 @@ type SagemakerFlowDefinitionHumanLoopConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -66,7 +66,7 @@ type SagemakerFlowDefinitionHumanLoopConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -94,7 +94,7 @@ type SagemakerFlowDefinitionHumanLoopConfigOutputReference interface {
 	ResetTaskTimeLimitInSeconds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -107,8 +107,8 @@ type jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -357,7 +357,6 @@ func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference) Workte
 	return returns
 }
 
-
 func NewSagemakerFlowDefinitionHumanLoopConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SagemakerFlowDefinitionHumanLoopConfigOutputReference {
 	_init_.Initialize()
 
@@ -368,7 +367,7 @@ func NewSagemakerFlowDefinitionHumanLoopConfigOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -380,12 +379,12 @@ func NewSagemakerFlowDefinitionHumanLoopConfigOutputReference_Override(s Sagemak
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -396,7 +395,7 @@ func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -407,7 +406,7 @@ func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference)SetHumanTaskUiArn(val *string) {
+func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference) SetHumanTaskUiArn(val *string) {
 	if err := j.validateSetHumanTaskUiArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -418,7 +417,7 @@ func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference)SetHuma
 	)
 }
 
-func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference)SetInternalValue(val *SagemakerFlowDefinitionHumanLoopConfig) {
+func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference) SetInternalValue(val *SagemakerFlowDefinitionHumanLoopConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -429,7 +428,7 @@ func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference)SetTaskAvailabilityLifetimeInSeconds(val *float64) {
+func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference) SetTaskAvailabilityLifetimeInSeconds(val *float64) {
 	if err := j.validateSetTaskAvailabilityLifetimeInSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -440,7 +439,7 @@ func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference)SetTask
 	)
 }
 
-func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference)SetTaskCount(val *float64) {
+func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference) SetTaskCount(val *float64) {
 	if err := j.validateSetTaskCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,7 +450,7 @@ func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference)SetTask
 	)
 }
 
-func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference)SetTaskDescription(val *string) {
+func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference) SetTaskDescription(val *string) {
 	if err := j.validateSetTaskDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference)SetTask
 	)
 }
 
-func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference)SetTaskKeywords(val *[]*string) {
+func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference) SetTaskKeywords(val *[]*string) {
 	if err := j.validateSetTaskKeywordsParameters(val); err != nil {
 		panic(err)
 	}
@@ -473,7 +472,7 @@ func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference)SetTask
 	)
 }
 
-func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference)SetTaskTimeLimitInSeconds(val *float64) {
+func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference) SetTaskTimeLimitInSeconds(val *float64) {
 	if err := j.validateSetTaskTimeLimitInSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -484,7 +483,7 @@ func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference)SetTask
 	)
 }
 
-func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference)SetTaskTitle(val *string) {
+func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference) SetTaskTitle(val *string) {
 	if err := j.validateSetTaskTitleParameters(val); err != nil {
 		panic(err)
 	}
@@ -495,7 +494,7 @@ func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference)SetTask
 	)
 }
 
-func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -506,7 +505,7 @@ func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -517,7 +516,7 @@ func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference)SetWorkteamArn(val *string) {
+func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference) SetWorkteamArn(val *string) {
 	if err := j.validateSetWorkteamArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,16 +540,16 @@ func (s *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference) Comput
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -566,7 +565,7 @@ func (s *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference) GetBoo
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func (s *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference) GetBoo
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -598,7 +597,7 @@ func (s *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference) GetLis
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -614,7 +613,7 @@ func (s *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference) GetNum
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -630,7 +629,7 @@ func (s *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference) GetNum
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func (s *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference) GetNum
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func (s *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference) GetStr
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func (s *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference) GetStr
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -707,7 +706,7 @@ func (s *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference) Interp
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -721,7 +720,7 @@ func (s *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference) PutPub
 	_jsii_.InvokeVoid(
 		s,
 		"putPublicWorkforceTaskPrice",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -757,16 +756,16 @@ func (s *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference) ResetT
 	)
 }
 
-func (s *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -785,4 +784,3 @@ func (s *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference) ToStri
 
 	return returns
 }
-

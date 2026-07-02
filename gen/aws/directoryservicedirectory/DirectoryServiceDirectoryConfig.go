@@ -6,9 +6,9 @@ import (
 
 type DirectoryServiceDirectoryConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DirectoryServiceDirectoryConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/directory_service_directory#name DirectoryServiceDirectory#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/directory_service_directory#password DirectoryServiceDirectory#password}.
@@ -36,7 +36,7 @@ type DirectoryServiceDirectoryConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/directory_service_directory#edition DirectoryServiceDirectory#edition}.
 	Edition *string `field:"optional" json:"edition" yaml:"edition"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/directory_service_directory#enable_sso DirectoryServiceDirectory#enable_sso}.
-	EnableSso interface{} `field:"optional" json:"enableSso" yaml:"enableSso"`
+	EnableSso any `field:"optional" json:"enableSso" yaml:"enableSso"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/directory_service_directory#id DirectoryServiceDirectory#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -61,4 +61,3 @@ type DirectoryServiceDirectoryConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/directory_service_directory#vpc_settings DirectoryServiceDirectory#vpc_settings}
 	VpcSettings *DirectoryServiceDirectoryVpcSettings `field:"optional" json:"vpcSettings" yaml:"vpcSettings"`
 }
-

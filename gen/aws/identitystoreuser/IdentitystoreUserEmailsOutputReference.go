@@ -12,9 +12,9 @@ type IdentitystoreUserEmailsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,9 +29,9 @@ type IdentitystoreUserEmailsOutputReference interface {
 	Fqn() *string
 	InternalValue() *IdentitystoreUserEmails
 	SetInternalValue(val *IdentitystoreUserEmails)
-	Primary() interface{}
-	SetPrimary(val interface{})
-	PrimaryInput() interface{}
+	Primary() any
+	SetPrimary(val any)
+	PrimaryInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type IdentitystoreUserEmailsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type IdentitystoreUserEmailsOutputReference interface {
 	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_IdentitystoreUserEmailsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_IdentitystoreUserEmailsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IdentitystoreUserEmailsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -138,8 +138,8 @@ func (j *jsiiProxy_IdentitystoreUserEmailsOutputReference) InternalValue() *Iden
 	return returns
 }
 
-func (j *jsiiProxy_IdentitystoreUserEmailsOutputReference) Primary() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IdentitystoreUserEmailsOutputReference) Primary() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"primary",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_IdentitystoreUserEmailsOutputReference) Primary() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_IdentitystoreUserEmailsOutputReference) PrimaryInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IdentitystoreUserEmailsOutputReference) PrimaryInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"primaryInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_IdentitystoreUserEmailsOutputReference) ValueInput() *string 
 	return returns
 }
 
-
 func NewIdentitystoreUserEmailsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IdentitystoreUserEmailsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewIdentitystoreUserEmailsOutputReference(terraformResource cdktf.IInterpol
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUserEmailsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewIdentitystoreUserEmailsOutputReference_Override(i IdentitystoreUserEmail
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUserEmailsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IdentitystoreUserEmailsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IdentitystoreUserEmailsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_IdentitystoreUserEmailsOutputReference)SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_IdentitystoreUserEmailsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IdentitystoreUserEmailsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_IdentitystoreUserEmailsOutputReference)SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_IdentitystoreUserEmailsOutputReference)SetInternalValue(val *IdentitystoreUserEmails) {
+func (j *jsiiProxy_IdentitystoreUserEmailsOutputReference) SetInternalValue(val *IdentitystoreUserEmails) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_IdentitystoreUserEmailsOutputReference)SetInternalValue(val *
 	)
 }
 
-func (j *jsiiProxy_IdentitystoreUserEmailsOutputReference)SetPrimary(val interface{}) {
+func (j *jsiiProxy_IdentitystoreUserEmailsOutputReference) SetPrimary(val any) {
 	if err := j.validateSetPrimaryParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_IdentitystoreUserEmailsOutputReference)SetPrimary(val interfa
 	)
 }
 
-func (j *jsiiProxy_IdentitystoreUserEmailsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IdentitystoreUserEmailsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_IdentitystoreUserEmailsOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_IdentitystoreUserEmailsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IdentitystoreUserEmailsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_IdentitystoreUserEmailsOutputReference)SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_IdentitystoreUserEmailsOutputReference)SetType(val *string) {
+func (j *jsiiProxy_IdentitystoreUserEmailsOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_IdentitystoreUserEmailsOutputReference)SetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IdentitystoreUserEmailsOutputReference)SetValue(val *string) {
+func (j *jsiiProxy_IdentitystoreUserEmailsOutputReference) SetValue(val *string) {
 	if err := j.validateSetValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (i *jsiiProxy_IdentitystoreUserEmailsOutputReference) ComputeFqn() *string 
 	return returns
 }
 
-func (i *jsiiProxy_IdentitystoreUserEmailsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IdentitystoreUserEmailsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (i *jsiiProxy_IdentitystoreUserEmailsOutputReference) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (i *jsiiProxy_IdentitystoreUserEmailsOutputReference) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (i *jsiiProxy_IdentitystoreUserEmailsOutputReference) GetListAttribute(terr
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (i *jsiiProxy_IdentitystoreUserEmailsOutputReference) GetNumberAttribute(te
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (i *jsiiProxy_IdentitystoreUserEmailsOutputReference) GetNumberListAttribut
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (i *jsiiProxy_IdentitystoreUserEmailsOutputReference) GetNumberMapAttribute
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (i *jsiiProxy_IdentitystoreUserEmailsOutputReference) GetStringAttribute(te
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (i *jsiiProxy_IdentitystoreUserEmailsOutputReference) GetStringMapAttribute
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (i *jsiiProxy_IdentitystoreUserEmailsOutputReference) InterpolationForAttri
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (i *jsiiProxy_IdentitystoreUserEmailsOutputReference) ResetValue() {
 	)
 }
 
-func (i *jsiiProxy_IdentitystoreUserEmailsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IdentitystoreUserEmailsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (i *jsiiProxy_IdentitystoreUserEmailsOutputReference) ToString() *string {
 
 	return returns
 }
-

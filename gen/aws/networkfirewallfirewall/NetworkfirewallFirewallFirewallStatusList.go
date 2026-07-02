@@ -36,7 +36,7 @@ type NetworkfirewallFirewallFirewallStatusList interface {
 	Get(index *float64) NetworkfirewallFirewallFirewallStatusOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_NetworkfirewallFirewallFirewallStatusList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewNetworkfirewallFirewallFirewallStatusList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkfirewallFirewallFirewallStatusList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewNetworkfirewallFirewallFirewallStatusList(terraformResource cdktf.IInter
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewNetworkfirewallFirewallFirewallStatusList_Override(n NetworkfirewallFire
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkfirewallFirewallFirewallStatusList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NetworkfirewallFirewallFirewallStatusList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_NetworkfirewallFirewallFirewallStatusList)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_NetworkfirewallFirewallFirewallStatusList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkfirewallFirewallFirewallStatusList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_NetworkfirewallFirewallFirewallStatusList)SetTerraformResourc
 	)
 }
 
-func (j *jsiiProxy_NetworkfirewallFirewallFirewallStatusList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_NetworkfirewallFirewallFirewallStatusList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (n *jsiiProxy_NetworkfirewallFirewallFirewallStatusList) AllWithMapKey(mapK
 	_jsii_.Invoke(
 		n,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (n *jsiiProxy_NetworkfirewallFirewallFirewallStatusList) Get(index *float64
 	_jsii_.Invoke(
 		n,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkfirewallFirewallFirewallStatusList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NetworkfirewallFirewallFirewallStatusList) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (n *jsiiProxy_NetworkfirewallFirewallFirewallStatusList) ToString() *string
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachmentTimeoutsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachmentTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachmentTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachmentTimeoutsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachmentTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachmentTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewNetworkmanagerTransitGatewayRouteTableAttachmentTimeoutsOutputRe
 
 	return nil
 }
-

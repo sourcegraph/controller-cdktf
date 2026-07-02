@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.configConfigurationAggregator.ConfigConfigurationAggregator",
-		reflect.TypeOf((*ConfigConfigurationAggregator)(nil)).Elem(),
+		reflect.TypeFor[ConfigConfigurationAggregator](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountAggregationSource", GoGetter: "AccountAggregationSource"},
 			_jsii_.MemberProperty{JsiiProperty: "accountAggregationSourceInput", GoGetter: "AccountAggregationSourceInput"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConfigConfigurationAggregator{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,11 +81,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.configConfigurationAggregator.ConfigConfigurationAggregatorAccountAggregationSource",
-		reflect.TypeOf((*ConfigConfigurationAggregatorAccountAggregationSource)(nil)).Elem(),
+		reflect.TypeFor[ConfigConfigurationAggregatorAccountAggregationSource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.configConfigurationAggregator.ConfigConfigurationAggregatorAccountAggregationSourceOutputReference",
-		reflect.TypeOf((*ConfigConfigurationAggregatorAccountAggregationSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ConfigConfigurationAggregatorAccountAggregationSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountIds", GoGetter: "AccountIds"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdsInput", GoGetter: "AccountIdsInput"},
@@ -117,7 +117,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -125,15 +125,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.configConfigurationAggregator.ConfigConfigurationAggregatorConfig",
-		reflect.TypeOf((*ConfigConfigurationAggregatorConfig)(nil)).Elem(),
+		reflect.TypeFor[ConfigConfigurationAggregatorConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.configConfigurationAggregator.ConfigConfigurationAggregatorOrganizationAggregationSource",
-		reflect.TypeOf((*ConfigConfigurationAggregatorOrganizationAggregationSource)(nil)).Elem(),
+		reflect.TypeFor[ConfigConfigurationAggregatorOrganizationAggregationSource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.configConfigurationAggregator.ConfigConfigurationAggregatorOrganizationAggregationSourceOutputReference",
-		reflect.TypeOf((*ConfigConfigurationAggregatorOrganizationAggregationSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ConfigConfigurationAggregatorOrganizationAggregationSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allRegions", GoGetter: "AllRegions"},
 			_jsii_.MemberProperty{JsiiProperty: "allRegionsInput", GoGetter: "AllRegionsInput"},
@@ -165,7 +165,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConfigConfigurationAggregatorOrganizationAggregationSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

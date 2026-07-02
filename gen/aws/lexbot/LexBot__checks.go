@@ -19,7 +19,7 @@ func (l *jsiiProxy_LexBot) validateAddMoveTargetParameters(moveTarget *string) e
 	return nil
 }
 
-func (l *jsiiProxy_LexBot) validateAddOverrideParameters(path *string, value interface{}) error {
+func (l *jsiiProxy_LexBot) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (l *jsiiProxy_LexBot) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LexBot) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (l *jsiiProxy_LexBot) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -226,7 +226,7 @@ func (l *jsiiProxy_LexBot) validatePutClarificationPromptParameters(value *LexBo
 	return nil
 }
 
-func (l *jsiiProxy_LexBot) validatePutIntentParameters(value interface{}) error {
+func (l *jsiiProxy_LexBot) validatePutIntentParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -284,7 +284,7 @@ func validateLexBot_GenerateConfigForImportParameters(scope constructs.Construct
 	return nil
 }
 
-func validateLexBot_IsConstructParameters(x interface{}) error {
+func validateLexBot_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -292,7 +292,7 @@ func validateLexBot_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateLexBot_IsTerraformElementParameters(x interface{}) error {
+func validateLexBot_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -300,7 +300,7 @@ func validateLexBot_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateLexBot_IsTerraformResourceParameters(x interface{}) error {
+func validateLexBot_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -308,7 +308,7 @@ func validateLexBot_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_LexBot) validateSetChildDirectedParameters(val interface{}) error {
+func (j *jsiiProxy_LexBot) validateSetChildDirectedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -328,7 +328,7 @@ func (j *jsiiProxy_LexBot) validateSetChildDirectedParameters(val interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_LexBot) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_LexBot) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -361,7 +361,7 @@ func (j *jsiiProxy_LexBot) validateSetConnectionParameters(val interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_LexBot) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_LexBot) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -418,7 +418,7 @@ func (j *jsiiProxy_LexBot) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_LexBot) validateSetCreateVersionParameters(val interface{}) error {
+func (j *jsiiProxy_LexBot) validateSetCreateVersionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -446,7 +446,7 @@ func (j *jsiiProxy_LexBot) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_LexBot) validateSetDetectSentimentParameters(val interface{}) error {
+func (j *jsiiProxy_LexBot) validateSetDetectSentimentParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -466,7 +466,7 @@ func (j *jsiiProxy_LexBot) validateSetDetectSentimentParameters(val interface{})
 	return nil
 }
 
-func (j *jsiiProxy_LexBot) validateSetEnableModelImprovementsParameters(val interface{}) error {
+func (j *jsiiProxy_LexBot) validateSetEnableModelImprovementsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -542,7 +542,7 @@ func (j *jsiiProxy_LexBot) validateSetProcessBehaviorParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_LexBot) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_LexBot) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -614,4 +614,3 @@ func validateNewLexBotParameters(scope constructs.Construct, id *string, config 
 
 	return nil
 }
-

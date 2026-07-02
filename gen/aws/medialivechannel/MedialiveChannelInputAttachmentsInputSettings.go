@@ -1,15 +1,14 @@
 package medialivechannel
 
-
 type MedialiveChannelInputAttachmentsInputSettings struct {
 	// audio_selector block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/medialive_channel#audio_selector MedialiveChannel#audio_selector}
-	AudioSelector interface{} `field:"optional" json:"audioSelector" yaml:"audioSelector"`
+	AudioSelector any `field:"optional" json:"audioSelector" yaml:"audioSelector"`
 	// caption_selector block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/medialive_channel#caption_selector MedialiveChannel#caption_selector}
-	CaptionSelector interface{} `field:"optional" json:"captionSelector" yaml:"captionSelector"`
+	CaptionSelector any `field:"optional" json:"captionSelector" yaml:"captionSelector"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/medialive_channel#deblock_filter MedialiveChannel#deblock_filter}.
 	DeblockFilter *string `field:"optional" json:"deblockFilter" yaml:"deblockFilter"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/medialive_channel#denoise_filter MedialiveChannel#denoise_filter}.
@@ -33,4 +32,3 @@ type MedialiveChannelInputAttachmentsInputSettings struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/medialive_channel#video_selector MedialiveChannel#video_selector}
 	VideoSelector *MedialiveChannelInputAttachmentsInputSettingsVideoSelector `field:"optional" json:"videoSelector" yaml:"videoSelector"`
 }
-

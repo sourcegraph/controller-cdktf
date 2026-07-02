@@ -34,7 +34,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoT
 	return nil
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroupList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroupList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTarg
 
 	return nil
 }
-

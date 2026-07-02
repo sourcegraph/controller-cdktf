@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsCloudfrontOriginRequestPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsCloudfrontOriginRequestPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataAwsCloudfrontOriginRequestPolicy_GenerateConfigForImportParamet
 	return nil
 }
 
-func validateDataAwsCloudfrontOriginRequestPolicy_IsConstructParameters(x interface{}) error {
+func validateDataAwsCloudfrontOriginRequestPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataAwsCloudfrontOriginRequestPolicy_IsConstructParameters(x interf
 	return nil
 }
 
-func validateDataAwsCloudfrontOriginRequestPolicy_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsCloudfrontOriginRequestPolicy_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataAwsCloudfrontOriginRequestPolicy_IsTerraformDataSourceParameter
 	return nil
 }
 
-func validateDataAwsCloudfrontOriginRequestPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsCloudfrontOriginRequestPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataAwsCloudfrontOriginRequestPolicy_IsTerraformElementParameters(x
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsCloudfrontOriginRequestPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsCloudfrontOriginRequestPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -247,4 +247,3 @@ func validateNewDataAwsCloudfrontOriginRequestPolicyParameters(scope constructs.
 
 	return nil
 }
-

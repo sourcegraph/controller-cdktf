@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResource",
-		reflect.TypeOf((*DataAwsApiGatewayResource)(nil)).Elem(),
+		reflect.TypeFor[DataAwsApiGatewayResource](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -54,7 +54,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsApiGatewayResource{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -62,6 +62,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResourceConfig",
-		reflect.TypeOf((*DataAwsApiGatewayResourceConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsApiGatewayResourceConfig](),
 	)
 }

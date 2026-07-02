@@ -16,15 +16,15 @@ type InspectorAssessmentTarget interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -54,27 +54,27 @@ type InspectorAssessmentTarget interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ResourceGroupArn() *string
 	SetResourceGroupArn(val *string)
 	ResourceGroupArnInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -92,7 +92,7 @@ type InspectorAssessmentTarget interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -104,7 +104,7 @@ type InspectorAssessmentTarget interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -116,17 +116,17 @@ type InspectorAssessmentTarget interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetResourceGroupArn()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for InspectorAssessmentTarget
@@ -154,8 +154,8 @@ func (j *jsiiProxy_InspectorAssessmentTarget) CdktfStack() cdktf.TerraformStack 
 	return returns
 }
 
-func (j *jsiiProxy_InspectorAssessmentTarget) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_InspectorAssessmentTarget) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_InspectorAssessmentTarget) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_InspectorAssessmentTarget) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_InspectorAssessmentTarget) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_InspectorAssessmentTarget) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_InspectorAssessmentTarget) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_InspectorAssessmentTarget) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -294,8 +294,8 @@ func (j *jsiiProxy_InspectorAssessmentTarget) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_InspectorAssessmentTarget) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_InspectorAssessmentTarget) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -304,8 +304,8 @@ func (j *jsiiProxy_InspectorAssessmentTarget) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_InspectorAssessmentTarget) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_InspectorAssessmentTarget) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -344,8 +344,8 @@ func (j *jsiiProxy_InspectorAssessmentTarget) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_InspectorAssessmentTarget) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_InspectorAssessmentTarget) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -364,7 +364,6 @@ func (j *jsiiProxy_InspectorAssessmentTarget) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/inspector_assessment_target aws_inspector_assessment_target} Resource.
 func NewInspectorAssessmentTarget(scope constructs.Construct, id *string, config *InspectorAssessmentTargetConfig) InspectorAssessmentTarget {
 	_init_.Initialize()
@@ -376,7 +375,7 @@ func NewInspectorAssessmentTarget(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.inspectorAssessmentTarget.InspectorAssessmentTarget",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -389,12 +388,12 @@ func NewInspectorAssessmentTarget_Override(i InspectorAssessmentTarget, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.inspectorAssessmentTarget.InspectorAssessmentTarget",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		i,
 	)
 }
 
-func (j *jsiiProxy_InspectorAssessmentTarget)SetConnection(val interface{}) {
+func (j *jsiiProxy_InspectorAssessmentTarget) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_InspectorAssessmentTarget)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_InspectorAssessmentTarget)SetCount(val interface{}) {
+func (j *jsiiProxy_InspectorAssessmentTarget) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,7 +415,7 @@ func (j *jsiiProxy_InspectorAssessmentTarget)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_InspectorAssessmentTarget)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_InspectorAssessmentTarget) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -424,7 +423,7 @@ func (j *jsiiProxy_InspectorAssessmentTarget)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_InspectorAssessmentTarget)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_InspectorAssessmentTarget) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -432,7 +431,7 @@ func (j *jsiiProxy_InspectorAssessmentTarget)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_InspectorAssessmentTarget)SetId(val *string) {
+func (j *jsiiProxy_InspectorAssessmentTarget) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_InspectorAssessmentTarget)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_InspectorAssessmentTarget)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_InspectorAssessmentTarget) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_InspectorAssessmentTarget)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_InspectorAssessmentTarget)SetName(val *string) {
+func (j *jsiiProxy_InspectorAssessmentTarget) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_InspectorAssessmentTarget)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_InspectorAssessmentTarget)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_InspectorAssessmentTarget) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -473,7 +472,7 @@ func (j *jsiiProxy_InspectorAssessmentTarget)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_InspectorAssessmentTarget)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_InspectorAssessmentTarget) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -484,7 +483,7 @@ func (j *jsiiProxy_InspectorAssessmentTarget)SetProvisioners(val *[]interface{})
 	)
 }
 
-func (j *jsiiProxy_InspectorAssessmentTarget)SetResourceGroupArn(val *string) {
+func (j *jsiiProxy_InspectorAssessmentTarget) SetResourceGroupArn(val *string) {
 	if err := j.validateSetResourceGroupArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -507,7 +506,7 @@ func InspectorAssessmentTarget_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.inspectorAssessmentTarget.InspectorAssessmentTarget",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -531,7 +530,7 @@ func InspectorAssessmentTarget_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func InspectorAssessmentTarget_IsConstruct(x interface{}) *bool {
+func InspectorAssessmentTarget_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateInspectorAssessmentTarget_IsConstructParameters(x); err != nil {
@@ -542,7 +541,7 @@ func InspectorAssessmentTarget_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.inspectorAssessmentTarget.InspectorAssessmentTarget",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -550,7 +549,7 @@ func InspectorAssessmentTarget_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func InspectorAssessmentTarget_IsTerraformElement(x interface{}) *bool {
+func InspectorAssessmentTarget_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateInspectorAssessmentTarget_IsTerraformElementParameters(x); err != nil {
@@ -561,7 +560,7 @@ func InspectorAssessmentTarget_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.inspectorAssessmentTarget.InspectorAssessmentTarget",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -569,7 +568,7 @@ func InspectorAssessmentTarget_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func InspectorAssessmentTarget_IsTerraformResource(x interface{}) *bool {
+func InspectorAssessmentTarget_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateInspectorAssessmentTarget_IsTerraformResourceParameters(x); err != nil {
@@ -580,7 +579,7 @@ func InspectorAssessmentTarget_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.inspectorAssessmentTarget.InspectorAssessmentTarget",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -605,31 +604,31 @@ func (i *jsiiProxy_InspectorAssessmentTarget) AddMoveTarget(moveTarget *string) 
 	_jsii_.InvokeVoid(
 		i,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (i *jsiiProxy_InspectorAssessmentTarget) AddOverride(path *string, value interface{}) {
+func (i *jsiiProxy_InspectorAssessmentTarget) AddOverride(path *string, value any) {
 	if err := i.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (i *jsiiProxy_InspectorAssessmentTarget) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_InspectorAssessmentTarget) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -645,7 +644,7 @@ func (i *jsiiProxy_InspectorAssessmentTarget) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func (i *jsiiProxy_InspectorAssessmentTarget) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func (i *jsiiProxy_InspectorAssessmentTarget) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -693,7 +692,7 @@ func (i *jsiiProxy_InspectorAssessmentTarget) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -709,7 +708,7 @@ func (i *jsiiProxy_InspectorAssessmentTarget) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -725,7 +724,7 @@ func (i *jsiiProxy_InspectorAssessmentTarget) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -741,7 +740,7 @@ func (i *jsiiProxy_InspectorAssessmentTarget) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -757,15 +756,15 @@ func (i *jsiiProxy_InspectorAssessmentTarget) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_InspectorAssessmentTarget) HasResourceMove() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_InspectorAssessmentTarget) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -784,7 +783,7 @@ func (i *jsiiProxy_InspectorAssessmentTarget) ImportFrom(id *string, provider cd
 	_jsii_.InvokeVoid(
 		i,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -797,7 +796,7 @@ func (i *jsiiProxy_InspectorAssessmentTarget) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -811,18 +810,18 @@ func (i *jsiiProxy_InspectorAssessmentTarget) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (i *jsiiProxy_InspectorAssessmentTarget) MoveTo(moveTarget *string, index interface{}) {
+func (i *jsiiProxy_InspectorAssessmentTarget) MoveTo(moveTarget *string, index any) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -833,7 +832,7 @@ func (i *jsiiProxy_InspectorAssessmentTarget) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -844,7 +843,7 @@ func (i *jsiiProxy_InspectorAssessmentTarget) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -872,8 +871,8 @@ func (i *jsiiProxy_InspectorAssessmentTarget) ResetResourceGroupArn() {
 	)
 }
 
-func (i *jsiiProxy_InspectorAssessmentTarget) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_InspectorAssessmentTarget) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -885,8 +884,8 @@ func (i *jsiiProxy_InspectorAssessmentTarget) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (i *jsiiProxy_InspectorAssessmentTarget) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_InspectorAssessmentTarget) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -898,8 +897,8 @@ func (i *jsiiProxy_InspectorAssessmentTarget) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (i *jsiiProxy_InspectorAssessmentTarget) ToHclTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_InspectorAssessmentTarget) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -911,8 +910,8 @@ func (i *jsiiProxy_InspectorAssessmentTarget) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_InspectorAssessmentTarget) ToMetadata() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_InspectorAssessmentTarget) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -937,8 +936,8 @@ func (i *jsiiProxy_InspectorAssessmentTarget) ToString() *string {
 	return returns
 }
 
-func (i *jsiiProxy_InspectorAssessmentTarget) ToTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_InspectorAssessmentTarget) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -949,4 +948,3 @@ func (i *jsiiProxy_InspectorAssessmentTarget) ToTerraform() interface{} {
 
 	return returns
 }
-

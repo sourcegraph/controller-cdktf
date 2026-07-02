@@ -109,7 +109,7 @@ func (m *jsiiProxy_MskClusterBrokerNodeGroupInfoStorageInfoOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoStorageInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoStorageInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewMskClusterBrokerNodeGroupInfoStorageInfoOutputReferenceParameter
 
 	return nil
 }
-

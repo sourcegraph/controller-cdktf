@@ -34,7 +34,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsClientCo
 	return nil
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsClientConfigurationsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsClientConfigurationsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewFsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsClientConfi
 
 	return nil
 }
-

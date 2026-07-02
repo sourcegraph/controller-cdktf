@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPool",
-		reflect.TypeOf((*DataAwsSesv2DedicatedIpPool)(nil)).Elem(),
+		reflect.TypeFor[DataAwsSesv2DedicatedIpPool](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -56,7 +56,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsSesv2DedicatedIpPool{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -64,15 +64,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPoolConfig",
-		reflect.TypeOf((*DataAwsSesv2DedicatedIpPoolConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsSesv2DedicatedIpPoolConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPoolDedicatedIps",
-		reflect.TypeOf((*DataAwsSesv2DedicatedIpPoolDedicatedIps)(nil)).Elem(),
+		reflect.TypeFor[DataAwsSesv2DedicatedIpPoolDedicatedIps](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPoolDedicatedIpsList",
-		reflect.TypeOf((*DataAwsSesv2DedicatedIpPoolDedicatedIpsList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsSesv2DedicatedIpPoolDedicatedIpsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -85,7 +85,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsSesv2DedicatedIpPoolDedicatedIpsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -93,7 +93,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPoolDedicatedIpsOutputReference",
-		reflect.TypeOf((*DataAwsSesv2DedicatedIpPoolDedicatedIpsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsSesv2DedicatedIpPoolDedicatedIpsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -120,7 +120,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "warmupPercentage", GoGetter: "WarmupPercentage"},
 			_jsii_.MemberProperty{JsiiProperty: "warmupStatus", GoGetter: "WarmupStatus"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsSesv2DedicatedIpPoolDedicatedIpsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

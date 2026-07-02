@@ -98,7 +98,7 @@ func (g *jsiiProxy_GlueCrawlerLineageConfigurationOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_GlueCrawlerLineageConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GlueCrawlerLineageConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGlueCrawlerLineageConfigurationOutputReferenceParameters(terrafo
 
 	return nil
 }
-

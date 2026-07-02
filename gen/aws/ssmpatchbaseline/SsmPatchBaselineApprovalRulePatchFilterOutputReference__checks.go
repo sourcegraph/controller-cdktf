@@ -98,7 +98,7 @@ func (s *jsiiProxy_SsmPatchBaselineApprovalRulePatchFilterOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_SsmPatchBaselineApprovalRulePatchFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SsmPatchBaselineApprovalRulePatchFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SsmPatchBaselineApprovalRulePatchFilterOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_SsmPatchBaselineApprovalRulePatchFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SsmPatchBaselineApprovalRulePatchFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewSsmPatchBaselineApprovalRulePatchFilterOutputReferenceParameters
 
 	return nil
 }
-

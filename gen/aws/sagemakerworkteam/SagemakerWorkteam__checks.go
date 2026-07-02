@@ -19,7 +19,7 @@ func (s *jsiiProxy_SagemakerWorkteam) validateAddMoveTargetParameters(moveTarget
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerWorkteam) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SagemakerWorkteam) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SagemakerWorkteam) validateMoveFromIdParameters(id *string) e
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerWorkteam) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SagemakerWorkteam) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (s *jsiiProxy_SagemakerWorkteam) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerWorkteam) validatePutMemberDefinitionParameters(value interface{}) error {
+func (s *jsiiProxy_SagemakerWorkteam) validatePutMemberDefinitionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateSagemakerWorkteam_GenerateConfigForImportParameters(scope construct
 	return nil
 }
 
-func validateSagemakerWorkteam_IsConstructParameters(x interface{}) error {
+func validateSagemakerWorkteam_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateSagemakerWorkteam_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateSagemakerWorkteam_IsTerraformElementParameters(x interface{}) error {
+func validateSagemakerWorkteam_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateSagemakerWorkteam_IsTerraformElementParameters(x interface{}) error
 	return nil
 }
 
-func validateSagemakerWorkteam_IsTerraformResourceParameters(x interface{}) error {
+func validateSagemakerWorkteam_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateSagemakerWorkteam_IsTerraformResourceParameters(x interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerWorkteam) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerWorkteam) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -319,7 +319,7 @@ func (j *jsiiProxy_SagemakerWorkteam) validateSetConnectionParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerWorkteam) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerWorkteam) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -400,7 +400,7 @@ func (j *jsiiProxy_SagemakerWorkteam) validateSetLifecycleParameters(val *cdktf.
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerWorkteam) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SagemakerWorkteam) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -496,4 +496,3 @@ func validateNewSagemakerWorkteamParameters(scope constructs.Construct, id *stri
 
 	return nil
 }
-

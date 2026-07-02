@@ -16,15 +16,15 @@ type SesEmailIdentity interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -54,24 +54,24 @@ type SesEmailIdentity interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -89,7 +89,7 @@ type SesEmailIdentity interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -101,7 +101,7 @@ type SesEmailIdentity interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -112,17 +112,17 @@ type SesEmailIdentity interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SesEmailIdentity
@@ -150,8 +150,8 @@ func (j *jsiiProxy_SesEmailIdentity) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_SesEmailIdentity) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SesEmailIdentity) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -160,8 +160,8 @@ func (j *jsiiProxy_SesEmailIdentity) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SesEmailIdentity) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SesEmailIdentity) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -170,8 +170,8 @@ func (j *jsiiProxy_SesEmailIdentity) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_SesEmailIdentity) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SesEmailIdentity) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -290,8 +290,8 @@ func (j *jsiiProxy_SesEmailIdentity) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_SesEmailIdentity) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SesEmailIdentity) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -300,8 +300,8 @@ func (j *jsiiProxy_SesEmailIdentity) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SesEmailIdentity) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SesEmailIdentity) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -320,8 +320,8 @@ func (j *jsiiProxy_SesEmailIdentity) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_SesEmailIdentity) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SesEmailIdentity) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -340,7 +340,6 @@ func (j *jsiiProxy_SesEmailIdentity) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ses_email_identity aws_ses_email_identity} Resource.
 func NewSesEmailIdentity(scope constructs.Construct, id *string, config *SesEmailIdentityConfig) SesEmailIdentity {
 	_init_.Initialize()
@@ -352,7 +351,7 @@ func NewSesEmailIdentity(scope constructs.Construct, id *string, config *SesEmai
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentity",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -365,12 +364,12 @@ func NewSesEmailIdentity_Override(s SesEmailIdentity, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentity",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SesEmailIdentity)SetConnection(val interface{}) {
+func (j *jsiiProxy_SesEmailIdentity) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,7 +380,7 @@ func (j *jsiiProxy_SesEmailIdentity)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SesEmailIdentity)SetCount(val interface{}) {
+func (j *jsiiProxy_SesEmailIdentity) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -392,7 +391,7 @@ func (j *jsiiProxy_SesEmailIdentity)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SesEmailIdentity)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SesEmailIdentity) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -400,7 +399,7 @@ func (j *jsiiProxy_SesEmailIdentity)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SesEmailIdentity)SetEmail(val *string) {
+func (j *jsiiProxy_SesEmailIdentity) SetEmail(val *string) {
 	if err := j.validateSetEmailParameters(val); err != nil {
 		panic(err)
 	}
@@ -411,7 +410,7 @@ func (j *jsiiProxy_SesEmailIdentity)SetEmail(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SesEmailIdentity)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SesEmailIdentity) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -419,7 +418,7 @@ func (j *jsiiProxy_SesEmailIdentity)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_SesEmailIdentity)SetId(val *string) {
+func (j *jsiiProxy_SesEmailIdentity) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_SesEmailIdentity)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SesEmailIdentity)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SesEmailIdentity) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_SesEmailIdentity)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_SesEmailIdentity)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SesEmailIdentity) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -449,7 +448,7 @@ func (j *jsiiProxy_SesEmailIdentity)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_SesEmailIdentity)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SesEmailIdentity) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -472,7 +471,7 @@ func SesEmailIdentity_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentity",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -496,7 +495,7 @@ func SesEmailIdentity_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SesEmailIdentity_IsConstruct(x interface{}) *bool {
+func SesEmailIdentity_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSesEmailIdentity_IsConstructParameters(x); err != nil {
@@ -507,7 +506,7 @@ func SesEmailIdentity_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentity",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -515,7 +514,7 @@ func SesEmailIdentity_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SesEmailIdentity_IsTerraformElement(x interface{}) *bool {
+func SesEmailIdentity_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSesEmailIdentity_IsTerraformElementParameters(x); err != nil {
@@ -526,7 +525,7 @@ func SesEmailIdentity_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentity",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -534,7 +533,7 @@ func SesEmailIdentity_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SesEmailIdentity_IsTerraformResource(x interface{}) *bool {
+func SesEmailIdentity_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSesEmailIdentity_IsTerraformResourceParameters(x); err != nil {
@@ -545,7 +544,7 @@ func SesEmailIdentity_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentity",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -570,31 +569,31 @@ func (s *jsiiProxy_SesEmailIdentity) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SesEmailIdentity) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SesEmailIdentity) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SesEmailIdentity) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SesEmailIdentity) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -610,7 +609,7 @@ func (s *jsiiProxy_SesEmailIdentity) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -626,7 +625,7 @@ func (s *jsiiProxy_SesEmailIdentity) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -642,7 +641,7 @@ func (s *jsiiProxy_SesEmailIdentity) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -658,7 +657,7 @@ func (s *jsiiProxy_SesEmailIdentity) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -674,7 +673,7 @@ func (s *jsiiProxy_SesEmailIdentity) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -690,7 +689,7 @@ func (s *jsiiProxy_SesEmailIdentity) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -706,7 +705,7 @@ func (s *jsiiProxy_SesEmailIdentity) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -722,15 +721,15 @@ func (s *jsiiProxy_SesEmailIdentity) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SesEmailIdentity) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SesEmailIdentity) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -749,7 +748,7 @@ func (s *jsiiProxy_SesEmailIdentity) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -762,7 +761,7 @@ func (s *jsiiProxy_SesEmailIdentity) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -776,18 +775,18 @@ func (s *jsiiProxy_SesEmailIdentity) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SesEmailIdentity) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SesEmailIdentity) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -798,7 +797,7 @@ func (s *jsiiProxy_SesEmailIdentity) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -809,7 +808,7 @@ func (s *jsiiProxy_SesEmailIdentity) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -829,8 +828,8 @@ func (s *jsiiProxy_SesEmailIdentity) ResetOverrideLogicalId() {
 	)
 }
 
-func (s *jsiiProxy_SesEmailIdentity) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SesEmailIdentity) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -842,8 +841,8 @@ func (s *jsiiProxy_SesEmailIdentity) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (s *jsiiProxy_SesEmailIdentity) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SesEmailIdentity) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -855,8 +854,8 @@ func (s *jsiiProxy_SesEmailIdentity) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (s *jsiiProxy_SesEmailIdentity) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SesEmailIdentity) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -868,8 +867,8 @@ func (s *jsiiProxy_SesEmailIdentity) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SesEmailIdentity) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SesEmailIdentity) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -894,8 +893,8 @@ func (s *jsiiProxy_SesEmailIdentity) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SesEmailIdentity) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SesEmailIdentity) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -906,4 +905,3 @@ func (s *jsiiProxy_SesEmailIdentity) ToTerraform() interface{} {
 
 	return returns
 }
-

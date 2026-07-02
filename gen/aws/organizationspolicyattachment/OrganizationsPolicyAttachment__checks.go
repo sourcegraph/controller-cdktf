@@ -19,7 +19,7 @@ func (o *jsiiProxy_OrganizationsPolicyAttachment) validateAddMoveTargetParameter
 	return nil
 }
 
-func (o *jsiiProxy_OrganizationsPolicyAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
+func (o *jsiiProxy_OrganizationsPolicyAttachment) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (o *jsiiProxy_OrganizationsPolicyAttachment) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (o *jsiiProxy_OrganizationsPolicyAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (o *jsiiProxy_OrganizationsPolicyAttachment) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateOrganizationsPolicyAttachment_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateOrganizationsPolicyAttachment_IsConstructParameters(x interface{}) error {
+func validateOrganizationsPolicyAttachment_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateOrganizationsPolicyAttachment_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateOrganizationsPolicyAttachment_IsTerraformElementParameters(x interface{}) error {
+func validateOrganizationsPolicyAttachment_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateOrganizationsPolicyAttachment_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateOrganizationsPolicyAttachment_IsTerraformResourceParameters(x interface{}) error {
+func validateOrganizationsPolicyAttachment_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateOrganizationsPolicyAttachment_IsTerraformResourceParameters(x inter
 	return nil
 }
 
-func (j *jsiiProxy_OrganizationsPolicyAttachment) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_OrganizationsPolicyAttachment) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_OrganizationsPolicyAttachment) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_OrganizationsPolicyAttachment) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_OrganizationsPolicyAttachment) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -358,7 +358,7 @@ func (j *jsiiProxy_OrganizationsPolicyAttachment) validateSetPolicyIdParameters(
 	return nil
 }
 
-func (j *jsiiProxy_OrganizationsPolicyAttachment) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_OrganizationsPolicyAttachment) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewOrganizationsPolicyAttachmentParameters(scope constructs.Constru
 
 	return nil
 }
-

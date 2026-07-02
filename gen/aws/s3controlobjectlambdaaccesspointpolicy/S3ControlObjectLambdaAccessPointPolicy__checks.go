@@ -19,7 +19,7 @@ func (s *jsiiProxy_S3ControlObjectLambdaAccessPointPolicy) validateAddMoveTarget
 	return nil
 }
 
-func (s *jsiiProxy_S3ControlObjectLambdaAccessPointPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_S3ControlObjectLambdaAccessPointPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_S3ControlObjectLambdaAccessPointPolicy) validateMoveFromIdPar
 	return nil
 }
 
-func (s *jsiiProxy_S3ControlObjectLambdaAccessPointPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_S3ControlObjectLambdaAccessPointPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateS3ControlObjectLambdaAccessPointPolicy_GenerateConfigForImportParam
 	return nil
 }
 
-func validateS3ControlObjectLambdaAccessPointPolicy_IsConstructParameters(x interface{}) error {
+func validateS3ControlObjectLambdaAccessPointPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateS3ControlObjectLambdaAccessPointPolicy_IsConstructParameters(x inte
 	return nil
 }
 
-func validateS3ControlObjectLambdaAccessPointPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateS3ControlObjectLambdaAccessPointPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateS3ControlObjectLambdaAccessPointPolicy_IsTerraformElementParameters
 	return nil
 }
 
-func validateS3ControlObjectLambdaAccessPointPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateS3ControlObjectLambdaAccessPointPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_S3ControlObjectLambdaAccessPointPolicy) validateSetAccountIdP
 	return nil
 }
 
-func (j *jsiiProxy_S3ControlObjectLambdaAccessPointPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_S3ControlObjectLambdaAccessPointPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_S3ControlObjectLambdaAccessPointPolicy) validateSetConnection
 	return nil
 }
 
-func (j *jsiiProxy_S3ControlObjectLambdaAccessPointPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_S3ControlObjectLambdaAccessPointPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -374,7 +374,7 @@ func (j *jsiiProxy_S3ControlObjectLambdaAccessPointPolicy) validateSetPolicyPara
 	return nil
 }
 
-func (j *jsiiProxy_S3ControlObjectLambdaAccessPointPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_S3ControlObjectLambdaAccessPointPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -438,4 +438,3 @@ func validateNewS3ControlObjectLambdaAccessPointPolicyParameters(scope construct
 
 	return nil
 }
-

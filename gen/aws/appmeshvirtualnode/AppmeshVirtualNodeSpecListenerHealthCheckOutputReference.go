@@ -12,9 +12,9 @@ type AppmeshVirtualNodeSpecListenerHealthCheckOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -61,7 +61,7 @@ type AppmeshVirtualNodeSpecListenerHealthCheckOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -86,7 +86,7 @@ type AppmeshVirtualNodeSpecListenerHealthCheckOutputReference interface {
 	ResetPort()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,8 +99,8 @@ type jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -309,7 +309,6 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference) Unh
 	return returns
 }
 
-
 func NewAppmeshVirtualNodeSpecListenerHealthCheckOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerHealthCheckOutputReference {
 	_init_.Initialize()
 
@@ -320,7 +319,7 @@ func NewAppmeshVirtualNodeSpecListenerHealthCheckOutputReference(terraformResour
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerHealthCheckOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -332,12 +331,12 @@ func NewAppmeshVirtualNodeSpecListenerHealthCheckOutputReference_Override(a Appm
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerHealthCheckOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -348,7 +347,7 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,7 +358,7 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference)SetHealthyThreshold(val *float64) {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference) SetHealthyThreshold(val *float64) {
 	if err := j.validateSetHealthyThresholdParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,7 +369,7 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference)SetH
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference)SetInternalValue(val *AppmeshVirtualNodeSpecListenerHealthCheck) {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference) SetInternalValue(val *AppmeshVirtualNodeSpecListenerHealthCheck) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,7 +380,7 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference)SetI
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference)SetIntervalMillis(val *float64) {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference) SetIntervalMillis(val *float64) {
 	if err := j.validateSetIntervalMillisParameters(val); err != nil {
 		panic(err)
 	}
@@ -392,7 +391,7 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference)SetI
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference)SetPath(val *string) {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference) SetPath(val *string) {
 	if err := j.validateSetPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -403,7 +402,7 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference)SetP
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference)SetPort(val *float64) {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference) SetPort(val *float64) {
 	if err := j.validateSetPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -414,7 +413,7 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference)SetP
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference)SetProtocol(val *string) {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference) SetProtocol(val *string) {
 	if err := j.validateSetProtocolParameters(val); err != nil {
 		panic(err)
 	}
@@ -425,7 +424,7 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference)SetP
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -436,7 +435,7 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -447,7 +446,7 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference)SetTimeoutMillis(val *float64) {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference) SetTimeoutMillis(val *float64) {
 	if err := j.validateSetTimeoutMillisParameters(val); err != nil {
 		panic(err)
 	}
@@ -458,7 +457,7 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference)SetUnhealthyThreshold(val *float64) {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference) SetUnhealthyThreshold(val *float64) {
 	if err := j.validateSetUnhealthyThresholdParameters(val); err != nil {
 		panic(err)
 	}
@@ -482,16 +481,16 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference) Com
 	return returns
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -507,7 +506,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference) Get
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -523,7 +522,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference) Get
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -539,7 +538,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference) Get
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -555,7 +554,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference) Get
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -571,7 +570,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference) Get
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference) Get
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -603,7 +602,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference) Get
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -619,7 +618,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference) Get
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -648,7 +647,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference) Int
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -671,16 +670,16 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference) Res
 	)
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -699,4 +698,3 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference) ToS
 
 	return returns
 }
-

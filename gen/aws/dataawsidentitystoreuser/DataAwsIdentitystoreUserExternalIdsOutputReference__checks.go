@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsIdentitystoreUserExternalIdsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsIdentitystoreUserExternalIdsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsIdentitystoreUserExternalIdsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsIdentitystoreUserExternalIdsOutputReferenceParameters(ter
 
 	return nil
 }
-

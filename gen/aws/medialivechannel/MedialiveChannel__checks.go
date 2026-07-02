@@ -19,7 +19,7 @@ func (m *jsiiProxy_MedialiveChannel) validateAddMoveTargetParameters(moveTarget 
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveChannel) validateAddOverrideParameters(path *string, value interface{}) error {
+func (m *jsiiProxy_MedialiveChannel) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (m *jsiiProxy_MedialiveChannel) validateMoveFromIdParameters(id *string) er
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveChannel) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (m *jsiiProxy_MedialiveChannel) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (m *jsiiProxy_MedialiveChannel) validatePutCdiInputSpecificationParameters(
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveChannel) validatePutDestinationsParameters(value interface{}) error {
+func (m *jsiiProxy_MedialiveChannel) validatePutDestinationsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -257,7 +257,7 @@ func (m *jsiiProxy_MedialiveChannel) validatePutEncoderSettingsParameters(value 
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveChannel) validatePutInputAttachmentsParameters(value interface{}) error {
+func (m *jsiiProxy_MedialiveChannel) validatePutInputAttachmentsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -348,7 +348,7 @@ func validateMedialiveChannel_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validateMedialiveChannel_IsConstructParameters(x interface{}) error {
+func validateMedialiveChannel_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -356,7 +356,7 @@ func validateMedialiveChannel_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateMedialiveChannel_IsTerraformElementParameters(x interface{}) error {
+func validateMedialiveChannel_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -364,7 +364,7 @@ func validateMedialiveChannel_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func validateMedialiveChannel_IsTerraformResourceParameters(x interface{}) error {
+func validateMedialiveChannel_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -380,7 +380,7 @@ func (j *jsiiProxy_MedialiveChannel) validateSetChannelClassParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveChannel) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_MedialiveChannel) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -413,7 +413,7 @@ func (j *jsiiProxy_MedialiveChannel) validateSetConnectionParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveChannel) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_MedialiveChannel) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -502,7 +502,7 @@ func (j *jsiiProxy_MedialiveChannel) validateSetNameParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveChannel) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_MedialiveChannel) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -556,7 +556,7 @@ func (j *jsiiProxy_MedialiveChannel) validateSetRoleArnParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveChannel) validateSetStartChannelParameters(val interface{}) error {
+func (j *jsiiProxy_MedialiveChannel) validateSetStartChannelParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -610,4 +610,3 @@ func validateNewMedialiveChannelParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (s *jsiiProxy_StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewStoragegatewayNfsFileShareNfsFileShareDefaultsOutputReferencePar
 
 	return nil
 }
-

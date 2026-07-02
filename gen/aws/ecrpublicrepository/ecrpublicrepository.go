@@ -18,22 +18,22 @@ type EcrpublicRepository interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	ForceDestroy() interface{}
-	SetForceDestroy(val interface{})
-	ForceDestroyInput() interface{}
+	ForceDestroy() any
+	SetForceDestroy(val any)
+	ForceDestroyInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -56,11 +56,11 @@ type EcrpublicRepository interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RegistryId() *string
 	RepositoryName() *string
 	SetRepositoryName(val *string)
@@ -75,18 +75,18 @@ type EcrpublicRepository interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() EcrpublicRepositoryTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -104,7 +104,7 @@ type EcrpublicRepository interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -116,7 +116,7 @@ type EcrpublicRepository interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -134,17 +134,17 @@ type EcrpublicRepository interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for EcrpublicRepository
@@ -192,8 +192,8 @@ func (j *jsiiProxy_EcrpublicRepository) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_EcrpublicRepository) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcrpublicRepository) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_EcrpublicRepository) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EcrpublicRepository) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EcrpublicRepository) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_EcrpublicRepository) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_EcrpublicRepository) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcrpublicRepository) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -232,8 +232,8 @@ func (j *jsiiProxy_EcrpublicRepository) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_EcrpublicRepository) ForceDestroy() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcrpublicRepository) ForceDestroy() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forceDestroy",
@@ -242,8 +242,8 @@ func (j *jsiiProxy_EcrpublicRepository) ForceDestroy() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EcrpublicRepository) ForceDestroyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcrpublicRepository) ForceDestroyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forceDestroyInput",
@@ -332,8 +332,8 @@ func (j *jsiiProxy_EcrpublicRepository) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_EcrpublicRepository) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_EcrpublicRepository) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -342,8 +342,8 @@ func (j *jsiiProxy_EcrpublicRepository) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EcrpublicRepository) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcrpublicRepository) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -442,8 +442,8 @@ func (j *jsiiProxy_EcrpublicRepository) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_EcrpublicRepository) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EcrpublicRepository) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -472,8 +472,8 @@ func (j *jsiiProxy_EcrpublicRepository) Timeouts() EcrpublicRepositoryTimeoutsOu
 	return returns
 }
 
-func (j *jsiiProxy_EcrpublicRepository) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcrpublicRepository) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -481,7 +481,6 @@ func (j *jsiiProxy_EcrpublicRepository) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecrpublic_repository aws_ecrpublic_repository} Resource.
 func NewEcrpublicRepository(scope constructs.Construct, id *string, config *EcrpublicRepositoryConfig) EcrpublicRepository {
@@ -494,7 +493,7 @@ func NewEcrpublicRepository(scope constructs.Construct, id *string, config *Ecrp
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepository",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -507,12 +506,12 @@ func NewEcrpublicRepository_Override(e EcrpublicRepository, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepository",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EcrpublicRepository)SetConnection(val interface{}) {
+func (j *jsiiProxy_EcrpublicRepository) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_EcrpublicRepository)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EcrpublicRepository)SetCount(val interface{}) {
+func (j *jsiiProxy_EcrpublicRepository) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_EcrpublicRepository)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EcrpublicRepository)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_EcrpublicRepository) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -542,7 +541,7 @@ func (j *jsiiProxy_EcrpublicRepository)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EcrpublicRepository)SetForceDestroy(val interface{}) {
+func (j *jsiiProxy_EcrpublicRepository) SetForceDestroy(val any) {
 	if err := j.validateSetForceDestroyParameters(val); err != nil {
 		panic(err)
 	}
@@ -553,7 +552,7 @@ func (j *jsiiProxy_EcrpublicRepository)SetForceDestroy(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EcrpublicRepository)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_EcrpublicRepository) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -561,7 +560,7 @@ func (j *jsiiProxy_EcrpublicRepository)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_EcrpublicRepository)SetId(val *string) {
+func (j *jsiiProxy_EcrpublicRepository) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -572,7 +571,7 @@ func (j *jsiiProxy_EcrpublicRepository)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EcrpublicRepository)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_EcrpublicRepository) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -583,7 +582,7 @@ func (j *jsiiProxy_EcrpublicRepository)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_EcrpublicRepository)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_EcrpublicRepository) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -591,7 +590,7 @@ func (j *jsiiProxy_EcrpublicRepository)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_EcrpublicRepository)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_EcrpublicRepository) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -602,7 +601,7 @@ func (j *jsiiProxy_EcrpublicRepository)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EcrpublicRepository)SetRepositoryName(val *string) {
+func (j *jsiiProxy_EcrpublicRepository) SetRepositoryName(val *string) {
 	if err := j.validateSetRepositoryNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -613,7 +612,7 @@ func (j *jsiiProxy_EcrpublicRepository)SetRepositoryName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EcrpublicRepository)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_EcrpublicRepository) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -624,7 +623,7 @@ func (j *jsiiProxy_EcrpublicRepository)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_EcrpublicRepository)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_EcrpublicRepository) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -647,7 +646,7 @@ func EcrpublicRepository_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepository",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -671,7 +670,7 @@ func EcrpublicRepository_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func EcrpublicRepository_IsConstruct(x interface{}) *bool {
+func EcrpublicRepository_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEcrpublicRepository_IsConstructParameters(x); err != nil {
@@ -682,7 +681,7 @@ func EcrpublicRepository_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepository",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -690,7 +689,7 @@ func EcrpublicRepository_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func EcrpublicRepository_IsTerraformElement(x interface{}) *bool {
+func EcrpublicRepository_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEcrpublicRepository_IsTerraformElementParameters(x); err != nil {
@@ -701,7 +700,7 @@ func EcrpublicRepository_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepository",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -709,7 +708,7 @@ func EcrpublicRepository_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func EcrpublicRepository_IsTerraformResource(x interface{}) *bool {
+func EcrpublicRepository_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEcrpublicRepository_IsTerraformResourceParameters(x); err != nil {
@@ -720,7 +719,7 @@ func EcrpublicRepository_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepository",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -745,31 +744,31 @@ func (e *jsiiProxy_EcrpublicRepository) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_EcrpublicRepository) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_EcrpublicRepository) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_EcrpublicRepository) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EcrpublicRepository) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (e *jsiiProxy_EcrpublicRepository) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func (e *jsiiProxy_EcrpublicRepository) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func (e *jsiiProxy_EcrpublicRepository) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (e *jsiiProxy_EcrpublicRepository) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,7 +848,7 @@ func (e *jsiiProxy_EcrpublicRepository) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -865,7 +864,7 @@ func (e *jsiiProxy_EcrpublicRepository) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -881,7 +880,7 @@ func (e *jsiiProxy_EcrpublicRepository) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -897,15 +896,15 @@ func (e *jsiiProxy_EcrpublicRepository) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EcrpublicRepository) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EcrpublicRepository) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -924,7 +923,7 @@ func (e *jsiiProxy_EcrpublicRepository) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -937,7 +936,7 @@ func (e *jsiiProxy_EcrpublicRepository) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -951,18 +950,18 @@ func (e *jsiiProxy_EcrpublicRepository) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_EcrpublicRepository) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_EcrpublicRepository) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -973,7 +972,7 @@ func (e *jsiiProxy_EcrpublicRepository) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -984,7 +983,7 @@ func (e *jsiiProxy_EcrpublicRepository) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -995,7 +994,7 @@ func (e *jsiiProxy_EcrpublicRepository) PutCatalogData(value *EcrpublicRepositor
 	_jsii_.InvokeVoid(
 		e,
 		"putCatalogData",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1006,7 +1005,7 @@ func (e *jsiiProxy_EcrpublicRepository) PutTimeouts(value *EcrpublicRepositoryTi
 	_jsii_.InvokeVoid(
 		e,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1066,8 +1065,8 @@ func (e *jsiiProxy_EcrpublicRepository) ResetTimeouts() {
 	)
 }
 
-func (e *jsiiProxy_EcrpublicRepository) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EcrpublicRepository) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1079,8 +1078,8 @@ func (e *jsiiProxy_EcrpublicRepository) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (e *jsiiProxy_EcrpublicRepository) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EcrpublicRepository) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1092,8 +1091,8 @@ func (e *jsiiProxy_EcrpublicRepository) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (e *jsiiProxy_EcrpublicRepository) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EcrpublicRepository) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1105,8 +1104,8 @@ func (e *jsiiProxy_EcrpublicRepository) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_EcrpublicRepository) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EcrpublicRepository) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1131,8 +1130,8 @@ func (e *jsiiProxy_EcrpublicRepository) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_EcrpublicRepository) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EcrpublicRepository) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1143,4 +1142,3 @@ func (e *jsiiProxy_EcrpublicRepository) ToTerraform() interface{} {
 
 	return returns
 }
-

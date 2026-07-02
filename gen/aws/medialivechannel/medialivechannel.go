@@ -22,21 +22,21 @@ type MedialiveChannel interface {
 	ChannelClassInput() *string
 	ChannelId() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Destinations() MedialiveChannelDestinationsList
-	DestinationsInput() interface{}
+	DestinationsInput() any
 	EncoderSettings() MedialiveChannelEncoderSettingsOutputReference
 	EncoderSettingsInput() *MedialiveChannelEncoderSettings
 	// Experimental.
@@ -51,7 +51,7 @@ type MedialiveChannel interface {
 	SetId(val *string)
 	IdInput() *string
 	InputAttachments() MedialiveChannelInputAttachmentsList
-	InputAttachmentsInput() interface{}
+	InputAttachmentsInput() any
 	InputSpecification() MedialiveChannelInputSpecificationOutputReference
 	InputSpecificationInput() *MedialiveChannelInputSpecification
 	// Experimental.
@@ -73,17 +73,17 @@ type MedialiveChannel interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RoleArn() *string
 	SetRoleArn(val *string)
 	RoleArnInput() *string
-	StartChannel() interface{}
-	SetStartChannel(val interface{})
-	StartChannelInput() interface{}
+	StartChannel() any
+	SetStartChannel(val any)
+	StartChannelInput() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -93,20 +93,20 @@ type MedialiveChannel interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() MedialiveChannelTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Vpc() MedialiveChannelVpcOutputReference
 	VpcInput() *MedialiveChannelVpc
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -124,7 +124,7 @@ type MedialiveChannel interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -136,7 +136,7 @@ type MedialiveChannel interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -144,9 +144,9 @@ type MedialiveChannel interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCdiInputSpecification(value *MedialiveChannelCdiInputSpecification)
-	PutDestinations(value interface{})
+	PutDestinations(value any)
 	PutEncoderSettings(value *MedialiveChannelEncoderSettings)
-	PutInputAttachments(value interface{})
+	PutInputAttachments(value any)
 	PutInputSpecification(value *MedialiveChannelInputSpecification)
 	PutMaintenance(value *MedialiveChannelMaintenance)
 	PutTimeouts(value *MedialiveChannelTimeouts)
@@ -164,17 +164,17 @@ type MedialiveChannel interface {
 	ResetTagsAll()
 	ResetTimeouts()
 	ResetVpc()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for MedialiveChannel
@@ -252,8 +252,8 @@ func (j *jsiiProxy_MedialiveChannel) ChannelId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveChannel) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MedialiveChannel) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -262,8 +262,8 @@ func (j *jsiiProxy_MedialiveChannel) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveChannel) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MedialiveChannel) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -272,8 +272,8 @@ func (j *jsiiProxy_MedialiveChannel) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveChannel) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MedialiveChannel) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -302,8 +302,8 @@ func (j *jsiiProxy_MedialiveChannel) Destinations() MedialiveChannelDestinations
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveChannel) DestinationsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MedialiveChannel) DestinationsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"destinationsInput",
@@ -392,8 +392,8 @@ func (j *jsiiProxy_MedialiveChannel) InputAttachments() MedialiveChannelInputAtt
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveChannel) InputAttachmentsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MedialiveChannel) InputAttachmentsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"inputAttachmentsInput",
@@ -512,8 +512,8 @@ func (j *jsiiProxy_MedialiveChannel) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveChannel) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_MedialiveChannel) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -522,8 +522,8 @@ func (j *jsiiProxy_MedialiveChannel) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveChannel) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MedialiveChannel) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -552,8 +552,8 @@ func (j *jsiiProxy_MedialiveChannel) RoleArnInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveChannel) StartChannel() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MedialiveChannel) StartChannel() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"startChannel",
@@ -562,8 +562,8 @@ func (j *jsiiProxy_MedialiveChannel) StartChannel() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveChannel) StartChannelInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MedialiveChannel) StartChannelInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"startChannelInput",
@@ -622,8 +622,8 @@ func (j *jsiiProxy_MedialiveChannel) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveChannel) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MedialiveChannel) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -652,8 +652,8 @@ func (j *jsiiProxy_MedialiveChannel) Timeouts() MedialiveChannelTimeoutsOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveChannel) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MedialiveChannel) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -682,7 +682,6 @@ func (j *jsiiProxy_MedialiveChannel) VpcInput() *MedialiveChannelVpc {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/medialive_channel aws_medialive_channel} Resource.
 func NewMedialiveChannel(scope constructs.Construct, id *string, config *MedialiveChannelConfig) MedialiveChannel {
 	_init_.Initialize()
@@ -694,7 +693,7 @@ func NewMedialiveChannel(scope constructs.Construct, id *string, config *Mediali
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.medialiveChannel.MedialiveChannel",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -707,12 +706,12 @@ func NewMedialiveChannel_Override(m MedialiveChannel, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.medialiveChannel.MedialiveChannel",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannel)SetChannelClass(val *string) {
+func (j *jsiiProxy_MedialiveChannel) SetChannelClass(val *string) {
 	if err := j.validateSetChannelClassParameters(val); err != nil {
 		panic(err)
 	}
@@ -723,7 +722,7 @@ func (j *jsiiProxy_MedialiveChannel)SetChannelClass(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannel)SetConnection(val interface{}) {
+func (j *jsiiProxy_MedialiveChannel) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -734,7 +733,7 @@ func (j *jsiiProxy_MedialiveChannel)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannel)SetCount(val interface{}) {
+func (j *jsiiProxy_MedialiveChannel) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -745,7 +744,7 @@ func (j *jsiiProxy_MedialiveChannel)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannel)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_MedialiveChannel) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -753,7 +752,7 @@ func (j *jsiiProxy_MedialiveChannel)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannel)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MedialiveChannel) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -761,7 +760,7 @@ func (j *jsiiProxy_MedialiveChannel)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannel)SetId(val *string) {
+func (j *jsiiProxy_MedialiveChannel) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -772,7 +771,7 @@ func (j *jsiiProxy_MedialiveChannel)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannel)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MedialiveChannel) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -783,7 +782,7 @@ func (j *jsiiProxy_MedialiveChannel)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannel)SetLogLevel(val *string) {
+func (j *jsiiProxy_MedialiveChannel) SetLogLevel(val *string) {
 	if err := j.validateSetLogLevelParameters(val); err != nil {
 		panic(err)
 	}
@@ -794,7 +793,7 @@ func (j *jsiiProxy_MedialiveChannel)SetLogLevel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannel)SetName(val *string) {
+func (j *jsiiProxy_MedialiveChannel) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -805,7 +804,7 @@ func (j *jsiiProxy_MedialiveChannel)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannel)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MedialiveChannel) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -813,7 +812,7 @@ func (j *jsiiProxy_MedialiveChannel)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannel)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_MedialiveChannel) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -824,7 +823,7 @@ func (j *jsiiProxy_MedialiveChannel)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannel)SetRoleArn(val *string) {
+func (j *jsiiProxy_MedialiveChannel) SetRoleArn(val *string) {
 	if err := j.validateSetRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -835,7 +834,7 @@ func (j *jsiiProxy_MedialiveChannel)SetRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannel)SetStartChannel(val interface{}) {
+func (j *jsiiProxy_MedialiveChannel) SetStartChannel(val any) {
 	if err := j.validateSetStartChannelParameters(val); err != nil {
 		panic(err)
 	}
@@ -846,7 +845,7 @@ func (j *jsiiProxy_MedialiveChannel)SetStartChannel(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannel)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_MedialiveChannel) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -857,7 +856,7 @@ func (j *jsiiProxy_MedialiveChannel)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannel)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_MedialiveChannel) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -880,7 +879,7 @@ func MedialiveChannel_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.medialiveChannel.MedialiveChannel",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -904,7 +903,7 @@ func MedialiveChannel_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func MedialiveChannel_IsConstruct(x interface{}) *bool {
+func MedialiveChannel_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMedialiveChannel_IsConstructParameters(x); err != nil {
@@ -915,7 +914,7 @@ func MedialiveChannel_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.medialiveChannel.MedialiveChannel",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -923,7 +922,7 @@ func MedialiveChannel_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func MedialiveChannel_IsTerraformElement(x interface{}) *bool {
+func MedialiveChannel_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMedialiveChannel_IsTerraformElementParameters(x); err != nil {
@@ -934,7 +933,7 @@ func MedialiveChannel_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.medialiveChannel.MedialiveChannel",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -942,7 +941,7 @@ func MedialiveChannel_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func MedialiveChannel_IsTerraformResource(x interface{}) *bool {
+func MedialiveChannel_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMedialiveChannel_IsTerraformResourceParameters(x); err != nil {
@@ -953,7 +952,7 @@ func MedialiveChannel_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.medialiveChannel.MedialiveChannel",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -978,31 +977,31 @@ func (m *jsiiProxy_MedialiveChannel) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (m *jsiiProxy_MedialiveChannel) AddOverride(path *string, value interface{}) {
+func (m *jsiiProxy_MedialiveChannel) AddOverride(path *string, value any) {
 	if err := m.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (m *jsiiProxy_MedialiveChannel) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MedialiveChannel) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1018,7 +1017,7 @@ func (m *jsiiProxy_MedialiveChannel) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1034,7 +1033,7 @@ func (m *jsiiProxy_MedialiveChannel) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1050,7 +1049,7 @@ func (m *jsiiProxy_MedialiveChannel) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1066,7 +1065,7 @@ func (m *jsiiProxy_MedialiveChannel) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1082,7 +1081,7 @@ func (m *jsiiProxy_MedialiveChannel) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1098,7 +1097,7 @@ func (m *jsiiProxy_MedialiveChannel) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1114,7 +1113,7 @@ func (m *jsiiProxy_MedialiveChannel) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1130,15 +1129,15 @@ func (m *jsiiProxy_MedialiveChannel) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MedialiveChannel) HasResourceMove() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MedialiveChannel) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1157,7 +1156,7 @@ func (m *jsiiProxy_MedialiveChannel) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		m,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1170,7 +1169,7 @@ func (m *jsiiProxy_MedialiveChannel) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1184,18 +1183,18 @@ func (m *jsiiProxy_MedialiveChannel) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (m *jsiiProxy_MedialiveChannel) MoveTo(moveTarget *string, index interface{}) {
+func (m *jsiiProxy_MedialiveChannel) MoveTo(moveTarget *string, index any) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1206,7 +1205,7 @@ func (m *jsiiProxy_MedialiveChannel) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1217,7 +1216,7 @@ func (m *jsiiProxy_MedialiveChannel) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1228,18 +1227,18 @@ func (m *jsiiProxy_MedialiveChannel) PutCdiInputSpecification(value *MedialiveCh
 	_jsii_.InvokeVoid(
 		m,
 		"putCdiInputSpecification",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (m *jsiiProxy_MedialiveChannel) PutDestinations(value interface{}) {
+func (m *jsiiProxy_MedialiveChannel) PutDestinations(value any) {
 	if err := m.validatePutDestinationsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"putDestinations",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1250,18 +1249,18 @@ func (m *jsiiProxy_MedialiveChannel) PutEncoderSettings(value *MedialiveChannelE
 	_jsii_.InvokeVoid(
 		m,
 		"putEncoderSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (m *jsiiProxy_MedialiveChannel) PutInputAttachments(value interface{}) {
+func (m *jsiiProxy_MedialiveChannel) PutInputAttachments(value any) {
 	if err := m.validatePutInputAttachmentsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"putInputAttachments",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1272,7 +1271,7 @@ func (m *jsiiProxy_MedialiveChannel) PutInputSpecification(value *MedialiveChann
 	_jsii_.InvokeVoid(
 		m,
 		"putInputSpecification",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1283,7 +1282,7 @@ func (m *jsiiProxy_MedialiveChannel) PutMaintenance(value *MedialiveChannelMaint
 	_jsii_.InvokeVoid(
 		m,
 		"putMaintenance",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1294,7 +1293,7 @@ func (m *jsiiProxy_MedialiveChannel) PutTimeouts(value *MedialiveChannelTimeouts
 	_jsii_.InvokeVoid(
 		m,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1305,7 +1304,7 @@ func (m *jsiiProxy_MedialiveChannel) PutVpc(value *MedialiveChannelVpc) {
 	_jsii_.InvokeVoid(
 		m,
 		"putVpc",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1397,8 +1396,8 @@ func (m *jsiiProxy_MedialiveChannel) ResetVpc() {
 	)
 }
 
-func (m *jsiiProxy_MedialiveChannel) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MedialiveChannel) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1410,8 +1409,8 @@ func (m *jsiiProxy_MedialiveChannel) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (m *jsiiProxy_MedialiveChannel) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MedialiveChannel) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1423,8 +1422,8 @@ func (m *jsiiProxy_MedialiveChannel) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (m *jsiiProxy_MedialiveChannel) ToHclTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MedialiveChannel) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1436,8 +1435,8 @@ func (m *jsiiProxy_MedialiveChannel) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_MedialiveChannel) ToMetadata() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MedialiveChannel) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1462,8 +1461,8 @@ func (m *jsiiProxy_MedialiveChannel) ToString() *string {
 	return returns
 }
 
-func (m *jsiiProxy_MedialiveChannel) ToTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MedialiveChannel) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1474,4 +1473,3 @@ func (m *jsiiProxy_MedialiveChannel) ToTerraform() interface{} {
 
 	return returns
 }
-

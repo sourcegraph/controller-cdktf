@@ -15,9 +15,9 @@ type LakeformationPermissionsLfTagOutputReference interface {
 	CatalogIdInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type LakeformationPermissionsLfTagOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type LakeformationPermissionsLfTagOutputReference interface {
 	ResetCatalogId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -106,8 +106,8 @@ func (j *jsiiProxy_LakeformationPermissionsLfTagOutputReference) CatalogIdInput(
 	return returns
 }
 
-func (j *jsiiProxy_LakeformationPermissionsLfTagOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LakeformationPermissionsLfTagOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_LakeformationPermissionsLfTagOutputReference) ValuesInput() *
 	return returns
 }
 
-
 func NewLakeformationPermissionsLfTagOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LakeformationPermissionsLfTagOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewLakeformationPermissionsLfTagOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lakeformationPermissions.LakeformationPermissionsLfTagOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewLakeformationPermissionsLfTagOutputReference_Override(l LakeformationPer
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lakeformationPermissions.LakeformationPermissionsLfTagOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LakeformationPermissionsLfTagOutputReference)SetCatalogId(val *string) {
+func (j *jsiiProxy_LakeformationPermissionsLfTagOutputReference) SetCatalogId(val *string) {
 	if err := j.validateSetCatalogIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_LakeformationPermissionsLfTagOutputReference)SetCatalogId(val
 	)
 }
 
-func (j *jsiiProxy_LakeformationPermissionsLfTagOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LakeformationPermissionsLfTagOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_LakeformationPermissionsLfTagOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_LakeformationPermissionsLfTagOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LakeformationPermissionsLfTagOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_LakeformationPermissionsLfTagOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_LakeformationPermissionsLfTagOutputReference)SetInternalValue(val *LakeformationPermissionsLfTag) {
+func (j *jsiiProxy_LakeformationPermissionsLfTagOutputReference) SetInternalValue(val *LakeformationPermissionsLfTag) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_LakeformationPermissionsLfTagOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_LakeformationPermissionsLfTagOutputReference)SetKey(val *string) {
+func (j *jsiiProxy_LakeformationPermissionsLfTagOutputReference) SetKey(val *string) {
 	if err := j.validateSetKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_LakeformationPermissionsLfTagOutputReference)SetKey(val *stri
 	)
 }
 
-func (j *jsiiProxy_LakeformationPermissionsLfTagOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LakeformationPermissionsLfTagOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_LakeformationPermissionsLfTagOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_LakeformationPermissionsLfTagOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LakeformationPermissionsLfTagOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_LakeformationPermissionsLfTagOutputReference)SetTerraformReso
 	)
 }
 
-func (j *jsiiProxy_LakeformationPermissionsLfTagOutputReference)SetValues(val *[]*string) {
+func (j *jsiiProxy_LakeformationPermissionsLfTagOutputReference) SetValues(val *[]*string) {
 	if err := j.validateSetValuesParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,16 +344,16 @@ func (l *jsiiProxy_LakeformationPermissionsLfTagOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (l *jsiiProxy_LakeformationPermissionsLfTagOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LakeformationPermissionsLfTagOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (l *jsiiProxy_LakeformationPermissionsLfTagOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (l *jsiiProxy_LakeformationPermissionsLfTagOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (l *jsiiProxy_LakeformationPermissionsLfTagOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (l *jsiiProxy_LakeformationPermissionsLfTagOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (l *jsiiProxy_LakeformationPermissionsLfTagOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (l *jsiiProxy_LakeformationPermissionsLfTagOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (l *jsiiProxy_LakeformationPermissionsLfTagOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (l *jsiiProxy_LakeformationPermissionsLfTagOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (l *jsiiProxy_LakeformationPermissionsLfTagOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -526,16 +525,16 @@ func (l *jsiiProxy_LakeformationPermissionsLfTagOutputReference) ResetCatalogId(
 	)
 }
 
-func (l *jsiiProxy_LakeformationPermissionsLfTagOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LakeformationPermissionsLfTagOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (l *jsiiProxy_LakeformationPermissionsLfTagOutputReference) ToString() *str
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetAddColumnNameParameters(val interface{}) error {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetAddColumnNameParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -142,7 +142,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetCannedAclFor
 	return nil
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetCdcInsertsAndUpdatesParameters(val interface{}) error {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetCdcInsertsAndUpdatesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -162,7 +162,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetCdcInsertsAn
 	return nil
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetCdcInsertsOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetCdcInsertsOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -206,7 +206,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetCdcPathParam
 	return nil
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -335,7 +335,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetDatePartitio
 	return nil
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetDatePartitionEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetDatePartitionEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -371,7 +371,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetDictPageSize
 	return nil
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetEnableStatisticsParameters(val interface{}) error {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetEnableStatisticsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -431,7 +431,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetIgnoreHeader
 	return nil
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetIncludeOpForFullLoadParameters(val interface{}) error {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetIncludeOpForFullLoadParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -467,7 +467,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetMaxFileSizeP
 	return nil
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetParquetTimestampInMillisecondParameters(val interface{}) error {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetParquetTimestampInMillisecondParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -495,7 +495,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetParquetVersi
 	return nil
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetPreserveTransactionsParameters(val interface{}) error {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetPreserveTransactionsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -515,7 +515,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetPreserveTran
 	return nil
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetRfc4180Parameters(val interface{}) error {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetRfc4180Parameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -583,7 +583,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetTimestampCol
 	return nil
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetUseCsvNoSupValueParameters(val interface{}) error {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetUseCsvNoSupValueParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -603,7 +603,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetUseCsvNoSupV
 	return nil
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetUseTaskStartTimeForFullLoadTimestampParameters(val interface{}) error {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetUseTaskStartTimeForFullLoadTimestampParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -634,4 +634,3 @@ func validateNewDmsEndpointS3SettingsOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

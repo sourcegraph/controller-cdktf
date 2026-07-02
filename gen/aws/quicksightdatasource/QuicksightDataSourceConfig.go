@@ -6,9 +6,9 @@ import (
 
 type QuicksightDataSourceConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type QuicksightDataSourceConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/quicksight_data_source#data_source_id QuicksightDataSource#data_source_id}.
 	DataSourceId *string `field:"required" json:"dataSourceId" yaml:"dataSourceId"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/quicksight_data_source#name QuicksightDataSource#name}.
@@ -43,7 +43,7 @@ type QuicksightDataSourceConfig struct {
 	// permission block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/quicksight_data_source#permission QuicksightDataSource#permission}
-	Permission interface{} `field:"optional" json:"permission" yaml:"permission"`
+	Permission any `field:"optional" json:"permission" yaml:"permission"`
 	// ssl_properties block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/quicksight_data_source#ssl_properties QuicksightDataSource#ssl_properties}
@@ -57,4 +57,3 @@ type QuicksightDataSourceConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/quicksight_data_source#vpc_connection_properties QuicksightDataSource#vpc_connection_properties}
 	VpcConnectionProperties *QuicksightDataSourceVpcConnectionProperties `field:"optional" json:"vpcConnectionProperties" yaml:"vpcConnectionProperties"`
 }
-

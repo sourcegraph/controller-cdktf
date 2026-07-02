@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApiGatewayDomainNameMutualTlsAuthenticationOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_ApiGatewayDomainNameMutualTlsAuthenticationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApiGatewayDomainNameMutualTlsAuthenticationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewApiGatewayDomainNameMutualTlsAuthenticationOutputReferenceParame
 
 	return nil
 }
-

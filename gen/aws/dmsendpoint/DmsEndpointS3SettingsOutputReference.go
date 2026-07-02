@@ -10,9 +10,9 @@ import (
 
 type DmsEndpointS3SettingsOutputReference interface {
 	cdktf.ComplexObject
-	AddColumnName() interface{}
-	SetAddColumnName(val interface{})
-	AddColumnNameInput() interface{}
+	AddColumnName() any
+	SetAddColumnName(val any)
+	AddColumnNameInput() any
 	BucketFolder() *string
 	SetBucketFolder(val *string)
 	BucketFolderInput() *string
@@ -22,12 +22,12 @@ type DmsEndpointS3SettingsOutputReference interface {
 	CannedAclForObjects() *string
 	SetCannedAclForObjects(val *string)
 	CannedAclForObjectsInput() *string
-	CdcInsertsAndUpdates() interface{}
-	SetCdcInsertsAndUpdates(val interface{})
-	CdcInsertsAndUpdatesInput() interface{}
-	CdcInsertsOnly() interface{}
-	SetCdcInsertsOnly(val interface{})
-	CdcInsertsOnlyInput() interface{}
+	CdcInsertsAndUpdates() any
+	SetCdcInsertsAndUpdates(val any)
+	CdcInsertsAndUpdatesInput() any
+	CdcInsertsOnly() any
+	SetCdcInsertsOnly(val any)
+	CdcInsertsOnlyInput() any
 	CdcMaxBatchInterval() *float64
 	SetCdcMaxBatchInterval(val *float64)
 	CdcMaxBatchIntervalInput() *float64
@@ -39,9 +39,9 @@ type DmsEndpointS3SettingsOutputReference interface {
 	CdcPathInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -76,18 +76,18 @@ type DmsEndpointS3SettingsOutputReference interface {
 	DatePartitionDelimiter() *string
 	SetDatePartitionDelimiter(val *string)
 	DatePartitionDelimiterInput() *string
-	DatePartitionEnabled() interface{}
-	SetDatePartitionEnabled(val interface{})
-	DatePartitionEnabledInput() interface{}
+	DatePartitionEnabled() any
+	SetDatePartitionEnabled(val any)
+	DatePartitionEnabledInput() any
 	DatePartitionSequence() *string
 	SetDatePartitionSequence(val *string)
 	DatePartitionSequenceInput() *string
 	DictPageSizeLimit() *float64
 	SetDictPageSizeLimit(val *float64)
 	DictPageSizeLimitInput() *float64
-	EnableStatistics() interface{}
-	SetEnableStatistics(val interface{})
-	EnableStatisticsInput() interface{}
+	EnableStatistics() any
+	SetEnableStatistics(val any)
+	EnableStatisticsInput() any
 	EncodingType() *string
 	SetEncodingType(val *string)
 	EncodingTypeInput() *string
@@ -105,26 +105,26 @@ type DmsEndpointS3SettingsOutputReference interface {
 	IgnoreHeadersRow() *float64
 	SetIgnoreHeadersRow(val *float64)
 	IgnoreHeadersRowInput() *float64
-	IncludeOpForFullLoad() interface{}
-	SetIncludeOpForFullLoad(val interface{})
-	IncludeOpForFullLoadInput() interface{}
+	IncludeOpForFullLoad() any
+	SetIncludeOpForFullLoad(val any)
+	IncludeOpForFullLoadInput() any
 	InternalValue() *DmsEndpointS3Settings
 	SetInternalValue(val *DmsEndpointS3Settings)
 	MaxFileSize() *float64
 	SetMaxFileSize(val *float64)
 	MaxFileSizeInput() *float64
-	ParquetTimestampInMillisecond() interface{}
-	SetParquetTimestampInMillisecond(val interface{})
-	ParquetTimestampInMillisecondInput() interface{}
+	ParquetTimestampInMillisecond() any
+	SetParquetTimestampInMillisecond(val any)
+	ParquetTimestampInMillisecondInput() any
 	ParquetVersion() *string
 	SetParquetVersion(val *string)
 	ParquetVersionInput() *string
-	PreserveTransactions() interface{}
-	SetPreserveTransactions(val interface{})
-	PreserveTransactionsInput() interface{}
-	Rfc4180() interface{}
-	SetRfc4180(val interface{})
-	Rfc4180Input() interface{}
+	PreserveTransactions() any
+	SetPreserveTransactions(val any)
+	PreserveTransactionsInput() any
+	Rfc4180() any
+	SetRfc4180(val any)
+	Rfc4180Input() any
 	RowGroupLength() *float64
 	SetRowGroupLength(val *float64)
 	RowGroupLengthInput() *float64
@@ -145,16 +145,16 @@ type DmsEndpointS3SettingsOutputReference interface {
 	TimestampColumnName() *string
 	SetTimestampColumnName(val *string)
 	TimestampColumnNameInput() *string
-	UseCsvNoSupValue() interface{}
-	SetUseCsvNoSupValue(val interface{})
-	UseCsvNoSupValueInput() interface{}
-	UseTaskStartTimeForFullLoadTimestamp() interface{}
-	SetUseTaskStartTimeForFullLoadTimestamp(val interface{})
-	UseTaskStartTimeForFullLoadTimestampInput() interface{}
+	UseCsvNoSupValue() any
+	SetUseCsvNoSupValue(val any)
+	UseCsvNoSupValueInput() any
+	UseTaskStartTimeForFullLoadTimestamp() any
+	SetUseTaskStartTimeForFullLoadTimestamp(val any)
+	UseTaskStartTimeForFullLoadTimestampInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -215,7 +215,7 @@ type DmsEndpointS3SettingsOutputReference interface {
 	ResetUseTaskStartTimeForFullLoadTimestamp()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -228,8 +228,8 @@ type jsiiProxy_DmsEndpointS3SettingsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) AddColumnName() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) AddColumnName() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"addColumnName",
@@ -238,8 +238,8 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) AddColumnName() interfa
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) AddColumnNameInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) AddColumnNameInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"addColumnNameInput",
@@ -308,8 +308,8 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) CannedAclForObjectsInpu
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) CdcInsertsAndUpdates() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) CdcInsertsAndUpdates() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"cdcInsertsAndUpdates",
@@ -318,8 +318,8 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) CdcInsertsAndUpdates() 
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) CdcInsertsAndUpdatesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) CdcInsertsAndUpdatesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"cdcInsertsAndUpdatesInput",
@@ -328,8 +328,8 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) CdcInsertsAndUpdatesInp
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) CdcInsertsOnly() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) CdcInsertsOnly() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"cdcInsertsOnly",
@@ -338,8 +338,8 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) CdcInsertsOnly() interf
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) CdcInsertsOnlyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) CdcInsertsOnlyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"cdcInsertsOnlyInput",
@@ -408,8 +408,8 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) CdcPathInput() *string 
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -598,8 +598,8 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) DatePartitionDelimiterI
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) DatePartitionEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) DatePartitionEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"datePartitionEnabled",
@@ -608,8 +608,8 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) DatePartitionEnabled() 
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) DatePartitionEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) DatePartitionEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"datePartitionEnabledInput",
@@ -658,8 +658,8 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) DictPageSizeLimitInput(
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) EnableStatistics() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) EnableStatistics() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableStatistics",
@@ -668,8 +668,8 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) EnableStatistics() inte
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) EnableStatisticsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) EnableStatisticsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableStatisticsInput",
@@ -788,8 +788,8 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) IgnoreHeadersRowInput()
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) IncludeOpForFullLoad() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) IncludeOpForFullLoad() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeOpForFullLoad",
@@ -798,8 +798,8 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) IncludeOpForFullLoad() 
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) IncludeOpForFullLoadInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) IncludeOpForFullLoadInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeOpForFullLoadInput",
@@ -838,8 +838,8 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) MaxFileSizeInput() *flo
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) ParquetTimestampInMillisecond() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) ParquetTimestampInMillisecond() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"parquetTimestampInMillisecond",
@@ -848,8 +848,8 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) ParquetTimestampInMilli
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) ParquetTimestampInMillisecondInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) ParquetTimestampInMillisecondInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"parquetTimestampInMillisecondInput",
@@ -878,8 +878,8 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) ParquetVersionInput() *
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) PreserveTransactions() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) PreserveTransactions() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"preserveTransactions",
@@ -888,8 +888,8 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) PreserveTransactions() 
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) PreserveTransactionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) PreserveTransactionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"preserveTransactionsInput",
@@ -898,8 +898,8 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) PreserveTransactionsInp
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) Rfc4180() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) Rfc4180() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rfc4180",
@@ -908,8 +908,8 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) Rfc4180() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) Rfc4180Input() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) Rfc4180Input() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rfc4180Input",
@@ -1018,8 +1018,8 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) TimestampColumnNameInpu
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) UseCsvNoSupValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) UseCsvNoSupValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useCsvNoSupValue",
@@ -1028,8 +1028,8 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) UseCsvNoSupValue() inte
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) UseCsvNoSupValueInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) UseCsvNoSupValueInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useCsvNoSupValueInput",
@@ -1038,8 +1038,8 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) UseCsvNoSupValueInput()
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) UseTaskStartTimeForFullLoadTimestamp() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) UseTaskStartTimeForFullLoadTimestamp() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useTaskStartTimeForFullLoadTimestamp",
@@ -1048,8 +1048,8 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) UseTaskStartTimeForFull
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) UseTaskStartTimeForFullLoadTimestampInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) UseTaskStartTimeForFullLoadTimestampInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useTaskStartTimeForFullLoadTimestampInput",
@@ -1057,7 +1057,6 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) UseTaskStartTimeForFull
 	)
 	return returns
 }
-
 
 func NewDmsEndpointS3SettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DmsEndpointS3SettingsOutputReference {
 	_init_.Initialize()
@@ -1069,7 +1068,7 @@ func NewDmsEndpointS3SettingsOutputReference(terraformResource cdktf.IInterpolat
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointS3SettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -1081,12 +1080,12 @@ func NewDmsEndpointS3SettingsOutputReference_Override(d DmsEndpointS3SettingsOut
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointS3SettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetAddColumnName(val interface{}) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetAddColumnName(val any) {
 	if err := j.validateSetAddColumnNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1097,7 +1096,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetAddColumnName(val int
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetBucketFolder(val *string) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetBucketFolder(val *string) {
 	if err := j.validateSetBucketFolderParameters(val); err != nil {
 		panic(err)
 	}
@@ -1108,7 +1107,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetBucketFolder(val *str
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetBucketName(val *string) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetBucketName(val *string) {
 	if err := j.validateSetBucketNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1119,7 +1118,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetBucketName(val *strin
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetCannedAclForObjects(val *string) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetCannedAclForObjects(val *string) {
 	if err := j.validateSetCannedAclForObjectsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1130,7 +1129,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetCannedAclForObjects(v
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetCdcInsertsAndUpdates(val interface{}) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetCdcInsertsAndUpdates(val any) {
 	if err := j.validateSetCdcInsertsAndUpdatesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1141,7 +1140,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetCdcInsertsAndUpdates(
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetCdcInsertsOnly(val interface{}) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetCdcInsertsOnly(val any) {
 	if err := j.validateSetCdcInsertsOnlyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1152,7 +1151,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetCdcInsertsOnly(val in
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetCdcMaxBatchInterval(val *float64) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetCdcMaxBatchInterval(val *float64) {
 	if err := j.validateSetCdcMaxBatchIntervalParameters(val); err != nil {
 		panic(err)
 	}
@@ -1163,7 +1162,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetCdcMaxBatchInterval(v
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetCdcMinFileSize(val *float64) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetCdcMinFileSize(val *float64) {
 	if err := j.validateSetCdcMinFileSizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1174,7 +1173,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetCdcMinFileSize(val *f
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetCdcPath(val *string) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetCdcPath(val *string) {
 	if err := j.validateSetCdcPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -1185,7 +1184,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetCdcPath(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -1196,7 +1195,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetComplexObjectIndex(va
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -1207,7 +1206,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetComplexObjectIsFromSe
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetCompressionType(val *string) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetCompressionType(val *string) {
 	if err := j.validateSetCompressionTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1218,7 +1217,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetCompressionType(val *
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetCsvDelimiter(val *string) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetCsvDelimiter(val *string) {
 	if err := j.validateSetCsvDelimiterParameters(val); err != nil {
 		panic(err)
 	}
@@ -1229,7 +1228,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetCsvDelimiter(val *str
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetCsvNoSupValue(val *string) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetCsvNoSupValue(val *string) {
 	if err := j.validateSetCsvNoSupValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -1240,7 +1239,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetCsvNoSupValue(val *st
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetCsvNullValue(val *string) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetCsvNullValue(val *string) {
 	if err := j.validateSetCsvNullValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -1251,7 +1250,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetCsvNullValue(val *str
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetCsvRowDelimiter(val *string) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetCsvRowDelimiter(val *string) {
 	if err := j.validateSetCsvRowDelimiterParameters(val); err != nil {
 		panic(err)
 	}
@@ -1262,7 +1261,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetCsvRowDelimiter(val *
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetDataFormat(val *string) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetDataFormat(val *string) {
 	if err := j.validateSetDataFormatParameters(val); err != nil {
 		panic(err)
 	}
@@ -1273,7 +1272,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetDataFormat(val *strin
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetDataPageSize(val *float64) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetDataPageSize(val *float64) {
 	if err := j.validateSetDataPageSizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1284,7 +1283,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetDataPageSize(val *flo
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetDatePartitionDelimiter(val *string) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetDatePartitionDelimiter(val *string) {
 	if err := j.validateSetDatePartitionDelimiterParameters(val); err != nil {
 		panic(err)
 	}
@@ -1295,7 +1294,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetDatePartitionDelimite
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetDatePartitionEnabled(val interface{}) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetDatePartitionEnabled(val any) {
 	if err := j.validateSetDatePartitionEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1306,7 +1305,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetDatePartitionEnabled(
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetDatePartitionSequence(val *string) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetDatePartitionSequence(val *string) {
 	if err := j.validateSetDatePartitionSequenceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1317,7 +1316,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetDatePartitionSequence
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetDictPageSizeLimit(val *float64) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetDictPageSizeLimit(val *float64) {
 	if err := j.validateSetDictPageSizeLimitParameters(val); err != nil {
 		panic(err)
 	}
@@ -1328,7 +1327,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetDictPageSizeLimit(val
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetEnableStatistics(val interface{}) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetEnableStatistics(val any) {
 	if err := j.validateSetEnableStatisticsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1339,7 +1338,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetEnableStatistics(val 
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetEncodingType(val *string) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetEncodingType(val *string) {
 	if err := j.validateSetEncodingTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1350,7 +1349,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetEncodingType(val *str
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetEncryptionMode(val *string) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetEncryptionMode(val *string) {
 	if err := j.validateSetEncryptionModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1361,7 +1360,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetEncryptionMode(val *s
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetExternalTableDefinition(val *string) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetExternalTableDefinition(val *string) {
 	if err := j.validateSetExternalTableDefinitionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1372,7 +1371,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetExternalTableDefiniti
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetIgnoreHeaderRows(val *float64) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetIgnoreHeaderRows(val *float64) {
 	if err := j.validateSetIgnoreHeaderRowsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1383,7 +1382,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetIgnoreHeaderRows(val 
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetIgnoreHeadersRow(val *float64) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetIgnoreHeadersRow(val *float64) {
 	if err := j.validateSetIgnoreHeadersRowParameters(val); err != nil {
 		panic(err)
 	}
@@ -1394,7 +1393,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetIgnoreHeadersRow(val 
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetIncludeOpForFullLoad(val interface{}) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetIncludeOpForFullLoad(val any) {
 	if err := j.validateSetIncludeOpForFullLoadParameters(val); err != nil {
 		panic(err)
 	}
@@ -1405,7 +1404,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetIncludeOpForFullLoad(
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetInternalValue(val *DmsEndpointS3Settings) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetInternalValue(val *DmsEndpointS3Settings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -1416,7 +1415,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetInternalValue(val *Dm
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetMaxFileSize(val *float64) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetMaxFileSize(val *float64) {
 	if err := j.validateSetMaxFileSizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1427,7 +1426,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetMaxFileSize(val *floa
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetParquetTimestampInMillisecond(val interface{}) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetParquetTimestampInMillisecond(val any) {
 	if err := j.validateSetParquetTimestampInMillisecondParameters(val); err != nil {
 		panic(err)
 	}
@@ -1438,7 +1437,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetParquetTimestampInMil
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetParquetVersion(val *string) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetParquetVersion(val *string) {
 	if err := j.validateSetParquetVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1449,7 +1448,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetParquetVersion(val *s
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetPreserveTransactions(val interface{}) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetPreserveTransactions(val any) {
 	if err := j.validateSetPreserveTransactionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1460,7 +1459,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetPreserveTransactions(
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetRfc4180(val interface{}) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetRfc4180(val any) {
 	if err := j.validateSetRfc4180Parameters(val); err != nil {
 		panic(err)
 	}
@@ -1471,7 +1470,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetRfc4180(val interface
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetRowGroupLength(val *float64) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetRowGroupLength(val *float64) {
 	if err := j.validateSetRowGroupLengthParameters(val); err != nil {
 		panic(err)
 	}
@@ -1482,7 +1481,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetRowGroupLength(val *f
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetServerSideEncryptionKmsKeyId(val *string) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetServerSideEncryptionKmsKeyId(val *string) {
 	if err := j.validateSetServerSideEncryptionKmsKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1493,7 +1492,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetServerSideEncryptionK
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetServiceAccessRoleArn(val *string) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetServiceAccessRoleArn(val *string) {
 	if err := j.validateSetServiceAccessRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -1504,7 +1503,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetServiceAccessRoleArn(
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1515,7 +1514,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1526,7 +1525,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetTerraformResource(val
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetTimestampColumnName(val *string) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetTimestampColumnName(val *string) {
 	if err := j.validateSetTimestampColumnNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1537,7 +1536,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetTimestampColumnName(v
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetUseCsvNoSupValue(val interface{}) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetUseCsvNoSupValue(val any) {
 	if err := j.validateSetUseCsvNoSupValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -1548,7 +1547,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetUseCsvNoSupValue(val 
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetUseTaskStartTimeForFullLoadTimestamp(val interface{}) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) SetUseTaskStartTimeForFullLoadTimestamp(val any) {
 	if err := j.validateSetUseTaskStartTimeForFullLoadTimestampParameters(val); err != nil {
 		panic(err)
 	}
@@ -1572,16 +1571,16 @@ func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1597,7 +1596,7 @@ func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1613,7 +1612,7 @@ func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1629,7 +1628,7 @@ func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) GetListAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1645,7 +1644,7 @@ func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1661,7 +1660,7 @@ func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) GetNumberListAttribute(
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1677,7 +1676,7 @@ func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1693,7 +1692,7 @@ func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) GetStringAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1709,7 +1708,7 @@ func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1738,7 +1737,7 @@ func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) InterpolationForAttribu
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -2049,16 +2048,16 @@ func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) ResetUseTaskStartTimeFo
 	)
 }
 
-func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -2077,4 +2076,3 @@ func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) ToString() *string {
 
 	return returns
 }
-

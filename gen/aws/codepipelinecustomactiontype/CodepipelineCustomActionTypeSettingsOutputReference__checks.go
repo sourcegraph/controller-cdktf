@@ -98,7 +98,7 @@ func (c *jsiiProxy_CodepipelineCustomActionTypeSettingsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionTypeSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CodepipelineCustomActionTypeSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewCodepipelineCustomActionTypeSettingsOutputReferenceParameters(te
 
 	return nil
 }
-

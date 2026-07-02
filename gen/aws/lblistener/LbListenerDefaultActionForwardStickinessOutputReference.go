@@ -12,9 +12,9 @@ type LbListenerDefaultActionForwardStickinessOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,9 +28,9 @@ type LbListenerDefaultActionForwardStickinessOutputReference interface {
 	Duration() *float64
 	SetDuration(val *float64)
 	DurationInput() *float64
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *LbListenerDefaultActionForwardStickiness
@@ -46,7 +46,7 @@ type LbListenerDefaultActionForwardStickinessOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type LbListenerDefaultActionForwardStickinessOutputReference interface {
 	ResetEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -133,8 +133,8 @@ func (j *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference) Dura
 	return returns
 }
 
-func (j *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -143,8 +143,8 @@ func (j *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference) Enab
 	return returns
 }
 
-func (j *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference) Terr
 	return returns
 }
 
-
 func NewLbListenerDefaultActionForwardStickinessOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LbListenerDefaultActionForwardStickinessOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewLbListenerDefaultActionForwardStickinessOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lbListener.LbListenerDefaultActionForwardStickinessOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewLbListenerDefaultActionForwardStickinessOutputReference_Override(l LbLis
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lbListener.LbListenerDefaultActionForwardStickinessOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference)SetDuration(val *float64) {
+func (j *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference) SetDuration(val *float64) {
 	if err := j.validateSetDurationParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference)SetDu
 	)
 }
 
-func (j *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference)SetEn
 	)
 }
 
-func (j *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference)SetInternalValue(val *LbListenerDefaultActionForwardStickiness) {
+func (j *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference) SetInternalValue(val *LbListenerDefaultActionForwardStickiness) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (l *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference) Comp
 	return returns
 }
 
-func (l *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (l *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference) GetB
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (l *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference) GetB
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (l *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference) GetL
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (l *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference) GetN
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (l *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference) GetN
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (l *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference) GetN
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (l *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference) GetS
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (l *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference) GetS
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (l *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference) Inte
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (l *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference) Rese
 	)
 }
 
-func (l *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (l *jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference) ToSt
 
 	return returns
 }
-

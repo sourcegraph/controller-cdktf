@@ -98,7 +98,7 @@ func (k *jsiiProxy_KeyspacesTableCapacitySpecificationOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_KeyspacesTableCapacitySpecificationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KeyspacesTableCapacitySpecificationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewKeyspacesTableCapacitySpecificationOutputReferenceParameters(ter
 
 	return nil
 }
-

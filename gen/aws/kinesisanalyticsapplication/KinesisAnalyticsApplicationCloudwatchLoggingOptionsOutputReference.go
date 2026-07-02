@@ -12,9 +12,9 @@ type KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputReference interfac
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -47,7 +47,7 @@ type KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputReference interfac
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputReference interfac
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputReferenc
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -203,7 +203,6 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputRefe
 	return returns
 }
 
-
 func NewKinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputReference {
 	_init_.Initialize()
 
@@ -214,7 +213,7 @@ func NewKinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputReference(terra
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -226,12 +225,12 @@ func NewKinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputReference_Overr
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		k,
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputRefe
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputRefe
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputReference)SetInternalValue(val *KinesisAnalyticsApplicationCloudwatchLoggingOptions) {
+func (j *jsiiProxy_KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputReference) SetInternalValue(val *KinesisAnalyticsApplicationCloudwatchLoggingOptions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputRefe
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputReference)SetLogStreamArn(val *string) {
+func (j *jsiiProxy_KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputReference) SetLogStreamArn(val *string) {
 	if err := j.validateSetLogStreamArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputRefe
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputReference)SetRoleArn(val *string) {
+func (j *jsiiProxy_KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputReference) SetRoleArn(val *string) {
 	if err := j.validateSetRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -286,7 +285,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputRefe
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -297,7 +296,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputRefe
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,16 +320,16 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputRefe
 	return returns
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (k *jsiiProxy_KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -346,7 +345,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputRefe
 	_jsii_.Invoke(
 		k,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -362,7 +361,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputRefe
 	_jsii_.Invoke(
 		k,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -378,7 +377,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputRefe
 	_jsii_.Invoke(
 		k,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -394,7 +393,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputRefe
 	_jsii_.Invoke(
 		k,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -410,7 +409,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputRefe
 	_jsii_.Invoke(
 		k,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -426,7 +425,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputRefe
 	_jsii_.Invoke(
 		k,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputRefe
 	_jsii_.Invoke(
 		k,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputRefe
 	_jsii_.Invoke(
 		k,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,23 +486,23 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputRefe
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (k *jsiiProxy_KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := k.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		k,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -522,4 +521,3 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputRefe
 
 	return returns
 }
-

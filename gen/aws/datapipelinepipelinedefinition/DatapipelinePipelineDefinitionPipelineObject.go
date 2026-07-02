@@ -1,6 +1,5 @@
 package datapipelinepipelinedefinition
 
-
 type DatapipelinePipelineDefinitionPipelineObject struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/datapipeline_pipeline_definition#id DatapipelinePipelineDefinition#id}.
 	//
@@ -12,6 +11,5 @@ type DatapipelinePipelineDefinitionPipelineObject struct {
 	// field block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/datapipeline_pipeline_definition#field DatapipelinePipelineDefinition#field}
-	Field interface{} `field:"optional" json:"field" yaml:"field"`
+	Field any `field:"optional" json:"field" yaml:"field"`
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.medialiveMultiplex.MedialiveMultiplex",
-		reflect.TypeOf((*MedialiveMultiplex)(nil)).Elem(),
+		reflect.TypeFor[MedialiveMultiplex](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MedialiveMultiplex{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,15 +86,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.medialiveMultiplex.MedialiveMultiplexConfig",
-		reflect.TypeOf((*MedialiveMultiplexConfig)(nil)).Elem(),
+		reflect.TypeFor[MedialiveMultiplexConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.medialiveMultiplex.MedialiveMultiplexMultiplexSettings",
-		reflect.TypeOf((*MedialiveMultiplexMultiplexSettings)(nil)).Elem(),
+		reflect.TypeFor[MedialiveMultiplexMultiplexSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.medialiveMultiplex.MedialiveMultiplexMultiplexSettingsOutputReference",
-		reflect.TypeOf((*MedialiveMultiplexMultiplexSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MedialiveMultiplexMultiplexSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -128,7 +128,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "transportStreamReservedBitrate", GoGetter: "TransportStreamReservedBitrate"},
 			_jsii_.MemberProperty{JsiiProperty: "transportStreamReservedBitrateInput", GoGetter: "TransportStreamReservedBitrateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MedialiveMultiplexMultiplexSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -136,11 +136,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.medialiveMultiplex.MedialiveMultiplexTimeouts",
-		reflect.TypeOf((*MedialiveMultiplexTimeouts)(nil)).Elem(),
+		reflect.TypeFor[MedialiveMultiplexTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.medialiveMultiplex.MedialiveMultiplexTimeoutsOutputReference",
-		reflect.TypeOf((*MedialiveMultiplexTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MedialiveMultiplexTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -173,7 +173,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MedialiveMultiplexTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

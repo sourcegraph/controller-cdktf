@@ -109,7 +109,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsAvailBlankingOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsAvailBlankingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsAvailBlankingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewMedialiveChannelEncoderSettingsAvailBlankingOutputReferenceParam
 
 	return nil
 }
-

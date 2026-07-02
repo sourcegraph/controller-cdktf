@@ -17,8 +17,8 @@ type SesReceiptRuleLambdaActionList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type SesReceiptRuleLambdaActionList interface {
 	Get(index *float64) SesReceiptRuleLambdaActionOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_SesReceiptRuleLambdaActionList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SesReceiptRuleLambdaActionList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SesReceiptRuleLambdaActionList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_SesReceiptRuleLambdaActionList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewSesReceiptRuleLambdaActionList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SesReceiptRuleLambdaActionList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewSesReceiptRuleLambdaActionList(terraformResource cdktf.IInterpolatingPar
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleLambdaActionList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewSesReceiptRuleLambdaActionList_Override(s SesReceiptRuleLambdaActionList
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleLambdaActionList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SesReceiptRuleLambdaActionList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SesReceiptRuleLambdaActionList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_SesReceiptRuleLambdaActionList)SetInternalValue(val interface
 	)
 }
 
-func (j *jsiiProxy_SesReceiptRuleLambdaActionList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SesReceiptRuleLambdaActionList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_SesReceiptRuleLambdaActionList)SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_SesReceiptRuleLambdaActionList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SesReceiptRuleLambdaActionList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_SesReceiptRuleLambdaActionList)SetTerraformResource(val cdktf
 	)
 }
 
-func (j *jsiiProxy_SesReceiptRuleLambdaActionList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_SesReceiptRuleLambdaActionList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (s *jsiiProxy_SesReceiptRuleLambdaActionList) AllWithMapKey(mapKeyAttribute
 	_jsii_.Invoke(
 		s,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (s *jsiiProxy_SesReceiptRuleLambdaActionList) Get(index *float64) SesReceip
 	_jsii_.Invoke(
 		s,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SesReceiptRuleLambdaActionList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SesReceiptRuleLambdaActionList) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (s *jsiiProxy_SesReceiptRuleLambdaActionList) ToString() *string {
 
 	return returns
 }
-

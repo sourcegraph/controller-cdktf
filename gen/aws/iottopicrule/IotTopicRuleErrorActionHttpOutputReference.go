@@ -12,9 +12,9 @@ type IotTopicRuleErrorActionHttpOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -31,7 +31,7 @@ type IotTopicRuleErrorActionHttpOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	HttpHeader() IotTopicRuleErrorActionHttpHttpHeaderList
-	HttpHeaderInput() interface{}
+	HttpHeaderInput() any
 	InternalValue() *IotTopicRuleErrorActionHttp
 	SetInternalValue(val *IotTopicRuleErrorActionHttp)
 	// Experimental.
@@ -48,7 +48,7 @@ type IotTopicRuleErrorActionHttpOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,12 +69,12 @@ type IotTopicRuleErrorActionHttpOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutHttpHeader(value interface{})
+	PutHttpHeader(value any)
 	ResetConfirmationUrl()
 	ResetHttpHeader()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_IotTopicRuleErrorActionHttpOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -157,8 +157,8 @@ func (j *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference) HttpHeader() IotT
 	return returns
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference) HttpHeaderInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference) HttpHeaderInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"httpHeaderInput",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference) UrlInput() *strin
 	return returns
 }
 
-
 func NewIotTopicRuleErrorActionHttpOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IotTopicRuleErrorActionHttpOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewIotTopicRuleErrorActionHttpOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewIotTopicRuleErrorActionHttpOutputReference_Override(i IotTopicRuleErrorA
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference)SetConfirmationUrl(val *string) {
+func (j *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference) SetConfirmationUrl(val *string) {
 	if err := j.validateSetConfirmationUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference)SetConfirmationUrl
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference)SetInternalValue(val *IotTopicRuleErrorActionHttp) {
+func (j *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference) SetInternalValue(val *IotTopicRuleErrorActionHttp) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference)SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference)SetUrl(val *string) {
+func (j *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference) SetUrl(val *string) {
 	if err := j.validateSetUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,16 +334,16 @@ func (i *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (i *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -360,7 +359,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -376,7 +375,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -392,7 +391,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -408,7 +407,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -424,7 +423,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -440,7 +439,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,7 +455,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -472,7 +471,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -501,21 +500,21 @@ func (i *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference) PutHttpHeader(value interface{}) {
+func (i *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference) PutHttpHeader(value any) {
 	if err := i.validatePutHttpHeaderParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"putHttpHeader",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -535,16 +534,16 @@ func (i *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference) ResetHttpHeader()
 	)
 }
 
-func (i *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (i *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference) ToString() *strin
 
 	return returns
 }
-

@@ -6,9 +6,9 @@ import (
 
 type AlbConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type AlbConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// access_logs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/alb#access_logs Alb#access_logs}
@@ -28,15 +28,15 @@ type AlbConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/alb#desync_mitigation_mode Alb#desync_mitigation_mode}.
 	DesyncMitigationMode *string `field:"optional" json:"desyncMitigationMode" yaml:"desyncMitigationMode"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/alb#drop_invalid_header_fields Alb#drop_invalid_header_fields}.
-	DropInvalidHeaderFields interface{} `field:"optional" json:"dropInvalidHeaderFields" yaml:"dropInvalidHeaderFields"`
+	DropInvalidHeaderFields any `field:"optional" json:"dropInvalidHeaderFields" yaml:"dropInvalidHeaderFields"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/alb#enable_cross_zone_load_balancing Alb#enable_cross_zone_load_balancing}.
-	EnableCrossZoneLoadBalancing interface{} `field:"optional" json:"enableCrossZoneLoadBalancing" yaml:"enableCrossZoneLoadBalancing"`
+	EnableCrossZoneLoadBalancing any `field:"optional" json:"enableCrossZoneLoadBalancing" yaml:"enableCrossZoneLoadBalancing"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/alb#enable_deletion_protection Alb#enable_deletion_protection}.
-	EnableDeletionProtection interface{} `field:"optional" json:"enableDeletionProtection" yaml:"enableDeletionProtection"`
+	EnableDeletionProtection any `field:"optional" json:"enableDeletionProtection" yaml:"enableDeletionProtection"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/alb#enable_http2 Alb#enable_http2}.
-	EnableHttp2 interface{} `field:"optional" json:"enableHttp2" yaml:"enableHttp2"`
+	EnableHttp2 any `field:"optional" json:"enableHttp2" yaml:"enableHttp2"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/alb#enable_waf_fail_open Alb#enable_waf_fail_open}.
-	EnableWafFailOpen interface{} `field:"optional" json:"enableWafFailOpen" yaml:"enableWafFailOpen"`
+	EnableWafFailOpen any `field:"optional" json:"enableWafFailOpen" yaml:"enableWafFailOpen"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/alb#id Alb#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -45,7 +45,7 @@ type AlbConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/alb#idle_timeout Alb#idle_timeout}.
 	IdleTimeout *float64 `field:"optional" json:"idleTimeout" yaml:"idleTimeout"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/alb#internal Alb#internal}.
-	Internal interface{} `field:"optional" json:"internal" yaml:"internal"`
+	Internal any `field:"optional" json:"internal" yaml:"internal"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/alb#ip_address_type Alb#ip_address_type}.
 	IpAddressType *string `field:"optional" json:"ipAddressType" yaml:"ipAddressType"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/alb#load_balancer_type Alb#load_balancer_type}.
@@ -55,13 +55,13 @@ type AlbConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/alb#name_prefix Alb#name_prefix}.
 	NamePrefix *string `field:"optional" json:"namePrefix" yaml:"namePrefix"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/alb#preserve_host_header Alb#preserve_host_header}.
-	PreserveHostHeader interface{} `field:"optional" json:"preserveHostHeader" yaml:"preserveHostHeader"`
+	PreserveHostHeader any `field:"optional" json:"preserveHostHeader" yaml:"preserveHostHeader"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/alb#security_groups Alb#security_groups}.
 	SecurityGroups *[]*string `field:"optional" json:"securityGroups" yaml:"securityGroups"`
 	// subnet_mapping block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/alb#subnet_mapping Alb#subnet_mapping}
-	SubnetMapping interface{} `field:"optional" json:"subnetMapping" yaml:"subnetMapping"`
+	SubnetMapping any `field:"optional" json:"subnetMapping" yaml:"subnetMapping"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/alb#subnets Alb#subnets}.
 	Subnets *[]*string `field:"optional" json:"subnets" yaml:"subnets"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/alb#tags Alb#tags}.
@@ -73,4 +73,3 @@ type AlbConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/alb#timeouts Alb#timeouts}
 	Timeouts *AlbTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

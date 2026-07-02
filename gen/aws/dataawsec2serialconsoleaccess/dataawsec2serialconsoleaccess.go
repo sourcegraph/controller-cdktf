@@ -15,11 +15,11 @@ type DataAwsEc2SerialConsoleAccess interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -47,19 +47,19 @@ type DataAwsEc2SerialConsoleAccess interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DataAwsEc2SerialConsoleAccessTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -87,18 +87,18 @@ type DataAwsEc2SerialConsoleAccess interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsEc2SerialConsoleAccess
@@ -116,8 +116,8 @@ func (j *jsiiProxy_DataAwsEc2SerialConsoleAccess) CdktfStack() cdktf.TerraformSt
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2SerialConsoleAccess) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsEc2SerialConsoleAccess) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -126,8 +126,8 @@ func (j *jsiiProxy_DataAwsEc2SerialConsoleAccess) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2SerialConsoleAccess) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEc2SerialConsoleAccess) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -236,8 +236,8 @@ func (j *jsiiProxy_DataAwsEc2SerialConsoleAccess) Provider() cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2SerialConsoleAccess) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEc2SerialConsoleAccess) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -256,8 +256,8 @@ func (j *jsiiProxy_DataAwsEc2SerialConsoleAccess) TerraformGeneratorMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2SerialConsoleAccess) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsEc2SerialConsoleAccess) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -286,8 +286,8 @@ func (j *jsiiProxy_DataAwsEc2SerialConsoleAccess) Timeouts() DataAwsEc2SerialCon
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2SerialConsoleAccess) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEc2SerialConsoleAccess) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -295,7 +295,6 @@ func (j *jsiiProxy_DataAwsEc2SerialConsoleAccess) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/ec2_serial_console_access aws_ec2_serial_console_access} Data Source.
 func NewDataAwsEc2SerialConsoleAccess(scope constructs.Construct, id *string, config *DataAwsEc2SerialConsoleAccessConfig) DataAwsEc2SerialConsoleAccess {
@@ -308,7 +307,7 @@ func NewDataAwsEc2SerialConsoleAccess(scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsEc2SerialConsoleAccess.DataAwsEc2SerialConsoleAccess",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -321,12 +320,12 @@ func NewDataAwsEc2SerialConsoleAccess_Override(d DataAwsEc2SerialConsoleAccess, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsEc2SerialConsoleAccess.DataAwsEc2SerialConsoleAccess",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2SerialConsoleAccess)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsEc2SerialConsoleAccess) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -337,7 +336,7 @@ func (j *jsiiProxy_DataAwsEc2SerialConsoleAccess)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2SerialConsoleAccess)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsEc2SerialConsoleAccess) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -345,7 +344,7 @@ func (j *jsiiProxy_DataAwsEc2SerialConsoleAccess)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2SerialConsoleAccess)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsEc2SerialConsoleAccess) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -353,7 +352,7 @@ func (j *jsiiProxy_DataAwsEc2SerialConsoleAccess)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2SerialConsoleAccess)SetId(val *string) {
+func (j *jsiiProxy_DataAwsEc2SerialConsoleAccess) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,7 +363,7 @@ func (j *jsiiProxy_DataAwsEc2SerialConsoleAccess)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2SerialConsoleAccess)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsEc2SerialConsoleAccess) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_DataAwsEc2SerialConsoleAccess)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2SerialConsoleAccess)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsEc2SerialConsoleAccess) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -395,7 +394,7 @@ func DataAwsEc2SerialConsoleAccess_GenerateConfigForImport(scope constructs.Cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEc2SerialConsoleAccess.DataAwsEc2SerialConsoleAccess",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func DataAwsEc2SerialConsoleAccess_GenerateConfigForImport(scope constructs.Cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsEc2SerialConsoleAccess_IsConstruct(x interface{}) *bool {
+func DataAwsEc2SerialConsoleAccess_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEc2SerialConsoleAccess_IsConstructParameters(x); err != nil {
@@ -430,7 +429,7 @@ func DataAwsEc2SerialConsoleAccess_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEc2SerialConsoleAccess.DataAwsEc2SerialConsoleAccess",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func DataAwsEc2SerialConsoleAccess_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsEc2SerialConsoleAccess_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsEc2SerialConsoleAccess_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEc2SerialConsoleAccess_IsTerraformDataSourceParameters(x); err != nil {
@@ -449,7 +448,7 @@ func DataAwsEc2SerialConsoleAccess_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEc2SerialConsoleAccess.DataAwsEc2SerialConsoleAccess",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func DataAwsEc2SerialConsoleAccess_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsEc2SerialConsoleAccess_IsTerraformElement(x interface{}) *bool {
+func DataAwsEc2SerialConsoleAccess_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEc2SerialConsoleAccess_IsTerraformElementParameters(x); err != nil {
@@ -468,7 +467,7 @@ func DataAwsEc2SerialConsoleAccess_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEc2SerialConsoleAccess.DataAwsEc2SerialConsoleAccess",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -486,27 +485,27 @@ func DataAwsEc2SerialConsoleAccess_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2SerialConsoleAccess) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsEc2SerialConsoleAccess) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsEc2SerialConsoleAccess) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsEc2SerialConsoleAccess) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func (d *jsiiProxy_DataAwsEc2SerialConsoleAccess) GetBooleanAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (d *jsiiProxy_DataAwsEc2SerialConsoleAccess) GetBooleanMapAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (d *jsiiProxy_DataAwsEc2SerialConsoleAccess) GetListAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -570,7 +569,7 @@ func (d *jsiiProxy_DataAwsEc2SerialConsoleAccess) GetNumberAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -586,7 +585,7 @@ func (d *jsiiProxy_DataAwsEc2SerialConsoleAccess) GetNumberListAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -602,7 +601,7 @@ func (d *jsiiProxy_DataAwsEc2SerialConsoleAccess) GetNumberMapAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -618,7 +617,7 @@ func (d *jsiiProxy_DataAwsEc2SerialConsoleAccess) GetStringAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -634,7 +633,7 @@ func (d *jsiiProxy_DataAwsEc2SerialConsoleAccess) GetStringMapAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -650,7 +649,7 @@ func (d *jsiiProxy_DataAwsEc2SerialConsoleAccess) InterpolationForAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -664,7 +663,7 @@ func (d *jsiiProxy_DataAwsEc2SerialConsoleAccess) OverrideLogicalId(newLogicalId
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -675,7 +674,7 @@ func (d *jsiiProxy_DataAwsEc2SerialConsoleAccess) PutTimeouts(value *DataAwsEc2S
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -703,8 +702,8 @@ func (d *jsiiProxy_DataAwsEc2SerialConsoleAccess) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsEc2SerialConsoleAccess) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsEc2SerialConsoleAccess) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -716,8 +715,8 @@ func (d *jsiiProxy_DataAwsEc2SerialConsoleAccess) SynthesizeAttributes() *map[st
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2SerialConsoleAccess) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsEc2SerialConsoleAccess) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -729,8 +728,8 @@ func (d *jsiiProxy_DataAwsEc2SerialConsoleAccess) SynthesizeHclAttributes() *map
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2SerialConsoleAccess) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEc2SerialConsoleAccess) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -742,8 +741,8 @@ func (d *jsiiProxy_DataAwsEc2SerialConsoleAccess) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2SerialConsoleAccess) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEc2SerialConsoleAccess) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -768,8 +767,8 @@ func (d *jsiiProxy_DataAwsEc2SerialConsoleAccess) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2SerialConsoleAccess) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEc2SerialConsoleAccess) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -780,4 +779,3 @@ func (d *jsiiProxy_DataAwsEc2SerialConsoleAccess) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -19,11 +19,11 @@ type DataAwsAmi interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationDate() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -36,7 +36,7 @@ type DataAwsAmi interface {
 	SetExecutableUsers(val *[]*string)
 	ExecutableUsersInput() *[]*string
 	Filter() DataAwsAmiFilterList
-	FilterInput() interface{}
+	FilterInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -54,17 +54,17 @@ type DataAwsAmi interface {
 	ImageOwnerAlias() *string
 	ImageType() *string
 	ImdsSupport() *string
-	IncludeDeprecated() interface{}
-	SetIncludeDeprecated(val interface{})
-	IncludeDeprecatedInput() interface{}
+	IncludeDeprecated() any
+	SetIncludeDeprecated(val any)
+	IncludeDeprecatedInput() any
 	KernelId() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	MostRecent() interface{}
-	SetMostRecent(val interface{})
-	MostRecentInput() interface{}
+	MostRecent() any
+	SetMostRecent(val any)
+	MostRecentInput() any
 	Name() *string
 	NameRegex() *string
 	SetNameRegex(val *string)
@@ -85,7 +85,7 @@ type DataAwsAmi interface {
 	Public() cdktf.IResolvable
 	RamdiskId() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RootDeviceName() *string
 	RootDeviceType() *string
 	RootSnapshotId() *string
@@ -98,18 +98,18 @@ type DataAwsAmi interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DataAwsAmiTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	TpmSupport() *string
 	UsageOperation() *string
 	VirtualizationType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -131,7 +131,7 @@ type DataAwsAmi interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutFilter(value interface{})
+	PutFilter(value any)
 	PutTimeouts(value *DataAwsAmiTimeouts)
 	ResetExecutableUsers()
 	ResetFilter()
@@ -145,18 +145,18 @@ type DataAwsAmi interface {
 	ResetOwners()
 	ResetTags()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsAmi
@@ -214,8 +214,8 @@ func (j *jsiiProxy_DataAwsAmi) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAmi) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsAmi) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -224,8 +224,8 @@ func (j *jsiiProxy_DataAwsAmi) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAmi) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsAmi) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -314,8 +314,8 @@ func (j *jsiiProxy_DataAwsAmi) Filter() DataAwsAmiFilterList {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAmi) FilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsAmi) FilterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"filterInput",
@@ -434,8 +434,8 @@ func (j *jsiiProxy_DataAwsAmi) ImdsSupport() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAmi) IncludeDeprecated() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsAmi) IncludeDeprecated() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeDeprecated",
@@ -444,8 +444,8 @@ func (j *jsiiProxy_DataAwsAmi) IncludeDeprecated() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAmi) IncludeDeprecatedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsAmi) IncludeDeprecatedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeDeprecatedInput",
@@ -474,8 +474,8 @@ func (j *jsiiProxy_DataAwsAmi) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAmi) MostRecent() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsAmi) MostRecent() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"mostRecent",
@@ -484,8 +484,8 @@ func (j *jsiiProxy_DataAwsAmi) MostRecent() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAmi) MostRecentInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsAmi) MostRecentInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"mostRecentInput",
@@ -624,8 +624,8 @@ func (j *jsiiProxy_DataAwsAmi) RamdiskId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAmi) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsAmi) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -724,8 +724,8 @@ func (j *jsiiProxy_DataAwsAmi) TerraformGeneratorMetadata() *cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAmi) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsAmi) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -754,8 +754,8 @@ func (j *jsiiProxy_DataAwsAmi) Timeouts() DataAwsAmiTimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAmi) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsAmi) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -794,7 +794,6 @@ func (j *jsiiProxy_DataAwsAmi) VirtualizationType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/ami aws_ami} Data Source.
 func NewDataAwsAmi(scope constructs.Construct, id *string, config *DataAwsAmiConfig) DataAwsAmi {
 	_init_.Initialize()
@@ -806,7 +805,7 @@ func NewDataAwsAmi(scope constructs.Construct, id *string, config *DataAwsAmiCon
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsAmi.DataAwsAmi",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -819,12 +818,12 @@ func NewDataAwsAmi_Override(d DataAwsAmi, scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsAmi.DataAwsAmi",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsAmi)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsAmi) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -835,7 +834,7 @@ func (j *jsiiProxy_DataAwsAmi)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsAmi)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsAmi) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -843,7 +842,7 @@ func (j *jsiiProxy_DataAwsAmi)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsAmi)SetExecutableUsers(val *[]*string) {
+func (j *jsiiProxy_DataAwsAmi) SetExecutableUsers(val *[]*string) {
 	if err := j.validateSetExecutableUsersParameters(val); err != nil {
 		panic(err)
 	}
@@ -854,7 +853,7 @@ func (j *jsiiProxy_DataAwsAmi)SetExecutableUsers(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsAmi)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsAmi) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -862,7 +861,7 @@ func (j *jsiiProxy_DataAwsAmi)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsAmi)SetId(val *string) {
+func (j *jsiiProxy_DataAwsAmi) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -873,7 +872,7 @@ func (j *jsiiProxy_DataAwsAmi)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsAmi)SetIncludeDeprecated(val interface{}) {
+func (j *jsiiProxy_DataAwsAmi) SetIncludeDeprecated(val any) {
 	if err := j.validateSetIncludeDeprecatedParameters(val); err != nil {
 		panic(err)
 	}
@@ -884,7 +883,7 @@ func (j *jsiiProxy_DataAwsAmi)SetIncludeDeprecated(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsAmi)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsAmi) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -895,7 +894,7 @@ func (j *jsiiProxy_DataAwsAmi)SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	)
 }
 
-func (j *jsiiProxy_DataAwsAmi)SetMostRecent(val interface{}) {
+func (j *jsiiProxy_DataAwsAmi) SetMostRecent(val any) {
 	if err := j.validateSetMostRecentParameters(val); err != nil {
 		panic(err)
 	}
@@ -906,7 +905,7 @@ func (j *jsiiProxy_DataAwsAmi)SetMostRecent(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsAmi)SetNameRegex(val *string) {
+func (j *jsiiProxy_DataAwsAmi) SetNameRegex(val *string) {
 	if err := j.validateSetNameRegexParameters(val); err != nil {
 		panic(err)
 	}
@@ -917,7 +916,7 @@ func (j *jsiiProxy_DataAwsAmi)SetNameRegex(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsAmi)SetOwners(val *[]*string) {
+func (j *jsiiProxy_DataAwsAmi) SetOwners(val *[]*string) {
 	if err := j.validateSetOwnersParameters(val); err != nil {
 		panic(err)
 	}
@@ -928,7 +927,7 @@ func (j *jsiiProxy_DataAwsAmi)SetOwners(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsAmi)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsAmi) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -936,7 +935,7 @@ func (j *jsiiProxy_DataAwsAmi)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsAmi)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsAmi) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -959,7 +958,7 @@ func DataAwsAmi_GenerateConfigForImport(scope constructs.Construct, importToId *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsAmi.DataAwsAmi",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -983,7 +982,7 @@ func DataAwsAmi_GenerateConfigForImport(scope constructs.Construct, importToId *
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsAmi_IsConstruct(x interface{}) *bool {
+func DataAwsAmi_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsAmi_IsConstructParameters(x); err != nil {
@@ -994,7 +993,7 @@ func DataAwsAmi_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsAmi.DataAwsAmi",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1002,7 +1001,7 @@ func DataAwsAmi_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsAmi_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsAmi_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsAmi_IsTerraformDataSourceParameters(x); err != nil {
@@ -1013,7 +1012,7 @@ func DataAwsAmi_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsAmi.DataAwsAmi",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1021,7 +1020,7 @@ func DataAwsAmi_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsAmi_IsTerraformElement(x interface{}) *bool {
+func DataAwsAmi_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsAmi_IsTerraformElementParameters(x); err != nil {
@@ -1032,7 +1031,7 @@ func DataAwsAmi_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsAmi.DataAwsAmi",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1050,27 +1049,27 @@ func DataAwsAmi_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsAmi) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsAmi) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsAmi) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsAmi) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1086,7 +1085,7 @@ func (d *jsiiProxy_DataAwsAmi) GetBooleanAttribute(terraformAttribute *string) c
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1102,7 +1101,7 @@ func (d *jsiiProxy_DataAwsAmi) GetBooleanMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1118,7 +1117,7 @@ func (d *jsiiProxy_DataAwsAmi) GetListAttribute(terraformAttribute *string) *[]*
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1134,7 +1133,7 @@ func (d *jsiiProxy_DataAwsAmi) GetNumberAttribute(terraformAttribute *string) *f
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1150,7 +1149,7 @@ func (d *jsiiProxy_DataAwsAmi) GetNumberListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1166,7 +1165,7 @@ func (d *jsiiProxy_DataAwsAmi) GetNumberMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1182,7 +1181,7 @@ func (d *jsiiProxy_DataAwsAmi) GetStringAttribute(terraformAttribute *string) *s
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1198,7 +1197,7 @@ func (d *jsiiProxy_DataAwsAmi) GetStringMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1214,7 +1213,7 @@ func (d *jsiiProxy_DataAwsAmi) InterpolationForAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1228,18 +1227,18 @@ func (d *jsiiProxy_DataAwsAmi) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DataAwsAmi) PutFilter(value interface{}) {
+func (d *jsiiProxy_DataAwsAmi) PutFilter(value any) {
 	if err := d.validatePutFilterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1250,7 +1249,7 @@ func (d *jsiiProxy_DataAwsAmi) PutTimeouts(value *DataAwsAmiTimeouts) {
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1334,8 +1333,8 @@ func (d *jsiiProxy_DataAwsAmi) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsAmi) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsAmi) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1347,8 +1346,8 @@ func (d *jsiiProxy_DataAwsAmi) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsAmi) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsAmi) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1360,8 +1359,8 @@ func (d *jsiiProxy_DataAwsAmi) SynthesizeHclAttributes() *map[string]interface{}
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsAmi) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsAmi) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1373,8 +1372,8 @@ func (d *jsiiProxy_DataAwsAmi) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsAmi) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsAmi) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1399,8 +1398,8 @@ func (d *jsiiProxy_DataAwsAmi) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsAmi) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsAmi) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1411,4 +1410,3 @@ func (d *jsiiProxy_DataAwsAmi) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation",
-		reflect.TypeOf((*ConnectBotAssociation)(nil)).Elem(),
+		reflect.TypeFor[ConnectBotAssociation](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConnectBotAssociation{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -69,15 +69,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociationConfig",
-		reflect.TypeOf((*ConnectBotAssociationConfig)(nil)).Elem(),
+		reflect.TypeFor[ConnectBotAssociationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociationLexBot",
-		reflect.TypeOf((*ConnectBotAssociationLexBot)(nil)).Elem(),
+		reflect.TypeFor[ConnectBotAssociationLexBot](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociationLexBotOutputReference",
-		reflect.TypeOf((*ConnectBotAssociationLexBotOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ConnectBotAssociationLexBotOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -106,7 +106,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConnectBotAssociationLexBotOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

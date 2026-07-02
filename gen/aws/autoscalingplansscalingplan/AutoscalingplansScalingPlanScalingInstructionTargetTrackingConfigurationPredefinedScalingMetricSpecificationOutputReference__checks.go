@@ -98,7 +98,7 @@ func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionTargetTrackingCo
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationPredefinedScalingMetricSpecificationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationPredefinedScalingMetricSpecificationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewAutoscalingplansScalingPlanScalingInstructionTargetTrackingConfi
 
 	return nil
 }
-

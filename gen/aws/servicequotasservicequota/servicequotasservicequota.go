@@ -17,15 +17,15 @@ type ServicequotasServiceQuota interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DefaultValue() *float64
 	// Experimental.
 	DependsOn() *[]*string
@@ -53,15 +53,15 @@ type ServicequotasServiceQuota interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	QuotaCode() *string
 	SetQuotaCode(val *string)
 	QuotaCodeInput() *string
 	QuotaName() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RequestId() *string
 	RequestStatus() *string
 	ServiceCode() *string
@@ -71,7 +71,7 @@ type ServicequotasServiceQuota interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Value() *float64
@@ -81,9 +81,9 @@ type ServicequotasServiceQuota interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -101,7 +101,7 @@ type ServicequotasServiceQuota interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -113,7 +113,7 @@ type ServicequotasServiceQuota interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -124,17 +124,17 @@ type ServicequotasServiceQuota interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ServicequotasServiceQuota
@@ -172,8 +172,8 @@ func (j *jsiiProxy_ServicequotasServiceQuota) CdktfStack() cdktf.TerraformStack 
 	return returns
 }
 
-func (j *jsiiProxy_ServicequotasServiceQuota) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServicequotasServiceQuota) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_ServicequotasServiceQuota) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ServicequotasServiceQuota) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ServicequotasServiceQuota) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_ServicequotasServiceQuota) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_ServicequotasServiceQuota) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServicequotasServiceQuota) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -302,8 +302,8 @@ func (j *jsiiProxy_ServicequotasServiceQuota) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_ServicequotasServiceQuota) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ServicequotasServiceQuota) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -342,8 +342,8 @@ func (j *jsiiProxy_ServicequotasServiceQuota) QuotaName() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ServicequotasServiceQuota) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServicequotasServiceQuota) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -412,8 +412,8 @@ func (j *jsiiProxy_ServicequotasServiceQuota) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_ServicequotasServiceQuota) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ServicequotasServiceQuota) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -452,7 +452,6 @@ func (j *jsiiProxy_ServicequotasServiceQuota) ValueInput() *float64 {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/servicequotas_service_quota aws_servicequotas_service_quota} Resource.
 func NewServicequotasServiceQuota(scope constructs.Construct, id *string, config *ServicequotasServiceQuotaConfig) ServicequotasServiceQuota {
 	_init_.Initialize()
@@ -464,7 +463,7 @@ func NewServicequotasServiceQuota(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuota",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -477,12 +476,12 @@ func NewServicequotasServiceQuota_Override(s ServicequotasServiceQuota, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuota",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_ServicequotasServiceQuota)SetConnection(val interface{}) {
+func (j *jsiiProxy_ServicequotasServiceQuota) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -493,7 +492,7 @@ func (j *jsiiProxy_ServicequotasServiceQuota)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServicequotasServiceQuota)SetCount(val interface{}) {
+func (j *jsiiProxy_ServicequotasServiceQuota) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -504,7 +503,7 @@ func (j *jsiiProxy_ServicequotasServiceQuota)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServicequotasServiceQuota)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ServicequotasServiceQuota) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -512,7 +511,7 @@ func (j *jsiiProxy_ServicequotasServiceQuota)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ServicequotasServiceQuota)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ServicequotasServiceQuota) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -520,7 +519,7 @@ func (j *jsiiProxy_ServicequotasServiceQuota)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_ServicequotasServiceQuota)SetId(val *string) {
+func (j *jsiiProxy_ServicequotasServiceQuota) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -531,7 +530,7 @@ func (j *jsiiProxy_ServicequotasServiceQuota)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServicequotasServiceQuota)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ServicequotasServiceQuota) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -542,7 +541,7 @@ func (j *jsiiProxy_ServicequotasServiceQuota)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_ServicequotasServiceQuota)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ServicequotasServiceQuota) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -550,7 +549,7 @@ func (j *jsiiProxy_ServicequotasServiceQuota)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_ServicequotasServiceQuota)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ServicequotasServiceQuota) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -561,7 +560,7 @@ func (j *jsiiProxy_ServicequotasServiceQuota)SetProvisioners(val *[]interface{})
 	)
 }
 
-func (j *jsiiProxy_ServicequotasServiceQuota)SetQuotaCode(val *string) {
+func (j *jsiiProxy_ServicequotasServiceQuota) SetQuotaCode(val *string) {
 	if err := j.validateSetQuotaCodeParameters(val); err != nil {
 		panic(err)
 	}
@@ -572,7 +571,7 @@ func (j *jsiiProxy_ServicequotasServiceQuota)SetQuotaCode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServicequotasServiceQuota)SetServiceCode(val *string) {
+func (j *jsiiProxy_ServicequotasServiceQuota) SetServiceCode(val *string) {
 	if err := j.validateSetServiceCodeParameters(val); err != nil {
 		panic(err)
 	}
@@ -583,7 +582,7 @@ func (j *jsiiProxy_ServicequotasServiceQuota)SetServiceCode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServicequotasServiceQuota)SetValue(val *float64) {
+func (j *jsiiProxy_ServicequotasServiceQuota) SetValue(val *float64) {
 	if err := j.validateSetValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -606,7 +605,7 @@ func ServicequotasServiceQuota_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuota",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -630,7 +629,7 @@ func ServicequotasServiceQuota_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ServicequotasServiceQuota_IsConstruct(x interface{}) *bool {
+func ServicequotasServiceQuota_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateServicequotasServiceQuota_IsConstructParameters(x); err != nil {
@@ -641,7 +640,7 @@ func ServicequotasServiceQuota_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuota",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -649,7 +648,7 @@ func ServicequotasServiceQuota_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ServicequotasServiceQuota_IsTerraformElement(x interface{}) *bool {
+func ServicequotasServiceQuota_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateServicequotasServiceQuota_IsTerraformElementParameters(x); err != nil {
@@ -660,7 +659,7 @@ func ServicequotasServiceQuota_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuota",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -668,7 +667,7 @@ func ServicequotasServiceQuota_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ServicequotasServiceQuota_IsTerraformResource(x interface{}) *bool {
+func ServicequotasServiceQuota_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateServicequotasServiceQuota_IsTerraformResourceParameters(x); err != nil {
@@ -679,7 +678,7 @@ func ServicequotasServiceQuota_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuota",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -704,31 +703,31 @@ func (s *jsiiProxy_ServicequotasServiceQuota) AddMoveTarget(moveTarget *string) 
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_ServicequotasServiceQuota) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_ServicequotasServiceQuota) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_ServicequotasServiceQuota) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_ServicequotasServiceQuota) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -744,7 +743,7 @@ func (s *jsiiProxy_ServicequotasServiceQuota) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -760,7 +759,7 @@ func (s *jsiiProxy_ServicequotasServiceQuota) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -776,7 +775,7 @@ func (s *jsiiProxy_ServicequotasServiceQuota) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -792,7 +791,7 @@ func (s *jsiiProxy_ServicequotasServiceQuota) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -808,7 +807,7 @@ func (s *jsiiProxy_ServicequotasServiceQuota) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -824,7 +823,7 @@ func (s *jsiiProxy_ServicequotasServiceQuota) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -840,7 +839,7 @@ func (s *jsiiProxy_ServicequotasServiceQuota) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -856,15 +855,15 @@ func (s *jsiiProxy_ServicequotasServiceQuota) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_ServicequotasServiceQuota) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_ServicequotasServiceQuota) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -883,7 +882,7 @@ func (s *jsiiProxy_ServicequotasServiceQuota) ImportFrom(id *string, provider cd
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -896,7 +895,7 @@ func (s *jsiiProxy_ServicequotasServiceQuota) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -910,18 +909,18 @@ func (s *jsiiProxy_ServicequotasServiceQuota) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_ServicequotasServiceQuota) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_ServicequotasServiceQuota) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -932,7 +931,7 @@ func (s *jsiiProxy_ServicequotasServiceQuota) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -943,7 +942,7 @@ func (s *jsiiProxy_ServicequotasServiceQuota) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -963,8 +962,8 @@ func (s *jsiiProxy_ServicequotasServiceQuota) ResetOverrideLogicalId() {
 	)
 }
 
-func (s *jsiiProxy_ServicequotasServiceQuota) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_ServicequotasServiceQuota) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -976,8 +975,8 @@ func (s *jsiiProxy_ServicequotasServiceQuota) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (s *jsiiProxy_ServicequotasServiceQuota) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_ServicequotasServiceQuota) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -989,8 +988,8 @@ func (s *jsiiProxy_ServicequotasServiceQuota) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (s *jsiiProxy_ServicequotasServiceQuota) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_ServicequotasServiceQuota) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1002,8 +1001,8 @@ func (s *jsiiProxy_ServicequotasServiceQuota) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_ServicequotasServiceQuota) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_ServicequotasServiceQuota) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1028,8 +1027,8 @@ func (s *jsiiProxy_ServicequotasServiceQuota) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_ServicequotasServiceQuota) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_ServicequotasServiceQuota) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1040,4 +1039,3 @@ func (s *jsiiProxy_ServicequotasServiceQuota) ToTerraform() interface{} {
 
 	return returns
 }
-

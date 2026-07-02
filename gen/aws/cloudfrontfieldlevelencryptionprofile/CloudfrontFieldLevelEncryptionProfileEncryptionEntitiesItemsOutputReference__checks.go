@@ -109,7 +109,7 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsO
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsO
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -249,4 +249,3 @@ func validateNewCloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutp
 
 	return nil
 }
-

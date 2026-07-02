@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafregionalRule.WafregionalRule",
-		reflect.TypeOf((*WafregionalRule)(nil)).Elem(),
+		reflect.TypeFor[WafregionalRule](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,7 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WafregionalRule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -79,15 +79,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafregionalRule.WafregionalRuleConfig",
-		reflect.TypeOf((*WafregionalRuleConfig)(nil)).Elem(),
+		reflect.TypeFor[WafregionalRuleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafregionalRule.WafregionalRulePredicate",
-		reflect.TypeOf((*WafregionalRulePredicate)(nil)).Elem(),
+		reflect.TypeFor[WafregionalRulePredicate](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafregionalRule.WafregionalRulePredicateList",
-		reflect.TypeOf((*WafregionalRulePredicateList)(nil)).Elem(),
+		reflect.TypeFor[WafregionalRulePredicateList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -101,7 +101,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WafregionalRulePredicateList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -109,7 +109,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafregionalRule.WafregionalRulePredicateOutputReference",
-		reflect.TypeOf((*WafregionalRulePredicateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WafregionalRulePredicateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -139,7 +139,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WafregionalRulePredicateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

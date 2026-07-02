@@ -19,7 +19,7 @@ func (s *jsiiProxy_StoragegatewayCache) validateAddMoveTargetParameters(moveTarg
 	return nil
 }
 
-func (s *jsiiProxy_StoragegatewayCache) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_StoragegatewayCache) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_StoragegatewayCache) validateMoveFromIdParameters(id *string)
 	return nil
 }
 
-func (s *jsiiProxy_StoragegatewayCache) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_StoragegatewayCache) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateStoragegatewayCache_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateStoragegatewayCache_IsConstructParameters(x interface{}) error {
+func validateStoragegatewayCache_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateStoragegatewayCache_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateStoragegatewayCache_IsTerraformElementParameters(x interface{}) error {
+func validateStoragegatewayCache_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateStoragegatewayCache_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
-func validateStoragegatewayCache_IsTerraformResourceParameters(x interface{}) error {
+func validateStoragegatewayCache_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateStoragegatewayCache_IsTerraformResourceParameters(x interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_StoragegatewayCache) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_StoragegatewayCache) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_StoragegatewayCache) validateSetConnectionParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_StoragegatewayCache) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_StoragegatewayCache) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_StoragegatewayCache) validateSetLifecycleParameters(val *cdkt
 	return nil
 }
 
-func (j *jsiiProxy_StoragegatewayCache) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_StoragegatewayCache) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewStoragegatewayCacheParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

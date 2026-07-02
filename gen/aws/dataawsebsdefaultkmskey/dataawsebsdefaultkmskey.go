@@ -15,11 +15,11 @@ type DataAwsEbsDefaultKmsKey interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -47,19 +47,19 @@ type DataAwsEbsDefaultKmsKey interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DataAwsEbsDefaultKmsKeyTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -87,18 +87,18 @@ type DataAwsEbsDefaultKmsKey interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsEbsDefaultKmsKey
@@ -116,8 +116,8 @@ func (j *jsiiProxy_DataAwsEbsDefaultKmsKey) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEbsDefaultKmsKey) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsEbsDefaultKmsKey) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -126,8 +126,8 @@ func (j *jsiiProxy_DataAwsEbsDefaultKmsKey) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEbsDefaultKmsKey) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEbsDefaultKmsKey) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -236,8 +236,8 @@ func (j *jsiiProxy_DataAwsEbsDefaultKmsKey) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEbsDefaultKmsKey) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEbsDefaultKmsKey) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -256,8 +256,8 @@ func (j *jsiiProxy_DataAwsEbsDefaultKmsKey) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEbsDefaultKmsKey) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsEbsDefaultKmsKey) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -286,8 +286,8 @@ func (j *jsiiProxy_DataAwsEbsDefaultKmsKey) Timeouts() DataAwsEbsDefaultKmsKeyTi
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEbsDefaultKmsKey) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEbsDefaultKmsKey) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -295,7 +295,6 @@ func (j *jsiiProxy_DataAwsEbsDefaultKmsKey) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/ebs_default_kms_key aws_ebs_default_kms_key} Data Source.
 func NewDataAwsEbsDefaultKmsKey(scope constructs.Construct, id *string, config *DataAwsEbsDefaultKmsKeyConfig) DataAwsEbsDefaultKmsKey {
@@ -308,7 +307,7 @@ func NewDataAwsEbsDefaultKmsKey(scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsEbsDefaultKmsKey.DataAwsEbsDefaultKmsKey",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -321,12 +320,12 @@ func NewDataAwsEbsDefaultKmsKey_Override(d DataAwsEbsDefaultKmsKey, scope constr
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsEbsDefaultKmsKey.DataAwsEbsDefaultKmsKey",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsEbsDefaultKmsKey)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsEbsDefaultKmsKey) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -337,7 +336,7 @@ func (j *jsiiProxy_DataAwsEbsDefaultKmsKey)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEbsDefaultKmsKey)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsEbsDefaultKmsKey) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -345,7 +344,7 @@ func (j *jsiiProxy_DataAwsEbsDefaultKmsKey)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEbsDefaultKmsKey)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsEbsDefaultKmsKey) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -353,7 +352,7 @@ func (j *jsiiProxy_DataAwsEbsDefaultKmsKey)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_DataAwsEbsDefaultKmsKey)SetId(val *string) {
+func (j *jsiiProxy_DataAwsEbsDefaultKmsKey) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,7 +363,7 @@ func (j *jsiiProxy_DataAwsEbsDefaultKmsKey)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEbsDefaultKmsKey)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsEbsDefaultKmsKey) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_DataAwsEbsDefaultKmsKey)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_DataAwsEbsDefaultKmsKey)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsEbsDefaultKmsKey) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -395,7 +394,7 @@ func DataAwsEbsDefaultKmsKey_GenerateConfigForImport(scope constructs.Construct,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEbsDefaultKmsKey.DataAwsEbsDefaultKmsKey",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func DataAwsEbsDefaultKmsKey_GenerateConfigForImport(scope constructs.Construct,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsEbsDefaultKmsKey_IsConstruct(x interface{}) *bool {
+func DataAwsEbsDefaultKmsKey_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEbsDefaultKmsKey_IsConstructParameters(x); err != nil {
@@ -430,7 +429,7 @@ func DataAwsEbsDefaultKmsKey_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEbsDefaultKmsKey.DataAwsEbsDefaultKmsKey",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func DataAwsEbsDefaultKmsKey_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsEbsDefaultKmsKey_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsEbsDefaultKmsKey_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEbsDefaultKmsKey_IsTerraformDataSourceParameters(x); err != nil {
@@ -449,7 +448,7 @@ func DataAwsEbsDefaultKmsKey_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEbsDefaultKmsKey.DataAwsEbsDefaultKmsKey",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func DataAwsEbsDefaultKmsKey_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsEbsDefaultKmsKey_IsTerraformElement(x interface{}) *bool {
+func DataAwsEbsDefaultKmsKey_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEbsDefaultKmsKey_IsTerraformElementParameters(x); err != nil {
@@ -468,7 +467,7 @@ func DataAwsEbsDefaultKmsKey_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEbsDefaultKmsKey.DataAwsEbsDefaultKmsKey",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -486,27 +485,27 @@ func DataAwsEbsDefaultKmsKey_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEbsDefaultKmsKey) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsEbsDefaultKmsKey) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsEbsDefaultKmsKey) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsEbsDefaultKmsKey) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func (d *jsiiProxy_DataAwsEbsDefaultKmsKey) GetBooleanAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (d *jsiiProxy_DataAwsEbsDefaultKmsKey) GetBooleanMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (d *jsiiProxy_DataAwsEbsDefaultKmsKey) GetListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -570,7 +569,7 @@ func (d *jsiiProxy_DataAwsEbsDefaultKmsKey) GetNumberAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -586,7 +585,7 @@ func (d *jsiiProxy_DataAwsEbsDefaultKmsKey) GetNumberListAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -602,7 +601,7 @@ func (d *jsiiProxy_DataAwsEbsDefaultKmsKey) GetNumberMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -618,7 +617,7 @@ func (d *jsiiProxy_DataAwsEbsDefaultKmsKey) GetStringAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -634,7 +633,7 @@ func (d *jsiiProxy_DataAwsEbsDefaultKmsKey) GetStringMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -650,7 +649,7 @@ func (d *jsiiProxy_DataAwsEbsDefaultKmsKey) InterpolationForAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -664,7 +663,7 @@ func (d *jsiiProxy_DataAwsEbsDefaultKmsKey) OverrideLogicalId(newLogicalId *stri
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -675,7 +674,7 @@ func (d *jsiiProxy_DataAwsEbsDefaultKmsKey) PutTimeouts(value *DataAwsEbsDefault
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -703,8 +702,8 @@ func (d *jsiiProxy_DataAwsEbsDefaultKmsKey) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsEbsDefaultKmsKey) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsEbsDefaultKmsKey) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -716,8 +715,8 @@ func (d *jsiiProxy_DataAwsEbsDefaultKmsKey) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEbsDefaultKmsKey) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsEbsDefaultKmsKey) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -729,8 +728,8 @@ func (d *jsiiProxy_DataAwsEbsDefaultKmsKey) SynthesizeHclAttributes() *map[strin
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEbsDefaultKmsKey) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEbsDefaultKmsKey) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -742,8 +741,8 @@ func (d *jsiiProxy_DataAwsEbsDefaultKmsKey) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEbsDefaultKmsKey) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEbsDefaultKmsKey) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -768,8 +767,8 @@ func (d *jsiiProxy_DataAwsEbsDefaultKmsKey) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEbsDefaultKmsKey) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEbsDefaultKmsKey) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -780,4 +779,3 @@ func (d *jsiiProxy_DataAwsEbsDefaultKmsKey) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudhsmV2ClusterTimeoutsOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_CloudhsmV2ClusterTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudhsmV2ClusterTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_CloudhsmV2ClusterTimeoutsOutputReference) validateSetDeletePa
 	return nil
 }
 
-func (j *jsiiProxy_CloudhsmV2ClusterTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudhsmV2ClusterTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewCloudhsmV2ClusterTimeoutsOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

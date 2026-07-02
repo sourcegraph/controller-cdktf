@@ -17,8 +17,8 @@ type NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesList interface
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesList interface
 	Get(index *float64) NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferences
 	return returns
 }
 
-func (j *jsiiProxy_NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferences
 	return returns
 }
 
-
 func NewNetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewNetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesList(terraf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.networkfirewallRuleGroup.NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewNetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesList_Overri
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.networkfirewallRuleGroup.NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferences
 	)
 }
 
-func (j *jsiiProxy_NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferences
 	)
 }
 
-func (j *jsiiProxy_NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferences
 	)
 }
 
-func (j *jsiiProxy_NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (n *jsiiProxy_NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferences
 	_jsii_.Invoke(
 		n,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (n *jsiiProxy_NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferences
 	_jsii_.Invoke(
 		n,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesList) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (n *jsiiProxy_NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferences
 
 	return returns
 }
-

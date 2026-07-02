@@ -98,7 +98,7 @@ func (l *jsiiProxy_LightsailInstanceAddOnOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_LightsailInstanceAddOnOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LightsailInstanceAddOnOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewLightsailInstanceAddOnOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type WorklinkFleetNetworkOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type WorklinkFleetNetworkOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,7 +72,7 @@ type WorklinkFleetNetworkOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,8 +85,8 @@ type jsiiProxy_WorklinkFleetNetworkOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_WorklinkFleetNetworkOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorklinkFleetNetworkOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -215,7 +215,6 @@ func (j *jsiiProxy_WorklinkFleetNetworkOutputReference) VpcIdInput() *string {
 	return returns
 }
 
-
 func NewWorklinkFleetNetworkOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) WorklinkFleetNetworkOutputReference {
 	_init_.Initialize()
 
@@ -226,7 +225,7 @@ func NewWorklinkFleetNetworkOutputReference(terraformResource cdktf.IInterpolati
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.worklinkFleet.WorklinkFleetNetworkOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -238,12 +237,12 @@ func NewWorklinkFleetNetworkOutputReference_Override(w WorklinkFleetNetworkOutpu
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.worklinkFleet.WorklinkFleetNetworkOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WorklinkFleetNetworkOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_WorklinkFleetNetworkOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_WorklinkFleetNetworkOutputReference)SetComplexObjectIndex(val
 	)
 }
 
-func (j *jsiiProxy_WorklinkFleetNetworkOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_WorklinkFleetNetworkOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_WorklinkFleetNetworkOutputReference)SetComplexObjectIsFromSet
 	)
 }
 
-func (j *jsiiProxy_WorklinkFleetNetworkOutputReference)SetInternalValue(val *WorklinkFleetNetwork) {
+func (j *jsiiProxy_WorklinkFleetNetworkOutputReference) SetInternalValue(val *WorklinkFleetNetwork) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_WorklinkFleetNetworkOutputReference)SetInternalValue(val *Wor
 	)
 }
 
-func (j *jsiiProxy_WorklinkFleetNetworkOutputReference)SetSecurityGroupIds(val *[]*string) {
+func (j *jsiiProxy_WorklinkFleetNetworkOutputReference) SetSecurityGroupIds(val *[]*string) {
 	if err := j.validateSetSecurityGroupIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_WorklinkFleetNetworkOutputReference)SetSecurityGroupIds(val *
 	)
 }
 
-func (j *jsiiProxy_WorklinkFleetNetworkOutputReference)SetSubnetIds(val *[]*string) {
+func (j *jsiiProxy_WorklinkFleetNetworkOutputReference) SetSubnetIds(val *[]*string) {
 	if err := j.validateSetSubnetIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -298,7 +297,7 @@ func (j *jsiiProxy_WorklinkFleetNetworkOutputReference)SetSubnetIds(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_WorklinkFleetNetworkOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_WorklinkFleetNetworkOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -309,7 +308,7 @@ func (j *jsiiProxy_WorklinkFleetNetworkOutputReference)SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_WorklinkFleetNetworkOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorklinkFleetNetworkOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -320,7 +319,7 @@ func (j *jsiiProxy_WorklinkFleetNetworkOutputReference)SetTerraformResource(val 
 	)
 }
 
-func (j *jsiiProxy_WorklinkFleetNetworkOutputReference)SetVpcId(val *string) {
+func (j *jsiiProxy_WorklinkFleetNetworkOutputReference) SetVpcId(val *string) {
 	if err := j.validateSetVpcIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -344,16 +343,16 @@ func (w *jsiiProxy_WorklinkFleetNetworkOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (w *jsiiProxy_WorklinkFleetNetworkOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WorklinkFleetNetworkOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (w *jsiiProxy_WorklinkFleetNetworkOutputReference) GetBooleanAttribute(terr
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (w *jsiiProxy_WorklinkFleetNetworkOutputReference) GetBooleanMapAttribute(t
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (w *jsiiProxy_WorklinkFleetNetworkOutputReference) GetListAttribute(terrafo
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (w *jsiiProxy_WorklinkFleetNetworkOutputReference) GetNumberAttribute(terra
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (w *jsiiProxy_WorklinkFleetNetworkOutputReference) GetNumberListAttribute(t
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (w *jsiiProxy_WorklinkFleetNetworkOutputReference) GetNumberMapAttribute(te
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -465,7 +464,7 @@ func (w *jsiiProxy_WorklinkFleetNetworkOutputReference) GetStringAttribute(terra
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (w *jsiiProxy_WorklinkFleetNetworkOutputReference) GetStringMapAttribute(te
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -510,23 +509,23 @@ func (w *jsiiProxy_WorklinkFleetNetworkOutputReference) InterpolationForAttribut
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_WorklinkFleetNetworkOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WorklinkFleetNetworkOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := w.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -545,4 +544,3 @@ func (w *jsiiProxy_WorklinkFleetNetworkOutputReference) ToString() *string {
 
 	return returns
 }
-

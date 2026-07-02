@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dmsEndpoint.DmsEndpoint",
-		reflect.TypeOf((*DmsEndpoint)(nil)).Elem(),
+		reflect.TypeFor[DmsEndpoint](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -137,7 +137,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DmsEndpoint{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -145,15 +145,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointConfig",
-		reflect.TypeOf((*DmsEndpointConfig)(nil)).Elem(),
+		reflect.TypeFor[DmsEndpointConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointElasticsearchSettings",
-		reflect.TypeOf((*DmsEndpointElasticsearchSettings)(nil)).Elem(),
+		reflect.TypeFor[DmsEndpointElasticsearchSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointElasticsearchSettingsOutputReference",
-		reflect.TypeOf((*DmsEndpointElasticsearchSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DmsEndpointElasticsearchSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -187,7 +187,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -195,11 +195,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings",
-		reflect.TypeOf((*DmsEndpointKafkaSettings)(nil)).Elem(),
+		reflect.TypeFor[DmsEndpointKafkaSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointKafkaSettingsOutputReference",
-		reflect.TypeOf((*DmsEndpointKafkaSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DmsEndpointKafkaSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "broker", GoGetter: "Broker"},
 			_jsii_.MemberProperty{JsiiProperty: "brokerInput", GoGetter: "BrokerInput"},
@@ -276,7 +276,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "topicInput", GoGetter: "TopicInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DmsEndpointKafkaSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -284,11 +284,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointKinesisSettings",
-		reflect.TypeOf((*DmsEndpointKinesisSettings)(nil)).Elem(),
+		reflect.TypeFor[DmsEndpointKinesisSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointKinesisSettingsOutputReference",
-		reflect.TypeOf((*DmsEndpointKinesisSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DmsEndpointKinesisSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -339,7 +339,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DmsEndpointKinesisSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -347,11 +347,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointMongodbSettings",
-		reflect.TypeOf((*DmsEndpointMongodbSettings)(nil)).Elem(),
+		reflect.TypeFor[DmsEndpointMongodbSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointMongodbSettingsOutputReference",
-		reflect.TypeOf((*DmsEndpointMongodbSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DmsEndpointMongodbSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authMechanism", GoGetter: "AuthMechanism"},
 			_jsii_.MemberProperty{JsiiProperty: "authMechanismInput", GoGetter: "AuthMechanismInput"},
@@ -393,7 +393,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DmsEndpointMongodbSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -401,11 +401,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointRedisSettings",
-		reflect.TypeOf((*DmsEndpointRedisSettings)(nil)).Elem(),
+		reflect.TypeFor[DmsEndpointRedisSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointRedisSettingsOutputReference",
-		reflect.TypeOf((*DmsEndpointRedisSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DmsEndpointRedisSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authPassword", GoGetter: "AuthPassword"},
 			_jsii_.MemberProperty{JsiiProperty: "authPasswordInput", GoGetter: "AuthPasswordInput"},
@@ -447,7 +447,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DmsEndpointRedisSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -455,11 +455,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointRedshiftSettings",
-		reflect.TypeOf((*DmsEndpointRedshiftSettings)(nil)).Elem(),
+		reflect.TypeFor[DmsEndpointRedshiftSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointRedshiftSettingsOutputReference",
-		reflect.TypeOf((*DmsEndpointRedshiftSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DmsEndpointRedshiftSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketFolder", GoGetter: "BucketFolder"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketFolderInput", GoGetter: "BucketFolderInput"},
@@ -498,7 +498,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DmsEndpointRedshiftSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -506,11 +506,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointS3Settings",
-		reflect.TypeOf((*DmsEndpointS3Settings)(nil)).Elem(),
+		reflect.TypeFor[DmsEndpointS3Settings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointS3SettingsOutputReference",
-		reflect.TypeOf((*DmsEndpointS3SettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DmsEndpointS3SettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addColumnName", GoGetter: "AddColumnName"},
 			_jsii_.MemberProperty{JsiiProperty: "addColumnNameInput", GoGetter: "AddColumnNameInput"},
@@ -648,7 +648,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "useTaskStartTimeForFullLoadTimestamp", GoGetter: "UseTaskStartTimeForFullLoadTimestamp"},
 			_jsii_.MemberProperty{JsiiProperty: "useTaskStartTimeForFullLoadTimestampInput", GoGetter: "UseTaskStartTimeForFullLoadTimestampInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DmsEndpointS3SettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -656,11 +656,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointTimeouts",
-		reflect.TypeOf((*DmsEndpointTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DmsEndpointTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointTimeoutsOutputReference",
-		reflect.TypeOf((*DmsEndpointTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DmsEndpointTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -690,7 +690,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DmsEndpointTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

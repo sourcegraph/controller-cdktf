@@ -19,15 +19,15 @@ type PinpointApp interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,13 +62,13 @@ type PinpointApp interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	QuietTime() PinpointAppQuietTimeOutputReference
 	QuietTimeInput() *PinpointAppQuietTime
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -78,16 +78,16 @@ type PinpointApp interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -105,7 +105,7 @@ type PinpointApp interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -117,7 +117,7 @@ type PinpointApp interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -138,17 +138,17 @@ type PinpointApp interface {
 	ResetQuietTime()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for PinpointApp
@@ -206,8 +206,8 @@ func (j *jsiiProxy_PinpointApp) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_PinpointApp) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PinpointApp) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_PinpointApp) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PinpointApp) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PinpointApp) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -226,8 +226,8 @@ func (j *jsiiProxy_PinpointApp) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_PinpointApp) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PinpointApp) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -386,8 +386,8 @@ func (j *jsiiProxy_PinpointApp) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_PinpointApp) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_PinpointApp) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -416,8 +416,8 @@ func (j *jsiiProxy_PinpointApp) QuietTimeInput() *PinpointAppQuietTime {
 	return returns
 }
 
-func (j *jsiiProxy_PinpointApp) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PinpointApp) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -476,8 +476,8 @@ func (j *jsiiProxy_PinpointApp) TerraformGeneratorMetadata() *cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_PinpointApp) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PinpointApp) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -496,7 +496,6 @@ func (j *jsiiProxy_PinpointApp) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/pinpoint_app aws_pinpoint_app} Resource.
 func NewPinpointApp(scope constructs.Construct, id *string, config *PinpointAppConfig) PinpointApp {
 	_init_.Initialize()
@@ -508,7 +507,7 @@ func NewPinpointApp(scope constructs.Construct, id *string, config *PinpointAppC
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.pinpointApp.PinpointApp",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -521,12 +520,12 @@ func NewPinpointApp_Override(p PinpointApp, scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.pinpointApp.PinpointApp",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PinpointApp)SetConnection(val interface{}) {
+func (j *jsiiProxy_PinpointApp) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +536,7 @@ func (j *jsiiProxy_PinpointApp)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PinpointApp)SetCount(val interface{}) {
+func (j *jsiiProxy_PinpointApp) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_PinpointApp)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PinpointApp)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_PinpointApp) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -556,7 +555,7 @@ func (j *jsiiProxy_PinpointApp)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PinpointApp)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_PinpointApp) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -564,7 +563,7 @@ func (j *jsiiProxy_PinpointApp)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_PinpointApp)SetId(val *string) {
+func (j *jsiiProxy_PinpointApp) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -575,7 +574,7 @@ func (j *jsiiProxy_PinpointApp)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PinpointApp)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_PinpointApp) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -586,7 +585,7 @@ func (j *jsiiProxy_PinpointApp)SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_PinpointApp)SetName(val *string) {
+func (j *jsiiProxy_PinpointApp) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -597,7 +596,7 @@ func (j *jsiiProxy_PinpointApp)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PinpointApp)SetNamePrefix(val *string) {
+func (j *jsiiProxy_PinpointApp) SetNamePrefix(val *string) {
 	if err := j.validateSetNamePrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -608,7 +607,7 @@ func (j *jsiiProxy_PinpointApp)SetNamePrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PinpointApp)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_PinpointApp) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -616,7 +615,7 @@ func (j *jsiiProxy_PinpointApp)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_PinpointApp)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_PinpointApp) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func (j *jsiiProxy_PinpointApp)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PinpointApp)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_PinpointApp) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -638,7 +637,7 @@ func (j *jsiiProxy_PinpointApp)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_PinpointApp)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_PinpointApp) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -661,7 +660,7 @@ func PinpointApp_GenerateConfigForImport(scope constructs.Construct, importToId 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.pinpointApp.PinpointApp",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -685,7 +684,7 @@ func PinpointApp_GenerateConfigForImport(scope constructs.Construct, importToId 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func PinpointApp_IsConstruct(x interface{}) *bool {
+func PinpointApp_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePinpointApp_IsConstructParameters(x); err != nil {
@@ -696,7 +695,7 @@ func PinpointApp_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.pinpointApp.PinpointApp",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -704,7 +703,7 @@ func PinpointApp_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func PinpointApp_IsTerraformElement(x interface{}) *bool {
+func PinpointApp_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePinpointApp_IsTerraformElementParameters(x); err != nil {
@@ -715,7 +714,7 @@ func PinpointApp_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.pinpointApp.PinpointApp",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func PinpointApp_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func PinpointApp_IsTerraformResource(x interface{}) *bool {
+func PinpointApp_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePinpointApp_IsTerraformResourceParameters(x); err != nil {
@@ -734,7 +733,7 @@ func PinpointApp_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.pinpointApp.PinpointApp",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -759,31 +758,31 @@ func (p *jsiiProxy_PinpointApp) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (p *jsiiProxy_PinpointApp) AddOverride(path *string, value interface{}) {
+func (p *jsiiProxy_PinpointApp) AddOverride(path *string, value any) {
 	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (p *jsiiProxy_PinpointApp) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PinpointApp) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,7 +798,7 @@ func (p *jsiiProxy_PinpointApp) GetBooleanAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -815,7 +814,7 @@ func (p *jsiiProxy_PinpointApp) GetBooleanMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -831,7 +830,7 @@ func (p *jsiiProxy_PinpointApp) GetListAttribute(terraformAttribute *string) *[]
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -847,7 +846,7 @@ func (p *jsiiProxy_PinpointApp) GetNumberAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -863,7 +862,7 @@ func (p *jsiiProxy_PinpointApp) GetNumberListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -879,7 +878,7 @@ func (p *jsiiProxy_PinpointApp) GetNumberMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -895,7 +894,7 @@ func (p *jsiiProxy_PinpointApp) GetStringAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -911,15 +910,15 @@ func (p *jsiiProxy_PinpointApp) GetStringMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PinpointApp) HasResourceMove() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PinpointApp) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -938,7 +937,7 @@ func (p *jsiiProxy_PinpointApp) ImportFrom(id *string, provider cdktf.TerraformP
 	_jsii_.InvokeVoid(
 		p,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -951,7 +950,7 @@ func (p *jsiiProxy_PinpointApp) InterpolationForAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -965,18 +964,18 @@ func (p *jsiiProxy_PinpointApp) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (p *jsiiProxy_PinpointApp) MoveTo(moveTarget *string, index interface{}) {
+func (p *jsiiProxy_PinpointApp) MoveTo(moveTarget *string, index any) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -987,7 +986,7 @@ func (p *jsiiProxy_PinpointApp) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -998,7 +997,7 @@ func (p *jsiiProxy_PinpointApp) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1009,7 +1008,7 @@ func (p *jsiiProxy_PinpointApp) PutCampaignHook(value *PinpointAppCampaignHook) 
 	_jsii_.InvokeVoid(
 		p,
 		"putCampaignHook",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1020,7 +1019,7 @@ func (p *jsiiProxy_PinpointApp) PutLimits(value *PinpointAppLimits) {
 	_jsii_.InvokeVoid(
 		p,
 		"putLimits",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1031,7 +1030,7 @@ func (p *jsiiProxy_PinpointApp) PutQuietTime(value *PinpointAppQuietTime) {
 	_jsii_.InvokeVoid(
 		p,
 		"putQuietTime",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1107,8 +1106,8 @@ func (p *jsiiProxy_PinpointApp) ResetTagsAll() {
 	)
 }
 
-func (p *jsiiProxy_PinpointApp) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PinpointApp) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1120,8 +1119,8 @@ func (p *jsiiProxy_PinpointApp) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_PinpointApp) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PinpointApp) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1133,8 +1132,8 @@ func (p *jsiiProxy_PinpointApp) SynthesizeHclAttributes() *map[string]interface{
 	return returns
 }
 
-func (p *jsiiProxy_PinpointApp) ToHclTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PinpointApp) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1146,8 +1145,8 @@ func (p *jsiiProxy_PinpointApp) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_PinpointApp) ToMetadata() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PinpointApp) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1172,8 +1171,8 @@ func (p *jsiiProxy_PinpointApp) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_PinpointApp) ToTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PinpointApp) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1184,4 +1183,3 @@ func (p *jsiiProxy_PinpointApp) ToTerraform() interface{} {
 
 	return returns
 }
-

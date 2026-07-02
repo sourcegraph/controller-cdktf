@@ -16,30 +16,30 @@ type FmsPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
-	DeleteAllPolicyResources() interface{}
-	SetDeleteAllPolicyResources(val interface{})
-	DeleteAllPolicyResourcesInput() interface{}
-	DeleteUnusedFmManagedResources() interface{}
-	SetDeleteUnusedFmManagedResources(val interface{})
-	DeleteUnusedFmManagedResourcesInput() interface{}
+	SetCount(val any)
+	DeleteAllPolicyResources() any
+	SetDeleteAllPolicyResources(val any)
+	DeleteAllPolicyResourcesInput() any
+	DeleteUnusedFmManagedResources() any
+	SetDeleteUnusedFmManagedResources(val any)
+	DeleteUnusedFmManagedResourcesInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	ExcludeMap() FmsPolicyExcludeMapOutputReference
 	ExcludeMapInput() *FmsPolicyExcludeMap
-	ExcludeResourceTags() interface{}
-	SetExcludeResourceTags(val interface{})
-	ExcludeResourceTagsInput() interface{}
+	ExcludeResourceTags() any
+	SetExcludeResourceTags(val any)
+	ExcludeResourceTagsInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -68,14 +68,14 @@ type FmsPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
-	RemediationEnabled() interface{}
-	SetRemediationEnabled(val interface{})
-	RemediationEnabledInput() interface{}
+	RawOverrides() any
+	RemediationEnabled() any
+	SetRemediationEnabled(val any)
+	RemediationEnabledInput() any
 	ResourceTags() *map[string]*string
 	SetResourceTags(val *map[string]*string)
 	ResourceTagsInput() *map[string]*string
@@ -96,16 +96,16 @@ type FmsPolicy interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -123,7 +123,7 @@ type FmsPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -135,7 +135,7 @@ type FmsPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -159,17 +159,17 @@ type FmsPolicy interface {
 	ResetResourceTypeList()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for FmsPolicy
@@ -197,8 +197,8 @@ func (j *jsiiProxy_FmsPolicy) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_FmsPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FmsPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -207,8 +207,8 @@ func (j *jsiiProxy_FmsPolicy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FmsPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FmsPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -217,8 +217,8 @@ func (j *jsiiProxy_FmsPolicy) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FmsPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FmsPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -227,8 +227,8 @@ func (j *jsiiProxy_FmsPolicy) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FmsPolicy) DeleteAllPolicyResources() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FmsPolicy) DeleteAllPolicyResources() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deleteAllPolicyResources",
@@ -237,8 +237,8 @@ func (j *jsiiProxy_FmsPolicy) DeleteAllPolicyResources() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FmsPolicy) DeleteAllPolicyResourcesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FmsPolicy) DeleteAllPolicyResourcesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deleteAllPolicyResourcesInput",
@@ -247,8 +247,8 @@ func (j *jsiiProxy_FmsPolicy) DeleteAllPolicyResourcesInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FmsPolicy) DeleteUnusedFmManagedResources() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FmsPolicy) DeleteUnusedFmManagedResources() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deleteUnusedFmManagedResources",
@@ -257,8 +257,8 @@ func (j *jsiiProxy_FmsPolicy) DeleteUnusedFmManagedResources() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FmsPolicy) DeleteUnusedFmManagedResourcesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FmsPolicy) DeleteUnusedFmManagedResourcesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deleteUnusedFmManagedResourcesInput",
@@ -297,8 +297,8 @@ func (j *jsiiProxy_FmsPolicy) ExcludeMapInput() *FmsPolicyExcludeMap {
 	return returns
 }
 
-func (j *jsiiProxy_FmsPolicy) ExcludeResourceTags() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FmsPolicy) ExcludeResourceTags() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"excludeResourceTags",
@@ -307,8 +307,8 @@ func (j *jsiiProxy_FmsPolicy) ExcludeResourceTags() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FmsPolicy) ExcludeResourceTagsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FmsPolicy) ExcludeResourceTagsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"excludeResourceTagsInput",
@@ -447,8 +447,8 @@ func (j *jsiiProxy_FmsPolicy) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_FmsPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_FmsPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -457,8 +457,8 @@ func (j *jsiiProxy_FmsPolicy) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FmsPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FmsPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -467,8 +467,8 @@ func (j *jsiiProxy_FmsPolicy) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FmsPolicy) RemediationEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FmsPolicy) RemediationEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"remediationEnabled",
@@ -477,8 +477,8 @@ func (j *jsiiProxy_FmsPolicy) RemediationEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FmsPolicy) RemediationEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FmsPolicy) RemediationEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"remediationEnabledInput",
@@ -617,8 +617,8 @@ func (j *jsiiProxy_FmsPolicy) TerraformGeneratorMetadata() *cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_FmsPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FmsPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -637,7 +637,6 @@ func (j *jsiiProxy_FmsPolicy) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fms_policy aws_fms_policy} Resource.
 func NewFmsPolicy(scope constructs.Construct, id *string, config *FmsPolicyConfig) FmsPolicy {
 	_init_.Initialize()
@@ -649,7 +648,7 @@ func NewFmsPolicy(scope constructs.Construct, id *string, config *FmsPolicyConfi
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.fmsPolicy.FmsPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -662,12 +661,12 @@ func NewFmsPolicy_Override(f FmsPolicy, scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.fmsPolicy.FmsPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FmsPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_FmsPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -678,7 +677,7 @@ func (j *jsiiProxy_FmsPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FmsPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_FmsPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -689,7 +688,7 @@ func (j *jsiiProxy_FmsPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FmsPolicy)SetDeleteAllPolicyResources(val interface{}) {
+func (j *jsiiProxy_FmsPolicy) SetDeleteAllPolicyResources(val any) {
 	if err := j.validateSetDeleteAllPolicyResourcesParameters(val); err != nil {
 		panic(err)
 	}
@@ -700,7 +699,7 @@ func (j *jsiiProxy_FmsPolicy)SetDeleteAllPolicyResources(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FmsPolicy)SetDeleteUnusedFmManagedResources(val interface{}) {
+func (j *jsiiProxy_FmsPolicy) SetDeleteUnusedFmManagedResources(val any) {
 	if err := j.validateSetDeleteUnusedFmManagedResourcesParameters(val); err != nil {
 		panic(err)
 	}
@@ -711,7 +710,7 @@ func (j *jsiiProxy_FmsPolicy)SetDeleteUnusedFmManagedResources(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_FmsPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_FmsPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -719,7 +718,7 @@ func (j *jsiiProxy_FmsPolicy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FmsPolicy)SetExcludeResourceTags(val interface{}) {
+func (j *jsiiProxy_FmsPolicy) SetExcludeResourceTags(val any) {
 	if err := j.validateSetExcludeResourceTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -730,7 +729,7 @@ func (j *jsiiProxy_FmsPolicy)SetExcludeResourceTags(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FmsPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_FmsPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -738,7 +737,7 @@ func (j *jsiiProxy_FmsPolicy)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_FmsPolicy)SetId(val *string) {
+func (j *jsiiProxy_FmsPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -749,7 +748,7 @@ func (j *jsiiProxy_FmsPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FmsPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_FmsPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -760,7 +759,7 @@ func (j *jsiiProxy_FmsPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	)
 }
 
-func (j *jsiiProxy_FmsPolicy)SetName(val *string) {
+func (j *jsiiProxy_FmsPolicy) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -771,7 +770,7 @@ func (j *jsiiProxy_FmsPolicy)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FmsPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_FmsPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -779,7 +778,7 @@ func (j *jsiiProxy_FmsPolicy)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_FmsPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_FmsPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -790,7 +789,7 @@ func (j *jsiiProxy_FmsPolicy)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FmsPolicy)SetRemediationEnabled(val interface{}) {
+func (j *jsiiProxy_FmsPolicy) SetRemediationEnabled(val any) {
 	if err := j.validateSetRemediationEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -801,7 +800,7 @@ func (j *jsiiProxy_FmsPolicy)SetRemediationEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FmsPolicy)SetResourceTags(val *map[string]*string) {
+func (j *jsiiProxy_FmsPolicy) SetResourceTags(val *map[string]*string) {
 	if err := j.validateSetResourceTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -812,7 +811,7 @@ func (j *jsiiProxy_FmsPolicy)SetResourceTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_FmsPolicy)SetResourceType(val *string) {
+func (j *jsiiProxy_FmsPolicy) SetResourceType(val *string) {
 	if err := j.validateSetResourceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -823,7 +822,7 @@ func (j *jsiiProxy_FmsPolicy)SetResourceType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FmsPolicy)SetResourceTypeList(val *[]*string) {
+func (j *jsiiProxy_FmsPolicy) SetResourceTypeList(val *[]*string) {
 	if err := j.validateSetResourceTypeListParameters(val); err != nil {
 		panic(err)
 	}
@@ -834,7 +833,7 @@ func (j *jsiiProxy_FmsPolicy)SetResourceTypeList(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FmsPolicy)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_FmsPolicy) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -845,7 +844,7 @@ func (j *jsiiProxy_FmsPolicy)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_FmsPolicy)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_FmsPolicy) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -868,7 +867,7 @@ func FmsPolicy_GenerateConfigForImport(scope constructs.Construct, importToId *s
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fmsPolicy.FmsPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -892,7 +891,7 @@ func FmsPolicy_GenerateConfigForImport(scope constructs.Construct, importToId *s
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func FmsPolicy_IsConstruct(x interface{}) *bool {
+func FmsPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFmsPolicy_IsConstructParameters(x); err != nil {
@@ -903,7 +902,7 @@ func FmsPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fmsPolicy.FmsPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -911,7 +910,7 @@ func FmsPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func FmsPolicy_IsTerraformElement(x interface{}) *bool {
+func FmsPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFmsPolicy_IsTerraformElementParameters(x); err != nil {
@@ -922,7 +921,7 @@ func FmsPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fmsPolicy.FmsPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -930,7 +929,7 @@ func FmsPolicy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func FmsPolicy_IsTerraformResource(x interface{}) *bool {
+func FmsPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFmsPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -941,7 +940,7 @@ func FmsPolicy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fmsPolicy.FmsPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -966,31 +965,31 @@ func (f *jsiiProxy_FmsPolicy) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (f *jsiiProxy_FmsPolicy) AddOverride(path *string, value interface{}) {
+func (f *jsiiProxy_FmsPolicy) AddOverride(path *string, value any) {
 	if err := f.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (f *jsiiProxy_FmsPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FmsPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1006,7 +1005,7 @@ func (f *jsiiProxy_FmsPolicy) GetBooleanAttribute(terraformAttribute *string) cd
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1022,7 +1021,7 @@ func (f *jsiiProxy_FmsPolicy) GetBooleanMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1038,7 +1037,7 @@ func (f *jsiiProxy_FmsPolicy) GetListAttribute(terraformAttribute *string) *[]*s
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1054,7 +1053,7 @@ func (f *jsiiProxy_FmsPolicy) GetNumberAttribute(terraformAttribute *string) *fl
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1070,7 +1069,7 @@ func (f *jsiiProxy_FmsPolicy) GetNumberListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1086,7 +1085,7 @@ func (f *jsiiProxy_FmsPolicy) GetNumberMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1102,7 +1101,7 @@ func (f *jsiiProxy_FmsPolicy) GetStringAttribute(terraformAttribute *string) *st
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1118,15 +1117,15 @@ func (f *jsiiProxy_FmsPolicy) GetStringMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FmsPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FmsPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1145,7 +1144,7 @@ func (f *jsiiProxy_FmsPolicy) ImportFrom(id *string, provider cdktf.TerraformPro
 	_jsii_.InvokeVoid(
 		f,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1158,7 +1157,7 @@ func (f *jsiiProxy_FmsPolicy) InterpolationForAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1172,18 +1171,18 @@ func (f *jsiiProxy_FmsPolicy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (f *jsiiProxy_FmsPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (f *jsiiProxy_FmsPolicy) MoveTo(moveTarget *string, index any) {
 	if err := f.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1194,7 +1193,7 @@ func (f *jsiiProxy_FmsPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1205,7 +1204,7 @@ func (f *jsiiProxy_FmsPolicy) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1216,7 +1215,7 @@ func (f *jsiiProxy_FmsPolicy) PutExcludeMap(value *FmsPolicyExcludeMap) {
 	_jsii_.InvokeVoid(
 		f,
 		"putExcludeMap",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1227,7 +1226,7 @@ func (f *jsiiProxy_FmsPolicy) PutIncludeMap(value *FmsPolicyIncludeMap) {
 	_jsii_.InvokeVoid(
 		f,
 		"putIncludeMap",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1238,7 +1237,7 @@ func (f *jsiiProxy_FmsPolicy) PutSecurityServicePolicyData(value *FmsPolicySecur
 	_jsii_.InvokeVoid(
 		f,
 		"putSecurityServicePolicyData",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1338,8 +1337,8 @@ func (f *jsiiProxy_FmsPolicy) ResetTagsAll() {
 	)
 }
 
-func (f *jsiiProxy_FmsPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FmsPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -1351,8 +1350,8 @@ func (f *jsiiProxy_FmsPolicy) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (f *jsiiProxy_FmsPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FmsPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -1364,8 +1363,8 @@ func (f *jsiiProxy_FmsPolicy) SynthesizeHclAttributes() *map[string]interface{} 
 	return returns
 }
 
-func (f *jsiiProxy_FmsPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FmsPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1377,8 +1376,8 @@ func (f *jsiiProxy_FmsPolicy) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (f *jsiiProxy_FmsPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FmsPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1403,8 +1402,8 @@ func (f *jsiiProxy_FmsPolicy) ToString() *string {
 	return returns
 }
 
-func (f *jsiiProxy_FmsPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FmsPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1415,4 +1414,3 @@ func (f *jsiiProxy_FmsPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

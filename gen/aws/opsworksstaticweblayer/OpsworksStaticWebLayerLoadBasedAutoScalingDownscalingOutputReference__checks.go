@@ -106,7 +106,7 @@ func (j *jsiiProxy_OpsworksStaticWebLayerLoadBasedAutoScalingDownscalingOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksStaticWebLayerLoadBasedAutoScalingDownscalingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksStaticWebLayerLoadBasedAutoScalingDownscalingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -254,4 +254,3 @@ func validateNewOpsworksStaticWebLayerLoadBasedAutoScalingDownscalingOutputRefer
 
 	return nil
 }
-

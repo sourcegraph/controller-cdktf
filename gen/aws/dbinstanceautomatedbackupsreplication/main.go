@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dbInstanceAutomatedBackupsReplication.DbInstanceAutomatedBackupsReplication",
-		reflect.TypeOf((*DbInstanceAutomatedBackupsReplication)(nil)).Elem(),
+		reflect.TypeFor[DbInstanceAutomatedBackupsReplication](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,7 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DbInstanceAutomatedBackupsReplication{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -79,15 +79,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dbInstanceAutomatedBackupsReplication.DbInstanceAutomatedBackupsReplicationConfig",
-		reflect.TypeOf((*DbInstanceAutomatedBackupsReplicationConfig)(nil)).Elem(),
+		reflect.TypeFor[DbInstanceAutomatedBackupsReplicationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dbInstanceAutomatedBackupsReplication.DbInstanceAutomatedBackupsReplicationTimeouts",
-		reflect.TypeOf((*DbInstanceAutomatedBackupsReplicationTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DbInstanceAutomatedBackupsReplicationTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dbInstanceAutomatedBackupsReplication.DbInstanceAutomatedBackupsReplicationTimeoutsOutputReference",
-		reflect.TypeOf((*DbInstanceAutomatedBackupsReplicationTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DbInstanceAutomatedBackupsReplicationTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -117,7 +117,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DbInstanceAutomatedBackupsReplicationTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppflowFlowTriggerConfigTriggerPropertiesScheduledOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_AppflowFlowTriggerConfigTriggerPropertiesScheduledOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppflowFlowTriggerConfigTriggerPropertiesScheduledOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -254,4 +254,3 @@ func validateNewAppflowFlowTriggerConfigTriggerPropertiesScheduledOutputReferenc
 
 	return nil
 }
-

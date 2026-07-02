@@ -15,22 +15,22 @@ type ServicecatalogOrganizationsAccess interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -53,26 +53,26 @@ type ServicecatalogOrganizationsAccess interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ServicecatalogOrganizationsAccessTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -90,7 +90,7 @@ type ServicecatalogOrganizationsAccess interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -102,7 +102,7 @@ type ServicecatalogOrganizationsAccess interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -115,17 +115,17 @@ type ServicecatalogOrganizationsAccess interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ServicecatalogOrganizationsAccess
@@ -143,8 +143,8 @@ func (j *jsiiProxy_ServicecatalogOrganizationsAccess) CdktfStack() cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_ServicecatalogOrganizationsAccess) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServicecatalogOrganizationsAccess) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -153,8 +153,8 @@ func (j *jsiiProxy_ServicecatalogOrganizationsAccess) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ServicecatalogOrganizationsAccess) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ServicecatalogOrganizationsAccess) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_ServicecatalogOrganizationsAccess) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_ServicecatalogOrganizationsAccess) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServicecatalogOrganizationsAccess) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -183,8 +183,8 @@ func (j *jsiiProxy_ServicecatalogOrganizationsAccess) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_ServicecatalogOrganizationsAccess) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServicecatalogOrganizationsAccess) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -193,8 +193,8 @@ func (j *jsiiProxy_ServicecatalogOrganizationsAccess) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ServicecatalogOrganizationsAccess) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServicecatalogOrganizationsAccess) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -283,8 +283,8 @@ func (j *jsiiProxy_ServicecatalogOrganizationsAccess) Provider() cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_ServicecatalogOrganizationsAccess) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ServicecatalogOrganizationsAccess) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -293,8 +293,8 @@ func (j *jsiiProxy_ServicecatalogOrganizationsAccess) Provisioners() *[]interfac
 	return returns
 }
 
-func (j *jsiiProxy_ServicecatalogOrganizationsAccess) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServicecatalogOrganizationsAccess) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -313,8 +313,8 @@ func (j *jsiiProxy_ServicecatalogOrganizationsAccess) TerraformGeneratorMetadata
 	return returns
 }
 
-func (j *jsiiProxy_ServicecatalogOrganizationsAccess) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ServicecatalogOrganizationsAccess) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -343,8 +343,8 @@ func (j *jsiiProxy_ServicecatalogOrganizationsAccess) Timeouts() ServicecatalogO
 	return returns
 }
 
-func (j *jsiiProxy_ServicecatalogOrganizationsAccess) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServicecatalogOrganizationsAccess) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -352,7 +352,6 @@ func (j *jsiiProxy_ServicecatalogOrganizationsAccess) TimeoutsInput() interface{
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/servicecatalog_organizations_access aws_servicecatalog_organizations_access} Resource.
 func NewServicecatalogOrganizationsAccess(scope constructs.Construct, id *string, config *ServicecatalogOrganizationsAccessConfig) ServicecatalogOrganizationsAccess {
@@ -365,7 +364,7 @@ func NewServicecatalogOrganizationsAccess(scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccess",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -378,12 +377,12 @@ func NewServicecatalogOrganizationsAccess_Override(s ServicecatalogOrganizations
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccess",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogOrganizationsAccess)SetConnection(val interface{}) {
+func (j *jsiiProxy_ServicecatalogOrganizationsAccess) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_ServicecatalogOrganizationsAccess)SetConnection(val interface
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogOrganizationsAccess)SetCount(val interface{}) {
+func (j *jsiiProxy_ServicecatalogOrganizationsAccess) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_ServicecatalogOrganizationsAccess)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogOrganizationsAccess)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ServicecatalogOrganizationsAccess) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -413,7 +412,7 @@ func (j *jsiiProxy_ServicecatalogOrganizationsAccess)SetDependsOn(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogOrganizationsAccess)SetEnabled(val interface{}) {
+func (j *jsiiProxy_ServicecatalogOrganizationsAccess) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -424,7 +423,7 @@ func (j *jsiiProxy_ServicecatalogOrganizationsAccess)SetEnabled(val interface{})
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogOrganizationsAccess)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ServicecatalogOrganizationsAccess) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -432,7 +431,7 @@ func (j *jsiiProxy_ServicecatalogOrganizationsAccess)SetForEach(val cdktf.ITerra
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogOrganizationsAccess)SetId(val *string) {
+func (j *jsiiProxy_ServicecatalogOrganizationsAccess) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_ServicecatalogOrganizationsAccess)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogOrganizationsAccess)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ServicecatalogOrganizationsAccess) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_ServicecatalogOrganizationsAccess)SetLifecycle(val *cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogOrganizationsAccess)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ServicecatalogOrganizationsAccess) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -462,7 +461,7 @@ func (j *jsiiProxy_ServicecatalogOrganizationsAccess)SetProvider(val cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogOrganizationsAccess)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ServicecatalogOrganizationsAccess) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -485,7 +484,7 @@ func ServicecatalogOrganizationsAccess_GenerateConfigForImport(scope constructs.
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccess",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -509,7 +508,7 @@ func ServicecatalogOrganizationsAccess_GenerateConfigForImport(scope constructs.
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ServicecatalogOrganizationsAccess_IsConstruct(x interface{}) *bool {
+func ServicecatalogOrganizationsAccess_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateServicecatalogOrganizationsAccess_IsConstructParameters(x); err != nil {
@@ -520,7 +519,7 @@ func ServicecatalogOrganizationsAccess_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccess",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -528,7 +527,7 @@ func ServicecatalogOrganizationsAccess_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ServicecatalogOrganizationsAccess_IsTerraformElement(x interface{}) *bool {
+func ServicecatalogOrganizationsAccess_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateServicecatalogOrganizationsAccess_IsTerraformElementParameters(x); err != nil {
@@ -539,7 +538,7 @@ func ServicecatalogOrganizationsAccess_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccess",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func ServicecatalogOrganizationsAccess_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ServicecatalogOrganizationsAccess_IsTerraformResource(x interface{}) *bool {
+func ServicecatalogOrganizationsAccess_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateServicecatalogOrganizationsAccess_IsTerraformResourceParameters(x); err != nil {
@@ -558,7 +557,7 @@ func ServicecatalogOrganizationsAccess_IsTerraformResource(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccess",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -583,31 +582,31 @@ func (s *jsiiProxy_ServicecatalogOrganizationsAccess) AddMoveTarget(moveTarget *
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_ServicecatalogOrganizationsAccess) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_ServicecatalogOrganizationsAccess) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_ServicecatalogOrganizationsAccess) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_ServicecatalogOrganizationsAccess) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -623,7 +622,7 @@ func (s *jsiiProxy_ServicecatalogOrganizationsAccess) GetBooleanAttribute(terraf
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -639,7 +638,7 @@ func (s *jsiiProxy_ServicecatalogOrganizationsAccess) GetBooleanMapAttribute(ter
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -655,7 +654,7 @@ func (s *jsiiProxy_ServicecatalogOrganizationsAccess) GetListAttribute(terraform
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -671,7 +670,7 @@ func (s *jsiiProxy_ServicecatalogOrganizationsAccess) GetNumberAttribute(terrafo
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -687,7 +686,7 @@ func (s *jsiiProxy_ServicecatalogOrganizationsAccess) GetNumberListAttribute(ter
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -703,7 +702,7 @@ func (s *jsiiProxy_ServicecatalogOrganizationsAccess) GetNumberMapAttribute(terr
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func (s *jsiiProxy_ServicecatalogOrganizationsAccess) GetStringAttribute(terrafo
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -735,15 +734,15 @@ func (s *jsiiProxy_ServicecatalogOrganizationsAccess) GetStringMapAttribute(terr
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_ServicecatalogOrganizationsAccess) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_ServicecatalogOrganizationsAccess) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -762,7 +761,7 @@ func (s *jsiiProxy_ServicecatalogOrganizationsAccess) ImportFrom(id *string, pro
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -775,7 +774,7 @@ func (s *jsiiProxy_ServicecatalogOrganizationsAccess) InterpolationForAttribute(
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -789,18 +788,18 @@ func (s *jsiiProxy_ServicecatalogOrganizationsAccess) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_ServicecatalogOrganizationsAccess) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_ServicecatalogOrganizationsAccess) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -811,7 +810,7 @@ func (s *jsiiProxy_ServicecatalogOrganizationsAccess) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -822,7 +821,7 @@ func (s *jsiiProxy_ServicecatalogOrganizationsAccess) OverrideLogicalId(newLogic
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -833,7 +832,7 @@ func (s *jsiiProxy_ServicecatalogOrganizationsAccess) PutTimeouts(value *Service
 	_jsii_.InvokeVoid(
 		s,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -861,8 +860,8 @@ func (s *jsiiProxy_ServicecatalogOrganizationsAccess) ResetTimeouts() {
 	)
 }
 
-func (s *jsiiProxy_ServicecatalogOrganizationsAccess) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_ServicecatalogOrganizationsAccess) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -874,8 +873,8 @@ func (s *jsiiProxy_ServicecatalogOrganizationsAccess) SynthesizeAttributes() *ma
 	return returns
 }
 
-func (s *jsiiProxy_ServicecatalogOrganizationsAccess) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_ServicecatalogOrganizationsAccess) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -887,8 +886,8 @@ func (s *jsiiProxy_ServicecatalogOrganizationsAccess) SynthesizeHclAttributes() 
 	return returns
 }
 
-func (s *jsiiProxy_ServicecatalogOrganizationsAccess) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_ServicecatalogOrganizationsAccess) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -900,8 +899,8 @@ func (s *jsiiProxy_ServicecatalogOrganizationsAccess) ToHclTerraform() interface
 	return returns
 }
 
-func (s *jsiiProxy_ServicecatalogOrganizationsAccess) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_ServicecatalogOrganizationsAccess) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -926,8 +925,8 @@ func (s *jsiiProxy_ServicecatalogOrganizationsAccess) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_ServicecatalogOrganizationsAccess) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_ServicecatalogOrganizationsAccess) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -938,4 +937,3 @@ func (s *jsiiProxy_ServicecatalogOrganizationsAccess) ToTerraform() interface{} 
 
 	return returns
 }
-

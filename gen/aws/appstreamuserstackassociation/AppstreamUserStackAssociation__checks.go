@@ -19,7 +19,7 @@ func (a *jsiiProxy_AppstreamUserStackAssociation) validateAddMoveTargetParameter
 	return nil
 }
 
-func (a *jsiiProxy_AppstreamUserStackAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AppstreamUserStackAssociation) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AppstreamUserStackAssociation) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (a *jsiiProxy_AppstreamUserStackAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AppstreamUserStackAssociation) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateAppstreamUserStackAssociation_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateAppstreamUserStackAssociation_IsConstructParameters(x interface{}) error {
+func validateAppstreamUserStackAssociation_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateAppstreamUserStackAssociation_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateAppstreamUserStackAssociation_IsTerraformElementParameters(x interface{}) error {
+func validateAppstreamUserStackAssociation_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateAppstreamUserStackAssociation_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateAppstreamUserStackAssociation_IsTerraformResourceParameters(x interface{}) error {
+func validateAppstreamUserStackAssociation_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_AppstreamUserStackAssociation) validateSetAuthenticationTypeP
 	return nil
 }
 
-func (j *jsiiProxy_AppstreamUserStackAssociation) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AppstreamUserStackAssociation) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_AppstreamUserStackAssociation) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_AppstreamUserStackAssociation) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AppstreamUserStackAssociation) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -358,7 +358,7 @@ func (j *jsiiProxy_AppstreamUserStackAssociation) validateSetLifecycleParameters
 	return nil
 }
 
-func (j *jsiiProxy_AppstreamUserStackAssociation) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AppstreamUserStackAssociation) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -404,7 +404,7 @@ func (j *jsiiProxy_AppstreamUserStackAssociation) validateSetProvisionersParamet
 	return nil
 }
 
-func (j *jsiiProxy_AppstreamUserStackAssociation) validateSetSendEmailNotificationParameters(val interface{}) error {
+func (j *jsiiProxy_AppstreamUserStackAssociation) validateSetSendEmailNotificationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -458,4 +458,3 @@ func validateNewAppstreamUserStackAssociationParameters(scope constructs.Constru
 
 	return nil
 }
-

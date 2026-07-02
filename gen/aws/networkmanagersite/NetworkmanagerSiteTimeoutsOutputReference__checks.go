@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkmanagerSiteTimeoutsOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_NetworkmanagerSiteTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkmanagerSiteTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_NetworkmanagerSiteTimeoutsOutputReference) validateSetDeleteP
 	return nil
 }
 
-func (j *jsiiProxy_NetworkmanagerSiteTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkmanagerSiteTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewNetworkmanagerSiteTimeoutsOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

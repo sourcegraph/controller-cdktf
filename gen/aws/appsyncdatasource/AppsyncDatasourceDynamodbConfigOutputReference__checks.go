@@ -109,7 +109,7 @@ func (a *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,7 +214,7 @@ func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) validateSetUseCallerCredentialsParameters(val interface{}) error {
+func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) validateSetUseCallerCredentialsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,7 +234,7 @@ func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) validateSetUs
 	return nil
 }
 
-func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) validateSetVersionedParameters(val interface{}) error {
+func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) validateSetVersionedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -265,4 +265,3 @@ func validateNewAppsyncDatasourceDynamodbConfigOutputReferenceParameters(terrafo
 
 	return nil
 }
-

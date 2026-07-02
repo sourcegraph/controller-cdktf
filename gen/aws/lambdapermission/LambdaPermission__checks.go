@@ -19,7 +19,7 @@ func (l *jsiiProxy_LambdaPermission) validateAddMoveTargetParameters(moveTarget 
 	return nil
 }
 
-func (l *jsiiProxy_LambdaPermission) validateAddOverrideParameters(path *string, value interface{}) error {
+func (l *jsiiProxy_LambdaPermission) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (l *jsiiProxy_LambdaPermission) validateMoveFromIdParameters(id *string) er
 	return nil
 }
 
-func (l *jsiiProxy_LambdaPermission) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (l *jsiiProxy_LambdaPermission) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateLambdaPermission_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validateLambdaPermission_IsConstructParameters(x interface{}) error {
+func validateLambdaPermission_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateLambdaPermission_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateLambdaPermission_IsTerraformElementParameters(x interface{}) error {
+func validateLambdaPermission_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateLambdaPermission_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func validateLambdaPermission_IsTerraformResourceParameters(x interface{}) error {
+func validateLambdaPermission_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_LambdaPermission) validateSetActionParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_LambdaPermission) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_LambdaPermission) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_LambdaPermission) validateSetConnectionParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_LambdaPermission) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_LambdaPermission) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -398,7 +398,7 @@ func (j *jsiiProxy_LambdaPermission) validateSetPrincipalOrgIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_LambdaPermission) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_LambdaPermission) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -502,4 +502,3 @@ func validateNewLambdaPermissionParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-

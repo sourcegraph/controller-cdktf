@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsLbAccessLogsOutputReference) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLbAccessLogsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsLbAccessLogsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsLbAccessLogsOutputReferenceParameters(terraformResource c
 
 	return nil
 }
-

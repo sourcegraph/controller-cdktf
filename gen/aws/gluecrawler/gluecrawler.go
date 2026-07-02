@@ -14,7 +14,7 @@ type GlueCrawler interface {
 	cdktf.TerraformResource
 	Arn() *string
 	CatalogTarget() GlueCrawlerCatalogTargetList
-	CatalogTargetInput() interface{}
+	CatalogTargetInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Classifiers() *[]*string
@@ -24,20 +24,20 @@ type GlueCrawler interface {
 	SetConfiguration(val *string)
 	ConfigurationInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DatabaseName() *string
 	SetDatabaseName(val *string)
 	DatabaseNameInput() *string
 	DeltaTarget() GlueCrawlerDeltaTargetList
-	DeltaTargetInput() interface{}
+	DeltaTargetInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -46,7 +46,7 @@ type GlueCrawler interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	DynamodbTarget() GlueCrawlerDynamodbTargetList
-	DynamodbTargetInput() interface{}
+	DynamodbTargetInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -59,7 +59,7 @@ type GlueCrawler interface {
 	SetId(val *string)
 	IdInput() *string
 	JdbcTarget() GlueCrawlerJdbcTargetList
-	JdbcTargetInput() interface{}
+	JdbcTargetInput() any
 	LakeFormationConfiguration() GlueCrawlerLakeFormationConfigurationOutputReference
 	LakeFormationConfigurationInput() *GlueCrawlerLakeFormationConfiguration
 	// Experimental.
@@ -69,7 +69,7 @@ type GlueCrawler interface {
 	LineageConfiguration() GlueCrawlerLineageConfigurationOutputReference
 	LineageConfigurationInput() *GlueCrawlerLineageConfiguration
 	MongodbTarget() GlueCrawlerMongodbTargetList
-	MongodbTargetInput() interface{}
+	MongodbTargetInput() any
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -80,18 +80,18 @@ type GlueCrawler interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RecrawlPolicy() GlueCrawlerRecrawlPolicyOutputReference
 	RecrawlPolicyInput() *GlueCrawlerRecrawlPolicy
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
 	S3Target() GlueCrawlerS3TargetList
-	S3TargetInput() interface{}
+	S3TargetInput() any
 	Schedule() *string
 	SetSchedule(val *string)
 	ScheduleInput() *string
@@ -112,16 +112,16 @@ type GlueCrawler interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -139,7 +139,7 @@ type GlueCrawler interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -151,22 +151,22 @@ type GlueCrawler interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutCatalogTarget(value interface{})
-	PutDeltaTarget(value interface{})
-	PutDynamodbTarget(value interface{})
-	PutJdbcTarget(value interface{})
+	PutCatalogTarget(value any)
+	PutDeltaTarget(value any)
+	PutDynamodbTarget(value any)
+	PutJdbcTarget(value any)
 	PutLakeFormationConfiguration(value *GlueCrawlerLakeFormationConfiguration)
 	PutLineageConfiguration(value *GlueCrawlerLineageConfiguration)
-	PutMongodbTarget(value interface{})
+	PutMongodbTarget(value any)
 	PutRecrawlPolicy(value *GlueCrawlerRecrawlPolicy)
-	PutS3Target(value interface{})
+	PutS3Target(value any)
 	PutSchemaChangePolicy(value *GlueCrawlerSchemaChangePolicy)
 	ResetCatalogTarget()
 	ResetClassifiers()
@@ -190,17 +190,17 @@ type GlueCrawler interface {
 	ResetTablePrefix()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GlueCrawler
@@ -228,8 +228,8 @@ func (j *jsiiProxy_GlueCrawler) CatalogTarget() GlueCrawlerCatalogTargetList {
 	return returns
 }
 
-func (j *jsiiProxy_GlueCrawler) CatalogTargetInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlueCrawler) CatalogTargetInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"catalogTargetInput",
@@ -288,8 +288,8 @@ func (j *jsiiProxy_GlueCrawler) ConfigurationInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GlueCrawler) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlueCrawler) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -298,8 +298,8 @@ func (j *jsiiProxy_GlueCrawler) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GlueCrawler) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GlueCrawler) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -308,8 +308,8 @@ func (j *jsiiProxy_GlueCrawler) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_GlueCrawler) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlueCrawler) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -348,8 +348,8 @@ func (j *jsiiProxy_GlueCrawler) DeltaTarget() GlueCrawlerDeltaTargetList {
 	return returns
 }
 
-func (j *jsiiProxy_GlueCrawler) DeltaTargetInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlueCrawler) DeltaTargetInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deltaTargetInput",
@@ -398,8 +398,8 @@ func (j *jsiiProxy_GlueCrawler) DynamodbTarget() GlueCrawlerDynamodbTargetList {
 	return returns
 }
 
-func (j *jsiiProxy_GlueCrawler) DynamodbTargetInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlueCrawler) DynamodbTargetInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dynamodbTargetInput",
@@ -468,8 +468,8 @@ func (j *jsiiProxy_GlueCrawler) JdbcTarget() GlueCrawlerJdbcTargetList {
 	return returns
 }
 
-func (j *jsiiProxy_GlueCrawler) JdbcTargetInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlueCrawler) JdbcTargetInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"jdbcTargetInput",
@@ -538,8 +538,8 @@ func (j *jsiiProxy_GlueCrawler) MongodbTarget() GlueCrawlerMongodbTargetList {
 	return returns
 }
 
-func (j *jsiiProxy_GlueCrawler) MongodbTargetInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlueCrawler) MongodbTargetInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"mongodbTargetInput",
@@ -588,8 +588,8 @@ func (j *jsiiProxy_GlueCrawler) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GlueCrawler) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GlueCrawler) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -598,8 +598,8 @@ func (j *jsiiProxy_GlueCrawler) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GlueCrawler) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlueCrawler) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -658,8 +658,8 @@ func (j *jsiiProxy_GlueCrawler) S3Target() GlueCrawlerS3TargetList {
 	return returns
 }
 
-func (j *jsiiProxy_GlueCrawler) S3TargetInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlueCrawler) S3TargetInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"s3TargetInput",
@@ -798,8 +798,8 @@ func (j *jsiiProxy_GlueCrawler) TerraformGeneratorMetadata() *cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_GlueCrawler) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GlueCrawler) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -818,7 +818,6 @@ func (j *jsiiProxy_GlueCrawler) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/glue_crawler aws_glue_crawler} Resource.
 func NewGlueCrawler(scope constructs.Construct, id *string, config *GlueCrawlerConfig) GlueCrawler {
 	_init_.Initialize()
@@ -830,7 +829,7 @@ func NewGlueCrawler(scope constructs.Construct, id *string, config *GlueCrawlerC
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.glueCrawler.GlueCrawler",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -843,12 +842,12 @@ func NewGlueCrawler_Override(g GlueCrawler, scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.glueCrawler.GlueCrawler",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GlueCrawler)SetClassifiers(val *[]*string) {
+func (j *jsiiProxy_GlueCrawler) SetClassifiers(val *[]*string) {
 	if err := j.validateSetClassifiersParameters(val); err != nil {
 		panic(err)
 	}
@@ -859,7 +858,7 @@ func (j *jsiiProxy_GlueCrawler)SetClassifiers(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GlueCrawler)SetConfiguration(val *string) {
+func (j *jsiiProxy_GlueCrawler) SetConfiguration(val *string) {
 	if err := j.validateSetConfigurationParameters(val); err != nil {
 		panic(err)
 	}
@@ -870,7 +869,7 @@ func (j *jsiiProxy_GlueCrawler)SetConfiguration(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlueCrawler)SetConnection(val interface{}) {
+func (j *jsiiProxy_GlueCrawler) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -881,7 +880,7 @@ func (j *jsiiProxy_GlueCrawler)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GlueCrawler)SetCount(val interface{}) {
+func (j *jsiiProxy_GlueCrawler) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -892,7 +891,7 @@ func (j *jsiiProxy_GlueCrawler)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GlueCrawler)SetDatabaseName(val *string) {
+func (j *jsiiProxy_GlueCrawler) SetDatabaseName(val *string) {
 	if err := j.validateSetDatabaseNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -903,7 +902,7 @@ func (j *jsiiProxy_GlueCrawler)SetDatabaseName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlueCrawler)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GlueCrawler) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -911,7 +910,7 @@ func (j *jsiiProxy_GlueCrawler)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GlueCrawler)SetDescription(val *string) {
+func (j *jsiiProxy_GlueCrawler) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -922,7 +921,7 @@ func (j *jsiiProxy_GlueCrawler)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlueCrawler)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GlueCrawler) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -930,7 +929,7 @@ func (j *jsiiProxy_GlueCrawler)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_GlueCrawler)SetId(val *string) {
+func (j *jsiiProxy_GlueCrawler) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -941,7 +940,7 @@ func (j *jsiiProxy_GlueCrawler)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlueCrawler)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GlueCrawler) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -952,7 +951,7 @@ func (j *jsiiProxy_GlueCrawler)SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_GlueCrawler)SetName(val *string) {
+func (j *jsiiProxy_GlueCrawler) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -963,7 +962,7 @@ func (j *jsiiProxy_GlueCrawler)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlueCrawler)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GlueCrawler) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -971,7 +970,7 @@ func (j *jsiiProxy_GlueCrawler)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_GlueCrawler)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GlueCrawler) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -982,7 +981,7 @@ func (j *jsiiProxy_GlueCrawler)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GlueCrawler)SetRole(val *string) {
+func (j *jsiiProxy_GlueCrawler) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -993,7 +992,7 @@ func (j *jsiiProxy_GlueCrawler)SetRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlueCrawler)SetSchedule(val *string) {
+func (j *jsiiProxy_GlueCrawler) SetSchedule(val *string) {
 	if err := j.validateSetScheduleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1004,7 +1003,7 @@ func (j *jsiiProxy_GlueCrawler)SetSchedule(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlueCrawler)SetSecurityConfiguration(val *string) {
+func (j *jsiiProxy_GlueCrawler) SetSecurityConfiguration(val *string) {
 	if err := j.validateSetSecurityConfigurationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1015,7 +1014,7 @@ func (j *jsiiProxy_GlueCrawler)SetSecurityConfiguration(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlueCrawler)SetTablePrefix(val *string) {
+func (j *jsiiProxy_GlueCrawler) SetTablePrefix(val *string) {
 	if err := j.validateSetTablePrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -1026,7 +1025,7 @@ func (j *jsiiProxy_GlueCrawler)SetTablePrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlueCrawler)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_GlueCrawler) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1037,7 +1036,7 @@ func (j *jsiiProxy_GlueCrawler)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_GlueCrawler)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_GlueCrawler) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1060,7 +1059,7 @@ func GlueCrawler_GenerateConfigForImport(scope constructs.Construct, importToId 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.glueCrawler.GlueCrawler",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1084,7 +1083,7 @@ func GlueCrawler_GenerateConfigForImport(scope constructs.Construct, importToId 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GlueCrawler_IsConstruct(x interface{}) *bool {
+func GlueCrawler_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGlueCrawler_IsConstructParameters(x); err != nil {
@@ -1095,7 +1094,7 @@ func GlueCrawler_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.glueCrawler.GlueCrawler",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1103,7 +1102,7 @@ func GlueCrawler_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GlueCrawler_IsTerraformElement(x interface{}) *bool {
+func GlueCrawler_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGlueCrawler_IsTerraformElementParameters(x); err != nil {
@@ -1114,7 +1113,7 @@ func GlueCrawler_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.glueCrawler.GlueCrawler",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1122,7 +1121,7 @@ func GlueCrawler_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GlueCrawler_IsTerraformResource(x interface{}) *bool {
+func GlueCrawler_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGlueCrawler_IsTerraformResourceParameters(x); err != nil {
@@ -1133,7 +1132,7 @@ func GlueCrawler_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.glueCrawler.GlueCrawler",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1158,31 +1157,31 @@ func (g *jsiiProxy_GlueCrawler) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GlueCrawler) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GlueCrawler) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GlueCrawler) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GlueCrawler) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1198,7 +1197,7 @@ func (g *jsiiProxy_GlueCrawler) GetBooleanAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1214,7 +1213,7 @@ func (g *jsiiProxy_GlueCrawler) GetBooleanMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1230,7 +1229,7 @@ func (g *jsiiProxy_GlueCrawler) GetListAttribute(terraformAttribute *string) *[]
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1246,7 +1245,7 @@ func (g *jsiiProxy_GlueCrawler) GetNumberAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1262,7 +1261,7 @@ func (g *jsiiProxy_GlueCrawler) GetNumberListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1278,7 +1277,7 @@ func (g *jsiiProxy_GlueCrawler) GetNumberMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1294,7 +1293,7 @@ func (g *jsiiProxy_GlueCrawler) GetStringAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1310,15 +1309,15 @@ func (g *jsiiProxy_GlueCrawler) GetStringMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GlueCrawler) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GlueCrawler) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1337,7 +1336,7 @@ func (g *jsiiProxy_GlueCrawler) ImportFrom(id *string, provider cdktf.TerraformP
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1350,7 +1349,7 @@ func (g *jsiiProxy_GlueCrawler) InterpolationForAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1364,18 +1363,18 @@ func (g *jsiiProxy_GlueCrawler) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GlueCrawler) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GlueCrawler) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1386,7 +1385,7 @@ func (g *jsiiProxy_GlueCrawler) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1397,51 +1396,51 @@ func (g *jsiiProxy_GlueCrawler) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (g *jsiiProxy_GlueCrawler) PutCatalogTarget(value interface{}) {
+func (g *jsiiProxy_GlueCrawler) PutCatalogTarget(value any) {
 	if err := g.validatePutCatalogTargetParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putCatalogTarget",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GlueCrawler) PutDeltaTarget(value interface{}) {
+func (g *jsiiProxy_GlueCrawler) PutDeltaTarget(value any) {
 	if err := g.validatePutDeltaTargetParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putDeltaTarget",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GlueCrawler) PutDynamodbTarget(value interface{}) {
+func (g *jsiiProxy_GlueCrawler) PutDynamodbTarget(value any) {
 	if err := g.validatePutDynamodbTargetParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putDynamodbTarget",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GlueCrawler) PutJdbcTarget(value interface{}) {
+func (g *jsiiProxy_GlueCrawler) PutJdbcTarget(value any) {
 	if err := g.validatePutJdbcTargetParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putJdbcTarget",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1452,7 +1451,7 @@ func (g *jsiiProxy_GlueCrawler) PutLakeFormationConfiguration(value *GlueCrawler
 	_jsii_.InvokeVoid(
 		g,
 		"putLakeFormationConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1463,18 +1462,18 @@ func (g *jsiiProxy_GlueCrawler) PutLineageConfiguration(value *GlueCrawlerLineag
 	_jsii_.InvokeVoid(
 		g,
 		"putLineageConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GlueCrawler) PutMongodbTarget(value interface{}) {
+func (g *jsiiProxy_GlueCrawler) PutMongodbTarget(value any) {
 	if err := g.validatePutMongodbTargetParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putMongodbTarget",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1485,18 +1484,18 @@ func (g *jsiiProxy_GlueCrawler) PutRecrawlPolicy(value *GlueCrawlerRecrawlPolicy
 	_jsii_.InvokeVoid(
 		g,
 		"putRecrawlPolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GlueCrawler) PutS3Target(value interface{}) {
+func (g *jsiiProxy_GlueCrawler) PutS3Target(value any) {
 	if err := g.validatePutS3TargetParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putS3Target",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1507,7 +1506,7 @@ func (g *jsiiProxy_GlueCrawler) PutSchemaChangePolicy(value *GlueCrawlerSchemaCh
 	_jsii_.InvokeVoid(
 		g,
 		"putSchemaChangePolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1671,8 +1670,8 @@ func (g *jsiiProxy_GlueCrawler) ResetTagsAll() {
 	)
 }
 
-func (g *jsiiProxy_GlueCrawler) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GlueCrawler) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1684,8 +1683,8 @@ func (g *jsiiProxy_GlueCrawler) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GlueCrawler) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GlueCrawler) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1697,8 +1696,8 @@ func (g *jsiiProxy_GlueCrawler) SynthesizeHclAttributes() *map[string]interface{
 	return returns
 }
 
-func (g *jsiiProxy_GlueCrawler) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GlueCrawler) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1710,8 +1709,8 @@ func (g *jsiiProxy_GlueCrawler) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GlueCrawler) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GlueCrawler) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1736,8 +1735,8 @@ func (g *jsiiProxy_GlueCrawler) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GlueCrawler) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GlueCrawler) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1748,4 +1747,3 @@ func (g *jsiiProxy_GlueCrawler) ToTerraform() interface{} {
 
 	return returns
 }
-

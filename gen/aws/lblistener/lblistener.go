@@ -22,17 +22,17 @@ type LbListener interface {
 	SetCertificateArn(val *string)
 	CertificateArnInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DefaultAction() LbListenerDefaultActionList
-	DefaultActionInput() interface{}
+	DefaultActionInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -68,11 +68,11 @@ type LbListener interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SslPolicy() *string
 	SetSslPolicy(val *string)
 	SslPolicyInput() *string
@@ -85,18 +85,18 @@ type LbListener interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() LbListenerTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -114,7 +114,7 @@ type LbListener interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -126,14 +126,14 @@ type LbListener interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutDefaultAction(value interface{})
+	PutDefaultAction(value any)
 	PutTimeouts(value *LbListenerTimeouts)
 	ResetAlpnPolicy()
 	ResetCertificateArn()
@@ -147,17 +147,17 @@ type LbListener interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for LbListener
@@ -225,8 +225,8 @@ func (j *jsiiProxy_LbListener) CertificateArnInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LbListener) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LbListener) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -235,8 +235,8 @@ func (j *jsiiProxy_LbListener) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LbListener) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LbListener) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -245,8 +245,8 @@ func (j *jsiiProxy_LbListener) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LbListener) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LbListener) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -265,8 +265,8 @@ func (j *jsiiProxy_LbListener) DefaultAction() LbListenerDefaultActionList {
 	return returns
 }
 
-func (j *jsiiProxy_LbListener) DefaultActionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LbListener) DefaultActionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"defaultActionInput",
@@ -425,8 +425,8 @@ func (j *jsiiProxy_LbListener) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_LbListener) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_LbListener) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -435,8 +435,8 @@ func (j *jsiiProxy_LbListener) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LbListener) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LbListener) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -515,8 +515,8 @@ func (j *jsiiProxy_LbListener) TerraformGeneratorMetadata() *cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_LbListener) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LbListener) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -545,8 +545,8 @@ func (j *jsiiProxy_LbListener) Timeouts() LbListenerTimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_LbListener) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LbListener) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -554,7 +554,6 @@ func (j *jsiiProxy_LbListener) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lb_listener aws_lb_listener} Resource.
 func NewLbListener(scope constructs.Construct, id *string, config *LbListenerConfig) LbListener {
@@ -567,7 +566,7 @@ func NewLbListener(scope constructs.Construct, id *string, config *LbListenerCon
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lbListener.LbListener",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -580,12 +579,12 @@ func NewLbListener_Override(l LbListener, scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lbListener.LbListener",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LbListener)SetAlpnPolicy(val *string) {
+func (j *jsiiProxy_LbListener) SetAlpnPolicy(val *string) {
 	if err := j.validateSetAlpnPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -596,7 +595,7 @@ func (j *jsiiProxy_LbListener)SetAlpnPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LbListener)SetCertificateArn(val *string) {
+func (j *jsiiProxy_LbListener) SetCertificateArn(val *string) {
 	if err := j.validateSetCertificateArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -607,7 +606,7 @@ func (j *jsiiProxy_LbListener)SetCertificateArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LbListener)SetConnection(val interface{}) {
+func (j *jsiiProxy_LbListener) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,7 +617,7 @@ func (j *jsiiProxy_LbListener)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LbListener)SetCount(val interface{}) {
+func (j *jsiiProxy_LbListener) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_LbListener)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LbListener)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LbListener) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -637,7 +636,7 @@ func (j *jsiiProxy_LbListener)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LbListener)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LbListener) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -645,7 +644,7 @@ func (j *jsiiProxy_LbListener)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_LbListener)SetId(val *string) {
+func (j *jsiiProxy_LbListener) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -656,7 +655,7 @@ func (j *jsiiProxy_LbListener)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LbListener)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LbListener) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -667,7 +666,7 @@ func (j *jsiiProxy_LbListener)SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	)
 }
 
-func (j *jsiiProxy_LbListener)SetLoadBalancerArn(val *string) {
+func (j *jsiiProxy_LbListener) SetLoadBalancerArn(val *string) {
 	if err := j.validateSetLoadBalancerArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -678,7 +677,7 @@ func (j *jsiiProxy_LbListener)SetLoadBalancerArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LbListener)SetPort(val *float64) {
+func (j *jsiiProxy_LbListener) SetPort(val *float64) {
 	if err := j.validateSetPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -689,7 +688,7 @@ func (j *jsiiProxy_LbListener)SetPort(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_LbListener)SetProtocol(val *string) {
+func (j *jsiiProxy_LbListener) SetProtocol(val *string) {
 	if err := j.validateSetProtocolParameters(val); err != nil {
 		panic(err)
 	}
@@ -700,7 +699,7 @@ func (j *jsiiProxy_LbListener)SetProtocol(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LbListener)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LbListener) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -708,7 +707,7 @@ func (j *jsiiProxy_LbListener)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_LbListener)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LbListener) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -719,7 +718,7 @@ func (j *jsiiProxy_LbListener)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LbListener)SetSslPolicy(val *string) {
+func (j *jsiiProxy_LbListener) SetSslPolicy(val *string) {
 	if err := j.validateSetSslPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -730,7 +729,7 @@ func (j *jsiiProxy_LbListener)SetSslPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LbListener)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_LbListener) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -741,7 +740,7 @@ func (j *jsiiProxy_LbListener)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_LbListener)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_LbListener) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -764,7 +763,7 @@ func LbListener_GenerateConfigForImport(scope constructs.Construct, importToId *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lbListener.LbListener",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -788,7 +787,7 @@ func LbListener_GenerateConfigForImport(scope constructs.Construct, importToId *
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func LbListener_IsConstruct(x interface{}) *bool {
+func LbListener_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLbListener_IsConstructParameters(x); err != nil {
@@ -799,7 +798,7 @@ func LbListener_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lbListener.LbListener",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -807,7 +806,7 @@ func LbListener_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func LbListener_IsTerraformElement(x interface{}) *bool {
+func LbListener_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLbListener_IsTerraformElementParameters(x); err != nil {
@@ -818,7 +817,7 @@ func LbListener_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lbListener.LbListener",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -826,7 +825,7 @@ func LbListener_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func LbListener_IsTerraformResource(x interface{}) *bool {
+func LbListener_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLbListener_IsTerraformResourceParameters(x); err != nil {
@@ -837,7 +836,7 @@ func LbListener_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lbListener.LbListener",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -862,31 +861,31 @@ func (l *jsiiProxy_LbListener) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (l *jsiiProxy_LbListener) AddOverride(path *string, value interface{}) {
+func (l *jsiiProxy_LbListener) AddOverride(path *string, value any) {
 	if err := l.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (l *jsiiProxy_LbListener) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LbListener) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -902,7 +901,7 @@ func (l *jsiiProxy_LbListener) GetBooleanAttribute(terraformAttribute *string) c
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -918,7 +917,7 @@ func (l *jsiiProxy_LbListener) GetBooleanMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -934,7 +933,7 @@ func (l *jsiiProxy_LbListener) GetListAttribute(terraformAttribute *string) *[]*
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -950,7 +949,7 @@ func (l *jsiiProxy_LbListener) GetNumberAttribute(terraformAttribute *string) *f
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -966,7 +965,7 @@ func (l *jsiiProxy_LbListener) GetNumberListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -982,7 +981,7 @@ func (l *jsiiProxy_LbListener) GetNumberMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -998,7 +997,7 @@ func (l *jsiiProxy_LbListener) GetStringAttribute(terraformAttribute *string) *s
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1014,15 +1013,15 @@ func (l *jsiiProxy_LbListener) GetStringMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LbListener) HasResourceMove() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LbListener) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1041,7 +1040,7 @@ func (l *jsiiProxy_LbListener) ImportFrom(id *string, provider cdktf.TerraformPr
 	_jsii_.InvokeVoid(
 		l,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1054,7 +1053,7 @@ func (l *jsiiProxy_LbListener) InterpolationForAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1068,18 +1067,18 @@ func (l *jsiiProxy_LbListener) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (l *jsiiProxy_LbListener) MoveTo(moveTarget *string, index interface{}) {
+func (l *jsiiProxy_LbListener) MoveTo(moveTarget *string, index any) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1090,7 +1089,7 @@ func (l *jsiiProxy_LbListener) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1101,18 +1100,18 @@ func (l *jsiiProxy_LbListener) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (l *jsiiProxy_LbListener) PutDefaultAction(value interface{}) {
+func (l *jsiiProxy_LbListener) PutDefaultAction(value any) {
 	if err := l.validatePutDefaultActionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"putDefaultAction",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1123,7 +1122,7 @@ func (l *jsiiProxy_LbListener) PutTimeouts(value *LbListenerTimeouts) {
 	_jsii_.InvokeVoid(
 		l,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1207,8 +1206,8 @@ func (l *jsiiProxy_LbListener) ResetTimeouts() {
 	)
 }
 
-func (l *jsiiProxy_LbListener) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LbListener) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1220,8 +1219,8 @@ func (l *jsiiProxy_LbListener) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LbListener) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LbListener) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1233,8 +1232,8 @@ func (l *jsiiProxy_LbListener) SynthesizeHclAttributes() *map[string]interface{}
 	return returns
 }
 
-func (l *jsiiProxy_LbListener) ToHclTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LbListener) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1246,8 +1245,8 @@ func (l *jsiiProxy_LbListener) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LbListener) ToMetadata() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LbListener) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1272,8 +1271,8 @@ func (l *jsiiProxy_LbListener) ToString() *string {
 	return returns
 }
 
-func (l *jsiiProxy_LbListener) ToTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LbListener) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1284,4 +1283,3 @@ func (l *jsiiProxy_LbListener) ToTerraform() interface{} {
 
 	return returns
 }
-

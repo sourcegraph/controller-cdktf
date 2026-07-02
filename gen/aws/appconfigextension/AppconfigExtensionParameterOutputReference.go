@@ -12,9 +12,9 @@ type AppconfigExtensionParameterOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,14 +30,14 @@ type AppconfigExtensionParameterOutputReference interface {
 	DescriptionInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
-	Required() interface{}
-	SetRequired(val interface{})
-	RequiredInput() interface{}
+	Required() any
+	SetRequired(val any)
+	RequiredInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type AppconfigExtensionParameterOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type AppconfigExtensionParameterOutputReference interface {
 	ResetRequired()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_AppconfigExtensionParameterOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AppconfigExtensionParameterOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppconfigExtensionParameterOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -147,8 +147,8 @@ func (j *jsiiProxy_AppconfigExtensionParameterOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppconfigExtensionParameterOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppconfigExtensionParameterOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -177,8 +177,8 @@ func (j *jsiiProxy_AppconfigExtensionParameterOutputReference) NameInput() *stri
 	return returns
 }
 
-func (j *jsiiProxy_AppconfigExtensionParameterOutputReference) Required() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppconfigExtensionParameterOutputReference) Required() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"required",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_AppconfigExtensionParameterOutputReference) Required() interf
 	return returns
 }
 
-func (j *jsiiProxy_AppconfigExtensionParameterOutputReference) RequiredInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppconfigExtensionParameterOutputReference) RequiredInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requiredInput",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_AppconfigExtensionParameterOutputReference) TerraformResource
 	return returns
 }
 
-
 func NewAppconfigExtensionParameterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AppconfigExtensionParameterOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewAppconfigExtensionParameterOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appconfigExtension.AppconfigExtensionParameterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewAppconfigExtensionParameterOutputReference_Override(a AppconfigExtension
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appconfigExtension.AppconfigExtensionParameterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppconfigExtensionParameterOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AppconfigExtensionParameterOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_AppconfigExtensionParameterOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_AppconfigExtensionParameterOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AppconfigExtensionParameterOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_AppconfigExtensionParameterOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_AppconfigExtensionParameterOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_AppconfigExtensionParameterOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_AppconfigExtensionParameterOutputReference)SetDescription(val
 	)
 }
 
-func (j *jsiiProxy_AppconfigExtensionParameterOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AppconfigExtensionParameterOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_AppconfigExtensionParameterOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_AppconfigExtensionParameterOutputReference)SetName(val *string) {
+func (j *jsiiProxy_AppconfigExtensionParameterOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_AppconfigExtensionParameterOutputReference)SetName(val *strin
 	)
 }
 
-func (j *jsiiProxy_AppconfigExtensionParameterOutputReference)SetRequired(val interface{}) {
+func (j *jsiiProxy_AppconfigExtensionParameterOutputReference) SetRequired(val any) {
 	if err := j.validateSetRequiredParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_AppconfigExtensionParameterOutputReference)SetRequired(val in
 	)
 }
 
-func (j *jsiiProxy_AppconfigExtensionParameterOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppconfigExtensionParameterOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_AppconfigExtensionParameterOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_AppconfigExtensionParameterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppconfigExtensionParameterOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,16 +345,16 @@ func (a *jsiiProxy_AppconfigExtensionParameterOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (a *jsiiProxy_AppconfigExtensionParameterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AppconfigExtensionParameterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (a *jsiiProxy_AppconfigExtensionParameterOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (a *jsiiProxy_AppconfigExtensionParameterOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (a *jsiiProxy_AppconfigExtensionParameterOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (a *jsiiProxy_AppconfigExtensionParameterOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (a *jsiiProxy_AppconfigExtensionParameterOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (a *jsiiProxy_AppconfigExtensionParameterOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (a *jsiiProxy_AppconfigExtensionParameterOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (a *jsiiProxy_AppconfigExtensionParameterOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (a *jsiiProxy_AppconfigExtensionParameterOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -535,16 +534,16 @@ func (a *jsiiProxy_AppconfigExtensionParameterOutputReference) ResetRequired() {
 	)
 }
 
-func (a *jsiiProxy_AppconfigExtensionParameterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AppconfigExtensionParameterOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (a *jsiiProxy_AppconfigExtensionParameterOutputReference) ToString() *strin
 
 	return returns
 }
-

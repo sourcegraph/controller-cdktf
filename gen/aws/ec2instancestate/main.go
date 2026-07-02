@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2InstanceState.Ec2InstanceState",
-		reflect.TypeOf((*Ec2InstanceState)(nil)).Elem(),
+		reflect.TypeFor[Ec2InstanceState](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2InstanceState{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -75,15 +75,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2InstanceState.Ec2InstanceStateConfig",
-		reflect.TypeOf((*Ec2InstanceStateConfig)(nil)).Elem(),
+		reflect.TypeFor[Ec2InstanceStateConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2InstanceState.Ec2InstanceStateTimeouts",
-		reflect.TypeOf((*Ec2InstanceStateTimeouts)(nil)).Elem(),
+		reflect.TypeFor[Ec2InstanceStateTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2InstanceState.Ec2InstanceStateTimeoutsOutputReference",
-		reflect.TypeOf((*Ec2InstanceStateTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2InstanceStateTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2InstanceStateTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

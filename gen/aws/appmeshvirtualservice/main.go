@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualService",
-		reflect.TypeOf((*AppmeshVirtualService)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualService](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,7 +76,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualService{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -84,15 +84,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualServiceConfig",
-		reflect.TypeOf((*AppmeshVirtualServiceConfig)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualServiceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualServiceSpec",
-		reflect.TypeOf((*AppmeshVirtualServiceSpec)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualServiceSpec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualServiceSpecOutputReference",
-		reflect.TypeOf((*AppmeshVirtualServiceSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualServiceSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -120,7 +120,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualServiceSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -128,11 +128,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualServiceSpecProvider",
-		reflect.TypeOf((*AppmeshVirtualServiceSpecProvider)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualServiceSpecProvider](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualServiceSpecProviderOutputReference",
-		reflect.TypeOf((*AppmeshVirtualServiceSpecProviderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualServiceSpecProviderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -164,7 +164,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "virtualRouter", GoGetter: "VirtualRouter"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualRouterInput", GoGetter: "VirtualRouterInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualServiceSpecProviderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -172,11 +172,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualServiceSpecProviderVirtualNode",
-		reflect.TypeOf((*AppmeshVirtualServiceSpecProviderVirtualNode)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualServiceSpecProviderVirtualNode](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualServiceSpecProviderVirtualNodeOutputReference",
-		reflect.TypeOf((*AppmeshVirtualServiceSpecProviderVirtualNodeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualServiceSpecProviderVirtualNodeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -202,7 +202,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "virtualNodeName", GoGetter: "VirtualNodeName"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualNodeNameInput", GoGetter: "VirtualNodeNameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualServiceSpecProviderVirtualNodeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -210,11 +210,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualServiceSpecProviderVirtualRouter",
-		reflect.TypeOf((*AppmeshVirtualServiceSpecProviderVirtualRouter)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualServiceSpecProviderVirtualRouter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualServiceSpecProviderVirtualRouterOutputReference",
-		reflect.TypeOf((*AppmeshVirtualServiceSpecProviderVirtualRouterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualServiceSpecProviderVirtualRouterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -240,7 +240,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "virtualRouterName", GoGetter: "VirtualRouterName"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualRouterNameInput", GoGetter: "VirtualRouterNameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualServiceSpecProviderVirtualRouterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

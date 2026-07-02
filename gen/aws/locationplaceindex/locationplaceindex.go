@@ -15,15 +15,15 @@ type LocationPlaceIndex interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	DataSource() *string
 	SetDataSource(val *string)
@@ -63,11 +63,11 @@ type LocationPlaceIndex interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -77,7 +77,7 @@ type LocationPlaceIndex interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	UpdateTime() *string
@@ -85,9 +85,9 @@ type LocationPlaceIndex interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -105,7 +105,7 @@ type LocationPlaceIndex interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -117,7 +117,7 @@ type LocationPlaceIndex interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -133,17 +133,17 @@ type LocationPlaceIndex interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for LocationPlaceIndex
@@ -161,8 +161,8 @@ func (j *jsiiProxy_LocationPlaceIndex) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_LocationPlaceIndex) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LocationPlaceIndex) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -171,8 +171,8 @@ func (j *jsiiProxy_LocationPlaceIndex) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LocationPlaceIndex) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LocationPlaceIndex) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -181,8 +181,8 @@ func (j *jsiiProxy_LocationPlaceIndex) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_LocationPlaceIndex) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LocationPlaceIndex) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -381,8 +381,8 @@ func (j *jsiiProxy_LocationPlaceIndex) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_LocationPlaceIndex) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_LocationPlaceIndex) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -391,8 +391,8 @@ func (j *jsiiProxy_LocationPlaceIndex) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LocationPlaceIndex) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LocationPlaceIndex) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -451,8 +451,8 @@ func (j *jsiiProxy_LocationPlaceIndex) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_LocationPlaceIndex) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LocationPlaceIndex) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -481,7 +481,6 @@ func (j *jsiiProxy_LocationPlaceIndex) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/location_place_index aws_location_place_index} Resource.
 func NewLocationPlaceIndex(scope constructs.Construct, id *string, config *LocationPlaceIndexConfig) LocationPlaceIndex {
 	_init_.Initialize()
@@ -493,7 +492,7 @@ func NewLocationPlaceIndex(scope constructs.Construct, id *string, config *Locat
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndex",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -506,12 +505,12 @@ func NewLocationPlaceIndex_Override(l LocationPlaceIndex, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndex",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LocationPlaceIndex)SetConnection(val interface{}) {
+func (j *jsiiProxy_LocationPlaceIndex) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_LocationPlaceIndex)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LocationPlaceIndex)SetCount(val interface{}) {
+func (j *jsiiProxy_LocationPlaceIndex) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_LocationPlaceIndex)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LocationPlaceIndex)SetDataSource(val *string) {
+func (j *jsiiProxy_LocationPlaceIndex) SetDataSource(val *string) {
 	if err := j.validateSetDataSourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -544,7 +543,7 @@ func (j *jsiiProxy_LocationPlaceIndex)SetDataSource(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LocationPlaceIndex)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LocationPlaceIndex) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -552,7 +551,7 @@ func (j *jsiiProxy_LocationPlaceIndex)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LocationPlaceIndex)SetDescription(val *string) {
+func (j *jsiiProxy_LocationPlaceIndex) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -563,7 +562,7 @@ func (j *jsiiProxy_LocationPlaceIndex)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LocationPlaceIndex)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LocationPlaceIndex) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -571,7 +570,7 @@ func (j *jsiiProxy_LocationPlaceIndex)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_LocationPlaceIndex)SetId(val *string) {
+func (j *jsiiProxy_LocationPlaceIndex) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -582,7 +581,7 @@ func (j *jsiiProxy_LocationPlaceIndex)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LocationPlaceIndex)SetIndexName(val *string) {
+func (j *jsiiProxy_LocationPlaceIndex) SetIndexName(val *string) {
 	if err := j.validateSetIndexNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -593,7 +592,7 @@ func (j *jsiiProxy_LocationPlaceIndex)SetIndexName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LocationPlaceIndex)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LocationPlaceIndex) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -604,7 +603,7 @@ func (j *jsiiProxy_LocationPlaceIndex)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_LocationPlaceIndex)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LocationPlaceIndex) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -612,7 +611,7 @@ func (j *jsiiProxy_LocationPlaceIndex)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_LocationPlaceIndex)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LocationPlaceIndex) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -623,7 +622,7 @@ func (j *jsiiProxy_LocationPlaceIndex)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LocationPlaceIndex)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_LocationPlaceIndex) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -634,7 +633,7 @@ func (j *jsiiProxy_LocationPlaceIndex)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_LocationPlaceIndex)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_LocationPlaceIndex) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -657,7 +656,7 @@ func LocationPlaceIndex_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndex",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -681,7 +680,7 @@ func LocationPlaceIndex_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func LocationPlaceIndex_IsConstruct(x interface{}) *bool {
+func LocationPlaceIndex_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLocationPlaceIndex_IsConstructParameters(x); err != nil {
@@ -692,7 +691,7 @@ func LocationPlaceIndex_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndex",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -700,7 +699,7 @@ func LocationPlaceIndex_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func LocationPlaceIndex_IsTerraformElement(x interface{}) *bool {
+func LocationPlaceIndex_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLocationPlaceIndex_IsTerraformElementParameters(x); err != nil {
@@ -711,7 +710,7 @@ func LocationPlaceIndex_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndex",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func LocationPlaceIndex_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func LocationPlaceIndex_IsTerraformResource(x interface{}) *bool {
+func LocationPlaceIndex_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLocationPlaceIndex_IsTerraformResourceParameters(x); err != nil {
@@ -730,7 +729,7 @@ func LocationPlaceIndex_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndex",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -755,31 +754,31 @@ func (l *jsiiProxy_LocationPlaceIndex) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (l *jsiiProxy_LocationPlaceIndex) AddOverride(path *string, value interface{}) {
+func (l *jsiiProxy_LocationPlaceIndex) AddOverride(path *string, value any) {
 	if err := l.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (l *jsiiProxy_LocationPlaceIndex) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LocationPlaceIndex) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -795,7 +794,7 @@ func (l *jsiiProxy_LocationPlaceIndex) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -811,7 +810,7 @@ func (l *jsiiProxy_LocationPlaceIndex) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -827,7 +826,7 @@ func (l *jsiiProxy_LocationPlaceIndex) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -843,7 +842,7 @@ func (l *jsiiProxy_LocationPlaceIndex) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -859,7 +858,7 @@ func (l *jsiiProxy_LocationPlaceIndex) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -875,7 +874,7 @@ func (l *jsiiProxy_LocationPlaceIndex) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -891,7 +890,7 @@ func (l *jsiiProxy_LocationPlaceIndex) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -907,15 +906,15 @@ func (l *jsiiProxy_LocationPlaceIndex) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LocationPlaceIndex) HasResourceMove() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LocationPlaceIndex) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -934,7 +933,7 @@ func (l *jsiiProxy_LocationPlaceIndex) ImportFrom(id *string, provider cdktf.Ter
 	_jsii_.InvokeVoid(
 		l,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -947,7 +946,7 @@ func (l *jsiiProxy_LocationPlaceIndex) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -961,18 +960,18 @@ func (l *jsiiProxy_LocationPlaceIndex) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (l *jsiiProxy_LocationPlaceIndex) MoveTo(moveTarget *string, index interface{}) {
+func (l *jsiiProxy_LocationPlaceIndex) MoveTo(moveTarget *string, index any) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -983,7 +982,7 @@ func (l *jsiiProxy_LocationPlaceIndex) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -994,7 +993,7 @@ func (l *jsiiProxy_LocationPlaceIndex) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1005,7 +1004,7 @@ func (l *jsiiProxy_LocationPlaceIndex) PutDataSourceConfiguration(value *Locatio
 	_jsii_.InvokeVoid(
 		l,
 		"putDataSourceConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1057,8 +1056,8 @@ func (l *jsiiProxy_LocationPlaceIndex) ResetTagsAll() {
 	)
 }
 
-func (l *jsiiProxy_LocationPlaceIndex) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LocationPlaceIndex) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1070,8 +1069,8 @@ func (l *jsiiProxy_LocationPlaceIndex) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (l *jsiiProxy_LocationPlaceIndex) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LocationPlaceIndex) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1083,8 +1082,8 @@ func (l *jsiiProxy_LocationPlaceIndex) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (l *jsiiProxy_LocationPlaceIndex) ToHclTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LocationPlaceIndex) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1096,8 +1095,8 @@ func (l *jsiiProxy_LocationPlaceIndex) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LocationPlaceIndex) ToMetadata() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LocationPlaceIndex) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1122,8 +1121,8 @@ func (l *jsiiProxy_LocationPlaceIndex) ToString() *string {
 	return returns
 }
 
-func (l *jsiiProxy_LocationPlaceIndex) ToTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LocationPlaceIndex) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1134,4 +1133,3 @@ func (l *jsiiProxy_LocationPlaceIndex) ToTerraform() interface{} {
 
 	return returns
 }
-

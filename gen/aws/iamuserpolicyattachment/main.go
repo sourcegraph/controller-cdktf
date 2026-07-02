@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iamUserPolicyAttachment.IamUserPolicyAttachment",
-		reflect.TypeOf((*IamUserPolicyAttachment)(nil)).Elem(),
+		reflect.TypeFor[IamUserPolicyAttachment](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "user", GoGetter: "User"},
 			_jsii_.MemberProperty{JsiiProperty: "userInput", GoGetter: "UserInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamUserPolicyAttachment{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -68,6 +68,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iamUserPolicyAttachment.IamUserPolicyAttachmentConfig",
-		reflect.TypeOf((*IamUserPolicyAttachmentConfig)(nil)).Elem(),
+		reflect.TypeFor[IamUserPolicyAttachmentConfig](),
 	)
 }

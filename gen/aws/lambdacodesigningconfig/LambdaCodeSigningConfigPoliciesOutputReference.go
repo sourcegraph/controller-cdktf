@@ -12,9 +12,9 @@ type LambdaCodeSigningConfigPoliciesOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,7 +43,7 @@ type LambdaCodeSigningConfigPoliciesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,7 +66,7 @@ type LambdaCodeSigningConfigPoliciesOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,8 +79,8 @@ type jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -169,7 +169,6 @@ func (j *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference) UntrustedArti
 	return returns
 }
 
-
 func NewLambdaCodeSigningConfigPoliciesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LambdaCodeSigningConfigPoliciesOutputReference {
 	_init_.Initialize()
 
@@ -180,7 +179,7 @@ func NewLambdaCodeSigningConfigPoliciesOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfigPoliciesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -192,12 +191,12 @@ func NewLambdaCodeSigningConfigPoliciesOutputReference_Override(l LambdaCodeSign
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfigPoliciesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +207,7 @@ func (j *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference)SetInternalValue(val *LambdaCodeSigningConfigPolicies) {
+func (j *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference) SetInternalValue(val *LambdaCodeSigningConfigPolicies) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -252,7 +251,7 @@ func (j *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference)SetTerraformRe
 	)
 }
 
-func (j *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference)SetUntrustedArtifactOnDeployment(val *string) {
+func (j *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference) SetUntrustedArtifactOnDeployment(val *string) {
 	if err := j.validateSetUntrustedArtifactOnDeploymentParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,16 +275,16 @@ func (l *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (l *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -301,7 +300,7 @@ func (l *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -317,7 +316,7 @@ func (l *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -333,7 +332,7 @@ func (l *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -349,7 +348,7 @@ func (l *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -365,7 +364,7 @@ func (l *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference) GetNumberList
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -381,7 +380,7 @@ func (l *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (l *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (l *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,23 +441,23 @@ func (l *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference) Interpolation
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -477,4 +476,3 @@ func (l *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference) ToString() *s
 
 	return returns
 }
-

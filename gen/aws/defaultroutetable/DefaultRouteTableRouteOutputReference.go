@@ -15,9 +15,9 @@ type DefaultRouteTableRouteOutputReference interface {
 	CidrBlockInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -45,8 +45,8 @@ type DefaultRouteTableRouteOutputReference interface {
 	InstanceId() *string
 	SetInstanceId(val *string)
 	InstanceIdInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Ipv6CidrBlock() *string
 	SetIpv6CidrBlock(val *string)
 	Ipv6CidrBlockInput() *string
@@ -76,7 +76,7 @@ type DefaultRouteTableRouteOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -111,7 +111,7 @@ type DefaultRouteTableRouteOutputReference interface {
 	ResetVpcPeeringConnectionId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -144,8 +144,8 @@ func (j *jsiiProxy_DefaultRouteTableRouteOutputReference) CidrBlockInput() *stri
 	return returns
 }
 
-func (j *jsiiProxy_DefaultRouteTableRouteOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DefaultRouteTableRouteOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -284,8 +284,8 @@ func (j *jsiiProxy_DefaultRouteTableRouteOutputReference) InstanceIdInput() *str
 	return returns
 }
 
-func (j *jsiiProxy_DefaultRouteTableRouteOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DefaultRouteTableRouteOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -434,7 +434,6 @@ func (j *jsiiProxy_DefaultRouteTableRouteOutputReference) VpcPeeringConnectionId
 	return returns
 }
 
-
 func NewDefaultRouteTableRouteOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DefaultRouteTableRouteOutputReference {
 	_init_.Initialize()
 
@@ -445,7 +444,7 @@ func NewDefaultRouteTableRouteOutputReference(terraformResource cdktf.IInterpola
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.defaultRouteTable.DefaultRouteTableRouteOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -457,12 +456,12 @@ func NewDefaultRouteTableRouteOutputReference_Override(d DefaultRouteTableRouteO
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.defaultRouteTable.DefaultRouteTableRouteOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DefaultRouteTableRouteOutputReference)SetCidrBlock(val *string) {
+func (j *jsiiProxy_DefaultRouteTableRouteOutputReference) SetCidrBlock(val *string) {
 	if err := j.validateSetCidrBlockParameters(val); err != nil {
 		panic(err)
 	}
@@ -473,7 +472,7 @@ func (j *jsiiProxy_DefaultRouteTableRouteOutputReference)SetCidrBlock(val *strin
 	)
 }
 
-func (j *jsiiProxy_DefaultRouteTableRouteOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DefaultRouteTableRouteOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -484,7 +483,7 @@ func (j *jsiiProxy_DefaultRouteTableRouteOutputReference)SetComplexObjectIndex(v
 	)
 }
 
-func (j *jsiiProxy_DefaultRouteTableRouteOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DefaultRouteTableRouteOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -495,7 +494,7 @@ func (j *jsiiProxy_DefaultRouteTableRouteOutputReference)SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_DefaultRouteTableRouteOutputReference)SetCoreNetworkArn(val *string) {
+func (j *jsiiProxy_DefaultRouteTableRouteOutputReference) SetCoreNetworkArn(val *string) {
 	if err := j.validateSetCoreNetworkArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -506,7 +505,7 @@ func (j *jsiiProxy_DefaultRouteTableRouteOutputReference)SetCoreNetworkArn(val *
 	)
 }
 
-func (j *jsiiProxy_DefaultRouteTableRouteOutputReference)SetDestinationPrefixListId(val *string) {
+func (j *jsiiProxy_DefaultRouteTableRouteOutputReference) SetDestinationPrefixListId(val *string) {
 	if err := j.validateSetDestinationPrefixListIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -517,7 +516,7 @@ func (j *jsiiProxy_DefaultRouteTableRouteOutputReference)SetDestinationPrefixLis
 	)
 }
 
-func (j *jsiiProxy_DefaultRouteTableRouteOutputReference)SetEgressOnlyGatewayId(val *string) {
+func (j *jsiiProxy_DefaultRouteTableRouteOutputReference) SetEgressOnlyGatewayId(val *string) {
 	if err := j.validateSetEgressOnlyGatewayIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -528,7 +527,7 @@ func (j *jsiiProxy_DefaultRouteTableRouteOutputReference)SetEgressOnlyGatewayId(
 	)
 }
 
-func (j *jsiiProxy_DefaultRouteTableRouteOutputReference)SetGatewayId(val *string) {
+func (j *jsiiProxy_DefaultRouteTableRouteOutputReference) SetGatewayId(val *string) {
 	if err := j.validateSetGatewayIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -539,7 +538,7 @@ func (j *jsiiProxy_DefaultRouteTableRouteOutputReference)SetGatewayId(val *strin
 	)
 }
 
-func (j *jsiiProxy_DefaultRouteTableRouteOutputReference)SetInstanceId(val *string) {
+func (j *jsiiProxy_DefaultRouteTableRouteOutputReference) SetInstanceId(val *string) {
 	if err := j.validateSetInstanceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -550,7 +549,7 @@ func (j *jsiiProxy_DefaultRouteTableRouteOutputReference)SetInstanceId(val *stri
 	)
 }
 
-func (j *jsiiProxy_DefaultRouteTableRouteOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DefaultRouteTableRouteOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -561,7 +560,7 @@ func (j *jsiiProxy_DefaultRouteTableRouteOutputReference)SetInternalValue(val in
 	)
 }
 
-func (j *jsiiProxy_DefaultRouteTableRouteOutputReference)SetIpv6CidrBlock(val *string) {
+func (j *jsiiProxy_DefaultRouteTableRouteOutputReference) SetIpv6CidrBlock(val *string) {
 	if err := j.validateSetIpv6CidrBlockParameters(val); err != nil {
 		panic(err)
 	}
@@ -572,7 +571,7 @@ func (j *jsiiProxy_DefaultRouteTableRouteOutputReference)SetIpv6CidrBlock(val *s
 	)
 }
 
-func (j *jsiiProxy_DefaultRouteTableRouteOutputReference)SetNatGatewayId(val *string) {
+func (j *jsiiProxy_DefaultRouteTableRouteOutputReference) SetNatGatewayId(val *string) {
 	if err := j.validateSetNatGatewayIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -583,7 +582,7 @@ func (j *jsiiProxy_DefaultRouteTableRouteOutputReference)SetNatGatewayId(val *st
 	)
 }
 
-func (j *jsiiProxy_DefaultRouteTableRouteOutputReference)SetNetworkInterfaceId(val *string) {
+func (j *jsiiProxy_DefaultRouteTableRouteOutputReference) SetNetworkInterfaceId(val *string) {
 	if err := j.validateSetNetworkInterfaceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -594,7 +593,7 @@ func (j *jsiiProxy_DefaultRouteTableRouteOutputReference)SetNetworkInterfaceId(v
 	)
 }
 
-func (j *jsiiProxy_DefaultRouteTableRouteOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DefaultRouteTableRouteOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -605,7 +604,7 @@ func (j *jsiiProxy_DefaultRouteTableRouteOutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_DefaultRouteTableRouteOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DefaultRouteTableRouteOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -616,7 +615,7 @@ func (j *jsiiProxy_DefaultRouteTableRouteOutputReference)SetTerraformResource(va
 	)
 }
 
-func (j *jsiiProxy_DefaultRouteTableRouteOutputReference)SetTransitGatewayId(val *string) {
+func (j *jsiiProxy_DefaultRouteTableRouteOutputReference) SetTransitGatewayId(val *string) {
 	if err := j.validateSetTransitGatewayIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func (j *jsiiProxy_DefaultRouteTableRouteOutputReference)SetTransitGatewayId(val
 	)
 }
 
-func (j *jsiiProxy_DefaultRouteTableRouteOutputReference)SetVpcEndpointId(val *string) {
+func (j *jsiiProxy_DefaultRouteTableRouteOutputReference) SetVpcEndpointId(val *string) {
 	if err := j.validateSetVpcEndpointIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -638,7 +637,7 @@ func (j *jsiiProxy_DefaultRouteTableRouteOutputReference)SetVpcEndpointId(val *s
 	)
 }
 
-func (j *jsiiProxy_DefaultRouteTableRouteOutputReference)SetVpcPeeringConnectionId(val *string) {
+func (j *jsiiProxy_DefaultRouteTableRouteOutputReference) SetVpcPeeringConnectionId(val *string) {
 	if err := j.validateSetVpcPeeringConnectionIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -662,16 +661,16 @@ func (d *jsiiProxy_DefaultRouteTableRouteOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DefaultRouteTableRouteOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DefaultRouteTableRouteOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -687,7 +686,7 @@ func (d *jsiiProxy_DefaultRouteTableRouteOutputReference) GetBooleanAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -703,7 +702,7 @@ func (d *jsiiProxy_DefaultRouteTableRouteOutputReference) GetBooleanMapAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func (d *jsiiProxy_DefaultRouteTableRouteOutputReference) GetListAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -735,7 +734,7 @@ func (d *jsiiProxy_DefaultRouteTableRouteOutputReference) GetNumberAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -751,7 +750,7 @@ func (d *jsiiProxy_DefaultRouteTableRouteOutputReference) GetNumberListAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -767,7 +766,7 @@ func (d *jsiiProxy_DefaultRouteTableRouteOutputReference) GetNumberMapAttribute(
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -783,7 +782,7 @@ func (d *jsiiProxy_DefaultRouteTableRouteOutputReference) GetStringAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,7 +798,7 @@ func (d *jsiiProxy_DefaultRouteTableRouteOutputReference) GetStringMapAttribute(
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -828,7 +827,7 @@ func (d *jsiiProxy_DefaultRouteTableRouteOutputReference) InterpolationForAttrib
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -931,16 +930,16 @@ func (d *jsiiProxy_DefaultRouteTableRouteOutputReference) ResetVpcPeeringConnect
 	)
 }
 
-func (d *jsiiProxy_DefaultRouteTableRouteOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DefaultRouteTableRouteOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -959,4 +958,3 @@ func (d *jsiiProxy_DefaultRouteTableRouteOutputReference) ToString() *string {
 
 	return returns
 }
-

@@ -18,15 +18,15 @@ type DirectoryServiceRadiusSettings interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,9 +59,9 @@ type DirectoryServiceRadiusSettings interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	RadiusPort() *float64
 	SetRadiusPort(val *float64)
 	RadiusPortInput() *float64
@@ -75,28 +75,28 @@ type DirectoryServiceRadiusSettings interface {
 	SetRadiusTimeout(val *float64)
 	RadiusTimeoutInput() *float64
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SharedSecret() *string
 	SetSharedSecret(val *string)
 	SharedSecretInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DirectoryServiceRadiusSettingsTimeoutsOutputReference
-	TimeoutsInput() interface{}
-	UseSameUsername() interface{}
-	SetUseSameUsername(val interface{})
-	UseSameUsernameInput() interface{}
+	TimeoutsInput() any
+	UseSameUsername() any
+	SetUseSameUsername(val any)
+	UseSameUsernameInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -114,7 +114,7 @@ type DirectoryServiceRadiusSettings interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -126,7 +126,7 @@ type DirectoryServiceRadiusSettings interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -140,17 +140,17 @@ type DirectoryServiceRadiusSettings interface {
 	ResetOverrideLogicalId()
 	ResetTimeouts()
 	ResetUseSameUsername()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DirectoryServiceRadiusSettings
@@ -188,8 +188,8 @@ func (j *jsiiProxy_DirectoryServiceRadiusSettings) CdktfStack() cdktf.TerraformS
 	return returns
 }
 
-func (j *jsiiProxy_DirectoryServiceRadiusSettings) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectoryServiceRadiusSettings) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_DirectoryServiceRadiusSettings) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DirectoryServiceRadiusSettings) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DirectoryServiceRadiusSettings) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_DirectoryServiceRadiusSettings) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_DirectoryServiceRadiusSettings) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectoryServiceRadiusSettings) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -348,8 +348,8 @@ func (j *jsiiProxy_DirectoryServiceRadiusSettings) Provider() cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_DirectoryServiceRadiusSettings) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DirectoryServiceRadiusSettings) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -438,8 +438,8 @@ func (j *jsiiProxy_DirectoryServiceRadiusSettings) RadiusTimeoutInput() *float64
 	return returns
 }
 
-func (j *jsiiProxy_DirectoryServiceRadiusSettings) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectoryServiceRadiusSettings) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -478,8 +478,8 @@ func (j *jsiiProxy_DirectoryServiceRadiusSettings) TerraformGeneratorMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_DirectoryServiceRadiusSettings) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DirectoryServiceRadiusSettings) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -508,8 +508,8 @@ func (j *jsiiProxy_DirectoryServiceRadiusSettings) Timeouts() DirectoryServiceRa
 	return returns
 }
 
-func (j *jsiiProxy_DirectoryServiceRadiusSettings) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectoryServiceRadiusSettings) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -518,8 +518,8 @@ func (j *jsiiProxy_DirectoryServiceRadiusSettings) TimeoutsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DirectoryServiceRadiusSettings) UseSameUsername() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectoryServiceRadiusSettings) UseSameUsername() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useSameUsername",
@@ -528,8 +528,8 @@ func (j *jsiiProxy_DirectoryServiceRadiusSettings) UseSameUsername() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_DirectoryServiceRadiusSettings) UseSameUsernameInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectoryServiceRadiusSettings) UseSameUsernameInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useSameUsernameInput",
@@ -537,7 +537,6 @@ func (j *jsiiProxy_DirectoryServiceRadiusSettings) UseSameUsernameInput() interf
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/directory_service_radius_settings aws_directory_service_radius_settings} Resource.
 func NewDirectoryServiceRadiusSettings(scope constructs.Construct, id *string, config *DirectoryServiceRadiusSettingsConfig) DirectoryServiceRadiusSettings {
@@ -550,7 +549,7 @@ func NewDirectoryServiceRadiusSettings(scope constructs.Construct, id *string, c
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.directoryServiceRadiusSettings.DirectoryServiceRadiusSettings",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -563,12 +562,12 @@ func NewDirectoryServiceRadiusSettings_Override(d DirectoryServiceRadiusSettings
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.directoryServiceRadiusSettings.DirectoryServiceRadiusSettings",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DirectoryServiceRadiusSettings)SetAuthenticationProtocol(val *string) {
+func (j *jsiiProxy_DirectoryServiceRadiusSettings) SetAuthenticationProtocol(val *string) {
 	if err := j.validateSetAuthenticationProtocolParameters(val); err != nil {
 		panic(err)
 	}
@@ -579,7 +578,7 @@ func (j *jsiiProxy_DirectoryServiceRadiusSettings)SetAuthenticationProtocol(val 
 	)
 }
 
-func (j *jsiiProxy_DirectoryServiceRadiusSettings)SetConnection(val interface{}) {
+func (j *jsiiProxy_DirectoryServiceRadiusSettings) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -590,7 +589,7 @@ func (j *jsiiProxy_DirectoryServiceRadiusSettings)SetConnection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_DirectoryServiceRadiusSettings)SetCount(val interface{}) {
+func (j *jsiiProxy_DirectoryServiceRadiusSettings) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -601,7 +600,7 @@ func (j *jsiiProxy_DirectoryServiceRadiusSettings)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DirectoryServiceRadiusSettings)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DirectoryServiceRadiusSettings) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -609,7 +608,7 @@ func (j *jsiiProxy_DirectoryServiceRadiusSettings)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DirectoryServiceRadiusSettings)SetDirectoryId(val *string) {
+func (j *jsiiProxy_DirectoryServiceRadiusSettings) SetDirectoryId(val *string) {
 	if err := j.validateSetDirectoryIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -620,7 +619,7 @@ func (j *jsiiProxy_DirectoryServiceRadiusSettings)SetDirectoryId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectoryServiceRadiusSettings)SetDisplayLabel(val *string) {
+func (j *jsiiProxy_DirectoryServiceRadiusSettings) SetDisplayLabel(val *string) {
 	if err := j.validateSetDisplayLabelParameters(val); err != nil {
 		panic(err)
 	}
@@ -631,7 +630,7 @@ func (j *jsiiProxy_DirectoryServiceRadiusSettings)SetDisplayLabel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectoryServiceRadiusSettings)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DirectoryServiceRadiusSettings) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -639,7 +638,7 @@ func (j *jsiiProxy_DirectoryServiceRadiusSettings)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_DirectoryServiceRadiusSettings)SetId(val *string) {
+func (j *jsiiProxy_DirectoryServiceRadiusSettings) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -650,7 +649,7 @@ func (j *jsiiProxy_DirectoryServiceRadiusSettings)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectoryServiceRadiusSettings)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DirectoryServiceRadiusSettings) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -661,7 +660,7 @@ func (j *jsiiProxy_DirectoryServiceRadiusSettings)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_DirectoryServiceRadiusSettings)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DirectoryServiceRadiusSettings) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -669,7 +668,7 @@ func (j *jsiiProxy_DirectoryServiceRadiusSettings)SetProvider(val cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_DirectoryServiceRadiusSettings)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DirectoryServiceRadiusSettings) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -680,7 +679,7 @@ func (j *jsiiProxy_DirectoryServiceRadiusSettings)SetProvisioners(val *[]interfa
 	)
 }
 
-func (j *jsiiProxy_DirectoryServiceRadiusSettings)SetRadiusPort(val *float64) {
+func (j *jsiiProxy_DirectoryServiceRadiusSettings) SetRadiusPort(val *float64) {
 	if err := j.validateSetRadiusPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -691,7 +690,7 @@ func (j *jsiiProxy_DirectoryServiceRadiusSettings)SetRadiusPort(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DirectoryServiceRadiusSettings)SetRadiusRetries(val *float64) {
+func (j *jsiiProxy_DirectoryServiceRadiusSettings) SetRadiusRetries(val *float64) {
 	if err := j.validateSetRadiusRetriesParameters(val); err != nil {
 		panic(err)
 	}
@@ -702,7 +701,7 @@ func (j *jsiiProxy_DirectoryServiceRadiusSettings)SetRadiusRetries(val *float64)
 	)
 }
 
-func (j *jsiiProxy_DirectoryServiceRadiusSettings)SetRadiusServers(val *[]*string) {
+func (j *jsiiProxy_DirectoryServiceRadiusSettings) SetRadiusServers(val *[]*string) {
 	if err := j.validateSetRadiusServersParameters(val); err != nil {
 		panic(err)
 	}
@@ -713,7 +712,7 @@ func (j *jsiiProxy_DirectoryServiceRadiusSettings)SetRadiusServers(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_DirectoryServiceRadiusSettings)SetRadiusTimeout(val *float64) {
+func (j *jsiiProxy_DirectoryServiceRadiusSettings) SetRadiusTimeout(val *float64) {
 	if err := j.validateSetRadiusTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -724,7 +723,7 @@ func (j *jsiiProxy_DirectoryServiceRadiusSettings)SetRadiusTimeout(val *float64)
 	)
 }
 
-func (j *jsiiProxy_DirectoryServiceRadiusSettings)SetSharedSecret(val *string) {
+func (j *jsiiProxy_DirectoryServiceRadiusSettings) SetSharedSecret(val *string) {
 	if err := j.validateSetSharedSecretParameters(val); err != nil {
 		panic(err)
 	}
@@ -735,7 +734,7 @@ func (j *jsiiProxy_DirectoryServiceRadiusSettings)SetSharedSecret(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectoryServiceRadiusSettings)SetUseSameUsername(val interface{}) {
+func (j *jsiiProxy_DirectoryServiceRadiusSettings) SetUseSameUsername(val any) {
 	if err := j.validateSetUseSameUsernameParameters(val); err != nil {
 		panic(err)
 	}
@@ -758,7 +757,7 @@ func DirectoryServiceRadiusSettings_GenerateConfigForImport(scope constructs.Con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.directoryServiceRadiusSettings.DirectoryServiceRadiusSettings",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -782,7 +781,7 @@ func DirectoryServiceRadiusSettings_GenerateConfigForImport(scope constructs.Con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DirectoryServiceRadiusSettings_IsConstruct(x interface{}) *bool {
+func DirectoryServiceRadiusSettings_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDirectoryServiceRadiusSettings_IsConstructParameters(x); err != nil {
@@ -793,7 +792,7 @@ func DirectoryServiceRadiusSettings_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.directoryServiceRadiusSettings.DirectoryServiceRadiusSettings",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func DirectoryServiceRadiusSettings_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DirectoryServiceRadiusSettings_IsTerraformElement(x interface{}) *bool {
+func DirectoryServiceRadiusSettings_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDirectoryServiceRadiusSettings_IsTerraformElementParameters(x); err != nil {
@@ -812,7 +811,7 @@ func DirectoryServiceRadiusSettings_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.directoryServiceRadiusSettings.DirectoryServiceRadiusSettings",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -820,7 +819,7 @@ func DirectoryServiceRadiusSettings_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DirectoryServiceRadiusSettings_IsTerraformResource(x interface{}) *bool {
+func DirectoryServiceRadiusSettings_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDirectoryServiceRadiusSettings_IsTerraformResourceParameters(x); err != nil {
@@ -831,7 +830,7 @@ func DirectoryServiceRadiusSettings_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.directoryServiceRadiusSettings.DirectoryServiceRadiusSettings",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -856,31 +855,31 @@ func (d *jsiiProxy_DirectoryServiceRadiusSettings) AddMoveTarget(moveTarget *str
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DirectoryServiceRadiusSettings) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DirectoryServiceRadiusSettings) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DirectoryServiceRadiusSettings) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DirectoryServiceRadiusSettings) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -896,7 +895,7 @@ func (d *jsiiProxy_DirectoryServiceRadiusSettings) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -912,7 +911,7 @@ func (d *jsiiProxy_DirectoryServiceRadiusSettings) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -928,7 +927,7 @@ func (d *jsiiProxy_DirectoryServiceRadiusSettings) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -944,7 +943,7 @@ func (d *jsiiProxy_DirectoryServiceRadiusSettings) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -960,7 +959,7 @@ func (d *jsiiProxy_DirectoryServiceRadiusSettings) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -976,7 +975,7 @@ func (d *jsiiProxy_DirectoryServiceRadiusSettings) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -992,7 +991,7 @@ func (d *jsiiProxy_DirectoryServiceRadiusSettings) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1008,15 +1007,15 @@ func (d *jsiiProxy_DirectoryServiceRadiusSettings) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DirectoryServiceRadiusSettings) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DirectoryServiceRadiusSettings) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1035,7 +1034,7 @@ func (d *jsiiProxy_DirectoryServiceRadiusSettings) ImportFrom(id *string, provid
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1048,7 +1047,7 @@ func (d *jsiiProxy_DirectoryServiceRadiusSettings) InterpolationForAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1062,18 +1061,18 @@ func (d *jsiiProxy_DirectoryServiceRadiusSettings) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DirectoryServiceRadiusSettings) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DirectoryServiceRadiusSettings) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1084,7 +1083,7 @@ func (d *jsiiProxy_DirectoryServiceRadiusSettings) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1095,7 +1094,7 @@ func (d *jsiiProxy_DirectoryServiceRadiusSettings) OverrideLogicalId(newLogicalI
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1106,7 +1105,7 @@ func (d *jsiiProxy_DirectoryServiceRadiusSettings) PutTimeouts(value *DirectoryS
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1142,8 +1141,8 @@ func (d *jsiiProxy_DirectoryServiceRadiusSettings) ResetUseSameUsername() {
 	)
 }
 
-func (d *jsiiProxy_DirectoryServiceRadiusSettings) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DirectoryServiceRadiusSettings) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1155,8 +1154,8 @@ func (d *jsiiProxy_DirectoryServiceRadiusSettings) SynthesizeAttributes() *map[s
 	return returns
 }
 
-func (d *jsiiProxy_DirectoryServiceRadiusSettings) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DirectoryServiceRadiusSettings) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1168,8 +1167,8 @@ func (d *jsiiProxy_DirectoryServiceRadiusSettings) SynthesizeHclAttributes() *ma
 	return returns
 }
 
-func (d *jsiiProxy_DirectoryServiceRadiusSettings) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DirectoryServiceRadiusSettings) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1181,8 +1180,8 @@ func (d *jsiiProxy_DirectoryServiceRadiusSettings) ToHclTerraform() interface{} 
 	return returns
 }
 
-func (d *jsiiProxy_DirectoryServiceRadiusSettings) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DirectoryServiceRadiusSettings) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1207,8 +1206,8 @@ func (d *jsiiProxy_DirectoryServiceRadiusSettings) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DirectoryServiceRadiusSettings) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DirectoryServiceRadiusSettings) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1219,4 +1218,3 @@ func (d *jsiiProxy_DirectoryServiceRadiusSettings) ToTerraform() interface{} {
 
 	return returns
 }
-

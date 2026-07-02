@@ -98,7 +98,7 @@ func (s *jsiiProxy_S3ObjectCopyGrantOutputReference) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_S3ObjectCopyGrantOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3ObjectCopyGrantOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_S3ObjectCopyGrantOutputReference) validateSetIdParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_S3ObjectCopyGrantOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_S3ObjectCopyGrantOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -262,4 +262,3 @@ func validateNewS3ObjectCopyGrantOutputReferenceParameters(terraformResource cdk
 
 	return nil
 }
-

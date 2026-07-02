@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccess",
-		reflect.TypeOf((*ServicecatalogOrganizationsAccess)(nil)).Elem(),
+		reflect.TypeFor[ServicecatalogOrganizationsAccess](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServicecatalogOrganizationsAccess{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -70,15 +70,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccessConfig",
-		reflect.TypeOf((*ServicecatalogOrganizationsAccessConfig)(nil)).Elem(),
+		reflect.TypeFor[ServicecatalogOrganizationsAccessConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccessTimeouts",
-		reflect.TypeOf((*ServicecatalogOrganizationsAccessTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ServicecatalogOrganizationsAccessTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccessTimeoutsOutputReference",
-		reflect.TypeOf((*ServicecatalogOrganizationsAccessTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ServicecatalogOrganizationsAccessTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -105,7 +105,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServicecatalogOrganizationsAccessTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

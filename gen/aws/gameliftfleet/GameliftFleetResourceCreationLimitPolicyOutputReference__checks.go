@@ -98,7 +98,7 @@ func (g *jsiiProxy_GameliftFleetResourceCreationLimitPolicyOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GameliftFleetResourceCreationLimitPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GameliftFleetResourceCreationLimitPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGameliftFleetResourceCreationLimitPolicyOutputReferenceParameter
 
 	return nil
 }
-

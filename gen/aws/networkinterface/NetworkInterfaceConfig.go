@@ -6,9 +6,9 @@ import (
 
 type NetworkInterfaceConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,13 +18,13 @@ type NetworkInterfaceConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/network_interface#subnet_id NetworkInterface#subnet_id}.
 	SubnetId *string `field:"required" json:"subnetId" yaml:"subnetId"`
 	// attachment block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/network_interface#attachment NetworkInterface#attachment}
-	Attachment interface{} `field:"optional" json:"attachment" yaml:"attachment"`
+	Attachment any `field:"optional" json:"attachment" yaml:"attachment"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/network_interface#description NetworkInterface#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/network_interface#id NetworkInterface#id}.
@@ -45,7 +45,7 @@ type NetworkInterfaceConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/network_interface#ipv6_address_list NetworkInterface#ipv6_address_list}.
 	Ipv6AddressList *[]*string `field:"optional" json:"ipv6AddressList" yaml:"ipv6AddressList"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/network_interface#ipv6_address_list_enabled NetworkInterface#ipv6_address_list_enabled}.
-	Ipv6AddressListEnabled interface{} `field:"optional" json:"ipv6AddressListEnabled" yaml:"ipv6AddressListEnabled"`
+	Ipv6AddressListEnabled any `field:"optional" json:"ipv6AddressListEnabled" yaml:"ipv6AddressListEnabled"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/network_interface#ipv6_prefix_count NetworkInterface#ipv6_prefix_count}.
 	Ipv6PrefixCount *float64 `field:"optional" json:"ipv6PrefixCount" yaml:"ipv6PrefixCount"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/network_interface#ipv6_prefixes NetworkInterface#ipv6_prefixes}.
@@ -55,7 +55,7 @@ type NetworkInterfaceConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/network_interface#private_ip_list NetworkInterface#private_ip_list}.
 	PrivateIpList *[]*string `field:"optional" json:"privateIpList" yaml:"privateIpList"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/network_interface#private_ip_list_enabled NetworkInterface#private_ip_list_enabled}.
-	PrivateIpListEnabled interface{} `field:"optional" json:"privateIpListEnabled" yaml:"privateIpListEnabled"`
+	PrivateIpListEnabled any `field:"optional" json:"privateIpListEnabled" yaml:"privateIpListEnabled"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/network_interface#private_ips NetworkInterface#private_ips}.
 	PrivateIps *[]*string `field:"optional" json:"privateIps" yaml:"privateIps"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/network_interface#private_ips_count NetworkInterface#private_ips_count}.
@@ -63,10 +63,9 @@ type NetworkInterfaceConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/network_interface#security_groups NetworkInterface#security_groups}.
 	SecurityGroups *[]*string `field:"optional" json:"securityGroups" yaml:"securityGroups"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/network_interface#source_dest_check NetworkInterface#source_dest_check}.
-	SourceDestCheck interface{} `field:"optional" json:"sourceDestCheck" yaml:"sourceDestCheck"`
+	SourceDestCheck any `field:"optional" json:"sourceDestCheck" yaml:"sourceDestCheck"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/network_interface#tags NetworkInterface#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/network_interface#tags_all NetworkInterface#tags_all}.
 	TagsAll *map[string]*string `field:"optional" json:"tagsAll" yaml:"tagsAll"`
 }
-

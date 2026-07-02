@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsKmsSecret) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsKmsSecret) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -111,7 +111,7 @@ func (d *jsiiProxy_DataAwsKmsSecret) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsKmsSecret) validatePutSecretParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsKmsSecret) validatePutSecretParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -158,7 +158,7 @@ func validateDataAwsKmsSecret_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validateDataAwsKmsSecret_IsConstructParameters(x interface{}) error {
+func validateDataAwsKmsSecret_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -166,7 +166,7 @@ func validateDataAwsKmsSecret_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataAwsKmsSecret_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsKmsSecret_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -174,7 +174,7 @@ func validateDataAwsKmsSecret_IsTerraformDataSourceParameters(x interface{}) err
 	return nil
 }
 
-func validateDataAwsKmsSecret_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsKmsSecret_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -182,7 +182,7 @@ func validateDataAwsKmsSecret_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsKmsSecret) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsKmsSecret) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -273,4 +273,3 @@ func validateNewDataAwsKmsSecretParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-

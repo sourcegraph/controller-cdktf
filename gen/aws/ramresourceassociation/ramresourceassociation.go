@@ -15,15 +15,15 @@ type RamResourceAssociation interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -50,11 +50,11 @@ type RamResourceAssociation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ResourceArn() *string
 	SetResourceArn(val *string)
 	ResourceArnInput() *string
@@ -64,16 +64,16 @@ type RamResourceAssociation interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type RamResourceAssociation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -103,7 +103,7 @@ type RamResourceAssociation interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -114,17 +114,17 @@ type RamResourceAssociation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for RamResourceAssociation
@@ -142,8 +142,8 @@ func (j *jsiiProxy_RamResourceAssociation) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_RamResourceAssociation) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RamResourceAssociation) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_RamResourceAssociation) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RamResourceAssociation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RamResourceAssociation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_RamResourceAssociation) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_RamResourceAssociation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RamResourceAssociation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -262,8 +262,8 @@ func (j *jsiiProxy_RamResourceAssociation) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_RamResourceAssociation) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_RamResourceAssociation) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -272,8 +272,8 @@ func (j *jsiiProxy_RamResourceAssociation) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RamResourceAssociation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RamResourceAssociation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -332,8 +332,8 @@ func (j *jsiiProxy_RamResourceAssociation) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_RamResourceAssociation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RamResourceAssociation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -352,7 +352,6 @@ func (j *jsiiProxy_RamResourceAssociation) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ram_resource_association aws_ram_resource_association} Resource.
 func NewRamResourceAssociation(scope constructs.Construct, id *string, config *RamResourceAssociationConfig) RamResourceAssociation {
 	_init_.Initialize()
@@ -364,7 +363,7 @@ func NewRamResourceAssociation(scope constructs.Construct, id *string, config *R
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ramResourceAssociation.RamResourceAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -377,12 +376,12 @@ func NewRamResourceAssociation_Override(r RamResourceAssociation, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ramResourceAssociation.RamResourceAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RamResourceAssociation)SetConnection(val interface{}) {
+func (j *jsiiProxy_RamResourceAssociation) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_RamResourceAssociation)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RamResourceAssociation)SetCount(val interface{}) {
+func (j *jsiiProxy_RamResourceAssociation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_RamResourceAssociation)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RamResourceAssociation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_RamResourceAssociation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -412,7 +411,7 @@ func (j *jsiiProxy_RamResourceAssociation)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RamResourceAssociation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_RamResourceAssociation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -420,7 +419,7 @@ func (j *jsiiProxy_RamResourceAssociation)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_RamResourceAssociation)SetId(val *string) {
+func (j *jsiiProxy_RamResourceAssociation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,7 +430,7 @@ func (j *jsiiProxy_RamResourceAssociation)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RamResourceAssociation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_RamResourceAssociation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_RamResourceAssociation)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_RamResourceAssociation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_RamResourceAssociation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -450,7 +449,7 @@ func (j *jsiiProxy_RamResourceAssociation)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_RamResourceAssociation)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_RamResourceAssociation) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -461,7 +460,7 @@ func (j *jsiiProxy_RamResourceAssociation)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RamResourceAssociation)SetResourceArn(val *string) {
+func (j *jsiiProxy_RamResourceAssociation) SetResourceArn(val *string) {
 	if err := j.validateSetResourceArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -472,7 +471,7 @@ func (j *jsiiProxy_RamResourceAssociation)SetResourceArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RamResourceAssociation)SetResourceShareArn(val *string) {
+func (j *jsiiProxy_RamResourceAssociation) SetResourceShareArn(val *string) {
 	if err := j.validateSetResourceShareArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -495,7 +494,7 @@ func RamResourceAssociation_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ramResourceAssociation.RamResourceAssociation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func RamResourceAssociation_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func RamResourceAssociation_IsConstruct(x interface{}) *bool {
+func RamResourceAssociation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRamResourceAssociation_IsConstructParameters(x); err != nil {
@@ -530,7 +529,7 @@ func RamResourceAssociation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ramResourceAssociation.RamResourceAssociation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func RamResourceAssociation_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func RamResourceAssociation_IsTerraformElement(x interface{}) *bool {
+func RamResourceAssociation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRamResourceAssociation_IsTerraformElementParameters(x); err != nil {
@@ -549,7 +548,7 @@ func RamResourceAssociation_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ramResourceAssociation.RamResourceAssociation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func RamResourceAssociation_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func RamResourceAssociation_IsTerraformResource(x interface{}) *bool {
+func RamResourceAssociation_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRamResourceAssociation_IsTerraformResourceParameters(x); err != nil {
@@ -568,7 +567,7 @@ func RamResourceAssociation_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ramResourceAssociation.RamResourceAssociation",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -593,31 +592,31 @@ func (r *jsiiProxy_RamResourceAssociation) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (r *jsiiProxy_RamResourceAssociation) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_RamResourceAssociation) AddOverride(path *string, value any) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (r *jsiiProxy_RamResourceAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RamResourceAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -633,7 +632,7 @@ func (r *jsiiProxy_RamResourceAssociation) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -649,7 +648,7 @@ func (r *jsiiProxy_RamResourceAssociation) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -665,7 +664,7 @@ func (r *jsiiProxy_RamResourceAssociation) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -681,7 +680,7 @@ func (r *jsiiProxy_RamResourceAssociation) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -697,7 +696,7 @@ func (r *jsiiProxy_RamResourceAssociation) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -713,7 +712,7 @@ func (r *jsiiProxy_RamResourceAssociation) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func (r *jsiiProxy_RamResourceAssociation) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -745,15 +744,15 @@ func (r *jsiiProxy_RamResourceAssociation) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_RamResourceAssociation) HasResourceMove() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RamResourceAssociation) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -772,7 +771,7 @@ func (r *jsiiProxy_RamResourceAssociation) ImportFrom(id *string, provider cdktf
 	_jsii_.InvokeVoid(
 		r,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -785,7 +784,7 @@ func (r *jsiiProxy_RamResourceAssociation) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,18 +798,18 @@ func (r *jsiiProxy_RamResourceAssociation) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (r *jsiiProxy_RamResourceAssociation) MoveTo(moveTarget *string, index interface{}) {
+func (r *jsiiProxy_RamResourceAssociation) MoveTo(moveTarget *string, index any) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -821,7 +820,7 @@ func (r *jsiiProxy_RamResourceAssociation) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -832,7 +831,7 @@ func (r *jsiiProxy_RamResourceAssociation) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -852,8 +851,8 @@ func (r *jsiiProxy_RamResourceAssociation) ResetOverrideLogicalId() {
 	)
 }
 
-func (r *jsiiProxy_RamResourceAssociation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RamResourceAssociation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -865,8 +864,8 @@ func (r *jsiiProxy_RamResourceAssociation) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (r *jsiiProxy_RamResourceAssociation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RamResourceAssociation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -878,8 +877,8 @@ func (r *jsiiProxy_RamResourceAssociation) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (r *jsiiProxy_RamResourceAssociation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RamResourceAssociation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -891,8 +890,8 @@ func (r *jsiiProxy_RamResourceAssociation) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_RamResourceAssociation) ToMetadata() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RamResourceAssociation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -917,8 +916,8 @@ func (r *jsiiProxy_RamResourceAssociation) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_RamResourceAssociation) ToTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RamResourceAssociation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -929,4 +928,3 @@ func (r *jsiiProxy_RamResourceAssociation) ToTerraform() interface{} {
 
 	return returns
 }
-

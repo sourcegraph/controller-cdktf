@@ -19,7 +19,7 @@ func (a *jsiiProxy_AppsyncApiCache) validateAddMoveTargetParameters(moveTarget *
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncApiCache) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AppsyncApiCache) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AppsyncApiCache) validateMoveFromIdParameters(id *string) err
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncApiCache) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AppsyncApiCache) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateAppsyncApiCache_GenerateConfigForImportParameters(scope constructs.
 	return nil
 }
 
-func validateAppsyncApiCache_IsConstructParameters(x interface{}) error {
+func validateAppsyncApiCache_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateAppsyncApiCache_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateAppsyncApiCache_IsTerraformElementParameters(x interface{}) error {
+func validateAppsyncApiCache_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateAppsyncApiCache_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateAppsyncApiCache_IsTerraformResourceParameters(x interface{}) error {
+func validateAppsyncApiCache_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -260,7 +260,7 @@ func (j *jsiiProxy_AppsyncApiCache) validateSetApiIdParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_AppsyncApiCache) validateSetAtRestEncryptionEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_AppsyncApiCache) validateSetAtRestEncryptionEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -280,7 +280,7 @@ func (j *jsiiProxy_AppsyncApiCache) validateSetAtRestEncryptionEnabledParameters
 	return nil
 }
 
-func (j *jsiiProxy_AppsyncApiCache) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AppsyncApiCache) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -313,7 +313,7 @@ func (j *jsiiProxy_AppsyncApiCache) validateSetConnectionParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_AppsyncApiCache) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AppsyncApiCache) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -386,7 +386,7 @@ func (j *jsiiProxy_AppsyncApiCache) validateSetLifecycleParameters(val *cdktf.Te
 	return nil
 }
 
-func (j *jsiiProxy_AppsyncApiCache) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AppsyncApiCache) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -432,7 +432,7 @@ func (j *jsiiProxy_AppsyncApiCache) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
-func (j *jsiiProxy_AppsyncApiCache) validateSetTransitEncryptionEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_AppsyncApiCache) validateSetTransitEncryptionEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -486,4 +486,3 @@ func validateNewAppsyncApiCacheParameters(scope constructs.Construct, id *string
 
 	return nil
 }
-

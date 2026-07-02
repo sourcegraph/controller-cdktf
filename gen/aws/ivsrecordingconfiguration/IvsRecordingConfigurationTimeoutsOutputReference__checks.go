@@ -98,7 +98,7 @@ func (i *jsiiProxy_IvsRecordingConfigurationTimeoutsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_IvsRecordingConfigurationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IvsRecordingConfigurationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_IvsRecordingConfigurationTimeoutsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_IvsRecordingConfigurationTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IvsRecordingConfigurationTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewIvsRecordingConfigurationTimeoutsOutputReferenceParameters(terra
 
 	return nil
 }
-

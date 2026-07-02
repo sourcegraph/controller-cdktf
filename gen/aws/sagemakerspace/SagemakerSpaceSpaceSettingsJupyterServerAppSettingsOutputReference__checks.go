@@ -90,7 +90,7 @@ func (s *jsiiProxy_SagemakerSpaceSpaceSettingsJupyterServerAppSettingsOutputRefe
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerSpaceSpaceSettingsJupyterServerAppSettingsOutputReference) validatePutCodeRepositoryParameters(value interface{}) error {
+func (s *jsiiProxy_SagemakerSpaceSpaceSettingsJupyterServerAppSettingsOutputReference) validatePutCodeRepositoryParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (s *jsiiProxy_SagemakerSpaceSpaceSettingsJupyterServerAppSettingsOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerSpaceSpaceSettingsJupyterServerAppSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerSpaceSpaceSettingsJupyterServerAppSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -248,4 +248,3 @@ func validateNewSagemakerSpaceSpaceSettingsJupyterServerAppSettingsOutputReferen
 
 	return nil
 }
-

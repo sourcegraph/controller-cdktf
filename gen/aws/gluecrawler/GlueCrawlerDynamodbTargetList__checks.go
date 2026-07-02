@@ -34,7 +34,7 @@ func (g *jsiiProxy_GlueCrawlerDynamodbTargetList) validateResolveParameters(_con
 	return nil
 }
 
-func (j *jsiiProxy_GlueCrawlerDynamodbTargetList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GlueCrawlerDynamodbTargetList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGlueCrawlerDynamodbTargetListParameters(terraformResource cdktf.
 
 	return nil
 }
-

@@ -21,19 +21,19 @@ type LexIntent interface {
 	ConfirmationPrompt() LexIntentConfirmationPromptOutputReference
 	ConfirmationPromptInput() *LexIntentConfirmationPrompt
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedDate() *string
-	CreateVersion() interface{}
-	SetCreateVersion(val interface{})
-	CreateVersionInput() interface{}
+	CreateVersion() any
+	SetCreateVersion(val any)
+	CreateVersionInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -76,34 +76,34 @@ type LexIntent interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RejectionStatement() LexIntentRejectionStatementOutputReference
 	RejectionStatementInput() *LexIntentRejectionStatement
 	SampleUtterances() *[]*string
 	SetSampleUtterances(val *[]*string)
 	SampleUtterancesInput() *[]*string
 	Slot() LexIntentSlotList
-	SlotInput() interface{}
+	SlotInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() LexIntentTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Version() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -121,7 +121,7 @@ type LexIntent interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -133,7 +133,7 @@ type LexIntent interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -146,7 +146,7 @@ type LexIntent interface {
 	PutFollowUpPrompt(value *LexIntentFollowUpPrompt)
 	PutFulfillmentActivity(value *LexIntentFulfillmentActivity)
 	PutRejectionStatement(value *LexIntentRejectionStatement)
-	PutSlot(value interface{})
+	PutSlot(value any)
 	PutTimeouts(value *LexIntentTimeouts)
 	ResetConclusionStatement()
 	ResetConfirmationPrompt()
@@ -163,17 +163,17 @@ type LexIntent interface {
 	ResetSampleUtterances()
 	ResetSlot()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for LexIntent
@@ -251,8 +251,8 @@ func (j *jsiiProxy_LexIntent) ConfirmationPromptInput() *LexIntentConfirmationPr
 	return returns
 }
 
-func (j *jsiiProxy_LexIntent) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LexIntent) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -261,8 +261,8 @@ func (j *jsiiProxy_LexIntent) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LexIntent) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LexIntent) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -271,8 +271,8 @@ func (j *jsiiProxy_LexIntent) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LexIntent) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LexIntent) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -291,8 +291,8 @@ func (j *jsiiProxy_LexIntent) CreatedDate() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LexIntent) CreateVersion() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LexIntent) CreateVersion() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"createVersion",
@@ -301,8 +301,8 @@ func (j *jsiiProxy_LexIntent) CreateVersion() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LexIntent) CreateVersionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LexIntent) CreateVersionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"createVersionInput",
@@ -531,8 +531,8 @@ func (j *jsiiProxy_LexIntent) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_LexIntent) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_LexIntent) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -541,8 +541,8 @@ func (j *jsiiProxy_LexIntent) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LexIntent) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LexIntent) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -601,8 +601,8 @@ func (j *jsiiProxy_LexIntent) Slot() LexIntentSlotList {
 	return returns
 }
 
-func (j *jsiiProxy_LexIntent) SlotInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LexIntent) SlotInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"slotInput",
@@ -621,8 +621,8 @@ func (j *jsiiProxy_LexIntent) TerraformGeneratorMetadata() *cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_LexIntent) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LexIntent) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -651,8 +651,8 @@ func (j *jsiiProxy_LexIntent) Timeouts() LexIntentTimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_LexIntent) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LexIntent) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -671,7 +671,6 @@ func (j *jsiiProxy_LexIntent) Version() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lex_intent aws_lex_intent} Resource.
 func NewLexIntent(scope constructs.Construct, id *string, config *LexIntentConfig) LexIntent {
 	_init_.Initialize()
@@ -683,7 +682,7 @@ func NewLexIntent(scope constructs.Construct, id *string, config *LexIntentConfi
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lexIntent.LexIntent",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -696,12 +695,12 @@ func NewLexIntent_Override(l LexIntent, scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lexIntent.LexIntent",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LexIntent)SetConnection(val interface{}) {
+func (j *jsiiProxy_LexIntent) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -712,7 +711,7 @@ func (j *jsiiProxy_LexIntent)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LexIntent)SetCount(val interface{}) {
+func (j *jsiiProxy_LexIntent) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -723,7 +722,7 @@ func (j *jsiiProxy_LexIntent)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LexIntent)SetCreateVersion(val interface{}) {
+func (j *jsiiProxy_LexIntent) SetCreateVersion(val any) {
 	if err := j.validateSetCreateVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -734,7 +733,7 @@ func (j *jsiiProxy_LexIntent)SetCreateVersion(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LexIntent)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LexIntent) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -742,7 +741,7 @@ func (j *jsiiProxy_LexIntent)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LexIntent)SetDescription(val *string) {
+func (j *jsiiProxy_LexIntent) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -753,7 +752,7 @@ func (j *jsiiProxy_LexIntent)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LexIntent)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LexIntent) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -761,7 +760,7 @@ func (j *jsiiProxy_LexIntent)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_LexIntent)SetId(val *string) {
+func (j *jsiiProxy_LexIntent) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -772,7 +771,7 @@ func (j *jsiiProxy_LexIntent)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LexIntent)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LexIntent) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -783,7 +782,7 @@ func (j *jsiiProxy_LexIntent)SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	)
 }
 
-func (j *jsiiProxy_LexIntent)SetName(val *string) {
+func (j *jsiiProxy_LexIntent) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -794,7 +793,7 @@ func (j *jsiiProxy_LexIntent)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LexIntent)SetParentIntentSignature(val *string) {
+func (j *jsiiProxy_LexIntent) SetParentIntentSignature(val *string) {
 	if err := j.validateSetParentIntentSignatureParameters(val); err != nil {
 		panic(err)
 	}
@@ -805,7 +804,7 @@ func (j *jsiiProxy_LexIntent)SetParentIntentSignature(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LexIntent)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LexIntent) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -813,7 +812,7 @@ func (j *jsiiProxy_LexIntent)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_LexIntent)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LexIntent) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -824,7 +823,7 @@ func (j *jsiiProxy_LexIntent)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LexIntent)SetSampleUtterances(val *[]*string) {
+func (j *jsiiProxy_LexIntent) SetSampleUtterances(val *[]*string) {
 	if err := j.validateSetSampleUtterancesParameters(val); err != nil {
 		panic(err)
 	}
@@ -847,7 +846,7 @@ func LexIntent_GenerateConfigForImport(scope constructs.Construct, importToId *s
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lexIntent.LexIntent",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -871,7 +870,7 @@ func LexIntent_GenerateConfigForImport(scope constructs.Construct, importToId *s
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func LexIntent_IsConstruct(x interface{}) *bool {
+func LexIntent_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLexIntent_IsConstructParameters(x); err != nil {
@@ -882,7 +881,7 @@ func LexIntent_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lexIntent.LexIntent",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -890,7 +889,7 @@ func LexIntent_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func LexIntent_IsTerraformElement(x interface{}) *bool {
+func LexIntent_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLexIntent_IsTerraformElementParameters(x); err != nil {
@@ -901,7 +900,7 @@ func LexIntent_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lexIntent.LexIntent",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -909,7 +908,7 @@ func LexIntent_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func LexIntent_IsTerraformResource(x interface{}) *bool {
+func LexIntent_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLexIntent_IsTerraformResourceParameters(x); err != nil {
@@ -920,7 +919,7 @@ func LexIntent_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lexIntent.LexIntent",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -945,31 +944,31 @@ func (l *jsiiProxy_LexIntent) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (l *jsiiProxy_LexIntent) AddOverride(path *string, value interface{}) {
+func (l *jsiiProxy_LexIntent) AddOverride(path *string, value any) {
 	if err := l.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (l *jsiiProxy_LexIntent) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LexIntent) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -985,7 +984,7 @@ func (l *jsiiProxy_LexIntent) GetBooleanAttribute(terraformAttribute *string) cd
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1001,7 +1000,7 @@ func (l *jsiiProxy_LexIntent) GetBooleanMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1017,7 +1016,7 @@ func (l *jsiiProxy_LexIntent) GetListAttribute(terraformAttribute *string) *[]*s
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1033,7 +1032,7 @@ func (l *jsiiProxy_LexIntent) GetNumberAttribute(terraformAttribute *string) *fl
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1049,7 +1048,7 @@ func (l *jsiiProxy_LexIntent) GetNumberListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1065,7 +1064,7 @@ func (l *jsiiProxy_LexIntent) GetNumberMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1081,7 +1080,7 @@ func (l *jsiiProxy_LexIntent) GetStringAttribute(terraformAttribute *string) *st
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1097,15 +1096,15 @@ func (l *jsiiProxy_LexIntent) GetStringMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LexIntent) HasResourceMove() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LexIntent) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1124,7 +1123,7 @@ func (l *jsiiProxy_LexIntent) ImportFrom(id *string, provider cdktf.TerraformPro
 	_jsii_.InvokeVoid(
 		l,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1137,7 +1136,7 @@ func (l *jsiiProxy_LexIntent) InterpolationForAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1151,18 +1150,18 @@ func (l *jsiiProxy_LexIntent) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (l *jsiiProxy_LexIntent) MoveTo(moveTarget *string, index interface{}) {
+func (l *jsiiProxy_LexIntent) MoveTo(moveTarget *string, index any) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1173,7 +1172,7 @@ func (l *jsiiProxy_LexIntent) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1184,7 +1183,7 @@ func (l *jsiiProxy_LexIntent) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1195,7 +1194,7 @@ func (l *jsiiProxy_LexIntent) PutConclusionStatement(value *LexIntentConclusionS
 	_jsii_.InvokeVoid(
 		l,
 		"putConclusionStatement",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1206,7 +1205,7 @@ func (l *jsiiProxy_LexIntent) PutConfirmationPrompt(value *LexIntentConfirmation
 	_jsii_.InvokeVoid(
 		l,
 		"putConfirmationPrompt",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1217,7 +1216,7 @@ func (l *jsiiProxy_LexIntent) PutDialogCodeHook(value *LexIntentDialogCodeHook) 
 	_jsii_.InvokeVoid(
 		l,
 		"putDialogCodeHook",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1228,7 +1227,7 @@ func (l *jsiiProxy_LexIntent) PutFollowUpPrompt(value *LexIntentFollowUpPrompt) 
 	_jsii_.InvokeVoid(
 		l,
 		"putFollowUpPrompt",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1239,7 +1238,7 @@ func (l *jsiiProxy_LexIntent) PutFulfillmentActivity(value *LexIntentFulfillment
 	_jsii_.InvokeVoid(
 		l,
 		"putFulfillmentActivity",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1250,18 +1249,18 @@ func (l *jsiiProxy_LexIntent) PutRejectionStatement(value *LexIntentRejectionSta
 	_jsii_.InvokeVoid(
 		l,
 		"putRejectionStatement",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (l *jsiiProxy_LexIntent) PutSlot(value interface{}) {
+func (l *jsiiProxy_LexIntent) PutSlot(value any) {
 	if err := l.validatePutSlotParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"putSlot",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1272,7 +1271,7 @@ func (l *jsiiProxy_LexIntent) PutTimeouts(value *LexIntentTimeouts) {
 	_jsii_.InvokeVoid(
 		l,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1380,8 +1379,8 @@ func (l *jsiiProxy_LexIntent) ResetTimeouts() {
 	)
 }
 
-func (l *jsiiProxy_LexIntent) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LexIntent) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1393,8 +1392,8 @@ func (l *jsiiProxy_LexIntent) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LexIntent) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LexIntent) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1406,8 +1405,8 @@ func (l *jsiiProxy_LexIntent) SynthesizeHclAttributes() *map[string]interface{} 
 	return returns
 }
 
-func (l *jsiiProxy_LexIntent) ToHclTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LexIntent) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1419,8 +1418,8 @@ func (l *jsiiProxy_LexIntent) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LexIntent) ToMetadata() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LexIntent) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1445,8 +1444,8 @@ func (l *jsiiProxy_LexIntent) ToString() *string {
 	return returns
 }
 
-func (l *jsiiProxy_LexIntent) ToTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LexIntent) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1457,4 +1456,3 @@ func (l *jsiiProxy_LexIntent) ToTerraform() interface{} {
 
 	return returns
 }
-

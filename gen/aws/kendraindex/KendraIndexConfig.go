@@ -6,9 +6,9 @@ import (
 
 type KendraIndexConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type KendraIndexConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kendra_index#name KendraIndex#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kendra_index#role_arn KendraIndex#role_arn}.
@@ -32,7 +32,7 @@ type KendraIndexConfig struct {
 	// document_metadata_configuration_updates block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kendra_index#document_metadata_configuration_updates KendraIndex#document_metadata_configuration_updates}
-	DocumentMetadataConfigurationUpdates interface{} `field:"optional" json:"documentMetadataConfigurationUpdates" yaml:"documentMetadataConfigurationUpdates"`
+	DocumentMetadataConfigurationUpdates any `field:"optional" json:"documentMetadataConfigurationUpdates" yaml:"documentMetadataConfigurationUpdates"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kendra_index#edition KendraIndex#edition}.
 	Edition *string `field:"optional" json:"edition" yaml:"edition"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kendra_index#id KendraIndex#id}.
@@ -63,4 +63,3 @@ type KendraIndexConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kendra_index#user_token_configurations KendraIndex#user_token_configurations}
 	UserTokenConfigurations *KendraIndexUserTokenConfigurations `field:"optional" json:"userTokenConfigurations" yaml:"userTokenConfigurations"`
 }
-

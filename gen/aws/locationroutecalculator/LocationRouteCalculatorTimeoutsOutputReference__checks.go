@@ -98,7 +98,7 @@ func (l *jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference) validateSetDe
 	return nil
 }
 
-func (j *jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewLocationRouteCalculatorTimeoutsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

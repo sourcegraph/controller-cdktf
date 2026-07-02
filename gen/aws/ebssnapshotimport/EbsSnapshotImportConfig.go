@@ -6,9 +6,9 @@ import (
 
 type EbsSnapshotImportConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type EbsSnapshotImportConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// disk_container block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ebs_snapshot_import#disk_container EbsSnapshotImport#disk_container}
@@ -30,7 +30,7 @@ type EbsSnapshotImportConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ebs_snapshot_import#description EbsSnapshotImport#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ebs_snapshot_import#encrypted EbsSnapshotImport#encrypted}.
-	Encrypted interface{} `field:"optional" json:"encrypted" yaml:"encrypted"`
+	Encrypted any `field:"optional" json:"encrypted" yaml:"encrypted"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ebs_snapshot_import#id EbsSnapshotImport#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -39,7 +39,7 @@ type EbsSnapshotImportConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ebs_snapshot_import#kms_key_id EbsSnapshotImport#kms_key_id}.
 	KmsKeyId *string `field:"optional" json:"kmsKeyId" yaml:"kmsKeyId"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ebs_snapshot_import#permanent_restore EbsSnapshotImport#permanent_restore}.
-	PermanentRestore interface{} `field:"optional" json:"permanentRestore" yaml:"permanentRestore"`
+	PermanentRestore any `field:"optional" json:"permanentRestore" yaml:"permanentRestore"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ebs_snapshot_import#role_name EbsSnapshotImport#role_name}.
 	RoleName *string `field:"optional" json:"roleName" yaml:"roleName"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ebs_snapshot_import#storage_tier EbsSnapshotImport#storage_tier}.
@@ -55,4 +55,3 @@ type EbsSnapshotImportConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ebs_snapshot_import#timeouts EbsSnapshotImport#timeouts}
 	Timeouts *EbsSnapshotImportTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

@@ -98,7 +98,7 @@ func (e *jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsAclRulePortRan
 	return nil
 }
 
-func (j *jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsAclRulePortRangeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsAclRulePortRangeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewEc2NetworkInsightsAnalysisForwardPathComponentsAclRulePortRangeO
 
 	return nil
 }
-

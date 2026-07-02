@@ -15,9 +15,9 @@ type LbListenerRuleActionAuthenticateCognitoOutputReference interface {
 	AuthenticationRequestExtraParamsInput() *map[string]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -64,7 +64,7 @@ type LbListenerRuleActionAuthenticateCognitoOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -92,7 +92,7 @@ type LbListenerRuleActionAuthenticateCognitoOutputReference interface {
 	ResetSessionTimeout()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -125,8 +125,8 @@ func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference) Authe
 	return returns
 }
 
-func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -335,7 +335,6 @@ func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference) UserP
 	return returns
 }
 
-
 func NewLbListenerRuleActionAuthenticateCognitoOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LbListenerRuleActionAuthenticateCognitoOutputReference {
 	_init_.Initialize()
 
@@ -346,7 +345,7 @@ func NewLbListenerRuleActionAuthenticateCognitoOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateCognitoOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -358,12 +357,12 @@ func NewLbListenerRuleActionAuthenticateCognitoOutputReference_Override(l LbList
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateCognitoOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference)SetAuthenticationRequestExtraParams(val *map[string]*string) {
+func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference) SetAuthenticationRequestExtraParams(val *map[string]*string) {
 	if err := j.validateSetAuthenticationRequestExtraParamsParameters(val); err != nil {
 		panic(err)
 	}
@@ -374,7 +373,7 @@ func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference)SetAut
 	)
 }
 
-func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -385,7 +384,7 @@ func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -396,7 +395,7 @@ func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference)SetInternalValue(val *LbListenerRuleActionAuthenticateCognito) {
+func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference) SetInternalValue(val *LbListenerRuleActionAuthenticateCognito) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -407,7 +406,7 @@ func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference)SetOnUnauthenticatedRequest(val *string) {
+func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference) SetOnUnauthenticatedRequest(val *string) {
 	if err := j.validateSetOnUnauthenticatedRequestParameters(val); err != nil {
 		panic(err)
 	}
@@ -418,7 +417,7 @@ func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference)SetOnU
 	)
 }
 
-func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference)SetScope(val *string) {
+func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference) SetScope(val *string) {
 	if err := j.validateSetScopeParameters(val); err != nil {
 		panic(err)
 	}
@@ -429,7 +428,7 @@ func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference)SetSco
 	)
 }
 
-func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference)SetSessionCookieName(val *string) {
+func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference) SetSessionCookieName(val *string) {
 	if err := j.validateSetSessionCookieNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -440,7 +439,7 @@ func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference)SetSes
 	)
 }
 
-func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference)SetSessionTimeout(val *float64) {
+func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference) SetSessionTimeout(val *float64) {
 	if err := j.validateSetSessionTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,7 +450,7 @@ func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference)SetSes
 	)
 }
 
-func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -473,7 +472,7 @@ func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference)SetUserPoolArn(val *string) {
+func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference) SetUserPoolArn(val *string) {
 	if err := j.validateSetUserPoolArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -484,7 +483,7 @@ func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference)SetUse
 	)
 }
 
-func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference)SetUserPoolClientId(val *string) {
+func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference) SetUserPoolClientId(val *string) {
 	if err := j.validateSetUserPoolClientIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -495,7 +494,7 @@ func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference)SetUse
 	)
 }
 
-func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference)SetUserPoolDomain(val *string) {
+func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference) SetUserPoolDomain(val *string) {
 	if err := j.validateSetUserPoolDomainParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,16 +518,16 @@ func (l *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference) Compu
 	return returns
 }
 
-func (l *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -544,7 +543,7 @@ func (l *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference) GetBo
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -560,7 +559,7 @@ func (l *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference) GetBo
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -576,7 +575,7 @@ func (l *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference) GetLi
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -592,7 +591,7 @@ func (l *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference) GetNu
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -608,7 +607,7 @@ func (l *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference) GetNu
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -624,7 +623,7 @@ func (l *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference) GetNu
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -640,7 +639,7 @@ func (l *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference) GetSt
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -656,7 +655,7 @@ func (l *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference) GetSt
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -685,7 +684,7 @@ func (l *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference) Inter
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -732,16 +731,16 @@ func (l *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference) Reset
 	)
 }
 
-func (l *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -760,4 +759,3 @@ func (l *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference) ToStr
 
 	return returns
 }
-

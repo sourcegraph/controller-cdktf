@@ -19,7 +19,7 @@ func (l *jsiiProxy_LambdaLayerVersion) validateAddMoveTargetParameters(moveTarge
 	return nil
 }
 
-func (l *jsiiProxy_LambdaLayerVersion) validateAddOverrideParameters(path *string, value interface{}) error {
+func (l *jsiiProxy_LambdaLayerVersion) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (l *jsiiProxy_LambdaLayerVersion) validateMoveFromIdParameters(id *string) 
 	return nil
 }
 
-func (l *jsiiProxy_LambdaLayerVersion) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (l *jsiiProxy_LambdaLayerVersion) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateLambdaLayerVersion_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateLambdaLayerVersion_IsConstructParameters(x interface{}) error {
+func validateLambdaLayerVersion_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateLambdaLayerVersion_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateLambdaLayerVersion_IsTerraformElementParameters(x interface{}) error {
+func validateLambdaLayerVersion_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateLambdaLayerVersion_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func validateLambdaLayerVersion_IsTerraformResourceParameters(x interface{}) error {
+func validateLambdaLayerVersion_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -260,7 +260,7 @@ func (j *jsiiProxy_LambdaLayerVersion) validateSetCompatibleRuntimesParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_LambdaLayerVersion) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_LambdaLayerVersion) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -293,7 +293,7 @@ func (j *jsiiProxy_LambdaLayerVersion) validateSetConnectionParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_LambdaLayerVersion) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_LambdaLayerVersion) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -398,7 +398,7 @@ func (j *jsiiProxy_LambdaLayerVersion) validateSetLifecycleParameters(val *cdktf
 	return nil
 }
 
-func (j *jsiiProxy_LambdaLayerVersion) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_LambdaLayerVersion) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -468,7 +468,7 @@ func (j *jsiiProxy_LambdaLayerVersion) validateSetS3ObjectVersionParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_LambdaLayerVersion) validateSetSkipDestroyParameters(val interface{}) error {
+func (j *jsiiProxy_LambdaLayerVersion) validateSetSkipDestroyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -514,4 +514,3 @@ func validateNewLambdaLayerVersionParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

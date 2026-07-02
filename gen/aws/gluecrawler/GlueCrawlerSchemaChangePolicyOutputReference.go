@@ -12,9 +12,9 @@ type GlueCrawlerSchemaChangePolicyOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type GlueCrawlerSchemaChangePolicyOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type GlueCrawlerSchemaChangePolicyOutputReference interface {
 	ResetUpdateBehavior()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) UpdateBehaviorI
 	return returns
 }
 
-
 func NewGlueCrawlerSchemaChangePolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GlueCrawlerSchemaChangePolicyOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewGlueCrawlerSchemaChangePolicyOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.glueCrawler.GlueCrawlerSchemaChangePolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewGlueCrawlerSchemaChangePolicyOutputReference_Override(g GlueCrawlerSchem
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.glueCrawler.GlueCrawlerSchemaChangePolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference)SetDeleteBehavior(val *string) {
+func (j *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) SetDeleteBehavior(val *string) {
 	if err := j.validateSetDeleteBehaviorParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference)SetDeleteBehavio
 	)
 }
 
-func (j *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference)SetInternalValue(val *GlueCrawlerSchemaChangePolicy) {
+func (j *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) SetInternalValue(val *GlueCrawlerSchemaChangePolicy) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference)SetTerraformReso
 	)
 }
 
-func (j *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference)SetUpdateBehavior(val *string) {
+func (j *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) SetUpdateBehavior(val *string) {
 	if err := j.validateSetUpdateBehaviorParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (g *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (g *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (g *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (g *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (g *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (g *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (g *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (g *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (g *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (g *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (g *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (g *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) ResetUpdateBeha
 	)
 }
 
-func (g *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (g *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) ToString() *str
 
 	return returns
 }
-

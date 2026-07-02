@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2TransitGatewayVpcAttachment.Ec2TransitGatewayVpcAttachment",
-		reflect.TypeOf((*Ec2TransitGatewayVpcAttachment)(nil)).Elem(),
+		reflect.TypeFor[Ec2TransitGatewayVpcAttachment](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,7 +84,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcIdInput", GoGetter: "VpcIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcOwnerId", GoGetter: "VpcOwnerId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2TransitGatewayVpcAttachment{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -92,6 +92,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2TransitGatewayVpcAttachment.Ec2TransitGatewayVpcAttachmentConfig",
-		reflect.TypeOf((*Ec2TransitGatewayVpcAttachmentConfig)(nil)).Elem(),
+		reflect.TypeFor[Ec2TransitGatewayVpcAttachmentConfig](),
 	)
 }

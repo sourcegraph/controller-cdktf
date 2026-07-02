@@ -1,6 +1,5 @@
 package dataawsroute53trafficpolicydocument
 
-
 type DataAwsRoute53TrafficPolicyDocumentRule struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/route53_traffic_policy_document#id DataAwsRoute53TrafficPolicyDocument#id}.
 	//
@@ -10,15 +9,15 @@ type DataAwsRoute53TrafficPolicyDocumentRule struct {
 	// geo_proximity_location block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/route53_traffic_policy_document#geo_proximity_location DataAwsRoute53TrafficPolicyDocument#geo_proximity_location}
-	GeoProximityLocation interface{} `field:"optional" json:"geoProximityLocation" yaml:"geoProximityLocation"`
+	GeoProximityLocation any `field:"optional" json:"geoProximityLocation" yaml:"geoProximityLocation"`
 	// items block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/route53_traffic_policy_document#items DataAwsRoute53TrafficPolicyDocument#items}
-	Items interface{} `field:"optional" json:"items" yaml:"items"`
+	Items any `field:"optional" json:"items" yaml:"items"`
 	// location block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/route53_traffic_policy_document#location DataAwsRoute53TrafficPolicyDocument#location}
-	Location interface{} `field:"optional" json:"location" yaml:"location"`
+	Location any `field:"optional" json:"location" yaml:"location"`
 	// primary block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/route53_traffic_policy_document#primary DataAwsRoute53TrafficPolicyDocument#primary}
@@ -26,7 +25,7 @@ type DataAwsRoute53TrafficPolicyDocumentRule struct {
 	// region block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/route53_traffic_policy_document#region DataAwsRoute53TrafficPolicyDocument#region}
-	Region interface{} `field:"optional" json:"region" yaml:"region"`
+	Region any `field:"optional" json:"region" yaml:"region"`
 	// secondary block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/route53_traffic_policy_document#secondary DataAwsRoute53TrafficPolicyDocument#secondary}
@@ -34,4 +33,3 @@ type DataAwsRoute53TrafficPolicyDocumentRule struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/route53_traffic_policy_document#type DataAwsRoute53TrafficPolicyDocument#type}.
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
-

@@ -34,7 +34,7 @@ func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigQueueConfigList) validat
 	return nil
 }
 
-func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigQueueConfigList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigQueueConfigList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewConnectQuickConnectQuickConnectConfigQueueConfigListParameters(t
 
 	return nil
 }
-

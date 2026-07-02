@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfiguration",
-		reflect.TypeOf((*DataAwsLaunchConfiguration)(nil)).Elem(),
+		reflect.TypeFor[DataAwsLaunchConfiguration](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -68,7 +68,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcClassicLinkId", GoGetter: "VpcClassicLinkId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcClassicLinkSecurityGroups", GoGetter: "VpcClassicLinkSecurityGroups"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsLaunchConfiguration{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -76,15 +76,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationConfig",
-		reflect.TypeOf((*DataAwsLaunchConfigurationConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsLaunchConfigurationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationEbsBlockDevice",
-		reflect.TypeOf((*DataAwsLaunchConfigurationEbsBlockDevice)(nil)).Elem(),
+		reflect.TypeFor[DataAwsLaunchConfigurationEbsBlockDevice](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationEbsBlockDeviceList",
-		reflect.TypeOf((*DataAwsLaunchConfigurationEbsBlockDeviceList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsLaunchConfigurationEbsBlockDeviceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -97,7 +97,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsLaunchConfigurationEbsBlockDeviceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -105,7 +105,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationEbsBlockDeviceOutputReference",
-		reflect.TypeOf((*DataAwsLaunchConfigurationEbsBlockDeviceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsLaunchConfigurationEbsBlockDeviceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -138,7 +138,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumeSize", GoGetter: "VolumeSize"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeType", GoGetter: "VolumeType"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsLaunchConfigurationEbsBlockDeviceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -146,11 +146,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationEphemeralBlockDevice",
-		reflect.TypeOf((*DataAwsLaunchConfigurationEphemeralBlockDevice)(nil)).Elem(),
+		reflect.TypeFor[DataAwsLaunchConfigurationEphemeralBlockDevice](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationEphemeralBlockDeviceList",
-		reflect.TypeOf((*DataAwsLaunchConfigurationEphemeralBlockDeviceList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsLaunchConfigurationEphemeralBlockDeviceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -163,7 +163,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsLaunchConfigurationEphemeralBlockDeviceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -171,7 +171,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationEphemeralBlockDeviceOutputReference",
-		reflect.TypeOf((*DataAwsLaunchConfigurationEphemeralBlockDeviceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsLaunchConfigurationEphemeralBlockDeviceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -197,7 +197,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualName", GoGetter: "VirtualName"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsLaunchConfigurationEphemeralBlockDeviceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -205,11 +205,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationMetadataOptions",
-		reflect.TypeOf((*DataAwsLaunchConfigurationMetadataOptions)(nil)).Elem(),
+		reflect.TypeFor[DataAwsLaunchConfigurationMetadataOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationMetadataOptionsList",
-		reflect.TypeOf((*DataAwsLaunchConfigurationMetadataOptionsList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsLaunchConfigurationMetadataOptionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -222,7 +222,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsLaunchConfigurationMetadataOptionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -230,7 +230,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationMetadataOptionsOutputReference",
-		reflect.TypeOf((*DataAwsLaunchConfigurationMetadataOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsLaunchConfigurationMetadataOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -257,7 +257,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsLaunchConfigurationMetadataOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -265,11 +265,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationRootBlockDevice",
-		reflect.TypeOf((*DataAwsLaunchConfigurationRootBlockDevice)(nil)).Elem(),
+		reflect.TypeFor[DataAwsLaunchConfigurationRootBlockDevice](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationRootBlockDeviceList",
-		reflect.TypeOf((*DataAwsLaunchConfigurationRootBlockDeviceList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsLaunchConfigurationRootBlockDeviceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -282,7 +282,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsLaunchConfigurationRootBlockDeviceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -290,7 +290,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationRootBlockDeviceOutputReference",
-		reflect.TypeOf((*DataAwsLaunchConfigurationRootBlockDeviceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsLaunchConfigurationRootBlockDeviceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -320,7 +320,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumeSize", GoGetter: "VolumeSize"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeType", GoGetter: "VolumeType"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsLaunchConfigurationRootBlockDeviceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

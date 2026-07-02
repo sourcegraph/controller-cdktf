@@ -12,9 +12,9 @@ type ImagebuilderImagePipelineScheduleOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type ImagebuilderImagePipelineScheduleOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type ImagebuilderImagePipelineScheduleOutputReference interface {
 	ResetTimezone()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference) TimezoneInp
 	return returns
 }
 
-
 func NewImagebuilderImagePipelineScheduleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ImagebuilderImagePipelineScheduleOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewImagebuilderImagePipelineScheduleOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.imagebuilderImagePipeline.ImagebuilderImagePipelineScheduleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewImagebuilderImagePipelineScheduleOutputReference_Override(i Imagebuilder
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.imagebuilderImagePipeline.ImagebuilderImagePipelineScheduleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		i,
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference)SetInternalValue(val *ImagebuilderImagePipelineSchedule) {
+func (j *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference) SetInternalValue(val *ImagebuilderImagePipelineSchedule) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference)SetPipelineExecutionStartCondition(val *string) {
+func (j *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference) SetPipelineExecutionStartCondition(val *string) {
 	if err := j.validateSetPipelineExecutionStartConditionParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference)SetPipelineE
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference)SetScheduleExpression(val *string) {
+func (j *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference) SetScheduleExpression(val *string) {
 	if err := j.validateSetScheduleExpressionParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference)SetScheduleE
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference)SetTimezone(val *string) {
+func (j *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference) SetTimezone(val *string) {
 	if err := j.validateSetTimezoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,16 +345,16 @@ func (i *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference) ComputeFqn(
 	return returns
 }
 
-func (i *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (i *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (i *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (i *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference) GetListAttr
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (i *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (i *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (i *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (i *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference) GetStringAt
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (i *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference) GetStringMa
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (i *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference) Interpolati
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -535,16 +534,16 @@ func (i *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference) ResetTimezo
 	)
 }
 
-func (i *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (i *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference) ToString() 
 
 	return returns
 }
-

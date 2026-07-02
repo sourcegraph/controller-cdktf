@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironment",
-		reflect.TypeOf((*BatchComputeEnvironment)(nil)).Elem(),
+		reflect.TypeFor[BatchComputeEnvironment](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -88,7 +88,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BatchComputeEnvironment{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -96,15 +96,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironmentComputeResources",
-		reflect.TypeOf((*BatchComputeEnvironmentComputeResources)(nil)).Elem(),
+		reflect.TypeFor[BatchComputeEnvironmentComputeResources](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironmentComputeResourcesEc2Configuration",
-		reflect.TypeOf((*BatchComputeEnvironmentComputeResourcesEc2Configuration)(nil)).Elem(),
+		reflect.TypeFor[BatchComputeEnvironmentComputeResourcesEc2Configuration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference",
-		reflect.TypeOf((*BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -134,7 +134,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -142,11 +142,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironmentComputeResourcesLaunchTemplate",
-		reflect.TypeOf((*BatchComputeEnvironmentComputeResourcesLaunchTemplate)(nil)).Elem(),
+		reflect.TypeFor[BatchComputeEnvironmentComputeResourcesLaunchTemplate](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironmentComputeResourcesLaunchTemplateOutputReference",
-		reflect.TypeOf((*BatchComputeEnvironmentComputeResourcesLaunchTemplateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BatchComputeEnvironmentComputeResourcesLaunchTemplateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -179,7 +179,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BatchComputeEnvironmentComputeResourcesLaunchTemplateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -187,7 +187,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironmentComputeResourcesOutputReference",
-		reflect.TypeOf((*BatchComputeEnvironmentComputeResourcesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BatchComputeEnvironmentComputeResourcesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allocationStrategy", GoGetter: "AllocationStrategy"},
 			_jsii_.MemberProperty{JsiiProperty: "allocationStrategyInput", GoGetter: "AllocationStrategyInput"},
@@ -258,7 +258,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -266,15 +266,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironmentConfig",
-		reflect.TypeOf((*BatchComputeEnvironmentConfig)(nil)).Elem(),
+		reflect.TypeFor[BatchComputeEnvironmentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironmentEksConfiguration",
-		reflect.TypeOf((*BatchComputeEnvironmentEksConfiguration)(nil)).Elem(),
+		reflect.TypeFor[BatchComputeEnvironmentEksConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironmentEksConfigurationOutputReference",
-		reflect.TypeOf((*BatchComputeEnvironmentEksConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BatchComputeEnvironmentEksConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -302,7 +302,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

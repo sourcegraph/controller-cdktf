@@ -98,7 +98,7 @@ func (e *jsiiProxy_EvidentlyFeatureEvaluationRulesOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_EvidentlyFeatureEvaluationRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EvidentlyFeatureEvaluationRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewEvidentlyFeatureEvaluationRulesOutputReferenceParameters(terrafo
 
 	return nil
 }
-

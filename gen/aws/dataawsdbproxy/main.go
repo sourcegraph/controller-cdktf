@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxy",
-		reflect.TypeOf((*DataAwsDbProxy)(nil)).Elem(),
+		reflect.TypeFor[DataAwsDbProxy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -61,7 +61,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcSecurityGroupIds", GoGetter: "VpcSecurityGroupIds"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcSubnetIds", GoGetter: "VpcSubnetIds"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsDbProxy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -69,11 +69,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxyAuth",
-		reflect.TypeOf((*DataAwsDbProxyAuth)(nil)).Elem(),
+		reflect.TypeFor[DataAwsDbProxyAuth](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxyAuthList",
-		reflect.TypeOf((*DataAwsDbProxyAuthList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsDbProxyAuthList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -86,7 +86,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsDbProxyAuthList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -94,7 +94,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxyAuthOutputReference",
-		reflect.TypeOf((*DataAwsDbProxyAuthOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsDbProxyAuthOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authScheme", GoGetter: "AuthScheme"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -123,7 +123,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsDbProxyAuthOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -131,6 +131,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxyConfig",
-		reflect.TypeOf((*DataAwsDbProxyConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsDbProxyConfig](),
 	)
 }

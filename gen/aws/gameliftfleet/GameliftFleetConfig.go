@@ -6,9 +6,9 @@ import (
 
 type GameliftFleetConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GameliftFleetConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/gamelift_fleet#ec2_instance_type GameliftFleet#ec2_instance_type}.
 	Ec2InstanceType *string `field:"required" json:"ec2InstanceType" yaml:"ec2InstanceType"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/gamelift_fleet#name GameliftFleet#name}.
@@ -34,7 +34,7 @@ type GameliftFleetConfig struct {
 	// ec2_inbound_permission block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/gamelift_fleet#ec2_inbound_permission GameliftFleet#ec2_inbound_permission}
-	Ec2InboundPermission interface{} `field:"optional" json:"ec2InboundPermission" yaml:"ec2InboundPermission"`
+	Ec2InboundPermission any `field:"optional" json:"ec2InboundPermission" yaml:"ec2InboundPermission"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/gamelift_fleet#fleet_type GameliftFleet#fleet_type}.
 	FleetType *string `field:"optional" json:"fleetType" yaml:"fleetType"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/gamelift_fleet#id GameliftFleet#id}.
@@ -67,4 +67,3 @@ type GameliftFleetConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/gamelift_fleet#timeouts GameliftFleet#timeouts}
 	Timeouts *GameliftFleetTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

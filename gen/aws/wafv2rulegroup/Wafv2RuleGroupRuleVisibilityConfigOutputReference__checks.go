@@ -98,7 +98,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) validateSetCloudwatchMetricsEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) validateSetCloudwatchMetricsEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -199,7 +199,7 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) validateSetSampledRequestsEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) validateSetSampledRequestsEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -246,4 +246,3 @@ func validateNewWafv2RuleGroupRuleVisibilityConfigOutputReferenceParameters(terr
 
 	return nil
 }
-

@@ -17,8 +17,8 @@ type S3BucketLifecycleRuleNoncurrentVersionTransitionList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type S3BucketLifecycleRuleNoncurrentVersionTransitionList interface {
 	Get(index *float64) S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionList) Fqn() *
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionList) WrapsSe
 	return returns
 }
 
-
 func NewS3BucketLifecycleRuleNoncurrentVersionTransitionList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3BucketLifecycleRuleNoncurrentVersionTransitionList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewS3BucketLifecycleRuleNoncurrentVersionTransitionList(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleNoncurrentVersionTransitionList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewS3BucketLifecycleRuleNoncurrentVersionTransitionList_Override(s S3Bucket
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleNoncurrentVersionTransitionList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionList)SetInter
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionList)SetTerra
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionList)SetTerra
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (s *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionList) AllWith
 	_jsii_.Invoke(
 		s,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (s *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionList) Get(ind
 	_jsii_.Invoke(
 		s,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionList) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (s *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionList) ToStrin
 
 	return returns
 }
-

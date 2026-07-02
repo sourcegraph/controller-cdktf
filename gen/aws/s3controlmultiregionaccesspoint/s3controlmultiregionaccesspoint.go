@@ -20,15 +20,15 @@ type S3ControlMultiRegionAccessPoint interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -58,27 +58,27 @@ type S3ControlMultiRegionAccessPoint interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() S3ControlMultiRegionAccessPointTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -96,7 +96,7 @@ type S3ControlMultiRegionAccessPoint interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -108,7 +108,7 @@ type S3ControlMultiRegionAccessPoint interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -123,17 +123,17 @@ type S3ControlMultiRegionAccessPoint interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for S3ControlMultiRegionAccessPoint
@@ -191,8 +191,8 @@ func (j *jsiiProxy_S3ControlMultiRegionAccessPoint) CdktfStack() cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_S3ControlMultiRegionAccessPoint) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3ControlMultiRegionAccessPoint) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -201,8 +201,8 @@ func (j *jsiiProxy_S3ControlMultiRegionAccessPoint) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_S3ControlMultiRegionAccessPoint) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_S3ControlMultiRegionAccessPoint) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -211,8 +211,8 @@ func (j *jsiiProxy_S3ControlMultiRegionAccessPoint) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_S3ControlMultiRegionAccessPoint) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3ControlMultiRegionAccessPoint) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -341,8 +341,8 @@ func (j *jsiiProxy_S3ControlMultiRegionAccessPoint) Provider() cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_S3ControlMultiRegionAccessPoint) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_S3ControlMultiRegionAccessPoint) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -351,8 +351,8 @@ func (j *jsiiProxy_S3ControlMultiRegionAccessPoint) Provisioners() *[]interface{
 	return returns
 }
 
-func (j *jsiiProxy_S3ControlMultiRegionAccessPoint) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3ControlMultiRegionAccessPoint) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -381,8 +381,8 @@ func (j *jsiiProxy_S3ControlMultiRegionAccessPoint) TerraformGeneratorMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_S3ControlMultiRegionAccessPoint) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_S3ControlMultiRegionAccessPoint) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -411,8 +411,8 @@ func (j *jsiiProxy_S3ControlMultiRegionAccessPoint) Timeouts() S3ControlMultiReg
 	return returns
 }
 
-func (j *jsiiProxy_S3ControlMultiRegionAccessPoint) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3ControlMultiRegionAccessPoint) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -420,7 +420,6 @@ func (j *jsiiProxy_S3ControlMultiRegionAccessPoint) TimeoutsInput() interface{} 
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3control_multi_region_access_point aws_s3control_multi_region_access_point} Resource.
 func NewS3ControlMultiRegionAccessPoint(scope constructs.Construct, id *string, config *S3ControlMultiRegionAccessPointConfig) S3ControlMultiRegionAccessPoint {
@@ -433,7 +432,7 @@ func NewS3ControlMultiRegionAccessPoint(scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPoint",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -446,12 +445,12 @@ func NewS3ControlMultiRegionAccessPoint_Override(s S3ControlMultiRegionAccessPoi
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPoint",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_S3ControlMultiRegionAccessPoint)SetAccountId(val *string) {
+func (j *jsiiProxy_S3ControlMultiRegionAccessPoint) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func (j *jsiiProxy_S3ControlMultiRegionAccessPoint)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ControlMultiRegionAccessPoint)SetConnection(val interface{}) {
+func (j *jsiiProxy_S3ControlMultiRegionAccessPoint) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -473,7 +472,7 @@ func (j *jsiiProxy_S3ControlMultiRegionAccessPoint)SetConnection(val interface{}
 	)
 }
 
-func (j *jsiiProxy_S3ControlMultiRegionAccessPoint)SetCount(val interface{}) {
+func (j *jsiiProxy_S3ControlMultiRegionAccessPoint) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -484,7 +483,7 @@ func (j *jsiiProxy_S3ControlMultiRegionAccessPoint)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_S3ControlMultiRegionAccessPoint)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_S3ControlMultiRegionAccessPoint) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -492,7 +491,7 @@ func (j *jsiiProxy_S3ControlMultiRegionAccessPoint)SetDependsOn(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_S3ControlMultiRegionAccessPoint)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_S3ControlMultiRegionAccessPoint) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -500,7 +499,7 @@ func (j *jsiiProxy_S3ControlMultiRegionAccessPoint)SetForEach(val cdktf.ITerrafo
 	)
 }
 
-func (j *jsiiProxy_S3ControlMultiRegionAccessPoint)SetId(val *string) {
+func (j *jsiiProxy_S3ControlMultiRegionAccessPoint) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_S3ControlMultiRegionAccessPoint)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ControlMultiRegionAccessPoint)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_S3ControlMultiRegionAccessPoint) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_S3ControlMultiRegionAccessPoint)SetLifecycle(val *cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_S3ControlMultiRegionAccessPoint)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_S3ControlMultiRegionAccessPoint) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -530,7 +529,7 @@ func (j *jsiiProxy_S3ControlMultiRegionAccessPoint)SetProvider(val cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_S3ControlMultiRegionAccessPoint)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_S3ControlMultiRegionAccessPoint) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -553,7 +552,7 @@ func S3ControlMultiRegionAccessPoint_GenerateConfigForImport(scope constructs.Co
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPoint",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -577,7 +576,7 @@ func S3ControlMultiRegionAccessPoint_GenerateConfigForImport(scope constructs.Co
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func S3ControlMultiRegionAccessPoint_IsConstruct(x interface{}) *bool {
+func S3ControlMultiRegionAccessPoint_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateS3ControlMultiRegionAccessPoint_IsConstructParameters(x); err != nil {
@@ -588,7 +587,7 @@ func S3ControlMultiRegionAccessPoint_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPoint",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -596,7 +595,7 @@ func S3ControlMultiRegionAccessPoint_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func S3ControlMultiRegionAccessPoint_IsTerraformElement(x interface{}) *bool {
+func S3ControlMultiRegionAccessPoint_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateS3ControlMultiRegionAccessPoint_IsTerraformElementParameters(x); err != nil {
@@ -607,7 +606,7 @@ func S3ControlMultiRegionAccessPoint_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPoint",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -615,7 +614,7 @@ func S3ControlMultiRegionAccessPoint_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func S3ControlMultiRegionAccessPoint_IsTerraformResource(x interface{}) *bool {
+func S3ControlMultiRegionAccessPoint_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateS3ControlMultiRegionAccessPoint_IsTerraformResourceParameters(x); err != nil {
@@ -626,7 +625,7 @@ func S3ControlMultiRegionAccessPoint_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPoint",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -651,31 +650,31 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) AddMoveTarget(moveTarget *st
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -691,7 +690,7 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) GetBooleanAttribute(terrafor
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -707,7 +706,7 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) GetBooleanMapAttribute(terra
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) GetListAttribute(terraformAt
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -739,7 +738,7 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) GetNumberAttribute(terraform
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -755,7 +754,7 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) GetNumberListAttribute(terra
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -771,7 +770,7 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) GetNumberMapAttribute(terraf
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -787,7 +786,7 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) GetStringAttribute(terraform
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -803,15 +802,15 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) GetStringMapAttribute(terraf
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -830,7 +829,7 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) ImportFrom(id *string, provi
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -843,7 +842,7 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) InterpolationForAttribute(te
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -857,18 +856,18 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -879,7 +878,7 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -890,7 +889,7 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) OverrideLogicalId(newLogical
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -901,7 +900,7 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) PutDetails(value *S3ControlM
 	_jsii_.InvokeVoid(
 		s,
 		"putDetails",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -912,7 +911,7 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) PutTimeouts(value *S3Control
 	_jsii_.InvokeVoid(
 		s,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -948,8 +947,8 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) ResetTimeouts() {
 	)
 }
 
-func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -961,8 +960,8 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) SynthesizeAttributes() *map[
 	return returns
 }
 
-func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -974,8 +973,8 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) SynthesizeHclAttributes() *m
 	return returns
 }
 
-func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -987,8 +986,8 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) ToHclTerraform() interface{}
 	return returns
 }
 
-func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1013,8 +1012,8 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1025,4 +1024,3 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -34,7 +34,7 @@ func (e *jsiiProxy_EcrRegistryScanningConfigurationRuleRepositoryFilterList) val
 	return nil
 }
 
-func (j *jsiiProxy_EcrRegistryScanningConfigurationRuleRepositoryFilterList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EcrRegistryScanningConfigurationRuleRepositoryFilterList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEcrRegistryScanningConfigurationRuleRepositoryFilterListParamete
 
 	return nil
 }
-

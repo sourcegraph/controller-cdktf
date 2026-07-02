@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudformationStackSetInstanceDeploymentTargetsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_CloudformationStackSetInstanceDeploymentTargetsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudformationStackSetInstanceDeploymentTargetsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCloudformationStackSetInstanceDeploymentTargetsOutputReferencePa
 
 	return nil
 }
-

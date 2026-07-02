@@ -90,7 +90,7 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsOut
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsOutputReference) validatePutCustomImageParameters(value interface{}) error {
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsOutputReference) validatePutCustomImageParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsOut
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -248,4 +248,3 @@ func validateNewSagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsOutput
 
 	return nil
 }
-

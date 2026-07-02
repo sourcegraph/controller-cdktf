@@ -98,7 +98,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersKeywordOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersKeywordOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityhubInsightFiltersKeywordOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersKeywordOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersKeywordOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityhubInsightFiltersKeywordOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewSecurityhubInsightFiltersKeywordOutputReferenceParameters(terraf
 
 	return nil
 }
-

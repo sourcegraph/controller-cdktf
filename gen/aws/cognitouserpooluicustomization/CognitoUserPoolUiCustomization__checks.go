@@ -19,7 +19,7 @@ func (c *jsiiProxy_CognitoUserPoolUiCustomization) validateAddMoveTargetParamete
 	return nil
 }
 
-func (c *jsiiProxy_CognitoUserPoolUiCustomization) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_CognitoUserPoolUiCustomization) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_CognitoUserPoolUiCustomization) validateMoveFromIdParameters(
 	return nil
 }
 
-func (c *jsiiProxy_CognitoUserPoolUiCustomization) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_CognitoUserPoolUiCustomization) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateCognitoUserPoolUiCustomization_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateCognitoUserPoolUiCustomization_IsConstructParameters(x interface{}) error {
+func validateCognitoUserPoolUiCustomization_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateCognitoUserPoolUiCustomization_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateCognitoUserPoolUiCustomization_IsTerraformElementParameters(x interface{}) error {
+func validateCognitoUserPoolUiCustomization_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateCognitoUserPoolUiCustomization_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func validateCognitoUserPoolUiCustomization_IsTerraformResourceParameters(x interface{}) error {
+func validateCognitoUserPoolUiCustomization_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_CognitoUserPoolUiCustomization) validateSetClientIdParameters
 	return nil
 }
 
-func (j *jsiiProxy_CognitoUserPoolUiCustomization) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_CognitoUserPoolUiCustomization) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_CognitoUserPoolUiCustomization) validateSetConnectionParamete
 	return nil
 }
 
-func (j *jsiiProxy_CognitoUserPoolUiCustomization) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_CognitoUserPoolUiCustomization) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -374,7 +374,7 @@ func (j *jsiiProxy_CognitoUserPoolUiCustomization) validateSetLifecycleParameter
 	return nil
 }
 
-func (j *jsiiProxy_CognitoUserPoolUiCustomization) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_CognitoUserPoolUiCustomization) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -446,4 +446,3 @@ func validateNewCognitoUserPoolUiCustomizationParameters(scope constructs.Constr
 
 	return nil
 }
-

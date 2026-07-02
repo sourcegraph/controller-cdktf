@@ -19,18 +19,18 @@ type Route53RecoverycontrolconfigSafetyRule interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	ControlPanelArn() *string
 	SetControlPanelArn(val *string)
 	ControlPanelArnInput() *string
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -63,11 +63,11 @@ type Route53RecoverycontrolconfigSafetyRule interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RuleConfig() Route53RecoverycontrolconfigSafetyRuleRuleConfigOutputReference
 	RuleConfigInput() *Route53RecoverycontrolconfigSafetyRuleRuleConfig
 	Status() *string
@@ -77,7 +77,7 @@ type Route53RecoverycontrolconfigSafetyRule interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	WaitPeriodMs() *float64
@@ -87,9 +87,9 @@ type Route53RecoverycontrolconfigSafetyRule interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -107,7 +107,7 @@ type Route53RecoverycontrolconfigSafetyRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -119,7 +119,7 @@ type Route53RecoverycontrolconfigSafetyRule interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -134,17 +134,17 @@ type Route53RecoverycontrolconfigSafetyRule interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTargetControls()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Route53RecoverycontrolconfigSafetyRule
@@ -192,8 +192,8 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) CdktfStack() cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) Connection() interfac
 	return returns
 }
 
-func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -232,8 +232,8 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) ControlPanelArnInput(
 	return returns
 }
 
-func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -372,8 +372,8 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) Provider() cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -382,8 +382,8 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) Provisioners() *[]int
 	return returns
 }
 
-func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -452,8 +452,8 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) TerraformGeneratorMet
 	return returns
 }
 
-func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -492,7 +492,6 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) WaitPeriodMsInput() *
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53recoverycontrolconfig_safety_rule aws_route53recoverycontrolconfig_safety_rule} Resource.
 func NewRoute53RecoverycontrolconfigSafetyRule(scope constructs.Construct, id *string, config *Route53RecoverycontrolconfigSafetyRuleConfig) Route53RecoverycontrolconfigSafetyRule {
 	_init_.Initialize()
@@ -504,7 +503,7 @@ func NewRoute53RecoverycontrolconfigSafetyRule(scope constructs.Construct, id *s
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.route53RecoverycontrolconfigSafetyRule.Route53RecoverycontrolconfigSafetyRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -517,12 +516,12 @@ func NewRoute53RecoverycontrolconfigSafetyRule_Override(r Route53Recoverycontrol
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.route53RecoverycontrolconfigSafetyRule.Route53RecoverycontrolconfigSafetyRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule)SetAssertedControls(val *[]*string) {
+func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) SetAssertedControls(val *[]*string) {
 	if err := j.validateSetAssertedControlsParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule)SetAssertedControls(va
 	)
 }
 
-func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule)SetConnection(val interface{}) {
+func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -544,7 +543,7 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule)SetConnection(val inte
 	)
 }
 
-func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule)SetControlPanelArn(val *string) {
+func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) SetControlPanelArn(val *string) {
 	if err := j.validateSetControlPanelArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -555,7 +554,7 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule)SetControlPanelArn(val
 	)
 }
 
-func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule)SetCount(val interface{}) {
+func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -566,7 +565,7 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule)SetCount(val interface
 	)
 }
 
-func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -574,7 +573,7 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule)SetDependsOn(val *[]*s
 	)
 }
 
-func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -582,7 +581,7 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule)SetForEach(val cdktf.I
 	)
 }
 
-func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule)SetGatingControls(val *[]*string) {
+func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) SetGatingControls(val *[]*string) {
 	if err := j.validateSetGatingControlsParameters(val); err != nil {
 		panic(err)
 	}
@@ -593,7 +592,7 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule)SetGatingControls(val 
 	)
 }
 
-func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule)SetId(val *string) {
+func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -604,7 +603,7 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -615,7 +614,7 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule)SetLifecycle(val *cdkt
 	)
 }
 
-func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule)SetName(val *string) {
+func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -626,7 +625,7 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -634,7 +633,7 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule)SetProvider(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -645,7 +644,7 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule)SetProvisioners(val *[
 	)
 }
 
-func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule)SetTargetControls(val *[]*string) {
+func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) SetTargetControls(val *[]*string) {
 	if err := j.validateSetTargetControlsParameters(val); err != nil {
 		panic(err)
 	}
@@ -656,7 +655,7 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule)SetTargetControls(val 
 	)
 }
 
-func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule)SetWaitPeriodMs(val *float64) {
+func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) SetWaitPeriodMs(val *float64) {
 	if err := j.validateSetWaitPeriodMsParameters(val); err != nil {
 		panic(err)
 	}
@@ -679,7 +678,7 @@ func Route53RecoverycontrolconfigSafetyRule_GenerateConfigForImport(scope constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.route53RecoverycontrolconfigSafetyRule.Route53RecoverycontrolconfigSafetyRule",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -703,7 +702,7 @@ func Route53RecoverycontrolconfigSafetyRule_GenerateConfigForImport(scope constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Route53RecoverycontrolconfigSafetyRule_IsConstruct(x interface{}) *bool {
+func Route53RecoverycontrolconfigSafetyRule_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRoute53RecoverycontrolconfigSafetyRule_IsConstructParameters(x); err != nil {
@@ -714,7 +713,7 @@ func Route53RecoverycontrolconfigSafetyRule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.route53RecoverycontrolconfigSafetyRule.Route53RecoverycontrolconfigSafetyRule",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -722,7 +721,7 @@ func Route53RecoverycontrolconfigSafetyRule_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Route53RecoverycontrolconfigSafetyRule_IsTerraformElement(x interface{}) *bool {
+func Route53RecoverycontrolconfigSafetyRule_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRoute53RecoverycontrolconfigSafetyRule_IsTerraformElementParameters(x); err != nil {
@@ -733,7 +732,7 @@ func Route53RecoverycontrolconfigSafetyRule_IsTerraformElement(x interface{}) *b
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.route53RecoverycontrolconfigSafetyRule.Route53RecoverycontrolconfigSafetyRule",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -741,7 +740,7 @@ func Route53RecoverycontrolconfigSafetyRule_IsTerraformElement(x interface{}) *b
 }
 
 // Experimental.
-func Route53RecoverycontrolconfigSafetyRule_IsTerraformResource(x interface{}) *bool {
+func Route53RecoverycontrolconfigSafetyRule_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRoute53RecoverycontrolconfigSafetyRule_IsTerraformResourceParameters(x); err != nil {
@@ -752,7 +751,7 @@ func Route53RecoverycontrolconfigSafetyRule_IsTerraformResource(x interface{}) *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.route53RecoverycontrolconfigSafetyRule.Route53RecoverycontrolconfigSafetyRule",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -777,31 +776,31 @@ func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) AddMoveTarget(moveTar
 	_jsii_.InvokeVoid(
 		r,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) AddOverride(path *string, value any) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,7 +848,7 @@ func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) GetListAttribute(terr
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -865,7 +864,7 @@ func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) GetNumberAttribute(te
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -881,7 +880,7 @@ func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) GetNumberListAttribut
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -897,7 +896,7 @@ func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) GetNumberMapAttribute
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -913,7 +912,7 @@ func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) GetStringAttribute(te
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -929,15 +928,15 @@ func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) GetStringMapAttribute
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) HasResourceMove() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -956,7 +955,7 @@ func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) ImportFrom(id *string
 	_jsii_.InvokeVoid(
 		r,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -969,7 +968,7 @@ func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) InterpolationForAttri
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -983,18 +982,18 @@ func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) MoveFromId(id *string
 	_jsii_.InvokeVoid(
 		r,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) MoveTo(moveTarget *string, index interface{}) {
+func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) MoveTo(moveTarget *string, index any) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1005,7 +1004,7 @@ func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) MoveToId(id *string) 
 	_jsii_.InvokeVoid(
 		r,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1016,7 +1015,7 @@ func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) OverrideLogicalId(new
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1027,7 +1026,7 @@ func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) PutRuleConfig(value *
 	_jsii_.InvokeVoid(
 		r,
 		"putRuleConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1071,8 +1070,8 @@ func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) ResetTargetControls()
 	)
 }
 
-func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1084,8 +1083,8 @@ func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) SynthesizeAttributes(
 	return returns
 }
 
-func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1097,8 +1096,8 @@ func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) SynthesizeHclAttribut
 	return returns
 }
 
-func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) ToHclTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1110,8 +1109,8 @@ func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) ToHclTerraform() inte
 	return returns
 }
 
-func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) ToMetadata() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1136,8 +1135,8 @@ func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) ToTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1148,4 +1147,3 @@ func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) ToTerraform() interfa
 
 	return returns
 }
-

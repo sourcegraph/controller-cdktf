@@ -12,9 +12,9 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/vpc_endpoint_service aws_vpc_endpoint_service}.
 type VpcEndpointService interface {
 	cdktf.TerraformResource
-	AcceptanceRequired() interface{}
-	SetAcceptanceRequired(val interface{})
-	AcceptanceRequiredInput() interface{}
+	AcceptanceRequired() any
+	SetAcceptanceRequired(val any)
+	AcceptanceRequiredInput() any
 	AllowedPrincipals() *[]*string
 	SetAllowedPrincipals(val *[]*string)
 	AllowedPrincipalsInput() *[]*string
@@ -24,15 +24,15 @@ type VpcEndpointService interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -70,11 +70,11 @@ type VpcEndpointService interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ServiceName() *string
 	ServiceType() *string
 	State() *string
@@ -90,18 +90,18 @@ type VpcEndpointService interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() VpcEndpointServiceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -119,7 +119,7 @@ type VpcEndpointService interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -131,7 +131,7 @@ type VpcEndpointService interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -151,17 +151,17 @@ type VpcEndpointService interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for VpcEndpointService
@@ -169,8 +169,8 @@ type jsiiProxy_VpcEndpointService struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_VpcEndpointService) AcceptanceRequired() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcEndpointService) AcceptanceRequired() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"acceptanceRequired",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_VpcEndpointService) AcceptanceRequired() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VpcEndpointService) AcceptanceRequiredInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcEndpointService) AcceptanceRequiredInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"acceptanceRequiredInput",
@@ -249,8 +249,8 @@ func (j *jsiiProxy_VpcEndpointService) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_VpcEndpointService) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcEndpointService) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -259,8 +259,8 @@ func (j *jsiiProxy_VpcEndpointService) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VpcEndpointService) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_VpcEndpointService) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -269,8 +269,8 @@ func (j *jsiiProxy_VpcEndpointService) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_VpcEndpointService) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcEndpointService) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -449,8 +449,8 @@ func (j *jsiiProxy_VpcEndpointService) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_VpcEndpointService) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_VpcEndpointService) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -459,8 +459,8 @@ func (j *jsiiProxy_VpcEndpointService) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VpcEndpointService) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcEndpointService) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -569,8 +569,8 @@ func (j *jsiiProxy_VpcEndpointService) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_VpcEndpointService) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_VpcEndpointService) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -599,8 +599,8 @@ func (j *jsiiProxy_VpcEndpointService) Timeouts() VpcEndpointServiceTimeoutsOutp
 	return returns
 }
 
-func (j *jsiiProxy_VpcEndpointService) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcEndpointService) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -608,7 +608,6 @@ func (j *jsiiProxy_VpcEndpointService) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/vpc_endpoint_service aws_vpc_endpoint_service} Resource.
 func NewVpcEndpointService(scope constructs.Construct, id *string, config *VpcEndpointServiceConfig) VpcEndpointService {
@@ -621,7 +620,7 @@ func NewVpcEndpointService(scope constructs.Construct, id *string, config *VpcEn
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.vpcEndpointService.VpcEndpointService",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -634,12 +633,12 @@ func NewVpcEndpointService_Override(v VpcEndpointService, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.vpcEndpointService.VpcEndpointService",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		v,
 	)
 }
 
-func (j *jsiiProxy_VpcEndpointService)SetAcceptanceRequired(val interface{}) {
+func (j *jsiiProxy_VpcEndpointService) SetAcceptanceRequired(val any) {
 	if err := j.validateSetAcceptanceRequiredParameters(val); err != nil {
 		panic(err)
 	}
@@ -650,7 +649,7 @@ func (j *jsiiProxy_VpcEndpointService)SetAcceptanceRequired(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpcEndpointService)SetAllowedPrincipals(val *[]*string) {
+func (j *jsiiProxy_VpcEndpointService) SetAllowedPrincipals(val *[]*string) {
 	if err := j.validateSetAllowedPrincipalsParameters(val); err != nil {
 		panic(err)
 	}
@@ -661,7 +660,7 @@ func (j *jsiiProxy_VpcEndpointService)SetAllowedPrincipals(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_VpcEndpointService)SetConnection(val interface{}) {
+func (j *jsiiProxy_VpcEndpointService) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -672,7 +671,7 @@ func (j *jsiiProxy_VpcEndpointService)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpcEndpointService)SetCount(val interface{}) {
+func (j *jsiiProxy_VpcEndpointService) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -683,7 +682,7 @@ func (j *jsiiProxy_VpcEndpointService)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpcEndpointService)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_VpcEndpointService) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -691,7 +690,7 @@ func (j *jsiiProxy_VpcEndpointService)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_VpcEndpointService)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_VpcEndpointService) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -699,7 +698,7 @@ func (j *jsiiProxy_VpcEndpointService)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_VpcEndpointService)SetGatewayLoadBalancerArns(val *[]*string) {
+func (j *jsiiProxy_VpcEndpointService) SetGatewayLoadBalancerArns(val *[]*string) {
 	if err := j.validateSetGatewayLoadBalancerArnsParameters(val); err != nil {
 		panic(err)
 	}
@@ -710,7 +709,7 @@ func (j *jsiiProxy_VpcEndpointService)SetGatewayLoadBalancerArns(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_VpcEndpointService)SetId(val *string) {
+func (j *jsiiProxy_VpcEndpointService) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -721,7 +720,7 @@ func (j *jsiiProxy_VpcEndpointService)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcEndpointService)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_VpcEndpointService) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -732,7 +731,7 @@ func (j *jsiiProxy_VpcEndpointService)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_VpcEndpointService)SetNetworkLoadBalancerArns(val *[]*string) {
+func (j *jsiiProxy_VpcEndpointService) SetNetworkLoadBalancerArns(val *[]*string) {
 	if err := j.validateSetNetworkLoadBalancerArnsParameters(val); err != nil {
 		panic(err)
 	}
@@ -743,7 +742,7 @@ func (j *jsiiProxy_VpcEndpointService)SetNetworkLoadBalancerArns(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_VpcEndpointService)SetPrivateDnsName(val *string) {
+func (j *jsiiProxy_VpcEndpointService) SetPrivateDnsName(val *string) {
 	if err := j.validateSetPrivateDnsNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -754,7 +753,7 @@ func (j *jsiiProxy_VpcEndpointService)SetPrivateDnsName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcEndpointService)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_VpcEndpointService) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -762,7 +761,7 @@ func (j *jsiiProxy_VpcEndpointService)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_VpcEndpointService)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_VpcEndpointService) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -773,7 +772,7 @@ func (j *jsiiProxy_VpcEndpointService)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpcEndpointService)SetSupportedIpAddressTypes(val *[]*string) {
+func (j *jsiiProxy_VpcEndpointService) SetSupportedIpAddressTypes(val *[]*string) {
 	if err := j.validateSetSupportedIpAddressTypesParameters(val); err != nil {
 		panic(err)
 	}
@@ -784,7 +783,7 @@ func (j *jsiiProxy_VpcEndpointService)SetSupportedIpAddressTypes(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_VpcEndpointService)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_VpcEndpointService) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -795,7 +794,7 @@ func (j *jsiiProxy_VpcEndpointService)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_VpcEndpointService)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_VpcEndpointService) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -818,7 +817,7 @@ func VpcEndpointService_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpcEndpointService.VpcEndpointService",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -842,7 +841,7 @@ func VpcEndpointService_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func VpcEndpointService_IsConstruct(x interface{}) *bool {
+func VpcEndpointService_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVpcEndpointService_IsConstructParameters(x); err != nil {
@@ -853,7 +852,7 @@ func VpcEndpointService_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpcEndpointService.VpcEndpointService",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -861,7 +860,7 @@ func VpcEndpointService_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func VpcEndpointService_IsTerraformElement(x interface{}) *bool {
+func VpcEndpointService_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVpcEndpointService_IsTerraformElementParameters(x); err != nil {
@@ -872,7 +871,7 @@ func VpcEndpointService_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpcEndpointService.VpcEndpointService",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -880,7 +879,7 @@ func VpcEndpointService_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func VpcEndpointService_IsTerraformResource(x interface{}) *bool {
+func VpcEndpointService_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVpcEndpointService_IsTerraformResourceParameters(x); err != nil {
@@ -891,7 +890,7 @@ func VpcEndpointService_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpcEndpointService.VpcEndpointService",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -916,31 +915,31 @@ func (v *jsiiProxy_VpcEndpointService) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (v *jsiiProxy_VpcEndpointService) AddOverride(path *string, value interface{}) {
+func (v *jsiiProxy_VpcEndpointService) AddOverride(path *string, value any) {
 	if err := v.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (v *jsiiProxy_VpcEndpointService) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (v *jsiiProxy_VpcEndpointService) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -956,7 +955,7 @@ func (v *jsiiProxy_VpcEndpointService) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		v,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -972,7 +971,7 @@ func (v *jsiiProxy_VpcEndpointService) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		v,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -988,7 +987,7 @@ func (v *jsiiProxy_VpcEndpointService) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		v,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1004,7 +1003,7 @@ func (v *jsiiProxy_VpcEndpointService) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		v,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1020,7 +1019,7 @@ func (v *jsiiProxy_VpcEndpointService) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		v,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1036,7 +1035,7 @@ func (v *jsiiProxy_VpcEndpointService) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		v,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1052,7 +1051,7 @@ func (v *jsiiProxy_VpcEndpointService) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		v,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1068,15 +1067,15 @@ func (v *jsiiProxy_VpcEndpointService) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		v,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (v *jsiiProxy_VpcEndpointService) HasResourceMove() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VpcEndpointService) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1095,7 +1094,7 @@ func (v *jsiiProxy_VpcEndpointService) ImportFrom(id *string, provider cdktf.Ter
 	_jsii_.InvokeVoid(
 		v,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1108,7 +1107,7 @@ func (v *jsiiProxy_VpcEndpointService) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1122,18 +1121,18 @@ func (v *jsiiProxy_VpcEndpointService) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (v *jsiiProxy_VpcEndpointService) MoveTo(moveTarget *string, index interface{}) {
+func (v *jsiiProxy_VpcEndpointService) MoveTo(moveTarget *string, index any) {
 	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1144,7 +1143,7 @@ func (v *jsiiProxy_VpcEndpointService) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1155,7 +1154,7 @@ func (v *jsiiProxy_VpcEndpointService) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1166,7 +1165,7 @@ func (v *jsiiProxy_VpcEndpointService) PutTimeouts(value *VpcEndpointServiceTime
 	_jsii_.InvokeVoid(
 		v,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1250,8 +1249,8 @@ func (v *jsiiProxy_VpcEndpointService) ResetTimeouts() {
 	)
 }
 
-func (v *jsiiProxy_VpcEndpointService) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_VpcEndpointService) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -1263,8 +1262,8 @@ func (v *jsiiProxy_VpcEndpointService) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (v *jsiiProxy_VpcEndpointService) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_VpcEndpointService) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -1276,8 +1275,8 @@ func (v *jsiiProxy_VpcEndpointService) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (v *jsiiProxy_VpcEndpointService) ToHclTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VpcEndpointService) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1289,8 +1288,8 @@ func (v *jsiiProxy_VpcEndpointService) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (v *jsiiProxy_VpcEndpointService) ToMetadata() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VpcEndpointService) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1315,8 +1314,8 @@ func (v *jsiiProxy_VpcEndpointService) ToString() *string {
 	return returns
 }
 
-func (v *jsiiProxy_VpcEndpointService) ToTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VpcEndpointService) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1327,4 +1326,3 @@ func (v *jsiiProxy_VpcEndpointService) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -36,7 +36,7 @@ type ImagebuilderImageOutputResourcesAmisList interface {
 	Get(index *float64) ImagebuilderImageOutputResourcesAmisOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_ImagebuilderImageOutputResourcesAmisList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewImagebuilderImageOutputResourcesAmisList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ImagebuilderImageOutputResourcesAmisList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewImagebuilderImageOutputResourcesAmisList(terraformResource cdktf.IInterp
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.imagebuilderImage.ImagebuilderImageOutputResourcesAmisList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewImagebuilderImageOutputResourcesAmisList_Override(i ImagebuilderImageOut
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.imagebuilderImage.ImagebuilderImageOutputResourcesAmisList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderImageOutputResourcesAmisList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ImagebuilderImageOutputResourcesAmisList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_ImagebuilderImageOutputResourcesAmisList)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderImageOutputResourcesAmisList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ImagebuilderImageOutputResourcesAmisList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_ImagebuilderImageOutputResourcesAmisList)SetTerraformResource
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderImageOutputResourcesAmisList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ImagebuilderImageOutputResourcesAmisList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (i *jsiiProxy_ImagebuilderImageOutputResourcesAmisList) AllWithMapKey(mapKe
 	_jsii_.Invoke(
 		i,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (i *jsiiProxy_ImagebuilderImageOutputResourcesAmisList) Get(index *float64)
 	_jsii_.Invoke(
 		i,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_ImagebuilderImageOutputResourcesAmisList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_ImagebuilderImageOutputResourcesAmisList) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (i *jsiiProxy_ImagebuilderImageOutputResourcesAmisList) ToString() *string 
 
 	return returns
 }
-

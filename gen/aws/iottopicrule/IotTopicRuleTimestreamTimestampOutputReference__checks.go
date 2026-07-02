@@ -98,7 +98,7 @@ func (i *jsiiProxy_IotTopicRuleTimestreamTimestampOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleTimestreamTimestampOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRuleTimestreamTimestampOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewIotTopicRuleTimestreamTimestampOutputReferenceParameters(terrafo
 
 	return nil
 }
-

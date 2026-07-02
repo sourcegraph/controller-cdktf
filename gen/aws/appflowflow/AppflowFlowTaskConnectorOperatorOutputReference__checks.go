@@ -106,7 +106,7 @@ func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) validateSetA
 	return nil
 }
 
-func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -211,7 +211,7 @@ func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) validateSetI
 	return nil
 }
 
-func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -350,4 +350,3 @@ func validateNewAppflowFlowTaskConnectorOperatorOutputReferenceParameters(terraf
 
 	return nil
 }
-

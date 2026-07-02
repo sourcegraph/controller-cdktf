@@ -15,9 +15,9 @@ type LambdaAliasRoutingConfigOutputReference interface {
 	AdditionalVersionWeightsInput() *map[string]*float64
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,7 +43,7 @@ type LambdaAliasRoutingConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type LambdaAliasRoutingConfigOutputReference interface {
 	ResetAdditionalVersionWeights()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -100,8 +100,8 @@ func (j *jsiiProxy_LambdaAliasRoutingConfigOutputReference) AdditionalVersionWei
 	return returns
 }
 
-func (j *jsiiProxy_LambdaAliasRoutingConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LambdaAliasRoutingConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_LambdaAliasRoutingConfigOutputReference) TerraformResource() 
 	return returns
 }
 
-
 func NewLambdaAliasRoutingConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LambdaAliasRoutingConfigOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewLambdaAliasRoutingConfigOutputReference(terraformResource cdktf.IInterpo
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lambdaAlias.LambdaAliasRoutingConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewLambdaAliasRoutingConfigOutputReference_Override(l LambdaAliasRoutingCon
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lambdaAlias.LambdaAliasRoutingConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LambdaAliasRoutingConfigOutputReference)SetAdditionalVersionWeights(val *map[string]*float64) {
+func (j *jsiiProxy_LambdaAliasRoutingConfigOutputReference) SetAdditionalVersionWeights(val *map[string]*float64) {
 	if err := j.validateSetAdditionalVersionWeightsParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_LambdaAliasRoutingConfigOutputReference)SetAdditionalVersionW
 	)
 }
 
-func (j *jsiiProxy_LambdaAliasRoutingConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LambdaAliasRoutingConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_LambdaAliasRoutingConfigOutputReference)SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_LambdaAliasRoutingConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LambdaAliasRoutingConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_LambdaAliasRoutingConfigOutputReference)SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_LambdaAliasRoutingConfigOutputReference)SetInternalValue(val *LambdaAliasRoutingConfig) {
+func (j *jsiiProxy_LambdaAliasRoutingConfigOutputReference) SetInternalValue(val *LambdaAliasRoutingConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_LambdaAliasRoutingConfigOutputReference)SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_LambdaAliasRoutingConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LambdaAliasRoutingConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_LambdaAliasRoutingConfigOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_LambdaAliasRoutingConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LambdaAliasRoutingConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,16 +276,16 @@ func (l *jsiiProxy_LambdaAliasRoutingConfigOutputReference) ComputeFqn() *string
 	return returns
 }
 
-func (l *jsiiProxy_LambdaAliasRoutingConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LambdaAliasRoutingConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -302,7 +301,7 @@ func (l *jsiiProxy_LambdaAliasRoutingConfigOutputReference) GetBooleanAttribute(
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -318,7 +317,7 @@ func (l *jsiiProxy_LambdaAliasRoutingConfigOutputReference) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -334,7 +333,7 @@ func (l *jsiiProxy_LambdaAliasRoutingConfigOutputReference) GetListAttribute(ter
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (l *jsiiProxy_LambdaAliasRoutingConfigOutputReference) GetNumberAttribute(t
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (l *jsiiProxy_LambdaAliasRoutingConfigOutputReference) GetNumberListAttribu
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (l *jsiiProxy_LambdaAliasRoutingConfigOutputReference) GetNumberMapAttribut
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (l *jsiiProxy_LambdaAliasRoutingConfigOutputReference) GetStringAttribute(t
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (l *jsiiProxy_LambdaAliasRoutingConfigOutputReference) GetStringMapAttribut
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (l *jsiiProxy_LambdaAliasRoutingConfigOutputReference) InterpolationForAttr
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -458,16 +457,16 @@ func (l *jsiiProxy_LambdaAliasRoutingConfigOutputReference) ResetAdditionalVersi
 	)
 }
 
-func (l *jsiiProxy_LambdaAliasRoutingConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LambdaAliasRoutingConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (l *jsiiProxy_LambdaAliasRoutingConfigOutputReference) ToString() *string {
 
 	return returns
 }
-

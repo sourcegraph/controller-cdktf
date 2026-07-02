@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.globalacceleratorListener.GlobalacceleratorListener",
-		reflect.TypeOf((*GlobalacceleratorListener)(nil)).Elem(),
+		reflect.TypeFor[GlobalacceleratorListener](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorArn", GoGetter: "AcceleratorArn"},
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorArnInput", GoGetter: "AcceleratorArnInput"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlobalacceleratorListener{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,15 +78,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.globalacceleratorListener.GlobalacceleratorListenerConfig",
-		reflect.TypeOf((*GlobalacceleratorListenerConfig)(nil)).Elem(),
+		reflect.TypeFor[GlobalacceleratorListenerConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.globalacceleratorListener.GlobalacceleratorListenerPortRange",
-		reflect.TypeOf((*GlobalacceleratorListenerPortRange)(nil)).Elem(),
+		reflect.TypeFor[GlobalacceleratorListenerPortRange](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.globalacceleratorListener.GlobalacceleratorListenerPortRangeList",
-		reflect.TypeOf((*GlobalacceleratorListenerPortRangeList)(nil)).Elem(),
+		reflect.TypeFor[GlobalacceleratorListenerPortRangeList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -100,7 +100,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlobalacceleratorListenerPortRangeList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -108,7 +108,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.globalacceleratorListener.GlobalacceleratorListenerPortRangeOutputReference",
-		reflect.TypeOf((*GlobalacceleratorListenerPortRangeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlobalacceleratorListenerPortRangeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -138,7 +138,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "toPortInput", GoGetter: "ToPortInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlobalacceleratorListenerPortRangeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -146,11 +146,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.globalacceleratorListener.GlobalacceleratorListenerTimeouts",
-		reflect.TypeOf((*GlobalacceleratorListenerTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GlobalacceleratorListenerTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.globalacceleratorListener.GlobalacceleratorListenerTimeoutsOutputReference",
-		reflect.TypeOf((*GlobalacceleratorListenerTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlobalacceleratorListenerTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -183,7 +183,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlobalacceleratorListenerTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

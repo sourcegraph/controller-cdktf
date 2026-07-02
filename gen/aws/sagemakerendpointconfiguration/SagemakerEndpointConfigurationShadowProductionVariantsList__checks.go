@@ -34,7 +34,7 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationShadowProductionVariantsList) v
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfigurationShadowProductionVariantsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerEndpointConfigurationShadowProductionVariantsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSagemakerEndpointConfigurationShadowProductionVariantsListParame
 
 	return nil
 }
-

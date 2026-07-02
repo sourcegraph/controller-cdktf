@@ -34,7 +34,7 @@ func (g *jsiiProxy_GlobalacceleratorEndpointGroupPortOverrideList) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_GlobalacceleratorEndpointGroupPortOverrideList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GlobalacceleratorEndpointGroupPortOverrideList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGlobalacceleratorEndpointGroupPortOverrideListParameters(terrafo
 
 	return nil
 }
-

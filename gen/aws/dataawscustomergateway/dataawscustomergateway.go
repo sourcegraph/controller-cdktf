@@ -18,18 +18,18 @@ type DataAwsCustomerGateway interface {
 	CdktfStack() cdktf.TerraformStack
 	CertificateArn() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	DeviceName() *string
 	Filter() DataAwsCustomerGatewayFilterList
-	FilterInput() interface{}
+	FilterInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -53,23 +53,23 @@ type DataAwsCustomerGateway interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DataAwsCustomerGatewayTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Type() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type DataAwsCustomerGateway interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutFilter(value interface{})
+	PutFilter(value any)
 	PutTimeouts(value *DataAwsCustomerGatewayTimeouts)
 	ResetFilter()
 	ResetId()
@@ -100,18 +100,18 @@ type DataAwsCustomerGateway interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsCustomerGateway
@@ -159,8 +159,8 @@ func (j *jsiiProxy_DataAwsCustomerGateway) CertificateArn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCustomerGateway) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsCustomerGateway) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_DataAwsCustomerGateway) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCustomerGateway) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsCustomerGateway) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -209,8 +209,8 @@ func (j *jsiiProxy_DataAwsCustomerGateway) Filter() DataAwsCustomerGatewayFilter
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCustomerGateway) FilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsCustomerGateway) FilterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"filterInput",
@@ -309,8 +309,8 @@ func (j *jsiiProxy_DataAwsCustomerGateway) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCustomerGateway) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsCustomerGateway) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -349,8 +349,8 @@ func (j *jsiiProxy_DataAwsCustomerGateway) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCustomerGateway) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsCustomerGateway) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -379,8 +379,8 @@ func (j *jsiiProxy_DataAwsCustomerGateway) Timeouts() DataAwsCustomerGatewayTime
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCustomerGateway) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsCustomerGateway) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -399,7 +399,6 @@ func (j *jsiiProxy_DataAwsCustomerGateway) Type() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/customer_gateway aws_customer_gateway} Data Source.
 func NewDataAwsCustomerGateway(scope constructs.Construct, id *string, config *DataAwsCustomerGatewayConfig) DataAwsCustomerGateway {
 	_init_.Initialize()
@@ -411,7 +410,7 @@ func NewDataAwsCustomerGateway(scope constructs.Construct, id *string, config *D
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -424,12 +423,12 @@ func NewDataAwsCustomerGateway_Override(d DataAwsCustomerGateway, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsCustomerGateway)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsCustomerGateway) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -440,7 +439,7 @@ func (j *jsiiProxy_DataAwsCustomerGateway)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsCustomerGateway)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsCustomerGateway) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -448,7 +447,7 @@ func (j *jsiiProxy_DataAwsCustomerGateway)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsCustomerGateway)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsCustomerGateway) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -456,7 +455,7 @@ func (j *jsiiProxy_DataAwsCustomerGateway)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_DataAwsCustomerGateway)SetId(val *string) {
+func (j *jsiiProxy_DataAwsCustomerGateway) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_DataAwsCustomerGateway)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsCustomerGateway)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsCustomerGateway) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_DataAwsCustomerGateway)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_DataAwsCustomerGateway)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsCustomerGateway) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -486,7 +485,7 @@ func (j *jsiiProxy_DataAwsCustomerGateway)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_DataAwsCustomerGateway)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsCustomerGateway) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -509,7 +508,7 @@ func DataAwsCustomerGateway_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -533,7 +532,7 @@ func DataAwsCustomerGateway_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsCustomerGateway_IsConstruct(x interface{}) *bool {
+func DataAwsCustomerGateway_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsCustomerGateway_IsConstructParameters(x); err != nil {
@@ -544,7 +543,7 @@ func DataAwsCustomerGateway_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -552,7 +551,7 @@ func DataAwsCustomerGateway_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsCustomerGateway_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsCustomerGateway_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsCustomerGateway_IsTerraformDataSourceParameters(x); err != nil {
@@ -563,7 +562,7 @@ func DataAwsCustomerGateway_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -571,7 +570,7 @@ func DataAwsCustomerGateway_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsCustomerGateway_IsTerraformElement(x interface{}) *bool {
+func DataAwsCustomerGateway_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsCustomerGateway_IsTerraformElementParameters(x); err != nil {
@@ -582,7 +581,7 @@ func DataAwsCustomerGateway_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -600,27 +599,27 @@ func DataAwsCustomerGateway_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCustomerGateway) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsCustomerGateway) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsCustomerGateway) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsCustomerGateway) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -636,7 +635,7 @@ func (d *jsiiProxy_DataAwsCustomerGateway) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -652,7 +651,7 @@ func (d *jsiiProxy_DataAwsCustomerGateway) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -668,7 +667,7 @@ func (d *jsiiProxy_DataAwsCustomerGateway) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -684,7 +683,7 @@ func (d *jsiiProxy_DataAwsCustomerGateway) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -700,7 +699,7 @@ func (d *jsiiProxy_DataAwsCustomerGateway) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -716,7 +715,7 @@ func (d *jsiiProxy_DataAwsCustomerGateway) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -732,7 +731,7 @@ func (d *jsiiProxy_DataAwsCustomerGateway) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -748,7 +747,7 @@ func (d *jsiiProxy_DataAwsCustomerGateway) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func (d *jsiiProxy_DataAwsCustomerGateway) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -778,18 +777,18 @@ func (d *jsiiProxy_DataAwsCustomerGateway) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DataAwsCustomerGateway) PutFilter(value interface{}) {
+func (d *jsiiProxy_DataAwsCustomerGateway) PutFilter(value any) {
 	if err := d.validatePutFilterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -800,7 +799,7 @@ func (d *jsiiProxy_DataAwsCustomerGateway) PutTimeouts(value *DataAwsCustomerGat
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -844,8 +843,8 @@ func (d *jsiiProxy_DataAwsCustomerGateway) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsCustomerGateway) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsCustomerGateway) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -857,8 +856,8 @@ func (d *jsiiProxy_DataAwsCustomerGateway) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCustomerGateway) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsCustomerGateway) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -870,8 +869,8 @@ func (d *jsiiProxy_DataAwsCustomerGateway) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCustomerGateway) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsCustomerGateway) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -883,8 +882,8 @@ func (d *jsiiProxy_DataAwsCustomerGateway) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCustomerGateway) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsCustomerGateway) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -909,8 +908,8 @@ func (d *jsiiProxy_DataAwsCustomerGateway) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCustomerGateway) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsCustomerGateway) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -921,4 +920,3 @@ func (d *jsiiProxy_DataAwsCustomerGateway) ToTerraform() interface{} {
 
 	return returns
 }
-

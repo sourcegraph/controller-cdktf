@@ -153,7 +153,7 @@ func (l *jsiiProxy_LbListenerDefaultActionOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_LbListenerDefaultActionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LbListenerDefaultActionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -218,7 +218,7 @@ func (j *jsiiProxy_LbListenerDefaultActionOutputReference) validateSetComplexObj
 	return nil
 }
 
-func (j *jsiiProxy_LbListenerDefaultActionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LbListenerDefaultActionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -301,4 +301,3 @@ func validateNewLbListenerDefaultActionOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

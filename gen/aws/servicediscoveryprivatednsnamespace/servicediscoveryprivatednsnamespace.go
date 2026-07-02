@@ -16,15 +16,15 @@ type ServiceDiscoveryPrivateDnsNamespace interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -58,11 +58,11 @@ type ServiceDiscoveryPrivateDnsNamespace interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -72,7 +72,7 @@ type ServiceDiscoveryPrivateDnsNamespace interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Vpc() *string
@@ -82,9 +82,9 @@ type ServiceDiscoveryPrivateDnsNamespace interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,7 +102,7 @@ type ServiceDiscoveryPrivateDnsNamespace interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -114,7 +114,7 @@ type ServiceDiscoveryPrivateDnsNamespace interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -128,17 +128,17 @@ type ServiceDiscoveryPrivateDnsNamespace interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ServiceDiscoveryPrivateDnsNamespace
@@ -166,8 +166,8 @@ func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) CdktfStack() cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) Connection() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -336,8 +336,8 @@ func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) Provider() cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -346,8 +346,8 @@ func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) Provisioners() *[]interf
 	return returns
 }
 
-func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -406,8 +406,8 @@ func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) TerraformGeneratorMetada
 	return returns
 }
 
-func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -446,7 +446,6 @@ func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) VpcInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/service_discovery_private_dns_namespace aws_service_discovery_private_dns_namespace} Resource.
 func NewServiceDiscoveryPrivateDnsNamespace(scope constructs.Construct, id *string, config *ServiceDiscoveryPrivateDnsNamespaceConfig) ServiceDiscoveryPrivateDnsNamespace {
 	_init_.Initialize()
@@ -458,7 +457,7 @@ func NewServiceDiscoveryPrivateDnsNamespace(scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.serviceDiscoveryPrivateDnsNamespace.ServiceDiscoveryPrivateDnsNamespace",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -471,12 +470,12 @@ func NewServiceDiscoveryPrivateDnsNamespace_Override(s ServiceDiscoveryPrivateDn
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.serviceDiscoveryPrivateDnsNamespace.ServiceDiscoveryPrivateDnsNamespace",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace)SetConnection(val interface{}) {
+func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace)SetConnection(val interfa
 	)
 }
 
-func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace)SetCount(val interface{}) {
+func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace)SetCount(val interface{})
 	)
 }
 
-func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -506,7 +505,7 @@ func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace)SetDependsOn(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace)SetDescription(val *string) {
+func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -517,7 +516,7 @@ func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace)SetDescription(val *strin
 	)
 }
 
-func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -525,7 +524,7 @@ func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace)SetForEach(val cdktf.ITer
 	)
 }
 
-func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace)SetId(val *string) {
+func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -536,7 +535,7 @@ func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace)SetLifecycle(val *cdktf.T
 	)
 }
 
-func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace)SetName(val *string) {
+func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -558,7 +557,7 @@ func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -566,7 +565,7 @@ func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace)SetProvider(val cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -577,7 +576,7 @@ func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace)SetProvisioners(val *[]in
 	)
 }
 
-func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -588,7 +587,7 @@ func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace)SetTags(val *map[string]*
 	)
 }
 
-func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace)SetTagsAll(val *map[strin
 	)
 }
 
-func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace)SetVpc(val *string) {
+func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) SetVpc(val *string) {
 	if err := j.validateSetVpcParameters(val); err != nil {
 		panic(err)
 	}
@@ -622,7 +621,7 @@ func ServiceDiscoveryPrivateDnsNamespace_GenerateConfigForImport(scope construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.serviceDiscoveryPrivateDnsNamespace.ServiceDiscoveryPrivateDnsNamespace",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func ServiceDiscoveryPrivateDnsNamespace_GenerateConfigForImport(scope construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ServiceDiscoveryPrivateDnsNamespace_IsConstruct(x interface{}) *bool {
+func ServiceDiscoveryPrivateDnsNamespace_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateServiceDiscoveryPrivateDnsNamespace_IsConstructParameters(x); err != nil {
@@ -657,7 +656,7 @@ func ServiceDiscoveryPrivateDnsNamespace_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.serviceDiscoveryPrivateDnsNamespace.ServiceDiscoveryPrivateDnsNamespace",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -665,7 +664,7 @@ func ServiceDiscoveryPrivateDnsNamespace_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ServiceDiscoveryPrivateDnsNamespace_IsTerraformElement(x interface{}) *bool {
+func ServiceDiscoveryPrivateDnsNamespace_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateServiceDiscoveryPrivateDnsNamespace_IsTerraformElementParameters(x); err != nil {
@@ -676,7 +675,7 @@ func ServiceDiscoveryPrivateDnsNamespace_IsTerraformElement(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.serviceDiscoveryPrivateDnsNamespace.ServiceDiscoveryPrivateDnsNamespace",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -684,7 +683,7 @@ func ServiceDiscoveryPrivateDnsNamespace_IsTerraformElement(x interface{}) *bool
 }
 
 // Experimental.
-func ServiceDiscoveryPrivateDnsNamespace_IsTerraformResource(x interface{}) *bool {
+func ServiceDiscoveryPrivateDnsNamespace_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateServiceDiscoveryPrivateDnsNamespace_IsTerraformResourceParameters(x); err != nil {
@@ -695,7 +694,7 @@ func ServiceDiscoveryPrivateDnsNamespace_IsTerraformResource(x interface{}) *boo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.serviceDiscoveryPrivateDnsNamespace.ServiceDiscoveryPrivateDnsNamespace",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -720,31 +719,31 @@ func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) AddMoveTarget(moveTarget
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -760,7 +759,7 @@ func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) GetBooleanAttribute(terr
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -776,7 +775,7 @@ func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) GetBooleanMapAttribute(t
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -792,7 +791,7 @@ func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) GetListAttribute(terrafo
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -808,7 +807,7 @@ func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) GetNumberAttribute(terra
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -824,7 +823,7 @@ func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) GetNumberListAttribute(t
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -840,7 +839,7 @@ func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) GetNumberMapAttribute(te
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -856,7 +855,7 @@ func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) GetStringAttribute(terra
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -872,15 +871,15 @@ func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) GetStringMapAttribute(te
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -899,7 +898,7 @@ func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) ImportFrom(id *string, p
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -912,7 +911,7 @@ func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) InterpolationForAttribut
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -926,18 +925,18 @@ func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -948,7 +947,7 @@ func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -959,7 +958,7 @@ func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) OverrideLogicalId(newLog
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1003,8 +1002,8 @@ func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) ResetTagsAll() {
 	)
 }
 
-func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1016,8 +1015,8 @@ func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) SynthesizeAttributes() *
 	return returns
 }
 
-func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1029,8 +1028,8 @@ func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) SynthesizeHclAttributes(
 	return returns
 }
 
-func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1042,8 +1041,8 @@ func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) ToHclTerraform() interfa
 	return returns
 }
 
-func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1068,8 +1067,8 @@ func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1080,4 +1079,3 @@ func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) ToTerraform() interface{
 
 	return returns
 }
-

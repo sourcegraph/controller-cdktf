@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueJob.GlueJob",
-		reflect.TypeOf((*GlueJob)(nil)).Elem(),
+		reflect.TypeFor[GlueJob](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -114,7 +114,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workerType", GoGetter: "WorkerType"},
 			_jsii_.MemberProperty{JsiiProperty: "workerTypeInput", GoGetter: "WorkerTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueJob{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -122,11 +122,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueJob.GlueJobCommand",
-		reflect.TypeOf((*GlueJobCommand)(nil)).Elem(),
+		reflect.TypeFor[GlueJobCommand](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueJob.GlueJobCommandOutputReference",
-		reflect.TypeOf((*GlueJobCommandOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlueJobCommandOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -158,7 +158,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueJobCommandOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -166,15 +166,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueJob.GlueJobConfig",
-		reflect.TypeOf((*GlueJobConfig)(nil)).Elem(),
+		reflect.TypeFor[GlueJobConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueJob.GlueJobExecutionProperty",
-		reflect.TypeOf((*GlueJobExecutionProperty)(nil)).Elem(),
+		reflect.TypeFor[GlueJobExecutionProperty](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueJob.GlueJobExecutionPropertyOutputReference",
-		reflect.TypeOf((*GlueJobExecutionPropertyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlueJobExecutionPropertyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -201,7 +201,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueJobExecutionPropertyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -209,11 +209,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueJob.GlueJobNotificationProperty",
-		reflect.TypeOf((*GlueJobNotificationProperty)(nil)).Elem(),
+		reflect.TypeFor[GlueJobNotificationProperty](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueJob.GlueJobNotificationPropertyOutputReference",
-		reflect.TypeOf((*GlueJobNotificationPropertyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlueJobNotificationPropertyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -240,7 +240,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueJobNotificationPropertyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

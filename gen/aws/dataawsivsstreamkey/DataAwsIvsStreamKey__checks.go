@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsIvsStreamKey) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsIvsStreamKey) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataAwsIvsStreamKey_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateDataAwsIvsStreamKey_IsConstructParameters(x interface{}) error {
+func validateDataAwsIvsStreamKey_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataAwsIvsStreamKey_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataAwsIvsStreamKey_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsIvsStreamKey_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataAwsIvsStreamKey_IsTerraformDataSourceParameters(x interface{}) 
 	return nil
 }
 
-func validateDataAwsIvsStreamKey_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsIvsStreamKey_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataAwsIvsStreamKey) validateSetChannelArnParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsIvsStreamKey) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsIvsStreamKey) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -258,4 +258,3 @@ func validateNewDataAwsIvsStreamKeyParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

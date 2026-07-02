@@ -34,7 +34,7 @@ func (e *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsList) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEc2ClientVpnEndpointAuthenticationOptionsListParameters(terrafor
 
 	return nil
 }
-

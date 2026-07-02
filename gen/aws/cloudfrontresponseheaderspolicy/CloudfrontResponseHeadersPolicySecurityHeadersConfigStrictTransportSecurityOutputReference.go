@@ -15,9 +15,9 @@ type CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurity
 	AccessControlMaxAgeSecInput() *float64
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,17 +30,17 @@ type CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurity
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	IncludeSubdomains() interface{}
-	SetIncludeSubdomains(val interface{})
-	IncludeSubdomainsInput() interface{}
+	IncludeSubdomains() any
+	SetIncludeSubdomains(val any)
+	IncludeSubdomainsInput() any
 	InternalValue() *CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurity
 	SetInternalValue(val *CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurity)
-	Override() interface{}
-	SetOverride(val interface{})
-	OverrideInput() interface{}
-	Preload() interface{}
-	SetPreload(val interface{})
-	PreloadInput() interface{}
+	Override() any
+	SetOverride(val any)
+	OverrideInput() any
+	Preload() any
+	SetPreload(val any)
+	PreloadInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -52,7 +52,7 @@ type CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurity
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -77,7 +77,7 @@ type CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurity
 	ResetPreload()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -110,8 +110,8 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTra
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -150,8 +150,8 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTra
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference) IncludeSubdomains() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference) IncludeSubdomains() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeSubdomains",
@@ -160,8 +160,8 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTra
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference) IncludeSubdomainsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference) IncludeSubdomainsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeSubdomainsInput",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTra
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference) Override() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference) Override() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"override",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTra
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference) OverrideInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference) OverrideInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"overrideInput",
@@ -200,8 +200,8 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTra
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference) Preload() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference) Preload() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"preload",
@@ -210,8 +210,8 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTra
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference) PreloadInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference) PreloadInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"preloadInput",
@@ -240,7 +240,6 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTra
 	return returns
 }
 
-
 func NewCloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference {
 	_init_.Initialize()
 
@@ -251,7 +250,7 @@ func NewCloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecur
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -263,12 +262,12 @@ func NewCloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecur
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference)SetAccessControlMaxAgeSec(val *float64) {
+func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference) SetAccessControlMaxAgeSec(val *float64) {
 	if err := j.validateSetAccessControlMaxAgeSecParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTra
 	)
 }
 
-func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTra
 	)
 }
 
-func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTra
 	)
 }
 
-func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference)SetIncludeSubdomains(val interface{}) {
+func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference) SetIncludeSubdomains(val any) {
 	if err := j.validateSetIncludeSubdomainsParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTra
 	)
 }
 
-func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference)SetInternalValue(val *CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurity) {
+func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference) SetInternalValue(val *CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurity) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTra
 	)
 }
 
-func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference)SetOverride(val interface{}) {
+func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference) SetOverride(val any) {
 	if err := j.validateSetOverrideParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,7 +333,7 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTra
 	)
 }
 
-func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference)SetPreload(val interface{}) {
+func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference) SetPreload(val any) {
 	if err := j.validateSetPreloadParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,7 +344,7 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTra
 	)
 }
 
-func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -356,7 +355,7 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTra
 	)
 }
 
-func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,16 +379,16 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTra
 	return returns
 }
 
-func (c *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -405,7 +404,7 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTra
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -421,7 +420,7 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTra
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -437,7 +436,7 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTra
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -453,7 +452,7 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTra
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -469,7 +468,7 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTra
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -485,7 +484,7 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTra
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -501,7 +500,7 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTra
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -517,7 +516,7 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTra
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -546,7 +545,7 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTra
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -569,16 +568,16 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTra
 	)
 }
 
-func (c *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -597,4 +596,3 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTra
 
 	return returns
 }
-

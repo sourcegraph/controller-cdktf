@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsEbsDefaultKmsKeyTimeoutsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEbsDefaultKmsKeyTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEbsDefaultKmsKeyTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataAwsEbsDefaultKmsKeyTimeoutsOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEbsDefaultKmsKeyTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEbsDefaultKmsKeyTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataAwsEbsDefaultKmsKeyTimeoutsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

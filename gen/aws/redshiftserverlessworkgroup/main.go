@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.redshiftserverlessWorkgroup.RedshiftserverlessWorkgroup",
-		reflect.TypeOf((*RedshiftserverlessWorkgroup)(nil)).Elem(),
+		reflect.TypeFor[RedshiftserverlessWorkgroup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -88,7 +88,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workgroupName", GoGetter: "WorkgroupName"},
 			_jsii_.MemberProperty{JsiiProperty: "workgroupNameInput", GoGetter: "WorkgroupNameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedshiftserverlessWorkgroup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -96,15 +96,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.redshiftserverlessWorkgroup.RedshiftserverlessWorkgroupConfig",
-		reflect.TypeOf((*RedshiftserverlessWorkgroupConfig)(nil)).Elem(),
+		reflect.TypeFor[RedshiftserverlessWorkgroupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.redshiftserverlessWorkgroup.RedshiftserverlessWorkgroupConfigParameter",
-		reflect.TypeOf((*RedshiftserverlessWorkgroupConfigParameter)(nil)).Elem(),
+		reflect.TypeFor[RedshiftserverlessWorkgroupConfigParameter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.redshiftserverlessWorkgroup.RedshiftserverlessWorkgroupConfigParameterList",
-		reflect.TypeOf((*RedshiftserverlessWorkgroupConfigParameterList)(nil)).Elem(),
+		reflect.TypeFor[RedshiftserverlessWorkgroupConfigParameterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -118,7 +118,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedshiftserverlessWorkgroupConfigParameterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -126,7 +126,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.redshiftserverlessWorkgroup.RedshiftserverlessWorkgroupConfigParameterOutputReference",
-		reflect.TypeOf((*RedshiftserverlessWorkgroupConfigParameterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RedshiftserverlessWorkgroupConfigParameterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -154,7 +154,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedshiftserverlessWorkgroupConfigParameterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -162,11 +162,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.redshiftserverlessWorkgroup.RedshiftserverlessWorkgroupEndpoint",
-		reflect.TypeOf((*RedshiftserverlessWorkgroupEndpoint)(nil)).Elem(),
+		reflect.TypeFor[RedshiftserverlessWorkgroupEndpoint](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.redshiftserverlessWorkgroup.RedshiftserverlessWorkgroupEndpointList",
-		reflect.TypeOf((*RedshiftserverlessWorkgroupEndpointList)(nil)).Elem(),
+		reflect.TypeFor[RedshiftserverlessWorkgroupEndpointList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -179,7 +179,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedshiftserverlessWorkgroupEndpointList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -187,7 +187,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.redshiftserverlessWorkgroup.RedshiftserverlessWorkgroupEndpointOutputReference",
-		reflect.TypeOf((*RedshiftserverlessWorkgroupEndpointOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RedshiftserverlessWorkgroupEndpointOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -214,7 +214,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcEndpoint", GoGetter: "VpcEndpoint"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedshiftserverlessWorkgroupEndpointOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -222,11 +222,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.redshiftserverlessWorkgroup.RedshiftserverlessWorkgroupEndpointVpcEndpoint",
-		reflect.TypeOf((*RedshiftserverlessWorkgroupEndpointVpcEndpoint)(nil)).Elem(),
+		reflect.TypeFor[RedshiftserverlessWorkgroupEndpointVpcEndpoint](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.redshiftserverlessWorkgroup.RedshiftserverlessWorkgroupEndpointVpcEndpointList",
-		reflect.TypeOf((*RedshiftserverlessWorkgroupEndpointVpcEndpointList)(nil)).Elem(),
+		reflect.TypeFor[RedshiftserverlessWorkgroupEndpointVpcEndpointList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -239,7 +239,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedshiftserverlessWorkgroupEndpointVpcEndpointList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -247,11 +247,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.redshiftserverlessWorkgroup.RedshiftserverlessWorkgroupEndpointVpcEndpointNetworkInterface",
-		reflect.TypeOf((*RedshiftserverlessWorkgroupEndpointVpcEndpointNetworkInterface)(nil)).Elem(),
+		reflect.TypeFor[RedshiftserverlessWorkgroupEndpointVpcEndpointNetworkInterface](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.redshiftserverlessWorkgroup.RedshiftserverlessWorkgroupEndpointVpcEndpointNetworkInterfaceList",
-		reflect.TypeOf((*RedshiftserverlessWorkgroupEndpointVpcEndpointNetworkInterfaceList)(nil)).Elem(),
+		reflect.TypeFor[RedshiftserverlessWorkgroupEndpointVpcEndpointNetworkInterfaceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -264,7 +264,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedshiftserverlessWorkgroupEndpointVpcEndpointNetworkInterfaceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -272,7 +272,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.redshiftserverlessWorkgroup.RedshiftserverlessWorkgroupEndpointVpcEndpointNetworkInterfaceOutputReference",
-		reflect.TypeOf((*RedshiftserverlessWorkgroupEndpointVpcEndpointNetworkInterfaceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RedshiftserverlessWorkgroupEndpointVpcEndpointNetworkInterfaceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availabilityZone", GoGetter: "AvailabilityZone"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -300,7 +300,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedshiftserverlessWorkgroupEndpointVpcEndpointNetworkInterfaceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -308,7 +308,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.redshiftserverlessWorkgroup.RedshiftserverlessWorkgroupEndpointVpcEndpointOutputReference",
-		reflect.TypeOf((*RedshiftserverlessWorkgroupEndpointVpcEndpointOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RedshiftserverlessWorkgroupEndpointVpcEndpointOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -335,7 +335,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcEndpointId", GoGetter: "VpcEndpointId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedshiftserverlessWorkgroupEndpointVpcEndpointOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

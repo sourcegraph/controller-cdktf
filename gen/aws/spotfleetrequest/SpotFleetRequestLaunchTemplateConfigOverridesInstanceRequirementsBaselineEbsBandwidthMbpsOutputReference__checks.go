@@ -98,7 +98,7 @@ func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirem
 	return nil
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewSpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirement
 
 	return nil
 }
-

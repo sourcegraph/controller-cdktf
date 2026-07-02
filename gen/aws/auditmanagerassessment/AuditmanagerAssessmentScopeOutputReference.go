@@ -11,14 +11,14 @@ import (
 type AuditmanagerAssessmentScopeOutputReference interface {
 	cdktf.ComplexObject
 	AwsAccounts() AuditmanagerAssessmentScopeAwsAccountsList
-	AwsAccountsInput() interface{}
+	AwsAccountsInput() any
 	AwsServices() AuditmanagerAssessmentScopeAwsServicesList
-	AwsServicesInput() interface{}
+	AwsServicesInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -31,8 +31,8 @@ type AuditmanagerAssessmentScopeOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -44,7 +44,7 @@ type AuditmanagerAssessmentScopeOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -65,13 +65,13 @@ type AuditmanagerAssessmentScopeOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAwsAccounts(value interface{})
-	PutAwsServices(value interface{})
+	PutAwsAccounts(value any)
+	PutAwsServices(value any)
 	ResetAwsAccounts()
 	ResetAwsServices()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -94,8 +94,8 @@ func (j *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) AwsAccounts() Aud
 	return returns
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) AwsAccountsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) AwsAccountsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"awsAccountsInput",
@@ -114,8 +114,8 @@ func (j *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) AwsServices() Aud
 	return returns
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) AwsServicesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) AwsServicesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"awsServicesInput",
@@ -124,8 +124,8 @@ func (j *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) AwsServicesInput(
 	return returns
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) TerraformResource
 	return returns
 }
 
-
 func NewAuditmanagerAssessmentScopeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AuditmanagerAssessmentScopeOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewAuditmanagerAssessmentScopeOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentScopeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewAuditmanagerAssessmentScopeOutputReference_Override(a AuditmanagerAssess
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentScopeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentScopeOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_AuditmanagerAssessmentScopeOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentScopeOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_AuditmanagerAssessmentScopeOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentScopeOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_AuditmanagerAssessmentScopeOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentScopeOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_AuditmanagerAssessmentScopeOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentScopeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,16 +289,16 @@ func (a *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (a *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -315,7 +314,7 @@ func (a *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -331,7 +330,7 @@ func (a *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -347,7 +346,7 @@ func (a *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -363,7 +362,7 @@ func (a *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -379,7 +378,7 @@ func (a *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (a *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (a *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (a *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,32 +455,32 @@ func (a *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) PutAwsAccounts(value interface{}) {
+func (a *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) PutAwsAccounts(value any) {
 	if err := a.validatePutAwsAccountsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putAwsAccounts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (a *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) PutAwsServices(value interface{}) {
+func (a *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) PutAwsServices(value any) {
 	if err := a.validatePutAwsServicesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putAwsServices",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (a *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) ResetAwsServices(
 	)
 }
 
-func (a *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (a *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) ToString() *strin
 
 	return returns
 }
-

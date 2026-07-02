@@ -98,7 +98,7 @@ func (d *jsiiProxy_DirectoryServiceDirectoryTimeoutsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_DirectoryServiceDirectoryTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DirectoryServiceDirectoryTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DirectoryServiceDirectoryTimeoutsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DirectoryServiceDirectoryTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DirectoryServiceDirectoryTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDirectoryServiceDirectoryTimeoutsOutputReferenceParameters(terra
 
 	return nil
 }
-

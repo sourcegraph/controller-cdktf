@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayer",
-		reflect.TypeOf((*OpsworksMysqlLayer)(nil)).Elem(),
+		reflect.TypeFor[OpsworksMysqlLayer](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -137,7 +137,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "useEbsOptimizedInstances", GoGetter: "UseEbsOptimizedInstances"},
 			_jsii_.MemberProperty{JsiiProperty: "useEbsOptimizedInstancesInput", GoGetter: "UseEbsOptimizedInstancesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OpsworksMysqlLayer{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -145,15 +145,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfiguration",
-		reflect.TypeOf((*OpsworksMysqlLayerCloudwatchConfiguration)(nil)).Elem(),
+		reflect.TypeFor[OpsworksMysqlLayerCloudwatchConfiguration](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationLogStreams",
-		reflect.TypeOf((*OpsworksMysqlLayerCloudwatchConfigurationLogStreams)(nil)).Elem(),
+		reflect.TypeFor[OpsworksMysqlLayerCloudwatchConfigurationLogStreams](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationLogStreamsList",
-		reflect.TypeOf((*OpsworksMysqlLayerCloudwatchConfigurationLogStreamsList)(nil)).Elem(),
+		reflect.TypeFor[OpsworksMysqlLayerCloudwatchConfigurationLogStreamsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -167,7 +167,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OpsworksMysqlLayerCloudwatchConfigurationLogStreamsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -175,7 +175,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationLogStreamsOutputReference",
-		reflect.TypeOf((*OpsworksMysqlLayerCloudwatchConfigurationLogStreamsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OpsworksMysqlLayerCloudwatchConfigurationLogStreamsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "batchCount", GoGetter: "BatchCount"},
 			_jsii_.MemberProperty{JsiiProperty: "batchCountInput", GoGetter: "BatchCountInput"},
@@ -230,7 +230,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeZoneInput", GoGetter: "TimeZoneInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OpsworksMysqlLayerCloudwatchConfigurationLogStreamsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -238,7 +238,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationOutputReference",
-		reflect.TypeOf((*OpsworksMysqlLayerCloudwatchConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OpsworksMysqlLayerCloudwatchConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -269,7 +269,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OpsworksMysqlLayerCloudwatchConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -277,15 +277,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig",
-		reflect.TypeOf((*OpsworksMysqlLayerConfig)(nil)).Elem(),
+		reflect.TypeFor[OpsworksMysqlLayerConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerEbsVolume",
-		reflect.TypeOf((*OpsworksMysqlLayerEbsVolume)(nil)).Elem(),
+		reflect.TypeFor[OpsworksMysqlLayerEbsVolume](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerEbsVolumeList",
-		reflect.TypeOf((*OpsworksMysqlLayerEbsVolumeList)(nil)).Elem(),
+		reflect.TypeFor[OpsworksMysqlLayerEbsVolumeList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -299,7 +299,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OpsworksMysqlLayerEbsVolumeList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -307,7 +307,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerEbsVolumeOutputReference",
-		reflect.TypeOf((*OpsworksMysqlLayerEbsVolumeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OpsworksMysqlLayerEbsVolumeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -349,7 +349,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OpsworksMysqlLayerEbsVolumeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -357,15 +357,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScaling",
-		reflect.TypeOf((*OpsworksMysqlLayerLoadBasedAutoScaling)(nil)).Elem(),
+		reflect.TypeFor[OpsworksMysqlLayerLoadBasedAutoScaling](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingDownscaling",
-		reflect.TypeOf((*OpsworksMysqlLayerLoadBasedAutoScalingDownscaling)(nil)).Elem(),
+		reflect.TypeFor[OpsworksMysqlLayerLoadBasedAutoScalingDownscaling](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingDownscalingOutputReference",
-		reflect.TypeOf((*OpsworksMysqlLayerLoadBasedAutoScalingDownscalingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OpsworksMysqlLayerLoadBasedAutoScalingDownscalingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alarms", GoGetter: "Alarms"},
 			_jsii_.MemberProperty{JsiiProperty: "alarmsInput", GoGetter: "AlarmsInput"},
@@ -410,7 +410,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "thresholdsWaitTimeInput", GoGetter: "ThresholdsWaitTimeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OpsworksMysqlLayerLoadBasedAutoScalingDownscalingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -418,7 +418,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingOutputReference",
-		reflect.TypeOf((*OpsworksMysqlLayerLoadBasedAutoScalingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OpsworksMysqlLayerLoadBasedAutoScalingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -453,7 +453,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "upscaling", GoGetter: "Upscaling"},
 			_jsii_.MemberProperty{JsiiProperty: "upscalingInput", GoGetter: "UpscalingInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OpsworksMysqlLayerLoadBasedAutoScalingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -461,11 +461,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingUpscaling",
-		reflect.TypeOf((*OpsworksMysqlLayerLoadBasedAutoScalingUpscaling)(nil)).Elem(),
+		reflect.TypeFor[OpsworksMysqlLayerLoadBasedAutoScalingUpscaling](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingUpscalingOutputReference",
-		reflect.TypeOf((*OpsworksMysqlLayerLoadBasedAutoScalingUpscalingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OpsworksMysqlLayerLoadBasedAutoScalingUpscalingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alarms", GoGetter: "Alarms"},
 			_jsii_.MemberProperty{JsiiProperty: "alarmsInput", GoGetter: "AlarmsInput"},
@@ -510,7 +510,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "thresholdsWaitTimeInput", GoGetter: "ThresholdsWaitTimeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OpsworksMysqlLayerLoadBasedAutoScalingUpscalingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

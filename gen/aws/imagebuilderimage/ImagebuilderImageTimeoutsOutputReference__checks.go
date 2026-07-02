@@ -98,7 +98,7 @@ func (i *jsiiProxy_ImagebuilderImageTimeoutsOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_ImagebuilderImageTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ImagebuilderImageTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ImagebuilderImageTimeoutsOutputReference) validateSetCreatePa
 	return nil
 }
 
-func (j *jsiiProxy_ImagebuilderImageTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ImagebuilderImageTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewImagebuilderImageTimeoutsOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

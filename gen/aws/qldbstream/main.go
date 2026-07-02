@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.qldbStream.QldbStream",
-		reflect.TypeOf((*QldbStream)(nil)).Elem(),
+		reflect.TypeFor[QldbStream](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_QldbStream{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,15 +85,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.qldbStream.QldbStreamConfig",
-		reflect.TypeOf((*QldbStreamConfig)(nil)).Elem(),
+		reflect.TypeFor[QldbStreamConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.qldbStream.QldbStreamKinesisConfiguration",
-		reflect.TypeOf((*QldbStreamKinesisConfiguration)(nil)).Elem(),
+		reflect.TypeFor[QldbStreamKinesisConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.qldbStream.QldbStreamKinesisConfigurationOutputReference",
-		reflect.TypeOf((*QldbStreamKinesisConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[QldbStreamKinesisConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregationEnabled", GoGetter: "AggregationEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "aggregationEnabledInput", GoGetter: "AggregationEnabledInput"},
@@ -122,7 +122,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_QldbStreamKinesisConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

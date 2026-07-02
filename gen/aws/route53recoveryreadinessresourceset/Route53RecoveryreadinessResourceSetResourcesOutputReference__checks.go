@@ -109,7 +109,7 @@ func (r *jsiiProxy_Route53RecoveryreadinessResourceSetResourcesOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_Route53RecoveryreadinessResourceSetResourcesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Route53RecoveryreadinessResourceSetResourcesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_Route53RecoveryreadinessResourceSetResourcesOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_Route53RecoveryreadinessResourceSetResourcesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Route53RecoveryreadinessResourceSetResourcesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -249,4 +249,3 @@ func validateNewRoute53RecoveryreadinessResourceSetResourcesOutputReferenceParam
 
 	return nil
 }
-

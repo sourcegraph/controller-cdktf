@@ -106,7 +106,7 @@ func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsRSessionAppSettingsCustomIm
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsRSessionAppSettingsCustomImageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsRSessionAppSettingsCustomImageOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsRSessionAppSettingsCustomIm
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsRSessionAppSettingsCustomImageOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsRSessionAppSettingsCustomImageOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewSagemakerDomainDefaultUserSettingsRSessionAppSettingsCustomImage
 
 	return nil
 }
-

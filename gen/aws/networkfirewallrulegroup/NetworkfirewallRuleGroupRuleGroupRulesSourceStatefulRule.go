@@ -1,6 +1,5 @@
 package networkfirewallrulegroup
 
-
 type NetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRule struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/networkfirewall_rule_group#action NetworkfirewallRuleGroup#action}.
 	Action *string `field:"required" json:"action" yaml:"action"`
@@ -11,6 +10,5 @@ type NetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRule struct {
 	// rule_option block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/networkfirewall_rule_group#rule_option NetworkfirewallRuleGroup#rule_option}
-	RuleOption interface{} `field:"required" json:"ruleOption" yaml:"ruleOption"`
+	RuleOption any `field:"required" json:"ruleOption" yaml:"ruleOption"`
 }
-

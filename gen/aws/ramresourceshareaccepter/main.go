@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter",
-		reflect.TypeOf((*RamResourceShareAccepter)(nil)).Elem(),
+		reflect.TypeFor[RamResourceShareAccepter](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RamResourceShareAccepter{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -77,15 +77,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterConfig",
-		reflect.TypeOf((*RamResourceShareAccepterConfig)(nil)).Elem(),
+		reflect.TypeFor[RamResourceShareAccepterConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterTimeouts",
-		reflect.TypeOf((*RamResourceShareAccepterTimeouts)(nil)).Elem(),
+		reflect.TypeFor[RamResourceShareAccepterTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterTimeoutsOutputReference",
-		reflect.TypeOf((*RamResourceShareAccepterTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RamResourceShareAccepterTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -115,7 +115,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RamResourceShareAccepterTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

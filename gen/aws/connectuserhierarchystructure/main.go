@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure",
-		reflect.TypeOf((*ConnectUserHierarchyStructure)(nil)).Elem(),
+		reflect.TypeFor[ConnectUserHierarchyStructure](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConnectUserHierarchyStructure{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -69,19 +69,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureConfig",
-		reflect.TypeOf((*ConnectUserHierarchyStructureConfig)(nil)).Elem(),
+		reflect.TypeFor[ConnectUserHierarchyStructureConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructure",
-		reflect.TypeOf((*ConnectUserHierarchyStructureHierarchyStructure)(nil)).Elem(),
+		reflect.TypeFor[ConnectUserHierarchyStructureHierarchyStructure](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelFive",
-		reflect.TypeOf((*ConnectUserHierarchyStructureHierarchyStructureLevelFive)(nil)).Elem(),
+		reflect.TypeFor[ConnectUserHierarchyStructureHierarchyStructureLevelFive](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelFiveOutputReference",
-		reflect.TypeOf((*ConnectUserHierarchyStructureHierarchyStructureLevelFiveOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ConnectUserHierarchyStructureHierarchyStructureLevelFiveOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -109,7 +109,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConnectUserHierarchyStructureHierarchyStructureLevelFiveOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -117,11 +117,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelFour",
-		reflect.TypeOf((*ConnectUserHierarchyStructureHierarchyStructureLevelFour)(nil)).Elem(),
+		reflect.TypeFor[ConnectUserHierarchyStructureHierarchyStructureLevelFour](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelFourOutputReference",
-		reflect.TypeOf((*ConnectUserHierarchyStructureHierarchyStructureLevelFourOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ConnectUserHierarchyStructureHierarchyStructureLevelFourOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -149,7 +149,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConnectUserHierarchyStructureHierarchyStructureLevelFourOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -157,11 +157,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelOne",
-		reflect.TypeOf((*ConnectUserHierarchyStructureHierarchyStructureLevelOne)(nil)).Elem(),
+		reflect.TypeFor[ConnectUserHierarchyStructureHierarchyStructureLevelOne](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelOneOutputReference",
-		reflect.TypeOf((*ConnectUserHierarchyStructureHierarchyStructureLevelOneOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ConnectUserHierarchyStructureHierarchyStructureLevelOneOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -189,7 +189,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConnectUserHierarchyStructureHierarchyStructureLevelOneOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -197,11 +197,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelThree",
-		reflect.TypeOf((*ConnectUserHierarchyStructureHierarchyStructureLevelThree)(nil)).Elem(),
+		reflect.TypeFor[ConnectUserHierarchyStructureHierarchyStructureLevelThree](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelThreeOutputReference",
-		reflect.TypeOf((*ConnectUserHierarchyStructureHierarchyStructureLevelThreeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ConnectUserHierarchyStructureHierarchyStructureLevelThreeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -229,7 +229,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConnectUserHierarchyStructureHierarchyStructureLevelThreeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -237,11 +237,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelTwo",
-		reflect.TypeOf((*ConnectUserHierarchyStructureHierarchyStructureLevelTwo)(nil)).Elem(),
+		reflect.TypeFor[ConnectUserHierarchyStructureHierarchyStructureLevelTwo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelTwoOutputReference",
-		reflect.TypeOf((*ConnectUserHierarchyStructureHierarchyStructureLevelTwoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ConnectUserHierarchyStructureHierarchyStructureLevelTwoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -269,7 +269,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConnectUserHierarchyStructureHierarchyStructureLevelTwoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -277,7 +277,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureOutputReference",
-		reflect.TypeOf((*ConnectUserHierarchyStructureHierarchyStructureOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ConnectUserHierarchyStructureHierarchyStructureOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -321,7 +321,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConnectUserHierarchyStructureHierarchyStructureOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

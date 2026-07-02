@@ -34,7 +34,7 @@ func (c *jsiiProxy_CloudwatchMetricStreamIncludeFilterList) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_CloudwatchMetricStreamIncludeFilterList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudwatchMetricStreamIncludeFilterList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCloudwatchMetricStreamIncludeFilterListParameters(terraformResou
 
 	return nil
 }
-

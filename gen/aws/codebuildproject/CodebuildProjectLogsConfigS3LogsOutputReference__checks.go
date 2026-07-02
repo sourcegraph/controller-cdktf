@@ -106,7 +106,7 @@ func (j *jsiiProxy_CodebuildProjectLogsConfigS3LogsOutputReference) validateSetB
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildProjectLogsConfigS3LogsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CodebuildProjectLogsConfigS3LogsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_CodebuildProjectLogsConfigS3LogsOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildProjectLogsConfigS3LogsOutputReference) validateSetEncryptionDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_CodebuildProjectLogsConfigS3LogsOutputReference) validateSetEncryptionDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -242,4 +242,3 @@ func validateNewCodebuildProjectLogsConfigS3LogsOutputReferenceParameters(terraf
 
 	return nil
 }
-

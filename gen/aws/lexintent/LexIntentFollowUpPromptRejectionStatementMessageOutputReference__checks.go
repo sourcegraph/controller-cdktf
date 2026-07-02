@@ -98,7 +98,7 @@ func (l *jsiiProxy_LexIntentFollowUpPromptRejectionStatementMessageOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_LexIntentFollowUpPromptRejectionStatementMessageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LexIntentFollowUpPromptRejectionStatementMessageOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_LexIntentFollowUpPromptRejectionStatementMessageOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_LexIntentFollowUpPromptRejectionStatementMessageOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LexIntentFollowUpPromptRejectionStatementMessageOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewLexIntentFollowUpPromptRejectionStatementMessageOutputReferenceP
 
 	return nil
 }
-

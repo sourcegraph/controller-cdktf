@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlow",
-		reflect.TypeOf((*AppflowFlow)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlow](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -83,7 +83,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "triggerConfig", GoGetter: "TriggerConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "triggerConfigInput", GoGetter: "TriggerConfigInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlow{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -91,27 +91,27 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowConfig",
-		reflect.TypeOf((*AppflowFlowConfig)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfig)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorProperties",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorProperties)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorProperties](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnector",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnector)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnector](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfigOutputReference",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketNameInput", GoGetter: "BucketNameInput"},
@@ -144,7 +144,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -152,7 +152,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorOutputReference",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -191,7 +191,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "writeOperationType", GoGetter: "WriteOperationType"},
 			_jsii_.MemberProperty{JsiiProperty: "writeOperationTypeInput", GoGetter: "WriteOperationTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -199,11 +199,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomerProfiles",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomerProfiles)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomerProfiles](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomerProfilesOutputReference",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomerProfilesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomerProfilesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -232,7 +232,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomerProfilesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -240,15 +240,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridge",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridge)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridge](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfigOutputReference",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketNameInput", GoGetter: "BucketNameInput"},
@@ -281,7 +281,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -289,7 +289,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeOutputReference",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -319,7 +319,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -327,15 +327,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycode",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycode)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycode](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfigOutputReference",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketNameInput", GoGetter: "BucketNameInput"},
@@ -368,7 +368,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -376,7 +376,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeOutputReference",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -406,7 +406,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -414,11 +414,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesLookoutMetrics",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesLookoutMetrics)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesLookoutMetrics](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesLookoutMetricsOutputReference",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesLookoutMetricsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesLookoutMetricsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -442,7 +442,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesLookoutMetricsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -450,15 +450,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketo",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketo)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketo](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfigOutputReference",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketNameInput", GoGetter: "BucketNameInput"},
@@ -491,7 +491,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -499,7 +499,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoOutputReference",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -529,7 +529,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -537,7 +537,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesOutputReference",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -613,7 +613,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zendesk", GoGetter: "Zendesk"},
 			_jsii_.MemberProperty{JsiiProperty: "zendeskInput", GoGetter: "ZendeskInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -621,15 +621,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshift",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshift)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshift](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfigOutputReference",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketNameInput", GoGetter: "BucketNameInput"},
@@ -662,7 +662,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -670,7 +670,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftOutputReference",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketPrefix", GoGetter: "BucketPrefix"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketPrefixInput", GoGetter: "BucketPrefixInput"},
@@ -705,7 +705,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -713,11 +713,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3OutputReference",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3OutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3OutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketNameInput", GoGetter: "BucketNameInput"},
@@ -750,7 +750,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3OutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -758,15 +758,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfigOutputReference",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregationType", GoGetter: "AggregationType"},
 			_jsii_.MemberProperty{JsiiProperty: "aggregationTypeInput", GoGetter: "AggregationTypeInput"},
@@ -793,7 +793,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -801,7 +801,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregationConfig", GoGetter: "AggregationConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "aggregationConfigInput", GoGetter: "AggregationConfigInput"},
@@ -836,7 +836,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -844,11 +844,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfigOutputReference",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -878,7 +878,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -886,15 +886,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforce",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforce)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforce](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfigOutputReference",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketNameInput", GoGetter: "BucketNameInput"},
@@ -927,7 +927,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -935,7 +935,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceOutputReference",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -971,7 +971,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "writeOperationType", GoGetter: "WriteOperationType"},
 			_jsii_.MemberProperty{JsiiProperty: "writeOperationTypeInput", GoGetter: "WriteOperationTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -979,15 +979,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoData",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoData)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoData](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfigOutputReference",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketNameInput", GoGetter: "BucketNameInput"},
@@ -1020,7 +1020,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1028,7 +1028,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataOutputReference",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1068,7 +1068,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "writeOperationType", GoGetter: "WriteOperationType"},
 			_jsii_.MemberProperty{JsiiProperty: "writeOperationTypeInput", GoGetter: "WriteOperationTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1076,11 +1076,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfig",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfig)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfigOutputReference",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketNameInput", GoGetter: "BucketNameInput"},
@@ -1110,7 +1110,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1118,15 +1118,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflake",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflake)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflake](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfigOutputReference",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketNameInput", GoGetter: "BucketNameInput"},
@@ -1159,7 +1159,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1167,7 +1167,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeOutputReference",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketPrefix", GoGetter: "BucketPrefix"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketPrefixInput", GoGetter: "BucketPrefixInput"},
@@ -1202,7 +1202,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1210,11 +1210,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolver",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolver)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolver](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverOutputReference",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketNameInput", GoGetter: "BucketNameInput"},
@@ -1246,7 +1246,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1254,15 +1254,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfig",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfig)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigAggregationConfig",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigAggregationConfig)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigAggregationConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigAggregationConfigOutputReference",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigAggregationConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigAggregationConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregationType", GoGetter: "AggregationType"},
 			_jsii_.MemberProperty{JsiiProperty: "aggregationTypeInput", GoGetter: "AggregationTypeInput"},
@@ -1289,7 +1289,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigAggregationConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1297,7 +1297,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigOutputReference",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregationConfig", GoGetter: "AggregationConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "aggregationConfigInput", GoGetter: "AggregationConfigInput"},
@@ -1331,7 +1331,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1339,11 +1339,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfig",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfig)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfigOutputReference",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1372,7 +1372,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1380,15 +1380,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendesk",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendesk)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendesk](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfigOutputReference",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketNameInput", GoGetter: "BucketNameInput"},
@@ -1421,7 +1421,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1429,7 +1429,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskOutputReference",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1465,7 +1465,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "writeOperationType", GoGetter: "WriteOperationType"},
 			_jsii_.MemberProperty{JsiiProperty: "writeOperationTypeInput", GoGetter: "WriteOperationTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1473,7 +1473,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigList",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigList)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1487,7 +1487,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowDestinationFlowConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1495,7 +1495,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigOutputReference",
-		reflect.TypeOf((*AppflowFlowDestinationFlowConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowDestinationFlowConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiVersion", GoGetter: "ApiVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "apiVersionInput", GoGetter: "ApiVersionInput"},
@@ -1530,7 +1530,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1538,15 +1538,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfig",
-		reflect.TypeOf((*AppflowFlowSourceFlowConfig)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowSourceFlowConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigIncrementalPullConfig",
-		reflect.TypeOf((*AppflowFlowSourceFlowConfigIncrementalPullConfig)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowSourceFlowConfigIncrementalPullConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigIncrementalPullConfigOutputReference",
-		reflect.TypeOf((*AppflowFlowSourceFlowConfigIncrementalPullConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowSourceFlowConfigIncrementalPullConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1573,7 +1573,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowSourceFlowConfigIncrementalPullConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1581,7 +1581,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigOutputReference",
-		reflect.TypeOf((*AppflowFlowSourceFlowConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowSourceFlowConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiVersion", GoGetter: "ApiVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "apiVersionInput", GoGetter: "ApiVersionInput"},
@@ -1620,7 +1620,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowSourceFlowConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1628,15 +1628,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorProperties",
-		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorProperties)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowSourceFlowConfigSourceConnectorProperties](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesAmplitude",
-		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesAmplitude)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowSourceFlowConfigSourceConnectorPropertiesAmplitude](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesAmplitudeOutputReference",
-		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesAmplitudeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowSourceFlowConfigSourceConnectorPropertiesAmplitudeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1662,7 +1662,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesAmplitudeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1670,11 +1670,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesCustomConnector",
-		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesCustomConnector)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowSourceFlowConfigSourceConnectorPropertiesCustomConnector](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesCustomConnectorOutputReference",
-		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesCustomConnectorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowSourceFlowConfigSourceConnectorPropertiesCustomConnectorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1703,7 +1703,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesCustomConnectorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1711,11 +1711,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesDatadog",
-		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesDatadog)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowSourceFlowConfigSourceConnectorPropertiesDatadog](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesDatadogOutputReference",
-		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesDatadogOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowSourceFlowConfigSourceConnectorPropertiesDatadogOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1741,7 +1741,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesDatadogOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1749,11 +1749,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesDynatrace",
-		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesDynatrace)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowSourceFlowConfigSourceConnectorPropertiesDynatrace](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesDynatraceOutputReference",
-		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesDynatraceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowSourceFlowConfigSourceConnectorPropertiesDynatraceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1779,7 +1779,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesDynatraceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1787,11 +1787,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesGoogleAnalytics",
-		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesGoogleAnalytics)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowSourceFlowConfigSourceConnectorPropertiesGoogleAnalytics](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesGoogleAnalyticsOutputReference",
-		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesGoogleAnalyticsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowSourceFlowConfigSourceConnectorPropertiesGoogleAnalyticsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1817,7 +1817,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesGoogleAnalyticsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1825,11 +1825,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesInforNexus",
-		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesInforNexus)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowSourceFlowConfigSourceConnectorPropertiesInforNexus](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesInforNexusOutputReference",
-		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesInforNexusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowSourceFlowConfigSourceConnectorPropertiesInforNexusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1855,7 +1855,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesInforNexusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1863,11 +1863,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesMarketo",
-		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesMarketo)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowSourceFlowConfigSourceConnectorPropertiesMarketo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesMarketoOutputReference",
-		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesMarketoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowSourceFlowConfigSourceConnectorPropertiesMarketoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1893,7 +1893,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesMarketoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1901,7 +1901,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesOutputReference",
-		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowSourceFlowConfigSourceConnectorPropertiesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "amplitude", GoGetter: "Amplitude"},
 			_jsii_.MemberProperty{JsiiProperty: "amplitudeInput", GoGetter: "AmplitudeInput"},
@@ -1989,7 +1989,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zendesk", GoGetter: "Zendesk"},
 			_jsii_.MemberProperty{JsiiProperty: "zendeskInput", GoGetter: "ZendeskInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1997,11 +1997,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3",
-		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3OutputReference",
-		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3OutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3OutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketNameInput", GoGetter: "BucketNameInput"},
@@ -2034,7 +2034,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3OutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2042,11 +2042,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfig",
-		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfig)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfigOutputReference",
-		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2073,7 +2073,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2081,11 +2081,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce",
-		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference",
-		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2117,7 +2117,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2125,11 +2125,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoData",
-		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoData)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoData](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataOutputReference",
-		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2155,7 +2155,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2163,11 +2163,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesServiceNow",
-		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesServiceNow)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowSourceFlowConfigSourceConnectorPropertiesServiceNow](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesServiceNowOutputReference",
-		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesServiceNowOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowSourceFlowConfigSourceConnectorPropertiesServiceNowOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2193,7 +2193,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesServiceNowOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2201,11 +2201,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSingular",
-		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesSingular)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowSourceFlowConfigSourceConnectorPropertiesSingular](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSingularOutputReference",
-		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesSingularOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowSourceFlowConfigSourceConnectorPropertiesSingularOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2231,7 +2231,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesSingularOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2239,11 +2239,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSlack",
-		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesSlack)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowSourceFlowConfigSourceConnectorPropertiesSlack](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSlackOutputReference",
-		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesSlackOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowSourceFlowConfigSourceConnectorPropertiesSlackOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2269,7 +2269,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesSlackOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2277,11 +2277,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesTrendmicro",
-		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesTrendmicro)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowSourceFlowConfigSourceConnectorPropertiesTrendmicro](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesTrendmicroOutputReference",
-		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesTrendmicroOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowSourceFlowConfigSourceConnectorPropertiesTrendmicroOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2307,7 +2307,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesTrendmicroOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2315,11 +2315,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva",
-		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference",
-		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2357,7 +2357,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2365,11 +2365,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesZendesk",
-		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesZendesk)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowSourceFlowConfigSourceConnectorPropertiesZendesk](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesZendeskOutputReference",
-		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesZendeskOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowSourceFlowConfigSourceConnectorPropertiesZendeskOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2395,7 +2395,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesZendeskOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2403,15 +2403,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowTask",
-		reflect.TypeOf((*AppflowFlowTask)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowTask](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator",
-		reflect.TypeOf((*AppflowFlowTaskConnectorOperator)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowTaskConnectorOperator](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorList",
-		reflect.TypeOf((*AppflowFlowTaskConnectorOperatorList)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowTaskConnectorOperatorList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2425,7 +2425,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowTaskConnectorOperatorList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2433,7 +2433,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorOutputReference",
-		reflect.TypeOf((*AppflowFlowTaskConnectorOperatorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowTaskConnectorOperatorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "amplitude", GoGetter: "Amplitude"},
 			_jsii_.MemberProperty{JsiiProperty: "amplitudeInput", GoGetter: "AmplitudeInput"},
@@ -2505,7 +2505,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zendesk", GoGetter: "Zendesk"},
 			_jsii_.MemberProperty{JsiiProperty: "zendeskInput", GoGetter: "ZendeskInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2513,7 +2513,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowTaskList",
-		reflect.TypeOf((*AppflowFlowTaskList)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowTaskList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2527,7 +2527,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowTaskList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2535,7 +2535,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference",
-		reflect.TypeOf((*AppflowFlowTaskOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowTaskOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2573,7 +2573,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowTaskOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2581,11 +2581,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfig",
-		reflect.TypeOf((*AppflowFlowTriggerConfig)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowTriggerConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfigOutputReference",
-		reflect.TypeOf((*AppflowFlowTriggerConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowTriggerConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2615,7 +2615,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "triggerType", GoGetter: "TriggerType"},
 			_jsii_.MemberProperty{JsiiProperty: "triggerTypeInput", GoGetter: "TriggerTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowTriggerConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2623,11 +2623,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfigTriggerProperties",
-		reflect.TypeOf((*AppflowFlowTriggerConfigTriggerProperties)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowTriggerConfigTriggerProperties](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfigTriggerPropertiesOutputReference",
-		reflect.TypeOf((*AppflowFlowTriggerConfigTriggerPropertiesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowTriggerConfigTriggerPropertiesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2655,7 +2655,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowTriggerConfigTriggerPropertiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2663,11 +2663,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfigTriggerPropertiesScheduled",
-		reflect.TypeOf((*AppflowFlowTriggerConfigTriggerPropertiesScheduled)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowTriggerConfigTriggerPropertiesScheduled](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfigTriggerPropertiesScheduledOutputReference",
-		reflect.TypeOf((*AppflowFlowTriggerConfigTriggerPropertiesScheduledOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowFlowTriggerConfigTriggerPropertiesScheduledOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2711,7 +2711,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timezoneInput", GoGetter: "TimezoneInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowFlowTriggerConfigTriggerPropertiesScheduledOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

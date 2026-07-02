@@ -98,7 +98,7 @@ func (c *jsiiProxy_ConnectPhoneNumberStatusOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_ConnectPhoneNumberStatusOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ConnectPhoneNumberStatusOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewConnectPhoneNumberStatusOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (e *jsiiProxy_EbsVolumeTimeoutsOutputReference) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_EbsVolumeTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EbsVolumeTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_EbsVolumeTimeoutsOutputReference) validateSetDeleteParameters
 	return nil
 }
 
-func (j *jsiiProxy_EbsVolumeTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EbsVolumeTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewEbsVolumeTimeoutsOutputReferenceParameters(terraformResource cdk
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lightsailStaticIp.LightsailStaticIp",
-		reflect.TypeOf((*LightsailStaticIp)(nil)).Elem(),
+		reflect.TypeFor[LightsailStaticIp](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LightsailStaticIp{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -69,6 +69,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lightsailStaticIp.LightsailStaticIpConfig",
-		reflect.TypeOf((*LightsailStaticIpConfig)(nil)).Elem(),
+		reflect.TypeFor[LightsailStaticIpConfig](),
 	)
 }

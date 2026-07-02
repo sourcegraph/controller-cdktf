@@ -18,15 +18,15 @@ type LbTargetGroupAttachment interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -56,11 +56,11 @@ type LbTargetGroupAttachment interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	TargetGroupArn() *string
 	SetTargetGroupArn(val *string)
 	TargetGroupArnInput() *string
@@ -70,16 +70,16 @@ type LbTargetGroupAttachment interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,7 +97,7 @@ type LbTargetGroupAttachment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -109,7 +109,7 @@ type LbTargetGroupAttachment interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -122,17 +122,17 @@ type LbTargetGroupAttachment interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPort()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for LbTargetGroupAttachment
@@ -170,8 +170,8 @@ func (j *jsiiProxy_LbTargetGroupAttachment) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_LbTargetGroupAttachment) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LbTargetGroupAttachment) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_LbTargetGroupAttachment) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LbTargetGroupAttachment) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LbTargetGroupAttachment) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_LbTargetGroupAttachment) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_LbTargetGroupAttachment) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LbTargetGroupAttachment) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -310,8 +310,8 @@ func (j *jsiiProxy_LbTargetGroupAttachment) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_LbTargetGroupAttachment) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_LbTargetGroupAttachment) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -320,8 +320,8 @@ func (j *jsiiProxy_LbTargetGroupAttachment) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LbTargetGroupAttachment) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LbTargetGroupAttachment) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -380,8 +380,8 @@ func (j *jsiiProxy_LbTargetGroupAttachment) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_LbTargetGroupAttachment) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LbTargetGroupAttachment) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -400,7 +400,6 @@ func (j *jsiiProxy_LbTargetGroupAttachment) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lb_target_group_attachment aws_lb_target_group_attachment} Resource.
 func NewLbTargetGroupAttachment(scope constructs.Construct, id *string, config *LbTargetGroupAttachmentConfig) LbTargetGroupAttachment {
 	_init_.Initialize()
@@ -412,7 +411,7 @@ func NewLbTargetGroupAttachment(scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lbTargetGroupAttachment.LbTargetGroupAttachment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -425,12 +424,12 @@ func NewLbTargetGroupAttachment_Override(l LbTargetGroupAttachment, scope constr
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lbTargetGroupAttachment.LbTargetGroupAttachment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LbTargetGroupAttachment)SetAvailabilityZone(val *string) {
+func (j *jsiiProxy_LbTargetGroupAttachment) SetAvailabilityZone(val *string) {
 	if err := j.validateSetAvailabilityZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_LbTargetGroupAttachment)SetAvailabilityZone(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LbTargetGroupAttachment)SetConnection(val interface{}) {
+func (j *jsiiProxy_LbTargetGroupAttachment) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_LbTargetGroupAttachment)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LbTargetGroupAttachment)SetCount(val interface{}) {
+func (j *jsiiProxy_LbTargetGroupAttachment) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_LbTargetGroupAttachment)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LbTargetGroupAttachment)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LbTargetGroupAttachment) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -471,7 +470,7 @@ func (j *jsiiProxy_LbTargetGroupAttachment)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LbTargetGroupAttachment)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LbTargetGroupAttachment) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -479,7 +478,7 @@ func (j *jsiiProxy_LbTargetGroupAttachment)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_LbTargetGroupAttachment)SetId(val *string) {
+func (j *jsiiProxy_LbTargetGroupAttachment) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_LbTargetGroupAttachment)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LbTargetGroupAttachment)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LbTargetGroupAttachment) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_LbTargetGroupAttachment)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_LbTargetGroupAttachment)SetPort(val *float64) {
+func (j *jsiiProxy_LbTargetGroupAttachment) SetPort(val *float64) {
 	if err := j.validateSetPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_LbTargetGroupAttachment)SetPort(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_LbTargetGroupAttachment)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LbTargetGroupAttachment) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -520,7 +519,7 @@ func (j *jsiiProxy_LbTargetGroupAttachment)SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_LbTargetGroupAttachment)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LbTargetGroupAttachment) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -531,7 +530,7 @@ func (j *jsiiProxy_LbTargetGroupAttachment)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LbTargetGroupAttachment)SetTargetGroupArn(val *string) {
+func (j *jsiiProxy_LbTargetGroupAttachment) SetTargetGroupArn(val *string) {
 	if err := j.validateSetTargetGroupArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -542,7 +541,7 @@ func (j *jsiiProxy_LbTargetGroupAttachment)SetTargetGroupArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LbTargetGroupAttachment)SetTargetId(val *string) {
+func (j *jsiiProxy_LbTargetGroupAttachment) SetTargetId(val *string) {
 	if err := j.validateSetTargetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +564,7 @@ func LbTargetGroupAttachment_GenerateConfigForImport(scope constructs.Construct,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lbTargetGroupAttachment.LbTargetGroupAttachment",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func LbTargetGroupAttachment_GenerateConfigForImport(scope constructs.Construct,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func LbTargetGroupAttachment_IsConstruct(x interface{}) *bool {
+func LbTargetGroupAttachment_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLbTargetGroupAttachment_IsConstructParameters(x); err != nil {
@@ -600,7 +599,7 @@ func LbTargetGroupAttachment_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lbTargetGroupAttachment.LbTargetGroupAttachment",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -608,7 +607,7 @@ func LbTargetGroupAttachment_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func LbTargetGroupAttachment_IsTerraformElement(x interface{}) *bool {
+func LbTargetGroupAttachment_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLbTargetGroupAttachment_IsTerraformElementParameters(x); err != nil {
@@ -619,7 +618,7 @@ func LbTargetGroupAttachment_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lbTargetGroupAttachment.LbTargetGroupAttachment",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func LbTargetGroupAttachment_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func LbTargetGroupAttachment_IsTerraformResource(x interface{}) *bool {
+func LbTargetGroupAttachment_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLbTargetGroupAttachment_IsTerraformResourceParameters(x); err != nil {
@@ -638,7 +637,7 @@ func LbTargetGroupAttachment_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lbTargetGroupAttachment.LbTargetGroupAttachment",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -663,31 +662,31 @@ func (l *jsiiProxy_LbTargetGroupAttachment) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (l *jsiiProxy_LbTargetGroupAttachment) AddOverride(path *string, value interface{}) {
+func (l *jsiiProxy_LbTargetGroupAttachment) AddOverride(path *string, value any) {
 	if err := l.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (l *jsiiProxy_LbTargetGroupAttachment) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LbTargetGroupAttachment) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -703,7 +702,7 @@ func (l *jsiiProxy_LbTargetGroupAttachment) GetBooleanAttribute(terraformAttribu
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func (l *jsiiProxy_LbTargetGroupAttachment) GetBooleanMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -735,7 +734,7 @@ func (l *jsiiProxy_LbTargetGroupAttachment) GetListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -751,7 +750,7 @@ func (l *jsiiProxy_LbTargetGroupAttachment) GetNumberAttribute(terraformAttribut
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -767,7 +766,7 @@ func (l *jsiiProxy_LbTargetGroupAttachment) GetNumberListAttribute(terraformAttr
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -783,7 +782,7 @@ func (l *jsiiProxy_LbTargetGroupAttachment) GetNumberMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,7 +798,7 @@ func (l *jsiiProxy_LbTargetGroupAttachment) GetStringAttribute(terraformAttribut
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -815,15 +814,15 @@ func (l *jsiiProxy_LbTargetGroupAttachment) GetStringMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LbTargetGroupAttachment) HasResourceMove() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LbTargetGroupAttachment) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -842,7 +841,7 @@ func (l *jsiiProxy_LbTargetGroupAttachment) ImportFrom(id *string, provider cdkt
 	_jsii_.InvokeVoid(
 		l,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -855,7 +854,7 @@ func (l *jsiiProxy_LbTargetGroupAttachment) InterpolationForAttribute(terraformA
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -869,18 +868,18 @@ func (l *jsiiProxy_LbTargetGroupAttachment) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (l *jsiiProxy_LbTargetGroupAttachment) MoveTo(moveTarget *string, index interface{}) {
+func (l *jsiiProxy_LbTargetGroupAttachment) MoveTo(moveTarget *string, index any) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -891,7 +890,7 @@ func (l *jsiiProxy_LbTargetGroupAttachment) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -902,7 +901,7 @@ func (l *jsiiProxy_LbTargetGroupAttachment) OverrideLogicalId(newLogicalId *stri
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -938,8 +937,8 @@ func (l *jsiiProxy_LbTargetGroupAttachment) ResetPort() {
 	)
 }
 
-func (l *jsiiProxy_LbTargetGroupAttachment) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LbTargetGroupAttachment) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -951,8 +950,8 @@ func (l *jsiiProxy_LbTargetGroupAttachment) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (l *jsiiProxy_LbTargetGroupAttachment) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LbTargetGroupAttachment) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -964,8 +963,8 @@ func (l *jsiiProxy_LbTargetGroupAttachment) SynthesizeHclAttributes() *map[strin
 	return returns
 }
 
-func (l *jsiiProxy_LbTargetGroupAttachment) ToHclTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LbTargetGroupAttachment) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -977,8 +976,8 @@ func (l *jsiiProxy_LbTargetGroupAttachment) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LbTargetGroupAttachment) ToMetadata() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LbTargetGroupAttachment) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1003,8 +1002,8 @@ func (l *jsiiProxy_LbTargetGroupAttachment) ToString() *string {
 	return returns
 }
 
-func (l *jsiiProxy_LbTargetGroupAttachment) ToTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LbTargetGroupAttachment) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1015,4 +1014,3 @@ func (l *jsiiProxy_LbTargetGroupAttachment) ToTerraform() interface{} {
 
 	return returns
 }
-

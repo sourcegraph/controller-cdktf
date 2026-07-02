@@ -98,7 +98,7 @@ func (b *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateSetComplexObje
 	return nil
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateSetIncludeCreditParameters(val interface{}) error {
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateSetIncludeCreditParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateSetIncludeCred
 	return nil
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateSetIncludeDiscountParameters(val interface{}) error {
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateSetIncludeDiscountParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +203,7 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateSetIncludeDisc
 	return nil
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateSetIncludeOtherSubscriptionParameters(val interface{}) error {
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateSetIncludeOtherSubscriptionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -223,7 +223,7 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateSetIncludeOthe
 	return nil
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateSetIncludeRecurringParameters(val interface{}) error {
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateSetIncludeRecurringParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -243,7 +243,7 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateSetIncludeRecu
 	return nil
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateSetIncludeRefundParameters(val interface{}) error {
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateSetIncludeRefundParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateSetIncludeRefu
 	return nil
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateSetIncludeSubscriptionParameters(val interface{}) error {
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateSetIncludeSubscriptionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateSetIncludeSubs
 	return nil
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateSetIncludeSupportParameters(val interface{}) error {
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateSetIncludeSupportParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -303,7 +303,7 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateSetIncludeSupp
 	return nil
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateSetIncludeTaxParameters(val interface{}) error {
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateSetIncludeTaxParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -323,7 +323,7 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateSetIncludeTaxP
 	return nil
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateSetIncludeUpfrontParameters(val interface{}) error {
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateSetIncludeUpfrontParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -367,7 +367,7 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateSetTerraformRe
 	return nil
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateSetUseAmortizedParameters(val interface{}) error {
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateSetUseAmortizedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -387,7 +387,7 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateSetUseAmortize
 	return nil
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateSetUseBlendedParameters(val interface{}) error {
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateSetUseBlendedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -418,4 +418,3 @@ func validateNewBudgetsBudgetCostTypesOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

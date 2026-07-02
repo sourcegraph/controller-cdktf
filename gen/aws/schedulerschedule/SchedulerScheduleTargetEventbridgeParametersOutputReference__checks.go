@@ -98,7 +98,7 @@ func (s *jsiiProxy_SchedulerScheduleTargetEventbridgeParametersOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetEventbridgeParametersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SchedulerScheduleTargetEventbridgeParametersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewSchedulerScheduleTargetEventbridgeParametersOutputReferenceParam
 
 	return nil
 }
-

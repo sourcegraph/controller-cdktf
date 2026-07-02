@@ -98,7 +98,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationInputsProcessingConfigurationLambd
 	return nil
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationInputsProcessingConfigurationLambdaOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KinesisAnalyticsApplicationInputsProcessingConfigurationLambdaOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewKinesisAnalyticsApplicationInputsProcessingConfigurationLambdaOu
 
 	return nil
 }
-

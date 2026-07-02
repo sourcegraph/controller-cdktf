@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsIamServerCertificate.DataAwsIamServerCertificate",
-		reflect.TypeOf((*DataAwsIamServerCertificate)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIamServerCertificate](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -66,7 +66,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "uploadDate", GoGetter: "UploadDate"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsIamServerCertificate{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -74,6 +74,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsIamServerCertificate.DataAwsIamServerCertificateConfig",
-		reflect.TypeOf((*DataAwsIamServerCertificateConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIamServerCertificateConfig](),
 	)
 }

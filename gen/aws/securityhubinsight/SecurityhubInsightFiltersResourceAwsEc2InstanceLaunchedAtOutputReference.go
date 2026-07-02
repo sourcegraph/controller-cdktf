@@ -12,9 +12,9 @@ type SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference in
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -32,8 +32,8 @@ type SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference in
 	EndInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Start() *string
 	SetStart(val *string)
 	StartInput() *string
@@ -48,7 +48,7 @@ type SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference in
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference in
 	ResetStart()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputRe
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutp
 	return returns
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutp
 	return returns
 }
 
-
 func NewSecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewSecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewSecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutp
 	)
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutp
 	)
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference)SetEnd(val *string) {
+func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference) SetEnd(val *string) {
 	if err := j.validateSetEndParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutp
 	)
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutp
 	)
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference)SetStart(val *string) {
+func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference) SetStart(val *string) {
 	if err := j.validateSetStartParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutp
 	)
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutp
 	)
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,16 +335,16 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutp
 	return returns
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -361,7 +360,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutp
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -377,7 +376,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutp
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -393,7 +392,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutp
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutp
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutp
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutp
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutp
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutp
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutp
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -516,7 +515,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutp
 	_jsii_.InvokeVoid(
 		s,
 		"putDateRange",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -544,16 +543,16 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutp
 	)
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutp
 
 	return returns
 }
-

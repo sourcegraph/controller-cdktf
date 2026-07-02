@@ -106,7 +106,7 @@ func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) validateSetArgsPa
 	return nil
 }
 
-func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) validateSetComple
 	return nil
 }
 
-func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewEmrClusterStepHadoopJarStepOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

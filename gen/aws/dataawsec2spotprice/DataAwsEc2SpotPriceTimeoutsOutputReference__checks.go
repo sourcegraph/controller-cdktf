@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsEc2SpotPriceTimeoutsOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2SpotPriceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEc2SpotPriceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataAwsEc2SpotPriceTimeoutsOutputReference) validateSetComple
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2SpotPriceTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEc2SpotPriceTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataAwsEc2SpotPriceTimeoutsOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

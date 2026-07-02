@@ -16,11 +16,11 @@ type DataAwsMskconnectWorkerConfiguration interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,17 +53,17 @@ type DataAwsMskconnectWorkerConfiguration interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -89,18 +89,18 @@ type DataAwsMskconnectWorkerConfiguration interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsMskconnectWorkerConfiguration
@@ -128,8 +128,8 @@ func (j *jsiiProxy_DataAwsMskconnectWorkerConfiguration) CdktfStack() cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsMskconnectWorkerConfiguration) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsMskconnectWorkerConfiguration) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -138,8 +138,8 @@ func (j *jsiiProxy_DataAwsMskconnectWorkerConfiguration) ConstructNodeMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsMskconnectWorkerConfiguration) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsMskconnectWorkerConfiguration) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -288,8 +288,8 @@ func (j *jsiiProxy_DataAwsMskconnectWorkerConfiguration) Provider() cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsMskconnectWorkerConfiguration) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsMskconnectWorkerConfiguration) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -308,8 +308,8 @@ func (j *jsiiProxy_DataAwsMskconnectWorkerConfiguration) TerraformGeneratorMetad
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsMskconnectWorkerConfiguration) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsMskconnectWorkerConfiguration) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -328,7 +328,6 @@ func (j *jsiiProxy_DataAwsMskconnectWorkerConfiguration) TerraformResourceType()
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/mskconnect_worker_configuration aws_mskconnect_worker_configuration} Data Source.
 func NewDataAwsMskconnectWorkerConfiguration(scope constructs.Construct, id *string, config *DataAwsMskconnectWorkerConfigurationConfig) DataAwsMskconnectWorkerConfiguration {
 	_init_.Initialize()
@@ -340,7 +339,7 @@ func NewDataAwsMskconnectWorkerConfiguration(scope constructs.Construct, id *str
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsMskconnectWorkerConfiguration.DataAwsMskconnectWorkerConfiguration",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -353,12 +352,12 @@ func NewDataAwsMskconnectWorkerConfiguration_Override(d DataAwsMskconnectWorkerC
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsMskconnectWorkerConfiguration.DataAwsMskconnectWorkerConfiguration",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsMskconnectWorkerConfiguration)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsMskconnectWorkerConfiguration) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -369,7 +368,7 @@ func (j *jsiiProxy_DataAwsMskconnectWorkerConfiguration)SetCount(val interface{}
 	)
 }
 
-func (j *jsiiProxy_DataAwsMskconnectWorkerConfiguration)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsMskconnectWorkerConfiguration) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -377,7 +376,7 @@ func (j *jsiiProxy_DataAwsMskconnectWorkerConfiguration)SetDependsOn(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_DataAwsMskconnectWorkerConfiguration)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsMskconnectWorkerConfiguration) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -385,7 +384,7 @@ func (j *jsiiProxy_DataAwsMskconnectWorkerConfiguration)SetForEach(val cdktf.ITe
 	)
 }
 
-func (j *jsiiProxy_DataAwsMskconnectWorkerConfiguration)SetId(val *string) {
+func (j *jsiiProxy_DataAwsMskconnectWorkerConfiguration) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -396,7 +395,7 @@ func (j *jsiiProxy_DataAwsMskconnectWorkerConfiguration)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsMskconnectWorkerConfiguration)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsMskconnectWorkerConfiguration) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -407,7 +406,7 @@ func (j *jsiiProxy_DataAwsMskconnectWorkerConfiguration)SetLifecycle(val *cdktf.
 	)
 }
 
-func (j *jsiiProxy_DataAwsMskconnectWorkerConfiguration)SetName(val *string) {
+func (j *jsiiProxy_DataAwsMskconnectWorkerConfiguration) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -418,7 +417,7 @@ func (j *jsiiProxy_DataAwsMskconnectWorkerConfiguration)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsMskconnectWorkerConfiguration)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsMskconnectWorkerConfiguration) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -438,7 +437,7 @@ func DataAwsMskconnectWorkerConfiguration_GenerateConfigForImport(scope construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsMskconnectWorkerConfiguration.DataAwsMskconnectWorkerConfiguration",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -462,7 +461,7 @@ func DataAwsMskconnectWorkerConfiguration_GenerateConfigForImport(scope construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsMskconnectWorkerConfiguration_IsConstruct(x interface{}) *bool {
+func DataAwsMskconnectWorkerConfiguration_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsMskconnectWorkerConfiguration_IsConstructParameters(x); err != nil {
@@ -473,7 +472,7 @@ func DataAwsMskconnectWorkerConfiguration_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsMskconnectWorkerConfiguration.DataAwsMskconnectWorkerConfiguration",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func DataAwsMskconnectWorkerConfiguration_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsMskconnectWorkerConfiguration_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsMskconnectWorkerConfiguration_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsMskconnectWorkerConfiguration_IsTerraformDataSourceParameters(x); err != nil {
@@ -492,7 +491,7 @@ func DataAwsMskconnectWorkerConfiguration_IsTerraformDataSource(x interface{}) *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsMskconnectWorkerConfiguration.DataAwsMskconnectWorkerConfiguration",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -500,7 +499,7 @@ func DataAwsMskconnectWorkerConfiguration_IsTerraformDataSource(x interface{}) *
 }
 
 // Experimental.
-func DataAwsMskconnectWorkerConfiguration_IsTerraformElement(x interface{}) *bool {
+func DataAwsMskconnectWorkerConfiguration_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsMskconnectWorkerConfiguration_IsTerraformElementParameters(x); err != nil {
@@ -511,7 +510,7 @@ func DataAwsMskconnectWorkerConfiguration_IsTerraformElement(x interface{}) *boo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsMskconnectWorkerConfiguration.DataAwsMskconnectWorkerConfiguration",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -529,27 +528,27 @@ func DataAwsMskconnectWorkerConfiguration_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsMskconnectWorkerConfiguration) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsMskconnectWorkerConfiguration) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsMskconnectWorkerConfiguration) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsMskconnectWorkerConfiguration) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -565,7 +564,7 @@ func (d *jsiiProxy_DataAwsMskconnectWorkerConfiguration) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func (d *jsiiProxy_DataAwsMskconnectWorkerConfiguration) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -597,7 +596,7 @@ func (d *jsiiProxy_DataAwsMskconnectWorkerConfiguration) GetListAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func (d *jsiiProxy_DataAwsMskconnectWorkerConfiguration) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -629,7 +628,7 @@ func (d *jsiiProxy_DataAwsMskconnectWorkerConfiguration) GetNumberListAttribute(
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -645,7 +644,7 @@ func (d *jsiiProxy_DataAwsMskconnectWorkerConfiguration) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func (d *jsiiProxy_DataAwsMskconnectWorkerConfiguration) GetStringAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func (d *jsiiProxy_DataAwsMskconnectWorkerConfiguration) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -693,7 +692,7 @@ func (d *jsiiProxy_DataAwsMskconnectWorkerConfiguration) InterpolationForAttribu
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -707,7 +706,7 @@ func (d *jsiiProxy_DataAwsMskconnectWorkerConfiguration) OverrideLogicalId(newLo
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -727,8 +726,8 @@ func (d *jsiiProxy_DataAwsMskconnectWorkerConfiguration) ResetOverrideLogicalId(
 	)
 }
 
-func (d *jsiiProxy_DataAwsMskconnectWorkerConfiguration) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsMskconnectWorkerConfiguration) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -740,8 +739,8 @@ func (d *jsiiProxy_DataAwsMskconnectWorkerConfiguration) SynthesizeAttributes() 
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsMskconnectWorkerConfiguration) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsMskconnectWorkerConfiguration) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -753,8 +752,8 @@ func (d *jsiiProxy_DataAwsMskconnectWorkerConfiguration) SynthesizeHclAttributes
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsMskconnectWorkerConfiguration) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsMskconnectWorkerConfiguration) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -766,8 +765,8 @@ func (d *jsiiProxy_DataAwsMskconnectWorkerConfiguration) ToHclTerraform() interf
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsMskconnectWorkerConfiguration) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsMskconnectWorkerConfiguration) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -792,8 +791,8 @@ func (d *jsiiProxy_DataAwsMskconnectWorkerConfiguration) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsMskconnectWorkerConfiguration) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsMskconnectWorkerConfiguration) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -804,4 +803,3 @@ func (d *jsiiProxy_DataAwsMskconnectWorkerConfiguration) ToTerraform() interface
 
 	return returns
 }
-

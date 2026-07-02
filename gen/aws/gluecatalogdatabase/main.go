@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueCatalogDatabase.GlueCatalogDatabase",
-		reflect.TypeOf((*GlueCatalogDatabase)(nil)).Elem(),
+		reflect.TypeFor[GlueCatalogDatabase](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,7 +79,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueCatalogDatabase{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -87,15 +87,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueCatalogDatabase.GlueCatalogDatabaseConfig",
-		reflect.TypeOf((*GlueCatalogDatabaseConfig)(nil)).Elem(),
+		reflect.TypeFor[GlueCatalogDatabaseConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueCatalogDatabase.GlueCatalogDatabaseCreateTableDefaultPermission",
-		reflect.TypeOf((*GlueCatalogDatabaseCreateTableDefaultPermission)(nil)).Elem(),
+		reflect.TypeFor[GlueCatalogDatabaseCreateTableDefaultPermission](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueCatalogDatabase.GlueCatalogDatabaseCreateTableDefaultPermissionList",
-		reflect.TypeOf((*GlueCatalogDatabaseCreateTableDefaultPermissionList)(nil)).Elem(),
+		reflect.TypeFor[GlueCatalogDatabaseCreateTableDefaultPermissionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -109,7 +109,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -117,7 +117,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueCatalogDatabase.GlueCatalogDatabaseCreateTableDefaultPermissionOutputReference",
-		reflect.TypeOf((*GlueCatalogDatabaseCreateTableDefaultPermissionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlueCatalogDatabaseCreateTableDefaultPermissionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -148,7 +148,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -156,11 +156,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueCatalogDatabase.GlueCatalogDatabaseCreateTableDefaultPermissionPrincipal",
-		reflect.TypeOf((*GlueCatalogDatabaseCreateTableDefaultPermissionPrincipal)(nil)).Elem(),
+		reflect.TypeFor[GlueCatalogDatabaseCreateTableDefaultPermissionPrincipal](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueCatalogDatabase.GlueCatalogDatabaseCreateTableDefaultPermissionPrincipalOutputReference",
-		reflect.TypeOf((*GlueCatalogDatabaseCreateTableDefaultPermissionPrincipalOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlueCatalogDatabaseCreateTableDefaultPermissionPrincipalOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -187,7 +187,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionPrincipalOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -195,11 +195,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueCatalogDatabase.GlueCatalogDatabaseTargetDatabase",
-		reflect.TypeOf((*GlueCatalogDatabaseTargetDatabase)(nil)).Elem(),
+		reflect.TypeFor[GlueCatalogDatabaseTargetDatabase](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueCatalogDatabase.GlueCatalogDatabaseTargetDatabaseOutputReference",
-		reflect.TypeOf((*GlueCatalogDatabaseTargetDatabaseOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlueCatalogDatabaseTargetDatabaseOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "catalogId", GoGetter: "CatalogId"},
 			_jsii_.MemberProperty{JsiiProperty: "catalogIdInput", GoGetter: "CatalogIdInput"},
@@ -227,7 +227,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueCatalogDatabaseTargetDatabaseOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

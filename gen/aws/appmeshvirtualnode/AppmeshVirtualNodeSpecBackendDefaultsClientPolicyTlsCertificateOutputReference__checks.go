@@ -120,7 +120,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertifica
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateO
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsEksNodeGroupScalingConfigOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEksNodeGroupScalingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEksNodeGroupScalingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsEksNodeGroupScalingConfigOutputReferenceParameters(terraf
 
 	return nil
 }
-

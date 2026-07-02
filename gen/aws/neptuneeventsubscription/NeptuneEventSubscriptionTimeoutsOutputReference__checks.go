@@ -98,7 +98,7 @@ func (n *jsiiProxy_NeptuneEventSubscriptionTimeoutsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_NeptuneEventSubscriptionTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NeptuneEventSubscriptionTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_NeptuneEventSubscriptionTimeoutsOutputReference) validateSetD
 	return nil
 }
 
-func (j *jsiiProxy_NeptuneEventSubscriptionTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NeptuneEventSubscriptionTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewNeptuneEventSubscriptionTimeoutsOutputReferenceParameters(terraf
 
 	return nil
 }
-

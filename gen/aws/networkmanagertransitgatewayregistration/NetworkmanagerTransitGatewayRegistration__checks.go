@@ -19,7 +19,7 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayRegistration) validateAddMoveTarg
 	return nil
 }
 
-func (n *jsiiProxy_NetworkmanagerTransitGatewayRegistration) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NetworkmanagerTransitGatewayRegistration) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayRegistration) validateMoveFromIdP
 	return nil
 }
 
-func (n *jsiiProxy_NetworkmanagerTransitGatewayRegistration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NetworkmanagerTransitGatewayRegistration) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateNetworkmanagerTransitGatewayRegistration_GenerateConfigForImportPar
 	return nil
 }
 
-func validateNetworkmanagerTransitGatewayRegistration_IsConstructParameters(x interface{}) error {
+func validateNetworkmanagerTransitGatewayRegistration_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateNetworkmanagerTransitGatewayRegistration_IsConstructParameters(x in
 	return nil
 }
 
-func validateNetworkmanagerTransitGatewayRegistration_IsTerraformElementParameters(x interface{}) error {
+func validateNetworkmanagerTransitGatewayRegistration_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateNetworkmanagerTransitGatewayRegistration_IsTerraformElementParamete
 	return nil
 }
 
-func validateNetworkmanagerTransitGatewayRegistration_IsTerraformResourceParameters(x interface{}) error {
+func validateNetworkmanagerTransitGatewayRegistration_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateNetworkmanagerTransitGatewayRegistration_IsTerraformResourceParamet
 	return nil
 }
 
-func (j *jsiiProxy_NetworkmanagerTransitGatewayRegistration) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkmanagerTransitGatewayRegistration) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_NetworkmanagerTransitGatewayRegistration) validateSetConnecti
 	return nil
 }
 
-func (j *jsiiProxy_NetworkmanagerTransitGatewayRegistration) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkmanagerTransitGatewayRegistration) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -369,7 +369,7 @@ func (j *jsiiProxy_NetworkmanagerTransitGatewayRegistration) validateSetLifecycl
 	return nil
 }
 
-func (j *jsiiProxy_NetworkmanagerTransitGatewayRegistration) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NetworkmanagerTransitGatewayRegistration) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -441,4 +441,3 @@ func validateNewNetworkmanagerTransitGatewayRegistrationParameters(scope constru
 
 	return nil
 }
-

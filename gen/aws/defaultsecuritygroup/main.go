@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroup",
-		reflect.TypeOf((*DefaultSecurityGroup)(nil)).Elem(),
+		reflect.TypeFor[DefaultSecurityGroup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,7 +81,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcIdInput", GoGetter: "VpcIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DefaultSecurityGroup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -89,15 +89,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupConfig",
-		reflect.TypeOf((*DefaultSecurityGroupConfig)(nil)).Elem(),
+		reflect.TypeFor[DefaultSecurityGroupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupEgress",
-		reflect.TypeOf((*DefaultSecurityGroupEgress)(nil)).Elem(),
+		reflect.TypeFor[DefaultSecurityGroupEgress](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupEgressList",
-		reflect.TypeOf((*DefaultSecurityGroupEgressList)(nil)).Elem(),
+		reflect.TypeFor[DefaultSecurityGroupEgressList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -111,7 +111,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DefaultSecurityGroupEgressList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -119,7 +119,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupEgressOutputReference",
-		reflect.TypeOf((*DefaultSecurityGroupEgressOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DefaultSecurityGroupEgressOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidrBlocks", GoGetter: "CidrBlocks"},
 			_jsii_.MemberProperty{JsiiProperty: "cidrBlocksInput", GoGetter: "CidrBlocksInput"},
@@ -170,7 +170,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "toPortInput", GoGetter: "ToPortInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DefaultSecurityGroupEgressOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -178,11 +178,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupIngress",
-		reflect.TypeOf((*DefaultSecurityGroupIngress)(nil)).Elem(),
+		reflect.TypeFor[DefaultSecurityGroupIngress](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupIngressList",
-		reflect.TypeOf((*DefaultSecurityGroupIngressList)(nil)).Elem(),
+		reflect.TypeFor[DefaultSecurityGroupIngressList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -196,7 +196,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DefaultSecurityGroupIngressList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -204,7 +204,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupIngressOutputReference",
-		reflect.TypeOf((*DefaultSecurityGroupIngressOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DefaultSecurityGroupIngressOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidrBlocks", GoGetter: "CidrBlocks"},
 			_jsii_.MemberProperty{JsiiProperty: "cidrBlocksInput", GoGetter: "CidrBlocksInput"},
@@ -255,7 +255,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "toPortInput", GoGetter: "ToPortInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DefaultSecurityGroupIngressOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementNotPrincipalsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementNotPrincipalsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementNotPrincipalsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementNotPrincipalsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementNotPrincipalsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementNotPrincipalsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDataAwsIamPolicyDocumentStatementNotPrincipalsOutputReferencePar
 
 	return nil
 }
-

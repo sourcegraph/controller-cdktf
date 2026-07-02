@@ -98,7 +98,7 @@ func (s *jsiiProxy_SagemakerFlowDefinitionOutputConfigOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerFlowDefinitionOutputConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerFlowDefinitionOutputConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewSagemakerFlowDefinitionOutputConfigOutputReferenceParameters(ter
 
 	return nil
 }
-

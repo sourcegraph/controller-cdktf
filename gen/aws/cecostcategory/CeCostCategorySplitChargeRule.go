@@ -1,6 +1,5 @@
 package cecostcategory
 
-
 type CeCostCategorySplitChargeRule struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ce_cost_category#method CeCostCategory#method}.
 	Method *string `field:"required" json:"method" yaml:"method"`
@@ -11,6 +10,5 @@ type CeCostCategorySplitChargeRule struct {
 	// parameter block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ce_cost_category#parameter CeCostCategory#parameter}
-	Parameter interface{} `field:"optional" json:"parameter" yaml:"parameter"`
+	Parameter any `field:"optional" json:"parameter" yaml:"parameter"`
 }
-

@@ -36,7 +36,7 @@ type DataAwsLbListenerDefaultActionList interface {
 	Get(index *float64) DataAwsLbListenerDefaultActionOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_DataAwsLbListenerDefaultActionList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewDataAwsLbListenerDefaultActionList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLbListenerDefaultActionList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewDataAwsLbListenerDefaultActionList(terraformResource cdktf.IInterpolatin
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewDataAwsLbListenerDefaultActionList_Override(d DataAwsLbListenerDefaultAc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsLbListenerDefaultActionList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataAwsLbListenerDefaultActionList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_DataAwsLbListenerDefaultActionList)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_DataAwsLbListenerDefaultActionList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataAwsLbListenerDefaultActionList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_DataAwsLbListenerDefaultActionList)SetTerraformResource(val c
 	)
 }
 
-func (j *jsiiProxy_DataAwsLbListenerDefaultActionList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataAwsLbListenerDefaultActionList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (d *jsiiProxy_DataAwsLbListenerDefaultActionList) AllWithMapKey(mapKeyAttri
 	_jsii_.Invoke(
 		d,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (d *jsiiProxy_DataAwsLbListenerDefaultActionList) Get(index *float64) DataA
 	_jsii_.Invoke(
 		d,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsLbListenerDefaultActionList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataAwsLbListenerDefaultActionList) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (d *jsiiProxy_DataAwsLbListenerDefaultActionList) ToString() *string {
 
 	return returns
 }
-

@@ -120,7 +120,7 @@ func (s *jsiiProxy_SagemakerWorkteamMemberDefinitionOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerWorkteamMemberDefinitionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerWorkteamMemberDefinitionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_SagemakerWorkteamMemberDefinitionOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerWorkteamMemberDefinitionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerWorkteamMemberDefinitionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -244,4 +244,3 @@ func validateNewSagemakerWorkteamMemberDefinitionOutputReferenceParameters(terra
 
 	return nil
 }
-

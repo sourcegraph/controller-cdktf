@@ -36,7 +36,7 @@ type Ec2NetworkInsightsAnalysisExplanationsAclRuleList interface {
 	Get(index *float64) Ec2NetworkInsightsAnalysisExplanationsAclRuleOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsAclRuleList) WrapsSet()
 	return returns
 }
 
-
 func NewEc2NetworkInsightsAnalysisExplanationsAclRuleList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Ec2NetworkInsightsAnalysisExplanationsAclRuleList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewEc2NetworkInsightsAnalysisExplanationsAclRuleList(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAclRuleList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewEc2NetworkInsightsAnalysisExplanationsAclRuleList_Override(e Ec2NetworkI
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAclRuleList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)
 }
 
-func (j *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsAclRuleList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsAclRuleList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsAclRuleList)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsAclRuleList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsAclRuleList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsAclRuleList)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsAclRuleList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsAclRuleList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (e *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsAclRuleList) AllWithMap
 	_jsii_.Invoke(
 		e,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (e *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsAclRuleList) Get(index 
 	_jsii_.Invoke(
 		e,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsAclRuleList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsAclRuleList) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (e *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsAclRuleList) ToString()
 
 	return returns
 }
-

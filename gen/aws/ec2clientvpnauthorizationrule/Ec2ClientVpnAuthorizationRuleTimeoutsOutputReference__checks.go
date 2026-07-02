@@ -98,7 +98,7 @@ func (e *jsiiProxy_Ec2ClientVpnAuthorizationRuleTimeoutsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_Ec2ClientVpnAuthorizationRuleTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2ClientVpnAuthorizationRuleTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_Ec2ClientVpnAuthorizationRuleTimeoutsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_Ec2ClientVpnAuthorizationRuleTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2ClientVpnAuthorizationRuleTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewEc2ClientVpnAuthorizationRuleTimeoutsOutputReferenceParameters(t
 
 	return nil
 }
-

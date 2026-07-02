@@ -12,9 +12,9 @@ type CognitoUserPoolEmailConfigurationOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -55,7 +55,7 @@ type CognitoUserPoolEmailConfigurationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type CognitoUserPoolEmailConfigurationOutputReference interface {
 	ResetSourceArn()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ type jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference) TerraformRe
 	return returns
 }
 
-
 func NewCognitoUserPoolEmailConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CognitoUserPoolEmailConfigurationOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewCognitoUserPoolEmailConfigurationOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolEmailConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewCognitoUserPoolEmailConfigurationOutputReference_Override(c CognitoUserP
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolEmailConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference)SetConfigurationSet(val *string) {
+func (j *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference) SetConfigurationSet(val *string) {
 	if err := j.validateSetConfigurationSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference)SetConfigura
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference)SetEmailSendingAccount(val *string) {
+func (j *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference) SetEmailSendingAccount(val *string) {
 	if err := j.validateSetEmailSendingAccountParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference)SetEmailSend
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference)SetFromEmailAddress(val *string) {
+func (j *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference) SetFromEmailAddress(val *string) {
 	if err := j.validateSetFromEmailAddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference)SetFromEmail
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference)SetInternalValue(val *CognitoUserPoolEmailConfiguration) {
+func (j *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference) SetInternalValue(val *CognitoUserPoolEmailConfiguration) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference)SetReplyToEmailAddress(val *string) {
+func (j *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference) SetReplyToEmailAddress(val *string) {
 	if err := j.validateSetReplyToEmailAddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference)SetReplyToEm
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference)SetSourceArn(val *string) {
+func (j *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference) SetSourceArn(val *string) {
 	if err := j.validateSetSourceArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference)SetSourceArn
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,16 +416,16 @@ func (c *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference) ComputeFqn(
 	return returns
 }
 
-func (c *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (c *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (c *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (c *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference) GetListAttr
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (c *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (c *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func (c *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (c *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference) GetStringAt
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (c *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference) GetStringMa
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (c *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference) Interpolati
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -630,16 +629,16 @@ func (c *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference) ResetSource
 	)
 }
 
-func (c *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (c *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference) ToString() 
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsServicecatalogPortfolioTimeoutsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsServicecatalogPortfolioTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsServicecatalogPortfolioTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataAwsServicecatalogPortfolioTimeoutsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsServicecatalogPortfolioTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsServicecatalogPortfolioTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataAwsServicecatalogPortfolioTimeoutsOutputReferenceParameters(
 
 	return nil
 }
-

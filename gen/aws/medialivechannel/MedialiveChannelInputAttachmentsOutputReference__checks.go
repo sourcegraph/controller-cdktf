@@ -120,7 +120,7 @@ func (m *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -201,7 +201,7 @@ func (j *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) validateSetI
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -260,4 +260,3 @@ func validateNewMedialiveChannelInputAttachmentsOutputReferenceParameters(terraf
 
 	return nil
 }
-

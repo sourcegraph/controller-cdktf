@@ -12,9 +12,9 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/storagegateway_smb_file_share aws_storagegateway_smb_file_share}.
 type StoragegatewaySmbFileShare interface {
 	cdktf.TerraformResource
-	AccessBasedEnumeration() interface{}
-	SetAccessBasedEnumeration(val interface{})
-	AccessBasedEnumerationInput() interface{}
+	AccessBasedEnumeration() any
+	SetAccessBasedEnumeration(val any)
+	AccessBasedEnumerationInput() any
 	AdminUserList() *[]*string
 	SetAdminUserList(val *[]*string)
 	AdminUserListInput() *[]*string
@@ -36,15 +36,15 @@ type StoragegatewaySmbFileShare interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DefaultStorageClass() *string
 	SetDefaultStorageClass(val *string)
 	DefaultStorageClassInput() *string
@@ -67,18 +67,18 @@ type StoragegatewaySmbFileShare interface {
 	GatewayArn() *string
 	SetGatewayArn(val *string)
 	GatewayArnInput() *string
-	GuessMimeTypeEnabled() interface{}
-	SetGuessMimeTypeEnabled(val interface{})
-	GuessMimeTypeEnabledInput() interface{}
+	GuessMimeTypeEnabled() any
+	SetGuessMimeTypeEnabled(val any)
+	GuessMimeTypeEnabledInput() any
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
 	InvalidUserList() *[]*string
 	SetInvalidUserList(val *[]*string)
 	InvalidUserListInput() *[]*string
-	KmsEncrypted() interface{}
-	SetKmsEncrypted(val interface{})
-	KmsEncryptedInput() interface{}
+	KmsEncrypted() any
+	SetKmsEncrypted(val any)
+	KmsEncryptedInput() any
 	KmsKeyArn() *string
 	SetKmsKeyArn(val *string)
 	KmsKeyArnInput() *string
@@ -97,32 +97,32 @@ type StoragegatewaySmbFileShare interface {
 	ObjectAcl() *string
 	SetObjectAcl(val *string)
 	ObjectAclInput() *string
-	OplocksEnabled() interface{}
-	SetOplocksEnabled(val interface{})
-	OplocksEnabledInput() interface{}
+	OplocksEnabled() any
+	SetOplocksEnabled(val any)
+	OplocksEnabledInput() any
 	Path() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
-	ReadOnly() interface{}
-	SetReadOnly(val interface{})
-	ReadOnlyInput() interface{}
-	RequesterPays() interface{}
-	SetRequesterPays(val interface{})
-	RequesterPaysInput() interface{}
+	RawOverrides() any
+	ReadOnly() any
+	SetReadOnly(val any)
+	ReadOnlyInput() any
+	RequesterPays() any
+	SetRequesterPays(val any)
+	RequesterPaysInput() any
 	RoleArn() *string
 	SetRoleArn(val *string)
 	RoleArnInput() *string
-	SmbAclEnabled() interface{}
-	SetSmbAclEnabled(val interface{})
-	SmbAclEnabledInput() interface{}
+	SmbAclEnabled() any
+	SetSmbAclEnabled(val any)
+	SmbAclEnabledInput() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -132,11 +132,11 @@ type StoragegatewaySmbFileShare interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() StoragegatewaySmbFileShareTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	ValidUserList() *[]*string
 	SetValidUserList(val *[]*string)
 	ValidUserListInput() *[]*string
@@ -147,9 +147,9 @@ type StoragegatewaySmbFileShare interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -167,7 +167,7 @@ type StoragegatewaySmbFileShare interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -179,7 +179,7 @@ type StoragegatewaySmbFileShare interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -216,17 +216,17 @@ type StoragegatewaySmbFileShare interface {
 	ResetTimeouts()
 	ResetValidUserList()
 	ResetVpcEndpointDnsName()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for StoragegatewaySmbFileShare
@@ -234,8 +234,8 @@ type jsiiProxy_StoragegatewaySmbFileShare struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare) AccessBasedEnumeration() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewaySmbFileShare) AccessBasedEnumeration() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"accessBasedEnumeration",
@@ -244,8 +244,8 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare) AccessBasedEnumeration() interfac
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare) AccessBasedEnumerationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewaySmbFileShare) AccessBasedEnumerationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"accessBasedEnumerationInput",
@@ -394,8 +394,8 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare) CdktfStack() cdktf.TerraformStack
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewaySmbFileShare) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -404,8 +404,8 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_StoragegatewaySmbFileShare) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -414,8 +414,8 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewaySmbFileShare) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -534,8 +534,8 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare) GatewayArnInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare) GuessMimeTypeEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewaySmbFileShare) GuessMimeTypeEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"guessMimeTypeEnabled",
@@ -544,8 +544,8 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare) GuessMimeTypeEnabled() interface{
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare) GuessMimeTypeEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewaySmbFileShare) GuessMimeTypeEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"guessMimeTypeEnabledInput",
@@ -594,8 +594,8 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare) InvalidUserListInput() *[]*string
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare) KmsEncrypted() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewaySmbFileShare) KmsEncrypted() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"kmsEncrypted",
@@ -604,8 +604,8 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare) KmsEncrypted() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare) KmsEncryptedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewaySmbFileShare) KmsEncryptedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"kmsEncryptedInput",
@@ -714,8 +714,8 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare) ObjectAclInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare) OplocksEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewaySmbFileShare) OplocksEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"oplocksEnabled",
@@ -724,8 +724,8 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare) OplocksEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare) OplocksEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewaySmbFileShare) OplocksEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"oplocksEnabledInput",
@@ -754,8 +754,8 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_StoragegatewaySmbFileShare) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -764,8 +764,8 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewaySmbFileShare) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -774,8 +774,8 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare) ReadOnly() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewaySmbFileShare) ReadOnly() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnly",
@@ -784,8 +784,8 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare) ReadOnly() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare) ReadOnlyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewaySmbFileShare) ReadOnlyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnlyInput",
@@ -794,8 +794,8 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare) ReadOnlyInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare) RequesterPays() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewaySmbFileShare) RequesterPays() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requesterPays",
@@ -804,8 +804,8 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare) RequesterPays() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare) RequesterPaysInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewaySmbFileShare) RequesterPaysInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requesterPaysInput",
@@ -834,8 +834,8 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare) RoleArnInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare) SmbAclEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewaySmbFileShare) SmbAclEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"smbAclEnabled",
@@ -844,8 +844,8 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare) SmbAclEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare) SmbAclEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewaySmbFileShare) SmbAclEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"smbAclEnabledInput",
@@ -904,8 +904,8 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_StoragegatewaySmbFileShare) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -934,8 +934,8 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare) Timeouts() StoragegatewaySmbFileS
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewaySmbFileShare) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -984,7 +984,6 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare) VpcEndpointDnsNameInput() *string
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/storagegateway_smb_file_share aws_storagegateway_smb_file_share} Resource.
 func NewStoragegatewaySmbFileShare(scope constructs.Construct, id *string, config *StoragegatewaySmbFileShareConfig) StoragegatewaySmbFileShare {
 	_init_.Initialize()
@@ -996,7 +995,7 @@ func NewStoragegatewaySmbFileShare(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShare",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -1009,12 +1008,12 @@ func NewStoragegatewaySmbFileShare_Override(s StoragegatewaySmbFileShare, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShare",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare)SetAccessBasedEnumeration(val interface{}) {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) SetAccessBasedEnumeration(val any) {
 	if err := j.validateSetAccessBasedEnumerationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1025,7 +1024,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare)SetAccessBasedEnumeration(val inte
 	)
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare)SetAdminUserList(val *[]*string) {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) SetAdminUserList(val *[]*string) {
 	if err := j.validateSetAdminUserListParameters(val); err != nil {
 		panic(err)
 	}
@@ -1036,7 +1035,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare)SetAdminUserList(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare)SetAuditDestinationArn(val *string) {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) SetAuditDestinationArn(val *string) {
 	if err := j.validateSetAuditDestinationArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -1047,7 +1046,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare)SetAuditDestinationArn(val *string
 	)
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare)SetAuthentication(val *string) {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) SetAuthentication(val *string) {
 	if err := j.validateSetAuthenticationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1058,7 +1057,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare)SetAuthentication(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare)SetBucketRegion(val *string) {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) SetBucketRegion(val *string) {
 	if err := j.validateSetBucketRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1069,7 +1068,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare)SetBucketRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare)SetCaseSensitivity(val *string) {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) SetCaseSensitivity(val *string) {
 	if err := j.validateSetCaseSensitivityParameters(val); err != nil {
 		panic(err)
 	}
@@ -1080,7 +1079,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare)SetCaseSensitivity(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare)SetConnection(val interface{}) {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1091,7 +1090,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare)SetCount(val interface{}) {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1102,7 +1101,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare)SetDefaultStorageClass(val *string) {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) SetDefaultStorageClass(val *string) {
 	if err := j.validateSetDefaultStorageClassParameters(val); err != nil {
 		panic(err)
 	}
@@ -1113,7 +1112,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare)SetDefaultStorageClass(val *string
 	)
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1121,7 +1120,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare)SetFileShareName(val *string) {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) SetFileShareName(val *string) {
 	if err := j.validateSetFileShareNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1132,7 +1131,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare)SetFileShareName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1140,7 +1139,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare)SetGatewayArn(val *string) {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) SetGatewayArn(val *string) {
 	if err := j.validateSetGatewayArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -1151,7 +1150,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare)SetGatewayArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare)SetGuessMimeTypeEnabled(val interface{}) {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) SetGuessMimeTypeEnabled(val any) {
 	if err := j.validateSetGuessMimeTypeEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1162,7 +1161,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare)SetGuessMimeTypeEnabled(val interf
 	)
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare)SetId(val *string) {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1173,7 +1172,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare)SetInvalidUserList(val *[]*string) {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) SetInvalidUserList(val *[]*string) {
 	if err := j.validateSetInvalidUserListParameters(val); err != nil {
 		panic(err)
 	}
@@ -1184,7 +1183,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare)SetInvalidUserList(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare)SetKmsEncrypted(val interface{}) {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) SetKmsEncrypted(val any) {
 	if err := j.validateSetKmsEncryptedParameters(val); err != nil {
 		panic(err)
 	}
@@ -1195,7 +1194,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare)SetKmsEncrypted(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare)SetKmsKeyArn(val *string) {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) SetKmsKeyArn(val *string) {
 	if err := j.validateSetKmsKeyArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -1206,7 +1205,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare)SetKmsKeyArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1217,7 +1216,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare)SetLocationArn(val *string) {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) SetLocationArn(val *string) {
 	if err := j.validateSetLocationArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -1228,7 +1227,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare)SetLocationArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare)SetNotificationPolicy(val *string) {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) SetNotificationPolicy(val *string) {
 	if err := j.validateSetNotificationPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1239,7 +1238,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare)SetNotificationPolicy(val *string)
 	)
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare)SetObjectAcl(val *string) {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) SetObjectAcl(val *string) {
 	if err := j.validateSetObjectAclParameters(val); err != nil {
 		panic(err)
 	}
@@ -1250,7 +1249,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare)SetObjectAcl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare)SetOplocksEnabled(val interface{}) {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) SetOplocksEnabled(val any) {
 	if err := j.validateSetOplocksEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1261,7 +1260,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare)SetOplocksEnabled(val interface{})
 	)
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1269,7 +1268,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1280,7 +1279,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare)SetProvisioners(val *[]interface{}
 	)
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare)SetReadOnly(val interface{}) {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) SetReadOnly(val any) {
 	if err := j.validateSetReadOnlyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1291,7 +1290,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare)SetReadOnly(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare)SetRequesterPays(val interface{}) {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) SetRequesterPays(val any) {
 	if err := j.validateSetRequesterPaysParameters(val); err != nil {
 		panic(err)
 	}
@@ -1302,7 +1301,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare)SetRequesterPays(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare)SetRoleArn(val *string) {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) SetRoleArn(val *string) {
 	if err := j.validateSetRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -1313,7 +1312,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare)SetRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare)SetSmbAclEnabled(val interface{}) {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) SetSmbAclEnabled(val any) {
 	if err := j.validateSetSmbAclEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1324,7 +1323,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare)SetSmbAclEnabled(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1335,7 +1334,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1346,7 +1345,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare)SetTagsAll(val *map[string]*string
 	)
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare)SetValidUserList(val *[]*string) {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) SetValidUserList(val *[]*string) {
 	if err := j.validateSetValidUserListParameters(val); err != nil {
 		panic(err)
 	}
@@ -1357,7 +1356,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare)SetValidUserList(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare)SetVpcEndpointDnsName(val *string) {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) SetVpcEndpointDnsName(val *string) {
 	if err := j.validateSetVpcEndpointDnsNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1380,7 +1379,7 @@ func StoragegatewaySmbFileShare_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShare",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1404,7 +1403,7 @@ func StoragegatewaySmbFileShare_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func StoragegatewaySmbFileShare_IsConstruct(x interface{}) *bool {
+func StoragegatewaySmbFileShare_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateStoragegatewaySmbFileShare_IsConstructParameters(x); err != nil {
@@ -1415,7 +1414,7 @@ func StoragegatewaySmbFileShare_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShare",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1423,7 +1422,7 @@ func StoragegatewaySmbFileShare_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func StoragegatewaySmbFileShare_IsTerraformElement(x interface{}) *bool {
+func StoragegatewaySmbFileShare_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateStoragegatewaySmbFileShare_IsTerraformElementParameters(x); err != nil {
@@ -1434,7 +1433,7 @@ func StoragegatewaySmbFileShare_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShare",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1442,7 +1441,7 @@ func StoragegatewaySmbFileShare_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func StoragegatewaySmbFileShare_IsTerraformResource(x interface{}) *bool {
+func StoragegatewaySmbFileShare_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateStoragegatewaySmbFileShare_IsTerraformResourceParameters(x); err != nil {
@@ -1453,7 +1452,7 @@ func StoragegatewaySmbFileShare_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShare",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1478,31 +1477,31 @@ func (s *jsiiProxy_StoragegatewaySmbFileShare) AddMoveTarget(moveTarget *string)
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_StoragegatewaySmbFileShare) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_StoragegatewaySmbFileShare) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_StoragegatewaySmbFileShare) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_StoragegatewaySmbFileShare) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1518,7 +1517,7 @@ func (s *jsiiProxy_StoragegatewaySmbFileShare) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1534,7 +1533,7 @@ func (s *jsiiProxy_StoragegatewaySmbFileShare) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1550,7 +1549,7 @@ func (s *jsiiProxy_StoragegatewaySmbFileShare) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1566,7 +1565,7 @@ func (s *jsiiProxy_StoragegatewaySmbFileShare) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1582,7 +1581,7 @@ func (s *jsiiProxy_StoragegatewaySmbFileShare) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1598,7 +1597,7 @@ func (s *jsiiProxy_StoragegatewaySmbFileShare) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1614,7 +1613,7 @@ func (s *jsiiProxy_StoragegatewaySmbFileShare) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1630,15 +1629,15 @@ func (s *jsiiProxy_StoragegatewaySmbFileShare) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_StoragegatewaySmbFileShare) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StoragegatewaySmbFileShare) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1657,7 +1656,7 @@ func (s *jsiiProxy_StoragegatewaySmbFileShare) ImportFrom(id *string, provider c
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1670,7 +1669,7 @@ func (s *jsiiProxy_StoragegatewaySmbFileShare) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1684,18 +1683,18 @@ func (s *jsiiProxy_StoragegatewaySmbFileShare) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_StoragegatewaySmbFileShare) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_StoragegatewaySmbFileShare) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1706,7 +1705,7 @@ func (s *jsiiProxy_StoragegatewaySmbFileShare) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1717,7 +1716,7 @@ func (s *jsiiProxy_StoragegatewaySmbFileShare) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1728,7 +1727,7 @@ func (s *jsiiProxy_StoragegatewaySmbFileShare) PutCacheAttributes(value *Storage
 	_jsii_.InvokeVoid(
 		s,
 		"putCacheAttributes",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1739,7 +1738,7 @@ func (s *jsiiProxy_StoragegatewaySmbFileShare) PutTimeouts(value *Storagegateway
 	_jsii_.InvokeVoid(
 		s,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1951,8 +1950,8 @@ func (s *jsiiProxy_StoragegatewaySmbFileShare) ResetVpcEndpointDnsName() {
 	)
 }
 
-func (s *jsiiProxy_StoragegatewaySmbFileShare) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_StoragegatewaySmbFileShare) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1964,8 +1963,8 @@ func (s *jsiiProxy_StoragegatewaySmbFileShare) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (s *jsiiProxy_StoragegatewaySmbFileShare) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_StoragegatewaySmbFileShare) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1977,8 +1976,8 @@ func (s *jsiiProxy_StoragegatewaySmbFileShare) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (s *jsiiProxy_StoragegatewaySmbFileShare) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StoragegatewaySmbFileShare) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1990,8 +1989,8 @@ func (s *jsiiProxy_StoragegatewaySmbFileShare) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_StoragegatewaySmbFileShare) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StoragegatewaySmbFileShare) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -2016,8 +2015,8 @@ func (s *jsiiProxy_StoragegatewaySmbFileShare) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_StoragegatewaySmbFileShare) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StoragegatewaySmbFileShare) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -2028,4 +2027,3 @@ func (s *jsiiProxy_StoragegatewaySmbFileShare) ToTerraform() interface{} {
 
 	return returns
 }
-

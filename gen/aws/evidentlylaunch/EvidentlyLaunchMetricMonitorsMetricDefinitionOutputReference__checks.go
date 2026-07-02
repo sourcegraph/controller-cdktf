@@ -98,7 +98,7 @@ func (e *jsiiProxy_EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewEvidentlyLaunchMetricMonitorsMetricDefinitionOutputReferencePara
 
 	return nil
 }
-

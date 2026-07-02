@@ -19,7 +19,7 @@ func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateAddMoveTargetPara
 	return nil
 }
 
-func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateMoveFromIdParamet
 	return nil
 }
 
-func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateOverrideLogicalId
 	return nil
 }
 
-func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) validatePutRoleMappingParameters(value interface{}) error {
+func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) validatePutRoleMappingParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateCognitoIdentityPoolRolesAttachment_GenerateConfigForImportParameter
 	return nil
 }
 
-func validateCognitoIdentityPoolRolesAttachment_IsConstructParameters(x interface{}) error {
+func validateCognitoIdentityPoolRolesAttachment_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateCognitoIdentityPoolRolesAttachment_IsConstructParameters(x interfac
 	return nil
 }
 
-func validateCognitoIdentityPoolRolesAttachment_IsTerraformElementParameters(x interface{}) error {
+func validateCognitoIdentityPoolRolesAttachment_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateCognitoIdentityPoolRolesAttachment_IsTerraformElementParameters(x i
 	return nil
 }
 
-func validateCognitoIdentityPoolRolesAttachment_IsTerraformResourceParameters(x interface{}) error {
+func validateCognitoIdentityPoolRolesAttachment_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func validateCognitoIdentityPoolRolesAttachment_IsTerraformResourceParameters(x 
 	return nil
 }
 
-func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -308,7 +308,7 @@ func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateSetConnectionPara
 	return nil
 }
 
-func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -389,7 +389,7 @@ func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateSetLifecycleParam
 	return nil
 }
 
-func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -461,4 +461,3 @@ func validateNewCognitoIdentityPoolRolesAttachmentParameters(scope constructs.Co
 
 	return nil
 }
-

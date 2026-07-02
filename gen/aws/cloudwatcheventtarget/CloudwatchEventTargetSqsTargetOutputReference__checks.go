@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudwatchEventTargetSqsTargetOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_CloudwatchEventTargetSqsTargetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudwatchEventTargetSqsTargetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCloudwatchEventTargetSqsTargetOutputReferenceParameters(terrafor
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannel",
-		reflect.TypeOf((*PinpointSmsChannel)(nil)).Elem(),
+		reflect.TypeFor[PinpointSmsChannel](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "transactionalMessagesPerSecond", GoGetter: "TransactionalMessagesPerSecond"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PinpointSmsChannel{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -77,6 +77,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannelConfig",
-		reflect.TypeOf((*PinpointSmsChannelConfig)(nil)).Elem(),
+		reflect.TypeFor[PinpointSmsChannelConfig](),
 	)
 }

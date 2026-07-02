@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.route53HealthCheck.Route53HealthCheck",
-		reflect.TypeOf((*Route53HealthCheck)(nil)).Elem(),
+		reflect.TypeFor[Route53HealthCheck](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -122,7 +122,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Route53HealthCheck{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -130,6 +130,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.route53HealthCheck.Route53HealthCheckConfig",
-		reflect.TypeOf((*Route53HealthCheckConfig)(nil)).Elem(),
+		reflect.TypeFor[Route53HealthCheckConfig](),
 	)
 }

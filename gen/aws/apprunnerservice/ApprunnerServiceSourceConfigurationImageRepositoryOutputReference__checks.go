@@ -109,7 +109,7 @@ func (a *jsiiProxy_ApprunnerServiceSourceConfigurationImageRepositoryOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_ApprunnerServiceSourceConfigurationImageRepositoryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApprunnerServiceSourceConfigurationImageRepositoryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,4 +225,3 @@ func validateNewApprunnerServiceSourceConfigurationImageRepositoryOutputReferenc
 
 	return nil
 }
-

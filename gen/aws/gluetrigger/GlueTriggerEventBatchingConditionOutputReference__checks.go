@@ -114,7 +114,7 @@ func (j *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGlueTriggerEventBatchingConditionOutputReferenceParameters(terra
 
 	return nil
 }
-

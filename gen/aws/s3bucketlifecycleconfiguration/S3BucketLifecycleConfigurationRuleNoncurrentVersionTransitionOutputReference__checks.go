@@ -98,7 +98,7 @@ func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionTransition
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionTransition
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewS3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionOut
 
 	return nil
 }
-

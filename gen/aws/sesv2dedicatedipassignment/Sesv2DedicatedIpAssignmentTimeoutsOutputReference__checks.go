@@ -98,7 +98,7 @@ func (s *jsiiProxy_Sesv2DedicatedIpAssignmentTimeoutsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_Sesv2DedicatedIpAssignmentTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Sesv2DedicatedIpAssignmentTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_Sesv2DedicatedIpAssignmentTimeoutsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_Sesv2DedicatedIpAssignmentTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Sesv2DedicatedIpAssignmentTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewSesv2DedicatedIpAssignmentTimeoutsOutputReferenceParameters(terr
 
 	return nil
 }
-

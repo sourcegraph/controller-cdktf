@@ -106,7 +106,7 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCer
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFileOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFileOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertif
 
 	return nil
 }
-

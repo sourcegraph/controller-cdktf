@@ -6,9 +6,9 @@ import (
 
 type CurReportDefinitionConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type CurReportDefinitionConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cur_report_definition#additional_schema_elements CurReportDefinition#additional_schema_elements}.
 	AdditionalSchemaElements *[]*string `field:"required" json:"additionalSchemaElements" yaml:"additionalSchemaElements"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cur_report_definition#compression CurReportDefinition#compression}.
@@ -41,10 +41,9 @@ type CurReportDefinitionConfig struct {
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cur_report_definition#refresh_closed_reports CurReportDefinition#refresh_closed_reports}.
-	RefreshClosedReports interface{} `field:"optional" json:"refreshClosedReports" yaml:"refreshClosedReports"`
+	RefreshClosedReports any `field:"optional" json:"refreshClosedReports" yaml:"refreshClosedReports"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cur_report_definition#report_versioning CurReportDefinition#report_versioning}.
 	ReportVersioning *string `field:"optional" json:"reportVersioning" yaml:"reportVersioning"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cur_report_definition#s3_prefix CurReportDefinition#s3_prefix}.
 	S3Prefix *string `field:"optional" json:"s3Prefix" yaml:"s3Prefix"`
 }
-

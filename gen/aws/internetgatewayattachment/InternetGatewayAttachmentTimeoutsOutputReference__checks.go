@@ -98,7 +98,7 @@ func (i *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewInternetGatewayAttachmentTimeoutsOutputReferenceParameters(terra
 
 	return nil
 }
-

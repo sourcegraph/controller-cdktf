@@ -15,15 +15,15 @@ type ElasticacheUserGroupAssociation interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -50,15 +50,15 @@ type ElasticacheUserGroupAssociation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	UserGroupId() *string
@@ -71,9 +71,9 @@ type ElasticacheUserGroupAssociation interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type ElasticacheUserGroupAssociation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -103,7 +103,7 @@ type ElasticacheUserGroupAssociation interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -114,17 +114,17 @@ type ElasticacheUserGroupAssociation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ElasticacheUserGroupAssociation
@@ -142,8 +142,8 @@ func (j *jsiiProxy_ElasticacheUserGroupAssociation) CdktfStack() cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheUserGroupAssociation) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticacheUserGroupAssociation) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_ElasticacheUserGroupAssociation) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheUserGroupAssociation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ElasticacheUserGroupAssociation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_ElasticacheUserGroupAssociation) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheUserGroupAssociation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticacheUserGroupAssociation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -262,8 +262,8 @@ func (j *jsiiProxy_ElasticacheUserGroupAssociation) Provider() cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheUserGroupAssociation) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ElasticacheUserGroupAssociation) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -272,8 +272,8 @@ func (j *jsiiProxy_ElasticacheUserGroupAssociation) Provisioners() *[]interface{
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheUserGroupAssociation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticacheUserGroupAssociation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -292,8 +292,8 @@ func (j *jsiiProxy_ElasticacheUserGroupAssociation) TerraformGeneratorMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheUserGroupAssociation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ElasticacheUserGroupAssociation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -352,7 +352,6 @@ func (j *jsiiProxy_ElasticacheUserGroupAssociation) UserIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elasticache_user_group_association aws_elasticache_user_group_association} Resource.
 func NewElasticacheUserGroupAssociation(scope constructs.Construct, id *string, config *ElasticacheUserGroupAssociationConfig) ElasticacheUserGroupAssociation {
 	_init_.Initialize()
@@ -364,7 +363,7 @@ func NewElasticacheUserGroupAssociation(scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elasticacheUserGroupAssociation.ElasticacheUserGroupAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -377,12 +376,12 @@ func NewElasticacheUserGroupAssociation_Override(e ElasticacheUserGroupAssociati
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elasticacheUserGroupAssociation.ElasticacheUserGroupAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_ElasticacheUserGroupAssociation)SetConnection(val interface{}) {
+func (j *jsiiProxy_ElasticacheUserGroupAssociation) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_ElasticacheUserGroupAssociation)SetConnection(val interface{}
 	)
 }
 
-func (j *jsiiProxy_ElasticacheUserGroupAssociation)SetCount(val interface{}) {
+func (j *jsiiProxy_ElasticacheUserGroupAssociation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_ElasticacheUserGroupAssociation)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheUserGroupAssociation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ElasticacheUserGroupAssociation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -412,7 +411,7 @@ func (j *jsiiProxy_ElasticacheUserGroupAssociation)SetDependsOn(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_ElasticacheUserGroupAssociation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ElasticacheUserGroupAssociation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -420,7 +419,7 @@ func (j *jsiiProxy_ElasticacheUserGroupAssociation)SetForEach(val cdktf.ITerrafo
 	)
 }
 
-func (j *jsiiProxy_ElasticacheUserGroupAssociation)SetId(val *string) {
+func (j *jsiiProxy_ElasticacheUserGroupAssociation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,7 +430,7 @@ func (j *jsiiProxy_ElasticacheUserGroupAssociation)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheUserGroupAssociation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ElasticacheUserGroupAssociation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_ElasticacheUserGroupAssociation)SetLifecycle(val *cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_ElasticacheUserGroupAssociation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ElasticacheUserGroupAssociation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -450,7 +449,7 @@ func (j *jsiiProxy_ElasticacheUserGroupAssociation)SetProvider(val cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_ElasticacheUserGroupAssociation)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ElasticacheUserGroupAssociation) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -461,7 +460,7 @@ func (j *jsiiProxy_ElasticacheUserGroupAssociation)SetProvisioners(val *[]interf
 	)
 }
 
-func (j *jsiiProxy_ElasticacheUserGroupAssociation)SetUserGroupId(val *string) {
+func (j *jsiiProxy_ElasticacheUserGroupAssociation) SetUserGroupId(val *string) {
 	if err := j.validateSetUserGroupIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -472,7 +471,7 @@ func (j *jsiiProxy_ElasticacheUserGroupAssociation)SetUserGroupId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheUserGroupAssociation)SetUserId(val *string) {
+func (j *jsiiProxy_ElasticacheUserGroupAssociation) SetUserId(val *string) {
 	if err := j.validateSetUserIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -495,7 +494,7 @@ func ElasticacheUserGroupAssociation_GenerateConfigForImport(scope constructs.Co
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elasticacheUserGroupAssociation.ElasticacheUserGroupAssociation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func ElasticacheUserGroupAssociation_GenerateConfigForImport(scope constructs.Co
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ElasticacheUserGroupAssociation_IsConstruct(x interface{}) *bool {
+func ElasticacheUserGroupAssociation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateElasticacheUserGroupAssociation_IsConstructParameters(x); err != nil {
@@ -530,7 +529,7 @@ func ElasticacheUserGroupAssociation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elasticacheUserGroupAssociation.ElasticacheUserGroupAssociation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func ElasticacheUserGroupAssociation_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ElasticacheUserGroupAssociation_IsTerraformElement(x interface{}) *bool {
+func ElasticacheUserGroupAssociation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateElasticacheUserGroupAssociation_IsTerraformElementParameters(x); err != nil {
@@ -549,7 +548,7 @@ func ElasticacheUserGroupAssociation_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elasticacheUserGroupAssociation.ElasticacheUserGroupAssociation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func ElasticacheUserGroupAssociation_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ElasticacheUserGroupAssociation_IsTerraformResource(x interface{}) *bool {
+func ElasticacheUserGroupAssociation_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateElasticacheUserGroupAssociation_IsTerraformResourceParameters(x); err != nil {
@@ -568,7 +567,7 @@ func ElasticacheUserGroupAssociation_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elasticacheUserGroupAssociation.ElasticacheUserGroupAssociation",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -593,31 +592,31 @@ func (e *jsiiProxy_ElasticacheUserGroupAssociation) AddMoveTarget(moveTarget *st
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_ElasticacheUserGroupAssociation) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_ElasticacheUserGroupAssociation) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_ElasticacheUserGroupAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_ElasticacheUserGroupAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -633,7 +632,7 @@ func (e *jsiiProxy_ElasticacheUserGroupAssociation) GetBooleanAttribute(terrafor
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -649,7 +648,7 @@ func (e *jsiiProxy_ElasticacheUserGroupAssociation) GetBooleanMapAttribute(terra
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -665,7 +664,7 @@ func (e *jsiiProxy_ElasticacheUserGroupAssociation) GetListAttribute(terraformAt
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -681,7 +680,7 @@ func (e *jsiiProxy_ElasticacheUserGroupAssociation) GetNumberAttribute(terraform
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -697,7 +696,7 @@ func (e *jsiiProxy_ElasticacheUserGroupAssociation) GetNumberListAttribute(terra
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -713,7 +712,7 @@ func (e *jsiiProxy_ElasticacheUserGroupAssociation) GetNumberMapAttribute(terraf
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func (e *jsiiProxy_ElasticacheUserGroupAssociation) GetStringAttribute(terraform
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -745,15 +744,15 @@ func (e *jsiiProxy_ElasticacheUserGroupAssociation) GetStringMapAttribute(terraf
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_ElasticacheUserGroupAssociation) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_ElasticacheUserGroupAssociation) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -772,7 +771,7 @@ func (e *jsiiProxy_ElasticacheUserGroupAssociation) ImportFrom(id *string, provi
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -785,7 +784,7 @@ func (e *jsiiProxy_ElasticacheUserGroupAssociation) InterpolationForAttribute(te
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,18 +798,18 @@ func (e *jsiiProxy_ElasticacheUserGroupAssociation) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_ElasticacheUserGroupAssociation) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_ElasticacheUserGroupAssociation) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -821,7 +820,7 @@ func (e *jsiiProxy_ElasticacheUserGroupAssociation) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -832,7 +831,7 @@ func (e *jsiiProxy_ElasticacheUserGroupAssociation) OverrideLogicalId(newLogical
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -852,8 +851,8 @@ func (e *jsiiProxy_ElasticacheUserGroupAssociation) ResetOverrideLogicalId() {
 	)
 }
 
-func (e *jsiiProxy_ElasticacheUserGroupAssociation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_ElasticacheUserGroupAssociation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -865,8 +864,8 @@ func (e *jsiiProxy_ElasticacheUserGroupAssociation) SynthesizeAttributes() *map[
 	return returns
 }
 
-func (e *jsiiProxy_ElasticacheUserGroupAssociation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_ElasticacheUserGroupAssociation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -878,8 +877,8 @@ func (e *jsiiProxy_ElasticacheUserGroupAssociation) SynthesizeHclAttributes() *m
 	return returns
 }
 
-func (e *jsiiProxy_ElasticacheUserGroupAssociation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_ElasticacheUserGroupAssociation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -891,8 +890,8 @@ func (e *jsiiProxy_ElasticacheUserGroupAssociation) ToHclTerraform() interface{}
 	return returns
 }
 
-func (e *jsiiProxy_ElasticacheUserGroupAssociation) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_ElasticacheUserGroupAssociation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -917,8 +916,8 @@ func (e *jsiiProxy_ElasticacheUserGroupAssociation) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_ElasticacheUserGroupAssociation) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_ElasticacheUserGroupAssociation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -929,4 +928,3 @@ func (e *jsiiProxy_ElasticacheUserGroupAssociation) ToTerraform() interface{} {
 
 	return returns
 }
-

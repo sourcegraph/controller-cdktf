@@ -15,9 +15,9 @@ type ApiGatewayUsagePlanApiStagesOutputReference interface {
 	ApiIdInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type ApiGatewayUsagePlanApiStagesOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Stage() *string
 	SetStage(val *string)
 	StageInput() *string
@@ -44,11 +44,11 @@ type ApiGatewayUsagePlanApiStagesOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Throttle() ApiGatewayUsagePlanApiStagesThrottleList
-	ThrottleInput() interface{}
+	ThrottleInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,11 +69,11 @@ type ApiGatewayUsagePlanApiStagesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutThrottle(value interface{})
+	PutThrottle(value any)
 	ResetThrottle()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -106,8 +106,8 @@ func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) ApiIdInput() *st
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -146,8 +146,8 @@ func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) Throttle() ApiGa
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) ThrottleInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) ThrottleInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"throttleInput",
@@ -215,7 +215,6 @@ func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) ThrottleInput() 
 	)
 	return returns
 }
-
 
 func NewApiGatewayUsagePlanApiStagesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ApiGatewayUsagePlanApiStagesOutputReference {
 	_init_.Initialize()
@@ -227,7 +226,7 @@ func NewApiGatewayUsagePlanApiStagesOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewApiGatewayUsagePlanApiStagesOutputReference_Override(a ApiGatewayUsagePl
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference)SetApiId(val *string) {
+func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) SetApiId(val *string) {
 	if err := j.validateSetApiIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference)SetApiId(val *str
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference)SetStage(val *string) {
+func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) SetStage(val *string) {
 	if err := j.validateSetStageParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference)SetStage(val *str
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,16 +333,16 @@ func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -359,7 +358,7 @@ func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -375,7 +374,7 @@ func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -391,7 +390,7 @@ func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -500,21 +499,21 @@ func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) PutThrottle(value interface{}) {
+func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) PutThrottle(value any) {
 	if err := a.validatePutThrottleParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putThrottle",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -526,16 +525,16 @@ func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) ResetThrottle() 
 	)
 }
 
-func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) ToString() *stri
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (s *jsiiProxy_SagemakerDomainRetentionPolicyOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerDomainRetentionPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerDomainRetentionPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewSagemakerDomainRetentionPolicyOutputReferenceParameters(terrafor
 
 	return nil
 }
-

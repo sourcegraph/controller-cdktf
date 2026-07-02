@@ -16,11 +16,11 @@ type DataAwsConnectQuickConnect interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -58,20 +58,20 @@ type DataAwsConnectQuickConnect interface {
 	SetQuickConnectId(val *string)
 	QuickConnectIdInput() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,18 +100,18 @@ type DataAwsConnectQuickConnect interface {
 	ResetOverrideLogicalId()
 	ResetQuickConnectId()
 	ResetTags()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsConnectQuickConnect
@@ -139,8 +139,8 @@ func (j *jsiiProxy_DataAwsConnectQuickConnect) CdktfStack() cdktf.TerraformStack
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsConnectQuickConnect) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsConnectQuickConnect) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -149,8 +149,8 @@ func (j *jsiiProxy_DataAwsConnectQuickConnect) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsConnectQuickConnect) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsConnectQuickConnect) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -329,8 +329,8 @@ func (j *jsiiProxy_DataAwsConnectQuickConnect) QuickConnectIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsConnectQuickConnect) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsConnectQuickConnect) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -369,8 +369,8 @@ func (j *jsiiProxy_DataAwsConnectQuickConnect) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsConnectQuickConnect) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsConnectQuickConnect) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -389,7 +389,6 @@ func (j *jsiiProxy_DataAwsConnectQuickConnect) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/connect_quick_connect aws_connect_quick_connect} Data Source.
 func NewDataAwsConnectQuickConnect(scope constructs.Construct, id *string, config *DataAwsConnectQuickConnectConfig) DataAwsConnectQuickConnect {
 	_init_.Initialize()
@@ -401,7 +400,7 @@ func NewDataAwsConnectQuickConnect(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnect",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -414,12 +413,12 @@ func NewDataAwsConnectQuickConnect_Override(d DataAwsConnectQuickConnect, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnect",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsConnectQuickConnect)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsConnectQuickConnect) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_DataAwsConnectQuickConnect)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsConnectQuickConnect)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsConnectQuickConnect) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -438,7 +437,7 @@ func (j *jsiiProxy_DataAwsConnectQuickConnect)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsConnectQuickConnect)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsConnectQuickConnect) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -446,7 +445,7 @@ func (j *jsiiProxy_DataAwsConnectQuickConnect)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_DataAwsConnectQuickConnect)SetId(val *string) {
+func (j *jsiiProxy_DataAwsConnectQuickConnect) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -457,7 +456,7 @@ func (j *jsiiProxy_DataAwsConnectQuickConnect)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsConnectQuickConnect)SetInstanceId(val *string) {
+func (j *jsiiProxy_DataAwsConnectQuickConnect) SetInstanceId(val *string) {
 	if err := j.validateSetInstanceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -468,7 +467,7 @@ func (j *jsiiProxy_DataAwsConnectQuickConnect)SetInstanceId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsConnectQuickConnect)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsConnectQuickConnect) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -479,7 +478,7 @@ func (j *jsiiProxy_DataAwsConnectQuickConnect)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_DataAwsConnectQuickConnect)SetName(val *string) {
+func (j *jsiiProxy_DataAwsConnectQuickConnect) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_DataAwsConnectQuickConnect)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsConnectQuickConnect)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsConnectQuickConnect) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -498,7 +497,7 @@ func (j *jsiiProxy_DataAwsConnectQuickConnect)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_DataAwsConnectQuickConnect)SetQuickConnectId(val *string) {
+func (j *jsiiProxy_DataAwsConnectQuickConnect) SetQuickConnectId(val *string) {
 	if err := j.validateSetQuickConnectIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -509,7 +508,7 @@ func (j *jsiiProxy_DataAwsConnectQuickConnect)SetQuickConnectId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsConnectQuickConnect)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsConnectQuickConnect) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +531,7 @@ func DataAwsConnectQuickConnect_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnect",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -556,7 +555,7 @@ func DataAwsConnectQuickConnect_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsConnectQuickConnect_IsConstruct(x interface{}) *bool {
+func DataAwsConnectQuickConnect_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsConnectQuickConnect_IsConstructParameters(x); err != nil {
@@ -567,7 +566,7 @@ func DataAwsConnectQuickConnect_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnect",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -575,7 +574,7 @@ func DataAwsConnectQuickConnect_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsConnectQuickConnect_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsConnectQuickConnect_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsConnectQuickConnect_IsTerraformDataSourceParameters(x); err != nil {
@@ -586,7 +585,7 @@ func DataAwsConnectQuickConnect_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnect",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -594,7 +593,7 @@ func DataAwsConnectQuickConnect_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsConnectQuickConnect_IsTerraformElement(x interface{}) *bool {
+func DataAwsConnectQuickConnect_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsConnectQuickConnect_IsTerraformElementParameters(x); err != nil {
@@ -605,7 +604,7 @@ func DataAwsConnectQuickConnect_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnect",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -623,27 +622,27 @@ func DataAwsConnectQuickConnect_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsConnectQuickConnect) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsConnectQuickConnect) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsConnectQuickConnect) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsConnectQuickConnect) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func (d *jsiiProxy_DataAwsConnectQuickConnect) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -675,7 +674,7 @@ func (d *jsiiProxy_DataAwsConnectQuickConnect) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -691,7 +690,7 @@ func (d *jsiiProxy_DataAwsConnectQuickConnect) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -707,7 +706,7 @@ func (d *jsiiProxy_DataAwsConnectQuickConnect) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (d *jsiiProxy_DataAwsConnectQuickConnect) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -739,7 +738,7 @@ func (d *jsiiProxy_DataAwsConnectQuickConnect) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -755,7 +754,7 @@ func (d *jsiiProxy_DataAwsConnectQuickConnect) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -771,7 +770,7 @@ func (d *jsiiProxy_DataAwsConnectQuickConnect) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -787,7 +786,7 @@ func (d *jsiiProxy_DataAwsConnectQuickConnect) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func (d *jsiiProxy_DataAwsConnectQuickConnect) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -845,8 +844,8 @@ func (d *jsiiProxy_DataAwsConnectQuickConnect) ResetTags() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsConnectQuickConnect) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsConnectQuickConnect) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -858,8 +857,8 @@ func (d *jsiiProxy_DataAwsConnectQuickConnect) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsConnectQuickConnect) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsConnectQuickConnect) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -871,8 +870,8 @@ func (d *jsiiProxy_DataAwsConnectQuickConnect) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsConnectQuickConnect) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsConnectQuickConnect) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -884,8 +883,8 @@ func (d *jsiiProxy_DataAwsConnectQuickConnect) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsConnectQuickConnect) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsConnectQuickConnect) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -910,8 +909,8 @@ func (d *jsiiProxy_DataAwsConnectQuickConnect) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsConnectQuickConnect) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsConnectQuickConnect) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -922,4 +921,3 @@ func (d *jsiiProxy_DataAwsConnectQuickConnect) ToTerraform() interface{} {
 
 	return returns
 }
-

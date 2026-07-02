@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.rdsGlobalCluster.RdsGlobalCluster",
-		reflect.TypeOf((*RdsGlobalCluster)(nil)).Elem(),
+		reflect.TypeFor[RdsGlobalCluster](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -87,7 +87,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RdsGlobalCluster{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -95,15 +95,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.rdsGlobalCluster.RdsGlobalClusterConfig",
-		reflect.TypeOf((*RdsGlobalClusterConfig)(nil)).Elem(),
+		reflect.TypeFor[RdsGlobalClusterConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.rdsGlobalCluster.RdsGlobalClusterGlobalClusterMembers",
-		reflect.TypeOf((*RdsGlobalClusterGlobalClusterMembers)(nil)).Elem(),
+		reflect.TypeFor[RdsGlobalClusterGlobalClusterMembers](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.rdsGlobalCluster.RdsGlobalClusterGlobalClusterMembersList",
-		reflect.TypeOf((*RdsGlobalClusterGlobalClusterMembersList)(nil)).Elem(),
+		reflect.TypeFor[RdsGlobalClusterGlobalClusterMembersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RdsGlobalClusterGlobalClusterMembersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -124,7 +124,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.rdsGlobalCluster.RdsGlobalClusterGlobalClusterMembersOutputReference",
-		reflect.TypeOf((*RdsGlobalClusterGlobalClusterMembersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RdsGlobalClusterGlobalClusterMembersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -150,7 +150,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RdsGlobalClusterGlobalClusterMembersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -158,11 +158,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.rdsGlobalCluster.RdsGlobalClusterTimeouts",
-		reflect.TypeOf((*RdsGlobalClusterTimeouts)(nil)).Elem(),
+		reflect.TypeFor[RdsGlobalClusterTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.rdsGlobalCluster.RdsGlobalClusterTimeoutsOutputReference",
-		reflect.TypeOf((*RdsGlobalClusterTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RdsGlobalClusterTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -195,7 +195,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RdsGlobalClusterTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

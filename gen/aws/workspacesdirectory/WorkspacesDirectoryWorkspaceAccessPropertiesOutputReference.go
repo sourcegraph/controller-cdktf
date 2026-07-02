@@ -12,9 +12,9 @@ type WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -64,7 +64,7 @@ type WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,7 +95,7 @@ type WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference interface {
 	ResetDeviceTypeZeroclient()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,8 +108,8 @@ type jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference struc
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -338,7 +338,6 @@ func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference) 
 	return returns
 }
 
-
 func NewWorkspacesDirectoryWorkspaceAccessPropertiesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference {
 	_init_.Initialize()
 
@@ -349,7 +348,7 @@ func NewWorkspacesDirectoryWorkspaceAccessPropertiesOutputReference(terraformRes
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.workspacesDirectory.WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -361,12 +360,12 @@ func NewWorkspacesDirectoryWorkspaceAccessPropertiesOutputReference_Override(w W
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.workspacesDirectory.WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -377,7 +376,7 @@ func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -388,7 +387,7 @@ func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference)SetDeviceTypeAndroid(val *string) {
+func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference) SetDeviceTypeAndroid(val *string) {
 	if err := j.validateSetDeviceTypeAndroidParameters(val); err != nil {
 		panic(err)
 	}
@@ -399,7 +398,7 @@ func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference)SetDeviceTypeChromeos(val *string) {
+func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference) SetDeviceTypeChromeos(val *string) {
 	if err := j.validateSetDeviceTypeChromeosParameters(val); err != nil {
 		panic(err)
 	}
@@ -410,7 +409,7 @@ func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference)SetDeviceTypeIos(val *string) {
+func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference) SetDeviceTypeIos(val *string) {
 	if err := j.validateSetDeviceTypeIosParameters(val); err != nil {
 		panic(err)
 	}
@@ -421,7 +420,7 @@ func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference)SetDeviceTypeLinux(val *string) {
+func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference) SetDeviceTypeLinux(val *string) {
 	if err := j.validateSetDeviceTypeLinuxParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,7 +431,7 @@ func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference)SetDeviceTypeOsx(val *string) {
+func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference) SetDeviceTypeOsx(val *string) {
 	if err := j.validateSetDeviceTypeOsxParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference)SetDeviceTypeWeb(val *string) {
+func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference) SetDeviceTypeWeb(val *string) {
 	if err := j.validateSetDeviceTypeWebParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference)SetDeviceTypeWindows(val *string) {
+func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference) SetDeviceTypeWindows(val *string) {
 	if err := j.validateSetDeviceTypeWindowsParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference)SetDeviceTypeZeroclient(val *string) {
+func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference) SetDeviceTypeZeroclient(val *string) {
 	if err := j.validateSetDeviceTypeZeroclientParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference)SetInternalValue(val *WorkspacesDirectoryWorkspaceAccessProperties) {
+func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference) SetInternalValue(val *WorkspacesDirectoryWorkspaceAccessProperties) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,16 +521,16 @@ func (w *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference) 
 	return returns
 }
 
-func (w *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func (w *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference) 
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -563,7 +562,7 @@ func (w *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference) 
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -579,7 +578,7 @@ func (w *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference) 
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -595,7 +594,7 @@ func (w *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference) 
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -611,7 +610,7 @@ func (w *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference) 
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func (w *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference) 
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -643,7 +642,7 @@ func (w *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference) 
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func (w *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference) 
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -688,7 +687,7 @@ func (w *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference) 
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -759,16 +758,16 @@ func (w *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference) 
 	)
 }
 
-func (w *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := w.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -787,4 +786,3 @@ func (w *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference) 
 
 	return returns
 }
-

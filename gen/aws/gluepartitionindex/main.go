@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.gluePartitionIndex.GluePartitionIndex",
-		reflect.TypeOf((*GluePartitionIndex)(nil)).Elem(),
+		reflect.TypeFor[GluePartitionIndex](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GluePartitionIndex{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,15 +78,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.gluePartitionIndex.GluePartitionIndexConfig",
-		reflect.TypeOf((*GluePartitionIndexConfig)(nil)).Elem(),
+		reflect.TypeFor[GluePartitionIndexConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.gluePartitionIndex.GluePartitionIndexPartitionIndex",
-		reflect.TypeOf((*GluePartitionIndexPartitionIndex)(nil)).Elem(),
+		reflect.TypeFor[GluePartitionIndexPartitionIndex](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.gluePartitionIndex.GluePartitionIndexPartitionIndexOutputReference",
-		reflect.TypeOf((*GluePartitionIndexPartitionIndexOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GluePartitionIndexPartitionIndexOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -117,7 +117,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GluePartitionIndexPartitionIndexOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -125,11 +125,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.gluePartitionIndex.GluePartitionIndexTimeouts",
-		reflect.TypeOf((*GluePartitionIndexTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GluePartitionIndexTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.gluePartitionIndex.GluePartitionIndexTimeoutsOutputReference",
-		reflect.TypeOf((*GluePartitionIndexTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GluePartitionIndexTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -159,7 +159,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GluePartitionIndexTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

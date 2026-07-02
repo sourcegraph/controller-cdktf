@@ -15,22 +15,22 @@ type LightsailLbHttpsRedirectionPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -56,24 +56,24 @@ type LightsailLbHttpsRedirectionPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type LightsailLbHttpsRedirectionPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -103,7 +103,7 @@ type LightsailLbHttpsRedirectionPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -114,17 +114,17 @@ type LightsailLbHttpsRedirectionPolicy interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for LightsailLbHttpsRedirectionPolicy
@@ -142,8 +142,8 @@ func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) CdktfStack() cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -302,8 +302,8 @@ func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) Provider() cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -312,8 +312,8 @@ func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) Provisioners() *[]interfac
 	return returns
 }
 
-func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -332,8 +332,8 @@ func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) TerraformGeneratorMetadata
 	return returns
 }
 
-func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -352,7 +352,6 @@ func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) TerraformResourceType() *s
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lightsail_lb_https_redirection_policy aws_lightsail_lb_https_redirection_policy} Resource.
 func NewLightsailLbHttpsRedirectionPolicy(scope constructs.Construct, id *string, config *LightsailLbHttpsRedirectionPolicyConfig) LightsailLbHttpsRedirectionPolicy {
 	_init_.Initialize()
@@ -364,7 +363,7 @@ func NewLightsailLbHttpsRedirectionPolicy(scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lightsailLbHttpsRedirectionPolicy.LightsailLbHttpsRedirectionPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -377,12 +376,12 @@ func NewLightsailLbHttpsRedirectionPolicy_Override(l LightsailLbHttpsRedirection
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lightsailLbHttpsRedirectionPolicy.LightsailLbHttpsRedirectionPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy)SetConnection(val interface
 	)
 }
 
-func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -412,7 +411,7 @@ func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy)SetDependsOn(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy)SetEnabled(val interface{}) {
+func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -423,7 +422,7 @@ func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy)SetEnabled(val interface{})
 	)
 }
 
-func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -431,7 +430,7 @@ func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy)SetForEach(val cdktf.ITerra
 	)
 }
 
-func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy)SetId(val *string) {
+func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy)SetLbName(val *string) {
+func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) SetLbName(val *string) {
 	if err := j.validateSetLbNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy)SetLbName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,7 +463,7 @@ func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy)SetLifecycle(val *cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -472,7 +471,7 @@ func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy)SetProvider(val cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -495,7 +494,7 @@ func LightsailLbHttpsRedirectionPolicy_GenerateConfigForImport(scope constructs.
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lightsailLbHttpsRedirectionPolicy.LightsailLbHttpsRedirectionPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func LightsailLbHttpsRedirectionPolicy_GenerateConfigForImport(scope constructs.
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func LightsailLbHttpsRedirectionPolicy_IsConstruct(x interface{}) *bool {
+func LightsailLbHttpsRedirectionPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLightsailLbHttpsRedirectionPolicy_IsConstructParameters(x); err != nil {
@@ -530,7 +529,7 @@ func LightsailLbHttpsRedirectionPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lightsailLbHttpsRedirectionPolicy.LightsailLbHttpsRedirectionPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func LightsailLbHttpsRedirectionPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func LightsailLbHttpsRedirectionPolicy_IsTerraformElement(x interface{}) *bool {
+func LightsailLbHttpsRedirectionPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLightsailLbHttpsRedirectionPolicy_IsTerraformElementParameters(x); err != nil {
@@ -549,7 +548,7 @@ func LightsailLbHttpsRedirectionPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lightsailLbHttpsRedirectionPolicy.LightsailLbHttpsRedirectionPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func LightsailLbHttpsRedirectionPolicy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func LightsailLbHttpsRedirectionPolicy_IsTerraformResource(x interface{}) *bool {
+func LightsailLbHttpsRedirectionPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLightsailLbHttpsRedirectionPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -568,7 +567,7 @@ func LightsailLbHttpsRedirectionPolicy_IsTerraformResource(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lightsailLbHttpsRedirectionPolicy.LightsailLbHttpsRedirectionPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -593,31 +592,31 @@ func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) AddMoveTarget(moveTarget *
 	_jsii_.InvokeVoid(
 		l,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) AddOverride(path *string, value interface{}) {
+func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) AddOverride(path *string, value any) {
 	if err := l.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -633,7 +632,7 @@ func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) GetBooleanAttribute(terraf
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -649,7 +648,7 @@ func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) GetBooleanMapAttribute(ter
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -665,7 +664,7 @@ func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) GetListAttribute(terraform
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -681,7 +680,7 @@ func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) GetNumberAttribute(terrafo
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -697,7 +696,7 @@ func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) GetNumberListAttribute(ter
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -713,7 +712,7 @@ func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) GetNumberMapAttribute(terr
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) GetStringAttribute(terrafo
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -745,15 +744,15 @@ func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) GetStringMapAttribute(terr
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -772,7 +771,7 @@ func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) ImportFrom(id *string, pro
 	_jsii_.InvokeVoid(
 		l,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -785,7 +784,7 @@ func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) InterpolationForAttribute(
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,18 +798,18 @@ func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) MoveTo(moveTarget *string, index any) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -821,7 +820,7 @@ func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -832,7 +831,7 @@ func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) OverrideLogicalId(newLogic
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -852,8 +851,8 @@ func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) ResetOverrideLogicalId() {
 	)
 }
 
-func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -865,8 +864,8 @@ func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) SynthesizeAttributes() *ma
 	return returns
 }
 
-func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -878,8 +877,8 @@ func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) SynthesizeHclAttributes() 
 	return returns
 }
 
-func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -891,8 +890,8 @@ func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) ToHclTerraform() interface
 	return returns
 }
 
-func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -917,8 +916,8 @@ func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) ToString() *string {
 	return returns
 }
 
-func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -929,4 +928,3 @@ func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) ToTerraform() interface{} 
 
 	return returns
 }
-

@@ -21,9 +21,9 @@ type DmsEndpointRedisSettingsOutputReference interface {
 	AuthUserNameInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -61,7 +61,7 @@ type DmsEndpointRedisSettingsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -88,7 +88,7 @@ type DmsEndpointRedisSettingsOutputReference interface {
 	ResetSslSecurityProtocol()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -161,8 +161,8 @@ func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference) AuthUserNameInput() 
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -311,7 +311,6 @@ func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference) TerraformResource() 
 	return returns
 }
 
-
 func NewDmsEndpointRedisSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DmsEndpointRedisSettingsOutputReference {
 	_init_.Initialize()
 
@@ -322,7 +321,7 @@ func NewDmsEndpointRedisSettingsOutputReference(terraformResource cdktf.IInterpo
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointRedisSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -334,12 +333,12 @@ func NewDmsEndpointRedisSettingsOutputReference_Override(d DmsEndpointRedisSetti
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointRedisSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference)SetAuthPassword(val *string) {
+func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference) SetAuthPassword(val *string) {
 	if err := j.validateSetAuthPasswordParameters(val); err != nil {
 		panic(err)
 	}
@@ -350,7 +349,7 @@ func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference)SetAuthPassword(val *
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference)SetAuthType(val *string) {
+func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference) SetAuthType(val *string) {
 	if err := j.validateSetAuthTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,7 +360,7 @@ func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference)SetAuthType(val *stri
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference)SetAuthUserName(val *string) {
+func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference) SetAuthUserName(val *string) {
 	if err := j.validateSetAuthUserNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -372,7 +371,7 @@ func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference)SetAuthUserName(val *
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -383,7 +382,7 @@ func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference)SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference)SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference)SetInternalValue(val *DmsEndpointRedisSettings) {
+func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference) SetInternalValue(val *DmsEndpointRedisSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference)SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference)SetPort(val *float64) {
+func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference) SetPort(val *float64) {
 	if err := j.validateSetPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,7 +415,7 @@ func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference)SetPort(val *float64)
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference)SetServerName(val *string) {
+func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference) SetServerName(val *string) {
 	if err := j.validateSetServerNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -427,7 +426,7 @@ func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference)SetServerName(val *st
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference)SetSslCaCertificateArn(val *string) {
+func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference) SetSslCaCertificateArn(val *string) {
 	if err := j.validateSetSslCaCertificateArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -438,7 +437,7 @@ func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference)SetSslCaCertificateAr
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference)SetSslSecurityProtocol(val *string) {
+func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference) SetSslSecurityProtocol(val *string) {
 	if err := j.validateSetSslSecurityProtocolParameters(val); err != nil {
 		panic(err)
 	}
@@ -449,7 +448,7 @@ func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference)SetSslSecurityProtoco
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -460,7 +459,7 @@ func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DmsEndpointRedisSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -484,16 +483,16 @@ func (d *jsiiProxy_DmsEndpointRedisSettingsOutputReference) ComputeFqn() *string
 	return returns
 }
 
-func (d *jsiiProxy_DmsEndpointRedisSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DmsEndpointRedisSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -509,7 +508,7 @@ func (d *jsiiProxy_DmsEndpointRedisSettingsOutputReference) GetBooleanAttribute(
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -525,7 +524,7 @@ func (d *jsiiProxy_DmsEndpointRedisSettingsOutputReference) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -541,7 +540,7 @@ func (d *jsiiProxy_DmsEndpointRedisSettingsOutputReference) GetListAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func (d *jsiiProxy_DmsEndpointRedisSettingsOutputReference) GetNumberAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -573,7 +572,7 @@ func (d *jsiiProxy_DmsEndpointRedisSettingsOutputReference) GetNumberListAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func (d *jsiiProxy_DmsEndpointRedisSettingsOutputReference) GetNumberMapAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -605,7 +604,7 @@ func (d *jsiiProxy_DmsEndpointRedisSettingsOutputReference) GetStringAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -621,7 +620,7 @@ func (d *jsiiProxy_DmsEndpointRedisSettingsOutputReference) GetStringMapAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -650,7 +649,7 @@ func (d *jsiiProxy_DmsEndpointRedisSettingsOutputReference) InterpolationForAttr
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -689,16 +688,16 @@ func (d *jsiiProxy_DmsEndpointRedisSettingsOutputReference) ResetSslSecurityProt
 	)
 }
 
-func (d *jsiiProxy_DmsEndpointRedisSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DmsEndpointRedisSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -717,4 +716,3 @@ func (d *jsiiProxy_DmsEndpointRedisSettingsOutputReference) ToString() *string {
 
 	return returns
 }
-

@@ -90,7 +90,7 @@ func (r *jsiiProxy_ResourcegroupsGroupConfigurationOutputReference) validateInte
 	return nil
 }
 
-func (r *jsiiProxy_ResourcegroupsGroupConfigurationOutputReference) validatePutParametersParameters(value interface{}) error {
+func (r *jsiiProxy_ResourcegroupsGroupConfigurationOutputReference) validatePutParametersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (r *jsiiProxy_ResourcegroupsGroupConfigurationOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_ResourcegroupsGroupConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ResourcegroupsGroupConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_ResourcegroupsGroupConfigurationOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_ResourcegroupsGroupConfigurationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ResourcegroupsGroupConfigurationOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -261,4 +261,3 @@ func validateNewResourcegroupsGroupConfigurationOutputReferenceParameters(terraf
 
 	return nil
 }
-

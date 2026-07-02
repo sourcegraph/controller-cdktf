@@ -90,7 +90,7 @@ func (i *jsiiProxy_IotTopicRuleTimestreamOutputReference) validateInterpolationF
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleTimestreamOutputReference) validatePutDimensionParameters(value interface{}) error {
+func (i *jsiiProxy_IotTopicRuleTimestreamOutputReference) validatePutDimensionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (i *jsiiProxy_IotTopicRuleTimestreamOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleTimestreamOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRuleTimestreamOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -213,7 +213,7 @@ func (j *jsiiProxy_IotTopicRuleTimestreamOutputReference) validateSetDatabaseNam
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleTimestreamOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRuleTimestreamOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -288,4 +288,3 @@ func validateNewIotTopicRuleTimestreamOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

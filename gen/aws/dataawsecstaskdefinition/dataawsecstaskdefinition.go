@@ -16,11 +16,11 @@ type DataAwsEcsTaskDefinition interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -49,7 +49,7 @@ type DataAwsEcsTaskDefinition interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Revision() *float64
 	Status() *string
 	TaskDefinition() *string
@@ -59,13 +59,13 @@ type DataAwsEcsTaskDefinition interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,18 +91,18 @@ type DataAwsEcsTaskDefinition interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsEcsTaskDefinition
@@ -130,8 +130,8 @@ func (j *jsiiProxy_DataAwsEcsTaskDefinition) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEcsTaskDefinition) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsEcsTaskDefinition) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -140,8 +140,8 @@ func (j *jsiiProxy_DataAwsEcsTaskDefinition) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEcsTaskDefinition) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEcsTaskDefinition) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -260,8 +260,8 @@ func (j *jsiiProxy_DataAwsEcsTaskDefinition) Provider() cdktf.TerraformProvider 
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEcsTaskDefinition) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEcsTaskDefinition) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -330,8 +330,8 @@ func (j *jsiiProxy_DataAwsEcsTaskDefinition) TerraformGeneratorMetadata() *cdktf
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEcsTaskDefinition) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsEcsTaskDefinition) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -350,7 +350,6 @@ func (j *jsiiProxy_DataAwsEcsTaskDefinition) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/ecs_task_definition aws_ecs_task_definition} Data Source.
 func NewDataAwsEcsTaskDefinition(scope constructs.Construct, id *string, config *DataAwsEcsTaskDefinitionConfig) DataAwsEcsTaskDefinition {
 	_init_.Initialize()
@@ -362,7 +361,7 @@ func NewDataAwsEcsTaskDefinition(scope constructs.Construct, id *string, config 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinition",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -375,12 +374,12 @@ func NewDataAwsEcsTaskDefinition_Override(d DataAwsEcsTaskDefinition, scope cons
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinition",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsEcsTaskDefinition)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsEcsTaskDefinition) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -391,7 +390,7 @@ func (j *jsiiProxy_DataAwsEcsTaskDefinition)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEcsTaskDefinition)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsEcsTaskDefinition) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -399,7 +398,7 @@ func (j *jsiiProxy_DataAwsEcsTaskDefinition)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEcsTaskDefinition)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsEcsTaskDefinition) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -407,7 +406,7 @@ func (j *jsiiProxy_DataAwsEcsTaskDefinition)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_DataAwsEcsTaskDefinition)SetId(val *string) {
+func (j *jsiiProxy_DataAwsEcsTaskDefinition) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -418,7 +417,7 @@ func (j *jsiiProxy_DataAwsEcsTaskDefinition)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEcsTaskDefinition)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsEcsTaskDefinition) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -429,7 +428,7 @@ func (j *jsiiProxy_DataAwsEcsTaskDefinition)SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_DataAwsEcsTaskDefinition)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsEcsTaskDefinition) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -437,7 +436,7 @@ func (j *jsiiProxy_DataAwsEcsTaskDefinition)SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_DataAwsEcsTaskDefinition)SetTaskDefinition(val *string) {
+func (j *jsiiProxy_DataAwsEcsTaskDefinition) SetTaskDefinition(val *string) {
 	if err := j.validateSetTaskDefinitionParameters(val); err != nil {
 		panic(err)
 	}
@@ -460,7 +459,7 @@ func DataAwsEcsTaskDefinition_GenerateConfigForImport(scope constructs.Construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinition",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func DataAwsEcsTaskDefinition_GenerateConfigForImport(scope constructs.Construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsEcsTaskDefinition_IsConstruct(x interface{}) *bool {
+func DataAwsEcsTaskDefinition_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEcsTaskDefinition_IsConstructParameters(x); err != nil {
@@ -495,7 +494,7 @@ func DataAwsEcsTaskDefinition_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinition",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func DataAwsEcsTaskDefinition_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsEcsTaskDefinition_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsEcsTaskDefinition_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEcsTaskDefinition_IsTerraformDataSourceParameters(x); err != nil {
@@ -514,7 +513,7 @@ func DataAwsEcsTaskDefinition_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinition",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func DataAwsEcsTaskDefinition_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsEcsTaskDefinition_IsTerraformElement(x interface{}) *bool {
+func DataAwsEcsTaskDefinition_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEcsTaskDefinition_IsTerraformElementParameters(x); err != nil {
@@ -533,7 +532,7 @@ func DataAwsEcsTaskDefinition_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinition",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -551,27 +550,27 @@ func DataAwsEcsTaskDefinition_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEcsTaskDefinition) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsEcsTaskDefinition) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsEcsTaskDefinition) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsEcsTaskDefinition) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func (d *jsiiProxy_DataAwsEcsTaskDefinition) GetBooleanAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -603,7 +602,7 @@ func (d *jsiiProxy_DataAwsEcsTaskDefinition) GetBooleanMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -619,7 +618,7 @@ func (d *jsiiProxy_DataAwsEcsTaskDefinition) GetListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -635,7 +634,7 @@ func (d *jsiiProxy_DataAwsEcsTaskDefinition) GetNumberAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -651,7 +650,7 @@ func (d *jsiiProxy_DataAwsEcsTaskDefinition) GetNumberListAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -667,7 +666,7 @@ func (d *jsiiProxy_DataAwsEcsTaskDefinition) GetNumberMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -683,7 +682,7 @@ func (d *jsiiProxy_DataAwsEcsTaskDefinition) GetStringAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -699,7 +698,7 @@ func (d *jsiiProxy_DataAwsEcsTaskDefinition) GetStringMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -715,7 +714,7 @@ func (d *jsiiProxy_DataAwsEcsTaskDefinition) InterpolationForAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func (d *jsiiProxy_DataAwsEcsTaskDefinition) OverrideLogicalId(newLogicalId *str
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -749,8 +748,8 @@ func (d *jsiiProxy_DataAwsEcsTaskDefinition) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsEcsTaskDefinition) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsEcsTaskDefinition) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -762,8 +761,8 @@ func (d *jsiiProxy_DataAwsEcsTaskDefinition) SynthesizeAttributes() *map[string]
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEcsTaskDefinition) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsEcsTaskDefinition) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -775,8 +774,8 @@ func (d *jsiiProxy_DataAwsEcsTaskDefinition) SynthesizeHclAttributes() *map[stri
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEcsTaskDefinition) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEcsTaskDefinition) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -788,8 +787,8 @@ func (d *jsiiProxy_DataAwsEcsTaskDefinition) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEcsTaskDefinition) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEcsTaskDefinition) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -814,8 +813,8 @@ func (d *jsiiProxy_DataAwsEcsTaskDefinition) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEcsTaskDefinition) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEcsTaskDefinition) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -826,4 +825,3 @@ func (d *jsiiProxy_DataAwsEcsTaskDefinition) ToTerraform() interface{} {
 
 	return returns
 }
-

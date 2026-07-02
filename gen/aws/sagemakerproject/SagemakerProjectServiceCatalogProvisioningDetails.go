@@ -1,6 +1,5 @@
 package sagemakerproject
 
-
 type SagemakerProjectServiceCatalogProvisioningDetails struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sagemaker_project#product_id SagemakerProject#product_id}.
 	ProductId *string `field:"required" json:"productId" yaml:"productId"`
@@ -11,6 +10,5 @@ type SagemakerProjectServiceCatalogProvisioningDetails struct {
 	// provisioning_parameter block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sagemaker_project#provisioning_parameter SagemakerProject#provisioning_parameter}
-	ProvisioningParameter interface{} `field:"optional" json:"provisioningParameter" yaml:"provisioningParameter"`
+	ProvisioningParameter any `field:"optional" json:"provisioningParameter" yaml:"provisioningParameter"`
 }
-

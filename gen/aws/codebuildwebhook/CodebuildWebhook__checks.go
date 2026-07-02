@@ -19,7 +19,7 @@ func (c *jsiiProxy_CodebuildWebhook) validateAddMoveTargetParameters(moveTarget 
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildWebhook) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_CodebuildWebhook) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_CodebuildWebhook) validateMoveFromIdParameters(id *string) er
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildWebhook) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_CodebuildWebhook) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (c *jsiiProxy_CodebuildWebhook) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildWebhook) validatePutFilterGroupParameters(value interface{}) error {
+func (c *jsiiProxy_CodebuildWebhook) validatePutFilterGroupParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateCodebuildWebhook_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validateCodebuildWebhook_IsConstructParameters(x interface{}) error {
+func validateCodebuildWebhook_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateCodebuildWebhook_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateCodebuildWebhook_IsTerraformElementParameters(x interface{}) error {
+func validateCodebuildWebhook_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateCodebuildWebhook_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func validateCodebuildWebhook_IsTerraformResourceParameters(x interface{}) error {
+func validateCodebuildWebhook_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -291,7 +291,7 @@ func (j *jsiiProxy_CodebuildWebhook) validateSetBuildTypeParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildWebhook) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_CodebuildWebhook) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -324,7 +324,7 @@ func (j *jsiiProxy_CodebuildWebhook) validateSetConnectionParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildWebhook) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_CodebuildWebhook) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -405,7 +405,7 @@ func (j *jsiiProxy_CodebuildWebhook) validateSetProjectNameParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildWebhook) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_CodebuildWebhook) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -469,4 +469,3 @@ func validateNewCodebuildWebhookParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-

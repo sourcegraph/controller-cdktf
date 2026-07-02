@@ -106,7 +106,7 @@ func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRuleOutputR
 	return nil
 }
 
-func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewDlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRuleOutputRefe
 
 	return nil
 }
-

@@ -15,15 +15,15 @@ type GuarddutyInviteAccepter interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -56,26 +56,26 @@ type GuarddutyInviteAccepter interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GuarddutyInviteAccepterTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -93,7 +93,7 @@ type GuarddutyInviteAccepter interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -105,7 +105,7 @@ type GuarddutyInviteAccepter interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -118,17 +118,17 @@ type GuarddutyInviteAccepter interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GuarddutyInviteAccepter
@@ -146,8 +146,8 @@ func (j *jsiiProxy_GuarddutyInviteAccepter) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_GuarddutyInviteAccepter) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GuarddutyInviteAccepter) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_GuarddutyInviteAccepter) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GuarddutyInviteAccepter) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GuarddutyInviteAccepter) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_GuarddutyInviteAccepter) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_GuarddutyInviteAccepter) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GuarddutyInviteAccepter) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -306,8 +306,8 @@ func (j *jsiiProxy_GuarddutyInviteAccepter) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GuarddutyInviteAccepter) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GuarddutyInviteAccepter) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -316,8 +316,8 @@ func (j *jsiiProxy_GuarddutyInviteAccepter) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GuarddutyInviteAccepter) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GuarddutyInviteAccepter) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -336,8 +336,8 @@ func (j *jsiiProxy_GuarddutyInviteAccepter) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_GuarddutyInviteAccepter) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GuarddutyInviteAccepter) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -366,8 +366,8 @@ func (j *jsiiProxy_GuarddutyInviteAccepter) Timeouts() GuarddutyInviteAccepterTi
 	return returns
 }
 
-func (j *jsiiProxy_GuarddutyInviteAccepter) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GuarddutyInviteAccepter) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -375,7 +375,6 @@ func (j *jsiiProxy_GuarddutyInviteAccepter) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/guardduty_invite_accepter aws_guardduty_invite_accepter} Resource.
 func NewGuarddutyInviteAccepter(scope constructs.Construct, id *string, config *GuarddutyInviteAccepterConfig) GuarddutyInviteAccepter {
@@ -388,7 +387,7 @@ func NewGuarddutyInviteAccepter(scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.guarddutyInviteAccepter.GuarddutyInviteAccepter",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -401,12 +400,12 @@ func NewGuarddutyInviteAccepter_Override(g GuarddutyInviteAccepter, scope constr
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.guarddutyInviteAccepter.GuarddutyInviteAccepter",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GuarddutyInviteAccepter)SetConnection(val interface{}) {
+func (j *jsiiProxy_GuarddutyInviteAccepter) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_GuarddutyInviteAccepter)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GuarddutyInviteAccepter)SetCount(val interface{}) {
+func (j *jsiiProxy_GuarddutyInviteAccepter) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_GuarddutyInviteAccepter)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GuarddutyInviteAccepter)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GuarddutyInviteAccepter) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -436,7 +435,7 @@ func (j *jsiiProxy_GuarddutyInviteAccepter)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GuarddutyInviteAccepter)SetDetectorId(val *string) {
+func (j *jsiiProxy_GuarddutyInviteAccepter) SetDetectorId(val *string) {
 	if err := j.validateSetDetectorIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -447,7 +446,7 @@ func (j *jsiiProxy_GuarddutyInviteAccepter)SetDetectorId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GuarddutyInviteAccepter)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GuarddutyInviteAccepter) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -455,7 +454,7 @@ func (j *jsiiProxy_GuarddutyInviteAccepter)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_GuarddutyInviteAccepter)SetId(val *string) {
+func (j *jsiiProxy_GuarddutyInviteAccepter) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_GuarddutyInviteAccepter)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GuarddutyInviteAccepter)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GuarddutyInviteAccepter) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -477,7 +476,7 @@ func (j *jsiiProxy_GuarddutyInviteAccepter)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_GuarddutyInviteAccepter)SetMasterAccountId(val *string) {
+func (j *jsiiProxy_GuarddutyInviteAccepter) SetMasterAccountId(val *string) {
 	if err := j.validateSetMasterAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_GuarddutyInviteAccepter)SetMasterAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GuarddutyInviteAccepter)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GuarddutyInviteAccepter) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -496,7 +495,7 @@ func (j *jsiiProxy_GuarddutyInviteAccepter)SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_GuarddutyInviteAccepter)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GuarddutyInviteAccepter) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,7 +518,7 @@ func GuarddutyInviteAccepter_GenerateConfigForImport(scope constructs.Construct,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.guarddutyInviteAccepter.GuarddutyInviteAccepter",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -543,7 +542,7 @@ func GuarddutyInviteAccepter_GenerateConfigForImport(scope constructs.Construct,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GuarddutyInviteAccepter_IsConstruct(x interface{}) *bool {
+func GuarddutyInviteAccepter_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGuarddutyInviteAccepter_IsConstructParameters(x); err != nil {
@@ -554,7 +553,7 @@ func GuarddutyInviteAccepter_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.guarddutyInviteAccepter.GuarddutyInviteAccepter",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -562,7 +561,7 @@ func GuarddutyInviteAccepter_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GuarddutyInviteAccepter_IsTerraformElement(x interface{}) *bool {
+func GuarddutyInviteAccepter_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGuarddutyInviteAccepter_IsTerraformElementParameters(x); err != nil {
@@ -573,7 +572,7 @@ func GuarddutyInviteAccepter_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.guarddutyInviteAccepter.GuarddutyInviteAccepter",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func GuarddutyInviteAccepter_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GuarddutyInviteAccepter_IsTerraformResource(x interface{}) *bool {
+func GuarddutyInviteAccepter_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGuarddutyInviteAccepter_IsTerraformResourceParameters(x); err != nil {
@@ -592,7 +591,7 @@ func GuarddutyInviteAccepter_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.guarddutyInviteAccepter.GuarddutyInviteAccepter",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -617,31 +616,31 @@ func (g *jsiiProxy_GuarddutyInviteAccepter) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GuarddutyInviteAccepter) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GuarddutyInviteAccepter) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GuarddutyInviteAccepter) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GuarddutyInviteAccepter) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -657,7 +656,7 @@ func (g *jsiiProxy_GuarddutyInviteAccepter) GetBooleanAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -673,7 +672,7 @@ func (g *jsiiProxy_GuarddutyInviteAccepter) GetBooleanMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -689,7 +688,7 @@ func (g *jsiiProxy_GuarddutyInviteAccepter) GetListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -705,7 +704,7 @@ func (g *jsiiProxy_GuarddutyInviteAccepter) GetNumberAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -721,7 +720,7 @@ func (g *jsiiProxy_GuarddutyInviteAccepter) GetNumberListAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (g *jsiiProxy_GuarddutyInviteAccepter) GetNumberMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (g *jsiiProxy_GuarddutyInviteAccepter) GetStringAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,15 +768,15 @@ func (g *jsiiProxy_GuarddutyInviteAccepter) GetStringMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GuarddutyInviteAccepter) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GuarddutyInviteAccepter) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -796,7 +795,7 @@ func (g *jsiiProxy_GuarddutyInviteAccepter) ImportFrom(id *string, provider cdkt
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -809,7 +808,7 @@ func (g *jsiiProxy_GuarddutyInviteAccepter) InterpolationForAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,18 +822,18 @@ func (g *jsiiProxy_GuarddutyInviteAccepter) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GuarddutyInviteAccepter) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GuarddutyInviteAccepter) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -845,7 +844,7 @@ func (g *jsiiProxy_GuarddutyInviteAccepter) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -856,7 +855,7 @@ func (g *jsiiProxy_GuarddutyInviteAccepter) OverrideLogicalId(newLogicalId *stri
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -867,7 +866,7 @@ func (g *jsiiProxy_GuarddutyInviteAccepter) PutTimeouts(value *GuarddutyInviteAc
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -895,8 +894,8 @@ func (g *jsiiProxy_GuarddutyInviteAccepter) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GuarddutyInviteAccepter) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GuarddutyInviteAccepter) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -908,8 +907,8 @@ func (g *jsiiProxy_GuarddutyInviteAccepter) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (g *jsiiProxy_GuarddutyInviteAccepter) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GuarddutyInviteAccepter) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -921,8 +920,8 @@ func (g *jsiiProxy_GuarddutyInviteAccepter) SynthesizeHclAttributes() *map[strin
 	return returns
 }
 
-func (g *jsiiProxy_GuarddutyInviteAccepter) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GuarddutyInviteAccepter) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -934,8 +933,8 @@ func (g *jsiiProxy_GuarddutyInviteAccepter) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GuarddutyInviteAccepter) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GuarddutyInviteAccepter) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -960,8 +959,8 @@ func (g *jsiiProxy_GuarddutyInviteAccepter) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GuarddutyInviteAccepter) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GuarddutyInviteAccepter) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -972,4 +971,3 @@ func (g *jsiiProxy_GuarddutyInviteAccepter) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsGlueScriptDagEdgeOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsGlueScriptDagEdgeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsGlueScriptDagEdgeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataAwsGlueScriptDagEdgeOutputReference) validateSetComplexOb
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsGlueScriptDagEdgeOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsGlueScriptDagEdgeOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewDataAwsGlueScriptDagEdgeOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

@@ -142,7 +142,7 @@ func (a *jsiiProxy_AppmeshRouteSpecOutputReference) validateResolveParameters(_c
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshRouteSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshRouteSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -250,4 +250,3 @@ func validateNewAppmeshRouteSpecOutputReferenceParameters(terraformResource cdkt
 
 	return nil
 }
-

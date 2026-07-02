@@ -106,7 +106,7 @@ func (j *jsiiProxy_AcmCertificateOptionsOutputReference) validateSetCertificateT
 	return nil
 }
 
-func (j *jsiiProxy_AcmCertificateOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AcmCertificateOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewAcmCertificateOptionsOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type QuicksightDataSourceParametersTwitterOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type QuicksightDataSourceParametersTwitterOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,7 +69,7 @@ type QuicksightDataSourceParametersTwitterOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,8 +82,8 @@ type jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference) Terrafo
 	return returns
 }
 
-
 func NewQuicksightDataSourceParametersTwitterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersTwitterOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewQuicksightDataSourceParametersTwitterOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersTwitterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewQuicksightDataSourceParametersTwitterOutputReference_Override(q Quicksig
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersTwitterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		q,
 	)
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference)SetInternalValue(val *QuicksightDataSourceParametersTwitter) {
+func (j *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference) SetInternalValue(val *QuicksightDataSourceParametersTwitter) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference)SetMaxRows(val *float64) {
+func (j *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference) SetMaxRows(val *float64) {
 	if err := j.validateSetMaxRowsParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference)SetMaxRo
 	)
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference)SetQuery(val *string) {
+func (j *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference) SetQuery(val *string) {
 	if err := j.validateSetQueryParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference)SetQuery
 	)
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -286,7 +285,7 @@ func (j *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,16 +309,16 @@ func (q *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference) Compute
 	return returns
 }
 
-func (q *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (q *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := q.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		q,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -335,7 +334,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference) GetBool
 	_jsii_.Invoke(
 		q,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -351,7 +350,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference) GetBool
 	_jsii_.Invoke(
 		q,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -367,7 +366,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference) GetList
 	_jsii_.Invoke(
 		q,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -383,7 +382,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference) GetNumb
 	_jsii_.Invoke(
 		q,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -399,7 +398,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference) GetNumb
 	_jsii_.Invoke(
 		q,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -415,7 +414,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference) GetNumb
 	_jsii_.Invoke(
 		q,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference) GetStri
 	_jsii_.Invoke(
 		q,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference) GetStri
 	_jsii_.Invoke(
 		q,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,23 +475,23 @@ func (q *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference) Interpo
 	_jsii_.Invoke(
 		q,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (q *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (q *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := q.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		q,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -511,4 +510,3 @@ func (q *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference) ToStrin
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (r *jsiiProxy_RdsGlobalClusterGlobalClusterMembersOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_RdsGlobalClusterGlobalClusterMembersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RdsGlobalClusterGlobalClusterMembersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewRdsGlobalClusterGlobalClusterMembersOutputReferenceParameters(te
 
 	return nil
 }
-

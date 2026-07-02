@@ -16,15 +16,15 @@ type Ec2CarrierGateway interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -52,11 +52,11 @@ type Ec2CarrierGateway interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -66,7 +66,7 @@ type Ec2CarrierGateway interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	VpcId() *string
@@ -76,9 +76,9 @@ type Ec2CarrierGateway interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -96,7 +96,7 @@ type Ec2CarrierGateway interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -108,7 +108,7 @@ type Ec2CarrierGateway interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -121,17 +121,17 @@ type Ec2CarrierGateway interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Ec2CarrierGateway
@@ -159,8 +159,8 @@ func (j *jsiiProxy_Ec2CarrierGateway) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_Ec2CarrierGateway) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ec2CarrierGateway) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_Ec2CarrierGateway) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Ec2CarrierGateway) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Ec2CarrierGateway) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_Ec2CarrierGateway) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_Ec2CarrierGateway) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ec2CarrierGateway) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -289,8 +289,8 @@ func (j *jsiiProxy_Ec2CarrierGateway) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Ec2CarrierGateway) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Ec2CarrierGateway) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -299,8 +299,8 @@ func (j *jsiiProxy_Ec2CarrierGateway) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Ec2CarrierGateway) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ec2CarrierGateway) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -359,8 +359,8 @@ func (j *jsiiProxy_Ec2CarrierGateway) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_Ec2CarrierGateway) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Ec2CarrierGateway) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -399,7 +399,6 @@ func (j *jsiiProxy_Ec2CarrierGateway) VpcIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ec2_carrier_gateway aws_ec2_carrier_gateway} Resource.
 func NewEc2CarrierGateway(scope constructs.Construct, id *string, config *Ec2CarrierGatewayConfig) Ec2CarrierGateway {
 	_init_.Initialize()
@@ -411,7 +410,7 @@ func NewEc2CarrierGateway(scope constructs.Construct, id *string, config *Ec2Car
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ec2CarrierGateway.Ec2CarrierGateway",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -424,12 +423,12 @@ func NewEc2CarrierGateway_Override(e Ec2CarrierGateway, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ec2CarrierGateway.Ec2CarrierGateway",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_Ec2CarrierGateway)SetConnection(val interface{}) {
+func (j *jsiiProxy_Ec2CarrierGateway) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -440,7 +439,7 @@ func (j *jsiiProxy_Ec2CarrierGateway)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Ec2CarrierGateway)SetCount(val interface{}) {
+func (j *jsiiProxy_Ec2CarrierGateway) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,7 +450,7 @@ func (j *jsiiProxy_Ec2CarrierGateway)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Ec2CarrierGateway)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Ec2CarrierGateway) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -459,7 +458,7 @@ func (j *jsiiProxy_Ec2CarrierGateway)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Ec2CarrierGateway)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Ec2CarrierGateway) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -467,7 +466,7 @@ func (j *jsiiProxy_Ec2CarrierGateway)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Ec2CarrierGateway)SetId(val *string) {
+func (j *jsiiProxy_Ec2CarrierGateway) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_Ec2CarrierGateway)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Ec2CarrierGateway)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Ec2CarrierGateway) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_Ec2CarrierGateway)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_Ec2CarrierGateway)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Ec2CarrierGateway) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -497,7 +496,7 @@ func (j *jsiiProxy_Ec2CarrierGateway)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Ec2CarrierGateway)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Ec2CarrierGateway) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -508,7 +507,7 @@ func (j *jsiiProxy_Ec2CarrierGateway)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Ec2CarrierGateway)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_Ec2CarrierGateway) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,7 +518,7 @@ func (j *jsiiProxy_Ec2CarrierGateway)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Ec2CarrierGateway)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_Ec2CarrierGateway) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -530,7 +529,7 @@ func (j *jsiiProxy_Ec2CarrierGateway)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Ec2CarrierGateway)SetVpcId(val *string) {
+func (j *jsiiProxy_Ec2CarrierGateway) SetVpcId(val *string) {
 	if err := j.validateSetVpcIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -553,7 +552,7 @@ func Ec2CarrierGateway_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ec2CarrierGateway.Ec2CarrierGateway",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -577,7 +576,7 @@ func Ec2CarrierGateway_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Ec2CarrierGateway_IsConstruct(x interface{}) *bool {
+func Ec2CarrierGateway_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEc2CarrierGateway_IsConstructParameters(x); err != nil {
@@ -588,7 +587,7 @@ func Ec2CarrierGateway_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ec2CarrierGateway.Ec2CarrierGateway",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -596,7 +595,7 @@ func Ec2CarrierGateway_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Ec2CarrierGateway_IsTerraformElement(x interface{}) *bool {
+func Ec2CarrierGateway_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEc2CarrierGateway_IsTerraformElementParameters(x); err != nil {
@@ -607,7 +606,7 @@ func Ec2CarrierGateway_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ec2CarrierGateway.Ec2CarrierGateway",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -615,7 +614,7 @@ func Ec2CarrierGateway_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Ec2CarrierGateway_IsTerraformResource(x interface{}) *bool {
+func Ec2CarrierGateway_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEc2CarrierGateway_IsTerraformResourceParameters(x); err != nil {
@@ -626,7 +625,7 @@ func Ec2CarrierGateway_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ec2CarrierGateway.Ec2CarrierGateway",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -651,31 +650,31 @@ func (e *jsiiProxy_Ec2CarrierGateway) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_Ec2CarrierGateway) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_Ec2CarrierGateway) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_Ec2CarrierGateway) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_Ec2CarrierGateway) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -691,7 +690,7 @@ func (e *jsiiProxy_Ec2CarrierGateway) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -707,7 +706,7 @@ func (e *jsiiProxy_Ec2CarrierGateway) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (e *jsiiProxy_Ec2CarrierGateway) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -739,7 +738,7 @@ func (e *jsiiProxy_Ec2CarrierGateway) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -755,7 +754,7 @@ func (e *jsiiProxy_Ec2CarrierGateway) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -771,7 +770,7 @@ func (e *jsiiProxy_Ec2CarrierGateway) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -787,7 +786,7 @@ func (e *jsiiProxy_Ec2CarrierGateway) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -803,15 +802,15 @@ func (e *jsiiProxy_Ec2CarrierGateway) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_Ec2CarrierGateway) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_Ec2CarrierGateway) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -830,7 +829,7 @@ func (e *jsiiProxy_Ec2CarrierGateway) ImportFrom(id *string, provider cdktf.Terr
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -843,7 +842,7 @@ func (e *jsiiProxy_Ec2CarrierGateway) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -857,18 +856,18 @@ func (e *jsiiProxy_Ec2CarrierGateway) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_Ec2CarrierGateway) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_Ec2CarrierGateway) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -879,7 +878,7 @@ func (e *jsiiProxy_Ec2CarrierGateway) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -890,7 +889,7 @@ func (e *jsiiProxy_Ec2CarrierGateway) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -926,8 +925,8 @@ func (e *jsiiProxy_Ec2CarrierGateway) ResetTagsAll() {
 	)
 }
 
-func (e *jsiiProxy_Ec2CarrierGateway) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_Ec2CarrierGateway) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -939,8 +938,8 @@ func (e *jsiiProxy_Ec2CarrierGateway) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (e *jsiiProxy_Ec2CarrierGateway) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_Ec2CarrierGateway) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -952,8 +951,8 @@ func (e *jsiiProxy_Ec2CarrierGateway) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (e *jsiiProxy_Ec2CarrierGateway) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_Ec2CarrierGateway) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -965,8 +964,8 @@ func (e *jsiiProxy_Ec2CarrierGateway) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_Ec2CarrierGateway) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_Ec2CarrierGateway) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -991,8 +990,8 @@ func (e *jsiiProxy_Ec2CarrierGateway) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_Ec2CarrierGateway) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_Ec2CarrierGateway) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1003,4 +1002,3 @@ func (e *jsiiProxy_Ec2CarrierGateway) ToTerraform() interface{} {
 
 	return returns
 }
-

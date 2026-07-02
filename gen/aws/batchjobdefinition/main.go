@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.batchJobDefinition.BatchJobDefinition",
-		reflect.TypeOf((*BatchJobDefinition)(nil)).Elem(),
+		reflect.TypeFor[BatchJobDefinition](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -88,7 +88,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BatchJobDefinition{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -96,19 +96,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionConfig",
-		reflect.TypeOf((*BatchJobDefinitionConfig)(nil)).Elem(),
+		reflect.TypeFor[BatchJobDefinitionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionRetryStrategy",
-		reflect.TypeOf((*BatchJobDefinitionRetryStrategy)(nil)).Elem(),
+		reflect.TypeFor[BatchJobDefinitionRetryStrategy](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionRetryStrategyEvaluateOnExit",
-		reflect.TypeOf((*BatchJobDefinitionRetryStrategyEvaluateOnExit)(nil)).Elem(),
+		reflect.TypeFor[BatchJobDefinitionRetryStrategyEvaluateOnExit](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionRetryStrategyEvaluateOnExitList",
-		reflect.TypeOf((*BatchJobDefinitionRetryStrategyEvaluateOnExitList)(nil)).Elem(),
+		reflect.TypeFor[BatchJobDefinitionRetryStrategyEvaluateOnExitList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -122,7 +122,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BatchJobDefinitionRetryStrategyEvaluateOnExitList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -130,7 +130,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionRetryStrategyEvaluateOnExitOutputReference",
-		reflect.TypeOf((*BatchJobDefinitionRetryStrategyEvaluateOnExitOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BatchJobDefinitionRetryStrategyEvaluateOnExitOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
@@ -165,7 +165,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BatchJobDefinitionRetryStrategyEvaluateOnExitOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -173,7 +173,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionRetryStrategyOutputReference",
-		reflect.TypeOf((*BatchJobDefinitionRetryStrategyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BatchJobDefinitionRetryStrategyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attempts", GoGetter: "Attempts"},
 			_jsii_.MemberProperty{JsiiProperty: "attemptsInput", GoGetter: "AttemptsInput"},
@@ -204,7 +204,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -212,11 +212,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionTimeout",
-		reflect.TypeOf((*BatchJobDefinitionTimeout)(nil)).Elem(),
+		reflect.TypeFor[BatchJobDefinitionTimeout](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionTimeoutOutputReference",
-		reflect.TypeOf((*BatchJobDefinitionTimeoutOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BatchJobDefinitionTimeoutOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attemptDurationSeconds", GoGetter: "AttemptDurationSeconds"},
 			_jsii_.MemberProperty{JsiiProperty: "attemptDurationSecondsInput", GoGetter: "AttemptDurationSecondsInput"},
@@ -243,7 +243,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BatchJobDefinitionTimeoutOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

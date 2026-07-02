@@ -18,15 +18,15 @@ type Inspector2Enabler interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,29 +53,29 @@ type Inspector2Enabler interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ResourceTypes() *[]*string
 	SetResourceTypes(val *[]*string)
 	ResourceTypesInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() Inspector2EnablerTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -93,7 +93,7 @@ type Inspector2Enabler interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -105,7 +105,7 @@ type Inspector2Enabler interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -118,17 +118,17 @@ type Inspector2Enabler interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Inspector2Enabler
@@ -166,8 +166,8 @@ func (j *jsiiProxy_Inspector2Enabler) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_Inspector2Enabler) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Inspector2Enabler) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_Inspector2Enabler) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Inspector2Enabler) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Inspector2Enabler) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_Inspector2Enabler) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_Inspector2Enabler) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Inspector2Enabler) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -286,8 +286,8 @@ func (j *jsiiProxy_Inspector2Enabler) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Inspector2Enabler) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Inspector2Enabler) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -296,8 +296,8 @@ func (j *jsiiProxy_Inspector2Enabler) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Inspector2Enabler) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Inspector2Enabler) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -336,8 +336,8 @@ func (j *jsiiProxy_Inspector2Enabler) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_Inspector2Enabler) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Inspector2Enabler) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -366,8 +366,8 @@ func (j *jsiiProxy_Inspector2Enabler) Timeouts() Inspector2EnablerTimeoutsOutput
 	return returns
 }
 
-func (j *jsiiProxy_Inspector2Enabler) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Inspector2Enabler) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -375,7 +375,6 @@ func (j *jsiiProxy_Inspector2Enabler) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/inspector2_enabler aws_inspector2_enabler} Resource.
 func NewInspector2Enabler(scope constructs.Construct, id *string, config *Inspector2EnablerConfig) Inspector2Enabler {
@@ -388,7 +387,7 @@ func NewInspector2Enabler(scope constructs.Construct, id *string, config *Inspec
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.inspector2Enabler.Inspector2Enabler",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -401,12 +400,12 @@ func NewInspector2Enabler_Override(i Inspector2Enabler, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.inspector2Enabler.Inspector2Enabler",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		i,
 	)
 }
 
-func (j *jsiiProxy_Inspector2Enabler)SetAccountIds(val *[]*string) {
+func (j *jsiiProxy_Inspector2Enabler) SetAccountIds(val *[]*string) {
 	if err := j.validateSetAccountIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_Inspector2Enabler)SetAccountIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Inspector2Enabler)SetConnection(val interface{}) {
+func (j *jsiiProxy_Inspector2Enabler) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_Inspector2Enabler)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Inspector2Enabler)SetCount(val interface{}) {
+func (j *jsiiProxy_Inspector2Enabler) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -439,7 +438,7 @@ func (j *jsiiProxy_Inspector2Enabler)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Inspector2Enabler)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Inspector2Enabler) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -447,7 +446,7 @@ func (j *jsiiProxy_Inspector2Enabler)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Inspector2Enabler)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Inspector2Enabler) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -455,7 +454,7 @@ func (j *jsiiProxy_Inspector2Enabler)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Inspector2Enabler)SetId(val *string) {
+func (j *jsiiProxy_Inspector2Enabler) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_Inspector2Enabler)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Inspector2Enabler)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Inspector2Enabler) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -477,7 +476,7 @@ func (j *jsiiProxy_Inspector2Enabler)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_Inspector2Enabler)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Inspector2Enabler) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -485,7 +484,7 @@ func (j *jsiiProxy_Inspector2Enabler)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Inspector2Enabler)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Inspector2Enabler) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,7 +495,7 @@ func (j *jsiiProxy_Inspector2Enabler)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Inspector2Enabler)SetResourceTypes(val *[]*string) {
+func (j *jsiiProxy_Inspector2Enabler) SetResourceTypes(val *[]*string) {
 	if err := j.validateSetResourceTypesParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,7 +518,7 @@ func Inspector2Enabler_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.inspector2Enabler.Inspector2Enabler",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -543,7 +542,7 @@ func Inspector2Enabler_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Inspector2Enabler_IsConstruct(x interface{}) *bool {
+func Inspector2Enabler_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateInspector2Enabler_IsConstructParameters(x); err != nil {
@@ -554,7 +553,7 @@ func Inspector2Enabler_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.inspector2Enabler.Inspector2Enabler",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -562,7 +561,7 @@ func Inspector2Enabler_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Inspector2Enabler_IsTerraformElement(x interface{}) *bool {
+func Inspector2Enabler_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateInspector2Enabler_IsTerraformElementParameters(x); err != nil {
@@ -573,7 +572,7 @@ func Inspector2Enabler_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.inspector2Enabler.Inspector2Enabler",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func Inspector2Enabler_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Inspector2Enabler_IsTerraformResource(x interface{}) *bool {
+func Inspector2Enabler_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateInspector2Enabler_IsTerraformResourceParameters(x); err != nil {
@@ -592,7 +591,7 @@ func Inspector2Enabler_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.inspector2Enabler.Inspector2Enabler",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -617,31 +616,31 @@ func (i *jsiiProxy_Inspector2Enabler) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (i *jsiiProxy_Inspector2Enabler) AddOverride(path *string, value interface{}) {
+func (i *jsiiProxy_Inspector2Enabler) AddOverride(path *string, value any) {
 	if err := i.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (i *jsiiProxy_Inspector2Enabler) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_Inspector2Enabler) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -657,7 +656,7 @@ func (i *jsiiProxy_Inspector2Enabler) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -673,7 +672,7 @@ func (i *jsiiProxy_Inspector2Enabler) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -689,7 +688,7 @@ func (i *jsiiProxy_Inspector2Enabler) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -705,7 +704,7 @@ func (i *jsiiProxy_Inspector2Enabler) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -721,7 +720,7 @@ func (i *jsiiProxy_Inspector2Enabler) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (i *jsiiProxy_Inspector2Enabler) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (i *jsiiProxy_Inspector2Enabler) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,15 +768,15 @@ func (i *jsiiProxy_Inspector2Enabler) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_Inspector2Enabler) HasResourceMove() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_Inspector2Enabler) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -796,7 +795,7 @@ func (i *jsiiProxy_Inspector2Enabler) ImportFrom(id *string, provider cdktf.Terr
 	_jsii_.InvokeVoid(
 		i,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -809,7 +808,7 @@ func (i *jsiiProxy_Inspector2Enabler) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,18 +822,18 @@ func (i *jsiiProxy_Inspector2Enabler) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (i *jsiiProxy_Inspector2Enabler) MoveTo(moveTarget *string, index interface{}) {
+func (i *jsiiProxy_Inspector2Enabler) MoveTo(moveTarget *string, index any) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -845,7 +844,7 @@ func (i *jsiiProxy_Inspector2Enabler) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -856,7 +855,7 @@ func (i *jsiiProxy_Inspector2Enabler) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -867,7 +866,7 @@ func (i *jsiiProxy_Inspector2Enabler) PutTimeouts(value *Inspector2EnablerTimeou
 	_jsii_.InvokeVoid(
 		i,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -895,8 +894,8 @@ func (i *jsiiProxy_Inspector2Enabler) ResetTimeouts() {
 	)
 }
 
-func (i *jsiiProxy_Inspector2Enabler) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_Inspector2Enabler) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -908,8 +907,8 @@ func (i *jsiiProxy_Inspector2Enabler) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (i *jsiiProxy_Inspector2Enabler) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_Inspector2Enabler) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -921,8 +920,8 @@ func (i *jsiiProxy_Inspector2Enabler) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (i *jsiiProxy_Inspector2Enabler) ToHclTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_Inspector2Enabler) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -934,8 +933,8 @@ func (i *jsiiProxy_Inspector2Enabler) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_Inspector2Enabler) ToMetadata() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_Inspector2Enabler) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -960,8 +959,8 @@ func (i *jsiiProxy_Inspector2Enabler) ToString() *string {
 	return returns
 }
 
-func (i *jsiiProxy_Inspector2Enabler) ToTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_Inspector2Enabler) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -972,4 +971,3 @@ func (i *jsiiProxy_Inspector2Enabler) ToTerraform() interface{} {
 
 	return returns
 }
-

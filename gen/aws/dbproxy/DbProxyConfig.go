@@ -6,9 +6,9 @@ import (
 
 type DbProxyConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,11 +18,11 @@ type DbProxyConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// auth block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/db_proxy#auth DbProxy#auth}
-	Auth interface{} `field:"required" json:"auth" yaml:"auth"`
+	Auth any `field:"required" json:"auth" yaml:"auth"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/db_proxy#engine_family DbProxy#engine_family}.
 	EngineFamily *string `field:"required" json:"engineFamily" yaml:"engineFamily"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/db_proxy#name DbProxy#name}.
@@ -32,7 +32,7 @@ type DbProxyConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/db_proxy#vpc_subnet_ids DbProxy#vpc_subnet_ids}.
 	VpcSubnetIds *[]*string `field:"required" json:"vpcSubnetIds" yaml:"vpcSubnetIds"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/db_proxy#debug_logging DbProxy#debug_logging}.
-	DebugLogging interface{} `field:"optional" json:"debugLogging" yaml:"debugLogging"`
+	DebugLogging any `field:"optional" json:"debugLogging" yaml:"debugLogging"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/db_proxy#id DbProxy#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -41,7 +41,7 @@ type DbProxyConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/db_proxy#idle_client_timeout DbProxy#idle_client_timeout}.
 	IdleClientTimeout *float64 `field:"optional" json:"idleClientTimeout" yaml:"idleClientTimeout"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/db_proxy#require_tls DbProxy#require_tls}.
-	RequireTls interface{} `field:"optional" json:"requireTls" yaml:"requireTls"`
+	RequireTls any `field:"optional" json:"requireTls" yaml:"requireTls"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/db_proxy#tags DbProxy#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/db_proxy#tags_all DbProxy#tags_all}.
@@ -53,4 +53,3 @@ type DbProxyConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/db_proxy#vpc_security_group_ids DbProxy#vpc_security_group_ids}.
 	VpcSecurityGroupIds *[]*string `field:"optional" json:"vpcSecurityGroupIds" yaml:"vpcSecurityGroupIds"`
 }
-

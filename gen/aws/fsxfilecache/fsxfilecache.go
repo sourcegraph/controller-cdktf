@@ -16,21 +16,21 @@ type FsxFileCache interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
-	CopyTagsToDataRepositoryAssociations() interface{}
-	SetCopyTagsToDataRepositoryAssociations(val interface{})
-	CopyTagsToDataRepositoryAssociationsInput() interface{}
+	ConstructNodeMetadata() *map[string]any
+	CopyTagsToDataRepositoryAssociations() any
+	SetCopyTagsToDataRepositoryAssociations(val any)
+	CopyTagsToDataRepositoryAssociationsInput() any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DataRepositoryAssociation() FsxFileCacheDataRepositoryAssociationList
 	DataRepositoryAssociationIds() *[]*string
-	DataRepositoryAssociationInput() interface{}
+	DataRepositoryAssociationInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,7 +62,7 @@ type FsxFileCache interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	LustreConfiguration() FsxFileCacheLustreConfigurationList
-	LustreConfigurationInput() interface{}
+	LustreConfigurationInput() any
 	NetworkInterfaceIds() *[]*string
 	// The tree node.
 	Node() constructs.Node
@@ -72,11 +72,11 @@ type FsxFileCache interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SecurityGroupIds() *[]*string
 	SetSecurityGroupIds(val *[]*string)
 	SecurityGroupIdsInput() *[]*string
@@ -95,19 +95,19 @@ type FsxFileCache interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() FsxFileCacheTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	VpcId() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -125,7 +125,7 @@ type FsxFileCache interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -137,15 +137,15 @@ type FsxFileCache interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutDataRepositoryAssociation(value interface{})
-	PutLustreConfiguration(value interface{})
+	PutDataRepositoryAssociation(value any)
+	PutLustreConfiguration(value any)
 	PutTimeouts(value *FsxFileCacheTimeouts)
 	ResetCopyTagsToDataRepositoryAssociations()
 	ResetDataRepositoryAssociation()
@@ -159,17 +159,17 @@ type FsxFileCache interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for FsxFileCache
@@ -197,8 +197,8 @@ func (j *jsiiProxy_FsxFileCache) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_FsxFileCache) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxFileCache) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -207,8 +207,8 @@ func (j *jsiiProxy_FsxFileCache) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FsxFileCache) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FsxFileCache) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -217,8 +217,8 @@ func (j *jsiiProxy_FsxFileCache) ConstructNodeMetadata() *map[string]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_FsxFileCache) CopyTagsToDataRepositoryAssociations() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxFileCache) CopyTagsToDataRepositoryAssociations() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"copyTagsToDataRepositoryAssociations",
@@ -227,8 +227,8 @@ func (j *jsiiProxy_FsxFileCache) CopyTagsToDataRepositoryAssociations() interfac
 	return returns
 }
 
-func (j *jsiiProxy_FsxFileCache) CopyTagsToDataRepositoryAssociationsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxFileCache) CopyTagsToDataRepositoryAssociationsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"copyTagsToDataRepositoryAssociationsInput",
@@ -237,8 +237,8 @@ func (j *jsiiProxy_FsxFileCache) CopyTagsToDataRepositoryAssociationsInput() int
 	return returns
 }
 
-func (j *jsiiProxy_FsxFileCache) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxFileCache) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -267,8 +267,8 @@ func (j *jsiiProxy_FsxFileCache) DataRepositoryAssociationIds() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_FsxFileCache) DataRepositoryAssociationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxFileCache) DataRepositoryAssociationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dataRepositoryAssociationInput",
@@ -437,8 +437,8 @@ func (j *jsiiProxy_FsxFileCache) LustreConfiguration() FsxFileCacheLustreConfigu
 	return returns
 }
 
-func (j *jsiiProxy_FsxFileCache) LustreConfigurationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxFileCache) LustreConfigurationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"lustreConfigurationInput",
@@ -487,8 +487,8 @@ func (j *jsiiProxy_FsxFileCache) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_FsxFileCache) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_FsxFileCache) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -497,8 +497,8 @@ func (j *jsiiProxy_FsxFileCache) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FsxFileCache) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxFileCache) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -617,8 +617,8 @@ func (j *jsiiProxy_FsxFileCache) TerraformGeneratorMetadata() *cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_FsxFileCache) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FsxFileCache) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -647,8 +647,8 @@ func (j *jsiiProxy_FsxFileCache) Timeouts() FsxFileCacheTimeoutsOutputReference 
 	return returns
 }
 
-func (j *jsiiProxy_FsxFileCache) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxFileCache) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -667,7 +667,6 @@ func (j *jsiiProxy_FsxFileCache) VpcId() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fsx_file_cache aws_fsx_file_cache} Resource.
 func NewFsxFileCache(scope constructs.Construct, id *string, config *FsxFileCacheConfig) FsxFileCache {
 	_init_.Initialize()
@@ -679,7 +678,7 @@ func NewFsxFileCache(scope constructs.Construct, id *string, config *FsxFileCach
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.fsxFileCache.FsxFileCache",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -692,12 +691,12 @@ func NewFsxFileCache_Override(f FsxFileCache, scope constructs.Construct, id *st
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.fsxFileCache.FsxFileCache",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FsxFileCache)SetConnection(val interface{}) {
+func (j *jsiiProxy_FsxFileCache) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -708,7 +707,7 @@ func (j *jsiiProxy_FsxFileCache)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FsxFileCache)SetCopyTagsToDataRepositoryAssociations(val interface{}) {
+func (j *jsiiProxy_FsxFileCache) SetCopyTagsToDataRepositoryAssociations(val any) {
 	if err := j.validateSetCopyTagsToDataRepositoryAssociationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -719,7 +718,7 @@ func (j *jsiiProxy_FsxFileCache)SetCopyTagsToDataRepositoryAssociations(val inte
 	)
 }
 
-func (j *jsiiProxy_FsxFileCache)SetCount(val interface{}) {
+func (j *jsiiProxy_FsxFileCache) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -730,7 +729,7 @@ func (j *jsiiProxy_FsxFileCache)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FsxFileCache)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_FsxFileCache) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -738,7 +737,7 @@ func (j *jsiiProxy_FsxFileCache)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FsxFileCache)SetFileCacheType(val *string) {
+func (j *jsiiProxy_FsxFileCache) SetFileCacheType(val *string) {
 	if err := j.validateSetFileCacheTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -749,7 +748,7 @@ func (j *jsiiProxy_FsxFileCache)SetFileCacheType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FsxFileCache)SetFileCacheTypeVersion(val *string) {
+func (j *jsiiProxy_FsxFileCache) SetFileCacheTypeVersion(val *string) {
 	if err := j.validateSetFileCacheTypeVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -760,7 +759,7 @@ func (j *jsiiProxy_FsxFileCache)SetFileCacheTypeVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FsxFileCache)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_FsxFileCache) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -768,7 +767,7 @@ func (j *jsiiProxy_FsxFileCache)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_FsxFileCache)SetId(val *string) {
+func (j *jsiiProxy_FsxFileCache) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -779,7 +778,7 @@ func (j *jsiiProxy_FsxFileCache)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FsxFileCache)SetKmsKeyId(val *string) {
+func (j *jsiiProxy_FsxFileCache) SetKmsKeyId(val *string) {
 	if err := j.validateSetKmsKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -790,7 +789,7 @@ func (j *jsiiProxy_FsxFileCache)SetKmsKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FsxFileCache)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_FsxFileCache) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -801,7 +800,7 @@ func (j *jsiiProxy_FsxFileCache)SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_FsxFileCache)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_FsxFileCache) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -809,7 +808,7 @@ func (j *jsiiProxy_FsxFileCache)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_FsxFileCache)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_FsxFileCache) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -820,7 +819,7 @@ func (j *jsiiProxy_FsxFileCache)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FsxFileCache)SetSecurityGroupIds(val *[]*string) {
+func (j *jsiiProxy_FsxFileCache) SetSecurityGroupIds(val *[]*string) {
 	if err := j.validateSetSecurityGroupIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -831,7 +830,7 @@ func (j *jsiiProxy_FsxFileCache)SetSecurityGroupIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FsxFileCache)SetStorageCapacity(val *float64) {
+func (j *jsiiProxy_FsxFileCache) SetStorageCapacity(val *float64) {
 	if err := j.validateSetStorageCapacityParameters(val); err != nil {
 		panic(err)
 	}
@@ -842,7 +841,7 @@ func (j *jsiiProxy_FsxFileCache)SetStorageCapacity(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_FsxFileCache)SetSubnetIds(val *[]*string) {
+func (j *jsiiProxy_FsxFileCache) SetSubnetIds(val *[]*string) {
 	if err := j.validateSetSubnetIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -853,7 +852,7 @@ func (j *jsiiProxy_FsxFileCache)SetSubnetIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FsxFileCache)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_FsxFileCache) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -864,7 +863,7 @@ func (j *jsiiProxy_FsxFileCache)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_FsxFileCache)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_FsxFileCache) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -887,7 +886,7 @@ func FsxFileCache_GenerateConfigForImport(scope constructs.Construct, importToId
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fsxFileCache.FsxFileCache",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -911,7 +910,7 @@ func FsxFileCache_GenerateConfigForImport(scope constructs.Construct, importToId
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func FsxFileCache_IsConstruct(x interface{}) *bool {
+func FsxFileCache_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFsxFileCache_IsConstructParameters(x); err != nil {
@@ -922,7 +921,7 @@ func FsxFileCache_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fsxFileCache.FsxFileCache",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -930,7 +929,7 @@ func FsxFileCache_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func FsxFileCache_IsTerraformElement(x interface{}) *bool {
+func FsxFileCache_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFsxFileCache_IsTerraformElementParameters(x); err != nil {
@@ -941,7 +940,7 @@ func FsxFileCache_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fsxFileCache.FsxFileCache",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -949,7 +948,7 @@ func FsxFileCache_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func FsxFileCache_IsTerraformResource(x interface{}) *bool {
+func FsxFileCache_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFsxFileCache_IsTerraformResourceParameters(x); err != nil {
@@ -960,7 +959,7 @@ func FsxFileCache_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fsxFileCache.FsxFileCache",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -985,31 +984,31 @@ func (f *jsiiProxy_FsxFileCache) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (f *jsiiProxy_FsxFileCache) AddOverride(path *string, value interface{}) {
+func (f *jsiiProxy_FsxFileCache) AddOverride(path *string, value any) {
 	if err := f.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (f *jsiiProxy_FsxFileCache) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FsxFileCache) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1025,7 +1024,7 @@ func (f *jsiiProxy_FsxFileCache) GetBooleanAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1041,7 +1040,7 @@ func (f *jsiiProxy_FsxFileCache) GetBooleanMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1057,7 +1056,7 @@ func (f *jsiiProxy_FsxFileCache) GetListAttribute(terraformAttribute *string) *[
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1073,7 +1072,7 @@ func (f *jsiiProxy_FsxFileCache) GetNumberAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1089,7 +1088,7 @@ func (f *jsiiProxy_FsxFileCache) GetNumberListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1105,7 +1104,7 @@ func (f *jsiiProxy_FsxFileCache) GetNumberMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1121,7 +1120,7 @@ func (f *jsiiProxy_FsxFileCache) GetStringAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1137,15 +1136,15 @@ func (f *jsiiProxy_FsxFileCache) GetStringMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FsxFileCache) HasResourceMove() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FsxFileCache) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1164,7 +1163,7 @@ func (f *jsiiProxy_FsxFileCache) ImportFrom(id *string, provider cdktf.Terraform
 	_jsii_.InvokeVoid(
 		f,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1177,7 +1176,7 @@ func (f *jsiiProxy_FsxFileCache) InterpolationForAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1191,18 +1190,18 @@ func (f *jsiiProxy_FsxFileCache) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (f *jsiiProxy_FsxFileCache) MoveTo(moveTarget *string, index interface{}) {
+func (f *jsiiProxy_FsxFileCache) MoveTo(moveTarget *string, index any) {
 	if err := f.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1213,7 +1212,7 @@ func (f *jsiiProxy_FsxFileCache) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1224,29 +1223,29 @@ func (f *jsiiProxy_FsxFileCache) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (f *jsiiProxy_FsxFileCache) PutDataRepositoryAssociation(value interface{}) {
+func (f *jsiiProxy_FsxFileCache) PutDataRepositoryAssociation(value any) {
 	if err := f.validatePutDataRepositoryAssociationParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"putDataRepositoryAssociation",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (f *jsiiProxy_FsxFileCache) PutLustreConfiguration(value interface{}) {
+func (f *jsiiProxy_FsxFileCache) PutLustreConfiguration(value any) {
 	if err := f.validatePutLustreConfigurationParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"putLustreConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1257,7 +1256,7 @@ func (f *jsiiProxy_FsxFileCache) PutTimeouts(value *FsxFileCacheTimeouts) {
 	_jsii_.InvokeVoid(
 		f,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1341,8 +1340,8 @@ func (f *jsiiProxy_FsxFileCache) ResetTimeouts() {
 	)
 }
 
-func (f *jsiiProxy_FsxFileCache) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FsxFileCache) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -1354,8 +1353,8 @@ func (f *jsiiProxy_FsxFileCache) SynthesizeAttributes() *map[string]interface{} 
 	return returns
 }
 
-func (f *jsiiProxy_FsxFileCache) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FsxFileCache) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -1367,8 +1366,8 @@ func (f *jsiiProxy_FsxFileCache) SynthesizeHclAttributes() *map[string]interface
 	return returns
 }
 
-func (f *jsiiProxy_FsxFileCache) ToHclTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FsxFileCache) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1380,8 +1379,8 @@ func (f *jsiiProxy_FsxFileCache) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (f *jsiiProxy_FsxFileCache) ToMetadata() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FsxFileCache) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1406,8 +1405,8 @@ func (f *jsiiProxy_FsxFileCache) ToString() *string {
 	return returns
 }
 
-func (f *jsiiProxy_FsxFileCache) ToTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FsxFileCache) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1418,4 +1417,3 @@ func (f *jsiiProxy_FsxFileCache) ToTerraform() interface{} {
 
 	return returns
 }
-

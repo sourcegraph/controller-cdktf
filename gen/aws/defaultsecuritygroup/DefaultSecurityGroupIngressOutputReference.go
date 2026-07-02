@@ -15,9 +15,9 @@ type DefaultSecurityGroupIngressOutputReference interface {
 	CidrBlocksInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -36,8 +36,8 @@ type DefaultSecurityGroupIngressOutputReference interface {
 	FromPort() *float64
 	SetFromPort(val *float64)
 	FromPortInput() *float64
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Ipv6CidrBlocks() *[]*string
 	SetIpv6CidrBlocks(val *[]*string)
 	Ipv6CidrBlocksInput() *[]*string
@@ -50,9 +50,9 @@ type DefaultSecurityGroupIngressOutputReference interface {
 	SecurityGroups() *[]*string
 	SetSecurityGroups(val *[]*string)
 	SecurityGroupsInput() *[]*string
-	SelfAttribute() interface{}
-	SetSelfAttribute(val interface{})
-	SelfAttributeInput() interface{}
+	SelfAttribute() any
+	SetSelfAttribute(val any)
+	SelfAttributeInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +67,7 @@ type DefaultSecurityGroupIngressOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type DefaultSecurityGroupIngressOutputReference interface {
 	ResetToPort()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -132,8 +132,8 @@ func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference) CidrBlocksInput()
 	return returns
 }
 
-func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference) FromPortInput() *
 	return returns
 }
 
-func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -302,8 +302,8 @@ func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference) SecurityGroupsInp
 	return returns
 }
 
-func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference) SelfAttribute() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference) SelfAttribute() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"selfAttribute",
@@ -312,8 +312,8 @@ func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference) SelfAttribute() i
 	return returns
 }
 
-func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference) SelfAttributeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference) SelfAttributeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"selfAttributeInput",
@@ -362,7 +362,6 @@ func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference) ToPortInput() *fl
 	return returns
 }
 
-
 func NewDefaultSecurityGroupIngressOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DefaultSecurityGroupIngressOutputReference {
 	_init_.Initialize()
 
@@ -373,7 +372,7 @@ func NewDefaultSecurityGroupIngressOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupIngressOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -385,12 +384,12 @@ func NewDefaultSecurityGroupIngressOutputReference_Override(d DefaultSecurityGro
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupIngressOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference)SetCidrBlocks(val *[]*string) {
+func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference) SetCidrBlocks(val *[]*string) {
 	if err := j.validateSetCidrBlocksParameters(val); err != nil {
 		panic(err)
 	}
@@ -401,7 +400,7 @@ func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference)SetCidrBlocks(val 
 	)
 }
 
-func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -412,7 +411,7 @@ func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -423,7 +422,7 @@ func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,7 +433,7 @@ func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference)SetDescription(val
 	)
 }
 
-func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference)SetFromPort(val *float64) {
+func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference) SetFromPort(val *float64) {
 	if err := j.validateSetFromPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -445,7 +444,7 @@ func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference)SetFromPort(val *f
 	)
 }
 
-func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,7 +455,7 @@ func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference)SetIpv6CidrBlocks(val *[]*string) {
+func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference) SetIpv6CidrBlocks(val *[]*string) {
 	if err := j.validateSetIpv6CidrBlocksParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference)SetIpv6CidrBlocks(
 	)
 }
 
-func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference)SetPrefixListIds(val *[]*string) {
+func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference) SetPrefixListIds(val *[]*string) {
 	if err := j.validateSetPrefixListIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference)SetPrefixListIds(v
 	)
 }
 
-func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference)SetProtocol(val *string) {
+func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference) SetProtocol(val *string) {
 	if err := j.validateSetProtocolParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference)SetProtocol(val *s
 	)
 }
 
-func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference)SetSecurityGroups(val *[]*string) {
+func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference) SetSecurityGroups(val *[]*string) {
 	if err := j.validateSetSecurityGroupsParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference)SetSecurityGroups(
 	)
 }
 
-func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference)SetSelfAttribute(val interface{}) {
+func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference) SetSelfAttribute(val any) {
 	if err := j.validateSetSelfAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference)SetSelfAttribute(v
 	)
 }
 
-func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference)SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference)SetToPort(val *float64) {
+func (j *jsiiProxy_DefaultSecurityGroupIngressOutputReference) SetToPort(val *float64) {
 	if err := j.validateSetToPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,16 +556,16 @@ func (d *jsiiProxy_DefaultSecurityGroupIngressOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (d *jsiiProxy_DefaultSecurityGroupIngressOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DefaultSecurityGroupIngressOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func (d *jsiiProxy_DefaultSecurityGroupIngressOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -598,7 +597,7 @@ func (d *jsiiProxy_DefaultSecurityGroupIngressOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -614,7 +613,7 @@ func (d *jsiiProxy_DefaultSecurityGroupIngressOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -630,7 +629,7 @@ func (d *jsiiProxy_DefaultSecurityGroupIngressOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func (d *jsiiProxy_DefaultSecurityGroupIngressOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func (d *jsiiProxy_DefaultSecurityGroupIngressOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func (d *jsiiProxy_DefaultSecurityGroupIngressOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func (d *jsiiProxy_DefaultSecurityGroupIngressOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (d *jsiiProxy_DefaultSecurityGroupIngressOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -802,16 +801,16 @@ func (d *jsiiProxy_DefaultSecurityGroupIngressOutputReference) ResetToPort() {
 	)
 }
 
-func (d *jsiiProxy_DefaultSecurityGroupIngressOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DefaultSecurityGroupIngressOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -830,4 +829,3 @@ func (d *jsiiProxy_DefaultSecurityGroupIngressOutputReference) ToString() *strin
 
 	return returns
 }
-

@@ -19,15 +19,15 @@ type SpotFleetRequest interface {
 	CdktfStack() cdktf.TerraformStack
 	ClientToken() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,9 +59,9 @@ type SpotFleetRequest interface {
 	SetInstancePoolsToUseCount(val *float64)
 	InstancePoolsToUseCountInput() *float64
 	LaunchSpecification() SpotFleetRequestLaunchSpecificationList
-	LaunchSpecificationInput() interface{}
+	LaunchSpecificationInput() any
 	LaunchTemplateConfig() SpotFleetRequestLaunchTemplateConfigList
-	LaunchTemplateConfigInput() interface{}
+	LaunchTemplateConfigInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -85,14 +85,14 @@ type SpotFleetRequest interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
-	ReplaceUnhealthyInstances() interface{}
-	SetReplaceUnhealthyInstances(val interface{})
-	ReplaceUnhealthyInstancesInput() interface{}
+	RawOverrides() any
+	ReplaceUnhealthyInstances() any
+	SetReplaceUnhealthyInstances(val any)
+	ReplaceUnhealthyInstancesInput() any
 	SpotMaintenanceStrategies() SpotFleetRequestSpotMaintenanceStrategiesOutputReference
 	SpotMaintenanceStrategiesInput() *SpotFleetRequestSpotMaintenanceStrategies
 	SpotPrice() *string
@@ -117,33 +117,33 @@ type SpotFleetRequest interface {
 	TerminateInstancesOnDelete() *string
 	SetTerminateInstancesOnDelete(val *string)
 	TerminateInstancesOnDeleteInput() *string
-	TerminateInstancesWithExpiration() interface{}
-	SetTerminateInstancesWithExpiration(val interface{})
-	TerminateInstancesWithExpirationInput() interface{}
+	TerminateInstancesWithExpiration() any
+	SetTerminateInstancesWithExpiration(val any)
+	TerminateInstancesWithExpirationInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() SpotFleetRequestTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	ValidFrom() *string
 	SetValidFrom(val *string)
 	ValidFromInput() *string
 	ValidUntil() *string
 	SetValidUntil(val *string)
 	ValidUntilInput() *string
-	WaitForFulfillment() interface{}
-	SetWaitForFulfillment(val interface{})
-	WaitForFulfillmentInput() interface{}
+	WaitForFulfillment() any
+	SetWaitForFulfillment(val any)
+	WaitForFulfillmentInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -161,7 +161,7 @@ type SpotFleetRequest interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -173,15 +173,15 @@ type SpotFleetRequest interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutLaunchSpecification(value interface{})
-	PutLaunchTemplateConfig(value interface{})
+	PutLaunchSpecification(value any)
+	PutLaunchTemplateConfig(value any)
 	PutSpotMaintenanceStrategies(value *SpotFleetRequestSpotMaintenanceStrategies)
 	PutTimeouts(value *SpotFleetRequestTimeouts)
 	ResetAllocationStrategy()
@@ -212,17 +212,17 @@ type SpotFleetRequest interface {
 	ResetValidFrom()
 	ResetValidUntil()
 	ResetWaitForFulfillment()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SpotFleetRequest
@@ -270,8 +270,8 @@ func (j *jsiiProxy_SpotFleetRequest) ClientToken() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SpotFleetRequest) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpotFleetRequest) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -280,8 +280,8 @@ func (j *jsiiProxy_SpotFleetRequest) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SpotFleetRequest) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SpotFleetRequest) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -290,8 +290,8 @@ func (j *jsiiProxy_SpotFleetRequest) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_SpotFleetRequest) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpotFleetRequest) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -470,8 +470,8 @@ func (j *jsiiProxy_SpotFleetRequest) LaunchSpecification() SpotFleetRequestLaunc
 	return returns
 }
 
-func (j *jsiiProxy_SpotFleetRequest) LaunchSpecificationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpotFleetRequest) LaunchSpecificationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"launchSpecificationInput",
@@ -490,8 +490,8 @@ func (j *jsiiProxy_SpotFleetRequest) LaunchTemplateConfig() SpotFleetRequestLaun
 	return returns
 }
 
-func (j *jsiiProxy_SpotFleetRequest) LaunchTemplateConfigInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpotFleetRequest) LaunchTemplateConfigInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"launchTemplateConfigInput",
@@ -610,8 +610,8 @@ func (j *jsiiProxy_SpotFleetRequest) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_SpotFleetRequest) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SpotFleetRequest) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -620,8 +620,8 @@ func (j *jsiiProxy_SpotFleetRequest) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SpotFleetRequest) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpotFleetRequest) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -630,8 +630,8 @@ func (j *jsiiProxy_SpotFleetRequest) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SpotFleetRequest) ReplaceUnhealthyInstances() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpotFleetRequest) ReplaceUnhealthyInstances() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"replaceUnhealthyInstances",
@@ -640,8 +640,8 @@ func (j *jsiiProxy_SpotFleetRequest) ReplaceUnhealthyInstances() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SpotFleetRequest) ReplaceUnhealthyInstancesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpotFleetRequest) ReplaceUnhealthyInstancesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"replaceUnhealthyInstancesInput",
@@ -820,8 +820,8 @@ func (j *jsiiProxy_SpotFleetRequest) TerminateInstancesOnDeleteInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SpotFleetRequest) TerminateInstancesWithExpiration() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpotFleetRequest) TerminateInstancesWithExpiration() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"terminateInstancesWithExpiration",
@@ -830,8 +830,8 @@ func (j *jsiiProxy_SpotFleetRequest) TerminateInstancesWithExpiration() interfac
 	return returns
 }
 
-func (j *jsiiProxy_SpotFleetRequest) TerminateInstancesWithExpirationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpotFleetRequest) TerminateInstancesWithExpirationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"terminateInstancesWithExpirationInput",
@@ -850,8 +850,8 @@ func (j *jsiiProxy_SpotFleetRequest) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_SpotFleetRequest) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SpotFleetRequest) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -880,8 +880,8 @@ func (j *jsiiProxy_SpotFleetRequest) Timeouts() SpotFleetRequestTimeoutsOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_SpotFleetRequest) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpotFleetRequest) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -930,8 +930,8 @@ func (j *jsiiProxy_SpotFleetRequest) ValidUntilInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SpotFleetRequest) WaitForFulfillment() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpotFleetRequest) WaitForFulfillment() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"waitForFulfillment",
@@ -940,8 +940,8 @@ func (j *jsiiProxy_SpotFleetRequest) WaitForFulfillment() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SpotFleetRequest) WaitForFulfillmentInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpotFleetRequest) WaitForFulfillmentInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"waitForFulfillmentInput",
@@ -949,7 +949,6 @@ func (j *jsiiProxy_SpotFleetRequest) WaitForFulfillmentInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_fleet_request aws_spot_fleet_request} Resource.
 func NewSpotFleetRequest(scope constructs.Construct, id *string, config *SpotFleetRequestConfig) SpotFleetRequest {
@@ -962,7 +961,7 @@ func NewSpotFleetRequest(scope constructs.Construct, id *string, config *SpotFle
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequest",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -975,12 +974,12 @@ func NewSpotFleetRequest_Override(s SpotFleetRequest, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequest",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequest)SetAllocationStrategy(val *string) {
+func (j *jsiiProxy_SpotFleetRequest) SetAllocationStrategy(val *string) {
 	if err := j.validateSetAllocationStrategyParameters(val); err != nil {
 		panic(err)
 	}
@@ -991,7 +990,7 @@ func (j *jsiiProxy_SpotFleetRequest)SetAllocationStrategy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequest)SetConnection(val interface{}) {
+func (j *jsiiProxy_SpotFleetRequest) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1002,7 +1001,7 @@ func (j *jsiiProxy_SpotFleetRequest)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequest)SetCount(val interface{}) {
+func (j *jsiiProxy_SpotFleetRequest) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1013,7 +1012,7 @@ func (j *jsiiProxy_SpotFleetRequest)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequest)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SpotFleetRequest) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1021,7 +1020,7 @@ func (j *jsiiProxy_SpotFleetRequest)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequest)SetExcessCapacityTerminationPolicy(val *string) {
+func (j *jsiiProxy_SpotFleetRequest) SetExcessCapacityTerminationPolicy(val *string) {
 	if err := j.validateSetExcessCapacityTerminationPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1032,7 +1031,7 @@ func (j *jsiiProxy_SpotFleetRequest)SetExcessCapacityTerminationPolicy(val *stri
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequest)SetFleetType(val *string) {
+func (j *jsiiProxy_SpotFleetRequest) SetFleetType(val *string) {
 	if err := j.validateSetFleetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1043,7 +1042,7 @@ func (j *jsiiProxy_SpotFleetRequest)SetFleetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequest)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SpotFleetRequest) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1051,7 +1050,7 @@ func (j *jsiiProxy_SpotFleetRequest)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequest)SetIamFleetRole(val *string) {
+func (j *jsiiProxy_SpotFleetRequest) SetIamFleetRole(val *string) {
 	if err := j.validateSetIamFleetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1062,7 +1061,7 @@ func (j *jsiiProxy_SpotFleetRequest)SetIamFleetRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequest)SetId(val *string) {
+func (j *jsiiProxy_SpotFleetRequest) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1073,7 +1072,7 @@ func (j *jsiiProxy_SpotFleetRequest)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequest)SetInstanceInterruptionBehaviour(val *string) {
+func (j *jsiiProxy_SpotFleetRequest) SetInstanceInterruptionBehaviour(val *string) {
 	if err := j.validateSetInstanceInterruptionBehaviourParameters(val); err != nil {
 		panic(err)
 	}
@@ -1084,7 +1083,7 @@ func (j *jsiiProxy_SpotFleetRequest)SetInstanceInterruptionBehaviour(val *string
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequest)SetInstancePoolsToUseCount(val *float64) {
+func (j *jsiiProxy_SpotFleetRequest) SetInstancePoolsToUseCount(val *float64) {
 	if err := j.validateSetInstancePoolsToUseCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1095,7 +1094,7 @@ func (j *jsiiProxy_SpotFleetRequest)SetInstancePoolsToUseCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequest)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SpotFleetRequest) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1106,7 +1105,7 @@ func (j *jsiiProxy_SpotFleetRequest)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequest)SetLoadBalancers(val *[]*string) {
+func (j *jsiiProxy_SpotFleetRequest) SetLoadBalancers(val *[]*string) {
 	if err := j.validateSetLoadBalancersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1117,7 +1116,7 @@ func (j *jsiiProxy_SpotFleetRequest)SetLoadBalancers(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequest)SetOnDemandAllocationStrategy(val *string) {
+func (j *jsiiProxy_SpotFleetRequest) SetOnDemandAllocationStrategy(val *string) {
 	if err := j.validateSetOnDemandAllocationStrategyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1128,7 +1127,7 @@ func (j *jsiiProxy_SpotFleetRequest)SetOnDemandAllocationStrategy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequest)SetOnDemandMaxTotalPrice(val *string) {
+func (j *jsiiProxy_SpotFleetRequest) SetOnDemandMaxTotalPrice(val *string) {
 	if err := j.validateSetOnDemandMaxTotalPriceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1139,7 +1138,7 @@ func (j *jsiiProxy_SpotFleetRequest)SetOnDemandMaxTotalPrice(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequest)SetOnDemandTargetCapacity(val *float64) {
+func (j *jsiiProxy_SpotFleetRequest) SetOnDemandTargetCapacity(val *float64) {
 	if err := j.validateSetOnDemandTargetCapacityParameters(val); err != nil {
 		panic(err)
 	}
@@ -1150,7 +1149,7 @@ func (j *jsiiProxy_SpotFleetRequest)SetOnDemandTargetCapacity(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequest)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SpotFleetRequest) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1158,7 +1157,7 @@ func (j *jsiiProxy_SpotFleetRequest)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequest)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SpotFleetRequest) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1169,7 +1168,7 @@ func (j *jsiiProxy_SpotFleetRequest)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequest)SetReplaceUnhealthyInstances(val interface{}) {
+func (j *jsiiProxy_SpotFleetRequest) SetReplaceUnhealthyInstances(val any) {
 	if err := j.validateSetReplaceUnhealthyInstancesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1180,7 +1179,7 @@ func (j *jsiiProxy_SpotFleetRequest)SetReplaceUnhealthyInstances(val interface{}
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequest)SetSpotPrice(val *string) {
+func (j *jsiiProxy_SpotFleetRequest) SetSpotPrice(val *string) {
 	if err := j.validateSetSpotPriceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1191,7 +1190,7 @@ func (j *jsiiProxy_SpotFleetRequest)SetSpotPrice(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequest)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_SpotFleetRequest) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1202,7 +1201,7 @@ func (j *jsiiProxy_SpotFleetRequest)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequest)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_SpotFleetRequest) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1213,7 +1212,7 @@ func (j *jsiiProxy_SpotFleetRequest)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequest)SetTargetCapacity(val *float64) {
+func (j *jsiiProxy_SpotFleetRequest) SetTargetCapacity(val *float64) {
 	if err := j.validateSetTargetCapacityParameters(val); err != nil {
 		panic(err)
 	}
@@ -1224,7 +1223,7 @@ func (j *jsiiProxy_SpotFleetRequest)SetTargetCapacity(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequest)SetTargetCapacityUnitType(val *string) {
+func (j *jsiiProxy_SpotFleetRequest) SetTargetCapacityUnitType(val *string) {
 	if err := j.validateSetTargetCapacityUnitTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1235,7 +1234,7 @@ func (j *jsiiProxy_SpotFleetRequest)SetTargetCapacityUnitType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequest)SetTargetGroupArns(val *[]*string) {
+func (j *jsiiProxy_SpotFleetRequest) SetTargetGroupArns(val *[]*string) {
 	if err := j.validateSetTargetGroupArnsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1246,7 +1245,7 @@ func (j *jsiiProxy_SpotFleetRequest)SetTargetGroupArns(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequest)SetTerminateInstancesOnDelete(val *string) {
+func (j *jsiiProxy_SpotFleetRequest) SetTerminateInstancesOnDelete(val *string) {
 	if err := j.validateSetTerminateInstancesOnDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -1257,7 +1256,7 @@ func (j *jsiiProxy_SpotFleetRequest)SetTerminateInstancesOnDelete(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequest)SetTerminateInstancesWithExpiration(val interface{}) {
+func (j *jsiiProxy_SpotFleetRequest) SetTerminateInstancesWithExpiration(val any) {
 	if err := j.validateSetTerminateInstancesWithExpirationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1268,7 +1267,7 @@ func (j *jsiiProxy_SpotFleetRequest)SetTerminateInstancesWithExpiration(val inte
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequest)SetValidFrom(val *string) {
+func (j *jsiiProxy_SpotFleetRequest) SetValidFrom(val *string) {
 	if err := j.validateSetValidFromParameters(val); err != nil {
 		panic(err)
 	}
@@ -1279,7 +1278,7 @@ func (j *jsiiProxy_SpotFleetRequest)SetValidFrom(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequest)SetValidUntil(val *string) {
+func (j *jsiiProxy_SpotFleetRequest) SetValidUntil(val *string) {
 	if err := j.validateSetValidUntilParameters(val); err != nil {
 		panic(err)
 	}
@@ -1290,7 +1289,7 @@ func (j *jsiiProxy_SpotFleetRequest)SetValidUntil(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequest)SetWaitForFulfillment(val interface{}) {
+func (j *jsiiProxy_SpotFleetRequest) SetWaitForFulfillment(val any) {
 	if err := j.validateSetWaitForFulfillmentParameters(val); err != nil {
 		panic(err)
 	}
@@ -1313,7 +1312,7 @@ func SpotFleetRequest_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequest",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1337,7 +1336,7 @@ func SpotFleetRequest_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SpotFleetRequest_IsConstruct(x interface{}) *bool {
+func SpotFleetRequest_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSpotFleetRequest_IsConstructParameters(x); err != nil {
@@ -1348,7 +1347,7 @@ func SpotFleetRequest_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequest",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1356,7 +1355,7 @@ func SpotFleetRequest_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SpotFleetRequest_IsTerraformElement(x interface{}) *bool {
+func SpotFleetRequest_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSpotFleetRequest_IsTerraformElementParameters(x); err != nil {
@@ -1367,7 +1366,7 @@ func SpotFleetRequest_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequest",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1375,7 +1374,7 @@ func SpotFleetRequest_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SpotFleetRequest_IsTerraformResource(x interface{}) *bool {
+func SpotFleetRequest_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSpotFleetRequest_IsTerraformResourceParameters(x); err != nil {
@@ -1386,7 +1385,7 @@ func SpotFleetRequest_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequest",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1411,31 +1410,31 @@ func (s *jsiiProxy_SpotFleetRequest) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SpotFleetRequest) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SpotFleetRequest) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SpotFleetRequest) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SpotFleetRequest) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1451,7 +1450,7 @@ func (s *jsiiProxy_SpotFleetRequest) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1467,7 +1466,7 @@ func (s *jsiiProxy_SpotFleetRequest) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1483,7 +1482,7 @@ func (s *jsiiProxy_SpotFleetRequest) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1499,7 +1498,7 @@ func (s *jsiiProxy_SpotFleetRequest) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1515,7 +1514,7 @@ func (s *jsiiProxy_SpotFleetRequest) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1531,7 +1530,7 @@ func (s *jsiiProxy_SpotFleetRequest) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1547,7 +1546,7 @@ func (s *jsiiProxy_SpotFleetRequest) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1563,15 +1562,15 @@ func (s *jsiiProxy_SpotFleetRequest) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SpotFleetRequest) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SpotFleetRequest) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1590,7 +1589,7 @@ func (s *jsiiProxy_SpotFleetRequest) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1603,7 +1602,7 @@ func (s *jsiiProxy_SpotFleetRequest) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1617,18 +1616,18 @@ func (s *jsiiProxy_SpotFleetRequest) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SpotFleetRequest) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SpotFleetRequest) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1639,7 +1638,7 @@ func (s *jsiiProxy_SpotFleetRequest) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1650,29 +1649,29 @@ func (s *jsiiProxy_SpotFleetRequest) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (s *jsiiProxy_SpotFleetRequest) PutLaunchSpecification(value interface{}) {
+func (s *jsiiProxy_SpotFleetRequest) PutLaunchSpecification(value any) {
 	if err := s.validatePutLaunchSpecificationParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putLaunchSpecification",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SpotFleetRequest) PutLaunchTemplateConfig(value interface{}) {
+func (s *jsiiProxy_SpotFleetRequest) PutLaunchTemplateConfig(value any) {
 	if err := s.validatePutLaunchTemplateConfigParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putLaunchTemplateConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1683,7 +1682,7 @@ func (s *jsiiProxy_SpotFleetRequest) PutSpotMaintenanceStrategies(value *SpotFle
 	_jsii_.InvokeVoid(
 		s,
 		"putSpotMaintenanceStrategies",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1694,7 +1693,7 @@ func (s *jsiiProxy_SpotFleetRequest) PutTimeouts(value *SpotFleetRequestTimeouts
 	_jsii_.InvokeVoid(
 		s,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1906,8 +1905,8 @@ func (s *jsiiProxy_SpotFleetRequest) ResetWaitForFulfillment() {
 	)
 }
 
-func (s *jsiiProxy_SpotFleetRequest) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SpotFleetRequest) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1919,8 +1918,8 @@ func (s *jsiiProxy_SpotFleetRequest) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (s *jsiiProxy_SpotFleetRequest) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SpotFleetRequest) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1932,8 +1931,8 @@ func (s *jsiiProxy_SpotFleetRequest) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (s *jsiiProxy_SpotFleetRequest) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SpotFleetRequest) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1945,8 +1944,8 @@ func (s *jsiiProxy_SpotFleetRequest) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SpotFleetRequest) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SpotFleetRequest) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1971,8 +1970,8 @@ func (s *jsiiProxy_SpotFleetRequest) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SpotFleetRequest) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SpotFleetRequest) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1983,4 +1982,3 @@ func (s *jsiiProxy_SpotFleetRequest) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -117,7 +117,7 @@ func (j *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertie
 	return nil
 }
 
-func (j *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -233,4 +233,3 @@ func validateNewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRe
 
 	return nil
 }
-

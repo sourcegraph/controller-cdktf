@@ -109,7 +109,7 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputR
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewSagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputRefe
 
 	return nil
 }
-

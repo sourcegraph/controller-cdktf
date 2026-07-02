@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy",
-		reflect.TypeOf((*ElasticsearchDomainPolicy)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomainPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessPolicies", GoGetter: "AccessPolicies"},
 			_jsii_.MemberProperty{JsiiProperty: "accessPoliciesInput", GoGetter: "AccessPoliciesInput"},
@@ -64,7 +64,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElasticsearchDomainPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -72,15 +72,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyConfig",
-		reflect.TypeOf((*ElasticsearchDomainPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomainPolicyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyTimeouts",
-		reflect.TypeOf((*ElasticsearchDomainPolicyTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomainPolicyTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyTimeoutsOutputReference",
-		reflect.TypeOf((*ElasticsearchDomainPolicyTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomainPolicyTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -110,7 +110,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElasticsearchDomainPolicyTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

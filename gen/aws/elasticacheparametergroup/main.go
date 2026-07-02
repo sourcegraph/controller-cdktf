@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroup",
-		reflect.TypeOf((*ElasticacheParameterGroup)(nil)).Elem(),
+		reflect.TypeFor[ElasticacheParameterGroup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElasticacheParameterGroup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,15 +82,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroupConfig",
-		reflect.TypeOf((*ElasticacheParameterGroupConfig)(nil)).Elem(),
+		reflect.TypeFor[ElasticacheParameterGroupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroupParameter",
-		reflect.TypeOf((*ElasticacheParameterGroupParameter)(nil)).Elem(),
+		reflect.TypeFor[ElasticacheParameterGroupParameter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroupParameterList",
-		reflect.TypeOf((*ElasticacheParameterGroupParameterList)(nil)).Elem(),
+		reflect.TypeFor[ElasticacheParameterGroupParameterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -104,7 +104,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElasticacheParameterGroupParameterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -112,7 +112,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroupParameterOutputReference",
-		reflect.TypeOf((*ElasticacheParameterGroupParameterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ElasticacheParameterGroupParameterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -140,7 +140,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElasticacheParameterGroupParameterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

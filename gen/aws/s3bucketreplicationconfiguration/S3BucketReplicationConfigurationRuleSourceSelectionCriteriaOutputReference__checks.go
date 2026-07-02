@@ -120,7 +120,7 @@ func (s *jsiiProxy_S3BucketReplicationConfigurationRuleSourceSelectionCriteriaOu
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketReplicationConfigurationRuleSourceSelectionCriteriaOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketReplicationConfigurationRuleSourceSelectionCriteriaOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewS3BucketReplicationConfigurationRuleSourceSelectionCriteriaOutpu
 
 	return nil
 }
-

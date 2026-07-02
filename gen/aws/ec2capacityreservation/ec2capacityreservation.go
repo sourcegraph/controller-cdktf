@@ -19,31 +19,31 @@ type Ec2CapacityReservation interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	EbsOptimized() interface{}
-	SetEbsOptimized(val interface{})
-	EbsOptimizedInput() interface{}
+	EbsOptimized() any
+	SetEbsOptimized(val any)
+	EbsOptimizedInput() any
 	EndDate() *string
 	SetEndDate(val *string)
 	EndDateInput() *string
 	EndDateType() *string
 	SetEndDateType(val *string)
 	EndDateTypeInput() *string
-	EphemeralStorage() interface{}
-	SetEphemeralStorage(val interface{})
-	EphemeralStorageInput() interface{}
+	EphemeralStorage() any
+	SetEphemeralStorage(val any)
+	EphemeralStorageInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -85,11 +85,11 @@ type Ec2CapacityReservation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -102,16 +102,16 @@ type Ec2CapacityReservation interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -129,7 +129,7 @@ type Ec2CapacityReservation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -141,7 +141,7 @@ type Ec2CapacityReservation interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -162,17 +162,17 @@ type Ec2CapacityReservation interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTenancy()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Ec2CapacityReservation
@@ -220,8 +220,8 @@ func (j *jsiiProxy_Ec2CapacityReservation) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_Ec2CapacityReservation) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ec2CapacityReservation) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -230,8 +230,8 @@ func (j *jsiiProxy_Ec2CapacityReservation) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Ec2CapacityReservation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Ec2CapacityReservation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -240,8 +240,8 @@ func (j *jsiiProxy_Ec2CapacityReservation) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_Ec2CapacityReservation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ec2CapacityReservation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -260,8 +260,8 @@ func (j *jsiiProxy_Ec2CapacityReservation) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_Ec2CapacityReservation) EbsOptimized() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ec2CapacityReservation) EbsOptimized() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ebsOptimized",
@@ -270,8 +270,8 @@ func (j *jsiiProxy_Ec2CapacityReservation) EbsOptimized() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Ec2CapacityReservation) EbsOptimizedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ec2CapacityReservation) EbsOptimizedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ebsOptimizedInput",
@@ -320,8 +320,8 @@ func (j *jsiiProxy_Ec2CapacityReservation) EndDateTypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Ec2CapacityReservation) EphemeralStorage() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ec2CapacityReservation) EphemeralStorage() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ephemeralStorage",
@@ -330,8 +330,8 @@ func (j *jsiiProxy_Ec2CapacityReservation) EphemeralStorage() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Ec2CapacityReservation) EphemeralStorageInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ec2CapacityReservation) EphemeralStorageInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ephemeralStorageInput",
@@ -550,8 +550,8 @@ func (j *jsiiProxy_Ec2CapacityReservation) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Ec2CapacityReservation) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Ec2CapacityReservation) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -560,8 +560,8 @@ func (j *jsiiProxy_Ec2CapacityReservation) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Ec2CapacityReservation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ec2CapacityReservation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -640,8 +640,8 @@ func (j *jsiiProxy_Ec2CapacityReservation) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_Ec2CapacityReservation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Ec2CapacityReservation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -660,7 +660,6 @@ func (j *jsiiProxy_Ec2CapacityReservation) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ec2_capacity_reservation aws_ec2_capacity_reservation} Resource.
 func NewEc2CapacityReservation(scope constructs.Construct, id *string, config *Ec2CapacityReservationConfig) Ec2CapacityReservation {
 	_init_.Initialize()
@@ -672,7 +671,7 @@ func NewEc2CapacityReservation(scope constructs.Construct, id *string, config *E
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ec2CapacityReservation.Ec2CapacityReservation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -685,12 +684,12 @@ func NewEc2CapacityReservation_Override(e Ec2CapacityReservation, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ec2CapacityReservation.Ec2CapacityReservation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_Ec2CapacityReservation)SetAvailabilityZone(val *string) {
+func (j *jsiiProxy_Ec2CapacityReservation) SetAvailabilityZone(val *string) {
 	if err := j.validateSetAvailabilityZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -701,7 +700,7 @@ func (j *jsiiProxy_Ec2CapacityReservation)SetAvailabilityZone(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Ec2CapacityReservation)SetConnection(val interface{}) {
+func (j *jsiiProxy_Ec2CapacityReservation) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -712,7 +711,7 @@ func (j *jsiiProxy_Ec2CapacityReservation)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Ec2CapacityReservation)SetCount(val interface{}) {
+func (j *jsiiProxy_Ec2CapacityReservation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -723,7 +722,7 @@ func (j *jsiiProxy_Ec2CapacityReservation)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Ec2CapacityReservation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Ec2CapacityReservation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -731,7 +730,7 @@ func (j *jsiiProxy_Ec2CapacityReservation)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Ec2CapacityReservation)SetEbsOptimized(val interface{}) {
+func (j *jsiiProxy_Ec2CapacityReservation) SetEbsOptimized(val any) {
 	if err := j.validateSetEbsOptimizedParameters(val); err != nil {
 		panic(err)
 	}
@@ -742,7 +741,7 @@ func (j *jsiiProxy_Ec2CapacityReservation)SetEbsOptimized(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Ec2CapacityReservation)SetEndDate(val *string) {
+func (j *jsiiProxy_Ec2CapacityReservation) SetEndDate(val *string) {
 	if err := j.validateSetEndDateParameters(val); err != nil {
 		panic(err)
 	}
@@ -753,7 +752,7 @@ func (j *jsiiProxy_Ec2CapacityReservation)SetEndDate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Ec2CapacityReservation)SetEndDateType(val *string) {
+func (j *jsiiProxy_Ec2CapacityReservation) SetEndDateType(val *string) {
 	if err := j.validateSetEndDateTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -764,7 +763,7 @@ func (j *jsiiProxy_Ec2CapacityReservation)SetEndDateType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Ec2CapacityReservation)SetEphemeralStorage(val interface{}) {
+func (j *jsiiProxy_Ec2CapacityReservation) SetEphemeralStorage(val any) {
 	if err := j.validateSetEphemeralStorageParameters(val); err != nil {
 		panic(err)
 	}
@@ -775,7 +774,7 @@ func (j *jsiiProxy_Ec2CapacityReservation)SetEphemeralStorage(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Ec2CapacityReservation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Ec2CapacityReservation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -783,7 +782,7 @@ func (j *jsiiProxy_Ec2CapacityReservation)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_Ec2CapacityReservation)SetId(val *string) {
+func (j *jsiiProxy_Ec2CapacityReservation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -794,7 +793,7 @@ func (j *jsiiProxy_Ec2CapacityReservation)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Ec2CapacityReservation)SetInstanceCount(val *float64) {
+func (j *jsiiProxy_Ec2CapacityReservation) SetInstanceCount(val *float64) {
 	if err := j.validateSetInstanceCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -805,7 +804,7 @@ func (j *jsiiProxy_Ec2CapacityReservation)SetInstanceCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Ec2CapacityReservation)SetInstanceMatchCriteria(val *string) {
+func (j *jsiiProxy_Ec2CapacityReservation) SetInstanceMatchCriteria(val *string) {
 	if err := j.validateSetInstanceMatchCriteriaParameters(val); err != nil {
 		panic(err)
 	}
@@ -816,7 +815,7 @@ func (j *jsiiProxy_Ec2CapacityReservation)SetInstanceMatchCriteria(val *string) 
 	)
 }
 
-func (j *jsiiProxy_Ec2CapacityReservation)SetInstancePlatform(val *string) {
+func (j *jsiiProxy_Ec2CapacityReservation) SetInstancePlatform(val *string) {
 	if err := j.validateSetInstancePlatformParameters(val); err != nil {
 		panic(err)
 	}
@@ -827,7 +826,7 @@ func (j *jsiiProxy_Ec2CapacityReservation)SetInstancePlatform(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Ec2CapacityReservation)SetInstanceType(val *string) {
+func (j *jsiiProxy_Ec2CapacityReservation) SetInstanceType(val *string) {
 	if err := j.validateSetInstanceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -838,7 +837,7 @@ func (j *jsiiProxy_Ec2CapacityReservation)SetInstanceType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Ec2CapacityReservation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Ec2CapacityReservation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -849,7 +848,7 @@ func (j *jsiiProxy_Ec2CapacityReservation)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_Ec2CapacityReservation)SetOutpostArn(val *string) {
+func (j *jsiiProxy_Ec2CapacityReservation) SetOutpostArn(val *string) {
 	if err := j.validateSetOutpostArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -860,7 +859,7 @@ func (j *jsiiProxy_Ec2CapacityReservation)SetOutpostArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Ec2CapacityReservation)SetPlacementGroupArn(val *string) {
+func (j *jsiiProxy_Ec2CapacityReservation) SetPlacementGroupArn(val *string) {
 	if err := j.validateSetPlacementGroupArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -871,7 +870,7 @@ func (j *jsiiProxy_Ec2CapacityReservation)SetPlacementGroupArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Ec2CapacityReservation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Ec2CapacityReservation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -879,7 +878,7 @@ func (j *jsiiProxy_Ec2CapacityReservation)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_Ec2CapacityReservation)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Ec2CapacityReservation) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -890,7 +889,7 @@ func (j *jsiiProxy_Ec2CapacityReservation)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Ec2CapacityReservation)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_Ec2CapacityReservation) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -901,7 +900,7 @@ func (j *jsiiProxy_Ec2CapacityReservation)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Ec2CapacityReservation)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_Ec2CapacityReservation) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -912,7 +911,7 @@ func (j *jsiiProxy_Ec2CapacityReservation)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Ec2CapacityReservation)SetTenancy(val *string) {
+func (j *jsiiProxy_Ec2CapacityReservation) SetTenancy(val *string) {
 	if err := j.validateSetTenancyParameters(val); err != nil {
 		panic(err)
 	}
@@ -935,7 +934,7 @@ func Ec2CapacityReservation_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ec2CapacityReservation.Ec2CapacityReservation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -959,7 +958,7 @@ func Ec2CapacityReservation_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Ec2CapacityReservation_IsConstruct(x interface{}) *bool {
+func Ec2CapacityReservation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEc2CapacityReservation_IsConstructParameters(x); err != nil {
@@ -970,7 +969,7 @@ func Ec2CapacityReservation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ec2CapacityReservation.Ec2CapacityReservation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -978,7 +977,7 @@ func Ec2CapacityReservation_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Ec2CapacityReservation_IsTerraformElement(x interface{}) *bool {
+func Ec2CapacityReservation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEc2CapacityReservation_IsTerraformElementParameters(x); err != nil {
@@ -989,7 +988,7 @@ func Ec2CapacityReservation_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ec2CapacityReservation.Ec2CapacityReservation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -997,7 +996,7 @@ func Ec2CapacityReservation_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Ec2CapacityReservation_IsTerraformResource(x interface{}) *bool {
+func Ec2CapacityReservation_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEc2CapacityReservation_IsTerraformResourceParameters(x); err != nil {
@@ -1008,7 +1007,7 @@ func Ec2CapacityReservation_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ec2CapacityReservation.Ec2CapacityReservation",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1033,31 +1032,31 @@ func (e *jsiiProxy_Ec2CapacityReservation) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_Ec2CapacityReservation) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_Ec2CapacityReservation) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_Ec2CapacityReservation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_Ec2CapacityReservation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1073,7 +1072,7 @@ func (e *jsiiProxy_Ec2CapacityReservation) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1089,7 +1088,7 @@ func (e *jsiiProxy_Ec2CapacityReservation) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1105,7 +1104,7 @@ func (e *jsiiProxy_Ec2CapacityReservation) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1121,7 +1120,7 @@ func (e *jsiiProxy_Ec2CapacityReservation) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1137,7 +1136,7 @@ func (e *jsiiProxy_Ec2CapacityReservation) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1153,7 +1152,7 @@ func (e *jsiiProxy_Ec2CapacityReservation) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1169,7 +1168,7 @@ func (e *jsiiProxy_Ec2CapacityReservation) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1185,15 +1184,15 @@ func (e *jsiiProxy_Ec2CapacityReservation) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_Ec2CapacityReservation) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_Ec2CapacityReservation) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1212,7 +1211,7 @@ func (e *jsiiProxy_Ec2CapacityReservation) ImportFrom(id *string, provider cdktf
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1225,7 +1224,7 @@ func (e *jsiiProxy_Ec2CapacityReservation) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1239,18 +1238,18 @@ func (e *jsiiProxy_Ec2CapacityReservation) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_Ec2CapacityReservation) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_Ec2CapacityReservation) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1261,7 +1260,7 @@ func (e *jsiiProxy_Ec2CapacityReservation) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1272,7 +1271,7 @@ func (e *jsiiProxy_Ec2CapacityReservation) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1372,8 +1371,8 @@ func (e *jsiiProxy_Ec2CapacityReservation) ResetTenancy() {
 	)
 }
 
-func (e *jsiiProxy_Ec2CapacityReservation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_Ec2CapacityReservation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1385,8 +1384,8 @@ func (e *jsiiProxy_Ec2CapacityReservation) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (e *jsiiProxy_Ec2CapacityReservation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_Ec2CapacityReservation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1398,8 +1397,8 @@ func (e *jsiiProxy_Ec2CapacityReservation) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (e *jsiiProxy_Ec2CapacityReservation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_Ec2CapacityReservation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1411,8 +1410,8 @@ func (e *jsiiProxy_Ec2CapacityReservation) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_Ec2CapacityReservation) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_Ec2CapacityReservation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1437,8 +1436,8 @@ func (e *jsiiProxy_Ec2CapacityReservation) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_Ec2CapacityReservation) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_Ec2CapacityReservation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1449,4 +1448,3 @@ func (e *jsiiProxy_Ec2CapacityReservation) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.grafanaLicenseAssociation.GrafanaLicenseAssociation",
-		reflect.TypeOf((*GrafanaLicenseAssociation)(nil)).Elem(),
+		reflect.TypeFor[GrafanaLicenseAssociation](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workspaceId", GoGetter: "WorkspaceId"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceIdInput", GoGetter: "WorkspaceIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GrafanaLicenseAssociation{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -74,15 +74,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.grafanaLicenseAssociation.GrafanaLicenseAssociationConfig",
-		reflect.TypeOf((*GrafanaLicenseAssociationConfig)(nil)).Elem(),
+		reflect.TypeFor[GrafanaLicenseAssociationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.grafanaLicenseAssociation.GrafanaLicenseAssociationTimeouts",
-		reflect.TypeOf((*GrafanaLicenseAssociationTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GrafanaLicenseAssociationTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.grafanaLicenseAssociation.GrafanaLicenseAssociationTimeoutsOutputReference",
-		reflect.TypeOf((*GrafanaLicenseAssociationTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GrafanaLicenseAssociationTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -112,7 +112,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GrafanaLicenseAssociationTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

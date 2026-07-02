@@ -10,9 +10,9 @@ import (
 
 type RedshiftScheduledActionTargetActionResizeClusterOutputReference interface {
 	cdktf.ComplexObject
-	Classic() interface{}
-	SetClassic(val interface{})
-	ClassicInput() interface{}
+	Classic() any
+	SetClassic(val any)
+	ClassicInput() any
 	ClusterIdentifier() *string
 	SetClusterIdentifier(val *string)
 	ClusterIdentifierInput() *string
@@ -21,9 +21,9 @@ type RedshiftScheduledActionTargetActionResizeClusterOutputReference interface {
 	ClusterTypeInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -55,7 +55,7 @@ type RedshiftScheduledActionTargetActionResizeClusterOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -82,7 +82,7 @@ type RedshiftScheduledActionTargetActionResizeClusterOutputReference interface {
 	ResetNumberOfNodes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -95,8 +95,8 @@ type jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReference s
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReference) Classic() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReference) Classic() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"classic",
@@ -105,8 +105,8 @@ func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReference) ClassicInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReference) ClassicInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"classicInput",
@@ -155,8 +155,8 @@ func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -265,7 +265,6 @@ func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReferen
 	return returns
 }
 
-
 func NewRedshiftScheduledActionTargetActionResizeClusterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RedshiftScheduledActionTargetActionResizeClusterOutputReference {
 	_init_.Initialize()
 
@@ -276,7 +275,7 @@ func NewRedshiftScheduledActionTargetActionResizeClusterOutputReference(terrafor
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionResizeClusterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -288,12 +287,12 @@ func NewRedshiftScheduledActionTargetActionResizeClusterOutputReference_Override
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionResizeClusterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReference)SetClassic(val interface{}) {
+func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReference) SetClassic(val any) {
 	if err := j.validateSetClassicParameters(val); err != nil {
 		panic(err)
 	}
@@ -304,7 +303,7 @@ func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReferen
 	)
 }
 
-func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReference)SetClusterIdentifier(val *string) {
+func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReference) SetClusterIdentifier(val *string) {
 	if err := j.validateSetClusterIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -315,7 +314,7 @@ func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReferen
 	)
 }
 
-func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReference)SetClusterType(val *string) {
+func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReference) SetClusterType(val *string) {
 	if err := j.validateSetClusterTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,7 +325,7 @@ func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReferen
 	)
 }
 
-func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -337,7 +336,7 @@ func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReferen
 	)
 }
 
-func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -348,7 +347,7 @@ func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReferen
 	)
 }
 
-func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReference)SetInternalValue(val *RedshiftScheduledActionTargetActionResizeCluster) {
+func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReference) SetInternalValue(val *RedshiftScheduledActionTargetActionResizeCluster) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,7 +358,7 @@ func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReferen
 	)
 }
 
-func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReference)SetNodeType(val *string) {
+func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReference) SetNodeType(val *string) {
 	if err := j.validateSetNodeTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,7 +369,7 @@ func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReferen
 	)
 }
 
-func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReference)SetNumberOfNodes(val *float64) {
+func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReference) SetNumberOfNodes(val *float64) {
 	if err := j.validateSetNumberOfNodesParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,7 +380,7 @@ func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReferen
 	)
 }
 
-func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -392,7 +391,7 @@ func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReferen
 	)
 }
 
-func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,16 +415,16 @@ func (r *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReferen
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (r *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReferen
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (r *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReferen
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (r *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReferen
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -489,7 +488,7 @@ func (r *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReferen
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -505,7 +504,7 @@ func (r *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReferen
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -521,7 +520,7 @@ func (r *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReferen
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func (r *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReferen
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -553,7 +552,7 @@ func (r *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReferen
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func (r *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReferen
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -621,16 +620,16 @@ func (r *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReferen
 	)
 }
 
-func (r *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -649,4 +648,3 @@ func (r *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReferen
 
 	return returns
 }
-

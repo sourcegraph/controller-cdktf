@@ -98,7 +98,7 @@ func (w *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) validateSetChangeComputeTypeParameters(val interface{}) error {
+func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) validateSetChangeComputeTypeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -183,7 +183,7 @@ func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) validateSetIncreaseVolumeSizeParameters(val interface{}) error {
+func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) validateSetIncreaseVolumeSizeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -211,7 +211,7 @@ func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) validateSetRebuildWorkspaceParameters(val interface{}) error {
+func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) validateSetRebuildWorkspaceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) validateSetRestartWorkspaceParameters(val interface{}) error {
+func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) validateSetRestartWorkspaceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) validateSetSwitchRunningModeParameters(val interface{}) error {
+func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) validateSetSwitchRunningModeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -298,4 +298,3 @@ func validateNewWorkspacesDirectorySelfServicePermissionsOutputReferenceParamete
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSet",
-		reflect.TypeOf((*WafregionalSizeConstraintSet)(nil)).Elem(),
+		reflect.TypeFor[WafregionalSizeConstraintSet](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,7 +63,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WafregionalSizeConstraintSet{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -71,19 +71,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSetConfig",
-		reflect.TypeOf((*WafregionalSizeConstraintSetConfig)(nil)).Elem(),
+		reflect.TypeFor[WafregionalSizeConstraintSetConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSetSizeConstraints",
-		reflect.TypeOf((*WafregionalSizeConstraintSetSizeConstraints)(nil)).Elem(),
+		reflect.TypeFor[WafregionalSizeConstraintSetSizeConstraints](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSetSizeConstraintsFieldToMatch",
-		reflect.TypeOf((*WafregionalSizeConstraintSetSizeConstraintsFieldToMatch)(nil)).Elem(),
+		reflect.TypeFor[WafregionalSizeConstraintSetSizeConstraintsFieldToMatch](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSetSizeConstraintsFieldToMatchOutputReference",
-		reflect.TypeOf((*WafregionalSizeConstraintSetSizeConstraintsFieldToMatchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WafregionalSizeConstraintSetSizeConstraintsFieldToMatchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -112,7 +112,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WafregionalSizeConstraintSetSizeConstraintsFieldToMatchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -120,7 +120,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSetSizeConstraintsList",
-		reflect.TypeOf((*WafregionalSizeConstraintSetSizeConstraintsList)(nil)).Elem(),
+		reflect.TypeFor[WafregionalSizeConstraintSetSizeConstraintsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -134,7 +134,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WafregionalSizeConstraintSetSizeConstraintsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -142,7 +142,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSetSizeConstraintsOutputReference",
-		reflect.TypeOf((*WafregionalSizeConstraintSetSizeConstraintsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WafregionalSizeConstraintSetSizeConstraintsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparisonOperator", GoGetter: "ComparisonOperator"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonOperatorInput", GoGetter: "ComparisonOperatorInput"},
@@ -175,7 +175,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "textTransformationInput", GoGetter: "TextTransformationInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WafregionalSizeConstraintSetSizeConstraintsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

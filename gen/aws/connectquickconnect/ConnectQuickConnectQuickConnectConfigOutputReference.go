@@ -12,9 +12,9 @@ type ConnectQuickConnectQuickConnectConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,9 +30,9 @@ type ConnectQuickConnectQuickConnectConfigOutputReference interface {
 	InternalValue() *ConnectQuickConnectQuickConnectConfig
 	SetInternalValue(val *ConnectQuickConnectQuickConnectConfig)
 	PhoneConfig() ConnectQuickConnectQuickConnectConfigPhoneConfigList
-	PhoneConfigInput() interface{}
+	PhoneConfigInput() any
 	QueueConfig() ConnectQuickConnectQuickConnectConfigQueueConfigList
-	QueueConfigInput() interface{}
+	QueueConfigInput() any
 	QuickConnectType() *string
 	SetQuickConnectType(val *string)
 	QuickConnectTypeInput() *string
@@ -45,11 +45,11 @@ type ConnectQuickConnectQuickConnectConfigOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	UserConfig() ConnectQuickConnectQuickConnectConfigUserConfigList
-	UserConfigInput() interface{}
+	UserConfigInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,15 +70,15 @@ type ConnectQuickConnectQuickConnectConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutPhoneConfig(value interface{})
-	PutQueueConfig(value interface{})
-	PutUserConfig(value interface{})
+	PutPhoneConfig(value any)
+	PutQueueConfig(value any)
+	PutUserConfig(value any)
 	ResetPhoneConfig()
 	ResetQueueConfig()
 	ResetUserConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -91,8 +91,8 @@ type jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -151,8 +151,8 @@ func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) PhoneCo
 	return returns
 }
 
-func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) PhoneConfigInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) PhoneConfigInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"phoneConfigInput",
@@ -171,8 +171,8 @@ func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) QueueCo
 	return returns
 }
 
-func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) QueueConfigInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) QueueConfigInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"queueConfigInput",
@@ -231,8 +231,8 @@ func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) UserCon
 	return returns
 }
 
-func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) UserConfigInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) UserConfigInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"userConfigInput",
@@ -240,7 +240,6 @@ func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) UserCon
 	)
 	return returns
 }
-
 
 func NewConnectQuickConnectQuickConnectConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ConnectQuickConnectQuickConnectConfigOutputReference {
 	_init_.Initialize()
@@ -252,7 +251,7 @@ func NewConnectQuickConnectQuickConnectConfigOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -264,12 +263,12 @@ func NewConnectQuickConnectQuickConnectConfigOutputReference_Override(c ConnectQ
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,7 +279,7 @@ func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,7 +290,7 @@ func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference)SetInternalValue(val *ConnectQuickConnectQuickConnectConfig) {
+func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) SetInternalValue(val *ConnectQuickConnectQuickConnectConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference)SetQuickConnectType(val *string) {
+func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) SetQuickConnectType(val *string) {
 	if err := j.validateSetQuickConnectTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference)SetQuick
 	)
 }
 
-func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -348,16 +347,16 @@ func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) Compute
 	return returns
 }
 
-func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -373,7 +372,7 @@ func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) GetBool
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -389,7 +388,7 @@ func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) GetBool
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -405,7 +404,7 @@ func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) GetList
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -421,7 +420,7 @@ func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) GetNumb
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -437,7 +436,7 @@ func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) GetNumb
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -453,7 +452,7 @@ func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) GetNumb
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -469,7 +468,7 @@ func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) GetStri
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -485,7 +484,7 @@ func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) GetStri
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -514,43 +513,43 @@ func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) Interpo
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) PutPhoneConfig(value interface{}) {
+func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) PutPhoneConfig(value any) {
 	if err := c.validatePutPhoneConfigParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putPhoneConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) PutQueueConfig(value interface{}) {
+func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) PutQueueConfig(value any) {
 	if err := c.validatePutQueueConfigParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putQueueConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) PutUserConfig(value interface{}) {
+func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) PutUserConfig(value any) {
 	if err := c.validatePutUserConfigParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putUserConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -578,16 +577,16 @@ func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) ResetUs
 	)
 }
 
-func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -606,4 +605,3 @@ func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) ToStrin
 
 	return returns
 }
-

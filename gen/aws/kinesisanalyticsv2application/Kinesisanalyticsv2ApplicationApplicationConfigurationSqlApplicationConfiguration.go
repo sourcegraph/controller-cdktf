@@ -1,6 +1,5 @@
 package kinesisanalyticsv2application
 
-
 type Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfiguration struct {
 	// input block.
 	//
@@ -9,10 +8,9 @@ type Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigur
 	// output block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kinesisanalyticsv2_application#output Kinesisanalyticsv2Application#output}
-	Output interface{} `field:"optional" json:"output" yaml:"output"`
+	Output any `field:"optional" json:"output" yaml:"output"`
 	// reference_data_source block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kinesisanalyticsv2_application#reference_data_source Kinesisanalyticsv2Application#reference_data_source}
 	ReferenceDataSource *Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSource `field:"optional" json:"referenceDataSource" yaml:"referenceDataSource"`
 }
-

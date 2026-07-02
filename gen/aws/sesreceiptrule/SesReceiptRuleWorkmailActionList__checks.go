@@ -34,7 +34,7 @@ func (s *jsiiProxy_SesReceiptRuleWorkmailActionList) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_SesReceiptRuleWorkmailActionList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SesReceiptRuleWorkmailActionList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSesReceiptRuleWorkmailActionListParameters(terraformResource cdk
 
 	return nil
 }
-

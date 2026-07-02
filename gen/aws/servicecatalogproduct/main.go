@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.servicecatalogProduct.ServicecatalogProduct",
-		reflect.TypeOf((*ServicecatalogProduct)(nil)).Elem(),
+		reflect.TypeFor[ServicecatalogProduct](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceptLanguage", GoGetter: "AcceptLanguage"},
 			_jsii_.MemberProperty{JsiiProperty: "acceptLanguageInput", GoGetter: "AcceptLanguageInput"},
@@ -97,7 +97,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServicecatalogProduct{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -105,15 +105,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.servicecatalogProduct.ServicecatalogProductConfig",
-		reflect.TypeOf((*ServicecatalogProductConfig)(nil)).Elem(),
+		reflect.TypeFor[ServicecatalogProductConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.servicecatalogProduct.ServicecatalogProductProvisioningArtifactParameters",
-		reflect.TypeOf((*ServicecatalogProductProvisioningArtifactParameters)(nil)).Elem(),
+		reflect.TypeFor[ServicecatalogProductProvisioningArtifactParameters](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.servicecatalogProduct.ServicecatalogProductProvisioningArtifactParametersOutputReference",
-		reflect.TypeOf((*ServicecatalogProductProvisioningArtifactParametersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ServicecatalogProductProvisioningArtifactParametersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -155,7 +155,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServicecatalogProductProvisioningArtifactParametersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -163,11 +163,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.servicecatalogProduct.ServicecatalogProductTimeouts",
-		reflect.TypeOf((*ServicecatalogProductTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ServicecatalogProductTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.servicecatalogProduct.ServicecatalogProductTimeoutsOutputReference",
-		reflect.TypeOf((*ServicecatalogProductTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ServicecatalogProductTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -203,7 +203,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServicecatalogProductTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

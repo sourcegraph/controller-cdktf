@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsAlbListenerDefaultActionForwardTargetGroupOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAlbListenerDefaultActionForwardTargetGroupOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsAlbListenerDefaultActionForwardTargetGroupOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsAlbListenerDefaultActionForwardTargetGroupOutputReference
 
 	return nil
 }
-

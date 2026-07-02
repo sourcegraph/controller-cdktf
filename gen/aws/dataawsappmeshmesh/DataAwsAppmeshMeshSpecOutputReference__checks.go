@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsAppmeshMeshSpecOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAppmeshMeshSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsAppmeshMeshSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsAppmeshMeshSpecOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2View",
-		reflect.TypeOf((*Resourceexplorer2View)(nil)).Elem(),
+		reflect.TypeFor[Resourceexplorer2View](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,7 +72,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Resourceexplorer2View{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -80,15 +80,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2ViewConfig",
-		reflect.TypeOf((*Resourceexplorer2ViewConfig)(nil)).Elem(),
+		reflect.TypeFor[Resourceexplorer2ViewConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2ViewFilters",
-		reflect.TypeOf((*Resourceexplorer2ViewFilters)(nil)).Elem(),
+		reflect.TypeFor[Resourceexplorer2ViewFilters](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2ViewFiltersList",
-		reflect.TypeOf((*Resourceexplorer2ViewFiltersList)(nil)).Elem(),
+		reflect.TypeFor[Resourceexplorer2ViewFiltersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -102,7 +102,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Resourceexplorer2ViewFiltersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -110,7 +110,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2ViewFiltersOutputReference",
-		reflect.TypeOf((*Resourceexplorer2ViewFiltersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Resourceexplorer2ViewFiltersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -136,7 +136,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Resourceexplorer2ViewFiltersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -144,11 +144,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2ViewIncludedProperty",
-		reflect.TypeOf((*Resourceexplorer2ViewIncludedProperty)(nil)).Elem(),
+		reflect.TypeFor[Resourceexplorer2ViewIncludedProperty](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2ViewIncludedPropertyList",
-		reflect.TypeOf((*Resourceexplorer2ViewIncludedPropertyList)(nil)).Elem(),
+		reflect.TypeFor[Resourceexplorer2ViewIncludedPropertyList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -162,7 +162,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Resourceexplorer2ViewIncludedPropertyList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -170,7 +170,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2ViewIncludedPropertyOutputReference",
-		reflect.TypeOf((*Resourceexplorer2ViewIncludedPropertyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Resourceexplorer2ViewIncludedPropertyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -196,7 +196,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Resourceexplorer2ViewIncludedPropertyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

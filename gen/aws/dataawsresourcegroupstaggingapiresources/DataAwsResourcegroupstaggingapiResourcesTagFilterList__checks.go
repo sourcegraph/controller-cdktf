@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResourcesTagFilterList) valida
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResourcesTagFilterList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResourcesTagFilterList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataAwsResourcegroupstaggingapiResourcesTagFilterListParameters(
 
 	return nil
 }
-

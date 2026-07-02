@@ -106,7 +106,7 @@ func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LbListenerRuleActionAuthenticateCognitoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -262,4 +262,3 @@ func validateNewLbListenerRuleActionAuthenticateCognitoOutputReferenceParameters
 
 	return nil
 }
-

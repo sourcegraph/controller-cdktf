@@ -14,9 +14,9 @@ type Wafv2RuleGroupRuleOutputReference interface {
 	ActionInput() *Wafv2RuleGroupRuleAction
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,8 +29,8 @@ type Wafv2RuleGroupRuleOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -38,10 +38,10 @@ type Wafv2RuleGroupRuleOutputReference interface {
 	SetPriority(val *float64)
 	PriorityInput() *float64
 	RuleLabel() Wafv2RuleGroupRuleRuleLabelList
-	RuleLabelInput() interface{}
-	Statement() interface{}
-	SetStatement(val interface{})
-	StatementInput() interface{}
+	RuleLabelInput() any
+	Statement() any
+	SetStatement(val any)
+	StatementInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -55,7 +55,7 @@ type Wafv2RuleGroupRuleOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -77,13 +77,13 @@ type Wafv2RuleGroupRuleOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAction(value *Wafv2RuleGroupRuleAction)
-	PutRuleLabel(value interface{})
+	PutRuleLabel(value any)
 	PutVisibilityConfig(value *Wafv2RuleGroupRuleVisibilityConfig)
 	ResetRuleLabel()
 	ResetStatement()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -116,8 +116,8 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) ActionInput() *Wafv2RuleGr
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) RuleLabel() Wafv2RuleGroup
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) RuleLabelInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) RuleLabelInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ruleLabelInput",
@@ -226,8 +226,8 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) RuleLabelInput() interface
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) Statement() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) Statement() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"statement",
@@ -236,8 +236,8 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) Statement() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) StatementInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) StatementInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"statementInput",
@@ -286,7 +286,6 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) VisibilityConfigInput() *W
 	return returns
 }
 
-
 func NewWafv2RuleGroupRuleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) Wafv2RuleGroupRuleOutputReference {
 	_init_.Initialize()
 
@@ -297,7 +296,7 @@ func NewWafv2RuleGroupRuleOutputReference(terraformResource cdktf.IInterpolating
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -309,12 +308,12 @@ func NewWafv2RuleGroupRuleOutputReference_Override(w Wafv2RuleGroupRuleOutputRef
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference)SetComplexObjectIndex(val i
 	)
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference)SetComplexObjectIsFromSet(v
 	)
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference)SetInternalValue(val interf
 	)
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference)SetName(val *string) {
+func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference)SetPriority(val *float64) {
+func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) SetPriority(val *float64) {
 	if err := j.validateSetPriorityParameters(val); err != nil {
 		panic(err)
 	}
@@ -369,7 +368,7 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference)SetPriority(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference)SetStatement(val interface{}) {
+func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) SetStatement(val any) {
 	if err := j.validateSetStatementParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,7 +379,7 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference)SetStatement(val interface{
 	)
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -391,7 +390,7 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference)SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,16 +414,16 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -440,7 +439,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) GetBooleanAttribute(terraf
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,7 +455,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) GetBooleanMapAttribute(ter
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -472,7 +471,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) GetListAttribute(terraform
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -488,7 +487,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) GetNumberAttribute(terrafo
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -504,7 +503,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) GetNumberListAttribute(ter
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -520,7 +519,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) GetNumberMapAttribute(terr
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -536,7 +535,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) GetStringAttribute(terrafo
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -552,7 +551,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) GetStringMapAttribute(terr
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) InterpolationForAttribute(
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -595,18 +594,18 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) PutAction(value *Wafv2Rule
 	_jsii_.InvokeVoid(
 		w,
 		"putAction",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) PutRuleLabel(value interface{}) {
+func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) PutRuleLabel(value any) {
 	if err := w.validatePutRuleLabelParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"putRuleLabel",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -617,7 +616,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) PutVisibilityConfig(value 
 	_jsii_.InvokeVoid(
 		w,
 		"putVisibilityConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -637,16 +636,16 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) ResetStatement() {
 	)
 }
 
-func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := w.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -665,4 +664,3 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) ToString() *string {
 
 	return returns
 }
-

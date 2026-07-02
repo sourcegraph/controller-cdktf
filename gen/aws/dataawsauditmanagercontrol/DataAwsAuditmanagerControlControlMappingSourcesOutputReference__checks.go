@@ -90,7 +90,7 @@ func (d *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesOutputReference) validatePutSourceKeywordParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesOutputReference) validatePutSourceKeywordParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (d *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -253,4 +253,3 @@ func validateNewDataAwsAuditmanagerControlControlMappingSourcesOutputReferencePa
 
 	return nil
 }
-

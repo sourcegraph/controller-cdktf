@@ -98,7 +98,7 @@ func (q *jsiiProxy_QuicksightDataSourceCredentialsCredentialPairOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_QuicksightDataSourceCredentialsCredentialPairOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_QuicksightDataSourceCredentialsCredentialPairOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewQuicksightDataSourceCredentialsCredentialPairOutputReferencePara
 
 	return nil
 }
-

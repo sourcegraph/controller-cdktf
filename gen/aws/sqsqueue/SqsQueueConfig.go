@@ -6,9 +6,9 @@ import (
 
 type SqsQueueConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,15 +18,15 @@ type SqsQueueConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sqs_queue#content_based_deduplication SqsQueue#content_based_deduplication}.
-	ContentBasedDeduplication interface{} `field:"optional" json:"contentBasedDeduplication" yaml:"contentBasedDeduplication"`
+	ContentBasedDeduplication any `field:"optional" json:"contentBasedDeduplication" yaml:"contentBasedDeduplication"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sqs_queue#deduplication_scope SqsQueue#deduplication_scope}.
 	DeduplicationScope *string `field:"optional" json:"deduplicationScope" yaml:"deduplicationScope"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sqs_queue#delay_seconds SqsQueue#delay_seconds}.
 	DelaySeconds *float64 `field:"optional" json:"delaySeconds" yaml:"delaySeconds"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sqs_queue#fifo_queue SqsQueue#fifo_queue}.
-	FifoQueue interface{} `field:"optional" json:"fifoQueue" yaml:"fifoQueue"`
+	FifoQueue any `field:"optional" json:"fifoQueue" yaml:"fifoQueue"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sqs_queue#fifo_throughput_limit SqsQueue#fifo_throughput_limit}.
 	FifoThroughputLimit *string `field:"optional" json:"fifoThroughputLimit" yaml:"fifoThroughputLimit"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sqs_queue#id SqsQueue#id}.
@@ -55,7 +55,7 @@ type SqsQueueConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sqs_queue#redrive_policy SqsQueue#redrive_policy}.
 	RedrivePolicy *string `field:"optional" json:"redrivePolicy" yaml:"redrivePolicy"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sqs_queue#sqs_managed_sse_enabled SqsQueue#sqs_managed_sse_enabled}.
-	SqsManagedSseEnabled interface{} `field:"optional" json:"sqsManagedSseEnabled" yaml:"sqsManagedSseEnabled"`
+	SqsManagedSseEnabled any `field:"optional" json:"sqsManagedSseEnabled" yaml:"sqsManagedSseEnabled"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sqs_queue#tags SqsQueue#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sqs_queue#tags_all SqsQueue#tags_all}.
@@ -63,4 +63,3 @@ type SqsQueueConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sqs_queue#visibility_timeout_seconds SqsQueue#visibility_timeout_seconds}.
 	VisibilityTimeoutSeconds *float64 `field:"optional" json:"visibilityTimeoutSeconds" yaml:"visibilityTimeoutSeconds"`
 }
-

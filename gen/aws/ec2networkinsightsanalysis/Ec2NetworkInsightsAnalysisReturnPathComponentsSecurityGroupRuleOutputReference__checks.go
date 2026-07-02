@@ -98,7 +98,7 @@ func (e *jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRu
 	return nil
 }
 
-func (j *jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewEc2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRuleO
 
 	return nil
 }
-

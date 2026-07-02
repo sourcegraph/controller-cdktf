@@ -19,7 +19,7 @@ func (p *jsiiProxy_PrometheusWorkspace) validateAddMoveTargetParameters(moveTarg
 	return nil
 }
 
-func (p *jsiiProxy_PrometheusWorkspace) validateAddOverrideParameters(path *string, value interface{}) error {
+func (p *jsiiProxy_PrometheusWorkspace) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (p *jsiiProxy_PrometheusWorkspace) validateMoveFromIdParameters(id *string)
 	return nil
 }
 
-func (p *jsiiProxy_PrometheusWorkspace) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (p *jsiiProxy_PrometheusWorkspace) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validatePrometheusWorkspace_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validatePrometheusWorkspace_IsConstructParameters(x interface{}) error {
+func validatePrometheusWorkspace_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validatePrometheusWorkspace_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validatePrometheusWorkspace_IsTerraformElementParameters(x interface{}) error {
+func validatePrometheusWorkspace_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validatePrometheusWorkspace_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
-func validatePrometheusWorkspace_IsTerraformResourceParameters(x interface{}) error {
+func validatePrometheusWorkspace_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_PrometheusWorkspace) validateSetAliasParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_PrometheusWorkspace) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_PrometheusWorkspace) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_PrometheusWorkspace) validateSetConnectionParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_PrometheusWorkspace) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_PrometheusWorkspace) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -369,7 +369,7 @@ func (j *jsiiProxy_PrometheusWorkspace) validateSetLifecycleParameters(val *cdkt
 	return nil
 }
 
-func (j *jsiiProxy_PrometheusWorkspace) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_PrometheusWorkspace) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -446,4 +446,3 @@ func validateNewPrometheusWorkspaceParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

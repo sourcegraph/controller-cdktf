@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoS
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStre
 
 	return nil
 }
-

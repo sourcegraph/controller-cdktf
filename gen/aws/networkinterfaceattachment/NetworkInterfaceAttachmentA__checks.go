@@ -19,7 +19,7 @@ func (n *jsiiProxy_NetworkInterfaceAttachmentA) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (n *jsiiProxy_NetworkInterfaceAttachmentA) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NetworkInterfaceAttachmentA) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NetworkInterfaceAttachmentA) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (n *jsiiProxy_NetworkInterfaceAttachmentA) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NetworkInterfaceAttachmentA) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateNetworkInterfaceAttachmentA_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateNetworkInterfaceAttachmentA_IsConstructParameters(x interface{}) error {
+func validateNetworkInterfaceAttachmentA_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateNetworkInterfaceAttachmentA_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateNetworkInterfaceAttachmentA_IsTerraformElementParameters(x interface{}) error {
+func validateNetworkInterfaceAttachmentA_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateNetworkInterfaceAttachmentA_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateNetworkInterfaceAttachmentA_IsTerraformResourceParameters(x interface{}) error {
+func validateNetworkInterfaceAttachmentA_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateNetworkInterfaceAttachmentA_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_NetworkInterfaceAttachmentA) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkInterfaceAttachmentA) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_NetworkInterfaceAttachmentA) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_NetworkInterfaceAttachmentA) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkInterfaceAttachmentA) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -374,7 +374,7 @@ func (j *jsiiProxy_NetworkInterfaceAttachmentA) validateSetNetworkInterfaceIdPar
 	return nil
 }
 
-func (j *jsiiProxy_NetworkInterfaceAttachmentA) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NetworkInterfaceAttachmentA) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -438,4 +438,3 @@ func validateNewNetworkInterfaceAttachmentAParameters(scope constructs.Construct
 
 	return nil
 }
-

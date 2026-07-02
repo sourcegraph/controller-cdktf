@@ -109,7 +109,7 @@ func (a *jsiiProxy_AppmeshVirtualGatewaySpecLoggingOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshVirtualGatewaySpecLoggingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshVirtualGatewaySpecLoggingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewAppmeshVirtualGatewaySpecLoggingOutputReferenceParameters(terraf
 
 	return nil
 }
-

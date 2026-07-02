@@ -20,11 +20,11 @@ type DataAwsAlb interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CustomerOwnedIpv4Pool() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -67,7 +67,7 @@ type DataAwsAlb interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SecurityGroups() *[]*string
 	SubnetMapping() DataAwsAlbSubnetMappingList
 	Subnets() *[]*string
@@ -77,17 +77,17 @@ type DataAwsAlb interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DataAwsAlbTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	VpcId() *string
 	ZoneId() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -118,18 +118,18 @@ type DataAwsAlb interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsAlb
@@ -187,8 +187,8 @@ func (j *jsiiProxy_DataAwsAlb) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAlb) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsAlb) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -197,8 +197,8 @@ func (j *jsiiProxy_DataAwsAlb) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAlb) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsAlb) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -447,8 +447,8 @@ func (j *jsiiProxy_DataAwsAlb) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAlb) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsAlb) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -517,8 +517,8 @@ func (j *jsiiProxy_DataAwsAlb) TerraformGeneratorMetadata() *cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAlb) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsAlb) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -547,8 +547,8 @@ func (j *jsiiProxy_DataAwsAlb) Timeouts() DataAwsAlbTimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAlb) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsAlb) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -577,7 +577,6 @@ func (j *jsiiProxy_DataAwsAlb) ZoneId() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/alb aws_alb} Data Source.
 func NewDataAwsAlb(scope constructs.Construct, id *string, config *DataAwsAlbConfig) DataAwsAlb {
 	_init_.Initialize()
@@ -589,7 +588,7 @@ func NewDataAwsAlb(scope constructs.Construct, id *string, config *DataAwsAlbCon
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsAlb.DataAwsAlb",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -602,12 +601,12 @@ func NewDataAwsAlb_Override(d DataAwsAlb, scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsAlb.DataAwsAlb",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsAlb)SetArn(val *string) {
+func (j *jsiiProxy_DataAwsAlb) SetArn(val *string) {
 	if err := j.validateSetArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,7 +617,7 @@ func (j *jsiiProxy_DataAwsAlb)SetArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsAlb)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsAlb) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_DataAwsAlb)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsAlb)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsAlb) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -637,7 +636,7 @@ func (j *jsiiProxy_DataAwsAlb)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsAlb)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsAlb) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -645,7 +644,7 @@ func (j *jsiiProxy_DataAwsAlb)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsAlb)SetId(val *string) {
+func (j *jsiiProxy_DataAwsAlb) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -656,7 +655,7 @@ func (j *jsiiProxy_DataAwsAlb)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsAlb)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsAlb) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -667,7 +666,7 @@ func (j *jsiiProxy_DataAwsAlb)SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	)
 }
 
-func (j *jsiiProxy_DataAwsAlb)SetName(val *string) {
+func (j *jsiiProxy_DataAwsAlb) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -678,7 +677,7 @@ func (j *jsiiProxy_DataAwsAlb)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsAlb)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsAlb) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -686,7 +685,7 @@ func (j *jsiiProxy_DataAwsAlb)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsAlb)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsAlb) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -709,7 +708,7 @@ func DataAwsAlb_GenerateConfigForImport(scope constructs.Construct, importToId *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsAlb.DataAwsAlb",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -733,7 +732,7 @@ func DataAwsAlb_GenerateConfigForImport(scope constructs.Construct, importToId *
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsAlb_IsConstruct(x interface{}) *bool {
+func DataAwsAlb_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsAlb_IsConstructParameters(x); err != nil {
@@ -744,7 +743,7 @@ func DataAwsAlb_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsAlb.DataAwsAlb",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -752,7 +751,7 @@ func DataAwsAlb_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsAlb_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsAlb_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsAlb_IsTerraformDataSourceParameters(x); err != nil {
@@ -763,7 +762,7 @@ func DataAwsAlb_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsAlb.DataAwsAlb",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -771,7 +770,7 @@ func DataAwsAlb_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsAlb_IsTerraformElement(x interface{}) *bool {
+func DataAwsAlb_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsAlb_IsTerraformElementParameters(x); err != nil {
@@ -782,7 +781,7 @@ func DataAwsAlb_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsAlb.DataAwsAlb",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -800,27 +799,27 @@ func DataAwsAlb_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsAlb) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsAlb) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsAlb) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsAlb) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -836,7 +835,7 @@ func (d *jsiiProxy_DataAwsAlb) GetBooleanAttribute(terraformAttribute *string) c
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -852,7 +851,7 @@ func (d *jsiiProxy_DataAwsAlb) GetBooleanMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,7 +867,7 @@ func (d *jsiiProxy_DataAwsAlb) GetListAttribute(terraformAttribute *string) *[]*
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -884,7 +883,7 @@ func (d *jsiiProxy_DataAwsAlb) GetNumberAttribute(terraformAttribute *string) *f
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -900,7 +899,7 @@ func (d *jsiiProxy_DataAwsAlb) GetNumberListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -916,7 +915,7 @@ func (d *jsiiProxy_DataAwsAlb) GetNumberMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -932,7 +931,7 @@ func (d *jsiiProxy_DataAwsAlb) GetStringAttribute(terraformAttribute *string) *s
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -948,7 +947,7 @@ func (d *jsiiProxy_DataAwsAlb) GetStringMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -964,7 +963,7 @@ func (d *jsiiProxy_DataAwsAlb) InterpolationForAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -978,7 +977,7 @@ func (d *jsiiProxy_DataAwsAlb) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -989,7 +988,7 @@ func (d *jsiiProxy_DataAwsAlb) PutTimeouts(value *DataAwsAlbTimeouts) {
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1041,8 +1040,8 @@ func (d *jsiiProxy_DataAwsAlb) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsAlb) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsAlb) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1054,8 +1053,8 @@ func (d *jsiiProxy_DataAwsAlb) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsAlb) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsAlb) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1067,8 +1066,8 @@ func (d *jsiiProxy_DataAwsAlb) SynthesizeHclAttributes() *map[string]interface{}
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsAlb) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsAlb) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1080,8 +1079,8 @@ func (d *jsiiProxy_DataAwsAlb) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsAlb) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsAlb) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1106,8 +1105,8 @@ func (d *jsiiProxy_DataAwsAlb) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsAlb) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsAlb) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1118,4 +1117,3 @@ func (d *jsiiProxy_DataAwsAlb) ToTerraform() interface{} {
 
 	return returns
 }
-

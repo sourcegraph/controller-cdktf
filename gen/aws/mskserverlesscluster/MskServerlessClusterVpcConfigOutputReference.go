@@ -12,9 +12,9 @@ type MskServerlessClusterVpcConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type MskServerlessClusterVpcConfigOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	SecurityGroupIds() *[]*string
 	SetSecurityGroupIds(val *[]*string)
 	SecurityGroupIdsInput() *[]*string
@@ -46,7 +46,7 @@ type MskServerlessClusterVpcConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type MskServerlessClusterVpcConfigOutputReference interface {
 	ResetSecurityGroupIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_MskServerlessClusterVpcConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -123,8 +123,8 @@ func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) TerraformResour
 	return returns
 }
 
-
 func NewMskServerlessClusterVpcConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MskServerlessClusterVpcConfigOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewMskServerlessClusterVpcConfigOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterVpcConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewMskServerlessClusterVpcConfigOutputReference_Override(m MskServerlessClu
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterVpcConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference)SetSecurityGroupIds(val *[]*string) {
+func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) SetSecurityGroupIds(val *[]*string) {
 	if err := j.validateSetSecurityGroupIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference)SetSecurityGroup
 	)
 }
 
-func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference)SetSubnetIds(val *[]*string) {
+func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) SetSubnetIds(val *[]*string) {
 	if err := j.validateSetSubnetIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference)SetSubnetIds(val
 	)
 }
 
-func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (m *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (m *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (m *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (m *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (m *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (m *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (m *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (m *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (m *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (m *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (m *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (m *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) ResetSecurityGr
 	)
 }
 
-func (m *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (m *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) ToString() *str
 
 	return returns
 }
-

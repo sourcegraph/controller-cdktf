@@ -98,7 +98,7 @@ func (a *jsiiProxy_AmiFromInstanceEbsBlockDeviceOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_AmiFromInstanceEbsBlockDeviceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AmiFromInstanceEbsBlockDeviceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_AmiFromInstanceEbsBlockDeviceOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_AmiFromInstanceEbsBlockDeviceOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AmiFromInstanceEbsBlockDeviceOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewAmiFromInstanceEbsBlockDeviceOutputReferenceParameters(terraform
 
 	return nil
 }
-

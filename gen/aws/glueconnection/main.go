@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueConnection.GlueConnection",
-		reflect.TypeOf((*GlueConnection)(nil)).Elem(),
+		reflect.TypeFor[GlueConnection](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,7 +84,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueConnection{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -92,15 +92,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueConnection.GlueConnectionConfig",
-		reflect.TypeOf((*GlueConnectionConfig)(nil)).Elem(),
+		reflect.TypeFor[GlueConnectionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueConnection.GlueConnectionPhysicalConnectionRequirements",
-		reflect.TypeOf((*GlueConnectionPhysicalConnectionRequirements)(nil)).Elem(),
+		reflect.TypeFor[GlueConnectionPhysicalConnectionRequirements](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueConnection.GlueConnectionPhysicalConnectionRequirementsOutputReference",
-		reflect.TypeOf((*GlueConnectionPhysicalConnectionRequirementsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlueConnectionPhysicalConnectionRequirementsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availabilityZone", GoGetter: "AvailabilityZone"},
 			_jsii_.MemberProperty{JsiiProperty: "availabilityZoneInput", GoGetter: "AvailabilityZoneInput"},
@@ -133,7 +133,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueConnectionPhysicalConnectionRequirementsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

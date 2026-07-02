@@ -109,7 +109,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutp
 	return nil
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutp
 	return nil
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -249,4 +249,3 @@ func validateNewSecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputR
 
 	return nil
 }
-

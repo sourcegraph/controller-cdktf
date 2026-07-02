@@ -16,15 +16,15 @@ type DbOptionGroup interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,17 +62,17 @@ type DbOptionGroup interface {
 	OptionGroupDescription() *string
 	SetOptionGroupDescription(val *string)
 	OptionGroupDescriptionInput() *string
-	OptionInput() interface{}
+	OptionInput() any
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -82,18 +82,18 @@ type DbOptionGroup interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DbOptionGroupTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -111,7 +111,7 @@ type DbOptionGroup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -123,14 +123,14 @@ type DbOptionGroup interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutOption(value interface{})
+	PutOption(value any)
 	PutTimeouts(value *DbOptionGroupTimeouts)
 	ResetId()
 	ResetName()
@@ -143,17 +143,17 @@ type DbOptionGroup interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DbOptionGroup
@@ -181,8 +181,8 @@ func (j *jsiiProxy_DbOptionGroup) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DbOptionGroup) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbOptionGroup) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_DbOptionGroup) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DbOptionGroup) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DbOptionGroup) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -201,8 +201,8 @@ func (j *jsiiProxy_DbOptionGroup) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_DbOptionGroup) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbOptionGroup) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -401,8 +401,8 @@ func (j *jsiiProxy_DbOptionGroup) OptionGroupDescriptionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DbOptionGroup) OptionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbOptionGroup) OptionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"optionInput",
@@ -421,8 +421,8 @@ func (j *jsiiProxy_DbOptionGroup) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DbOptionGroup) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DbOptionGroup) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -431,8 +431,8 @@ func (j *jsiiProxy_DbOptionGroup) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DbOptionGroup) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbOptionGroup) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -491,8 +491,8 @@ func (j *jsiiProxy_DbOptionGroup) TerraformGeneratorMetadata() *cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_DbOptionGroup) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DbOptionGroup) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -521,8 +521,8 @@ func (j *jsiiProxy_DbOptionGroup) Timeouts() DbOptionGroupTimeoutsOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DbOptionGroup) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbOptionGroup) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -530,7 +530,6 @@ func (j *jsiiProxy_DbOptionGroup) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/db_option_group aws_db_option_group} Resource.
 func NewDbOptionGroup(scope constructs.Construct, id *string, config *DbOptionGroupConfig) DbOptionGroup {
@@ -543,7 +542,7 @@ func NewDbOptionGroup(scope constructs.Construct, id *string, config *DbOptionGr
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dbOptionGroup.DbOptionGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -556,12 +555,12 @@ func NewDbOptionGroup_Override(d DbOptionGroup, scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dbOptionGroup.DbOptionGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DbOptionGroup)SetConnection(val interface{}) {
+func (j *jsiiProxy_DbOptionGroup) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -572,7 +571,7 @@ func (j *jsiiProxy_DbOptionGroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DbOptionGroup)SetCount(val interface{}) {
+func (j *jsiiProxy_DbOptionGroup) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -583,7 +582,7 @@ func (j *jsiiProxy_DbOptionGroup)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DbOptionGroup)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DbOptionGroup) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -591,7 +590,7 @@ func (j *jsiiProxy_DbOptionGroup)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DbOptionGroup)SetEngineName(val *string) {
+func (j *jsiiProxy_DbOptionGroup) SetEngineName(val *string) {
 	if err := j.validateSetEngineNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -602,7 +601,7 @@ func (j *jsiiProxy_DbOptionGroup)SetEngineName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbOptionGroup)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DbOptionGroup) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -610,7 +609,7 @@ func (j *jsiiProxy_DbOptionGroup)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DbOptionGroup)SetId(val *string) {
+func (j *jsiiProxy_DbOptionGroup) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -621,7 +620,7 @@ func (j *jsiiProxy_DbOptionGroup)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbOptionGroup)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DbOptionGroup) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -632,7 +631,7 @@ func (j *jsiiProxy_DbOptionGroup)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_DbOptionGroup)SetMajorEngineVersion(val *string) {
+func (j *jsiiProxy_DbOptionGroup) SetMajorEngineVersion(val *string) {
 	if err := j.validateSetMajorEngineVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -643,7 +642,7 @@ func (j *jsiiProxy_DbOptionGroup)SetMajorEngineVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbOptionGroup)SetName(val *string) {
+func (j *jsiiProxy_DbOptionGroup) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -654,7 +653,7 @@ func (j *jsiiProxy_DbOptionGroup)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbOptionGroup)SetNamePrefix(val *string) {
+func (j *jsiiProxy_DbOptionGroup) SetNamePrefix(val *string) {
 	if err := j.validateSetNamePrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -665,7 +664,7 @@ func (j *jsiiProxy_DbOptionGroup)SetNamePrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbOptionGroup)SetOptionGroupDescription(val *string) {
+func (j *jsiiProxy_DbOptionGroup) SetOptionGroupDescription(val *string) {
 	if err := j.validateSetOptionGroupDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -676,7 +675,7 @@ func (j *jsiiProxy_DbOptionGroup)SetOptionGroupDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbOptionGroup)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DbOptionGroup) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -684,7 +683,7 @@ func (j *jsiiProxy_DbOptionGroup)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DbOptionGroup)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DbOptionGroup) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -695,7 +694,7 @@ func (j *jsiiProxy_DbOptionGroup)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DbOptionGroup)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DbOptionGroup) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -706,7 +705,7 @@ func (j *jsiiProxy_DbOptionGroup)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_DbOptionGroup)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_DbOptionGroup) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -729,7 +728,7 @@ func DbOptionGroup_GenerateConfigForImport(scope constructs.Construct, importToI
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dbOptionGroup.DbOptionGroup",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func DbOptionGroup_GenerateConfigForImport(scope constructs.Construct, importToI
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DbOptionGroup_IsConstruct(x interface{}) *bool {
+func DbOptionGroup_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDbOptionGroup_IsConstructParameters(x); err != nil {
@@ -764,7 +763,7 @@ func DbOptionGroup_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dbOptionGroup.DbOptionGroup",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -772,7 +771,7 @@ func DbOptionGroup_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DbOptionGroup_IsTerraformElement(x interface{}) *bool {
+func DbOptionGroup_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDbOptionGroup_IsTerraformElementParameters(x); err != nil {
@@ -783,7 +782,7 @@ func DbOptionGroup_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dbOptionGroup.DbOptionGroup",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -791,7 +790,7 @@ func DbOptionGroup_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DbOptionGroup_IsTerraformResource(x interface{}) *bool {
+func DbOptionGroup_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDbOptionGroup_IsTerraformResourceParameters(x); err != nil {
@@ -802,7 +801,7 @@ func DbOptionGroup_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dbOptionGroup.DbOptionGroup",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -827,31 +826,31 @@ func (d *jsiiProxy_DbOptionGroup) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DbOptionGroup) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DbOptionGroup) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DbOptionGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DbOptionGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -867,7 +866,7 @@ func (d *jsiiProxy_DbOptionGroup) GetBooleanAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -883,7 +882,7 @@ func (d *jsiiProxy_DbOptionGroup) GetBooleanMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -899,7 +898,7 @@ func (d *jsiiProxy_DbOptionGroup) GetListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -915,7 +914,7 @@ func (d *jsiiProxy_DbOptionGroup) GetNumberAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -931,7 +930,7 @@ func (d *jsiiProxy_DbOptionGroup) GetNumberListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -947,7 +946,7 @@ func (d *jsiiProxy_DbOptionGroup) GetNumberMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -963,7 +962,7 @@ func (d *jsiiProxy_DbOptionGroup) GetStringAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -979,15 +978,15 @@ func (d *jsiiProxy_DbOptionGroup) GetStringMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DbOptionGroup) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DbOptionGroup) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1006,7 +1005,7 @@ func (d *jsiiProxy_DbOptionGroup) ImportFrom(id *string, provider cdktf.Terrafor
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1019,7 +1018,7 @@ func (d *jsiiProxy_DbOptionGroup) InterpolationForAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1033,18 +1032,18 @@ func (d *jsiiProxy_DbOptionGroup) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DbOptionGroup) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DbOptionGroup) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1055,7 +1054,7 @@ func (d *jsiiProxy_DbOptionGroup) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1066,18 +1065,18 @@ func (d *jsiiProxy_DbOptionGroup) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DbOptionGroup) PutOption(value interface{}) {
+func (d *jsiiProxy_DbOptionGroup) PutOption(value any) {
 	if err := d.validatePutOptionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putOption",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1088,7 +1087,7 @@ func (d *jsiiProxy_DbOptionGroup) PutTimeouts(value *DbOptionGroupTimeouts) {
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1164,8 +1163,8 @@ func (d *jsiiProxy_DbOptionGroup) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DbOptionGroup) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DbOptionGroup) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1177,8 +1176,8 @@ func (d *jsiiProxy_DbOptionGroup) SynthesizeAttributes() *map[string]interface{}
 	return returns
 }
 
-func (d *jsiiProxy_DbOptionGroup) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DbOptionGroup) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1190,8 +1189,8 @@ func (d *jsiiProxy_DbOptionGroup) SynthesizeHclAttributes() *map[string]interfac
 	return returns
 }
 
-func (d *jsiiProxy_DbOptionGroup) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DbOptionGroup) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1203,8 +1202,8 @@ func (d *jsiiProxy_DbOptionGroup) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DbOptionGroup) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DbOptionGroup) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1229,8 +1228,8 @@ func (d *jsiiProxy_DbOptionGroup) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DbOptionGroup) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DbOptionGroup) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1241,4 +1240,3 @@ func (d *jsiiProxy_DbOptionGroup) ToTerraform() interface{} {
 
 	return returns
 }
-

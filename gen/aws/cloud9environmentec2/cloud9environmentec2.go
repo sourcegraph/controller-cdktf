@@ -19,18 +19,18 @@ type Cloud9EnvironmentEc2 interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	ConnectionType() *string
 	SetConnectionType(val *string)
 	ConnectionTypeInput() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -72,11 +72,11 @@ type Cloud9EnvironmentEc2 interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SubnetId() *string
 	SetSubnetId(val *string)
 	SubnetIdInput() *string
@@ -89,7 +89,7 @@ type Cloud9EnvironmentEc2 interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
@@ -97,9 +97,9 @@ type Cloud9EnvironmentEc2 interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -117,7 +117,7 @@ type Cloud9EnvironmentEc2 interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -129,7 +129,7 @@ type Cloud9EnvironmentEc2 interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -148,17 +148,17 @@ type Cloud9EnvironmentEc2 interface {
 	ResetSubnetId()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Cloud9EnvironmentEc2
@@ -206,8 +206,8 @@ func (j *jsiiProxy_Cloud9EnvironmentEc2) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_Cloud9EnvironmentEc2) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Cloud9EnvironmentEc2) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -236,8 +236,8 @@ func (j *jsiiProxy_Cloud9EnvironmentEc2) ConnectionTypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Cloud9EnvironmentEc2) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Cloud9EnvironmentEc2) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -246,8 +246,8 @@ func (j *jsiiProxy_Cloud9EnvironmentEc2) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_Cloud9EnvironmentEc2) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Cloud9EnvironmentEc2) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -446,8 +446,8 @@ func (j *jsiiProxy_Cloud9EnvironmentEc2) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Cloud9EnvironmentEc2) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Cloud9EnvironmentEc2) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -456,8 +456,8 @@ func (j *jsiiProxy_Cloud9EnvironmentEc2) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Cloud9EnvironmentEc2) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Cloud9EnvironmentEc2) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -536,8 +536,8 @@ func (j *jsiiProxy_Cloud9EnvironmentEc2) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_Cloud9EnvironmentEc2) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Cloud9EnvironmentEc2) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -566,7 +566,6 @@ func (j *jsiiProxy_Cloud9EnvironmentEc2) Type() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloud9_environment_ec2 aws_cloud9_environment_ec2} Resource.
 func NewCloud9EnvironmentEc2(scope constructs.Construct, id *string, config *Cloud9EnvironmentEc2Config) Cloud9EnvironmentEc2 {
 	_init_.Initialize()
@@ -578,7 +577,7 @@ func NewCloud9EnvironmentEc2(scope constructs.Construct, id *string, config *Clo
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloud9EnvironmentEc2.Cloud9EnvironmentEc2",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -591,12 +590,12 @@ func NewCloud9EnvironmentEc2_Override(c Cloud9EnvironmentEc2, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloud9EnvironmentEc2.Cloud9EnvironmentEc2",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_Cloud9EnvironmentEc2)SetAutomaticStopTimeMinutes(val *float64) {
+func (j *jsiiProxy_Cloud9EnvironmentEc2) SetAutomaticStopTimeMinutes(val *float64) {
 	if err := j.validateSetAutomaticStopTimeMinutesParameters(val); err != nil {
 		panic(err)
 	}
@@ -607,7 +606,7 @@ func (j *jsiiProxy_Cloud9EnvironmentEc2)SetAutomaticStopTimeMinutes(val *float64
 	)
 }
 
-func (j *jsiiProxy_Cloud9EnvironmentEc2)SetConnection(val interface{}) {
+func (j *jsiiProxy_Cloud9EnvironmentEc2) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,7 +617,7 @@ func (j *jsiiProxy_Cloud9EnvironmentEc2)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Cloud9EnvironmentEc2)SetConnectionType(val *string) {
+func (j *jsiiProxy_Cloud9EnvironmentEc2) SetConnectionType(val *string) {
 	if err := j.validateSetConnectionTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_Cloud9EnvironmentEc2)SetConnectionType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Cloud9EnvironmentEc2)SetCount(val interface{}) {
+func (j *jsiiProxy_Cloud9EnvironmentEc2) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -640,7 +639,7 @@ func (j *jsiiProxy_Cloud9EnvironmentEc2)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Cloud9EnvironmentEc2)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Cloud9EnvironmentEc2) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -648,7 +647,7 @@ func (j *jsiiProxy_Cloud9EnvironmentEc2)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Cloud9EnvironmentEc2)SetDescription(val *string) {
+func (j *jsiiProxy_Cloud9EnvironmentEc2) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -659,7 +658,7 @@ func (j *jsiiProxy_Cloud9EnvironmentEc2)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Cloud9EnvironmentEc2)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Cloud9EnvironmentEc2) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -667,7 +666,7 @@ func (j *jsiiProxy_Cloud9EnvironmentEc2)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_Cloud9EnvironmentEc2)SetId(val *string) {
+func (j *jsiiProxy_Cloud9EnvironmentEc2) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -678,7 +677,7 @@ func (j *jsiiProxy_Cloud9EnvironmentEc2)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Cloud9EnvironmentEc2)SetImageId(val *string) {
+func (j *jsiiProxy_Cloud9EnvironmentEc2) SetImageId(val *string) {
 	if err := j.validateSetImageIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -689,7 +688,7 @@ func (j *jsiiProxy_Cloud9EnvironmentEc2)SetImageId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Cloud9EnvironmentEc2)SetInstanceType(val *string) {
+func (j *jsiiProxy_Cloud9EnvironmentEc2) SetInstanceType(val *string) {
 	if err := j.validateSetInstanceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -700,7 +699,7 @@ func (j *jsiiProxy_Cloud9EnvironmentEc2)SetInstanceType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Cloud9EnvironmentEc2)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Cloud9EnvironmentEc2) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -711,7 +710,7 @@ func (j *jsiiProxy_Cloud9EnvironmentEc2)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_Cloud9EnvironmentEc2)SetName(val *string) {
+func (j *jsiiProxy_Cloud9EnvironmentEc2) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -722,7 +721,7 @@ func (j *jsiiProxy_Cloud9EnvironmentEc2)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Cloud9EnvironmentEc2)SetOwnerArn(val *string) {
+func (j *jsiiProxy_Cloud9EnvironmentEc2) SetOwnerArn(val *string) {
 	if err := j.validateSetOwnerArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -733,7 +732,7 @@ func (j *jsiiProxy_Cloud9EnvironmentEc2)SetOwnerArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Cloud9EnvironmentEc2)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Cloud9EnvironmentEc2) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -741,7 +740,7 @@ func (j *jsiiProxy_Cloud9EnvironmentEc2)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_Cloud9EnvironmentEc2)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Cloud9EnvironmentEc2) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -752,7 +751,7 @@ func (j *jsiiProxy_Cloud9EnvironmentEc2)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Cloud9EnvironmentEc2)SetSubnetId(val *string) {
+func (j *jsiiProxy_Cloud9EnvironmentEc2) SetSubnetId(val *string) {
 	if err := j.validateSetSubnetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -763,7 +762,7 @@ func (j *jsiiProxy_Cloud9EnvironmentEc2)SetSubnetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Cloud9EnvironmentEc2)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_Cloud9EnvironmentEc2) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -774,7 +773,7 @@ func (j *jsiiProxy_Cloud9EnvironmentEc2)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Cloud9EnvironmentEc2)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_Cloud9EnvironmentEc2) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -797,7 +796,7 @@ func Cloud9EnvironmentEc2_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloud9EnvironmentEc2.Cloud9EnvironmentEc2",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -821,7 +820,7 @@ func Cloud9EnvironmentEc2_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Cloud9EnvironmentEc2_IsConstruct(x interface{}) *bool {
+func Cloud9EnvironmentEc2_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloud9EnvironmentEc2_IsConstructParameters(x); err != nil {
@@ -832,7 +831,7 @@ func Cloud9EnvironmentEc2_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloud9EnvironmentEc2.Cloud9EnvironmentEc2",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -840,7 +839,7 @@ func Cloud9EnvironmentEc2_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Cloud9EnvironmentEc2_IsTerraformElement(x interface{}) *bool {
+func Cloud9EnvironmentEc2_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloud9EnvironmentEc2_IsTerraformElementParameters(x); err != nil {
@@ -851,7 +850,7 @@ func Cloud9EnvironmentEc2_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloud9EnvironmentEc2.Cloud9EnvironmentEc2",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -859,7 +858,7 @@ func Cloud9EnvironmentEc2_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Cloud9EnvironmentEc2_IsTerraformResource(x interface{}) *bool {
+func Cloud9EnvironmentEc2_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloud9EnvironmentEc2_IsTerraformResourceParameters(x); err != nil {
@@ -870,7 +869,7 @@ func Cloud9EnvironmentEc2_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloud9EnvironmentEc2.Cloud9EnvironmentEc2",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -895,31 +894,31 @@ func (c *jsiiProxy_Cloud9EnvironmentEc2) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_Cloud9EnvironmentEc2) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_Cloud9EnvironmentEc2) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_Cloud9EnvironmentEc2) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_Cloud9EnvironmentEc2) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -935,7 +934,7 @@ func (c *jsiiProxy_Cloud9EnvironmentEc2) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -951,7 +950,7 @@ func (c *jsiiProxy_Cloud9EnvironmentEc2) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -967,7 +966,7 @@ func (c *jsiiProxy_Cloud9EnvironmentEc2) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -983,7 +982,7 @@ func (c *jsiiProxy_Cloud9EnvironmentEc2) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -999,7 +998,7 @@ func (c *jsiiProxy_Cloud9EnvironmentEc2) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1015,7 +1014,7 @@ func (c *jsiiProxy_Cloud9EnvironmentEc2) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1031,7 +1030,7 @@ func (c *jsiiProxy_Cloud9EnvironmentEc2) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1047,15 +1046,15 @@ func (c *jsiiProxy_Cloud9EnvironmentEc2) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_Cloud9EnvironmentEc2) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_Cloud9EnvironmentEc2) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1074,7 +1073,7 @@ func (c *jsiiProxy_Cloud9EnvironmentEc2) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1087,7 +1086,7 @@ func (c *jsiiProxy_Cloud9EnvironmentEc2) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1101,18 +1100,18 @@ func (c *jsiiProxy_Cloud9EnvironmentEc2) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_Cloud9EnvironmentEc2) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_Cloud9EnvironmentEc2) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1123,7 +1122,7 @@ func (c *jsiiProxy_Cloud9EnvironmentEc2) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1134,7 +1133,7 @@ func (c *jsiiProxy_Cloud9EnvironmentEc2) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1218,8 +1217,8 @@ func (c *jsiiProxy_Cloud9EnvironmentEc2) ResetTagsAll() {
 	)
 }
 
-func (c *jsiiProxy_Cloud9EnvironmentEc2) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_Cloud9EnvironmentEc2) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1231,8 +1230,8 @@ func (c *jsiiProxy_Cloud9EnvironmentEc2) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (c *jsiiProxy_Cloud9EnvironmentEc2) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_Cloud9EnvironmentEc2) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1244,8 +1243,8 @@ func (c *jsiiProxy_Cloud9EnvironmentEc2) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (c *jsiiProxy_Cloud9EnvironmentEc2) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_Cloud9EnvironmentEc2) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1257,8 +1256,8 @@ func (c *jsiiProxy_Cloud9EnvironmentEc2) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_Cloud9EnvironmentEc2) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_Cloud9EnvironmentEc2) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1283,8 +1282,8 @@ func (c *jsiiProxy_Cloud9EnvironmentEc2) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_Cloud9EnvironmentEc2) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_Cloud9EnvironmentEc2) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1295,4 +1294,3 @@ func (c *jsiiProxy_Cloud9EnvironmentEc2) ToTerraform() interface{} {
 
 	return returns
 }
-

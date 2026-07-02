@@ -90,7 +90,7 @@ func (f *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) validat
 	return nil
 }
 
-func (f *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) validatePutNfsParameters(value interface{}) error {
+func (f *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) validatePutNfsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (f *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -218,7 +218,7 @@ func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -285,4 +285,3 @@ func validateNewFsxFileCacheDataRepositoryAssociationOutputReferenceParameters(t
 
 	return nil
 }
-

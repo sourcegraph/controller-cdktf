@@ -109,7 +109,7 @@ func (s *jsiiProxy_SignerSigningJobDestinationOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_SignerSigningJobDestinationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SignerSigningJobDestinationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewSignerSigningJobDestinationOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

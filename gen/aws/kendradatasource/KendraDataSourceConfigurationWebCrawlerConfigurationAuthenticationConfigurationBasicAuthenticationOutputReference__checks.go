@@ -98,7 +98,7 @@ func (k *jsiiProxy_KendraDataSourceConfigurationWebCrawlerConfigurationAuthentic
 	return nil
 }
 
-func (j *jsiiProxy_KendraDataSourceConfigurationWebCrawlerConfigurationAuthenticationConfigurationBasicAuthenticationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KendraDataSourceConfigurationWebCrawlerConfigurationAuthenticationConfigurationBasicAuthenticationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_KendraDataSourceConfigurationWebCrawlerConfigurationAuthentic
 	return nil
 }
 
-func (j *jsiiProxy_KendraDataSourceConfigurationWebCrawlerConfigurationAuthenticationConfigurationBasicAuthenticationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_KendraDataSourceConfigurationWebCrawlerConfigurationAuthenticationConfigurationBasicAuthenticationOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewKendraDataSourceConfigurationWebCrawlerConfigurationAuthenticati
 
 	return nil
 }
-

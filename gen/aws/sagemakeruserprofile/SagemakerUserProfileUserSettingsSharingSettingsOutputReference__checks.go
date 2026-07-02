@@ -98,7 +98,7 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsSharingSettingsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerUserProfileUserSettingsSharingSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsSharingSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewSagemakerUserProfileUserSettingsSharingSettingsOutputReferencePa
 
 	return nil
 }
-

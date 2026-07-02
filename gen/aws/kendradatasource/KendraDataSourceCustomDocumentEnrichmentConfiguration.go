@@ -1,11 +1,10 @@
 package kendradatasource
 
-
 type KendraDataSourceCustomDocumentEnrichmentConfiguration struct {
 	// inline_configurations block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kendra_data_source#inline_configurations KendraDataSource#inline_configurations}
-	InlineConfigurations interface{} `field:"optional" json:"inlineConfigurations" yaml:"inlineConfigurations"`
+	InlineConfigurations any `field:"optional" json:"inlineConfigurations" yaml:"inlineConfigurations"`
 	// post_extraction_hook_configuration block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kendra_data_source#post_extraction_hook_configuration KendraDataSource#post_extraction_hook_configuration}
@@ -17,4 +16,3 @@ type KendraDataSourceCustomDocumentEnrichmentConfiguration struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kendra_data_source#role_arn KendraDataSource#role_arn}.
 	RoleArn *string `field:"optional" json:"roleArn" yaml:"roleArn"`
 }
-

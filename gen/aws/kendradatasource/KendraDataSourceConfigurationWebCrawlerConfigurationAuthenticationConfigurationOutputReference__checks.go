@@ -90,7 +90,7 @@ func (k *jsiiProxy_KendraDataSourceConfigurationWebCrawlerConfigurationAuthentic
 	return nil
 }
 
-func (k *jsiiProxy_KendraDataSourceConfigurationWebCrawlerConfigurationAuthenticationConfigurationOutputReference) validatePutBasicAuthenticationParameters(value interface{}) error {
+func (k *jsiiProxy_KendraDataSourceConfigurationWebCrawlerConfigurationAuthenticationConfigurationOutputReference) validatePutBasicAuthenticationParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (k *jsiiProxy_KendraDataSourceConfigurationWebCrawlerConfigurationAuthentic
 	return nil
 }
 
-func (j *jsiiProxy_KendraDataSourceConfigurationWebCrawlerConfigurationAuthenticationConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KendraDataSourceConfigurationWebCrawlerConfigurationAuthenticationConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewKendraDataSourceConfigurationWebCrawlerConfigurationAuthenticati
 
 	return nil
 }
-

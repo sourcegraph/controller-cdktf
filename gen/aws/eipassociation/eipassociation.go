@@ -15,21 +15,21 @@ type EipAssociation interface {
 	AllocationId() *string
 	SetAllocationId(val *string)
 	AllocationIdInput() *string
-	AllowReassociation() interface{}
-	SetAllowReassociation(val interface{})
-	AllowReassociationInput() interface{}
+	AllowReassociation() any
+	SetAllowReassociation(val any)
+	AllowReassociationInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -65,27 +65,27 @@ type EipAssociation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	PublicIp() *string
 	SetPublicIp(val *string)
 	PublicIpInput() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type EipAssociation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -115,7 +115,7 @@ type EipAssociation interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -132,17 +132,17 @@ type EipAssociation interface {
 	ResetOverrideLogicalId()
 	ResetPrivateIpAddress()
 	ResetPublicIp()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for EipAssociation
@@ -170,8 +170,8 @@ func (j *jsiiProxy_EipAssociation) AllocationIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EipAssociation) AllowReassociation() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EipAssociation) AllowReassociation() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowReassociation",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_EipAssociation) AllowReassociation() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EipAssociation) AllowReassociationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EipAssociation) AllowReassociationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowReassociationInput",
@@ -200,8 +200,8 @@ func (j *jsiiProxy_EipAssociation) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_EipAssociation) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EipAssociation) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -210,8 +210,8 @@ func (j *jsiiProxy_EipAssociation) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EipAssociation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EipAssociation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -220,8 +220,8 @@ func (j *jsiiProxy_EipAssociation) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_EipAssociation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EipAssociation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -380,8 +380,8 @@ func (j *jsiiProxy_EipAssociation) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_EipAssociation) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_EipAssociation) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -410,8 +410,8 @@ func (j *jsiiProxy_EipAssociation) PublicIpInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EipAssociation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EipAssociation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -430,8 +430,8 @@ func (j *jsiiProxy_EipAssociation) TerraformGeneratorMetadata() *cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_EipAssociation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EipAssociation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -450,7 +450,6 @@ func (j *jsiiProxy_EipAssociation) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/eip_association aws_eip_association} Resource.
 func NewEipAssociation(scope constructs.Construct, id *string, config *EipAssociationConfig) EipAssociation {
 	_init_.Initialize()
@@ -462,7 +461,7 @@ func NewEipAssociation(scope constructs.Construct, id *string, config *EipAssoci
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.eipAssociation.EipAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -475,12 +474,12 @@ func NewEipAssociation_Override(e EipAssociation, scope constructs.Construct, id
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.eipAssociation.EipAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EipAssociation)SetAllocationId(val *string) {
+func (j *jsiiProxy_EipAssociation) SetAllocationId(val *string) {
 	if err := j.validateSetAllocationIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -491,7 +490,7 @@ func (j *jsiiProxy_EipAssociation)SetAllocationId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EipAssociation)SetAllowReassociation(val interface{}) {
+func (j *jsiiProxy_EipAssociation) SetAllowReassociation(val any) {
 	if err := j.validateSetAllowReassociationParameters(val); err != nil {
 		panic(err)
 	}
@@ -502,7 +501,7 @@ func (j *jsiiProxy_EipAssociation)SetAllowReassociation(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EipAssociation)SetConnection(val interface{}) {
+func (j *jsiiProxy_EipAssociation) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_EipAssociation)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EipAssociation)SetCount(val interface{}) {
+func (j *jsiiProxy_EipAssociation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_EipAssociation)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EipAssociation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_EipAssociation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -532,7 +531,7 @@ func (j *jsiiProxy_EipAssociation)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EipAssociation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_EipAssociation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -540,7 +539,7 @@ func (j *jsiiProxy_EipAssociation)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_EipAssociation)SetId(val *string) {
+func (j *jsiiProxy_EipAssociation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -551,7 +550,7 @@ func (j *jsiiProxy_EipAssociation)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EipAssociation)SetInstanceId(val *string) {
+func (j *jsiiProxy_EipAssociation) SetInstanceId(val *string) {
 	if err := j.validateSetInstanceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -562,7 +561,7 @@ func (j *jsiiProxy_EipAssociation)SetInstanceId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EipAssociation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_EipAssociation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -573,7 +572,7 @@ func (j *jsiiProxy_EipAssociation)SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_EipAssociation)SetNetworkInterfaceId(val *string) {
+func (j *jsiiProxy_EipAssociation) SetNetworkInterfaceId(val *string) {
 	if err := j.validateSetNetworkInterfaceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -584,7 +583,7 @@ func (j *jsiiProxy_EipAssociation)SetNetworkInterfaceId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EipAssociation)SetPrivateIpAddress(val *string) {
+func (j *jsiiProxy_EipAssociation) SetPrivateIpAddress(val *string) {
 	if err := j.validateSetPrivateIpAddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -595,7 +594,7 @@ func (j *jsiiProxy_EipAssociation)SetPrivateIpAddress(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EipAssociation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_EipAssociation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -603,7 +602,7 @@ func (j *jsiiProxy_EipAssociation)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_EipAssociation)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_EipAssociation) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -614,7 +613,7 @@ func (j *jsiiProxy_EipAssociation)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EipAssociation)SetPublicIp(val *string) {
+func (j *jsiiProxy_EipAssociation) SetPublicIp(val *string) {
 	if err := j.validateSetPublicIpParameters(val); err != nil {
 		panic(err)
 	}
@@ -637,7 +636,7 @@ func EipAssociation_GenerateConfigForImport(scope constructs.Construct, importTo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.eipAssociation.EipAssociation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func EipAssociation_GenerateConfigForImport(scope constructs.Construct, importTo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func EipAssociation_IsConstruct(x interface{}) *bool {
+func EipAssociation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEipAssociation_IsConstructParameters(x); err != nil {
@@ -672,7 +671,7 @@ func EipAssociation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.eipAssociation.EipAssociation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -680,7 +679,7 @@ func EipAssociation_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func EipAssociation_IsTerraformElement(x interface{}) *bool {
+func EipAssociation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEipAssociation_IsTerraformElementParameters(x); err != nil {
@@ -691,7 +690,7 @@ func EipAssociation_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.eipAssociation.EipAssociation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -699,7 +698,7 @@ func EipAssociation_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func EipAssociation_IsTerraformResource(x interface{}) *bool {
+func EipAssociation_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEipAssociation_IsTerraformResourceParameters(x); err != nil {
@@ -710,7 +709,7 @@ func EipAssociation_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.eipAssociation.EipAssociation",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -735,31 +734,31 @@ func (e *jsiiProxy_EipAssociation) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_EipAssociation) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_EipAssociation) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_EipAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EipAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func (e *jsiiProxy_EipAssociation) GetBooleanAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -791,7 +790,7 @@ func (e *jsiiProxy_EipAssociation) GetBooleanMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -807,7 +806,7 @@ func (e *jsiiProxy_EipAssociation) GetListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,7 +822,7 @@ func (e *jsiiProxy_EipAssociation) GetNumberAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -839,7 +838,7 @@ func (e *jsiiProxy_EipAssociation) GetNumberListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -855,7 +854,7 @@ func (e *jsiiProxy_EipAssociation) GetNumberMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -871,7 +870,7 @@ func (e *jsiiProxy_EipAssociation) GetStringAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -887,15 +886,15 @@ func (e *jsiiProxy_EipAssociation) GetStringMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EipAssociation) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EipAssociation) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -914,7 +913,7 @@ func (e *jsiiProxy_EipAssociation) ImportFrom(id *string, provider cdktf.Terrafo
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -927,7 +926,7 @@ func (e *jsiiProxy_EipAssociation) InterpolationForAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -941,18 +940,18 @@ func (e *jsiiProxy_EipAssociation) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_EipAssociation) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_EipAssociation) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -963,7 +962,7 @@ func (e *jsiiProxy_EipAssociation) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -974,7 +973,7 @@ func (e *jsiiProxy_EipAssociation) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1042,8 +1041,8 @@ func (e *jsiiProxy_EipAssociation) ResetPublicIp() {
 	)
 }
 
-func (e *jsiiProxy_EipAssociation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EipAssociation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1055,8 +1054,8 @@ func (e *jsiiProxy_EipAssociation) SynthesizeAttributes() *map[string]interface{
 	return returns
 }
 
-func (e *jsiiProxy_EipAssociation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EipAssociation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1068,8 +1067,8 @@ func (e *jsiiProxy_EipAssociation) SynthesizeHclAttributes() *map[string]interfa
 	return returns
 }
 
-func (e *jsiiProxy_EipAssociation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EipAssociation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1081,8 +1080,8 @@ func (e *jsiiProxy_EipAssociation) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_EipAssociation) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EipAssociation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1107,8 +1106,8 @@ func (e *jsiiProxy_EipAssociation) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_EipAssociation) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EipAssociation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1119,4 +1118,3 @@ func (e *jsiiProxy_EipAssociation) ToTerraform() interface{} {
 
 	return returns
 }
-

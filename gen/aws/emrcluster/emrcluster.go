@@ -25,7 +25,7 @@ type EmrCluster interface {
 	AutoTerminationPolicy() EmrClusterAutoTerminationPolicyOutputReference
 	AutoTerminationPolicyInput() *EmrClusterAutoTerminationPolicy
 	BootstrapAction() EmrClusterBootstrapActionList
-	BootstrapActionInput() interface{}
+	BootstrapActionInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClusterState() *string
@@ -36,19 +36,19 @@ type EmrCluster interface {
 	SetConfigurationsJson(val *string)
 	ConfigurationsJsonInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	CoreInstanceFleet() EmrClusterCoreInstanceFleetOutputReference
 	CoreInstanceFleetInput() *EmrClusterCoreInstanceFleet
 	CoreInstanceGroup() EmrClusterCoreInstanceGroupOutputReference
 	CoreInstanceGroupInput() *EmrClusterCoreInstanceGroup
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CustomAmiId() *string
 	SetCustomAmiId(val *string)
 	CustomAmiIdInput() *string
@@ -72,9 +72,9 @@ type EmrCluster interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	KeepJobFlowAliveWhenNoSteps() interface{}
-	SetKeepJobFlowAliveWhenNoSteps(val interface{})
-	KeepJobFlowAliveWhenNoStepsInput() interface{}
+	KeepJobFlowAliveWhenNoSteps() any
+	SetKeepJobFlowAliveWhenNoSteps(val any)
+	KeepJobFlowAliveWhenNoStepsInput() any
 	KerberosAttributes() EmrClusterKerberosAttributesOutputReference
 	KerberosAttributesInput() *EmrClusterKerberosAttributes
 	// Experimental.
@@ -105,11 +105,11 @@ type EmrCluster interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReleaseLabel() *string
 	SetReleaseLabel(val *string)
 	ReleaseLabelInput() *string
@@ -126,32 +126,32 @@ type EmrCluster interface {
 	StepConcurrencyLevel() *float64
 	SetStepConcurrencyLevel(val *float64)
 	StepConcurrencyLevelInput() *float64
-	StepInput() interface{}
+	StepInput() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
 	SetTagsAll(val *map[string]*string)
 	TagsAllInput() *map[string]*string
 	TagsInput() *map[string]*string
-	TerminationProtection() interface{}
-	SetTerminationProtection(val interface{})
-	TerminationProtectionInput() interface{}
+	TerminationProtection() any
+	SetTerminationProtection(val any)
+	TerminationProtectionInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
-	VisibleToAllUsers() interface{}
-	SetVisibleToAllUsers(val interface{})
-	VisibleToAllUsersInput() interface{}
+	VisibleToAllUsers() any
+	SetVisibleToAllUsers(val any)
+	VisibleToAllUsersInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -169,7 +169,7 @@ type EmrCluster interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -181,7 +181,7 @@ type EmrCluster interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -189,14 +189,14 @@ type EmrCluster interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAutoTerminationPolicy(value *EmrClusterAutoTerminationPolicy)
-	PutBootstrapAction(value interface{})
+	PutBootstrapAction(value any)
 	PutCoreInstanceFleet(value *EmrClusterCoreInstanceFleet)
 	PutCoreInstanceGroup(value *EmrClusterCoreInstanceGroup)
 	PutEc2Attributes(value *EmrClusterEc2Attributes)
 	PutKerberosAttributes(value *EmrClusterKerberosAttributes)
 	PutMasterInstanceFleet(value *EmrClusterMasterInstanceFleet)
 	PutMasterInstanceGroup(value *EmrClusterMasterInstanceGroup)
-	PutStep(value interface{})
+	PutStep(value any)
 	ResetAdditionalInfo()
 	ResetApplications()
 	ResetAutoscalingRole()
@@ -228,17 +228,17 @@ type EmrCluster interface {
 	ResetTagsAll()
 	ResetTerminationProtection()
 	ResetVisibleToAllUsers()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for EmrCluster
@@ -346,8 +346,8 @@ func (j *jsiiProxy_EmrCluster) BootstrapAction() EmrClusterBootstrapActionList {
 	return returns
 }
 
-func (j *jsiiProxy_EmrCluster) BootstrapActionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmrCluster) BootstrapActionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"bootstrapActionInput",
@@ -416,8 +416,8 @@ func (j *jsiiProxy_EmrCluster) ConfigurationsJsonInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EmrCluster) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmrCluster) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -426,8 +426,8 @@ func (j *jsiiProxy_EmrCluster) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EmrCluster) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EmrCluster) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -476,8 +476,8 @@ func (j *jsiiProxy_EmrCluster) CoreInstanceGroupInput() *EmrClusterCoreInstanceG
 	return returns
 }
 
-func (j *jsiiProxy_EmrCluster) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmrCluster) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -606,8 +606,8 @@ func (j *jsiiProxy_EmrCluster) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EmrCluster) KeepJobFlowAliveWhenNoSteps() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmrCluster) KeepJobFlowAliveWhenNoSteps() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"keepJobFlowAliveWhenNoSteps",
@@ -616,8 +616,8 @@ func (j *jsiiProxy_EmrCluster) KeepJobFlowAliveWhenNoSteps() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EmrCluster) KeepJobFlowAliveWhenNoStepsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmrCluster) KeepJobFlowAliveWhenNoStepsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"keepJobFlowAliveWhenNoStepsInput",
@@ -806,8 +806,8 @@ func (j *jsiiProxy_EmrCluster) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_EmrCluster) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_EmrCluster) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -816,8 +816,8 @@ func (j *jsiiProxy_EmrCluster) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EmrCluster) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmrCluster) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -936,8 +936,8 @@ func (j *jsiiProxy_EmrCluster) StepConcurrencyLevelInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_EmrCluster) StepInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmrCluster) StepInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"stepInput",
@@ -986,8 +986,8 @@ func (j *jsiiProxy_EmrCluster) TagsInput() *map[string]*string {
 	return returns
 }
 
-func (j *jsiiProxy_EmrCluster) TerminationProtection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmrCluster) TerminationProtection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"terminationProtection",
@@ -996,8 +996,8 @@ func (j *jsiiProxy_EmrCluster) TerminationProtection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EmrCluster) TerminationProtectionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmrCluster) TerminationProtectionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"terminationProtectionInput",
@@ -1016,8 +1016,8 @@ func (j *jsiiProxy_EmrCluster) TerraformGeneratorMetadata() *cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_EmrCluster) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EmrCluster) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -1036,8 +1036,8 @@ func (j *jsiiProxy_EmrCluster) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EmrCluster) VisibleToAllUsers() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmrCluster) VisibleToAllUsers() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"visibleToAllUsers",
@@ -1046,8 +1046,8 @@ func (j *jsiiProxy_EmrCluster) VisibleToAllUsers() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EmrCluster) VisibleToAllUsersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmrCluster) VisibleToAllUsersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"visibleToAllUsersInput",
@@ -1055,7 +1055,6 @@ func (j *jsiiProxy_EmrCluster) VisibleToAllUsersInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/emr_cluster aws_emr_cluster} Resource.
 func NewEmrCluster(scope constructs.Construct, id *string, config *EmrClusterConfig) EmrCluster {
@@ -1068,7 +1067,7 @@ func NewEmrCluster(scope constructs.Construct, id *string, config *EmrClusterCon
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.emrCluster.EmrCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -1081,12 +1080,12 @@ func NewEmrCluster_Override(e EmrCluster, scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.emrCluster.EmrCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EmrCluster)SetAdditionalInfo(val *string) {
+func (j *jsiiProxy_EmrCluster) SetAdditionalInfo(val *string) {
 	if err := j.validateSetAdditionalInfoParameters(val); err != nil {
 		panic(err)
 	}
@@ -1097,7 +1096,7 @@ func (j *jsiiProxy_EmrCluster)SetAdditionalInfo(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EmrCluster)SetApplications(val *[]*string) {
+func (j *jsiiProxy_EmrCluster) SetApplications(val *[]*string) {
 	if err := j.validateSetApplicationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1108,7 +1107,7 @@ func (j *jsiiProxy_EmrCluster)SetApplications(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EmrCluster)SetAutoscalingRole(val *string) {
+func (j *jsiiProxy_EmrCluster) SetAutoscalingRole(val *string) {
 	if err := j.validateSetAutoscalingRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1119,7 +1118,7 @@ func (j *jsiiProxy_EmrCluster)SetAutoscalingRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EmrCluster)SetConfigurations(val *string) {
+func (j *jsiiProxy_EmrCluster) SetConfigurations(val *string) {
 	if err := j.validateSetConfigurationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1130,7 +1129,7 @@ func (j *jsiiProxy_EmrCluster)SetConfigurations(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EmrCluster)SetConfigurationsJson(val *string) {
+func (j *jsiiProxy_EmrCluster) SetConfigurationsJson(val *string) {
 	if err := j.validateSetConfigurationsJsonParameters(val); err != nil {
 		panic(err)
 	}
@@ -1141,7 +1140,7 @@ func (j *jsiiProxy_EmrCluster)SetConfigurationsJson(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EmrCluster)SetConnection(val interface{}) {
+func (j *jsiiProxy_EmrCluster) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1152,7 +1151,7 @@ func (j *jsiiProxy_EmrCluster)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EmrCluster)SetCount(val interface{}) {
+func (j *jsiiProxy_EmrCluster) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1163,7 +1162,7 @@ func (j *jsiiProxy_EmrCluster)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EmrCluster)SetCustomAmiId(val *string) {
+func (j *jsiiProxy_EmrCluster) SetCustomAmiId(val *string) {
 	if err := j.validateSetCustomAmiIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1174,7 +1173,7 @@ func (j *jsiiProxy_EmrCluster)SetCustomAmiId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EmrCluster)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_EmrCluster) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1182,7 +1181,7 @@ func (j *jsiiProxy_EmrCluster)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EmrCluster)SetEbsRootVolumeSize(val *float64) {
+func (j *jsiiProxy_EmrCluster) SetEbsRootVolumeSize(val *float64) {
 	if err := j.validateSetEbsRootVolumeSizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1193,7 +1192,7 @@ func (j *jsiiProxy_EmrCluster)SetEbsRootVolumeSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_EmrCluster)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_EmrCluster) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1201,7 +1200,7 @@ func (j *jsiiProxy_EmrCluster)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_EmrCluster)SetId(val *string) {
+func (j *jsiiProxy_EmrCluster) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1212,7 +1211,7 @@ func (j *jsiiProxy_EmrCluster)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EmrCluster)SetKeepJobFlowAliveWhenNoSteps(val interface{}) {
+func (j *jsiiProxy_EmrCluster) SetKeepJobFlowAliveWhenNoSteps(val any) {
 	if err := j.validateSetKeepJobFlowAliveWhenNoStepsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1223,7 +1222,7 @@ func (j *jsiiProxy_EmrCluster)SetKeepJobFlowAliveWhenNoSteps(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EmrCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_EmrCluster) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1234,7 +1233,7 @@ func (j *jsiiProxy_EmrCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	)
 }
 
-func (j *jsiiProxy_EmrCluster)SetListStepsStates(val *[]*string) {
+func (j *jsiiProxy_EmrCluster) SetListStepsStates(val *[]*string) {
 	if err := j.validateSetListStepsStatesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1245,7 +1244,7 @@ func (j *jsiiProxy_EmrCluster)SetListStepsStates(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EmrCluster)SetLogEncryptionKmsKeyId(val *string) {
+func (j *jsiiProxy_EmrCluster) SetLogEncryptionKmsKeyId(val *string) {
 	if err := j.validateSetLogEncryptionKmsKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1256,7 +1255,7 @@ func (j *jsiiProxy_EmrCluster)SetLogEncryptionKmsKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EmrCluster)SetLogUri(val *string) {
+func (j *jsiiProxy_EmrCluster) SetLogUri(val *string) {
 	if err := j.validateSetLogUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -1267,7 +1266,7 @@ func (j *jsiiProxy_EmrCluster)SetLogUri(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EmrCluster)SetName(val *string) {
+func (j *jsiiProxy_EmrCluster) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1278,7 +1277,7 @@ func (j *jsiiProxy_EmrCluster)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EmrCluster)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_EmrCluster) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1286,7 +1285,7 @@ func (j *jsiiProxy_EmrCluster)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_EmrCluster)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_EmrCluster) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1297,7 +1296,7 @@ func (j *jsiiProxy_EmrCluster)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EmrCluster)SetReleaseLabel(val *string) {
+func (j *jsiiProxy_EmrCluster) SetReleaseLabel(val *string) {
 	if err := j.validateSetReleaseLabelParameters(val); err != nil {
 		panic(err)
 	}
@@ -1308,7 +1307,7 @@ func (j *jsiiProxy_EmrCluster)SetReleaseLabel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EmrCluster)SetScaleDownBehavior(val *string) {
+func (j *jsiiProxy_EmrCluster) SetScaleDownBehavior(val *string) {
 	if err := j.validateSetScaleDownBehaviorParameters(val); err != nil {
 		panic(err)
 	}
@@ -1319,7 +1318,7 @@ func (j *jsiiProxy_EmrCluster)SetScaleDownBehavior(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EmrCluster)SetSecurityConfiguration(val *string) {
+func (j *jsiiProxy_EmrCluster) SetSecurityConfiguration(val *string) {
 	if err := j.validateSetSecurityConfigurationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1330,7 +1329,7 @@ func (j *jsiiProxy_EmrCluster)SetSecurityConfiguration(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EmrCluster)SetServiceRole(val *string) {
+func (j *jsiiProxy_EmrCluster) SetServiceRole(val *string) {
 	if err := j.validateSetServiceRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1341,7 +1340,7 @@ func (j *jsiiProxy_EmrCluster)SetServiceRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EmrCluster)SetStepConcurrencyLevel(val *float64) {
+func (j *jsiiProxy_EmrCluster) SetStepConcurrencyLevel(val *float64) {
 	if err := j.validateSetStepConcurrencyLevelParameters(val); err != nil {
 		panic(err)
 	}
@@ -1352,7 +1351,7 @@ func (j *jsiiProxy_EmrCluster)SetStepConcurrencyLevel(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_EmrCluster)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_EmrCluster) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1363,7 +1362,7 @@ func (j *jsiiProxy_EmrCluster)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_EmrCluster)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_EmrCluster) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1374,7 +1373,7 @@ func (j *jsiiProxy_EmrCluster)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_EmrCluster)SetTerminationProtection(val interface{}) {
+func (j *jsiiProxy_EmrCluster) SetTerminationProtection(val any) {
 	if err := j.validateSetTerminationProtectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1385,7 +1384,7 @@ func (j *jsiiProxy_EmrCluster)SetTerminationProtection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EmrCluster)SetVisibleToAllUsers(val interface{}) {
+func (j *jsiiProxy_EmrCluster) SetVisibleToAllUsers(val any) {
 	if err := j.validateSetVisibleToAllUsersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1408,7 +1407,7 @@ func EmrCluster_GenerateConfigForImport(scope constructs.Construct, importToId *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.emrCluster.EmrCluster",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1432,7 +1431,7 @@ func EmrCluster_GenerateConfigForImport(scope constructs.Construct, importToId *
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func EmrCluster_IsConstruct(x interface{}) *bool {
+func EmrCluster_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEmrCluster_IsConstructParameters(x); err != nil {
@@ -1443,7 +1442,7 @@ func EmrCluster_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.emrCluster.EmrCluster",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1451,7 +1450,7 @@ func EmrCluster_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func EmrCluster_IsTerraformElement(x interface{}) *bool {
+func EmrCluster_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEmrCluster_IsTerraformElementParameters(x); err != nil {
@@ -1462,7 +1461,7 @@ func EmrCluster_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.emrCluster.EmrCluster",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1470,7 +1469,7 @@ func EmrCluster_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func EmrCluster_IsTerraformResource(x interface{}) *bool {
+func EmrCluster_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEmrCluster_IsTerraformResourceParameters(x); err != nil {
@@ -1481,7 +1480,7 @@ func EmrCluster_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.emrCluster.EmrCluster",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1506,31 +1505,31 @@ func (e *jsiiProxy_EmrCluster) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_EmrCluster) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_EmrCluster) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_EmrCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EmrCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1546,7 +1545,7 @@ func (e *jsiiProxy_EmrCluster) GetBooleanAttribute(terraformAttribute *string) c
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1562,7 +1561,7 @@ func (e *jsiiProxy_EmrCluster) GetBooleanMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1578,7 +1577,7 @@ func (e *jsiiProxy_EmrCluster) GetListAttribute(terraformAttribute *string) *[]*
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1594,7 +1593,7 @@ func (e *jsiiProxy_EmrCluster) GetNumberAttribute(terraformAttribute *string) *f
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1610,7 +1609,7 @@ func (e *jsiiProxy_EmrCluster) GetNumberListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1626,7 +1625,7 @@ func (e *jsiiProxy_EmrCluster) GetNumberMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1642,7 +1641,7 @@ func (e *jsiiProxy_EmrCluster) GetStringAttribute(terraformAttribute *string) *s
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1658,15 +1657,15 @@ func (e *jsiiProxy_EmrCluster) GetStringMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EmrCluster) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EmrCluster) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1685,7 +1684,7 @@ func (e *jsiiProxy_EmrCluster) ImportFrom(id *string, provider cdktf.TerraformPr
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1698,7 +1697,7 @@ func (e *jsiiProxy_EmrCluster) InterpolationForAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1712,18 +1711,18 @@ func (e *jsiiProxy_EmrCluster) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_EmrCluster) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_EmrCluster) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1734,7 +1733,7 @@ func (e *jsiiProxy_EmrCluster) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1745,7 +1744,7 @@ func (e *jsiiProxy_EmrCluster) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1756,18 +1755,18 @@ func (e *jsiiProxy_EmrCluster) PutAutoTerminationPolicy(value *EmrClusterAutoTer
 	_jsii_.InvokeVoid(
 		e,
 		"putAutoTerminationPolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (e *jsiiProxy_EmrCluster) PutBootstrapAction(value interface{}) {
+func (e *jsiiProxy_EmrCluster) PutBootstrapAction(value any) {
 	if err := e.validatePutBootstrapActionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"putBootstrapAction",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1778,7 +1777,7 @@ func (e *jsiiProxy_EmrCluster) PutCoreInstanceFleet(value *EmrClusterCoreInstanc
 	_jsii_.InvokeVoid(
 		e,
 		"putCoreInstanceFleet",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1789,7 +1788,7 @@ func (e *jsiiProxy_EmrCluster) PutCoreInstanceGroup(value *EmrClusterCoreInstanc
 	_jsii_.InvokeVoid(
 		e,
 		"putCoreInstanceGroup",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1800,7 +1799,7 @@ func (e *jsiiProxy_EmrCluster) PutEc2Attributes(value *EmrClusterEc2Attributes) 
 	_jsii_.InvokeVoid(
 		e,
 		"putEc2Attributes",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1811,7 +1810,7 @@ func (e *jsiiProxy_EmrCluster) PutKerberosAttributes(value *EmrClusterKerberosAt
 	_jsii_.InvokeVoid(
 		e,
 		"putKerberosAttributes",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1822,7 +1821,7 @@ func (e *jsiiProxy_EmrCluster) PutMasterInstanceFleet(value *EmrClusterMasterIns
 	_jsii_.InvokeVoid(
 		e,
 		"putMasterInstanceFleet",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1833,18 +1832,18 @@ func (e *jsiiProxy_EmrCluster) PutMasterInstanceGroup(value *EmrClusterMasterIns
 	_jsii_.InvokeVoid(
 		e,
 		"putMasterInstanceGroup",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (e *jsiiProxy_EmrCluster) PutStep(value interface{}) {
+func (e *jsiiProxy_EmrCluster) PutStep(value any) {
 	if err := e.validatePutStepParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"putStep",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2080,8 +2079,8 @@ func (e *jsiiProxy_EmrCluster) ResetVisibleToAllUsers() {
 	)
 }
 
-func (e *jsiiProxy_EmrCluster) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EmrCluster) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -2093,8 +2092,8 @@ func (e *jsiiProxy_EmrCluster) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_EmrCluster) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EmrCluster) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -2106,8 +2105,8 @@ func (e *jsiiProxy_EmrCluster) SynthesizeHclAttributes() *map[string]interface{}
 	return returns
 }
 
-func (e *jsiiProxy_EmrCluster) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EmrCluster) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -2119,8 +2118,8 @@ func (e *jsiiProxy_EmrCluster) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_EmrCluster) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EmrCluster) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -2145,8 +2144,8 @@ func (e *jsiiProxy_EmrCluster) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_EmrCluster) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EmrCluster) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -2157,4 +2156,3 @@ func (e *jsiiProxy_EmrCluster) ToTerraform() interface{} {
 
 	return returns
 }
-

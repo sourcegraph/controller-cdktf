@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsElasticacheClusterCacheNodesOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsElasticacheClusterCacheNodesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsElasticacheClusterCacheNodesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsElasticacheClusterCacheNodesOutputReferenceParameters(ter
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (e *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsRouteTableOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsRouteTableOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsRouteTableOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewEc2NetworkInsightsAnalysisExplanationsRouteTableOutputReferenceP
 
 	return nil
 }
-

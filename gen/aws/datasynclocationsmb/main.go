@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.datasyncLocationSmb.DatasyncLocationSmb",
-		reflect.TypeOf((*DatasyncLocationSmb)(nil)).Elem(),
+		reflect.TypeFor[DatasyncLocationSmb](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,7 +81,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "user", GoGetter: "User"},
 			_jsii_.MemberProperty{JsiiProperty: "userInput", GoGetter: "UserInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatasyncLocationSmb{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -89,15 +89,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.datasyncLocationSmb.DatasyncLocationSmbConfig",
-		reflect.TypeOf((*DatasyncLocationSmbConfig)(nil)).Elem(),
+		reflect.TypeFor[DatasyncLocationSmbConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.datasyncLocationSmb.DatasyncLocationSmbMountOptions",
-		reflect.TypeOf((*DatasyncLocationSmbMountOptions)(nil)).Elem(),
+		reflect.TypeFor[DatasyncLocationSmbMountOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.datasyncLocationSmb.DatasyncLocationSmbMountOptionsOutputReference",
-		reflect.TypeOf((*DatasyncLocationSmbMountOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatasyncLocationSmbMountOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -124,7 +124,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatasyncLocationSmbMountOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

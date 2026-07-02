@@ -98,7 +98,7 @@ func (s *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeValueOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeValueOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeValueOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeValueOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeValueOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeValueOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewSsoadminInstanceAccessControlAttributesAttributeValueOutputRefer
 
 	return nil
 }
-

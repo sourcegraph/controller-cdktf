@@ -98,7 +98,7 @@ func (c *jsiiProxy_CodebuildProjectVpcConfigOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildProjectVpcConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CodebuildProjectVpcConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewCodebuildProjectVpcConfigOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

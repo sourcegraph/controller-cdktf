@@ -34,7 +34,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceContainerLaunchedAtList) val
 	return nil
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersResourceContainerLaunchedAtList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityhubInsightFiltersResourceContainerLaunchedAtList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSecurityhubInsightFiltersResourceContainerLaunchedAtListParamete
 
 	return nil
 }
-

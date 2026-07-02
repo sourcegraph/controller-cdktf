@@ -98,7 +98,7 @@ func (e *jsiiProxy_EmrInstanceGroupEbsConfigOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_EmrInstanceGroupEbsConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EmrInstanceGroupEbsConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_EmrInstanceGroupEbsConfigOutputReference) validateSetComplexO
 	return nil
 }
 
-func (j *jsiiProxy_EmrInstanceGroupEbsConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EmrInstanceGroupEbsConfigOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewEmrInstanceGroupEbsConfigOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

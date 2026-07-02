@@ -128,7 +128,7 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,7 +225,7 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -316,4 +316,3 @@ func validateNewSagemakerEndpointConfigurationProductionVariantsOutputReferenceP
 
 	return nil
 }
-

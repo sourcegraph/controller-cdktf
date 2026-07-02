@@ -19,7 +19,7 @@ func (a *jsiiProxy_AuditmanagerAssessmentDelegation) validateAddMoveTargetParame
 	return nil
 }
 
-func (a *jsiiProxy_AuditmanagerAssessmentDelegation) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AuditmanagerAssessmentDelegation) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AuditmanagerAssessmentDelegation) validateMoveFromIdParameter
 	return nil
 }
 
-func (a *jsiiProxy_AuditmanagerAssessmentDelegation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AuditmanagerAssessmentDelegation) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateAuditmanagerAssessmentDelegation_GenerateConfigForImportParameters(
 	return nil
 }
 
-func validateAuditmanagerAssessmentDelegation_IsConstructParameters(x interface{}) error {
+func validateAuditmanagerAssessmentDelegation_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateAuditmanagerAssessmentDelegation_IsConstructParameters(x interface{
 	return nil
 }
 
-func validateAuditmanagerAssessmentDelegation_IsTerraformElementParameters(x interface{}) error {
+func validateAuditmanagerAssessmentDelegation_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateAuditmanagerAssessmentDelegation_IsTerraformElementParameters(x int
 	return nil
 }
 
-func validateAuditmanagerAssessmentDelegation_IsTerraformResourceParameters(x interface{}) error {
+func validateAuditmanagerAssessmentDelegation_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -260,7 +260,7 @@ func (j *jsiiProxy_AuditmanagerAssessmentDelegation) validateSetCommentParameter
 	return nil
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentDelegation) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AuditmanagerAssessmentDelegation) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -301,7 +301,7 @@ func (j *jsiiProxy_AuditmanagerAssessmentDelegation) validateSetControlSetIdPara
 	return nil
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentDelegation) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AuditmanagerAssessmentDelegation) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_AuditmanagerAssessmentDelegation) validateSetLifecycleParamet
 	return nil
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentDelegation) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AuditmanagerAssessmentDelegation) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -446,4 +446,3 @@ func validateNewAuditmanagerAssessmentDelegationParameters(scope constructs.Cons
 
 	return nil
 }
-

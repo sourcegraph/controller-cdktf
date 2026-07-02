@@ -34,7 +34,7 @@ func (f *jsiiProxy_FsxOpenzfsVolumeUserAndGroupQuotasList) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_FsxOpenzfsVolumeUserAndGroupQuotasList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FsxOpenzfsVolumeUserAndGroupQuotasList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewFsxOpenzfsVolumeUserAndGroupQuotasListParameters(terraformResour
 
 	return nil
 }
-

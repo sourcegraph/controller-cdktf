@@ -12,9 +12,9 @@ type DataAwsVpnGatewayFilterOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type DataAwsVpnGatewayFilterOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -46,7 +46,7 @@ type DataAwsVpnGatewayFilterOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,7 +69,7 @@ type DataAwsVpnGatewayFilterOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,8 +82,8 @@ type jsiiProxy_DataAwsVpnGatewayFilterOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataAwsVpnGatewayFilterOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsVpnGatewayFilterOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -122,8 +122,8 @@ func (j *jsiiProxy_DataAwsVpnGatewayFilterOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsVpnGatewayFilterOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsVpnGatewayFilterOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_DataAwsVpnGatewayFilterOutputReference) ValuesInput() *[]*str
 	return returns
 }
 
-
 func NewDataAwsVpnGatewayFilterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataAwsVpnGatewayFilterOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewDataAwsVpnGatewayFilterOutputReference(terraformResource cdktf.IInterpol
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsVpnGateway.DataAwsVpnGatewayFilterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewDataAwsVpnGatewayFilterOutputReference_Override(d DataAwsVpnGatewayFilte
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsVpnGateway.DataAwsVpnGatewayFilterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsVpnGatewayFilterOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataAwsVpnGatewayFilterOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_DataAwsVpnGatewayFilterOutputReference)SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_DataAwsVpnGatewayFilterOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataAwsVpnGatewayFilterOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_DataAwsVpnGatewayFilterOutputReference)SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_DataAwsVpnGatewayFilterOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAwsVpnGatewayFilterOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_DataAwsVpnGatewayFilterOutputReference)SetInternalValue(val i
 	)
 }
 
-func (j *jsiiProxy_DataAwsVpnGatewayFilterOutputReference)SetName(val *string) {
+func (j *jsiiProxy_DataAwsVpnGatewayFilterOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_DataAwsVpnGatewayFilterOutputReference)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsVpnGatewayFilterOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataAwsVpnGatewayFilterOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_DataAwsVpnGatewayFilterOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_DataAwsVpnGatewayFilterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataAwsVpnGatewayFilterOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -286,7 +285,7 @@ func (j *jsiiProxy_DataAwsVpnGatewayFilterOutputReference)SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_DataAwsVpnGatewayFilterOutputReference)SetValues(val *[]*string) {
+func (j *jsiiProxy_DataAwsVpnGatewayFilterOutputReference) SetValues(val *[]*string) {
 	if err := j.validateSetValuesParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,16 +309,16 @@ func (d *jsiiProxy_DataAwsVpnGatewayFilterOutputReference) ComputeFqn() *string 
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsVpnGatewayFilterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsVpnGatewayFilterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -335,7 +334,7 @@ func (d *jsiiProxy_DataAwsVpnGatewayFilterOutputReference) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -351,7 +350,7 @@ func (d *jsiiProxy_DataAwsVpnGatewayFilterOutputReference) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -367,7 +366,7 @@ func (d *jsiiProxy_DataAwsVpnGatewayFilterOutputReference) GetListAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -383,7 +382,7 @@ func (d *jsiiProxy_DataAwsVpnGatewayFilterOutputReference) GetNumberAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -399,7 +398,7 @@ func (d *jsiiProxy_DataAwsVpnGatewayFilterOutputReference) GetNumberListAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -415,7 +414,7 @@ func (d *jsiiProxy_DataAwsVpnGatewayFilterOutputReference) GetNumberMapAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (d *jsiiProxy_DataAwsVpnGatewayFilterOutputReference) GetStringAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (d *jsiiProxy_DataAwsVpnGatewayFilterOutputReference) GetStringMapAttribute
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,23 +475,23 @@ func (d *jsiiProxy_DataAwsVpnGatewayFilterOutputReference) InterpolationForAttri
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsVpnGatewayFilterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataAwsVpnGatewayFilterOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -511,4 +510,3 @@ func (d *jsiiProxy_DataAwsVpnGatewayFilterOutputReference) ToString() *string {
 
 	return returns
 }
-

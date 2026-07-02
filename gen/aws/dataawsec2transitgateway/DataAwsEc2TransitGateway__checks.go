@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsEc2TransitGateway) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsEc2TransitGateway) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -111,7 +111,7 @@ func (d *jsiiProxy_DataAwsEc2TransitGateway) validateOverrideLogicalIdParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2TransitGateway) validatePutFilterParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsEc2TransitGateway) validatePutFilterParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -169,7 +169,7 @@ func validateDataAwsEc2TransitGateway_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateDataAwsEc2TransitGateway_IsConstructParameters(x interface{}) error {
+func validateDataAwsEc2TransitGateway_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -177,7 +177,7 @@ func validateDataAwsEc2TransitGateway_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateDataAwsEc2TransitGateway_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsEc2TransitGateway_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -185,7 +185,7 @@ func validateDataAwsEc2TransitGateway_IsTerraformDataSourceParameters(x interfac
 	return nil
 }
 
-func validateDataAwsEc2TransitGateway_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsEc2TransitGateway_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -193,7 +193,7 @@ func validateDataAwsEc2TransitGateway_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGateway) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEc2TransitGateway) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -289,4 +289,3 @@ func validateNewDataAwsEc2TransitGatewayParameters(scope constructs.Construct, i
 
 	return nil
 }
-

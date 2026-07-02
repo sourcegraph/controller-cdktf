@@ -106,7 +106,7 @@ func (j *jsiiProxy_FsxOpenzfsVolumeNfsExportsClientConfigurationsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_FsxOpenzfsVolumeNfsExportsClientConfigurationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FsxOpenzfsVolumeNfsExportsClientConfigurationsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_FsxOpenzfsVolumeNfsExportsClientConfigurationsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_FsxOpenzfsVolumeNfsExportsClientConfigurationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FsxOpenzfsVolumeNfsExportsClientConfigurationsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewFsxOpenzfsVolumeNfsExportsClientConfigurationsOutputReferencePar
 
 	return nil
 }
-

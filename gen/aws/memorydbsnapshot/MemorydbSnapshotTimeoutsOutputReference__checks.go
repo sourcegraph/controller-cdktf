@@ -98,7 +98,7 @@ func (m *jsiiProxy_MemorydbSnapshotTimeoutsOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_MemorydbSnapshotTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MemorydbSnapshotTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_MemorydbSnapshotTimeoutsOutputReference) validateSetDeletePar
 	return nil
 }
 
-func (j *jsiiProxy_MemorydbSnapshotTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MemorydbSnapshotTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewMemorydbSnapshotTimeoutsOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

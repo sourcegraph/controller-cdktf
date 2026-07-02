@@ -19,7 +19,7 @@ func (l *jsiiProxy_LaunchTemplate) validateAddMoveTargetParameters(moveTarget *s
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplate) validateAddOverrideParameters(path *string, value interface{}) error {
+func (l *jsiiProxy_LaunchTemplate) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (l *jsiiProxy_LaunchTemplate) validateMoveFromIdParameters(id *string) erro
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (l *jsiiProxy_LaunchTemplate) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (l *jsiiProxy_LaunchTemplate) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplate) validatePutBlockDeviceMappingsParameters(value interface{}) error {
+func (l *jsiiProxy_LaunchTemplate) validatePutBlockDeviceMappingsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -268,7 +268,7 @@ func (l *jsiiProxy_LaunchTemplate) validatePutCreditSpecificationParameters(valu
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplate) validatePutElasticGpuSpecificationsParameters(value interface{}) error {
+func (l *jsiiProxy_LaunchTemplate) validatePutElasticGpuSpecificationsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -365,7 +365,7 @@ func (l *jsiiProxy_LaunchTemplate) validatePutInstanceRequirementsParameters(val
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplate) validatePutLicenseSpecificationParameters(value interface{}) error {
+func (l *jsiiProxy_LaunchTemplate) validatePutLicenseSpecificationParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -429,7 +429,7 @@ func (l *jsiiProxy_LaunchTemplate) validatePutMonitoringParameters(value *Launch
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplate) validatePutNetworkInterfacesParameters(value interface{}) error {
+func (l *jsiiProxy_LaunchTemplate) validatePutNetworkInterfacesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -482,7 +482,7 @@ func (l *jsiiProxy_LaunchTemplate) validatePutPrivateDnsNameOptionsParameters(va
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplate) validatePutTagSpecificationsParameters(value interface{}) error {
+func (l *jsiiProxy_LaunchTemplate) validatePutTagSpecificationsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -529,7 +529,7 @@ func validateLaunchTemplate_GenerateConfigForImportParameters(scope constructs.C
 	return nil
 }
 
-func validateLaunchTemplate_IsConstructParameters(x interface{}) error {
+func validateLaunchTemplate_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -537,7 +537,7 @@ func validateLaunchTemplate_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateLaunchTemplate_IsTerraformElementParameters(x interface{}) error {
+func validateLaunchTemplate_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -545,7 +545,7 @@ func validateLaunchTemplate_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateLaunchTemplate_IsTerraformResourceParameters(x interface{}) error {
+func validateLaunchTemplate_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -553,7 +553,7 @@ func validateLaunchTemplate_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_LaunchTemplate) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchTemplate) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -586,7 +586,7 @@ func (j *jsiiProxy_LaunchTemplate) validateSetConnectionParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_LaunchTemplate) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchTemplate) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -659,7 +659,7 @@ func (j *jsiiProxy_LaunchTemplate) validateSetDescriptionParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_LaunchTemplate) validateSetDisableApiStopParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchTemplate) validateSetDisableApiStopParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -679,7 +679,7 @@ func (j *jsiiProxy_LaunchTemplate) validateSetDisableApiStopParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_LaunchTemplate) validateSetDisableApiTerminationParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchTemplate) validateSetDisableApiTerminationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -779,7 +779,7 @@ func (j *jsiiProxy_LaunchTemplate) validateSetNamePrefixParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_LaunchTemplate) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_LaunchTemplate) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -857,7 +857,7 @@ func (j *jsiiProxy_LaunchTemplate) validateSetTagsAllParameters(val *map[string]
 	return nil
 }
 
-func (j *jsiiProxy_LaunchTemplate) validateSetUpdateDefaultVersionParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchTemplate) validateSetUpdateDefaultVersionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -908,4 +908,3 @@ func validateNewLaunchTemplateParameters(scope constructs.Construct, id *string,
 
 	return nil
 }
-

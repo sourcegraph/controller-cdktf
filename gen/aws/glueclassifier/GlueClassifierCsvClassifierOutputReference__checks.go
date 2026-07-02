@@ -98,7 +98,7 @@ func (g *jsiiProxy_GlueClassifierCsvClassifierOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_GlueClassifierCsvClassifierOutputReference) validateSetAllowSingleColumnParameters(val interface{}) error {
+func (j *jsiiProxy_GlueClassifierCsvClassifierOutputReference) validateSetAllowSingleColumnParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_GlueClassifierCsvClassifierOutputReference) validateSetAllowS
 	return nil
 }
 
-func (j *jsiiProxy_GlueClassifierCsvClassifierOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GlueClassifierCsvClassifierOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -191,7 +191,7 @@ func (j *jsiiProxy_GlueClassifierCsvClassifierOutputReference) validateSetContai
 	return nil
 }
 
-func (j *jsiiProxy_GlueClassifierCsvClassifierOutputReference) validateSetCustomDatatypeConfiguredParameters(val interface{}) error {
+func (j *jsiiProxy_GlueClassifierCsvClassifierOutputReference) validateSetCustomDatatypeConfiguredParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -227,7 +227,7 @@ func (j *jsiiProxy_GlueClassifierCsvClassifierOutputReference) validateSetDelimi
 	return nil
 }
 
-func (j *jsiiProxy_GlueClassifierCsvClassifierOutputReference) validateSetDisableValueTrimmingParameters(val interface{}) error {
+func (j *jsiiProxy_GlueClassifierCsvClassifierOutputReference) validateSetDisableValueTrimmingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -298,4 +298,3 @@ func validateNewGlueClassifierCsvClassifierOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

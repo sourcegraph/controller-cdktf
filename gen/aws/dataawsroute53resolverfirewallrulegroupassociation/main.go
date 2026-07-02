@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRuleGroupAssociation.DataAwsRoute53ResolverFirewallRuleGroupAssociation",
-		reflect.TypeOf((*DataAwsRoute53ResolverFirewallRuleGroupAssociation)(nil)).Elem(),
+		reflect.TypeFor[DataAwsRoute53ResolverFirewallRuleGroupAssociation](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -62,7 +62,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -70,6 +70,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRuleGroupAssociation.DataAwsRoute53ResolverFirewallRuleGroupAssociationConfig",
-		reflect.TypeOf((*DataAwsRoute53ResolverFirewallRuleGroupAssociationConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsRoute53ResolverFirewallRuleGroupAssociationConfig](),
 	)
 }

@@ -19,7 +19,7 @@ func (l *jsiiProxy_LocationRouteCalculator) validateAddMoveTargetParameters(move
 	return nil
 }
 
-func (l *jsiiProxy_LocationRouteCalculator) validateAddOverrideParameters(path *string, value interface{}) error {
+func (l *jsiiProxy_LocationRouteCalculator) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (l *jsiiProxy_LocationRouteCalculator) validateMoveFromIdParameters(id *str
 	return nil
 }
 
-func (l *jsiiProxy_LocationRouteCalculator) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (l *jsiiProxy_LocationRouteCalculator) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateLocationRouteCalculator_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateLocationRouteCalculator_IsConstructParameters(x interface{}) error {
+func validateLocationRouteCalculator_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateLocationRouteCalculator_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateLocationRouteCalculator_IsTerraformElementParameters(x interface{}) error {
+func validateLocationRouteCalculator_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateLocationRouteCalculator_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func validateLocationRouteCalculator_IsTerraformResourceParameters(x interface{}) error {
+func validateLocationRouteCalculator_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_LocationRouteCalculator) validateSetCalculatorNameParameters(
 	return nil
 }
 
-func (j *jsiiProxy_LocationRouteCalculator) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_LocationRouteCalculator) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_LocationRouteCalculator) validateSetConnectionParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_LocationRouteCalculator) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_LocationRouteCalculator) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_LocationRouteCalculator) validateSetLifecycleParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_LocationRouteCalculator) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_LocationRouteCalculator) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewLocationRouteCalculatorParameters(scope constructs.Construct, id
 
 	return nil
 }
-

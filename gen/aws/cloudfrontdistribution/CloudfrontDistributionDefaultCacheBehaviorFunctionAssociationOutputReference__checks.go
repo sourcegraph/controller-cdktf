@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorFunctionAssociation
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorFunctionAssociationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorFunctionAssociationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorFunctionAssociation
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorFunctionAssociationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorFunctionAssociationOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewCloudfrontDistributionDefaultCacheBehaviorFunctionAssociationOut
 
 	return nil
 }
-

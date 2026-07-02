@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsDbSnapshot) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsDbSnapshot) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataAwsDbSnapshot_GenerateConfigForImportParameters(scope construct
 	return nil
 }
 
-func validateDataAwsDbSnapshot_IsConstructParameters(x interface{}) error {
+func validateDataAwsDbSnapshot_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataAwsDbSnapshot_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataAwsDbSnapshot_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsDbSnapshot_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataAwsDbSnapshot_IsTerraformDataSourceParameters(x interface{}) er
 	return nil
 }
 
-func validateDataAwsDbSnapshot_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsDbSnapshot_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataAwsDbSnapshot_IsTerraformElementParameters(x interface{}) error
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsDbSnapshot) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsDbSnapshot) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -232,7 +232,7 @@ func (j *jsiiProxy_DataAwsDbSnapshot) validateSetIdParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsDbSnapshot) validateSetIncludePublicParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsDbSnapshot) validateSetIncludePublicParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_DataAwsDbSnapshot) validateSetIncludePublicParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsDbSnapshot) validateSetIncludeSharedParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsDbSnapshot) validateSetIncludeSharedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -280,7 +280,7 @@ func (j *jsiiProxy_DataAwsDbSnapshot) validateSetLifecycleParameters(val *cdktf.
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsDbSnapshot) validateSetMostRecentParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsDbSnapshot) validateSetMostRecentParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -323,4 +323,3 @@ func validateNewDataAwsDbSnapshotParameters(scope constructs.Construct, id *stri
 
 	return nil
 }
-

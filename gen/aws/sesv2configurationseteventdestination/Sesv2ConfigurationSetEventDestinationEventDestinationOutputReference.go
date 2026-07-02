@@ -14,9 +14,9 @@ type Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference interf
 	CloudWatchDestinationInput() *Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestination
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,9 +27,9 @@ type Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference interf
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *Sesv2ConfigurationSetEventDestinationEventDestination
@@ -54,7 +54,7 @@ type Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference interf
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -86,7 +86,7 @@ type Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference interf
 	ResetSnsDestination()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -119,8 +119,8 @@ func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -149,8 +149,8 @@ func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -159,8 +159,8 @@ func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -289,7 +289,6 @@ func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputRe
 	return returns
 }
 
-
 func NewSesv2ConfigurationSetEventDestinationEventDestinationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference {
 	_init_.Initialize()
 
@@ -300,7 +299,7 @@ func NewSesv2ConfigurationSetEventDestinationEventDestinationOutputReference(ter
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -312,12 +311,12 @@ func NewSesv2ConfigurationSetEventDestinationEventDestinationOutputReference_Ove
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,7 +327,7 @@ func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputRe
 	)
 }
 
-func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -339,7 +338,7 @@ func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputRe
 	)
 }
 
-func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -350,7 +349,7 @@ func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputRe
 	)
 }
 
-func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference)SetInternalValue(val *Sesv2ConfigurationSetEventDestinationEventDestination) {
+func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference) SetInternalValue(val *Sesv2ConfigurationSetEventDestinationEventDestination) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,7 +360,7 @@ func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputRe
 	)
 }
 
-func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference)SetMatchingEventTypes(val *[]*string) {
+func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference) SetMatchingEventTypes(val *[]*string) {
 	if err := j.validateSetMatchingEventTypesParameters(val); err != nil {
 		panic(err)
 	}
@@ -372,7 +371,7 @@ func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputRe
 	)
 }
 
-func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -383,7 +382,7 @@ func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputRe
 	)
 }
 
-func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -407,16 +406,16 @@ func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputRe
 	return returns
 }
 
-func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputRe
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputRe
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -464,7 +463,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputRe
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -480,7 +479,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputRe
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -496,7 +495,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputRe
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputRe
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -528,7 +527,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputRe
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -544,7 +543,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputRe
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -573,7 +572,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputRe
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputRe
 	_jsii_.InvokeVoid(
 		s,
 		"putCloudWatchDestination",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -598,7 +597,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputRe
 	_jsii_.InvokeVoid(
 		s,
 		"putKinesisFirehoseDestination",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -609,7 +608,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputRe
 	_jsii_.InvokeVoid(
 		s,
 		"putPinpointDestination",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -620,7 +619,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputRe
 	_jsii_.InvokeVoid(
 		s,
 		"putSnsDestination",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -664,16 +663,16 @@ func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputRe
 	)
 }
 
-func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -692,4 +691,3 @@ func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputRe
 
 	return returns
 }
-

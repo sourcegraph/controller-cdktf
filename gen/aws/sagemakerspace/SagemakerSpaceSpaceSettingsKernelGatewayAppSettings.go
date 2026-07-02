@@ -1,6 +1,5 @@
 package sagemakerspace
 
-
 type SagemakerSpaceSpaceSettingsKernelGatewayAppSettings struct {
 	// default_resource_spec block.
 	//
@@ -9,8 +8,7 @@ type SagemakerSpaceSpaceSettingsKernelGatewayAppSettings struct {
 	// custom_image block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sagemaker_space#custom_image SagemakerSpace#custom_image}
-	CustomImage interface{} `field:"optional" json:"customImage" yaml:"customImage"`
+	CustomImage any `field:"optional" json:"customImage" yaml:"customImage"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sagemaker_space#lifecycle_config_arns SagemakerSpace#lifecycle_config_arns}.
 	LifecycleConfigArns *[]*string `field:"optional" json:"lifecycleConfigArns" yaml:"lifecycleConfigArns"`
 }
-

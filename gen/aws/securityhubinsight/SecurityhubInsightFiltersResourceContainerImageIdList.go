@@ -17,8 +17,8 @@ type SecurityhubInsightFiltersResourceContainerImageIdList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type SecurityhubInsightFiltersResourceContainerImageIdList interface {
 	Get(index *float64) SecurityhubInsightFiltersResourceContainerImageIdOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageIdList) Fqn() 
 	return returns
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageIdList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageIdList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageIdList) WrapsS
 	return returns
 }
 
-
 func NewSecurityhubInsightFiltersResourceContainerImageIdList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceContainerImageIdList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewSecurityhubInsightFiltersResourceContainerImageIdList(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewSecurityhubInsightFiltersResourceContainerImageIdList_Override(s Securit
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageIdList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageIdList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageIdList)SetInte
 	)
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageIdList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageIdList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageIdList)SetTerr
 	)
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageIdList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageIdList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageIdList)SetTerr
 	)
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageIdList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageIdList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageIdList) AllWit
 	_jsii_.Invoke(
 		s,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageIdList) Get(in
 	_jsii_.Invoke(
 		s,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageIdList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageIdList) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageIdList) ToStri
 
 	return returns
 }
-

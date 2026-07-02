@@ -19,7 +19,7 @@ func (g *jsiiProxy_GlobalacceleratorEndpointGroup) validateAddMoveTargetParamete
 	return nil
 }
 
-func (g *jsiiProxy_GlobalacceleratorEndpointGroup) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GlobalacceleratorEndpointGroup) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GlobalacceleratorEndpointGroup) validateMoveFromIdParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GlobalacceleratorEndpointGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GlobalacceleratorEndpointGroup) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (g *jsiiProxy_GlobalacceleratorEndpointGroup) validateOverrideLogicalIdPara
 	return nil
 }
 
-func (g *jsiiProxy_GlobalacceleratorEndpointGroup) validatePutEndpointConfigurationParameters(value interface{}) error {
+func (g *jsiiProxy_GlobalacceleratorEndpointGroup) validatePutEndpointConfigurationParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (g *jsiiProxy_GlobalacceleratorEndpointGroup) validatePutEndpointConfigurat
 	return nil
 }
 
-func (g *jsiiProxy_GlobalacceleratorEndpointGroup) validatePutPortOverrideParameters(value interface{}) error {
+func (g *jsiiProxy_GlobalacceleratorEndpointGroup) validatePutPortOverrideParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -293,7 +293,7 @@ func validateGlobalacceleratorEndpointGroup_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateGlobalacceleratorEndpointGroup_IsConstructParameters(x interface{}) error {
+func validateGlobalacceleratorEndpointGroup_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -301,7 +301,7 @@ func validateGlobalacceleratorEndpointGroup_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateGlobalacceleratorEndpointGroup_IsTerraformElementParameters(x interface{}) error {
+func validateGlobalacceleratorEndpointGroup_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -309,7 +309,7 @@ func validateGlobalacceleratorEndpointGroup_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func validateGlobalacceleratorEndpointGroup_IsTerraformResourceParameters(x interface{}) error {
+func validateGlobalacceleratorEndpointGroup_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -317,7 +317,7 @@ func validateGlobalacceleratorEndpointGroup_IsTerraformResourceParameters(x inte
 	return nil
 }
 
-func (j *jsiiProxy_GlobalacceleratorEndpointGroup) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GlobalacceleratorEndpointGroup) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -350,7 +350,7 @@ func (j *jsiiProxy_GlobalacceleratorEndpointGroup) validateSetConnectionParamete
 	return nil
 }
 
-func (j *jsiiProxy_GlobalacceleratorEndpointGroup) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GlobalacceleratorEndpointGroup) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -471,7 +471,7 @@ func (j *jsiiProxy_GlobalacceleratorEndpointGroup) validateSetListenerArnParamet
 	return nil
 }
 
-func (j *jsiiProxy_GlobalacceleratorEndpointGroup) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GlobalacceleratorEndpointGroup) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -551,4 +551,3 @@ func validateNewGlobalacceleratorEndpointGroupParameters(scope constructs.Constr
 
 	return nil
 }
-

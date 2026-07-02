@@ -117,7 +117,7 @@ func (j *jsiiProxy_WafSizeConstraintSetSizeConstraintsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_WafSizeConstraintSetSizeConstraintsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WafSizeConstraintSetSizeConstraintsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_WafSizeConstraintSetSizeConstraintsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_WafSizeConstraintSetSizeConstraintsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WafSizeConstraintSetSizeConstraintsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -257,4 +257,3 @@ func validateNewWafSizeConstraintSetSizeConstraintsOutputReferenceParameters(ter
 
 	return nil
 }
-

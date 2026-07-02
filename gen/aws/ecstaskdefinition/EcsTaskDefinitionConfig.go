@@ -6,9 +6,9 @@ import (
 
 type EcsTaskDefinitionConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type EcsTaskDefinitionConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_task_definition#container_definitions EcsTaskDefinition#container_definitions}.
 	ContainerDefinitions *string `field:"required" json:"containerDefinitions" yaml:"containerDefinitions"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_task_definition#family EcsTaskDefinition#family}.
@@ -39,7 +39,7 @@ type EcsTaskDefinitionConfig struct {
 	// inference_accelerator block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_task_definition#inference_accelerator EcsTaskDefinition#inference_accelerator}
-	InferenceAccelerator interface{} `field:"optional" json:"inferenceAccelerator" yaml:"inferenceAccelerator"`
+	InferenceAccelerator any `field:"optional" json:"inferenceAccelerator" yaml:"inferenceAccelerator"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_task_definition#ipc_mode EcsTaskDefinition#ipc_mode}.
 	IpcMode *string `field:"optional" json:"ipcMode" yaml:"ipcMode"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_task_definition#memory EcsTaskDefinition#memory}.
@@ -51,7 +51,7 @@ type EcsTaskDefinitionConfig struct {
 	// placement_constraints block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_task_definition#placement_constraints EcsTaskDefinition#placement_constraints}
-	PlacementConstraints interface{} `field:"optional" json:"placementConstraints" yaml:"placementConstraints"`
+	PlacementConstraints any `field:"optional" json:"placementConstraints" yaml:"placementConstraints"`
 	// proxy_configuration block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_task_definition#proxy_configuration EcsTaskDefinition#proxy_configuration}
@@ -63,7 +63,7 @@ type EcsTaskDefinitionConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_task_definition#runtime_platform EcsTaskDefinition#runtime_platform}
 	RuntimePlatform *EcsTaskDefinitionRuntimePlatform `field:"optional" json:"runtimePlatform" yaml:"runtimePlatform"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_task_definition#skip_destroy EcsTaskDefinition#skip_destroy}.
-	SkipDestroy interface{} `field:"optional" json:"skipDestroy" yaml:"skipDestroy"`
+	SkipDestroy any `field:"optional" json:"skipDestroy" yaml:"skipDestroy"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_task_definition#tags EcsTaskDefinition#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_task_definition#tags_all EcsTaskDefinition#tags_all}.
@@ -73,6 +73,5 @@ type EcsTaskDefinitionConfig struct {
 	// volume block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_task_definition#volume EcsTaskDefinition#volume}
-	Volume interface{} `field:"optional" json:"volume" yaml:"volume"`
+	Volume any `field:"optional" json:"volume" yaml:"volume"`
 }
-

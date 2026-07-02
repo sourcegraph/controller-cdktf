@@ -112,7 +112,7 @@ func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) validatePutTargetTrackingConfigurationParameters(value interface{}) error {
+func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) validatePutTargetTrackingConfigurationParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -216,7 +216,7 @@ func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) validateSetDisableDynamicScalingParameters(val interface{}) error {
+func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) validateSetDisableDynamicScalingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -375,4 +375,3 @@ func validateNewAutoscalingplansScalingPlanScalingInstructionOutputReferencePara
 
 	return nil
 }
-

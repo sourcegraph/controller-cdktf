@@ -90,7 +90,7 @@ func (s *jsiiProxy_SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsOutputRefe
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsOutputReference) validatePutCustomImageParameters(value interface{}) error {
+func (s *jsiiProxy_SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsOutputReference) validatePutCustomImageParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (s *jsiiProxy_SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -248,4 +248,3 @@ func validateNewSagemakerSpaceSpaceSettingsKernelGatewayAppSettingsOutputReferen
 
 	return nil
 }
-

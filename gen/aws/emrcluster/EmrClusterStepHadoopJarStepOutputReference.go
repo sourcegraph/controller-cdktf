@@ -15,9 +15,9 @@ type EmrClusterStepHadoopJarStepOutputReference interface {
 	ArgsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type EmrClusterStepHadoopJarStepOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Jar() *string
 	SetJar(val *string)
 	JarInput() *string
@@ -52,7 +52,7 @@ type EmrClusterStepHadoopJarStepOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type EmrClusterStepHadoopJarStepOutputReference interface {
 	ResetProperties()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -112,8 +112,8 @@ func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) ArgsInput() *[]*s
 	return returns
 }
 
-func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) TerraformResource
 	return returns
 }
 
-
 func NewEmrClusterStepHadoopJarStepOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) EmrClusterStepHadoopJarStepOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewEmrClusterStepHadoopJarStepOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.emrCluster.EmrClusterStepHadoopJarStepOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewEmrClusterStepHadoopJarStepOutputReference_Override(e EmrClusterStepHado
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.emrCluster.EmrClusterStepHadoopJarStepOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference)SetArgs(val *[]*string) {
+func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) SetArgs(val *[]*string) {
 	if err := j.validateSetArgsParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference)SetArgs(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference)SetJar(val *string) {
+func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) SetJar(val *string) {
 	if err := j.validateSetJarParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference)SetJar(val *string
 	)
 }
 
-func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference)SetMainClass(val *string) {
+func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) SetMainClass(val *string) {
 	if err := j.validateSetMainClassParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference)SetMainClass(val *
 	)
 }
 
-func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference)SetProperties(val *map[string]*string) {
+func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) SetProperties(val *map[string]*string) {
 	if err := j.validateSetPropertiesParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference)SetProperties(val 
 	)
 }
 
-func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,16 +381,16 @@ func (e *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (e *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (e *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (e *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (e *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (e *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (e *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (e *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (e *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (e *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (e *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -587,16 +586,16 @@ func (e *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) ResetProperties()
 	)
 }
 
-func (e *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (e *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) ToString() *strin
 
 	return returns
 }
-

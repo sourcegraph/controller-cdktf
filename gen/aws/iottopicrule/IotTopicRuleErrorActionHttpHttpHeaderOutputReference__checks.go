@@ -98,7 +98,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionHttpHttpHeaderOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionHttpHttpHeaderOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRuleErrorActionHttpHttpHeaderOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_IotTopicRuleErrorActionHttpHttpHeaderOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionHttpHttpHeaderOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRuleErrorActionHttpHttpHeaderOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewIotTopicRuleErrorActionHttpHttpHeaderOutputReferenceParameters(t
 
 	return nil
 }
-

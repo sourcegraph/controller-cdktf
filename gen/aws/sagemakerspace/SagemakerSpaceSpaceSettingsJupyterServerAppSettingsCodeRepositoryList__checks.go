@@ -34,7 +34,7 @@ func (s *jsiiProxy_SagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeReposi
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepositoryList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepositoryList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepositor
 
 	return nil
 }
-

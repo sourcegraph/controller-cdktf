@@ -98,7 +98,7 @@ func (i *jsiiProxy_IotTopicRuleDestinationVpcConfigurationOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleDestinationVpcConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRuleDestinationVpcConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewIotTopicRuleDestinationVpcConfigurationOutputReferenceParameters
 
 	return nil
 }
-

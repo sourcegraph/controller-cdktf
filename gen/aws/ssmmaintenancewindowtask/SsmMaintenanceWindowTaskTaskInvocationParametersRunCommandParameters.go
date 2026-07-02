@@ -1,6 +1,5 @@
 package ssmmaintenancewindowtask
 
-
 type SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameters struct {
 	// cloudwatch_config block.
 	//
@@ -25,10 +24,9 @@ type SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameters struct
 	// parameter block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ssm_maintenance_window_task#parameter SsmMaintenanceWindowTask#parameter}
-	Parameter interface{} `field:"optional" json:"parameter" yaml:"parameter"`
+	Parameter any `field:"optional" json:"parameter" yaml:"parameter"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ssm_maintenance_window_task#service_role_arn SsmMaintenanceWindowTask#service_role_arn}.
 	ServiceRoleArn *string `field:"optional" json:"serviceRoleArn" yaml:"serviceRoleArn"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ssm_maintenance_window_task#timeout_seconds SsmMaintenanceWindowTask#timeout_seconds}.
 	TimeoutSeconds *float64 `field:"optional" json:"timeoutSeconds" yaml:"timeoutSeconds"`
 }
-

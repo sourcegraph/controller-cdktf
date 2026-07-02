@@ -15,9 +15,9 @@ type EbsSnapshotImportClientDataOutputReference interface {
 	CommentInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -52,7 +52,7 @@ type EbsSnapshotImportClientDataOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type EbsSnapshotImportClientDataOutputReference interface {
 	ResetUploadStart()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -112,8 +112,8 @@ func (j *jsiiProxy_EbsSnapshotImportClientDataOutputReference) CommentInput() *s
 	return returns
 }
 
-func (j *jsiiProxy_EbsSnapshotImportClientDataOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EbsSnapshotImportClientDataOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_EbsSnapshotImportClientDataOutputReference) UploadStartInput(
 	return returns
 }
 
-
 func NewEbsSnapshotImportClientDataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EbsSnapshotImportClientDataOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewEbsSnapshotImportClientDataOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImportClientDataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewEbsSnapshotImportClientDataOutputReference_Override(e EbsSnapshotImportC
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImportClientDataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EbsSnapshotImportClientDataOutputReference)SetComment(val *string) {
+func (j *jsiiProxy_EbsSnapshotImportClientDataOutputReference) SetComment(val *string) {
 	if err := j.validateSetCommentParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_EbsSnapshotImportClientDataOutputReference)SetComment(val *st
 	)
 }
 
-func (j *jsiiProxy_EbsSnapshotImportClientDataOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EbsSnapshotImportClientDataOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_EbsSnapshotImportClientDataOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_EbsSnapshotImportClientDataOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EbsSnapshotImportClientDataOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_EbsSnapshotImportClientDataOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_EbsSnapshotImportClientDataOutputReference)SetInternalValue(val *EbsSnapshotImportClientData) {
+func (j *jsiiProxy_EbsSnapshotImportClientDataOutputReference) SetInternalValue(val *EbsSnapshotImportClientData) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_EbsSnapshotImportClientDataOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_EbsSnapshotImportClientDataOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EbsSnapshotImportClientDataOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_EbsSnapshotImportClientDataOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_EbsSnapshotImportClientDataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EbsSnapshotImportClientDataOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_EbsSnapshotImportClientDataOutputReference)SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_EbsSnapshotImportClientDataOutputReference)SetUploadEnd(val *string) {
+func (j *jsiiProxy_EbsSnapshotImportClientDataOutputReference) SetUploadEnd(val *string) {
 	if err := j.validateSetUploadEndParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_EbsSnapshotImportClientDataOutputReference)SetUploadEnd(val *
 	)
 }
 
-func (j *jsiiProxy_EbsSnapshotImportClientDataOutputReference)SetUploadSize(val *float64) {
+func (j *jsiiProxy_EbsSnapshotImportClientDataOutputReference) SetUploadSize(val *float64) {
 	if err := j.validateSetUploadSizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_EbsSnapshotImportClientDataOutputReference)SetUploadSize(val 
 	)
 }
 
-func (j *jsiiProxy_EbsSnapshotImportClientDataOutputReference)SetUploadStart(val *string) {
+func (j *jsiiProxy_EbsSnapshotImportClientDataOutputReference) SetUploadStart(val *string) {
 	if err := j.validateSetUploadStartParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,16 +381,16 @@ func (e *jsiiProxy_EbsSnapshotImportClientDataOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (e *jsiiProxy_EbsSnapshotImportClientDataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EbsSnapshotImportClientDataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (e *jsiiProxy_EbsSnapshotImportClientDataOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (e *jsiiProxy_EbsSnapshotImportClientDataOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (e *jsiiProxy_EbsSnapshotImportClientDataOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (e *jsiiProxy_EbsSnapshotImportClientDataOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (e *jsiiProxy_EbsSnapshotImportClientDataOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (e *jsiiProxy_EbsSnapshotImportClientDataOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (e *jsiiProxy_EbsSnapshotImportClientDataOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (e *jsiiProxy_EbsSnapshotImportClientDataOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (e *jsiiProxy_EbsSnapshotImportClientDataOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -587,16 +586,16 @@ func (e *jsiiProxy_EbsSnapshotImportClientDataOutputReference) ResetUploadStart(
 	)
 }
 
-func (e *jsiiProxy_EbsSnapshotImportClientDataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EbsSnapshotImportClientDataOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (e *jsiiProxy_EbsSnapshotImportClientDataOutputReference) ToString() *strin
 
 	return returns
 }
-

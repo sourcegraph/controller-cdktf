@@ -12,9 +12,9 @@ type EfsAccessPointRootDirectoryOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -45,7 +45,7 @@ type EfsAccessPointRootDirectoryOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type EfsAccessPointRootDirectoryOutputReference interface {
 	ResetPath()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_EfsAccessPointRootDirectoryOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) TerraformResource
 	return returns
 }
 
-
 func NewEfsAccessPointRootDirectoryOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EfsAccessPointRootDirectoryOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewEfsAccessPointRootDirectoryOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.efsAccessPoint.EfsAccessPointRootDirectoryOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewEfsAccessPointRootDirectoryOutputReference_Override(e EfsAccessPointRoot
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.efsAccessPoint.EfsAccessPointRootDirectoryOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EfsAccessPointRootDirectoryOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_EfsAccessPointRootDirectoryOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_EfsAccessPointRootDirectoryOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_EfsAccessPointRootDirectoryOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_EfsAccessPointRootDirectoryOutputReference)SetInternalValue(val *EfsAccessPointRootDirectory) {
+func (j *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) SetInternalValue(val *EfsAccessPointRootDirectory) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_EfsAccessPointRootDirectoryOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_EfsAccessPointRootDirectoryOutputReference)SetPath(val *string) {
+func (j *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) SetPath(val *string) {
 	if err := j.validateSetPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_EfsAccessPointRootDirectoryOutputReference)SetPath(val *strin
 	)
 }
 
-func (j *jsiiProxy_EfsAccessPointRootDirectoryOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_EfsAccessPointRootDirectoryOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_EfsAccessPointRootDirectoryOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,16 +300,16 @@ func (e *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (e *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -326,7 +325,7 @@ func (e *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -342,7 +341,7 @@ func (e *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -358,7 +357,7 @@ func (e *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (e *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (e *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (e *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (e *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (e *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (e *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (e *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) PutCreationInfo(v
 	_jsii_.InvokeVoid(
 		e,
 		"putCreationInfo",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (e *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) ResetPath() {
 	)
 }
 
-func (e *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (e *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) ToString() *strin
 
 	return returns
 }
-

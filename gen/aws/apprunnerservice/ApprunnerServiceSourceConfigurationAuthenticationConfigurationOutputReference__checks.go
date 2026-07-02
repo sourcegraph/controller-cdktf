@@ -106,7 +106,7 @@ func (j *jsiiProxy_ApprunnerServiceSourceConfigurationAuthenticationConfiguratio
 	return nil
 }
 
-func (j *jsiiProxy_ApprunnerServiceSourceConfigurationAuthenticationConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApprunnerServiceSourceConfigurationAuthenticationConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewApprunnerServiceSourceConfigurationAuthenticationConfigurationOu
 
 	return nil
 }
-

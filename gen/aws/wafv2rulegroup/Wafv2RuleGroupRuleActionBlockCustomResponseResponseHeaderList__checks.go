@@ -34,7 +34,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderList
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewWafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderListPar
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (a *jsiiProxy_AutoscalingGroupMixedInstancesPolicyInstancesDistributionOutp
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingGroupMixedInstancesPolicyInstancesDistributionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AutoscalingGroupMixedInstancesPolicyInstancesDistributionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -246,4 +246,3 @@ func validateNewAutoscalingGroupMixedInstancesPolicyInstancesDistributionOutputR
 
 	return nil
 }
-

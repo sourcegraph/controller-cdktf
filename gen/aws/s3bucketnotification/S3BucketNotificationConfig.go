@@ -6,9 +6,9 @@ import (
 
 type S3BucketNotificationConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,11 +18,11 @@ type S3BucketNotificationConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_bucket_notification#bucket S3BucketNotification#bucket}.
 	Bucket *string `field:"required" json:"bucket" yaml:"bucket"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_bucket_notification#eventbridge S3BucketNotification#eventbridge}.
-	Eventbridge interface{} `field:"optional" json:"eventbridge" yaml:"eventbridge"`
+	Eventbridge any `field:"optional" json:"eventbridge" yaml:"eventbridge"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_bucket_notification#id S3BucketNotification#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -31,14 +31,13 @@ type S3BucketNotificationConfig struct {
 	// lambda_function block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_bucket_notification#lambda_function S3BucketNotification#lambda_function}
-	LambdaFunction interface{} `field:"optional" json:"lambdaFunction" yaml:"lambdaFunction"`
+	LambdaFunction any `field:"optional" json:"lambdaFunction" yaml:"lambdaFunction"`
 	// queue block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_bucket_notification#queue S3BucketNotification#queue}
-	Queue interface{} `field:"optional" json:"queue" yaml:"queue"`
+	Queue any `field:"optional" json:"queue" yaml:"queue"`
 	// topic block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_bucket_notification#topic S3BucketNotification#topic}
-	Topic interface{} `field:"optional" json:"topic" yaml:"topic"`
+	Topic any `field:"optional" json:"topic" yaml:"topic"`
 }
-

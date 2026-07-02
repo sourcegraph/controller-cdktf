@@ -19,7 +19,7 @@ func (v *jsiiProxy_VpcEndpointConnectionNotification) validateAddMoveTargetParam
 	return nil
 }
 
-func (v *jsiiProxy_VpcEndpointConnectionNotification) validateAddOverrideParameters(path *string, value interface{}) error {
+func (v *jsiiProxy_VpcEndpointConnectionNotification) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (v *jsiiProxy_VpcEndpointConnectionNotification) validateMoveFromIdParamete
 	return nil
 }
 
-func (v *jsiiProxy_VpcEndpointConnectionNotification) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (v *jsiiProxy_VpcEndpointConnectionNotification) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateVpcEndpointConnectionNotification_GenerateConfigForImportParameters
 	return nil
 }
 
-func validateVpcEndpointConnectionNotification_IsConstructParameters(x interface{}) error {
+func validateVpcEndpointConnectionNotification_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateVpcEndpointConnectionNotification_IsConstructParameters(x interface
 	return nil
 }
 
-func validateVpcEndpointConnectionNotification_IsTerraformElementParameters(x interface{}) error {
+func validateVpcEndpointConnectionNotification_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateVpcEndpointConnectionNotification_IsTerraformElementParameters(x in
 	return nil
 }
 
-func validateVpcEndpointConnectionNotification_IsTerraformResourceParameters(x interface{}) error {
+func validateVpcEndpointConnectionNotification_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateVpcEndpointConnectionNotification_IsTerraformResourceParameters(x i
 	return nil
 }
 
-func (j *jsiiProxy_VpcEndpointConnectionNotification) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_VpcEndpointConnectionNotification) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -293,7 +293,7 @@ func (j *jsiiProxy_VpcEndpointConnectionNotification) validateSetConnectionNotif
 	return nil
 }
 
-func (j *jsiiProxy_VpcEndpointConnectionNotification) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_VpcEndpointConnectionNotification) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_VpcEndpointConnectionNotification) validateSetLifecycleParame
 	return nil
 }
 
-func (j *jsiiProxy_VpcEndpointConnectionNotification) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_VpcEndpointConnectionNotification) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -446,4 +446,3 @@ func validateNewVpcEndpointConnectionNotificationParameters(scope constructs.Con
 
 	return nil
 }
-

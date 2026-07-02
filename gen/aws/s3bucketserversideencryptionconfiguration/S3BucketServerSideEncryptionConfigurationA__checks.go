@@ -19,7 +19,7 @@ func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) validateAddMoveTa
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) validateMoveFromI
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) validateOverrideL
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) validatePutRuleParameters(value interface{}) error {
+func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) validatePutRuleParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateS3BucketServerSideEncryptionConfigurationA_GenerateConfigForImportP
 	return nil
 }
 
-func validateS3BucketServerSideEncryptionConfigurationA_IsConstructParameters(x interface{}) error {
+func validateS3BucketServerSideEncryptionConfigurationA_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateS3BucketServerSideEncryptionConfigurationA_IsConstructParameters(x 
 	return nil
 }
 
-func validateS3BucketServerSideEncryptionConfigurationA_IsTerraformElementParameters(x interface{}) error {
+func validateS3BucketServerSideEncryptionConfigurationA_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateS3BucketServerSideEncryptionConfigurationA_IsTerraformElementParame
 	return nil
 }
 
-func validateS3BucketServerSideEncryptionConfigurationA_IsTerraformResourceParameters(x interface{}) error {
+func validateS3BucketServerSideEncryptionConfigurationA_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) validateSetBucket
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -316,7 +316,7 @@ func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) validateSetConnec
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -397,7 +397,7 @@ func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) validateSetLifecy
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -461,4 +461,3 @@ func validateNewS3BucketServerSideEncryptionConfigurationAParameters(scope const
 
 	return nil
 }
-

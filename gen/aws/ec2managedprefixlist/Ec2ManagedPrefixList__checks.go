@@ -19,7 +19,7 @@ func (e *jsiiProxy_Ec2ManagedPrefixList) validateAddMoveTargetParameters(moveTar
 	return nil
 }
 
-func (e *jsiiProxy_Ec2ManagedPrefixList) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_Ec2ManagedPrefixList) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (e *jsiiProxy_Ec2ManagedPrefixList) validateMoveFromIdParameters(id *string
 	return nil
 }
 
-func (e *jsiiProxy_Ec2ManagedPrefixList) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (e *jsiiProxy_Ec2ManagedPrefixList) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (e *jsiiProxy_Ec2ManagedPrefixList) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
-func (e *jsiiProxy_Ec2ManagedPrefixList) validatePutEntryParameters(value interface{}) error {
+func (e *jsiiProxy_Ec2ManagedPrefixList) validatePutEntryParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateEc2ManagedPrefixList_GenerateConfigForImportParameters(scope constr
 	return nil
 }
 
-func validateEc2ManagedPrefixList_IsConstructParameters(x interface{}) error {
+func validateEc2ManagedPrefixList_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateEc2ManagedPrefixList_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateEc2ManagedPrefixList_IsTerraformElementParameters(x interface{}) error {
+func validateEc2ManagedPrefixList_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateEc2ManagedPrefixList_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
-func validateEc2ManagedPrefixList_IsTerraformResourceParameters(x interface{}) error {
+func validateEc2ManagedPrefixList_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func (j *jsiiProxy_Ec2ManagedPrefixList) validateSetAddressFamilyParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_Ec2ManagedPrefixList) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2ManagedPrefixList) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -316,7 +316,7 @@ func (j *jsiiProxy_Ec2ManagedPrefixList) validateSetConnectionParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_Ec2ManagedPrefixList) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2ManagedPrefixList) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -405,7 +405,7 @@ func (j *jsiiProxy_Ec2ManagedPrefixList) validateSetNameParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_Ec2ManagedPrefixList) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Ec2ManagedPrefixList) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -485,4 +485,3 @@ func validateNewEc2ManagedPrefixListParameters(scope constructs.Construct, id *s
 
 	return nil
 }
-

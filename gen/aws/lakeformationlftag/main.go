@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTag",
-		reflect.TypeOf((*LakeformationLfTag)(nil)).Elem(),
+		reflect.TypeFor[LakeformationLfTag](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,7 +63,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LakeformationLfTag{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -71,6 +71,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTagConfig",
-		reflect.TypeOf((*LakeformationLfTagConfig)(nil)).Elem(),
+		reflect.TypeFor[LakeformationLfTagConfig](),
 	)
 }

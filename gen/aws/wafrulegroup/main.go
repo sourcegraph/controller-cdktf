@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafRuleGroup.WafRuleGroup",
-		reflect.TypeOf((*WafRuleGroup)(nil)).Elem(),
+		reflect.TypeFor[WafRuleGroup](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activatedRule", GoGetter: "ActivatedRule"},
 			_jsii_.MemberProperty{JsiiProperty: "activatedRuleInput", GoGetter: "ActivatedRuleInput"},
@@ -71,7 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WafRuleGroup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -79,15 +79,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafRuleGroup.WafRuleGroupActivatedRule",
-		reflect.TypeOf((*WafRuleGroupActivatedRule)(nil)).Elem(),
+		reflect.TypeFor[WafRuleGroupActivatedRule](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafRuleGroup.WafRuleGroupActivatedRuleAction",
-		reflect.TypeOf((*WafRuleGroupActivatedRuleAction)(nil)).Elem(),
+		reflect.TypeFor[WafRuleGroupActivatedRuleAction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafRuleGroup.WafRuleGroupActivatedRuleActionOutputReference",
-		reflect.TypeOf((*WafRuleGroupActivatedRuleActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WafRuleGroupActivatedRuleActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -113,7 +113,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WafRuleGroupActivatedRuleActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -121,7 +121,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafRuleGroup.WafRuleGroupActivatedRuleList",
-		reflect.TypeOf((*WafRuleGroupActivatedRuleList)(nil)).Elem(),
+		reflect.TypeFor[WafRuleGroupActivatedRuleList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -135,7 +135,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WafRuleGroupActivatedRuleList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -143,7 +143,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafRuleGroup.WafRuleGroupActivatedRuleOutputReference",
-		reflect.TypeOf((*WafRuleGroupActivatedRuleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WafRuleGroupActivatedRuleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
@@ -177,7 +177,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WafRuleGroupActivatedRuleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -185,6 +185,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafRuleGroup.WafRuleGroupConfig",
-		reflect.TypeOf((*WafRuleGroupConfig)(nil)).Elem(),
+		reflect.TypeFor[WafRuleGroupConfig](),
 	)
 }

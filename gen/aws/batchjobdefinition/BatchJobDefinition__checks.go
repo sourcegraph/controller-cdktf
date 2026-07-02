@@ -19,7 +19,7 @@ func (b *jsiiProxy_BatchJobDefinition) validateAddMoveTargetParameters(moveTarge
 	return nil
 }
 
-func (b *jsiiProxy_BatchJobDefinition) validateAddOverrideParameters(path *string, value interface{}) error {
+func (b *jsiiProxy_BatchJobDefinition) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (b *jsiiProxy_BatchJobDefinition) validateMoveFromIdParameters(id *string) 
 	return nil
 }
 
-func (b *jsiiProxy_BatchJobDefinition) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (b *jsiiProxy_BatchJobDefinition) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateBatchJobDefinition_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateBatchJobDefinition_IsConstructParameters(x interface{}) error {
+func validateBatchJobDefinition_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateBatchJobDefinition_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateBatchJobDefinition_IsTerraformElementParameters(x interface{}) error {
+func validateBatchJobDefinition_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateBatchJobDefinition_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func validateBatchJobDefinition_IsTerraformResourceParameters(x interface{}) error {
+func validateBatchJobDefinition_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateBatchJobDefinition_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_BatchJobDefinition) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_BatchJobDefinition) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -307,7 +307,7 @@ func (j *jsiiProxy_BatchJobDefinition) validateSetContainerPropertiesParameters(
 	return nil
 }
 
-func (j *jsiiProxy_BatchJobDefinition) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_BatchJobDefinition) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -404,7 +404,7 @@ func (j *jsiiProxy_BatchJobDefinition) validateSetPlatformCapabilitiesParameters
 	return nil
 }
 
-func (j *jsiiProxy_BatchJobDefinition) validateSetPropagateTagsParameters(val interface{}) error {
+func (j *jsiiProxy_BatchJobDefinition) validateSetPropagateTagsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -424,7 +424,7 @@ func (j *jsiiProxy_BatchJobDefinition) validateSetPropagateTagsParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_BatchJobDefinition) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_BatchJobDefinition) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -512,4 +512,3 @@ func validateNewBatchJobDefinitionParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

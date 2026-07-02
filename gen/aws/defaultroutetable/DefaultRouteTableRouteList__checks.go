@@ -34,7 +34,7 @@ func (d *jsiiProxy_DefaultRouteTableRouteList) validateResolveParameters(_contex
 	return nil
 }
 
-func (j *jsiiProxy_DefaultRouteTableRouteList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DefaultRouteTableRouteList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDefaultRouteTableRouteListParameters(terraformResource cdktf.IIn
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.networkmanagerSiteToSiteVpnAttachment.NetworkmanagerSiteToSiteVpnAttachment",
-		reflect.TypeOf((*NetworkmanagerSiteToSiteVpnAttachment)(nil)).Elem(),
+		reflect.TypeFor[NetworkmanagerSiteToSiteVpnAttachment](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,7 +79,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpnConnectionArn", GoGetter: "VpnConnectionArn"},
 			_jsii_.MemberProperty{JsiiProperty: "vpnConnectionArnInput", GoGetter: "VpnConnectionArnInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkmanagerSiteToSiteVpnAttachment{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -87,15 +87,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.networkmanagerSiteToSiteVpnAttachment.NetworkmanagerSiteToSiteVpnAttachmentConfig",
-		reflect.TypeOf((*NetworkmanagerSiteToSiteVpnAttachmentConfig)(nil)).Elem(),
+		reflect.TypeFor[NetworkmanagerSiteToSiteVpnAttachmentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.networkmanagerSiteToSiteVpnAttachment.NetworkmanagerSiteToSiteVpnAttachmentTimeouts",
-		reflect.TypeOf((*NetworkmanagerSiteToSiteVpnAttachmentTimeouts)(nil)).Elem(),
+		reflect.TypeFor[NetworkmanagerSiteToSiteVpnAttachmentTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.networkmanagerSiteToSiteVpnAttachment.NetworkmanagerSiteToSiteVpnAttachmentTimeoutsOutputReference",
-		reflect.TypeOf((*NetworkmanagerSiteToSiteVpnAttachmentTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkmanagerSiteToSiteVpnAttachmentTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -128,7 +128,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkmanagerSiteToSiteVpnAttachmentTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

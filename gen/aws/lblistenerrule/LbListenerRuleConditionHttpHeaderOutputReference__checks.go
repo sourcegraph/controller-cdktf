@@ -98,7 +98,7 @@ func (l *jsiiProxy_LbListenerRuleConditionHttpHeaderOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_LbListenerRuleConditionHttpHeaderOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LbListenerRuleConditionHttpHeaderOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewLbListenerRuleConditionHttpHeaderOutputReferenceParameters(terra
 
 	return nil
 }
-

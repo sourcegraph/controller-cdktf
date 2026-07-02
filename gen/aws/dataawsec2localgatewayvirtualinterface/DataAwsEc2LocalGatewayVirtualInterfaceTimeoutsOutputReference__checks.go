@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceTimeoutsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceTimeoutsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataAwsEc2LocalGatewayVirtualInterfaceTimeoutsOutputReferencePar
 
 	return nil
 }
-

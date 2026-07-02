@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsIamUsers.DataAwsIamUsers",
-		reflect.TypeOf((*DataAwsIamUsers)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIamUsers](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arns", GoGetter: "Arns"},
@@ -56,7 +56,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsIamUsers{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -64,6 +64,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsIamUsers.DataAwsIamUsersConfig",
-		reflect.TypeOf((*DataAwsIamUsersConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIamUsersConfig](),
 	)
 }

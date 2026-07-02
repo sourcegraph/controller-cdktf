@@ -34,7 +34,7 @@ func (e *jsiiProxy_EcsServiceServiceConnectConfigurationServiceClientAliasList) 
 	return nil
 }
 
-func (j *jsiiProxy_EcsServiceServiceConnectConfigurationServiceClientAliasList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EcsServiceServiceConnectConfigurationServiceClientAliasList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEcsServiceServiceConnectConfigurationServiceClientAliasListParam
 
 	return nil
 }
-

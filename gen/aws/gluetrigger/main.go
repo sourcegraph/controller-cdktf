@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueTrigger.GlueTrigger",
-		reflect.TypeOf((*GlueTrigger)(nil)).Elem(),
+		reflect.TypeFor[GlueTrigger](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actions", GoGetter: "Actions"},
 			_jsii_.MemberProperty{JsiiProperty: "actionsInput", GoGetter: "ActionsInput"},
@@ -98,7 +98,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workflowName", GoGetter: "WorkflowName"},
 			_jsii_.MemberProperty{JsiiProperty: "workflowNameInput", GoGetter: "WorkflowNameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueTrigger{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -106,11 +106,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueTrigger.GlueTriggerActions",
-		reflect.TypeOf((*GlueTriggerActions)(nil)).Elem(),
+		reflect.TypeFor[GlueTriggerActions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueTrigger.GlueTriggerActionsList",
-		reflect.TypeOf((*GlueTriggerActionsList)(nil)).Elem(),
+		reflect.TypeFor[GlueTriggerActionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -124,7 +124,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueTriggerActionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -132,11 +132,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueTrigger.GlueTriggerActionsNotificationProperty",
-		reflect.TypeOf((*GlueTriggerActionsNotificationProperty)(nil)).Elem(),
+		reflect.TypeFor[GlueTriggerActionsNotificationProperty](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueTrigger.GlueTriggerActionsNotificationPropertyOutputReference",
-		reflect.TypeOf((*GlueTriggerActionsNotificationPropertyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlueTriggerActionsNotificationPropertyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -163,7 +163,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueTriggerActionsNotificationPropertyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -171,7 +171,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueTrigger.GlueTriggerActionsOutputReference",
-		reflect.TypeOf((*GlueTriggerActionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlueTriggerActionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arguments", GoGetter: "Arguments"},
 			_jsii_.MemberProperty{JsiiProperty: "argumentsInput", GoGetter: "ArgumentsInput"},
@@ -214,7 +214,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeoutInput", GoGetter: "TimeoutInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueTriggerActionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -222,15 +222,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueTrigger.GlueTriggerConfig",
-		reflect.TypeOf((*GlueTriggerConfig)(nil)).Elem(),
+		reflect.TypeFor[GlueTriggerConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueTrigger.GlueTriggerEventBatchingCondition",
-		reflect.TypeOf((*GlueTriggerEventBatchingCondition)(nil)).Elem(),
+		reflect.TypeFor[GlueTriggerEventBatchingCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueTrigger.GlueTriggerEventBatchingConditionList",
-		reflect.TypeOf((*GlueTriggerEventBatchingConditionList)(nil)).Elem(),
+		reflect.TypeFor[GlueTriggerEventBatchingConditionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -244,7 +244,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueTriggerEventBatchingConditionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -252,7 +252,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueTrigger.GlueTriggerEventBatchingConditionOutputReference",
-		reflect.TypeOf((*GlueTriggerEventBatchingConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlueTriggerEventBatchingConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "batchSize", GoGetter: "BatchSize"},
 			_jsii_.MemberProperty{JsiiProperty: "batchSizeInput", GoGetter: "BatchSizeInput"},
@@ -281,7 +281,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueTriggerEventBatchingConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -289,15 +289,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueTrigger.GlueTriggerPredicate",
-		reflect.TypeOf((*GlueTriggerPredicate)(nil)).Elem(),
+		reflect.TypeFor[GlueTriggerPredicate](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueTrigger.GlueTriggerPredicateConditions",
-		reflect.TypeOf((*GlueTriggerPredicateConditions)(nil)).Elem(),
+		reflect.TypeFor[GlueTriggerPredicateConditions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueTrigger.GlueTriggerPredicateConditionsList",
-		reflect.TypeOf((*GlueTriggerPredicateConditionsList)(nil)).Elem(),
+		reflect.TypeFor[GlueTriggerPredicateConditionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -311,7 +311,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueTriggerPredicateConditionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -319,7 +319,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueTrigger.GlueTriggerPredicateConditionsOutputReference",
-		reflect.TypeOf((*GlueTriggerPredicateConditionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlueTriggerPredicateConditionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -358,7 +358,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueTriggerPredicateConditionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -366,7 +366,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueTrigger.GlueTriggerPredicateOutputReference",
-		reflect.TypeOf((*GlueTriggerPredicateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlueTriggerPredicateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -396,7 +396,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueTriggerPredicateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -404,11 +404,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueTrigger.GlueTriggerTimeouts",
-		reflect.TypeOf((*GlueTriggerTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GlueTriggerTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueTrigger.GlueTriggerTimeoutsOutputReference",
-		reflect.TypeOf((*GlueTriggerTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlueTriggerTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -438,7 +438,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueTriggerTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

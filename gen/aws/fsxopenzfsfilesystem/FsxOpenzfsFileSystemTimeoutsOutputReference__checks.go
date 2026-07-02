@@ -98,7 +98,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystemTimeoutsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystemTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FsxOpenzfsFileSystemTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystemTimeoutsOutputReference) validateSetDelet
 	return nil
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystemTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FsxOpenzfsFileSystemTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewFsxOpenzfsFileSystemTimeoutsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

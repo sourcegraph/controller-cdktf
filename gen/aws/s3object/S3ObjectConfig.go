@@ -6,9 +6,9 @@ import (
 
 type S3ObjectConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type S3ObjectConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_object#bucket S3Object#bucket}.
 	Bucket *string `field:"required" json:"bucket" yaml:"bucket"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_object#key S3Object#key}.
@@ -26,7 +26,7 @@ type S3ObjectConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_object#acl S3Object#acl}.
 	Acl *string `field:"optional" json:"acl" yaml:"acl"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_object#bucket_key_enabled S3Object#bucket_key_enabled}.
-	BucketKeyEnabled interface{} `field:"optional" json:"bucketKeyEnabled" yaml:"bucketKeyEnabled"`
+	BucketKeyEnabled any `field:"optional" json:"bucketKeyEnabled" yaml:"bucketKeyEnabled"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_object#cache_control S3Object#cache_control}.
 	CacheControl *string `field:"optional" json:"cacheControl" yaml:"cacheControl"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_object#content S3Object#content}.
@@ -44,7 +44,7 @@ type S3ObjectConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_object#etag S3Object#etag}.
 	Etag *string `field:"optional" json:"etag" yaml:"etag"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_object#force_destroy S3Object#force_destroy}.
-	ForceDestroy interface{} `field:"optional" json:"forceDestroy" yaml:"forceDestroy"`
+	ForceDestroy any `field:"optional" json:"forceDestroy" yaml:"forceDestroy"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_object#id S3Object#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -75,4 +75,3 @@ type S3ObjectConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_object#website_redirect S3Object#website_redirect}.
 	WebsiteRedirect *string `field:"optional" json:"websiteRedirect" yaml:"websiteRedirect"`
 }
-

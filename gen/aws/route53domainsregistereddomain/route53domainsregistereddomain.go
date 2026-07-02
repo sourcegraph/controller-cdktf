@@ -16,24 +16,24 @@ type Route53DomainsRegisteredDomain interface {
 	AbuseContactPhone() *string
 	AdminContact() Route53DomainsRegisteredDomainAdminContactOutputReference
 	AdminContactInput() *Route53DomainsRegisteredDomainAdminContact
-	AdminPrivacy() interface{}
-	SetAdminPrivacy(val interface{})
-	AdminPrivacyInput() interface{}
-	AutoRenew() interface{}
-	SetAutoRenew(val interface{})
-	AutoRenewInput() interface{}
+	AdminPrivacy() any
+	SetAdminPrivacy(val any)
+	AdminPrivacyInput() any
+	AutoRenew() any
+	SetAutoRenew(val any)
+	AutoRenewInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationDate() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -59,7 +59,7 @@ type Route53DomainsRegisteredDomain interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	NameServer() Route53DomainsRegisteredDomainNameServerList
-	NameServerInput() interface{}
+	NameServerInput() any
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -67,16 +67,16 @@ type Route53DomainsRegisteredDomain interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RegistrantContact() Route53DomainsRegisteredDomainRegistrantContactOutputReference
 	RegistrantContactInput() *Route53DomainsRegisteredDomainRegistrantContact
-	RegistrantPrivacy() interface{}
-	SetRegistrantPrivacy(val interface{})
-	RegistrantPrivacyInput() interface{}
+	RegistrantPrivacy() any
+	SetRegistrantPrivacy(val any)
+	RegistrantPrivacyInput() any
 	RegistrarName() *string
 	RegistrarUrl() *string
 	Reseller() *string
@@ -89,29 +89,29 @@ type Route53DomainsRegisteredDomain interface {
 	TagsInput() *map[string]*string
 	TechContact() Route53DomainsRegisteredDomainTechContactOutputReference
 	TechContactInput() *Route53DomainsRegisteredDomainTechContact
-	TechPrivacy() interface{}
-	SetTechPrivacy(val interface{})
-	TechPrivacyInput() interface{}
+	TechPrivacy() any
+	SetTechPrivacy(val any)
+	TechPrivacyInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() Route53DomainsRegisteredDomainTimeoutsOutputReference
-	TimeoutsInput() interface{}
-	TransferLock() interface{}
-	SetTransferLock(val interface{})
-	TransferLockInput() interface{}
+	TimeoutsInput() any
+	TransferLock() any
+	SetTransferLock(val any)
+	TransferLockInput() any
 	UpdatedDate() *string
 	WhoisServer() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -129,7 +129,7 @@ type Route53DomainsRegisteredDomain interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -141,7 +141,7 @@ type Route53DomainsRegisteredDomain interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -149,7 +149,7 @@ type Route53DomainsRegisteredDomain interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAdminContact(value *Route53DomainsRegisteredDomainAdminContact)
-	PutNameServer(value interface{})
+	PutNameServer(value any)
 	PutRegistrantContact(value *Route53DomainsRegisteredDomainRegistrantContact)
 	PutTechContact(value *Route53DomainsRegisteredDomainTechContact)
 	PutTimeouts(value *Route53DomainsRegisteredDomainTimeouts)
@@ -169,17 +169,17 @@ type Route53DomainsRegisteredDomain interface {
 	ResetTechPrivacy()
 	ResetTimeouts()
 	ResetTransferLock()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Route53DomainsRegisteredDomain
@@ -227,8 +227,8 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain) AdminContactInput() *Route53D
 	return returns
 }
 
-func (j *jsiiProxy_Route53DomainsRegisteredDomain) AdminPrivacy() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53DomainsRegisteredDomain) AdminPrivacy() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"adminPrivacy",
@@ -237,8 +237,8 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain) AdminPrivacy() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Route53DomainsRegisteredDomain) AdminPrivacyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53DomainsRegisteredDomain) AdminPrivacyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"adminPrivacyInput",
@@ -247,8 +247,8 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain) AdminPrivacyInput() interface
 	return returns
 }
 
-func (j *jsiiProxy_Route53DomainsRegisteredDomain) AutoRenew() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53DomainsRegisteredDomain) AutoRenew() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoRenew",
@@ -257,8 +257,8 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain) AutoRenew() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Route53DomainsRegisteredDomain) AutoRenewInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53DomainsRegisteredDomain) AutoRenewInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoRenewInput",
@@ -277,8 +277,8 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain) CdktfStack() cdktf.TerraformS
 	return returns
 }
 
-func (j *jsiiProxy_Route53DomainsRegisteredDomain) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53DomainsRegisteredDomain) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -287,8 +287,8 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Route53DomainsRegisteredDomain) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Route53DomainsRegisteredDomain) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -297,8 +297,8 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_Route53DomainsRegisteredDomain) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53DomainsRegisteredDomain) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -427,8 +427,8 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain) NameServer() Route53DomainsRe
 	return returns
 }
 
-func (j *jsiiProxy_Route53DomainsRegisteredDomain) NameServerInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53DomainsRegisteredDomain) NameServerInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"nameServerInput",
@@ -457,8 +457,8 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain) Provider() cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_Route53DomainsRegisteredDomain) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Route53DomainsRegisteredDomain) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -467,8 +467,8 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain) Provisioners() *[]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_Route53DomainsRegisteredDomain) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53DomainsRegisteredDomain) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -497,8 +497,8 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain) RegistrantContactInput() *Rou
 	return returns
 }
 
-func (j *jsiiProxy_Route53DomainsRegisteredDomain) RegistrantPrivacy() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53DomainsRegisteredDomain) RegistrantPrivacy() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"registrantPrivacy",
@@ -507,8 +507,8 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain) RegistrantPrivacy() interface
 	return returns
 }
 
-func (j *jsiiProxy_Route53DomainsRegisteredDomain) RegistrantPrivacyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53DomainsRegisteredDomain) RegistrantPrivacyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"registrantPrivacyInput",
@@ -617,8 +617,8 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain) TechContactInput() *Route53Do
 	return returns
 }
 
-func (j *jsiiProxy_Route53DomainsRegisteredDomain) TechPrivacy() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53DomainsRegisteredDomain) TechPrivacy() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"techPrivacy",
@@ -627,8 +627,8 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain) TechPrivacy() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Route53DomainsRegisteredDomain) TechPrivacyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53DomainsRegisteredDomain) TechPrivacyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"techPrivacyInput",
@@ -647,8 +647,8 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain) TerraformGeneratorMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_Route53DomainsRegisteredDomain) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Route53DomainsRegisteredDomain) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -677,8 +677,8 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain) Timeouts() Route53DomainsRegi
 	return returns
 }
 
-func (j *jsiiProxy_Route53DomainsRegisteredDomain) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53DomainsRegisteredDomain) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -687,8 +687,8 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain) TimeoutsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Route53DomainsRegisteredDomain) TransferLock() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53DomainsRegisteredDomain) TransferLock() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"transferLock",
@@ -697,8 +697,8 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain) TransferLock() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Route53DomainsRegisteredDomain) TransferLockInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53DomainsRegisteredDomain) TransferLockInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"transferLockInput",
@@ -727,7 +727,6 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain) WhoisServer() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53domains_registered_domain aws_route53domains_registered_domain} Resource.
 func NewRoute53DomainsRegisteredDomain(scope constructs.Construct, id *string, config *Route53DomainsRegisteredDomainConfig) Route53DomainsRegisteredDomain {
 	_init_.Initialize()
@@ -739,7 +738,7 @@ func NewRoute53DomainsRegisteredDomain(scope constructs.Construct, id *string, c
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomain",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -752,12 +751,12 @@ func NewRoute53DomainsRegisteredDomain_Override(r Route53DomainsRegisteredDomain
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomain",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_Route53DomainsRegisteredDomain)SetAdminPrivacy(val interface{}) {
+func (j *jsiiProxy_Route53DomainsRegisteredDomain) SetAdminPrivacy(val any) {
 	if err := j.validateSetAdminPrivacyParameters(val); err != nil {
 		panic(err)
 	}
@@ -768,7 +767,7 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain)SetAdminPrivacy(val interface{
 	)
 }
 
-func (j *jsiiProxy_Route53DomainsRegisteredDomain)SetAutoRenew(val interface{}) {
+func (j *jsiiProxy_Route53DomainsRegisteredDomain) SetAutoRenew(val any) {
 	if err := j.validateSetAutoRenewParameters(val); err != nil {
 		panic(err)
 	}
@@ -779,7 +778,7 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain)SetAutoRenew(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_Route53DomainsRegisteredDomain)SetConnection(val interface{}) {
+func (j *jsiiProxy_Route53DomainsRegisteredDomain) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -790,7 +789,7 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain)SetConnection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_Route53DomainsRegisteredDomain)SetCount(val interface{}) {
+func (j *jsiiProxy_Route53DomainsRegisteredDomain) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -801,7 +800,7 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Route53DomainsRegisteredDomain)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Route53DomainsRegisteredDomain) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -809,7 +808,7 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Route53DomainsRegisteredDomain)SetDomainName(val *string) {
+func (j *jsiiProxy_Route53DomainsRegisteredDomain) SetDomainName(val *string) {
 	if err := j.validateSetDomainNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -820,7 +819,7 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain)SetDomainName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Route53DomainsRegisteredDomain)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Route53DomainsRegisteredDomain) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -828,7 +827,7 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_Route53DomainsRegisteredDomain)SetId(val *string) {
+func (j *jsiiProxy_Route53DomainsRegisteredDomain) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -839,7 +838,7 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Route53DomainsRegisteredDomain)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Route53DomainsRegisteredDomain) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -850,7 +849,7 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_Route53DomainsRegisteredDomain)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Route53DomainsRegisteredDomain) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -858,7 +857,7 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain)SetProvider(val cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_Route53DomainsRegisteredDomain)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Route53DomainsRegisteredDomain) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -869,7 +868,7 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain)SetProvisioners(val *[]interfa
 	)
 }
 
-func (j *jsiiProxy_Route53DomainsRegisteredDomain)SetRegistrantPrivacy(val interface{}) {
+func (j *jsiiProxy_Route53DomainsRegisteredDomain) SetRegistrantPrivacy(val any) {
 	if err := j.validateSetRegistrantPrivacyParameters(val); err != nil {
 		panic(err)
 	}
@@ -880,7 +879,7 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain)SetRegistrantPrivacy(val inter
 	)
 }
 
-func (j *jsiiProxy_Route53DomainsRegisteredDomain)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_Route53DomainsRegisteredDomain) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -891,7 +890,7 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain)SetTags(val *map[string]*strin
 	)
 }
 
-func (j *jsiiProxy_Route53DomainsRegisteredDomain)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_Route53DomainsRegisteredDomain) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -902,7 +901,7 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain)SetTagsAll(val *map[string]*st
 	)
 }
 
-func (j *jsiiProxy_Route53DomainsRegisteredDomain)SetTechPrivacy(val interface{}) {
+func (j *jsiiProxy_Route53DomainsRegisteredDomain) SetTechPrivacy(val any) {
 	if err := j.validateSetTechPrivacyParameters(val); err != nil {
 		panic(err)
 	}
@@ -913,7 +912,7 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain)SetTechPrivacy(val interface{}
 	)
 }
 
-func (j *jsiiProxy_Route53DomainsRegisteredDomain)SetTransferLock(val interface{}) {
+func (j *jsiiProxy_Route53DomainsRegisteredDomain) SetTransferLock(val any) {
 	if err := j.validateSetTransferLockParameters(val); err != nil {
 		panic(err)
 	}
@@ -936,7 +935,7 @@ func Route53DomainsRegisteredDomain_GenerateConfigForImport(scope constructs.Con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomain",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -960,7 +959,7 @@ func Route53DomainsRegisteredDomain_GenerateConfigForImport(scope constructs.Con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Route53DomainsRegisteredDomain_IsConstruct(x interface{}) *bool {
+func Route53DomainsRegisteredDomain_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRoute53DomainsRegisteredDomain_IsConstructParameters(x); err != nil {
@@ -971,7 +970,7 @@ func Route53DomainsRegisteredDomain_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomain",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -979,7 +978,7 @@ func Route53DomainsRegisteredDomain_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Route53DomainsRegisteredDomain_IsTerraformElement(x interface{}) *bool {
+func Route53DomainsRegisteredDomain_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRoute53DomainsRegisteredDomain_IsTerraformElementParameters(x); err != nil {
@@ -990,7 +989,7 @@ func Route53DomainsRegisteredDomain_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomain",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -998,7 +997,7 @@ func Route53DomainsRegisteredDomain_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Route53DomainsRegisteredDomain_IsTerraformResource(x interface{}) *bool {
+func Route53DomainsRegisteredDomain_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRoute53DomainsRegisteredDomain_IsTerraformResourceParameters(x); err != nil {
@@ -1009,7 +1008,7 @@ func Route53DomainsRegisteredDomain_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomain",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1034,31 +1033,31 @@ func (r *jsiiProxy_Route53DomainsRegisteredDomain) AddMoveTarget(moveTarget *str
 	_jsii_.InvokeVoid(
 		r,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (r *jsiiProxy_Route53DomainsRegisteredDomain) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_Route53DomainsRegisteredDomain) AddOverride(path *string, value any) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (r *jsiiProxy_Route53DomainsRegisteredDomain) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_Route53DomainsRegisteredDomain) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1074,7 +1073,7 @@ func (r *jsiiProxy_Route53DomainsRegisteredDomain) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1090,7 +1089,7 @@ func (r *jsiiProxy_Route53DomainsRegisteredDomain) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1106,7 +1105,7 @@ func (r *jsiiProxy_Route53DomainsRegisteredDomain) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1122,7 +1121,7 @@ func (r *jsiiProxy_Route53DomainsRegisteredDomain) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1138,7 +1137,7 @@ func (r *jsiiProxy_Route53DomainsRegisteredDomain) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1154,7 +1153,7 @@ func (r *jsiiProxy_Route53DomainsRegisteredDomain) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1170,7 +1169,7 @@ func (r *jsiiProxy_Route53DomainsRegisteredDomain) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1186,15 +1185,15 @@ func (r *jsiiProxy_Route53DomainsRegisteredDomain) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_Route53DomainsRegisteredDomain) HasResourceMove() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Route53DomainsRegisteredDomain) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1213,7 +1212,7 @@ func (r *jsiiProxy_Route53DomainsRegisteredDomain) ImportFrom(id *string, provid
 	_jsii_.InvokeVoid(
 		r,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1226,7 +1225,7 @@ func (r *jsiiProxy_Route53DomainsRegisteredDomain) InterpolationForAttribute(ter
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1240,18 +1239,18 @@ func (r *jsiiProxy_Route53DomainsRegisteredDomain) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (r *jsiiProxy_Route53DomainsRegisteredDomain) MoveTo(moveTarget *string, index interface{}) {
+func (r *jsiiProxy_Route53DomainsRegisteredDomain) MoveTo(moveTarget *string, index any) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1262,7 +1261,7 @@ func (r *jsiiProxy_Route53DomainsRegisteredDomain) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1273,7 +1272,7 @@ func (r *jsiiProxy_Route53DomainsRegisteredDomain) OverrideLogicalId(newLogicalI
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1284,18 +1283,18 @@ func (r *jsiiProxy_Route53DomainsRegisteredDomain) PutAdminContact(value *Route5
 	_jsii_.InvokeVoid(
 		r,
 		"putAdminContact",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (r *jsiiProxy_Route53DomainsRegisteredDomain) PutNameServer(value interface{}) {
+func (r *jsiiProxy_Route53DomainsRegisteredDomain) PutNameServer(value any) {
 	if err := r.validatePutNameServerParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"putNameServer",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1306,7 +1305,7 @@ func (r *jsiiProxy_Route53DomainsRegisteredDomain) PutRegistrantContact(value *R
 	_jsii_.InvokeVoid(
 		r,
 		"putRegistrantContact",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1317,7 +1316,7 @@ func (r *jsiiProxy_Route53DomainsRegisteredDomain) PutTechContact(value *Route53
 	_jsii_.InvokeVoid(
 		r,
 		"putTechContact",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1328,7 +1327,7 @@ func (r *jsiiProxy_Route53DomainsRegisteredDomain) PutTimeouts(value *Route53Dom
 	_jsii_.InvokeVoid(
 		r,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1444,8 +1443,8 @@ func (r *jsiiProxy_Route53DomainsRegisteredDomain) ResetTransferLock() {
 	)
 }
 
-func (r *jsiiProxy_Route53DomainsRegisteredDomain) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_Route53DomainsRegisteredDomain) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1457,8 +1456,8 @@ func (r *jsiiProxy_Route53DomainsRegisteredDomain) SynthesizeAttributes() *map[s
 	return returns
 }
 
-func (r *jsiiProxy_Route53DomainsRegisteredDomain) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_Route53DomainsRegisteredDomain) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1470,8 +1469,8 @@ func (r *jsiiProxy_Route53DomainsRegisteredDomain) SynthesizeHclAttributes() *ma
 	return returns
 }
 
-func (r *jsiiProxy_Route53DomainsRegisteredDomain) ToHclTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Route53DomainsRegisteredDomain) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1483,8 +1482,8 @@ func (r *jsiiProxy_Route53DomainsRegisteredDomain) ToHclTerraform() interface{} 
 	return returns
 }
 
-func (r *jsiiProxy_Route53DomainsRegisteredDomain) ToMetadata() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Route53DomainsRegisteredDomain) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1509,8 +1508,8 @@ func (r *jsiiProxy_Route53DomainsRegisteredDomain) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_Route53DomainsRegisteredDomain) ToTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Route53DomainsRegisteredDomain) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1521,4 +1520,3 @@ func (r *jsiiProxy_Route53DomainsRegisteredDomain) ToTerraform() interface{} {
 
 	return returns
 }
-

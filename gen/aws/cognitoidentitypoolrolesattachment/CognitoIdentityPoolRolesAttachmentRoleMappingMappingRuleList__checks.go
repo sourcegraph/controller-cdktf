@@ -34,7 +34,7 @@ func (c *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleList)
 	return nil
 }
 
-func (j *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleListPara
 
 	return nil
 }
-

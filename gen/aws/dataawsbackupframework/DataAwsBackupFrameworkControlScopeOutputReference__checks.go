@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsBackupFrameworkControlScopeOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsBackupFrameworkControlScopeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsBackupFrameworkControlScopeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsBackupFrameworkControlScopeOutputReferenceParameters(terr
 
 	return nil
 }
-

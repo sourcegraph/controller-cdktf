@@ -12,9 +12,9 @@ type NetworkmanagerAttachmentAccepterTimeoutsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type NetworkmanagerAttachmentAccepterTimeoutsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -43,7 +43,7 @@ type NetworkmanagerAttachmentAccepterTimeoutsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type NetworkmanagerAttachmentAccepterTimeoutsOutputReference interface {
 	ResetCreate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -140,8 +140,8 @@ func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) Fqn(
 	return returns
 }
 
-func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) Terr
 	return returns
 }
 
-
 func NewNetworkmanagerAttachmentAccepterTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NetworkmanagerAttachmentAccepterTimeoutsOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewNetworkmanagerAttachmentAccepterTimeoutsOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.networkmanagerAttachmentAccepter.NetworkmanagerAttachmentAccepterTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewNetworkmanagerAttachmentAccepterTimeoutsOutputReference_Override(n Netwo
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.networkmanagerAttachmentAccepter.NetworkmanagerAttachmentAccepterTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference)SetCreate(val *string) {
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) SetCreate(val *string) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference)SetCr
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,16 +276,16 @@ func (n *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) Comp
 	return returns
 }
 
-func (n *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -302,7 +301,7 @@ func (n *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) GetB
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -318,7 +317,7 @@ func (n *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) GetB
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -334,7 +333,7 @@ func (n *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) GetL
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (n *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) GetN
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (n *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) GetN
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (n *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) GetN
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (n *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) GetS
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (n *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) GetS
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (n *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) Inte
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -458,16 +457,16 @@ func (n *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) Rese
 	)
 }
 
-func (n *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (n *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) ToSt
 
 	return returns
 }
-

@@ -36,7 +36,7 @@ type KendraExperienceEndpointsList interface {
 	Get(index *float64) KendraExperienceEndpointsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_KendraExperienceEndpointsList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewKendraExperienceEndpointsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KendraExperienceEndpointsList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewKendraExperienceEndpointsList(terraformResource cdktf.IInterpolatingPare
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kendraExperience.KendraExperienceEndpointsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewKendraExperienceEndpointsList_Override(k KendraExperienceEndpointsList, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kendraExperience.KendraExperienceEndpointsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		k,
 	)
 }
 
-func (j *jsiiProxy_KendraExperienceEndpointsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_KendraExperienceEndpointsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_KendraExperienceEndpointsList)SetTerraformAttribute(val *stri
 	)
 }
 
-func (j *jsiiProxy_KendraExperienceEndpointsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_KendraExperienceEndpointsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_KendraExperienceEndpointsList)SetTerraformResource(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_KendraExperienceEndpointsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_KendraExperienceEndpointsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (k *jsiiProxy_KendraExperienceEndpointsList) AllWithMapKey(mapKeyAttributeN
 	_jsii_.Invoke(
 		k,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (k *jsiiProxy_KendraExperienceEndpointsList) Get(index *float64) KendraExpe
 	_jsii_.Invoke(
 		k,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (k *jsiiProxy_KendraExperienceEndpointsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (k *jsiiProxy_KendraExperienceEndpointsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := k.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		k,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (k *jsiiProxy_KendraExperienceEndpointsList) ToString() *string {
 
 	return returns
 }
-

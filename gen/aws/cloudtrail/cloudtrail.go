@@ -13,7 +13,7 @@ import (
 type Cloudtrail interface {
 	cdktf.TerraformResource
 	AdvancedEventSelector() CloudtrailAdvancedEventSelectorList
-	AdvancedEventSelectorInput() interface{}
+	AdvancedEventSelectorInput() any
 	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -24,27 +24,27 @@ type Cloudtrail interface {
 	SetCloudWatchLogsRoleArn(val *string)
 	CloudWatchLogsRoleArnInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	EnableLogFileValidation() interface{}
-	SetEnableLogFileValidation(val interface{})
-	EnableLogFileValidationInput() interface{}
-	EnableLogging() interface{}
-	SetEnableLogging(val interface{})
-	EnableLoggingInput() interface{}
+	EnableLogFileValidation() any
+	SetEnableLogFileValidation(val any)
+	EnableLogFileValidationInput() any
+	EnableLogging() any
+	SetEnableLogging(val any)
+	EnableLoggingInput() any
 	EventSelector() CloudtrailEventSelectorList
-	EventSelectorInput() interface{}
+	EventSelectorInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -57,17 +57,17 @@ type Cloudtrail interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IncludeGlobalServiceEvents() interface{}
-	SetIncludeGlobalServiceEvents(val interface{})
-	IncludeGlobalServiceEventsInput() interface{}
+	IncludeGlobalServiceEvents() any
+	SetIncludeGlobalServiceEvents(val any)
+	IncludeGlobalServiceEventsInput() any
 	InsightSelector() CloudtrailInsightSelectorList
-	InsightSelectorInput() interface{}
-	IsMultiRegionTrail() interface{}
-	SetIsMultiRegionTrail(val interface{})
-	IsMultiRegionTrailInput() interface{}
-	IsOrganizationTrail() interface{}
-	SetIsOrganizationTrail(val interface{})
-	IsOrganizationTrailInput() interface{}
+	InsightSelectorInput() any
+	IsMultiRegionTrail() any
+	SetIsMultiRegionTrail(val any)
+	IsMultiRegionTrailInput() any
+	IsOrganizationTrail() any
+	SetIsOrganizationTrail(val any)
+	IsOrganizationTrailInput() any
 	KmsKeyId() *string
 	SetKmsKeyId(val *string)
 	KmsKeyIdInput() *string
@@ -85,11 +85,11 @@ type Cloudtrail interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	S3BucketName() *string
 	SetS3BucketName(val *string)
 	S3BucketNameInput() *string
@@ -108,16 +108,16 @@ type Cloudtrail interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -135,7 +135,7 @@ type Cloudtrail interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -147,16 +147,16 @@ type Cloudtrail interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAdvancedEventSelector(value interface{})
-	PutEventSelector(value interface{})
-	PutInsightSelector(value interface{})
+	PutAdvancedEventSelector(value any)
+	PutEventSelector(value any)
+	PutInsightSelector(value any)
 	ResetAdvancedEventSelector()
 	ResetCloudWatchLogsGroupArn()
 	ResetCloudWatchLogsRoleArn()
@@ -176,17 +176,17 @@ type Cloudtrail interface {
 	ResetSnsTopicName()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Cloudtrail
@@ -204,8 +204,8 @@ func (j *jsiiProxy_Cloudtrail) AdvancedEventSelector() CloudtrailAdvancedEventSe
 	return returns
 }
 
-func (j *jsiiProxy_Cloudtrail) AdvancedEventSelectorInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Cloudtrail) AdvancedEventSelectorInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"advancedEventSelectorInput",
@@ -274,8 +274,8 @@ func (j *jsiiProxy_Cloudtrail) CloudWatchLogsRoleArnInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Cloudtrail) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Cloudtrail) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -284,8 +284,8 @@ func (j *jsiiProxy_Cloudtrail) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Cloudtrail) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Cloudtrail) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -294,8 +294,8 @@ func (j *jsiiProxy_Cloudtrail) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Cloudtrail) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Cloudtrail) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -314,8 +314,8 @@ func (j *jsiiProxy_Cloudtrail) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_Cloudtrail) EnableLogFileValidation() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Cloudtrail) EnableLogFileValidation() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableLogFileValidation",
@@ -324,8 +324,8 @@ func (j *jsiiProxy_Cloudtrail) EnableLogFileValidation() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Cloudtrail) EnableLogFileValidationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Cloudtrail) EnableLogFileValidationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableLogFileValidationInput",
@@ -334,8 +334,8 @@ func (j *jsiiProxy_Cloudtrail) EnableLogFileValidationInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Cloudtrail) EnableLogging() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Cloudtrail) EnableLogging() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableLogging",
@@ -344,8 +344,8 @@ func (j *jsiiProxy_Cloudtrail) EnableLogging() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Cloudtrail) EnableLoggingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Cloudtrail) EnableLoggingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableLoggingInput",
@@ -364,8 +364,8 @@ func (j *jsiiProxy_Cloudtrail) EventSelector() CloudtrailEventSelectorList {
 	return returns
 }
 
-func (j *jsiiProxy_Cloudtrail) EventSelectorInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Cloudtrail) EventSelectorInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"eventSelectorInput",
@@ -434,8 +434,8 @@ func (j *jsiiProxy_Cloudtrail) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Cloudtrail) IncludeGlobalServiceEvents() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Cloudtrail) IncludeGlobalServiceEvents() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeGlobalServiceEvents",
@@ -444,8 +444,8 @@ func (j *jsiiProxy_Cloudtrail) IncludeGlobalServiceEvents() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Cloudtrail) IncludeGlobalServiceEventsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Cloudtrail) IncludeGlobalServiceEventsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeGlobalServiceEventsInput",
@@ -464,8 +464,8 @@ func (j *jsiiProxy_Cloudtrail) InsightSelector() CloudtrailInsightSelectorList {
 	return returns
 }
 
-func (j *jsiiProxy_Cloudtrail) InsightSelectorInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Cloudtrail) InsightSelectorInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"insightSelectorInput",
@@ -474,8 +474,8 @@ func (j *jsiiProxy_Cloudtrail) InsightSelectorInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Cloudtrail) IsMultiRegionTrail() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Cloudtrail) IsMultiRegionTrail() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isMultiRegionTrail",
@@ -484,8 +484,8 @@ func (j *jsiiProxy_Cloudtrail) IsMultiRegionTrail() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Cloudtrail) IsMultiRegionTrailInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Cloudtrail) IsMultiRegionTrailInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isMultiRegionTrailInput",
@@ -494,8 +494,8 @@ func (j *jsiiProxy_Cloudtrail) IsMultiRegionTrailInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Cloudtrail) IsOrganizationTrail() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Cloudtrail) IsOrganizationTrail() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isOrganizationTrail",
@@ -504,8 +504,8 @@ func (j *jsiiProxy_Cloudtrail) IsOrganizationTrail() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Cloudtrail) IsOrganizationTrailInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Cloudtrail) IsOrganizationTrailInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isOrganizationTrailInput",
@@ -584,8 +584,8 @@ func (j *jsiiProxy_Cloudtrail) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Cloudtrail) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Cloudtrail) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -594,8 +594,8 @@ func (j *jsiiProxy_Cloudtrail) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Cloudtrail) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Cloudtrail) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -714,8 +714,8 @@ func (j *jsiiProxy_Cloudtrail) TerraformGeneratorMetadata() *cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_Cloudtrail) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Cloudtrail) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -734,7 +734,6 @@ func (j *jsiiProxy_Cloudtrail) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudtrail aws_cloudtrail} Resource.
 func NewCloudtrail(scope constructs.Construct, id *string, config *CloudtrailConfig) Cloudtrail {
 	_init_.Initialize()
@@ -746,7 +745,7 @@ func NewCloudtrail(scope constructs.Construct, id *string, config *CloudtrailCon
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudtrail.Cloudtrail",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -759,12 +758,12 @@ func NewCloudtrail_Override(c Cloudtrail, scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudtrail.Cloudtrail",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_Cloudtrail)SetCloudWatchLogsGroupArn(val *string) {
+func (j *jsiiProxy_Cloudtrail) SetCloudWatchLogsGroupArn(val *string) {
 	if err := j.validateSetCloudWatchLogsGroupArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -775,7 +774,7 @@ func (j *jsiiProxy_Cloudtrail)SetCloudWatchLogsGroupArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Cloudtrail)SetCloudWatchLogsRoleArn(val *string) {
+func (j *jsiiProxy_Cloudtrail) SetCloudWatchLogsRoleArn(val *string) {
 	if err := j.validateSetCloudWatchLogsRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -786,7 +785,7 @@ func (j *jsiiProxy_Cloudtrail)SetCloudWatchLogsRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Cloudtrail)SetConnection(val interface{}) {
+func (j *jsiiProxy_Cloudtrail) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -797,7 +796,7 @@ func (j *jsiiProxy_Cloudtrail)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Cloudtrail)SetCount(val interface{}) {
+func (j *jsiiProxy_Cloudtrail) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -808,7 +807,7 @@ func (j *jsiiProxy_Cloudtrail)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Cloudtrail)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Cloudtrail) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -816,7 +815,7 @@ func (j *jsiiProxy_Cloudtrail)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Cloudtrail)SetEnableLogFileValidation(val interface{}) {
+func (j *jsiiProxy_Cloudtrail) SetEnableLogFileValidation(val any) {
 	if err := j.validateSetEnableLogFileValidationParameters(val); err != nil {
 		panic(err)
 	}
@@ -827,7 +826,7 @@ func (j *jsiiProxy_Cloudtrail)SetEnableLogFileValidation(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Cloudtrail)SetEnableLogging(val interface{}) {
+func (j *jsiiProxy_Cloudtrail) SetEnableLogging(val any) {
 	if err := j.validateSetEnableLoggingParameters(val); err != nil {
 		panic(err)
 	}
@@ -838,7 +837,7 @@ func (j *jsiiProxy_Cloudtrail)SetEnableLogging(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Cloudtrail)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Cloudtrail) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -846,7 +845,7 @@ func (j *jsiiProxy_Cloudtrail)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Cloudtrail)SetId(val *string) {
+func (j *jsiiProxy_Cloudtrail) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -857,7 +856,7 @@ func (j *jsiiProxy_Cloudtrail)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Cloudtrail)SetIncludeGlobalServiceEvents(val interface{}) {
+func (j *jsiiProxy_Cloudtrail) SetIncludeGlobalServiceEvents(val any) {
 	if err := j.validateSetIncludeGlobalServiceEventsParameters(val); err != nil {
 		panic(err)
 	}
@@ -868,7 +867,7 @@ func (j *jsiiProxy_Cloudtrail)SetIncludeGlobalServiceEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Cloudtrail)SetIsMultiRegionTrail(val interface{}) {
+func (j *jsiiProxy_Cloudtrail) SetIsMultiRegionTrail(val any) {
 	if err := j.validateSetIsMultiRegionTrailParameters(val); err != nil {
 		panic(err)
 	}
@@ -879,7 +878,7 @@ func (j *jsiiProxy_Cloudtrail)SetIsMultiRegionTrail(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Cloudtrail)SetIsOrganizationTrail(val interface{}) {
+func (j *jsiiProxy_Cloudtrail) SetIsOrganizationTrail(val any) {
 	if err := j.validateSetIsOrganizationTrailParameters(val); err != nil {
 		panic(err)
 	}
@@ -890,7 +889,7 @@ func (j *jsiiProxy_Cloudtrail)SetIsOrganizationTrail(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Cloudtrail)SetKmsKeyId(val *string) {
+func (j *jsiiProxy_Cloudtrail) SetKmsKeyId(val *string) {
 	if err := j.validateSetKmsKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -901,7 +900,7 @@ func (j *jsiiProxy_Cloudtrail)SetKmsKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Cloudtrail)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Cloudtrail) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -912,7 +911,7 @@ func (j *jsiiProxy_Cloudtrail)SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	)
 }
 
-func (j *jsiiProxy_Cloudtrail)SetName(val *string) {
+func (j *jsiiProxy_Cloudtrail) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -923,7 +922,7 @@ func (j *jsiiProxy_Cloudtrail)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Cloudtrail)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Cloudtrail) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -931,7 +930,7 @@ func (j *jsiiProxy_Cloudtrail)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Cloudtrail)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Cloudtrail) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -942,7 +941,7 @@ func (j *jsiiProxy_Cloudtrail)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Cloudtrail)SetS3BucketName(val *string) {
+func (j *jsiiProxy_Cloudtrail) SetS3BucketName(val *string) {
 	if err := j.validateSetS3BucketNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -953,7 +952,7 @@ func (j *jsiiProxy_Cloudtrail)SetS3BucketName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Cloudtrail)SetS3KeyPrefix(val *string) {
+func (j *jsiiProxy_Cloudtrail) SetS3KeyPrefix(val *string) {
 	if err := j.validateSetS3KeyPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -964,7 +963,7 @@ func (j *jsiiProxy_Cloudtrail)SetS3KeyPrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Cloudtrail)SetSnsTopicName(val *string) {
+func (j *jsiiProxy_Cloudtrail) SetSnsTopicName(val *string) {
 	if err := j.validateSetSnsTopicNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -975,7 +974,7 @@ func (j *jsiiProxy_Cloudtrail)SetSnsTopicName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Cloudtrail)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_Cloudtrail) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -986,7 +985,7 @@ func (j *jsiiProxy_Cloudtrail)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Cloudtrail)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_Cloudtrail) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1009,7 +1008,7 @@ func Cloudtrail_GenerateConfigForImport(scope constructs.Construct, importToId *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudtrail.Cloudtrail",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1033,7 +1032,7 @@ func Cloudtrail_GenerateConfigForImport(scope constructs.Construct, importToId *
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Cloudtrail_IsConstruct(x interface{}) *bool {
+func Cloudtrail_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudtrail_IsConstructParameters(x); err != nil {
@@ -1044,7 +1043,7 @@ func Cloudtrail_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudtrail.Cloudtrail",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1052,7 +1051,7 @@ func Cloudtrail_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Cloudtrail_IsTerraformElement(x interface{}) *bool {
+func Cloudtrail_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudtrail_IsTerraformElementParameters(x); err != nil {
@@ -1063,7 +1062,7 @@ func Cloudtrail_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudtrail.Cloudtrail",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1071,7 +1070,7 @@ func Cloudtrail_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Cloudtrail_IsTerraformResource(x interface{}) *bool {
+func Cloudtrail_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudtrail_IsTerraformResourceParameters(x); err != nil {
@@ -1082,7 +1081,7 @@ func Cloudtrail_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudtrail.Cloudtrail",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1107,31 +1106,31 @@ func (c *jsiiProxy_Cloudtrail) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_Cloudtrail) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_Cloudtrail) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_Cloudtrail) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_Cloudtrail) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1147,7 +1146,7 @@ func (c *jsiiProxy_Cloudtrail) GetBooleanAttribute(terraformAttribute *string) c
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1163,7 +1162,7 @@ func (c *jsiiProxy_Cloudtrail) GetBooleanMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1179,7 +1178,7 @@ func (c *jsiiProxy_Cloudtrail) GetListAttribute(terraformAttribute *string) *[]*
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1195,7 +1194,7 @@ func (c *jsiiProxy_Cloudtrail) GetNumberAttribute(terraformAttribute *string) *f
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1211,7 +1210,7 @@ func (c *jsiiProxy_Cloudtrail) GetNumberListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1227,7 +1226,7 @@ func (c *jsiiProxy_Cloudtrail) GetNumberMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1243,7 +1242,7 @@ func (c *jsiiProxy_Cloudtrail) GetStringAttribute(terraformAttribute *string) *s
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1259,15 +1258,15 @@ func (c *jsiiProxy_Cloudtrail) GetStringMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_Cloudtrail) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_Cloudtrail) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1286,7 +1285,7 @@ func (c *jsiiProxy_Cloudtrail) ImportFrom(id *string, provider cdktf.TerraformPr
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1299,7 +1298,7 @@ func (c *jsiiProxy_Cloudtrail) InterpolationForAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1313,18 +1312,18 @@ func (c *jsiiProxy_Cloudtrail) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_Cloudtrail) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_Cloudtrail) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1335,7 +1334,7 @@ func (c *jsiiProxy_Cloudtrail) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1346,40 +1345,40 @@ func (c *jsiiProxy_Cloudtrail) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (c *jsiiProxy_Cloudtrail) PutAdvancedEventSelector(value interface{}) {
+func (c *jsiiProxy_Cloudtrail) PutAdvancedEventSelector(value any) {
 	if err := c.validatePutAdvancedEventSelectorParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putAdvancedEventSelector",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_Cloudtrail) PutEventSelector(value interface{}) {
+func (c *jsiiProxy_Cloudtrail) PutEventSelector(value any) {
 	if err := c.validatePutEventSelectorParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putEventSelector",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_Cloudtrail) PutInsightSelector(value interface{}) {
+func (c *jsiiProxy_Cloudtrail) PutInsightSelector(value any) {
 	if err := c.validatePutInsightSelectorParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putInsightSelector",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1519,8 +1518,8 @@ func (c *jsiiProxy_Cloudtrail) ResetTagsAll() {
 	)
 }
 
-func (c *jsiiProxy_Cloudtrail) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_Cloudtrail) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1532,8 +1531,8 @@ func (c *jsiiProxy_Cloudtrail) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_Cloudtrail) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_Cloudtrail) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1545,8 +1544,8 @@ func (c *jsiiProxy_Cloudtrail) SynthesizeHclAttributes() *map[string]interface{}
 	return returns
 }
 
-func (c *jsiiProxy_Cloudtrail) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_Cloudtrail) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1558,8 +1557,8 @@ func (c *jsiiProxy_Cloudtrail) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_Cloudtrail) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_Cloudtrail) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1584,8 +1583,8 @@ func (c *jsiiProxy_Cloudtrail) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_Cloudtrail) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_Cloudtrail) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1596,4 +1595,3 @@ func (c *jsiiProxy_Cloudtrail) ToTerraform() interface{} {
 
 	return returns
 }
-

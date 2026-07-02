@@ -98,7 +98,7 @@ func (e *jsiiProxy_EcsServiceDeploymentControllerOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_EcsServiceDeploymentControllerOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EcsServiceDeploymentControllerOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewEcsServiceDeploymentControllerOutputReferenceParameters(terrafor
 
 	return nil
 }
-

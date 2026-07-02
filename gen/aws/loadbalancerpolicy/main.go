@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.loadBalancerPolicy.LoadBalancerPolicy",
-		reflect.TypeOf((*LoadBalancerPolicy)(nil)).Elem(),
+		reflect.TypeFor[LoadBalancerPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoadBalancerPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -74,15 +74,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.loadBalancerPolicy.LoadBalancerPolicyConfig",
-		reflect.TypeOf((*LoadBalancerPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[LoadBalancerPolicyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.loadBalancerPolicy.LoadBalancerPolicyPolicyAttribute",
-		reflect.TypeOf((*LoadBalancerPolicyPolicyAttribute)(nil)).Elem(),
+		reflect.TypeFor[LoadBalancerPolicyPolicyAttribute](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.loadBalancerPolicy.LoadBalancerPolicyPolicyAttributeList",
-		reflect.TypeOf((*LoadBalancerPolicyPolicyAttributeList)(nil)).Elem(),
+		reflect.TypeFor[LoadBalancerPolicyPolicyAttributeList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -96,7 +96,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoadBalancerPolicyPolicyAttributeList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -104,7 +104,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.loadBalancerPolicy.LoadBalancerPolicyPolicyAttributeOutputReference",
-		reflect.TypeOf((*LoadBalancerPolicyPolicyAttributeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LoadBalancerPolicyPolicyAttributeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -134,7 +134,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoadBalancerPolicyPolicyAttributeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

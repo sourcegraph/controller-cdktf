@@ -6,9 +6,9 @@ import (
 
 type AppflowFlowConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,11 +18,11 @@ type AppflowFlowConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// destination_flow_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appflow_flow#destination_flow_config AppflowFlow#destination_flow_config}
-	DestinationFlowConfig interface{} `field:"required" json:"destinationFlowConfig" yaml:"destinationFlowConfig"`
+	DestinationFlowConfig any `field:"required" json:"destinationFlowConfig" yaml:"destinationFlowConfig"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appflow_flow#name AppflowFlow#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// source_flow_config block.
@@ -32,7 +32,7 @@ type AppflowFlowConfig struct {
 	// task block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appflow_flow#task AppflowFlow#task}
-	Task interface{} `field:"required" json:"task" yaml:"task"`
+	Task any `field:"required" json:"task" yaml:"task"`
 	// trigger_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appflow_flow#trigger_config AppflowFlow#trigger_config}
@@ -51,4 +51,3 @@ type AppflowFlowConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appflow_flow#tags_all AppflowFlow#tags_all}.
 	TagsAll *map[string]*string `field:"optional" json:"tagsAll" yaml:"tagsAll"`
 }
-

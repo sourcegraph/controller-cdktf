@@ -98,7 +98,7 @@ func (r *jsiiProxy_RedshiftParameterGroupParameterOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftParameterGroupParameterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftParameterGroupParameterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_RedshiftParameterGroupParameterOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftParameterGroupParameterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftParameterGroupParameterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewRedshiftParameterGroupParameterOutputReferenceParameters(terrafo
 
 	return nil
 }
-

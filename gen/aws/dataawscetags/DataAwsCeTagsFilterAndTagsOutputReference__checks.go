@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsCeTagsFilterAndTagsOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsCeTagsFilterAndTagsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsCeTagsFilterAndTagsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataAwsCeTagsFilterAndTagsOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

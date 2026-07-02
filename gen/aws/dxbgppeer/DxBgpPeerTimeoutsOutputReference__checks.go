@@ -98,7 +98,7 @@ func (d *jsiiProxy_DxBgpPeerTimeoutsOutputReference) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_DxBgpPeerTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DxBgpPeerTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DxBgpPeerTimeoutsOutputReference) validateSetDeleteParameters
 	return nil
 }
 
-func (j *jsiiProxy_DxBgpPeerTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DxBgpPeerTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewDxBgpPeerTimeoutsOutputReferenceParameters(terraformResource cdk
 
 	return nil
 }
-

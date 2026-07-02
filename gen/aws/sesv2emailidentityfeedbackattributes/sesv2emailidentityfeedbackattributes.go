@@ -15,22 +15,22 @@ type Sesv2EmailIdentityFeedbackAttributes interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	EmailForwardingEnabled() interface{}
-	SetEmailForwardingEnabled(val interface{})
-	EmailForwardingEnabledInput() interface{}
+	EmailForwardingEnabled() any
+	SetEmailForwardingEnabled(val any)
+	EmailForwardingEnabledInput() any
 	EmailIdentity() *string
 	SetEmailIdentity(val *string)
 	EmailIdentityInput() *string
@@ -56,24 +56,24 @@ type Sesv2EmailIdentityFeedbackAttributes interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type Sesv2EmailIdentityFeedbackAttributes interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -103,7 +103,7 @@ type Sesv2EmailIdentityFeedbackAttributes interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -115,17 +115,17 @@ type Sesv2EmailIdentityFeedbackAttributes interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Sesv2EmailIdentityFeedbackAttributes
@@ -143,8 +143,8 @@ func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) CdktfStack() cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -153,8 +153,8 @@ func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) Connection() interface{
 	return returns
 }
 
-func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) ConstructNodeMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -183,8 +183,8 @@ func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) DependsOn() *[]*string 
 	return returns
 }
 
-func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) EmailForwardingEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) EmailForwardingEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"emailForwardingEnabled",
@@ -193,8 +193,8 @@ func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) EmailForwardingEnabled(
 	return returns
 }
 
-func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) EmailForwardingEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) EmailForwardingEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"emailForwardingEnabledInput",
@@ -303,8 +303,8 @@ func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) Provider() cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -313,8 +313,8 @@ func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) Provisioners() *[]inter
 	return returns
 }
 
-func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -333,8 +333,8 @@ func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) TerraformGeneratorMetad
 	return returns
 }
 
-func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -353,7 +353,6 @@ func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) TerraformResourceType()
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sesv2_email_identity_feedback_attributes aws_sesv2_email_identity_feedback_attributes} Resource.
 func NewSesv2EmailIdentityFeedbackAttributes(scope constructs.Construct, id *string, config *Sesv2EmailIdentityFeedbackAttributesConfig) Sesv2EmailIdentityFeedbackAttributes {
 	_init_.Initialize()
@@ -365,7 +364,7 @@ func NewSesv2EmailIdentityFeedbackAttributes(scope constructs.Construct, id *str
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sesv2EmailIdentityFeedbackAttributes.Sesv2EmailIdentityFeedbackAttributes",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -378,12 +377,12 @@ func NewSesv2EmailIdentityFeedbackAttributes_Override(s Sesv2EmailIdentityFeedba
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sesv2EmailIdentityFeedbackAttributes.Sesv2EmailIdentityFeedbackAttributes",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes)SetConnection(val interface{}) {
+func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes)SetConnection(val interf
 	)
 }
 
-func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes)SetCount(val interface{}) {
+func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes)SetCount(val interface{}
 	)
 }
 
-func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -413,7 +412,7 @@ func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes)SetDependsOn(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes)SetEmailForwardingEnabled(val interface{}) {
+func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) SetEmailForwardingEnabled(val any) {
 	if err := j.validateSetEmailForwardingEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -424,7 +423,7 @@ func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes)SetEmailForwardingEnable
 	)
 }
 
-func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes)SetEmailIdentity(val *string) {
+func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) SetEmailIdentity(val *string) {
 	if err := j.validateSetEmailIdentityParameters(val); err != nil {
 		panic(err)
 	}
@@ -435,7 +434,7 @@ func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes)SetEmailIdentity(val *st
 	)
 }
 
-func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -443,7 +442,7 @@ func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes)SetForEach(val cdktf.ITe
 	)
 }
 
-func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes)SetId(val *string) {
+func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes)SetLifecycle(val *cdktf.
 	)
 }
 
-func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -473,7 +472,7 @@ func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes)SetProvider(val cdktf.Te
 	)
 }
 
-func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,7 +495,7 @@ func Sesv2EmailIdentityFeedbackAttributes_GenerateConfigForImport(scope construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sesv2EmailIdentityFeedbackAttributes.Sesv2EmailIdentityFeedbackAttributes",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -520,7 +519,7 @@ func Sesv2EmailIdentityFeedbackAttributes_GenerateConfigForImport(scope construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Sesv2EmailIdentityFeedbackAttributes_IsConstruct(x interface{}) *bool {
+func Sesv2EmailIdentityFeedbackAttributes_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSesv2EmailIdentityFeedbackAttributes_IsConstructParameters(x); err != nil {
@@ -531,7 +530,7 @@ func Sesv2EmailIdentityFeedbackAttributes_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sesv2EmailIdentityFeedbackAttributes.Sesv2EmailIdentityFeedbackAttributes",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -539,7 +538,7 @@ func Sesv2EmailIdentityFeedbackAttributes_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Sesv2EmailIdentityFeedbackAttributes_IsTerraformElement(x interface{}) *bool {
+func Sesv2EmailIdentityFeedbackAttributes_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSesv2EmailIdentityFeedbackAttributes_IsTerraformElementParameters(x); err != nil {
@@ -550,7 +549,7 @@ func Sesv2EmailIdentityFeedbackAttributes_IsTerraformElement(x interface{}) *boo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sesv2EmailIdentityFeedbackAttributes.Sesv2EmailIdentityFeedbackAttributes",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -558,7 +557,7 @@ func Sesv2EmailIdentityFeedbackAttributes_IsTerraformElement(x interface{}) *boo
 }
 
 // Experimental.
-func Sesv2EmailIdentityFeedbackAttributes_IsTerraformResource(x interface{}) *bool {
+func Sesv2EmailIdentityFeedbackAttributes_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSesv2EmailIdentityFeedbackAttributes_IsTerraformResourceParameters(x); err != nil {
@@ -569,7 +568,7 @@ func Sesv2EmailIdentityFeedbackAttributes_IsTerraformResource(x interface{}) *bo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sesv2EmailIdentityFeedbackAttributes.Sesv2EmailIdentityFeedbackAttributes",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -594,31 +593,31 @@ func (s *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) AddMoveTarget(moveTarge
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -634,7 +633,7 @@ func (s *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -650,7 +649,7 @@ func (s *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -666,7 +665,7 @@ func (s *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) GetListAttribute(terraf
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -682,7 +681,7 @@ func (s *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -698,7 +697,7 @@ func (s *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) GetNumberListAttribute(
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func (s *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func (s *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) GetStringAttribute(terr
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -746,15 +745,15 @@ func (s *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -773,7 +772,7 @@ func (s *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) ImportFrom(id *string, 
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -786,7 +785,7 @@ func (s *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) InterpolationForAttribu
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -800,18 +799,18 @@ func (s *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) MoveFromId(id *string) 
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -822,7 +821,7 @@ func (s *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -833,7 +832,7 @@ func (s *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) OverrideLogicalId(newLo
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -861,8 +860,8 @@ func (s *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) ResetOverrideLogicalId(
 	)
 }
 
-func (s *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -874,8 +873,8 @@ func (s *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) SynthesizeAttributes() 
 	return returns
 }
 
-func (s *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -887,8 +886,8 @@ func (s *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) SynthesizeHclAttributes
 	return returns
 }
 
-func (s *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -900,8 +899,8 @@ func (s *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) ToHclTerraform() interf
 	return returns
 }
 
-func (s *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -926,8 +925,8 @@ func (s *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -938,4 +937,3 @@ func (s *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) ToTerraform() interface
 
 	return returns
 }
-

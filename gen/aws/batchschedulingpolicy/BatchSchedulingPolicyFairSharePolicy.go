@@ -1,6 +1,5 @@
 package batchschedulingpolicy
 
-
 type BatchSchedulingPolicyFairSharePolicy struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/batch_scheduling_policy#compute_reservation BatchSchedulingPolicy#compute_reservation}.
 	ComputeReservation *float64 `field:"optional" json:"computeReservation" yaml:"computeReservation"`
@@ -9,6 +8,5 @@ type BatchSchedulingPolicyFairSharePolicy struct {
 	// share_distribution block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/batch_scheduling_policy#share_distribution BatchSchedulingPolicy#share_distribution}
-	ShareDistribution interface{} `field:"optional" json:"shareDistribution" yaml:"shareDistribution"`
+	ShareDistribution any `field:"optional" json:"shareDistribution" yaml:"shareDistribution"`
 }
-

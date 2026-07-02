@@ -98,7 +98,7 @@ func (l *jsiiProxy_LbListenerRuleConditionPathPatternOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_LbListenerRuleConditionPathPatternOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LbListenerRuleConditionPathPatternOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewLbListenerRuleConditionPathPatternOutputReferenceParameters(terr
 
 	return nil
 }
-

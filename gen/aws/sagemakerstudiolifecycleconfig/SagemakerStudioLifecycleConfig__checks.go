@@ -19,7 +19,7 @@ func (s *jsiiProxy_SagemakerStudioLifecycleConfig) validateAddMoveTargetParamete
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerStudioLifecycleConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SagemakerStudioLifecycleConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SagemakerStudioLifecycleConfig) validateMoveFromIdParameters(
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerStudioLifecycleConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SagemakerStudioLifecycleConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateSagemakerStudioLifecycleConfig_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateSagemakerStudioLifecycleConfig_IsConstructParameters(x interface{}) error {
+func validateSagemakerStudioLifecycleConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateSagemakerStudioLifecycleConfig_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateSagemakerStudioLifecycleConfig_IsTerraformElementParameters(x interface{}) error {
+func validateSagemakerStudioLifecycleConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateSagemakerStudioLifecycleConfig_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func validateSagemakerStudioLifecycleConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateSagemakerStudioLifecycleConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateSagemakerStudioLifecycleConfig_IsTerraformResourceParameters(x inte
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerStudioLifecycleConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerStudioLifecycleConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_SagemakerStudioLifecycleConfig) validateSetConnectionParamete
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerStudioLifecycleConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerStudioLifecycleConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -350,7 +350,7 @@ func (j *jsiiProxy_SagemakerStudioLifecycleConfig) validateSetLifecycleParameter
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerStudioLifecycleConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SagemakerStudioLifecycleConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -454,4 +454,3 @@ func validateNewSagemakerStudioLifecycleConfigParameters(scope constructs.Constr
 
 	return nil
 }
-

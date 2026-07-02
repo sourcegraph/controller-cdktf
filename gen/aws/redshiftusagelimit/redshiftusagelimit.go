@@ -25,15 +25,15 @@ type RedshiftUsageLimit interface {
 	SetClusterIdentifier(val *string)
 	ClusterIdentifierInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -69,11 +69,11 @@ type RedshiftUsageLimit interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -83,16 +83,16 @@ type RedshiftUsageLimit interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -110,7 +110,7 @@ type RedshiftUsageLimit interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -122,7 +122,7 @@ type RedshiftUsageLimit interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -137,17 +137,17 @@ type RedshiftUsageLimit interface {
 	ResetPeriod()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for RedshiftUsageLimit
@@ -235,8 +235,8 @@ func (j *jsiiProxy_RedshiftUsageLimit) ClusterIdentifierInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftUsageLimit) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftUsageLimit) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -245,8 +245,8 @@ func (j *jsiiProxy_RedshiftUsageLimit) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftUsageLimit) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RedshiftUsageLimit) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -255,8 +255,8 @@ func (j *jsiiProxy_RedshiftUsageLimit) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftUsageLimit) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftUsageLimit) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -415,8 +415,8 @@ func (j *jsiiProxy_RedshiftUsageLimit) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftUsageLimit) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_RedshiftUsageLimit) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -425,8 +425,8 @@ func (j *jsiiProxy_RedshiftUsageLimit) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftUsageLimit) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftUsageLimit) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -485,8 +485,8 @@ func (j *jsiiProxy_RedshiftUsageLimit) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftUsageLimit) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RedshiftUsageLimit) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -505,7 +505,6 @@ func (j *jsiiProxy_RedshiftUsageLimit) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/redshift_usage_limit aws_redshift_usage_limit} Resource.
 func NewRedshiftUsageLimit(scope constructs.Construct, id *string, config *RedshiftUsageLimitConfig) RedshiftUsageLimit {
 	_init_.Initialize()
@@ -517,7 +516,7 @@ func NewRedshiftUsageLimit(scope constructs.Construct, id *string, config *Redsh
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.redshiftUsageLimit.RedshiftUsageLimit",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -530,12 +529,12 @@ func NewRedshiftUsageLimit_Override(r RedshiftUsageLimit, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.redshiftUsageLimit.RedshiftUsageLimit",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RedshiftUsageLimit)SetAmount(val *float64) {
+func (j *jsiiProxy_RedshiftUsageLimit) SetAmount(val *float64) {
 	if err := j.validateSetAmountParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_RedshiftUsageLimit)SetAmount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftUsageLimit)SetBreachAction(val *string) {
+func (j *jsiiProxy_RedshiftUsageLimit) SetBreachAction(val *string) {
 	if err := j.validateSetBreachActionParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_RedshiftUsageLimit)SetBreachAction(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftUsageLimit)SetClusterIdentifier(val *string) {
+func (j *jsiiProxy_RedshiftUsageLimit) SetClusterIdentifier(val *string) {
 	if err := j.validateSetClusterIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -568,7 +567,7 @@ func (j *jsiiProxy_RedshiftUsageLimit)SetClusterIdentifier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftUsageLimit)SetConnection(val interface{}) {
+func (j *jsiiProxy_RedshiftUsageLimit) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -579,7 +578,7 @@ func (j *jsiiProxy_RedshiftUsageLimit)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftUsageLimit)SetCount(val interface{}) {
+func (j *jsiiProxy_RedshiftUsageLimit) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -590,7 +589,7 @@ func (j *jsiiProxy_RedshiftUsageLimit)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftUsageLimit)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_RedshiftUsageLimit) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -598,7 +597,7 @@ func (j *jsiiProxy_RedshiftUsageLimit)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftUsageLimit)SetFeatureType(val *string) {
+func (j *jsiiProxy_RedshiftUsageLimit) SetFeatureType(val *string) {
 	if err := j.validateSetFeatureTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -609,7 +608,7 @@ func (j *jsiiProxy_RedshiftUsageLimit)SetFeatureType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftUsageLimit)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_RedshiftUsageLimit) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -617,7 +616,7 @@ func (j *jsiiProxy_RedshiftUsageLimit)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftUsageLimit)SetId(val *string) {
+func (j *jsiiProxy_RedshiftUsageLimit) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -628,7 +627,7 @@ func (j *jsiiProxy_RedshiftUsageLimit)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftUsageLimit)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_RedshiftUsageLimit) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -639,7 +638,7 @@ func (j *jsiiProxy_RedshiftUsageLimit)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_RedshiftUsageLimit)SetLimitType(val *string) {
+func (j *jsiiProxy_RedshiftUsageLimit) SetLimitType(val *string) {
 	if err := j.validateSetLimitTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -650,7 +649,7 @@ func (j *jsiiProxy_RedshiftUsageLimit)SetLimitType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftUsageLimit)SetPeriod(val *string) {
+func (j *jsiiProxy_RedshiftUsageLimit) SetPeriod(val *string) {
 	if err := j.validateSetPeriodParameters(val); err != nil {
 		panic(err)
 	}
@@ -661,7 +660,7 @@ func (j *jsiiProxy_RedshiftUsageLimit)SetPeriod(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftUsageLimit)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_RedshiftUsageLimit) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -669,7 +668,7 @@ func (j *jsiiProxy_RedshiftUsageLimit)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftUsageLimit)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_RedshiftUsageLimit) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -680,7 +679,7 @@ func (j *jsiiProxy_RedshiftUsageLimit)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftUsageLimit)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_RedshiftUsageLimit) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -691,7 +690,7 @@ func (j *jsiiProxy_RedshiftUsageLimit)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftUsageLimit)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_RedshiftUsageLimit) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -714,7 +713,7 @@ func RedshiftUsageLimit_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.redshiftUsageLimit.RedshiftUsageLimit",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -738,7 +737,7 @@ func RedshiftUsageLimit_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func RedshiftUsageLimit_IsConstruct(x interface{}) *bool {
+func RedshiftUsageLimit_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRedshiftUsageLimit_IsConstructParameters(x); err != nil {
@@ -749,7 +748,7 @@ func RedshiftUsageLimit_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.redshiftUsageLimit.RedshiftUsageLimit",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -757,7 +756,7 @@ func RedshiftUsageLimit_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func RedshiftUsageLimit_IsTerraformElement(x interface{}) *bool {
+func RedshiftUsageLimit_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRedshiftUsageLimit_IsTerraformElementParameters(x); err != nil {
@@ -768,7 +767,7 @@ func RedshiftUsageLimit_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.redshiftUsageLimit.RedshiftUsageLimit",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -776,7 +775,7 @@ func RedshiftUsageLimit_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func RedshiftUsageLimit_IsTerraformResource(x interface{}) *bool {
+func RedshiftUsageLimit_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRedshiftUsageLimit_IsTerraformResourceParameters(x); err != nil {
@@ -787,7 +786,7 @@ func RedshiftUsageLimit_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.redshiftUsageLimit.RedshiftUsageLimit",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -812,31 +811,31 @@ func (r *jsiiProxy_RedshiftUsageLimit) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (r *jsiiProxy_RedshiftUsageLimit) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_RedshiftUsageLimit) AddOverride(path *string, value any) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (r *jsiiProxy_RedshiftUsageLimit) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RedshiftUsageLimit) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -852,7 +851,7 @@ func (r *jsiiProxy_RedshiftUsageLimit) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,7 +867,7 @@ func (r *jsiiProxy_RedshiftUsageLimit) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -884,7 +883,7 @@ func (r *jsiiProxy_RedshiftUsageLimit) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -900,7 +899,7 @@ func (r *jsiiProxy_RedshiftUsageLimit) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -916,7 +915,7 @@ func (r *jsiiProxy_RedshiftUsageLimit) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -932,7 +931,7 @@ func (r *jsiiProxy_RedshiftUsageLimit) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -948,7 +947,7 @@ func (r *jsiiProxy_RedshiftUsageLimit) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -964,15 +963,15 @@ func (r *jsiiProxy_RedshiftUsageLimit) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftUsageLimit) HasResourceMove() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RedshiftUsageLimit) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -991,7 +990,7 @@ func (r *jsiiProxy_RedshiftUsageLimit) ImportFrom(id *string, provider cdktf.Ter
 	_jsii_.InvokeVoid(
 		r,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1004,7 +1003,7 @@ func (r *jsiiProxy_RedshiftUsageLimit) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1018,18 +1017,18 @@ func (r *jsiiProxy_RedshiftUsageLimit) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (r *jsiiProxy_RedshiftUsageLimit) MoveTo(moveTarget *string, index interface{}) {
+func (r *jsiiProxy_RedshiftUsageLimit) MoveTo(moveTarget *string, index any) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1040,7 +1039,7 @@ func (r *jsiiProxy_RedshiftUsageLimit) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1051,7 +1050,7 @@ func (r *jsiiProxy_RedshiftUsageLimit) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1103,8 +1102,8 @@ func (r *jsiiProxy_RedshiftUsageLimit) ResetTagsAll() {
 	)
 }
 
-func (r *jsiiProxy_RedshiftUsageLimit) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RedshiftUsageLimit) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1116,8 +1115,8 @@ func (r *jsiiProxy_RedshiftUsageLimit) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftUsageLimit) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RedshiftUsageLimit) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1129,8 +1128,8 @@ func (r *jsiiProxy_RedshiftUsageLimit) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftUsageLimit) ToHclTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RedshiftUsageLimit) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1142,8 +1141,8 @@ func (r *jsiiProxy_RedshiftUsageLimit) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftUsageLimit) ToMetadata() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RedshiftUsageLimit) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1168,8 +1167,8 @@ func (r *jsiiProxy_RedshiftUsageLimit) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftUsageLimit) ToTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RedshiftUsageLimit) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1180,4 +1179,3 @@ func (r *jsiiProxy_RedshiftUsageLimit) ToTerraform() interface{} {
 
 	return returns
 }
-

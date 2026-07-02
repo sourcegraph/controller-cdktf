@@ -98,7 +98,7 @@ func (p *jsiiProxy_PinpointAppQuietTimeOutputReference) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_PinpointAppQuietTimeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PinpointAppQuietTimeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewPinpointAppQuietTimeOutputReferenceParameters(terraformResource 
 
 	return nil
 }
-

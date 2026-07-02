@@ -1,6 +1,5 @@
 package alblistenerrule
 
-
 type AlbListenerRuleCondition struct {
 	// host_header block.
 	//
@@ -21,10 +20,9 @@ type AlbListenerRuleCondition struct {
 	// query_string block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/alb_listener_rule#query_string AlbListenerRule#query_string}
-	QueryString interface{} `field:"optional" json:"queryString" yaml:"queryString"`
+	QueryString any `field:"optional" json:"queryString" yaml:"queryString"`
 	// source_ip block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/alb_listener_rule#source_ip AlbListenerRule#source_ip}
 	SourceIp *AlbListenerRuleConditionSourceIp `field:"optional" json:"sourceIp" yaml:"sourceIp"`
 }
-

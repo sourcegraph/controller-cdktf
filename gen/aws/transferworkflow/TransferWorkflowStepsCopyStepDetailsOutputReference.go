@@ -12,9 +12,9 @@ type TransferWorkflowStepsCopyStepDetailsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -51,7 +51,7 @@ type TransferWorkflowStepsCopyStepDetailsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type TransferWorkflowStepsCopyStepDetailsOutputReference interface {
 	ResetSourceFileLocation()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference) Terrafor
 	return returns
 }
 
-
 func NewTransferWorkflowStepsCopyStepDetailsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) TransferWorkflowStepsCopyStepDetailsOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewTransferWorkflowStepsCopyStepDetailsOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsCopyStepDetailsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewTransferWorkflowStepsCopyStepDetailsOutputReference_Override(t TransferW
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsCopyStepDetailsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		t,
 	)
 }
 
-func (j *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference)SetInternalValue(val *TransferWorkflowStepsCopyStepDetails) {
+func (j *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference) SetInternalValue(val *TransferWorkflowStepsCopyStepDetails) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference)SetName(val *string) {
+func (j *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference)SetName(v
 	)
 }
 
-func (j *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference)SetOverwriteExisting(val *string) {
+func (j *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference) SetOverwriteExisting(val *string) {
 	if err := j.validateSetOverwriteExistingParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference)SetOverwr
 	)
 }
 
-func (j *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference)SetSourceFileLocation(val *string) {
+func (j *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference) SetSourceFileLocation(val *string) {
 	if err := j.validateSetSourceFileLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference)SetSource
 	)
 }
 
-func (j *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,16 +370,16 @@ func (t *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference) ComputeF
 	return returns
 }
 
-func (t *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (t *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -396,7 +395,7 @@ func (t *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference) GetBoole
 	_jsii_.Invoke(
 		t,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -412,7 +411,7 @@ func (t *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference) GetBoole
 	_jsii_.Invoke(
 		t,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -428,7 +427,7 @@ func (t *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference) GetListA
 	_jsii_.Invoke(
 		t,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -444,7 +443,7 @@ func (t *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference) GetNumbe
 	_jsii_.Invoke(
 		t,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -460,7 +459,7 @@ func (t *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference) GetNumbe
 	_jsii_.Invoke(
 		t,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,7 +475,7 @@ func (t *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference) GetNumbe
 	_jsii_.Invoke(
 		t,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -492,7 +491,7 @@ func (t *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference) GetStrin
 	_jsii_.Invoke(
 		t,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -508,7 +507,7 @@ func (t *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference) GetStrin
 	_jsii_.Invoke(
 		t,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func (t *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference) Interpol
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -551,7 +550,7 @@ func (t *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference) PutDesti
 	_jsii_.InvokeVoid(
 		t,
 		"putDestinationFileLocation",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -587,16 +586,16 @@ func (t *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference) ResetSou
 	)
 }
 
-func (t *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (t *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := t.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (t *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference) ToString
 
 	return returns
 }
-

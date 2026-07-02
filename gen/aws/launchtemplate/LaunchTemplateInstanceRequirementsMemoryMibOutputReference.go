@@ -12,9 +12,9 @@ type LaunchTemplateInstanceRequirementsMemoryMibOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type LaunchTemplateInstanceRequirementsMemoryMibOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type LaunchTemplateInstanceRequirementsMemoryMibOutputReference interface {
 	ResetMax()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference struct
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference) T
 	return returns
 }
 
-
 func NewLaunchTemplateInstanceRequirementsMemoryMibOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LaunchTemplateInstanceRequirementsMemoryMibOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewLaunchTemplateInstanceRequirementsMemoryMibOutputReference(terraformReso
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryMibOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewLaunchTemplateInstanceRequirementsMemoryMibOutputReference_Override(l La
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryMibOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference)SetInternalValue(val *LaunchTemplateInstanceRequirementsMemoryMib) {
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference) SetInternalValue(val *LaunchTemplateInstanceRequirementsMemoryMib) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference)SetMax(val *float64) {
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference) SetMax(val *float64) {
 	if err := j.validateSetMaxParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference)SetMin(val *float64) {
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference) SetMin(val *float64) {
 	if err := j.validateSetMinParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference) C
 	return returns
 }
 
-func (l *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference) G
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference) G
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference) G
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference) G
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference) G
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference) G
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference) G
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference) G
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference) I
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference) R
 	)
 }
 
-func (l *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference) T
 
 	return returns
 }
-

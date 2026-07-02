@@ -34,7 +34,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourcePartitionList) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersResourcePartitionList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityhubInsightFiltersResourcePartitionList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSecurityhubInsightFiltersResourcePartitionListParameters(terrafo
 
 	return nil
 }
-

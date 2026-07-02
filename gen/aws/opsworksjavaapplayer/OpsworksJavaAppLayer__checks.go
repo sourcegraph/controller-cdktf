@@ -19,7 +19,7 @@ func (o *jsiiProxy_OpsworksJavaAppLayer) validateAddMoveTargetParameters(moveTar
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksJavaAppLayer) validateAddOverrideParameters(path *string, value interface{}) error {
+func (o *jsiiProxy_OpsworksJavaAppLayer) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (o *jsiiProxy_OpsworksJavaAppLayer) validateMoveFromIdParameters(id *string
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksJavaAppLayer) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (o *jsiiProxy_OpsworksJavaAppLayer) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (o *jsiiProxy_OpsworksJavaAppLayer) validatePutCloudwatchConfigurationParam
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksJavaAppLayer) validatePutEbsVolumeParameters(value interface{}) error {
+func (o *jsiiProxy_OpsworksJavaAppLayer) validatePutEbsVolumeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateOpsworksJavaAppLayer_GenerateConfigForImportParameters(scope constr
 	return nil
 }
 
-func validateOpsworksJavaAppLayer_IsConstructParameters(x interface{}) error {
+func validateOpsworksJavaAppLayer_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateOpsworksJavaAppLayer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateOpsworksJavaAppLayer_IsTerraformElementParameters(x interface{}) error {
+func validateOpsworksJavaAppLayer_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateOpsworksJavaAppLayer_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
-func validateOpsworksJavaAppLayer_IsTerraformResourceParameters(x interface{}) error {
+func validateOpsworksJavaAppLayer_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -313,7 +313,7 @@ func (j *jsiiProxy_OpsworksJavaAppLayer) validateSetAppServerVersionParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksJavaAppLayer) validateSetAutoAssignElasticIpsParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksJavaAppLayer) validateSetAutoAssignElasticIpsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -333,7 +333,7 @@ func (j *jsiiProxy_OpsworksJavaAppLayer) validateSetAutoAssignElasticIpsParamete
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksJavaAppLayer) validateSetAutoAssignPublicIpsParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksJavaAppLayer) validateSetAutoAssignPublicIpsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -353,7 +353,7 @@ func (j *jsiiProxy_OpsworksJavaAppLayer) validateSetAutoAssignPublicIpsParameter
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksJavaAppLayer) validateSetAutoHealingParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksJavaAppLayer) validateSetAutoHealingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -373,7 +373,7 @@ func (j *jsiiProxy_OpsworksJavaAppLayer) validateSetAutoHealingParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksJavaAppLayer) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksJavaAppLayer) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -406,7 +406,7 @@ func (j *jsiiProxy_OpsworksJavaAppLayer) validateSetConnectionParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksJavaAppLayer) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksJavaAppLayer) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -527,7 +527,7 @@ func (j *jsiiProxy_OpsworksJavaAppLayer) validateSetCustomUndeployRecipesParamet
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksJavaAppLayer) validateSetDrainElbOnShutdownParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksJavaAppLayer) validateSetDrainElbOnShutdownParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -563,7 +563,7 @@ func (j *jsiiProxy_OpsworksJavaAppLayer) validateSetIdParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksJavaAppLayer) validateSetInstallUpdatesOnBootParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksJavaAppLayer) validateSetInstallUpdatesOnBootParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -631,7 +631,7 @@ func (j *jsiiProxy_OpsworksJavaAppLayer) validateSetNameParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksJavaAppLayer) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_OpsworksJavaAppLayer) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -709,7 +709,7 @@ func (j *jsiiProxy_OpsworksJavaAppLayer) validateSetTagsAllParameters(val *map[s
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksJavaAppLayer) validateSetUseEbsOptimizedInstancesParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksJavaAppLayer) validateSetUseEbsOptimizedInstancesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -747,4 +747,3 @@ func validateNewOpsworksJavaAppLayerParameters(scope constructs.Construct, id *s
 
 	return nil
 }
-

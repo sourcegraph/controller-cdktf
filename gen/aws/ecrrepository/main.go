@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ecrRepository.EcrRepository",
-		reflect.TypeOf((*EcrRepository)(nil)).Elem(),
+		reflect.TypeFor[EcrRepository](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -85,7 +85,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EcrRepository{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -93,15 +93,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ecrRepository.EcrRepositoryConfig",
-		reflect.TypeOf((*EcrRepositoryConfig)(nil)).Elem(),
+		reflect.TypeFor[EcrRepositoryConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ecrRepository.EcrRepositoryEncryptionConfiguration",
-		reflect.TypeOf((*EcrRepositoryEncryptionConfiguration)(nil)).Elem(),
+		reflect.TypeFor[EcrRepositoryEncryptionConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ecrRepository.EcrRepositoryEncryptionConfigurationList",
-		reflect.TypeOf((*EcrRepositoryEncryptionConfigurationList)(nil)).Elem(),
+		reflect.TypeFor[EcrRepositoryEncryptionConfigurationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -115,7 +115,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EcrRepositoryEncryptionConfigurationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -123,7 +123,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ecrRepository.EcrRepositoryEncryptionConfigurationOutputReference",
-		reflect.TypeOf((*EcrRepositoryEncryptionConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EcrRepositoryEncryptionConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -153,7 +153,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EcrRepositoryEncryptionConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -161,11 +161,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ecrRepository.EcrRepositoryImageScanningConfiguration",
-		reflect.TypeOf((*EcrRepositoryImageScanningConfiguration)(nil)).Elem(),
+		reflect.TypeFor[EcrRepositoryImageScanningConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ecrRepository.EcrRepositoryImageScanningConfigurationOutputReference",
-		reflect.TypeOf((*EcrRepositoryImageScanningConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EcrRepositoryImageScanningConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -191,7 +191,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EcrRepositoryImageScanningConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -199,11 +199,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ecrRepository.EcrRepositoryTimeouts",
-		reflect.TypeOf((*EcrRepositoryTimeouts)(nil)).Elem(),
+		reflect.TypeFor[EcrRepositoryTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ecrRepository.EcrRepositoryTimeoutsOutputReference",
-		reflect.TypeOf((*EcrRepositoryTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EcrRepositoryTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -230,7 +230,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EcrRepositoryTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

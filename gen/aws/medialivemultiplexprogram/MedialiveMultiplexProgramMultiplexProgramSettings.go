@@ -1,6 +1,5 @@
 package medialivemultiplexprogram
 
-
 type MedialiveMultiplexProgramMultiplexProgramSettings struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/medialive_multiplex_program#preferred_channel_pipeline MedialiveMultiplexProgram#preferred_channel_pipeline}.
 	PreferredChannelPipeline *string `field:"required" json:"preferredChannelPipeline" yaml:"preferredChannelPipeline"`
@@ -9,10 +8,9 @@ type MedialiveMultiplexProgramMultiplexProgramSettings struct {
 	// service_descriptor block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/medialive_multiplex_program#service_descriptor MedialiveMultiplexProgram#service_descriptor}
-	ServiceDescriptor interface{} `field:"optional" json:"serviceDescriptor" yaml:"serviceDescriptor"`
+	ServiceDescriptor any `field:"optional" json:"serviceDescriptor" yaml:"serviceDescriptor"`
 	// video_settings block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/medialive_multiplex_program#video_settings MedialiveMultiplexProgram#video_settings}
-	VideoSettings interface{} `field:"optional" json:"videoSettings" yaml:"videoSettings"`
+	VideoSettings any `field:"optional" json:"videoSettings" yaml:"videoSettings"`
 }
-

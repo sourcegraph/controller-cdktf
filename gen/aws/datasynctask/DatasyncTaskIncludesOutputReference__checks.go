@@ -98,7 +98,7 @@ func (d *jsiiProxy_DatasyncTaskIncludesOutputReference) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_DatasyncTaskIncludesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatasyncTaskIncludesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDatasyncTaskIncludesOutputReferenceParameters(terraformResource 
 
 	return nil
 }
-

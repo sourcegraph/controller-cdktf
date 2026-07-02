@@ -16,15 +16,15 @@ type WafXssMatchSet interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -54,26 +54,26 @@ type WafXssMatchSet interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	XssMatchTuples() WafXssMatchSetXssMatchTuplesList
-	XssMatchTuplesInput() interface{}
+	XssMatchTuplesInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type WafXssMatchSet interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -103,30 +103,30 @@ type WafXssMatchSet interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutXssMatchTuples(value interface{})
+	PutXssMatchTuples(value any)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetXssMatchTuples()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for WafXssMatchSet
@@ -154,8 +154,8 @@ func (j *jsiiProxy_WafXssMatchSet) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_WafXssMatchSet) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WafXssMatchSet) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_WafXssMatchSet) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WafXssMatchSet) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_WafXssMatchSet) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_WafXssMatchSet) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_WafXssMatchSet) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WafXssMatchSet) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -294,8 +294,8 @@ func (j *jsiiProxy_WafXssMatchSet) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_WafXssMatchSet) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_WafXssMatchSet) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -304,8 +304,8 @@ func (j *jsiiProxy_WafXssMatchSet) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WafXssMatchSet) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WafXssMatchSet) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -324,8 +324,8 @@ func (j *jsiiProxy_WafXssMatchSet) TerraformGeneratorMetadata() *cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_WafXssMatchSet) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_WafXssMatchSet) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -354,8 +354,8 @@ func (j *jsiiProxy_WafXssMatchSet) XssMatchTuples() WafXssMatchSetXssMatchTuples
 	return returns
 }
 
-func (j *jsiiProxy_WafXssMatchSet) XssMatchTuplesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WafXssMatchSet) XssMatchTuplesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"xssMatchTuplesInput",
@@ -363,7 +363,6 @@ func (j *jsiiProxy_WafXssMatchSet) XssMatchTuplesInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/waf_xss_match_set aws_waf_xss_match_set} Resource.
 func NewWafXssMatchSet(scope constructs.Construct, id *string, config *WafXssMatchSetConfig) WafXssMatchSet {
@@ -376,7 +375,7 @@ func NewWafXssMatchSet(scope constructs.Construct, id *string, config *WafXssMat
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSet",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -389,12 +388,12 @@ func NewWafXssMatchSet_Override(w WafXssMatchSet, scope constructs.Construct, id
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSet",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WafXssMatchSet)SetConnection(val interface{}) {
+func (j *jsiiProxy_WafXssMatchSet) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_WafXssMatchSet)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WafXssMatchSet)SetCount(val interface{}) {
+func (j *jsiiProxy_WafXssMatchSet) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,7 +415,7 @@ func (j *jsiiProxy_WafXssMatchSet)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WafXssMatchSet)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_WafXssMatchSet) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -424,7 +423,7 @@ func (j *jsiiProxy_WafXssMatchSet)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_WafXssMatchSet)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_WafXssMatchSet) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -432,7 +431,7 @@ func (j *jsiiProxy_WafXssMatchSet)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_WafXssMatchSet)SetId(val *string) {
+func (j *jsiiProxy_WafXssMatchSet) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_WafXssMatchSet)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WafXssMatchSet)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_WafXssMatchSet) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_WafXssMatchSet)SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_WafXssMatchSet)SetName(val *string) {
+func (j *jsiiProxy_WafXssMatchSet) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_WafXssMatchSet)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WafXssMatchSet)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_WafXssMatchSet) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -473,7 +472,7 @@ func (j *jsiiProxy_WafXssMatchSet)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_WafXssMatchSet)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_WafXssMatchSet) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,7 +495,7 @@ func WafXssMatchSet_GenerateConfigForImport(scope constructs.Construct, importTo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSet",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -520,7 +519,7 @@ func WafXssMatchSet_GenerateConfigForImport(scope constructs.Construct, importTo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func WafXssMatchSet_IsConstruct(x interface{}) *bool {
+func WafXssMatchSet_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWafXssMatchSet_IsConstructParameters(x); err != nil {
@@ -531,7 +530,7 @@ func WafXssMatchSet_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSet",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -539,7 +538,7 @@ func WafXssMatchSet_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func WafXssMatchSet_IsTerraformElement(x interface{}) *bool {
+func WafXssMatchSet_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWafXssMatchSet_IsTerraformElementParameters(x); err != nil {
@@ -550,7 +549,7 @@ func WafXssMatchSet_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSet",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -558,7 +557,7 @@ func WafXssMatchSet_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func WafXssMatchSet_IsTerraformResource(x interface{}) *bool {
+func WafXssMatchSet_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWafXssMatchSet_IsTerraformResourceParameters(x); err != nil {
@@ -569,7 +568,7 @@ func WafXssMatchSet_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSet",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -594,31 +593,31 @@ func (w *jsiiProxy_WafXssMatchSet) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (w *jsiiProxy_WafXssMatchSet) AddOverride(path *string, value interface{}) {
+func (w *jsiiProxy_WafXssMatchSet) AddOverride(path *string, value any) {
 	if err := w.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (w *jsiiProxy_WafXssMatchSet) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WafXssMatchSet) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -634,7 +633,7 @@ func (w *jsiiProxy_WafXssMatchSet) GetBooleanAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -650,7 +649,7 @@ func (w *jsiiProxy_WafXssMatchSet) GetBooleanMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -666,7 +665,7 @@ func (w *jsiiProxy_WafXssMatchSet) GetListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -682,7 +681,7 @@ func (w *jsiiProxy_WafXssMatchSet) GetNumberAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -698,7 +697,7 @@ func (w *jsiiProxy_WafXssMatchSet) GetNumberListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func (w *jsiiProxy_WafXssMatchSet) GetNumberMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func (w *jsiiProxy_WafXssMatchSet) GetStringAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -746,15 +745,15 @@ func (w *jsiiProxy_WafXssMatchSet) GetStringMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_WafXssMatchSet) HasResourceMove() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WafXssMatchSet) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -773,7 +772,7 @@ func (w *jsiiProxy_WafXssMatchSet) ImportFrom(id *string, provider cdktf.Terrafo
 	_jsii_.InvokeVoid(
 		w,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -786,7 +785,7 @@ func (w *jsiiProxy_WafXssMatchSet) InterpolationForAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -800,18 +799,18 @@ func (w *jsiiProxy_WafXssMatchSet) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (w *jsiiProxy_WafXssMatchSet) MoveTo(moveTarget *string, index interface{}) {
+func (w *jsiiProxy_WafXssMatchSet) MoveTo(moveTarget *string, index any) {
 	if err := w.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -822,7 +821,7 @@ func (w *jsiiProxy_WafXssMatchSet) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -833,18 +832,18 @@ func (w *jsiiProxy_WafXssMatchSet) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (w *jsiiProxy_WafXssMatchSet) PutXssMatchTuples(value interface{}) {
+func (w *jsiiProxy_WafXssMatchSet) PutXssMatchTuples(value any) {
 	if err := w.validatePutXssMatchTuplesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"putXssMatchTuples",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -872,8 +871,8 @@ func (w *jsiiProxy_WafXssMatchSet) ResetXssMatchTuples() {
 	)
 }
 
-func (w *jsiiProxy_WafXssMatchSet) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_WafXssMatchSet) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -885,8 +884,8 @@ func (w *jsiiProxy_WafXssMatchSet) SynthesizeAttributes() *map[string]interface{
 	return returns
 }
 
-func (w *jsiiProxy_WafXssMatchSet) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_WafXssMatchSet) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -898,8 +897,8 @@ func (w *jsiiProxy_WafXssMatchSet) SynthesizeHclAttributes() *map[string]interfa
 	return returns
 }
 
-func (w *jsiiProxy_WafXssMatchSet) ToHclTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WafXssMatchSet) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -911,8 +910,8 @@ func (w *jsiiProxy_WafXssMatchSet) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (w *jsiiProxy_WafXssMatchSet) ToMetadata() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WafXssMatchSet) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -937,8 +936,8 @@ func (w *jsiiProxy_WafXssMatchSet) ToString() *string {
 	return returns
 }
 
-func (w *jsiiProxy_WafXssMatchSet) ToTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WafXssMatchSet) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -949,4 +948,3 @@ func (w *jsiiProxy_WafXssMatchSet) ToTerraform() interface{} {
 
 	return returns
 }
-

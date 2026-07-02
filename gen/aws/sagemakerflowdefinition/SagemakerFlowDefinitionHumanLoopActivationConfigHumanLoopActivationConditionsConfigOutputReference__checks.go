@@ -98,7 +98,7 @@ func (s *jsiiProxy_SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActi
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewSagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivat
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (m *jsiiProxy_MedialiveInputInputDevicesOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveInputInputDevicesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MedialiveInputInputDevicesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_MedialiveInputInputDevicesOutputReference) validateSetIdParam
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveInputInputDevicesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MedialiveInputInputDevicesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewMedialiveInputInputDevicesOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

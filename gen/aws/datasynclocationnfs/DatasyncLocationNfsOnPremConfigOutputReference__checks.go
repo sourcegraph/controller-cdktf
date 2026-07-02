@@ -106,7 +106,7 @@ func (j *jsiiProxy_DatasyncLocationNfsOnPremConfigOutputReference) validateSetAg
 	return nil
 }
 
-func (j *jsiiProxy_DatasyncLocationNfsOnPremConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatasyncLocationNfsOnPremConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDatasyncLocationNfsOnPremConfigOutputReferenceParameters(terrafo
 
 	return nil
 }
-

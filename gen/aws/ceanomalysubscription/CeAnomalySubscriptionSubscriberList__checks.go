@@ -34,7 +34,7 @@ func (c *jsiiProxy_CeAnomalySubscriptionSubscriberList) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_CeAnomalySubscriptionSubscriberList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CeAnomalySubscriptionSubscriberList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCeAnomalySubscriptionSubscriberListParameters(terraformResource 
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (s *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeList) validat
 	return nil
 }
 
-func (j *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSsoadminInstanceAccessControlAttributesAttributeListParameters(t
 
 	return nil
 }
-

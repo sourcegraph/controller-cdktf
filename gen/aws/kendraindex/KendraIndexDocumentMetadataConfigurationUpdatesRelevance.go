@@ -1,11 +1,10 @@
 package kendraindex
 
-
 type KendraIndexDocumentMetadataConfigurationUpdatesRelevance struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kendra_index#duration KendraIndex#duration}.
 	Duration *string `field:"optional" json:"duration" yaml:"duration"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kendra_index#freshness KendraIndex#freshness}.
-	Freshness interface{} `field:"optional" json:"freshness" yaml:"freshness"`
+	Freshness any `field:"optional" json:"freshness" yaml:"freshness"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kendra_index#importance KendraIndex#importance}.
 	Importance *float64 `field:"optional" json:"importance" yaml:"importance"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kendra_index#rank_order KendraIndex#rank_order}.
@@ -13,4 +12,3 @@ type KendraIndexDocumentMetadataConfigurationUpdatesRelevance struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kendra_index#values_importance_map KendraIndex#values_importance_map}.
 	ValuesImportanceMap *map[string]*float64 `field:"optional" json:"valuesImportanceMap" yaml:"valuesImportanceMap"`
 }
-

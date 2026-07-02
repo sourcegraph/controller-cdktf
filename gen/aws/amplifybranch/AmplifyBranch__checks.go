@@ -19,7 +19,7 @@ func (a *jsiiProxy_AmplifyBranch) validateAddMoveTargetParameters(moveTarget *st
 	return nil
 }
 
-func (a *jsiiProxy_AmplifyBranch) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AmplifyBranch) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AmplifyBranch) validateMoveFromIdParameters(id *string) error
 	return nil
 }
 
-func (a *jsiiProxy_AmplifyBranch) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AmplifyBranch) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateAmplifyBranch_GenerateConfigForImportParameters(scope constructs.Co
 	return nil
 }
 
-func validateAmplifyBranch_IsConstructParameters(x interface{}) error {
+func validateAmplifyBranch_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateAmplifyBranch_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateAmplifyBranch_IsTerraformElementParameters(x interface{}) error {
+func validateAmplifyBranch_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateAmplifyBranch_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateAmplifyBranch_IsTerraformResourceParameters(x interface{}) error {
+func validateAmplifyBranch_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -276,7 +276,7 @@ func (j *jsiiProxy_AmplifyBranch) validateSetBranchNameParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_AmplifyBranch) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AmplifyBranch) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -309,7 +309,7 @@ func (j *jsiiProxy_AmplifyBranch) validateSetConnectionParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_AmplifyBranch) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AmplifyBranch) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -382,7 +382,7 @@ func (j *jsiiProxy_AmplifyBranch) validateSetDisplayNameParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_AmplifyBranch) validateSetEnableAutoBuildParameters(val interface{}) error {
+func (j *jsiiProxy_AmplifyBranch) validateSetEnableAutoBuildParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -402,7 +402,7 @@ func (j *jsiiProxy_AmplifyBranch) validateSetEnableAutoBuildParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_AmplifyBranch) validateSetEnableBasicAuthParameters(val interface{}) error {
+func (j *jsiiProxy_AmplifyBranch) validateSetEnableBasicAuthParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -422,7 +422,7 @@ func (j *jsiiProxy_AmplifyBranch) validateSetEnableBasicAuthParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_AmplifyBranch) validateSetEnableNotificationParameters(val interface{}) error {
+func (j *jsiiProxy_AmplifyBranch) validateSetEnableNotificationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -442,7 +442,7 @@ func (j *jsiiProxy_AmplifyBranch) validateSetEnableNotificationParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_AmplifyBranch) validateSetEnablePerformanceModeParameters(val interface{}) error {
+func (j *jsiiProxy_AmplifyBranch) validateSetEnablePerformanceModeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -462,7 +462,7 @@ func (j *jsiiProxy_AmplifyBranch) validateSetEnablePerformanceModeParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_AmplifyBranch) validateSetEnablePullRequestPreviewParameters(val interface{}) error {
+func (j *jsiiProxy_AmplifyBranch) validateSetEnablePullRequestPreviewParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -514,7 +514,7 @@ func (j *jsiiProxy_AmplifyBranch) validateSetLifecycleParameters(val *cdktf.Terr
 	return nil
 }
 
-func (j *jsiiProxy_AmplifyBranch) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AmplifyBranch) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -618,4 +618,3 @@ func validateNewAmplifyBranchParameters(scope constructs.Construct, id *string, 
 
 	return nil
 }
-

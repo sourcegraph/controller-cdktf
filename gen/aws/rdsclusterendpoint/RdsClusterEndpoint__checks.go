@@ -19,7 +19,7 @@ func (r *jsiiProxy_RdsClusterEndpoint) validateAddMoveTargetParameters(moveTarge
 	return nil
 }
 
-func (r *jsiiProxy_RdsClusterEndpoint) validateAddOverrideParameters(path *string, value interface{}) error {
+func (r *jsiiProxy_RdsClusterEndpoint) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (r *jsiiProxy_RdsClusterEndpoint) validateMoveFromIdParameters(id *string) 
 	return nil
 }
 
-func (r *jsiiProxy_RdsClusterEndpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (r *jsiiProxy_RdsClusterEndpoint) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateRdsClusterEndpoint_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateRdsClusterEndpoint_IsConstructParameters(x interface{}) error {
+func validateRdsClusterEndpoint_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateRdsClusterEndpoint_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateRdsClusterEndpoint_IsTerraformElementParameters(x interface{}) error {
+func validateRdsClusterEndpoint_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateRdsClusterEndpoint_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func validateRdsClusterEndpoint_IsTerraformResourceParameters(x interface{}) error {
+func validateRdsClusterEndpoint_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -260,7 +260,7 @@ func (j *jsiiProxy_RdsClusterEndpoint) validateSetClusterIdentifierParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_RdsClusterEndpoint) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_RdsClusterEndpoint) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -293,7 +293,7 @@ func (j *jsiiProxy_RdsClusterEndpoint) validateSetConnectionParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_RdsClusterEndpoint) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_RdsClusterEndpoint) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -382,7 +382,7 @@ func (j *jsiiProxy_RdsClusterEndpoint) validateSetLifecycleParameters(val *cdktf
 	return nil
 }
 
-func (j *jsiiProxy_RdsClusterEndpoint) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_RdsClusterEndpoint) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -470,4 +470,3 @@ func validateNewRdsClusterEndpointParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

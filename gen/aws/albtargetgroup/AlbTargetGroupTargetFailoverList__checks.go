@@ -34,7 +34,7 @@ func (a *jsiiProxy_AlbTargetGroupTargetFailoverList) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_AlbTargetGroupTargetFailoverList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlbTargetGroupTargetFailoverList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAlbTargetGroupTargetFailoverListParameters(terraformResource cdk
 
 	return nil
 }
-

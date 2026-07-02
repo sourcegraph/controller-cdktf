@@ -15,9 +15,9 @@ type CloudfrontDistributionLoggingConfigOutputReference interface {
 	BucketInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,9 +30,9 @@ type CloudfrontDistributionLoggingConfigOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	IncludeCookies() interface{}
-	SetIncludeCookies(val interface{})
-	IncludeCookiesInput() interface{}
+	IncludeCookies() any
+	SetIncludeCookies(val any)
+	IncludeCookiesInput() any
 	InternalValue() *CloudfrontDistributionLoggingConfig
 	SetInternalValue(val *CloudfrontDistributionLoggingConfig)
 	Prefix() *string
@@ -49,7 +49,7 @@ type CloudfrontDistributionLoggingConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type CloudfrontDistributionLoggingConfigOutputReference interface {
 	ResetPrefix()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -107,8 +107,8 @@ func (j *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference) BucketInp
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -147,8 +147,8 @@ func (j *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference) Fqn() *st
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference) IncludeCookies() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference) IncludeCookies() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeCookies",
@@ -157,8 +157,8 @@ func (j *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference) IncludeCo
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference) IncludeCookiesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference) IncludeCookiesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeCookiesInput",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference) Terraform
 	return returns
 }
 
-
 func NewCloudfrontDistributionLoggingConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudfrontDistributionLoggingConfigOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewCloudfrontDistributionLoggingConfigOutputReference(terraformResource cdk
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionLoggingConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewCloudfrontDistributionLoggingConfigOutputReference_Override(c Cloudfront
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionLoggingConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference)SetBucket(val *string) {
+func (j *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference) SetBucket(val *string) {
 	if err := j.validateSetBucketParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference)SetBucket(
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference)SetIncludeCookies(val interface{}) {
+func (j *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference) SetIncludeCookies(val any) {
 	if err := j.validateSetIncludeCookiesParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference)SetInclude
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference)SetInternalValue(val *CloudfrontDistributionLoggingConfig) {
+func (j *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference) SetInternalValue(val *CloudfrontDistributionLoggingConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference)SetInterna
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference)SetPrefix(val *string) {
+func (j *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference) SetPrefix(val *string) {
 	if err := j.validateSetPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference)SetPrefix(
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,16 +345,16 @@ func (c *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference) ComputeFq
 	return returns
 }
 
-func (c *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (c *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference) GetBoolea
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (c *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference) GetBoolea
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (c *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference) GetListAt
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (c *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference) GetNumber
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (c *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference) GetNumber
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (c *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference) GetNumber
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (c *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference) GetString
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (c *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference) GetString
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (c *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference) Interpola
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -535,16 +534,16 @@ func (c *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference) ResetPref
 	)
 }
 
-func (c *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (c *jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference) ToString(
 
 	return returns
 }
-

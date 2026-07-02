@@ -98,7 +98,7 @@ func (d *jsiiProxy_DynamodbContributorInsightsTimeoutsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_DynamodbContributorInsightsTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DynamodbContributorInsightsTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DynamodbContributorInsightsTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DynamodbContributorInsightsTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DynamodbContributorInsightsTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewDynamodbContributorInsightsTimeoutsOutputReferenceParameters(ter
 
 	return nil
 }
-

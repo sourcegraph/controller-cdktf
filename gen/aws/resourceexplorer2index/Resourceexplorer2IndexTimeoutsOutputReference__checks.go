@@ -98,7 +98,7 @@ func (r *jsiiProxy_Resourceexplorer2IndexTimeoutsOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_Resourceexplorer2IndexTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Resourceexplorer2IndexTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_Resourceexplorer2IndexTimeoutsOutputReference) validateSetDel
 	return nil
 }
 
-func (j *jsiiProxy_Resourceexplorer2IndexTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Resourceexplorer2IndexTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewResourceexplorer2IndexTimeoutsOutputReferenceParameters(terrafor
 
 	return nil
 }
-

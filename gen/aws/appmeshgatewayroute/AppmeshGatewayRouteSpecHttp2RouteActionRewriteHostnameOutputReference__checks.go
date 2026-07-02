@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameOutputR
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewAppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameOutputRefe
 
 	return nil
 }
-

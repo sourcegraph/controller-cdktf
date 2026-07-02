@@ -98,7 +98,7 @@ func (e *jsiiProxy_EfsAccessPointRootDirectoryCreationInfoOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_EfsAccessPointRootDirectoryCreationInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EfsAccessPointRootDirectoryCreationInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewEfsAccessPointRootDirectoryCreationInfoOutputReferenceParameters
 
 	return nil
 }
-

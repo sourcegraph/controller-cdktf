@@ -19,15 +19,15 @@ type FsxOntapFileSystem interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DailyAutomaticBackupStartTime() *string
 	SetDailyAutomaticBackupStartTime(val *string)
 	DailyAutomaticBackupStartTimeInput() *string
@@ -78,11 +78,11 @@ type FsxOntapFileSystem interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RouteTableIds() *[]*string
 	SetRouteTableIds(val *[]*string)
 	RouteTableIdsInput() *[]*string
@@ -107,14 +107,14 @@ type FsxOntapFileSystem interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ThroughputCapacity() *float64
 	SetThroughputCapacity(val *float64)
 	ThroughputCapacityInput() *float64
 	Timeouts() FsxOntapFileSystemTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	VpcId() *string
 	WeeklyMaintenanceStartTime() *string
 	SetWeeklyMaintenanceStartTime(val *string)
@@ -123,9 +123,9 @@ type FsxOntapFileSystem interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -143,7 +143,7 @@ type FsxOntapFileSystem interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -155,7 +155,7 @@ type FsxOntapFileSystem interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -182,17 +182,17 @@ type FsxOntapFileSystem interface {
 	ResetTagsAll()
 	ResetTimeouts()
 	ResetWeeklyMaintenanceStartTime()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for FsxOntapFileSystem
@@ -240,8 +240,8 @@ func (j *jsiiProxy_FsxOntapFileSystem) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_FsxOntapFileSystem) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxOntapFileSystem) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -250,8 +250,8 @@ func (j *jsiiProxy_FsxOntapFileSystem) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FsxOntapFileSystem) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FsxOntapFileSystem) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -260,8 +260,8 @@ func (j *jsiiProxy_FsxOntapFileSystem) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_FsxOntapFileSystem) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxOntapFileSystem) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -540,8 +540,8 @@ func (j *jsiiProxy_FsxOntapFileSystem) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_FsxOntapFileSystem) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_FsxOntapFileSystem) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -550,8 +550,8 @@ func (j *jsiiProxy_FsxOntapFileSystem) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FsxOntapFileSystem) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxOntapFileSystem) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -710,8 +710,8 @@ func (j *jsiiProxy_FsxOntapFileSystem) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_FsxOntapFileSystem) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FsxOntapFileSystem) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -760,8 +760,8 @@ func (j *jsiiProxy_FsxOntapFileSystem) Timeouts() FsxOntapFileSystemTimeoutsOutp
 	return returns
 }
 
-func (j *jsiiProxy_FsxOntapFileSystem) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxOntapFileSystem) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -800,7 +800,6 @@ func (j *jsiiProxy_FsxOntapFileSystem) WeeklyMaintenanceStartTimeInput() *string
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fsx_ontap_file_system aws_fsx_ontap_file_system} Resource.
 func NewFsxOntapFileSystem(scope constructs.Construct, id *string, config *FsxOntapFileSystemConfig) FsxOntapFileSystem {
 	_init_.Initialize()
@@ -812,7 +811,7 @@ func NewFsxOntapFileSystem(scope constructs.Construct, id *string, config *FsxOn
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -825,12 +824,12 @@ func NewFsxOntapFileSystem_Override(f FsxOntapFileSystem, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FsxOntapFileSystem)SetAutomaticBackupRetentionDays(val *float64) {
+func (j *jsiiProxy_FsxOntapFileSystem) SetAutomaticBackupRetentionDays(val *float64) {
 	if err := j.validateSetAutomaticBackupRetentionDaysParameters(val); err != nil {
 		panic(err)
 	}
@@ -841,7 +840,7 @@ func (j *jsiiProxy_FsxOntapFileSystem)SetAutomaticBackupRetentionDays(val *float
 	)
 }
 
-func (j *jsiiProxy_FsxOntapFileSystem)SetConnection(val interface{}) {
+func (j *jsiiProxy_FsxOntapFileSystem) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -852,7 +851,7 @@ func (j *jsiiProxy_FsxOntapFileSystem)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FsxOntapFileSystem)SetCount(val interface{}) {
+func (j *jsiiProxy_FsxOntapFileSystem) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -863,7 +862,7 @@ func (j *jsiiProxy_FsxOntapFileSystem)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FsxOntapFileSystem)SetDailyAutomaticBackupStartTime(val *string) {
+func (j *jsiiProxy_FsxOntapFileSystem) SetDailyAutomaticBackupStartTime(val *string) {
 	if err := j.validateSetDailyAutomaticBackupStartTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -874,7 +873,7 @@ func (j *jsiiProxy_FsxOntapFileSystem)SetDailyAutomaticBackupStartTime(val *stri
 	)
 }
 
-func (j *jsiiProxy_FsxOntapFileSystem)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_FsxOntapFileSystem) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -882,7 +881,7 @@ func (j *jsiiProxy_FsxOntapFileSystem)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FsxOntapFileSystem)SetDeploymentType(val *string) {
+func (j *jsiiProxy_FsxOntapFileSystem) SetDeploymentType(val *string) {
 	if err := j.validateSetDeploymentTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -893,7 +892,7 @@ func (j *jsiiProxy_FsxOntapFileSystem)SetDeploymentType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FsxOntapFileSystem)SetEndpointIpAddressRange(val *string) {
+func (j *jsiiProxy_FsxOntapFileSystem) SetEndpointIpAddressRange(val *string) {
 	if err := j.validateSetEndpointIpAddressRangeParameters(val); err != nil {
 		panic(err)
 	}
@@ -904,7 +903,7 @@ func (j *jsiiProxy_FsxOntapFileSystem)SetEndpointIpAddressRange(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FsxOntapFileSystem)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_FsxOntapFileSystem) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -912,7 +911,7 @@ func (j *jsiiProxy_FsxOntapFileSystem)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_FsxOntapFileSystem)SetFsxAdminPassword(val *string) {
+func (j *jsiiProxy_FsxOntapFileSystem) SetFsxAdminPassword(val *string) {
 	if err := j.validateSetFsxAdminPasswordParameters(val); err != nil {
 		panic(err)
 	}
@@ -923,7 +922,7 @@ func (j *jsiiProxy_FsxOntapFileSystem)SetFsxAdminPassword(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FsxOntapFileSystem)SetId(val *string) {
+func (j *jsiiProxy_FsxOntapFileSystem) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -934,7 +933,7 @@ func (j *jsiiProxy_FsxOntapFileSystem)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FsxOntapFileSystem)SetKmsKeyId(val *string) {
+func (j *jsiiProxy_FsxOntapFileSystem) SetKmsKeyId(val *string) {
 	if err := j.validateSetKmsKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -945,7 +944,7 @@ func (j *jsiiProxy_FsxOntapFileSystem)SetKmsKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FsxOntapFileSystem)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_FsxOntapFileSystem) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -956,7 +955,7 @@ func (j *jsiiProxy_FsxOntapFileSystem)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_FsxOntapFileSystem)SetPreferredSubnetId(val *string) {
+func (j *jsiiProxy_FsxOntapFileSystem) SetPreferredSubnetId(val *string) {
 	if err := j.validateSetPreferredSubnetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -967,7 +966,7 @@ func (j *jsiiProxy_FsxOntapFileSystem)SetPreferredSubnetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FsxOntapFileSystem)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_FsxOntapFileSystem) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -975,7 +974,7 @@ func (j *jsiiProxy_FsxOntapFileSystem)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_FsxOntapFileSystem)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_FsxOntapFileSystem) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -986,7 +985,7 @@ func (j *jsiiProxy_FsxOntapFileSystem)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FsxOntapFileSystem)SetRouteTableIds(val *[]*string) {
+func (j *jsiiProxy_FsxOntapFileSystem) SetRouteTableIds(val *[]*string) {
 	if err := j.validateSetRouteTableIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -997,7 +996,7 @@ func (j *jsiiProxy_FsxOntapFileSystem)SetRouteTableIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FsxOntapFileSystem)SetSecurityGroupIds(val *[]*string) {
+func (j *jsiiProxy_FsxOntapFileSystem) SetSecurityGroupIds(val *[]*string) {
 	if err := j.validateSetSecurityGroupIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1008,7 +1007,7 @@ func (j *jsiiProxy_FsxOntapFileSystem)SetSecurityGroupIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FsxOntapFileSystem)SetStorageCapacity(val *float64) {
+func (j *jsiiProxy_FsxOntapFileSystem) SetStorageCapacity(val *float64) {
 	if err := j.validateSetStorageCapacityParameters(val); err != nil {
 		panic(err)
 	}
@@ -1019,7 +1018,7 @@ func (j *jsiiProxy_FsxOntapFileSystem)SetStorageCapacity(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_FsxOntapFileSystem)SetStorageType(val *string) {
+func (j *jsiiProxy_FsxOntapFileSystem) SetStorageType(val *string) {
 	if err := j.validateSetStorageTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1030,7 +1029,7 @@ func (j *jsiiProxy_FsxOntapFileSystem)SetStorageType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FsxOntapFileSystem)SetSubnetIds(val *[]*string) {
+func (j *jsiiProxy_FsxOntapFileSystem) SetSubnetIds(val *[]*string) {
 	if err := j.validateSetSubnetIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1041,7 +1040,7 @@ func (j *jsiiProxy_FsxOntapFileSystem)SetSubnetIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FsxOntapFileSystem)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_FsxOntapFileSystem) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1052,7 +1051,7 @@ func (j *jsiiProxy_FsxOntapFileSystem)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_FsxOntapFileSystem)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_FsxOntapFileSystem) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1063,7 +1062,7 @@ func (j *jsiiProxy_FsxOntapFileSystem)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_FsxOntapFileSystem)SetThroughputCapacity(val *float64) {
+func (j *jsiiProxy_FsxOntapFileSystem) SetThroughputCapacity(val *float64) {
 	if err := j.validateSetThroughputCapacityParameters(val); err != nil {
 		panic(err)
 	}
@@ -1074,7 +1073,7 @@ func (j *jsiiProxy_FsxOntapFileSystem)SetThroughputCapacity(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_FsxOntapFileSystem)SetWeeklyMaintenanceStartTime(val *string) {
+func (j *jsiiProxy_FsxOntapFileSystem) SetWeeklyMaintenanceStartTime(val *string) {
 	if err := j.validateSetWeeklyMaintenanceStartTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1097,7 +1096,7 @@ func FsxOntapFileSystem_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1121,7 +1120,7 @@ func FsxOntapFileSystem_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func FsxOntapFileSystem_IsConstruct(x interface{}) *bool {
+func FsxOntapFileSystem_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFsxOntapFileSystem_IsConstructParameters(x); err != nil {
@@ -1132,7 +1131,7 @@ func FsxOntapFileSystem_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1140,7 +1139,7 @@ func FsxOntapFileSystem_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func FsxOntapFileSystem_IsTerraformElement(x interface{}) *bool {
+func FsxOntapFileSystem_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFsxOntapFileSystem_IsTerraformElementParameters(x); err != nil {
@@ -1151,7 +1150,7 @@ func FsxOntapFileSystem_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1159,7 +1158,7 @@ func FsxOntapFileSystem_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func FsxOntapFileSystem_IsTerraformResource(x interface{}) *bool {
+func FsxOntapFileSystem_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFsxOntapFileSystem_IsTerraformResourceParameters(x); err != nil {
@@ -1170,7 +1169,7 @@ func FsxOntapFileSystem_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1195,31 +1194,31 @@ func (f *jsiiProxy_FsxOntapFileSystem) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (f *jsiiProxy_FsxOntapFileSystem) AddOverride(path *string, value interface{}) {
+func (f *jsiiProxy_FsxOntapFileSystem) AddOverride(path *string, value any) {
 	if err := f.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (f *jsiiProxy_FsxOntapFileSystem) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FsxOntapFileSystem) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1235,7 +1234,7 @@ func (f *jsiiProxy_FsxOntapFileSystem) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1251,7 +1250,7 @@ func (f *jsiiProxy_FsxOntapFileSystem) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1267,7 +1266,7 @@ func (f *jsiiProxy_FsxOntapFileSystem) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1283,7 +1282,7 @@ func (f *jsiiProxy_FsxOntapFileSystem) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1299,7 +1298,7 @@ func (f *jsiiProxy_FsxOntapFileSystem) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1315,7 +1314,7 @@ func (f *jsiiProxy_FsxOntapFileSystem) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1331,7 +1330,7 @@ func (f *jsiiProxy_FsxOntapFileSystem) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1347,15 +1346,15 @@ func (f *jsiiProxy_FsxOntapFileSystem) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FsxOntapFileSystem) HasResourceMove() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FsxOntapFileSystem) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1374,7 +1373,7 @@ func (f *jsiiProxy_FsxOntapFileSystem) ImportFrom(id *string, provider cdktf.Ter
 	_jsii_.InvokeVoid(
 		f,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1387,7 +1386,7 @@ func (f *jsiiProxy_FsxOntapFileSystem) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1401,18 +1400,18 @@ func (f *jsiiProxy_FsxOntapFileSystem) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (f *jsiiProxy_FsxOntapFileSystem) MoveTo(moveTarget *string, index interface{}) {
+func (f *jsiiProxy_FsxOntapFileSystem) MoveTo(moveTarget *string, index any) {
 	if err := f.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1423,7 +1422,7 @@ func (f *jsiiProxy_FsxOntapFileSystem) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1434,7 +1433,7 @@ func (f *jsiiProxy_FsxOntapFileSystem) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1445,7 +1444,7 @@ func (f *jsiiProxy_FsxOntapFileSystem) PutDiskIopsConfiguration(value *FsxOntapF
 	_jsii_.InvokeVoid(
 		f,
 		"putDiskIopsConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1456,7 +1455,7 @@ func (f *jsiiProxy_FsxOntapFileSystem) PutTimeouts(value *FsxOntapFileSystemTime
 	_jsii_.InvokeVoid(
 		f,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1588,8 +1587,8 @@ func (f *jsiiProxy_FsxOntapFileSystem) ResetWeeklyMaintenanceStartTime() {
 	)
 }
 
-func (f *jsiiProxy_FsxOntapFileSystem) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FsxOntapFileSystem) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -1601,8 +1600,8 @@ func (f *jsiiProxy_FsxOntapFileSystem) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (f *jsiiProxy_FsxOntapFileSystem) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FsxOntapFileSystem) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -1614,8 +1613,8 @@ func (f *jsiiProxy_FsxOntapFileSystem) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (f *jsiiProxy_FsxOntapFileSystem) ToHclTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FsxOntapFileSystem) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1627,8 +1626,8 @@ func (f *jsiiProxy_FsxOntapFileSystem) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (f *jsiiProxy_FsxOntapFileSystem) ToMetadata() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FsxOntapFileSystem) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1653,8 +1652,8 @@ func (f *jsiiProxy_FsxOntapFileSystem) ToString() *string {
 	return returns
 }
 
-func (f *jsiiProxy_FsxOntapFileSystem) ToTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FsxOntapFileSystem) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1665,4 +1664,3 @@ func (f *jsiiProxy_FsxOntapFileSystem) ToTerraform() interface{} {
 
 	return returns
 }
-

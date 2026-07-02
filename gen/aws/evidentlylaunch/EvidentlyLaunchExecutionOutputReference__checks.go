@@ -98,7 +98,7 @@ func (e *jsiiProxy_EvidentlyLaunchExecutionOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_EvidentlyLaunchExecutionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EvidentlyLaunchExecutionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewEvidentlyLaunchExecutionOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

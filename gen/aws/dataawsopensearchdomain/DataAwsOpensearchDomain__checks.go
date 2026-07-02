@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsOpensearchDomain) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsOpensearchDomain) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataAwsOpensearchDomain_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateDataAwsOpensearchDomain_IsConstructParameters(x interface{}) error {
+func validateDataAwsOpensearchDomain_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataAwsOpensearchDomain_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateDataAwsOpensearchDomain_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsOpensearchDomain_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataAwsOpensearchDomain_IsTerraformDataSourceParameters(x interface
 	return nil
 }
 
-func validateDataAwsOpensearchDomain_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsOpensearchDomain_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataAwsOpensearchDomain_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsOpensearchDomain) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsOpensearchDomain) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -258,4 +258,3 @@ func validateNewDataAwsOpensearchDomainParameters(scope constructs.Construct, id
 
 	return nil
 }
-

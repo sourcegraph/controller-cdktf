@@ -98,7 +98,7 @@ func (t *jsiiProxy_TimestreamwriteTableRetentionPropertiesOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_TimestreamwriteTableRetentionPropertiesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TimestreamwriteTableRetentionPropertiesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewTimestreamwriteTableRetentionPropertiesOutputReferenceParameters
 
 	return nil
 }
-

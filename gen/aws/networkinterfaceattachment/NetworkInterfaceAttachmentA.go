@@ -16,15 +16,15 @@ type NetworkInterfaceAttachmentA interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -60,25 +60,25 @@ type NetworkInterfaceAttachmentA interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -96,7 +96,7 @@ type NetworkInterfaceAttachmentA interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -108,7 +108,7 @@ type NetworkInterfaceAttachmentA interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -119,17 +119,17 @@ type NetworkInterfaceAttachmentA interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for NetworkInterfaceAttachmentA
@@ -157,8 +157,8 @@ func (j *jsiiProxy_NetworkInterfaceAttachmentA) CdktfStack() cdktf.TerraformStac
 	return returns
 }
 
-func (j *jsiiProxy_NetworkInterfaceAttachmentA) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkInterfaceAttachmentA) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_NetworkInterfaceAttachmentA) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkInterfaceAttachmentA) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkInterfaceAttachmentA) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -177,8 +177,8 @@ func (j *jsiiProxy_NetworkInterfaceAttachmentA) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_NetworkInterfaceAttachmentA) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkInterfaceAttachmentA) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -337,8 +337,8 @@ func (j *jsiiProxy_NetworkInterfaceAttachmentA) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_NetworkInterfaceAttachmentA) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_NetworkInterfaceAttachmentA) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -347,8 +347,8 @@ func (j *jsiiProxy_NetworkInterfaceAttachmentA) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkInterfaceAttachmentA) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkInterfaceAttachmentA) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -377,8 +377,8 @@ func (j *jsiiProxy_NetworkInterfaceAttachmentA) TerraformGeneratorMetadata() *cd
 	return returns
 }
 
-func (j *jsiiProxy_NetworkInterfaceAttachmentA) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkInterfaceAttachmentA) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -397,7 +397,6 @@ func (j *jsiiProxy_NetworkInterfaceAttachmentA) TerraformResourceType() *string 
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/network_interface_attachment aws_network_interface_attachment} Resource.
 func NewNetworkInterfaceAttachmentA(scope constructs.Construct, id *string, config *NetworkInterfaceAttachmentAConfig) NetworkInterfaceAttachmentA {
 	_init_.Initialize()
@@ -409,7 +408,7 @@ func NewNetworkInterfaceAttachmentA(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -422,12 +421,12 @@ func NewNetworkInterfaceAttachmentA_Override(n NetworkInterfaceAttachmentA, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkInterfaceAttachmentA)SetConnection(val interface{}) {
+func (j *jsiiProxy_NetworkInterfaceAttachmentA) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -438,7 +437,7 @@ func (j *jsiiProxy_NetworkInterfaceAttachmentA)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkInterfaceAttachmentA)SetCount(val interface{}) {
+func (j *jsiiProxy_NetworkInterfaceAttachmentA) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -449,7 +448,7 @@ func (j *jsiiProxy_NetworkInterfaceAttachmentA)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkInterfaceAttachmentA)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NetworkInterfaceAttachmentA) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -457,7 +456,7 @@ func (j *jsiiProxy_NetworkInterfaceAttachmentA)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkInterfaceAttachmentA)SetDeviceIndex(val *float64) {
+func (j *jsiiProxy_NetworkInterfaceAttachmentA) SetDeviceIndex(val *float64) {
 	if err := j.validateSetDeviceIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -468,7 +467,7 @@ func (j *jsiiProxy_NetworkInterfaceAttachmentA)SetDeviceIndex(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NetworkInterfaceAttachmentA)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NetworkInterfaceAttachmentA) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -476,7 +475,7 @@ func (j *jsiiProxy_NetworkInterfaceAttachmentA)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_NetworkInterfaceAttachmentA)SetId(val *string) {
+func (j *jsiiProxy_NetworkInterfaceAttachmentA) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_NetworkInterfaceAttachmentA)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkInterfaceAttachmentA)SetInstanceId(val *string) {
+func (j *jsiiProxy_NetworkInterfaceAttachmentA) SetInstanceId(val *string) {
 	if err := j.validateSetInstanceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_NetworkInterfaceAttachmentA)SetInstanceId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkInterfaceAttachmentA)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NetworkInterfaceAttachmentA) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -509,7 +508,7 @@ func (j *jsiiProxy_NetworkInterfaceAttachmentA)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_NetworkInterfaceAttachmentA)SetNetworkInterfaceId(val *string) {
+func (j *jsiiProxy_NetworkInterfaceAttachmentA) SetNetworkInterfaceId(val *string) {
 	if err := j.validateSetNetworkInterfaceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -520,7 +519,7 @@ func (j *jsiiProxy_NetworkInterfaceAttachmentA)SetNetworkInterfaceId(val *string
 	)
 }
 
-func (j *jsiiProxy_NetworkInterfaceAttachmentA)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NetworkInterfaceAttachmentA) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -528,7 +527,7 @@ func (j *jsiiProxy_NetworkInterfaceAttachmentA)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_NetworkInterfaceAttachmentA)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NetworkInterfaceAttachmentA) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -551,7 +550,7 @@ func NetworkInterfaceAttachmentA_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -575,7 +574,7 @@ func NetworkInterfaceAttachmentA_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NetworkInterfaceAttachmentA_IsConstruct(x interface{}) *bool {
+func NetworkInterfaceAttachmentA_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkInterfaceAttachmentA_IsConstructParameters(x); err != nil {
@@ -586,7 +585,7 @@ func NetworkInterfaceAttachmentA_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -594,7 +593,7 @@ func NetworkInterfaceAttachmentA_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func NetworkInterfaceAttachmentA_IsTerraformElement(x interface{}) *bool {
+func NetworkInterfaceAttachmentA_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkInterfaceAttachmentA_IsTerraformElementParameters(x); err != nil {
@@ -605,7 +604,7 @@ func NetworkInterfaceAttachmentA_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func NetworkInterfaceAttachmentA_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func NetworkInterfaceAttachmentA_IsTerraformResource(x interface{}) *bool {
+func NetworkInterfaceAttachmentA_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkInterfaceAttachmentA_IsTerraformResourceParameters(x); err != nil {
@@ -624,7 +623,7 @@ func NetworkInterfaceAttachmentA_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -649,31 +648,31 @@ func (n *jsiiProxy_NetworkInterfaceAttachmentA) AddMoveTarget(moveTarget *string
 	_jsii_.InvokeVoid(
 		n,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (n *jsiiProxy_NetworkInterfaceAttachmentA) AddOverride(path *string, value interface{}) {
+func (n *jsiiProxy_NetworkInterfaceAttachmentA) AddOverride(path *string, value any) {
 	if err := n.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (n *jsiiProxy_NetworkInterfaceAttachmentA) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkInterfaceAttachmentA) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -689,7 +688,7 @@ func (n *jsiiProxy_NetworkInterfaceAttachmentA) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -705,7 +704,7 @@ func (n *jsiiProxy_NetworkInterfaceAttachmentA) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -721,7 +720,7 @@ func (n *jsiiProxy_NetworkInterfaceAttachmentA) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (n *jsiiProxy_NetworkInterfaceAttachmentA) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (n *jsiiProxy_NetworkInterfaceAttachmentA) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,7 +768,7 @@ func (n *jsiiProxy_NetworkInterfaceAttachmentA) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (n *jsiiProxy_NetworkInterfaceAttachmentA) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -801,15 +800,15 @@ func (n *jsiiProxy_NetworkInterfaceAttachmentA) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkInterfaceAttachmentA) HasResourceMove() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkInterfaceAttachmentA) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -828,7 +827,7 @@ func (n *jsiiProxy_NetworkInterfaceAttachmentA) ImportFrom(id *string, provider 
 	_jsii_.InvokeVoid(
 		n,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -841,7 +840,7 @@ func (n *jsiiProxy_NetworkInterfaceAttachmentA) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -855,18 +854,18 @@ func (n *jsiiProxy_NetworkInterfaceAttachmentA) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (n *jsiiProxy_NetworkInterfaceAttachmentA) MoveTo(moveTarget *string, index interface{}) {
+func (n *jsiiProxy_NetworkInterfaceAttachmentA) MoveTo(moveTarget *string, index any) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -877,7 +876,7 @@ func (n *jsiiProxy_NetworkInterfaceAttachmentA) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -888,7 +887,7 @@ func (n *jsiiProxy_NetworkInterfaceAttachmentA) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -908,8 +907,8 @@ func (n *jsiiProxy_NetworkInterfaceAttachmentA) ResetOverrideLogicalId() {
 	)
 }
 
-func (n *jsiiProxy_NetworkInterfaceAttachmentA) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkInterfaceAttachmentA) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -921,8 +920,8 @@ func (n *jsiiProxy_NetworkInterfaceAttachmentA) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (n *jsiiProxy_NetworkInterfaceAttachmentA) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkInterfaceAttachmentA) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -934,8 +933,8 @@ func (n *jsiiProxy_NetworkInterfaceAttachmentA) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (n *jsiiProxy_NetworkInterfaceAttachmentA) ToHclTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkInterfaceAttachmentA) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -947,8 +946,8 @@ func (n *jsiiProxy_NetworkInterfaceAttachmentA) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (n *jsiiProxy_NetworkInterfaceAttachmentA) ToMetadata() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkInterfaceAttachmentA) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -973,8 +972,8 @@ func (n *jsiiProxy_NetworkInterfaceAttachmentA) ToString() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NetworkInterfaceAttachmentA) ToTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkInterfaceAttachmentA) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -985,4 +984,3 @@ func (n *jsiiProxy_NetworkInterfaceAttachmentA) ToTerraform() interface{} {
 
 	return returns
 }
-

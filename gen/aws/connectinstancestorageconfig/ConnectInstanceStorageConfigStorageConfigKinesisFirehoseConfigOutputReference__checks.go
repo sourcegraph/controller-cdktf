@@ -98,7 +98,7 @@ func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfi
 	return nil
 }
 
-func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOu
 
 	return nil
 }
-

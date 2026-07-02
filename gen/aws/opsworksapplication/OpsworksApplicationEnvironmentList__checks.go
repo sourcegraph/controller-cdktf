@@ -34,7 +34,7 @@ func (o *jsiiProxy_OpsworksApplicationEnvironmentList) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksApplicationEnvironmentList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksApplicationEnvironmentList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewOpsworksApplicationEnvironmentListParameters(terraformResource c
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.worklinkFleet.WorklinkFleet",
-		reflect.TypeOf((*WorklinkFleet)(nil)).Elem(),
+		reflect.TypeFor[WorklinkFleet](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,7 +82,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorklinkFleet{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -90,15 +90,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.worklinkFleet.WorklinkFleetConfig",
-		reflect.TypeOf((*WorklinkFleetConfig)(nil)).Elem(),
+		reflect.TypeFor[WorklinkFleetConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.worklinkFleet.WorklinkFleetIdentityProvider",
-		reflect.TypeOf((*WorklinkFleetIdentityProvider)(nil)).Elem(),
+		reflect.TypeFor[WorklinkFleetIdentityProvider](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.worklinkFleet.WorklinkFleetIdentityProviderOutputReference",
-		reflect.TypeOf((*WorklinkFleetIdentityProviderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorklinkFleetIdentityProviderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -126,7 +126,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorklinkFleetIdentityProviderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -134,11 +134,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.worklinkFleet.WorklinkFleetNetwork",
-		reflect.TypeOf((*WorklinkFleetNetwork)(nil)).Elem(),
+		reflect.TypeFor[WorklinkFleetNetwork](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.worklinkFleet.WorklinkFleetNetworkOutputReference",
-		reflect.TypeOf((*WorklinkFleetNetworkOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorklinkFleetNetworkOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -168,7 +168,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcIdInput", GoGetter: "VpcIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorklinkFleetNetworkOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

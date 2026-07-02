@@ -106,7 +106,7 @@ func (j *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationIncl
 	return nil
 }
 
-func (j *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationIncludeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationIncludeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewS3ControlStorageLensConfigurationStorageLensConfigurationInclude
 
 	return nil
 }
-

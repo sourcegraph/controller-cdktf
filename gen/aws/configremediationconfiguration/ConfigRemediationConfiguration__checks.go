@@ -19,7 +19,7 @@ func (c *jsiiProxy_ConfigRemediationConfiguration) validateAddMoveTargetParamete
 	return nil
 }
 
-func (c *jsiiProxy_ConfigRemediationConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ConfigRemediationConfiguration) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ConfigRemediationConfiguration) validateMoveFromIdParameters(
 	return nil
 }
 
-func (c *jsiiProxy_ConfigRemediationConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ConfigRemediationConfiguration) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (c *jsiiProxy_ConfigRemediationConfiguration) validatePutExecutionControlsP
 	return nil
 }
 
-func (c *jsiiProxy_ConfigRemediationConfiguration) validatePutParameterParameters(value interface{}) error {
+func (c *jsiiProxy_ConfigRemediationConfiguration) validatePutParameterParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateConfigRemediationConfiguration_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateConfigRemediationConfiguration_IsConstructParameters(x interface{}) error {
+func validateConfigRemediationConfiguration_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateConfigRemediationConfiguration_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateConfigRemediationConfiguration_IsTerraformElementParameters(x interface{}) error {
+func validateConfigRemediationConfiguration_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateConfigRemediationConfiguration_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func validateConfigRemediationConfiguration_IsTerraformResourceParameters(x interface{}) error {
+func validateConfigRemediationConfiguration_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateConfigRemediationConfiguration_IsTerraformResourceParameters(x inte
 	return nil
 }
 
-func (j *jsiiProxy_ConfigRemediationConfiguration) validateSetAutomaticParameters(val interface{}) error {
+func (j *jsiiProxy_ConfigRemediationConfiguration) validateSetAutomaticParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -314,7 +314,7 @@ func (j *jsiiProxy_ConfigRemediationConfiguration) validateSetConfigRuleNamePara
 	return nil
 }
 
-func (j *jsiiProxy_ConfigRemediationConfiguration) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ConfigRemediationConfiguration) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -347,7 +347,7 @@ func (j *jsiiProxy_ConfigRemediationConfiguration) validateSetConnectionParamete
 	return nil
 }
 
-func (j *jsiiProxy_ConfigRemediationConfiguration) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ConfigRemediationConfiguration) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -428,7 +428,7 @@ func (j *jsiiProxy_ConfigRemediationConfiguration) validateSetMaximumAutomaticAt
 	return nil
 }
 
-func (j *jsiiProxy_ConfigRemediationConfiguration) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ConfigRemediationConfiguration) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -532,4 +532,3 @@ func validateNewConfigRemediationConfigurationParameters(scope constructs.Constr
 
 	return nil
 }
-

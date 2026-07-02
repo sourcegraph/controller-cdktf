@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkfirewallFirewallSubnetMappingOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_NetworkfirewallFirewallSubnetMappingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkfirewallFirewallSubnetMappingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_NetworkfirewallFirewallSubnetMappingOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_NetworkfirewallFirewallSubnetMappingOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkfirewallFirewallSubnetMappingOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewNetworkfirewallFirewallSubnetMappingOutputReferenceParameters(te
 
 	return nil
 }
-

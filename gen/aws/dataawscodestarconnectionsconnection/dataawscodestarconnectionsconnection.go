@@ -19,11 +19,11 @@ type DataAwsCodestarconnectionsConnection interface {
 	CdktfStack() cdktf.TerraformStack
 	ConnectionStatus() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -55,20 +55,20 @@ type DataAwsCodestarconnectionsConnection interface {
 	SetProvider(val cdktf.TerraformProvider)
 	ProviderType() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,18 +97,18 @@ type DataAwsCodestarconnectionsConnection interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTags()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsCodestarconnectionsConnection
@@ -156,8 +156,8 @@ func (j *jsiiProxy_DataAwsCodestarconnectionsConnection) ConnectionStatus() *str
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCodestarconnectionsConnection) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsCodestarconnectionsConnection) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_DataAwsCodestarconnectionsConnection) ConstructNodeMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCodestarconnectionsConnection) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsCodestarconnectionsConnection) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -306,8 +306,8 @@ func (j *jsiiProxy_DataAwsCodestarconnectionsConnection) ProviderType() *string 
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCodestarconnectionsConnection) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsCodestarconnectionsConnection) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -346,8 +346,8 @@ func (j *jsiiProxy_DataAwsCodestarconnectionsConnection) TerraformGeneratorMetad
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCodestarconnectionsConnection) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsCodestarconnectionsConnection) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -366,7 +366,6 @@ func (j *jsiiProxy_DataAwsCodestarconnectionsConnection) TerraformResourceType()
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/codestarconnections_connection aws_codestarconnections_connection} Data Source.
 func NewDataAwsCodestarconnectionsConnection(scope constructs.Construct, id *string, config *DataAwsCodestarconnectionsConnectionConfig) DataAwsCodestarconnectionsConnection {
 	_init_.Initialize()
@@ -378,7 +377,7 @@ func NewDataAwsCodestarconnectionsConnection(scope constructs.Construct, id *str
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsCodestarconnectionsConnection.DataAwsCodestarconnectionsConnection",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -391,12 +390,12 @@ func NewDataAwsCodestarconnectionsConnection_Override(d DataAwsCodestarconnectio
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsCodestarconnectionsConnection.DataAwsCodestarconnectionsConnection",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsCodestarconnectionsConnection)SetArn(val *string) {
+func (j *jsiiProxy_DataAwsCodestarconnectionsConnection) SetArn(val *string) {
 	if err := j.validateSetArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -407,7 +406,7 @@ func (j *jsiiProxy_DataAwsCodestarconnectionsConnection)SetArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsCodestarconnectionsConnection)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsCodestarconnectionsConnection) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -418,7 +417,7 @@ func (j *jsiiProxy_DataAwsCodestarconnectionsConnection)SetCount(val interface{}
 	)
 }
 
-func (j *jsiiProxy_DataAwsCodestarconnectionsConnection)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsCodestarconnectionsConnection) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -426,7 +425,7 @@ func (j *jsiiProxy_DataAwsCodestarconnectionsConnection)SetDependsOn(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_DataAwsCodestarconnectionsConnection)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsCodestarconnectionsConnection) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -434,7 +433,7 @@ func (j *jsiiProxy_DataAwsCodestarconnectionsConnection)SetForEach(val cdktf.ITe
 	)
 }
 
-func (j *jsiiProxy_DataAwsCodestarconnectionsConnection)SetId(val *string) {
+func (j *jsiiProxy_DataAwsCodestarconnectionsConnection) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -445,7 +444,7 @@ func (j *jsiiProxy_DataAwsCodestarconnectionsConnection)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsCodestarconnectionsConnection)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsCodestarconnectionsConnection) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,7 +455,7 @@ func (j *jsiiProxy_DataAwsCodestarconnectionsConnection)SetLifecycle(val *cdktf.
 	)
 }
 
-func (j *jsiiProxy_DataAwsCodestarconnectionsConnection)SetName(val *string) {
+func (j *jsiiProxy_DataAwsCodestarconnectionsConnection) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_DataAwsCodestarconnectionsConnection)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsCodestarconnectionsConnection)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsCodestarconnectionsConnection) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -475,7 +474,7 @@ func (j *jsiiProxy_DataAwsCodestarconnectionsConnection)SetProvider(val cdktf.Te
 	)
 }
 
-func (j *jsiiProxy_DataAwsCodestarconnectionsConnection)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsCodestarconnectionsConnection) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func DataAwsCodestarconnectionsConnection_GenerateConfigForImport(scope construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCodestarconnectionsConnection.DataAwsCodestarconnectionsConnection",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func DataAwsCodestarconnectionsConnection_GenerateConfigForImport(scope construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsCodestarconnectionsConnection_IsConstruct(x interface{}) *bool {
+func DataAwsCodestarconnectionsConnection_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsCodestarconnectionsConnection_IsConstructParameters(x); err != nil {
@@ -533,7 +532,7 @@ func DataAwsCodestarconnectionsConnection_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCodestarconnectionsConnection.DataAwsCodestarconnectionsConnection",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -541,7 +540,7 @@ func DataAwsCodestarconnectionsConnection_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsCodestarconnectionsConnection_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsCodestarconnectionsConnection_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsCodestarconnectionsConnection_IsTerraformDataSourceParameters(x); err != nil {
@@ -552,7 +551,7 @@ func DataAwsCodestarconnectionsConnection_IsTerraformDataSource(x interface{}) *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCodestarconnectionsConnection.DataAwsCodestarconnectionsConnection",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -560,7 +559,7 @@ func DataAwsCodestarconnectionsConnection_IsTerraformDataSource(x interface{}) *
 }
 
 // Experimental.
-func DataAwsCodestarconnectionsConnection_IsTerraformElement(x interface{}) *bool {
+func DataAwsCodestarconnectionsConnection_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsCodestarconnectionsConnection_IsTerraformElementParameters(x); err != nil {
@@ -571,7 +570,7 @@ func DataAwsCodestarconnectionsConnection_IsTerraformElement(x interface{}) *boo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCodestarconnectionsConnection.DataAwsCodestarconnectionsConnection",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -589,27 +588,27 @@ func DataAwsCodestarconnectionsConnection_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCodestarconnectionsConnection) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsCodestarconnectionsConnection) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsCodestarconnectionsConnection) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsCodestarconnectionsConnection) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -625,7 +624,7 @@ func (d *jsiiProxy_DataAwsCodestarconnectionsConnection) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -641,7 +640,7 @@ func (d *jsiiProxy_DataAwsCodestarconnectionsConnection) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -657,7 +656,7 @@ func (d *jsiiProxy_DataAwsCodestarconnectionsConnection) GetListAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -673,7 +672,7 @@ func (d *jsiiProxy_DataAwsCodestarconnectionsConnection) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -689,7 +688,7 @@ func (d *jsiiProxy_DataAwsCodestarconnectionsConnection) GetNumberListAttribute(
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -705,7 +704,7 @@ func (d *jsiiProxy_DataAwsCodestarconnectionsConnection) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -721,7 +720,7 @@ func (d *jsiiProxy_DataAwsCodestarconnectionsConnection) GetStringAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (d *jsiiProxy_DataAwsCodestarconnectionsConnection) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (d *jsiiProxy_DataAwsCodestarconnectionsConnection) InterpolationForAttribu
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -767,7 +766,7 @@ func (d *jsiiProxy_DataAwsCodestarconnectionsConnection) OverrideLogicalId(newLo
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -811,8 +810,8 @@ func (d *jsiiProxy_DataAwsCodestarconnectionsConnection) ResetTags() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsCodestarconnectionsConnection) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsCodestarconnectionsConnection) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -824,8 +823,8 @@ func (d *jsiiProxy_DataAwsCodestarconnectionsConnection) SynthesizeAttributes() 
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCodestarconnectionsConnection) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsCodestarconnectionsConnection) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -837,8 +836,8 @@ func (d *jsiiProxy_DataAwsCodestarconnectionsConnection) SynthesizeHclAttributes
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCodestarconnectionsConnection) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsCodestarconnectionsConnection) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -850,8 +849,8 @@ func (d *jsiiProxy_DataAwsCodestarconnectionsConnection) ToHclTerraform() interf
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCodestarconnectionsConnection) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsCodestarconnectionsConnection) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -876,8 +875,8 @@ func (d *jsiiProxy_DataAwsCodestarconnectionsConnection) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCodestarconnectionsConnection) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsCodestarconnectionsConnection) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -888,4 +887,3 @@ func (d *jsiiProxy_DataAwsCodestarconnectionsConnection) ToTerraform() interface
 
 	return returns
 }
-

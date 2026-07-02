@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPoint",
-		reflect.TypeOf((*S3ControlMultiRegionAccessPoint)(nil)).Elem(),
+		reflect.TypeFor[S3ControlMultiRegionAccessPoint](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3ControlMultiRegionAccessPoint{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,15 +78,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointConfig",
-		reflect.TypeOf((*S3ControlMultiRegionAccessPointConfig)(nil)).Elem(),
+		reflect.TypeFor[S3ControlMultiRegionAccessPointConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetails",
-		reflect.TypeOf((*S3ControlMultiRegionAccessPointDetails)(nil)).Elem(),
+		reflect.TypeFor[S3ControlMultiRegionAccessPointDetails](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetailsOutputReference",
-		reflect.TypeOf((*S3ControlMultiRegionAccessPointDetailsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3ControlMultiRegionAccessPointDetailsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -119,7 +119,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -127,11 +127,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetailsPublicAccessBlock",
-		reflect.TypeOf((*S3ControlMultiRegionAccessPointDetailsPublicAccessBlock)(nil)).Elem(),
+		reflect.TypeFor[S3ControlMultiRegionAccessPointDetailsPublicAccessBlock](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetailsPublicAccessBlockOutputReference",
-		reflect.TypeOf((*S3ControlMultiRegionAccessPointDetailsPublicAccessBlockOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3ControlMultiRegionAccessPointDetailsPublicAccessBlockOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "blockPublicAcls", GoGetter: "BlockPublicAcls"},
 			_jsii_.MemberProperty{JsiiProperty: "blockPublicAclsInput", GoGetter: "BlockPublicAclsInput"},
@@ -167,7 +167,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3ControlMultiRegionAccessPointDetailsPublicAccessBlockOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -175,11 +175,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetailsRegion",
-		reflect.TypeOf((*S3ControlMultiRegionAccessPointDetailsRegion)(nil)).Elem(),
+		reflect.TypeFor[S3ControlMultiRegionAccessPointDetailsRegion](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetailsRegionList",
-		reflect.TypeOf((*S3ControlMultiRegionAccessPointDetailsRegionList)(nil)).Elem(),
+		reflect.TypeFor[S3ControlMultiRegionAccessPointDetailsRegionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -193,7 +193,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3ControlMultiRegionAccessPointDetailsRegionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -201,7 +201,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetailsRegionOutputReference",
-		reflect.TypeOf((*S3ControlMultiRegionAccessPointDetailsRegionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3ControlMultiRegionAccessPointDetailsRegionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketInput", GoGetter: "BucketInput"},
@@ -227,7 +227,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3ControlMultiRegionAccessPointDetailsRegionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -235,11 +235,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointTimeouts",
-		reflect.TypeOf((*S3ControlMultiRegionAccessPointTimeouts)(nil)).Elem(),
+		reflect.TypeFor[S3ControlMultiRegionAccessPointTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointTimeoutsOutputReference",
-		reflect.TypeOf((*S3ControlMultiRegionAccessPointTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3ControlMultiRegionAccessPointTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -269,7 +269,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3ControlMultiRegionAccessPointTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

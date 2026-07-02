@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipe",
-		reflect.TypeOf((*ImagebuilderContainerRecipe)(nil)).Elem(),
+		reflect.TypeFor[ImagebuilderContainerRecipe](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -100,7 +100,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workingDirectory", GoGetter: "WorkingDirectory"},
 			_jsii_.MemberProperty{JsiiProperty: "workingDirectoryInput", GoGetter: "WorkingDirectoryInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ImagebuilderContainerRecipe{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -108,11 +108,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeComponent",
-		reflect.TypeOf((*ImagebuilderContainerRecipeComponent)(nil)).Elem(),
+		reflect.TypeFor[ImagebuilderContainerRecipeComponent](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeComponentList",
-		reflect.TypeOf((*ImagebuilderContainerRecipeComponentList)(nil)).Elem(),
+		reflect.TypeFor[ImagebuilderContainerRecipeComponentList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -126,7 +126,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ImagebuilderContainerRecipeComponentList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -134,7 +134,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeComponentOutputReference",
-		reflect.TypeOf((*ImagebuilderContainerRecipeComponentOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ImagebuilderContainerRecipeComponentOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -164,7 +164,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ImagebuilderContainerRecipeComponentOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -172,11 +172,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeComponentParameter",
-		reflect.TypeOf((*ImagebuilderContainerRecipeComponentParameter)(nil)).Elem(),
+		reflect.TypeFor[ImagebuilderContainerRecipeComponentParameter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeComponentParameterList",
-		reflect.TypeOf((*ImagebuilderContainerRecipeComponentParameterList)(nil)).Elem(),
+		reflect.TypeFor[ImagebuilderContainerRecipeComponentParameterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -190,7 +190,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ImagebuilderContainerRecipeComponentParameterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -198,7 +198,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeComponentParameterOutputReference",
-		reflect.TypeOf((*ImagebuilderContainerRecipeComponentParameterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ImagebuilderContainerRecipeComponentParameterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -226,7 +226,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ImagebuilderContainerRecipeComponentParameterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -234,23 +234,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeConfig",
-		reflect.TypeOf((*ImagebuilderContainerRecipeConfig)(nil)).Elem(),
+		reflect.TypeFor[ImagebuilderContainerRecipeConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfiguration",
-		reflect.TypeOf((*ImagebuilderContainerRecipeInstanceConfiguration)(nil)).Elem(),
+		reflect.TypeFor[ImagebuilderContainerRecipeInstanceConfiguration](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMapping",
-		reflect.TypeOf((*ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMapping)(nil)).Elem(),
+		reflect.TypeFor[ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMapping](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbs",
-		reflect.TypeOf((*ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbs)(nil)).Elem(),
+		reflect.TypeFor[ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbsOutputReference",
-		reflect.TypeOf((*ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -298,7 +298,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumeType", GoGetter: "VolumeType"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeTypeInput", GoGetter: "VolumeTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -306,7 +306,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingList",
-		reflect.TypeOf((*ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingList)(nil)).Elem(),
+		reflect.TypeFor[ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -320,7 +320,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -328,7 +328,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingOutputReference",
-		reflect.TypeOf((*ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -365,7 +365,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "virtualName", GoGetter: "VirtualName"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualNameInput", GoGetter: "VirtualNameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -373,7 +373,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfigurationOutputReference",
-		reflect.TypeOf((*ImagebuilderContainerRecipeInstanceConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ImagebuilderContainerRecipeInstanceConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "blockDeviceMapping", GoGetter: "BlockDeviceMapping"},
 			_jsii_.MemberProperty{JsiiProperty: "blockDeviceMappingInput", GoGetter: "BlockDeviceMappingInput"},
@@ -404,7 +404,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -412,11 +412,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeTargetRepository",
-		reflect.TypeOf((*ImagebuilderContainerRecipeTargetRepository)(nil)).Elem(),
+		reflect.TypeFor[ImagebuilderContainerRecipeTargetRepository](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeTargetRepositoryOutputReference",
-		reflect.TypeOf((*ImagebuilderContainerRecipeTargetRepositoryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ImagebuilderContainerRecipeTargetRepositoryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -444,7 +444,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ImagebuilderContainerRecipeTargetRepositoryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfile",
-		reflect.TypeOf((*ConnectRoutingProfile)(nil)).Elem(),
+		reflect.TypeFor[ConnectRoutingProfile](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,7 +80,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConnectRoutingProfile{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -88,15 +88,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfileConfig",
-		reflect.TypeOf((*ConnectRoutingProfileConfig)(nil)).Elem(),
+		reflect.TypeFor[ConnectRoutingProfileConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfileMediaConcurrencies",
-		reflect.TypeOf((*ConnectRoutingProfileMediaConcurrencies)(nil)).Elem(),
+		reflect.TypeFor[ConnectRoutingProfileMediaConcurrencies](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfileMediaConcurrenciesList",
-		reflect.TypeOf((*ConnectRoutingProfileMediaConcurrenciesList)(nil)).Elem(),
+		reflect.TypeFor[ConnectRoutingProfileMediaConcurrenciesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -110,7 +110,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConnectRoutingProfileMediaConcurrenciesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -118,7 +118,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfileMediaConcurrenciesOutputReference",
-		reflect.TypeOf((*ConnectRoutingProfileMediaConcurrenciesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ConnectRoutingProfileMediaConcurrenciesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "channel", GoGetter: "Channel"},
 			_jsii_.MemberProperty{JsiiProperty: "channelInput", GoGetter: "ChannelInput"},
@@ -146,7 +146,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -154,15 +154,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfileQueueConfigs",
-		reflect.TypeOf((*ConnectRoutingProfileQueueConfigs)(nil)).Elem(),
+		reflect.TypeFor[ConnectRoutingProfileQueueConfigs](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfileQueueConfigsAssociated",
-		reflect.TypeOf((*ConnectRoutingProfileQueueConfigsAssociated)(nil)).Elem(),
+		reflect.TypeFor[ConnectRoutingProfileQueueConfigsAssociated](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfileQueueConfigsAssociatedList",
-		reflect.TypeOf((*ConnectRoutingProfileQueueConfigsAssociatedList)(nil)).Elem(),
+		reflect.TypeFor[ConnectRoutingProfileQueueConfigsAssociatedList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -175,7 +175,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConnectRoutingProfileQueueConfigsAssociatedList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -183,7 +183,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfileQueueConfigsAssociatedOutputReference",
-		reflect.TypeOf((*ConnectRoutingProfileQueueConfigsAssociatedOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ConnectRoutingProfileQueueConfigsAssociatedOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "channel", GoGetter: "Channel"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -213,7 +213,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConnectRoutingProfileQueueConfigsAssociatedOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -221,7 +221,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfileQueueConfigsList",
-		reflect.TypeOf((*ConnectRoutingProfileQueueConfigsList)(nil)).Elem(),
+		reflect.TypeFor[ConnectRoutingProfileQueueConfigsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -235,7 +235,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConnectRoutingProfileQueueConfigsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -243,7 +243,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfileQueueConfigsOutputReference",
-		reflect.TypeOf((*ConnectRoutingProfileQueueConfigsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ConnectRoutingProfileQueueConfigsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "channel", GoGetter: "Channel"},
 			_jsii_.MemberProperty{JsiiProperty: "channelInput", GoGetter: "ChannelInput"},
@@ -277,7 +277,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConnectRoutingProfileQueueConfigsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

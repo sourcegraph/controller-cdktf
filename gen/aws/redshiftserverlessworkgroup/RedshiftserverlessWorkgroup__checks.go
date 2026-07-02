@@ -19,7 +19,7 @@ func (r *jsiiProxy_RedshiftserverlessWorkgroup) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftserverlessWorkgroup) validateAddOverrideParameters(path *string, value interface{}) error {
+func (r *jsiiProxy_RedshiftserverlessWorkgroup) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (r *jsiiProxy_RedshiftserverlessWorkgroup) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftserverlessWorkgroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (r *jsiiProxy_RedshiftserverlessWorkgroup) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (r *jsiiProxy_RedshiftserverlessWorkgroup) validateOverrideLogicalIdParamet
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftserverlessWorkgroup) validatePutConfigParameterParameters(value interface{}) error {
+func (r *jsiiProxy_RedshiftserverlessWorkgroup) validatePutConfigParameterParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateRedshiftserverlessWorkgroup_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateRedshiftserverlessWorkgroup_IsConstructParameters(x interface{}) error {
+func validateRedshiftserverlessWorkgroup_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateRedshiftserverlessWorkgroup_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateRedshiftserverlessWorkgroup_IsTerraformElementParameters(x interface{}) error {
+func validateRedshiftserverlessWorkgroup_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateRedshiftserverlessWorkgroup_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateRedshiftserverlessWorkgroup_IsTerraformResourceParameters(x interface{}) error {
+func validateRedshiftserverlessWorkgroup_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func (j *jsiiProxy_RedshiftserverlessWorkgroup) validateSetBaseCapacityParameter
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftserverlessWorkgroup) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftserverlessWorkgroup) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -316,7 +316,7 @@ func (j *jsiiProxy_RedshiftserverlessWorkgroup) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftserverlessWorkgroup) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftserverlessWorkgroup) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -373,7 +373,7 @@ func (j *jsiiProxy_RedshiftserverlessWorkgroup) validateSetCountParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftserverlessWorkgroup) validateSetEnhancedVpcRoutingParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftserverlessWorkgroup) validateSetEnhancedVpcRoutingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -417,7 +417,7 @@ func (j *jsiiProxy_RedshiftserverlessWorkgroup) validateSetNamespaceNameParamete
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftserverlessWorkgroup) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_RedshiftserverlessWorkgroup) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -463,7 +463,7 @@ func (j *jsiiProxy_RedshiftserverlessWorkgroup) validateSetProvisionersParameter
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftserverlessWorkgroup) validateSetPubliclyAccessibleParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftserverlessWorkgroup) validateSetPubliclyAccessibleParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -541,4 +541,3 @@ func validateNewRedshiftserverlessWorkgroupParameters(scope constructs.Construct
 
 	return nil
 }
-

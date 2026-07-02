@@ -18,15 +18,15 @@ type ShieldProtectionGroup interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -63,11 +63,11 @@ type ShieldProtectionGroup interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ResourceType() *string
 	SetResourceType(val *string)
 	ResourceTypeInput() *string
@@ -80,16 +80,16 @@ type ShieldProtectionGroup interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -107,7 +107,7 @@ type ShieldProtectionGroup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -119,7 +119,7 @@ type ShieldProtectionGroup interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -134,17 +134,17 @@ type ShieldProtectionGroup interface {
 	ResetResourceType()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ShieldProtectionGroup
@@ -182,8 +182,8 @@ func (j *jsiiProxy_ShieldProtectionGroup) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ShieldProtectionGroup) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ShieldProtectionGroup) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_ShieldProtectionGroup) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ShieldProtectionGroup) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ShieldProtectionGroup) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_ShieldProtectionGroup) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_ShieldProtectionGroup) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ShieldProtectionGroup) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -372,8 +372,8 @@ func (j *jsiiProxy_ShieldProtectionGroup) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ShieldProtectionGroup) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ShieldProtectionGroup) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -382,8 +382,8 @@ func (j *jsiiProxy_ShieldProtectionGroup) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ShieldProtectionGroup) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ShieldProtectionGroup) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -462,8 +462,8 @@ func (j *jsiiProxy_ShieldProtectionGroup) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_ShieldProtectionGroup) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ShieldProtectionGroup) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -482,7 +482,6 @@ func (j *jsiiProxy_ShieldProtectionGroup) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/shield_protection_group aws_shield_protection_group} Resource.
 func NewShieldProtectionGroup(scope constructs.Construct, id *string, config *ShieldProtectionGroupConfig) ShieldProtectionGroup {
 	_init_.Initialize()
@@ -494,7 +493,7 @@ func NewShieldProtectionGroup(scope constructs.Construct, id *string, config *Sh
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -507,12 +506,12 @@ func NewShieldProtectionGroup_Override(s ShieldProtectionGroup, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_ShieldProtectionGroup)SetAggregation(val *string) {
+func (j *jsiiProxy_ShieldProtectionGroup) SetAggregation(val *string) {
 	if err := j.validateSetAggregationParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_ShieldProtectionGroup)SetAggregation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ShieldProtectionGroup)SetConnection(val interface{}) {
+func (j *jsiiProxy_ShieldProtectionGroup) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_ShieldProtectionGroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ShieldProtectionGroup)SetCount(val interface{}) {
+func (j *jsiiProxy_ShieldProtectionGroup) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_ShieldProtectionGroup)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ShieldProtectionGroup)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ShieldProtectionGroup) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -553,7 +552,7 @@ func (j *jsiiProxy_ShieldProtectionGroup)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ShieldProtectionGroup)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ShieldProtectionGroup) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -561,7 +560,7 @@ func (j *jsiiProxy_ShieldProtectionGroup)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_ShieldProtectionGroup)SetId(val *string) {
+func (j *jsiiProxy_ShieldProtectionGroup) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -572,7 +571,7 @@ func (j *jsiiProxy_ShieldProtectionGroup)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ShieldProtectionGroup)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ShieldProtectionGroup) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -583,7 +582,7 @@ func (j *jsiiProxy_ShieldProtectionGroup)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_ShieldProtectionGroup)SetMembers(val *[]*string) {
+func (j *jsiiProxy_ShieldProtectionGroup) SetMembers(val *[]*string) {
 	if err := j.validateSetMembersParameters(val); err != nil {
 		panic(err)
 	}
@@ -594,7 +593,7 @@ func (j *jsiiProxy_ShieldProtectionGroup)SetMembers(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ShieldProtectionGroup)SetPattern(val *string) {
+func (j *jsiiProxy_ShieldProtectionGroup) SetPattern(val *string) {
 	if err := j.validateSetPatternParameters(val); err != nil {
 		panic(err)
 	}
@@ -605,7 +604,7 @@ func (j *jsiiProxy_ShieldProtectionGroup)SetPattern(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ShieldProtectionGroup)SetProtectionGroupId(val *string) {
+func (j *jsiiProxy_ShieldProtectionGroup) SetProtectionGroupId(val *string) {
 	if err := j.validateSetProtectionGroupIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -616,7 +615,7 @@ func (j *jsiiProxy_ShieldProtectionGroup)SetProtectionGroupId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ShieldProtectionGroup)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ShieldProtectionGroup) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -624,7 +623,7 @@ func (j *jsiiProxy_ShieldProtectionGroup)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_ShieldProtectionGroup)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ShieldProtectionGroup) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -635,7 +634,7 @@ func (j *jsiiProxy_ShieldProtectionGroup)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ShieldProtectionGroup)SetResourceType(val *string) {
+func (j *jsiiProxy_ShieldProtectionGroup) SetResourceType(val *string) {
 	if err := j.validateSetResourceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -646,7 +645,7 @@ func (j *jsiiProxy_ShieldProtectionGroup)SetResourceType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ShieldProtectionGroup)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_ShieldProtectionGroup) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -657,7 +656,7 @@ func (j *jsiiProxy_ShieldProtectionGroup)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_ShieldProtectionGroup)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_ShieldProtectionGroup) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -680,7 +679,7 @@ func ShieldProtectionGroup_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -704,7 +703,7 @@ func ShieldProtectionGroup_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ShieldProtectionGroup_IsConstruct(x interface{}) *bool {
+func ShieldProtectionGroup_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateShieldProtectionGroup_IsConstructParameters(x); err != nil {
@@ -715,7 +714,7 @@ func ShieldProtectionGroup_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func ShieldProtectionGroup_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ShieldProtectionGroup_IsTerraformElement(x interface{}) *bool {
+func ShieldProtectionGroup_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateShieldProtectionGroup_IsTerraformElementParameters(x); err != nil {
@@ -734,7 +733,7 @@ func ShieldProtectionGroup_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -742,7 +741,7 @@ func ShieldProtectionGroup_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ShieldProtectionGroup_IsTerraformResource(x interface{}) *bool {
+func ShieldProtectionGroup_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateShieldProtectionGroup_IsTerraformResourceParameters(x); err != nil {
@@ -753,7 +752,7 @@ func ShieldProtectionGroup_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -778,31 +777,31 @@ func (s *jsiiProxy_ShieldProtectionGroup) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_ShieldProtectionGroup) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_ShieldProtectionGroup) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_ShieldProtectionGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_ShieldProtectionGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -818,7 +817,7 @@ func (s *jsiiProxy_ShieldProtectionGroup) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -834,7 +833,7 @@ func (s *jsiiProxy_ShieldProtectionGroup) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -850,7 +849,7 @@ func (s *jsiiProxy_ShieldProtectionGroup) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -866,7 +865,7 @@ func (s *jsiiProxy_ShieldProtectionGroup) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -882,7 +881,7 @@ func (s *jsiiProxy_ShieldProtectionGroup) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -898,7 +897,7 @@ func (s *jsiiProxy_ShieldProtectionGroup) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -914,7 +913,7 @@ func (s *jsiiProxy_ShieldProtectionGroup) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -930,15 +929,15 @@ func (s *jsiiProxy_ShieldProtectionGroup) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_ShieldProtectionGroup) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_ShieldProtectionGroup) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -957,7 +956,7 @@ func (s *jsiiProxy_ShieldProtectionGroup) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -970,7 +969,7 @@ func (s *jsiiProxy_ShieldProtectionGroup) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -984,18 +983,18 @@ func (s *jsiiProxy_ShieldProtectionGroup) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_ShieldProtectionGroup) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_ShieldProtectionGroup) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1006,7 +1005,7 @@ func (s *jsiiProxy_ShieldProtectionGroup) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1017,7 +1016,7 @@ func (s *jsiiProxy_ShieldProtectionGroup) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1069,8 +1068,8 @@ func (s *jsiiProxy_ShieldProtectionGroup) ResetTagsAll() {
 	)
 }
 
-func (s *jsiiProxy_ShieldProtectionGroup) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_ShieldProtectionGroup) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1082,8 +1081,8 @@ func (s *jsiiProxy_ShieldProtectionGroup) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (s *jsiiProxy_ShieldProtectionGroup) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_ShieldProtectionGroup) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1095,8 +1094,8 @@ func (s *jsiiProxy_ShieldProtectionGroup) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (s *jsiiProxy_ShieldProtectionGroup) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_ShieldProtectionGroup) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1108,8 +1107,8 @@ func (s *jsiiProxy_ShieldProtectionGroup) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_ShieldProtectionGroup) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_ShieldProtectionGroup) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1134,8 +1133,8 @@ func (s *jsiiProxy_ShieldProtectionGroup) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_ShieldProtectionGroup) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_ShieldProtectionGroup) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1146,4 +1145,3 @@ func (s *jsiiProxy_ShieldProtectionGroup) ToTerraform() interface{} {
 
 	return returns
 }
-

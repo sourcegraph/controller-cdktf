@@ -117,7 +117,7 @@ func (j *jsiiProxy_CloudwatchMetricAlarmMetricQueryOutputReference) validateSetA
 	return nil
 }
 
-func (j *jsiiProxy_CloudwatchMetricAlarmMetricQueryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudwatchMetricAlarmMetricQueryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,7 +198,7 @@ func (j *jsiiProxy_CloudwatchMetricAlarmMetricQueryOutputReference) validateSetI
 	return nil
 }
 
-func (j *jsiiProxy_CloudwatchMetricAlarmMetricQueryOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudwatchMetricAlarmMetricQueryOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,7 +230,7 @@ func (j *jsiiProxy_CloudwatchMetricAlarmMetricQueryOutputReference) validateSetL
 	return nil
 }
 
-func (j *jsiiProxy_CloudwatchMetricAlarmMetricQueryOutputReference) validateSetReturnDataParameters(val interface{}) error {
+func (j *jsiiProxy_CloudwatchMetricAlarmMetricQueryOutputReference) validateSetReturnDataParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -285,4 +285,3 @@ func validateNewCloudwatchMetricAlarmMetricQueryOutputReferenceParameters(terraf
 
 	return nil
 }
-

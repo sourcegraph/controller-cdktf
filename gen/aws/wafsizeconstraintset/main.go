@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSet",
-		reflect.TypeOf((*WafSizeConstraintSet)(nil)).Elem(),
+		reflect.TypeFor[WafSizeConstraintSet](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,7 +63,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WafSizeConstraintSet{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -71,19 +71,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSetConfig",
-		reflect.TypeOf((*WafSizeConstraintSetConfig)(nil)).Elem(),
+		reflect.TypeFor[WafSizeConstraintSetConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSetSizeConstraints",
-		reflect.TypeOf((*WafSizeConstraintSetSizeConstraints)(nil)).Elem(),
+		reflect.TypeFor[WafSizeConstraintSetSizeConstraints](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSetSizeConstraintsFieldToMatch",
-		reflect.TypeOf((*WafSizeConstraintSetSizeConstraintsFieldToMatch)(nil)).Elem(),
+		reflect.TypeFor[WafSizeConstraintSetSizeConstraintsFieldToMatch](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSetSizeConstraintsFieldToMatchOutputReference",
-		reflect.TypeOf((*WafSizeConstraintSetSizeConstraintsFieldToMatchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WafSizeConstraintSetSizeConstraintsFieldToMatchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -112,7 +112,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WafSizeConstraintSetSizeConstraintsFieldToMatchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -120,7 +120,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSetSizeConstraintsList",
-		reflect.TypeOf((*WafSizeConstraintSetSizeConstraintsList)(nil)).Elem(),
+		reflect.TypeFor[WafSizeConstraintSetSizeConstraintsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -134,7 +134,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WafSizeConstraintSetSizeConstraintsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -142,7 +142,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSetSizeConstraintsOutputReference",
-		reflect.TypeOf((*WafSizeConstraintSetSizeConstraintsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WafSizeConstraintSetSizeConstraintsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparisonOperator", GoGetter: "ComparisonOperator"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonOperatorInput", GoGetter: "ComparisonOperatorInput"},
@@ -175,7 +175,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "textTransformationInput", GoGetter: "TextTransformationInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WafSizeConstraintSetSizeConstraintsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

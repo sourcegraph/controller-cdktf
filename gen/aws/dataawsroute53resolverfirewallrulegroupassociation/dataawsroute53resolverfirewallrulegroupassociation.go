@@ -16,11 +16,11 @@ type DataAwsRoute53ResolverFirewallRuleGroupAssociation interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationTime() *string
 	CreatorRequestId() *string
 	// Experimental.
@@ -58,20 +58,20 @@ type DataAwsRoute53ResolverFirewallRuleGroupAssociation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Status() *string
 	StatusMessage() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	VpcId() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,18 +97,18 @@ type DataAwsRoute53ResolverFirewallRuleGroupAssociation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsRoute53ResolverFirewallRuleGroupAssociation
@@ -136,8 +136,8 @@ func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) CdktfStac
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -146,8 +146,8 @@ func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) Construct
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -346,8 +346,8 @@ func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) Provider(
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -386,8 +386,8 @@ func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) Terraform
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -416,7 +416,6 @@ func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) VpcId() *
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/route53_resolver_firewall_rule_group_association aws_route53_resolver_firewall_rule_group_association} Data Source.
 func NewDataAwsRoute53ResolverFirewallRuleGroupAssociation(scope constructs.Construct, id *string, config *DataAwsRoute53ResolverFirewallRuleGroupAssociationConfig) DataAwsRoute53ResolverFirewallRuleGroupAssociation {
 	_init_.Initialize()
@@ -428,7 +427,7 @@ func NewDataAwsRoute53ResolverFirewallRuleGroupAssociation(scope constructs.Cons
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRuleGroupAssociation.DataAwsRoute53ResolverFirewallRuleGroupAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -441,12 +440,12 @@ func NewDataAwsRoute53ResolverFirewallRuleGroupAssociation_Override(d DataAwsRou
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRuleGroupAssociation.DataAwsRoute53ResolverFirewallRuleGroupAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -457,7 +456,7 @@ func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation)SetCount(v
 	)
 }
 
-func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -465,7 +464,7 @@ func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation)SetDepends
 	)
 }
 
-func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation)SetFirewallRuleGroupAssociationId(val *string) {
+func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) SetFirewallRuleGroupAssociationId(val *string) {
 	if err := j.validateSetFirewallRuleGroupAssociationIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation)SetFirewal
 	)
 }
 
-func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -484,7 +483,7 @@ func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation)SetForEach
 	)
 }
 
-func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation)SetId(val *string) {
+func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -495,7 +494,7 @@ func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation)SetId(val 
 	)
 }
 
-func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -506,7 +505,7 @@ func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation)SetLifecyc
 	)
 }
 
-func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -526,7 +525,7 @@ func DataAwsRoute53ResolverFirewallRuleGroupAssociation_GenerateConfigForImport(
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRuleGroupAssociation.DataAwsRoute53ResolverFirewallRuleGroupAssociation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -550,7 +549,7 @@ func DataAwsRoute53ResolverFirewallRuleGroupAssociation_GenerateConfigForImport(
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsRoute53ResolverFirewallRuleGroupAssociation_IsConstruct(x interface{}) *bool {
+func DataAwsRoute53ResolverFirewallRuleGroupAssociation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsRoute53ResolverFirewallRuleGroupAssociation_IsConstructParameters(x); err != nil {
@@ -561,7 +560,7 @@ func DataAwsRoute53ResolverFirewallRuleGroupAssociation_IsConstruct(x interface{
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRuleGroupAssociation.DataAwsRoute53ResolverFirewallRuleGroupAssociation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -569,7 +568,7 @@ func DataAwsRoute53ResolverFirewallRuleGroupAssociation_IsConstruct(x interface{
 }
 
 // Experimental.
-func DataAwsRoute53ResolverFirewallRuleGroupAssociation_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsRoute53ResolverFirewallRuleGroupAssociation_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsRoute53ResolverFirewallRuleGroupAssociation_IsTerraformDataSourceParameters(x); err != nil {
@@ -580,7 +579,7 @@ func DataAwsRoute53ResolverFirewallRuleGroupAssociation_IsTerraformDataSource(x 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRuleGroupAssociation.DataAwsRoute53ResolverFirewallRuleGroupAssociation",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -588,7 +587,7 @@ func DataAwsRoute53ResolverFirewallRuleGroupAssociation_IsTerraformDataSource(x 
 }
 
 // Experimental.
-func DataAwsRoute53ResolverFirewallRuleGroupAssociation_IsTerraformElement(x interface{}) *bool {
+func DataAwsRoute53ResolverFirewallRuleGroupAssociation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsRoute53ResolverFirewallRuleGroupAssociation_IsTerraformElementParameters(x); err != nil {
@@ -599,7 +598,7 @@ func DataAwsRoute53ResolverFirewallRuleGroupAssociation_IsTerraformElement(x int
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRuleGroupAssociation.DataAwsRoute53ResolverFirewallRuleGroupAssociation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -617,27 +616,27 @@ func DataAwsRoute53ResolverFirewallRuleGroupAssociation_TfResourceType() *string
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -653,7 +652,7 @@ func (d *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) GetBoolea
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -669,7 +668,7 @@ func (d *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) GetBoolea
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -685,7 +684,7 @@ func (d *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) GetListAt
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -701,7 +700,7 @@ func (d *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) GetNumber
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -717,7 +716,7 @@ func (d *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) GetNumber
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -733,7 +732,7 @@ func (d *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) GetNumber
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -749,7 +748,7 @@ func (d *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) GetString
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -765,7 +764,7 @@ func (d *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) GetString
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -781,7 +780,7 @@ func (d *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) Interpola
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -795,7 +794,7 @@ func (d *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) OverrideL
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -815,8 +814,8 @@ func (d *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) ResetOver
 	)
 }
 
-func (d *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -828,8 +827,8 @@ func (d *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) Synthesiz
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -841,8 +840,8 @@ func (d *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) Synthesiz
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -854,8 +853,8 @@ func (d *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) ToHclTerr
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -880,8 +879,8 @@ func (d *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) ToString(
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -892,4 +891,3 @@ func (d *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) ToTerrafo
 
 	return returns
 }
-

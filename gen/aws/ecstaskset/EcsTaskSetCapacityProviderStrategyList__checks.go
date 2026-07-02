@@ -34,7 +34,7 @@ func (e *jsiiProxy_EcsTaskSetCapacityProviderStrategyList) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_EcsTaskSetCapacityProviderStrategyList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EcsTaskSetCapacityProviderStrategyList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEcsTaskSetCapacityProviderStrategyListParameters(terraformResour
 
 	return nil
 }
-

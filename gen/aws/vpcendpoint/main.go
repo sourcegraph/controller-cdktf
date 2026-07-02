@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.vpcEndpoint.VpcEndpoint",
-		reflect.TypeOf((*VpcEndpoint)(nil)).Elem(),
+		reflect.TypeFor[VpcEndpoint](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -106,7 +106,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcIdInput", GoGetter: "VpcIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VpcEndpoint{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -114,15 +114,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.vpcEndpoint.VpcEndpointConfig",
-		reflect.TypeOf((*VpcEndpointConfig)(nil)).Elem(),
+		reflect.TypeFor[VpcEndpointConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.vpcEndpoint.VpcEndpointDnsEntry",
-		reflect.TypeOf((*VpcEndpointDnsEntry)(nil)).Elem(),
+		reflect.TypeFor[VpcEndpointDnsEntry](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.vpcEndpoint.VpcEndpointDnsEntryList",
-		reflect.TypeOf((*VpcEndpointDnsEntryList)(nil)).Elem(),
+		reflect.TypeFor[VpcEndpointDnsEntryList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -135,7 +135,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VpcEndpointDnsEntryList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -143,7 +143,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.vpcEndpoint.VpcEndpointDnsEntryOutputReference",
-		reflect.TypeOf((*VpcEndpointDnsEntryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VpcEndpointDnsEntryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -169,7 +169,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VpcEndpointDnsEntryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -177,11 +177,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.vpcEndpoint.VpcEndpointDnsOptions",
-		reflect.TypeOf((*VpcEndpointDnsOptions)(nil)).Elem(),
+		reflect.TypeFor[VpcEndpointDnsOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.vpcEndpoint.VpcEndpointDnsOptionsOutputReference",
-		reflect.TypeOf((*VpcEndpointDnsOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VpcEndpointDnsOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -208,7 +208,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VpcEndpointDnsOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -216,11 +216,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.vpcEndpoint.VpcEndpointTimeouts",
-		reflect.TypeOf((*VpcEndpointTimeouts)(nil)).Elem(),
+		reflect.TypeFor[VpcEndpointTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.vpcEndpoint.VpcEndpointTimeoutsOutputReference",
-		reflect.TypeOf((*VpcEndpointTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VpcEndpointTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -253,7 +253,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VpcEndpointTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

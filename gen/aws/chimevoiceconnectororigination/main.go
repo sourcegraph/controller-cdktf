@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOrigination",
-		reflect.TypeOf((*ChimeVoiceConnectorOrigination)(nil)).Elem(),
+		reflect.TypeFor[ChimeVoiceConnectorOrigination](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "voiceConnectorId", GoGetter: "VoiceConnectorId"},
 			_jsii_.MemberProperty{JsiiProperty: "voiceConnectorIdInput", GoGetter: "VoiceConnectorIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChimeVoiceConnectorOrigination{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -72,15 +72,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOriginationConfig",
-		reflect.TypeOf((*ChimeVoiceConnectorOriginationConfig)(nil)).Elem(),
+		reflect.TypeFor[ChimeVoiceConnectorOriginationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOriginationRoute",
-		reflect.TypeOf((*ChimeVoiceConnectorOriginationRoute)(nil)).Elem(),
+		reflect.TypeFor[ChimeVoiceConnectorOriginationRoute](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOriginationRouteList",
-		reflect.TypeOf((*ChimeVoiceConnectorOriginationRouteList)(nil)).Elem(),
+		reflect.TypeFor[ChimeVoiceConnectorOriginationRouteList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -94,7 +94,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChimeVoiceConnectorOriginationRouteList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -102,7 +102,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOriginationRouteOutputReference",
-		reflect.TypeOf((*ChimeVoiceConnectorOriginationRouteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChimeVoiceConnectorOriginationRouteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -137,7 +137,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weight", GoGetter: "Weight"},
 			_jsii_.MemberProperty{JsiiProperty: "weightInput", GoGetter: "WeightInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChimeVoiceConnectorOriginationRouteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

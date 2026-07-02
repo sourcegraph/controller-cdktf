@@ -19,7 +19,7 @@ func (v *jsiiProxy_VpcDhcpOptions) validateAddMoveTargetParameters(moveTarget *s
 	return nil
 }
 
-func (v *jsiiProxy_VpcDhcpOptions) validateAddOverrideParameters(path *string, value interface{}) error {
+func (v *jsiiProxy_VpcDhcpOptions) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (v *jsiiProxy_VpcDhcpOptions) validateMoveFromIdParameters(id *string) erro
 	return nil
 }
 
-func (v *jsiiProxy_VpcDhcpOptions) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (v *jsiiProxy_VpcDhcpOptions) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateVpcDhcpOptions_GenerateConfigForImportParameters(scope constructs.C
 	return nil
 }
 
-func validateVpcDhcpOptions_IsConstructParameters(x interface{}) error {
+func validateVpcDhcpOptions_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateVpcDhcpOptions_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateVpcDhcpOptions_IsTerraformElementParameters(x interface{}) error {
+func validateVpcDhcpOptions_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateVpcDhcpOptions_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateVpcDhcpOptions_IsTerraformResourceParameters(x interface{}) error {
+func validateVpcDhcpOptions_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateVpcDhcpOptions_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_VpcDhcpOptions) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_VpcDhcpOptions) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_VpcDhcpOptions) validateSetConnectionParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_VpcDhcpOptions) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_VpcDhcpOptions) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -390,7 +390,7 @@ func (j *jsiiProxy_VpcDhcpOptions) validateSetNtpServersParameters(val *[]*strin
 	return nil
 }
 
-func (j *jsiiProxy_VpcDhcpOptions) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_VpcDhcpOptions) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -467,4 +467,3 @@ func validateNewVpcDhcpOptionsParameters(scope constructs.Construct, id *string,
 
 	return nil
 }
-

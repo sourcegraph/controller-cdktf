@@ -1,6 +1,5 @@
 package emrinstancefleet
 
-
 type EmrInstanceFleetInstanceTypeConfigs struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/emr_instance_fleet#instance_type EmrInstanceFleet#instance_type}.
 	InstanceType *string `field:"required" json:"instanceType" yaml:"instanceType"`
@@ -11,12 +10,11 @@ type EmrInstanceFleetInstanceTypeConfigs struct {
 	// configurations block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/emr_instance_fleet#configurations EmrInstanceFleet#configurations}
-	Configurations interface{} `field:"optional" json:"configurations" yaml:"configurations"`
+	Configurations any `field:"optional" json:"configurations" yaml:"configurations"`
 	// ebs_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/emr_instance_fleet#ebs_config EmrInstanceFleet#ebs_config}
-	EbsConfig interface{} `field:"optional" json:"ebsConfig" yaml:"ebsConfig"`
+	EbsConfig any `field:"optional" json:"ebsConfig" yaml:"ebsConfig"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/emr_instance_fleet#weighted_capacity EmrInstanceFleet#weighted_capacity}.
 	WeightedCapacity *float64 `field:"optional" json:"weightedCapacity" yaml:"weightedCapacity"`
 }
-

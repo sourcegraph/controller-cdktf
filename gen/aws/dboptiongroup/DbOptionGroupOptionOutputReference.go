@@ -12,9 +12,9 @@ type DbOptionGroupOptionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,13 +30,13 @@ type DbOptionGroupOptionOutputReference interface {
 	DbSecurityGroupMembershipsInput() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	OptionName() *string
 	SetOptionName(val *string)
 	OptionNameInput() *string
 	OptionSettings() DbOptionGroupOptionOptionSettingsList
-	OptionSettingsInput() interface{}
+	OptionSettingsInput() any
 	Port() *float64
 	SetPort(val *float64)
 	PortInput() *float64
@@ -57,7 +57,7 @@ type DbOptionGroupOptionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type DbOptionGroupOptionOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutOptionSettings(value interface{})
+	PutOptionSettings(value any)
 	ResetDbSecurityGroupMemberships()
 	ResetOptionSettings()
 	ResetPort()
@@ -86,7 +86,7 @@ type DbOptionGroupOptionOutputReference interface {
 	ResetVpcSecurityGroupMemberships()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,8 +99,8 @@ type jsiiProxy_DbOptionGroupOptionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DbOptionGroupOptionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbOptionGroupOptionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -159,8 +159,8 @@ func (j *jsiiProxy_DbOptionGroupOptionOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DbOptionGroupOptionOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbOptionGroupOptionOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -199,8 +199,8 @@ func (j *jsiiProxy_DbOptionGroupOptionOutputReference) OptionSettings() DbOption
 	return returns
 }
 
-func (j *jsiiProxy_DbOptionGroupOptionOutputReference) OptionSettingsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbOptionGroupOptionOutputReference) OptionSettingsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"optionSettingsInput",
@@ -289,7 +289,6 @@ func (j *jsiiProxy_DbOptionGroupOptionOutputReference) VpcSecurityGroupMembershi
 	return returns
 }
 
-
 func NewDbOptionGroupOptionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DbOptionGroupOptionOutputReference {
 	_init_.Initialize()
 
@@ -300,7 +299,7 @@ func NewDbOptionGroupOptionOutputReference(terraformResource cdktf.IInterpolatin
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dbOptionGroup.DbOptionGroupOptionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -312,12 +311,12 @@ func NewDbOptionGroupOptionOutputReference_Override(d DbOptionGroupOptionOutputR
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dbOptionGroup.DbOptionGroupOptionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DbOptionGroupOptionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DbOptionGroupOptionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,7 +327,7 @@ func (j *jsiiProxy_DbOptionGroupOptionOutputReference)SetComplexObjectIndex(val 
 	)
 }
 
-func (j *jsiiProxy_DbOptionGroupOptionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DbOptionGroupOptionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -339,7 +338,7 @@ func (j *jsiiProxy_DbOptionGroupOptionOutputReference)SetComplexObjectIsFromSet(
 	)
 }
 
-func (j *jsiiProxy_DbOptionGroupOptionOutputReference)SetDbSecurityGroupMemberships(val *[]*string) {
+func (j *jsiiProxy_DbOptionGroupOptionOutputReference) SetDbSecurityGroupMemberships(val *[]*string) {
 	if err := j.validateSetDbSecurityGroupMembershipsParameters(val); err != nil {
 		panic(err)
 	}
@@ -350,7 +349,7 @@ func (j *jsiiProxy_DbOptionGroupOptionOutputReference)SetDbSecurityGroupMembersh
 	)
 }
 
-func (j *jsiiProxy_DbOptionGroupOptionOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DbOptionGroupOptionOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,7 +360,7 @@ func (j *jsiiProxy_DbOptionGroupOptionOutputReference)SetInternalValue(val inter
 	)
 }
 
-func (j *jsiiProxy_DbOptionGroupOptionOutputReference)SetOptionName(val *string) {
+func (j *jsiiProxy_DbOptionGroupOptionOutputReference) SetOptionName(val *string) {
 	if err := j.validateSetOptionNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -372,7 +371,7 @@ func (j *jsiiProxy_DbOptionGroupOptionOutputReference)SetOptionName(val *string)
 	)
 }
 
-func (j *jsiiProxy_DbOptionGroupOptionOutputReference)SetPort(val *float64) {
+func (j *jsiiProxy_DbOptionGroupOptionOutputReference) SetPort(val *float64) {
 	if err := j.validateSetPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -383,7 +382,7 @@ func (j *jsiiProxy_DbOptionGroupOptionOutputReference)SetPort(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DbOptionGroupOptionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DbOptionGroupOptionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_DbOptionGroupOptionOutputReference)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_DbOptionGroupOptionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DbOptionGroupOptionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_DbOptionGroupOptionOutputReference)SetTerraformResource(val c
 	)
 }
 
-func (j *jsiiProxy_DbOptionGroupOptionOutputReference)SetVersion(val *string) {
+func (j *jsiiProxy_DbOptionGroupOptionOutputReference) SetVersion(val *string) {
 	if err := j.validateSetVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,7 +415,7 @@ func (j *jsiiProxy_DbOptionGroupOptionOutputReference)SetVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbOptionGroupOptionOutputReference)SetVpcSecurityGroupMemberships(val *[]*string) {
+func (j *jsiiProxy_DbOptionGroupOptionOutputReference) SetVpcSecurityGroupMemberships(val *[]*string) {
 	if err := j.validateSetVpcSecurityGroupMembershipsParameters(val); err != nil {
 		panic(err)
 	}
@@ -440,16 +439,16 @@ func (d *jsiiProxy_DbOptionGroupOptionOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DbOptionGroupOptionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DbOptionGroupOptionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -465,7 +464,7 @@ func (d *jsiiProxy_DbOptionGroupOptionOutputReference) GetBooleanAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (d *jsiiProxy_DbOptionGroupOptionOutputReference) GetBooleanMapAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -497,7 +496,7 @@ func (d *jsiiProxy_DbOptionGroupOptionOutputReference) GetListAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (d *jsiiProxy_DbOptionGroupOptionOutputReference) GetNumberAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -529,7 +528,7 @@ func (d *jsiiProxy_DbOptionGroupOptionOutputReference) GetNumberListAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -545,7 +544,7 @@ func (d *jsiiProxy_DbOptionGroupOptionOutputReference) GetNumberMapAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -561,7 +560,7 @@ func (d *jsiiProxy_DbOptionGroupOptionOutputReference) GetStringAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -577,7 +576,7 @@ func (d *jsiiProxy_DbOptionGroupOptionOutputReference) GetStringMapAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -606,21 +605,21 @@ func (d *jsiiProxy_DbOptionGroupOptionOutputReference) InterpolationForAttribute
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DbOptionGroupOptionOutputReference) PutOptionSettings(value interface{}) {
+func (d *jsiiProxy_DbOptionGroupOptionOutputReference) PutOptionSettings(value any) {
 	if err := d.validatePutOptionSettingsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putOptionSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -664,16 +663,16 @@ func (d *jsiiProxy_DbOptionGroupOptionOutputReference) ResetVpcSecurityGroupMemb
 	)
 }
 
-func (d *jsiiProxy_DbOptionGroupOptionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DbOptionGroupOptionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -692,4 +691,3 @@ func (d *jsiiProxy_DbOptionGroupOptionOutputReference) ToString() *string {
 
 	return returns
 }
-

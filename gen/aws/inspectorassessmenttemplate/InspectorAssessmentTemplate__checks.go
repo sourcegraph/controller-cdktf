@@ -19,7 +19,7 @@ func (i *jsiiProxy_InspectorAssessmentTemplate) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (i *jsiiProxy_InspectorAssessmentTemplate) validateAddOverrideParameters(path *string, value interface{}) error {
+func (i *jsiiProxy_InspectorAssessmentTemplate) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (i *jsiiProxy_InspectorAssessmentTemplate) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (i *jsiiProxy_InspectorAssessmentTemplate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (i *jsiiProxy_InspectorAssessmentTemplate) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (i *jsiiProxy_InspectorAssessmentTemplate) validateOverrideLogicalIdParamet
 	return nil
 }
 
-func (i *jsiiProxy_InspectorAssessmentTemplate) validatePutEventSubscriptionParameters(value interface{}) error {
+func (i *jsiiProxy_InspectorAssessmentTemplate) validatePutEventSubscriptionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateInspectorAssessmentTemplate_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateInspectorAssessmentTemplate_IsConstructParameters(x interface{}) error {
+func validateInspectorAssessmentTemplate_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateInspectorAssessmentTemplate_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateInspectorAssessmentTemplate_IsTerraformElementParameters(x interface{}) error {
+func validateInspectorAssessmentTemplate_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateInspectorAssessmentTemplate_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateInspectorAssessmentTemplate_IsTerraformResourceParameters(x interface{}) error {
+func validateInspectorAssessmentTemplate_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func validateInspectorAssessmentTemplate_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_InspectorAssessmentTemplate) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_InspectorAssessmentTemplate) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -308,7 +308,7 @@ func (j *jsiiProxy_InspectorAssessmentTemplate) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_InspectorAssessmentTemplate) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_InspectorAssessmentTemplate) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -397,7 +397,7 @@ func (j *jsiiProxy_InspectorAssessmentTemplate) validateSetNameParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_InspectorAssessmentTemplate) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_InspectorAssessmentTemplate) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -493,4 +493,3 @@ func validateNewInspectorAssessmentTemplateParameters(scope constructs.Construct
 
 	return nil
 }
-

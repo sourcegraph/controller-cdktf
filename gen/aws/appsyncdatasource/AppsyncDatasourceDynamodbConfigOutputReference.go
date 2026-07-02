@@ -12,9 +12,9 @@ type AppsyncDatasourceDynamodbConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -45,16 +45,16 @@ type AppsyncDatasourceDynamodbConfigOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	UseCallerCredentials() interface{}
-	SetUseCallerCredentials(val interface{})
-	UseCallerCredentialsInput() interface{}
-	Versioned() interface{}
-	SetVersioned(val interface{})
-	VersionedInput() interface{}
+	UseCallerCredentials() any
+	SetUseCallerCredentials(val any)
+	UseCallerCredentialsInput() any
+	Versioned() any
+	SetVersioned(val any)
+	VersionedInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -82,7 +82,7 @@ type AppsyncDatasourceDynamodbConfigOutputReference interface {
 	ResetVersioned()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -95,8 +95,8 @@ type jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -225,8 +225,8 @@ func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) TerraformReso
 	return returns
 }
 
-func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) UseCallerCredentials() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) UseCallerCredentials() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useCallerCredentials",
@@ -235,8 +235,8 @@ func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) UseCallerCred
 	return returns
 }
 
-func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) UseCallerCredentialsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) UseCallerCredentialsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useCallerCredentialsInput",
@@ -245,8 +245,8 @@ func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) UseCallerCred
 	return returns
 }
 
-func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) Versioned() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) Versioned() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"versioned",
@@ -255,8 +255,8 @@ func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) Versioned() i
 	return returns
 }
 
-func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) VersionedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) VersionedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"versionedInput",
@@ -264,7 +264,6 @@ func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) VersionedInpu
 	)
 	return returns
 }
-
 
 func NewAppsyncDatasourceDynamodbConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AppsyncDatasourceDynamodbConfigOutputReference {
 	_init_.Initialize()
@@ -276,7 +275,7 @@ func NewAppsyncDatasourceDynamodbConfigOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceDynamodbConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -288,12 +287,12 @@ func NewAppsyncDatasourceDynamodbConfigOutputReference_Override(a AppsyncDatasou
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceDynamodbConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -304,7 +303,7 @@ func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -315,7 +314,7 @@ func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference)SetInternalValue(val *AppsyncDatasourceDynamodbConfig) {
+func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) SetInternalValue(val *AppsyncDatasourceDynamodbConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,7 +325,7 @@ func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference)SetRegion(val *string) {
+func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -337,7 +336,7 @@ func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference)SetRegion(val 
 	)
 }
 
-func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference)SetTableName(val *string) {
+func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) SetTableName(val *string) {
 	if err := j.validateSetTableNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -348,7 +347,7 @@ func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference)SetTableName(v
 	)
 }
 
-func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,7 +358,7 @@ func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,7 +369,7 @@ func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference)SetTerraformRe
 	)
 }
 
-func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference)SetUseCallerCredentials(val interface{}) {
+func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) SetUseCallerCredentials(val any) {
 	if err := j.validateSetUseCallerCredentialsParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,7 +380,7 @@ func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference)SetUseCallerCr
 	)
 }
 
-func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference)SetVersioned(val interface{}) {
+func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) SetVersioned(val any) {
 	if err := j.validateSetVersionedParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,16 +404,16 @@ func (a *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (a *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -430,7 +429,7 @@ func (a *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -446,7 +445,7 @@ func (a *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -462,7 +461,7 @@ func (a *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (a *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -494,7 +493,7 @@ func (a *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) GetNumberList
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -510,7 +509,7 @@ func (a *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -526,7 +525,7 @@ func (a *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -542,7 +541,7 @@ func (a *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -571,7 +570,7 @@ func (a *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) Interpolation
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -585,7 +584,7 @@ func (a *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) PutDeltaSyncC
 	_jsii_.InvokeVoid(
 		a,
 		"putDeltaSyncConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -621,16 +620,16 @@ func (a *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) ResetVersione
 	)
 }
 
-func (a *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -649,4 +648,3 @@ func (a *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) ToString() *s
 
 	return returns
 }
-

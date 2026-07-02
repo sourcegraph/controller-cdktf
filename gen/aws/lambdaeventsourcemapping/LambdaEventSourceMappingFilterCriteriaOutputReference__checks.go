@@ -90,7 +90,7 @@ func (l *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference) valida
 	return nil
 }
 
-func (l *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference) validatePutFilterParameters(value interface{}) error {
+func (l *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference) validatePutFilterParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (l *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewLambdaEventSourceMappingFilterCriteriaOutputReferenceParameters(
 
 	return nil
 }
-

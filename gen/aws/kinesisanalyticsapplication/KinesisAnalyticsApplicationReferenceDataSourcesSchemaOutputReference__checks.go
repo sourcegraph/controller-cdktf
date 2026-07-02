@@ -90,7 +90,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesSchemaOutputRe
 	return nil
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesSchemaOutputReference) validatePutRecordColumnsParameters(value interface{}) error {
+func (k *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesSchemaOutputReference) validatePutRecordColumnsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesSchemaOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesSchemaOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesSchemaOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -248,4 +248,3 @@ func validateNewKinesisAnalyticsApplicationReferenceDataSourcesSchemaOutputRefer
 
 	return nil
 }
-

@@ -17,8 +17,8 @@ type ElasticacheReplicationGroupLogDeliveryConfigurationList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type ElasticacheReplicationGroupLogDeliveryConfigurationList interface {
 	Get(index *float64) ElasticacheReplicationGroupLogDeliveryConfigurationOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_ElasticacheReplicationGroupLogDeliveryConfigurationList) Fqn(
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroupLogDeliveryConfigurationList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticacheReplicationGroupLogDeliveryConfigurationList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_ElasticacheReplicationGroupLogDeliveryConfigurationList) Wrap
 	return returns
 }
 
-
 func NewElasticacheReplicationGroupLogDeliveryConfigurationList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ElasticacheReplicationGroupLogDeliveryConfigurationList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewElasticacheReplicationGroupLogDeliveryConfigurationList(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroupLogDeliveryConfigurationList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewElasticacheReplicationGroupLogDeliveryConfigurationList_Override(e Elast
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroupLogDeliveryConfigurationList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroupLogDeliveryConfigurationList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ElasticacheReplicationGroupLogDeliveryConfigurationList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroupLogDeliveryConfigurationList)SetIn
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroupLogDeliveryConfigurationList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElasticacheReplicationGroupLogDeliveryConfigurationList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroupLogDeliveryConfigurationList)SetTe
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroupLogDeliveryConfigurationList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElasticacheReplicationGroupLogDeliveryConfigurationList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroupLogDeliveryConfigurationList)SetTe
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroupLogDeliveryConfigurationList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ElasticacheReplicationGroupLogDeliveryConfigurationList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (e *jsiiProxy_ElasticacheReplicationGroupLogDeliveryConfigurationList) AllW
 	_jsii_.Invoke(
 		e,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (e *jsiiProxy_ElasticacheReplicationGroupLogDeliveryConfigurationList) Get(
 	_jsii_.Invoke(
 		e,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_ElasticacheReplicationGroupLogDeliveryConfigurationList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_ElasticacheReplicationGroupLogDeliveryConfigurationList) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (e *jsiiProxy_ElasticacheReplicationGroupLogDeliveryConfigurationList) ToSt
 
 	return returns
 }
-

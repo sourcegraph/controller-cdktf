@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsCloudcontrolapiResource.DataAwsCloudcontrolapiResource",
-		reflect.TypeOf((*DataAwsCloudcontrolapiResource)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCloudcontrolapiResource](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -59,7 +59,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "typeVersionId", GoGetter: "TypeVersionId"},
 			_jsii_.MemberProperty{JsiiProperty: "typeVersionIdInput", GoGetter: "TypeVersionIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsCloudcontrolapiResource{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -67,6 +67,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsCloudcontrolapiResource.DataAwsCloudcontrolapiResourceConfig",
-		reflect.TypeOf((*DataAwsCloudcontrolapiResourceConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCloudcontrolapiResourceConfig](),
 	)
 }

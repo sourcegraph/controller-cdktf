@@ -34,7 +34,7 @@ func (n *jsiiProxy_NetworkfirewallRuleGroupRuleGroupRuleVariablesIpSetsList) val
 	return nil
 }
 
-func (j *jsiiProxy_NetworkfirewallRuleGroupRuleGroupRuleVariablesIpSetsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkfirewallRuleGroupRuleGroupRuleVariablesIpSetsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewNetworkfirewallRuleGroupRuleGroupRuleVariablesIpSetsListParamete
 
 	return nil
 }
-

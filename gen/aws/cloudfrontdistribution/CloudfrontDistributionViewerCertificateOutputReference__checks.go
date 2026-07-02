@@ -106,7 +106,7 @@ func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) validateSetCloudfrontDefaultCertificateParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) validateSetCloudfrontDefaultCertificateParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -126,7 +126,7 @@ func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -250,4 +250,3 @@ func validateNewCloudfrontDistributionViewerCertificateOutputReferenceParameters
 
 	return nil
 }
-

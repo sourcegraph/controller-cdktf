@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsVpcEndpointService) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsVpcEndpointService) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -111,7 +111,7 @@ func (d *jsiiProxy_DataAwsVpcEndpointService) validateOverrideLogicalIdParameter
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsVpcEndpointService) validatePutFilterParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsVpcEndpointService) validatePutFilterParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -169,7 +169,7 @@ func validateDataAwsVpcEndpointService_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateDataAwsVpcEndpointService_IsConstructParameters(x interface{}) error {
+func validateDataAwsVpcEndpointService_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -177,7 +177,7 @@ func validateDataAwsVpcEndpointService_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateDataAwsVpcEndpointService_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsVpcEndpointService_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -185,7 +185,7 @@ func validateDataAwsVpcEndpointService_IsTerraformDataSourceParameters(x interfa
 	return nil
 }
 
-func validateDataAwsVpcEndpointService_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsVpcEndpointService_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -193,7 +193,7 @@ func validateDataAwsVpcEndpointService_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsVpcEndpointService) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsVpcEndpointService) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -313,4 +313,3 @@ func validateNewDataAwsVpcEndpointServiceParameters(scope constructs.Construct, 
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (a *jsiiProxy_ApprunnerObservabilityConfiguration) validateAddMoveTargetPar
 	return nil
 }
 
-func (a *jsiiProxy_ApprunnerObservabilityConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_ApprunnerObservabilityConfiguration) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_ApprunnerObservabilityConfiguration) validateMoveFromIdParame
 	return nil
 }
 
-func (a *jsiiProxy_ApprunnerObservabilityConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_ApprunnerObservabilityConfiguration) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateApprunnerObservabilityConfiguration_GenerateConfigForImportParamete
 	return nil
 }
 
-func validateApprunnerObservabilityConfiguration_IsConstructParameters(x interface{}) error {
+func validateApprunnerObservabilityConfiguration_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateApprunnerObservabilityConfiguration_IsConstructParameters(x interfa
 	return nil
 }
 
-func validateApprunnerObservabilityConfiguration_IsTerraformElementParameters(x interface{}) error {
+func validateApprunnerObservabilityConfiguration_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateApprunnerObservabilityConfiguration_IsTerraformElementParameters(x 
 	return nil
 }
 
-func validateApprunnerObservabilityConfiguration_IsTerraformResourceParameters(x interface{}) error {
+func validateApprunnerObservabilityConfiguration_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateApprunnerObservabilityConfiguration_IsTerraformResourceParameters(x
 	return nil
 }
 
-func (j *jsiiProxy_ApprunnerObservabilityConfiguration) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ApprunnerObservabilityConfiguration) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_ApprunnerObservabilityConfiguration) validateSetConnectionPar
 	return nil
 }
 
-func (j *jsiiProxy_ApprunnerObservabilityConfiguration) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ApprunnerObservabilityConfiguration) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -369,7 +369,7 @@ func (j *jsiiProxy_ApprunnerObservabilityConfiguration) validateSetObservability
 	return nil
 }
 
-func (j *jsiiProxy_ApprunnerObservabilityConfiguration) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ApprunnerObservabilityConfiguration) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -449,4 +449,3 @@ func validateNewApprunnerObservabilityConfigurationParameters(scope constructs.C
 
 	return nil
 }
-

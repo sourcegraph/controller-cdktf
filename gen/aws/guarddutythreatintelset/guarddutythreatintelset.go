@@ -12,22 +12,22 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/guardduty_threatintelset aws_guardduty_threatintelset}.
 type GuarddutyThreatintelset interface {
 	cdktf.TerraformResource
-	Activate() interface{}
-	SetActivate(val interface{})
-	ActivateInput() interface{}
+	Activate() any
+	SetActivate(val any)
+	ActivateInput() any
 	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -66,11 +66,11 @@ type GuarddutyThreatintelset interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -80,16 +80,16 @@ type GuarddutyThreatintelset interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -107,7 +107,7 @@ type GuarddutyThreatintelset interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -119,7 +119,7 @@ type GuarddutyThreatintelset interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -132,17 +132,17 @@ type GuarddutyThreatintelset interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GuarddutyThreatintelset
@@ -150,8 +150,8 @@ type jsiiProxy_GuarddutyThreatintelset struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_GuarddutyThreatintelset) Activate() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GuarddutyThreatintelset) Activate() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"activate",
@@ -160,8 +160,8 @@ func (j *jsiiProxy_GuarddutyThreatintelset) Activate() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GuarddutyThreatintelset) ActivateInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GuarddutyThreatintelset) ActivateInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"activateInput",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_GuarddutyThreatintelset) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_GuarddutyThreatintelset) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GuarddutyThreatintelset) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -200,8 +200,8 @@ func (j *jsiiProxy_GuarddutyThreatintelset) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GuarddutyThreatintelset) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GuarddutyThreatintelset) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -210,8 +210,8 @@ func (j *jsiiProxy_GuarddutyThreatintelset) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_GuarddutyThreatintelset) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GuarddutyThreatintelset) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -390,8 +390,8 @@ func (j *jsiiProxy_GuarddutyThreatintelset) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GuarddutyThreatintelset) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GuarddutyThreatintelset) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -400,8 +400,8 @@ func (j *jsiiProxy_GuarddutyThreatintelset) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GuarddutyThreatintelset) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GuarddutyThreatintelset) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -460,8 +460,8 @@ func (j *jsiiProxy_GuarddutyThreatintelset) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_GuarddutyThreatintelset) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GuarddutyThreatintelset) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -480,7 +480,6 @@ func (j *jsiiProxy_GuarddutyThreatintelset) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/guardduty_threatintelset aws_guardduty_threatintelset} Resource.
 func NewGuarddutyThreatintelset(scope constructs.Construct, id *string, config *GuarddutyThreatintelsetConfig) GuarddutyThreatintelset {
 	_init_.Initialize()
@@ -492,7 +491,7 @@ func NewGuarddutyThreatintelset(scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.guarddutyThreatintelset.GuarddutyThreatintelset",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -505,12 +504,12 @@ func NewGuarddutyThreatintelset_Override(g GuarddutyThreatintelset, scope constr
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.guarddutyThreatintelset.GuarddutyThreatintelset",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GuarddutyThreatintelset)SetActivate(val interface{}) {
+func (j *jsiiProxy_GuarddutyThreatintelset) SetActivate(val any) {
 	if err := j.validateSetActivateParameters(val); err != nil {
 		panic(err)
 	}
@@ -521,7 +520,7 @@ func (j *jsiiProxy_GuarddutyThreatintelset)SetActivate(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GuarddutyThreatintelset)SetConnection(val interface{}) {
+func (j *jsiiProxy_GuarddutyThreatintelset) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +531,7 @@ func (j *jsiiProxy_GuarddutyThreatintelset)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GuarddutyThreatintelset)SetCount(val interface{}) {
+func (j *jsiiProxy_GuarddutyThreatintelset) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -543,7 +542,7 @@ func (j *jsiiProxy_GuarddutyThreatintelset)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GuarddutyThreatintelset)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GuarddutyThreatintelset) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -551,7 +550,7 @@ func (j *jsiiProxy_GuarddutyThreatintelset)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GuarddutyThreatintelset)SetDetectorId(val *string) {
+func (j *jsiiProxy_GuarddutyThreatintelset) SetDetectorId(val *string) {
 	if err := j.validateSetDetectorIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -562,7 +561,7 @@ func (j *jsiiProxy_GuarddutyThreatintelset)SetDetectorId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GuarddutyThreatintelset)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GuarddutyThreatintelset) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -570,7 +569,7 @@ func (j *jsiiProxy_GuarddutyThreatintelset)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_GuarddutyThreatintelset)SetFormat(val *string) {
+func (j *jsiiProxy_GuarddutyThreatintelset) SetFormat(val *string) {
 	if err := j.validateSetFormatParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_GuarddutyThreatintelset)SetFormat(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GuarddutyThreatintelset)SetId(val *string) {
+func (j *jsiiProxy_GuarddutyThreatintelset) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func (j *jsiiProxy_GuarddutyThreatintelset)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GuarddutyThreatintelset)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GuarddutyThreatintelset) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -603,7 +602,7 @@ func (j *jsiiProxy_GuarddutyThreatintelset)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_GuarddutyThreatintelset)SetLocation(val *string) {
+func (j *jsiiProxy_GuarddutyThreatintelset) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -614,7 +613,7 @@ func (j *jsiiProxy_GuarddutyThreatintelset)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GuarddutyThreatintelset)SetName(val *string) {
+func (j *jsiiProxy_GuarddutyThreatintelset) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -625,7 +624,7 @@ func (j *jsiiProxy_GuarddutyThreatintelset)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GuarddutyThreatintelset)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GuarddutyThreatintelset) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -633,7 +632,7 @@ func (j *jsiiProxy_GuarddutyThreatintelset)SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_GuarddutyThreatintelset)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GuarddutyThreatintelset) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -644,7 +643,7 @@ func (j *jsiiProxy_GuarddutyThreatintelset)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GuarddutyThreatintelset)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_GuarddutyThreatintelset) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -655,7 +654,7 @@ func (j *jsiiProxy_GuarddutyThreatintelset)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_GuarddutyThreatintelset)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_GuarddutyThreatintelset) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -678,7 +677,7 @@ func GuarddutyThreatintelset_GenerateConfigForImport(scope constructs.Construct,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.guarddutyThreatintelset.GuarddutyThreatintelset",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -702,7 +701,7 @@ func GuarddutyThreatintelset_GenerateConfigForImport(scope constructs.Construct,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GuarddutyThreatintelset_IsConstruct(x interface{}) *bool {
+func GuarddutyThreatintelset_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGuarddutyThreatintelset_IsConstructParameters(x); err != nil {
@@ -713,7 +712,7 @@ func GuarddutyThreatintelset_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.guarddutyThreatintelset.GuarddutyThreatintelset",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -721,7 +720,7 @@ func GuarddutyThreatintelset_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GuarddutyThreatintelset_IsTerraformElement(x interface{}) *bool {
+func GuarddutyThreatintelset_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGuarddutyThreatintelset_IsTerraformElementParameters(x); err != nil {
@@ -732,7 +731,7 @@ func GuarddutyThreatintelset_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.guarddutyThreatintelset.GuarddutyThreatintelset",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -740,7 +739,7 @@ func GuarddutyThreatintelset_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GuarddutyThreatintelset_IsTerraformResource(x interface{}) *bool {
+func GuarddutyThreatintelset_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGuarddutyThreatintelset_IsTerraformResourceParameters(x); err != nil {
@@ -751,7 +750,7 @@ func GuarddutyThreatintelset_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.guarddutyThreatintelset.GuarddutyThreatintelset",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -776,31 +775,31 @@ func (g *jsiiProxy_GuarddutyThreatintelset) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GuarddutyThreatintelset) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GuarddutyThreatintelset) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GuarddutyThreatintelset) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GuarddutyThreatintelset) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -816,7 +815,7 @@ func (g *jsiiProxy_GuarddutyThreatintelset) GetBooleanAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -832,7 +831,7 @@ func (g *jsiiProxy_GuarddutyThreatintelset) GetBooleanMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -848,7 +847,7 @@ func (g *jsiiProxy_GuarddutyThreatintelset) GetListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -864,7 +863,7 @@ func (g *jsiiProxy_GuarddutyThreatintelset) GetNumberAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -880,7 +879,7 @@ func (g *jsiiProxy_GuarddutyThreatintelset) GetNumberListAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -896,7 +895,7 @@ func (g *jsiiProxy_GuarddutyThreatintelset) GetNumberMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -912,7 +911,7 @@ func (g *jsiiProxy_GuarddutyThreatintelset) GetStringAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -928,15 +927,15 @@ func (g *jsiiProxy_GuarddutyThreatintelset) GetStringMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GuarddutyThreatintelset) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GuarddutyThreatintelset) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -955,7 +954,7 @@ func (g *jsiiProxy_GuarddutyThreatintelset) ImportFrom(id *string, provider cdkt
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -968,7 +967,7 @@ func (g *jsiiProxy_GuarddutyThreatintelset) InterpolationForAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -982,18 +981,18 @@ func (g *jsiiProxy_GuarddutyThreatintelset) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GuarddutyThreatintelset) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GuarddutyThreatintelset) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1004,7 +1003,7 @@ func (g *jsiiProxy_GuarddutyThreatintelset) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1015,7 +1014,7 @@ func (g *jsiiProxy_GuarddutyThreatintelset) OverrideLogicalId(newLogicalId *stri
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1051,8 +1050,8 @@ func (g *jsiiProxy_GuarddutyThreatintelset) ResetTagsAll() {
 	)
 }
 
-func (g *jsiiProxy_GuarddutyThreatintelset) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GuarddutyThreatintelset) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1064,8 +1063,8 @@ func (g *jsiiProxy_GuarddutyThreatintelset) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (g *jsiiProxy_GuarddutyThreatintelset) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GuarddutyThreatintelset) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1077,8 +1076,8 @@ func (g *jsiiProxy_GuarddutyThreatintelset) SynthesizeHclAttributes() *map[strin
 	return returns
 }
 
-func (g *jsiiProxy_GuarddutyThreatintelset) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GuarddutyThreatintelset) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1090,8 +1089,8 @@ func (g *jsiiProxy_GuarddutyThreatintelset) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GuarddutyThreatintelset) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GuarddutyThreatintelset) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1116,8 +1115,8 @@ func (g *jsiiProxy_GuarddutyThreatintelset) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GuarddutyThreatintelset) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GuarddutyThreatintelset) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1128,4 +1127,3 @@ func (g *jsiiProxy_GuarddutyThreatintelset) ToTerraform() interface{} {
 
 	return returns
 }
-
