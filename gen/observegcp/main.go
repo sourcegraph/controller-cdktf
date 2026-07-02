@@ -10,7 +10,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observegcp.Observegcp",
-		reflect.TypeOf((*Observegcp)(nil)).Elem(),
+		reflect.TypeFor[Observegcp](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberMethod{JsiiMethod: "addProvider", GoMethod: "AddProvider"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Observegcp{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformModule)
 			return &j
@@ -81,6 +81,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observegcp.ObservegcpConfig",
-		reflect.TypeOf((*ObservegcpConfig)(nil)).Elem(),
+		reflect.TypeFor[ObservegcpConfig](),
 	)
 }
