@@ -10,7 +10,7 @@ import (
 	"github.com/aws/constructs-go/constructs/v10"
 )
 
-func (r *jsiiProxy_RandomProvider) validateAddOverrideParameters(path *string, value interface{}) error {
+func (r *jsiiProxy_RandomProvider) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -46,7 +46,7 @@ func validateRandomProvider_GenerateConfigForImportParameters(scope constructs.C
 	return nil
 }
 
-func validateRandomProvider_IsConstructParameters(x interface{}) error {
+func validateRandomProvider_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -54,7 +54,7 @@ func validateRandomProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateRandomProvider_IsTerraformElementParameters(x interface{}) error {
+func validateRandomProvider_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -62,7 +62,7 @@ func validateRandomProvider_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateRandomProvider_IsTerraformProviderParameters(x interface{}) error {
+func validateRandomProvider_IsTerraformProviderParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -85,4 +85,3 @@ func validateNewRandomProviderParameters(scope constructs.Construct, id *string,
 
 	return nil
 }
-

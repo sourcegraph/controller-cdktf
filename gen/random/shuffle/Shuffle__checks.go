@@ -19,7 +19,7 @@ func (s *jsiiProxy_Shuffle) validateAddMoveTargetParameters(moveTarget *string) 
 	return nil
 }
 
-func (s *jsiiProxy_Shuffle) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_Shuffle) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_Shuffle) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_Shuffle) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_Shuffle) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateShuffle_GenerateConfigForImportParameters(scope constructs.Construc
 	return nil
 }
 
-func validateShuffle_IsConstructParameters(x interface{}) error {
+func validateShuffle_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateShuffle_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateShuffle_IsTerraformElementParameters(x interface{}) error {
+func validateShuffle_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateShuffle_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateShuffle_IsTerraformResourceParameters(x interface{}) error {
+func validateShuffle_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateShuffle_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Shuffle) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Shuffle) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_Shuffle) validateSetConnectionParameters(val interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_Shuffle) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Shuffle) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -358,7 +358,7 @@ func (j *jsiiProxy_Shuffle) validateSetLifecycleParameters(val *cdktf.TerraformR
 	return nil
 }
 
-func (j *jsiiProxy_Shuffle) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Shuffle) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -438,4 +438,3 @@ func validateNewShuffleParameters(scope constructs.Construct, id *string, config
 
 	return nil
 }
-

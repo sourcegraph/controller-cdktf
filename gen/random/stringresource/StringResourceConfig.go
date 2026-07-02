@@ -6,9 +6,9 @@ import (
 
 type StringResourceConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type StringResourceConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The length of the string desired.
 	//
 	// The minimum value for length is 1 and, length must also be >= (`min_upper` + `min_lower` + `min_numeric` + `min_special`).
@@ -34,7 +34,7 @@ type StringResourceConfig struct {
 	// Include lowercase alphabet characters in the result. Default value is `true`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/string#lower StringResource#lower}
-	Lower interface{} `field:"optional" json:"lower" yaml:"lower"`
+	Lower any `field:"optional" json:"lower" yaml:"lower"`
 	// Minimum number of lowercase alphabet characters in the result. Default value is `0`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/string#min_lower StringResource#min_lower}
@@ -54,11 +54,11 @@ type StringResourceConfig struct {
 	// Include numeric characters in the result. Default value is `true`. **NOTE**: This is deprecated, use `numeric` instead.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/string#number StringResource#number}
-	Number interface{} `field:"optional" json:"number" yaml:"number"`
+	Number any `field:"optional" json:"number" yaml:"number"`
 	// Include numeric characters in the result. Default value is `true`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/string#numeric StringResource#numeric}
-	Numeric interface{} `field:"optional" json:"numeric" yaml:"numeric"`
+	Numeric any `field:"optional" json:"numeric" yaml:"numeric"`
 	// Supply your own list of special characters to use for string generation.
 	//
 	// This overrides the default character list in the special argument.  The `special` argument must still be set to true for any overwritten characters to be used in generation.
@@ -68,10 +68,9 @@ type StringResourceConfig struct {
 	// Include special characters in the result. These are `!@#$%&*()-_=+[]{}<>:?`. Default value is `true`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/string#special StringResource#special}
-	Special interface{} `field:"optional" json:"special" yaml:"special"`
+	Special any `field:"optional" json:"special" yaml:"special"`
 	// Include uppercase alphabet characters in the result. Default value is `true`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/string#upper StringResource#upper}
-	Upper interface{} `field:"optional" json:"upper" yaml:"upper"`
+	Upper any `field:"optional" json:"upper" yaml:"upper"`
 }
-

@@ -19,7 +19,7 @@ func (u *jsiiProxy_Uuid) validateAddMoveTargetParameters(moveTarget *string) err
 	return nil
 }
 
-func (u *jsiiProxy_Uuid) validateAddOverrideParameters(path *string, value interface{}) error {
+func (u *jsiiProxy_Uuid) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (u *jsiiProxy_Uuid) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (u *jsiiProxy_Uuid) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (u *jsiiProxy_Uuid) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateUuid_GenerateConfigForImportParameters(scope constructs.Construct, 
 	return nil
 }
 
-func validateUuid_IsConstructParameters(x interface{}) error {
+func validateUuid_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateUuid_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateUuid_IsTerraformElementParameters(x interface{}) error {
+func validateUuid_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateUuid_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateUuid_IsTerraformResourceParameters(x interface{}) error {
+func validateUuid_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateUuid_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Uuid) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Uuid) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_Uuid) validateSetConnectionParameters(val interface{}) error 
 	return nil
 }
 
-func (j *jsiiProxy_Uuid) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Uuid) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -350,7 +350,7 @@ func (j *jsiiProxy_Uuid) validateSetLifecycleParameters(val *cdktf.TerraformReso
 	return nil
 }
 
-func (j *jsiiProxy_Uuid) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Uuid) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -411,4 +411,3 @@ func validateNewUuidParameters(scope constructs.Construct, id *string, config *U
 
 	return nil
 }
-
