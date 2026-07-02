@@ -10,7 +10,7 @@ type ObservegcpConfig struct {
 	// Experimental.
 	ForEach cdktf.ITerraformIterator `field:"optional" json:"forEach" yaml:"forEach"`
 	// Experimental.
-	Providers *[]interface{} `field:"optional" json:"providers" yaml:"providers"`
+	Providers *[]any `field:"optional" json:"providers" yaml:"providers"`
 	// Experimental.
 	SkipAssetCreationFromLocalModules *bool `field:"optional" json:"skipAssetCreationFromLocalModules" yaml:"skipAssetCreationFromLocalModules"`
 	// The identifier of the GCP Resource to monitor.
@@ -101,7 +101,7 @@ type ObservegcpConfig struct {
 	// If a log entry is matched by both logging_filter and one of logging_exclusions it will not be exported.
 	//
 	// Relevant docs: https://cloud.google.com/logging/docs/reference/v2/rest/v2/billingAccounts.exclusions#LogExclusion
-	LoggingExclusions interface{} `field:"optional" json:"loggingExclusions" yaml:"loggingExclusions"`
+	LoggingExclusions any `field:"optional" json:"loggingExclusions" yaml:"loggingExclusions"`
 	// An advanced logs filter.
 	//
 	// The only exported log entries are those that are
@@ -145,4 +145,3 @@ type ObservegcpConfig struct {
 	// Retry policy minimum backoff for the Pub/Sub subscription (https://cloud.google.com/pubsub/docs/reference/rest/v1/projects.subscriptions) 10s.
 	PubsubMinimumBackoff *string `field:"optional" json:"pubsubMinimumBackoff" yaml:"pubsubMinimumBackoff"`
 }
-
