@@ -15,15 +15,15 @@ type Rotating interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	Day() *float64
 	// Experimental.
 	DependsOn() *[]*string
@@ -52,11 +52,11 @@ type Rotating interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Rfc3339() *string
 	SetRfc3339(val *string)
 	Rfc3339Input() *string
@@ -82,7 +82,7 @@ type Rotating interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Triggers() *map[string]*string
@@ -94,9 +94,9 @@ type Rotating interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -114,7 +114,7 @@ type Rotating interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -126,7 +126,7 @@ type Rotating interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -144,17 +144,17 @@ type Rotating interface {
 	ResetRotationRfc3339()
 	ResetRotationYears()
 	ResetTriggers()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Rotating
@@ -172,8 +172,8 @@ func (j *jsiiProxy_Rotating) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_Rotating) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Rotating) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_Rotating) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Rotating) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Rotating) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_Rotating) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Rotating) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Rotating) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -322,8 +322,8 @@ func (j *jsiiProxy_Rotating) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Rotating) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Rotating) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -332,8 +332,8 @@ func (j *jsiiProxy_Rotating) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Rotating) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Rotating) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -502,8 +502,8 @@ func (j *jsiiProxy_Rotating) TerraformGeneratorMetadata() *cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_Rotating) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Rotating) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -562,7 +562,6 @@ func (j *jsiiProxy_Rotating) Year() *float64 {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/rotating time_rotating} Resource.
 func NewRotating(scope constructs.Construct, id *string, config *RotatingConfig) Rotating {
 	_init_.Initialize()
@@ -574,7 +573,7 @@ func NewRotating(scope constructs.Construct, id *string, config *RotatingConfig)
 
 	_jsii_.Create(
 		"@cdktf/provider-time.rotating.Rotating",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -587,12 +586,12 @@ func NewRotating_Override(r Rotating, scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-time.rotating.Rotating",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_Rotating)SetConnection(val interface{}) {
+func (j *jsiiProxy_Rotating) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -603,7 +602,7 @@ func (j *jsiiProxy_Rotating)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Rotating)SetCount(val interface{}) {
+func (j *jsiiProxy_Rotating) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -614,7 +613,7 @@ func (j *jsiiProxy_Rotating)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Rotating)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Rotating) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -622,7 +621,7 @@ func (j *jsiiProxy_Rotating)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Rotating)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Rotating) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -630,7 +629,7 @@ func (j *jsiiProxy_Rotating)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Rotating)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Rotating) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -641,7 +640,7 @@ func (j *jsiiProxy_Rotating)SetLifecycle(val *cdktf.TerraformResourceLifecycle) 
 	)
 }
 
-func (j *jsiiProxy_Rotating)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Rotating) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -649,7 +648,7 @@ func (j *jsiiProxy_Rotating)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Rotating)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Rotating) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -660,7 +659,7 @@ func (j *jsiiProxy_Rotating)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Rotating)SetRfc3339(val *string) {
+func (j *jsiiProxy_Rotating) SetRfc3339(val *string) {
 	if err := j.validateSetRfc3339Parameters(val); err != nil {
 		panic(err)
 	}
@@ -671,7 +670,7 @@ func (j *jsiiProxy_Rotating)SetRfc3339(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Rotating)SetRotationDays(val *float64) {
+func (j *jsiiProxy_Rotating) SetRotationDays(val *float64) {
 	if err := j.validateSetRotationDaysParameters(val); err != nil {
 		panic(err)
 	}
@@ -682,7 +681,7 @@ func (j *jsiiProxy_Rotating)SetRotationDays(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Rotating)SetRotationHours(val *float64) {
+func (j *jsiiProxy_Rotating) SetRotationHours(val *float64) {
 	if err := j.validateSetRotationHoursParameters(val); err != nil {
 		panic(err)
 	}
@@ -693,7 +692,7 @@ func (j *jsiiProxy_Rotating)SetRotationHours(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Rotating)SetRotationMinutes(val *float64) {
+func (j *jsiiProxy_Rotating) SetRotationMinutes(val *float64) {
 	if err := j.validateSetRotationMinutesParameters(val); err != nil {
 		panic(err)
 	}
@@ -704,7 +703,7 @@ func (j *jsiiProxy_Rotating)SetRotationMinutes(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Rotating)SetRotationMonths(val *float64) {
+func (j *jsiiProxy_Rotating) SetRotationMonths(val *float64) {
 	if err := j.validateSetRotationMonthsParameters(val); err != nil {
 		panic(err)
 	}
@@ -715,7 +714,7 @@ func (j *jsiiProxy_Rotating)SetRotationMonths(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Rotating)SetRotationRfc3339(val *string) {
+func (j *jsiiProxy_Rotating) SetRotationRfc3339(val *string) {
 	if err := j.validateSetRotationRfc3339Parameters(val); err != nil {
 		panic(err)
 	}
@@ -726,7 +725,7 @@ func (j *jsiiProxy_Rotating)SetRotationRfc3339(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Rotating)SetRotationYears(val *float64) {
+func (j *jsiiProxy_Rotating) SetRotationYears(val *float64) {
 	if err := j.validateSetRotationYearsParameters(val); err != nil {
 		panic(err)
 	}
@@ -737,7 +736,7 @@ func (j *jsiiProxy_Rotating)SetRotationYears(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Rotating)SetTriggers(val *map[string]*string) {
+func (j *jsiiProxy_Rotating) SetTriggers(val *map[string]*string) {
 	if err := j.validateSetTriggersParameters(val); err != nil {
 		panic(err)
 	}
@@ -760,7 +759,7 @@ func Rotating_GenerateConfigForImport(scope constructs.Construct, importToId *st
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-time.rotating.Rotating",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -784,7 +783,7 @@ func Rotating_GenerateConfigForImport(scope constructs.Construct, importToId *st
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Rotating_IsConstruct(x interface{}) *bool {
+func Rotating_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRotating_IsConstructParameters(x); err != nil {
@@ -795,7 +794,7 @@ func Rotating_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-time.rotating.Rotating",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -803,7 +802,7 @@ func Rotating_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Rotating_IsTerraformElement(x interface{}) *bool {
+func Rotating_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRotating_IsTerraformElementParameters(x); err != nil {
@@ -814,7 +813,7 @@ func Rotating_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-time.rotating.Rotating",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -822,7 +821,7 @@ func Rotating_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Rotating_IsTerraformResource(x interface{}) *bool {
+func Rotating_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRotating_IsTerraformResourceParameters(x); err != nil {
@@ -833,7 +832,7 @@ func Rotating_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-time.rotating.Rotating",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -858,31 +857,31 @@ func (r *jsiiProxy_Rotating) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (r *jsiiProxy_Rotating) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_Rotating) AddOverride(path *string, value any) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (r *jsiiProxy_Rotating) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_Rotating) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -898,7 +897,7 @@ func (r *jsiiProxy_Rotating) GetBooleanAttribute(terraformAttribute *string) cdk
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -914,7 +913,7 @@ func (r *jsiiProxy_Rotating) GetBooleanMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -930,7 +929,7 @@ func (r *jsiiProxy_Rotating) GetListAttribute(terraformAttribute *string) *[]*st
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -946,7 +945,7 @@ func (r *jsiiProxy_Rotating) GetNumberAttribute(terraformAttribute *string) *flo
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -962,7 +961,7 @@ func (r *jsiiProxy_Rotating) GetNumberListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -978,7 +977,7 @@ func (r *jsiiProxy_Rotating) GetNumberMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -994,7 +993,7 @@ func (r *jsiiProxy_Rotating) GetStringAttribute(terraformAttribute *string) *str
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1010,15 +1009,15 @@ func (r *jsiiProxy_Rotating) GetStringMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_Rotating) HasResourceMove() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Rotating) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1037,7 +1036,7 @@ func (r *jsiiProxy_Rotating) ImportFrom(id *string, provider cdktf.TerraformProv
 	_jsii_.InvokeVoid(
 		r,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1050,7 +1049,7 @@ func (r *jsiiProxy_Rotating) InterpolationForAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1064,18 +1063,18 @@ func (r *jsiiProxy_Rotating) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (r *jsiiProxy_Rotating) MoveTo(moveTarget *string, index interface{}) {
+func (r *jsiiProxy_Rotating) MoveTo(moveTarget *string, index any) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1086,7 +1085,7 @@ func (r *jsiiProxy_Rotating) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1097,7 +1096,7 @@ func (r *jsiiProxy_Rotating) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1173,8 +1172,8 @@ func (r *jsiiProxy_Rotating) ResetTriggers() {
 	)
 }
 
-func (r *jsiiProxy_Rotating) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_Rotating) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1186,8 +1185,8 @@ func (r *jsiiProxy_Rotating) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_Rotating) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_Rotating) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1199,8 +1198,8 @@ func (r *jsiiProxy_Rotating) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_Rotating) ToHclTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Rotating) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1212,8 +1211,8 @@ func (r *jsiiProxy_Rotating) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_Rotating) ToMetadata() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Rotating) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1238,8 +1237,8 @@ func (r *jsiiProxy_Rotating) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_Rotating) ToTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Rotating) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1250,4 +1249,3 @@ func (r *jsiiProxy_Rotating) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -18,15 +18,15 @@ type Offset interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	Day() *float64
 	// Experimental.
 	DependsOn() *[]*string
@@ -73,17 +73,17 @@ type Offset interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Rfc3339() *string
 	Second() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Triggers() *map[string]*string
@@ -95,9 +95,9 @@ type Offset interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -115,7 +115,7 @@ type Offset interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -127,7 +127,7 @@ type Offset interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -145,17 +145,17 @@ type Offset interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTriggers()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Offset
@@ -193,8 +193,8 @@ func (j *jsiiProxy_Offset) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_Offset) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Offset) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -203,8 +203,8 @@ func (j *jsiiProxy_Offset) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Offset) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Offset) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -213,8 +213,8 @@ func (j *jsiiProxy_Offset) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Offset) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Offset) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -463,8 +463,8 @@ func (j *jsiiProxy_Offset) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Offset) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Offset) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -473,8 +473,8 @@ func (j *jsiiProxy_Offset) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Offset) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Offset) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -513,8 +513,8 @@ func (j *jsiiProxy_Offset) TerraformGeneratorMetadata() *cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_Offset) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Offset) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -573,7 +573,6 @@ func (j *jsiiProxy_Offset) Year() *float64 {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/offset time_offset} Resource.
 func NewOffset(scope constructs.Construct, id *string, config *OffsetConfig) Offset {
 	_init_.Initialize()
@@ -585,7 +584,7 @@ func NewOffset(scope constructs.Construct, id *string, config *OffsetConfig) Off
 
 	_jsii_.Create(
 		"@cdktf/provider-time.offset.Offset",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -598,12 +597,12 @@ func NewOffset_Override(o Offset, scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-time.offset.Offset",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		o,
 	)
 }
 
-func (j *jsiiProxy_Offset)SetBaseRfc3339(val *string) {
+func (j *jsiiProxy_Offset) SetBaseRfc3339(val *string) {
 	if err := j.validateSetBaseRfc3339Parameters(val); err != nil {
 		panic(err)
 	}
@@ -614,7 +613,7 @@ func (j *jsiiProxy_Offset)SetBaseRfc3339(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Offset)SetConnection(val interface{}) {
+func (j *jsiiProxy_Offset) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -625,7 +624,7 @@ func (j *jsiiProxy_Offset)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Offset)SetCount(val interface{}) {
+func (j *jsiiProxy_Offset) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -636,7 +635,7 @@ func (j *jsiiProxy_Offset)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Offset)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Offset) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -644,7 +643,7 @@ func (j *jsiiProxy_Offset)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Offset)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Offset) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -652,7 +651,7 @@ func (j *jsiiProxy_Offset)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Offset)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Offset) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -663,7 +662,7 @@ func (j *jsiiProxy_Offset)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_Offset)SetOffsetDays(val *float64) {
+func (j *jsiiProxy_Offset) SetOffsetDays(val *float64) {
 	if err := j.validateSetOffsetDaysParameters(val); err != nil {
 		panic(err)
 	}
@@ -674,7 +673,7 @@ func (j *jsiiProxy_Offset)SetOffsetDays(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Offset)SetOffsetHours(val *float64) {
+func (j *jsiiProxy_Offset) SetOffsetHours(val *float64) {
 	if err := j.validateSetOffsetHoursParameters(val); err != nil {
 		panic(err)
 	}
@@ -685,7 +684,7 @@ func (j *jsiiProxy_Offset)SetOffsetHours(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Offset)SetOffsetMinutes(val *float64) {
+func (j *jsiiProxy_Offset) SetOffsetMinutes(val *float64) {
 	if err := j.validateSetOffsetMinutesParameters(val); err != nil {
 		panic(err)
 	}
@@ -696,7 +695,7 @@ func (j *jsiiProxy_Offset)SetOffsetMinutes(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Offset)SetOffsetMonths(val *float64) {
+func (j *jsiiProxy_Offset) SetOffsetMonths(val *float64) {
 	if err := j.validateSetOffsetMonthsParameters(val); err != nil {
 		panic(err)
 	}
@@ -707,7 +706,7 @@ func (j *jsiiProxy_Offset)SetOffsetMonths(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Offset)SetOffsetSeconds(val *float64) {
+func (j *jsiiProxy_Offset) SetOffsetSeconds(val *float64) {
 	if err := j.validateSetOffsetSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -718,7 +717,7 @@ func (j *jsiiProxy_Offset)SetOffsetSeconds(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Offset)SetOffsetYears(val *float64) {
+func (j *jsiiProxy_Offset) SetOffsetYears(val *float64) {
 	if err := j.validateSetOffsetYearsParameters(val); err != nil {
 		panic(err)
 	}
@@ -729,7 +728,7 @@ func (j *jsiiProxy_Offset)SetOffsetYears(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Offset)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Offset) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -737,7 +736,7 @@ func (j *jsiiProxy_Offset)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Offset)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Offset) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -748,7 +747,7 @@ func (j *jsiiProxy_Offset)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Offset)SetTriggers(val *map[string]*string) {
+func (j *jsiiProxy_Offset) SetTriggers(val *map[string]*string) {
 	if err := j.validateSetTriggersParameters(val); err != nil {
 		panic(err)
 	}
@@ -771,7 +770,7 @@ func Offset_GenerateConfigForImport(scope constructs.Construct, importToId *stri
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-time.offset.Offset",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -795,7 +794,7 @@ func Offset_GenerateConfigForImport(scope constructs.Construct, importToId *stri
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Offset_IsConstruct(x interface{}) *bool {
+func Offset_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOffset_IsConstructParameters(x); err != nil {
@@ -806,7 +805,7 @@ func Offset_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-time.offset.Offset",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -814,7 +813,7 @@ func Offset_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Offset_IsTerraformElement(x interface{}) *bool {
+func Offset_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOffset_IsTerraformElementParameters(x); err != nil {
@@ -825,7 +824,7 @@ func Offset_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-time.offset.Offset",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func Offset_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Offset_IsTerraformResource(x interface{}) *bool {
+func Offset_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOffset_IsTerraformResourceParameters(x); err != nil {
@@ -844,7 +843,7 @@ func Offset_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-time.offset.Offset",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -869,31 +868,31 @@ func (o *jsiiProxy_Offset) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (o *jsiiProxy_Offset) AddOverride(path *string, value interface{}) {
+func (o *jsiiProxy_Offset) AddOverride(path *string, value any) {
 	if err := o.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (o *jsiiProxy_Offset) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_Offset) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -909,7 +908,7 @@ func (o *jsiiProxy_Offset) GetBooleanAttribute(terraformAttribute *string) cdktf
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -925,7 +924,7 @@ func (o *jsiiProxy_Offset) GetBooleanMapAttribute(terraformAttribute *string) *m
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -941,7 +940,7 @@ func (o *jsiiProxy_Offset) GetListAttribute(terraformAttribute *string) *[]*stri
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -957,7 +956,7 @@ func (o *jsiiProxy_Offset) GetNumberAttribute(terraformAttribute *string) *float
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -973,7 +972,7 @@ func (o *jsiiProxy_Offset) GetNumberListAttribute(terraformAttribute *string) *[
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -989,7 +988,7 @@ func (o *jsiiProxy_Offset) GetNumberMapAttribute(terraformAttribute *string) *ma
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1005,7 +1004,7 @@ func (o *jsiiProxy_Offset) GetStringAttribute(terraformAttribute *string) *strin
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1021,15 +1020,15 @@ func (o *jsiiProxy_Offset) GetStringMapAttribute(terraformAttribute *string) *ma
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (o *jsiiProxy_Offset) HasResourceMove() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_Offset) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1048,7 +1047,7 @@ func (o *jsiiProxy_Offset) ImportFrom(id *string, provider cdktf.TerraformProvid
 	_jsii_.InvokeVoid(
 		o,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1061,7 +1060,7 @@ func (o *jsiiProxy_Offset) InterpolationForAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1075,18 +1074,18 @@ func (o *jsiiProxy_Offset) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (o *jsiiProxy_Offset) MoveTo(moveTarget *string, index interface{}) {
+func (o *jsiiProxy_Offset) MoveTo(moveTarget *string, index any) {
 	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1097,7 +1096,7 @@ func (o *jsiiProxy_Offset) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1108,7 +1107,7 @@ func (o *jsiiProxy_Offset) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1184,8 +1183,8 @@ func (o *jsiiProxy_Offset) ResetTriggers() {
 	)
 }
 
-func (o *jsiiProxy_Offset) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_Offset) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1197,8 +1196,8 @@ func (o *jsiiProxy_Offset) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (o *jsiiProxy_Offset) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_Offset) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1210,8 +1209,8 @@ func (o *jsiiProxy_Offset) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (o *jsiiProxy_Offset) ToHclTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_Offset) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1223,8 +1222,8 @@ func (o *jsiiProxy_Offset) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (o *jsiiProxy_Offset) ToMetadata() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_Offset) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1249,8 +1248,8 @@ func (o *jsiiProxy_Offset) ToString() *string {
 	return returns
 }
 
-func (o *jsiiProxy_Offset) ToTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_Offset) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1261,4 +1260,3 @@ func (o *jsiiProxy_Offset) ToTerraform() interface{} {
 
 	return returns
 }
-
