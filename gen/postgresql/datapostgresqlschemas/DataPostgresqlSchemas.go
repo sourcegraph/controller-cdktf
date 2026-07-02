@@ -15,11 +15,11 @@ type DataPostgresqlSchemas interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	Database() *string
 	SetDatabase(val *string)
 	DatabaseInput() *string
@@ -38,9 +38,9 @@ type DataPostgresqlSchemas interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IncludeSystemSchemas() interface{}
-	SetIncludeSystemSchemas(val interface{})
-	IncludeSystemSchemasInput() interface{}
+	IncludeSystemSchemas() any
+	SetIncludeSystemSchemas(val any)
+	IncludeSystemSchemasInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -61,7 +61,7 @@ type DataPostgresqlSchemas interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RegexPattern() *string
 	SetRegexPattern(val *string)
 	RegexPatternInput() *string
@@ -69,13 +69,13 @@ type DataPostgresqlSchemas interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -106,18 +106,18 @@ type DataPostgresqlSchemas interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegexPattern()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataPostgresqlSchemas
@@ -135,8 +135,8 @@ func (j *jsiiProxy_DataPostgresqlSchemas) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataPostgresqlSchemas) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataPostgresqlSchemas) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -145,8 +145,8 @@ func (j *jsiiProxy_DataPostgresqlSchemas) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_DataPostgresqlSchemas) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataPostgresqlSchemas) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -235,8 +235,8 @@ func (j *jsiiProxy_DataPostgresqlSchemas) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataPostgresqlSchemas) IncludeSystemSchemas() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataPostgresqlSchemas) IncludeSystemSchemas() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeSystemSchemas",
@@ -245,8 +245,8 @@ func (j *jsiiProxy_DataPostgresqlSchemas) IncludeSystemSchemas() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataPostgresqlSchemas) IncludeSystemSchemasInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataPostgresqlSchemas) IncludeSystemSchemasInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeSystemSchemasInput",
@@ -345,8 +345,8 @@ func (j *jsiiProxy_DataPostgresqlSchemas) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataPostgresqlSchemas) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataPostgresqlSchemas) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -395,8 +395,8 @@ func (j *jsiiProxy_DataPostgresqlSchemas) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_DataPostgresqlSchemas) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataPostgresqlSchemas) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -415,7 +415,6 @@ func (j *jsiiProxy_DataPostgresqlSchemas) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/data-sources/schemas postgresql_schemas} Data Source.
 func NewDataPostgresqlSchemas(scope constructs.Construct, id *string, config *DataPostgresqlSchemasConfig) DataPostgresqlSchemas {
 	_init_.Initialize()
@@ -427,7 +426,7 @@ func NewDataPostgresqlSchemas(scope constructs.Construct, id *string, config *Da
 
 	_jsii_.Create(
 		"@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -440,12 +439,12 @@ func NewDataPostgresqlSchemas_Override(d DataPostgresqlSchemas, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataPostgresqlSchemas)SetCount(val interface{}) {
+func (j *jsiiProxy_DataPostgresqlSchemas) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,7 +455,7 @@ func (j *jsiiProxy_DataPostgresqlSchemas)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataPostgresqlSchemas)SetDatabase(val *string) {
+func (j *jsiiProxy_DataPostgresqlSchemas) SetDatabase(val *string) {
 	if err := j.validateSetDatabaseParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_DataPostgresqlSchemas)SetDatabase(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataPostgresqlSchemas)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataPostgresqlSchemas) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -475,7 +474,7 @@ func (j *jsiiProxy_DataPostgresqlSchemas)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataPostgresqlSchemas)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataPostgresqlSchemas) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -483,7 +482,7 @@ func (j *jsiiProxy_DataPostgresqlSchemas)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_DataPostgresqlSchemas)SetId(val *string) {
+func (j *jsiiProxy_DataPostgresqlSchemas) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -494,7 +493,7 @@ func (j *jsiiProxy_DataPostgresqlSchemas)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataPostgresqlSchemas)SetIncludeSystemSchemas(val interface{}) {
+func (j *jsiiProxy_DataPostgresqlSchemas) SetIncludeSystemSchemas(val any) {
 	if err := j.validateSetIncludeSystemSchemasParameters(val); err != nil {
 		panic(err)
 	}
@@ -505,7 +504,7 @@ func (j *jsiiProxy_DataPostgresqlSchemas)SetIncludeSystemSchemas(val interface{}
 	)
 }
 
-func (j *jsiiProxy_DataPostgresqlSchemas)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataPostgresqlSchemas) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -516,7 +515,7 @@ func (j *jsiiProxy_DataPostgresqlSchemas)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_DataPostgresqlSchemas)SetLikeAllPatterns(val *[]*string) {
+func (j *jsiiProxy_DataPostgresqlSchemas) SetLikeAllPatterns(val *[]*string) {
 	if err := j.validateSetLikeAllPatternsParameters(val); err != nil {
 		panic(err)
 	}
@@ -527,7 +526,7 @@ func (j *jsiiProxy_DataPostgresqlSchemas)SetLikeAllPatterns(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataPostgresqlSchemas)SetLikeAnyPatterns(val *[]*string) {
+func (j *jsiiProxy_DataPostgresqlSchemas) SetLikeAnyPatterns(val *[]*string) {
 	if err := j.validateSetLikeAnyPatternsParameters(val); err != nil {
 		panic(err)
 	}
@@ -538,7 +537,7 @@ func (j *jsiiProxy_DataPostgresqlSchemas)SetLikeAnyPatterns(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataPostgresqlSchemas)SetNotLikeAllPatterns(val *[]*string) {
+func (j *jsiiProxy_DataPostgresqlSchemas) SetNotLikeAllPatterns(val *[]*string) {
 	if err := j.validateSetNotLikeAllPatternsParameters(val); err != nil {
 		panic(err)
 	}
@@ -549,7 +548,7 @@ func (j *jsiiProxy_DataPostgresqlSchemas)SetNotLikeAllPatterns(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataPostgresqlSchemas)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataPostgresqlSchemas) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -557,7 +556,7 @@ func (j *jsiiProxy_DataPostgresqlSchemas)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_DataPostgresqlSchemas)SetRegexPattern(val *string) {
+func (j *jsiiProxy_DataPostgresqlSchemas) SetRegexPattern(val *string) {
 	if err := j.validateSetRegexPatternParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,7 +579,7 @@ func DataPostgresqlSchemas_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -604,7 +603,7 @@ func DataPostgresqlSchemas_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataPostgresqlSchemas_IsConstruct(x interface{}) *bool {
+func DataPostgresqlSchemas_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataPostgresqlSchemas_IsConstructParameters(x); err != nil {
@@ -615,7 +614,7 @@ func DataPostgresqlSchemas_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -623,7 +622,7 @@ func DataPostgresqlSchemas_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataPostgresqlSchemas_IsTerraformDataSource(x interface{}) *bool {
+func DataPostgresqlSchemas_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataPostgresqlSchemas_IsTerraformDataSourceParameters(x); err != nil {
@@ -634,7 +633,7 @@ func DataPostgresqlSchemas_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -642,7 +641,7 @@ func DataPostgresqlSchemas_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataPostgresqlSchemas_IsTerraformElement(x interface{}) *bool {
+func DataPostgresqlSchemas_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataPostgresqlSchemas_IsTerraformElementParameters(x); err != nil {
@@ -653,7 +652,7 @@ func DataPostgresqlSchemas_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -671,27 +670,27 @@ func DataPostgresqlSchemas_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataPostgresqlSchemas) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataPostgresqlSchemas) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataPostgresqlSchemas) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataPostgresqlSchemas) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -707,7 +706,7 @@ func (d *jsiiProxy_DataPostgresqlSchemas) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (d *jsiiProxy_DataPostgresqlSchemas) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -739,7 +738,7 @@ func (d *jsiiProxy_DataPostgresqlSchemas) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -755,7 +754,7 @@ func (d *jsiiProxy_DataPostgresqlSchemas) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -771,7 +770,7 @@ func (d *jsiiProxy_DataPostgresqlSchemas) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -787,7 +786,7 @@ func (d *jsiiProxy_DataPostgresqlSchemas) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -803,7 +802,7 @@ func (d *jsiiProxy_DataPostgresqlSchemas) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -819,7 +818,7 @@ func (d *jsiiProxy_DataPostgresqlSchemas) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -835,7 +834,7 @@ func (d *jsiiProxy_DataPostgresqlSchemas) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,7 +848,7 @@ func (d *jsiiProxy_DataPostgresqlSchemas) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -909,8 +908,8 @@ func (d *jsiiProxy_DataPostgresqlSchemas) ResetRegexPattern() {
 	)
 }
 
-func (d *jsiiProxy_DataPostgresqlSchemas) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataPostgresqlSchemas) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -922,8 +921,8 @@ func (d *jsiiProxy_DataPostgresqlSchemas) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (d *jsiiProxy_DataPostgresqlSchemas) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataPostgresqlSchemas) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -935,8 +934,8 @@ func (d *jsiiProxy_DataPostgresqlSchemas) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (d *jsiiProxy_DataPostgresqlSchemas) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataPostgresqlSchemas) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -948,8 +947,8 @@ func (d *jsiiProxy_DataPostgresqlSchemas) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataPostgresqlSchemas) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataPostgresqlSchemas) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -974,8 +973,8 @@ func (d *jsiiProxy_DataPostgresqlSchemas) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataPostgresqlSchemas) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataPostgresqlSchemas) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -986,4 +985,3 @@ func (d *jsiiProxy_DataPostgresqlSchemas) ToTerraform() interface{} {
 
 	return returns
 }
-

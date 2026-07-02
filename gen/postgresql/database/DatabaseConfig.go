@@ -6,9 +6,9 @@ import (
 
 type DatabaseConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DatabaseConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The PostgreSQL database name to connect to.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/database#name Database#name}
@@ -26,11 +26,11 @@ type DatabaseConfig struct {
 	// If false then no one can connect to this database.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/database#allow_connections Database#allow_connections}
-	AllowConnections interface{} `field:"optional" json:"allowConnections" yaml:"allowConnections"`
+	AllowConnections any `field:"optional" json:"allowConnections" yaml:"allowConnections"`
 	// If true, the owner of already existing objects will change if the owner changes.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/database#alter_object_ownership Database#alter_object_ownership}
-	AlterObjectOwnership interface{} `field:"optional" json:"alterObjectOwnership" yaml:"alterObjectOwnership"`
+	AlterObjectOwnership any `field:"optional" json:"alterObjectOwnership" yaml:"alterObjectOwnership"`
 	// How many concurrent connections can be made to this database.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/database#connection_limit Database#connection_limit}
@@ -47,7 +47,7 @@ type DatabaseConfig struct {
 	// If true, then this database can be cloned by any user with CREATEDB privileges.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/database#is_template Database#is_template}
-	IsTemplate interface{} `field:"optional" json:"isTemplate" yaml:"isTemplate"`
+	IsTemplate any `field:"optional" json:"isTemplate" yaml:"isTemplate"`
 	// Collation order (LC_COLLATE) to use in the new database.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/database#lc_collate Database#lc_collate}
@@ -69,4 +69,3 @@ type DatabaseConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/database#template Database#template}
 	Template *string `field:"optional" json:"template" yaml:"template"`
 }
-

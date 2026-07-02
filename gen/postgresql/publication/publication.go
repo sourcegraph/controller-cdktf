@@ -12,21 +12,21 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/publication postgresql_publication}.
 type Publication interface {
 	cdktf.TerraformResource
-	AllTables() interface{}
-	SetAllTables(val interface{})
-	AllTablesInput() interface{}
+	AllTables() any
+	SetAllTables(val any)
+	AllTablesInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	Database() *string
 	SetDatabase(val *string)
 	DatabaseInput() *string
@@ -34,9 +34,9 @@ type Publication interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	DropCascade() interface{}
-	SetDropCascade(val interface{})
-	DropCascadeInput() interface{}
+	DropCascade() any
+	SetDropCascade(val any)
+	DropCascadeInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -65,33 +65,33 @@ type Publication interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	PublishParam() *[]*string
 	SetPublishParam(val *[]*string)
 	PublishParamInput() *[]*string
-	PublishViaPartitionRootParam() interface{}
-	SetPublishViaPartitionRootParam(val interface{})
-	PublishViaPartitionRootParamInput() interface{}
+	PublishViaPartitionRootParam() any
+	SetPublishViaPartitionRootParam(val any)
+	PublishViaPartitionRootParamInput() any
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tables() *[]*string
 	SetTables(val *[]*string)
 	TablesInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -109,7 +109,7 @@ type Publication interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -121,7 +121,7 @@ type Publication interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -139,17 +139,17 @@ type Publication interface {
 	ResetPublishParam()
 	ResetPublishViaPartitionRootParam()
 	ResetTables()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Publication
@@ -157,8 +157,8 @@ type jsiiProxy_Publication struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_Publication) AllTables() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Publication) AllTables() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allTables",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_Publication) AllTables() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Publication) AllTablesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Publication) AllTablesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allTablesInput",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_Publication) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_Publication) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Publication) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -197,8 +197,8 @@ func (j *jsiiProxy_Publication) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Publication) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Publication) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -207,8 +207,8 @@ func (j *jsiiProxy_Publication) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_Publication) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Publication) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -247,8 +247,8 @@ func (j *jsiiProxy_Publication) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_Publication) DropCascade() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Publication) DropCascade() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dropCascade",
@@ -257,8 +257,8 @@ func (j *jsiiProxy_Publication) DropCascade() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Publication) DropCascadeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Publication) DropCascadeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dropCascadeInput",
@@ -387,8 +387,8 @@ func (j *jsiiProxy_Publication) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Publication) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Publication) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -417,8 +417,8 @@ func (j *jsiiProxy_Publication) PublishParamInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_Publication) PublishViaPartitionRootParam() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Publication) PublishViaPartitionRootParam() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"publishViaPartitionRootParam",
@@ -427,8 +427,8 @@ func (j *jsiiProxy_Publication) PublishViaPartitionRootParam() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Publication) PublishViaPartitionRootParamInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Publication) PublishViaPartitionRootParamInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"publishViaPartitionRootParamInput",
@@ -437,8 +437,8 @@ func (j *jsiiProxy_Publication) PublishViaPartitionRootParamInput() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_Publication) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Publication) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -477,8 +477,8 @@ func (j *jsiiProxy_Publication) TerraformGeneratorMetadata() *cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_Publication) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Publication) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -497,7 +497,6 @@ func (j *jsiiProxy_Publication) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/publication postgresql_publication} Resource.
 func NewPublication(scope constructs.Construct, id *string, config *PublicationConfig) Publication {
 	_init_.Initialize()
@@ -509,7 +508,7 @@ func NewPublication(scope constructs.Construct, id *string, config *PublicationC
 
 	_jsii_.Create(
 		"@cdktf/provider-postgresql.publication.Publication",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -522,12 +521,12 @@ func NewPublication_Override(p Publication, scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-postgresql.publication.Publication",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_Publication)SetAllTables(val interface{}) {
+func (j *jsiiProxy_Publication) SetAllTables(val any) {
 	if err := j.validateSetAllTablesParameters(val); err != nil {
 		panic(err)
 	}
@@ -538,7 +537,7 @@ func (j *jsiiProxy_Publication)SetAllTables(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Publication)SetConnection(val interface{}) {
+func (j *jsiiProxy_Publication) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -549,7 +548,7 @@ func (j *jsiiProxy_Publication)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Publication)SetCount(val interface{}) {
+func (j *jsiiProxy_Publication) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -560,7 +559,7 @@ func (j *jsiiProxy_Publication)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Publication)SetDatabase(val *string) {
+func (j *jsiiProxy_Publication) SetDatabase(val *string) {
 	if err := j.validateSetDatabaseParameters(val); err != nil {
 		panic(err)
 	}
@@ -571,7 +570,7 @@ func (j *jsiiProxy_Publication)SetDatabase(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Publication)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Publication) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -579,7 +578,7 @@ func (j *jsiiProxy_Publication)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Publication)SetDropCascade(val interface{}) {
+func (j *jsiiProxy_Publication) SetDropCascade(val any) {
 	if err := j.validateSetDropCascadeParameters(val); err != nil {
 		panic(err)
 	}
@@ -590,7 +589,7 @@ func (j *jsiiProxy_Publication)SetDropCascade(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Publication)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Publication) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -598,7 +597,7 @@ func (j *jsiiProxy_Publication)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Publication)SetId(val *string) {
+func (j *jsiiProxy_Publication) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -609,7 +608,7 @@ func (j *jsiiProxy_Publication)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Publication)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Publication) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -620,7 +619,7 @@ func (j *jsiiProxy_Publication)SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_Publication)SetName(val *string) {
+func (j *jsiiProxy_Publication) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -631,7 +630,7 @@ func (j *jsiiProxy_Publication)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Publication)SetOwner(val *string) {
+func (j *jsiiProxy_Publication) SetOwner(val *string) {
 	if err := j.validateSetOwnerParameters(val); err != nil {
 		panic(err)
 	}
@@ -642,7 +641,7 @@ func (j *jsiiProxy_Publication)SetOwner(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Publication)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Publication) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -650,7 +649,7 @@ func (j *jsiiProxy_Publication)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Publication)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Publication) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -661,7 +660,7 @@ func (j *jsiiProxy_Publication)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Publication)SetPublishParam(val *[]*string) {
+func (j *jsiiProxy_Publication) SetPublishParam(val *[]*string) {
 	if err := j.validateSetPublishParamParameters(val); err != nil {
 		panic(err)
 	}
@@ -672,7 +671,7 @@ func (j *jsiiProxy_Publication)SetPublishParam(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Publication)SetPublishViaPartitionRootParam(val interface{}) {
+func (j *jsiiProxy_Publication) SetPublishViaPartitionRootParam(val any) {
 	if err := j.validateSetPublishViaPartitionRootParamParameters(val); err != nil {
 		panic(err)
 	}
@@ -683,7 +682,7 @@ func (j *jsiiProxy_Publication)SetPublishViaPartitionRootParam(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_Publication)SetTables(val *[]*string) {
+func (j *jsiiProxy_Publication) SetTables(val *[]*string) {
 	if err := j.validateSetTablesParameters(val); err != nil {
 		panic(err)
 	}
@@ -706,7 +705,7 @@ func Publication_GenerateConfigForImport(scope constructs.Construct, importToId 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-postgresql.publication.Publication",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func Publication_GenerateConfigForImport(scope constructs.Construct, importToId 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Publication_IsConstruct(x interface{}) *bool {
+func Publication_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePublication_IsConstructParameters(x); err != nil {
@@ -741,7 +740,7 @@ func Publication_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-postgresql.publication.Publication",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -749,7 +748,7 @@ func Publication_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Publication_IsTerraformElement(x interface{}) *bool {
+func Publication_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePublication_IsTerraformElementParameters(x); err != nil {
@@ -760,7 +759,7 @@ func Publication_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-postgresql.publication.Publication",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -768,7 +767,7 @@ func Publication_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Publication_IsTerraformResource(x interface{}) *bool {
+func Publication_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePublication_IsTerraformResourceParameters(x); err != nil {
@@ -779,7 +778,7 @@ func Publication_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-postgresql.publication.Publication",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -804,31 +803,31 @@ func (p *jsiiProxy_Publication) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (p *jsiiProxy_Publication) AddOverride(path *string, value interface{}) {
+func (p *jsiiProxy_Publication) AddOverride(path *string, value any) {
 	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (p *jsiiProxy_Publication) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_Publication) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -844,7 +843,7 @@ func (p *jsiiProxy_Publication) GetBooleanAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -860,7 +859,7 @@ func (p *jsiiProxy_Publication) GetBooleanMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -876,7 +875,7 @@ func (p *jsiiProxy_Publication) GetListAttribute(terraformAttribute *string) *[]
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -892,7 +891,7 @@ func (p *jsiiProxy_Publication) GetNumberAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -908,7 +907,7 @@ func (p *jsiiProxy_Publication) GetNumberListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -924,7 +923,7 @@ func (p *jsiiProxy_Publication) GetNumberMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -940,7 +939,7 @@ func (p *jsiiProxy_Publication) GetStringAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -956,15 +955,15 @@ func (p *jsiiProxy_Publication) GetStringMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_Publication) HasResourceMove() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_Publication) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -983,7 +982,7 @@ func (p *jsiiProxy_Publication) ImportFrom(id *string, provider cdktf.TerraformP
 	_jsii_.InvokeVoid(
 		p,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -996,7 +995,7 @@ func (p *jsiiProxy_Publication) InterpolationForAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1010,18 +1009,18 @@ func (p *jsiiProxy_Publication) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (p *jsiiProxy_Publication) MoveTo(moveTarget *string, index interface{}) {
+func (p *jsiiProxy_Publication) MoveTo(moveTarget *string, index any) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1032,7 +1031,7 @@ func (p *jsiiProxy_Publication) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1043,7 +1042,7 @@ func (p *jsiiProxy_Publication) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1119,8 +1118,8 @@ func (p *jsiiProxy_Publication) ResetTables() {
 	)
 }
 
-func (p *jsiiProxy_Publication) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_Publication) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1132,8 +1131,8 @@ func (p *jsiiProxy_Publication) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_Publication) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_Publication) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1145,8 +1144,8 @@ func (p *jsiiProxy_Publication) SynthesizeHclAttributes() *map[string]interface{
 	return returns
 }
 
-func (p *jsiiProxy_Publication) ToHclTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_Publication) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1158,8 +1157,8 @@ func (p *jsiiProxy_Publication) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_Publication) ToMetadata() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_Publication) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1184,8 +1183,8 @@ func (p *jsiiProxy_Publication) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_Publication) ToTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_Publication) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1196,4 +1195,3 @@ func (p *jsiiProxy_Publication) ToTerraform() interface{} {
 
 	return returns
 }
-

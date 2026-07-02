@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-postgresql.extension.Extension",
-		reflect.TypeOf((*Extension)(nil)).Elem(),
+		reflect.TypeFor[Extension](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Extension{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,6 +81,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-postgresql.extension.ExtensionConfig",
-		reflect.TypeOf((*ExtensionConfig)(nil)).Elem(),
+		reflect.TypeFor[ExtensionConfig](),
 	)
 }

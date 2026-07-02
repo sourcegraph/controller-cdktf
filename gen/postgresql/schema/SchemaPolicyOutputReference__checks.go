@@ -98,7 +98,7 @@ func (s *jsiiProxy_SchemaPolicyOutputReference) validateResolveParameters(_conte
 	return nil
 }
 
-func (j *jsiiProxy_SchemaPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SchemaPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SchemaPolicyOutputReference) validateSetComplexObjectIsFromSe
 	return nil
 }
 
-func (j *jsiiProxy_SchemaPolicyOutputReference) validateSetCreateParameters(val interface{}) error {
+func (j *jsiiProxy_SchemaPolicyOutputReference) validateSetCreateParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_SchemaPolicyOutputReference) validateSetCreateParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_SchemaPolicyOutputReference) validateSetCreateWithGrantParameters(val interface{}) error {
+func (j *jsiiProxy_SchemaPolicyOutputReference) validateSetCreateWithGrantParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +203,7 @@ func (j *jsiiProxy_SchemaPolicyOutputReference) validateSetCreateWithGrantParame
 	return nil
 }
 
-func (j *jsiiProxy_SchemaPolicyOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SchemaPolicyOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -251,7 +251,7 @@ func (j *jsiiProxy_SchemaPolicyOutputReference) validateSetTerraformResourcePara
 	return nil
 }
 
-func (j *jsiiProxy_SchemaPolicyOutputReference) validateSetUsageParameters(val interface{}) error {
+func (j *jsiiProxy_SchemaPolicyOutputReference) validateSetUsageParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -271,7 +271,7 @@ func (j *jsiiProxy_SchemaPolicyOutputReference) validateSetUsageParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_SchemaPolicyOutputReference) validateSetUsageWithGrantParameters(val interface{}) error {
+func (j *jsiiProxy_SchemaPolicyOutputReference) validateSetUsageWithGrantParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -310,4 +310,3 @@ func validateNewSchemaPolicyOutputReferenceParameters(terraformResource cdktf.II
 
 	return nil
 }
-

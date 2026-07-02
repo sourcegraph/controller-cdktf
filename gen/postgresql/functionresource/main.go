@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-postgresql.functionResource.FunctionResource",
-		reflect.TypeOf((*FunctionResource)(nil)).Elem(),
+		reflect.TypeFor[FunctionResource](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -91,7 +91,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volatility", GoGetter: "Volatility"},
 			_jsii_.MemberProperty{JsiiProperty: "volatilityInput", GoGetter: "VolatilityInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FunctionResource{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -99,11 +99,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-postgresql.functionResource.FunctionResourceArg",
-		reflect.TypeOf((*FunctionResourceArg)(nil)).Elem(),
+		reflect.TypeFor[FunctionResourceArg](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-postgresql.functionResource.FunctionResourceArgList",
-		reflect.TypeOf((*FunctionResourceArgList)(nil)).Elem(),
+		reflect.TypeFor[FunctionResourceArgList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -117,7 +117,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FunctionResourceArgList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -125,7 +125,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference",
-		reflect.TypeOf((*FunctionResourceArgOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FunctionResourceArgOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -160,7 +160,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FunctionResourceArgOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -168,6 +168,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-postgresql.functionResource.FunctionResourceConfig",
-		reflect.TypeOf((*FunctionResourceConfig)(nil)).Elem(),
+		reflect.TypeFor[FunctionResourceConfig](),
 	)
 }

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-postgresql.provider.PostgresqlProvider",
-		reflect.TypeOf((*PostgresqlProvider)(nil)).Elem(),
+		reflect.TypeFor[PostgresqlProvider](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "alias", GoGetter: "Alias"},
@@ -100,7 +100,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PostgresqlProvider{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformProvider)
 			return &j
@@ -108,10 +108,10 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert",
-		reflect.TypeOf((*PostgresqlProviderClientcert)(nil)).Elem(),
+		reflect.TypeFor[PostgresqlProviderClientcert](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-postgresql.provider.PostgresqlProviderConfig",
-		reflect.TypeOf((*PostgresqlProviderConfig)(nil)).Elem(),
+		reflect.TypeFor[PostgresqlProviderConfig](),
 	)
 }

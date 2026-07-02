@@ -19,7 +19,7 @@ func (r *jsiiProxy_Role) validateAddMoveTargetParameters(moveTarget *string) err
 	return nil
 }
 
-func (r *jsiiProxy_Role) validateAddOverrideParameters(path *string, value interface{}) error {
+func (r *jsiiProxy_Role) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (r *jsiiProxy_Role) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_Role) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (r *jsiiProxy_Role) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateRole_GenerateConfigForImportParameters(scope constructs.Construct, 
 	return nil
 }
 
-func validateRole_IsConstructParameters(x interface{}) error {
+func validateRole_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateRole_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateRole_IsTerraformElementParameters(x interface{}) error {
+func validateRole_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateRole_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateRole_IsTerraformResourceParameters(x interface{}) error {
+func validateRole_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_Role) validateSetAssumeRoleParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Role) validateSetBypassRowLevelSecurityParameters(val interface{}) error {
+func (j *jsiiProxy_Role) validateSetBypassRowLevelSecurityParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -272,7 +272,7 @@ func (j *jsiiProxy_Role) validateSetBypassRowLevelSecurityParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_Role) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Role) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -313,7 +313,7 @@ func (j *jsiiProxy_Role) validateSetConnectionLimitParameters(val *float64) erro
 	return nil
 }
 
-func (j *jsiiProxy_Role) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Role) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -370,7 +370,7 @@ func (j *jsiiProxy_Role) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Role) validateSetCreateDatabaseParameters(val interface{}) error {
+func (j *jsiiProxy_Role) validateSetCreateDatabaseParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -390,7 +390,7 @@ func (j *jsiiProxy_Role) validateSetCreateDatabaseParameters(val interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_Role) validateSetCreateRoleParameters(val interface{}) error {
+func (j *jsiiProxy_Role) validateSetCreateRoleParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -418,7 +418,7 @@ func (j *jsiiProxy_Role) validateSetEncryptedParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Role) validateSetEncryptedPasswordParameters(val interface{}) error {
+func (j *jsiiProxy_Role) validateSetEncryptedPasswordParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -454,7 +454,7 @@ func (j *jsiiProxy_Role) validateSetIdleInTransactionSessionTimeoutParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_Role) validateSetInheritParameters(val interface{}) error {
+func (j *jsiiProxy_Role) validateSetInheritParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -482,7 +482,7 @@ func (j *jsiiProxy_Role) validateSetLifecycleParameters(val *cdktf.TerraformReso
 	return nil
 }
 
-func (j *jsiiProxy_Role) validateSetLoginParameters(val interface{}) error {
+func (j *jsiiProxy_Role) validateSetLoginParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -518,7 +518,7 @@ func (j *jsiiProxy_Role) validateSetPasswordParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Role) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Role) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -564,7 +564,7 @@ func (j *jsiiProxy_Role) validateSetProvisionersParameters(val *[]interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_Role) validateSetReplicationParameters(val interface{}) error {
+func (j *jsiiProxy_Role) validateSetReplicationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -600,7 +600,7 @@ func (j *jsiiProxy_Role) validateSetSearchPathParameters(val *[]*string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Role) validateSetSkipDropRoleParameters(val interface{}) error {
+func (j *jsiiProxy_Role) validateSetSkipDropRoleParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -620,7 +620,7 @@ func (j *jsiiProxy_Role) validateSetSkipDropRoleParameters(val interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_Role) validateSetSkipReassignOwnedParameters(val interface{}) error {
+func (j *jsiiProxy_Role) validateSetSkipReassignOwnedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -648,7 +648,7 @@ func (j *jsiiProxy_Role) validateSetStatementTimeoutParameters(val *float64) err
 	return nil
 }
 
-func (j *jsiiProxy_Role) validateSetSuperuserParameters(val interface{}) error {
+func (j *jsiiProxy_Role) validateSetSuperuserParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -694,4 +694,3 @@ func validateNewRoleParameters(scope constructs.Construct, id *string, config *R
 
 	return nil
 }
-

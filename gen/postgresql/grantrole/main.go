@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-postgresql.grantRole.GrantRole",
-		reflect.TypeOf((*GrantRole)(nil)).Elem(),
+		reflect.TypeFor[GrantRole](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,7 +63,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "withAdminOption", GoGetter: "WithAdminOption"},
 			_jsii_.MemberProperty{JsiiProperty: "withAdminOptionInput", GoGetter: "WithAdminOptionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GrantRole{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -71,6 +71,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-postgresql.grantRole.GrantRoleConfig",
-		reflect.TypeOf((*GrantRoleConfig)(nil)).Elem(),
+		reflect.TypeFor[GrantRoleConfig](),
 	)
 }
