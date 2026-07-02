@@ -15,15 +15,15 @@ type OrganizationModuleSharing interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -56,24 +56,24 @@ type OrganizationModuleSharing interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type OrganizationModuleSharing interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -103,7 +103,7 @@ type OrganizationModuleSharing interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -115,17 +115,17 @@ type OrganizationModuleSharing interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for OrganizationModuleSharing
@@ -143,8 +143,8 @@ func (j *jsiiProxy_OrganizationModuleSharing) CdktfStack() cdktf.TerraformStack 
 	return returns
 }
 
-func (j *jsiiProxy_OrganizationModuleSharing) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OrganizationModuleSharing) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -153,8 +153,8 @@ func (j *jsiiProxy_OrganizationModuleSharing) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OrganizationModuleSharing) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OrganizationModuleSharing) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_OrganizationModuleSharing) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_OrganizationModuleSharing) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OrganizationModuleSharing) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -303,8 +303,8 @@ func (j *jsiiProxy_OrganizationModuleSharing) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_OrganizationModuleSharing) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_OrganizationModuleSharing) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -313,8 +313,8 @@ func (j *jsiiProxy_OrganizationModuleSharing) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OrganizationModuleSharing) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OrganizationModuleSharing) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -333,8 +333,8 @@ func (j *jsiiProxy_OrganizationModuleSharing) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_OrganizationModuleSharing) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OrganizationModuleSharing) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -353,7 +353,6 @@ func (j *jsiiProxy_OrganizationModuleSharing) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization_module_sharing tfe_organization_module_sharing} Resource.
 func NewOrganizationModuleSharing(scope constructs.Construct, id *string, config *OrganizationModuleSharingConfig) OrganizationModuleSharing {
 	_init_.Initialize()
@@ -365,7 +364,7 @@ func NewOrganizationModuleSharing(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -378,12 +377,12 @@ func NewOrganizationModuleSharing_Override(o OrganizationModuleSharing, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OrganizationModuleSharing)SetConnection(val interface{}) {
+func (j *jsiiProxy_OrganizationModuleSharing) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_OrganizationModuleSharing)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OrganizationModuleSharing)SetCount(val interface{}) {
+func (j *jsiiProxy_OrganizationModuleSharing) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_OrganizationModuleSharing)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OrganizationModuleSharing)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_OrganizationModuleSharing) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -413,7 +412,7 @@ func (j *jsiiProxy_OrganizationModuleSharing)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OrganizationModuleSharing)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_OrganizationModuleSharing) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -421,7 +420,7 @@ func (j *jsiiProxy_OrganizationModuleSharing)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_OrganizationModuleSharing)SetId(val *string) {
+func (j *jsiiProxy_OrganizationModuleSharing) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,7 +431,7 @@ func (j *jsiiProxy_OrganizationModuleSharing)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OrganizationModuleSharing)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_OrganizationModuleSharing) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_OrganizationModuleSharing)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_OrganizationModuleSharing)SetModuleConsumers(val *[]*string) {
+func (j *jsiiProxy_OrganizationModuleSharing) SetModuleConsumers(val *[]*string) {
 	if err := j.validateSetModuleConsumersParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_OrganizationModuleSharing)SetModuleConsumers(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_OrganizationModuleSharing)SetOrganization(val *string) {
+func (j *jsiiProxy_OrganizationModuleSharing) SetOrganization(val *string) {
 	if err := j.validateSetOrganizationParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_OrganizationModuleSharing)SetOrganization(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OrganizationModuleSharing)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_OrganizationModuleSharing) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -473,7 +472,7 @@ func (j *jsiiProxy_OrganizationModuleSharing)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_OrganizationModuleSharing)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_OrganizationModuleSharing) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,7 +495,7 @@ func OrganizationModuleSharing_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -520,7 +519,7 @@ func OrganizationModuleSharing_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func OrganizationModuleSharing_IsConstruct(x interface{}) *bool {
+func OrganizationModuleSharing_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOrganizationModuleSharing_IsConstructParameters(x); err != nil {
@@ -531,7 +530,7 @@ func OrganizationModuleSharing_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -539,7 +538,7 @@ func OrganizationModuleSharing_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func OrganizationModuleSharing_IsTerraformElement(x interface{}) *bool {
+func OrganizationModuleSharing_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOrganizationModuleSharing_IsTerraformElementParameters(x); err != nil {
@@ -550,7 +549,7 @@ func OrganizationModuleSharing_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -558,7 +557,7 @@ func OrganizationModuleSharing_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func OrganizationModuleSharing_IsTerraformResource(x interface{}) *bool {
+func OrganizationModuleSharing_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOrganizationModuleSharing_IsTerraformResourceParameters(x); err != nil {
@@ -569,7 +568,7 @@ func OrganizationModuleSharing_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -594,31 +593,31 @@ func (o *jsiiProxy_OrganizationModuleSharing) AddMoveTarget(moveTarget *string) 
 	_jsii_.InvokeVoid(
 		o,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (o *jsiiProxy_OrganizationModuleSharing) AddOverride(path *string, value interface{}) {
+func (o *jsiiProxy_OrganizationModuleSharing) AddOverride(path *string, value any) {
 	if err := o.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (o *jsiiProxy_OrganizationModuleSharing) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OrganizationModuleSharing) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -634,7 +633,7 @@ func (o *jsiiProxy_OrganizationModuleSharing) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -650,7 +649,7 @@ func (o *jsiiProxy_OrganizationModuleSharing) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -666,7 +665,7 @@ func (o *jsiiProxy_OrganizationModuleSharing) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -682,7 +681,7 @@ func (o *jsiiProxy_OrganizationModuleSharing) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -698,7 +697,7 @@ func (o *jsiiProxy_OrganizationModuleSharing) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func (o *jsiiProxy_OrganizationModuleSharing) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func (o *jsiiProxy_OrganizationModuleSharing) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -746,15 +745,15 @@ func (o *jsiiProxy_OrganizationModuleSharing) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (o *jsiiProxy_OrganizationModuleSharing) HasResourceMove() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OrganizationModuleSharing) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -773,7 +772,7 @@ func (o *jsiiProxy_OrganizationModuleSharing) ImportFrom(id *string, provider cd
 	_jsii_.InvokeVoid(
 		o,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -786,7 +785,7 @@ func (o *jsiiProxy_OrganizationModuleSharing) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -800,18 +799,18 @@ func (o *jsiiProxy_OrganizationModuleSharing) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (o *jsiiProxy_OrganizationModuleSharing) MoveTo(moveTarget *string, index interface{}) {
+func (o *jsiiProxy_OrganizationModuleSharing) MoveTo(moveTarget *string, index any) {
 	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -822,7 +821,7 @@ func (o *jsiiProxy_OrganizationModuleSharing) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -833,7 +832,7 @@ func (o *jsiiProxy_OrganizationModuleSharing) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		o,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -861,8 +860,8 @@ func (o *jsiiProxy_OrganizationModuleSharing) ResetOverrideLogicalId() {
 	)
 }
 
-func (o *jsiiProxy_OrganizationModuleSharing) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OrganizationModuleSharing) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -874,8 +873,8 @@ func (o *jsiiProxy_OrganizationModuleSharing) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (o *jsiiProxy_OrganizationModuleSharing) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OrganizationModuleSharing) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -887,8 +886,8 @@ func (o *jsiiProxy_OrganizationModuleSharing) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (o *jsiiProxy_OrganizationModuleSharing) ToHclTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OrganizationModuleSharing) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -900,8 +899,8 @@ func (o *jsiiProxy_OrganizationModuleSharing) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (o *jsiiProxy_OrganizationModuleSharing) ToMetadata() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OrganizationModuleSharing) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -926,8 +925,8 @@ func (o *jsiiProxy_OrganizationModuleSharing) ToString() *string {
 	return returns
 }
 
-func (o *jsiiProxy_OrganizationModuleSharing) ToTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OrganizationModuleSharing) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -938,4 +937,3 @@ func (o *jsiiProxy_OrganizationModuleSharing) ToTerraform() interface{} {
 
 	return returns
 }
-

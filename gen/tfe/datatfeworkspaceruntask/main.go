@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeWorkspaceRunTask.DataTfeWorkspaceRunTask",
-		reflect.TypeOf((*DataTfeWorkspaceRunTask)(nil)).Elem(),
+		reflect.TypeFor[DataTfeWorkspaceRunTask](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -54,7 +54,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workspaceId", GoGetter: "WorkspaceId"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceIdInput", GoGetter: "WorkspaceIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeWorkspaceRunTask{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -62,6 +62,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.dataTfeWorkspaceRunTask.DataTfeWorkspaceRunTaskConfig",
-		reflect.TypeOf((*DataTfeWorkspaceRunTaskConfig)(nil)).Elem(),
+		reflect.TypeFor[DataTfeWorkspaceRunTaskConfig](),
 	)
 }

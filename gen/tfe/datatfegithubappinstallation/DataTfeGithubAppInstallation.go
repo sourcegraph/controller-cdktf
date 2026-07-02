@@ -15,11 +15,11 @@ type DataTfeGithubAppInstallation interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -50,17 +50,17 @@ type DataTfeGithubAppInstallation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -87,18 +87,18 @@ type DataTfeGithubAppInstallation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataTfeGithubAppInstallation
@@ -116,8 +116,8 @@ func (j *jsiiProxy_DataTfeGithubAppInstallation) CdktfStack() cdktf.TerraformSta
 	return returns
 }
 
-func (j *jsiiProxy_DataTfeGithubAppInstallation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataTfeGithubAppInstallation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -126,8 +126,8 @@ func (j *jsiiProxy_DataTfeGithubAppInstallation) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_DataTfeGithubAppInstallation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataTfeGithubAppInstallation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -256,8 +256,8 @@ func (j *jsiiProxy_DataTfeGithubAppInstallation) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_DataTfeGithubAppInstallation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataTfeGithubAppInstallation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -276,8 +276,8 @@ func (j *jsiiProxy_DataTfeGithubAppInstallation) TerraformGeneratorMetadata() *c
 	return returns
 }
 
-func (j *jsiiProxy_DataTfeGithubAppInstallation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataTfeGithubAppInstallation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -296,7 +296,6 @@ func (j *jsiiProxy_DataTfeGithubAppInstallation) TerraformResourceType() *string
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/data-sources/github_app_installation tfe_github_app_installation} Data Source.
 func NewDataTfeGithubAppInstallation(scope constructs.Construct, id *string, config *DataTfeGithubAppInstallationConfig) DataTfeGithubAppInstallation {
 	_init_.Initialize()
@@ -308,7 +307,7 @@ func NewDataTfeGithubAppInstallation(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.dataTfeGithubAppInstallation.DataTfeGithubAppInstallation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -321,12 +320,12 @@ func NewDataTfeGithubAppInstallation_Override(d DataTfeGithubAppInstallation, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.dataTfeGithubAppInstallation.DataTfeGithubAppInstallation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataTfeGithubAppInstallation)SetCount(val interface{}) {
+func (j *jsiiProxy_DataTfeGithubAppInstallation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -337,7 +336,7 @@ func (j *jsiiProxy_DataTfeGithubAppInstallation)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataTfeGithubAppInstallation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataTfeGithubAppInstallation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -345,7 +344,7 @@ func (j *jsiiProxy_DataTfeGithubAppInstallation)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataTfeGithubAppInstallation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataTfeGithubAppInstallation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -353,7 +352,7 @@ func (j *jsiiProxy_DataTfeGithubAppInstallation)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_DataTfeGithubAppInstallation)SetInstallationId(val *float64) {
+func (j *jsiiProxy_DataTfeGithubAppInstallation) SetInstallationId(val *float64) {
 	if err := j.validateSetInstallationIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,7 +363,7 @@ func (j *jsiiProxy_DataTfeGithubAppInstallation)SetInstallationId(val *float64) 
 	)
 }
 
-func (j *jsiiProxy_DataTfeGithubAppInstallation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataTfeGithubAppInstallation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_DataTfeGithubAppInstallation)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_DataTfeGithubAppInstallation)SetName(val *string) {
+func (j *jsiiProxy_DataTfeGithubAppInstallation) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_DataTfeGithubAppInstallation)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataTfeGithubAppInstallation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataTfeGithubAppInstallation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -406,7 +405,7 @@ func DataTfeGithubAppInstallation_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.dataTfeGithubAppInstallation.DataTfeGithubAppInstallation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -430,7 +429,7 @@ func DataTfeGithubAppInstallation_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataTfeGithubAppInstallation_IsConstruct(x interface{}) *bool {
+func DataTfeGithubAppInstallation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataTfeGithubAppInstallation_IsConstructParameters(x); err != nil {
@@ -441,7 +440,7 @@ func DataTfeGithubAppInstallation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.dataTfeGithubAppInstallation.DataTfeGithubAppInstallation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func DataTfeGithubAppInstallation_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataTfeGithubAppInstallation_IsTerraformDataSource(x interface{}) *bool {
+func DataTfeGithubAppInstallation_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataTfeGithubAppInstallation_IsTerraformDataSourceParameters(x); err != nil {
@@ -460,7 +459,7 @@ func DataTfeGithubAppInstallation_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.dataTfeGithubAppInstallation.DataTfeGithubAppInstallation",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func DataTfeGithubAppInstallation_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataTfeGithubAppInstallation_IsTerraformElement(x interface{}) *bool {
+func DataTfeGithubAppInstallation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataTfeGithubAppInstallation_IsTerraformElementParameters(x); err != nil {
@@ -479,7 +478,7 @@ func DataTfeGithubAppInstallation_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.dataTfeGithubAppInstallation.DataTfeGithubAppInstallation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -497,27 +496,27 @@ func DataTfeGithubAppInstallation_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataTfeGithubAppInstallation) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataTfeGithubAppInstallation) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataTfeGithubAppInstallation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataTfeGithubAppInstallation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -533,7 +532,7 @@ func (d *jsiiProxy_DataTfeGithubAppInstallation) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -549,7 +548,7 @@ func (d *jsiiProxy_DataTfeGithubAppInstallation) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -565,7 +564,7 @@ func (d *jsiiProxy_DataTfeGithubAppInstallation) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func (d *jsiiProxy_DataTfeGithubAppInstallation) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -597,7 +596,7 @@ func (d *jsiiProxy_DataTfeGithubAppInstallation) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func (d *jsiiProxy_DataTfeGithubAppInstallation) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -629,7 +628,7 @@ func (d *jsiiProxy_DataTfeGithubAppInstallation) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -645,7 +644,7 @@ func (d *jsiiProxy_DataTfeGithubAppInstallation) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func (d *jsiiProxy_DataTfeGithubAppInstallation) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -675,7 +674,7 @@ func (d *jsiiProxy_DataTfeGithubAppInstallation) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -703,8 +702,8 @@ func (d *jsiiProxy_DataTfeGithubAppInstallation) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataTfeGithubAppInstallation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataTfeGithubAppInstallation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -716,8 +715,8 @@ func (d *jsiiProxy_DataTfeGithubAppInstallation) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (d *jsiiProxy_DataTfeGithubAppInstallation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataTfeGithubAppInstallation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -729,8 +728,8 @@ func (d *jsiiProxy_DataTfeGithubAppInstallation) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (d *jsiiProxy_DataTfeGithubAppInstallation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataTfeGithubAppInstallation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -742,8 +741,8 @@ func (d *jsiiProxy_DataTfeGithubAppInstallation) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataTfeGithubAppInstallation) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataTfeGithubAppInstallation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -768,8 +767,8 @@ func (d *jsiiProxy_DataTfeGithubAppInstallation) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataTfeGithubAppInstallation) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataTfeGithubAppInstallation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -780,4 +779,3 @@ func (d *jsiiProxy_DataTfeGithubAppInstallation) ToTerraform() interface{} {
 
 	return returns
 }
-

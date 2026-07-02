@@ -13,9 +13,9 @@ type DataTfeVariablesVariablesOutputReference interface {
 	Category() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type DataTfeVariablesVariablesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,7 +69,7 @@ type DataTfeVariablesVariablesOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ func (j *jsiiProxy_DataTfeVariablesVariablesOutputReference) Category() *string 
 	return returns
 }
 
-func (j *jsiiProxy_DataTfeVariablesVariablesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataTfeVariablesVariablesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -212,7 +212,6 @@ func (j *jsiiProxy_DataTfeVariablesVariablesOutputReference) Value() *string {
 	return returns
 }
 
-
 func NewDataTfeVariablesVariablesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataTfeVariablesVariablesOutputReference {
 	_init_.Initialize()
 
@@ -223,7 +222,7 @@ func NewDataTfeVariablesVariablesOutputReference(terraformResource cdktf.IInterp
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariablesVariablesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -235,12 +234,12 @@ func NewDataTfeVariablesVariablesOutputReference_Override(d DataTfeVariablesVari
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariablesVariablesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataTfeVariablesVariablesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataTfeVariablesVariablesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -251,7 +250,7 @@ func (j *jsiiProxy_DataTfeVariablesVariablesOutputReference)SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_DataTfeVariablesVariablesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataTfeVariablesVariablesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -262,7 +261,7 @@ func (j *jsiiProxy_DataTfeVariablesVariablesOutputReference)SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_DataTfeVariablesVariablesOutputReference)SetInternalValue(val *DataTfeVariablesVariables) {
+func (j *jsiiProxy_DataTfeVariablesVariablesOutputReference) SetInternalValue(val *DataTfeVariablesVariables) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -273,7 +272,7 @@ func (j *jsiiProxy_DataTfeVariablesVariablesOutputReference)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_DataTfeVariablesVariablesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataTfeVariablesVariablesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -284,7 +283,7 @@ func (j *jsiiProxy_DataTfeVariablesVariablesOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_DataTfeVariablesVariablesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataTfeVariablesVariablesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -308,16 +307,16 @@ func (d *jsiiProxy_DataTfeVariablesVariablesOutputReference) ComputeFqn() *strin
 	return returns
 }
 
-func (d *jsiiProxy_DataTfeVariablesVariablesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataTfeVariablesVariablesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -333,7 +332,7 @@ func (d *jsiiProxy_DataTfeVariablesVariablesOutputReference) GetBooleanAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -349,7 +348,7 @@ func (d *jsiiProxy_DataTfeVariablesVariablesOutputReference) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -365,7 +364,7 @@ func (d *jsiiProxy_DataTfeVariablesVariablesOutputReference) GetListAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -381,7 +380,7 @@ func (d *jsiiProxy_DataTfeVariablesVariablesOutputReference) GetNumberAttribute(
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (d *jsiiProxy_DataTfeVariablesVariablesOutputReference) GetNumberListAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (d *jsiiProxy_DataTfeVariablesVariablesOutputReference) GetNumberMapAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -429,7 +428,7 @@ func (d *jsiiProxy_DataTfeVariablesVariablesOutputReference) GetStringAttribute(
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -445,7 +444,7 @@ func (d *jsiiProxy_DataTfeVariablesVariablesOutputReference) GetStringMapAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,23 +473,23 @@ func (d *jsiiProxy_DataTfeVariablesVariablesOutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataTfeVariablesVariablesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataTfeVariablesVariablesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -509,4 +508,3 @@ func (d *jsiiProxy_DataTfeVariablesVariablesOutputReference) ToString() *string 
 
 	return returns
 }
-

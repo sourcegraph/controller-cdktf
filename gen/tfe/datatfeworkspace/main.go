@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace",
-		reflect.TypeOf((*DataTfeWorkspace)(nil)).Elem(),
+		reflect.TypeFor[DataTfeWorkspace](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "allowDestroyPlan", GoGetter: "AllowDestroyPlan"},
@@ -82,7 +82,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vcsRepo", GoGetter: "VcsRepo"},
 			_jsii_.MemberProperty{JsiiProperty: "workingDirectory", GoGetter: "WorkingDirectory"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeWorkspace{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -90,15 +90,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspaceConfig",
-		reflect.TypeOf((*DataTfeWorkspaceConfig)(nil)).Elem(),
+		reflect.TypeFor[DataTfeWorkspaceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspaceVcsRepo",
-		reflect.TypeOf((*DataTfeWorkspaceVcsRepo)(nil)).Elem(),
+		reflect.TypeFor[DataTfeWorkspaceVcsRepo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspaceVcsRepoList",
-		reflect.TypeOf((*DataTfeWorkspaceVcsRepoList)(nil)).Elem(),
+		reflect.TypeFor[DataTfeWorkspaceVcsRepoList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -111,7 +111,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeWorkspaceVcsRepoList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -119,7 +119,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspaceVcsRepoOutputReference",
-		reflect.TypeOf((*DataTfeWorkspaceVcsRepoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataTfeWorkspaceVcsRepoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "branch", GoGetter: "Branch"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -149,7 +149,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeWorkspaceVcsRepoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

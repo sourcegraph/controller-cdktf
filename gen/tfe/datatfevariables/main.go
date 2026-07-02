@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariables",
-		reflect.TypeOf((*DataTfeVariables)(nil)).Elem(),
+		reflect.TypeFor[DataTfeVariables](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -57,7 +57,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workspaceId", GoGetter: "WorkspaceId"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceIdInput", GoGetter: "WorkspaceIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeVariables{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -65,15 +65,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariablesConfig",
-		reflect.TypeOf((*DataTfeVariablesConfig)(nil)).Elem(),
+		reflect.TypeFor[DataTfeVariablesConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariablesEnv",
-		reflect.TypeOf((*DataTfeVariablesEnv)(nil)).Elem(),
+		reflect.TypeFor[DataTfeVariablesEnv](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariablesEnvList",
-		reflect.TypeOf((*DataTfeVariablesEnvList)(nil)).Elem(),
+		reflect.TypeFor[DataTfeVariablesEnvList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -86,7 +86,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeVariablesEnvList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -94,7 +94,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariablesEnvOutputReference",
-		reflect.TypeOf((*DataTfeVariablesEnvOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataTfeVariablesEnvOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "category", GoGetter: "Category"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -124,7 +124,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeVariablesEnvOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -132,11 +132,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariablesTerraform",
-		reflect.TypeOf((*DataTfeVariablesTerraform)(nil)).Elem(),
+		reflect.TypeFor[DataTfeVariablesTerraform](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariablesTerraformList",
-		reflect.TypeOf((*DataTfeVariablesTerraformList)(nil)).Elem(),
+		reflect.TypeFor[DataTfeVariablesTerraformList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -149,7 +149,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeVariablesTerraformList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -157,7 +157,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariablesTerraformOutputReference",
-		reflect.TypeOf((*DataTfeVariablesTerraformOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataTfeVariablesTerraformOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "category", GoGetter: "Category"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -187,7 +187,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeVariablesTerraformOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -195,11 +195,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariablesVariables",
-		reflect.TypeOf((*DataTfeVariablesVariables)(nil)).Elem(),
+		reflect.TypeFor[DataTfeVariablesVariables](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariablesVariablesList",
-		reflect.TypeOf((*DataTfeVariablesVariablesList)(nil)).Elem(),
+		reflect.TypeFor[DataTfeVariablesVariablesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -212,7 +212,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeVariablesVariablesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -220,7 +220,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariablesVariablesOutputReference",
-		reflect.TypeOf((*DataTfeVariablesVariablesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataTfeVariablesVariablesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "category", GoGetter: "Category"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -250,7 +250,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeVariablesVariablesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

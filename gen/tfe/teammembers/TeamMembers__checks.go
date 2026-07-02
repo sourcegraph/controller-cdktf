@@ -19,7 +19,7 @@ func (t *jsiiProxy_TeamMembers) validateAddMoveTargetParameters(moveTarget *stri
 	return nil
 }
 
-func (t *jsiiProxy_TeamMembers) validateAddOverrideParameters(path *string, value interface{}) error {
+func (t *jsiiProxy_TeamMembers) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (t *jsiiProxy_TeamMembers) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TeamMembers) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (t *jsiiProxy_TeamMembers) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateTeamMembers_GenerateConfigForImportParameters(scope constructs.Cons
 	return nil
 }
 
-func validateTeamMembers_IsConstructParameters(x interface{}) error {
+func validateTeamMembers_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateTeamMembers_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateTeamMembers_IsTerraformElementParameters(x interface{}) error {
+func validateTeamMembers_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateTeamMembers_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateTeamMembers_IsTerraformResourceParameters(x interface{}) error {
+func validateTeamMembers_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateTeamMembers_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_TeamMembers) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_TeamMembers) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_TeamMembers) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
-func (j *jsiiProxy_TeamMembers) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_TeamMembers) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -350,7 +350,7 @@ func (j *jsiiProxy_TeamMembers) validateSetLifecycleParameters(val *cdktf.Terraf
 	return nil
 }
 
-func (j *jsiiProxy_TeamMembers) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_TeamMembers) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewTeamMembersParameters(scope constructs.Construct, id *string, co
 
 	return nil
 }
-

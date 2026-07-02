@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeTeamProjectAccess.DataTfeTeamProjectAccess",
-		reflect.TypeOf((*DataTfeTeamProjectAccess)(nil)).Elem(),
+		reflect.TypeFor[DataTfeTeamProjectAccess](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "access", GoGetter: "Access"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -53,7 +53,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeTeamProjectAccess{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -61,6 +61,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.dataTfeTeamProjectAccess.DataTfeTeamProjectAccessConfig",
-		reflect.TypeOf((*DataTfeTeamProjectAccessConfig)(nil)).Elem(),
+		reflect.TypeFor[DataTfeTeamProjectAccessConfig](),
 	)
 }

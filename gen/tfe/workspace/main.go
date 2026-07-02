@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.workspace.Workspace",
-		reflect.TypeOf((*Workspace)(nil)).Elem(),
+		reflect.TypeFor[Workspace](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -136,7 +136,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workingDirectory", GoGetter: "WorkingDirectory"},
 			_jsii_.MemberProperty{JsiiProperty: "workingDirectoryInput", GoGetter: "WorkingDirectoryInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Workspace{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -144,15 +144,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.workspace.WorkspaceConfig",
-		reflect.TypeOf((*WorkspaceConfig)(nil)).Elem(),
+		reflect.TypeFor[WorkspaceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.workspace.WorkspaceVcsRepo",
-		reflect.TypeOf((*WorkspaceVcsRepo)(nil)).Elem(),
+		reflect.TypeFor[WorkspaceVcsRepo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference",
-		reflect.TypeOf((*WorkspaceVcsRepoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkspaceVcsRepoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "branch", GoGetter: "Branch"},
 			_jsii_.MemberProperty{JsiiProperty: "branchInput", GoGetter: "BranchInput"},
@@ -193,7 +193,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkspaceVcsRepoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

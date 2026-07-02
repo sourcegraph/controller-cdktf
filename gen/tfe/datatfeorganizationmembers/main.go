@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembers",
-		reflect.TypeOf((*DataTfeOrganizationMembers)(nil)).Elem(),
+		reflect.TypeFor[DataTfeOrganizationMembers](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -53,7 +53,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeOrganizationMembers{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -61,15 +61,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersConfig",
-		reflect.TypeOf((*DataTfeOrganizationMembersConfig)(nil)).Elem(),
+		reflect.TypeFor[DataTfeOrganizationMembersConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersMembers",
-		reflect.TypeOf((*DataTfeOrganizationMembersMembers)(nil)).Elem(),
+		reflect.TypeFor[DataTfeOrganizationMembersMembers](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersMembersList",
-		reflect.TypeOf((*DataTfeOrganizationMembersMembersList)(nil)).Elem(),
+		reflect.TypeFor[DataTfeOrganizationMembersMembersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -82,7 +82,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeOrganizationMembersMembersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -90,7 +90,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersMembersOutputReference",
-		reflect.TypeOf((*DataTfeOrganizationMembersMembersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataTfeOrganizationMembersMembersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "userId", GoGetter: "UserId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeOrganizationMembersMembersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -124,11 +124,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersMembersWaiting",
-		reflect.TypeOf((*DataTfeOrganizationMembersMembersWaiting)(nil)).Elem(),
+		reflect.TypeFor[DataTfeOrganizationMembersMembersWaiting](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersMembersWaitingList",
-		reflect.TypeOf((*DataTfeOrganizationMembersMembersWaitingList)(nil)).Elem(),
+		reflect.TypeFor[DataTfeOrganizationMembersMembersWaitingList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -141,7 +141,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeOrganizationMembersMembersWaitingList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -149,7 +149,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersMembersWaitingOutputReference",
-		reflect.TypeOf((*DataTfeOrganizationMembersMembersWaitingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataTfeOrganizationMembersMembersWaitingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -175,7 +175,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "userId", GoGetter: "UserId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeOrganizationMembersMembersWaitingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -1,6 +1,5 @@
 package provider
 
-
 type TfeProviderConfig struct {
 	// Alias name.
 	//
@@ -17,7 +16,7 @@ type TfeProviderConfig struct {
 	// Whether or not to skip certificate verifications.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs#ssl_skip_verify TfeProvider#ssl_skip_verify}
-	SslSkipVerify interface{} `field:"optional" json:"sslSkipVerify" yaml:"sslSkipVerify"`
+	SslSkipVerify any `field:"optional" json:"sslSkipVerify" yaml:"sslSkipVerify"`
 	// The token used to authenticate with Terraform Enterprise.
 	//
 	// We recommend omitting
@@ -26,4 +25,3 @@ type TfeProviderConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs#token TfeProvider#token}
 	Token *string `field:"optional" json:"token" yaml:"token"`
 }
-

@@ -98,7 +98,7 @@ func (t *jsiiProxy_TeamAccessPermissionsOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_TeamAccessPermissionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TeamAccessPermissionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_TeamAccessPermissionsOutputReference) validateSetComplexObjec
 	return nil
 }
 
-func (j *jsiiProxy_TeamAccessPermissionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_TeamAccessPermissionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_TeamAccessPermissionsOutputReference) validateSetRunsParamete
 	return nil
 }
 
-func (j *jsiiProxy_TeamAccessPermissionsOutputReference) validateSetRunTasksParameters(val interface{}) error {
+func (j *jsiiProxy_TeamAccessPermissionsOutputReference) validateSetRunTasksParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func (j *jsiiProxy_TeamAccessPermissionsOutputReference) validateSetVariablesPar
 	return nil
 }
 
-func (j *jsiiProxy_TeamAccessPermissionsOutputReference) validateSetWorkspaceLockingParameters(val interface{}) error {
+func (j *jsiiProxy_TeamAccessPermissionsOutputReference) validateSetWorkspaceLockingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -294,4 +294,3 @@ func validateNewTeamAccessPermissionsOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

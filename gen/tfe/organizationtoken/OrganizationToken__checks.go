@@ -19,7 +19,7 @@ func (o *jsiiProxy_OrganizationToken) validateAddMoveTargetParameters(moveTarget
 	return nil
 }
 
-func (o *jsiiProxy_OrganizationToken) validateAddOverrideParameters(path *string, value interface{}) error {
+func (o *jsiiProxy_OrganizationToken) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (o *jsiiProxy_OrganizationToken) validateMoveFromIdParameters(id *string) e
 	return nil
 }
 
-func (o *jsiiProxy_OrganizationToken) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (o *jsiiProxy_OrganizationToken) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateOrganizationToken_GenerateConfigForImportParameters(scope construct
 	return nil
 }
 
-func validateOrganizationToken_IsConstructParameters(x interface{}) error {
+func validateOrganizationToken_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateOrganizationToken_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateOrganizationToken_IsTerraformElementParameters(x interface{}) error {
+func validateOrganizationToken_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateOrganizationToken_IsTerraformElementParameters(x interface{}) error
 	return nil
 }
 
-func validateOrganizationToken_IsTerraformResourceParameters(x interface{}) error {
+func validateOrganizationToken_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateOrganizationToken_IsTerraformResourceParameters(x interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_OrganizationToken) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_OrganizationToken) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_OrganizationToken) validateSetConnectionParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_OrganizationToken) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_OrganizationToken) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -334,7 +334,7 @@ func (j *jsiiProxy_OrganizationToken) validateSetCountParameters(val interface{}
 	return nil
 }
 
-func (j *jsiiProxy_OrganizationToken) validateSetForceRegenerateParameters(val interface{}) error {
+func (j *jsiiProxy_OrganizationToken) validateSetForceRegenerateParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -378,7 +378,7 @@ func (j *jsiiProxy_OrganizationToken) validateSetOrganizationParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_OrganizationToken) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_OrganizationToken) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -439,4 +439,3 @@ func validateNewOrganizationTokenParameters(scope constructs.Construct, id *stri
 
 	return nil
 }
-

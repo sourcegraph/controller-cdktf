@@ -18,15 +18,15 @@ type Variable interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -42,9 +42,9 @@ type Variable interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Hcl() interface{}
-	SetHcl(val interface{})
-	HclInput() interface{}
+	Hcl() any
+	SetHcl(val any)
+	HclInput() any
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -62,18 +62,18 @@ type Variable interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
-	Sensitive() interface{}
-	SetSensitive(val interface{})
-	SensitiveInput() interface{}
+	RawOverrides() any
+	Sensitive() any
+	SetSensitive(val any)
+	SensitiveInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Value() *string
@@ -89,9 +89,9 @@ type Variable interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -109,7 +109,7 @@ type Variable interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -121,7 +121,7 @@ type Variable interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -138,17 +138,17 @@ type Variable interface {
 	ResetValue()
 	ResetVariableSetId()
 	ResetWorkspaceId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Variable
@@ -186,8 +186,8 @@ func (j *jsiiProxy_Variable) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_Variable) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Variable) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -196,8 +196,8 @@ func (j *jsiiProxy_Variable) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Variable) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Variable) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_Variable) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Variable) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Variable) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -276,8 +276,8 @@ func (j *jsiiProxy_Variable) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Variable) Hcl() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Variable) Hcl() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hcl",
@@ -286,8 +286,8 @@ func (j *jsiiProxy_Variable) Hcl() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Variable) HclInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Variable) HclInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hclInput",
@@ -366,8 +366,8 @@ func (j *jsiiProxy_Variable) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Variable) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Variable) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -376,8 +376,8 @@ func (j *jsiiProxy_Variable) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Variable) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Variable) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -386,8 +386,8 @@ func (j *jsiiProxy_Variable) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Variable) Sensitive() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Variable) Sensitive() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sensitive",
@@ -396,8 +396,8 @@ func (j *jsiiProxy_Variable) Sensitive() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Variable) SensitiveInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Variable) SensitiveInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sensitiveInput",
@@ -416,8 +416,8 @@ func (j *jsiiProxy_Variable) TerraformGeneratorMetadata() *cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_Variable) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Variable) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -496,7 +496,6 @@ func (j *jsiiProxy_Variable) WorkspaceIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/variable tfe_variable} Resource.
 func NewVariable(scope constructs.Construct, id *string, config *VariableConfig) Variable {
 	_init_.Initialize()
@@ -508,7 +507,7 @@ func NewVariable(scope constructs.Construct, id *string, config *VariableConfig)
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.variable.Variable",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -521,12 +520,12 @@ func NewVariable_Override(v Variable, scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.variable.Variable",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		v,
 	)
 }
 
-func (j *jsiiProxy_Variable)SetCategory(val *string) {
+func (j *jsiiProxy_Variable) SetCategory(val *string) {
 	if err := j.validateSetCategoryParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +536,7 @@ func (j *jsiiProxy_Variable)SetCategory(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Variable)SetConnection(val interface{}) {
+func (j *jsiiProxy_Variable) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_Variable)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Variable)SetCount(val interface{}) {
+func (j *jsiiProxy_Variable) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_Variable)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Variable)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Variable) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -567,7 +566,7 @@ func (j *jsiiProxy_Variable)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Variable)SetDescription(val *string) {
+func (j *jsiiProxy_Variable) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -578,7 +577,7 @@ func (j *jsiiProxy_Variable)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Variable)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Variable) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -586,7 +585,7 @@ func (j *jsiiProxy_Variable)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Variable)SetHcl(val interface{}) {
+func (j *jsiiProxy_Variable) SetHcl(val any) {
 	if err := j.validateSetHclParameters(val); err != nil {
 		panic(err)
 	}
@@ -597,7 +596,7 @@ func (j *jsiiProxy_Variable)SetHcl(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Variable)SetId(val *string) {
+func (j *jsiiProxy_Variable) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -608,7 +607,7 @@ func (j *jsiiProxy_Variable)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Variable)SetKey(val *string) {
+func (j *jsiiProxy_Variable) SetKey(val *string) {
 	if err := j.validateSetKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -619,7 +618,7 @@ func (j *jsiiProxy_Variable)SetKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Variable)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Variable) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -630,7 +629,7 @@ func (j *jsiiProxy_Variable)SetLifecycle(val *cdktf.TerraformResourceLifecycle) 
 	)
 }
 
-func (j *jsiiProxy_Variable)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Variable) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -638,7 +637,7 @@ func (j *jsiiProxy_Variable)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Variable)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Variable) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func (j *jsiiProxy_Variable)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Variable)SetSensitive(val interface{}) {
+func (j *jsiiProxy_Variable) SetSensitive(val any) {
 	if err := j.validateSetSensitiveParameters(val); err != nil {
 		panic(err)
 	}
@@ -660,7 +659,7 @@ func (j *jsiiProxy_Variable)SetSensitive(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Variable)SetValue(val *string) {
+func (j *jsiiProxy_Variable) SetValue(val *string) {
 	if err := j.validateSetValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -671,7 +670,7 @@ func (j *jsiiProxy_Variable)SetValue(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Variable)SetVariableSetId(val *string) {
+func (j *jsiiProxy_Variable) SetVariableSetId(val *string) {
 	if err := j.validateSetVariableSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -682,7 +681,7 @@ func (j *jsiiProxy_Variable)SetVariableSetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Variable)SetWorkspaceId(val *string) {
+func (j *jsiiProxy_Variable) SetWorkspaceId(val *string) {
 	if err := j.validateSetWorkspaceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -705,7 +704,7 @@ func Variable_GenerateConfigForImport(scope constructs.Construct, importToId *st
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.variable.Variable",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func Variable_GenerateConfigForImport(scope constructs.Construct, importToId *st
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Variable_IsConstruct(x interface{}) *bool {
+func Variable_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVariable_IsConstructParameters(x); err != nil {
@@ -740,7 +739,7 @@ func Variable_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.variable.Variable",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -748,7 +747,7 @@ func Variable_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Variable_IsTerraformElement(x interface{}) *bool {
+func Variable_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVariable_IsTerraformElementParameters(x); err != nil {
@@ -759,7 +758,7 @@ func Variable_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.variable.Variable",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -767,7 +766,7 @@ func Variable_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Variable_IsTerraformResource(x interface{}) *bool {
+func Variable_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVariable_IsTerraformResourceParameters(x); err != nil {
@@ -778,7 +777,7 @@ func Variable_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.variable.Variable",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -803,31 +802,31 @@ func (v *jsiiProxy_Variable) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (v *jsiiProxy_Variable) AddOverride(path *string, value interface{}) {
+func (v *jsiiProxy_Variable) AddOverride(path *string, value any) {
 	if err := v.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (v *jsiiProxy_Variable) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (v *jsiiProxy_Variable) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -843,7 +842,7 @@ func (v *jsiiProxy_Variable) GetBooleanAttribute(terraformAttribute *string) cdk
 	_jsii_.Invoke(
 		v,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -859,7 +858,7 @@ func (v *jsiiProxy_Variable) GetBooleanMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		v,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -875,7 +874,7 @@ func (v *jsiiProxy_Variable) GetListAttribute(terraformAttribute *string) *[]*st
 	_jsii_.Invoke(
 		v,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -891,7 +890,7 @@ func (v *jsiiProxy_Variable) GetNumberAttribute(terraformAttribute *string) *flo
 	_jsii_.Invoke(
 		v,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -907,7 +906,7 @@ func (v *jsiiProxy_Variable) GetNumberListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		v,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -923,7 +922,7 @@ func (v *jsiiProxy_Variable) GetNumberMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		v,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -939,7 +938,7 @@ func (v *jsiiProxy_Variable) GetStringAttribute(terraformAttribute *string) *str
 	_jsii_.Invoke(
 		v,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -955,15 +954,15 @@ func (v *jsiiProxy_Variable) GetStringMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		v,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (v *jsiiProxy_Variable) HasResourceMove() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_Variable) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -982,7 +981,7 @@ func (v *jsiiProxy_Variable) ImportFrom(id *string, provider cdktf.TerraformProv
 	_jsii_.InvokeVoid(
 		v,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -995,7 +994,7 @@ func (v *jsiiProxy_Variable) InterpolationForAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1009,18 +1008,18 @@ func (v *jsiiProxy_Variable) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (v *jsiiProxy_Variable) MoveTo(moveTarget *string, index interface{}) {
+func (v *jsiiProxy_Variable) MoveTo(moveTarget *string, index any) {
 	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1031,7 +1030,7 @@ func (v *jsiiProxy_Variable) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1042,7 +1041,7 @@ func (v *jsiiProxy_Variable) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1110,8 +1109,8 @@ func (v *jsiiProxy_Variable) ResetWorkspaceId() {
 	)
 }
 
-func (v *jsiiProxy_Variable) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_Variable) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -1123,8 +1122,8 @@ func (v *jsiiProxy_Variable) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (v *jsiiProxy_Variable) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_Variable) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -1136,8 +1135,8 @@ func (v *jsiiProxy_Variable) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (v *jsiiProxy_Variable) ToHclTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_Variable) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1149,8 +1148,8 @@ func (v *jsiiProxy_Variable) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (v *jsiiProxy_Variable) ToMetadata() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_Variable) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1175,8 +1174,8 @@ func (v *jsiiProxy_Variable) ToString() *string {
 	return returns
 }
 
-func (v *jsiiProxy_Variable) ToTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_Variable) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1187,4 +1186,3 @@ func (v *jsiiProxy_Variable) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -18,15 +18,15 @@ type OrganizationRunTask interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -34,9 +34,9 @@ type OrganizationRunTask interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -68,15 +68,15 @@ type OrganizationRunTask interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Url() *string
@@ -86,9 +86,9 @@ type OrganizationRunTask interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -106,7 +106,7 @@ type OrganizationRunTask interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -118,7 +118,7 @@ type OrganizationRunTask interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -134,17 +134,17 @@ type OrganizationRunTask interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for OrganizationRunTask
@@ -182,8 +182,8 @@ func (j *jsiiProxy_OrganizationRunTask) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_OrganizationRunTask) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OrganizationRunTask) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_OrganizationRunTask) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OrganizationRunTask) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OrganizationRunTask) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_OrganizationRunTask) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_OrganizationRunTask) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OrganizationRunTask) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -242,8 +242,8 @@ func (j *jsiiProxy_OrganizationRunTask) DescriptionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OrganizationRunTask) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OrganizationRunTask) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -252,8 +252,8 @@ func (j *jsiiProxy_OrganizationRunTask) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OrganizationRunTask) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OrganizationRunTask) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -402,8 +402,8 @@ func (j *jsiiProxy_OrganizationRunTask) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_OrganizationRunTask) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_OrganizationRunTask) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -412,8 +412,8 @@ func (j *jsiiProxy_OrganizationRunTask) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OrganizationRunTask) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OrganizationRunTask) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -432,8 +432,8 @@ func (j *jsiiProxy_OrganizationRunTask) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_OrganizationRunTask) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OrganizationRunTask) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -472,7 +472,6 @@ func (j *jsiiProxy_OrganizationRunTask) UrlInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/organization_run_task tfe_organization_run_task} Resource.
 func NewOrganizationRunTask(scope constructs.Construct, id *string, config *OrganizationRunTaskConfig) OrganizationRunTask {
 	_init_.Initialize()
@@ -484,7 +483,7 @@ func NewOrganizationRunTask(scope constructs.Construct, id *string, config *Orga
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.organizationRunTask.OrganizationRunTask",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -497,12 +496,12 @@ func NewOrganizationRunTask_Override(o OrganizationRunTask, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.organizationRunTask.OrganizationRunTask",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OrganizationRunTask)SetCategory(val *string) {
+func (j *jsiiProxy_OrganizationRunTask) SetCategory(val *string) {
 	if err := j.validateSetCategoryParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_OrganizationRunTask)SetCategory(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OrganizationRunTask)SetConnection(val interface{}) {
+func (j *jsiiProxy_OrganizationRunTask) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_OrganizationRunTask)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OrganizationRunTask)SetCount(val interface{}) {
+func (j *jsiiProxy_OrganizationRunTask) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_OrganizationRunTask)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OrganizationRunTask)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_OrganizationRunTask) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -543,7 +542,7 @@ func (j *jsiiProxy_OrganizationRunTask)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OrganizationRunTask)SetDescription(val *string) {
+func (j *jsiiProxy_OrganizationRunTask) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -554,7 +553,7 @@ func (j *jsiiProxy_OrganizationRunTask)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OrganizationRunTask)SetEnabled(val interface{}) {
+func (j *jsiiProxy_OrganizationRunTask) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +564,7 @@ func (j *jsiiProxy_OrganizationRunTask)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OrganizationRunTask)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_OrganizationRunTask) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -573,7 +572,7 @@ func (j *jsiiProxy_OrganizationRunTask)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_OrganizationRunTask)SetHmacKey(val *string) {
+func (j *jsiiProxy_OrganizationRunTask) SetHmacKey(val *string) {
 	if err := j.validateSetHmacKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -584,7 +583,7 @@ func (j *jsiiProxy_OrganizationRunTask)SetHmacKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OrganizationRunTask)SetId(val *string) {
+func (j *jsiiProxy_OrganizationRunTask) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -595,7 +594,7 @@ func (j *jsiiProxy_OrganizationRunTask)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OrganizationRunTask)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_OrganizationRunTask) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -606,7 +605,7 @@ func (j *jsiiProxy_OrganizationRunTask)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_OrganizationRunTask)SetName(val *string) {
+func (j *jsiiProxy_OrganizationRunTask) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -617,7 +616,7 @@ func (j *jsiiProxy_OrganizationRunTask)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OrganizationRunTask)SetOrganization(val *string) {
+func (j *jsiiProxy_OrganizationRunTask) SetOrganization(val *string) {
 	if err := j.validateSetOrganizationParameters(val); err != nil {
 		panic(err)
 	}
@@ -628,7 +627,7 @@ func (j *jsiiProxy_OrganizationRunTask)SetOrganization(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OrganizationRunTask)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_OrganizationRunTask) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -636,7 +635,7 @@ func (j *jsiiProxy_OrganizationRunTask)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_OrganizationRunTask)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_OrganizationRunTask) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -647,7 +646,7 @@ func (j *jsiiProxy_OrganizationRunTask)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OrganizationRunTask)SetUrl(val *string) {
+func (j *jsiiProxy_OrganizationRunTask) SetUrl(val *string) {
 	if err := j.validateSetUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -670,7 +669,7 @@ func OrganizationRunTask_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.organizationRunTask.OrganizationRunTask",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func OrganizationRunTask_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func OrganizationRunTask_IsConstruct(x interface{}) *bool {
+func OrganizationRunTask_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOrganizationRunTask_IsConstructParameters(x); err != nil {
@@ -705,7 +704,7 @@ func OrganizationRunTask_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.organizationRunTask.OrganizationRunTask",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -713,7 +712,7 @@ func OrganizationRunTask_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func OrganizationRunTask_IsTerraformElement(x interface{}) *bool {
+func OrganizationRunTask_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOrganizationRunTask_IsTerraformElementParameters(x); err != nil {
@@ -724,7 +723,7 @@ func OrganizationRunTask_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.organizationRunTask.OrganizationRunTask",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -732,7 +731,7 @@ func OrganizationRunTask_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func OrganizationRunTask_IsTerraformResource(x interface{}) *bool {
+func OrganizationRunTask_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOrganizationRunTask_IsTerraformResourceParameters(x); err != nil {
@@ -743,7 +742,7 @@ func OrganizationRunTask_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.organizationRunTask.OrganizationRunTask",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -768,31 +767,31 @@ func (o *jsiiProxy_OrganizationRunTask) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (o *jsiiProxy_OrganizationRunTask) AddOverride(path *string, value interface{}) {
+func (o *jsiiProxy_OrganizationRunTask) AddOverride(path *string, value any) {
 	if err := o.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (o *jsiiProxy_OrganizationRunTask) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OrganizationRunTask) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -808,7 +807,7 @@ func (o *jsiiProxy_OrganizationRunTask) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -824,7 +823,7 @@ func (o *jsiiProxy_OrganizationRunTask) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -840,7 +839,7 @@ func (o *jsiiProxy_OrganizationRunTask) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -856,7 +855,7 @@ func (o *jsiiProxy_OrganizationRunTask) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -872,7 +871,7 @@ func (o *jsiiProxy_OrganizationRunTask) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -888,7 +887,7 @@ func (o *jsiiProxy_OrganizationRunTask) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -904,7 +903,7 @@ func (o *jsiiProxy_OrganizationRunTask) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -920,15 +919,15 @@ func (o *jsiiProxy_OrganizationRunTask) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (o *jsiiProxy_OrganizationRunTask) HasResourceMove() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OrganizationRunTask) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -947,7 +946,7 @@ func (o *jsiiProxy_OrganizationRunTask) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		o,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -960,7 +959,7 @@ func (o *jsiiProxy_OrganizationRunTask) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -974,18 +973,18 @@ func (o *jsiiProxy_OrganizationRunTask) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (o *jsiiProxy_OrganizationRunTask) MoveTo(moveTarget *string, index interface{}) {
+func (o *jsiiProxy_OrganizationRunTask) MoveTo(moveTarget *string, index any) {
 	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -996,7 +995,7 @@ func (o *jsiiProxy_OrganizationRunTask) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1007,7 +1006,7 @@ func (o *jsiiProxy_OrganizationRunTask) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		o,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1067,8 +1066,8 @@ func (o *jsiiProxy_OrganizationRunTask) ResetOverrideLogicalId() {
 	)
 }
 
-func (o *jsiiProxy_OrganizationRunTask) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OrganizationRunTask) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1080,8 +1079,8 @@ func (o *jsiiProxy_OrganizationRunTask) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (o *jsiiProxy_OrganizationRunTask) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OrganizationRunTask) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1093,8 +1092,8 @@ func (o *jsiiProxy_OrganizationRunTask) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (o *jsiiProxy_OrganizationRunTask) ToHclTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OrganizationRunTask) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1106,8 +1105,8 @@ func (o *jsiiProxy_OrganizationRunTask) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (o *jsiiProxy_OrganizationRunTask) ToMetadata() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OrganizationRunTask) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1132,8 +1131,8 @@ func (o *jsiiProxy_OrganizationRunTask) ToString() *string {
 	return returns
 }
 
-func (o *jsiiProxy_OrganizationRunTask) ToTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OrganizationRunTask) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1144,4 +1143,3 @@ func (o *jsiiProxy_OrganizationRunTask) ToTerraform() interface{} {
 
 	return returns
 }
-

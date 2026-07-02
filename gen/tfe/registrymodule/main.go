@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.registryModule.RegistryModule",
-		reflect.TypeOf((*RegistryModule)(nil)).Elem(),
+		reflect.TypeFor[RegistryModule](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vcsRepo", GoGetter: "VcsRepo"},
 			_jsii_.MemberProperty{JsiiProperty: "vcsRepoInput", GoGetter: "VcsRepoInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RegistryModule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,15 +86,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.registryModule.RegistryModuleConfig",
-		reflect.TypeOf((*RegistryModuleConfig)(nil)).Elem(),
+		reflect.TypeFor[RegistryModuleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepo",
-		reflect.TypeOf((*RegistryModuleVcsRepo)(nil)).Elem(),
+		reflect.TypeFor[RegistryModuleVcsRepo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepoOutputReference",
-		reflect.TypeOf((*RegistryModuleVcsRepoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RegistryModuleVcsRepoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -128,7 +128,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RegistryModuleVcsRepoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

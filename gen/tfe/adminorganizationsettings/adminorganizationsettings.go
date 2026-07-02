@@ -12,21 +12,21 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/admin_organization_settings tfe_admin_organization_settings}.
 type AdminOrganizationSettings interface {
 	cdktf.TerraformResource
-	AccessBetaTools() interface{}
-	SetAccessBetaTools(val interface{})
-	AccessBetaToolsInput() interface{}
+	AccessBetaTools() any
+	SetAccessBetaTools(val any)
+	AccessBetaToolsInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -39,9 +39,9 @@ type AdminOrganizationSettings interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	GlobalModuleSharing() interface{}
-	SetGlobalModuleSharing(val interface{})
-	GlobalModuleSharingInput() interface{}
+	GlobalModuleSharing() any
+	SetGlobalModuleSharing(val any)
+	GlobalModuleSharingInput() any
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -62,16 +62,16 @@ type AdminOrganizationSettings interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SsoEnabled() cdktf.IResolvable
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	WorkspaceLimit() *float64
@@ -81,9 +81,9 @@ type AdminOrganizationSettings interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -101,7 +101,7 @@ type AdminOrganizationSettings interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -113,7 +113,7 @@ type AdminOrganizationSettings interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -129,17 +129,17 @@ type AdminOrganizationSettings interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetWorkspaceLimit()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AdminOrganizationSettings
@@ -147,8 +147,8 @@ type jsiiProxy_AdminOrganizationSettings struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_AdminOrganizationSettings) AccessBetaTools() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AdminOrganizationSettings) AccessBetaTools() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"accessBetaTools",
@@ -157,8 +157,8 @@ func (j *jsiiProxy_AdminOrganizationSettings) AccessBetaTools() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AdminOrganizationSettings) AccessBetaToolsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AdminOrganizationSettings) AccessBetaToolsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"accessBetaToolsInput",
@@ -177,8 +177,8 @@ func (j *jsiiProxy_AdminOrganizationSettings) CdktfStack() cdktf.TerraformStack 
 	return returns
 }
 
-func (j *jsiiProxy_AdminOrganizationSettings) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AdminOrganizationSettings) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_AdminOrganizationSettings) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AdminOrganizationSettings) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AdminOrganizationSettings) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -197,8 +197,8 @@ func (j *jsiiProxy_AdminOrganizationSettings) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_AdminOrganizationSettings) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AdminOrganizationSettings) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -247,8 +247,8 @@ func (j *jsiiProxy_AdminOrganizationSettings) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AdminOrganizationSettings) GlobalModuleSharing() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AdminOrganizationSettings) GlobalModuleSharing() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"globalModuleSharing",
@@ -257,8 +257,8 @@ func (j *jsiiProxy_AdminOrganizationSettings) GlobalModuleSharing() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_AdminOrganizationSettings) GlobalModuleSharingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AdminOrganizationSettings) GlobalModuleSharingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"globalModuleSharingInput",
@@ -357,8 +357,8 @@ func (j *jsiiProxy_AdminOrganizationSettings) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_AdminOrganizationSettings) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AdminOrganizationSettings) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -367,8 +367,8 @@ func (j *jsiiProxy_AdminOrganizationSettings) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AdminOrganizationSettings) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AdminOrganizationSettings) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -397,8 +397,8 @@ func (j *jsiiProxy_AdminOrganizationSettings) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_AdminOrganizationSettings) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AdminOrganizationSettings) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -437,7 +437,6 @@ func (j *jsiiProxy_AdminOrganizationSettings) WorkspaceLimitInput() *float64 {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.43.0/docs/resources/admin_organization_settings tfe_admin_organization_settings} Resource.
 func NewAdminOrganizationSettings(scope constructs.Construct, id *string, config *AdminOrganizationSettingsConfig) AdminOrganizationSettings {
 	_init_.Initialize()
@@ -449,7 +448,7 @@ func NewAdminOrganizationSettings(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -462,12 +461,12 @@ func NewAdminOrganizationSettings_Override(a AdminOrganizationSettings, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AdminOrganizationSettings)SetAccessBetaTools(val interface{}) {
+func (j *jsiiProxy_AdminOrganizationSettings) SetAccessBetaTools(val any) {
 	if err := j.validateSetAccessBetaToolsParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_AdminOrganizationSettings)SetAccessBetaTools(val interface{})
 	)
 }
 
-func (j *jsiiProxy_AdminOrganizationSettings)SetConnection(val interface{}) {
+func (j *jsiiProxy_AdminOrganizationSettings) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_AdminOrganizationSettings)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AdminOrganizationSettings)SetCount(val interface{}) {
+func (j *jsiiProxy_AdminOrganizationSettings) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_AdminOrganizationSettings)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AdminOrganizationSettings)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AdminOrganizationSettings) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -508,7 +507,7 @@ func (j *jsiiProxy_AdminOrganizationSettings)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AdminOrganizationSettings)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AdminOrganizationSettings) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -516,7 +515,7 @@ func (j *jsiiProxy_AdminOrganizationSettings)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_AdminOrganizationSettings)SetGlobalModuleSharing(val interface{}) {
+func (j *jsiiProxy_AdminOrganizationSettings) SetGlobalModuleSharing(val any) {
 	if err := j.validateSetGlobalModuleSharingParameters(val); err != nil {
 		panic(err)
 	}
@@ -527,7 +526,7 @@ func (j *jsiiProxy_AdminOrganizationSettings)SetGlobalModuleSharing(val interfac
 	)
 }
 
-func (j *jsiiProxy_AdminOrganizationSettings)SetId(val *string) {
+func (j *jsiiProxy_AdminOrganizationSettings) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -538,7 +537,7 @@ func (j *jsiiProxy_AdminOrganizationSettings)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AdminOrganizationSettings)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AdminOrganizationSettings) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -549,7 +548,7 @@ func (j *jsiiProxy_AdminOrganizationSettings)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_AdminOrganizationSettings)SetModuleSharingConsumerOrganizations(val *[]*string) {
+func (j *jsiiProxy_AdminOrganizationSettings) SetModuleSharingConsumerOrganizations(val *[]*string) {
 	if err := j.validateSetModuleSharingConsumerOrganizationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -560,7 +559,7 @@ func (j *jsiiProxy_AdminOrganizationSettings)SetModuleSharingConsumerOrganizatio
 	)
 }
 
-func (j *jsiiProxy_AdminOrganizationSettings)SetOrganization(val *string) {
+func (j *jsiiProxy_AdminOrganizationSettings) SetOrganization(val *string) {
 	if err := j.validateSetOrganizationParameters(val); err != nil {
 		panic(err)
 	}
@@ -571,7 +570,7 @@ func (j *jsiiProxy_AdminOrganizationSettings)SetOrganization(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AdminOrganizationSettings)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AdminOrganizationSettings) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -579,7 +578,7 @@ func (j *jsiiProxy_AdminOrganizationSettings)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_AdminOrganizationSettings)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AdminOrganizationSettings) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -590,7 +589,7 @@ func (j *jsiiProxy_AdminOrganizationSettings)SetProvisioners(val *[]interface{})
 	)
 }
 
-func (j *jsiiProxy_AdminOrganizationSettings)SetWorkspaceLimit(val *float64) {
+func (j *jsiiProxy_AdminOrganizationSettings) SetWorkspaceLimit(val *float64) {
 	if err := j.validateSetWorkspaceLimitParameters(val); err != nil {
 		panic(err)
 	}
@@ -613,7 +612,7 @@ func AdminOrganizationSettings_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -637,7 +636,7 @@ func AdminOrganizationSettings_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AdminOrganizationSettings_IsConstruct(x interface{}) *bool {
+func AdminOrganizationSettings_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAdminOrganizationSettings_IsConstructParameters(x); err != nil {
@@ -648,7 +647,7 @@ func AdminOrganizationSettings_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -656,7 +655,7 @@ func AdminOrganizationSettings_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AdminOrganizationSettings_IsTerraformElement(x interface{}) *bool {
+func AdminOrganizationSettings_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAdminOrganizationSettings_IsTerraformElementParameters(x); err != nil {
@@ -667,7 +666,7 @@ func AdminOrganizationSettings_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -675,7 +674,7 @@ func AdminOrganizationSettings_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AdminOrganizationSettings_IsTerraformResource(x interface{}) *bool {
+func AdminOrganizationSettings_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAdminOrganizationSettings_IsTerraformResourceParameters(x); err != nil {
@@ -686,7 +685,7 @@ func AdminOrganizationSettings_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -711,31 +710,31 @@ func (a *jsiiProxy_AdminOrganizationSettings) AddMoveTarget(moveTarget *string) 
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AdminOrganizationSettings) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AdminOrganizationSettings) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AdminOrganizationSettings) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AdminOrganizationSettings) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -751,7 +750,7 @@ func (a *jsiiProxy_AdminOrganizationSettings) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -767,7 +766,7 @@ func (a *jsiiProxy_AdminOrganizationSettings) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -783,7 +782,7 @@ func (a *jsiiProxy_AdminOrganizationSettings) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,7 +798,7 @@ func (a *jsiiProxy_AdminOrganizationSettings) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -815,7 +814,7 @@ func (a *jsiiProxy_AdminOrganizationSettings) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -831,7 +830,7 @@ func (a *jsiiProxy_AdminOrganizationSettings) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -847,7 +846,7 @@ func (a *jsiiProxy_AdminOrganizationSettings) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -863,15 +862,15 @@ func (a *jsiiProxy_AdminOrganizationSettings) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AdminOrganizationSettings) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AdminOrganizationSettings) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -890,7 +889,7 @@ func (a *jsiiProxy_AdminOrganizationSettings) ImportFrom(id *string, provider cd
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -903,7 +902,7 @@ func (a *jsiiProxy_AdminOrganizationSettings) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -917,18 +916,18 @@ func (a *jsiiProxy_AdminOrganizationSettings) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AdminOrganizationSettings) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AdminOrganizationSettings) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -939,7 +938,7 @@ func (a *jsiiProxy_AdminOrganizationSettings) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -950,7 +949,7 @@ func (a *jsiiProxy_AdminOrganizationSettings) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1010,8 +1009,8 @@ func (a *jsiiProxy_AdminOrganizationSettings) ResetWorkspaceLimit() {
 	)
 }
 
-func (a *jsiiProxy_AdminOrganizationSettings) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AdminOrganizationSettings) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1023,8 +1022,8 @@ func (a *jsiiProxy_AdminOrganizationSettings) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (a *jsiiProxy_AdminOrganizationSettings) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AdminOrganizationSettings) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1036,8 +1035,8 @@ func (a *jsiiProxy_AdminOrganizationSettings) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (a *jsiiProxy_AdminOrganizationSettings) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AdminOrganizationSettings) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1049,8 +1048,8 @@ func (a *jsiiProxy_AdminOrganizationSettings) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AdminOrganizationSettings) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AdminOrganizationSettings) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1075,8 +1074,8 @@ func (a *jsiiProxy_AdminOrganizationSettings) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AdminOrganizationSettings) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AdminOrganizationSettings) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1087,4 +1086,3 @@ func (a *jsiiProxy_AdminOrganizationSettings) ToTerraform() interface{} {
 
 	return returns
 }
-

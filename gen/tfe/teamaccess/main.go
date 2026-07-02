@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.teamAccess.TeamAccess",
-		reflect.TypeOf((*TeamAccess)(nil)).Elem(),
+		reflect.TypeFor[TeamAccess](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "access", GoGetter: "Access"},
 			_jsii_.MemberProperty{JsiiProperty: "accessInput", GoGetter: "AccessInput"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workspaceId", GoGetter: "WorkspaceId"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceIdInput", GoGetter: "WorkspaceIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TeamAccess{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -75,15 +75,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.teamAccess.TeamAccessConfig",
-		reflect.TypeOf((*TeamAccessConfig)(nil)).Elem(),
+		reflect.TypeFor[TeamAccessConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.teamAccess.TeamAccessPermissions",
-		reflect.TypeOf((*TeamAccessPermissions)(nil)).Elem(),
+		reflect.TypeFor[TeamAccessPermissions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.teamAccess.TeamAccessPermissionsList",
-		reflect.TypeOf((*TeamAccessPermissionsList)(nil)).Elem(),
+		reflect.TypeFor[TeamAccessPermissionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -97,7 +97,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TeamAccessPermissionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -105,7 +105,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.teamAccess.TeamAccessPermissionsOutputReference",
-		reflect.TypeOf((*TeamAccessPermissionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TeamAccessPermissionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -141,7 +141,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workspaceLocking", GoGetter: "WorkspaceLocking"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceLockingInput", GoGetter: "WorkspaceLockingInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TeamAccessPermissionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
