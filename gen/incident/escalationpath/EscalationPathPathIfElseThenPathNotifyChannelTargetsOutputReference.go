@@ -12,9 +12,9 @@ type EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference interfa
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference interfa
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	ScheduleMode() *string
 	SetScheduleMode(val *string)
 	ScheduleModeInput() *string
@@ -52,7 +52,7 @@ type EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference interfa
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -76,7 +76,7 @@ type EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference interfa
 	ResetScheduleMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,8 +89,8 @@ type jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReferen
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -149,8 +149,8 @@ func (j *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -239,7 +239,6 @@ func (j *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputRef
 	return returns
 }
 
-
 func NewEscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference {
 	_init_.Initialize()
 
@@ -250,7 +249,7 @@ func NewEscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference(terr
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -262,12 +261,12 @@ func NewEscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference_Over
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputRef
 	)
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputRef
 	)
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference)SetId(val *string) {
+func (j *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputRef
 	)
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputRef
 	)
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference)SetScheduleMode(val *string) {
+func (j *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference) SetScheduleMode(val *string) {
 	if err := j.validateSetScheduleModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputRef
 	)
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -333,7 +332,7 @@ func (j *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputRef
 	)
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -344,7 +343,7 @@ func (j *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputRef
 	)
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference)SetType(val *string) {
+func (j *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -355,7 +354,7 @@ func (j *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputRef
 	)
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference)SetUrgency(val *string) {
+func (j *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference) SetUrgency(val *string) {
 	if err := j.validateSetUrgencyParameters(val); err != nil {
 		panic(err)
 	}
@@ -379,16 +378,16 @@ func (e *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputRef
 	return returns
 }
 
-func (e *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputRef
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputRef
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputRef
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputRef
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputRef
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputRef
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -500,7 +499,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputRef
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -516,7 +515,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputRef
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -545,7 +544,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputRef
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -560,16 +559,16 @@ func (e *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputRef
 	)
 }
 
-func (e *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -588,4 +587,3 @@ func (e *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputRef
 
 	return returns
 }
-

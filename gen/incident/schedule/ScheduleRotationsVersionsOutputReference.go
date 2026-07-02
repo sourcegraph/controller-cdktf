@@ -12,9 +12,9 @@ type ScheduleRotationsVersionsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -31,14 +31,14 @@ type ScheduleRotationsVersionsOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	Handovers() ScheduleRotationsVersionsHandoversList
-	HandoversInput() interface{}
+	HandoversInput() any
 	HandoverStartAt() *string
 	SetHandoverStartAt(val *string)
 	HandoverStartAtInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Layers() ScheduleRotationsVersionsLayersList
-	LayersInput() interface{}
+	LayersInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -51,11 +51,11 @@ type ScheduleRotationsVersionsOutputReference interface {
 	SetUsers(val *[]*string)
 	UsersInput() *[]*string
 	WorkingIntervals() ScheduleRotationsVersionsWorkingIntervalsList
-	WorkingIntervalsInput() interface{}
+	WorkingIntervalsInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -76,14 +76,14 @@ type ScheduleRotationsVersionsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutHandovers(value interface{})
-	PutLayers(value interface{})
-	PutWorkingIntervals(value interface{})
+	PutHandovers(value any)
+	PutLayers(value any)
+	PutWorkingIntervals(value any)
 	ResetEffectiveFrom()
 	ResetWorkingIntervals()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ type jsiiProxy_ScheduleRotationsVersionsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference) Handovers() Schedul
 	return returns
 }
 
-func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference) HandoversInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference) HandoversInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"handoversInput",
@@ -196,8 +196,8 @@ func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference) HandoverStartAtInpu
 	return returns
 }
 
-func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference) Layers() ScheduleRo
 	return returns
 }
 
-func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference) LayersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference) LayersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"layersInput",
@@ -276,8 +276,8 @@ func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference) WorkingIntervals() 
 	return returns
 }
 
-func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference) WorkingIntervalsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference) WorkingIntervalsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"workingIntervalsInput",
@@ -285,7 +285,6 @@ func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference) WorkingIntervalsInp
 	)
 	return returns
 }
-
 
 func NewScheduleRotationsVersionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ScheduleRotationsVersionsOutputReference {
 	_init_.Initialize()
@@ -297,7 +296,7 @@ func NewScheduleRotationsVersionsOutputReference(terraformResource cdktf.IInterp
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.schedule.ScheduleRotationsVersionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -309,12 +308,12 @@ func NewScheduleRotationsVersionsOutputReference_Override(s ScheduleRotationsVer
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.schedule.ScheduleRotationsVersionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference)SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference)SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference)SetEffectiveFrom(val *string) {
+func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference) SetEffectiveFrom(val *string) {
 	if err := j.validateSetEffectiveFromParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference)SetEffectiveFrom(val
 	)
 }
 
-func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference)SetHandoverStartAt(val *string) {
+func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference) SetHandoverStartAt(val *string) {
 	if err := j.validateSetHandoverStartAtParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference)SetHandoverStartAt(v
 	)
 }
 
-func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -369,7 +368,7 @@ func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,7 +379,7 @@ func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -391,7 +390,7 @@ func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference)SetTerraformResource
 	)
 }
 
-func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference)SetUsers(val *[]*string) {
+func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference) SetUsers(val *[]*string) {
 	if err := j.validateSetUsersParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,16 +414,16 @@ func (s *jsiiProxy_ScheduleRotationsVersionsOutputReference) ComputeFqn() *strin
 	return returns
 }
 
-func (s *jsiiProxy_ScheduleRotationsVersionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_ScheduleRotationsVersionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -440,7 +439,7 @@ func (s *jsiiProxy_ScheduleRotationsVersionsOutputReference) GetBooleanAttribute
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,7 +455,7 @@ func (s *jsiiProxy_ScheduleRotationsVersionsOutputReference) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -472,7 +471,7 @@ func (s *jsiiProxy_ScheduleRotationsVersionsOutputReference) GetListAttribute(te
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -488,7 +487,7 @@ func (s *jsiiProxy_ScheduleRotationsVersionsOutputReference) GetNumberAttribute(
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -504,7 +503,7 @@ func (s *jsiiProxy_ScheduleRotationsVersionsOutputReference) GetNumberListAttrib
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -520,7 +519,7 @@ func (s *jsiiProxy_ScheduleRotationsVersionsOutputReference) GetNumberMapAttribu
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -536,7 +535,7 @@ func (s *jsiiProxy_ScheduleRotationsVersionsOutputReference) GetStringAttribute(
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -552,7 +551,7 @@ func (s *jsiiProxy_ScheduleRotationsVersionsOutputReference) GetStringMapAttribu
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -581,43 +580,43 @@ func (s *jsiiProxy_ScheduleRotationsVersionsOutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_ScheduleRotationsVersionsOutputReference) PutHandovers(value interface{}) {
+func (s *jsiiProxy_ScheduleRotationsVersionsOutputReference) PutHandovers(value any) {
 	if err := s.validatePutHandoversParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putHandovers",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_ScheduleRotationsVersionsOutputReference) PutLayers(value interface{}) {
+func (s *jsiiProxy_ScheduleRotationsVersionsOutputReference) PutLayers(value any) {
 	if err := s.validatePutLayersParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putLayers",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_ScheduleRotationsVersionsOutputReference) PutWorkingIntervals(value interface{}) {
+func (s *jsiiProxy_ScheduleRotationsVersionsOutputReference) PutWorkingIntervals(value any) {
 	if err := s.validatePutWorkingIntervalsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putWorkingIntervals",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -637,16 +636,16 @@ func (s *jsiiProxy_ScheduleRotationsVersionsOutputReference) ResetWorkingInterva
 	)
 }
 
-func (s *jsiiProxy_ScheduleRotationsVersionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_ScheduleRotationsVersionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -665,4 +664,3 @@ func (s *jsiiProxy_ScheduleRotationsVersionsOutputReference) ToString() *string 
 
 	return returns
 }
-

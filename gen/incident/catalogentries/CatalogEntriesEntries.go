@@ -1,9 +1,8 @@
 package catalogentries
 
-
 type CatalogEntriesEntries struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/catalog_entries#attribute_values CatalogEntries#attribute_values}.
-	AttributeValues interface{} `field:"required" json:"attributeValues" yaml:"attributeValues"`
+	AttributeValues any `field:"required" json:"attributeValues" yaml:"attributeValues"`
 	// Name is the human readable name of this entry.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/catalog_entries#name CatalogEntries#name}
@@ -17,4 +16,3 @@ type CatalogEntriesEntries struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/catalog_entries#rank CatalogEntries#rank}
 	Rank *float64 `field:"optional" json:"rank" yaml:"rank"`
 }
-

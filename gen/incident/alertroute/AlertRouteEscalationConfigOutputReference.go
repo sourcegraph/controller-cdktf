@@ -10,14 +10,14 @@ import (
 
 type AlertRouteEscalationConfigOutputReference interface {
 	cdktf.ComplexObject
-	AutoCancelEscalations() interface{}
-	SetAutoCancelEscalations(val interface{})
-	AutoCancelEscalationsInput() interface{}
+	AutoCancelEscalations() any
+	SetAutoCancelEscalations(val any)
+	AutoCancelEscalationsInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,11 +29,11 @@ type AlertRouteEscalationConfigOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	EscalationTargets() AlertRouteEscalationConfigEscalationTargetsList
-	EscalationTargetsInput() interface{}
+	EscalationTargetsInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -45,7 +45,7 @@ type AlertRouteEscalationConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,10 +66,10 @@ type AlertRouteEscalationConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutEscalationTargets(value interface{})
+	PutEscalationTargets(value any)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,8 +82,8 @@ type jsiiProxy_AlertRouteEscalationConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AlertRouteEscalationConfigOutputReference) AutoCancelEscalations() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertRouteEscalationConfigOutputReference) AutoCancelEscalations() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoCancelEscalations",
@@ -92,8 +92,8 @@ func (j *jsiiProxy_AlertRouteEscalationConfigOutputReference) AutoCancelEscalati
 	return returns
 }
 
-func (j *jsiiProxy_AlertRouteEscalationConfigOutputReference) AutoCancelEscalationsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertRouteEscalationConfigOutputReference) AutoCancelEscalationsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoCancelEscalationsInput",
@@ -102,8 +102,8 @@ func (j *jsiiProxy_AlertRouteEscalationConfigOutputReference) AutoCancelEscalati
 	return returns
 }
 
-func (j *jsiiProxy_AlertRouteEscalationConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertRouteEscalationConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -142,8 +142,8 @@ func (j *jsiiProxy_AlertRouteEscalationConfigOutputReference) EscalationTargets(
 	return returns
 }
 
-func (j *jsiiProxy_AlertRouteEscalationConfigOutputReference) EscalationTargetsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertRouteEscalationConfigOutputReference) EscalationTargetsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"escalationTargetsInput",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_AlertRouteEscalationConfigOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AlertRouteEscalationConfigOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertRouteEscalationConfigOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_AlertRouteEscalationConfigOutputReference) TerraformResource(
 	return returns
 }
 
-
 func NewAlertRouteEscalationConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AlertRouteEscalationConfigOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewAlertRouteEscalationConfigOutputReference(terraformResource cdktf.IInter
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.alertRoute.AlertRouteEscalationConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewAlertRouteEscalationConfigOutputReference_Override(a AlertRouteEscalatio
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.alertRoute.AlertRouteEscalationConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AlertRouteEscalationConfigOutputReference)SetAutoCancelEscalations(val interface{}) {
+func (j *jsiiProxy_AlertRouteEscalationConfigOutputReference) SetAutoCancelEscalations(val any) {
 	if err := j.validateSetAutoCancelEscalationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_AlertRouteEscalationConfigOutputReference)SetAutoCancelEscala
 	)
 }
 
-func (j *jsiiProxy_AlertRouteEscalationConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AlertRouteEscalationConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_AlertRouteEscalationConfigOutputReference)SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_AlertRouteEscalationConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AlertRouteEscalationConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_AlertRouteEscalationConfigOutputReference)SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_AlertRouteEscalationConfigOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AlertRouteEscalationConfigOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_AlertRouteEscalationConfigOutputReference)SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_AlertRouteEscalationConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AlertRouteEscalationConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_AlertRouteEscalationConfigOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_AlertRouteEscalationConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AlertRouteEscalationConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,16 +298,16 @@ func (a *jsiiProxy_AlertRouteEscalationConfigOutputReference) ComputeFqn() *stri
 	return returns
 }
 
-func (a *jsiiProxy_AlertRouteEscalationConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AlertRouteEscalationConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -324,7 +323,7 @@ func (a *jsiiProxy_AlertRouteEscalationConfigOutputReference) GetBooleanAttribut
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -340,7 +339,7 @@ func (a *jsiiProxy_AlertRouteEscalationConfigOutputReference) GetBooleanMapAttri
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -356,7 +355,7 @@ func (a *jsiiProxy_AlertRouteEscalationConfigOutputReference) GetListAttribute(t
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (a *jsiiProxy_AlertRouteEscalationConfigOutputReference) GetNumberAttribute
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (a *jsiiProxy_AlertRouteEscalationConfigOutputReference) GetNumberListAttri
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (a *jsiiProxy_AlertRouteEscalationConfigOutputReference) GetNumberMapAttrib
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (a *jsiiProxy_AlertRouteEscalationConfigOutputReference) GetStringAttribute
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (a *jsiiProxy_AlertRouteEscalationConfigOutputReference) GetStringMapAttrib
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -465,34 +464,34 @@ func (a *jsiiProxy_AlertRouteEscalationConfigOutputReference) InterpolationForAt
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AlertRouteEscalationConfigOutputReference) PutEscalationTargets(value interface{}) {
+func (a *jsiiProxy_AlertRouteEscalationConfigOutputReference) PutEscalationTargets(value any) {
 	if err := a.validatePutEscalationTargetsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putEscalationTargets",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (a *jsiiProxy_AlertRouteEscalationConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AlertRouteEscalationConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -511,4 +510,3 @@ func (a *jsiiProxy_AlertRouteEscalationConfigOutputReference) ToString() *string
 
 	return returns
 }
-

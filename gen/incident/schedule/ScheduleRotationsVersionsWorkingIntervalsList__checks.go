@@ -34,7 +34,7 @@ func (s *jsiiProxy_ScheduleRotationsVersionsWorkingIntervalsList) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_ScheduleRotationsVersionsWorkingIntervalsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ScheduleRotationsVersionsWorkingIntervalsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewScheduleRotationsVersionsWorkingIntervalsListParameters(terrafor
 
 	return nil
 }
-

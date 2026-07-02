@@ -15,11 +15,11 @@ type DataIncidentCustomFieldOption interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CustomFieldId() *string
 	SetCustomFieldId(val *string)
 	CustomFieldIdInput() *string
@@ -47,23 +47,23 @@ type DataIncidentCustomFieldOption interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SortKey() *float64
 	SetSortKey(val *float64)
 	SortKeyInput() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Value() *string
 	SetValue(val *string)
 	ValueInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -89,18 +89,18 @@ type DataIncidentCustomFieldOption interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSortKey()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataIncidentCustomFieldOption
@@ -118,8 +118,8 @@ func (j *jsiiProxy_DataIncidentCustomFieldOption) CdktfStack() cdktf.TerraformSt
 	return returns
 }
 
-func (j *jsiiProxy_DataIncidentCustomFieldOption) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataIncidentCustomFieldOption) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -128,8 +128,8 @@ func (j *jsiiProxy_DataIncidentCustomFieldOption) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_DataIncidentCustomFieldOption) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataIncidentCustomFieldOption) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -238,8 +238,8 @@ func (j *jsiiProxy_DataIncidentCustomFieldOption) Provider() cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_DataIncidentCustomFieldOption) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataIncidentCustomFieldOption) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -278,8 +278,8 @@ func (j *jsiiProxy_DataIncidentCustomFieldOption) TerraformGeneratorMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_DataIncidentCustomFieldOption) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataIncidentCustomFieldOption) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -318,7 +318,6 @@ func (j *jsiiProxy_DataIncidentCustomFieldOption) ValueInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/data-sources/custom_field_option incident_custom_field_option} Data Source.
 func NewDataIncidentCustomFieldOption(scope constructs.Construct, id *string, config *DataIncidentCustomFieldOptionConfig) DataIncidentCustomFieldOption {
 	_init_.Initialize()
@@ -330,7 +329,7 @@ func NewDataIncidentCustomFieldOption(scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.dataIncidentCustomFieldOption.DataIncidentCustomFieldOption",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -343,12 +342,12 @@ func NewDataIncidentCustomFieldOption_Override(d DataIncidentCustomFieldOption, 
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.dataIncidentCustomFieldOption.DataIncidentCustomFieldOption",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataIncidentCustomFieldOption)SetCount(val interface{}) {
+func (j *jsiiProxy_DataIncidentCustomFieldOption) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,7 +358,7 @@ func (j *jsiiProxy_DataIncidentCustomFieldOption)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataIncidentCustomFieldOption)SetCustomFieldId(val *string) {
+func (j *jsiiProxy_DataIncidentCustomFieldOption) SetCustomFieldId(val *string) {
 	if err := j.validateSetCustomFieldIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,7 +369,7 @@ func (j *jsiiProxy_DataIncidentCustomFieldOption)SetCustomFieldId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataIncidentCustomFieldOption)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataIncidentCustomFieldOption) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -378,7 +377,7 @@ func (j *jsiiProxy_DataIncidentCustomFieldOption)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataIncidentCustomFieldOption)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataIncidentCustomFieldOption) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -386,7 +385,7 @@ func (j *jsiiProxy_DataIncidentCustomFieldOption)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_DataIncidentCustomFieldOption)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataIncidentCustomFieldOption) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +396,7 @@ func (j *jsiiProxy_DataIncidentCustomFieldOption)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_DataIncidentCustomFieldOption)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataIncidentCustomFieldOption) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -405,7 +404,7 @@ func (j *jsiiProxy_DataIncidentCustomFieldOption)SetProvider(val cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_DataIncidentCustomFieldOption)SetSortKey(val *float64) {
+func (j *jsiiProxy_DataIncidentCustomFieldOption) SetSortKey(val *float64) {
 	if err := j.validateSetSortKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,7 +415,7 @@ func (j *jsiiProxy_DataIncidentCustomFieldOption)SetSortKey(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataIncidentCustomFieldOption)SetValue(val *string) {
+func (j *jsiiProxy_DataIncidentCustomFieldOption) SetValue(val *string) {
 	if err := j.validateSetValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -439,7 +438,7 @@ func DataIncidentCustomFieldOption_GenerateConfigForImport(scope constructs.Cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-incident.dataIncidentCustomFieldOption.DataIncidentCustomFieldOption",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -463,7 +462,7 @@ func DataIncidentCustomFieldOption_GenerateConfigForImport(scope constructs.Cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataIncidentCustomFieldOption_IsConstruct(x interface{}) *bool {
+func DataIncidentCustomFieldOption_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataIncidentCustomFieldOption_IsConstructParameters(x); err != nil {
@@ -474,7 +473,7 @@ func DataIncidentCustomFieldOption_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-incident.dataIncidentCustomFieldOption.DataIncidentCustomFieldOption",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func DataIncidentCustomFieldOption_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataIncidentCustomFieldOption_IsTerraformDataSource(x interface{}) *bool {
+func DataIncidentCustomFieldOption_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataIncidentCustomFieldOption_IsTerraformDataSourceParameters(x); err != nil {
@@ -493,7 +492,7 @@ func DataIncidentCustomFieldOption_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-incident.dataIncidentCustomFieldOption.DataIncidentCustomFieldOption",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -501,7 +500,7 @@ func DataIncidentCustomFieldOption_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataIncidentCustomFieldOption_IsTerraformElement(x interface{}) *bool {
+func DataIncidentCustomFieldOption_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataIncidentCustomFieldOption_IsTerraformElementParameters(x); err != nil {
@@ -512,7 +511,7 @@ func DataIncidentCustomFieldOption_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-incident.dataIncidentCustomFieldOption.DataIncidentCustomFieldOption",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -530,27 +529,27 @@ func DataIncidentCustomFieldOption_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataIncidentCustomFieldOption) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataIncidentCustomFieldOption) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataIncidentCustomFieldOption) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataIncidentCustomFieldOption) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -566,7 +565,7 @@ func (d *jsiiProxy_DataIncidentCustomFieldOption) GetBooleanAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func (d *jsiiProxy_DataIncidentCustomFieldOption) GetBooleanMapAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -598,7 +597,7 @@ func (d *jsiiProxy_DataIncidentCustomFieldOption) GetListAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -614,7 +613,7 @@ func (d *jsiiProxy_DataIncidentCustomFieldOption) GetNumberAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -630,7 +629,7 @@ func (d *jsiiProxy_DataIncidentCustomFieldOption) GetNumberListAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func (d *jsiiProxy_DataIncidentCustomFieldOption) GetNumberMapAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func (d *jsiiProxy_DataIncidentCustomFieldOption) GetStringAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func (d *jsiiProxy_DataIncidentCustomFieldOption) GetStringMapAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func (d *jsiiProxy_DataIncidentCustomFieldOption) InterpolationForAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -708,7 +707,7 @@ func (d *jsiiProxy_DataIncidentCustomFieldOption) OverrideLogicalId(newLogicalId
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -728,8 +727,8 @@ func (d *jsiiProxy_DataIncidentCustomFieldOption) ResetSortKey() {
 	)
 }
 
-func (d *jsiiProxy_DataIncidentCustomFieldOption) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataIncidentCustomFieldOption) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -741,8 +740,8 @@ func (d *jsiiProxy_DataIncidentCustomFieldOption) SynthesizeAttributes() *map[st
 	return returns
 }
 
-func (d *jsiiProxy_DataIncidentCustomFieldOption) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataIncidentCustomFieldOption) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -754,8 +753,8 @@ func (d *jsiiProxy_DataIncidentCustomFieldOption) SynthesizeHclAttributes() *map
 	return returns
 }
 
-func (d *jsiiProxy_DataIncidentCustomFieldOption) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataIncidentCustomFieldOption) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -767,8 +766,8 @@ func (d *jsiiProxy_DataIncidentCustomFieldOption) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataIncidentCustomFieldOption) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataIncidentCustomFieldOption) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -793,8 +792,8 @@ func (d *jsiiProxy_DataIncidentCustomFieldOption) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataIncidentCustomFieldOption) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataIncidentCustomFieldOption) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -805,4 +804,3 @@ func (d *jsiiProxy_DataIncidentCustomFieldOption) ToTerraform() interface{} {
 
 	return returns
 }
-

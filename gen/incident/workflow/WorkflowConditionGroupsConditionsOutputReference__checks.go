@@ -90,7 +90,7 @@ func (w *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) validateInt
 	return nil
 }
 
-func (w *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) validatePutParamBindingsParameters(value interface{}) error {
+func (w *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) validatePutParamBindingsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (w *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -269,4 +269,3 @@ func validateNewWorkflowConditionGroupsConditionsOutputReferenceParameters(terra
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (w *jsiiProxy_WorkflowStepsParamBindingsArrayValueList) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_WorkflowStepsParamBindingsArrayValueList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkflowStepsParamBindingsArrayValueList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewWorkflowStepsParamBindingsArrayValueListParameters(terraformReso
 
 	return nil
 }
-

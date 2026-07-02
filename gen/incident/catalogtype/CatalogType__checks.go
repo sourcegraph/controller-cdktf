@@ -19,7 +19,7 @@ func (c *jsiiProxy_CatalogType) validateAddMoveTargetParameters(moveTarget *stri
 	return nil
 }
 
-func (c *jsiiProxy_CatalogType) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_CatalogType) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_CatalogType) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CatalogType) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_CatalogType) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateCatalogType_GenerateConfigForImportParameters(scope constructs.Cons
 	return nil
 }
 
-func validateCatalogType_IsConstructParameters(x interface{}) error {
+func validateCatalogType_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateCatalogType_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateCatalogType_IsTerraformElementParameters(x interface{}) error {
+func validateCatalogType_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateCatalogType_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateCatalogType_IsTerraformResourceParameters(x interface{}) error {
+func validateCatalogType_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_CatalogType) validateSetCategoriesParameters(val *[]*string) 
 	return nil
 }
 
-func (j *jsiiProxy_CatalogType) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_CatalogType) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_CatalogType) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
-func (j *jsiiProxy_CatalogType) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_CatalogType) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_CatalogType) validateSetNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_CatalogType) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_CatalogType) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -428,7 +428,7 @@ func (j *jsiiProxy_CatalogType) validateSetTypeNameParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_CatalogType) validateSetUseNameAsIdentifierParameters(val interface{}) error {
+func (j *jsiiProxy_CatalogType) validateSetUseNameAsIdentifierParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -466,4 +466,3 @@ func validateNewCatalogTypeParameters(scope constructs.Construct, id *string, co
 
 	return nil
 }
-

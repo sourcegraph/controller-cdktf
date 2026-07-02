@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.catalogTypeAttribute.CatalogTypeAttribute",
-		reflect.TypeOf((*CatalogTypeAttribute)(nil)).Elem(),
+		reflect.TypeFor[CatalogTypeAttribute](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,7 +72,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CatalogTypeAttribute{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -80,6 +80,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.catalogTypeAttribute.CatalogTypeAttributeConfig",
-		reflect.TypeOf((*CatalogTypeAttributeConfig)(nil)).Elem(),
+		reflect.TypeFor[CatalogTypeAttributeConfig](),
 	)
 }

@@ -34,7 +34,7 @@ func (a *jsiiProxy_AlertSourceTemplateExpressionsOperationsFilterConditionGroups
 	return nil
 }
 
-func (j *jsiiProxy_AlertSourceTemplateExpressionsOperationsFilterConditionGroupsConditionsParamBindingsArrayValueList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlertSourceTemplateExpressionsOperationsFilterConditionGroupsConditionsParamBindingsArrayValueList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAlertSourceTemplateExpressionsOperationsFilterConditionGroupsCon
 
 	return nil
 }
-

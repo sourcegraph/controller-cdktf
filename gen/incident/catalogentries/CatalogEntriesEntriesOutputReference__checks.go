@@ -90,7 +90,7 @@ func (c *jsiiProxy_CatalogEntriesEntriesOutputReference) validateInterpolationFo
 	return nil
 }
 
-func (c *jsiiProxy_CatalogEntriesEntriesOutputReference) validatePutAttributeValuesParameters(value interface{}) error {
+func (c *jsiiProxy_CatalogEntriesEntriesOutputReference) validatePutAttributeValuesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -137,7 +137,7 @@ func (j *jsiiProxy_CatalogEntriesEntriesOutputReference) validateSetAliasesParam
 	return nil
 }
 
-func (j *jsiiProxy_CatalogEntriesEntriesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CatalogEntriesEntriesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -202,7 +202,7 @@ func (j *jsiiProxy_CatalogEntriesEntriesOutputReference) validateSetComplexObjec
 	return nil
 }
 
-func (j *jsiiProxy_CatalogEntriesEntriesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CatalogEntriesEntriesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -273,4 +273,3 @@ func validateNewCatalogEntriesEntriesOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

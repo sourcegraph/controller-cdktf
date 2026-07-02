@@ -90,7 +90,7 @@ func (a *jsiiProxy_AlertRouteChannelConfigConditionGroupsConditionsOutputReferen
 	return nil
 }
 
-func (a *jsiiProxy_AlertRouteChannelConfigConditionGroupsConditionsOutputReference) validatePutParamBindingsParameters(value interface{}) error {
+func (a *jsiiProxy_AlertRouteChannelConfigConditionGroupsConditionsOutputReference) validatePutParamBindingsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (a *jsiiProxy_AlertRouteChannelConfigConditionGroupsConditionsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteChannelConfigConditionGroupsConditionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRouteChannelConfigConditionGroupsConditionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_AlertRouteChannelConfigConditionGroupsConditionsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteChannelConfigConditionGroupsConditionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRouteChannelConfigConditionGroupsConditionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -269,4 +269,3 @@ func validateNewAlertRouteChannelConfigConditionGroupsConditionsOutputReferenceP
 
 	return nil
 }
-

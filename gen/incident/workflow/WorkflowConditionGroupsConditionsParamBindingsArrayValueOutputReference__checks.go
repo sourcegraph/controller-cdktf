@@ -98,7 +98,7 @@ func (w *jsiiProxy_WorkflowConditionGroupsConditionsParamBindingsArrayValueOutpu
 	return nil
 }
 
-func (j *jsiiProxy_WorkflowConditionGroupsConditionsParamBindingsArrayValueOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkflowConditionGroupsConditionsParamBindingsArrayValueOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_WorkflowConditionGroupsConditionsParamBindingsArrayValueOutpu
 	return nil
 }
 
-func (j *jsiiProxy_WorkflowConditionGroupsConditionsParamBindingsArrayValueOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkflowConditionGroupsConditionsParamBindingsArrayValueOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewWorkflowConditionGroupsConditionsParamBindingsArrayValueOutputRe
 
 	return nil
 }
-

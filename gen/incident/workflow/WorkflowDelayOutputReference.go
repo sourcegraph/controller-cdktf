@@ -12,17 +12,17 @@ type WorkflowDelayOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	ConditionsApplyOverDelay() interface{}
-	SetConditionsApplyOverDelay(val interface{})
-	ConditionsApplyOverDelayInput() interface{}
+	ConditionsApplyOverDelay() any
+	SetConditionsApplyOverDelay(val any)
+	ConditionsApplyOverDelayInput() any
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -33,8 +33,8 @@ type WorkflowDelayOutputReference interface {
 	ForSecondsInput() *float64
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type WorkflowDelayOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,7 +69,7 @@ type WorkflowDelayOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,8 +82,8 @@ type jsiiProxy_WorkflowDelayOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_WorkflowDelayOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkflowDelayOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -102,8 +102,8 @@ func (j *jsiiProxy_WorkflowDelayOutputReference) ComplexObjectIsFromSet() *bool 
 	return returns
 }
 
-func (j *jsiiProxy_WorkflowDelayOutputReference) ConditionsApplyOverDelay() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkflowDelayOutputReference) ConditionsApplyOverDelay() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"conditionsApplyOverDelay",
@@ -112,8 +112,8 @@ func (j *jsiiProxy_WorkflowDelayOutputReference) ConditionsApplyOverDelay() inte
 	return returns
 }
 
-func (j *jsiiProxy_WorkflowDelayOutputReference) ConditionsApplyOverDelayInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkflowDelayOutputReference) ConditionsApplyOverDelayInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"conditionsApplyOverDelayInput",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_WorkflowDelayOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkflowDelayOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkflowDelayOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_WorkflowDelayOutputReference) TerraformResource() cdktf.IInte
 	return returns
 }
 
-
 func NewWorkflowDelayOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) WorkflowDelayOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewWorkflowDelayOutputReference(terraformResource cdktf.IInterpolatingParen
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.workflow.WorkflowDelayOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewWorkflowDelayOutputReference_Override(w WorkflowDelayOutputReference, te
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.workflow.WorkflowDelayOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WorkflowDelayOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_WorkflowDelayOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_WorkflowDelayOutputReference)SetComplexObjectIndex(val interf
 	)
 }
 
-func (j *jsiiProxy_WorkflowDelayOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_WorkflowDelayOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_WorkflowDelayOutputReference)SetComplexObjectIsFromSet(val *b
 	)
 }
 
-func (j *jsiiProxy_WorkflowDelayOutputReference)SetConditionsApplyOverDelay(val interface{}) {
+func (j *jsiiProxy_WorkflowDelayOutputReference) SetConditionsApplyOverDelay(val any) {
 	if err := j.validateSetConditionsApplyOverDelayParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_WorkflowDelayOutputReference)SetConditionsApplyOverDelay(val 
 	)
 }
 
-func (j *jsiiProxy_WorkflowDelayOutputReference)SetForSeconds(val *float64) {
+func (j *jsiiProxy_WorkflowDelayOutputReference) SetForSeconds(val *float64) {
 	if err := j.validateSetForSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_WorkflowDelayOutputReference)SetForSeconds(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_WorkflowDelayOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_WorkflowDelayOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_WorkflowDelayOutputReference)SetInternalValue(val interface{}
 	)
 }
 
-func (j *jsiiProxy_WorkflowDelayOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_WorkflowDelayOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -286,7 +285,7 @@ func (j *jsiiProxy_WorkflowDelayOutputReference)SetTerraformAttribute(val *strin
 	)
 }
 
-func (j *jsiiProxy_WorkflowDelayOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkflowDelayOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,16 +309,16 @@ func (w *jsiiProxy_WorkflowDelayOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (w *jsiiProxy_WorkflowDelayOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WorkflowDelayOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -335,7 +334,7 @@ func (w *jsiiProxy_WorkflowDelayOutputReference) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -351,7 +350,7 @@ func (w *jsiiProxy_WorkflowDelayOutputReference) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -367,7 +366,7 @@ func (w *jsiiProxy_WorkflowDelayOutputReference) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -383,7 +382,7 @@ func (w *jsiiProxy_WorkflowDelayOutputReference) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -399,7 +398,7 @@ func (w *jsiiProxy_WorkflowDelayOutputReference) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -415,7 +414,7 @@ func (w *jsiiProxy_WorkflowDelayOutputReference) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (w *jsiiProxy_WorkflowDelayOutputReference) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (w *jsiiProxy_WorkflowDelayOutputReference) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,23 +475,23 @@ func (w *jsiiProxy_WorkflowDelayOutputReference) InterpolationForAttribute(prope
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_WorkflowDelayOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WorkflowDelayOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := w.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -511,4 +510,3 @@ func (w *jsiiProxy_WorkflowDelayOutputReference) ToString() *string {
 
 	return returns
 }
-

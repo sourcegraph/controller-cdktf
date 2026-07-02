@@ -6,9 +6,9 @@ import (
 
 type AlertAttributeConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,11 +18,11 @@ type AlertAttributeConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Whether this attribute is an array.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/alert_attribute#array AlertAttribute#array}
-	Array interface{} `field:"required" json:"array" yaml:"array"`
+	Array any `field:"required" json:"array" yaml:"array"`
 	// Unique name of this attribute.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/alert_attribute#name AlertAttribute#name}
@@ -34,6 +34,5 @@ type AlertAttributeConfig struct {
 	// Whether this attribute is required. If this field is not set, the existing setting will be preserved.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/alert_attribute#required AlertAttribute#required}
-	Required interface{} `field:"optional" json:"required" yaml:"required"`
+	Required any `field:"optional" json:"required" yaml:"required"`
 }
-

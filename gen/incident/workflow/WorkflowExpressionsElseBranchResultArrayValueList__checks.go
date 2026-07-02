@@ -34,7 +34,7 @@ func (w *jsiiProxy_WorkflowExpressionsElseBranchResultArrayValueList) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_WorkflowExpressionsElseBranchResultArrayValueList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkflowExpressionsElseBranchResultArrayValueList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewWorkflowExpressionsElseBranchResultArrayValueListParameters(terr
 
 	return nil
 }
-

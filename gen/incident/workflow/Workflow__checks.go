@@ -19,7 +19,7 @@ func (w *jsiiProxy_Workflow) validateAddMoveTargetParameters(moveTarget *string)
 	return nil
 }
 
-func (w *jsiiProxy_Workflow) validateAddOverrideParameters(path *string, value interface{}) error {
+func (w *jsiiProxy_Workflow) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (w *jsiiProxy_Workflow) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_Workflow) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (w *jsiiProxy_Workflow) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (w *jsiiProxy_Workflow) validateOverrideLogicalIdParameters(newLogicalId *s
 	return nil
 }
 
-func (w *jsiiProxy_Workflow) validatePutConditionGroupsParameters(value interface{}) error {
+func (w *jsiiProxy_Workflow) validatePutConditionGroupsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -246,7 +246,7 @@ func (w *jsiiProxy_Workflow) validatePutDelayParameters(value *WorkflowDelay) er
 	return nil
 }
 
-func (w *jsiiProxy_Workflow) validatePutExpressionsParameters(value interface{}) error {
+func (w *jsiiProxy_Workflow) validatePutExpressionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -277,7 +277,7 @@ func (w *jsiiProxy_Workflow) validatePutExpressionsParameters(value interface{})
 	return nil
 }
 
-func (w *jsiiProxy_Workflow) validatePutStepsParameters(value interface{}) error {
+func (w *jsiiProxy_Workflow) validatePutStepsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -324,7 +324,7 @@ func validateWorkflow_GenerateConfigForImportParameters(scope constructs.Constru
 	return nil
 }
 
-func validateWorkflow_IsConstructParameters(x interface{}) error {
+func validateWorkflow_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -332,7 +332,7 @@ func validateWorkflow_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateWorkflow_IsTerraformElementParameters(x interface{}) error {
+func validateWorkflow_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -340,7 +340,7 @@ func validateWorkflow_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateWorkflow_IsTerraformResourceParameters(x interface{}) error {
+func validateWorkflow_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -348,7 +348,7 @@ func validateWorkflow_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Workflow) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Workflow) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -381,7 +381,7 @@ func (j *jsiiProxy_Workflow) validateSetConnectionParameters(val interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_Workflow) validateSetContinueOnStepErrorParameters(val interface{}) error {
+func (j *jsiiProxy_Workflow) validateSetContinueOnStepErrorParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -401,7 +401,7 @@ func (j *jsiiProxy_Workflow) validateSetContinueOnStepErrorParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_Workflow) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Workflow) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -466,7 +466,7 @@ func (j *jsiiProxy_Workflow) validateSetFolderParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Workflow) validateSetIncludePrivateIncidentsParameters(val interface{}) error {
+func (j *jsiiProxy_Workflow) validateSetIncludePrivateIncidentsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -510,7 +510,7 @@ func (j *jsiiProxy_Workflow) validateSetOnceForParameters(val *[]*string) error 
 	return nil
 }
 
-func (j *jsiiProxy_Workflow) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Workflow) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -614,4 +614,3 @@ func validateNewWorkflowParameters(scope constructs.Construct, id *string, confi
 
 	return nil
 }
-

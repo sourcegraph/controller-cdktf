@@ -11,12 +11,12 @@ import (
 type AlertRouteIncidentConfigConditionGroupsConditionsParamBindingsOutputReference interface {
 	cdktf.ComplexObject
 	ArrayValue() AlertRouteIncidentConfigConditionGroupsConditionsParamBindingsArrayValueList
-	ArrayValueInput() interface{}
+	ArrayValueInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,8 +29,8 @@ type AlertRouteIncidentConfigConditionGroupsConditionsParamBindingsOutputReferen
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -40,11 +40,11 @@ type AlertRouteIncidentConfigConditionGroupsConditionsParamBindingsOutputReferen
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Value() AlertRouteIncidentConfigConditionGroupsConditionsParamBindingsValueOutputReference
-	ValueInput() interface{}
+	ValueInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -65,13 +65,13 @@ type AlertRouteIncidentConfigConditionGroupsConditionsParamBindingsOutputReferen
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutArrayValue(value interface{})
+	PutArrayValue(value any)
 	PutValue(value *AlertRouteIncidentConfigConditionGroupsConditionsParamBindingsValue)
 	ResetArrayValue()
 	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -94,8 +94,8 @@ func (j *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBinding
 	return returns
 }
 
-func (j *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBindingsOutputReference) ArrayValueInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBindingsOutputReference) ArrayValueInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"arrayValueInput",
@@ -104,8 +104,8 @@ func (j *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBinding
 	return returns
 }
 
-func (j *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBindingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBindingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBinding
 	return returns
 }
 
-func (j *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBindingsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBindingsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBinding
 	return returns
 }
 
-func (j *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBindingsOutputReference) ValueInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBindingsOutputReference) ValueInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"valueInput",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBinding
 	)
 	return returns
 }
-
 
 func NewAlertRouteIncidentConfigConditionGroupsConditionsParamBindingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AlertRouteIncidentConfigConditionGroupsConditionsParamBindingsOutputReference {
 	_init_.Initialize()
@@ -205,7 +204,7 @@ func NewAlertRouteIncidentConfigConditionGroupsConditionsParamBindingsOutputRefe
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.alertRoute.AlertRouteIncidentConfigConditionGroupsConditionsParamBindingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewAlertRouteIncidentConfigConditionGroupsConditionsParamBindingsOutputRefe
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.alertRoute.AlertRouteIncidentConfigConditionGroupsConditionsParamBindingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBindingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBindingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBinding
 	)
 }
 
-func (j *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBindingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBindingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBinding
 	)
 }
 
-func (j *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBindingsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBindingsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBinding
 	)
 }
 
-func (j *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBindingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBindingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBinding
 	)
 }
 
-func (j *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBindingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBindingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,16 +289,16 @@ func (a *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBinding
 	return returns
 }
 
-func (a *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBindingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBindingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -315,7 +314,7 @@ func (a *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBinding
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -331,7 +330,7 @@ func (a *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBinding
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -347,7 +346,7 @@ func (a *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBinding
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -363,7 +362,7 @@ func (a *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBinding
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -379,7 +378,7 @@ func (a *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBinding
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (a *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBinding
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (a *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBinding
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (a *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBinding
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,21 +455,21 @@ func (a *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBinding
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBindingsOutputReference) PutArrayValue(value interface{}) {
+func (a *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBindingsOutputReference) PutArrayValue(value any) {
 	if err := a.validatePutArrayValueParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putArrayValue",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -481,7 +480,7 @@ func (a *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBinding
 	_jsii_.InvokeVoid(
 		a,
 		"putValue",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (a *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBinding
 	)
 }
 
-func (a *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBindingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBindingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (a *jsiiProxy_AlertRouteIncidentConfigConditionGroupsConditionsParamBinding
 
 	return returns
 }
-

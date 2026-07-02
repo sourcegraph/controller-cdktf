@@ -90,7 +90,7 @@ func (a *jsiiProxy_AlertRouteExpressionsElseBranchResultOutputReference) validat
 	return nil
 }
 
-func (a *jsiiProxy_AlertRouteExpressionsElseBranchResultOutputReference) validatePutArrayValueParameters(value interface{}) error {
+func (a *jsiiProxy_AlertRouteExpressionsElseBranchResultOutputReference) validatePutArrayValueParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (a *jsiiProxy_AlertRouteExpressionsElseBranchResultOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteExpressionsElseBranchResultOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRouteExpressionsElseBranchResultOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -205,7 +205,7 @@ func (j *jsiiProxy_AlertRouteExpressionsElseBranchResultOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteExpressionsElseBranchResultOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRouteExpressionsElseBranchResultOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -256,4 +256,3 @@ func validateNewAlertRouteExpressionsElseBranchResultOutputReferenceParameters(t
 
 	return nil
 }
-

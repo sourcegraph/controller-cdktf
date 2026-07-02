@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.catalogEntry.CatalogEntry",
-		reflect.TypeOf((*CatalogEntry)(nil)).Elem(),
+		reflect.TypeFor[CatalogEntry](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CatalogEntry{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,11 +81,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.catalogEntry.CatalogEntryAttributeValues",
-		reflect.TypeOf((*CatalogEntryAttributeValues)(nil)).Elem(),
+		reflect.TypeFor[CatalogEntryAttributeValues](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.catalogEntry.CatalogEntryAttributeValuesList",
-		reflect.TypeOf((*CatalogEntryAttributeValuesList)(nil)).Elem(),
+		reflect.TypeFor[CatalogEntryAttributeValuesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -99,7 +99,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CatalogEntryAttributeValuesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -107,7 +107,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.catalogEntry.CatalogEntryAttributeValuesOutputReference",
-		reflect.TypeOf((*CatalogEntryAttributeValuesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CatalogEntryAttributeValuesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arrayValue", GoGetter: "ArrayValue"},
 			_jsii_.MemberProperty{JsiiProperty: "arrayValueInput", GoGetter: "ArrayValueInput"},
@@ -139,7 +139,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CatalogEntryAttributeValuesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -147,6 +147,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.catalogEntry.CatalogEntryConfig",
-		reflect.TypeOf((*CatalogEntryConfig)(nil)).Elem(),
+		reflect.TypeFor[CatalogEntryConfig](),
 	)
 }

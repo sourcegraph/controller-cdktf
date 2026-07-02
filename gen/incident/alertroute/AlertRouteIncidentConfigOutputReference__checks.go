@@ -90,7 +90,7 @@ func (a *jsiiProxy_AlertRouteIncidentConfigOutputReference) validateInterpolatio
 	return nil
 }
 
-func (a *jsiiProxy_AlertRouteIncidentConfigOutputReference) validatePutConditionGroupsParameters(value interface{}) error {
+func (a *jsiiProxy_AlertRouteIncidentConfigOutputReference) validatePutConditionGroupsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (a *jsiiProxy_AlertRouteIncidentConfigOutputReference) validatePutCondition
 	return nil
 }
 
-func (a *jsiiProxy_AlertRouteIncidentConfigOutputReference) validatePutGroupingKeysParameters(value interface{}) error {
+func (a *jsiiProxy_AlertRouteIncidentConfigOutputReference) validatePutGroupingKeysParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (a *jsiiProxy_AlertRouteIncidentConfigOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteIncidentConfigOutputReference) validateSetAutoDeclineEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRouteIncidentConfigOutputReference) validateSetAutoDeclineEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -180,7 +180,7 @@ func (j *jsiiProxy_AlertRouteIncidentConfigOutputReference) validateSetAutoDecli
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteIncidentConfigOutputReference) validateSetAutoRelateGroupedAlertsParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRouteIncidentConfigOutputReference) validateSetAutoRelateGroupedAlertsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -200,7 +200,7 @@ func (j *jsiiProxy_AlertRouteIncidentConfigOutputReference) validateSetAutoRelat
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteIncidentConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRouteIncidentConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -273,7 +273,7 @@ func (j *jsiiProxy_AlertRouteIncidentConfigOutputReference) validateSetDeferTime
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteIncidentConfigOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRouteIncidentConfigOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -301,7 +301,7 @@ func (j *jsiiProxy_AlertRouteIncidentConfigOutputReference) validateSetGroupingW
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteIncidentConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRouteIncidentConfigOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -352,4 +352,3 @@ func validateNewAlertRouteIncidentConfigOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

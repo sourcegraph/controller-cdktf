@@ -90,7 +90,7 @@ func (e *jsiiProxy_EscalationPathPathNotifyChannelOutputReference) validateInter
 	return nil
 }
 
-func (e *jsiiProxy_EscalationPathPathNotifyChannelOutputReference) validatePutTargetsParameters(value interface{}) error {
+func (e *jsiiProxy_EscalationPathPathNotifyChannelOutputReference) validatePutTargetsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (e *jsiiProxy_EscalationPathPathNotifyChannelOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_EscalationPathPathNotifyChannelOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EscalationPathPathNotifyChannelOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_EscalationPathPathNotifyChannelOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_EscalationPathPathNotifyChannelOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EscalationPathPathNotifyChannelOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -269,4 +269,3 @@ func validateNewEscalationPathPathNotifyChannelOutputReferenceParameters(terrafo
 
 	return nil
 }
-

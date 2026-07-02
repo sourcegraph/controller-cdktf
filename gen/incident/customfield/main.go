@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.customField.CustomField",
-		reflect.TypeOf((*CustomField)(nil)).Elem(),
+		reflect.TypeFor[CustomField](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CustomField{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,15 +81,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.customField.CustomFieldConfig",
-		reflect.TypeOf((*CustomFieldConfig)(nil)).Elem(),
+		reflect.TypeFor[CustomFieldConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.customField.CustomFieldFilterBy",
-		reflect.TypeOf((*CustomFieldFilterBy)(nil)).Elem(),
+		reflect.TypeFor[CustomFieldFilterBy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.customField.CustomFieldFilterByOutputReference",
-		reflect.TypeOf((*CustomFieldFilterByOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CustomFieldFilterByOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "catalogAttributeId", GoGetter: "CatalogAttributeId"},
 			_jsii_.MemberProperty{JsiiProperty: "catalogAttributeIdInput", GoGetter: "CatalogAttributeIdInput"},
@@ -117,7 +117,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CustomFieldFilterByOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -1,6 +1,5 @@
 package escalationpath
 
-
 type EscalationPathWorkingHours struct {
 	// The unique identifier for this set of working intervals.
 	//
@@ -18,6 +17,5 @@ type EscalationPathWorkingHours struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/escalation_path#timezone EscalationPath#timezone}
 	Timezone *string `field:"required" json:"timezone" yaml:"timezone"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/escalation_path#weekday_intervals EscalationPath#weekday_intervals}.
-	WeekdayIntervals interface{} `field:"required" json:"weekdayIntervals" yaml:"weekdayIntervals"`
+	WeekdayIntervals any `field:"required" json:"weekdayIntervals" yaml:"weekdayIntervals"`
 }
-

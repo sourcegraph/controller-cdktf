@@ -34,7 +34,7 @@ func (e *jsiiProxy_EscalationPathWorkingHoursList) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_EscalationPathWorkingHoursList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EscalationPathWorkingHoursList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEscalationPathWorkingHoursListParameters(terraformResource cdktf
 
 	return nil
 }
-

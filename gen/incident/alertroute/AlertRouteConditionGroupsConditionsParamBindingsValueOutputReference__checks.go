@@ -98,7 +98,7 @@ func (a *jsiiProxy_AlertRouteConditionGroupsConditionsParamBindingsValueOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteConditionGroupsConditionsParamBindingsValueOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRouteConditionGroupsConditionsParamBindingsValueOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_AlertRouteConditionGroupsConditionsParamBindingsValueOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteConditionGroupsConditionsParamBindingsValueOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRouteConditionGroupsConditionsParamBindingsValueOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewAlertRouteConditionGroupsConditionsParamBindingsValueOutputRefer
 
 	return nil
 }
-

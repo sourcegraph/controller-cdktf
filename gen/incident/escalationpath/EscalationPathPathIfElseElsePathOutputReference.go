@@ -12,9 +12,9 @@ type EscalationPathPathIfElseElsePathOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -31,15 +31,15 @@ type EscalationPathPathIfElseElsePathOutputReference interface {
 	SetId(val *string)
 	IdInput() *string
 	IfElse() EscalationPathPathIfElseOutputReference
-	IfElseInput() interface{}
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	IfElseInput() any
+	InternalValue() any
+	SetInternalValue(val any)
 	Level() EscalationPathPathIfElseElsePathLevelOutputReference
-	LevelInput() interface{}
+	LevelInput() any
 	NotifyChannel() EscalationPathPathIfElseElsePathNotifyChannelOutputReference
-	NotifyChannelInput() interface{}
+	NotifyChannelInput() any
 	Repeat() EscalationPathPathIfElseElsePathRepeatOutputReference
-	RepeatInput() interface{}
+	RepeatInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -54,7 +54,7 @@ type EscalationPathPathIfElseElsePathOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -86,7 +86,7 @@ type EscalationPathPathIfElseElsePathOutputReference interface {
 	ResetRepeat()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,8 +99,8 @@ type jsiiProxy_EscalationPathPathIfElseElsePathOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) IfElse() Esc
 	return returns
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) IfElseInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) IfElseInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ifElseInput",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) IfElseInput(
 	return returns
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -199,8 +199,8 @@ func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) Level() Esca
 	return returns
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) LevelInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) LevelInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"levelInput",
@@ -219,8 +219,8 @@ func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) NotifyChanne
 	return returns
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) NotifyChannelInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) NotifyChannelInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"notifyChannelInput",
@@ -239,8 +239,8 @@ func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) Repeat() Esc
 	return returns
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) RepeatInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) RepeatInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"repeatInput",
@@ -289,7 +289,6 @@ func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) TypeInput() 
 	return returns
 }
 
-
 func NewEscalationPathPathIfElseElsePathOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) EscalationPathPathIfElseElsePathOutputReference {
 	_init_.Initialize()
 
@@ -300,7 +299,7 @@ func NewEscalationPathPathIfElseElsePathOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseElsePathOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -312,12 +311,12 @@ func NewEscalationPathPathIfElseElsePathOutputReference_Override(e EscalationPat
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseElsePathOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,7 +327,7 @@ func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -339,7 +338,7 @@ func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference)SetId(val *string) {
+func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -350,7 +349,7 @@ func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference)SetId(val *st
 	)
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,7 +360,7 @@ func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -372,7 +371,7 @@ func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -383,7 +382,7 @@ func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference)SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference)SetType(val *string) {
+func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -407,16 +406,16 @@ func (e *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) ComputeFqn()
 	return returns
 }
 
-func (e *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -464,7 +463,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) GetListAttri
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -480,7 +479,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -496,7 +495,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -528,7 +527,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -544,7 +543,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) GetStringMap
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -573,7 +572,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) Interpolatio
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) PutIfElse(va
 	_jsii_.InvokeVoid(
 		e,
 		"putIfElse",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -598,7 +597,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) PutLevel(val
 	_jsii_.InvokeVoid(
 		e,
 		"putLevel",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -609,7 +608,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) PutNotifyCha
 	_jsii_.InvokeVoid(
 		e,
 		"putNotifyChannel",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -620,7 +619,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) PutRepeat(va
 	_jsii_.InvokeVoid(
 		e,
 		"putRepeat",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -664,16 +663,16 @@ func (e *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) ResetRepeat(
 	)
 }
 
-func (e *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -692,4 +691,3 @@ func (e *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) ToString() *
 
 	return returns
 }
-

@@ -114,7 +114,7 @@ func (j *jsiiProxy_CatalogEntryAttributeValuesOutputReference) validateSetAttrib
 	return nil
 }
 
-func (j *jsiiProxy_CatalogEntryAttributeValuesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CatalogEntryAttributeValuesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_CatalogEntryAttributeValuesOutputReference) validateSetComple
 	return nil
 }
 
-func (j *jsiiProxy_CatalogEntryAttributeValuesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CatalogEntryAttributeValuesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewCatalogEntryAttributeValuesOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

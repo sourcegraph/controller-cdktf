@@ -6,9 +6,9 @@ import (
 
 type CatalogEntriesConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,11 +18,11 @@ type CatalogEntriesConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Map of external ID to entry in the catalog.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/catalog_entries#entries CatalogEntries#entries}
-	Entries interface{} `field:"required" json:"entries" yaml:"entries"`
+	Entries any `field:"required" json:"entries" yaml:"entries"`
 	// ID of this catalog type.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/catalog_entries#id CatalogEntries#id}
@@ -37,4 +37,3 @@ type CatalogEntriesConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/catalog_entries#managed_attributes CatalogEntries#managed_attributes}
 	ManagedAttributes *[]*string `field:"optional" json:"managedAttributes" yaml:"managedAttributes"`
 }
-

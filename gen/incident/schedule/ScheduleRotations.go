@@ -1,6 +1,5 @@
 package schedule
 
-
 type ScheduleRotations struct {
 	// Unique internal ID of the rotation.
 	//
@@ -14,6 +13,5 @@ type ScheduleRotations struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/schedule#name Schedule#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/schedule#versions Schedule#versions}.
-	Versions interface{} `field:"required" json:"versions" yaml:"versions"`
+	Versions any `field:"required" json:"versions" yaml:"versions"`
 }
-

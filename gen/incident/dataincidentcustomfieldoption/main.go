@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.dataIncidentCustomFieldOption.DataIncidentCustomFieldOption",
-		reflect.TypeOf((*DataIncidentCustomFieldOption)(nil)).Elem(),
+		reflect.TypeFor[DataIncidentCustomFieldOption](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -53,7 +53,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataIncidentCustomFieldOption{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -61,6 +61,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.dataIncidentCustomFieldOption.DataIncidentCustomFieldOptionConfig",
-		reflect.TypeOf((*DataIncidentCustomFieldOptionConfig)(nil)).Elem(),
+		reflect.TypeFor[DataIncidentCustomFieldOptionConfig](),
 	)
 }

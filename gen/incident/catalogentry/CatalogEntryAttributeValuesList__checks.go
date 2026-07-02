@@ -34,7 +34,7 @@ func (c *jsiiProxy_CatalogEntryAttributeValuesList) validateResolveParameters(_c
 	return nil
 }
 
-func (j *jsiiProxy_CatalogEntryAttributeValuesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CatalogEntryAttributeValuesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCatalogEntryAttributeValuesListParameters(terraformResource cdkt
 
 	return nil
 }
-

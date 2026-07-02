@@ -142,7 +142,7 @@ func (a *jsiiProxy_AlertRouteExpressionsOperationsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteExpressionsOperationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRouteExpressionsOperationsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -207,7 +207,7 @@ func (j *jsiiProxy_AlertRouteExpressionsOperationsOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteExpressionsOperationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRouteExpressionsOperationsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -274,4 +274,3 @@ func validateNewAlertRouteExpressionsOperationsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

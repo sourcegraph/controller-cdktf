@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.dataIncidentSchedule.DataIncidentSchedule",
-		reflect.TypeOf((*DataIncidentSchedule)(nil)).Elem(),
+		reflect.TypeFor[DataIncidentSchedule](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -53,7 +53,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataIncidentSchedule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -61,6 +61,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.dataIncidentSchedule.DataIncidentScheduleConfig",
-		reflect.TypeOf((*DataIncidentScheduleConfig)(nil)).Elem(),
+		reflect.TypeFor[DataIncidentScheduleConfig](),
 	)
 }

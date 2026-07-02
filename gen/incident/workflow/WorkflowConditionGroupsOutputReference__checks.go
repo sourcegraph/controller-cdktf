@@ -90,7 +90,7 @@ func (w *jsiiProxy_WorkflowConditionGroupsOutputReference) validateInterpolation
 	return nil
 }
 
-func (w *jsiiProxy_WorkflowConditionGroupsOutputReference) validatePutConditionsParameters(value interface{}) error {
+func (w *jsiiProxy_WorkflowConditionGroupsOutputReference) validatePutConditionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (w *jsiiProxy_WorkflowConditionGroupsOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_WorkflowConditionGroupsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkflowConditionGroupsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_WorkflowConditionGroupsOutputReference) validateSetComplexObj
 	return nil
 }
 
-func (j *jsiiProxy_WorkflowConditionGroupsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkflowConditionGroupsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -253,4 +253,3 @@ func validateNewWorkflowConditionGroupsOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

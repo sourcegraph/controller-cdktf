@@ -98,7 +98,7 @@ func (w *jsiiProxy_WorkflowExpressionsElseBranchResultValueOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_WorkflowExpressionsElseBranchResultValueOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkflowExpressionsElseBranchResultValueOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_WorkflowExpressionsElseBranchResultValueOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_WorkflowExpressionsElseBranchResultValueOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkflowExpressionsElseBranchResultValueOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewWorkflowExpressionsElseBranchResultValueOutputReferenceParameter
 
 	return nil
 }
-

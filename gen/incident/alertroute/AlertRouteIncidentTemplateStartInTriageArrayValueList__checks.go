@@ -34,7 +34,7 @@ func (a *jsiiProxy_AlertRouteIncidentTemplateStartInTriageArrayValueList) valida
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteIncidentTemplateStartInTriageArrayValueList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRouteIncidentTemplateStartInTriageArrayValueList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAlertRouteIncidentTemplateStartInTriageArrayValueListParameters(
 
 	return nil
 }
-

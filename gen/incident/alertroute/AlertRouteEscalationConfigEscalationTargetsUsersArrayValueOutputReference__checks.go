@@ -98,7 +98,7 @@ func (a *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsUsersArrayValueOut
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsUsersArrayValueOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsUsersArrayValueOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsUsersArrayValueOut
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsUsersArrayValueOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsUsersArrayValueOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewAlertRouteEscalationConfigEscalationTargetsUsersArrayValueOutput
 
 	return nil
 }
-

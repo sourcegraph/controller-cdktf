@@ -34,7 +34,7 @@ func (e *jsiiProxy_EscalationPathWorkingHoursWeekdayIntervalsList) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_EscalationPathWorkingHoursWeekdayIntervalsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EscalationPathWorkingHoursWeekdayIntervalsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEscalationPathWorkingHoursWeekdayIntervalsListParameters(terrafo
 
 	return nil
 }
-

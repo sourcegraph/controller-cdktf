@@ -15,28 +15,28 @@ type Workflow interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ConditionGroups() WorkflowConditionGroupsList
-	ConditionGroupsInput() interface{}
+	ConditionGroupsInput() any
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
-	ContinueOnStepError() interface{}
-	SetContinueOnStepError(val interface{})
-	ContinueOnStepErrorInput() interface{}
+	ConstructNodeMetadata() *map[string]any
+	ContinueOnStepError() any
+	SetContinueOnStepError(val any)
+	ContinueOnStepErrorInput() any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	Delay() WorkflowDelayOutputReference
-	DelayInput() interface{}
+	DelayInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Expressions() WorkflowExpressionsList
-	ExpressionsInput() interface{}
+	ExpressionsInput() any
 	Folder() *string
 	SetFolder(val *string)
 	FolderInput() *string
@@ -49,9 +49,9 @@ type Workflow interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	IncludePrivateIncidents() interface{}
-	SetIncludePrivateIncidents(val interface{})
-	IncludePrivateIncidentsInput() interface{}
+	IncludePrivateIncidents() any
+	SetIncludePrivateIncidents(val any)
+	IncludePrivateIncidentsInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -69,11 +69,11 @@ type Workflow interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RunsOnIncidentModes() *[]*string
 	SetRunsOnIncidentModes(val *[]*string)
 	RunsOnIncidentModesInput() *[]*string
@@ -87,11 +87,11 @@ type Workflow interface {
 	SetState(val *string)
 	StateInput() *string
 	Steps() WorkflowStepsList
-	StepsInput() interface{}
+	StepsInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Trigger() *string
@@ -101,9 +101,9 @@ type Workflow interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -121,7 +121,7 @@ type Workflow interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -133,34 +133,34 @@ type Workflow interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutConditionGroups(value interface{})
+	PutConditionGroups(value any)
 	PutDelay(value *WorkflowDelay)
-	PutExpressions(value interface{})
-	PutSteps(value interface{})
+	PutExpressions(value any)
+	PutSteps(value any)
 	ResetDelay()
 	ResetFolder()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetShortform()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Workflow
@@ -188,8 +188,8 @@ func (j *jsiiProxy_Workflow) ConditionGroups() WorkflowConditionGroupsList {
 	return returns
 }
 
-func (j *jsiiProxy_Workflow) ConditionGroupsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Workflow) ConditionGroupsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"conditionGroupsInput",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_Workflow) ConditionGroupsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Workflow) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Workflow) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_Workflow) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Workflow) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Workflow) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_Workflow) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Workflow) ContinueOnStepError() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Workflow) ContinueOnStepError() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"continueOnStepError",
@@ -228,8 +228,8 @@ func (j *jsiiProxy_Workflow) ContinueOnStepError() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Workflow) ContinueOnStepErrorInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Workflow) ContinueOnStepErrorInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"continueOnStepErrorInput",
@@ -238,8 +238,8 @@ func (j *jsiiProxy_Workflow) ContinueOnStepErrorInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Workflow) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Workflow) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -258,8 +258,8 @@ func (j *jsiiProxy_Workflow) Delay() WorkflowDelayOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_Workflow) DelayInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Workflow) DelayInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"delayInput",
@@ -288,8 +288,8 @@ func (j *jsiiProxy_Workflow) Expressions() WorkflowExpressionsList {
 	return returns
 }
 
-func (j *jsiiProxy_Workflow) ExpressionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Workflow) ExpressionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"expressionsInput",
@@ -358,8 +358,8 @@ func (j *jsiiProxy_Workflow) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Workflow) IncludePrivateIncidents() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Workflow) IncludePrivateIncidents() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includePrivateIncidents",
@@ -368,8 +368,8 @@ func (j *jsiiProxy_Workflow) IncludePrivateIncidents() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Workflow) IncludePrivateIncidentsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Workflow) IncludePrivateIncidentsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includePrivateIncidentsInput",
@@ -448,8 +448,8 @@ func (j *jsiiProxy_Workflow) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Workflow) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Workflow) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -458,8 +458,8 @@ func (j *jsiiProxy_Workflow) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Workflow) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Workflow) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -558,8 +558,8 @@ func (j *jsiiProxy_Workflow) Steps() WorkflowStepsList {
 	return returns
 }
 
-func (j *jsiiProxy_Workflow) StepsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Workflow) StepsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"stepsInput",
@@ -578,8 +578,8 @@ func (j *jsiiProxy_Workflow) TerraformGeneratorMetadata() *cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_Workflow) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Workflow) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -618,7 +618,6 @@ func (j *jsiiProxy_Workflow) TriggerInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/workflow incident_workflow} Resource.
 func NewWorkflow(scope constructs.Construct, id *string, config *WorkflowConfig) Workflow {
 	_init_.Initialize()
@@ -630,7 +629,7 @@ func NewWorkflow(scope constructs.Construct, id *string, config *WorkflowConfig)
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.workflow.Workflow",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -643,12 +642,12 @@ func NewWorkflow_Override(w Workflow, scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.workflow.Workflow",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		w,
 	)
 }
 
-func (j *jsiiProxy_Workflow)SetConnection(val interface{}) {
+func (j *jsiiProxy_Workflow) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -659,7 +658,7 @@ func (j *jsiiProxy_Workflow)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Workflow)SetContinueOnStepError(val interface{}) {
+func (j *jsiiProxy_Workflow) SetContinueOnStepError(val any) {
 	if err := j.validateSetContinueOnStepErrorParameters(val); err != nil {
 		panic(err)
 	}
@@ -670,7 +669,7 @@ func (j *jsiiProxy_Workflow)SetContinueOnStepError(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Workflow)SetCount(val interface{}) {
+func (j *jsiiProxy_Workflow) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -681,7 +680,7 @@ func (j *jsiiProxy_Workflow)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Workflow)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Workflow) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -689,7 +688,7 @@ func (j *jsiiProxy_Workflow)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Workflow)SetFolder(val *string) {
+func (j *jsiiProxy_Workflow) SetFolder(val *string) {
 	if err := j.validateSetFolderParameters(val); err != nil {
 		panic(err)
 	}
@@ -700,7 +699,7 @@ func (j *jsiiProxy_Workflow)SetFolder(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Workflow)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Workflow) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -708,7 +707,7 @@ func (j *jsiiProxy_Workflow)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Workflow)SetIncludePrivateIncidents(val interface{}) {
+func (j *jsiiProxy_Workflow) SetIncludePrivateIncidents(val any) {
 	if err := j.validateSetIncludePrivateIncidentsParameters(val); err != nil {
 		panic(err)
 	}
@@ -719,7 +718,7 @@ func (j *jsiiProxy_Workflow)SetIncludePrivateIncidents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Workflow)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Workflow) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -730,7 +729,7 @@ func (j *jsiiProxy_Workflow)SetLifecycle(val *cdktf.TerraformResourceLifecycle) 
 	)
 }
 
-func (j *jsiiProxy_Workflow)SetName(val *string) {
+func (j *jsiiProxy_Workflow) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -741,7 +740,7 @@ func (j *jsiiProxy_Workflow)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Workflow)SetOnceFor(val *[]*string) {
+func (j *jsiiProxy_Workflow) SetOnceFor(val *[]*string) {
 	if err := j.validateSetOnceForParameters(val); err != nil {
 		panic(err)
 	}
@@ -752,7 +751,7 @@ func (j *jsiiProxy_Workflow)SetOnceFor(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Workflow)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Workflow) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -760,7 +759,7 @@ func (j *jsiiProxy_Workflow)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Workflow)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Workflow) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -771,7 +770,7 @@ func (j *jsiiProxy_Workflow)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Workflow)SetRunsOnIncidentModes(val *[]*string) {
+func (j *jsiiProxy_Workflow) SetRunsOnIncidentModes(val *[]*string) {
 	if err := j.validateSetRunsOnIncidentModesParameters(val); err != nil {
 		panic(err)
 	}
@@ -782,7 +781,7 @@ func (j *jsiiProxy_Workflow)SetRunsOnIncidentModes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Workflow)SetRunsOnIncidents(val *string) {
+func (j *jsiiProxy_Workflow) SetRunsOnIncidents(val *string) {
 	if err := j.validateSetRunsOnIncidentsParameters(val); err != nil {
 		panic(err)
 	}
@@ -793,7 +792,7 @@ func (j *jsiiProxy_Workflow)SetRunsOnIncidents(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Workflow)SetShortform(val *string) {
+func (j *jsiiProxy_Workflow) SetShortform(val *string) {
 	if err := j.validateSetShortformParameters(val); err != nil {
 		panic(err)
 	}
@@ -804,7 +803,7 @@ func (j *jsiiProxy_Workflow)SetShortform(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Workflow)SetState(val *string) {
+func (j *jsiiProxy_Workflow) SetState(val *string) {
 	if err := j.validateSetStateParameters(val); err != nil {
 		panic(err)
 	}
@@ -815,7 +814,7 @@ func (j *jsiiProxy_Workflow)SetState(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Workflow)SetTrigger(val *string) {
+func (j *jsiiProxy_Workflow) SetTrigger(val *string) {
 	if err := j.validateSetTriggerParameters(val); err != nil {
 		panic(err)
 	}
@@ -838,7 +837,7 @@ func Workflow_GenerateConfigForImport(scope constructs.Construct, importToId *st
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-incident.workflow.Workflow",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -862,7 +861,7 @@ func Workflow_GenerateConfigForImport(scope constructs.Construct, importToId *st
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Workflow_IsConstruct(x interface{}) *bool {
+func Workflow_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWorkflow_IsConstructParameters(x); err != nil {
@@ -873,7 +872,7 @@ func Workflow_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-incident.workflow.Workflow",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -881,7 +880,7 @@ func Workflow_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Workflow_IsTerraformElement(x interface{}) *bool {
+func Workflow_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWorkflow_IsTerraformElementParameters(x); err != nil {
@@ -892,7 +891,7 @@ func Workflow_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-incident.workflow.Workflow",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -900,7 +899,7 @@ func Workflow_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Workflow_IsTerraformResource(x interface{}) *bool {
+func Workflow_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWorkflow_IsTerraformResourceParameters(x); err != nil {
@@ -911,7 +910,7 @@ func Workflow_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-incident.workflow.Workflow",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -936,31 +935,31 @@ func (w *jsiiProxy_Workflow) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (w *jsiiProxy_Workflow) AddOverride(path *string, value interface{}) {
+func (w *jsiiProxy_Workflow) AddOverride(path *string, value any) {
 	if err := w.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (w *jsiiProxy_Workflow) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_Workflow) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -976,7 +975,7 @@ func (w *jsiiProxy_Workflow) GetBooleanAttribute(terraformAttribute *string) cdk
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -992,7 +991,7 @@ func (w *jsiiProxy_Workflow) GetBooleanMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1008,7 +1007,7 @@ func (w *jsiiProxy_Workflow) GetListAttribute(terraformAttribute *string) *[]*st
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1024,7 +1023,7 @@ func (w *jsiiProxy_Workflow) GetNumberAttribute(terraformAttribute *string) *flo
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1040,7 +1039,7 @@ func (w *jsiiProxy_Workflow) GetNumberListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1056,7 +1055,7 @@ func (w *jsiiProxy_Workflow) GetNumberMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1072,7 +1071,7 @@ func (w *jsiiProxy_Workflow) GetStringAttribute(terraformAttribute *string) *str
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1088,15 +1087,15 @@ func (w *jsiiProxy_Workflow) GetStringMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_Workflow) HasResourceMove() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_Workflow) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -1115,7 +1114,7 @@ func (w *jsiiProxy_Workflow) ImportFrom(id *string, provider cdktf.TerraformProv
 	_jsii_.InvokeVoid(
 		w,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1128,7 +1127,7 @@ func (w *jsiiProxy_Workflow) InterpolationForAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1142,18 +1141,18 @@ func (w *jsiiProxy_Workflow) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (w *jsiiProxy_Workflow) MoveTo(moveTarget *string, index interface{}) {
+func (w *jsiiProxy_Workflow) MoveTo(moveTarget *string, index any) {
 	if err := w.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1164,7 +1163,7 @@ func (w *jsiiProxy_Workflow) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1175,18 +1174,18 @@ func (w *jsiiProxy_Workflow) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (w *jsiiProxy_Workflow) PutConditionGroups(value interface{}) {
+func (w *jsiiProxy_Workflow) PutConditionGroups(value any) {
 	if err := w.validatePutConditionGroupsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"putConditionGroups",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1197,29 +1196,29 @@ func (w *jsiiProxy_Workflow) PutDelay(value *WorkflowDelay) {
 	_jsii_.InvokeVoid(
 		w,
 		"putDelay",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (w *jsiiProxy_Workflow) PutExpressions(value interface{}) {
+func (w *jsiiProxy_Workflow) PutExpressions(value any) {
 	if err := w.validatePutExpressionsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"putExpressions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (w *jsiiProxy_Workflow) PutSteps(value interface{}) {
+func (w *jsiiProxy_Workflow) PutSteps(value any) {
 	if err := w.validatePutStepsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"putSteps",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1255,8 +1254,8 @@ func (w *jsiiProxy_Workflow) ResetShortform() {
 	)
 }
 
-func (w *jsiiProxy_Workflow) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_Workflow) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -1268,8 +1267,8 @@ func (w *jsiiProxy_Workflow) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (w *jsiiProxy_Workflow) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_Workflow) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -1281,8 +1280,8 @@ func (w *jsiiProxy_Workflow) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (w *jsiiProxy_Workflow) ToHclTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_Workflow) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -1294,8 +1293,8 @@ func (w *jsiiProxy_Workflow) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (w *jsiiProxy_Workflow) ToMetadata() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_Workflow) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -1320,8 +1319,8 @@ func (w *jsiiProxy_Workflow) ToString() *string {
 	return returns
 }
 
-func (w *jsiiProxy_Workflow) ToTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_Workflow) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -1332,4 +1331,3 @@ func (w *jsiiProxy_Workflow) ToTerraform() interface{} {
 
 	return returns
 }
-

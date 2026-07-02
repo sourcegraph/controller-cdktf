@@ -90,7 +90,7 @@ func (s *jsiiProxy_ScheduleRotationsVersionsOutputReference) validateInterpolati
 	return nil
 }
 
-func (s *jsiiProxy_ScheduleRotationsVersionsOutputReference) validatePutHandoversParameters(value interface{}) error {
+func (s *jsiiProxy_ScheduleRotationsVersionsOutputReference) validatePutHandoversParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (s *jsiiProxy_ScheduleRotationsVersionsOutputReference) validatePutHandover
 	return nil
 }
 
-func (s *jsiiProxy_ScheduleRotationsVersionsOutputReference) validatePutLayersParameters(value interface{}) error {
+func (s *jsiiProxy_ScheduleRotationsVersionsOutputReference) validatePutLayersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (s *jsiiProxy_ScheduleRotationsVersionsOutputReference) validatePutLayersPa
 	return nil
 }
 
-func (s *jsiiProxy_ScheduleRotationsVersionsOutputReference) validatePutWorkingIntervalsParameters(value interface{}) error {
+func (s *jsiiProxy_ScheduleRotationsVersionsOutputReference) validatePutWorkingIntervalsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (s *jsiiProxy_ScheduleRotationsVersionsOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -272,7 +272,7 @@ func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference) validateSetHandover
 	return nil
 }
 
-func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ScheduleRotationsVersionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -339,4 +339,3 @@ func validateNewScheduleRotationsVersionsOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

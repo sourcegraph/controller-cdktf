@@ -34,7 +34,7 @@ func (w *jsiiProxy_WorkflowConditionGroupsConditionsList) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_WorkflowConditionGroupsConditionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkflowConditionGroupsConditionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewWorkflowConditionGroupsConditionsListParameters(terraformResourc
 
 	return nil
 }
-

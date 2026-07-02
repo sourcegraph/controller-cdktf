@@ -98,7 +98,7 @@ func (a *jsiiProxy_AlertRouteIncidentTemplateWorkspaceValueOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteIncidentTemplateWorkspaceValueOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRouteIncidentTemplateWorkspaceValueOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_AlertRouteIncidentTemplateWorkspaceValueOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteIncidentTemplateWorkspaceValueOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRouteIncidentTemplateWorkspaceValueOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewAlertRouteIncidentTemplateWorkspaceValueOutputReferenceParameter
 
 	return nil
 }
-

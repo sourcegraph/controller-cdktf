@@ -12,9 +12,9 @@ type EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference interf
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,13 +25,13 @@ type EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference interf
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	RotateAfterSeconds() *float64
 	SetRotateAfterSeconds(val *float64)
 	RotateAfterSecondsInput() *float64
@@ -46,7 +46,7 @@ type EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference interf
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference interf
 	ResetRotateAfterSeconds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputRefere
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -113,8 +113,8 @@ func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -123,8 +123,8 @@ func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -143,8 +143,8 @@ func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputRe
 	return returns
 }
 
-
 func NewEscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewEscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference(ter
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewEscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference_Ove
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputRe
 	)
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputRe
 	)
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputRe
 	)
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputRe
 	)
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference)SetRotateAfterSeconds(val *float64) {
+func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference) SetRotateAfterSeconds(val *float64) {
 	if err := j.validateSetRotateAfterSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputRe
 	)
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputRe
 	)
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (e *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputRe
 	return returns
 }
 
-func (e *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputRe
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputRe
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputRe
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputRe
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputRe
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputRe
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputRe
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputRe
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputRe
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (e *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputRe
 	)
 }
 
-func (e *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (e *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputRe
 
 	return returns
 }
-

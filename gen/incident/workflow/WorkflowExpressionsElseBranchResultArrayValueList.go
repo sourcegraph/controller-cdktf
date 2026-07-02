@@ -17,8 +17,8 @@ type WorkflowExpressionsElseBranchResultArrayValueList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type WorkflowExpressionsElseBranchResultArrayValueList interface {
 	Get(index *float64) WorkflowExpressionsElseBranchResultArrayValueOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_WorkflowExpressionsElseBranchResultArrayValueList) Fqn() *str
 	return returns
 }
 
-func (j *jsiiProxy_WorkflowExpressionsElseBranchResultArrayValueList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkflowExpressionsElseBranchResultArrayValueList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_WorkflowExpressionsElseBranchResultArrayValueList) WrapsSet()
 	return returns
 }
 
-
 func NewWorkflowExpressionsElseBranchResultArrayValueList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkflowExpressionsElseBranchResultArrayValueList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewWorkflowExpressionsElseBranchResultArrayValueList(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.workflow.WorkflowExpressionsElseBranchResultArrayValueList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewWorkflowExpressionsElseBranchResultArrayValueList_Override(w WorkflowExp
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.workflow.WorkflowExpressionsElseBranchResultArrayValueList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WorkflowExpressionsElseBranchResultArrayValueList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_WorkflowExpressionsElseBranchResultArrayValueList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_WorkflowExpressionsElseBranchResultArrayValueList)SetInternal
 	)
 }
 
-func (j *jsiiProxy_WorkflowExpressionsElseBranchResultArrayValueList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_WorkflowExpressionsElseBranchResultArrayValueList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_WorkflowExpressionsElseBranchResultArrayValueList)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_WorkflowExpressionsElseBranchResultArrayValueList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkflowExpressionsElseBranchResultArrayValueList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_WorkflowExpressionsElseBranchResultArrayValueList)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_WorkflowExpressionsElseBranchResultArrayValueList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_WorkflowExpressionsElseBranchResultArrayValueList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (w *jsiiProxy_WorkflowExpressionsElseBranchResultArrayValueList) AllWithMap
 	_jsii_.Invoke(
 		w,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (w *jsiiProxy_WorkflowExpressionsElseBranchResultArrayValueList) Get(index 
 	_jsii_.Invoke(
 		w,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_WorkflowExpressionsElseBranchResultArrayValueList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WorkflowExpressionsElseBranchResultArrayValueList) Resolve(_context cdktf.IResolveContext) any {
 	if err := w.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (w *jsiiProxy_WorkflowExpressionsElseBranchResultArrayValueList) ToString()
 
 	return returns
 }
-

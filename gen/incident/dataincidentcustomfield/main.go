@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.dataIncidentCustomField.DataIncidentCustomField",
-		reflect.TypeOf((*DataIncidentCustomField)(nil)).Elem(),
+		reflect.TypeFor[DataIncidentCustomField](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "catalogTypeId", GoGetter: "CatalogTypeId"},
@@ -54,7 +54,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataIncidentCustomField{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -62,15 +62,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.dataIncidentCustomField.DataIncidentCustomFieldConfig",
-		reflect.TypeOf((*DataIncidentCustomFieldConfig)(nil)).Elem(),
+		reflect.TypeFor[DataIncidentCustomFieldConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.dataIncidentCustomField.DataIncidentCustomFieldFilterBy",
-		reflect.TypeOf((*DataIncidentCustomFieldFilterBy)(nil)).Elem(),
+		reflect.TypeFor[DataIncidentCustomFieldFilterBy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.dataIncidentCustomField.DataIncidentCustomFieldFilterByOutputReference",
-		reflect.TypeOf((*DataIncidentCustomFieldFilterByOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataIncidentCustomFieldFilterByOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "catalogAttributeId", GoGetter: "CatalogAttributeId"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -96,7 +96,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataIncidentCustomFieldFilterByOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

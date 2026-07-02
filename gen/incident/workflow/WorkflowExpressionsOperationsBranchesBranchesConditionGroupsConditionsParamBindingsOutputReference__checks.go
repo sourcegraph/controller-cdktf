@@ -90,7 +90,7 @@ func (w *jsiiProxy_WorkflowExpressionsOperationsBranchesBranchesConditionGroupsC
 	return nil
 }
 
-func (w *jsiiProxy_WorkflowExpressionsOperationsBranchesBranchesConditionGroupsConditionsParamBindingsOutputReference) validatePutArrayValueParameters(value interface{}) error {
+func (w *jsiiProxy_WorkflowExpressionsOperationsBranchesBranchesConditionGroupsConditionsParamBindingsOutputReference) validatePutArrayValueParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (w *jsiiProxy_WorkflowExpressionsOperationsBranchesBranchesConditionGroupsC
 	return nil
 }
 
-func (j *jsiiProxy_WorkflowExpressionsOperationsBranchesBranchesConditionGroupsConditionsParamBindingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkflowExpressionsOperationsBranchesBranchesConditionGroupsConditionsParamBindingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -205,7 +205,7 @@ func (j *jsiiProxy_WorkflowExpressionsOperationsBranchesBranchesConditionGroupsC
 	return nil
 }
 
-func (j *jsiiProxy_WorkflowExpressionsOperationsBranchesBranchesConditionGroupsConditionsParamBindingsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkflowExpressionsOperationsBranchesBranchesConditionGroupsConditionsParamBindingsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -264,4 +264,3 @@ func validateNewWorkflowExpressionsOperationsBranchesBranchesConditionGroupsCond
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseElsePathNotifyChannelTargetsList) val
 	return nil
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseElsePathNotifyChannelTargetsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EscalationPathPathIfElseElsePathNotifyChannelTargetsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEscalationPathPathIfElseElsePathNotifyChannelTargetsListParamete
 
 	return nil
 }
-

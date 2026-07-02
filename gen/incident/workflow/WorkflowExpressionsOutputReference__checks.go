@@ -101,7 +101,7 @@ func (w *jsiiProxy_WorkflowExpressionsOutputReference) validatePutElseBranchPara
 	return nil
 }
 
-func (w *jsiiProxy_WorkflowExpressionsOutputReference) validatePutOperationsParameters(value interface{}) error {
+func (w *jsiiProxy_WorkflowExpressionsOutputReference) validatePutOperationsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (w *jsiiProxy_WorkflowExpressionsOutputReference) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_WorkflowExpressionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkflowExpressionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -205,7 +205,7 @@ func (j *jsiiProxy_WorkflowExpressionsOutputReference) validateSetComplexObjectI
 	return nil
 }
 
-func (j *jsiiProxy_WorkflowExpressionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkflowExpressionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -288,4 +288,3 @@ func validateNewWorkflowExpressionsOutputReferenceParameters(terraformResource c
 
 	return nil
 }
-

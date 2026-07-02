@@ -90,7 +90,7 @@ func (a *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsEscalationPathsOut
 	return nil
 }
 
-func (a *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsEscalationPathsOutputReference) validatePutArrayValueParameters(value interface{}) error {
+func (a *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsEscalationPathsOutputReference) validatePutArrayValueParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (a *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsEscalationPathsOut
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsEscalationPathsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsEscalationPathsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -205,7 +205,7 @@ func (j *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsEscalationPathsOut
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsEscalationPathsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsEscalationPathsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -256,4 +256,3 @@ func validateNewAlertRouteEscalationConfigEscalationTargetsEscalationPathsOutput
 
 	return nil
 }
-

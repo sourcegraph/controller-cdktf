@@ -1,6 +1,5 @@
 package alertroute
 
-
 type AlertRouteExpressions struct {
 	// The human readable label of the expression.
 	//
@@ -9,7 +8,7 @@ type AlertRouteExpressions struct {
 	// The operations to execute in sequence for this expression.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/alert_route#operations AlertRoute#operations}
-	Operations interface{} `field:"required" json:"operations" yaml:"operations"`
+	Operations any `field:"required" json:"operations" yaml:"operations"`
 	// A short ID that can be used to reference the expression.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/alert_route#reference AlertRoute#reference}
@@ -23,4 +22,3 @@ type AlertRouteExpressions struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/alert_route#else_branch AlertRoute#else_branch}
 	ElseBranch *AlertRouteExpressionsElseBranch `field:"optional" json:"elseBranch" yaml:"elseBranch"`
 }
-
