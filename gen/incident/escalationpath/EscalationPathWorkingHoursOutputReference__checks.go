@@ -90,7 +90,7 @@ func (e *jsiiProxy_EscalationPathWorkingHoursOutputReference) validateInterpolat
 	return nil
 }
 
-func (e *jsiiProxy_EscalationPathWorkingHoursOutputReference) validatePutWeekdayIntervalsParameters(value interface{}) error {
+func (e *jsiiProxy_EscalationPathWorkingHoursOutputReference) validatePutWeekdayIntervalsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (e *jsiiProxy_EscalationPathWorkingHoursOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_EscalationPathWorkingHoursOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EscalationPathWorkingHoursOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -202,7 +202,7 @@ func (j *jsiiProxy_EscalationPathWorkingHoursOutputReference) validateSetIdParam
 	return nil
 }
 
-func (j *jsiiProxy_EscalationPathWorkingHoursOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EscalationPathWorkingHoursOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -277,4 +277,3 @@ func validateNewEscalationPathWorkingHoursOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

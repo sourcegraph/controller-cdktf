@@ -1,6 +1,5 @@
 package workflow
 
-
 type WorkflowExpressions struct {
 	// The human readable label of the expression.
 	//
@@ -9,7 +8,7 @@ type WorkflowExpressions struct {
 	// The operations to execute in sequence for this expression.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/workflow#operations Workflow#operations}
-	Operations interface{} `field:"required" json:"operations" yaml:"operations"`
+	Operations any `field:"required" json:"operations" yaml:"operations"`
 	// A short ID that can be used to reference the expression.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/workflow#reference Workflow#reference}
@@ -23,4 +22,3 @@ type WorkflowExpressions struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/workflow#else_branch Workflow#else_branch}
 	ElseBranch *WorkflowExpressionsElseBranch `field:"optional" json:"elseBranch" yaml:"elseBranch"`
 }
-

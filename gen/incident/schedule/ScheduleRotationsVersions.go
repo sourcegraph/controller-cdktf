@@ -1,11 +1,10 @@
 package schedule
 
-
 type ScheduleRotationsVersions struct {
 	// Defines the handover intervals for this rota, in order they should apply.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/schedule#handovers Schedule#handovers}
-	Handovers interface{} `field:"required" json:"handovers" yaml:"handovers"`
+	Handovers any `field:"required" json:"handovers" yaml:"handovers"`
 	// Defines the next moment we'll trigger a handover.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/schedule#handover_start_at Schedule#handover_start_at}
@@ -13,7 +12,7 @@ type ScheduleRotationsVersions struct {
 	// Controls how many people are on-call concurrently.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/schedule#layers Schedule#layers}
-	Layers interface{} `field:"required" json:"layers" yaml:"layers"`
+	Layers any `field:"required" json:"layers" yaml:"layers"`
 	// The incident.io ID of a user.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/schedule#users Schedule#users}
@@ -25,6 +24,5 @@ type ScheduleRotationsVersions struct {
 	// Optional restrictions that define when to schedule people for this rota.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/schedule#working_intervals Schedule#working_intervals}
-	WorkingIntervals interface{} `field:"optional" json:"workingIntervals" yaml:"workingIntervals"`
+	WorkingIntervals any `field:"optional" json:"workingIntervals" yaml:"workingIntervals"`
 }
-

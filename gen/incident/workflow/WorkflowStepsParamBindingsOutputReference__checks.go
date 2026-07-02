@@ -90,7 +90,7 @@ func (w *jsiiProxy_WorkflowStepsParamBindingsOutputReference) validateInterpolat
 	return nil
 }
 
-func (w *jsiiProxy_WorkflowStepsParamBindingsOutputReference) validatePutArrayValueParameters(value interface{}) error {
+func (w *jsiiProxy_WorkflowStepsParamBindingsOutputReference) validatePutArrayValueParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (w *jsiiProxy_WorkflowStepsParamBindingsOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_WorkflowStepsParamBindingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkflowStepsParamBindingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -205,7 +205,7 @@ func (j *jsiiProxy_WorkflowStepsParamBindingsOutputReference) validateSetComplex
 	return nil
 }
 
-func (j *jsiiProxy_WorkflowStepsParamBindingsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkflowStepsParamBindingsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -264,4 +264,3 @@ func validateNewWorkflowStepsParamBindingsOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

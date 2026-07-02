@@ -106,7 +106,7 @@ func (j *jsiiProxy_CustomFieldFilterByOutputReference) validateSetCatalogAttribu
 	return nil
 }
 
-func (j *jsiiProxy_CustomFieldFilterByOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CustomFieldFilterByOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_CustomFieldFilterByOutputReference) validateSetCustomFieldIdP
 	return nil
 }
 
-func (j *jsiiProxy_CustomFieldFilterByOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CustomFieldFilterByOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewCustomFieldFilterByOutputReferenceParameters(terraformResource c
 
 	return nil
 }
-

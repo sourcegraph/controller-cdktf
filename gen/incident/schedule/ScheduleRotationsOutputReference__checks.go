@@ -90,7 +90,7 @@ func (s *jsiiProxy_ScheduleRotationsOutputReference) validateInterpolationForAtt
 	return nil
 }
 
-func (s *jsiiProxy_ScheduleRotationsOutputReference) validatePutVersionsParameters(value interface{}) error {
+func (s *jsiiProxy_ScheduleRotationsOutputReference) validatePutVersionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (s *jsiiProxy_ScheduleRotationsOutputReference) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_ScheduleRotationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ScheduleRotationsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -202,7 +202,7 @@ func (j *jsiiProxy_ScheduleRotationsOutputReference) validateSetIdParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_ScheduleRotationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ScheduleRotationsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -269,4 +269,3 @@ func validateNewScheduleRotationsOutputReferenceParameters(terraformResource cdk
 
 	return nil
 }
-

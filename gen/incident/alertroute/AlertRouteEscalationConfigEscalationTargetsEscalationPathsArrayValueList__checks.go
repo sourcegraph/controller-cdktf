@@ -34,7 +34,7 @@ func (a *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsEscalationPathsArr
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsEscalationPathsArrayValueList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsEscalationPathsArrayValueList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAlertRouteEscalationConfigEscalationTargetsEscalationPathsArrayV
 
 	return nil
 }
-

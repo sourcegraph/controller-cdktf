@@ -98,7 +98,7 @@ func (a *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputR
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputR
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewAlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputRefe
 
 	return nil
 }
-

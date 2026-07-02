@@ -12,9 +12,9 @@ type AlertRouteExpressionsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -26,16 +26,16 @@ type AlertRouteExpressionsOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	ElseBranch() AlertRouteExpressionsElseBranchOutputReference
-	ElseBranchInput() interface{}
+	ElseBranchInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Label() *string
 	SetLabel(val *string)
 	LabelInput() *string
 	Operations() AlertRouteExpressionsOperationsList
-	OperationsInput() interface{}
+	OperationsInput() any
 	Reference() *string
 	SetReference(val *string)
 	ReferenceInput() *string
@@ -53,7 +53,7 @@ type AlertRouteExpressionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,11 +75,11 @@ type AlertRouteExpressionsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutElseBranch(value *AlertRouteExpressionsElseBranch)
-	PutOperations(value interface{})
+	PutOperations(value any)
 	ResetElseBranch()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_AlertRouteExpressionsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AlertRouteExpressionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertRouteExpressionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -132,8 +132,8 @@ func (j *jsiiProxy_AlertRouteExpressionsOutputReference) ElseBranch() AlertRoute
 	return returns
 }
 
-func (j *jsiiProxy_AlertRouteExpressionsOutputReference) ElseBranchInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertRouteExpressionsOutputReference) ElseBranchInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"elseBranchInput",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_AlertRouteExpressionsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AlertRouteExpressionsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertRouteExpressionsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_AlertRouteExpressionsOutputReference) Operations() AlertRoute
 	return returns
 }
 
-func (j *jsiiProxy_AlertRouteExpressionsOutputReference) OperationsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertRouteExpressionsOutputReference) OperationsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"operationsInput",
@@ -262,7 +262,6 @@ func (j *jsiiProxy_AlertRouteExpressionsOutputReference) TerraformResource() cdk
 	return returns
 }
 
-
 func NewAlertRouteExpressionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AlertRouteExpressionsOutputReference {
 	_init_.Initialize()
 
@@ -273,7 +272,7 @@ func NewAlertRouteExpressionsOutputReference(terraformResource cdktf.IInterpolat
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.alertRoute.AlertRouteExpressionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -285,12 +284,12 @@ func NewAlertRouteExpressionsOutputReference_Override(a AlertRouteExpressionsOut
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.alertRoute.AlertRouteExpressionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AlertRouteExpressionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AlertRouteExpressionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_AlertRouteExpressionsOutputReference)SetComplexObjectIndex(va
 	)
 }
 
-func (j *jsiiProxy_AlertRouteExpressionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AlertRouteExpressionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_AlertRouteExpressionsOutputReference)SetComplexObjectIsFromSe
 	)
 }
 
-func (j *jsiiProxy_AlertRouteExpressionsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AlertRouteExpressionsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_AlertRouteExpressionsOutputReference)SetInternalValue(val int
 	)
 }
 
-func (j *jsiiProxy_AlertRouteExpressionsOutputReference)SetLabel(val *string) {
+func (j *jsiiProxy_AlertRouteExpressionsOutputReference) SetLabel(val *string) {
 	if err := j.validateSetLabelParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,7 +333,7 @@ func (j *jsiiProxy_AlertRouteExpressionsOutputReference)SetLabel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlertRouteExpressionsOutputReference)SetReference(val *string) {
+func (j *jsiiProxy_AlertRouteExpressionsOutputReference) SetReference(val *string) {
 	if err := j.validateSetReferenceParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,7 +344,7 @@ func (j *jsiiProxy_AlertRouteExpressionsOutputReference)SetReference(val *string
 	)
 }
 
-func (j *jsiiProxy_AlertRouteExpressionsOutputReference)SetRootReference(val *string) {
+func (j *jsiiProxy_AlertRouteExpressionsOutputReference) SetRootReference(val *string) {
 	if err := j.validateSetRootReferenceParameters(val); err != nil {
 		panic(err)
 	}
@@ -356,7 +355,7 @@ func (j *jsiiProxy_AlertRouteExpressionsOutputReference)SetRootReference(val *st
 	)
 }
 
-func (j *jsiiProxy_AlertRouteExpressionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AlertRouteExpressionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -367,7 +366,7 @@ func (j *jsiiProxy_AlertRouteExpressionsOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_AlertRouteExpressionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AlertRouteExpressionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -391,16 +390,16 @@ func (a *jsiiProxy_AlertRouteExpressionsOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AlertRouteExpressionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AlertRouteExpressionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (a *jsiiProxy_AlertRouteExpressionsOutputReference) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (a *jsiiProxy_AlertRouteExpressionsOutputReference) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (a *jsiiProxy_AlertRouteExpressionsOutputReference) GetListAttribute(terraf
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -464,7 +463,7 @@ func (a *jsiiProxy_AlertRouteExpressionsOutputReference) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -480,7 +479,7 @@ func (a *jsiiProxy_AlertRouteExpressionsOutputReference) GetNumberListAttribute(
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -496,7 +495,7 @@ func (a *jsiiProxy_AlertRouteExpressionsOutputReference) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (a *jsiiProxy_AlertRouteExpressionsOutputReference) GetStringAttribute(terr
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -528,7 +527,7 @@ func (a *jsiiProxy_AlertRouteExpressionsOutputReference) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func (a *jsiiProxy_AlertRouteExpressionsOutputReference) InterpolationForAttribu
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -571,18 +570,18 @@ func (a *jsiiProxy_AlertRouteExpressionsOutputReference) PutElseBranch(value *Al
 	_jsii_.InvokeVoid(
 		a,
 		"putElseBranch",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (a *jsiiProxy_AlertRouteExpressionsOutputReference) PutOperations(value interface{}) {
+func (a *jsiiProxy_AlertRouteExpressionsOutputReference) PutOperations(value any) {
 	if err := a.validatePutOperationsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putOperations",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -594,16 +593,16 @@ func (a *jsiiProxy_AlertRouteExpressionsOutputReference) ResetElseBranch() {
 	)
 }
 
-func (a *jsiiProxy_AlertRouteExpressionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AlertRouteExpressionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -622,4 +621,3 @@ func (a *jsiiProxy_AlertRouteExpressionsOutputReference) ToString() *string {
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (a *jsiiProxy_AlertSourceHttpCustomOptionsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_AlertSourceHttpCustomOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlertSourceHttpCustomOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_AlertSourceHttpCustomOptionsOutputReference) validateSetDedup
 	return nil
 }
 
-func (j *jsiiProxy_AlertSourceHttpCustomOptionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlertSourceHttpCustomOptionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewAlertSourceHttpCustomOptionsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

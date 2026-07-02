@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataIncidentCatalogEntriesCatalogEntriesOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DataIncidentCatalogEntriesCatalogEntriesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataIncidentCatalogEntriesCatalogEntriesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataIncidentCatalogEntriesCatalogEntriesOutputReferenceParameter
 
 	return nil
 }
-

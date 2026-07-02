@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataIncidentAlertSourcesAlertSourcesTemplateAttributesBinding
 	return nil
 }
 
-func (j *jsiiProxy_DataIncidentAlertSourcesAlertSourcesTemplateAttributesBindingValueOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataIncidentAlertSourcesAlertSourcesTemplateAttributesBindingValueOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataIncidentAlertSourcesAlertSourcesTemplateAttributesBindingVal
 
 	return nil
 }
-

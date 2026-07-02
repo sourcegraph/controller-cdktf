@@ -12,16 +12,16 @@ type AlertRouteChannelConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	ConditionGroups() AlertRouteChannelConfigConditionGroupsList
-	ConditionGroupsInput() interface{}
+	ConditionGroupsInput() any
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -29,12 +29,12 @@ type AlertRouteChannelConfigOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	MsTeamsTargets() AlertRouteChannelConfigMsTeamsTargetsOutputReference
-	MsTeamsTargetsInput() interface{}
+	MsTeamsTargetsInput() any
 	SlackTargets() AlertRouteChannelConfigSlackTargetsOutputReference
-	SlackTargetsInput() interface{}
+	SlackTargetsInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type AlertRouteChannelConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,14 +67,14 @@ type AlertRouteChannelConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutConditionGroups(value interface{})
+	PutConditionGroups(value any)
 	PutMsTeamsTargets(value *AlertRouteChannelConfigMsTeamsTargets)
 	PutSlackTargets(value *AlertRouteChannelConfigSlackTargets)
 	ResetMsTeamsTargets()
 	ResetSlackTargets()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_AlertRouteChannelConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AlertRouteChannelConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertRouteChannelConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -117,8 +117,8 @@ func (j *jsiiProxy_AlertRouteChannelConfigOutputReference) ConditionGroups() Ale
 	return returns
 }
 
-func (j *jsiiProxy_AlertRouteChannelConfigOutputReference) ConditionGroupsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertRouteChannelConfigOutputReference) ConditionGroupsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"conditionGroupsInput",
@@ -147,8 +147,8 @@ func (j *jsiiProxy_AlertRouteChannelConfigOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AlertRouteChannelConfigOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertRouteChannelConfigOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_AlertRouteChannelConfigOutputReference) MsTeamsTargets() Aler
 	return returns
 }
 
-func (j *jsiiProxy_AlertRouteChannelConfigOutputReference) MsTeamsTargetsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertRouteChannelConfigOutputReference) MsTeamsTargetsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"msTeamsTargetsInput",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_AlertRouteChannelConfigOutputReference) SlackTargets() AlertR
 	return returns
 }
 
-func (j *jsiiProxy_AlertRouteChannelConfigOutputReference) SlackTargetsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertRouteChannelConfigOutputReference) SlackTargetsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"slackTargetsInput",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_AlertRouteChannelConfigOutputReference) TerraformResource() c
 	return returns
 }
 
-
 func NewAlertRouteChannelConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AlertRouteChannelConfigOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewAlertRouteChannelConfigOutputReference(terraformResource cdktf.IInterpol
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.alertRoute.AlertRouteChannelConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewAlertRouteChannelConfigOutputReference_Override(a AlertRouteChannelConfi
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.alertRoute.AlertRouteChannelConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AlertRouteChannelConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AlertRouteChannelConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_AlertRouteChannelConfigOutputReference)SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_AlertRouteChannelConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AlertRouteChannelConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_AlertRouteChannelConfigOutputReference)SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_AlertRouteChannelConfigOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AlertRouteChannelConfigOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_AlertRouteChannelConfigOutputReference)SetInternalValue(val i
 	)
 }
 
-func (j *jsiiProxy_AlertRouteChannelConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AlertRouteChannelConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_AlertRouteChannelConfigOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_AlertRouteChannelConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AlertRouteChannelConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,16 +312,16 @@ func (a *jsiiProxy_AlertRouteChannelConfigOutputReference) ComputeFqn() *string 
 	return returns
 }
 
-func (a *jsiiProxy_AlertRouteChannelConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AlertRouteChannelConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -338,7 +337,7 @@ func (a *jsiiProxy_AlertRouteChannelConfigOutputReference) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -354,7 +353,7 @@ func (a *jsiiProxy_AlertRouteChannelConfigOutputReference) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (a *jsiiProxy_AlertRouteChannelConfigOutputReference) GetListAttribute(terr
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (a *jsiiProxy_AlertRouteChannelConfigOutputReference) GetNumberAttribute(te
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (a *jsiiProxy_AlertRouteChannelConfigOutputReference) GetNumberListAttribut
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (a *jsiiProxy_AlertRouteChannelConfigOutputReference) GetNumberMapAttribute
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (a *jsiiProxy_AlertRouteChannelConfigOutputReference) GetStringAttribute(te
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (a *jsiiProxy_AlertRouteChannelConfigOutputReference) GetStringMapAttribute
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -479,21 +478,21 @@ func (a *jsiiProxy_AlertRouteChannelConfigOutputReference) InterpolationForAttri
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AlertRouteChannelConfigOutputReference) PutConditionGroups(value interface{}) {
+func (a *jsiiProxy_AlertRouteChannelConfigOutputReference) PutConditionGroups(value any) {
 	if err := a.validatePutConditionGroupsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putConditionGroups",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -504,7 +503,7 @@ func (a *jsiiProxy_AlertRouteChannelConfigOutputReference) PutMsTeamsTargets(val
 	_jsii_.InvokeVoid(
 		a,
 		"putMsTeamsTargets",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -515,7 +514,7 @@ func (a *jsiiProxy_AlertRouteChannelConfigOutputReference) PutSlackTargets(value
 	_jsii_.InvokeVoid(
 		a,
 		"putSlackTargets",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -535,16 +534,16 @@ func (a *jsiiProxy_AlertRouteChannelConfigOutputReference) ResetSlackTargets() {
 	)
 }
 
-func (a *jsiiProxy_AlertRouteChannelConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AlertRouteChannelConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (a *jsiiProxy_AlertRouteChannelConfigOutputReference) ToString() *string {
 
 	return returns
 }
-

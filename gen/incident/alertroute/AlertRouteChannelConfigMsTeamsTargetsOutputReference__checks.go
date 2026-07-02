@@ -117,7 +117,7 @@ func (j *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -233,4 +233,3 @@ func validateNewAlertRouteChannelConfigMsTeamsTargetsOutputReferenceParameters(t
 
 	return nil
 }
-

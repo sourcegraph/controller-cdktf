@@ -142,7 +142,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -215,7 +215,7 @@ func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) validateSetI
 	return nil
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EscalationPathPathIfElseElsePathOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -282,4 +282,3 @@ func validateNewEscalationPathPathIfElseElsePathOutputReferenceParameters(terraf
 
 	return nil
 }
-

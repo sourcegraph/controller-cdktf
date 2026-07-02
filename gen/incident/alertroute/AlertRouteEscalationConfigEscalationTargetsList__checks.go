@@ -34,7 +34,7 @@ func (a *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsList) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAlertRouteEscalationConfigEscalationTargetsListParameters(terraf
 
 	return nil
 }
-

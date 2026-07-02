@@ -1,11 +1,10 @@
 package escalationpath
 
-
 type EscalationPathPathIfElseElsePathLevel struct {
 	// The targets (users or schedules) for this level.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/escalation_path#targets EscalationPath#targets}
-	Targets interface{} `field:"required" json:"targets" yaml:"targets"`
+	Targets any `field:"required" json:"targets" yaml:"targets"`
 	// Controls the behaviour of acknowledgements for this level, with 'first' cancelling all other escalations on the same level when someone acks.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/escalation_path#ack_mode EscalationPath#ack_mode}
@@ -25,4 +24,3 @@ type EscalationPathPathIfElseElsePathLevel struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/escalation_path#time_to_ack_weekday_interval_config_id EscalationPath#time_to_ack_weekday_interval_config_id}
 	TimeToAckWeekdayIntervalConfigId *string `field:"optional" json:"timeToAckWeekdayIntervalConfigId" yaml:"timeToAckWeekdayIntervalConfigId"`
 }
-

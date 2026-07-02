@@ -34,7 +34,7 @@ func (a *jsiiProxy_AlertRouteAlertSourcesConditionGroupsConditionsParamBindingsL
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteAlertSourcesConditionGroupsConditionsParamBindingsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRouteAlertSourcesConditionGroupsConditionsParamBindingsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAlertRouteAlertSourcesConditionGroupsConditionsParamBindingsList
 
 	return nil
 }
-

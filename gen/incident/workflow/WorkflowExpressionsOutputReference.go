@@ -12,9 +12,9 @@ type WorkflowExpressionsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -26,16 +26,16 @@ type WorkflowExpressionsOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	ElseBranch() WorkflowExpressionsElseBranchOutputReference
-	ElseBranchInput() interface{}
+	ElseBranchInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Label() *string
 	SetLabel(val *string)
 	LabelInput() *string
 	Operations() WorkflowExpressionsOperationsList
-	OperationsInput() interface{}
+	OperationsInput() any
 	Reference() *string
 	SetReference(val *string)
 	ReferenceInput() *string
@@ -53,7 +53,7 @@ type WorkflowExpressionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,11 +75,11 @@ type WorkflowExpressionsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutElseBranch(value *WorkflowExpressionsElseBranch)
-	PutOperations(value interface{})
+	PutOperations(value any)
 	ResetElseBranch()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_WorkflowExpressionsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_WorkflowExpressionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkflowExpressionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -132,8 +132,8 @@ func (j *jsiiProxy_WorkflowExpressionsOutputReference) ElseBranch() WorkflowExpr
 	return returns
 }
 
-func (j *jsiiProxy_WorkflowExpressionsOutputReference) ElseBranchInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkflowExpressionsOutputReference) ElseBranchInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"elseBranchInput",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_WorkflowExpressionsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkflowExpressionsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkflowExpressionsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_WorkflowExpressionsOutputReference) Operations() WorkflowExpr
 	return returns
 }
 
-func (j *jsiiProxy_WorkflowExpressionsOutputReference) OperationsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkflowExpressionsOutputReference) OperationsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"operationsInput",
@@ -262,7 +262,6 @@ func (j *jsiiProxy_WorkflowExpressionsOutputReference) TerraformResource() cdktf
 	return returns
 }
 
-
 func NewWorkflowExpressionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) WorkflowExpressionsOutputReference {
 	_init_.Initialize()
 
@@ -273,7 +272,7 @@ func NewWorkflowExpressionsOutputReference(terraformResource cdktf.IInterpolatin
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.workflow.WorkflowExpressionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -285,12 +284,12 @@ func NewWorkflowExpressionsOutputReference_Override(w WorkflowExpressionsOutputR
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.workflow.WorkflowExpressionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WorkflowExpressionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_WorkflowExpressionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_WorkflowExpressionsOutputReference)SetComplexObjectIndex(val 
 	)
 }
 
-func (j *jsiiProxy_WorkflowExpressionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_WorkflowExpressionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_WorkflowExpressionsOutputReference)SetComplexObjectIsFromSet(
 	)
 }
 
-func (j *jsiiProxy_WorkflowExpressionsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_WorkflowExpressionsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_WorkflowExpressionsOutputReference)SetInternalValue(val inter
 	)
 }
 
-func (j *jsiiProxy_WorkflowExpressionsOutputReference)SetLabel(val *string) {
+func (j *jsiiProxy_WorkflowExpressionsOutputReference) SetLabel(val *string) {
 	if err := j.validateSetLabelParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,7 +333,7 @@ func (j *jsiiProxy_WorkflowExpressionsOutputReference)SetLabel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkflowExpressionsOutputReference)SetReference(val *string) {
+func (j *jsiiProxy_WorkflowExpressionsOutputReference) SetReference(val *string) {
 	if err := j.validateSetReferenceParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,7 +344,7 @@ func (j *jsiiProxy_WorkflowExpressionsOutputReference)SetReference(val *string) 
 	)
 }
 
-func (j *jsiiProxy_WorkflowExpressionsOutputReference)SetRootReference(val *string) {
+func (j *jsiiProxy_WorkflowExpressionsOutputReference) SetRootReference(val *string) {
 	if err := j.validateSetRootReferenceParameters(val); err != nil {
 		panic(err)
 	}
@@ -356,7 +355,7 @@ func (j *jsiiProxy_WorkflowExpressionsOutputReference)SetRootReference(val *stri
 	)
 }
 
-func (j *jsiiProxy_WorkflowExpressionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_WorkflowExpressionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -367,7 +366,7 @@ func (j *jsiiProxy_WorkflowExpressionsOutputReference)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_WorkflowExpressionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkflowExpressionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -391,16 +390,16 @@ func (w *jsiiProxy_WorkflowExpressionsOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (w *jsiiProxy_WorkflowExpressionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WorkflowExpressionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (w *jsiiProxy_WorkflowExpressionsOutputReference) GetBooleanAttribute(terra
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (w *jsiiProxy_WorkflowExpressionsOutputReference) GetBooleanMapAttribute(te
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (w *jsiiProxy_WorkflowExpressionsOutputReference) GetListAttribute(terrafor
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -464,7 +463,7 @@ func (w *jsiiProxy_WorkflowExpressionsOutputReference) GetNumberAttribute(terraf
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -480,7 +479,7 @@ func (w *jsiiProxy_WorkflowExpressionsOutputReference) GetNumberListAttribute(te
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -496,7 +495,7 @@ func (w *jsiiProxy_WorkflowExpressionsOutputReference) GetNumberMapAttribute(ter
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (w *jsiiProxy_WorkflowExpressionsOutputReference) GetStringAttribute(terraf
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -528,7 +527,7 @@ func (w *jsiiProxy_WorkflowExpressionsOutputReference) GetStringMapAttribute(ter
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func (w *jsiiProxy_WorkflowExpressionsOutputReference) InterpolationForAttribute
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -571,18 +570,18 @@ func (w *jsiiProxy_WorkflowExpressionsOutputReference) PutElseBranch(value *Work
 	_jsii_.InvokeVoid(
 		w,
 		"putElseBranch",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (w *jsiiProxy_WorkflowExpressionsOutputReference) PutOperations(value interface{}) {
+func (w *jsiiProxy_WorkflowExpressionsOutputReference) PutOperations(value any) {
 	if err := w.validatePutOperationsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"putOperations",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -594,16 +593,16 @@ func (w *jsiiProxy_WorkflowExpressionsOutputReference) ResetElseBranch() {
 	)
 }
 
-func (w *jsiiProxy_WorkflowExpressionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WorkflowExpressionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := w.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -622,4 +621,3 @@ func (w *jsiiProxy_WorkflowExpressionsOutputReference) ToString() *string {
 
 	return returns
 }
-

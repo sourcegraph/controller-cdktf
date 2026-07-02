@@ -1,6 +1,5 @@
 package alertsource
 
-
 type AlertSourceTemplateExpressions struct {
 	// The human readable label of the expression.
 	//
@@ -9,7 +8,7 @@ type AlertSourceTemplateExpressions struct {
 	// The operations to execute in sequence for this expression.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/alert_source#operations AlertSource#operations}
-	Operations interface{} `field:"required" json:"operations" yaml:"operations"`
+	Operations any `field:"required" json:"operations" yaml:"operations"`
 	// A short ID that can be used to reference the expression.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/alert_source#reference AlertSource#reference}
@@ -23,4 +22,3 @@ type AlertSourceTemplateExpressions struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/alert_source#else_branch AlertSource#else_branch}
 	ElseBranch *AlertSourceTemplateExpressionsElseBranch `field:"optional" json:"elseBranch" yaml:"elseBranch"`
 }
-

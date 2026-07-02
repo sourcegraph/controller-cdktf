@@ -90,7 +90,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseOutputReference) validateInterpolatio
 	return nil
 }
 
-func (e *jsiiProxy_EscalationPathPathIfElseOutputReference) validatePutConditionsParameters(value interface{}) error {
+func (e *jsiiProxy_EscalationPathPathIfElseOutputReference) validatePutConditionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseOutputReference) validatePutCondition
 	return nil
 }
 
-func (e *jsiiProxy_EscalationPathPathIfElseOutputReference) validatePutElsePathParameters(value interface{}) error {
+func (e *jsiiProxy_EscalationPathPathIfElseOutputReference) validatePutElsePathParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseOutputReference) validatePutElsePathP
 	return nil
 }
 
-func (e *jsiiProxy_EscalationPathPathIfElseOutputReference) validatePutThenPathParameters(value interface{}) error {
+func (e *jsiiProxy_EscalationPathPathIfElseOutputReference) validatePutThenPathParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EscalationPathPathIfElseOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -256,7 +256,7 @@ func (j *jsiiProxy_EscalationPathPathIfElseOutputReference) validateSetComplexOb
 	return nil
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EscalationPathPathIfElseOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -307,4 +307,3 @@ func validateNewEscalationPathPathIfElseOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

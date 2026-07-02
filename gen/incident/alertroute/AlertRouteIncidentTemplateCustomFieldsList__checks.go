@@ -34,7 +34,7 @@ func (a *jsiiProxy_AlertRouteIncidentTemplateCustomFieldsList) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteIncidentTemplateCustomFieldsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRouteIncidentTemplateCustomFieldsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAlertRouteIncidentTemplateCustomFieldsListParameters(terraformRe
 
 	return nil
 }
-

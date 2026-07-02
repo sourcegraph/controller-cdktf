@@ -90,7 +90,7 @@ func (a *jsiiProxy_AlertSourceTemplateOutputReference) validateInterpolationForA
 	return nil
 }
 
-func (a *jsiiProxy_AlertSourceTemplateOutputReference) validatePutAttributesParameters(value interface{}) error {
+func (a *jsiiProxy_AlertSourceTemplateOutputReference) validatePutAttributesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -132,7 +132,7 @@ func (a *jsiiProxy_AlertSourceTemplateOutputReference) validatePutDescriptionPar
 	return nil
 }
 
-func (a *jsiiProxy_AlertSourceTemplateOutputReference) validatePutExpressionsParameters(value interface{}) error {
+func (a *jsiiProxy_AlertSourceTemplateOutputReference) validatePutExpressionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -182,7 +182,7 @@ func (a *jsiiProxy_AlertSourceTemplateOutputReference) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_AlertSourceTemplateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlertSourceTemplateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -247,7 +247,7 @@ func (j *jsiiProxy_AlertSourceTemplateOutputReference) validateSetComplexObjectI
 	return nil
 }
 
-func (j *jsiiProxy_AlertSourceTemplateOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlertSourceTemplateOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -298,4 +298,3 @@ func validateNewAlertSourceTemplateOutputReferenceParameters(terraformResource c
 
 	return nil
 }
-

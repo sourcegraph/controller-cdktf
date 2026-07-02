@@ -34,7 +34,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseConditionsParamBindingsArrayValueList
 	return nil
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseConditionsParamBindingsArrayValueList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EscalationPathPathIfElseConditionsParamBindingsArrayValueList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEscalationPathPathIfElseConditionsParamBindingsArrayValueListPar
 
 	return nil
 }
-

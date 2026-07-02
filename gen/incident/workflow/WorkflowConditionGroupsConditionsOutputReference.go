@@ -12,9 +12,9 @@ type WorkflowConditionGroupsConditionsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,13 +27,13 @@ type WorkflowConditionGroupsConditionsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Operation() *string
 	SetOperation(val *string)
 	OperationInput() *string
 	ParamBindings() WorkflowConditionGroupsConditionsParamBindingsList
-	ParamBindingsInput() interface{}
+	ParamBindingsInput() any
 	Subject() *string
 	SetSubject(val *string)
 	SubjectInput() *string
@@ -48,7 +48,7 @@ type WorkflowConditionGroupsConditionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,10 +69,10 @@ type WorkflowConditionGroupsConditionsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutParamBindings(value interface{})
+	PutParamBindings(value any)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,8 +85,8 @@ type jsiiProxy_WorkflowConditionGroupsConditionsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -125,8 +125,8 @@ func (j *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) Fqn() *stri
 	return returns
 }
 
-func (j *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -165,8 +165,8 @@ func (j *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) ParamBindin
 	return returns
 }
 
-func (j *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) ParamBindingsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) ParamBindingsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"paramBindingsInput",
@@ -215,7 +215,6 @@ func (j *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) TerraformRe
 	return returns
 }
 
-
 func NewWorkflowConditionGroupsConditionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) WorkflowConditionGroupsConditionsOutputReference {
 	_init_.Initialize()
 
@@ -226,7 +225,7 @@ func NewWorkflowConditionGroupsConditionsOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.workflow.WorkflowConditionGroupsConditionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -238,12 +237,12 @@ func NewWorkflowConditionGroupsConditionsOutputReference_Override(w WorkflowCond
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.workflow.WorkflowConditionGroupsConditionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference)SetOperation(val *string) {
+func (j *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) SetOperation(val *string) {
 	if err := j.validateSetOperationParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference)SetOperation
 	)
 }
 
-func (j *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference)SetSubject(val *string) {
+func (j *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) SetSubject(val *string) {
 	if err := j.validateSetSubjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -298,7 +297,7 @@ func (j *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference)SetSubject(v
 	)
 }
 
-func (j *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -309,7 +308,7 @@ func (j *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -333,16 +332,16 @@ func (w *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) ComputeFqn(
 	return returns
 }
 
-func (w *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -358,7 +357,7 @@ func (w *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (w *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (w *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) GetListAttr
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (w *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (w *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (w *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (w *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) GetStringAt
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (w *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) GetStringMa
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -499,34 +498,34 @@ func (w *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) Interpolati
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) PutParamBindings(value interface{}) {
+func (w *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) PutParamBindings(value any) {
 	if err := w.validatePutParamBindingsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"putParamBindings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (w *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := w.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -545,4 +544,3 @@ func (w *jsiiProxy_WorkflowConditionGroupsConditionsOutputReference) ToString() 
 
 	return returns
 }
-

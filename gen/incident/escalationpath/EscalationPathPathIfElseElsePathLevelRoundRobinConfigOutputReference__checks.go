@@ -98,7 +98,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -242,4 +242,3 @@ func validateNewEscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputRefer
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package alertroute
 
-
 type AlertRouteIncidentTemplate struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/alert_route#name AlertRoute#name}.
 	Name *AlertRouteIncidentTemplateName `field:"required" json:"name" yaml:"name"`
@@ -9,7 +8,7 @@ type AlertRouteIncidentTemplate struct {
 	// Custom fields configuration.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/alert_route#custom_fields AlertRoute#custom_fields}
-	CustomFields interface{} `field:"optional" json:"customFields" yaml:"customFields"`
+	CustomFields any `field:"optional" json:"customFields" yaml:"customFields"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/alert_route#incident_mode AlertRoute#incident_mode}.
 	IncidentMode *AlertRouteIncidentTemplateIncidentMode `field:"optional" json:"incidentMode" yaml:"incidentMode"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/alert_route#incident_type AlertRoute#incident_type}.
@@ -21,4 +20,3 @@ type AlertRouteIncidentTemplate struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/alert_route#workspace AlertRoute#workspace}.
 	Workspace *AlertRouteIncidentTemplateWorkspace `field:"optional" json:"workspace" yaml:"workspace"`
 }
-

@@ -34,7 +34,7 @@ func (s *jsiiProxy_ScheduleRotationsVersionsLayersList) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_ScheduleRotationsVersionsLayersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ScheduleRotationsVersionsLayersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewScheduleRotationsVersionsLayersListParameters(terraformResource 
 
 	return nil
 }
-

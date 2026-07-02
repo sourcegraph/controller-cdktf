@@ -98,7 +98,7 @@ func (a *jsiiProxy_AlertRouteChannelConfigSlackTargetsBindingValueOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteChannelConfigSlackTargetsBindingValueOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRouteChannelConfigSlackTargetsBindingValueOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_AlertRouteChannelConfigSlackTargetsBindingValueOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteChannelConfigSlackTargetsBindingValueOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRouteChannelConfigSlackTargetsBindingValueOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewAlertRouteChannelConfigSlackTargetsBindingValueOutputReferencePa
 
 	return nil
 }
-

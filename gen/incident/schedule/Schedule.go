@@ -15,15 +15,15 @@ type Schedule interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -37,7 +37,7 @@ type Schedule interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	HolidaysPublicConfig() ScheduleHolidaysPublicConfigOutputReference
-	HolidaysPublicConfigInput() interface{}
+	HolidaysPublicConfigInput() any
 	Id() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -53,20 +53,20 @@ type Schedule interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Rotations() ScheduleRotationsList
-	RotationsInput() interface{}
+	RotationsInput() any
 	TeamIds() *[]*string
 	SetTeamIds(val *[]*string)
 	TeamIdsInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timezone() *string
@@ -76,9 +76,9 @@ type Schedule interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -96,7 +96,7 @@ type Schedule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -108,7 +108,7 @@ type Schedule interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -116,23 +116,23 @@ type Schedule interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutHolidaysPublicConfig(value *ScheduleHolidaysPublicConfig)
-	PutRotations(value interface{})
+	PutRotations(value any)
 	ResetHolidaysPublicConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTeamIds()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Schedule
@@ -150,8 +150,8 @@ func (j *jsiiProxy_Schedule) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_Schedule) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Schedule) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -160,8 +160,8 @@ func (j *jsiiProxy_Schedule) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Schedule) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Schedule) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -170,8 +170,8 @@ func (j *jsiiProxy_Schedule) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Schedule) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Schedule) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -230,8 +230,8 @@ func (j *jsiiProxy_Schedule) HolidaysPublicConfig() ScheduleHolidaysPublicConfig
 	return returns
 }
 
-func (j *jsiiProxy_Schedule) HolidaysPublicConfigInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Schedule) HolidaysPublicConfigInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"holidaysPublicConfigInput",
@@ -300,8 +300,8 @@ func (j *jsiiProxy_Schedule) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Schedule) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Schedule) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -310,8 +310,8 @@ func (j *jsiiProxy_Schedule) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Schedule) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Schedule) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -330,8 +330,8 @@ func (j *jsiiProxy_Schedule) Rotations() ScheduleRotationsList {
 	return returns
 }
 
-func (j *jsiiProxy_Schedule) RotationsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Schedule) RotationsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rotationsInput",
@@ -370,8 +370,8 @@ func (j *jsiiProxy_Schedule) TerraformGeneratorMetadata() *cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_Schedule) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Schedule) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -410,7 +410,6 @@ func (j *jsiiProxy_Schedule) TimezoneInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/schedule incident_schedule} Resource.
 func NewSchedule(scope constructs.Construct, id *string, config *ScheduleConfig) Schedule {
 	_init_.Initialize()
@@ -422,7 +421,7 @@ func NewSchedule(scope constructs.Construct, id *string, config *ScheduleConfig)
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.schedule.Schedule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -435,12 +434,12 @@ func NewSchedule_Override(s Schedule, scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.schedule.Schedule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_Schedule)SetConnection(val interface{}) {
+func (j *jsiiProxy_Schedule) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,7 +450,7 @@ func (j *jsiiProxy_Schedule)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Schedule)SetCount(val interface{}) {
+func (j *jsiiProxy_Schedule) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func (j *jsiiProxy_Schedule)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Schedule)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Schedule) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -470,7 +469,7 @@ func (j *jsiiProxy_Schedule)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Schedule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Schedule) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -478,7 +477,7 @@ func (j *jsiiProxy_Schedule)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Schedule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Schedule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_Schedule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) 
 	)
 }
 
-func (j *jsiiProxy_Schedule)SetName(val *string) {
+func (j *jsiiProxy_Schedule) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_Schedule)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Schedule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Schedule) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -508,7 +507,7 @@ func (j *jsiiProxy_Schedule)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Schedule)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Schedule) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,7 +518,7 @@ func (j *jsiiProxy_Schedule)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Schedule)SetTeamIds(val *[]*string) {
+func (j *jsiiProxy_Schedule) SetTeamIds(val *[]*string) {
 	if err := j.validateSetTeamIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -530,7 +529,7 @@ func (j *jsiiProxy_Schedule)SetTeamIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Schedule)SetTimezone(val *string) {
+func (j *jsiiProxy_Schedule) SetTimezone(val *string) {
 	if err := j.validateSetTimezoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -553,7 +552,7 @@ func Schedule_GenerateConfigForImport(scope constructs.Construct, importToId *st
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-incident.schedule.Schedule",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -577,7 +576,7 @@ func Schedule_GenerateConfigForImport(scope constructs.Construct, importToId *st
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Schedule_IsConstruct(x interface{}) *bool {
+func Schedule_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSchedule_IsConstructParameters(x); err != nil {
@@ -588,7 +587,7 @@ func Schedule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-incident.schedule.Schedule",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -596,7 +595,7 @@ func Schedule_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Schedule_IsTerraformElement(x interface{}) *bool {
+func Schedule_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSchedule_IsTerraformElementParameters(x); err != nil {
@@ -607,7 +606,7 @@ func Schedule_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-incident.schedule.Schedule",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -615,7 +614,7 @@ func Schedule_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Schedule_IsTerraformResource(x interface{}) *bool {
+func Schedule_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSchedule_IsTerraformResourceParameters(x); err != nil {
@@ -626,7 +625,7 @@ func Schedule_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-incident.schedule.Schedule",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -651,31 +650,31 @@ func (s *jsiiProxy_Schedule) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_Schedule) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_Schedule) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_Schedule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_Schedule) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -691,7 +690,7 @@ func (s *jsiiProxy_Schedule) GetBooleanAttribute(terraformAttribute *string) cdk
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -707,7 +706,7 @@ func (s *jsiiProxy_Schedule) GetBooleanMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (s *jsiiProxy_Schedule) GetListAttribute(terraformAttribute *string) *[]*st
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -739,7 +738,7 @@ func (s *jsiiProxy_Schedule) GetNumberAttribute(terraformAttribute *string) *flo
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -755,7 +754,7 @@ func (s *jsiiProxy_Schedule) GetNumberListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -771,7 +770,7 @@ func (s *jsiiProxy_Schedule) GetNumberMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -787,7 +786,7 @@ func (s *jsiiProxy_Schedule) GetStringAttribute(terraformAttribute *string) *str
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -803,15 +802,15 @@ func (s *jsiiProxy_Schedule) GetStringMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_Schedule) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_Schedule) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -830,7 +829,7 @@ func (s *jsiiProxy_Schedule) ImportFrom(id *string, provider cdktf.TerraformProv
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -843,7 +842,7 @@ func (s *jsiiProxy_Schedule) InterpolationForAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -857,18 +856,18 @@ func (s *jsiiProxy_Schedule) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_Schedule) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_Schedule) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -879,7 +878,7 @@ func (s *jsiiProxy_Schedule) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -890,7 +889,7 @@ func (s *jsiiProxy_Schedule) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -901,18 +900,18 @@ func (s *jsiiProxy_Schedule) PutHolidaysPublicConfig(value *ScheduleHolidaysPubl
 	_jsii_.InvokeVoid(
 		s,
 		"putHolidaysPublicConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_Schedule) PutRotations(value interface{}) {
+func (s *jsiiProxy_Schedule) PutRotations(value any) {
 	if err := s.validatePutRotationsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putRotations",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -940,8 +939,8 @@ func (s *jsiiProxy_Schedule) ResetTeamIds() {
 	)
 }
 
-func (s *jsiiProxy_Schedule) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_Schedule) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -953,8 +952,8 @@ func (s *jsiiProxy_Schedule) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_Schedule) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_Schedule) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -966,8 +965,8 @@ func (s *jsiiProxy_Schedule) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_Schedule) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_Schedule) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -979,8 +978,8 @@ func (s *jsiiProxy_Schedule) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_Schedule) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_Schedule) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1005,8 +1004,8 @@ func (s *jsiiProxy_Schedule) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_Schedule) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_Schedule) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1017,4 +1016,3 @@ func (s *jsiiProxy_Schedule) ToTerraform() interface{} {
 
 	return returns
 }
-

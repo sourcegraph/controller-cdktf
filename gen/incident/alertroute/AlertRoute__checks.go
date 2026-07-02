@@ -19,7 +19,7 @@ func (a *jsiiProxy_AlertRoute) validateAddMoveTargetParameters(moveTarget *strin
 	return nil
 }
 
-func (a *jsiiProxy_AlertRoute) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AlertRoute) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AlertRoute) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AlertRoute) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AlertRoute) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (a *jsiiProxy_AlertRoute) validateOverrideLogicalIdParameters(newLogicalId 
 	return nil
 }
 
-func (a *jsiiProxy_AlertRoute) validatePutAlertSourcesParameters(value interface{}) error {
+func (a *jsiiProxy_AlertRoute) validatePutAlertSourcesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (a *jsiiProxy_AlertRoute) validatePutAlertSourcesParameters(value interface
 	return nil
 }
 
-func (a *jsiiProxy_AlertRoute) validatePutChannelConfigParameters(value interface{}) error {
+func (a *jsiiProxy_AlertRoute) validatePutChannelConfigParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func (a *jsiiProxy_AlertRoute) validatePutChannelConfigParameters(value interfac
 	return nil
 }
 
-func (a *jsiiProxy_AlertRoute) validatePutConditionGroupsParameters(value interface{}) error {
+func (a *jsiiProxy_AlertRoute) validatePutConditionGroupsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -308,7 +308,7 @@ func (a *jsiiProxy_AlertRoute) validatePutEscalationConfigParameters(value *Aler
 	return nil
 }
 
-func (a *jsiiProxy_AlertRoute) validatePutExpressionsParameters(value interface{}) error {
+func (a *jsiiProxy_AlertRoute) validatePutExpressionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -377,7 +377,7 @@ func validateAlertRoute_GenerateConfigForImportParameters(scope constructs.Const
 	return nil
 }
 
-func validateAlertRoute_IsConstructParameters(x interface{}) error {
+func validateAlertRoute_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -385,7 +385,7 @@ func validateAlertRoute_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateAlertRoute_IsTerraformElementParameters(x interface{}) error {
+func validateAlertRoute_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -393,7 +393,7 @@ func validateAlertRoute_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateAlertRoute_IsTerraformResourceParameters(x interface{}) error {
+func validateAlertRoute_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -401,7 +401,7 @@ func validateAlertRoute_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_AlertRoute) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRoute) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -434,7 +434,7 @@ func (j *jsiiProxy_AlertRoute) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_AlertRoute) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRoute) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -491,7 +491,7 @@ func (j *jsiiProxy_AlertRoute) validateSetCountParameters(val interface{}) error
 	return nil
 }
 
-func (j *jsiiProxy_AlertRoute) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRoute) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -511,7 +511,7 @@ func (j *jsiiProxy_AlertRoute) validateSetEnabledParameters(val interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_AlertRoute) validateSetIsPrivateParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRoute) validateSetIsPrivateParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -547,7 +547,7 @@ func (j *jsiiProxy_AlertRoute) validateSetNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_AlertRoute) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AlertRoute) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -611,4 +611,3 @@ func validateNewAlertRouteParameters(scope constructs.Construct, id *string, con
 
 	return nil
 }
-

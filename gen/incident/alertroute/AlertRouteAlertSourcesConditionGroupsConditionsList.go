@@ -17,8 +17,8 @@ type AlertRouteAlertSourcesConditionGroupsConditionsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type AlertRouteAlertSourcesConditionGroupsConditionsList interface {
 	Get(index *float64) AlertRouteAlertSourcesConditionGroupsConditionsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_AlertRouteAlertSourcesConditionGroupsConditionsList) Fqn() *s
 	return returns
 }
 
-func (j *jsiiProxy_AlertRouteAlertSourcesConditionGroupsConditionsList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertRouteAlertSourcesConditionGroupsConditionsList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_AlertRouteAlertSourcesConditionGroupsConditionsList) WrapsSet
 	return returns
 }
 
-
 func NewAlertRouteAlertSourcesConditionGroupsConditionsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AlertRouteAlertSourcesConditionGroupsConditionsList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewAlertRouteAlertSourcesConditionGroupsConditionsList(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.alertRoute.AlertRouteAlertSourcesConditionGroupsConditionsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewAlertRouteAlertSourcesConditionGroupsConditionsList_Override(a AlertRout
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.alertRoute.AlertRouteAlertSourcesConditionGroupsConditionsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AlertRouteAlertSourcesConditionGroupsConditionsList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AlertRouteAlertSourcesConditionGroupsConditionsList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_AlertRouteAlertSourcesConditionGroupsConditionsList)SetIntern
 	)
 }
 
-func (j *jsiiProxy_AlertRouteAlertSourcesConditionGroupsConditionsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AlertRouteAlertSourcesConditionGroupsConditionsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_AlertRouteAlertSourcesConditionGroupsConditionsList)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_AlertRouteAlertSourcesConditionGroupsConditionsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AlertRouteAlertSourcesConditionGroupsConditionsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_AlertRouteAlertSourcesConditionGroupsConditionsList)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_AlertRouteAlertSourcesConditionGroupsConditionsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_AlertRouteAlertSourcesConditionGroupsConditionsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (a *jsiiProxy_AlertRouteAlertSourcesConditionGroupsConditionsList) AllWithM
 	_jsii_.Invoke(
 		a,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (a *jsiiProxy_AlertRouteAlertSourcesConditionGroupsConditionsList) Get(inde
 	_jsii_.Invoke(
 		a,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AlertRouteAlertSourcesConditionGroupsConditionsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AlertRouteAlertSourcesConditionGroupsConditionsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (a *jsiiProxy_AlertRouteAlertSourcesConditionGroupsConditionsList) ToString
 
 	return returns
 }
-

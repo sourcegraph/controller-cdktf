@@ -17,8 +17,8 @@ type ScheduleRotationsVersionsLayersList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type ScheduleRotationsVersionsLayersList interface {
 	Get(index *float64) ScheduleRotationsVersionsLayersOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_ScheduleRotationsVersionsLayersList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ScheduleRotationsVersionsLayersList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ScheduleRotationsVersionsLayersList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_ScheduleRotationsVersionsLayersList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewScheduleRotationsVersionsLayersList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ScheduleRotationsVersionsLayersList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewScheduleRotationsVersionsLayersList(terraformResource cdktf.IInterpolati
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.schedule.ScheduleRotationsVersionsLayersList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewScheduleRotationsVersionsLayersList_Override(s ScheduleRotationsVersions
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.schedule.ScheduleRotationsVersionsLayersList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_ScheduleRotationsVersionsLayersList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ScheduleRotationsVersionsLayersList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_ScheduleRotationsVersionsLayersList)SetInternalValue(val inte
 	)
 }
 
-func (j *jsiiProxy_ScheduleRotationsVersionsLayersList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ScheduleRotationsVersionsLayersList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_ScheduleRotationsVersionsLayersList)SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_ScheduleRotationsVersionsLayersList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ScheduleRotationsVersionsLayersList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_ScheduleRotationsVersionsLayersList)SetTerraformResource(val 
 	)
 }
 
-func (j *jsiiProxy_ScheduleRotationsVersionsLayersList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ScheduleRotationsVersionsLayersList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (s *jsiiProxy_ScheduleRotationsVersionsLayersList) AllWithMapKey(mapKeyAttr
 	_jsii_.Invoke(
 		s,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (s *jsiiProxy_ScheduleRotationsVersionsLayersList) Get(index *float64) Sche
 	_jsii_.Invoke(
 		s,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_ScheduleRotationsVersionsLayersList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_ScheduleRotationsVersionsLayersList) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (s *jsiiProxy_ScheduleRotationsVersionsLayersList) ToString() *string {
 
 	return returns
 }
-

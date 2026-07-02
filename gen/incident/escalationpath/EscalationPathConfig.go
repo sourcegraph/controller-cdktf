@@ -6,9 +6,9 @@ import (
 
 type EscalationPathConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type EscalationPathConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of this escalation path, for the user's reference.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/escalation_path#name EscalationPath#name}
@@ -29,7 +29,7 @@ type EscalationPathConfig struct {
 	//
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/escalation_path#path EscalationPath#path}
-	Path interface{} `field:"required" json:"path" yaml:"path"`
+	Path any `field:"required" json:"path" yaml:"path"`
 	// IDs of the teams that own this escalation path.
 	//
 	// This will automatically sync escalation paths with the right teams in Catalog. If you have an escalation paths attribute on your Teams, this attribute is required.
@@ -39,6 +39,5 @@ type EscalationPathConfig struct {
 	// The working hours for this escalation path.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/escalation_path#working_hours EscalationPath#working_hours}
-	WorkingHours interface{} `field:"optional" json:"workingHours" yaml:"workingHours"`
+	WorkingHours any `field:"optional" json:"workingHours" yaml:"workingHours"`
 }
-

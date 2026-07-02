@@ -34,7 +34,7 @@ func (a *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueList) v
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAlertRouteChannelConfigMsTeamsTargetsBindingArrayValueListParame
 
 	return nil
 }
-

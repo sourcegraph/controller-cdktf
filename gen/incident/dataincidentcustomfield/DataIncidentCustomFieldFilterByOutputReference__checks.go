@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataIncidentCustomFieldFilterByOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_DataIncidentCustomFieldFilterByOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataIncidentCustomFieldFilterByOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataIncidentCustomFieldFilterByOutputReferenceParameters(terrafo
 
 	return nil
 }
-

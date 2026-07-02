@@ -34,7 +34,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseElsePathList) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseElsePathList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EscalationPathPathIfElseElsePathList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEscalationPathPathIfElseElsePathListParameters(terraformResource
 
 	return nil
 }
-

@@ -1,11 +1,10 @@
 package escalationpath
 
-
 type EscalationPathPathIfElseThenPathNotifyChannel struct {
 	// The targets (Slack channels) for this level.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/escalation_path#targets EscalationPath#targets}
-	Targets interface{} `field:"required" json:"targets" yaml:"targets"`
+	Targets any `field:"required" json:"targets" yaml:"targets"`
 	// If the time to ack is relative to a time window, this defines whether we move when the window is active or inactive.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/escalation_path#time_to_ack_interval_condition EscalationPath#time_to_ack_interval_condition}
@@ -19,4 +18,3 @@ type EscalationPathPathIfElseThenPathNotifyChannel struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/escalation_path#time_to_ack_weekday_interval_config_id EscalationPath#time_to_ack_weekday_interval_config_id}
 	TimeToAckWeekdayIntervalConfigId *string `field:"optional" json:"timeToAckWeekdayIntervalConfigId" yaml:"timeToAckWeekdayIntervalConfigId"`
 }
-

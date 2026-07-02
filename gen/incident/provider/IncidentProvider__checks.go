@@ -10,7 +10,7 @@ import (
 	"github.com/aws/constructs-go/constructs/v10"
 )
 
-func (i *jsiiProxy_IncidentProvider) validateAddOverrideParameters(path *string, value interface{}) error {
+func (i *jsiiProxy_IncidentProvider) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -46,7 +46,7 @@ func validateIncidentProvider_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validateIncidentProvider_IsConstructParameters(x interface{}) error {
+func validateIncidentProvider_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -54,7 +54,7 @@ func validateIncidentProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateIncidentProvider_IsTerraformElementParameters(x interface{}) error {
+func validateIncidentProvider_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -62,7 +62,7 @@ func validateIncidentProvider_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func validateIncidentProvider_IsTerraformProviderParameters(x interface{}) error {
+func validateIncidentProvider_IsTerraformProviderParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -85,4 +85,3 @@ func validateNewIncidentProviderParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-

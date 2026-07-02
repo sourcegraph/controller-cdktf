@@ -34,7 +34,7 @@ func (a *jsiiProxy_AlertRouteConditionGroupsConditionsList) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteConditionGroupsConditionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRouteConditionGroupsConditionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAlertRouteConditionGroupsConditionsListParameters(terraformResou
 
 	return nil
 }
-

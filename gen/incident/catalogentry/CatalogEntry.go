@@ -16,22 +16,22 @@ type CatalogEntry interface {
 	SetAliases(val *[]*string)
 	AliasesInput() *[]*string
 	AttributeValues() CatalogEntryAttributeValuesList
-	AttributeValuesInput() interface{}
+	AttributeValuesInput() any
 	CatalogTypeId() *string
 	SetCatalogTypeId(val *string)
 	CatalogTypeIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -65,27 +65,27 @@ type CatalogEntry interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	Rank() *float64
 	SetRank(val *float64)
 	RankInput() *float64
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type CatalogEntry interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -115,14 +115,14 @@ type CatalogEntry interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAttributeValues(value interface{})
+	PutAttributeValues(value any)
 	ResetAliases()
 	ResetExternalId()
 	ResetManagedAttributes()
@@ -130,17 +130,17 @@ type CatalogEntry interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRank()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CatalogEntry
@@ -178,8 +178,8 @@ func (j *jsiiProxy_CatalogEntry) AttributeValues() CatalogEntryAttributeValuesLi
 	return returns
 }
 
-func (j *jsiiProxy_CatalogEntry) AttributeValuesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CatalogEntry) AttributeValuesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"attributeValuesInput",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_CatalogEntry) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_CatalogEntry) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CatalogEntry) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -228,8 +228,8 @@ func (j *jsiiProxy_CatalogEntry) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CatalogEntry) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CatalogEntry) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -238,8 +238,8 @@ func (j *jsiiProxy_CatalogEntry) ConstructNodeMetadata() *map[string]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_CatalogEntry) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CatalogEntry) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -388,8 +388,8 @@ func (j *jsiiProxy_CatalogEntry) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_CatalogEntry) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CatalogEntry) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -418,8 +418,8 @@ func (j *jsiiProxy_CatalogEntry) RankInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_CatalogEntry) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CatalogEntry) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -438,8 +438,8 @@ func (j *jsiiProxy_CatalogEntry) TerraformGeneratorMetadata() *cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_CatalogEntry) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CatalogEntry) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -458,7 +458,6 @@ func (j *jsiiProxy_CatalogEntry) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/catalog_entry incident_catalog_entry} Resource.
 func NewCatalogEntry(scope constructs.Construct, id *string, config *CatalogEntryConfig) CatalogEntry {
 	_init_.Initialize()
@@ -470,7 +469,7 @@ func NewCatalogEntry(scope constructs.Construct, id *string, config *CatalogEntr
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.catalogEntry.CatalogEntry",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -483,12 +482,12 @@ func NewCatalogEntry_Override(c CatalogEntry, scope constructs.Construct, id *st
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.catalogEntry.CatalogEntry",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CatalogEntry)SetAliases(val *[]*string) {
+func (j *jsiiProxy_CatalogEntry) SetAliases(val *[]*string) {
 	if err := j.validateSetAliasesParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_CatalogEntry)SetAliases(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CatalogEntry)SetCatalogTypeId(val *string) {
+func (j *jsiiProxy_CatalogEntry) SetCatalogTypeId(val *string) {
 	if err := j.validateSetCatalogTypeIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_CatalogEntry)SetCatalogTypeId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CatalogEntry)SetConnection(val interface{}) {
+func (j *jsiiProxy_CatalogEntry) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -521,7 +520,7 @@ func (j *jsiiProxy_CatalogEntry)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CatalogEntry)SetCount(val interface{}) {
+func (j *jsiiProxy_CatalogEntry) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +531,7 @@ func (j *jsiiProxy_CatalogEntry)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CatalogEntry)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CatalogEntry) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -540,7 +539,7 @@ func (j *jsiiProxy_CatalogEntry)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CatalogEntry)SetExternalId(val *string) {
+func (j *jsiiProxy_CatalogEntry) SetExternalId(val *string) {
 	if err := j.validateSetExternalIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -551,7 +550,7 @@ func (j *jsiiProxy_CatalogEntry)SetExternalId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CatalogEntry)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CatalogEntry) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -559,7 +558,7 @@ func (j *jsiiProxy_CatalogEntry)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_CatalogEntry)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CatalogEntry) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_CatalogEntry)SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_CatalogEntry)SetManagedAttributes(val *[]*string) {
+func (j *jsiiProxy_CatalogEntry) SetManagedAttributes(val *[]*string) {
 	if err := j.validateSetManagedAttributesParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_CatalogEntry)SetManagedAttributes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CatalogEntry)SetName(val *string) {
+func (j *jsiiProxy_CatalogEntry) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func (j *jsiiProxy_CatalogEntry)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CatalogEntry)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CatalogEntry) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -600,7 +599,7 @@ func (j *jsiiProxy_CatalogEntry)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_CatalogEntry)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CatalogEntry) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,7 +610,7 @@ func (j *jsiiProxy_CatalogEntry)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CatalogEntry)SetRank(val *float64) {
+func (j *jsiiProxy_CatalogEntry) SetRank(val *float64) {
 	if err := j.validateSetRankParameters(val); err != nil {
 		panic(err)
 	}
@@ -634,7 +633,7 @@ func CatalogEntry_GenerateConfigForImport(scope constructs.Construct, importToId
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-incident.catalogEntry.CatalogEntry",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -658,7 +657,7 @@ func CatalogEntry_GenerateConfigForImport(scope constructs.Construct, importToId
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CatalogEntry_IsConstruct(x interface{}) *bool {
+func CatalogEntry_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCatalogEntry_IsConstructParameters(x); err != nil {
@@ -669,7 +668,7 @@ func CatalogEntry_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-incident.catalogEntry.CatalogEntry",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func CatalogEntry_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CatalogEntry_IsTerraformElement(x interface{}) *bool {
+func CatalogEntry_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCatalogEntry_IsTerraformElementParameters(x); err != nil {
@@ -688,7 +687,7 @@ func CatalogEntry_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-incident.catalogEntry.CatalogEntry",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func CatalogEntry_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CatalogEntry_IsTerraformResource(x interface{}) *bool {
+func CatalogEntry_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCatalogEntry_IsTerraformResourceParameters(x); err != nil {
@@ -707,7 +706,7 @@ func CatalogEntry_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-incident.catalogEntry.CatalogEntry",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -732,31 +731,31 @@ func (c *jsiiProxy_CatalogEntry) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CatalogEntry) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CatalogEntry) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CatalogEntry) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CatalogEntry) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -772,7 +771,7 @@ func (c *jsiiProxy_CatalogEntry) GetBooleanAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -788,7 +787,7 @@ func (c *jsiiProxy_CatalogEntry) GetBooleanMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -804,7 +803,7 @@ func (c *jsiiProxy_CatalogEntry) GetListAttribute(terraformAttribute *string) *[
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -820,7 +819,7 @@ func (c *jsiiProxy_CatalogEntry) GetNumberAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -836,7 +835,7 @@ func (c *jsiiProxy_CatalogEntry) GetNumberListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -852,7 +851,7 @@ func (c *jsiiProxy_CatalogEntry) GetNumberMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,7 +867,7 @@ func (c *jsiiProxy_CatalogEntry) GetStringAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -884,15 +883,15 @@ func (c *jsiiProxy_CatalogEntry) GetStringMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CatalogEntry) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CatalogEntry) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -911,7 +910,7 @@ func (c *jsiiProxy_CatalogEntry) ImportFrom(id *string, provider cdktf.Terraform
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -924,7 +923,7 @@ func (c *jsiiProxy_CatalogEntry) InterpolationForAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -938,18 +937,18 @@ func (c *jsiiProxy_CatalogEntry) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CatalogEntry) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CatalogEntry) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -960,7 +959,7 @@ func (c *jsiiProxy_CatalogEntry) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -971,18 +970,18 @@ func (c *jsiiProxy_CatalogEntry) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (c *jsiiProxy_CatalogEntry) PutAttributeValues(value interface{}) {
+func (c *jsiiProxy_CatalogEntry) PutAttributeValues(value any) {
 	if err := c.validatePutAttributeValuesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putAttributeValues",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1026,8 +1025,8 @@ func (c *jsiiProxy_CatalogEntry) ResetRank() {
 	)
 }
 
-func (c *jsiiProxy_CatalogEntry) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CatalogEntry) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1039,8 +1038,8 @@ func (c *jsiiProxy_CatalogEntry) SynthesizeAttributes() *map[string]interface{} 
 	return returns
 }
 
-func (c *jsiiProxy_CatalogEntry) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CatalogEntry) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1052,8 +1051,8 @@ func (c *jsiiProxy_CatalogEntry) SynthesizeHclAttributes() *map[string]interface
 	return returns
 }
 
-func (c *jsiiProxy_CatalogEntry) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CatalogEntry) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1065,8 +1064,8 @@ func (c *jsiiProxy_CatalogEntry) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CatalogEntry) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CatalogEntry) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1091,8 +1090,8 @@ func (c *jsiiProxy_CatalogEntry) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CatalogEntry) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CatalogEntry) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1103,4 +1102,3 @@ func (c *jsiiProxy_CatalogEntry) ToTerraform() interface{} {
 
 	return returns
 }
-
